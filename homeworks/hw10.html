@@ -1,0 +1,643 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PHY321: Classical Mechanics 1 &#8212; Classical Mechanics</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
+  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'homeworks/hw10';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/spartan-helmet.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../_static/spartan-helmet.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    PHY 321: Classical Mechanics 1, Michigan State University, Spring 2024
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">About the course</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../admin/teachers.html">Teachers and Grading</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin/textbooks.html">Textbooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin/schedule-cal.html">Calendar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin/links.html">Course Material and Links</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Introductory Material</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter1-overview.html">What is Classical Physics?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter1.html">1. Classical Mechanics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter2.html">2. Classical Mechanics, Mathematics and Numerical background</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter3.html">3. Simple Motion problems and Reminder on Newton’s Laws</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter4.html">4. Work, Energy, Momentum and Conservation laws</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Advanced Topics</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter5.html">5. Harmonic Oscillations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter6.html">6. Two-body problems, from the Gravitational Force to Two-body Scattering</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter7.html">7. Non-inertial Frames, Translation and Rotating Coordinate Systems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter8.html">8. Variational Calculus and Lagrangian Formalism</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/main?urlpath=tree/homeworks/hw10.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onBinder"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img src="../_static/images/logo_binder.svg">
+  </span>
+<span class="btn__text-container">Binder</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/homeworks/hw10.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>PHY321: Classical Mechanics 1</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#practicalities-about-homeworks-and-projects">Practicalities about  homeworks and projects</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction-to-homework-10">Introduction to homework 10</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-1-10pt-new-reference-frame-taylor-chapter-8">Exercise 1 (10pt), new reference frame (Taylor chapter 8)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-2-10pt-center-of-mass-and-relative-coordinates-taylor-chapter-8">Exercise 2 (10pt) Center of mass and relative coordinates (Taylor chapter 8)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-3-30pt-two-body-problems-taylor-chapter-8">Exercise 3 (30pt),  Two-body problems (Taylor chapter 8)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-4-10pt-lagrangian-formalism-taylor-chapters-6-7">Exercise 4 (10pt), Lagrangian formalism (Taylor chapters 6-7)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-5-30pt-coupled-harmonic-oscillators-taylor-chapters-6-7">Exercise 5 (30pt), Coupled Harmonic Oscillators  (Taylor chapters 6-7)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#classical-mechanics-extra-credit-assignment-scientific-writing-and-attending-talks">Classical Mechanics Extra Credit Assignment: Scientific Writing and attending Talks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#integrating-classwork-with-research">Integrating Classwork With Research</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <!-- HTML file automatically generated from DocOnce source (https://github.com/doconce/doconce/)
+doconce format html hw10.do.txt --no_mako -->
+<!-- dom:TITLE: PHY321: Classical Mechanics 1 --><div class="tex2jax_ignore mathjax_ignore section" id="phy321-classical-mechanics-1">
+<h1>PHY321: Classical Mechanics 1<a class="headerlink" href="#phy321-classical-mechanics-1" title="Permalink to this heading">#</a></h1>
+<p><strong>Homework 10, due Monday May 1</strong></p>
+<p>Date: <strong>Apr 17, 2023</strong></p>
+<div class="section" id="practicalities-about-homeworks-and-projects">
+<h2>Practicalities about  homeworks and projects<a class="headerlink" href="#practicalities-about-homeworks-and-projects" title="Permalink to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>You can work in groups (optimal groups are often 2-3 people) or by yourself. If you work as a group you can hand in one answer only if you wish. <strong>Remember to write your name(s)</strong>!</p></li>
+<li><p>Homeworks are available  the week before the deadline.</p></li>
+<li><p>How do I(we)  hand in?  Due to the corona virus and many of you not being on campus, we recommend that you scan your handwritten notes and upload them to D2L. If you are ok with typing mathematical formulae using say Latex, you can hand in everything as a single jupyter notebook at D2L. The numerical exercise(s) should always be handed in as a jupyter notebook by the deadline at D2L.</p></li>
+</ol>
+</div>
+<div class="section" id="introduction-to-homework-10">
+<h2>Introduction to homework 10<a class="headerlink" href="#introduction-to-homework-10" title="Permalink to this heading">#</a></h2>
+<p>This homework is optional but gives an extra score of 10% on top of
+all you have done throughout the semester. The exercises are
+essentially good old fashioned paper and pencil exercises and each
+covers different aspects of what has been done after spring break.
+The relevant reading background is marked in the different exercises (Taylor’s text).</p>
+</div>
+<div class="section" id="exercise-1-10pt-new-reference-frame-taylor-chapter-8">
+<h2>Exercise 1 (10pt), new reference frame (Taylor chapter 8)<a class="headerlink" href="#exercise-1-10pt-new-reference-frame-taylor-chapter-8" title="Permalink to this heading">#</a></h2>
+<p>Show that if one transforms to a reference frame where the total
+momentum is zero, <span class="math notranslate nohighlight">\(\boldsymbol{p}_1=-\boldsymbol{p}_2\)</span>, that the relative momentum
+<span class="math notranslate nohighlight">\(\boldsymbol{q}\)</span> corresponds to either <span class="math notranslate nohighlight">\(\boldsymbol{p}_1\)</span> or <span class="math notranslate nohighlight">\(-\boldsymbol{p}_2\)</span>. This
+means that in this frame the magnitude of <span class="math notranslate nohighlight">\(\boldsymbol{q}\)</span> is one half the
+magnitude of <span class="math notranslate nohighlight">\(\boldsymbol{p}_1-\boldsymbol{p}_2\)</span>.</p>
+</div>
+<div class="section" id="exercise-2-10pt-center-of-mass-and-relative-coordinates-taylor-chapter-8">
+<h2>Exercise 2 (10pt) Center of mass and relative coordinates (Taylor chapter 8)<a class="headerlink" href="#exercise-2-10pt-center-of-mass-and-relative-coordinates-taylor-chapter-8" title="Permalink to this heading">#</a></h2>
+<p>Given the center of mass and relative coordinates <span class="math notranslate nohighlight">\(\boldsymbol{R}\)</span> and <span class="math notranslate nohighlight">\(\boldsymbol{r}\)</span>, respectively, for
+particles of mass <span class="math notranslate nohighlight">\(m_1\)</span> and <span class="math notranslate nohighlight">\(m_2\)</span>, find the coordinates <span class="math notranslate nohighlight">\(\boldsymbol{r}_1\)</span>
+and <span class="math notranslate nohighlight">\(\boldsymbol{r}_2\)</span> in terms of the masses, <span class="math notranslate nohighlight">\(\boldsymbol{R}\)</span> and <span class="math notranslate nohighlight">\(\boldsymbol{r}\)</span>.</p>
+</div>
+<div class="section" id="exercise-3-30pt-two-body-problems-taylor-chapter-8">
+<h2>Exercise 3 (30pt),  Two-body problems (Taylor chapter 8)<a class="headerlink" href="#exercise-3-30pt-two-body-problems-taylor-chapter-8" title="Permalink to this heading">#</a></h2>
+<p>Consider a particle of mass <span class="math notranslate nohighlight">\(m\)</span> moving in a potential</p>
+<div class="math notranslate nohighlight">
+\[
+V(r)=\alpha\ln(r/\alpha),
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(\alpha\)</span> is a constant.</p>
+<ul class="simple">
+<li><p>3a (5pt)  If the particle is moving in a circular orbit of radius <span class="math notranslate nohighlight">\(R\)</span>, find the angular frequency <span class="math notranslate nohighlight">\(\dot{\theta}\)</span>. Solve this by setting <span class="math notranslate nohighlight">\(F=-m\dot{\theta}^2r\)</span> (force and acceleration point inward).</p></li>
+<li><p>3b (5pt) Express the angular momentum <span class="math notranslate nohighlight">\(L\)</span> in terms of the constant <span class="math notranslate nohighlight">\(\alpha\)</span>, the mass <span class="math notranslate nohighlight">\(m\)</span> and the radius <span class="math notranslate nohighlight">\(R\)</span>. Also express <span class="math notranslate nohighlight">\(R\)</span> in terms of <span class="math notranslate nohighlight">\(L\)</span>, <span class="math notranslate nohighlight">\(\alpha\)</span> and <span class="math notranslate nohighlight">\(m\)</span>.</p></li>
+<li><p>3c (5pt) Sketch the effective radial potential, <span class="math notranslate nohighlight">\(V_{\rm eff}(r)\)</span>, for a particle with angular momentum <span class="math notranslate nohighlight">\(L\)</span>. (No longer necessarily moving in a circular orbit.)</p></li>
+<li><p>3d (5pt)  Find the position of the minimum of <span class="math notranslate nohighlight">\(V_{\rm eff}\)</span> in terms of <span class="math notranslate nohighlight">\(L\)</span>, <span class="math notranslate nohighlight">\(\alpha\)</span> and <span class="math notranslate nohighlight">\(m\)</span>, then compare to the result of (3b).</p></li>
+<li><p>3e (5pt)  What is the effective spring constant for a particle at the minimum of <span class="math notranslate nohighlight">\(V_{\rm eff}\)</span>? Express your answer in terms of <span class="math notranslate nohighlight">\(L\)</span>, <span class="math notranslate nohighlight">\(m\)</span> and <span class="math notranslate nohighlight">\(\alpha\)</span>.</p></li>
+<li><p>3f (5pt)  What is the angular frequency, <span class="math notranslate nohighlight">\(\omega\)</span>, for small oscillations of <span class="math notranslate nohighlight">\(r\)</span> about the <span class="math notranslate nohighlight">\(R_{\rm min}\)</span>?  Express your answer in terms of <span class="math notranslate nohighlight">\(\dot{\theta}\)</span> from part (3a).</p></li>
+</ul>
+</div>
+<div class="section" id="exercise-4-10pt-lagrangian-formalism-taylor-chapters-6-7">
+<h2>Exercise 4 (10pt), Lagrangian formalism (Taylor chapters 6-7)<a class="headerlink" href="#exercise-4-10pt-lagrangian-formalism-taylor-chapters-6-7" title="Permalink to this heading">#</a></h2>
+<p>Consider a mass <span class="math notranslate nohighlight">\(m\)</span> connected to a spring with spring constant <span class="math notranslate nohighlight">\(k\)</span>. Rather than being fixed, the other end of the spring oscillates with frequency <span class="math notranslate nohighlight">\(\omega\)</span> and amplitude <span class="math notranslate nohighlight">\(A\)</span>. For a generalized coordinate, use the displacement of the mass from its relaxed position and call it <span class="math notranslate nohighlight">\(y=x-\ell-A\cos\omega t\)</span>. In this system the potential energy of the spring is <span class="math notranslate nohighlight">\(ky^2/2\)</span>.</p>
+<ul class="simple">
+<li><p>4a (5pt) Write the kinetic energy in terms of the generalized coordinate</p></li>
+<li><p>4b (5pt) Write down the Lagrangian and find the equations of motion for <span class="math notranslate nohighlight">\(y\)</span></p></li>
+</ul>
+</div>
+<div class="section" id="exercise-5-30pt-coupled-harmonic-oscillators-taylor-chapters-6-7">
+<h2>Exercise 5 (30pt), Coupled Harmonic Oscillators  (Taylor chapters 6-7)<a class="headerlink" href="#exercise-5-30pt-coupled-harmonic-oscillators-taylor-chapters-6-7" title="Permalink to this heading">#</a></h2>
+<p>The relevant chapters from Taylor are chapters 5-7 and the lectures notes on <a class="reference external" href="https://mhjensen.github.io/Physics321/doc/LectureNotes/_build/html/chapter5.html">harmonic oscillations</a> and the <a class="reference external" href="https://mhjensen.github.io/Physics321/doc/LectureNotes/_build/html/chapter8.html">Lagrangian Formalism and Calculus of Variations</a>.</p>
+<p>Consider a mass <span class="math notranslate nohighlight">\(m\)</span> that is connected to a wall by a spring with
+spring constant <span class="math notranslate nohighlight">\(k\)</span>. A second identical mass <span class="math notranslate nohighlight">\(m\)</span> is connected to the
+first mass by an identical spring. Motion is confined to the <span class="math notranslate nohighlight">\(x\)</span> direction only.</p>
+<ul class="simple">
+<li><p><strong>5a (5pt):</strong> Make a drawing of the system, set up forces and define variables <span class="math notranslate nohighlight">\(x_1\)</span> and <span class="math notranslate nohighlight">\(x_2\)</span> for the two masses.</p></li>
+<li><p><strong>5b (5pt):</strong> Write the Lagrangian in terms of the positions of the two masses <span class="math notranslate nohighlight">\(x_1\)</span> and <span class="math notranslate nohighlight">\(x_2\)</span>.</p></li>
+<li><p><strong>5c (5pt):</strong> Use the Euler-Lagrange equations to find the analytical expressions for the  equations of motion.</p></li>
+<li><p><strong>5d (10pt):</strong> Find the analytical  solutions using a guess of  the type</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+x_1=Ae^{i\omega t},~~~x_2=Be^{i\omega t}.
+\]</div>
+<p>Solve for <span class="math notranslate nohighlight">\(A/B\)</span> and <span class="math notranslate nohighlight">\(\omega\)</span>. Express your answers in terms of <span class="math notranslate nohighlight">\(\omega_0^2=k/m\)</span>.</p>
+</div>
+<div class="section" id="classical-mechanics-extra-credit-assignment-scientific-writing-and-attending-talks">
+<h2>Classical Mechanics Extra Credit Assignment: Scientific Writing and attending Talks<a class="headerlink" href="#classical-mechanics-extra-credit-assignment-scientific-writing-and-attending-talks" title="Permalink to this heading">#</a></h2>
+<p>The following gives you an opportunity to earn <strong>five extra credit
+points</strong> on each of the remaining homeworks and <strong>ten extra credit points</strong>
+on the midterms and finals.  This assignment also covers an aspect of
+the scientific process that is not taught in most undergraduate
+programs: scientific writing.  Writing scientific reports is how
+scientist communicate their results to the rest of the field.  Knowing
+how to assemble a well written scientific report will greatly benefit
+you in you upper level classes, in graduate school, and in the work
+place.</p>
+<p>The full information on extra credits is found at <a class="github reference external" href="https://github.com/mhjensen/Physics321/blob/master/doc/Homeworks/ExtraCredits/">mhjensen/Physics321</a>. There you will also find examples on how to write a scientific article.
+Below you can also find a description on how to gain extra credits by attending scientific talks.</p>
+<p>This assignment allows you to gain extra credit points by practicing
+your scientific writing.  For each of the remaining homeworks you can
+submit the specified section of a scientific report (written about the
+numerical aspect of the homework) for five extra credit points on the
+assignment.  For the two midterms and the final, submitting a full
+scientific report covering the numerical analysis problem will be
+worth ten extra points.  For credit the grader must be able to tell
+that you put effort into the assignment (i.e. well written, well
+formatted, etc.).  If you are unfamiliar with writing scientific
+reports, <a class="reference external" href="https://github.com/mhjensen/Physics321/blob/master/doc/Homeworks/ExtraCredits/IntroductionScientificWriting.md">see the information here</a></p>
+<p>The following table explains what aspect of a scientific report is due
+with which homework.  You can submit the assignment in any format you
+like, in the same document as your homework, or in a different one.
+Remember to cite any external references you use and include a
+reference list.  There are no length requirements, but make sure what
+you turn in is complete and through.  If you have any questions,
+please contact us.</p>
+<table class="dotable" border="1">
+<thead>
+<tr><th align="center">  HW/Project </th> <th align="center">Due Date</th> <th align="center">Extra Credit Assignment</th> </tr>
+</thead>
+<tbody>
+<tr><td align="center">   HW 3             </td> <td align="center">   2-8         </td> <td align="center">   Abstract                   </td> </tr>
+<tr><td align="center">   HW 4             </td> <td align="center">   2-15        </td> <td align="center">   Introduction               </td> </tr>
+<tr><td align="center">   HW 5             </td> <td align="center">   2-22        </td> <td align="center">   Methods                    </td> </tr>
+<tr><td align="center">   HW 6             </td> <td align="center">   3-1         </td> <td align="center">   Results and Discussion     </td> </tr>
+<tr><td align="center">   **Midterm 1**    </td> <td align="center">   **3-12**    </td> <td align="center">   *Full Written Report*      </td> </tr>
+<tr><td align="center">   HW 7             </td> <td align="center">   3-22        </td> <td align="center">   Abstract                   </td> </tr>
+<tr><td align="center">   HW 8             </td> <td align="center">   3-29        </td> <td align="center">   Introduction               </td> </tr>
+<tr><td align="center">   HW 9             </td> <td align="center">   4-5         </td> <td align="center">   Results and Discussion     </td> </tr>
+<tr><td align="center">   **Midterm 2**    </td> <td align="center">   **4-16**    </td> <td align="center">   *Full Written Report*      </td> </tr>
+<tr><td align="center">   HW 10            </td> <td align="center">   4-26        </td> <td align="center">   Abstract                   </td> </tr>
+<tr><td align="center">   **Final**        </td> <td align="center">   **4-30**    </td> <td align="center">   *Full Written Report*      </td> </tr>
+</tbody>
+</table>
+<p>You can also gain extra credits if you attend scientific talks.
+This is described here.</p>
+</div>
+<div class="section" id="integrating-classwork-with-research">
+<h2>Integrating Classwork With Research<a class="headerlink" href="#integrating-classwork-with-research" title="Permalink to this heading">#</a></h2>
+<p>This opportunity will allow you to earn up to 5 extra credit points on a Homework per week. These points can push you above 100% or help make up for missed exercises.
+In order to earn all points you must:</p>
+<ol class="arabic simple">
+<li><p>Attend an MSU research talk (recommended research oriented Clubs is  provided below)</p></li>
+<li><p>Summarize the talk using at least 150 words</p></li>
+<li><p>Turn in the summary along with your Homework.</p></li>
+</ol>
+<p>Approved talks:
+Talks given by researchers through the following clubs:</p>
+<ul class="simple">
+<li><p>Research and Idea Sharing Enterprise (RAISE)​: Meets Wednesday Nights Society for Physics Students (SPS)​: Meets Monday Nights</p></li>
+<li><p>Astronomy Club​: Meets Monday Nights</p></li>
+<li><p>Facility For Rare Isotope Beam (FRIB) Seminars: ​Occur multiple times a week</p></li>
+</ul>
+<p>All the material on extra credits is at <a class="github reference external" href="https://github.com/mhjensen/Physics321/blob/master/doc/Homeworks/ExtraCredits/">mhjensen/Physics321</a>.</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./homeworks"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#practicalities-about-homeworks-and-projects">Practicalities about  homeworks and projects</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction-to-homework-10">Introduction to homework 10</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-1-10pt-new-reference-frame-taylor-chapter-8">Exercise 1 (10pt), new reference frame (Taylor chapter 8)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-2-10pt-center-of-mass-and-relative-coordinates-taylor-chapter-8">Exercise 2 (10pt) Center of mass and relative coordinates (Taylor chapter 8)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-3-30pt-two-body-problems-taylor-chapter-8">Exercise 3 (30pt),  Two-body problems (Taylor chapter 8)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-4-10pt-lagrangian-formalism-taylor-chapters-6-7">Exercise 4 (10pt), Lagrangian formalism (Taylor chapters 6-7)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-5-30pt-coupled-harmonic-oscillators-taylor-chapters-6-7">Exercise 5 (30pt), Coupled Harmonic Oscillators  (Taylor chapters 6-7)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#classical-mechanics-extra-credit-assignment-scientific-writing-and-attending-talks">Classical Mechanics Extra Credit Assignment: Scientific Writing and attending Talks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#integrating-classwork-with-research">Integrating Classwork With Research</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Danny Caballero, Morten Hjorth-Jensen
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

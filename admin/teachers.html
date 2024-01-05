@@ -1,0 +1,623 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teachers and Grading &#8212; Classical Mechanics</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
+  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'admin/teachers';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Textbooks" href="textbooks.html" />
+    <link rel="prev" title="PHY 321: Classical Mechanics 1, Michigan State University, Spring 2024" href="../intro.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/spartan-helmet.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../_static/spartan-helmet.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    PHY 321: Classical Mechanics 1, Michigan State University, Spring 2024
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">About the course</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Teachers and Grading</a></li>
+<li class="toctree-l1"><a class="reference internal" href="textbooks.html">Textbooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="schedule-cal.html">Calendar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="links.html">Course Material and Links</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Introductory Material</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter1-overview.html">What is Classical Physics?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter1.html">1. Classical Mechanics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter2.html">2. Classical Mechanics, Mathematics and Numerical background</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter3.html">3. Simple Motion problems and Reminder on Newton’s Laws</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter4.html">4. Work, Energy, Momentum and Conservation laws</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Advanced Topics</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter5.html">5. Harmonic Oscillations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter6.html">6. Two-body problems, from the Gravitational Force to Two-body Scattering</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter7.html">7. Non-inertial Frames, Translation and Rotating Coordinate Systems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter8.html">8. Variational Calculus and Lagrangian Formalism</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/admin/teachers.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Teachers and Grading</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lecture">Lecture</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#professor">Professor</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#graduate-teaching-assistant">Graduate Teaching Assistant</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#undergraduate-learning-assistants">Undergraduate Learning Assistants</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#getting-help">Getting help</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#grading-and-dates">Grading and dates</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <div class="tex2jax_ignore mathjax_ignore section" id="teachers-and-grading">
+<h1>Teachers and Grading<a class="headerlink" href="#teachers-and-grading" title="Permalink to this heading">#</a></h1>
+<div class="section" id="lecture">
+<h2>Lecture<a class="headerlink" href="#lecture" title="Permalink to this heading">#</a></h2>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Meetings</p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p>Location</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Monday 3:00-3:50pm</p></td>
+<td><p>Wednesday 3:00-3:50pm</p></td>
+<td><p>Friday 3:00-3:50pm</p></td>
+<td><p>Plant &amp; Soil Science Bldg A149 and <a class="reference external" href="https://msu.zoom.us/j/93683330722">Zoom</a></p></td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><p><a class="reference external" href="https://msu.zoom.us/j/93683330722">Zoom Link</a> <em>Passcode is pinned in our Slack workspace</em>.</p></li>
+</ul>
+</div>
+<div class="section" id="professor">
+<h2>Professor<a class="headerlink" href="#professor" title="Permalink to this heading">#</a></h2>
+<p><img alt="Danny Caballero" src="../_images/dc.png" /></p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Instructor</p></th>
+<th class="head"><p>Email</p></th>
+<th class="head"><p>Office</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><em>Danny Caballero (he/they)</em></p></td>
+<td><p><a class="reference external" href="mailto:caball14&#37;&#52;&#48;msu&#46;edu">caball14<span>&#64;</span>msu<span>&#46;</span>edu</a></p></td>
+<td><p>MWF? <a class="reference external" href="https://www.google.com/maps/place/42%C2%B043'25.0%22N+84%C2%B028'34.3%22W/&#64;42.7236153,-84.478769,17z/data=!3m1!4b1!4m4!3m3!8m2!3d42.7236114!4d-84.4761887?entry=ttu">BPS 1310A</a>; TTh? <a class="reference external" href="https://www.google.com/maps/place/CMSE/&#64;42.7240511,-84.481225,20.33z/data=!4m12!1m5!3m4!2zNDLCsDQzJzI1LjAiTiA4NMKwMjgnMzQuMyJX!8m2!3d42.7236114!4d-84.4761887!3m5!1s0x8822c3f04c1f20d9:0xa13a78e031dd8740!8m2!3d42.7241582!4d-84.481012!16s%2Fg%2F11hzqh8htb?entry=ttu">EGR 1515</a></p></td>
+</tr>
+</tbody>
+</table>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Office Hours</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Monday/Wednesday/Friday 4-5:00pm or <a class="reference external" href="https://cal.com/dannycaballero/15min">schedule me</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="graduate-teaching-assistant">
+<h2>Graduate Teaching Assistant<a class="headerlink" href="#graduate-teaching-assistant" title="Permalink to this heading">#</a></h2>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Homework Grader</p></th>
+<th class="head"><p>Email</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><em>Josh Nicholson</em></p></td>
+<td><p><a class="reference external" href="mailto:nicho732&#37;&#52;&#48;msu&#46;edu">nicho732<span>&#64;</span>msu<span>&#46;</span>edu</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="undergraduate-learning-assistants">
+<h2>Undergraduate Learning Assistants<a class="headerlink" href="#undergraduate-learning-assistants" title="Permalink to this heading">#</a></h2>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Learning Assistant</p></th>
+<th class="head"><p>Email</p></th>
+<th class="head"><p>Office Hour</p></th>
+<th class="head"><p>Zoom Link</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><em>Alia Valentine (she/her)</em></p></td>
+<td><p><a class="reference external" href="mailto:valen176&#37;&#52;&#48;msu&#46;edu">valen176<span>&#64;</span>msu<span>&#46;</span>edu</a></p></td>
+<td><p>TBD</p></td>
+<td><p>TBD</p></td>
+</tr>
+<tr class="row-odd"><td><p><em>Addy Shaska (she/her)</em></p></td>
+<td><p><a class="reference external" href="mailto:shaskaad&#37;&#52;&#48;msu&#46;edu">shaskaad<span>&#64;</span>msu<span>&#46;</span>edu</a></p></td>
+<td><p>TBD</p></td>
+<td><p>TBD</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="getting-help">
+<h2>Getting help<a class="headerlink" href="#getting-help" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>Office hours:</strong> You are encouraged to attend office hours to get help with homework, projects, or any other questions you have about the course. You can also <a class="reference external" href="https://cal.com/dannycaballero/15min">schedule a meeting</a> with Danny.</p></li>
+<li><p><strong>Slack:</strong> We will use Slack for all course communication. You can use Slack to ask questions about homework, projects, or any other course-related questions. <a class="reference external" href="https://join.slack.com/t/phy321msu-sp24/shared_invite/zt-2a1dtsspu-ARet8OqiS8PL6023g5SxlQ">Join our Slack workspace</a> and introduce yourself in the <code class="docutils literal notranslate"><span class="pre">#introductions</span></code> channel.</p></li>
+</ul>
+</div>
+<div class="section" id="grading-and-dates">
+<h2>Grading and dates<a class="headerlink" href="#grading-and-dates" title="Permalink to this heading">#</a></h2>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Activity</p></th>
+<th class="head"><p>Percentage of total score</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Homeworks, 9 in total and due Fridays the week after</p></td>
+<td><p>20%</p></td>
+</tr>
+<tr class="row-odd"><td><p>First Midterm Project, <em>due Friday Feb 23</em></p></td>
+<td><p>25%</p></td>
+</tr>
+<tr class="row-even"><td><p>Second  Midterm Project, <em>due  Friday April 5</em></p></td>
+<td><p>25%</p></td>
+</tr>
+<tr class="row-odd"><td><p>Final Exam project, <em>due Friday April 26</em></p></td>
+<td><p>30%</p></td>
+</tr>
+<tr class="row-even"><td><p>Extra Credit Assignment, homework 10,  (due Friday April 19)</p></td>
+<td><p>10%</p></td>
+</tr>
+</tbody>
+</table>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Grading scale</p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+<th class="head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>4.0(90%)</p></td>
+<td><p>3.5(80%)</p></td>
+<td><p>3.0(70%)</p></td>
+<td><p>2.5(60%)</p></td>
+<td><p>2.0(50%)</p></td>
+<td><p>1.5(40%)</p></td>
+<td><p>1.0(30%)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./admin"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../intro.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">PHY 321: Classical Mechanics 1, Michigan State University, Spring 2024</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="textbooks.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Textbooks</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lecture">Lecture</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#professor">Professor</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#graduate-teaching-assistant">Graduate Teaching Assistant</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#undergraduate-learning-assistants">Undergraduate Learning Assistants</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#getting-help">Getting help</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#grading-and-dates">Grading and dates</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Danny Caballero, Morten Hjorth-Jensen
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
