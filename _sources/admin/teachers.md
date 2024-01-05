@@ -40,6 +40,12 @@
 - **Office hours:** You are encouraged to attend office hours to get help with homework, projects, or any other questions you have about the course. You can also [schedule a meeting](https://cal.com/dannycaballero/15min) with Danny.
 - **Slack:** We will use Slack for all course communication. You can use Slack to ask questions about homework, projects, or any other course-related questions. [Join our Slack workspace](https://join.slack.com/t/phy321msu-sp24/shared_invite/zt-2a1dtsspu-ARet8OqiS8PL6023g5SxlQ) and introduce yourself in the `#introductions` channel.
 
+## Extra credit opportunities
+
+- Starting with Homework 3, there will be extra credit opportunities on each homework that are worth up to 5 additional points on the assignment. These involve attending research seminars and preparing a short write-up about the seminar. You can find the list of seminars on the [Physics and Astronomy Colloquia page](https://pa.msu.edu/events/colloquia/). More details about the extra credit opportunities will be posted on the homework assignments.
+- For each midterm, there will be similar extra credit opportunities. These will be announced closer to the midterm dates, and they will be worth up to 10 additional points on the midterm.
+- There will also be an extra credit assignment at the end of the semester that will be worth up to 10% on the final grade.
+
 ## Grading and dates
 
 | Activity                                                    | Percentage of total score |
