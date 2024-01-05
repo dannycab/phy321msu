@@ -13,7 +13,7 @@ We will assign readings from the following textbooks. You do not need to buy the
 
 - MLB: [Mary L. Boas, Mathematical Methods in the Physical Sciences (Wiley 2005)](https://www.wiley.com/en-us/Mathematical+Methods+in+the+Physical+Sciences%2C+3rd+Edition-p-9780471198260)
 
-### Lectures: 
+### Lectures:
 
 - Posted lecture notes are adapted from https://mhjensen.github.io/Physics321/doc/web/course.html. They are not meant to be a replacement for textbook readings and deeper research. These notes will be updated on a weekly basis to include pre-class lecture videos that might be useful.
 - Handwritten lecture notes from class will be posted after each lecture. These notes will summarize the main sticking points and processes from each lecture. They will supplement the posted lecture notes and textbook readings.
