@@ -6,11 +6,11 @@ All assignments are turned in using D2L as a PDF and/or Jupyter notebook.
 
 ## Week 1
 
-| Week | Day    | Topic                                                               | Readings to prepare     | Important events                  |
-| ---- | ------ | ------------------------------------------------------------------- | ----------------------- | --------------------------------- |
-| CW1  | 08 Jan | Introduction to the course; reminders about vectors; software setup | Boas Ch 3.4             | Homework 1 Assigned (Due 19 Jan ) |
-|      | 10 Jan | Newton's 1st and 2nd Law; Motion in 1 dimension                     | JRT 1.1-1.4; AMS Ch 1-4 |                                   |
-|      | 12 Jan | Discussion of Homework 1                                            |                         |                                   |
+| Week | Day    | Topic                                                               | Readings to prepare     | Important events                                            |
+| ---- | ------ | ------------------------------------------------------------------- | ----------------------- | ----------------------------------------------------------- |
+| CW1  | 08 Jan | Introduction to the course; reminders about vectors; software setup | MLB Ch 3.4             | [Homework 1 Assigned (Due 19 Jan )](../homeworks/hw1.ipynb) |
+|      | 10 Jan | Newton's 1st and 2nd Law; Motion in 1 dimension                     | JRT 1.1-1.4; AMS Ch 1-4 |                                                             |
+|      | 12 Jan | Discussion of Homework 1                                            |                         |                                                             |
 
 ## Week 2
 

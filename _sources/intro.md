@@ -26,13 +26,14 @@ To solve many of these problems, we have through different projects and weekly e
 We have also, in connection with for example the work-energy theorem studied methods for evaluating integrals. These are
 - Numerical integration using the Trapezoidal, midpoint and Simpson's rule.
 
-You should also have acquired skills in structuring a numerical project, as well as having developed a critical understanding of the pros and cons of the methods and an understanding of their limits and what can go wrong.  Computing means solving scientific problems using computers. It covers numerical as well as symbolic computing. Computing is also about developing an understanding of the scientific process by enhancing algorithmic thinking when solving problems.  Computing competence has
-always been a central part of the science and engineering education.
-In particular, some of the competences that are important in the development of your own understanding of
-computations, we would like to emphasize
+
+### Use of Computing in the Course
+You should also have acquired skills in structuring a numerical project, as well as having developed a critical understanding of the pros and cons of the methods and an understanding of their limits and what can go wrong.  Computing means solving scientific problems using computers. It covers numerical as well as symbolic computing. Computing is also about developing an understanding of the scientific process by enhancing algorithmic thinking when solving problems.  Computing competence has always been a central part of the science and engineering education.
+
+In particular, some of the competences that are important in the development of your own understanding of computations, we would like to emphasize:
 - derivation, verification, and implementation of algorithms
 - understanding what can go wrong with algorithms
 - overview of important, known algorithms for solving mechanics problems (To a extent large differential equations and integration)
 - understanding how algorithms are used to solve mathematical problems
-- Making science (your results) reproducible
+- making science (your results) reproducible
 - algorithmic thinking for gaining deeper insights about scientific problems

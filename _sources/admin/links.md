@@ -1,5 +1,26 @@
 ##  Course Material and Links
 
+Materials will appear in reverse chronological order, with the most recent appearing at the top.
+
+### Week 1, January 8-12, 2024
+
+#### Web Resources
+  - [Course syllabus](../admin/teachers.md)
+  - [What is Classical Physics?](../lecture-notes/chapter1.ipynb)
+  - [Classical Mechanics, Mathematics, and Numerical background](../lecture-notes/chapter2.ipynb)
+
+#### Class Materials
+- Readings:
+  - JRT 1.1-1.4; AMS Ch 1-4; MLB 3.4
+- Handwritten Notes:
+  - Forthcoming
+- Lecture Videos:
+  - Forthcoming
+
+#### Assignments
+
+- [Homework 1](../homeworks/hw1.ipynb) (due January 19, 2024)
+
 <!-- ###  Week 2, January 9-13, 2023
 
 - Monday 1/9: Introduction to the course and reminder  on vectors, space, time and motion, JRT chapters 1.2 and 1.3 and lecture notes (https://mhjensen.github.io/Physics321/doc/pub/week2/html/week2.html). Python programming reminder, elements from CMSE 201 and how they are used in this course. Installing software (anaconda). See slides at https://mhjensen.github.io/Physics321/doc/pub/week2/html/week2.html). 

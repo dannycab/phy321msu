@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>1. Classical Mechanics &#8212; Classical Mechanics</title>
+    <title>1. What is Classical Physics? &#8212; Classical Mechanics</title>
   
   
   
@@ -65,7 +65,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="2. Classical Mechanics, Mathematics and Numerical background" href="chapter2.html" />
-    <link rel="prev" title="What is Classical Physics?" href="chapter1-overview.html" />
+    <link rel="prev" title="Course Material and Links" href="../admin/links.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -168,14 +168,14 @@ const thebe_selector_output = ".output, .cell_output"
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">About the course</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../admin/teachers.html">Teachers and Grading</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin/resources.html">Additional Resources</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../admin/textbooks.html">Textbooks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../admin/schedule-cal.html">Calendar</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../admin/links.html">Course Material and Links</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Introductory Material</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="chapter1-overview.html">What is Classical Physics?</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">1. Classical Mechanics</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">1. What is Classical Physics?</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chapter2.html">2. Classical Mechanics, Mathematics and Numerical background</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chapter3.html">3. Simple Motion problems and Reminder on Newton’s Laws</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chapter4.html">4. Work, Energy, Momentum and Conservation laws</a></li>
@@ -186,6 +186,10 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="chapter6.html">6. Two-body problems, from the Gravitational Force to Two-body Scattering</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chapter7.html">7. Non-inertial Frames, Translation and Rotating Coordinate Systems</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chapter8.html">8. Variational Calculus and Lagrangian Formalism</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Weekly assignments, midterms and final projects with solutions</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw1.html">Homework 1 (Due 19 Jan)</a></li>
 </ul>
 
     </div>
@@ -353,7 +357,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>1. Classical Mechanics</h1>
+    <h1>1. What is Classical Physics?</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -363,7 +367,17 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#classical-mechanics">Classical Mechanics</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#purpose-of-classical-mechanics">Purpose of Classical Mechanics</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#classical-mechanics-in-this-class">Classical Mechanics in this Class</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#applications-of-classical-mechanics">Applications of Classical Mechanics</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fluid-mechanics-at-lanl">Fluid Mechanics at LANL</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#biologically-inspired-robotics">Biologically-Inspired Robotics</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#are-you-interested-in-research">Are you interested in research?</a></li>
 </ul>
             </nav>
         </div>
@@ -375,10 +389,36 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <div class="tex2jax_ignore mathjax_ignore section" id="classical-mechanics">
-<h1>1. Classical Mechanics<a class="headerlink" href="#classical-mechanics" title="Permalink to this heading">#</a></h1>
-<div class="section" id="introduction">
-<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">#</a></h2>
+  <div class="tex2jax_ignore mathjax_ignore section" id="what-is-classical-physics">
+<h1>1. What is Classical Physics?<a class="headerlink" href="#what-is-classical-physics" title="Permalink to this heading">#</a></h1>
+<p>There are many different fields of physics; they are both distinct and overlapping. If we were to take a view of what kinds of physical systems that we wanted to investigate with different physics, we could organize them based on the system’s size and speed of change:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/Classical_physics">Classical physics</a>: large, slow systems</p></li>
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/Statistical_mechanics">Statistical</a> and <a class="reference external" href="https://en.wikipedia.org/wiki/Quantum_mechanics">quantum mechanics</a>: small, slow systems</p></li>
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/General_relativity">General relativity</a>: large, fast systems</p></li>
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/Quantum_field_theory">Quantum field theory</a>: small, fast systems</p></li>
+</ul>
+<p>These are not hard and fast rules, and, in fact, we often bring physics from different spaces together to solve complex problems. For examples, the fields of <a class="reference external" href="https://en.wikipedia.org/wiki/Climate_model">climate modeling</a>, <a class="reference external" href="https://en.wikipedia.org/wiki/Nonlinear_system">non-linear dynamics</a>, <a class="reference external" href="https://en.wikipedia.org/wiki/Astrophysics">astrophysics</a>, and <a class="reference external" href="https://en.wikipedia.org/wiki/Particle_physics">Particle physics</a> use physical models and tools for each of the fields above. How we organize physics for ourselves depends on how we decide we want to look at it. However the first view where we organize the field by size and speed is a useful way to think about the different kinds of physics that we have developed thus far.</p>
+<p><img alt="Physics by size and speed" src="../_images/640px-Modernphysicsfields.svg.png" /></p>
+<p>Image Source: <a class="reference external" href="https://commons.wikimedia.org/wiki/File:Modernphysicsfields.svg">Wikipedia</a></p>
+<p>Classical Physics is the physics that we developed before discovering relativity and quantum mechanics. It typically covers both mechanical systems and electromagnetic systems. It is also <a class="reference external" href="https://en.wikipedia.org/wiki/History_of_physics">the physics that we read about historically</a>, which has its <a class="reference external" href="https://en.wikipedia.org/wiki/History_of_astronomy">roots in ancient astronomy</a> and has existed across many different cultures.</p>
+<p>You might have heard of the development physics in the <a class="reference external" href="https://en.wikipedia.org/wiki/Science_in_classical_antiquity#Hellenistic_age">Hellensitic age</a> where the Greeks used mathematics to study astronomical objects, or how <a class="reference external" href="https://en.wikipedia.org/wiki/Newton's_laws_of_motion">Newton’s Laws of motion</a> came to be. These are both examples of classical physics. But there are many more including <a class="reference external" href="https://www.science.org/doi/10.1126/science.200.4343.766">astronomical analyses in Sub-Saharan Africa</a> in 300 BCE, massive <a class="reference external" href="https://en.wikipedia.org/wiki/Science_and_technology_of_the_Song_dynasty">scientific expansion in China</a> during the Song dynasty, and studies that pushed the fields of optics, mechanics, and astronomy in the <a class="reference external" href="https://en.wikipedia.org/wiki/Islamic_Golden_Age">Islamic Golden Age</a>. While we do not present it, much to the detriment of our own field, <a class="reference external" href="https://en.wikipedia.org/wiki/Indigenous_astronomy">physics and astronomy were a large part of indigenous cultures</a> across the world including in what become the United States.</p>
+<p><strong>Wherever there were people, there was Classical Physics.</strong></p>
+<div class="section" id="classical-mechanics">
+<h2>Classical Mechanics<a class="headerlink" href="#classical-mechanics" title="Permalink to this heading">#</a></h2>
+<p>When we define <a class="reference external" href="https://en.wikipedia.org/wiki/Classical_mechanics">Classical Mechanics</a>, at least for the purposes of this class, we will define it as the physics of large, slow, mechanical systems.</p>
+<ul class="simple">
+<li><p><strong>Large</strong> - Systems are typically big enough that we can see them with our eyes, or maybe with some reasonably simple optical tools. We’re typically excluding the microscopic world of atoms and molecules.</p></li>
+<li><p><strong>Slow</strong> – Systems for which we can observe their motion and track them “visually”; that is they move much slower than the speed of light. This is a critical assumption that we make in classical mechanics.</p></li>
+<li><p><strong>Mechanical</strong> – Systems where the fields of electromagnetism don’t come into play. We relax this is bit when we think of a particle in a classical E&amp;M field, but the focus is still on modeling the particle and not the field.</p></li>
+</ul>
+<div class="section" id="purpose-of-classical-mechanics">
+<h3>Purpose of Classical Mechanics<a class="headerlink" href="#purpose-of-classical-mechanics" title="Permalink to this heading">#</a></h3>
+<p>Classical mechanics is a physics that allows us to model these large, slow, mechanical systems. It helps us develop an understanding of that process of making models and how we can use models to make predictions. It is a physics that results typically in <a class="reference external" href="https://en.wikipedia.org/wiki/Determinism">deterministic models</a>, where we can predict the future of a system given its current state. This is because the language of Classical Mechanics is <a class="reference external" href="https://en.wikipedia.org/wiki/Differential_equation">differential equations</a>, which describe how a system changes as a result of influences from it’s environment. It is often a <a class="reference external" href="https://en.wikipedia.org/wiki/Vector_(mathematics_and_physics)">vector-based physics</a> as it describes the pushes and pulls on a system in a given direction. However, we can often develop scalar models or systems of scalar equations that describe the motion of a system.</p>
+<p>Ultimately, Classical Mechanics is a physics that allows us to interrogate the behavior of these systems and describe their <a class="reference external" href="https://en.wikipedia.org/wiki/Dynamics_(mechanics)">dynamics</a>. Through Classical Mechanics, we can describe the present state of a system, how it will evolve, and then use that information to make predictions about the future. What we learn from Classical Mechanics can become a set of powerful tools that we can use in many contexts.</p>
+</div>
+<div class="section" id="classical-mechanics-in-this-class">
+<h3>Classical Mechanics in this Class<a class="headerlink" href="#classical-mechanics-in-this-class" title="Permalink to this heading">#</a></h3>
 <p>Classical mechanics is a topic which has been taught intensively over
 several centuries. It is, with its many variants and ways of
 presenting the educational material, normally the first <strong>real</strong> physics
@@ -391,37 +431,37 @@ and deeper understanding about physical systems.</p>
 well-tested (from both a physics point of view and a pedagogical
 standpoint) exercises and problems which can be solved
 analytically. However, many of these problems represent idealized and
-less realistic situations.  The large majority of these problems are
+less realistic situations. The large majority of these problems are
 solved by paper and pencil and are traditionally aimed
-at what we normally refer to as continuous models from which we may find an analytical solution.  As a consequence,
+at what we normally refer to as continuous models from which we may find an analytical solution. As a consequence,
 when teaching mechanics, it implies that we can seldomly venture beyond an idealized case
 in order to develop our understandings and insights about the
 underlying forces and laws of motion.</p>
 <p>On the other hand, numerical algorithms call for approximate discrete
 models and much of the development of methods for continuous models
 are nowadays being replaced by methods for discrete models in science and
-industry, simply because <strong>much larger classes of problems can be addressed</strong> with discrete models, often  by simpler and more
+industry, simply because <strong>much larger classes of problems can be addressed</strong> with discrete models, often by simpler and more
 generic methodologies.</p>
 <p>As we will see below, when properly scaling the equations at hand,
 discrete models open up for more advanced abstractions and the possibility to
-study  real life systems, with the added bonus that we can explore and
+study real life systems, with the added bonus that we can explore and
 deepen our basic understanding of various physical systems</p>
 <p>Analytical solutions are as important as before. In addition, such
 solutions provide us with invaluable benchmarks and tests for our
 discrete models. Such benchmarks, as we will see below, allow us
-to discuss possible sources of errors and their behaviors.  And
+to discuss possible sources of errors and their behaviors. And
 finally, since most of our models are based on various algorithms from
 numerical mathematics, we have a unique oppotunity to gain a deeper
 understanding of the mathematical approaches we are using.</p>
 <p>With computing and data science as important elements in essentially
-all aspects of a modern society, we could  then try to define Computing as
+all aspects of a modern society, we could then try to define Computing as
 <strong>solving scientific problems using all possible tools, including
 symbolic computing, computers and numerical algorithms, and analytical
 paper and pencil solutions</strong>.
 Computing provides us with the tools to develope our own understanding of the scientific method by enhancing algorithmic thinking.</p>
 <p>The way we will teach this course reflects
 this definition of computing. The course contains both classical paper
-and pencil exercises as well as  computational projects and exercises. The
+and pencil exercises as well as computational projects and exercises. The
 hope is that this will allow you to explore the physics of systems
 governed by the degrees of freedom of classical mechanics at a deeper
 level, and that these insights about the scientific method will help
@@ -447,6 +487,33 @@ generic view on problems and methods is particularly important for
 understanding how to apply available, generic software to solve a
 particular problem.</p>
 <p><em>However, verification of algorithms and understanding their limitations requires much of the classical knowledge about continuous models.</em></p>
+</div>
+</div>
+<div class="section" id="applications-of-classical-mechanics">
+<h2>Applications of Classical Mechanics<a class="headerlink" href="#applications-of-classical-mechanics" title="Permalink to this heading">#</a></h2>
+<p>While it might appear there’s little room for using Classical Mechanics in research or in industry now, it turns out there’s tons of room. It is still the physics that enables us to understand fluid systems, nonlinear mechanical effects, continuum mechanics, animal locomotion, and many other systems. Below are several examples of how Classical Mechanics is used in research and industry. We encourage to watch these videos as they demonstrate how the physics we will learn in class is really central to continuing to understand nature.</p>
+<div class="section" id="fluid-mechanics-at-lanl">
+<h3>Fluid Mechanics at LANL<a class="headerlink" href="#fluid-mechanics-at-lanl" title="Permalink to this heading">#</a></h3>
+<p><a class="reference external" href="https://www.lanl.gov/org/ddste/aldsc/theoretical/fluid-dynamics-solid-mechanics/index.php">Researchers at Los Alamos National Lab</a> do a variety of research using fluid mechanics models.</p>
+<p><a class="reference external" href="https://inv.tux.pizza/watch?v=myuD81326_o"><img alt="Fluid Mechanics at LANL" src="https://markdown-videos-api.jorgenkh.no/youtube/myuD81326_o?width=720&amp;height=405" /></a></p>
+<ul class="simple">
+<li><p>Non-Commercial Link: <a class="reference external" href="https://inv.tux.pizza/watch?v=myuD81326_o">https://inv.tux.pizza/watch?v=myuD81326_o</a></p></li>
+<li><p>Commercial Link: <a class="reference external" href="https://youtube.com/watch?v=myuD81326_o">https://youtube.com/watch?v=myuD81326_o</a></p></li>
+</ul>
+</div>
+<div class="section" id="biologically-inspired-robotics">
+<h3>Biologically-Inspired Robotics<a class="headerlink" href="#biologically-inspired-robotics" title="Permalink to this heading">#</a></h3>
+<p>A <a class="reference external" href="https://crablab.gatech.edu/">research lab at Georgia Tech</a> uses Classical Mechanics to model the motion of animals and then uses that information to build robots that can move like animals.</p>
+<p><a class="reference external" href="https://inv.tux.pizza/watch?v=Qme07fA3Fj4"><img alt="Biologically-Inspired Robotics" src="https://markdown-videos-api.jorgenkh.no/youtube/Qme07fA3Fj4?width=720&amp;height=405" /></a></p>
+<ul class="simple">
+<li><p>Non-Commercial Link: <a class="reference external" href="https://inv.tux.pizza/watch?v=Qme07fA3Fj4">https://inv.tux.pizza/watch?v=Qme07fA3Fj4</a></p></li>
+<li><p>Commercial Link: <a class="reference external" href="https://youtube.com/watch?v=Qme07fA3Fj4">https://youtube.com/watch?v=Qme07fA3Fj4</a></p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="are-you-interested-in-research">
+<h2>Are you interested in research?<a class="headerlink" href="#are-you-interested-in-research" title="Permalink to this heading">#</a></h2>
+<p>If the idea of doing research appeals to you, MSU is a great place for undergraduate students to do research. We have many <a class="reference external" href="https://pa.msu.edu/research/index.aspx">research groups</a> across the Department of Physics and Astronomy. Getting started with a group early in your undergraduate career is a great way to figure out what about physics you like, and what you think you want to do with physics in the future. If you are a 3rd year student, consider applying for <a class="reference external" href="https://www.nsf.gov/crssprgm/reu/list_result.jsp?unitid=69">research experience for undergraduates (REU) programs</a> at other universities. These are great opportunities to get a taste of what research is like at other universities and to meet other students who are interested in physics. They also pay!</p>
 </div>
 </div>
 
@@ -481,12 +548,12 @@ particular problem.</p>
                   <!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="chapter1-overview.html"
+       href="../admin/links.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">What is Classical Physics?</p>
+        <p class="prev-next-title">Course Material and Links</p>
       </div>
     </a>
     <a class="right-next"
@@ -513,7 +580,17 @@ particular problem.</p>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#classical-mechanics">Classical Mechanics</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#purpose-of-classical-mechanics">Purpose of Classical Mechanics</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#classical-mechanics-in-this-class">Classical Mechanics in this Class</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#applications-of-classical-mechanics">Applications of Classical Mechanics</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fluid-mechanics-at-lanl">Fluid Mechanics at LANL</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#biologically-inspired-robotics">Biologically-Inspired Robotics</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#are-you-interested-in-research">Are you interested in research?</a></li>
 </ul>
   </nav></div>
 

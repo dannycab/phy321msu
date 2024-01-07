@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Homework 1 &#8212; Classical Mechanics</title>
+    <title>Homework 1 (Due 19 Jan) &#8212; Classical Mechanics</title>
   
   
   
@@ -66,6 +66,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'homeworks/hw1';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="8. Variational Calculus and Lagrangian Formalism" href="../lecture-notes/chapter8.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -168,14 +169,14 @@ const thebe_selector_output = ".output, .cell_output"
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">About the course</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../admin/teachers.html">Teachers and Grading</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin/resources.html">Additional Resources</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../admin/textbooks.html">Textbooks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../admin/schedule-cal.html">Calendar</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../admin/links.html">Course Material and Links</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Introductory Material</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter1-overview.html">What is Classical Physics?</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter1.html">1. Classical Mechanics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter1.html">1. What is Classical Physics?</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter2.html">2. Classical Mechanics, Mathematics and Numerical background</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter3.html">3. Simple Motion problems and Reminder on Newton’s Laws</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter4.html">4. Work, Energy, Momentum and Conservation laws</a></li>
@@ -186,6 +187,10 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter6.html">6. Two-body problems, from the Gravitational Force to Two-body Scattering</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter7.html">7. Non-inertial Frames, Translation and Rotating Coordinate Systems</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter8.html">8. Variational Calculus and Lagrangian Formalism</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Weekly assignments, midterms and final projects with solutions</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Homework 1 (Due 19 Jan)</a></li>
 </ul>
 
     </div>
@@ -353,7 +358,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Homework 1</h1>
+    <h1>Homework 1 (Due 19 Jan)</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -363,9 +368,8 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#practicalities-about-homeworks-and-projects">Practicalities about  homeworks and projects</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-1-12-pt-math-reminder-properties-of-exponential-function">Exercise 1 (12 pt), math reminder, properties of exponential function</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-2-12-pt-vector-algebra">Exercise 2 (12 pt), Vector algebra</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-1-15-pt-math-reminder-properties-of-exponential-function">Exercise 1 (15 pt), math reminder, properties of exponential function</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-2-15-pt-vector-algebra">Exercise 2 (15 pt), Vector algebra</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-3-10-pt-more-vector-mathematics">Exercise 3 (10 pt), More vector mathematics</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-4-10-pt-algebra-of-cross-products">Exercise 4 (10 pt), Algebra of cross products</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-5-10-pt-area-of-triangle-and-law-of-sines">Exercise 5 (10 pt), Area of triangle and law of sines</a></li>
@@ -383,38 +387,42 @@ document.write(`
                   
   <!-- HTML file automatically generated from DocOnce source (https://github.com/doconce/doconce/)
 doconce format html hw1.do.txt --no_mako -->
-<!-- dom:TITLE: PHY321: Classical Mechanics 1 --><div class="tex2jax_ignore mathjax_ignore section" id="homework-1">
-<h1>Homework 1<a class="headerlink" href="#homework-1" title="Permalink to this heading">#</a></h1>
+<!-- dom:TITLE: PHY321: Classical Mechanics 1 --><div class="tex2jax_ignore mathjax_ignore section" id="homework-1-due-19-jan">
+<h1>Homework 1 (Due 19 Jan)<a class="headerlink" href="#homework-1-due-19-jan" title="Permalink to this heading">#</a></h1>
 <p><strong>Due January 19 (midnight)</strong></p>
-<p>Date: <strong>Jan 8, 2024</strong></p>
-<div class="section" id="practicalities-about-homeworks-and-projects">
-<h2>Practicalities about  homeworks and projects<a class="headerlink" href="#practicalities-about-homeworks-and-projects" title="Permalink to this heading">#</a></h2>
+<p>Date: <strong>Jan 8, 2024</strong>
+Total points: <strong>100</strong>.</p>
+<p><strong>Practicalities about  homeworks and projects</strong></p>
 <ol class="arabic simple">
 <li><p>You can work in groups (optimal groups are often 2-3 people) or by yourself. If you work as a group you can hand in one answer only if you wish. <strong>Remember to write your name(s)</strong>!</p></li>
-<li><p>Homeworks (final version) are available approximately ten days before the  deadline.</p></li>
-<li><p>How do I(we)  hand in?  You can hand in the paper and pencil exercises as a scanned document. For this homework this applies to exercises 1-5. You should upload the scan to D2L. Alternatively, you can hand in everyhting (if you are ok with typing mathematical formulae using say Latex) as a jupyter notebook at D2L. The numerical exercise (exercise 6 here) should always be handed in as a jupyter notebook by the deadline at D2L.</p></li>
+<li><p>Homeworks are available approximately ten days before the deadline. You should anticipate this work.</p></li>
+<li><p>How do I(we)  hand in?  You can hand in the paper and pencil exercises as a <strong>single scanned PDF document</strong>. For this homework this applies to exercises 1-5. You should upload the scan to D2L. Alternatively, you can hand in everything (if you are ok with typing mathematical formulae using say <span class="math notranslate nohighlight">\(\LaTeX\)</span>) as a jupyter notebook at D2L. The <strong>numerical exercise should always be handed in as a jupyter notebook</strong> by the deadline at D2L (exercise 6 here).</p></li>
 </ol>
-</div>
-<div class="section" id="exercise-1-12-pt-math-reminder-properties-of-exponential-function">
-<h2>Exercise 1 (12 pt), math reminder, properties of exponential function<a class="headerlink" href="#exercise-1-12-pt-math-reminder-properties-of-exponential-function" title="Permalink to this heading">#</a></h2>
-<p>The first exercise is meant to remind ourselves about properties of
-the exponential function and imaginary numbers. This is highly
-relevant later in this course when we start analyzing oscillatory
-motion and some wave mechanics. As physicists we should thus feel comfortable with expressions that
-include <span class="math notranslate nohighlight">\(\exp{(\imath\omega t)}\)</span>. Here <span class="math notranslate nohighlight">\(t\)</span> could be interpreted as time and <span class="math notranslate nohighlight">\(\omega\)</span> as a frequency and <span class="math notranslate nohighlight">\(\imath\)</span> is the imaginary unit number.</p>
+<div class="section" id="exercise-1-15-pt-math-reminder-properties-of-exponential-function">
+<h2>Exercise 1 (15 pt), math reminder, properties of exponential function<a class="headerlink" href="#exercise-1-15-pt-math-reminder-properties-of-exponential-function" title="Permalink to this heading">#</a></h2>
+<p>The first exercise is meant to remind ourselves about properties of the exponential function and imaginary numbers. This is highly relevant later in this course when we start analyzing oscillatory motion and some wave mechanics. The discovery relating <a class="reference external" href="https://en.wikipedia.org/wiki/Euler's_formula">trigonometric functions and exponential functions</a> is attributed to <a class="reference external" href="https://en.wikipedia.org/wiki/Leonhard_Euler">Leonhard Euler (1707-1783)</a>. There’s two great books on the development formula, its importance to math and science, its applications:</p>
 <ul class="simple">
-<li><p>1a (3pt): Perform Taylor expansions in powers of <span class="math notranslate nohighlight">\(\omega t\)</span> of the functions <span class="math notranslate nohighlight">\(\cos{(\omega t)}\)</span> and <span class="math notranslate nohighlight">\(\sin{(\omega t)}\)</span>.</p></li>
-<li><p>1b (3pt): Perform a Taylor expansion of <span class="math notranslate nohighlight">\(\exp{(i\omega t)}\)</span>.</p></li>
-<li><p>1c (3pt): Using parts (a) and (b) here, show that <span class="math notranslate nohighlight">\(\exp{(\imath\omega t)}=\cos{(\omega t)}+\imath\sin{(\omega t)}\)</span>.</p></li>
-<li><p>1d (3pt): Show that <span class="math notranslate nohighlight">\(\ln{(−1)} = \imath\pi\)</span>.</p></li>
+<li><p><a class="reference external" href="https://bookshop.org/p/books/dr-euler-s-fabulous-formula-cures-many-mathematical-ills-paul-j-nahin/9008263">Paul J. Nahin, <em>Dr. Euler’s Fabulous Formula: Cures Many Mathematical Ills</em>, Princeton University Press (2006)</a></p></li>
+<li><p><a class="reference external" href="https://bookshop.org/p/books/a-most-elegant-equation-euler-s-formula-and-the-beauty-of-mathematics-david-stipp/11457298">David Stipp, <em>A Most Elegant Equation: Euler’s Formula and the Beauty of Mathematics</em>, Basic Books (2017)</a></p></li>
+</ul>
+<p>As physicists we should feel comfortable with expressions that include <span class="math notranslate nohighlight">\(\exp{(\imath \omega t)}\)</span> and <span class="math notranslate nohighlight">\(\exp{(\imath 2\pi f t)}\)</span>. Here <span class="math notranslate nohighlight">\(t\)</span> could be interpreted as time and <span class="math notranslate nohighlight">\(\omega\)</span>/<span class="math notranslate nohighlight">\(f\)</span> as a frequency. We know that <span class="math notranslate nohighlight">\(\imath = \sqrt(-1)\)</span> is the imaginary unit number.</p>
+<ul class="simple">
+<li><p>1a (4pt): Perform Taylor expansions in powers of <span class="math notranslate nohighlight">\(2\pi f t\)</span> of the functions <span class="math notranslate nohighlight">\(\cos{(2\pi f t)}\)</span> and <span class="math notranslate nohighlight">\(\sin{(2\pi f t)}\)</span>. Show your work in producing those Taylor expansions.</p></li>
+<li><p>1b (3pt): Perform a Taylor expansion of <span class="math notranslate nohighlight">\(\exp{(i2\pi f t)}\)</span>. Show your work in producing those Taylor expansions.</p></li>
+<li><p>1c (2pt): Using parts (a) and (b) here, show that <span class="math notranslate nohighlight">\(\exp{(\imath2\pi f t)}=\cos{(2\pi f t)}+\imath\sin{(2\pi f t)}\)</span>.</p></li>
+<li><p>1d (2pt): Show that <span class="math notranslate nohighlight">\(\ln{(−1)} = \imath\pi\)</span>.</p></li>
+<li><p>1e (4pt): Develop another novel mathematical relationship based on the properties you’ve discovered in this problem. Explain how your result connects to any of the results parts a-d.</p></li>
 </ul>
 </div>
-<div class="section" id="exercise-2-12-pt-vector-algebra">
-<h2>Exercise 2 (12 pt), Vector algebra<a class="headerlink" href="#exercise-2-12-pt-vector-algebra" title="Permalink to this heading">#</a></h2>
+<div class="section" id="exercise-2-15-pt-vector-algebra">
+<h2>Exercise 2 (15 pt), Vector algebra<a class="headerlink" href="#exercise-2-15-pt-vector-algebra" title="Permalink to this heading">#</a></h2>
+<p>As we have quickly realized, forces and motion in three dimensions are best described using vectors. Here we perform some elementary vector algebra that we wil need to have as tacit knowledge for the rest of the course. These operations are not typically taken with specific numbers, but rather with vectors in general. When we need to, we use the notation <span class="math notranslate nohighlight">\(\boldsymbol{a}=(a_x,a_y,a_z)\)</span> for vectors in three dimensions. To get us started the first two questions below include numerical values, but the third question expects you to use the general notation.</p>
 <ul class="simple">
-<li><p>2a (6pt) One of the many uses of the scalar product is to find the angle between two given vectors. Find the angle between the vectors <span class="math notranslate nohighlight">\(\boldsymbol{a}=(1,2,4)\)</span> and <span class="math notranslate nohighlight">\(\boldsymbol{b}=(4,2,1)\)</span> by evaluating their scalar product.</p></li>
-<li><p>2b (6pt) For a cube with sides of length 1, one vertex at the origin, and sides along the <span class="math notranslate nohighlight">\(x\)</span>, <span class="math notranslate nohighlight">\(y\)</span>, and <span class="math notranslate nohighlight">\(z\)</span> axes, the vector of the body diagonal from the origin can be written <span class="math notranslate nohighlight">\(\boldsymbol{a}=(1, 1, 1)\)</span> and the vector of the face diagonal in the <span class="math notranslate nohighlight">\(xy\)</span> plane from the origin is <span class="math notranslate nohighlight">\(\boldsymbol{b}=(1,1,0)\)</span>. Find first the lengths of the body diagonal and the face diagonal. Use then part (2a) to find the angle between the body diagonal and the face diagonal.</p></li>
+<li><p>2a (4pt) One of the many uses of the scalar product is to find the angle between two given vectors. Find the angle between the vectors <span class="math notranslate nohighlight">\(\boldsymbol{a}=(1,3,9)\)</span> and <span class="math notranslate nohighlight">\(\boldsymbol{b}=(9,3,1)\)</span> by evaluating their scalar product.</p></li>
+<li><p>2b (5pt) For a cube with sides of length 1, one vertex at the origin, and sides along the <span class="math notranslate nohighlight">\(x\)</span>, <span class="math notranslate nohighlight">\(y\)</span>, and <span class="math notranslate nohighlight">\(z\)</span> axes, the vector of the body diagonal from the origin can be written <span class="math notranslate nohighlight">\(\boldsymbol{a}=(1, 1, 1)\)</span> and the vector of the face diagonal in the <span class="math notranslate nohighlight">\(xy\)</span> plane from the origin is <span class="math notranslate nohighlight">\(\boldsymbol{b}=(1,1,0)\)</span>. Find first the lengths of the body diagonal and the face diagonal. Use then part (2a) to find the angle between the body diagonal and the face diagonal. <strong>Make sure to include a sketch of your cube, the relevant vectors, and the angle you find.</strong></p></li>
+<li><p>2c (6pt) Consider two arbitrary vectors in three dimensions, <span class="math notranslate nohighlight">\(\boldsymbol{a}=(a_x, a_y, a_z)\)</span> and <span class="math notranslate nohighlight">\(\boldsymbol{b}=(b_x, b_y, b_z)\)</span>. Prove that the cross product <span class="math notranslate nohighlight">\(\boldsymbol{a} \times \boldsymbol{b}\)</span> results in a vector that is perpendicular to both <span class="math notranslate nohighlight">\(\boldsymbol{a}\)</span> and <span class="math notranslate nohighlight">\(\boldsymbol{b}\)</span>. Use the properties of the dot product and the cross product to support your proof. Include a diagram illustrating the vectors and their cross product.</p></li>
 </ul>
+<p>The notation that we use for vectors in fairly recently developed in mathematical history. The development of calculus, geometry, and physics in the 17th century required new notations. The <a class="reference external" href="https://en.wikipedia.org/wiki/History_of_mathematical_notation#High_division_operators_and_functions">history of mathematical notation</a> is very interesting in that these tools and symbols that we developed helped us to solve new and more advanced problems.</p>
 </div>
 <div class="section" id="exercise-3-10-pt-more-vector-mathematics">
 <h2>Exercise 3 (10 pt), More vector mathematics<a class="headerlink" href="#exercise-3-10-pt-more-vector-mathematics" title="Permalink to this heading">#</a></h2>
@@ -432,7 +440,13 @@ include <span class="math notranslate nohighlight">\(\exp{(\imath\omega t)}\)</s
 </div>
 <div class="section" id="exercise-5-10-pt-area-of-triangle-and-law-of-sines">
 <h2>Exercise 5 (10 pt), Area of triangle and law of sines<a class="headerlink" href="#exercise-5-10-pt-area-of-triangle-and-law-of-sines" title="Permalink to this heading">#</a></h2>
-<p>Exercise 1.18 in the textbook of Taylor, Classical Mechanics. Part (1.18a) gives 5pt and part (1.18b) gives also 5pt.</p>
+<p>The three vectors <span class="math notranslate nohighlight">\(\boldsymbol{a}\)</span>, <span class="math notranslate nohighlight">\(\boldsymbol{b}\)</span>, and <span class="math notranslate nohighlight">\(\boldsymbol{c}\)</span> are the three sides of a triangle <em>ABC</em>. The angles <span class="math notranslate nohighlight">\(\alpha\)</span>, <span class="math notranslate nohighlight">\(\beta\)</span>, and <span class="math notranslate nohighlight">\(\gamma\)</span> are the angles opposite the sides <span class="math notranslate nohighlight">\(\boldsymbol{a}\)</span>, <span class="math notranslate nohighlight">\(\boldsymbol{b}\)</span>, and <span class="math notranslate nohighlight">\(\boldsymbol{c}\)</span>, respectively. as shown below.</p>
+<p><img alt="triangle" src="../_images/1.15-triangle.png" /></p>
+<p><em>(Figure: A triangle with sides <span class="math notranslate nohighlight">\(\boldsymbol{a}\)</span>, <span class="math notranslate nohighlight">\(\boldsymbol{b}\)</span>, and <span class="math notranslate nohighlight">\(\boldsymbol{c}\)</span> and angles <span class="math notranslate nohighlight">\(\alpha\)</span>, <span class="math notranslate nohighlight">\(\beta\)</span>, and <span class="math notranslate nohighlight">\(\gamma\)</span>; reproduced from JRT.)</em></p>
+<ul class="simple">
+<li><p>5a (5pt) Show that the area of the triangle can be given by any of these three equivalent expressions: <span class="math notranslate nohighlight">\(A=\frac{1}{2}|\boldsymbol{a}\times\boldsymbol{b}|=\frac{1}{2}|\boldsymbol{b}\times\boldsymbol{c}|=\frac{1}{2}|\boldsymbol{c}\times\boldsymbol{a}|\)</span>.</p></li>
+<li><p>5b (5pt) Use the equality of the three expressions for the area of the triangle to show that <span class="math notranslate nohighlight">\(\frac{\sin{\alpha}}{a}=\frac{\sin{\beta}}{b}=\frac{\sin{\gamma}}{c}\)</span>, which is known as the <a class="reference external" href="https://en.wikipedia.org/wiki/Law_of_sines">Law of Sines</a>.</p></li>
+</ul>
 </div>
 <div class="section" id="exercise-6-40pt-numerical-elements-getting-started-with-some-simple-data">
 <h2>Exercise 6 (40pt), Numerical elements, getting started with some simple data<a class="headerlink" href="#exercise-6-40pt-numerical-elements-getting-started-with-some-simple-data" title="Permalink to this heading">#</a></h2>
@@ -448,7 +462,7 @@ emphasis on</p>
 <li><p>define and operate on vectors and matrices in Python</p></li>
 <li><p>create plots for motion in 1D space</p></li>
 </ul>
-<p>For more information, see the <a class="reference external" href="https://mhjensen.github.io/Physics321/doc/pub/week2/html/week2.html">introductory slides</a>.
+<p>For more information, see <a class="reference external" href="https://dannycaballero.info/phy321msu/lecture-notes/chapter2.html#python-practicalities-software-and-needed-installations">this link to Python support materials</a>.
 Here are some of the basic packages we will be using this week</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -635,6 +649,15 @@ meters. You may find it useful to include results at time <span class="math notr
                 <footer class="prev-next-footer">
                   <!-- Previous / next buttons -->
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="../lecture-notes/chapter8.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">8. Variational Calculus and Lagrangian Formalism</p>
+      </div>
+    </a>
 </div>
                 </footer>
               
@@ -650,9 +673,8 @@ meters. You may find it useful to include results at time <span class="math notr
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#practicalities-about-homeworks-and-projects">Practicalities about  homeworks and projects</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-1-12-pt-math-reminder-properties-of-exponential-function">Exercise 1 (12 pt), math reminder, properties of exponential function</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-2-12-pt-vector-algebra">Exercise 2 (12 pt), Vector algebra</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-1-15-pt-math-reminder-properties-of-exponential-function">Exercise 1 (15 pt), math reminder, properties of exponential function</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-2-15-pt-vector-algebra">Exercise 2 (15 pt), Vector algebra</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-3-10-pt-more-vector-mathematics">Exercise 3 (10 pt), More vector mathematics</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-4-10-pt-algebra-of-cross-products">Exercise 4 (10 pt), Algebra of cross products</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-5-10-pt-area-of-triangle-and-law-of-sines">Exercise 5 (10 pt), Area of triangle and law of sines</a></li>
