@@ -13,9 +13,10 @@ Materials will appear in reverse chronological order, with the most recent appea
 - Readings:
   - JRT 1.1-1.4; AMS Ch 1-4; MLB 3.4
 - Handwritten Notes:
-  - Forthcoming
+  - CW1: [Introduction to Classical Mechanics](../docs/handwritten-notes/CW1.pdf)
 - Lecture Videos:
-  - Forthcoming
+  - 8 Jan 2024
+  - 10 Jan 2024
 
 #### Assignments
 
