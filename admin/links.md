@@ -2,6 +2,10 @@
 
 Materials will appear in reverse chronological order, with the most recent appearing at the top.
 
+### Zoom Playlist
+
+All recorded classes are added to [this playlist](https://mediaspace.msu.edu/playlist/dedicated/1_s1d57uud/.)
+
 ### Week 1, January 8-12, 2024
 
 #### Web Resources
@@ -16,7 +20,7 @@ Materials will appear in reverse chronological order, with the most recent appea
   - CW1: [Introduction to Classical Mechanics](../docs/handwritten-notes/CW1.pdf)
 - Lecture Videos:
   - 8 Jan 2024 (tech did not comply)
-  - 10 Jan 2024
+  - 10 Jan 2024 [(Zoom Recording)](https://mediaspace.msu.edu/media/1_2m56jymf)
 
 #### Assignments
 
