@@ -44,3 +44,4 @@ parts:
   numbered: false
   chapters:
   - file: homeworks/hw1.ipynb
+  #- file: homeworks/hw2.ipynb
