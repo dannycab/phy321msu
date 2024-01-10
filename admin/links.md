@@ -15,7 +15,7 @@ Materials will appear in reverse chronological order, with the most recent appea
 - Handwritten Notes:
   - CW1: [Introduction to Classical Mechanics](../docs/handwritten-notes/CW1.pdf)
 - Lecture Videos:
-  - 8 Jan 2024
+  - 8 Jan 2024 (tech did not comply)
   - 10 Jan 2024
 
 #### Assignments
