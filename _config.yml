@@ -5,6 +5,8 @@ title: Classical Mechanics
 author: Danny Caballero, Morten Hjorth-Jensen
 logo: images/logos/spartan-helmet.png
 
+exclude_patterns: ["solutionhw*"]
+
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
 execute:
