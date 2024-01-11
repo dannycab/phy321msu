@@ -45,3 +45,10 @@ parts:
   chapters:
   - file: homeworks/hw1.ipynb
   #- file: homeworks/hw2.ipynb
+- caption: Honors Projects
+  numbered: false
+  chapters:
+  - file: honors-projects/ChaoticPendulum
+  #- file: honors-projects/MolecularDynamics
+  - file: honors-projects/NeuralNetworks
+  - file: honors-projects/SolarSystem
