@@ -1,0 +1,1047 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Building a Molecular Dynamics code &#8212; Classical Mechanics</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
+  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'honors-projects/MolecularDynamics';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/spartan-helmet.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../_static/spartan-helmet.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    PHY 321: Classical Mechanics 1, Michigan State University, Spring 2024
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">About the course</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../admin/teachers.html">Teachers and Grading</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin/resources.html">Additional Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin/textbooks.html">Textbooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin/schedule-cal.html">Calendar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin/links.html">Course Material and Links</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Introductory Material</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter1.html">1. What is Classical Physics?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter2.html">2. Classical Mechanics, Mathematics and Numerical background</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter3.html">3. Simple Motion problems and Reminder on Newton’s Laws</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter4.html">4. Work, Energy, Momentum and Conservation laws</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Advanced Topics</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter5.html">5. Harmonic Oscillations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter6.html">6. Two-body problems, from the Gravitational Force to Two-body Scattering</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter7.html">7. Non-inertial Frames, Translation and Rotating Coordinate Systems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter8.html">8. Variational Calculus and Lagrangian Formalism</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">In-class handouts, activities, and other materials</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../in-class/cw1-python-test.html">CW1 - Python Test</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Weekly assignments, midterms and final projects with solutions</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw1.html">Homework 1 (Due 19 Jan)</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Honors Projects</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="ChaoticPendulum.html">Chaos in the driven nonlinear pendulum</a></li>
+<li class="toctree-l1"><a class="reference internal" href="NeuralNetworks.html">From Ordinary Differential equations to Neural Networks, solving mechanics problems in a new way</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SolarSystem.html">Building a model for the solar system using ordinary differential equations</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/honors-projects/MolecularDynamics.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Building a Molecular Dynamics code</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Building a Molecular Dynamics code</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#understanding-the-potential-subsec-understanding">Understanding the potential {#subsec:understanding}</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#forces-and-equations-of-motion">Forces and equations of motion</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#units">Units</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#two-atom-simulations-underline">[Two-atom simulations]{.underline}</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#implementation">Implementation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#motion-subsec-2motion">Motion {#subsec:2motion}</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#energy">Energy</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualisation">Visualisation</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#large-systems-underline">[Large systems]{.underline}</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Implementation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#verification">Verification</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#initialisation">Initialisation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#many-atoms-open-boundary">Many atoms, open boundary</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#boundary-conditions">Boundary conditions</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#science-underline">[Science]{.underline}</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#temperature">Temperature</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#measurement">Measurement:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Units:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#initialisation-of-velocities">Initialisation of velocities:</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#velocity-autocorrelation-and-diffusion-coefficient">*Velocity autocorrelation and diffusion coefficient</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#radial-distribution-function">Radial distribution function</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#appendix-appendix-unnumbered">Appendix {#appendix .unnumbered}</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-file-format-app-xyz">Data file format {#app:xyz}</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualisation-app-ovito">Visualisation {#app:ovito}</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#velocity-verlet-app-verlet">Velocity-Verlet {#app:verlet}</a></li>
+</ul>
+</li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <div class="tex2jax_ignore mathjax_ignore section" id="building-a-molecular-dynamics-code">
+<h1>Building a Molecular Dynamics code<a class="headerlink" href="#building-a-molecular-dynamics-code" title="Permalink to this heading">#</a></h1>
+<p>In this project, you will learn the basics of a simulation technique
+called molecular dynamics (MD).</p>
+<p>Molecular dynamics is based on the assumption that even atoms move
+according to the laws of Newton, given the correct model for
+interactions. The goal of this project is to model a gas of argon atoms,
+where the atoms interact according to the famous Lennard-Jones
+potential,
+$<span class="math notranslate nohighlight">\(U(r) = 4\varepsilon\qty(\qty(\frac{\sigma}{r})^{12} - \qty(\frac{\sigma}{r})^6), \label{eq:lj}\)</span><span class="math notranslate nohighlight">\(
+where \)</span>r<span class="math notranslate nohighlight">\( is the distance between two atoms,
+\)</span>r=\norm{\vec{r}_i-\vec{r}_j}<span class="math notranslate nohighlight">\(. \)</span>\sigma<span class="math notranslate nohighlight">\( and \)</span>\varepsilon$ are
+parameters which determine which chemical compound is modelled. This
+potential is a good approximation for noble gases.</p>
+<div class="section" id="understanding-the-potential-subsec-understanding">
+<h2>Understanding the potential {#subsec:understanding}<a class="headerlink" href="#understanding-the-potential-subsec-understanding" title="Permalink to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Plot the potential as a function of <span class="math notranslate nohighlight">\(r\)</span> with <span class="math notranslate nohighlight">\(\varepsilon=1\)</span> and
+<span class="math notranslate nohighlight">\(\sigma=1\)</span>, for example for <span class="math notranslate nohighlight">\(r \in \qty[0.9,3]\)</span>.</p></li>
+<li><p>The behaviour of <span class="math notranslate nohighlight">\(U(r)\)</span> is vastly different for <span class="math notranslate nohighlight">\(r &lt; \sigma\)</span> and
+<span class="math notranslate nohighlight">\(r &gt; \sigma\)</span>. Which term in the
+potential, <span class="xref myst">[eq:lj]</span>{reference-type=”ref+page”
+reference=”eq:lj”}, dominates in each case and what is the effect?</p></li>
+<li><p>Find and characterise the equilibrium points of the potential.</p></li>
+<li><p>Describe qualitatively the motion of two atoms which start at rest
+separated by a distance of <span class="math notranslate nohighlight">\(\num{1.5}\sigma\)</span>. What if they start
+with a separation of <span class="math notranslate nohighlight">\(\num{0.95}\sigma\)</span>? (Hint: use the graph of the
+potential.)</p></li>
+<li><p>Describe the shape of the potential close to the stable equilibrium
+point. Can you think of other force(s) with the same behaviour?</p></li>
+</ol>
+</div>
+<div class="section" id="forces-and-equations-of-motion">
+<h2>Forces and equations of motion<a class="headerlink" href="#forces-and-equations-of-motion" title="Permalink to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Find the force on atom <span class="math notranslate nohighlight">\(i\)</span> at position <span class="math notranslate nohighlight">\(\vec{r}_i\)</span> from atom <span class="math notranslate nohighlight">\(j\)</span> at
+position <span class="math notranslate nohighlight">\(\vec{r}_j\)</span>.</p></li>
+<li><p>Show that the equation of motion for atom <span class="math notranslate nohighlight">\(i\)</span> is
+$<span class="math notranslate nohighlight">\(\dv[2]{\vec{r}_i}{t} = \frac{24\varepsilon}{m} \sum_{j \neq i} \qty(2\qty(\frac{\sigma}{\norm{\vec{r}_i-\vec{r}_j}})^{12}-\qty(\frac{\sigma}{\norm{\vec{r}_i-\vec{r}_j}})^6)\frac{\vec{r}_i-\vec{r}_j}{\norm{\vec{r}_i-\vec{r}_j}^2}.\)</span>$</p></li>
+</ol>
+</div>
+<div class="section" id="units">
+<h2>Units<a class="headerlink" href="#units" title="Permalink to this heading">#</a></h2>
+<p>Numerical accuracy is reduced when computing with values which are many
+orders of magnitude apart. This is often an issue in physics, and
+molecular dynamics is no exception. For example, the mass of argon is
+smaller than <span class="math notranslate nohighlight">\(10^{-25}\ \si{\kg}\)</span>, while typical length scales are on
+the order of nanometres, <span class="math notranslate nohighlight">\(10^{-9}\ \si{\m}\)</span>.</p>
+<p>The remedy is to change units so that most quantities are close to <span class="math notranslate nohighlight">\(1\)</span>.
+From <span class="xref myst">[eq:lj]</span>{reference-type=”ref+page” reference=”eq:lj”} it
+is clear that <span class="math notranslate nohighlight">\(\sigma\)</span> and <span class="math notranslate nohighlight">\(\varepsilon\)</span> are the typical scales for
+length and energy.</p>
+<ol class="arabic simple">
+<li><p>Introduce the scaled coordinates <span class="math notranslate nohighlight">\(\vec{r}_i\,'=\vec{r}_i/\sigma\)</span> and
+show that the equation of motion can be rewritten in terms of these
+coordinates as
+$<span class="math notranslate nohighlight">\(\dv[2]{\vec{r}_i\,'}{{t'}} = 24 \sum_{j \neq i} \qty(2\norm{\vec{r}_i\,'-\vec{r}_j\,'}^{-12}-\norm{\vec{r}_i\,'-\vec{r}_j\,'}^{-6})\frac{\vec{r}_i\,'-\vec{r}_j\,'}{\norm{\vec{r}_i\,'-\vec{r}_j\,'}^2},\label{eq:undim}\)</span><span class="math notranslate nohighlight">\(
+where \)</span>t’=t/\tau<span class="math notranslate nohighlight">\( for a suitable choice of \)</span>\tau$.</p></li>
+<li><p>What is the characteristic time scale <span class="math notranslate nohighlight">\(\tau\)</span>, and what is its value
+for argon, which has <span class="math notranslate nohighlight">\(\sigma=\SI{3.405}{\angstrom}\)</span>
+(<span class="math notranslate nohighlight">\(\SI{1}{\angstrom}=\SI{1e-10}{\m}\)</span>),
+<span class="math notranslate nohighlight">\(m = \SI{39.95}{\atomicmassunit}\)</span>
+(<span class="math notranslate nohighlight">\(\SI{1}{\atomicmassunit} = \SI{1.66e-27}{\kg}\)</span>) and
+<span class="math notranslate nohighlight">\(\varepsilon=\SI{1.0318e-2}{\eV}\)</span>
+(<span class="math notranslate nohighlight">\(\SI{1}{\eV}=\SI{1.602e-19}{\J}\)</span>)?</p></li>
+</ol>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="two-atom-simulations-underline">
+<h1>[Two-atom simulations]{.underline}<a class="headerlink" href="#two-atom-simulations-underline" title="Permalink to this heading">#</a></h1>
+<div class="section" id="implementation">
+<h2>Implementation<a class="headerlink" href="#implementation" title="Permalink to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Write a function which
+solves <span class="xref myst">[eq:undim]</span>{reference-type=”ref+page”
+reference=”eq:undim”} for two atoms and finds the positions and
+velocities of the atoms as a function of time. Implement three
+different integration methods: Euler, Euler-Cromer and
+Velocity-Verlet
+(see <span class="xref myst">[app:verlet]</span>{reference-type=”ref+page”
+reference=”app:verlet”} for a description of the latter).</p></li>
+</ol>
+</div>
+<div class="section" id="motion-subsec-2motion">
+<h2>Motion {#subsec:2motion}<a class="headerlink" href="#motion-subsec-2motion" title="Permalink to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Simulate the motion of two atoms which start at rest separated by a
+distance of <span class="math notranslate nohighlight">\(\num{1.5}\sigma\)</span>. Use <span class="math notranslate nohighlight">\(\Delta t'=\num{0.01}\)</span>, simulate
+until <span class="math notranslate nohighlight">\(t'=5\)</span> and integrate with the Euler-Cromer method.</p></li>
+<li><p>Plot the distance between the atoms as a function of time.</p></li>
+<li><p>How does the motion fit with your expectations
+from <span class="xref myst">[subsec:understanding]</span>{reference-type=”ref+page”
+reference=”subsec:understanding”}?</p></li>
+<li><p>Repeat the previous tasks, but now with an initial separation of
+<span class="math notranslate nohighlight">\(\num{0.95}\sigma\)</span>. Explain your results.</p></li>
+</ol>
+</div>
+<div class="section" id="energy">
+<h2>Energy<a class="headerlink" href="#energy" title="Permalink to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Plot the kinetic, potential and total energy as a function of time
+for the two cases in the previous section.</p></li>
+<li><p>Theoretically speaking, should the total energy be conserved? Why,
+or why not? What about momentum?</p></li>
+<li><p>Does your program fulfil this? If not, what could be the cause?</p></li>
+<li><p>Simulate the same system as
+in <span class="xref myst">[subsec:2motion]</span>{reference-type=”ref+page”
+reference=”subsec:2motion”} with the Euler, Euler-Cromer and
+Velocity Verlet algorithms, and compare graphs of the total energy
+as a function of time.</p></li>
+<li><p>Find the largest time step that keeps stable motion and conserves
+energy for all three methods (small fluctuations in energy are
+allowed as long as they are periodic and don’t increase/decrease
+with time). Discuss your results.</p></li>
+<li><p>Link your experimentation to a brief discussion of the pros and cons
+of the three methods, both physically and computationally.</p></li>
+</ol>
+<p>The Velocity-Verlet method should be used for the rest of the project.</p>
+</div>
+<div class="section" id="visualisation">
+<h2>Visualisation<a class="headerlink" href="#visualisation" title="Permalink to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Extend your implementation such that it writes to an <code class="docutils literal notranslate"><span class="pre">xyz</span></code>-file at
+each timestep (see <span class="xref myst">[app:xyz]</span>{reference-type=”ref+page”
+reference=”app:xyz”}).</p></li>
+<li><p>Visualise the results of your simulations using Ovito
+(see <span class="xref myst">[app:ovito]</span>{reference-type=”ref+page”
+reference=”app:ovito”}).</p></li>
+</ol>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="large-systems-underline">
+<h1>[Large systems]{.underline}<a class="headerlink" href="#large-systems-underline" title="Permalink to this heading">#</a></h1>
+<div class="section" id="id1">
+<h2>Implementation<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Implement a solver
+of <span class="xref myst">[eq:undim]</span>{reference-type=”ref+page”
+reference=”eq:undim”} for <span class="math notranslate nohighlight">\(N\)</span> atoms, given initial positions and
+velocities.</p></li>
+<li><p>Use Newton’s third law to reduce the number of force calculations.</p></li>
+</ol>
+<p>As you will experience, it takes a lot longer to simulate <span class="math notranslate nohighlight">\(N\)</span> atoms than
+two — in fact the time increases as <span class="math notranslate nohighlight">\(N^2\)</span>. One very simple way to
+reduce simulation times is to look at the expression (or plot) of <span class="math notranslate nohighlight">\(U(r)\)</span>
+and see that it goes very rapidly towards zero as <span class="math notranslate nohighlight">\(r\)</span> increases. This
+means that atoms far apart interact weakly, and the forces between them
+can be ignored.</p>
+<ol class="arabic simple">
+<li><p>Extend your implementation such that atoms more than <span class="math notranslate nohighlight">\(3\sigma\)</span> apart
+do not interact.</p></li>
+</ol>
+<p>This effectively sets the potential energy <span class="math notranslate nohighlight">\(U(r)\)</span> to be <span class="math notranslate nohighlight">\(0\)</span> for
+<span class="math notranslate nohighlight">\(r\geq 3\sigma\)</span>. Since <span class="math notranslate nohighlight">\(U(3\sigma)\)</span> is not exactly equal to <span class="math notranslate nohighlight">\(0\)</span>, the
+potential energy becomes discontinuous, which breaks energy
+conservation. The solution is to use a shifted potential, i.e. adding a
+constant such that <span class="math notranslate nohighlight">\(U(3\sigma)\)</span> is exactly zero.</p>
+<ol class="arabic simple">
+<li><p>Plot the shifted potential and the corresponding force to verify
+your implementation of the cut-off.</p></li>
+<li><p>Does the shift of the potential described above impact the force
+calculations?</p></li>
+</ol>
+</div>
+<div class="section" id="verification">
+<h2>Verification<a class="headerlink" href="#verification" title="Permalink to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Reproduce your results for the 2-atom model from the previous
+section to verify your implementation.</p></li>
+<li><p>Simulate the motion of four atoms starting at rest from the
+positions <span class="math notranslate nohighlight">\([1,0,0]\)</span>, <span class="math notranslate nohighlight">\([0,1,0]\)</span>, <span class="math notranslate nohighlight">\([-1,0,0]\)</span> and <span class="math notranslate nohighlight">\([0,-1,0]\)</span>.</p></li>
+<li><p>Visualise the results in Ovito, describe and explain the motion.</p></li>
+<li><p>Plot the potential, kinetic and total energy as a function of time,
+and comment on the energy conservation.</p></li>
+<li><p>Repeat the above exercises with a small perturbation in the initial
+positions, such that the first atom starts at <span class="math notranslate nohighlight">\([1,0.1,0]\)</span>.</p></li>
+</ol>
+</div>
+<div class="section" id="initialisation">
+<h2>Initialisation<a class="headerlink" href="#initialisation" title="Permalink to this heading">#</a></h2>
+<p>While we are interested in simulating liquid argon, which will not be in
+an ordered structure, the simplest choice of initial positions is a
+regular crystal structure. Our choice of structure is the face-centred
+cubic lattice, as this is the crystal structure of solid argon.</p>
+<p>The smallest repeating unit is called a unit cell, and each unit cell
+contains four atoms. When creating a structure of <span class="math notranslate nohighlight">\(n\times n\times n\)</span>
+unit cells, the atoms should be placed at</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{bmatrix}
+            i &amp; j &amp; k \\
+            i &amp; 0.5+j &amp; 0.5+k \\
+            0.5+i &amp; j &amp; 0.5+k \\
+            0.5+i &amp; 0.5+j &amp; k
+        \end{bmatrix}\cdot d\qquad \qquad\qquad\end{split}\]</div>
+<p><img alt="image" src="honors-projects/fig.pdf" /></p>
+<p>where <span class="math notranslate nohighlight">\(i\)</span>, <span class="math notranslate nohighlight">\(j\)</span> and <span class="math notranslate nohighlight">\(k\)</span> run from <span class="math notranslate nohighlight">\(0\)</span> to <span class="math notranslate nohighlight">\(n-1\)</span> and <span class="math notranslate nohighlight">\(d\)</span> is the size of one
+unit cell. One atom is placed at the bottom left corner of the unit
+cell, and the other three at the centre of the three connected walls
+(see drawing above). This structure will contain <span class="math notranslate nohighlight">\(4n^3\)</span> atoms in total,
+and the total size of the simulation box will be <span class="math notranslate nohighlight">\((nd)^3=L^3\)</span>.</p>
+<ol class="arabic simple">
+<li><p>Write a function which takes <span class="math notranslate nohighlight">\(n\)</span> and <span class="math notranslate nohighlight">\(L\)</span> (or <span class="math notranslate nohighlight">\(n\)</span> and <span class="math notranslate nohighlight">\(d\)</span>) as
+arguments and returns the positions of <span class="math notranslate nohighlight">\(4n^3\)</span> atoms on a
+face-centred cubic lattice.</p></li>
+<li><p>Verify your implementation by calling your function for <span class="math notranslate nohighlight">\(n=3\)</span> and
+<span class="math notranslate nohighlight">\(L = 20\)</span>, writing the resulting positions to an <code class="docutils literal notranslate"><span class="pre">xyz</span></code>-file and
+looking at the result in Ovito. Your system should contain
+<span class="math notranslate nohighlight">\(4\cdot3^3=108\)</span> atoms.</p></li>
+<li><p>Show that the unit cell size corresponding to the density
+<span class="math notranslate nohighlight">\(\rho=\SI{1.374}{\gram\per\cm\tothe3}\)</span> is <span class="math notranslate nohighlight">\(d=1.7 \sigma\)</span>. This will
+be used in the remaining parts of the project.</p></li>
+</ol>
+</div>
+<div class="section" id="many-atoms-open-boundary">
+<h2>Many atoms, open boundary<a class="headerlink" href="#many-atoms-open-boundary" title="Permalink to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Simulate <span class="math notranslate nohighlight">\(256\)</span> atoms starting from rest, and visualise the results.</p></li>
+<li><p>Plot the potential, kinetic and total energy as a function of time.
+What is the main difference from the energy graphs for two and four
+atoms?</p></li>
+</ol>
+</div>
+<div class="section" id="boundary-conditions">
+<h2>Boundary conditions<a class="headerlink" href="#boundary-conditions" title="Permalink to this heading">#</a></h2>
+<p>In the previous exercise, you probably observed that the atoms
+immediately spread out into a large volume, possibly with some
+continuing to infinity (and beyond). This is not the behaviour we want.
+Ideally, we would like to model the bulk behaviour of argon by the use
+of periodic boundary conditions, although it can be finicky to implement
+this efficiently.</p>
+<p>To simulate bulk behaviour properly, the atoms should not only be
+constrained to move inside the box, but should also feel forces from
+neighboring images (copies) of the same box. i.e. if an atom is close to
+the right-facing wall, it should feel forces from atoms close to the
+left-facing wall, as if the two walls were connected. To efficiently
+calculate the shortest distance between atoms <span class="math notranslate nohighlight">\(i\)</span> and <span class="math notranslate nohighlight">\(j\)</span> across
+boundaries, the following trick should be used</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span> dx = x[j] - x[i]
+ dx = dx - round(dx/L)*L
+</pre></div>
+</div>
+<p>where <code class="docutils literal notranslate"><span class="pre">L</span></code> is the size of the box, and <code class="docutils literal notranslate"><span class="pre">round</span></code> rounds up to the nearest
+integer (see if you understand the logic behind this calculation!).
+Periodic boundary conditions also mean that if an atom leave the box on
+one side, it should reenter on the opppsite side.</p>
+<p>If the implementation of periodic bounadry conditions proves to be too
+diffucult or too slow, it’s also possible to use <em>reflective</em> boundary
+conditions. Although it doesn’t simulate bulk behaviour the same way, it
+still gives reasonable results for the quantities that we want to
+measure for larger systems.</p>
+<p>Having reflective boundary conditions simply means that atoms that would
+otherwise leave the box, are turned around. Calculations of forces
+across boundaries are also neglected in this case.</p>
+<ol class="arabic simple">
+<li><p>Implement either periodic or reflective boundary conditions (or
+both) in your program.</p></li>
+<li><p>Run a simulation with <span class="math notranslate nohighlight">\(108\)</span> atoms and verify visually that your
+implementation works. Give the atoms some initial velocities of your
+own choosing.</p></li>
+</ol>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="science-underline">
+<h1>[Science]{.underline}<a class="headerlink" href="#science-underline" title="Permalink to this heading">#</a></h1>
+<p>By now, you will have a well-functioning (if not terribly efficient) set
+of tools for running molecular dynamics simulations. It is now time to
+apply these tools to real problems. The goal is to reproduce some of the
+main results from the first article containing proper molecular dynamics
+(“landmark simulations” according to Wikipedia<a class="footnote-reference brackets" href="#id4" id="id2">1</a>), written by A.
+Rahman in 1964.</p>
+<p>Section 4b) and 4c) (marked with *) describes two different ways to
+find the <em>diffusion constant</em>. You may choose to do only one of the
+them, but we’ll encourage you to do both. It’s worth noting however that
+a functioning implementation of periodic boundary conditions is needed
+for section 4c.</p>
+<div class="section" id="temperature">
+<h2>Temperature<a class="headerlink" href="#temperature" title="Permalink to this heading">#</a></h2>
+<div class="section" id="measurement">
+<h3>Measurement:<a class="headerlink" href="#measurement" title="Permalink to this heading">#</a></h3>
+<p>Temperature is one of the most important concepts in thermodynamics, and
+you will learn much more about it in FYS2160. As you may have learnt
+already, temperature measures the vibrations of atoms. This is
+formalised through the equipartition theorem, which for a monoatomic gas
+such as argon states that $<span class="math notranslate nohighlight">\(\ev{K} = \tfrac{3}{2}k_\mathrm{B}T,\)</span><span class="math notranslate nohighlight">\( where
+\)</span>\ev{K}<span class="math notranslate nohighlight">\( is the average kinetic energy, \)</span>T<span class="math notranslate nohighlight">\( is the temperature and
+\)</span>k_\mathrm{B}<span class="math notranslate nohighlight">\( is Boltzmann's constant. In a molecular dynamics
+simulation, the temperature can be calculated by using the equipartition
+theorem &quot;backwards&quot;, i.e.
+\)</span><span class="math notranslate nohighlight">\(T = \frac{2\ev{K}}{3k_\mathrm{B}} = \frac{\ev{mv^2}}{3k_\mathrm{B}} = \frac{m}{3k_\mathrm{B}N}\sum_i v_i^2.\)</span>$
+The sum runs over all atoms.</p>
+</div>
+<div class="section" id="id3">
+<h3>Units:<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h3>
+<p>Note that since we are using reduced coordinates such as
+<span class="math notranslate nohighlight">\(\vec{r}\,'=\vec{r}/\sigma\)</span> and <span class="math notranslate nohighlight">\(t'=t/\tau\)</span>, a direct calculation from
+the equation above gives a reduced temperature <span class="math notranslate nohighlight">\(T'=T/T_0\)</span>, where
+<span class="math notranslate nohighlight">\(T_0 = \varepsilon/k_\mathrm{B}=\SI{119.7}{\kelvin}\)</span>. In reduced units,
+the temperature expression is simplified to
+$<span class="math notranslate nohighlight">\(T' = \frac{1}{3N}\sum_i v_i'^2.\)</span>$</p>
+<ol class="arabic simple">
+<li><p>Extend your implementation with the calculation of temperature.</p></li>
+</ol>
+</div>
+<div class="section" id="initialisation-of-velocities">
+<h3>Initialisation of velocities:<a class="headerlink" href="#initialisation-of-velocities" title="Permalink to this heading">#</a></h3>
+<p>Velocities in a gas are usually distributed according to a normal
+distribution, i.e. a Gaussian function, as you can see in figure 1
+of [&#64;Rahman_1964]. In order to initialise a system with a given
+temperature, each component of the velocity of each atom should be
+randomly chosen from a normal distribution with mean zero and standard
+deviation <span class="math notranslate nohighlight">\(\sqrt{kT/m}\)</span>. The following <code class="docutils literal notranslate"><span class="pre">numpy</span></code> command achieves this in
+reduced units:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>v0 = np.random.normal(0, sqrt(T), size=(N,3))
+</pre></div>
+</div>
+<ol class="arabic simple">
+<li><p>Run a simulation with <span class="math notranslate nohighlight">\(108\)</span> atoms and an initial temperature of
+<span class="math notranslate nohighlight">\(\SI{300}{\kelvin}\)</span>. Plot the temperature as a function of time.</p></li>
+<li><p>Find an initial temperature that makes the equilibrium temperature
+approximately equal to the <span class="math notranslate nohighlight">\(\SI{94.4}{\kelvin}\)</span> used
+in [&#64;Rahman_1964]. Plot the temperature as a function of time.</p></li>
+</ol>
+</div>
+</div>
+<div class="section" id="velocity-autocorrelation-and-diffusion-coefficient">
+<h2>*Velocity autocorrelation and diffusion coefficient<a class="headerlink" href="#velocity-autocorrelation-and-diffusion-coefficient" title="Permalink to this heading">#</a></h2>
+<p>The velocity autocorrelation, denoted <span class="math notranslate nohighlight">\(A(t)\)</span>, is a measure of how
+similar the distribution of velocities is to the initial distribution.
+It is shown in figure 4 of [&#64;Rahman_1964]. <span class="math notranslate nohighlight">\(A(t=0)=1\)</span>, since the
+velocity distribution at <span class="math notranslate nohighlight">\(t=0\)</span> <em>is</em> the initial distribution, while
+<span class="math notranslate nohighlight">\(A(t)\)</span> decreases rapidly for <span class="math notranslate nohighlight">\(t&gt;0\)</span> as the atoms collide with each other
+and the velocities become less and less similar to the initial
+distribution.</p>
+<p>Mathematically, the velocity autocorrelation is defined as
+$<span class="math notranslate nohighlight">\(A(t) = \ev{\frac{\vec{v}(t)\cdot\vec{v}(0)}{\vec{v}(0)\cdot\vec{v}(0)}}
+         = \frac{1}{N} \sum_i \frac{\vec{v}_i(t)\cdot\vec{v}_i(0)}{\vec{v}_i(0)\cdot\vec{v}_i(0)},\label{eq:vacf}\)</span>$
+where the sum runs over all atoms.</p>
+<ol class="arabic simple">
+<li><p>Add the calculation of the velocity autocorrelation to your
+implementation.</p></li>
+<li><p>Run a simulation with e.g. <span class="math notranslate nohighlight">\(256\)</span> atoms (more if you can), and plot
+the velocity autocorrelation as a function of time. Compare with
+figure 4 of [&#64;Rahman_1964].</p></li>
+</ol>
+<p>One cause of deviations is that the initial configuration of positions
+and velocities (<span class="math notranslate nohighlight">\(\vec{v}_i(0)\)</span>
+in <span class="xref myst">[eq:vacf]</span>{reference-type=”ref+page”
+reference=”eq:vacf”}) should be an equilibrium distribution.</p>
+<ol class="arabic simple">
+<li><p>Use the final positions and velocities from the previous simulation
+as initial positions and velocities for a new simulation, and
+calculate and plot the new velocity autocorrelation.</p></li>
+<li><p>If your plot is very noisy (and your program does not run for too
+long), redo the two above simulations multiple times and average the
+velocity autocorrelation.</p></li>
+</ol>
+<p>The article also contains calculations of the diffusion coefficient <span class="math notranslate nohighlight">\(D\)</span>,
+as shown in figure 3. Here, it is calculated as the slope of the mean
+squared displacement as a function of time. This requires periodic
+boundary conditions, which we have chosen to omit from this project.
+Fortunately, the diffusion coefficient can also be obtained from the
+velocity autocorrelation, via the Green-Kubo relation,</p>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}D = \frac{1}{3}\int_0^\infty A(t)\dd{t}.$$ While it is not possible to
+integrate to $\infty$ in a molecular dynamics simulation, the rapid
+decrease of $\abs{A(t)}$ ensures that a finite integral will give a good
+approximation. Use your previous plot of $A(t)$ to determine a
+reasonable upper bound.\\1.  Estimate the diffusion coefficient from your previously calculated
+    velocity autocorrelation. Compare with the result
+    from [&#64;Rahman_1964].\\## \*Mean squared displacement and diffusion coefficient\\A more intuituve and direct way to calculate the diffusion in the system
+is via the *mean squared displacement*, defined as\\$$\langle r^2(t) \rangle = \langle (\vec{r}(t) - \vec{r}(t_0))^2 \rangle = \frac{1}{N} \sum_{n=1}^N (\vec{r}_n(t) - \vec{r}_n(t_0)))^2.
+ \label{eq:msd}\end{aligned}\end{align} \]</div>
+<p>This measure tells us the average distance the atoms has traveled after
+a time <span class="math notranslate nohighlight">\(t\)</span> as compared to their positions at a reference time, <span class="math notranslate nohighlight">\(t_0\)</span>.
+It’s important that <span class="math notranslate nohighlight">\(t_0\)</span> is set at a time where the system is already
+at equilibrium.</p>
+<p><strong>Important note: Periodic boundary conditions are required to calculate
+the msd, as we need to keep track of where, and how many times the atoms
+has crossed the boundaries.</strong> This means counters for all atoms in all
+three directions are needed.</p>
+<ol class="arabic simple">
+<li><p>Add the calculation of the mean squared displacement to your
+implementation.</p></li>
+</ol>
+<p>Through the theory of brownian motion, it can be shown that the mean
+squared displement is linked to the diffusion constant <span class="math notranslate nohighlight">\(D\)</span> by the
+following relation (in three dimensions):</p>
+<div class="math notranslate nohighlight">
+\[\langle r^2(t) \rangle = 6Dt \hspace{0.5 cm} \text{when } t \rightarrow \infty.\]</div>
+<p>As with the velocity autocorrelation, the relation to the diffusion
+constant implies a simulation of infinite time, but the rapid
+convergence of the msd ensures a good approximation also in this case.</p>
+<ol class="arabic simple">
+<li><p>Implement the calculation of the diffusion constant, and run a
+simulation for 864 atoms (fewer is also fine if the runtime is
+slow). How does your result compare to the one in [&#64;Rahman_1964]?</p></li>
+<li><p>(Optional) If your program isn’t too slow, calculate the diffusion
+constant as a function of temperature <span class="math notranslate nohighlight">\(D(T)\)</span> for equilibrium
+temperatures in the range of <span class="math notranslate nohighlight">\(T = [50 K, 120K]\)</span>. Plot the result and
+describe what you see. Google the element of argon, and see if you
+find something that’s supposed to happen in the given temperature
+range. Can you link this to your results?</p></li>
+</ol>
+</div>
+<div class="section" id="radial-distribution-function">
+<h2>Radial distribution function<a class="headerlink" href="#radial-distribution-function" title="Permalink to this heading">#</a></h2>
+<p>The radial distribution function <span class="math notranslate nohighlight">\(g(r)\)</span> shown in figure 2
+of [&#64;Rahman_1964] describes the distribution of distances between an
+atom and its neighbours. It is defined as the ratio of the density at a
+distance <span class="math notranslate nohighlight">\(r\)</span> from an atom and the average density, i.e.</p>
+<div class="math notranslate nohighlight">
+\[g(r) = \frac{V}{N} \frac{n(r)}{4\pi r^2\Delta r},\label{eq:rdf}\]</div>
+<p>where <span class="math notranslate nohighlight">\(V\)</span> is the total volume, <span class="math notranslate nohighlight">\(N\)</span> the total number of particles and
+<span class="math notranslate nohighlight">\(n(r)\)</span> the average number of particles at a distance between <span class="math notranslate nohighlight">\(r\)</span> and
+<span class="math notranslate nohighlight">\(r+\Delta r\)</span>. <span class="math notranslate nohighlight">\(g(r)\)</span> should be calculated for all atoms and then
+averaged. An example implementation is given below. The output should be
+averaged over many timesteps for a smooth result. Note that while <span class="math notranslate nohighlight">\(g(r)\)</span>
+should approach <span class="math notranslate nohighlight">\(1\)</span> when <span class="math notranslate nohighlight">\(r\to\infty\)</span> in bulk, the finite system size
+causes <span class="math notranslate nohighlight">\(g(r)\)</span> to decay for large <span class="math notranslate nohighlight">\(r\)</span>.</p>
+<ol class="arabic simple">
+<li><p>Run a simulation with as many atoms for as long as you can.
+Calculate the radial distribution function <span class="math notranslate nohighlight">\(g(r)\)</span>, plot the result
+and compare with figure 2 of [&#64;Rahman_1964].</p></li>
+</ol>
+<div class="highlight-{.python notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="appendix-appendix-unnumbered">
+<h1>Appendix {#appendix .unnumbered}<a class="headerlink" href="#appendix-appendix-unnumbered" title="Permalink to this heading">#</a></h1>
+<div class="section" id="data-file-format-app-xyz">
+<h2>Data file format {#app:xyz}<a class="headerlink" href="#data-file-format-app-xyz" title="Permalink to this heading">#</a></h2>
+<p>The <code class="docutils literal notranslate"><span class="pre">xyz</span></code>-format is a semi-standard format for storing data from
+molecular dynamics simulations. Each time step is stored in the
+following format, and there are no blank lines between timesteps:</p>
+<ul class="simple">
+<li><p>A line containing the number of atoms (an integer).</p></li>
+<li><p>An ignored line (this line is usually written as a header for the
+subsequent columns).</p></li>
+<li><p>One line for each atom, containing the atom type and the <span class="math notranslate nohighlight">\(x\)</span>-, <span class="math notranslate nohighlight">\(y\)</span>-
+and <span class="math notranslate nohighlight">\(z\)</span>-coordinates.</p></li>
+</ul>
+<p>For two atoms simulated over three timesteps, where <code class="docutils literal notranslate"><span class="pre">xij</span></code> represents the
+<span class="math notranslate nohighlight">\(x\)</span>-coordinate of atom <span class="math notranslate nohighlight">\(j\)</span> at timestep <span class="math notranslate nohighlight">\(i\)</span>, the file would look like
+this:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>[language=]
+    2
+    type  x   y   z     &lt;--- This line is a read as a comment, and therefore ignored.
+    Ar   x11 y11 z11
+    Ar   x12 y12 z12
+    2
+    type  x   y   z
+    Ar   x21 y21 z21
+    Ar   x22 y22 z22
+    2
+    type  x   y   z
+    Ar   x31 y31 z31
+    Ar   x32 y32 z32
+</pre></div>
+</div>
+</div>
+<div class="section" id="visualisation-app-ovito">
+<h2>Visualisation {#app:ovito}<a class="headerlink" href="#visualisation-app-ovito" title="Permalink to this heading">#</a></h2>
+<p>Files written in the <code class="docutils literal notranslate"><span class="pre">xyz</span></code>-format can be read using the Ovito
+visualisation tool. It can be downloaded and installed from
+<a class="reference external" href="https://ovito.org/index.php/download">https://ovito.org/index.php/download</a>.</p>
+<p>When the installation has finished, simply open Ovito, click “File”
+<span class="math notranslate nohighlight">\(\to\)</span> “Load File” and choose your <code class="docutils literal notranslate"><span class="pre">xyz</span></code>-file. Edit the column mapping in
+the dialogue if necessary. When the atoms have appeared on your screen,
+check the box named “File contains time series” on the right-hand side,
+press and watch your atoms move around!</p>
+</div>
+<div class="section" id="velocity-verlet-app-verlet">
+<h2>Velocity-Verlet {#app:verlet}<a class="headerlink" href="#velocity-verlet-app-verlet" title="Permalink to this heading">#</a></h2>
+<p>The Velocity-Verlet integration scheme is based on a second-order Taylor
+polynomial. With <span class="math notranslate nohighlight">\(\vec{r}_i(t)\)</span> denoting the position of atom <span class="math notranslate nohighlight">\(i\)</span> at a
+time <span class="math notranslate nohighlight">\(t\)</span>, the second-order Taylor expansions of position and velocity
+can be written as $<span class="math notranslate nohighlight">\(\begin{aligned}
+{2}
+    \vec{r}_i(t+\Delta t) &amp;\approx \vec{r}_i(t) + \vec{v}_i(t)\Delta t + \tfrac{1}{2}\vec{a}_i(t)\Delta t^2\\
+    \vec{v}_i(t+\Delta t) &amp;\approx \vec{v}_i(t) + \vec{a}_i(t)\Delta t + \tfrac{1}{2}\vec{a}_i'(t)\Delta t^2.
+\end{aligned}\)</span><span class="math notranslate nohighlight">\( There is no explicit expression for \)</span>\vec{a}’(t)<span class="math notranslate nohighlight">\(. It
+can, however, be approximated using our old friend
+\)</span><span class="math notranslate nohighlight">\(\vec{a}\,'(t)\approx\frac{\vec{a}(t+\Delta t)-\vec{a}(t)}{\Delta t}.\)</span><span class="math notranslate nohighlight">\(
+Since the acceleration is independent of the velocity, the newly updated
+position, \)</span>\vec{r}(t+\Delta t)<span class="math notranslate nohighlight">\(, is sufficient to calculate
+\)</span>\vec{a}(t+h)<span class="math notranslate nohighlight">\(. Inserting this into the expression for
+\)</span>\vec{v}(t+\Delta t)<span class="math notranslate nohighlight">\(, we get \)</span><span class="math notranslate nohighlight">\(\begin{aligned}
+{2}
+    \vec{v}_i(t+\Delta t) &amp;\approx \vec{v}_i(t) + \vec{a}_i(t)\Delta t + \tfrac{1}{2}\qty(\vec{a}_i(t+\Delta t)-\vec{a}_i(t))\Delta t\\
+    &amp;= \vec{v}_i(t) + \tfrac{1}{2}\qty(\vec{a}_i(t)+\vec{a}_i(t+\Delta t))\Delta t.
+\end{aligned}\)</span><span class="math notranslate nohighlight">\( The discretised algorithm then becomes \)</span><span class="math notranslate nohighlight">\(\begin{aligned}
+{2}
+    \vec{r}_{i,j+1} &amp;\approx \vec{r}_{i,j} + \vec{v}_{i,j}\Delta t + \tfrac{1}{2}\vec{a}_{i,j}\Delta t^2\\
+    \vec{v}_{i,j+1} &amp;\approx \vec{v}_{i,j} + \tfrac{1}{2}\qty(\vec{a}_{i,j} + \vec{a}_{i,j+1})\Delta t,
+\end{aligned}\)</span><span class="math notranslate nohighlight">\( where \)</span>\vec{r}_{i,j}<span class="math notranslate nohighlight">\( is the position of atom \)</span>i<span class="math notranslate nohighlight">\( at
+timestep \)</span>j$. In your implementation, you should avoid having to
+calculate the acceleration more than once per timestep.</p>
+<div class="highlight-thebibliography notranslate"><div class="highlight"><pre><span></span>99 Rahman, Aneesur, Physical Review **136**, A405 (1964).
+</pre></div>
+</div>
+<hr class="footnotes docutils" />
+<dl class="footnote brackets">
+<dt class="label" id="id4"><span class="brackets"><a class="fn-backref" href="#id2">1</a></span></dt>
+<dd><p><a class="reference external" href="https://en.wikipedia.org/wiki/Molecular_dynamics#History">https://en.wikipedia.org/wiki/Molecular_dynamics#History</a></p>
+</dd>
+</dl>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./honors-projects"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Building a Molecular Dynamics code</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#understanding-the-potential-subsec-understanding">Understanding the potential {#subsec:understanding}</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#forces-and-equations-of-motion">Forces and equations of motion</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#units">Units</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#two-atom-simulations-underline">[Two-atom simulations]{.underline}</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#implementation">Implementation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#motion-subsec-2motion">Motion {#subsec:2motion}</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#energy">Energy</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualisation">Visualisation</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#large-systems-underline">[Large systems]{.underline}</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Implementation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#verification">Verification</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#initialisation">Initialisation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#many-atoms-open-boundary">Many atoms, open boundary</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#boundary-conditions">Boundary conditions</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#science-underline">[Science]{.underline}</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#temperature">Temperature</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#measurement">Measurement:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Units:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#initialisation-of-velocities">Initialisation of velocities:</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#velocity-autocorrelation-and-diffusion-coefficient">*Velocity autocorrelation and diffusion coefficient</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#radial-distribution-function">Radial distribution function</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#appendix-appendix-unnumbered">Appendix {#appendix .unnumbered}</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-file-format-app-xyz">Data file format {#app:xyz}</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualisation-app-ovito">Visualisation {#app:ovito}</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#velocity-verlet-app-verlet">Velocity-Verlet {#app:verlet}</a></li>
+</ul>
+</li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Danny Caballero, Morten Hjorth-Jensen
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

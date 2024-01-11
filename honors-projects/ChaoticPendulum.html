@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CW 1 - Introduction to Classical Mechanics &#8212; Classical Mechanics</title>
+    <title>Chaos in the driven nonlinear pendulum &#8212; Classical Mechanics</title>
   
   
   
@@ -61,9 +61,13 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'slides/cw1';</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'honors-projects/ChaoticPendulum';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="From Ordinary Differential equations to Neural Networks, solving mechanics problems in a new way" href="NeuralNetworks.html" />
+    <link rel="prev" title="Homework 1 (Due 19 Jan)" href="../homeworks/hw1.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -194,10 +198,10 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../homeworks/hw1.html">Homework 1 (Due 19 Jan)</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Honors Projects</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../honors-projects/ChaoticPendulum.html">Chaos in the driven nonlinear pendulum</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../honors-projects/NeuralNetworks.html">From Ordinary Differential equations to Neural Networks, solving mechanics problems in a new way</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../honors-projects/SolarSystem.html">Building a model for the solar system using ordinary differential equations</a></li>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Chaos in the driven nonlinear pendulum</a></li>
+<li class="toctree-l1"><a class="reference internal" href="NeuralNetworks.html">From Ordinary Differential equations to Neural Networks, solving mechanics problems in a new way</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SolarSystem.html">Building a model for the solar system using ordinary differential equations</a></li>
 </ul>
 
     </div>
@@ -244,37 +248,6 @@ const thebe_selector_output = ".output, .cell_output"
 
 
 
-<div class="dropdown dropdown-launch-buttons">
-  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
-    <i class="fas fa-rocket"></i>
-  </button>
-  <ul class="dropdown-menu">
-      
-      
-      
-      <li><a href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/main?urlpath=tree/slides/cw1.ipynb" target="_blank"
-   class="btn btn-sm dropdown-item"
-   title="Launch onBinder"
-   data-bs-placement="left" data-bs-toggle="tooltip"
->
-  
-
-<span class="btn__icon-container">
-  
-    <img src="../_static/images/logo_binder.svg">
-  </span>
-<span class="btn__text-container">Binder</span>
-</a>
-</li>
-      
-  </ul>
-</div>
-
-
-
-
-
-
 <div class="dropdown dropdown-download-buttons">
   <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
     <i class="fas fa-download"></i>
@@ -283,7 +256,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../_sources/slides/cw1.ipynb" target="_blank"
+      <li><a href="../_sources/honors-projects/ChaoticPendulum.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -293,7 +266,7 @@ const thebe_selector_output = ".output, .cell_output"
 <span class="btn__icon-container">
   <i class="fas fa-file"></i>
   </span>
-<span class="btn__text-container">.ipynb</span>
+<span class="btn__text-container">.md</span>
 </a>
 </li>
       
@@ -352,9 +325,7 @@ document.write(`
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="fa-solid fa-list"></span>
-</label>
+
 </div></div>
       
     </div>
@@ -365,19 +336,11 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>CW 1 - Introduction to Classical Mechanics</h1>
+    <h1>Chaos in the driven nonlinear pendulum</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
-            <div>
-                <h2> Contents </h2>
-            </div>
-            <nav aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-go">Learning Go</a></li>
-</ul>
-            </nav>
         </div>
     </div>
 </div>
@@ -387,11 +350,76 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <div class="tex2jax_ignore mathjax_ignore section" id="cw-1-introduction-to-classical-mechanics">
-<h1>CW 1 - Introduction to Classical Mechanics<a class="headerlink" href="#cw-1-introduction-to-classical-mechanics" title="Permalink to this heading">#</a></h1>
-<div class="section" id="learning-go">
-<h2>Learning Go<a class="headerlink" href="#learning-go" title="Permalink to this heading">#</a></h2>
-</div>
+  <div class="tex2jax_ignore mathjax_ignore section" id="chaos-in-the-driven-nonlinear-pendulum">
+<h1>Chaos in the driven nonlinear pendulum<a class="headerlink" href="#chaos-in-the-driven-nonlinear-pendulum" title="Permalink to this heading">#</a></h1>
+<p>The angular equation of motion of the pendulum is given by Newton’s
+equation and with no external force it reads:</p>
+<div class="math notranslate nohighlight" id="equation-eqn-eom">
+<span class="eqno">(1)<a class="headerlink" href="#equation-eqn-eom" title="Permalink to this equation">#</a></span>\[
+ml\frac{d^2\theta}{dt^2}+mgsin(\theta)=0,
+\]</div>
+<p>with an angular velocity
+and acceleration given by</p>
+<div class="math notranslate nohighlight" id="equation-eqn-vel">
+<span class="eqno">(2)<a class="headerlink" href="#equation-eqn-vel" title="Permalink to this equation">#</a></span>\[
+v=l\frac{d\theta}{dt},
+\]</div>
+<p>and</p>
+<div class="math notranslate nohighlight" id="equation-eqn-accel">
+<span class="eqno">(3)<a class="headerlink" href="#equation-eqn-accel" title="Permalink to this equation">#</a></span>\[
+a=l\frac{d^2\theta}{dt^2}.
+\]</div>
+<p>We do however expect that the motion will gradually come to an end due a
+viscous drag torque acting on the pendulum. In the presence of the drag,
+the above equation becomes:</p>
+<div class="math notranslate nohighlight" id="equation-eqn-eom-drag">
+<span class="eqno">(4)<a class="headerlink" href="#equation-eqn-eom-drag" title="Permalink to this equation">#</a></span>\[
+ml\frac{d^2\theta}{dt^2}+\nu\frac{d\theta}{dt}+mgsin(\theta)=0,
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(\nu\)</span> is now a positive constant parameterizing
+the viscosity of the medium in question. In order to maintain the motion
+against viscosity, it is necessary to add some external driving force.
+We choose here a periodic driving force. The last equation becomes then</p>
+<div class="math notranslate nohighlight" id="equation-eqn-eom-driven">
+<span class="eqno">(5)<a class="headerlink" href="#equation-eqn-eom-driven" title="Permalink to this equation">#</a></span>\[
+ml\frac{d^2\theta}{dt^2}+\nu\frac{d\theta}{dt}  +mgsin(\theta)=Asin(\omega t),
+\]</div>
+<p>with <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(\omega\)</span> two constants representing the
+amplitude and the angular frequency respectively. The latter is called
+the driving frequency.</p>
+<ol class="arabic simple">
+<li><p>Rewrite Eqs. <a class="reference internal" href="#equation-eqn-eom-drag">(4)</a> and <a class="reference internal" href="#equation-eqn-eom-driven">(5)</a> as dimensionless equations. That is,
+scale the equations.</p></li>
+<li><p>Write then a code which solves Eq. <a class="reference internal" href="#equation-eqn-eom-drag">(4)</a> using
+the Euler-Cromer method and fourth-order Runge Kutta method. Perform
+calculations for at least ten periods with <span class="math notranslate nohighlight">\(N=100\)</span>, <span class="math notranslate nohighlight">\(N=1000\)</span> and
+<span class="math notranslate nohighlight">\(N=10000\)</span> mesh points and values of <span class="math notranslate nohighlight">\(\nu = 1\)</span>, <span class="math notranslate nohighlight">\(\nu = 5\)</span> and
+<span class="math notranslate nohighlight">\(\nu =10\)</span>. Set <span class="math notranslate nohighlight">\(l=1.0\)</span> m, <span class="math notranslate nohighlight">\(g=1\)</span> m/s<span class="math notranslate nohighlight">\(^2\)</span> and <span class="math notranslate nohighlight">\(m=1\)</span> kg. Choose as
+initial conditions <span class="math notranslate nohighlight">\(\theta(0) = 0.2\)</span> (radians) and <span class="math notranslate nohighlight">\(v(0) = 0\)</span>
+(radians/s). Make plots of <span class="math notranslate nohighlight">\(\theta\)</span> (in radians) as function of time
+and phase space plots of <span class="math notranslate nohighlight">\(\theta\)</span> versus the velocity <span class="math notranslate nohighlight">\(v\)</span>. Check the
+stability of your results as functions of time and number of mesh
+points. Which case corresponds to damped, underdamped and overdamped
+oscillatory motion? Comment your results.</p></li>
+<li><p>Now we switch to Eq. <a class="reference internal" href="#equation-eqn-eom-driven">(5)</a> for the rest of the
+project. Add an external driving force and set <span class="math notranslate nohighlight">\(l=g=1\)</span>, <span class="math notranslate nohighlight">\(m=1\)</span>,
+<span class="math notranslate nohighlight">\(\nu = 1/2\)</span> and <span class="math notranslate nohighlight">\(\omega = 2/3\)</span>. Choose as initial conditions
+<span class="math notranslate nohighlight">\(\theta(0) = 0.2\)</span> and <span class="math notranslate nohighlight">\(v(0) = 0\)</span> and <span class="math notranslate nohighlight">\(A=0.5\)</span> and <span class="math notranslate nohighlight">\(A=1.2\)</span>. Make plots
+of <span class="math notranslate nohighlight">\(\theta\)</span> (in radians) as function of time for at least 300
+periods and phase space plots of <span class="math notranslate nohighlight">\(\theta\)</span> versus the velocity <span class="math notranslate nohighlight">\(v\)</span>.
+Choose an appropriate time step. Comment and explain the results for
+the different values of <span class="math notranslate nohighlight">\(A\)</span>.</p></li>
+<li><p>Keep now the constants from the previous exercise fixed but set now
+<span class="math notranslate nohighlight">\(A=1.35\)</span>, <span class="math notranslate nohighlight">\(A=1.44\)</span> and <span class="math notranslate nohighlight">\(A=1.465\)</span>. Plot <span class="math notranslate nohighlight">\(\theta\)</span> (in radians) as
+function of time for at least 300 periods for these values of <span class="math notranslate nohighlight">\(A\)</span>
+and comment your results.</p></li>
+<li><p>We want to analyse further these results by making phase space plots
+of <span class="math notranslate nohighlight">\(\theta\)</span> versus the velocity <span class="math notranslate nohighlight">\(v\)</span> using only the points where we
+have <span class="math notranslate nohighlight">\(\omega t=2n\pi\)</span> where <span class="math notranslate nohighlight">\(n\)</span> is an integer. These are normally
+called the drive periods. This is an example of what is called a
+Poincare section and is a very useful way to plot and analyze the
+behavior of a dynamical system. Comment your results.</p></li>
+</ol>
 </div>
 
     <script type="text/x-thebe-config">
@@ -407,7 +435,7 @@ document.write(`
         },
         kernelOptions: {
             name: "python3",
-            path: "./slides"
+            path: "./honors-projects"
         },
         predefinedOutput: true
     }
@@ -424,26 +452,30 @@ document.write(`
                 <footer class="prev-next-footer">
                   <!-- Previous / next buttons -->
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="../homeworks/hw1.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Homework 1 (Due 19 Jan)</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="NeuralNetworks.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">From Ordinary Differential equations to Neural Networks, solving mechanics problems in a new way</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               
             </div>
             
             
-              
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Contents
-  </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-go">Learning Go</a></li>
-</ul>
-  </nav></div>
-
-</div></div>
               
             
           </div>

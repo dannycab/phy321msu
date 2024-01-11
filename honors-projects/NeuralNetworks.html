@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CW 1 - Introduction to Classical Mechanics &#8212; Classical Mechanics</title>
+    <title>From Ordinary Differential equations to Neural Networks, solving mechanics problems in a new way &#8212; Classical Mechanics</title>
   
   
   
@@ -61,9 +61,13 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'slides/cw1';</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'honors-projects/NeuralNetworks';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Building a model for the solar system using ordinary differential equations" href="SolarSystem.html" />
+    <link rel="prev" title="Chaos in the driven nonlinear pendulum" href="ChaoticPendulum.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -194,10 +198,10 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../homeworks/hw1.html">Homework 1 (Due 19 Jan)</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Honors Projects</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../honors-projects/ChaoticPendulum.html">Chaos in the driven nonlinear pendulum</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../honors-projects/NeuralNetworks.html">From Ordinary Differential equations to Neural Networks, solving mechanics problems in a new way</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../honors-projects/SolarSystem.html">Building a model for the solar system using ordinary differential equations</a></li>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="ChaoticPendulum.html">Chaos in the driven nonlinear pendulum</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">From Ordinary Differential equations to Neural Networks, solving mechanics problems in a new way</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SolarSystem.html">Building a model for the solar system using ordinary differential equations</a></li>
 </ul>
 
     </div>
@@ -244,37 +248,6 @@ const thebe_selector_output = ".output, .cell_output"
 
 
 
-<div class="dropdown dropdown-launch-buttons">
-  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
-    <i class="fas fa-rocket"></i>
-  </button>
-  <ul class="dropdown-menu">
-      
-      
-      
-      <li><a href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/main?urlpath=tree/slides/cw1.ipynb" target="_blank"
-   class="btn btn-sm dropdown-item"
-   title="Launch onBinder"
-   data-bs-placement="left" data-bs-toggle="tooltip"
->
-  
-
-<span class="btn__icon-container">
-  
-    <img src="../_static/images/logo_binder.svg">
-  </span>
-<span class="btn__text-container">Binder</span>
-</a>
-</li>
-      
-  </ul>
-</div>
-
-
-
-
-
-
 <div class="dropdown dropdown-download-buttons">
   <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
     <i class="fas fa-download"></i>
@@ -283,7 +256,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../_sources/slides/cw1.ipynb" target="_blank"
+      <li><a href="../_sources/honors-projects/NeuralNetworks.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -293,7 +266,7 @@ const thebe_selector_output = ".output, .cell_output"
 <span class="btn__icon-container">
   <i class="fas fa-file"></i>
   </span>
-<span class="btn__text-container">.ipynb</span>
+<span class="btn__text-container">.md</span>
 </a>
 </li>
       
@@ -365,7 +338,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>CW 1 - Introduction to Classical Mechanics</h1>
+    <h1>From Ordinary Differential equations to Neural Networks, solving mechanics problems in a new way</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -375,7 +348,9 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-go">Learning Go</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-standard-ordinary-differential-equation-solver">The standard ordinary differential equation solver</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#neural-networks">Neural Networks</a></li>
 </ul>
             </nav>
         </div>
@@ -387,10 +362,118 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <div class="tex2jax_ignore mathjax_ignore section" id="cw-1-introduction-to-classical-mechanics">
-<h1>CW 1 - Introduction to Classical Mechanics<a class="headerlink" href="#cw-1-introduction-to-classical-mechanics" title="Permalink to this heading">#</a></h1>
-<div class="section" id="learning-go">
-<h2>Learning Go<a class="headerlink" href="#learning-go" title="Permalink to this heading">#</a></h2>
+  <div class="tex2jax_ignore mathjax_ignore section" id="from-ordinary-differential-equations-to-neural-networks-solving-mechanics-problems-in-a-new-way">
+<h1>From Ordinary Differential equations to Neural Networks, solving mechanics problems in a new way<a class="headerlink" href="#from-ordinary-differential-equations-to-neural-networks-solving-mechanics-problems-in-a-new-way" title="Permalink to this heading">#</a></h1>
+<div class="section" id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">#</a></h2>
+<p>The aim of this project is to study an oscillation problem using
+different methods for solving ordinary differential equations. We will
+focus on traditional methods as well as on solving similar equations
+neural networks. For solving differential equations with Neural Networks
+we recommend the material at the <span class="xref myst">Machine Learning and Data Analysis
+course</span>.</p>
+<p>The first part is a repeat of homework 5 on an oscillating block tied to
+a spring.</p>
+</div>
+<div class="section" id="the-standard-ordinary-differential-equation-solver">
+<h2>The standard ordinary differential equation solver<a class="headerlink" href="#the-standard-ordinary-differential-equation-solver" title="Permalink to this heading">#</a></h2>
+<p>The relevant material with codes etc is covered by the <a class="reference external" href="https://mhjensen.github.io/Physics321/doc/pub/harmonic/html/harmonic.html">Lecture Notes on
+Oscillations</a>.
+Taylor’s chapter 5, in particular sections 5.1 and 5.2. 5.4 is relevant
+for the bonus exercise.</p>
+<p>We start now with our next numerical application
+with simple rewrites of our equations. The system we will look at is
+that of a block fastened to a spring (which in turn is tied to a wall).
+The force acting on the block from the spring in the <span class="math notranslate nohighlight">\(x\)</span>-drection only
+is</p>
+<div class="math notranslate nohighlight">
+\[
+m\frac{d^2x(t)}{dt^2}=F(x) = -k(x-b),
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(k\)</span> is a material
+specific constant and <span class="math notranslate nohighlight">\(b\)</span> is the equilibrium position. The block has
+mass <span class="math notranslate nohighlight">\(m\)</span> and <span class="math notranslate nohighlight">\(t\)</span> is time. Define the initial time as <span class="math notranslate nohighlight">\(t_0\)</span>. We will for
+simplicity set the equilibrium position to zero, that is <span class="math notranslate nohighlight">\(b=0\)</span>.</p>
+<ul class="simple">
+<li><p>Does this force conserve energy? If so, with given initial position
+and velocity <span class="math notranslate nohighlight">\(x_0\)</span> and <span class="math notranslate nohighlight">\(v_0\)</span>, respectively, find the expression for
+energy conservation in terms of the potential and kinetic energies.</p></li>
+<li><p>Define a constant <span class="math notranslate nohighlight">\(\omega_0=\sqrt{k/m}\)</span> and show that you can write
+the acceleration as <span class="math notranslate nohighlight">\(a(t) = -\omega_0^2 x(t)\)</span>. What is the
+dimensionality of <span class="math notranslate nohighlight">\(\omega_0\)</span>? (it is normally called a natural
+frequency).</p></li>
+<li><p>Introduce now a dimensionless time <span class="math notranslate nohighlight">\(\tau = t\omega_0\)</span>. Show that you
+can rewrite the equation for the acceleration in terms of two
+first-order differential equations</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+\frac{dv}{d\tau} = -x,
+\]</div>
+<p>and</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{dx}{d\tau} = v.
+\]</div>
+<p>What are the
+dimensionalities of these two equations?</p>
+<p>These are the equations which we will code in the next exercise.</p>
+<ul class="simple">
+<li><p>Find the analytical solutions for the velocity and position as
+function of the initial conditions.</p></li>
+<li><p>Write then a program which solves the above differential equations
+for the sliding blook using the Euler-Cromer method and the velocity
+Verlet method. Study the results for the position, velocity and
+energy conservation as function of time and the step size in time.
+Compare the numerical results with the analytical ones. Check that
+your results for position and velocity obey periodicity.</p></li>
+</ul>
+<p>Is energy properly conserved? Discuss your results.</p>
+<p>Now we will add to our program a first derivative of position (the
+velocity) which is meant to mimick the role of friction. Our
+differential equation is now</p>
+<div class="math notranslate nohighlight">
+\[
+m\frac{d^2x(t)}{dt^2}+\beta\frac{dx}{dt}+kx=ma(t)+\beta v(t)+kx(t)=0,
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(k\)</span> is a material specific constant and <span class="math notranslate nohighlight">\(\beta\)</span> is a constant
+representing the resistance from the plane on which the block slides. We
+have thus assumed that friction depends on velocity in a linear way.</p>
+<p>We introduce again the dimensionless time <span class="math notranslate nohighlight">\(\tau = t\omega_0\)</span> with
+<span class="math notranslate nohighlight">\(\omega_0=\sqrt{k/m}\)</span>.</p>
+<ul class="simple">
+<li><p>Divide by <span class="math notranslate nohighlight">\(m\)</span> and show that you can rewrite your equation as two
+first-order coupled differential equations</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+\frac{dv}{d\tau} = -2v(t)\gamma-x(t),
+\]</div>
+<p>and</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{dx}{d\tau} = v(t).
+\]</div>
+<p>What are the dimensionalities of these two
+equations? We have defined <span class="math notranslate nohighlight">\(\gamma = \beta/2m\)</span>.</p>
+<ul class="simple">
+<li><p>Add the role of friction to your code and study the cases where (i)
+<span class="math notranslate nohighlight">\(\gamma &lt; \omega_0\)</span> (underdamping), (ii) <span class="math notranslate nohighlight">\(\gamma = \omega_0\)</span> (
+critical damping) and (iii) <span class="math notranslate nohighlight">\(\gamma &gt; \omega_0\)</span> (overdamping). Plot
+your resulting positions as functions of time and discuss the
+physical meaning of your results.</p></li>
+<li><p>Add also a sinusoidal external force that depends only on time
+<span class="math notranslate nohighlight">\(F(t)=F_0\cos{(\omega t)}\)</span>. Scale the equations again and study your
+results by adding the Runge-Kutta method to fourth order.</p></li>
+</ul>
+</div>
+<div class="section" id="neural-networks">
+<h2>Neural Networks<a class="headerlink" href="#neural-networks" title="Permalink to this heading">#</a></h2>
+<p>Finally, with the above equations (you could start without friction and
+external forces), implement a Neural Network solver and compare the
+results from this Machine Learning algorithm with those obtained using
+the standard Euler-Cromer method and the fourth-order Runge-Kutta
+method. Discuss your results.</p>
 </div>
 </div>
 
@@ -407,7 +490,7 @@ document.write(`
         },
         kernelOptions: {
             name: "python3",
-            path: "./slides"
+            path: "./honors-projects"
         },
         predefinedOutput: true
     }
@@ -424,6 +507,24 @@ document.write(`
                 <footer class="prev-next-footer">
                   <!-- Previous / next buttons -->
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="ChaoticPendulum.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Chaos in the driven nonlinear pendulum</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="SolarSystem.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Building a model for the solar system using ordinary differential equations</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               
@@ -439,7 +540,9 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-go">Learning Go</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-standard-ordinary-differential-equation-solver">The standard ordinary differential equation solver</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#neural-networks">Neural Networks</a></li>
 </ul>
   </nav></div>
 
