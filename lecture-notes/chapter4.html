@@ -3,11 +3,12 @@
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-content_root="" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>4. Work, Energy, Momentum and Conservation laws &#8212; Classical Mechanics</title>
   
   
@@ -18,12 +19,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -37,9 +38,9 @@
     <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
-  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -140,9 +141,11 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
   
 
 <a class="navbar-brand logo" href="../intro.html">
+  
   
   
   
@@ -152,8 +155,8 @@ const thebe_selector_output = ".output, .cell_output"
       
     
     
-    <img src="../_static/spartan-helmet.png" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="../_static/spartan-helmet.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="../_static/spartan-helmet.png" class="logo__image only-light" alt="Classical Mechanics - Home"/>
+    <script>document.write(`<img src="../_static/spartan-helmet.png" class="logo__image only-dark" alt="Classical Mechanics - Home"/>`);</script>
   
   
 </a></div>
@@ -339,6 +342,7 @@ const thebe_selector_output = ".output, .cell_output"
 </button>
 
 
+
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
@@ -348,6 +352,7 @@ document.write(`
   </button>
 `);
 </script>
+
 
 <script>
 document.write(`
@@ -428,7 +433,7 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <div class="tex2jax_ignore mathjax_ignore section" id="work-energy-momentum-and-conservation-laws">
+  <section class="tex2jax_ignore mathjax_ignore" id="work-energy-momentum-and-conservation-laws">
 <h1>4. Work, Energy, Momentum and Conservation laws<a class="headerlink" href="#work-energy-momentum-and-conservation-laws" title="Permalink to this heading">#</a></h1>
 <p>In the previous three chapters  we have shown how to use Newton’s laws of
 motion to determine the motion of an object based on the forces acting
@@ -451,7 +456,7 @@ an object even in cases when we cannot solve the equations of
 motion. This introduces us to the concept of work and kinetic energy,
 an energy related to the motion of an object.</p>
 <p>And finally, we will link the work-energy theorem with the principle of conservation of energy.</p>
-<div class="section" id="the-work-energy-theorem">
+<section id="the-work-energy-theorem">
 <h2>The Work-Energy Theorem<a class="headerlink" href="#the-work-energy-theorem" title="Permalink to this heading">#</a></h2>
 <p>Let us define the kinetic energy <span class="math notranslate nohighlight">\(K\)</span> with a given velocity <span class="math notranslate nohighlight">\(\boldsymbol{v}\)</span></p>
 <div class="math notranslate nohighlight">
@@ -533,7 +538,7 @@ W_{n0}=\frac{1}{2}mv_n^2-\frac{1}{2}mv_0^2=\int_{c}\boldsymbol{F}(\boldsymbol{r}
 <p>In order to study the work- energy, we will normally need to perform
 a numerical integration, unless we can integrate analytically. Here we
 present some of the simpler  methods such as the <strong>rectangle</strong> rule, the <strong>trapezoidal</strong> rule and higher-order methods like the Simpson family of methods.</p>
-<div class="section" id="example-of-an-electron-moving-along-a-surface">
+<section id="example-of-an-electron-moving-along-a-surface">
 <h3>Example of an Electron moving along a Surface<a class="headerlink" href="#example-of-an-electron-moving-along-a-surface" title="Permalink to this heading">#</a></h3>
 <p>As an example, let us consider the following case.
 We have  classical electron which moves in the <span class="math notranslate nohighlight">\(x\)</span>-direction along a surface. The force from the surface is</p>
@@ -570,8 +575,8 @@ v(x)=\pm \sqrt{v_0^2+\frac{F_0b}{m\pi}\left[\cos{(\frac{2\pi x}{b})}-\cos{(\frac
 \[
 v(x)=\pm \sqrt{\frac{F_0b}{m\pi}\left[\cos{(\frac{2\pi x}{b})}-1\right]},
 \]</div>
-</div>
-<div class="section" id="harmonic-oscillations">
+</section>
+<section id="harmonic-oscillations">
 <h3>Harmonic Oscillations<a class="headerlink" href="#harmonic-oscillations" title="Permalink to this heading">#</a></h3>
 <p>Another well-known force (and we will derive when we come to Harmonic
 Oscillations) is the case of a sliding block attached to a wall
@@ -603,17 +608,17 @@ W=\frac{1}{2}mv^2(x)-\frac{1}{2}mv_0^2=\frac{1}{2}k(x_0-L_0)^2-\frac{1}{2}k(x-L_
 \]</div>
 <p>What does this mean? The total energy, which is the sum of potential and kinetic energy, is conserved.
 Wow, this sounds interesting. We will analyze this next week in more detail when we study energy, momentum and angular momentum conservation.</p>
-</div>
-</div>
-<div class="section" id="numerical-integration">
+</section>
+</section>
+<section id="numerical-integration">
 <h2>Numerical Integration<a class="headerlink" href="#numerical-integration" title="Permalink to this heading">#</a></h2>
 <p>Let us now see how we could have solved the above integral numerically.</p>
 <p>There are several numerical algorithms for finding an integral
 numerically. The more familiar ones like the rectangular rule or the
 trapezoidal rule have simple geometric interpretations.</p>
 <p>Let us look at the mathematical details of what are called equal-step methods, also known as Newton-Cotes quadrature.</p>
-</div>
-<div class="section" id="newton-cotes-quadrature-or-equal-step-methods">
+</section>
+<section id="newton-cotes-quadrature-or-equal-step-methods">
 <h2>Newton-Cotes Quadrature or equal-step methods<a class="headerlink" href="#newton-cotes-quadrature-or-equal-step-methods" title="Permalink to this heading">#</a></h2>
 <p>The integral</p>
 <!-- Equation labels as ordinary links -->
@@ -661,7 +666,7 @@ subintervals. Consider for example evaluating</p>
 \end{equation}
 \]</div>
 <p>We have chosen a midpoint <span class="math notranslate nohighlight">\(x_0\)</span> and have defined <span class="math notranslate nohighlight">\(x_0=a+h\)</span>.</p>
-<div class="section" id="the-rectangle-method">
+<section id="the-rectangle-method">
 <h3>The rectangle method<a class="headerlink" href="#the-rectangle-method" title="Permalink to this heading">#</a></h3>
 <p>A very simple approach is the so-called midpoint or rectangle method.
 In this case the integration area is split in a given number of rectangles with length <span class="math notranslate nohighlight">\(h\)</span> and height given by the mid-point value of the function.  This gives the following simple rule for approximating an integral</p>
@@ -719,13 +724,22 @@ W=\frac{1}{\pi}.
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Relative error=  4.112453549290521e-05
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">3</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">sin</span><span class="p">,</span> <span class="n">pi</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="ne">----&gt; </span><span class="mi">3</span> <span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="n">Symbol</span><span class="p">,</span> <span class="n">integrate</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="c1"># function for the Rectangular rule                                                                                        </span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="k">def</span> <span class="nf">Rectangular</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">f</span><span class="p">,</span><span class="n">n</span><span class="p">):</span>
+
+<span class="ne">ModuleNotFoundError</span>: No module named &#39;sympy&#39;
 </pre></div>
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="the-trapezoidal-rule">
+</section>
+<section id="the-trapezoidal-rule">
 <h3>The trapezoidal rule<a class="headerlink" href="#the-trapezoidal-rule" title="Permalink to this heading">#</a></h3>
 <p>The other integral gives</p>
 <div class="math notranslate nohighlight">
@@ -807,14 +821,9 @@ through the following simple algorithm</p>
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Relative error=  8.224805627923717e-05
-</pre></div>
 </div>
-</div>
-</div>
-</div>
-<div class="section" id="simpsons-rule">
+</section>
+<section id="simpsons-rule">
 <h3>Simpsons’ rule<a class="headerlink" href="#simpsons-rule" title="Permalink to this heading">#</a></h3>
 <p>Instead of using the above first-order polynomials
 approximations for <span class="math notranslate nohighlight">\(f\)</span>, we attempt at using a second-order polynomials.
@@ -896,15 +905,10 @@ can easily be implemented numerically through the following simple algorithm</p>
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Relative error=  5.412252157986472e-09
-</pre></div>
-</div>
-</div>
 </div>
 <p>We see that Simpson’s rule gives a much better estimation of the relative error with the same amount of points as we had for the Rectangle rule and the Trapezoidal rule.</p>
-</div>
-<div class="section" id="symbolic-integration">
+</section>
+<section id="symbolic-integration">
 <h3>Symbolic integration<a class="headerlink" href="#symbolic-integration" title="Permalink to this heading">#</a></h3>
 <p>We could also use the symbolic mathematics. Here Python comes to our rescue with <a class="reference external" href="https://www.sympy.org/en/index.html">SymPy</a>, which is a Python library for symbolic mathematics.</p>
 <p>Here’s an example on how you could use <strong>Sympy</strong> where we compare the symbolic calculation with an
@@ -955,13 +959,10 @@ The following code for  the trapezoidal rule allows you  to plot the relative er
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<img alt="../_images/1d9a4aeda4c3164a6daf517c9bb5c2105cc192620622a6326121ad36e27e97b3.png" src="../_images/1d9a4aeda4c3164a6daf517c9bb5c2105cc192620622a6326121ad36e27e97b3.png" />
 </div>
-</div>
-</div>
-</div>
-<div class="section" id="energy-conservation">
+</section>
+</section>
+<section id="energy-conservation">
 <h2>Energy Conservation<a class="headerlink" href="#energy-conservation" title="Permalink to this heading">#</a></h2>
 <p>Energy conservation is most convenient as a strategy for addressing
 problems where time does not appear. For example, a particle goes
@@ -1129,7 +1130,7 @@ F_z=-\frac{\partial V}{\partial z},
 \boldsymbol{F}=-\frac{\partial V}{\partial x}\boldsymbol{e}_1-\frac{\partial V}{\partial y}\boldsymbol{e}_2-\frac{\partial V}{\partial z}\boldsymbol{e}_3=-\boldsymbol{\nabla}V(\boldsymbol{r}).
 \]</div>
 <p>And this connection is the one we wanted to show.</p>
-<div class="section" id="net-energy">
+<section id="net-energy">
 <h3>Net Energy<a class="headerlink" href="#net-energy" title="Permalink to this heading">#</a></h3>
 <p>The net energy, <span class="math notranslate nohighlight">\(E=V+K\)</span> where <span class="math notranslate nohighlight">\(K\)</span> is the kinetic energy, is then conserved,</p>
 <div class="math notranslate nohighlight">
@@ -1178,9 +1179,9 @@ you would have to determine which points, <span class="math notranslate nohighli
 reach in the trajectory, whereas in one dimension you can typically
 tell by simply seeing whether the kinetic energy is positive at every
 point between the old position and the new position.</p>
-</div>
-</div>
-<div class="section" id="the-earth-sun-system">
+</section>
+</section>
+<section id="the-earth-sun-system">
 <h2>The Earth-Sun system<a class="headerlink" href="#the-earth-sun-system" title="Permalink to this heading">#</a></h2>
 <p>We will now venture into a study of a system which is energy
 conserving. The aim is to see if we (since it is not possible to solve
@@ -1501,9 +1502,6 @@ y_{i+1}=y_i+hv_{y,i},
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<img alt="../_images/c1247b92a41d3dba72d5832c72592e740c9f04e10318121273a4a16a3ae7b3d8.png" src="../_images/c1247b92a41d3dba72d5832c72592e740c9f04e10318121273a4a16a3ae7b3d8.png" />
-</div>
 </div>
 <p>We notice here that Euler’s method doesn’t give a stable orbit. It
 means that we cannot trust Euler’s method. In a deeper way, as we will
@@ -1586,7 +1584,7 @@ v_{n+1}=v_{n}+(\Delta t) a_{n}+O(\Delta t^2).
 \]</div>
 <p>The acceleration <span class="math notranslate nohighlight">\(a_n\)</span> is a function of <span class="math notranslate nohighlight">\(a_n(y_n, v_n, t_n)\)</span> and needs to be evaluated
 as well. This is the Euler-Cromer method.</p>
-<div class="section" id="deriving-the-velocity-verlet-method">
+<section id="deriving-the-velocity-verlet-method">
 <h3>Deriving the Velocity-Verlet Method<a class="headerlink" href="#deriving-the-velocity-verlet-method" title="Permalink to this heading">#</a></h3>
 <p>Let us stay with <span class="math notranslate nohighlight">\(x\)</span> (position) and <span class="math notranslate nohighlight">\(v\)</span> (velocity) as the quantities we are interested in.</p>
 <p>We have the Taylor expansion for the position given by</p>
@@ -1672,15 +1670,12 @@ the position at the updated time <span class="math notranslate nohighlight">\(t_
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<img alt="../_images/827e861ec8f08a2b79fec9089578c98093975954311374479781d74fd6c3a58a.png" src="../_images/827e861ec8f08a2b79fec9089578c98093975954311374479781d74fd6c3a58a.png" />
-</div>
 </div>
 <p>You can easily generalize the calculation of the forces by defining a function
 which takes in as input the various variables. We leave this as a challenge to you.</p>
-</div>
-</div>
-<div class="section" id="additional-material-link-between-line-integrals-and-conservative-forces">
+</section>
+</section>
+<section id="additional-material-link-between-line-integrals-and-conservative-forces">
 <h2>Additional Material: Link between Line Integrals and Conservative forces<a class="headerlink" href="#additional-material-link-between-line-integrals-and-conservative-forces" title="Permalink to this heading">#</a></h2>
 <p>The concept of line integrals plays an important role in our discussion of energy conservation,
 our definition of potentials and conservative forces.</p>
@@ -1851,10 +1846,10 @@ then the line integral</p>
 \[
 \boldsymbol{\nabla}\times\boldsymbol{F}=\boldsymbol{\nabla}\times\left(-\boldsymbol{\nabla}V(\boldsymbol{r})\right)=0.
 \]</div>
-</div>
-<div class="section" id="exercises">
+</section>
+<section id="exercises">
 <h2>Exercises<a class="headerlink" href="#exercises" title="Permalink to this heading">#</a></h2>
-<div class="section" id="exercise-conservation-laws-energy-and-momentum">
+<section id="exercise-conservation-laws-energy-and-momentum">
 <h3>Exercise: Conservation laws, Energy and momentum<a class="headerlink" href="#exercise-conservation-laws-energy-and-momentum" title="Permalink to this heading">#</a></h3>
 <p>How do we define a conservative force?</p>
 <p>A conservative force is a force whose property is that the total work
@@ -1932,8 +1927,8 @@ If we then use the definition that</p>
 \]</div>
 <p>where we assumed that <span class="math notranslate nohighlight">\(m_i\)</span> is independent of time, we see that time derivative of the total momentum is zero.
 We say then that the linear momentum is a constant of the motion. It is conserved.</p>
-</div>
-<div class="section" id="exercise-conservation-of-angular-momentum">
+</section>
+<section id="exercise-conservation-of-angular-momentum">
 <h3>Exercise: Conservation of angular momentum<a class="headerlink" href="#exercise-conservation-of-angular-momentum" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Define angular momentum and the torque for a single object with external forces only.</p></li>
@@ -1991,8 +1986,8 @@ We say then that the linear momentum is a constant of the motion. It is conserve
 \boldsymbol{\tau}=\sum_{i=1}^N\sum_{j&gt;i}^N(\boldsymbol{r}_i -\boldsymbol{r}_j) \times \boldsymbol{f}_{ji}.
 \]</div>
 <p>If the force is proportional to <span class="math notranslate nohighlight">\(\boldsymbol{r}_i -\boldsymbol{r}_j\)</span> then angular momentum is conserved since the cross-product of a vector with itself is zero. We say thus that angular momentum is a constant of the motion.</p>
-</div>
-<div class="section" id="exsercise-example-of-potential">
+</section>
+<section id="exsercise-example-of-potential">
 <h3>Exsercise: Example of potential<a class="headerlink" href="#exsercise-example-of-potential" title="Permalink to this heading">#</a></h3>
 <p>Consider a particle of mass <span class="math notranslate nohighlight">\(m\)</span> moving according to the potential</p>
 <div class="math notranslate nohighlight">
@@ -2078,8 +2073,8 @@ We see this directly from the above expressions for the force, since the derivat
 (\boldsymbol{r}\times\boldsymbol{F})_z = xF_y-yF_x=\frac{yxA}{a^2}\exp\left\{-\frac{x^2+z^2}{2a^2}\right\}.
 \]</div>
 <p>Only <span class="math notranslate nohighlight">\(L_y\)</span> is conserved.</p>
-</div>
-<div class="section" id="exercise-forces-and-potentials">
+</section>
+<section id="exercise-forces-and-potentials">
 <h3>Exercise: forces  and potentials<a class="headerlink" href="#exercise-forces-and-potentials" title="Permalink to this heading">#</a></h3>
 <p>A particle of mass <span class="math notranslate nohighlight">\(m\)</span> has velocity <span class="math notranslate nohighlight">\(v=\alpha/x\)</span>, where <span class="math notranslate nohighlight">\(x\)</span> is its displacement.</p>
 <ul class="simple">
@@ -2134,9 +2129,6 @@ V(x) = -\int_0^x F(x')dx'=\frac{kx^2}{2}-\frac{kx^4}{4\alpha^2}.
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<img alt="../_images/3fbb32c8e9159e717d6b10f7858d917e987cb0d4554565fc8041e8294501e320.png" src="../_images/3fbb32c8e9159e717d6b10f7858d917e987cb0d4554565fc8041e8294501e320.png" />
-</div>
 </div>
 <p>From the plot here (with the chosen parameters)</p>
 <ol class="arabic simple">
@@ -2154,8 +2146,8 @@ V(x) = -\int_0^x F(x')dx'=\frac{kx^2}{2}-\frac{kx^4}{4\alpha^2}.
 the potential has a minimum at at <span class="math notranslate nohighlight">\(x=0\)</span> then rises until <span class="math notranslate nohighlight">\(x=\alpha\)</span> before falling off again. The maximum
 potential, <span class="math notranslate nohighlight">\(V(x\pm \alpha) = k\alpha^2/4\)</span>. If the energy is higher, the particle cannot be contained in the
 well. The turning points are thus defined by <span class="math notranslate nohighlight">\(x=\pm \alpha\)</span>. And from the previous plot you can easily see that this is the case (<span class="math notranslate nohighlight">\(\alpha=1\)</span> in the abovementioned Python code).</p>
-</div>
-<div class="section" id="exercise-work-energy-theorem-and-conservation-laws">
+</section>
+<section id="exercise-work-energy-theorem-and-conservation-laws">
 <h3>Exercise: Work-energy theorem and conservation laws<a class="headerlink" href="#exercise-work-energy-theorem-and-conservation-laws" title="Permalink to this heading">#</a></h3>
 <p>This exercise was partly discussed above.
 We will study a classical electron which moves in the <span class="math notranslate nohighlight">\(x\)</span>-direction along a surface. The force from the surface is</p>
@@ -2260,13 +2252,10 @@ V(x)=\frac{F_0b}{2\pi}\left[\cos{(\frac{2\pi x}{b})}\right].
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<img alt="../_images/b7c41f078aca503c4e83b9a44fb8ed805f9c9c6c371a25bbcac28c57a5f87023.png" src="../_images/b7c41f078aca503c4e83b9a44fb8ed805f9c9c6c371a25bbcac28c57a5f87023.png" />
-</div>
 </div>
 <p>We have stable equilibrium  points for every minimum of the <span class="math notranslate nohighlight">\(\cos\)</span> function and unstable equilibrium points where it has its maximimum values. At the minimum the particle has the lowest potential energy and the largest kinetic energy whereas at the maxima it has the largest potential energy and lowest kinetic energy.</p>
-</div>
-<div class="section" id="exsercise-rocket-momentum-and-mass">
+</section>
+<section id="exsercise-rocket-momentum-and-mass">
 <h3>Exsercise: Rocket, Momentum and mass<a class="headerlink" href="#exsercise-rocket-momentum-and-mass" title="Permalink to this heading">#</a></h3>
 <p>Taylor exercise 3.11.</p>
 <p>Consider the rocket of mass <span class="math notranslate nohighlight">\(M\)</span> moving with velocity <span class="math notranslate nohighlight">\(v\)</span>. After a
@@ -2308,8 +2297,8 @@ v=v_e\ln[(M_0-k t)/M_0]-gt.
 \]</div>
 <p>Inserting numbers <span class="math notranslate nohighlight">\(v_e=3000\)</span> m/s, <span class="math notranslate nohighlight">\(M_0/M=2\)</span> and <span class="math notranslate nohighlight">\(g=9.8\)</span> m/s<span class="math notranslate nohighlight">\(^{2}\)</span>, we find <span class="math notranslate nohighlight">\(v=900\)</span> m/s. With <span class="math notranslate nohighlight">\(g=0\)</span> the corresponding number is <span class="math notranslate nohighlight">\(2100\)</span> m/s, so gravity reduces the speed acquired in the first two minutes to a little less than half its weight-free value.</p>
 <p>If the thrust <span class="math notranslate nohighlight">\(\Delta Mv_e\)</span> is less than the weight <span class="math notranslate nohighlight">\(mg\)</span>, the rocket will just sit on the ground until it has shed enough mass that the thrust can overcome the weight, definitely not a good design.</p>
-</div>
-<div class="section" id="exercise-more-rockets">
+</section>
+<section id="exercise-more-rockets">
 <h3>Exercise: More Rockets<a class="headerlink" href="#exercise-more-rockets" title="Permalink to this heading">#</a></h3>
 <p>This is a continuation of the previous exercise and most of the relevant background material can be found in Taylor chapter 3.2.</p>
 <p>Taking the velocity from the previous exercise and integrating over time we find the height</p>
@@ -2370,8 +2359,8 @@ y(t) = v_et-\frac{1}{2}gt^2-\frac{Mv_e}{k}\ln{(\frac{M_0}{M})}.
 \[
 v = \frac{kv_e}{b}\left[1-(\frac{M}{M_0})^{b/k}\right].
 \]</div>
-</div>
-<div class="section" id="exercise-center-of-mass">
+</section>
+<section id="exercise-center-of-mass">
 <h3>Exercise: Center of mass<a class="headerlink" href="#exercise-center-of-mass" title="Permalink to this heading">#</a></h3>
 <p>Taylor exercise 3.20. Here Taylor’s chapter 3.3 can be of use. This relation will turn out to be very useful when we discuss systems of many classical particles.</p>
 <p>The definition of the center of mass for <span class="math notranslate nohighlight">\(N\)</span> objects can be written as</p>
@@ -2389,8 +2378,8 @@ with <span class="math notranslate nohighlight">\(j=1,\dots,N_2\)</span>.</p>
 M\boldsymbol{R}=\sum_{i=1}^{N_1}m_{1i}\boldsymbol{r}_{1i}+\sum_{j=1}^{N_2}m_{2j}\boldsymbol{r}_{2j}=M_1\boldsymbol{R}_1+M_2\boldsymbol{R}_2,
 \]</div>
 <p>where <span class="math notranslate nohighlight">\(\boldsymbol{R}_1\)</span> and <span class="math notranslate nohighlight">\(\boldsymbol{R}_2\)</span> are the the center of mass positions of the two separate bodies and the second equality follows from our rewritten definition of the center of mass applied to each body separately. This is the required result.</p>
-</div>
-<div class="section" id="exercise-the-earth-sun-problem">
+</section>
+<section id="exercise-the-earth-sun-problem">
 <h3>Exercise: The Earth-Sun problem<a class="headerlink" href="#exercise-the-earth-sun-problem" title="Permalink to this heading">#</a></h3>
 <p>We start with the Earth-Sun system  in two dimensions only.  The gravitational force <span class="math notranslate nohighlight">\(F_G\)</span> on the earth from the sun is</p>
 <div class="math notranslate nohighlight">
@@ -2586,9 +2575,6 @@ y_{i+1}=y_i+hv_{y,i},
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<img alt="../_images/d65731f3a6c106465698561a6a71c4fae69c436812ad65cc3a3e8cba6e8097b2.png" src="../_images/d65731f3a6c106465698561a6a71c4fae69c436812ad65cc3a3e8cba6e8097b2.png" />
-</div>
 </div>
 <p>We notice here that Euler’s method doesn’t give a stable orbit with for example <span class="math notranslate nohighlight">\(\Delta t =0.01\)</span>. It
 means that we cannot trust Euler’s method. Euler’s method does not conserve energy. It is an
@@ -2754,9 +2740,6 @@ the position at the updated time <span class="math notranslate nohighlight">\(t_
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<img alt="../_images/827e861ec8f08a2b79fec9089578c98093975954311374479781d74fd6c3a58a.png" src="../_images/827e861ec8f08a2b79fec9089578c98093975954311374479781d74fd6c3a58a.png" />
-</div>
 </div>
 <p>You can easily generalize the calculation of the forces by defining a function
 which takes in as input the various variables. We leave this as a challenge to you.</p>
@@ -2813,12 +2796,9 @@ v = \sqrt{8\pi^2}{r},
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<img alt="../_images/60ee1b08a5ace1eec7ab46d44fc74efdb147ec0e9b61ed8e5b9b661ff1ed60b0.png" src="../_images/60ee1b08a5ace1eec7ab46d44fc74efdb147ec0e9b61ed8e5b9b661ff1ed60b0.png" />
 </div>
-</div>
-</div>
-<div class="section" id="exercise-conservative-forces">
+</section>
+<section id="exercise-conservative-forces">
 <h3>Exercise Conservative forces<a class="headerlink" href="#exercise-conservative-forces" title="Permalink to this heading">#</a></h3>
 <p>Which of the following force are conservative?  All three forces depend only on <span class="math notranslate nohighlight">\(\boldsymbol{r}\)</span> and satisfy the first condition for being conservative.</p>
 <ul class="simple">
@@ -2837,8 +2817,8 @@ v = \sqrt{8\pi^2}{r},
 <li><p>2d For those which are conservative, find the corresponding potential energy <span class="math notranslate nohighlight">\(V\)</span> and verify that direct differentiation that <span class="math notranslate nohighlight">\(\boldsymbol{F}=-\boldsymbol{\nabla} V\)</span>.</p></li>
 </ul>
 <p>See the answers to each exercise above.</p>
-</div>
-<div class="section" id="exercise-the-lennard-jones-potential">
+</section>
+<section id="exercise-the-lennard-jones-potential">
 <h3>Exercise: The Lennard-Jones potential<a class="headerlink" href="#exercise-the-lennard-jones-potential" title="Permalink to this heading">#</a></h3>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Lennard-Jones_potential">The Lennard-Jones potential</a> is often used to describe
 the interaction between two atoms or ions or molecules. If you end up doing materals science and molecular dynamics calculations, it is very likely that you will encounter this potential model.
@@ -2885,9 +2865,6 @@ V(r) = V_0\left((\frac{a}{r})^{12}-(\frac{b}{r})^{6}\right),
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<img alt="../_images/298d586b2c68b2148bde03d9fd73d35cc19d7d6319e8e2673fc8a12ce3c58628.png" src="../_images/298d586b2c68b2148bde03d9fd73d35cc19d7d6319e8e2673fc8a12ce3c58628.png" />
-</div>
 </div>
 <ul class="simple">
 <li><p>Find and classify the equilibrium points.</p></li>
@@ -2925,8 +2902,8 @@ The force on particle <span class="math notranslate nohighlight">\(i\)</span> at
 \boldsymbol{a}_i=\frac{d^2\boldsymbol{r}_i}{dt^2} = \frac{6V_0}{m} \sum_{j \neq i}^{N}\left(2(\frac{a}{\vert\vert\boldsymbol{r}_i-\boldsymbol{r}_j\vert\vert})^{12}-(\frac{b}{\vert\vert\boldsymbol{r}_i-\boldsymbol{r}_j\vert\vert})^6\right)\frac{\boldsymbol{r}_i-\boldsymbol{r}_j}{\vert\vert\boldsymbol{r}_i-\boldsymbol{r}_j\vert\vert^2}.
 \]</div>
 <p>This is also a conservative force, with zero <strong>curl</strong> as well.</p>
-</div>
-<div class="section" id="exercise-particle-in-a-new-potential">
+</section>
+<section id="exercise-particle-in-a-new-potential">
 <h3>Exercise: particle in a new potential<a class="headerlink" href="#exercise-particle-in-a-new-potential" title="Permalink to this heading">#</a></h3>
 <p>Consider a particle of mass <span class="math notranslate nohighlight">\(m\)</span> moving in a one-dimensional potential,</p>
 <div class="math notranslate nohighlight">
@@ -2968,12 +2945,6 @@ V(x)=-\alpha\frac{x^2}{2}+\beta\frac{x^4}{4}.
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1.2727922061357855
-</pre></div>
-</div>
-<img alt="../_images/92ce2d268dd10ffabacb74af8633e481fc50d07f829416ca0b2f5cf8678af67d.png" src="../_images/92ce2d268dd10ffabacb74af8633e481fc50d07f829416ca0b2f5cf8678af67d.png" />
 </div>
 </div>
 <p>Here we have chosen <span class="math notranslate nohighlight">\(\alpha=0.81\)</span> and <span class="math notranslate nohighlight">\(\beta=0.5\)</span>. Taking the derivative of <span class="math notranslate nohighlight">\(V\)</span> with respect to <span class="math notranslate nohighlight">\(x\)</span> gives two minima (and it is easy to see here that the second derivative is positive) at <span class="math notranslate nohighlight">\(x\pm\sqrt{\alpha/\beta}\)</span> and a maximum at <span class="math notranslate nohighlight">\(x=0\)</span>. The derivative is</p>
@@ -3025,8 +2996,8 @@ F(x) = -kx,
 \]</div>
 <p>which has as analytical solution <span class="math notranslate nohighlight">\(x(t)=A\cos{(\omega_0t)}+B\sin{(\omega_0t)}\)</span> and velocity
 <span class="math notranslate nohighlight">\(x(t)=-\omega_0A\sin{(\omega_0t)}+\omega_0B\cos{(\omega_0t)}\)</span>. The initial conditions are used to define <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span>.</p>
-</div>
-<div class="section" id="exercise-testing-energy-conservation">
+</section>
+<section id="exercise-testing-energy-conservation">
 <h3>Exercise: Testing Energy conservation<a class="headerlink" href="#exercise-testing-energy-conservation" title="Permalink to this heading">#</a></h3>
 <p>The code here implements Euler’s method for the Earth-Sun system using
 a more compact way of representing the vectors. Alternatively, you
@@ -3129,9 +3100,6 @@ again as function of time</p>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<img alt="../_images/15f8aee9aef9f4cf26208f4eb724ae1cb3d3038cb9827c9c3c7d0a2a1099244e.png" src="../_images/15f8aee9aef9f4cf26208f4eb724ae1cb3d3038cb9827c9c3c7d0a2a1099244e.png" />
 </div>
 </div>
 <p>We see very clearly that Euler’s method does not conserve energy!! Try to reduce the time step <span class="math notranslate nohighlight">\(\Delta t\)</span>. What do you see?</p>
@@ -3238,9 +3206,6 @@ max and a min value and never exceed these values.</p>
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<img alt="../_images/9350ddc2ab68588e6c6e4cbce61837132d16b81d4d8c5f934677af154ae383c3.png" src="../_images/9350ddc2ab68588e6c6e4cbce61837132d16b81d4d8c5f934677af154ae383c3.png" />
-</div>
 </div>
 <p>Our final equations for the position and the velocity become then</p>
 <div class="math notranslate nohighlight">
@@ -3320,15 +3285,12 @@ the position at the updated time <span class="math notranslate nohighlight">\(t_
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<img alt="../_images/a5ce154b3a765c8d2ca8de783d4b0e6777bf9c8279d0022db1c2c9cc0116c04f.png" src="../_images/a5ce154b3a765c8d2ca8de783d4b0e6777bf9c8279d0022db1c2c9cc0116c04f.png" />
-</div>
 </div>
 <p>And we see that due to the smaller truncation error that energy conservation is improved as a function of time.
 Try out different time steps <span class="math notranslate nohighlight">\(\Delta t\)</span> and see if the results improve or worsen.</p>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -3358,7 +3320,7 @@ Try out different time steps <span class="math notranslate nohighlight">\(\Delta
               
               
                 <footer class="prev-next-footer">
-                  <!-- Previous / next buttons -->
+                  
 <div class="prev-next-area">
     <a class="left-prev"
        href="chapter3.html"
@@ -3452,6 +3414,7 @@ By Danny Caballero, Morten Hjorth-Jensen
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
       © Copyright 2022.
@@ -3478,8 +3441,8 @@ By Danny Caballero, Morten Hjorth-Jensen
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
 
   <footer class="bd-footer">
   </footer>
