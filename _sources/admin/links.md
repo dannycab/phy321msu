@@ -6,6 +6,24 @@ Materials will appear in reverse chronological order, with the most recent appea
 
 All recorded classes are added to [this playlist](https://mediaspace.msu.edu/playlist/dedicated/1_s1d57uud/.)
 
+### Week 2, January 16-19, 2024
+
+#### Web Resources
+  - [What is Mathematical Modeling?](../lecture-notes/chapter2-overview.ipynb)
+  - [Classical Mechanics, Mathematics, and Numerical background](../lecture-notes/chapter2.ipynb)
+
+#### Class Materials
+- Readings:
+  - JRT 1.4-1.6; AMS Ch 4.2 and Ch 5
+- Handwritten Notes:
+  - CW1: [Making Classical Models](../docs/handwritten-notes/CW2.pdf)
+- Lecture Videos:
+  - 17 Jan 2024
+
+#### Assignments
+
+- [Homework 2](../homeworks/hw2.ipynb) (due January 26, 2024)
+
 ### Week 1, January 8-12, 2024
 
 #### Web Resources

@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>How do we trust measurements and models? &#8212; Classical Mechanics</title>
+    <title>What is Mathematical Modeling? &#8212; Classical Mechanics</title>
   
   
   
@@ -62,9 +62,11 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'lecture-notes/chapter7-overview';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'lecture-notes/chapter2-overview';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="2. Classical Mechanics, Mathematics and Numerical background" href="chapter2.html" />
+    <link rel="prev" title="1. What is Classical Physics?" href="chapter1.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -175,9 +177,9 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../admin/links.html">Course Material and Links</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Introductory Material</span></p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="chapter1.html">1. What is Classical Physics?</a></li>
-<li class="toctree-l1"><a class="reference internal" href="chapter2-overview.html">What is Mathematical Modeling?</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">What is Mathematical Modeling?</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chapter2.html">2. Classical Mechanics, Mathematics and Numerical background</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chapter3.html">3. Simple Motion problems and Reminder on Newton’s Laws</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chapter4.html">4. Work, Energy, Momentum and Conservation laws</a></li>
@@ -257,7 +259,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/main?urlpath=tree/lecture-notes/chapter7-overview.ipynb" target="_blank"
+      <li><a href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/main?urlpath=tree/lecture-notes/chapter2-overview.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
    title="Launch onBinder"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -288,7 +290,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../_sources/lecture-notes/chapter7-overview.ipynb" target="_blank"
+      <li><a href="../_sources/lecture-notes/chapter2-overview.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -359,7 +361,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -370,11 +374,24 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>How do we trust measurements and models?</h1>
+    <h1>What is Mathematical Modeling?</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#models-and-modeling">Models and modeling</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-a-model">What is a model?</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#history-and-philosophy-of-science">History and Philosophy of Science</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-has-been-your-experience-with-models">What has been your experience with models?</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -384,8 +401,53 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="how-do-we-trust-measurements-and-models">
-<h1>How do we trust measurements and models?<a class="headerlink" href="#how-do-we-trust-measurements-and-models" title="Permalink to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="what-is-mathematical-modeling">
+<h1>What is Mathematical Modeling?<a class="headerlink" href="#what-is-mathematical-modeling" title="Permalink to this heading">#</a></h1>
+<p>Nature reveals itself to us through interactions. We can tell from observations that it is nature’s interactions that lead to its evolution. How nature is changing and predicting how it will change in the future is the work of science. In this work, we observe nature and its interactions to make models of those observations. We aim to predict and explain our observations of nature through this building of models.</p>
+<p>In physics, our goals are typically to explain and predict observations of physical phenomenon. Here, we focus ourselves to those canonical things that physicists concern themselves with: motion, fields, waves, atoms, nuclei, and so on.</p>
+<section id="models-and-modeling">
+<h2>Models and modeling<a class="headerlink" href="#models-and-modeling" title="Permalink to this heading">#</a></h2>
+<p>This course focuses on common physical models and how we use mathematics and computing tools to investigate these models. But, we need to agree on an mutual understanding of a model. In this activity, you will be working in a group to define aspects of a good model for the physical sciences.</p>
+<p>There are plenty of ideas on the internet, I can even <a class="reference external" href="https://bfy.tw/TUdA">provide you a link</a> with plenty of information. But, the point of this activity is for us to define a good model now (given all your prior experiences with models and modeling), and to reflect on that definition as you develop expertise with models and modeling (through your learning in this class).</p>
+</section>
+<section id="what-is-a-model">
+<h2>What is a model?<a class="headerlink" href="#what-is-a-model" title="Permalink to this heading">#</a></h2>
+<p>We are going to start with this short video made by Geoscientist John Aiken when he was a graduate student at Georgia Tech.</p>
+<p><a class="reference external" href="https://inv.tux.pizza/watch?v=dkTncoPqo5Y"><img alt="" src="https://markdown-videos-api.jorgenkh.no/youtube/dkTncoPqo5Y?width=720&amp;height=405" /></a></p>
+<ul class="simple">
+<li><p>Non-Commercial Link: <a class="reference external" href="https://inv.tux.pizza/watch?v=dkTncoPqo5Y">https://inv.tux.pizza/watch?v=dkTncoPqo5Y</a></p></li>
+<li><p>Commercial Link: <a class="reference external" href="https://youtube.com/watch?v=dkTncoPqo5Y">https://youtube.com/watch?v=dkTncoPqo5Y</a></p></li>
+</ul>
+<section id="history-and-philosophy-of-science">
+<h3>History and Philosophy of Science<a class="headerlink" href="#history-and-philosophy-of-science" title="Permalink to this heading">#</a></h3>
+<p>If you would like to dive deeper into models and modeling, there’s excellent work in history and philosophy of science. The field studies how science develops knowledge, practice, culture, and so on. It studies important events and provides critical information on important and, often, overlooked folks who do science. For example, historian and gender studies professor <a class="reference external" href="https://en.wikipedia.org/wiki/Sharon_Traweek">Sharon Traweek</a> studies the high energy physics field. Her book, <a class="reference external" href="https://en.wikipedia.org/wiki/Beamtimes_and_Lifetimes">Beamtimes and Lifetimes: The World of High Energy Physicists</a> <span id="id1">[]</span> is excellent.</p>
+<div class="admonition-dame-nancy-cartwright-philosopher-of-science admonition">
+<p class="admonition-title">Dame Nancy Cartwright (philosopher of science)</p>
+<p>One of the more interesting scholars in <a class="reference external" href="https://en.wikipedia.org/wiki/Nancy_Cartwright_(philosopher)">Dame Nancy Cartwright</a> who wrote a lot about the ‘practice of science.’ Her philosophical work informed many of the innovations in physics and broader science education – including many science courses at MSU.</p>
+<p>Her writing is very interesting, but the style of writing can be a challenge to read. This is the nature of academic writing in different disciplines. Her book called “How The Laws of Physics Lie” <span id="id2">[]</span> is worth a read. Here’s a link to the <a class="reference external" href="http://www.generativescience.org/papers/nature/Cartwright-_1983.pdf">first chapter</a>.</p>
+</div>
+</section>
+</section>
+<section id="what-has-been-your-experience-with-models">
+<h2>What has been your experience with models?<a class="headerlink" href="#what-has-been-your-experience-with-models" title="Permalink to this heading">#</a></h2>
+<p>Take 2-3 minutes to think about your prior physics class.</p>
+<ul class="simple">
+<li><p>What models have you used? What makes that a model?</p></li>
+<li><p>What modeling have you done? What makes that modeling?</p></li>
+</ul>
+<p>After you have thought about the above questions and generated a long list of experiences, you can move onto the next set of questions below.</p>
+<div class="toggle docutils container">
+<p>Take 2-3 minutes to think about your prior work with models and modeling?</p>
+<ul class="simple">
+<li><p>What made a model good or not so good?</p></li>
+<li><p>What kinds of things could you do to make a better model?</p></li>
+</ul>
+</div>
+<p>After you have completed the above questions and generated a list of good model features, you can move onto the next set of questions below.</p>
+<div class="toggle docutils container">
+<p>Take 2-3 minutes and write down all the mathematical and/or computing models you have experienced, heard about, seen, or are otherwise familiar.</p>
+</div>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -397,16 +459,16 @@ document.write(`
         },
         codeMirrorConfig: {
             theme: "abcdef",
-            mode: "python"
+            mode: "teaching"
         },
         kernelOptions: {
-            name: "python3",
+            name: "teaching",
             path: "./lecture-notes"
         },
         predefinedOutput: true
     }
     </script>
-    <script>kernelName = 'python3'</script>
+    <script>kernelName = 'teaching'</script>
 
                 </article>
               
@@ -418,12 +480,49 @@ document.write(`
                 <footer class="prev-next-footer">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="chapter1.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">1. What is Classical Physics?</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="chapter2.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">2. Classical Mechanics, Mathematics and Numerical background</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#models-and-modeling">Models and modeling</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-a-model">What is a model?</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#history-and-philosophy-of-science">History and Philosophy of Science</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-has-been-your-experience-with-models">What has been your experience with models?</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
