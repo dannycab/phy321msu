@@ -44,7 +44,7 @@ parts:
   numbered: false
   chapters:
   - file: homeworks/hw1.ipynb
-  #- file: homeworks/hw2.ipynb
+  - file: homeworks/hw2.ipynb
 - caption: Honors Projects
   numbered: false
   chapters:

@@ -16,7 +16,7 @@ All assignments are turned in using D2L as a PDF and/or Jupyter notebook.
 
 | Week | Day    | Topic                                       | Readings to prepare           | Important events                                                |
 | ---- | ------ | ------------------------------------------- | ----------------------------- | --------------------------------------------------------------- |
-| CW2  | 15 Jan | MLK Holiday (No Class)                      |                               | Homework 2 Assigned (Due 26 Jan)                                |
+| CW2  | 15 Jan | MLK Holiday (No Class)                      |                               | [Homework 2 Assigned (Due 26 Jan)](../homeworks/hw2.ipynb)                                |
 |      | 17 Jan | Newton's Laws; Motion in 2 and 3 dimensions | JRT 1.4-1.6; AMS Ch 4.2 and 5 |                                                                 |
 |      | 19 Jan | Problem session for homework                |                               | **Homework 1 Due** _([Turn-in using D2L](https://d2l.msu.edu))_ |
 
