@@ -24,7 +24,7 @@ All assignments are turned in using D2L as a PDF and/or Jupyter notebook.
 
 | Week | Day    | Topic                                       | Readings to prepare | Important events                                                |
 | ---- | ------ | ------------------------------------------- | ------------------- | --------------------------------------------------------------- |
-| CW3  | 22 Jan | Air resistance; writing equations of motion | JRT 2.1-2.4         | Homework 3 Assigned (Due 2 Feb)                                 |
+| CW3  | 22 Jan | Air resistance; writing equations of motion | JRT 2.1-2.4         | [Homework 3 Assigned (Due 2 Feb)](../homeworks/hw3.ipynb)                                 |
 |      | 24 Jan | Gravitational force; spring force           |                     |                                                                 |
 |      | 26 Jan | Problem session for homework                |                     | **Homework 2 Due** _([Turn-in using D2L](https://d2l.msu.edu))_ |
 
