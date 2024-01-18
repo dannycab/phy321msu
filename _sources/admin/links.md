@@ -6,7 +6,48 @@ Materials will appear in reverse chronological order, with the most recent appea
 
 All recorded classes are added to [this playlist](https://mediaspace.msu.edu/playlist/dedicated/1_s1d57uud/.)
 
+
+### Week 3, January 22-26, 2024
+
+Topics: Modeling with Newton's Second Law, Motion in 2D, Drag Forces
+
+#### Videos to Watch
+
+While never required, these videos are recommended to help you see the larger picture of what we are doing in class. These two focus on the physics of low [Reynolds number](https://en.wikipedia.org/wiki/Reynolds_number) flows.  
+
+##### Physics of Life - Life at Low Reynolds Number (15 minute video)
+
+This video focuses on the biological aspects of the problem as the physics of low Reynolds numbers is important for understanding the motion of microorganisms. 
+[![Physics of Life - Life at Low Reynolds Number](https://markdown-videos-api.jorgenkh.no/youtube/Qme07fA3Fj4?width=720&height=405)](https://inv.n8pjl.ca/watch?v=gZk2bMaqs1E)
+
+- Non-Commercial Link: [https://inv.n8pjl.ca/watch?v=gZk2bMaqs1E](https://inv.n8pjl.ca/watch?v=gZk2bMaqs1E)
+- Commercial Link: [https://youtube.com/watch?v=gZk2bMaqs1E](https://youtube.com/watch?v=gZk2bMaqs1E)
+
+##### G.I. Taylor's Low Reynolds Number Flows (32 minute video)
+
+This video is a classic from [G.I. Taylor](https://en.wikipedia.org/wiki/Geoffrey_Ingram_Taylor) who was a physicist interested in sharing the conceptual beauty of physics with the general public. He was also a pioneer in the field of fluid mechanics. In fact, Taylor's [groundbreaking paper](https://royalsocietypublishing.org/doi/10.1098/rsta.1923.0008) on the stability of fluid flows between two rotating cylinders set off studies into turbulence. The [Taylor-Couette flow](https://en.wikipedia.org/wiki/Taylor%E2%80%93Couette_flow) is a critical tool for [studies of turbulence](https://pubmed.ncbi.nlm.nih.gov/20365623/).
+
+[![G.I. Taylor's Low Reynolds Number Flows](https://markdown-videos-api.jorgenkh.no/youtube/8Dst6V4CQME?width=720&height=405)](https://inv.n8pjl.ca/watch?v=8Dst6V4CQME)
+
+- Non-Commercial Link: [https://inv.n8pjl.ca/watch?v=8Dst6V4CQME](https://inv.n8pjl.ca/watch?v=8Dst6V4CQME)
+- Commercial Link: [https://youtube.com/watch?v=8Dst6V4CQME](https://youtube.com/watch?v=8Dst6V4CQME)
+
+#### Class Materials
+- Readings:
+  - JRT 2.1-2.4
+- Handwritten Notes:
+  - CW3: [Forces and Motion](../docs/handwritten-notes/CW3.pdf)
+- Lecture Videos:
+  - 22 Jan 2024
+  - 24 Jan 2024
+
+#### Assignments
+
+- [Homework 2](../homeworks/hw2.ipynb) (due January 26, 2024)
+
 ### Week 2, January 16-19, 2024
+
+Topics: Modeling with Newton's Second Law, Motion in 1D
 
 #### Web Resources
   - [What is Mathematical Modeling?](../lecture-notes/chapter2-overview.ipynb)
@@ -18,13 +59,15 @@ All recorded classes are added to [this playlist](https://mediaspace.msu.edu/pla
 - Handwritten Notes:
   - CW1: [Making Classical Models](../docs/handwritten-notes/CW2.pdf)
 - Lecture Videos:
-  - 17 Jan 2024
+  - 17 Jan 2024 (ipad crashed zoom)
 
 #### Assignments
 
 - [Homework 2](../homeworks/hw2.ipynb) (due January 26, 2024)
 
 ### Week 1, January 8-12, 2024
+
+Topics: Introduction, Vectors, Kinematic Quantities
 
 #### Web Resources
   - [Course syllabus](../admin/teachers.md)
