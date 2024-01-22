@@ -38,7 +38,7 @@ This video is a classic from [G.I. Taylor](https://en.wikipedia.org/wiki/Geoffre
 - Handwritten Notes:
   - CW3: [Forces and Motion](../docs/handwritten-notes/CW3.pdf)
 - Lecture Videos:
-  - 22 Jan 2024
+  - [22 Jan 2024](https://mediaspace.msu.edu/id/1_injjcj1y)
   - 24 Jan 2024
 
 #### Assignments
