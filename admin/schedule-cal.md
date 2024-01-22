@@ -8,7 +8,7 @@ All assignments are turned in using D2L as a PDF and/or Jupyter notebook.
 
 | Week | Day    | Topic                                                               | Readings to prepare     | Important events                                            |
 | ---- | ------ | ------------------------------------------------------------------- | ----------------------- | ----------------------------------------------------------- |
-| CW1  | 08 Jan | Introduction to the course; reminders about vectors; software setup | MLB Ch 3.4             | [Homework 1 Assigned (Due 19 Jan )](../homeworks/hw1.ipynb) |
+| CW1  | 08 Jan | Introduction to the course; reminders about vectors; software setup | MLB Ch 3.4              | [Homework 1 Assigned (Due 19 Jan )](../homeworks/hw1.ipynb) |
 |      | 10 Jan | Newton's 1st and 2nd Law; Motion in 1 dimension                     | JRT 1.1-1.4; AMS Ch 1-4 |                                                             |
 |      | 12 Jan | Discussion of Homework 1                                            |                         |                                                             |
 
@@ -16,7 +16,7 @@ All assignments are turned in using D2L as a PDF and/or Jupyter notebook.
 
 | Week | Day    | Topic                                       | Readings to prepare           | Important events                                                |
 | ---- | ------ | ------------------------------------------- | ----------------------------- | --------------------------------------------------------------- |
-| CW2  | 15 Jan | MLK Holiday (No Class)                      |                               | [Homework 2 Assigned (Due 26 Jan)](../homeworks/hw2.ipynb)                                |
+| CW2  | 15 Jan | MLK Holiday (No Class)                      |                               | [Homework 2 Assigned (Due 26 Jan)](../homeworks/hw2.ipynb)      |
 |      | 17 Jan | Newton's Laws; Motion in 2 and 3 dimensions | JRT 1.4-1.6; AMS Ch 4.2 and 5 |                                                                 |
 |      | 19 Jan | Problem session for homework                |                               | **Homework 1 Due** _([Turn-in using D2L](https://d2l.msu.edu))_ |
 
@@ -24,33 +24,33 @@ All assignments are turned in using D2L as a PDF and/or Jupyter notebook.
 
 | Week | Day    | Topic                                       | Readings to prepare | Important events                                                |
 | ---- | ------ | ------------------------------------------- | ------------------- | --------------------------------------------------------------- |
-| CW3  | 22 Jan | Air resistance; writing equations of motion | JRT 2.1-2.4         | [Homework 3 Assigned (Due 2 Feb)](../homeworks/hw3.ipynb)                                 |
+| CW3  | 22 Jan | Air resistance; writing equations of motion | JRT 2.1-2.4         | [Homework 3 Assigned (Due 2 Feb)](../homeworks/hw3.ipynb)       |
 |      | 24 Jan | Gravitational force; spring force           |                     |                                                                 |
 |      | 26 Jan | Problem session for homework                |                     | **Homework 2 Due** _([Turn-in using D2L](https://d2l.msu.edu))_ |
 
 ## Week 4
 
-| Week | Day    | Topic                                      | Readings to prepare | Important events                                                |
-| ---- | ------ | ------------------------------------------ | ------------------- | --------------------------------------------------------------- |
-| CW4  | 29 Jan | Work Energy Theorem; Momentum conservation | JRT 4.1-4.3         | Homework 4 Assigned (Due 9 Feb)                                 |
-|      | 31 Jan | Other conservation laws                    | JRT 3.1-3.5         | Angular momentum conservation                                   |
-|      | 02 Feb | Problem session for homework               |                     | **Homework 3 Due** _([Turn-in using D2L](https://d2l.msu.edu))_ |
+| Week | Day    | Topic                                                     | Readings to prepare | Important events                                                |
+| ---- | ------ | --------------------------------------------------------- | ------------------- | --------------------------------------------------------------- |
+| CW4  | 29 Jan | Work Energy Theorem                                       | JRT 4.1-4.3         | Homework 4 Assigned (Due 9 Feb)                                 |
+|      | 31 Jan | Momentum Conservation, Newton's 3rd Law, Angular Momentum | JRT 3.1-3.4         |                                                                 |
+|      | 02 Feb | Problem session for homework                              |                     | **Homework 3 Due** _([Turn-in using D2L](https://d2l.msu.edu))_ |
 
 ## Week 5
 
-| Week | Day    | Topic | Readings to prepare | Important events                                                |
-| ---- | ------ | ----- | ------------------- | --------------------------------------------------------------- |
-| CW5  | 05 Feb |       |                     |                                                                 |
-|      | 07 Feb |       |                     |                                                                 |
-|      | 09 Feb |       |                     | **Homework 4 Due** _([Turn-in using D2L](https://d2l.msu.edu))_ |
+| Week | Day    | Topic                                       | Readings to prepare           | Important events                                                |
+| ---- | ------ | ------------------------------------------- | ----------------------------- | --------------------------------------------------------------- |
+| CW5  | 05 Feb | Vector calculus and the Work-Energy Theorem | JRT 4.1-4.4, 4.6; MLB 6.6-6.8 |                                                                 |
+|      | 07 Feb | Conservative Forces and Potential Energy    |                               |                                                                 |
+|      | 09 Feb |                                             |                               | **Homework 4 Due** _([Turn-in using D2L](https://d2l.msu.edu))_ |
 
 ## Week 6
 
-| Week | Day    | Topic | Readings to prepare | Important events                        |
-| ---- | ------ | ----- | ------------------- | --------------------------------------- |
-| CW6  | 12 Feb |       |                     | Midterm Project 1 Assigned (Due 23 Feb) |
-|      | 14 Feb |       |                     |                                         |
-|      | 16 Feb |       |                     |                                         |
+| Week | Day    | Topic                           | Readings to prepare | Important events                        |
+| ---- | ------ | ------------------------------- | ------------------- | --------------------------------------- |
+| CW6  | 12 Feb | Two Particles, Potential Energy | JRT 4.6, 4.9-4.10   | Midterm Project 1 Assigned (Due 23 Feb) |
+|      | 14 Feb | Stability Analysis              |                     |                                         |
+|      | 16 Feb |                                 |                     |                                         |
 
 ## Week 7
 
