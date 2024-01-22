@@ -3,11 +3,12 @@
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-content_root="" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>PHY321: Classical Mechanics 1 &#8212; Classical Mechanics</title>
   
   
@@ -18,12 +19,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -37,9 +38,9 @@
     <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
-  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -138,9 +139,11 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
   
 
 <a class="navbar-brand logo" href="../intro.html">
+  
   
   
   
@@ -150,8 +153,8 @@ const thebe_selector_output = ".output, .cell_output"
       
     
     
-    <img src="../_static/spartan-helmet.png" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="../_static/spartan-helmet.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="../_static/spartan-helmet.png" class="logo__image only-light" alt="Classical Mechanics - Home"/>
+    <script>document.write(`<img src="../_static/spartan-helmet.png" class="logo__image only-dark" alt="Classical Mechanics - Home"/>`);</script>
   
   
 </a></div>
@@ -340,6 +343,7 @@ const thebe_selector_output = ".output, .cell_output"
 </button>
 
 
+
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
@@ -349,6 +353,7 @@ document.write(`
   </button>
 `);
 </script>
+
 
 <script>
 document.write(`
@@ -402,25 +407,25 @@ document.write(`
                   
   <!-- HTML file automatically generated from DocOnce source (https://github.com/doconce/doconce/)
 doconce format html hw9.do.txt --no_mako -->
-<!-- dom:TITLE: PHY321: Classical Mechanics 1 --><div class="tex2jax_ignore mathjax_ignore section" id="phy321-classical-mechanics-1">
+<!-- dom:TITLE: PHY321: Classical Mechanics 1 --><section class="tex2jax_ignore mathjax_ignore" id="phy321-classical-mechanics-1">
 <h1>PHY321: Classical Mechanics 1<a class="headerlink" href="#phy321-classical-mechanics-1" title="Permalink to this heading">#</a></h1>
 <p><strong>Homework 9, due Thursday  April 28</strong></p>
 <p>Date: <strong>Apr 19, 2023</strong></p>
-<div class="section" id="practicalities-about-homeworks-and-projects">
+<section id="practicalities-about-homeworks-and-projects">
 <h2>Practicalities about  homeworks and projects<a class="headerlink" href="#practicalities-about-homeworks-and-projects" title="Permalink to this heading">#</a></h2>
 <ol class="arabic simple">
 <li><p>You can work in groups (optimal groups are often 2-3 people) or by yourself. If you work as a group you can hand in one answer only if you wish. <strong>Remember to write your name(s)</strong>!</p></li>
 <li><p>Homeworks are available  the week before the deadline.</p></li>
 <li><p>How do I(we)  hand in?  Due to the corona virus and many of you not being on campus, we recommend that you scan your handwritten notes and upload them to D2L. If you are ok with typing mathematical formulae using say Latex, you can hand in everything as a single jupyter notebook at D2L. The numerical exercise(s) should always be handed in as a jupyter notebook by the deadline at D2L.</p></li>
 </ol>
-</div>
-<div class="section" id="introduction-to-homework-9">
+</section>
+<section id="introduction-to-homework-9">
 <h2>Introduction to homework 9<a class="headerlink" href="#introduction-to-homework-9" title="Permalink to this heading">#</a></h2>
 <p>This week’s exercises focus on solving
 two-body  problems with central forces and the Lagrangian formalism (exercise 5). There are no numerical exercises.
 The first four exercises are examples taken from our discussions of two-body problems and the relevant theory is to be found in chapter 8 of Taylor. The last exercise involves chapters 6 and 7 of Taylor.</p>
-</div>
-<div class="section" id="exercise-1-attractive-potential-10pt">
+</section>
+<section id="exercise-1-attractive-potential-10pt">
 <h2>Exercise 1: Attractive Potential (10pt)<a class="headerlink" href="#exercise-1-attractive-potential-10pt" title="Permalink to this heading">#</a></h2>
 <p>Consider a particle in an attractive potential</p>
 <div class="math notranslate nohighlight">
@@ -440,8 +445,8 @@ r(\phi) = \frac{1}{\frac{\mu\alpha}{L^2}+A\cos{(\phi)}}.
 \]</div>
 <p>Find the value of <span class="math notranslate nohighlight">\(A\)</span>. Hint: Use the fact that at <span class="math notranslate nohighlight">\(r_{\rm min}\)</span>
 there is no radial kinetic energy and <span class="math notranslate nohighlight">\(E=-\alpha/r_{\rm min}+L^2/2mr_{\rm min}^2\)</span>.</p>
-</div>
-<div class="section" id="exercise-2-20pt-inverse-square-force">
+</section>
+<section id="exercise-2-20pt-inverse-square-force">
 <h2>Exercise 2 (20pt) Inverse-square force<a class="headerlink" href="#exercise-2-20pt-inverse-square-force" title="Permalink to this heading">#</a></h2>
 <p>Consider again the same effective potential as in exercise 1. This leads to an attractive inverse-square-law force, <span class="math notranslate nohighlight">\(F=-\alpha/r^2\)</span>. Consider a particle of mass <span class="math notranslate nohighlight">\(m\)</span> with angular momentum <span class="math notranslate nohighlight">\(L\)</span>. Taylor sections 8.4-8.7 are relevant background material.  See also the harmonic oscillator potential from hw8. The equation of motion for the radial degrees of freedom is (see also hw8) in the center-of-mass frame in two dimensions with <span class="math notranslate nohighlight">\(x=r\cos{(\phi)}\)</span> and <span class="math notranslate nohighlight">\(y=r\sin{(\phi)}\)</span> and
 <span class="math notranslate nohighlight">\(r\in [0,\infty)\)</span>, <span class="math notranslate nohighlight">\(\phi\in [0,2\pi]\)</span> and <span class="math notranslate nohighlight">\(r=\sqrt{x^2+y^2}\)</span> are given by</p>
@@ -461,8 +466,8 @@ there is no radial kinetic energy and <span class="math notranslate nohighlight"
 <li><p>2c (5pt) Find the effective spring constant for the particle at the minimum.</p></li>
 <li><p>2d (5pt) What is the angular frequency for small vibrations about the minimum? How does this compare with the answer to 2b?</p></li>
 </ul>
-</div>
-<div class="section" id="exercise-3-inverse-square-force-again-10pt">
+</section>
+<section id="exercise-3-inverse-square-force-again-10pt">
 <h2>Exercise 3, Inverse-square force again (10pt)<a class="headerlink" href="#exercise-3-inverse-square-force-again-10pt" title="Permalink to this heading">#</a></h2>
 <p>Consider again a  particle of mass <span class="math notranslate nohighlight">\(m\)</span> in the same attractive potential, <span class="math notranslate nohighlight">\(V(r)=-\alpha/r\)</span>, with angular momentum <span class="math notranslate nohighlight">\(L\)</span> with just the right energy so that</p>
 <div class="math notranslate nohighlight">
@@ -487,8 +492,8 @@ r=\frac{2r_0}{1+\cos\theta},~~~r_0=\frac{L^2}{2m\alpha}.
 \[
 x=x_0-\frac{y^2}{R}.
 \]</div>
-</div>
-<div class="section" id="exercise-4-parabolic-and-hyperbolic-orbits-10pt">
+</section>
+<section id="exercise-4-parabolic-and-hyperbolic-orbits-10pt">
 <h2>Exercise 4, parabolic and hyperbolic orbits (10pt)<a class="headerlink" href="#exercise-4-parabolic-and-hyperbolic-orbits-10pt" title="Permalink to this heading">#</a></h2>
 <p>The solution to the radial function for an inverse-square-law force, see for example Taylor equation (8.59) or the equation above, is</p>
 <div class="math notranslate nohighlight">
@@ -502,8 +507,8 @@ while for <span class="math notranslate nohighlight">\(\epsilon &gt; 1\)</span> 
 \frac{(x-\delta)^2}{\alpha^2}-\frac{y^2}{\beta^2}=1.
 \]</div>
 <p>For a hyperbola, identify the constants <span class="math notranslate nohighlight">\(\alpha\)</span>, <span class="math notranslate nohighlight">\(\beta\)</span> and <span class="math notranslate nohighlight">\(\delta\)</span> in terms of the constants <span class="math notranslate nohighlight">\(c\)</span> and <span class="math notranslate nohighlight">\(\epsilon\)</span> for <span class="math notranslate nohighlight">\(r(\phi)\)</span>.</p>
-</div>
-<div class="section" id="exercise-5-lagrangian-formalism-and-the-lennard-jones-potential-40pt">
+</section>
+<section id="exercise-5-lagrangian-formalism-and-the-lennard-jones-potential-40pt">
 <h2>Exercise 5, Lagrangian formalism and the Lennard-Jones potential (40pt)<a class="headerlink" href="#exercise-5-lagrangian-formalism-and-the-lennard-jones-potential-40pt" title="Permalink to this heading">#</a></h2>
 <p>This exercise is a   follow-up of homework 6. There we studied the so-called
 <a class="reference external" href="https://en.wikipedia.org/wiki/Lennard-Jones_potential">Lennard-Jones potential</a> which is widely used in molecular dynamics
@@ -537,8 +542,8 @@ potential is a good approximation for noble gases like helium, neon, argon and o
 <li><p><strong>5d (10pt):</strong> Use the Euler-Lagrange equations to find the equations of motion for <span class="math notranslate nohighlight">\(r\)</span> and <span class="math notranslate nohighlight">\(\phi\)</span>. Does the equation of motion for <span class="math notranslate nohighlight">\(r\)</span> agree with what you would expect? Comment your results. Hint: think of the gravitational two-body problem</p></li>
 <li><p><strong>5e (5pt):</strong> Use the equation of motion for <span class="math notranslate nohighlight">\(\phi\)</span> to show that angular momentum is conserved. Comment your results. Can you infer this from the form of the potential? Hint: see your answer to 5c.</p></li>
 </ul>
-</div>
-<div class="section" id="classical-mechanics-extra-credit-assignment-scientific-writing-and-attending-talks">
+</section>
+<section id="classical-mechanics-extra-credit-assignment-scientific-writing-and-attending-talks">
 <h2>Classical Mechanics Extra Credit Assignment: Scientific Writing and attending Talks<a class="headerlink" href="#classical-mechanics-extra-credit-assignment-scientific-writing-and-attending-talks" title="Permalink to this heading">#</a></h2>
 <p>The following gives you an opportunity to earn <strong>five extra credit
 points</strong> on each of the remaining homeworks and <strong>ten extra credit points</strong>
@@ -588,8 +593,8 @@ please contact us.</p>
 </table>
 <p>You can also gain extra credits if you attend scientific talks.
 This is described here.</p>
-</div>
-<div class="section" id="integrating-classwork-with-research">
+</section>
+<section id="integrating-classwork-with-research">
 <h2>Integrating Classwork With Research<a class="headerlink" href="#integrating-classwork-with-research" title="Permalink to this heading">#</a></h2>
 <p>This opportunity will allow you to earn up to 5 extra credit points on a Homework per week. These points can push you above 100% or help make up for missed exercises.
 In order to earn all points you must:</p>
@@ -605,8 +610,8 @@ Talks given by researchers through the following clubs:</p>
 <li><p>Astronomy Club​: Meets Monday Nights</p></li>
 <li><p>Facility For Rare Isotope Beam (FRIB) Seminars: ​Occur multiple times a week</p></li>
 </ul>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -636,7 +641,7 @@ Talks given by researchers through the following clubs:</p>
               
               
                 <footer class="prev-next-footer">
-                  <!-- Previous / next buttons -->
+                  
 <div class="prev-next-area">
 </div>
                 </footer>
@@ -683,6 +688,7 @@ By Danny Caballero, Morten Hjorth-Jensen
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
       © Copyright 2022.
@@ -709,8 +715,8 @@ By Danny Caballero, Morten Hjorth-Jensen
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
 
   <footer class="bd-footer">
   </footer>
