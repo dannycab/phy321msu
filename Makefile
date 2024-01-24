@@ -6,6 +6,7 @@ PDF_FILE := book.pdf
 pdf:
 	jupyter-book build ${BOOK_DIR} --builder pdflatex
 web:
+	rm ${BOOK_DIR}${BUILD_DIR}/solutions/*
 	ghp-import -n -p -f ${BOOK_DIR}${BUILD_DIR}
 update:
 	jupyter-book build ${BOOK_DIR}
