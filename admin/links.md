@@ -50,7 +50,7 @@ To frame how interesting and complex energy can be, consider this video from the
 - Readings:
   - JRT 4.1-4.3; JRT 3.1-3.4
 - Handwritten Notes:
-  - CW4: [Work and Energy](../docs/handwritten-notes/CW4.pdf)
+  - CW4: [Conservation Laws](../docs/handwritten-notes/CW4.pdf)
 - Lecture Videos:
   - 29 Jan 2024
   - 31 Jan 2024
