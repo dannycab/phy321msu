@@ -6,6 +6,59 @@ Materials will appear in reverse chronological order, with the most recent appea
 
 All recorded classes are added to [this playlist](https://mediaspace.msu.edu/playlist/dedicated/1_s1d57uud/.)
 
+### Week 4, January 29-February 2, 2024
+
+Topics: Work-Energy Theorem, Conservative Forces, Momentum Conservation
+
+#### Videos to Watch
+
+While never required, these videos are recommended to help you see the larger picture of what we are doing in class. 
+
+##### Feynman on the units of energy (2 minute video)
+
+[Richard Feynman](https://en.wikipedia.org/wiki/Richard_Feynman) was a Nobel Prize winning physicist who was known for his ability to explain complex ideas in simple terms. In this video, he explains the units of energy. He's engaging and gregarious as he was known publicly. 
+
+[![Feynman on the units of energy](https://markdown-videos-api.jorgenkh.no/youtube/roX2NXDUTsM?width=720&height=405)](https://inv.n8pjl.ca/watch?v=roX2NXDUTsM)
+
+- Non-Commercial Link: [https://inv.n8pjl.ca/watch?v=roX2NXDUTsM](https://inv.n8pjl.ca/watch?v=roX2NXDUTsM)
+- Commercial Link: [https://youtube.com/watch?v=roX2NXDUTsM](https://youtube.com/watch?v=roX2NXDUTsM)
+
+```{note}
+While we acknowledge the importance of Feynman's contributions to physics and physics teaching, we should remind ourselves that he was not a perfect person. 
+
+Feynman was also known for his [sexist behavior and comments](https://caltechletters.org/viewpoints/feynman-harassment-science). (*Trigger warning*: this link recounts instances of harassment) 
+
+We should not ignore this aspect of his life, and remind ourselves that we can learn from his physics, and make a welcoming space for all people.
+```
+
+##### How does electricity work? (15 minute video)
+
+Energy is a fundamental concept in physics, but it is also a very abstract concept. Feynman is quoted as saying: "*It is important to realize that in physics today, we have no knowledge of what energy is.*" 
+
+It's a number a quantity, that when we compute it, we find it stays the same before and after a process - so long as we account for all the interactions and uses in that case. 
+
+To frame how interesting and complex energy can be, consider this video from the [Veritasium channel](https://inv.n8pjl.ca/channel/UCHnyfMqiRRG1u-2MsSQLbXA). [[Commerical Link](https://www.youtube.com/channel/UCHnyfMqiRRG1u-2MsSQLbXA)]
+
+*How do we get light from a circuit when we close a switch?*
+
+[![How does electricity work?](https://markdown-videos-api.jorgenkh.no/youtube/bHIhgxav9LY?width=720&height=405)](https://inv.n8pjl.ca/watch?v=bHIhgxav9LY)
+
+- Non-Commercial Link: [https://inv.n8pjl.ca/watch?v=bHIhgxav9LY](https://inv.n8pjl.ca/watch?v=bHIhgxav9LY)
+- Commercial Link: [https://youtube.com/watch?v=bHIhgxav9LY](https://youtube.com/watch?v=bHIhgxav9LY)
+
+#### Class Materials
+- Readings:
+  - JRT 4.1-4.3; JRT 3.1-3.4
+- Handwritten Notes:
+  - CW4: [Work and Energy](../docs/handwritten-notes/CW4.pdf)
+- Lecture Videos:
+  - 29 Jan 2024
+  - 31 Jan 2024
+
+#### Assignments
+
+- [Homework 3](../homeworks/hw3.ipynb) (due February 2, 2024)
+
 
 ### Week 3, January 22-26, 2024
 
@@ -39,7 +92,7 @@ This video is a classic from [G.I. Taylor](https://en.wikipedia.org/wiki/Geoffre
   - CW3: [Forces and Motion](../docs/handwritten-notes/CW3.pdf)
 - Lecture Videos:
   - [22 Jan 2024](https://mediaspace.msu.edu/media/t/1_injjcj1y)
-  - 24 Jan 2024
+  - [24 Jan 2024](https://mediaspace.msu.edu/media/t/1_p43v9u78) - no audio first 27 minutes...
 
 #### Assignments
 
