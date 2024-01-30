@@ -3,12 +3,11 @@
 <!DOCTYPE html>
 
 
-<html lang="en" data-content_root="" >
+<html lang="en" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Building a model for the solar system using ordinary differential equations &#8212; Classical Mechanics</title>
   
   
@@ -19,12 +18,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -38,9 +37,9 @@
     <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
-  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
+  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -140,11 +139,9 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
-
   
 
 <a class="navbar-brand logo" href="../intro.html">
-  
   
   
   
@@ -154,8 +151,8 @@ const thebe_selector_output = ".output, .cell_output"
       
     
     
-    <img src="../_static/spartan-helmet.png" class="logo__image only-light" alt="Classical Mechanics - Home"/>
-    <script>document.write(`<img src="../_static/spartan-helmet.png" class="logo__image only-dark" alt="Classical Mechanics - Home"/>`);</script>
+    <img src="../_static/spartan-helmet.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../_static/spartan-helmet.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
   
   
 </a></div>
@@ -201,6 +198,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../homeworks/hw1.html">Homework 1 (Due 19 Jan)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../solutions/solutionhw1.html">Solutions - Homework 1 (Due 19 Jan)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../homeworks/hw2.html">Homework 2 (Due 26 Jan)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../solutions/solutionhw2.html">Solutions - Homework 1 (Due 26 Jan)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../homeworks/hw3.html">Homework 3 (Due 02 Feb)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../homeworks/hw4.html">Homework 4 (Due 09 Feb)</a></li>
 </ul>
@@ -315,7 +313,6 @@ const thebe_selector_output = ".output, .cell_output"
 </button>
 
 
-
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
@@ -325,7 +322,6 @@ document.write(`
   </button>
 `);
 </script>
-
 
 <script>
 document.write(`
@@ -378,9 +374,9 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="building-a-model-for-the-solar-system-using-ordinary-differential-equations">
+  <div class="tex2jax_ignore mathjax_ignore section" id="building-a-model-for-the-solar-system-using-ordinary-differential-equations">
 <h1>Building a model for the solar system using ordinary differential equations<a class="headerlink" href="#building-a-model-for-the-solar-system-using-ordinary-differential-equations" title="Permalink to this heading">#</a></h1>
-<section id="introduction">
+<div class="section" id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">#</a></h2>
 <p>The aim of this project is to develop a code for simulating the solar
 system using a widely popular algorithm for solving coupled ordinary
@@ -497,7 +493,7 @@ well as their corresponding velocities. The velocities are in units of
 AU per day. Alternatively they can be obtained in terms of km and km/s.</p>
 <p>For the first system below involving only the Earth and the Sun, you
 could just initialize the position with say <span class="math notranslate nohighlight">\(x=1\)</span> AU and <span class="math notranslate nohighlight">\(y=0\)</span> AU.</p>
-<section id="a-the-earth-sun-system">
+<div class="section" id="a-the-earth-sun-system">
 <h3>a: The Earth-Sun system.<a class="headerlink" href="#a-the-earth-sun-system" title="Permalink to this heading">#</a></h3>
 <p>We assume that mass units can be obtained by using the fact that Earth’s
 orbit is almost circular around the Sun. For circular motion we know
@@ -516,8 +512,8 @@ v^2r=GM_{\odot}=4\pi^2\mathrm{AU}^3/\mathrm{yr}^2.
 solving these equations using Euler’s forward algorithm and the
 so-called velocity Verlet method discussed in the lecture notes and
 lecture slides.</p>
-</section>
-<section id="b-writing-an-object-oriented-code-for-the-earth-sun-system">
+</div>
+<div class="section" id="b-writing-an-object-oriented-code-for-the-earth-sun-system">
 <h3>b: Writing an object oriented code for the Earth-Sun system.<a class="headerlink" href="#b-writing-an-object-oriented-code-for-the-earth-sun-system" title="Permalink to this heading">#</a></h3>
 <p>Write then a program which solves the above differential equations for
 the Earth-Sun system using Euler’s method and the velocity Verlet
@@ -531,8 +527,8 @@ abstracted and reused for many types of operations.</p>
 Project 5, much of the structures developed here as well as the
 implementation of the Verlet algorithm, can be used in that project as
 well.</p>
-</section>
-<section id="c-test-of-the-algorithms">
+</div>
+<div class="section" id="c-test-of-the-algorithms">
 <h3>c: Test of the algorithms.<a class="headerlink" href="#c-test-of-the-algorithms" title="Permalink to this heading">#</a></h3>
 <p>Find out which initial value for the velocity that gives a circular
 orbit and test the stability of your algorithm as function of different
@@ -547,8 +543,8 @@ algorithm. Consider also the number of FLOPs involved and perform a
 timing of the two algorithms for equal final times.</p>
 <p>We will use the velocity Verlet algorithm in the remaining part of the
 project.</p>
-</section>
-<section id="d-escape-velocity">
+</div>
+<div class="section" id="d-escape-velocity">
 <h3>d: Escape velocity.<a class="headerlink" href="#d-escape-velocity" title="Permalink to this heading">#</a></h3>
 <p>Consider then a planet which begins at a distance of 1 AU from the sun.
 Find out by trial and error what the initial velocity must be in order
@@ -567,8 +563,8 @@ F_G=\frac{GM_{\odot}M_{\mathrm{Earth}}}{r^{\beta}},
 <p>where you let
 <span class="math notranslate nohighlight">\(\beta\in [2,3]\)</span>. What happens to the earth-sun system when <span class="math notranslate nohighlight">\(\beta\)</span>
 creeps towards <span class="math notranslate nohighlight">\(3\)</span>? Comment your results.</p>
-</section>
-<section id="e-the-three-body-problem">
+</div>
+<div class="section" id="e-the-three-body-problem">
 <h3>e: The three-body problem.<a class="headerlink" href="#e-the-three-body-problem" title="Permalink to this heading">#</a></h3>
 <p>We will now study the three-body problem, still with the Sun kept fixed
 as the center of mass of the system but including Jupiter (the most
@@ -599,8 +595,8 @@ solutions using your Verlet solver.</p>
 <p>Repeat the calculations by increasing the mass of Jupiter by a factor of
 10 and 1000 and plot the position of the Earth. Study again the
 stability of the Verlet solver.</p>
-</section>
-<section id="f-final-model-for-all-planets-of-the-solar-system">
+</div>
+<div class="section" id="f-final-model-for-all-planets-of-the-solar-system">
 <h3>f: Final model for all planets of the solar system.<a class="headerlink" href="#f-final-model-for-all-planets-of-the-solar-system" title="Permalink to this heading">#</a></h3>
 <p>Finally, using our Verlet solver, we carry out a real three-body
 calculation where all three systems, the Earth, Jupiter and the Sun are
@@ -613,8 +609,8 @@ results. Extend your program to include all planets in the solar system
 (if you have time, you can also include the various moons, but it is not
 required) and discuss your results. Use the above NASA link to set up
 the initial positions and velocities for all planets.</p>
-</section>
-<section id="g-the-perihelion-precession-of-mercury">
+</div>
+<div class="section" id="g-the-perihelion-precession-of-mercury">
 <h3>g: The perihelion precession of Mercury.<a class="headerlink" href="#g-the-perihelion-precession-of-mercury" title="Permalink to this heading">#</a></h3>
 <p>An important test of the general theory of relativity was to compare its
 prediction for the perihelion precession of Mercury to the observed
@@ -660,9 +656,9 @@ checking that the perihelion precession you get with a pure Newtonian
 force is at least a few orders of magnitude smaller than the observed
 perihelion precession of Mercury. Can the observed perihelion precession
 of Mercury be explained by the general theory of relativity?</p>
-</section>
-</section>
-</section>
+</div>
+</div>
+</div>
 
     <script type="text/x-thebe-config">
     {
@@ -692,7 +688,7 @@ of Mercury be explained by the general theory of relativity?</p>
               
               
                 <footer class="prev-next-footer">
-                  
+                  <!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="NeuralNetworks.html"
@@ -749,7 +745,6 @@ By Danny Caballero, Morten Hjorth-Jensen
   
   <div class="footer-item">
     
-
   <p class="copyright">
     
       © Copyright 2022.
@@ -776,8 +771,8 @@ By Danny Caballero, Morten Hjorth-Jensen
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
 
   <footer class="bd-footer">
   </footer>
