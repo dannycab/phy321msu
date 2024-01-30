@@ -52,7 +52,7 @@ To frame how interesting and complex energy can be, consider this video from the
 - Handwritten Notes:
   - CW4: [Conservation Laws](../docs/handwritten-notes/CW4.pdf)
 - Lecture Videos:
-  - 29 Jan 2024
+  - [29 Jan 2024](https://mediaspace.msu.edu/media/t/1_0of138eb)
   - 31 Jan 2024
 
 #### Assignments
