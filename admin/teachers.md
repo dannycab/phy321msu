@@ -20,9 +20,7 @@
 | --------------------------------------------------------------------------------------- |
 | Monday/Wednesday/Friday 4-5:00pm or [schedule me](https://cal.com/dannycaballero/15min) |
 
-
 Danny will lead the course, design the homework and exams, and assign final grades. Danny is also responsible for the course content, so if you have any suggestions for how to improve the course, please let him know. Danny will also grade your midterm and final projects.
-
 
 ## Graduate Teaching Assistant
 
@@ -37,11 +35,10 @@ Josh will be grading your homework assignments. He is split between our course a
 ![Alia](../images/staff/alia.png)
 ![Addy](../images/staff/addy.png)
 
-| Learning Assistant         | Email            | Office Hour | Zoom Link |
-| -------------------------- | ---------------- | ----------- | --------- |
-| _Alia Valentine (she/her)_ | valen176@msu.edu | TBD         | TBD       |
-| _Addy Shaska (they/them)_    | shaskaad@msu.edu | TBD         | TBD       |
-
+| Learning Assistant         | Email            | Office Hour     | Location          |
+| -------------------------- | ---------------- | --------------- | ----------------- |
+| _Alia Valentine (she/her)_ | valen176@msu.edu | Fridays 10-noon | Physics Help Room |
+| _Addy Shaska (they/them)_  | shaskaad@msu.edu | TBD             | TBD               |
 
 Alia and Addy will be helping you in class and in office hours. They have taken this course previously and have been selected because they are passionate about helping you learn classical mechanics. They are both incredible resources for you. They will offer two hours of office hours per week, and they will be available on Fridays in class and on Slack.
 
@@ -67,7 +64,7 @@ PHY 321 is a very challenging course. It introduces many new concepts and mathem
 
 #### Homework Grading
 
-Because of the large number of students in the course, homework grading will be coarsely grained. Josh will provide overall feedback on the things that students struggled with on homework sets; that will be shared in class. The homeworks will be graded on a 3 point scale: 3 points for a complete and correct solution, 2 points for a mostly complete/slightly incorrect solution, 1 point for an incorrect/incomplete solution, and 0 for a blank solution. 
+Because of the large number of students in the course, homework grading will be coarsely grained. Josh will provide overall feedback on the things that students struggled with on homework sets; that will be shared in class. The homeworks will be graded on a 3 point scale: 3 points for a complete and correct solution, 2 points for a mostly complete/slightly incorrect solution, 1 point for an incorrect/incomplete solution, and 0 for a blank solution.
 
 This coarse grading scale works for each problem, regardless of their value. For example, if you have a problem worth 5 points and have a mostly complete solution you will earn $5 (\dfrac{2}{3}) = 3.33$ of the possible 5 points for that problem. If you have questions about your homework grade, please contact Josh directly.
 
