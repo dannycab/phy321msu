@@ -46,11 +46,11 @@ All assignments are turned in using D2L as a PDF and/or Jupyter notebook.
 
 ## Week 6
 
-| Week | Day    | Topic                               | Readings to prepare                                                                                                                       | Important events                        |
-| ---- | ------ | ----------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------- |
+| Week | Day    | Topic                                                                                 | Readings to prepare                                                                                                                                                                                                                                                           | Important events                        |
+| ---- | ------ | ------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------- |
 | CW6  | 12 Feb | [Nonlinear dynamics](https://en.wikipedia.org/wiki/Nonlinear_system), phase portraits | [Strogatz](https://www.stevenstrogatz.com/books/nonlinear-dynamics-and-chaos-with-applications-to-physics-biology-chemistry-and-engineering) [2.0-2.3](../docs/textbook-chapters/strogatz_3rd_ch2.0-2.3.pdf); [5.0-5.2](../docs/textbook-chapters/strogatz_3rd_ch5.0-5.2.pdf) | Midterm Project 1 Assigned (Due 23 Feb) |
-|      | 14 Feb | Phase portraits, numerical modeling |                                                                                                                                           |                                         |
-|      | 16 Feb |                                     |                                                                                                                                           |                                         |
+|      | 14 Feb | Phase portraits, numerical modeling                                                   | PDFs posted are consistent with [educational fair use](https://www.copyright.gov/help/faq/faq-fairuse.html); will be removed after course has concluded                                                                                                                                 |                                         |
+|      | 16 Feb |                                                                                       |                                                                                                                                                                                                                                                                               |                                         |
 
 ## Week 7
 
