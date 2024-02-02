@@ -38,11 +38,11 @@ All assignments are turned in using D2L as a PDF and/or Jupyter notebook.
 
 ## Week 5
 
-| Week | Day    | Topic                                       | Readings to prepare           | Important events                                                |
-| ---- | ------ | ------------------------------------------- | ----------------------------- | --------------------------------------------------------------- |
-| CW5  | 05 Feb | Vector calculus and the Work-Energy Theorem | JRT 4.1-4.4, 4.6; MLB 6.6-6.8 |                                                                 |
-|      | 07 Feb | Conservative Forces and Potential Energy    |                               |                                                                 |
-|      | 09 Feb |                                             |                               | **Homework 4 Due** _([Turn-in using D2L](https://d2l.msu.edu))_ |
+| Week | Day    | Topic                                  | Readings to prepare           | Important events                                                |
+| ---- | ------ | -------------------------------------- | ----------------------------- | --------------------------------------------------------------- |
+| CW5  | 05 Feb | Conservative Forces and Potential      | JRT 4.1-4.4, 4.6; MLB 6.6-6.8 |                                                                 |
+|      | 07 Feb | Examples and Stability Analysis        |                               |                                                                 |
+|      | 09 Feb |                                        |                               | **Homework 4 Due** _([Turn-in using D2L](https://d2l.msu.edu))_ |
 
 ## Week 6
 

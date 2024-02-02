@@ -6,6 +6,37 @@ Materials will appear in reverse chronological order, with the most recent appea
 
 All recorded classes are added to [this playlist](https://mediaspace.msu.edu/playlist/dedicated/1_s1d57uud/.)
 
+### Week 5, February 5-9, 2024
+
+Topics: Conservative Forces, Potential Energy, Stability
+
+#### Videos to Watch
+
+While never required, these videos are recommended to help you see the larger picture of what we are doing in class. 
+
+##### Where do we think mass comes from? (13 minute video)
+
+The [Higgs Boson](https://en.wikipedia.org/wiki/Higgs_boson) is a particle that was discovered in 2012 at the [Large Hadron Collider](https://en.wikipedia.org/wiki/Large_Hadron_Collider) at [CERN](https://en.wikipedia.org/wiki/CERN). This discovery was a major milestone in the field of particle physics. Much of what we are trying to understand about the nature of mass is encapsulated in the [Higgs Field](https://en.wikipedia.org/wiki/Higgs_field). This is an advanced field with a potential that we are not intending to explore. However, the importance of the basic question of "where does mass come from?" is a fundamental question in physics and the concept of energy, potential, and fields is a critical part of the answer.
+
+[![Where do we think mass comes from?](https://markdown-videos-api.jorgenkh.no/youtube/R7dsACYTTXE?width=720&height=405)](https://inv.n8pjl.ca/watch?v=R7dsACYTTXE)
+
+- Non-Commercial Link: [https://inv.n8pjl.ca/watch?v=R7dsACYTTXE](https://inv.n8pjl.ca/watch?v=R7dsACYTTXE)
+- Commercial Link: [https://youtube.com/watch?v=R7dsACYTTXE](https://youtube.com/watch?v=R7dsACYTTXE)
+
+
+#### Class Materials
+- Readings:
+  - JRT 4.1-4.4, 4.6; MLB 6.6-6.8
+- Handwritten Notes:
+  - CW5: [Potential Energy](../docs/handwritten-notes/CW5.pdf)
+- Lecture Videos:
+  - 5 Feb 2024
+  - 7 Feb 2024
+
+#### Assignments
+
+- [Homework 4](../homeworks/hw4.ipynb) (due February 9, 2024)
+
 ### Week 4, January 29-February 2, 2024
 
 Topics: Work-Energy Theorem, Conservative Forces, Momentum Conservation
