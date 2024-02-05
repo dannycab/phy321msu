@@ -30,7 +30,7 @@ The [Higgs Boson](https://en.wikipedia.org/wiki/Higgs_boson) is a particle that 
 - Handwritten Notes:
   - CW5: [Potential Energy](../docs/handwritten-notes/CW5.pdf)
 - Lecture Videos:
-  - 5 Feb 2024
+  - [5 Feb 2024](https://mediaspace.msu.edu/media/t/1_womzepbu)
   - 7 Feb 2024
 
 #### Assignments
