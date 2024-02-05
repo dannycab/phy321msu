@@ -48,6 +48,7 @@ parts:
   - file: homeworks/hw2.ipynb
   - file: solutions/solutionhw2.ipynb
   - file: homeworks/hw3.ipynb
+  - file: solutions/solutionhw3.ipynb
   - file: homeworks/hw4.ipynb
 - caption: Honors Projects
   numbered: false
