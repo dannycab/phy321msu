@@ -4,7 +4,7 @@
 
 | Meetings           |                       |                    | Location                                                                     |
 | ------------------ | --------------------- | ------------------ | ---------------------------------------------------------------------------- |
-| Monday 3:00-3:50pm | Wednesday 3:00-3:50pm | Friday 3:00-3:50pm | Plant & Soil Science Bldg A149 and [Zoom](https://msu.zoom.us/j/93683330722) |
+| Monday 15:00-15:50 | Wednesday 15:00-15:50 | Friday 15:00-15:50 | Plant & Soil Science Bldg A149 and [Zoom](https://msu.zoom.us/j/93683330722) |
 
 - [Zoom Link](https://msu.zoom.us/j/93683330722) (_Passcode is pinned in our Slack workspace._)
 
@@ -16,9 +16,9 @@
 | --------------------------- | ---------------- | ----------------------------------------------------------------------------------------------------- |
 | _Danny Caballero (he/they)_ | caball14@msu.edu | MWF? [BPS 1310A](http://tinyurl.com/dc-bps-office); TTh? [EGR 1515](http://tinyurl.com/dc-egr-office) |
 
-| Office Hours                                                                            |
-| --------------------------------------------------------------------------------------- |
-| Monday/Wednesday/Friday 4-5:00pm or [schedule me](https://cal.com/dannycaballero/15min) |
+| Office Hours                                                                               |
+| ------------------------------------------------------------------------------------------ |
+| Monday/Wednesday/Friday 16:00-17:00 or [schedule me](https://cal.com/dannycaballero/15min) |
 
 Danny will lead the course, design the homework and exams, and assign final grades. Danny is also responsible for the course content, so if you have any suggestions for how to improve the course, please let him know. Danny will also grade your midterm and final projects.
 
@@ -35,10 +35,10 @@ Josh will be grading your homework assignments. He is split between our course a
 ![Alia](../images/staff/alia.png)
 ![Addy](../images/staff/addy.png)
 
-| Learning Assistant         | Email            | Office Hour     | Location          |
-| -------------------------- | ---------------- | --------------- | ----------------- |
-| _Alia Valentine (she/her)_ | valen176@msu.edu | Fridays 10-noon | Physics Help Room |
-| _Addy Shaska (they/them)_  | shaskaad@msu.edu | TBD             | TBD               |
+| Learning Assistant         | Email            | Office Hour         | Location          |
+| -------------------------- | ---------------- | ------------------- | ----------------- |
+| _Alia Valentine (she/her)_ | valen176@msu.edu | Fridays 10:00-12:00 | Physics Help Room |
+| _Addy Shaska (they/them)_  | shaskaad@msu.edu | Fridays 11:30-13:30 | Physics Help Room |
 
 Alia and Addy will be helping you in class and in office hours. They have taken this course previously and have been selected because they are passionate about helping you learn classical mechanics. They are both incredible resources for you. They will offer two hours of office hours per week, and they will be available on Fridays in class and on Slack.
 
