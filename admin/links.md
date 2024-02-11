@@ -6,6 +6,55 @@ Materials will appear in reverse chronological order, with the most recent appea
 
 All recorded classes are added to [this playlist](https://mediaspace.msu.edu/playlist/dedicated/1_s1d57uud/.)
 
+### Week 6, February 12-16, 2024
+
+Topics: Phase Space and Non-Linear Dynamics
+
+#### Videos to Watch
+
+While never required, these videos are recommended to help you see the larger picture of what we are doing in class. 
+
+
+##### Numerical Integration 
+
+[Numerical Integration](https://en.wikipedia.org/wiki/Numerical_integration) is a vast and wide topic with lots of different approaches, important nuances, and difficult problems. Some of the most high profile numerical integration was done by NASA's [human computers](https://education.nationalgeographic.org/resource/women-nasa) -- a now well-known story thanks to the film [Hidden Figures](https://en.wikipedia.org/wiki/Hidden_Figures). Black women formed a core group of these especially talented scientists (including [Mary Jackson](https://en.wikipedia.org/wiki/Mary_Jackson_(engineer)), [Katherine Johnson](https://en.wikipedia.org/wiki/Katherine_Johnson), and [Dorothy Vaughn](https://en.wikipedia.org/wiki/Dorothy_Vaughan)), without whom, John Glenn would not have orbited the Earth in 1962. This is also a very interesting story about the importance of [Historically Black Colleges and Universities](https://en.wikipedia.org/wiki/Historically_black_colleges_and_universities) to American science.
+
+Below is a video describing 3 coupled ODEs, the [Lorenz equations](https://en.wikipedia.org/wiki/Lorenz_system), that are quite famous. You will be able to model systems like this, but for now think of it as motivation for why we want to learn numerical integration.
+
+[![](https://markdown-videos-api.jorgenkh.no/youtube/aAJkLh76QnM?width=720&height=405))](https://inv.n8pjl.ca/watch?v=aAJkLh76QnM)
+- Non-Commercial Link: [https://inv.n8pjl.ca/watch?v=aAJkLh76QnM?](https://inv.n8pjl.ca/watch?v=aAJkLh76QnM?)
+- Commercial Link: [https://youtube.com/watch?v=aAJkLh76QnM?](https://youtube.com/watch?v=aAJkLh76QnM?)
+
+##### Geometric Thinking and Phase Portraits
+
+One of the first things we will use to investigate systems from a dynamical systems perspective is the [phase portrait](https://en.wikipedia.org/wiki/Phase_portrait), where we will plot the velocity against the position. We can use the phase portrait to tell us what families of solutions we might expect to see. 
+
+*Phase portraits are quite useful for second order differential equations (or any two-dimensional system) because we frequently use and interpret 2D graphs.* Notice that we focused on "2nd order differential equations" not "linear 2nd order." That is because, as we will see, **phase portraits are particularly useful for nonlinear 2nd order differential equations.**
+
+We will go into the details of how to construct and develop phase portraits in class. This video from [Steve Brunton](https://www.me.washington.edu/facultyfinder/steve-brunton) is a good overview of the process. It's quite detailed and takes a mathematical perspective, so don't worry if you don't understand everything in the video. We have plenty of time to investigate how this works in practice.
+
+[![](https://markdown-videos-api.jorgenkh.no/youtube/vBwyD4JJlSs?width=720&height=405)](https://inv.n8pjl.ca/watch?v=vBwyD4JJlSs)
+
+- Non-Commercial Link: [https://inv.n8pjl.ca/watch?v=vBwyD4JJlSs](https://inv.n8pjl.ca/watch?v=vBwyD4JJlSs)
+- Commercial Link: [https://youtube.com/watch?v=vBwyD4JJlSs](https://youtube.com/watch?v=vBwyD4JJlSs)
+
+#### Class Materials
+- Readings:
+  - [Strogatz](https://www.stevenstrogatz.com/books/nonlinear-dynamics-and-chaos-with-applications-to-physics-biology-chemistry-and-engineering) [2.0-2.3](../docs/textbook-chapters/strogatz_3rd_ch2.0-2.3.pdf); [5.0-5.2](../docs/textbook-chapters/strogatz_3rd_ch5.0-5.2.pdf) 
+- Additional Readings:
+  - [Newman's Computational Physics - Ch8 - Solving ODEs](../docs/textbook-chapters/Newman_Ch8_ODEs.pdf)
+  - [Cromer's original paper on the Euler-Cromer method](../docs/papers/euler_cromer_1981.pdf)
+- Handwritten Notes:
+  - CW6: [Phase Space and Nonlinear Dynamics](../docs/handwritten-notes/CW6.pdf)
+- Lecture Videos:
+  - 12 Feb 2024
+  - 14 Feb 2024
+
+#### Assignments
+
+- [Midterm 1](../midterms/midterm1.ipynb) (due February 23, 2024)
+
+
 ### Week 5, February 5-9, 2024
 
 Topics: Conservative Forces, Potential Energy, Stability
@@ -31,7 +80,7 @@ The [Higgs Boson](https://en.wikipedia.org/wiki/Higgs_boson) is a particle that 
   - CW5: [Potential Energy](../docs/handwritten-notes/CW5.pdf)
 - Lecture Videos:
   - [5 Feb 2024](https://mediaspace.msu.edu/media/t/1_womzepbu)
-  - 7 Feb 2024
+  - [7 Feb 2024](https://mediaspace.msu.edu/media/t/1_xwyxkt7m)
 
 #### Assignments
 

@@ -40,6 +40,7 @@ parts:
   numbered: false
   chapters:
   - file: in-class/cw1-python-test.ipynb
+  - file: lecture-notes/numerical_integration.ipynb
 - caption: Weekly assignments, midterms and final projects with solutions
   numbered: false
   chapters:
@@ -50,6 +51,7 @@ parts:
   - file: homeworks/hw3.ipynb
   - file: solutions/solutionhw3.ipynb
   - file: homeworks/hw4.ipynb
+  - file: midterms/midterm1.ipynb
 - caption: Honors Projects
   numbered: false
   chapters:
