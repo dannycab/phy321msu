@@ -3,12 +3,11 @@
 <!DOCTYPE html>
 
 
-<html lang="en" data-content_root="" >
+<html lang="en" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PHY321: Classical Mechanics 1 &#8212; Classical Mechanics</title>
   
   
@@ -19,12 +18,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -38,9 +37,9 @@
     <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
-  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
+  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -139,11 +138,9 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
-
   
 
 <a class="navbar-brand logo" href="../intro.html">
-  
   
   
   
@@ -153,8 +150,8 @@ const thebe_selector_output = ".output, .cell_output"
       
     
     
-    <img src="../_static/spartan-helmet.png" class="logo__image only-light" alt="Classical Mechanics - Home"/>
-    <script>document.write(`<img src="../_static/spartan-helmet.png" class="logo__image only-dark" alt="Classical Mechanics - Home"/>`);</script>
+    <img src="../_static/spartan-helmet.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../_static/spartan-helmet.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
   
   
 </a></div>
@@ -194,6 +191,7 @@ const thebe_selector_output = ".output, .cell_output"
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">In-class handouts, activities, and other materials</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../in-class/cw1-python-test.html">CW1 - Python Test</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/numerical_integration.html">Notes: Numerical Integration in 1D</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Weekly assignments, midterms and final projects with solutions</span></p>
 <ul class="nav bd-sidenav">
@@ -204,6 +202,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="hw3.html">Homework 3 (Due 02 Feb)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../solutions/solutionhw3.html">Solutions - Homework 3 (Due 03 Feb)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="hw4.html">Homework 4 (Due 09 Feb)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../midterms/midterm1.html">PHY321: Midterm 1 (Due 23 Feb 24)</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Honors Projects</span></p>
 <ul class="nav bd-sidenav">
@@ -347,7 +346,6 @@ const thebe_selector_output = ".output, .cell_output"
 </button>
 
 
-
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
@@ -357,7 +355,6 @@ document.write(`
   </button>
 `);
 </script>
-
 
 <script>
 document.write(`
@@ -408,27 +405,27 @@ document.write(`
                   
   <!-- HTML file automatically generated from DocOnce source (https://github.com/doconce/doconce/)
 doconce format html hw7.do.txt --no_mako -->
-<!-- dom:TITLE: PHY321: Classical Mechanics 1 --><section class="tex2jax_ignore mathjax_ignore" id="phy321-classical-mechanics-1">
+<!-- dom:TITLE: PHY321: Classical Mechanics 1 --><div class="tex2jax_ignore mathjax_ignore section" id="phy321-classical-mechanics-1">
 <h1>PHY321: Classical Mechanics 1<a class="headerlink" href="#phy321-classical-mechanics-1" title="Permalink to this heading">#</a></h1>
 <p><strong>Homework 7, due Monday  March 27</strong></p>
 <p>Date: <strong>Mar 12, 2023</strong></p>
-<section id="practicalities-about-homeworks-and-projects">
+<div class="section" id="practicalities-about-homeworks-and-projects">
 <h2>Practicalities about  homeworks and projects<a class="headerlink" href="#practicalities-about-homeworks-and-projects" title="Permalink to this heading">#</a></h2>
 <ol class="arabic simple">
 <li><p>You can work in groups (optimal groups are often 2-3 people) or by yourself. If you work as a group you can hand in one answer only if you wish. <strong>Remember to write your name(s)</strong>!</p></li>
 <li><p>Homeworks are available  the week before the deadline.</p></li>
 <li><p>How do I(we)  hand in?  Due to the corona virus and many of you not being on campus, we recommend that you scan your handwritten notes and upload them to D2L. If you are ok with typing mathematical formulae using say Latex, you can hand in everything as a single jupyter notebook at D2L. The numerical exercise(s) should always be handed in as a jupyter notebook by the deadline at D2L.</p></li>
 </ol>
-</section>
-<section id="introduction-to-homework-7">
+</div>
+<div class="section" id="introduction-to-homework-7">
 <h2>Introduction to homework 7<a class="headerlink" href="#introduction-to-homework-7" title="Permalink to this heading">#</a></h2>
 <p>In this week’s homework we will apply our insights about harmonic
 oscillations. The relevant material to survey is chapter 5 of Taylor.
 See also the slides from <a class="reference external" href="https://mhjensen.github.io/Physics321/doc/pub/week10/html/week10.html">week 11</a>.</p>
 <p>We have also added an exercise (exercise 2) related to our discussion of two-body problems.
 The relevant reading background for exercise 2 is given by sections 8.1-8.2 of Taylor.</p>
-</section>
-<section id="exercise-1-80-pts-the-mathematical-pendulum">
+</div>
+<div class="section" id="exercise-1-80-pts-the-mathematical-pendulum">
 <h2>Exercise 1 (80 pts), the mathematical pendulum<a class="headerlink" href="#exercise-1-80-pts-the-mathematical-pendulum" title="Permalink to this heading">#</a></h2>
 <p>Relevant reading here is Taylor chapter 5 and the lecture notes on oscillations from <a class="reference external" href="https://mhjensen.github.io/Physics321/doc/pub/week10/html/week10.html">week 11</a>.</p>
 <p>The angular equation of motion of the pendulum is given by
@@ -534,8 +531,8 @@ have <span class="math notranslate nohighlight">\(\omega t=2n\pi\)</span> where 
 called the drive periods.  This is an example of what is called a
 Poincare section and is a very useful way to plot and analyze the
 behavior of a dynamical system. Comment your results.</p>
-</section>
-<section id="exercise-2-20pt-center-of-mass-and-relative-coordinates-and-reference-frames">
+</div>
+<div class="section" id="exercise-2-20pt-center-of-mass-and-relative-coordinates-and-reference-frames">
 <h2>Exercise 2 (20pt), Center-of-Mass and Relative Coordinates and Reference Frames<a class="headerlink" href="#exercise-2-20pt-center-of-mass-and-relative-coordinates-and-reference-frames" title="Permalink to this heading">#</a></h2>
 <p>We define the two-body center-of-mass coordinate and relative coordinate by expressing the trajectories for
 <span class="math notranslate nohighlight">\(\boldsymbol{r}_1\)</span> and <span class="math notranslate nohighlight">\(\boldsymbol{r}_2\)</span> into the center-of-mass coordinate
@@ -569,8 +566,8 @@ K=\frac{P^2}{2M}+\frac{q^2}{2\mu}.
 \[
 \boldsymbol{L}=\boldsymbol{r}\times \mu\dot{\boldsymbol{r}}.
 \]</div>
-</section>
-<section id="classical-mechanics-extra-credit-assignment-scientific-writing-and-attending-talks">
+</div>
+<div class="section" id="classical-mechanics-extra-credit-assignment-scientific-writing-and-attending-talks">
 <h2>Classical Mechanics Extra Credit Assignment: Scientific Writing and attending Talks<a class="headerlink" href="#classical-mechanics-extra-credit-assignment-scientific-writing-and-attending-talks" title="Permalink to this heading">#</a></h2>
 <p>The following gives you an opportunity to earn <strong>five extra credit
 points</strong> on each of the remaining homeworks and <strong>ten extra credit points</strong>
@@ -620,8 +617,8 @@ please contact Julie Butler at <a class="reference external" href="mailto:butler
 </table>
 <p>You can also gain extra credits if you attend scientific talks.
 This is described here.</p>
-</section>
-<section id="integrating-classwork-with-research">
+</div>
+<div class="section" id="integrating-classwork-with-research">
 <h2>Integrating Classwork With Research<a class="headerlink" href="#integrating-classwork-with-research" title="Permalink to this heading">#</a></h2>
 <p>This opportunity will allow you to earn up to 5 extra credit points on a Homework per week. These points can push you above 100% or help make up for missed exercises.
 In order to earn all points you must:</p>
@@ -639,8 +636,8 @@ Talks given by researchers through the following clubs:</p>
 </ul>
 <p>If you have any questions please consult Jeremy Rebenstock, <a class="reference external" href="mailto:rebensto&#37;&#52;&#48;msu&#46;edu">rebensto<span>&#64;</span>msu<span>&#46;</span>edu</a>.</p>
 <p>All the material on extra credits is at <a class="github reference external" href="https://github.com/mhjensen/Physics321/blob/master/doc/Homeworks/ExtraCredits/">mhjensen/Physics321</a>.</p>
-</section>
-</section>
+</div>
+</div>
 
     <script type="text/x-thebe-config">
     {
@@ -670,7 +667,7 @@ Talks given by researchers through the following clubs:</p>
               
               
                 <footer class="prev-next-footer">
-                  
+                  <!-- Previous / next buttons -->
 <div class="prev-next-area">
 </div>
                 </footer>
@@ -714,7 +711,6 @@ By Danny Caballero, Morten Hjorth-Jensen
   
   <div class="footer-item">
     
-
   <p class="copyright">
     
       © Copyright 2022.
@@ -741,8 +737,8 @@ By Danny Caballero, Morten Hjorth-Jensen
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
 
   <footer class="bd-footer">
   </footer>
