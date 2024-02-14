@@ -3,11 +3,12 @@
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-content_root="" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>3. Simple Motion problems and Reminder on Newton’s Laws &#8212; Classical Mechanics</title>
   
   
@@ -18,12 +19,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -37,9 +38,9 @@
     <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
-  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -140,9 +141,11 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
   
 
 <a class="navbar-brand logo" href="../intro.html">
+  
   
   
   
@@ -152,8 +155,8 @@ const thebe_selector_output = ".output, .cell_output"
       
     
     
-    <img src="../_static/spartan-helmet.png" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="../_static/spartan-helmet.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="../_static/spartan-helmet.png" class="logo__image only-light" alt="Classical Mechanics - Home"/>
+    <script>document.write(`<img src="../_static/spartan-helmet.png" class="logo__image only-dark" alt="Classical Mechanics - Home"/>`);</script>
   
   
 </a></div>
@@ -193,7 +196,7 @@ const thebe_selector_output = ".output, .cell_output"
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">In-class handouts, activities, and other materials</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../in-class/cw1-python-test.html">CW1 - Python Test</a></li>
-<li class="toctree-l1"><a class="reference internal" href="numerical_integration.html">Notes: Numerical Integration in 1D</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../in-class/cw6-phase_space.html">12 Sep 23 - Activity: The Dynamical Systems Approach and Phase Portraits</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Weekly assignments, midterms and final projects with solutions</span></p>
 <ul class="nav bd-sidenav">
@@ -349,6 +352,7 @@ const thebe_selector_output = ".output, .cell_output"
 </button>
 
 
+
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
@@ -358,6 +362,7 @@ document.write(`
   </button>
 `);
 </script>
+
 
 <script>
 document.write(`
@@ -438,9 +443,9 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <div class="tex2jax_ignore mathjax_ignore section" id="simple-motion-problems-and-reminder-on-newton-s-laws">
+  <section class="tex2jax_ignore mathjax_ignore" id="simple-motion-problems-and-reminder-on-newton-s-laws">
 <h1>3. Simple Motion problems and Reminder on Newton’s Laws<a class="headerlink" href="#simple-motion-problems-and-reminder-on-newton-s-laws" title="Permalink to this heading">#</a></h1>
-<div class="section" id="basic-steps-of-scientific-investigations">
+<section id="basic-steps-of-scientific-investigations">
 <h2>Basic Steps of Scientific Investigations<a class="headerlink" href="#basic-steps-of-scientific-investigations" title="Permalink to this heading">#</a></h2>
 <p>An overarching aim in this course is to give you a deeper
 understanding of the scientific method. The problems we study will all
@@ -454,7 +459,7 @@ fundamental forces.</p>
 <p>Our first step consists in identifying the problem. What we sketch
 here may include a mix of experiment and theoretical simulations, or
 just experiment or only theory.</p>
-<div class="section" id="identifying-our-system">
+<section id="identifying-our-system">
 <h3>Identifying our System<a class="headerlink" href="#identifying-our-system" title="Permalink to this heading">#</a></h3>
 <p>Here we can ask questions like</p>
 <ol class="arabic simple">
@@ -464,8 +469,8 @@ just experiment or only theory.</p>
 <li><p>Which initial conditions influence our system</p></li>
 <li><p>Other aspects which allow us to identify the system</p></li>
 </ol>
-</div>
-<div class="section" id="defining-a-model">
+</section>
+<section id="defining-a-model">
 <h3>Defining a Model<a class="headerlink" href="#defining-a-model" title="Permalink to this heading">#</a></h3>
 <p>With our eventual data and observations we would now like to develop a
 model for the system. In the end we want obviously to be able to
@@ -479,8 +484,8 @@ system?</p>
 <li><p>Identify the equations which can govern the system (Newton’s second law for example)</p></li>
 <li><p>More elements we deem important for defining our model</p></li>
 </ol>
-</div>
-<div class="section" id="solving-the-equations">
+</section>
+<section id="solving-the-equations">
 <h3>Solving the Equations<a class="headerlink" href="#solving-the-equations" title="Permalink to this heading">#</a></h3>
 <p>With the model at hand, we can then solve the equations. In classical mechanics we normally end up  with solving sets of coupled ordinary differential equations or partial differential equations.</p>
 <ol class="arabic simple">
@@ -489,8 +494,8 @@ system?</p>
 <li><p>The solution of the equations give us then the position, the velocity and other time-dependent quantities which may specify the motion of a given object.</p></li>
 </ol>
 <p>We are not yet done. With our lovely solvers, we need to start thinking.</p>
-</div>
-<div class="section" id="analyze">
+</section>
+<section id="analyze">
 <h3>Analyze<a class="headerlink" href="#analyze" title="Permalink to this heading">#</a></h3>
 <p>Now it is time to ask the big questions. What do our results mean? Can we give a simple interpretation in terms of fundamental laws?  What do our results mean? Are they correct?
 Thus, typical questions we may ask are</p>
@@ -508,9 +513,9 @@ sloppy job in identifying the degrees of freedom.</p>
 enquiry. Hopefully, through a mix of numerical simulations, analytical
 calculations and experiments we may gain a deeper insight about the
 physics of a specific system.</p>
-</div>
-</div>
-<div class="section" id="newton-s-laws">
+</section>
+</section>
+<section id="newton-s-laws">
 <h2>Newton’s Laws<a class="headerlink" href="#newton-s-laws" title="Permalink to this heading">#</a></h2>
 <p>Let us now remind ourselves of Newton’s laws, since these are the laws of motion we will study in this course.</p>
 <p>When analyzing a physical system we normally start with distinguishing between the object we are studying (we will label this in more general terms as our <strong>system</strong>) and how this system interacts with the environment (which often means everything else!)</p>
@@ -552,7 +557,7 @@ direction as the force. The acceleration is proportional to the force via the ma
 <p>Newton’s second law introduces a new property of an object, the so-called
 inertial mass <span class="math notranslate nohighlight">\(m\)</span>. We determine the inertial mass of an object by measuring the
 acceleration for a given applied force.</p>
-<div class="section" id="then-the-first-law">
+<section id="then-the-first-law">
 <h3>Then the First Law<a class="headerlink" href="#then-the-first-law" title="Permalink to this heading">#</a></h3>
 <p>What happens if the net external force on a body is zero? Applying Newton’s second
 law, we find:</p>
@@ -586,17 +591,17 @@ Earth is clearly not an inertial system, because the Earth is rotating. The Eart
 not an inertial system, because it ismoving in a curved path around the Sun. However,
 even if the surface of the Earth is not strictly an inertial system, it may be considered
 to be approximately an inertial system for many laboratory-size experiments.</p>
-</div>
-<div class="section" id="and-finally-the-third-law">
+</section>
+<section id="and-finally-the-third-law">
 <h3>And finally the Third Law<a class="headerlink" href="#and-finally-the-third-law" title="Permalink to this heading">#</a></h3>
 <p>If there is a force from object A on object B, there is also a force from object B on object A.
 This fundamental principle of interactions is called Newton’s third law. We do not
 know of any force that do not obey this law: All forces appear in pairs. Newton’s
 third law is usually formulated as: For every action there is an equal and opposite
 reaction.</p>
-</div>
-</div>
-<div class="section" id="falling-baseball-in-one-dimension">
+</section>
+</section>
+<section id="falling-baseball-in-one-dimension">
 <h2>Falling baseball in one dimension<a class="headerlink" href="#falling-baseball-in-one-dimension" title="Permalink to this heading">#</a></h2>
 <p>We anticipate the mathematical model to come and assume that we have a
 model for the motion of a falling baseball without air resistance.
@@ -678,8 +683,50 @@ function.</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/var/folders/rh/mck_zfls1nz00lkh8jq3cpv80000gn/T/ipykernel_91358/116689323.py:2: MatplotlibDeprecationWarning: The seaborn styles shipped by Matplotlib are deprecated since 3.6, as they no longer correspond to the styles shipped by seaborn. However, they will remain available as &#39;seaborn-v0_8-&lt;style&gt;&#39;. Alternatively, directly use the seaborn API instead.
-  plt.style.use(&#39;seaborn&#39;)
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">FileNotFoundError</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
+<span class="nn">File ~/anaconda3/envs/teaching/lib/python3.12/site-packages/matplotlib/style/core.py:137,</span> in <span class="ni">use</span><span class="nt">(style)</span>
+<span class="g g-Whitespace">    </span><span class="mi">136</span> <span class="k">try</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">137</span>     <span class="n">style</span> <span class="o">=</span> <span class="n">_rc_params_in_file</span><span class="p">(</span><span class="n">style</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">138</span> <span class="k">except</span> <span class="ne">OSError</span> <span class="k">as</span> <span class="n">err</span><span class="p">:</span>
+
+<span class="nn">File ~/anaconda3/envs/teaching/lib/python3.12/site-packages/matplotlib/__init__.py:866,</span> in <span class="ni">_rc_params_in_file</span><span class="nt">(fname, transform, fail_on_error)</span>
+<span class="g g-Whitespace">    </span><span class="mi">865</span> <span class="n">rc_temp</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="ne">--&gt; </span><span class="mi">866</span> <span class="k">with</span> <span class="n">_open_file_or_url</span><span class="p">(</span><span class="n">fname</span><span class="p">)</span> <span class="k">as</span> <span class="n">fd</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">867</span>     <span class="k">try</span><span class="p">:</span>
+
+<span class="nn">File ~/anaconda3/envs/teaching/lib/python3.12/contextlib.py:137,</span> in <span class="ni">_GeneratorContextManager.__enter__</span><span class="nt">(self)</span>
+<span class="g g-Whitespace">    </span><span class="mi">136</span> <span class="k">try</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">137</span>     <span class="k">return</span> <span class="nb">next</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">gen</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">138</span> <span class="k">except</span> <span class="ne">StopIteration</span><span class="p">:</span>
+
+<span class="nn">File ~/anaconda3/envs/teaching/lib/python3.12/site-packages/matplotlib/__init__.py:843,</span> in <span class="ni">_open_file_or_url</span><span class="nt">(fname)</span>
+<span class="g g-Whitespace">    </span><span class="mi">842</span> <span class="n">fname</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">expanduser</span><span class="p">(</span><span class="n">fname</span><span class="p">)</span>
+<span class="ne">--&gt; </span><span class="mi">843</span> <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">fname</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">844</span>     <span class="k">yield</span> <span class="n">f</span>
+
+<span class="ne">FileNotFoundError</span>: [Errno 2] No such file or directory: &#39;seaborn&#39;
+
+<span class="n">The</span> <span class="n">above</span> <span class="n">exception</span> <span class="n">was</span> <span class="n">the</span> <span class="n">direct</span> <span class="n">cause</span> <span class="n">of</span> <span class="n">the</span> <span class="n">following</span> <span class="n">exception</span><span class="p">:</span>
+
+<span class="ne">OSError</span><span class="g g-Whitespace">                                   </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">line</span> <span class="mi">2</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="kn">from</span> <span class="nn">pylab</span> <span class="kn">import</span> <span class="n">plt</span><span class="p">,</span> <span class="n">mpl</span>
+<span class="ne">----&gt; </span><span class="mi">2</span> <span class="n">plt</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;seaborn&#39;</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="n">mpl</span><span class="o">.</span><span class="n">rcParams</span><span class="p">[</span><span class="s1">&#39;font.family&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;serif&#39;</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="k">def</span> <span class="nf">MakePlot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span> <span class="n">styles</span><span class="p">,</span> <span class="n">labels</span><span class="p">,</span> <span class="n">axlabels</span><span class="p">):</span>
+
+<span class="nn">File ~/anaconda3/envs/teaching/lib/python3.12/site-packages/matplotlib/style/core.py:139,</span> in <span class="ni">use</span><span class="nt">(style)</span>
+<span class="g g-Whitespace">    </span><span class="mi">137</span>         <span class="n">style</span> <span class="o">=</span> <span class="n">_rc_params_in_file</span><span class="p">(</span><span class="n">style</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">138</span>     <span class="k">except</span> <span class="ne">OSError</span> <span class="k">as</span> <span class="n">err</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">139</span>         <span class="k">raise</span> <span class="ne">OSError</span><span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">140</span>             <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">style</span><span class="si">!r}</span><span class="s2"> is not a valid package style, path of style &quot;</span>
+<span class="g g-Whitespace">    </span><span class="mi">141</span>             <span class="sa">f</span><span class="s2">&quot;file, URL of style file, or library style name (library &quot;</span>
+<span class="g g-Whitespace">    </span><span class="mi">142</span>             <span class="sa">f</span><span class="s2">&quot;styles are listed in `style.available`)&quot;</span><span class="p">)</span> <span class="kn">from</span> <span class="nn">err</span>
+<span class="g g-Whitespace">    </span><span class="mi">143</span> <span class="n">filtered</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="nn">    144 for k</span> in <span class="ni">style:  # don&#39;t trigger RcParams.__getitem__</span><span class="nt">(&#39;backend&#39;)</span>
+
+<span class="ne">OSError</span>: &#39;seaborn&#39; is not a valid package style, path of style file, URL of style file, or library style name (library styles are listed in `style.available`)
 </pre></div>
 </div>
 </div>
@@ -718,109 +765,6 @@ function.</p>
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_html"><div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>t[s]</th>
-      <th>y[m]</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>0.0</td>
-      <td>10.000000</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>0.1</td>
-      <td>9.950967</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>0.2</td>
-      <td>9.803869</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>0.3</td>
-      <td>9.558705</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>0.4</td>
-      <td>9.215476</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>0.5</td>
-      <td>8.774181</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>0.6</td>
-      <td>8.234821</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>0.7</td>
-      <td>7.597395</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>0.8</td>
-      <td>6.861904</td>
-    </tr>
-    <tr>
-      <th>9</th>
-      <td>0.9</td>
-      <td>6.028347</td>
-    </tr>
-    <tr>
-      <th>10</th>
-      <td>1.0</td>
-      <td>5.096725</td>
-    </tr>
-    <tr>
-      <th>11</th>
-      <td>1.1</td>
-      <td>4.067037</td>
-    </tr>
-    <tr>
-      <th>12</th>
-      <td>1.2</td>
-      <td>2.939284</td>
-    </tr>
-    <tr>
-      <th>13</th>
-      <td>1.3</td>
-      <td>1.713465</td>
-    </tr>
-    <tr>
-      <th>14</th>
-      <td>1.4</td>
-      <td>0.389581</td>
-    </tr>
-  </tbody>
-</table>
-</div></div><img alt="../_images/090e160a74a27f20c90f25c1a18a69a30ba996e6a2ccbda5c29a4f68c61b8da9.png" src="../_images/090e160a74a27f20c90f25c1a18a69a30ba996e6a2ccbda5c29a4f68c61b8da9.png" />
-</div>
 </div>
 <p>Here we used <strong>pandas</strong> (see below) to systemize the output of the position as function of time.</p>
 <p>We define now the average velocity as</p>
@@ -845,7 +789,7 @@ Furthermore we use the shorthand</p>
 \[
 y_{i\pm 1} = y(t_i\pm \Delta t),\hspace{0.12cm} i=0,1,2,\dots,n.
 \]</div>
-<div class="section" id="compact-equations">
+<section id="compact-equations">
 <h3>Compact equations<a class="headerlink" href="#compact-equations" title="Permalink to this heading">#</a></h3>
 <p>We can then rewrite in a more compact form the average velocity as</p>
 <div class="math notranslate nohighlight">
@@ -892,8 +836,8 @@ F(y,v,t)=m\frac{d^2y}{dt^2}=ma(t,y(t),\frac{dy}{dt}),
 \]</div>
 <p>where <span class="math notranslate nohighlight">\(F\)</span> is the force acting on an object with mass <span class="math notranslate nohighlight">\(m\)</span>. We see that it also has the right dimension, mass times length divided by time squared.
 We will come back to this soon.</p>
-</div>
-<div class="section" id="integrating-our-equations">
+</section>
+<section id="integrating-our-equations">
 <h3>Integrating our equations<a class="headerlink" href="#integrating-our-equations" title="Permalink to this heading">#</a></h3>
 <p>Formally we can then, starting with the acceleration (suppose we have measured it, how could we do that?)
 compute say the height of a building.  To see this we perform the following integrations from an initial time <span class="math notranslate nohighlight">\(t_0\)</span>  to a given time <span class="math notranslate nohighlight">\(t\)</span></p>
@@ -945,8 +889,8 @@ y(t)=y(t_0)+\int_{t_0}^t dt v(t)=y_0+\int_{t_0}^t dt v(t)=y_0+\int_{t_0}^t dt (-
 \[
 y(t)=10-\frac{1}{2}gt^2.
 \]</div>
-</div>
-<div class="section" id="computing-the-averages">
+</section>
+<section id="computing-the-averages">
 <h3>Computing the averages<a class="headerlink" href="#computing-the-averages" title="Permalink to this heading">#</a></h3>
 <p>After this mathematical background we are now ready to compute the mean velocity using our data.</p>
 <div class="cell docutils container">
@@ -974,131 +918,11 @@ y(t)=10-\frac{1}{2}gt^2.
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_html"><div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>t[s]</th>
-      <th>y[m]</th>
-      <th>v[m/s]</th>
-      <th>a[m/s^2]</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>0.0</td>
-      <td>10.000000</td>
-      <td>0.000000</td>
-      <td>-9.80655</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>0.1</td>
-      <td>9.950967</td>
-      <td>-1.470982</td>
-      <td>-9.80655</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>0.2</td>
-      <td>9.803869</td>
-      <td>-2.451638</td>
-      <td>-9.80655</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>0.3</td>
-      <td>9.558705</td>
-      <td>-3.432292</td>
-      <td>-9.80655</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>0.4</td>
-      <td>9.215476</td>
-      <td>-4.412948</td>
-      <td>-9.80655</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>0.5</td>
-      <td>8.774181</td>
-      <td>-5.393602</td>
-      <td>-9.80655</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>0.6</td>
-      <td>8.234821</td>
-      <td>-6.374258</td>
-      <td>-9.80655</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>0.7</td>
-      <td>7.597395</td>
-      <td>-7.354913</td>
-      <td>-9.80655</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>0.8</td>
-      <td>6.861904</td>
-      <td>-8.335567</td>
-      <td>-9.80655</td>
-    </tr>
-    <tr>
-      <th>9</th>
-      <td>0.9</td>
-      <td>6.028347</td>
-      <td>-9.316222</td>
-      <td>-9.80655</td>
-    </tr>
-    <tr>
-      <th>10</th>
-      <td>1.0</td>
-      <td>5.096725</td>
-      <td>-10.296878</td>
-      <td>-9.80655</td>
-    </tr>
-    <tr>
-      <th>11</th>
-      <td>1.1</td>
-      <td>4.067037</td>
-      <td>-11.277533</td>
-      <td>-9.80655</td>
-    </tr>
-    <tr>
-      <th>12</th>
-      <td>1.2</td>
-      <td>2.939284</td>
-      <td>-12.258187</td>
-      <td>-9.80655</td>
-    </tr>
-  </tbody>
-</table>
-</div></div></div>
 </div>
 <p>Note that we don’t print the last values!</p>
-</div>
-</div>
-<div class="section" id="including-air-resistance-in-our-model">
+</section>
+</section>
+<section id="including-air-resistance-in-our-model">
 <h2>Including Air Resistance in our model<a class="headerlink" href="#including-air-resistance-in-our-model" title="Permalink to this heading">#</a></h2>
 <p>In our discussions till now of the falling baseball, we have ignored
 air resistance and simply assumed that our system is only influenced
@@ -1172,8 +996,8 @@ y(t)=y(t_0)-\frac{v_T^2}{g}\log{[\cosh{(\frac{gt}{v_T})}]}.
 \]</div>
 <p>Alternatively we could have used the symbolic Python package <strong>Sympy</strong>  (example will be inserted later).</p>
 <p>In most cases however, we need to revert to numerical solutions.</p>
-</div>
-<div class="section" id="our-first-attempt-at-solving-differential-equations">
+</section>
+<section id="our-first-attempt-at-solving-differential-equations">
 <h2>Our first attempt at solving differential equations<a class="headerlink" href="#our-first-attempt-at-solving-differential-equations" title="Permalink to this heading">#</a></h2>
 <p>Here we will try the simplest possible approach to solving the second-order differential
 equation</p>
@@ -1213,7 +1037,7 @@ y(t+\Delta t) = y(t)+\Delta t v(t)+O(\Delta t^2),
 \[
 v(t+\Delta t) = v(t)+\Delta t a(t)+O(\Delta t^2).
 \]</div>
-<div class="section" id="discretizing-our-equations">
+<section id="discretizing-our-equations">
 <h3>Discretizing our equations<a class="headerlink" href="#discretizing-our-equations" title="Permalink to this heading">#</a></h3>
 <p>Using our discretized versions of the equations with for example
 <span class="math notranslate nohighlight">\(y_{i}=y(t_i)\)</span> and <span class="math notranslate nohighlight">\(y_{i\pm 1}=y(t_i+\Delta t)\)</span>, we can rewrite the
@@ -1250,11 +1074,6 @@ as</p>
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>5
-</pre></div>
-</div>
-</div>
 </div>
 <p>The <strong>ceil</strong> function returns the smallest integer not less than the input in say</p>
 <div class="cell docutils container">
@@ -1264,22 +1083,12 @@ as</p>
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>22
-</pre></div>
-</div>
-</div>
 </div>
 <p>which in the case here is 22.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mf">21.75</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">ceil</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>22
 </pre></div>
 </div>
 </div>
@@ -1295,11 +1104,6 @@ Compare the previous result to the usage of <strong>floor</strong></p>
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>21
-</pre></div>
-</div>
-</div>
 </div>
 <p>Alternatively, we can define ourselves the number of integration(mesh) points. In this case we could have</p>
 <div class="cell docutils container">
@@ -1309,11 +1113,6 @@ Compare the previous result to the usage of <strong>floor</strong></p>
 <span class="n">tfinal</span> <span class="o">=</span> <span class="mf">0.5</span>
 <span class="n">DeltaT</span> <span class="o">=</span> <span class="p">(</span><span class="n">tfinal</span><span class="o">-</span><span class="n">tinitial</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">DeltaT</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.05
 </pre></div>
 </div>
 </div>
@@ -1328,11 +1127,6 @@ by setting all elelements to zero, as done here</p>
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># define array a</span>
 <span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
 </pre></div>
 </div>
 </div>
@@ -1425,75 +1219,10 @@ by setting all elelements to zero, as done here</p>
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_html"><div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>t[s]</th>
-      <th>y[m]</th>
-      <th>v[m/s]</th>
-      <th>a[m/s^2]</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>0.0</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>-9.806550</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>0.1</td>
-      <td>0.049031</td>
-      <td>-0.980655</td>
-      <td>-9.804194</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>0.2</td>
-      <td>0.098034</td>
-      <td>-1.961074</td>
-      <td>-9.797128</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>0.3</td>
-      <td>0.146963</td>
-      <td>-2.940787</td>
-      <td>-9.785362</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>0.4</td>
-      <td>0.195770</td>
-      <td>-3.919323</td>
-      <td>-9.768915</td>
-    </tr>
-  </tbody>
-</table>
-</div></div><img alt="../_images/25c3fe7970f5dc47083edf4689601610659cbfbc625c7a7fa41f71e058ddbd0c.png" src="../_images/25c3fe7970f5dc47083edf4689601610659cbfbc625c7a7fa41f71e058ddbd0c.png" />
-</div>
 </div>
 <p>Try different values for <span class="math notranslate nohighlight">\(\Delta t\)</span> and study the difference between the exact solution and the numerical solution.</p>
-</div>
-<div class="section" id="simple-extension-the-euler-cromer-method">
+</section>
+<section id="simple-extension-the-euler-cromer-method">
 <h3>Simple extension, the Euler-Cromer method<a class="headerlink" href="#simple-extension-the-euler-cromer-method" title="Permalink to this heading">#</a></h3>
 <p>The Euler-Cromer method is a simple variant of the standard Euler
 method. We use the newly updated velocity <span class="math notranslate nohighlight">\(v_{i+1}\)</span> as an input to the
@@ -1531,9 +1260,9 @@ steps</p>
 </div>
 </div>
 </div>
-</div>
-</div>
-<div class="section" id="air-resistance-in-one-dimension">
+</section>
+</section>
+<section id="air-resistance-in-one-dimension">
 <h2>Air Resistance in One Dimension<a class="headerlink" href="#air-resistance-in-one-dimension" title="Permalink to this heading">#</a></h2>
 <p>Here we look at both a quadratic in velocity resistance
 and linear in velocity.  But first we give a qualitative argument
@@ -1652,8 +1381,8 @@ for the purposes of this exercise.</p>
 <p>and <span class="math notranslate nohighlight">\(\gamma\)</span> has dimensions of inverse time.</p>
 <p>If you on the other hand have a falling raindrop, how do these equations change? See for example Figure 2.1 in Taylor.
 Let us stay with a ball which is thrown up in the air at <span class="math notranslate nohighlight">\(t=0\)</span>.</p>
-</div>
-<div class="section" id="ways-of-solving-these-equations">
+</section>
+<section id="ways-of-solving-these-equations">
 <h2>Ways of solving these equations<a class="headerlink" href="#ways-of-solving-these-equations" title="Permalink to this heading">#</a></h2>
 <p>We will go over two different ways to solve this equation. The first
 by direct integration, and the second as a differential equation. To
@@ -1706,8 +1435,8 @@ v_x=Ae^{-\gamma t}.
 <p>The arbitrary constants for equations of motion are usually determined
 by the initial conditions, or more generally boundary conditions. By
 inspection <span class="math notranslate nohighlight">\(A=v_{0x}\)</span>, the initial <span class="math notranslate nohighlight">\(x\)</span> component of the velocity.</p>
-</div>
-<div class="section" id="differential-equations-contn">
+</section>
+<section id="differential-equations-contn">
 <h2>Differential Equations, contn<a class="headerlink" href="#differential-equations-contn" title="Permalink to this heading">#</a></h2>
 <p>The differential equation for <span class="math notranslate nohighlight">\(v_y\)</span> is a bit more complicated due to
 the presence of <span class="math notranslate nohighlight">\(g\)</span>. Differential equations where all the terms are
@@ -1889,8 +1618,8 @@ step. Instead, one typically finds a value of <span class="math notranslate nohi
 the final answer than <span class="math notranslate nohighlight">\(t_{\rm guess}\)</span>. One breaks the loop once one
 finds <span class="math notranslate nohighlight">\(F\)</span> within some acceptable tolerance of zero. A program to do
 this will be added shortly.</p>
-</div>
-<div class="section" id="motion-in-a-magnetic-field">
+</section>
+<section id="motion-in-a-magnetic-field">
 <h2>Motion in a Magnetic Field<a class="headerlink" href="#motion-in-a-magnetic-field" title="Permalink to this heading">#</a></h2>
 <p>Another example of a velocity-dependent force is magnetism,</p>
 <div class="math notranslate nohighlight">
@@ -2004,8 +1733,8 @@ velocity is not small compared to the speed of light, additional
 <span class="math notranslate nohighlight">\(\gamma\)</span> factors come into play,
 <span class="math notranslate nohighlight">\(\gamma=1/\sqrt{1-(v/c)^2}\)</span>. Relativistic motion will not be
 considered in this course.</p>
-</div>
-<div class="section" id="summarizing-the-various-motion-problems">
+</section>
+<section id="summarizing-the-various-motion-problems">
 <h2>Summarizing the various motion problems<a class="headerlink" href="#summarizing-the-various-motion-problems" title="Permalink to this heading">#</a></h2>
 <p>The examples we have discussed above were included in order to
 illustrate various methods (which depend on the specific problem) to
@@ -2049,10 +1778,10 @@ v_f(t)=v_0\exp{-\gamma t}.
 differential equations numerically. If we can compare our numerical
 solutions with analytical solutions, we have an extra check of our
 numerical approaches.</p>
-</div>
-<div class="section" id="exercises">
+</section>
+<section id="exercises">
 <h2>Exercises<a class="headerlink" href="#exercises" title="Permalink to this heading">#</a></h2>
-<div class="section" id="electron-moving-into-an-electric-field">
+<section id="electron-moving-into-an-electric-field">
 <h3>Electron moving into an electric field<a class="headerlink" href="#electron-moving-into-an-electric-field" title="Permalink to this heading">#</a></h3>
 <p>An electron is sent through a varying electrical
 field. Initially, the electron is moving in the <span class="math notranslate nohighlight">\(x\)</span>-direction with a velocity
@@ -2122,13 +1851,13 @@ y = -0.004013 \mathrm{m}.
 \alpha = -0.23,
 \]</div>
 <p>in degrees (not radians).</p>
-</div>
-<div class="section" id="drag-force">
+</section>
+<section id="drag-force">
 <h3>Drag force<a class="headerlink" href="#drag-force" title="Permalink to this heading">#</a></h3>
 <p>Using equations (2.84) and (2.82) in Taylor, we have that <span class="math notranslate nohighlight">\(f_{\mathrm{quad}}/f_{\mathrm{lin}}=(\kappa\rho Av^2)/(3\pi\eta Dv)\)</span>. With <span class="math notranslate nohighlight">\(\kappa =1/4\)</span> and <span class="math notranslate nohighlight">\(A=\pi D^2/4\)</span> we obtain <span class="math notranslate nohighlight">\(f_{\mathrm{quad}}/f_{\mathrm{lin}}=(\rho Dv)/(48\eta)\)</span> or <span class="math notranslate nohighlight">\(R/48\)</span> with <span class="math notranslate nohighlight">\(R\)</span> given by equation (2.83) of Taylor.</p>
 <p>With these numbers <span class="math notranslate nohighlight">\(R=1.1\times 10^{-2}\)</span> and it is safe to neglect the quadratic drag.</p>
-</div>
-<div class="section" id="falling-object">
+</section>
+<section id="falling-object">
 <h3>Falling object<a class="headerlink" href="#falling-object" title="Permalink to this heading">#</a></h3>
 <p>If we insert Taylor series for <span class="math notranslate nohighlight">\(\exp{-(t/\tau)}\)</span> into equation (2.33) of Taylor, we have</p>
 <div class="math notranslate nohighlight">
@@ -2152,8 +1881,8 @@ y(t) = v_{\mathrm{ter}}t-v_{\mathrm{ter}}\tau\left[1-\exp{-(t/\tau)}\right] = v_
 y(t) \approx v_{\mathrm{ter}}\frac{t^2}{2\tau}=\frac{1}{2}gt^2.
 \]</div>
 <p>Again, for small times, as expected, the gravitational force plays the major role.</p>
-</div>
-<div class="section" id="motion-of-a-cyclist">
+</section>
+<section id="motion-of-a-cyclist">
 <h3>Motion of a cyclist<a class="headerlink" href="#motion-of-a-cyclist" title="Permalink to this heading">#</a></h3>
 <p>Putting in the numbers for the characteristic time we find</p>
 <div class="math notranslate nohighlight">
@@ -2166,8 +1895,8 @@ y(t) \approx v_{\mathrm{ter}}\frac{t^2}{2\tau}=\frac{1}{2}gt^2.
 t = \frac{M}{D}\left(\frac{1}{v}-\frac{1}{v_0}\right).
 \]</div>
 <p>This gives a time of 6.7s for a velocity of 15m/s, 20s for a velocity of 10m/s and 60s for a velocity of 5m/s.  We see that this approximation leads to an infinite time before we come to rest. To ignore ordinary friction at low speeds is indeed a bad approximation.</p>
-</div>
-<div class="section" id="falling-ball-and-preparing-for-the-numerical-exercise">
+</section>
+<section id="falling-ball-and-preparing-for-the-numerical-exercise">
 <h3>Falling ball and preparing for the numerical exercise<a class="headerlink" href="#falling-ball-and-preparing-for-the-numerical-exercise" title="Permalink to this heading">#</a></h3>
 <p>In this example we study the motion of an object subject to a constant force, a velocity dependent
 force, and for the numerical part a position-dependent force.
@@ -2211,17 +1940,6 @@ In order to compare our code with analytical results, we will thus study the pro
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>    <span class="n">ax</span> <span class="o">=</span> <span class="o">-</span><span class="n">D</span><span class="o">*</span><span class="n">vx</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">*</span><span class="nb">abs</span><span class="p">(</span><span class="n">v</span><span class="p">[</span><span class="n">i</span><span class="p">])</span><span class="o">/</span><span class="n">m</span>
     <span class="n">ay</span> <span class="o">=</span> <span class="o">-</span><span class="n">g</span> <span class="o">-</span> <span class="n">D</span><span class="o">*</span><span class="n">vy</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">*</span><span class="nb">abs</span><span class="p">(</span><span class="n">v</span><span class="p">[</span><span class="n">i</span><span class="p">])</span><span class="o">/</span><span class="n">m</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">14</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
-<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">ax</span> <span class="o">=</span> <span class="o">-</span><span class="n">D</span><span class="o">*</span><span class="n">vx</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">*</span><span class="nb">abs</span><span class="p">(</span><span class="n">v</span><span class="p">[</span><span class="n">i</span><span class="p">])</span><span class="o">/</span><span class="n">m</span>
-<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">ay</span> <span class="o">=</span> <span class="o">-</span><span class="n">g</span> <span class="o">-</span> <span class="n">D</span><span class="o">*</span><span class="n">vy</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">*</span><span class="nb">abs</span><span class="p">(</span><span class="n">v</span><span class="p">[</span><span class="n">i</span><span class="p">])</span><span class="o">/</span><span class="n">m</span>
-
-<span class="ne">NameError</span>: name &#39;vx&#39; is not defined
 </pre></div>
 </div>
 </div>
@@ -2297,8 +2015,8 @@ t = \frac{v_T}{g}\mathrm{arccosh}(\exp{(gy_0/v_T^2)}).
 </div>
 </div>
 <p>We will use the above analytical results in our numerical calculations in the next exercise</p>
-</div>
-<div class="section" id="numerical-elements-solving-the-previous-exercise-numerically-and-adding-the-bouncing-from-the-floor">
+</section>
+<section id="numerical-elements-solving-the-previous-exercise-numerically-and-adding-the-bouncing-from-the-floor">
 <h3>Numerical elements, solving the previous exercise  numerically and adding the bouncing from the floor<a class="headerlink" href="#numerical-elements-solving-the-previous-exercise-numerically-and-adding-the-bouncing-from-the-floor" title="Permalink to this heading">#</a></h3>
 <p>Here we will:</p>
 <ol class="arabic simple">
@@ -2700,9 +2418,9 @@ Furthermore, you will note that for larger values of <span class="math notransla
 </div>
 </div>
 </div>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -2732,7 +2450,7 @@ Furthermore, you will note that for larger values of <span class="math notransla
               
               
                 <footer class="prev-next-footer">
-                  <!-- Previous / next buttons -->
+                  
 <div class="prev-next-area">
     <a class="left-prev"
        href="chapter2.html"
@@ -2826,6 +2544,7 @@ By Danny Caballero, Morten Hjorth-Jensen
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
       © Copyright 2022.
@@ -2852,8 +2571,8 @@ By Danny Caballero, Morten Hjorth-Jensen
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
 
   <footer class="bd-footer">
   </footer>

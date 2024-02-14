@@ -3,11 +3,12 @@
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-content_root="" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>2. Classical Mechanics, Mathematics and Numerical background &#8212; Classical Mechanics</title>
   
   
@@ -18,12 +19,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -37,9 +38,9 @@
     <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
-  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -140,9 +141,11 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
   
 
 <a class="navbar-brand logo" href="../intro.html">
+  
   
   
   
@@ -152,8 +155,8 @@ const thebe_selector_output = ".output, .cell_output"
       
     
     
-    <img src="../_static/spartan-helmet.png" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="../_static/spartan-helmet.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="../_static/spartan-helmet.png" class="logo__image only-light" alt="Classical Mechanics - Home"/>
+    <script>document.write(`<img src="../_static/spartan-helmet.png" class="logo__image only-dark" alt="Classical Mechanics - Home"/>`);</script>
   
   
 </a></div>
@@ -193,7 +196,7 @@ const thebe_selector_output = ".output, .cell_output"
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">In-class handouts, activities, and other materials</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../in-class/cw1-python-test.html">CW1 - Python Test</a></li>
-<li class="toctree-l1"><a class="reference internal" href="numerical_integration.html">Notes: Numerical Integration in 1D</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../in-class/cw6-phase_space.html">12 Sep 23 - Activity: The Dynamical Systems Approach and Phase Portraits</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Weekly assignments, midterms and final projects with solutions</span></p>
 <ul class="nav bd-sidenav">
@@ -349,6 +352,7 @@ const thebe_selector_output = ".output, .cell_output"
 </button>
 
 
+
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
@@ -358,6 +362,7 @@ document.write(`
   </button>
 `);
 </script>
+
 
 <script>
 document.write(`
@@ -450,9 +455,9 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <div class="tex2jax_ignore mathjax_ignore section" id="classical-mechanics-mathematics-and-numerical-background">
+  <section class="tex2jax_ignore mathjax_ignore" id="classical-mechanics-mathematics-and-numerical-background">
 <h1>2. Classical Mechanics, Mathematics and Numerical background<a class="headerlink" href="#classical-mechanics-mathematics-and-numerical-background" title="Permalink to this heading">#</a></h1>
-<div class="section" id="introduction">
+<section id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">#</a></h2>
 <p>Classical mechanics is a topic which has been taught intensively over
 several centuries. It is, with its many variants and ways of
@@ -481,8 +486,8 @@ problem. Mathematically this normally means that we move from a
 continuous problem to a discretized one. This appproach enables us to
 solve a much broader class of problems.
 In mechanics this means, since we often rephrase the physical problems in terms of differential equations, that we can in most settings reuse the same program with some minimal changes.</p>
-</div>
-<div class="section" id="reminder-on-vectors-and-other-mathematical-quantities">
+</section>
+<section id="reminder-on-vectors-and-other-mathematical-quantities">
 <h2>Reminder on vectors and other mathematical quantities<a class="headerlink" href="#reminder-on-vectors-and-other-mathematical-quantities" title="Permalink to this heading">#</a></h2>
 <p>Our studies will start with the motion of different types of objects
 such as a falling ball, a runner, a bicycle etc etc. It means that an
@@ -530,8 +535,8 @@ interested in. Thus</p>
 <li><p><span class="math notranslate nohighlight">\([\boldsymbol{p}]=\)</span> mass times length over time</p></li>
 <li><p><span class="math notranslate nohighlight">\([\omega]=\)</span> 1/time</p></li>
 </ul>
-</div>
-<div class="section" id="scalars-vectors-and-matrices">
+</section>
+<section id="scalars-vectors-and-matrices">
 <h2>Scalars, Vectors and Matrices<a class="headerlink" href="#scalars-vectors-and-matrices" title="Permalink to this heading">#</a></h2>
 <p>A scalar is something with a value that is independent of coordinate
 system. Examples are mass, or the relative time between events. A
@@ -578,7 +583,7 @@ notation is sometimes more convenient if we wish to represent vector
 operations in a mathematically more compact way, see below here. We may also find this useful if  we want the different
 components to represent other coordinate systems that the Cartesian one. A typical example would be going from a Cartesian representation to a spherical basis. We will encounter such cases many times in this course.</p>
 <p>We use lower-case letters for vectors and upper-case letters for matrices. Vectors and matrices are always boldfaced.</p>
-<div class="section" id="polar-coordinates">
+<section id="polar-coordinates">
 <h3>Polar Coordinates<a class="headerlink" href="#polar-coordinates" title="Permalink to this heading">#</a></h3>
 <p>As an example, consider a two-dimensional Cartesian system with a vector <span class="math notranslate nohighlight">\(\boldsymbol{r}=(x,y)\)</span>.
 Our vector is then written as</p>
@@ -608,8 +613,8 @@ x = \rho \cos{\phi} \hspace{0.5cm}   y = \rho \sin{\phi},
 \boldsymbol{a}' = \rho\boldsymbol{e}'_1+\rho \boldsymbol{e}'_2.
 \]</div>
 <p>Below we will show that the norms of this vector in a Cartesian basis and a Polar basis are equal.</p>
-</div>
-<div class="section" id="unit-vectors">
+</section>
+<section id="unit-vectors">
 <h3>Unit Vectors<a class="headerlink" href="#unit-vectors" title="Permalink to this heading">#</a></h3>
 <p>Also known as basis vectors, unit vectors point in the direction of
 the coordinate axes, have unit norm, and are orthogonal to one
@@ -653,9 +658,9 @@ This means that when you encounter an expression like the one on the left-hand s
 x_iy_i=\sum_i x_iy_i=\boldsymbol{x}\cdot\boldsymbol{y}.
 \]</div>
 <p>We will in our lectures seldom use this notation and rather spell out the summations.  This inferred summation over indices is normally called <a class="reference external" href="https://en.wikipedia.org/wiki/Einstein_notation">Einstein summation convention</a>.</p>
-</div>
-</div>
-<div class="section" id="vector-operations-scalar-product-or-dot-product">
+</section>
+</section>
+<section id="vector-operations-scalar-product-or-dot-product">
 <h2>Vector Operations, Scalar Product (or dot product)<a class="headerlink" href="#vector-operations-scalar-product-or-dot-product" title="Permalink to this heading">#</a></h2>
 <p>For two vectors <span class="math notranslate nohighlight">\(\boldsymbol{a}\)</span> and <span class="math notranslate nohighlight">\(\boldsymbol{b}\)</span> we have</p>
 <div class="math notranslate nohighlight">
@@ -676,8 +681,8 @@ x_iy_i=\sum_i x_iy_i=\boldsymbol{x}\cdot\boldsymbol{y}.
 \boldsymbol{a}^T\boldsymbol{b}=\sum_i a_ib_i=|a||b|\cos\theta_{ab}.
 \]</div>
 <p>The superscript <span class="math notranslate nohighlight">\(T\)</span> represents the transposition operations.</p>
-</div>
-<div class="section" id="digression-linear-algebra-notation-for-vectors">
+</section>
+<section id="digression-linear-algebra-notation-for-vectors">
 <h2>Digression, Linear Algebra Notation for Vectors<a class="headerlink" href="#digression-linear-algebra-notation-for-vectors" title="Permalink to this heading">#</a></h2>
 <p>As an example, consider a three-dimensional velocity defined by a vector <span class="math notranslate nohighlight">\(\boldsymbol{v}=(v_x,v_y,v_z)\)</span>. For those of you familiar with linear algebra, we would write this quantity as</p>
 <div class="math notranslate nohighlight">
@@ -741,8 +746,8 @@ using Polar coordinates we have
 <span class="math notranslate nohighlight">\(\rho^2(\cos{\phi})^2+\rho^2(\cos{\phi})^2=\rho^2\)</span>, which shows that
 the norm is conserved since we have <span class="math notranslate nohighlight">\(\rho = \sqrt{x^2+y^2}\)</span>. A
 transformation to a new basis should not change the norm.</p>
-</div>
-<div class="section" id="vector-product-or-cross-product-of-vectors-boldsymbol-a-and-boldsymbol-b">
+</section>
+<section id="vector-product-or-cross-product-of-vectors-boldsymbol-a-and-boldsymbol-b">
 <h2>Vector Product (or cross product) of vectors <span class="math notranslate nohighlight">\(\boldsymbol{a}\)</span> and <span class="math notranslate nohighlight">\(\boldsymbol{b}\)</span><a class="headerlink" href="#vector-product-or-cross-product-of-vectors-boldsymbol-a-and-boldsymbol-b" title="Permalink to this heading">#</a></h2>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -785,7 +790,7 @@ perpendicular to both <span class="math notranslate nohighlight">\(\boldsymbol{a
 \[
 |c|=|a||b|\sin{\theta_{ab}}.
 \]</div>
-<div class="section" id="pseudo-vectors">
+<section id="pseudo-vectors">
 <h3>Pseudo-vectors<a class="headerlink" href="#pseudo-vectors" title="Permalink to this heading">#</a></h3>
 <p>Vectors obtained by the cross product of two real vectors are called
 pseudo-vectors because the assignment of their direction can be
@@ -802,9 +807,9 @@ electrons prefer to exit the decay parallel vs. antiparallel to the
 polarizing magnetic field, this constitutes parity violation because
 the direction of the outgoing electron momenta are a real vector. This
 is precisely what is observed in weak decays.</p>
-</div>
-</div>
-<div class="section" id="differentiation-of-a-vector-with-respect-to-a-scalar">
+</section>
+</section>
+<section id="differentiation-of-a-vector-with-respect-to-a-scalar">
 <h2>Differentiation of a vector with respect to a scalar<a class="headerlink" href="#differentiation-of-a-vector-with-respect-to-a-scalar" title="Permalink to this heading">#</a></h2>
 <p>As an  example, consider the
 acceleration <span class="math notranslate nohighlight">\(\boldsymbol{a}\)</span>, which is given by the change in velocity per unit time, <span class="math notranslate nohighlight">\(\boldsymbol{a}=d\boldsymbol{v}/dt\)</span>
@@ -814,7 +819,7 @@ with components</p>
 a_i = (d\boldsymbol{v}/dt)_i=\frac{dv_i}{dt}.
 \]</div>
 <p>Here <span class="math notranslate nohighlight">\(i=x,y,z\)</span> or <span class="math notranslate nohighlight">\(i=1,2,3\)</span> if we are in three dimensions.</p>
-<div class="section" id="gradient-operator-nabla">
+<section id="gradient-operator-nabla">
 <h3>Gradient operator <span class="math notranslate nohighlight">\(\nabla\)</span><a class="headerlink" href="#gradient-operator-nabla" title="Permalink to this heading">#</a></h3>
 <p>This represents  the derivatives <span class="math notranslate nohighlight">\(\partial/\partial
 x\)</span>, <span class="math notranslate nohighlight">\(\partial/\partial y\)</span> and <span class="math notranslate nohighlight">\(\partial/\partial z\)</span>. An often used shorthand is  <span class="math notranslate nohighlight">\(\partial_x=\partial/\partial_x\)</span>.</p>
@@ -837,8 +842,8 @@ we have</p>
 \mathrm{div} \boldsymbol{a}, \nabla\cdot\boldsymbol{a}=\sum_i \partial_i a_i.
 \]</div>
 <p>Note that the divergence is a scalar.</p>
-</div>
-<div class="section" id="the-curl">
+</section>
+<section id="the-curl">
 <h3>The curl<a class="headerlink" href="#the-curl" title="Permalink to this heading">#</a></h3>
 <p>The <strong>curl</strong> of a vector is defined as
 <span class="math notranslate nohighlight">\(\nabla\times\boldsymbol{a}\)</span>,</p>
@@ -851,8 +856,8 @@ we have</p>
 \[
 (\boldsymbol{\nabla}\times\boldsymbol{a})_i=\epsilon_{ijk}\partial_j a_k(\boldsymbol{r},t).
 \]</div>
-</div>
-<div class="section" id="the-laplacian">
+</section>
+<section id="the-laplacian">
 <h3>The Laplacian<a class="headerlink" href="#the-laplacian" title="Permalink to this heading">#</a></h3>
 <p>The Laplacian is referred to as <span class="math notranslate nohighlight">\(\nabla^2\)</span> and is defined as</p>
 <div class="math notranslate nohighlight">
@@ -860,8 +865,8 @@ we have</p>
 \boldsymbol{\nabla}^2=\boldsymbol{\nabla}\cdot\boldsymbol{\nabla}=\frac{\partial^2}{\partial x^2}+\frac{\partial^2}{\partial y^2}+\frac{\partial^2}{\partial z^2}.
 \]</div>
 <p>Question: is the Laplacian a scalar or a vector?</p>
-</div>
-<div class="section" id="some-identities">
+</section>
+<section id="some-identities">
 <h3>Some identities<a class="headerlink" href="#some-identities" title="Permalink to this heading">#</a></h3>
 <p>Here we simply state these, but you may wish to prove a few. They are useful for this class and will be essential when you study electromagnetism.</p>
 <div class="math notranslate nohighlight">
@@ -875,8 +880,8 @@ we have</p>
 -(\boldsymbol{a}\cdot\boldsymbol{d})(\boldsymbol{b}\cdot\boldsymbol{c})
 \end{eqnarray}
 \end{split}\]</div>
-</div>
-<div class="section" id="more-useful-relations">
+</section>
+<section id="more-useful-relations">
 <h3>More useful relations<a class="headerlink" href="#more-useful-relations" title="Permalink to this heading">#</a></h3>
 <p>Using the fact that multiplication of reals is distributive we can show that</p>
 <div class="math notranslate nohighlight">
@@ -898,8 +903,8 @@ we have</p>
 \[
 \frac{d}{dt}(\boldsymbol{a}\times\boldsymbol{b})=\boldsymbol{a}\times\frac{d\boldsymbol{b}}{dt}+\boldsymbol{b}\times\frac{d\boldsymbol{a}}{dt}.
 \]</div>
-</div>
-<div class="section" id="gauss-s-theorem">
+</section>
+<section id="gauss-s-theorem">
 <h3>Gauss’s Theorem<a class="headerlink" href="#gauss-s-theorem" title="Permalink to this heading">#</a></h3>
 <p>For an integral over a volume <span class="math notranslate nohighlight">\(V\)</span> confined by a surface <span class="math notranslate nohighlight">\(S\)</span>, Gauss’s theorem gives</p>
 <div class="math notranslate nohighlight">
@@ -911,8 +916,8 @@ we have</p>
 \[
 \int_C d\boldsymbol{\ell}\cdot\boldsymbol{A}=\int_Sd\boldsymbol{s} \cdot(\nabla\times\boldsymbol{A})
 \]</div>
-</div>
-<div class="section" id="and-stokes-s-theorem">
+</section>
+<section id="and-stokes-s-theorem">
 <h3>and Stokes’s Theorem<a class="headerlink" href="#and-stokes-s-theorem" title="Permalink to this heading">#</a></h3>
 <p>Stoke’s law can be understood by considering a small rectangle,
 <span class="math notranslate nohighlight">\(-\Delta x&lt;x&lt;\Delta x\)</span>, <span class="math notranslate nohighlight">\(-\Delta y&lt;y&lt;\Delta y\)</span>. The path integral
@@ -930,9 +935,9 @@ around the edges is</p>
 \end{eqnarray}
 \end{split}\]</div>
 <p>Here <span class="math notranslate nohighlight">\(\Delta S\)</span> is the area of the surface element.</p>
-</div>
-</div>
-<div class="section" id="basic-matrix-features">
+</section>
+</section>
+<section id="basic-matrix-features">
 <h2>Basic Matrix Features<a class="headerlink" href="#basic-matrix-features" title="Permalink to this heading">#</a></h2>
 <p><strong>Note</strong>: The material on matrices is optional and will not be used much
 (except for illustrations at the very end on garmonic oscillations)
@@ -970,7 +975,7 @@ material is however included here for the sake of completeness.</p>
 <tr><td align="center">   $A = \left (A^{\dagger} \right )^{-1}$    </td> <td align="center">   unitary            </td> <td align="center">   $\sum_k a_{ik} a_{jk}^{ * } = \sum_k a_{ki}^{ * } a_{kj} = \delta_{ij}$    </td> </tr>
 </tbody>
 </table>
-<div class="section" id="some-famous-matrices">
+<section id="some-famous-matrices">
 <h3>Some famous Matrices<a class="headerlink" href="#some-famous-matrices" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Diagonal if <span class="math notranslate nohighlight">\(a_{ij}=0\)</span> for <span class="math notranslate nohighlight">\(i\ne j\)</span></p></li>
@@ -992,9 +997,9 @@ material is however included here for the sake of completeness.</p>
 <li><p><span class="math notranslate nohighlight">\(\mathbf{A}\)</span> is a product of elementary matrices.</p></li>
 <li><p><span class="math notranslate nohighlight">\(0\)</span> is not eigenvalue of <span class="math notranslate nohighlight">\(\mathbf{A}\)</span>.</p></li>
 </ul>
-</div>
-</div>
-<div class="section" id="rotations">
+</section>
+</section>
+<section id="rotations">
 <h2>Rotations<a class="headerlink" href="#rotations" title="Permalink to this heading">#</a></h2>
 <p>Here, we use rotations as an example of matrices and their operations. One can consider a different orthonormal basis <span class="math notranslate nohighlight">\(\hat{e}'_1\)</span>, <span class="math notranslate nohighlight">\(\hat{e}'_2\)</span> and <span class="math notranslate nohighlight">\(\hat{e}'_3\)</span>. The same vector <span class="math notranslate nohighlight">\(\boldsymbol{r}\)</span> mentioned above can also be expressed in the new basis,</p>
 <!-- Equation labels as ordinary links -->
@@ -1068,7 +1073,7 @@ U^{-1}_{ij}&amp;=&amp;\hat{e}_i\cdot\hat{e}'_j=U_{ji}.
 U^{-1}&amp;=&amp;U^{t}.
 \end{eqnarray}
 \]</div>
-<div class="section" id="tensors">
+<section id="tensors">
 <h3>Tensors<a class="headerlink" href="#tensors" title="Permalink to this heading">#</a></h3>
 <p>A tensor obeying Eq. (<span class="xref myst">8</span>) defines what is known as
 a unitary, or orthogonal, transformation.</p>
@@ -1163,9 +1168,9 @@ trace.</p>
 \end{eqnarray}
 \end{split}\]</div>
 <p>A similar example is the determinant of a matrix, which is also a scalar.</p>
-</div>
-</div>
-<div class="section" id="numerical-elements">
+</section>
+</section>
+<section id="numerical-elements">
 <h2>Numerical Elements<a class="headerlink" href="#numerical-elements" title="Permalink to this heading">#</a></h2>
 <p>Numerical algorithms call for approximate discrete models and much of
 the development of methods for continuous models are nowadays being
@@ -1220,8 +1225,8 @@ generic view on problems and methods is particularly important for
 understanding how to apply available, generic software to solve a
 particular problem.</p>
 <p><em>However, verification of algorithms and understanding their limitations requires much of the classical knowledge about continuous models.</em></p>
-</div>
-<div class="section" id="a-well-known-example-to-illustrate-many-of-the-above-concepts">
+</section>
+<section id="a-well-known-example-to-illustrate-many-of-the-above-concepts">
 <h2>A well-known example to illustrate many of the above concepts<a class="headerlink" href="#a-well-known-example-to-illustrate-many-of-the-above-concepts" title="Permalink to this heading">#</a></h2>
 <p>Before we venture into a reminder on Python and mechanics relevant applications, let us briefly outline some of the
 abovementioned topics using an example many of you may have seen before in for example CMSE201.
@@ -1281,10 +1286,21 @@ The following code for  the trapezoidal rule allows you  to plot the relative er
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/1d9a4aeda4c3164a6daf517c9bb5c2105cc192620622a6326121ad36e27e97b3.png" src="../_images/1d9a4aeda4c3164a6daf517c9bb5c2105cc192620622a6326121ad36e27e97b3.png" />
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">line</span> <span class="mi">5</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">log10</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="ne">----&gt; </span><span class="mi">5</span> <span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="n">Symbol</span><span class="p">,</span> <span class="n">integrate</span>
+<span class="g g-Whitespace">      </span><span class="mi">6</span> <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="g g-Whitespace">      </span><span class="mi">7</span> <span class="c1"># function for the trapezoidal rule</span>
+
+<span class="ne">ModuleNotFoundError</span>: No module named &#39;sympy&#39;
+</pre></div>
 </div>
 </div>
-<div class="section" id="analyzing-the-above-example">
+</div>
+<section id="analyzing-the-above-example">
 <h3>Analyzing the above example<a class="headerlink" href="#analyzing-the-above-example" title="Permalink to this heading">#</a></h3>
 <p>This example shows the potential of combining numerical algorithms
 with symbolic calculations, allowing us to</p>
@@ -1295,9 +1311,9 @@ with symbolic calculations, allowing us to</p>
 <li><p>The above example allows the student to also test the mathematical error of the algorithm for the trapezoidal rule by changing the number of integration points. The students get <strong>trained from day one to think error analysis</strong>.</p></li>
 <li><p>With a Jupyter notebook you can keep exploring similar examples and turn them in as your own notebooks.</p></li>
 </ul>
-</div>
-</div>
-<div class="section" id="python-practicalities-software-and-needed-installations">
+</section>
+</section>
+<section id="python-practicalities-software-and-needed-installations">
 <h2>Python practicalities, Software and needed installations<a class="headerlink" href="#python-practicalities-software-and-needed-installations" title="Permalink to this heading">#</a></h2>
 <p>We will make extensive use of Python as programming language and its
 myriad of available libraries.  You will find
@@ -1321,7 +1337,7 @@ you can use <strong>pip</strong> as well and simply install Python as</p>
 <li><p>sudo apt-get install python3  (or python for pyhton2.7)</p></li>
 </ol>
 <p>etc etc.</p>
-<div class="section" id="python-installers">
+<section id="python-installers">
 <h3>Python installers<a class="headerlink" href="#python-installers" title="Permalink to this heading">#</a></h3>
 <p>If you don’t want to perform these operations separately and venture
 into the hassle of exploring how to set up dependencies and paths, we
@@ -1344,9 +1360,9 @@ analysis environment, available for free and under a commercial
 license.</p>
 <p>Furthermore, <a class="reference external" href="https://colab.research.google.com/notebooks/welcome.ipynb">Google’s Colab</a> is a free Jupyter notebook environment that requires
 no setup and runs entirely in the cloud. Try it out!</p>
-</div>
-</div>
-<div class="section" id="useful-python-libraries">
+</section>
+</section>
+<section id="useful-python-libraries">
 <h2>Useful Python libraries<a class="headerlink" href="#useful-python-libraries" title="Permalink to this heading">#</a></h2>
 <p>Here we list several useful Python libraries we strongly recommend (if you use anaconda many of these are already there)</p>
 <ul class="simple">
@@ -1369,8 +1385,8 @@ further processing. For example, convert to latex as</p>
 </pre></div>
 </div>
 <p>And to add more versatility, the Python package <a class="reference external" href="http://www.sympy.org/en/index.html">SymPy</a> is a Python library for symbolic mathematics. It aims to become a full-featured computer algebra system (CAS)  and is entirely written in Python.</p>
-</div>
-<div class="section" id="numpy-examples-and-important-matrix-and-vector-handling-packages">
+</section>
+<section id="numpy-examples-and-important-matrix-and-vector-handling-packages">
 <h2>Numpy examples and Important Matrix and vector handling packages<a class="headerlink" href="#numpy-examples-and-important-matrix-and-vector-handling-packages" title="Permalink to this heading">#</a></h2>
 <p>There are several central software libraries for linear algebra and eigenvalue problems. Several of the more
 popular ones have been wrapped into ofter software packages like those from the widely used text <strong>Numerical Recipes</strong>. The original source codes in many of the available packages are often taken from the widely used
@@ -1398,12 +1414,6 @@ developed in the 1970s, namely EISPACK and LINPACK.  We describe them shortly he
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[-0.709744    0.60984197  1.4054195   0.86813268  0.06806371 -0.57517803
-  1.48384634  0.0381415   0.14879943 -0.65963308]
-</pre></div>
-</div>
-</div>
 </div>
 <p>We defined a vector <span class="math notranslate nohighlight">\(x\)</span> with <span class="math notranslate nohighlight">\(n=10\)</span> elements with its values given by the Normal distribution <span class="math notranslate nohighlight">\(N(0,1)\)</span>.
 Another alternative is to declare a vector as follows</p>
@@ -1415,11 +1425,6 @@ Another alternative is to declare a vector as follows</p>
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[1 2 3]
-</pre></div>
-</div>
-</div>
 </div>
 <p>Here we have defined a vector with three elements, with <span class="math notranslate nohighlight">\(x_0=1\)</span>, <span class="math notranslate nohighlight">\(x_1=2\)</span> and <span class="math notranslate nohighlight">\(x_2=3\)</span>. Note that both Python and C++
 start numbering array elements from <span class="math notranslate nohighlight">\(0\)</span> and on. This means that a vector with <span class="math notranslate nohighlight">\(n\)</span> elements has a sequence of entities <span class="math notranslate nohighlight">\(x_0, x_1, x_2, \dots, x_{n-1}\)</span>. We could also let (recommended) Numpy to compute the logarithms of a specific array as</p>
@@ -1428,11 +1433,6 @@ start numbering array elements from <span class="math notranslate nohighlight">\
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">4</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">]))</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[1.38629436 1.94591015 2.07944154]
 </pre></div>
 </div>
 </div>
@@ -1455,11 +1455,6 @@ logarithms of a vector would be to write</p>
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[1 1 2]
-</pre></div>
-</div>
-</div>
 </div>
 <p>We note that our code is much longer already and we need to import the <strong>log</strong> function from the <strong>math</strong> module.
 The attentive reader will also notice that the output is <span class="math notranslate nohighlight">\([1, 1, 2]\)</span>. Python interprets automagically our numbers as integers (like the <strong>automatic</strong> keyword in C++). To change this we could define our array elements to be double precision numbers as</p>
@@ -1471,11 +1466,6 @@ The attentive reader will also notice that the output is <span class="math notra
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[1.38629436 1.94591015 2.07944154]
-</pre></div>
-</div>
-</div>
 </div>
 <p>or simply write them as double precision numbers (Python uses 64 bits as default for floating point type variables), that is</p>
 <div class="cell docutils container">
@@ -1483,14 +1473,6 @@ The attentive reader will also notice that the output is <span class="math notra
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">4.0</span><span class="p">,</span> <span class="mf">7.0</span><span class="p">,</span> <span class="mf">8.0</span><span class="p">])</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span>  <span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">9</span><span class="p">],</span> <span class="n">line</span> <span class="mi">3</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-    <span class="o">^</span>
-<span class="ne">SyntaxError</span>: invalid syntax
 </pre></div>
 </div>
 </div>
@@ -1505,7 +1487,7 @@ The attentive reader will also notice that the output is <span class="math notra
 </div>
 </div>
 </div>
-<div class="section" id="matrices-in-python">
+<section id="matrices-in-python">
 <h3>Matrices in Python<a class="headerlink" href="#matrices-in-python" title="Permalink to this heading">#</a></h3>
 <p>Having defined vectors, we are now ready to try out matrices. We can
 define a <span class="math notranslate nohighlight">\(3 \times 3 \)</span> real matrix <span class="math notranslate nohighlight">\(\hat{A}\)</span> as (recall that we user
@@ -1577,8 +1559,8 @@ lowercase letters for vectors and uppercase letters for matrices)</p>
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="meet-the-pandas">
+</section>
+<section id="meet-the-pandas">
 <h3>Meet the Pandas<a class="headerlink" href="#meet-the-pandas" title="Permalink to this heading">#</a></h3>
 <p>Another useful Python package is
 <a class="reference external" href="https://pandas.pydata.org/">pandas</a>, which is an open source library
@@ -1715,9 +1697,9 @@ recommend strongly
 <a class="reference external" href="http://xarray.pydata.org/en/stable/">xarray</a>. <strong>xarray</strong> has much of
 the same flexibility as <strong>pandas</strong>, but allows for the extension to
 higher dimensions than two.</p>
-</div>
-</div>
-<div class="section" id="introduction-to-git-and-github-gitlab-and-similar">
+</section>
+</section>
+<section id="introduction-to-git-and-github-gitlab-and-similar">
 <h2>Introduction to Git and GitHub/GitLab and similar<a class="headerlink" href="#introduction-to-git-and-github-gitlab-and-similar" title="Permalink to this heading">#</a></h2>
 <p><a class="reference external" href="https://git-scm.com/">Git</a> is a distributed version-control system
 for tracking changes in any set of files, originally designed for
@@ -1731,7 +1713,7 @@ available via the GitHub site of the course. The video here gives a
 short intro to
 <a class="reference external" href="https://www.youtube.com/watch/w3jLJU7DT5E?reload=9">GitHub</a>.</p>
 <p>See also the <a class="reference external" href="https://mediaspace.msu.edu/media/t/1_8mgx3cyf">overview video on Git and GitHub</a>.</p>
-<div class="section" id="useful-git-and-github-links">
+<section id="useful-git-and-github-links">
 <h3>Useful Git and GitHub links<a class="headerlink" href="#useful-git-and-github-links" title="Permalink to this heading">#</a></h3>
 <p>These are a couple references that we have found useful (git commands, markdown, GitPages):</p>
 <ul class="simple">
@@ -1751,9 +1733,9 @@ systems and functions well with Python.  Some of the more popular ones  are</p>
 <li><p><a class="reference external" href="https://atom.io/">Atom</a></p></li>
 <li><p><a class="reference external" href="https://www.sublimetext.com/">Sublime</a></p></li>
 </ul>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -1783,7 +1765,7 @@ systems and functions well with Python.  Some of the more popular ones  are</p>
               
               
                 <footer class="prev-next-footer">
-                  <!-- Previous / next buttons -->
+                  
 <div class="prev-next-area">
     <a class="left-prev"
        href="chapter2-overview.html"
@@ -1889,6 +1871,7 @@ By Danny Caballero, Morten Hjorth-Jensen
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
       © Copyright 2022.
@@ -1915,8 +1898,8 @@ By Danny Caballero, Morten Hjorth-Jensen
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
 
   <footer class="bd-footer">
   </footer>
