@@ -40,7 +40,7 @@ parts:
   numbered: false
   chapters:
   - file: in-class/cw1-python-test.ipynb
-  - file: lecture-notes/numerical_integration.ipynb
+  - file: in-class/cw6-phase_space.ipynb
 - caption: Weekly assignments, midterms and final projects with solutions
   numbered: false
   chapters:
