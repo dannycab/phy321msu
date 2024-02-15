@@ -48,7 +48,7 @@ We will go into the details of how to construct and develop phase portraits in c
   - CW6: [Phase Space and Nonlinear Dynamics](../docs/handwritten-notes/CW6.pdf)
 - Lecture Videos:
   - [12 Feb 2024](https://mediaspace.msu.edu/media/t/1_pa3afrh5)
-  - 14 Feb 2024
+  - [14 Feb 2024](https://mediaspace.msu.edu/media/t/1_zlcyf858)
 
 #### Assignments
 
