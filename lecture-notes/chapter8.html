@@ -3,12 +3,11 @@
 <!DOCTYPE html>
 
 
-<html lang="en" data-content_root="" >
+<html lang="en" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>8. Variational Calculus and Lagrangian Formalism &#8212; Classical Mechanics</title>
   
   
@@ -19,12 +18,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -38,9 +37,9 @@
     <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
-  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
+  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -141,11 +140,9 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
-
   
 
 <a class="navbar-brand logo" href="../intro.html">
-  
   
   
   
@@ -155,8 +152,8 @@ const thebe_selector_output = ".output, .cell_output"
       
     
     
-    <img src="../_static/spartan-helmet.png" class="logo__image only-light" alt="Classical Mechanics - Home"/>
-    <script>document.write(`<img src="../_static/spartan-helmet.png" class="logo__image only-dark" alt="Classical Mechanics - Home"/>`);</script>
+    <img src="../_static/spartan-helmet.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../_static/spartan-helmet.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
   
   
 </a></div>
@@ -196,7 +193,7 @@ const thebe_selector_output = ".output, .cell_output"
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">In-class handouts, activities, and other materials</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../in-class/cw1-python-test.html">CW1 - Python Test</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../in-class/cw6-phase_space.html">12 Sep 23 - Activity: The Dynamical Systems Approach and Phase Portraits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../in-class/cw6-phase_space.html">CW6 - Phase Portraits</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Weekly assignments, midterms and final projects with solutions</span></p>
 <ul class="nav bd-sidenav">
@@ -352,7 +349,6 @@ const thebe_selector_output = ".output, .cell_output"
 </button>
 
 
-
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
@@ -362,7 +358,6 @@ document.write(`
   </button>
 `);
 </script>
-
 
 <script>
 document.write(`
@@ -422,7 +417,7 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="variational-calculus-and-lagrangian-formalism">
+  <div class="tex2jax_ignore mathjax_ignore section" id="variational-calculus-and-lagrangian-formalism">
 <h1>8. Variational Calculus and Lagrangian Formalism<a class="headerlink" href="#variational-calculus-and-lagrangian-formalism" title="Permalink to this heading">#</a></h1>
 <p>The calculus of variations involves
 problems where the quantity to be minimized or maximized is an integral.</p>
@@ -563,7 +558,7 @@ dx}\frac{\partial \cal{L}}{\partial \dot{q}}\right)\delta q(t)dt=\delta S = 0.
 \frac{\partial \cal{L}}{\partial q}-\frac{d}{dx}\frac{\partial \cal{L}}{\partial \dot{q}}=0,
 \]</div>
 <p>known as the <strong>Euler-Lagrange</strong> equation.</p>
-<section id="constrained-motion">
+<div class="section" id="constrained-motion">
 <h2>Constrained motion<a class="headerlink" href="#constrained-motion" title="Permalink to this heading">#</a></h2>
 <p>Sometimes an auxiliary constraint is added to the problem (beyond
 fixing the end poits <span class="math notranslate nohighlight">\(y_1\)</span> and <span class="math notranslate nohighlight">\(y_2\)</span>). Just ahead, we will work on the
@@ -732,7 +727,7 @@ Lagrange’s undetermined multiplier.  If we have a set of constraints
 \[
 \frac{\partial f}{\partial x_i}+\sum_k\lambda_k\frac{\partial \phi_k}{\partial x_i} =0.
 \]</div>
-<section id="example-brachiostone">
+<div class="section" id="example-brachiostone">
 <h3>Example: brachiostone<a class="headerlink" href="#example-brachiostone" title="Permalink to this heading">#</a></h3>
 <p>Consider a particle constrained to move along a path (like a bead
 moving without friction on a wire) and you need to design a path from
@@ -791,8 +786,8 @@ the constant <span class="math notranslate nohighlight">\(a\)</span> must be cho
 <span class="math notranslate nohighlight">\(y_2=y(x_2)\)</span>. You can see the textbook for more details, plus you get
 a chance to work with cycloids in the exercises at the end of this
 chapter.</p>
-</section>
-<section id="maximizing-a-function">
+</div>
+<div class="section" id="maximizing-a-function">
 <h3>Maximizing a Function<a class="headerlink" href="#maximizing-a-function" title="Permalink to this heading">#</a></h3>
 <p>As an example of using Lagrange multipliers for a standard
 optimization formula we attempt to maximize the following function,</p>
@@ -875,8 +870,8 @@ f\left\{y(t),y'(t),x\right\}\rightarrow f\left\{y(t),y'(t),x\right\}-\lambda C\l
 \label{_auto5} \tag{5}
 \end{equation}
 \]</div>
-</section>
-<section id="example">
+</div>
+<div class="section" id="example">
 <h3>Example<a class="headerlink" href="#example" title="Permalink to this heading">#</a></h3>
 <p>Consider a chain of length <span class="math notranslate nohighlight">\(L\)</span> and mass per unit length <span class="math notranslate nohighlight">\(\kappa\)</span> that
 hangs from point <span class="math notranslate nohighlight">\(x=0,y=0\)</span> to point <span class="math notranslate nohighlight">\(x_f,y_f\)</span>. The shape must minimize
@@ -951,9 +946,9 @@ the solution is that once you define the length and the end-point
 positions <span class="math notranslate nohighlight">\(y_1\)</span> and <span class="math notranslate nohighlight">\(y_2\)</span>, the solution does not depend on <span class="math notranslate nohighlight">\(\kappa\)</span> or
 <span class="math notranslate nohighlight">\(g\)</span>. Thus, the shape of the chain would be the same if you took it to
 the moon. These solutions are known as <a class="reference external" href="http://en.wikipedia.org/wiki/Catenary%7D%7Bhttp://en.wikipedia.org/wiki/Catenary">catenaries</a>.</p>
-</section>
-</section>
-<section id="lagrangians">
+</div>
+</div>
+<div class="section" id="lagrangians">
 <h2>Lagrangians<a class="headerlink" href="#lagrangians" title="Permalink to this heading">#</a></h2>
 <p>Lagrangians represent a powerful method for solving problems that
 would be nearly impossible by direct application of Newton’s third
@@ -1019,7 +1014,7 @@ m\ell^2\ddot{\theta}&amp;=&amp;-mg\ell\sin\theta,\\
 \ddot{\theta}&amp;\approx&amp;-\frac{g}{\ell}\theta.
 \end{eqnarray*}
 \end{split}\]</div>
-<section id="proving-lagrange-s-equations-of-motion-from-newton-s-laws">
+<div class="section" id="proving-lagrange-s-equations-of-motion-from-newton-s-laws">
 <h3>Proving Lagrange’s Equations of Motion from Newton’s Laws<a class="headerlink" href="#proving-lagrange-s-equations-of-motion-from-newton-s-laws" title="Permalink to this heading">#</a></h3>
 <p>Lagrange’s equations of motion can only be applied for the following conditions:</p>
 <ul class="simple">
@@ -1086,8 +1081,8 @@ see that the bottom expressions above are identical,</p>
 \label{_auto9} \tag{9}
 \end{equation}
 \]</div>
-</section>
-<section id="lagrangian-examples">
+</div>
+<div class="section" id="lagrangian-examples">
 <h3>Lagrangian Examples<a class="headerlink" href="#lagrangian-examples" title="Permalink to this heading">#</a></h3>
 <p>Two examples are presented here. In the first, there are two
 generalized coordinates, but the two equations of motion can be
@@ -1165,9 +1160,9 @@ U&amp;=&amp;mgkr^2/2.
 for the acceleration to be inward for small deviations of <span class="math notranslate nohighlight">\(r\)</span> one
 needs to have <span class="math notranslate nohighlight">\(gk&gt;\omega^2\)</span>. If <span class="math notranslate nohighlight">\(\omega^2&gt;gk\)</span> the bead will move
 outward indefinitely.</p>
-</section>
-</section>
-<section id="small-vibrations-and-normal-modes">
+</div>
+</div>
+<div class="section" id="small-vibrations-and-normal-modes">
 <h2>Small Vibrations and Normal Modes<a class="headerlink" href="#small-vibrations-and-normal-modes" title="Permalink to this heading">#</a></h2>
 <p>Two examples are provided for solving for normal modes. These are
 solutions with multiple generalized coordinates, where the motion is
@@ -1191,7 +1186,7 @@ coordinate system where the motion is simple for each coordinate. This
 involves finding the direction, or the linear combination of <span class="math notranslate nohighlight">\(x_i\)</span>
 that form the coordinates <span class="math notranslate nohighlight">\(q_i\)</span> in which the motion is that of a
 single oscillator in each coordinate.</p>
-<section id="coupled-springs">
+<div class="section" id="coupled-springs">
 <h3>Coupled Springs<a class="headerlink" href="#coupled-springs" title="Permalink to this heading">#</a></h3>
 <p>For a first example, we consider a system of springs, where we write
 the Lagrangian, then find the normal modes. For the second example, a
@@ -1325,8 +1320,8 @@ oscillates independently in a simple manner, one can better understand
 the motion. Further, the frequencies of these modes represent the
 natural resonant frequencies of the system. This is important in the
 construction of many structures, such as bridges or vehicles.</p>
-</section>
-<section id="double-pendulum">
+</div>
+<div class="section" id="double-pendulum">
 <h3>Double Pendulum<a class="headerlink" href="#double-pendulum" title="Permalink to this heading">#</a></h3>
 <p>Consider a double pendulum confined to the <span class="math notranslate nohighlight">\(x-y\)</span> plane, where <span class="math notranslate nohighlight">\(y\)</span> is
 vertical. A mass <span class="math notranslate nohighlight">\(m\)</span> is connected to the ceiling with a massless
@@ -1543,9 +1538,9 @@ has a system with dimensionality <span class="math notranslate nohighlight">\(n&
 the problem numerically due to the messiness of the algebra. The main
 programming languages all have packages which readily diagonalize
 matrices and find eigenvectors and eigenvalues.</p>
-</section>
-</section>
-<section id="conservation-laws">
+</div>
+</div>
+<div class="section" id="conservation-laws">
 <h2>Conservation Laws<a class="headerlink" href="#conservation-laws" title="Permalink to this heading">#</a></h2>
 <p>Energy is conserved only when the Lagrangian has no explicit
 dependence on time, i.e. <span class="math notranslate nohighlight">\(L(q,\dot{q})\)</span>, not <span class="math notranslate nohighlight">\(L(q,\dot{q},t)\)</span>. To show
@@ -1690,8 +1685,8 @@ instance, you may need to write the Lagrangian in terms of angles.</p>
 <!-- Add material about angular momentum conservation and linear momentum. -->
 <!-- Add material about non-inertial frames -->
 <!-- Double pendulum and Foucalt's pendulum -->
-<!-- Revisit oscillations and example on earthquake models --></section>
-</section>
+<!-- Revisit oscillations and example on earthquake models --></div>
+</div>
 
     <script type="text/x-thebe-config">
     {
@@ -1721,7 +1716,7 @@ instance, you may need to write the Lagrangian in terms of angles.</p>
               
               
                 <footer class="prev-next-footer">
-                  
+                  <!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="chapter7.html"
@@ -1794,7 +1789,6 @@ By Danny Caballero, Morten Hjorth-Jensen
   
   <div class="footer-item">
     
-
   <p class="copyright">
     
       © Copyright 2022.
@@ -1821,8 +1815,8 @@ By Danny Caballero, Morten Hjorth-Jensen
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
 
   <footer class="bd-footer">
   </footer>
