@@ -6,6 +6,42 @@ Materials will appear in reverse chronological order, with the most recent appea
 
 All recorded classes are added to [this playlist](https://mediaspace.msu.edu/playlist/dedicated/1_s1d57uud/.)
 
+### Week 7, February 19-23, 2024
+
+Topics: Oscillations
+
+#### Videos to Watch
+
+While never required, these videos are recommended to help you see the larger picture of what we are doing in class. 
+
+
+##### Synchronization (21 minute video)
+
+How do fireflies end up blinking together? How do walking people end up moving in step? How does your heart physically push blood through your body? Each of these questions has to do with the physics of [synchronization](https://en.wikipedia.org/wiki/Synchronization). There's a lot of interesting physics in this space. The phenomenon of synchronization is rooted in the physics of [oscillations](https://en.wikipedia.org/wiki/Oscillation) and [waves](https://en.wikipedia.org/wiki/Wave). When oscillators couple (or influence each other), we begin to see behavior that is more complex than the sole oscillator. These "coupled oscillators" can demonstrate a wide variety of behaviors, including synchronization. They also form the basis for important technologies like [lasers](https://en.wikipedia.org/wiki/Laser) and [radio transmitters](https://en.wikipedia.org/wiki/Radio_transmitter).
+
+ We will begin our study of oscillations with the [simple harmonic oscillator](https://en.wikipedia.org/wiki/Simple_harmonic_motion) and then move to more complex systems (e.g., [the Duffing oscillator](https://en.wikipedia.org/wiki/Duffing_equation)).
+
+ The video below is a good introduction to the topic of synchronization. 
+
+[![](https://markdown-videos-api.jorgenkh.no/youtube/t-_VPRCtiUg?width=720&height=405)](https://inv.n8pjl.ca/watch?v=t-_VPRCtiUg)
+
+- Non-Commercial Link: [https://inv.n8pjl.ca/watch?v=t-_VPRCtiUg](https://inv.n8pjl.ca/watch?v=t-_VPRCtiUg)
+- Commercial Link: [https://youtube.com/watch?v=t-_VPRCtiUg](https://youtube.com/watch?v=t-_VPRCtiUg)
+
+#### Class Materials
+- Readings:
+  - JRT 5.1-5.2, 5.4; MLB 7.1-7.2; 8.5
+- Handwritten Notes:
+  - CW7: [Oscillations](../docs/handwritten-notes/CW7.pdf)
+- Lecture Videos:
+  - 19 Feb 2024
+  - 21 Feb 2024
+
+#### Assignments
+
+- [Homework 5](../homeworks/hw5.ipynb) (due March 8, 2024)
+- [Midterm 1](../midterms/midterm1.ipynb) (due February 23, 2024)
+
 ### Week 6, February 12-16, 2024
 
 Topics: Phase Space and Non-Linear Dynamics

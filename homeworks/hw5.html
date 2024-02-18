@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PHY321: Classical Mechanics 1 &#8212; Classical Mechanics</title>
+    <title>Homework 5 (Due 08 Mar) &#8212; Classical Mechanics</title>
   
   
   
@@ -66,6 +66,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'homeworks/hw5';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Chaos in the driven nonlinear pendulum" href="../honors-projects/ChaoticPendulum.html" />
+    <link rel="prev" title="Midterm 1 (Due 23 Feb)" href="../midterms/midterm1.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -194,7 +196,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../in-class/cw6-phase_space.html">CW6 - Phase Portraits</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Weekly assignments, midterms and final projects with solutions</span></p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="hw1.html">Homework 1 (Due 19 Jan)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../solutions/solutionhw1.html">Solutions - Homework 1 (Due 19 Jan)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="hw2.html">Homework 2 (Due 26 Jan)</a></li>
@@ -204,6 +206,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="hw4.html">Homework 4 (Due 09 Feb)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../solutions/solutionhw4.html">Solutions - Homework 4 (Due 09 Feb)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../midterms/midterm1.html">Midterm 1 (Due 23 Feb)</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Homework 5 (Due 08 Mar)</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Honors Projects</span></p>
 <ul class="nav bd-sidenav">
@@ -377,7 +380,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>PHY321: Classical Mechanics 1</h1>
+    <h1>Homework 5 (Due 08 Mar)</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -387,16 +390,17 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#practicalities-about-homeworks-and-projects">Practicalities about  homeworks and projects</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction-to-homework-5">Introduction to homework 5</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-1-15-pt-work-energy-theorem-and-conservation-laws">Exercise 1 (15 pt), Work-energy theorem and conservation laws</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exsercise-2-15pt-rocket-momentum-and-mass">Exsercise 2 (15pt), Rocket, Momentum and mass</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-3-10pt-more-rockets">Exercise 3 (10pt), More Rockets</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-4-10pt-center-of-mass">Exercise 4 (10pt), Center of mass</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-5-10pt-warming-up-for-the-earth-sun-system-scaling-the-equations">Exercise 5 (10pt), Warming up for the Earth-Sun system, Scaling the Equations</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-6-40pt-numerical-elements-solving-exercise-5-numerically">Exercise 6 (40pt), Numerical elements, solving exercise 5 numerically</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#classical-mechanics-extra-credit-assignment-scientific-writing-and-attending-talks">Classical Mechanics Extra Credit Assignment: Scientific Writing and attending Talks</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#integrating-classwork-with-research">Integrating Classwork With Research</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction-to-homework-5">Introduction to Homework 5</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#practicalities-about-homeworks-and-projects">Practicalities about  homeworks and projects</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-1-10-pt-sho-and-conservation-of-energy">Exercise 1 (10 pt), SHO and Conservation of Energy</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-2-10pt-kid-s-toy-and-stable-equilibrium">Exercise 2 (10pt), Kid’s toy and stable equilibrium</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-3-15pt-generic-1d-motion">Exercise 3 (15pt), “Generic” 1D motion</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-4-15pt-another-1-d-conservative-system-baby-bifurcations">Exercise 4 (15pt), Another 1-D conservative system; baby bifurcations</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-5-20-pt-phase-diagrams">Exercise 5 (20 pt), Phase Diagrams</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-6-30pt-numerical-integration-techniques-and-oscillations">Exercise 6 (30pt), Numerical integration techniques and oscillations</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#extra-credit-integrating-classwork-with-research">Extra Credit - Integrating Classwork With Research</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -410,269 +414,353 @@ document.write(`
                   
   <!-- HTML file automatically generated from DocOnce source (https://github.com/doconce/doconce/)
 doconce format html hw5.do.txt --no_mako -->
-<!-- dom:TITLE: PHY321: Classical Mechanics 1 --><div class="tex2jax_ignore mathjax_ignore section" id="phy321-classical-mechanics-1">
-<h1>PHY321: Classical Mechanics 1<a class="headerlink" href="#phy321-classical-mechanics-1" title="Permalink to this heading">#</a></h1>
-<p><strong>Homework 5, due Friday   February 17</strong></p>
-<p>Date: <strong>Feb 4, 2023</strong></p>
+<!-- dom:TITLE: PHY321: Classical Mechanics 1 --><div class="tex2jax_ignore mathjax_ignore section" id="homework-5-due-08-mar">
+<h1>Homework 5 (Due 08 Mar)<a class="headerlink" href="#homework-5-due-08-mar" title="Permalink to this heading">#</a></h1>
+<p><strong>Due Mar 08 (midnight)</strong></p>
+<p>Date: <strong>Feb 19, 2024</strong>
+Total points: <strong>100</strong></p>
+<div class="section" id="introduction-to-homework-5">
+<h2>Introduction to Homework 5<a class="headerlink" href="#introduction-to-homework-5" title="Permalink to this heading">#</a></h2>
+<p>This week’s exercises focus on two major tools that we use in classical mechanics, the phase diagram and numerical integration methods. Here the pencil and paper exercises will focus on conservative systems, but the methods we develop are used in a much broader context. The numerical exercises are meant to introduce you to phase diagrams and how to solve ordinary differential equations numerically. We will ask you to plot a variety of diagrams and to interpret the results.</p>
+<p>The relevant reading background is</p>
+<ol class="arabic simple">
+<li><p>chapter 4 of Taylor</p></li>
+<li><p>chapter 6.6-6.8 of Boas</p></li>
+<li><p>chapters 2.0-2.3 and 5.0-5.2 of Strogatz</p></li>
+</ol>
+<p>In both textbooks there are many nice worked out examples.</p>
+<p>The numerical exercises are based on what you did in homework 4 and the material covered in the lectures, but we will write a basic code for you to start from.</p>
 <div class="section" id="practicalities-about-homeworks-and-projects">
-<h2>Practicalities about  homeworks and projects<a class="headerlink" href="#practicalities-about-homeworks-and-projects" title="Permalink to this heading">#</a></h2>
+<h3>Practicalities about  homeworks and projects<a class="headerlink" href="#practicalities-about-homeworks-and-projects" title="Permalink to this heading">#</a></h3>
 <ol class="arabic simple">
 <li><p>You can work in groups (optimal groups are often 2-3 people) or by yourself. If you work as a group you can hand in one answer only if you wish. <strong>Remember to write your name(s)</strong>!</p></li>
 <li><p>Homeworks are available ten days before the deadline.</p></li>
-<li><p>How do I(we)  hand in?  You can hand in the paper and pencil exercises as a scanned document. For this homework this applies to exercises 1-5. Alternatively, you can hand in everyhting (if you are ok with typing mathematical formulae using say Latex) as a jupyter notebook at D2L. The numerical exercise(s) (exercise 6 here) should always be handed in as a jupyter notebook by the deadline at D2L.</p></li>
+<li><p>How do I(we)  hand in?  You can hand in the paper and pencil exercises as a scanned document. For this homework this applies to exercises 1-4. Alternatively, you can hand in everything (if you are ok with typing mathematical formulae using say Latex) as a jupyter notebook at D2L. The numerical exercise(s) (exercise 5-6 here) should always be handed in as a jupyter notebook by the deadline at D2L.</p></li>
 </ol>
 </div>
-<div class="section" id="introduction-to-homework-5">
-<h2>Introduction to homework 5<a class="headerlink" href="#introduction-to-homework-5" title="Permalink to this heading">#</a></h2>
-<p>This week’s sets of classical pen and paper and computational
-exercises are a continuation of the topics from the previous homework
-set and lectures from the last two weeks. We keep dealing with simple
-motion problems and conservation laws; energy, momentum and angular
-momentum. These conservation laws are central in Physics and
-understanding them properly lays the foundation for understanding and
-analyzing more complicated physics problems.</p>
-<p>The relevant reading background is</p>
-<ol class="arabic simple">
-<li><p>chapters 3 and 4 of Taylor (there are many good examples there) and</p></li>
-<li><p>chapters 10-14 of Malthe-Sørenssen.</p></li>
-<li><p>For the numerical exercise, see Malthe-Sørenssen section 7.5</p></li>
-</ol>
-<p>In both textbooks there are many nice worked out examples. Malthe-Sørenssen’s text contains also several coding examples you may find useful.</p>
-<p>The numerical homework focuses on another motion problem where you can
-use the code you developed in homework sets 3 and 4, almost entirely. Please take
-a look at the posted solutions (jupyter-notebook) for homework sets 3 and 4. You
-need only to change the forces at play, the one code to rule all exercises. The problem at hand is a
-classic, the gravitational force acting between the Sun and the
-Earth. Here you will notice also that the standard Euler-integration
-algorithm is not the best choice and we will introduce the so-called
-Euler-Cromer method and the Velocity-Verlet method. These methods will
-give much more stable numerical results with only few additions to
-your code.</p>
-<p>The code you develop here will also be reused when we analyze energy
-conservation in homework set 6. And for those of you doing the honors
-project, it serves as a starting point for the solar system variant.</p>
-</div>
-<div class="section" id="exercise-1-15-pt-work-energy-theorem-and-conservation-laws">
-<h2>Exercise 1 (15 pt), Work-energy theorem and conservation laws<a class="headerlink" href="#exercise-1-15-pt-work-energy-theorem-and-conservation-laws" title="Permalink to this heading">#</a></h2>
-<p>This exercise was partly discussed during the lectures of the weeks of January 30-February 3 and February 6-10.</p>
-<p>We will study a classical electron which moves in the <span class="math notranslate nohighlight">\(x\)</span>-direction along a surface. The force from the surface is</p>
-<div class="math notranslate nohighlight">
-\[
-\boldsymbol{F}(x)=-F_0\sin{(\frac{2\pi x}{b})}\boldsymbol{e}_x.
-\]</div>
-<p>The constant <span class="math notranslate nohighlight">\(b\)</span> represents the distance between atoms at the surface of the material, <span class="math notranslate nohighlight">\(F_0\)</span> is a constant and <span class="math notranslate nohighlight">\(x\)</span> is the position of the electron.</p>
+<div class="section" id="exercise-1-10-pt-sho-and-conservation-of-energy">
+<h3>Exercise 1 (10 pt), SHO and Conservation of Energy<a class="headerlink" href="#exercise-1-10-pt-sho-and-conservation-of-energy" title="Permalink to this heading">#</a></h3>
+<p>Consider the standard harmonic oscillator with a mass <span class="math notranslate nohighlight">\(m\)</span> attached to a horizontal spring with spring constant <span class="math notranslate nohighlight">\(k\)</span>. It is constrained to move in the <span class="math notranslate nohighlight">\(x\)</span> direction only and there is no friction present. With the equilibrium position as <span class="math notranslate nohighlight">\(x=0\)</span>, then the potential energy is <span class="math notranslate nohighlight">\(U(x)=\frac{1}{2}kx^2\)</span>.</p>
+<p>We give the oscillator a little kick at <span class="math notranslate nohighlight">\(t=0\)</span> and let it go. It reaches a maximum distance of <span class="math notranslate nohighlight">\(A\)</span> from the equilibrium position.</p>
 <ul class="simple">
-<li><p>1a (2pt) Is this a conservative force? And if so, what does that imply?</p></li>
-<li><p>1b (4pt) Use the work-energy theorem to find the velocity <span class="math notranslate nohighlight">\(v(x)\)</span>.</p></li>
-<li><p>1c (4pt) With the above expression for the force, find the potential energy.</p></li>
-<li><p>1d (5pt) Make a plot of the potential energy and discuss the equilibrium points where the force on the electron is zero. Discuss the physical interpretation of stable and unstable equilibrium points. Use energy conservation. Recommended read here  is Malthe-Sørenssen chapter 11.3.2.</p></li>
+<li><p>1a (2pt) Write down the conservation of energy equation and find the velocity as a function of position (i.e., find <span class="math notranslate nohighlight">\(\dot{x}(x)\)</span>).</p></li>
+<li><p>1b (4pt) Construct the integral for the time it takes for the oscillator from <span class="math notranslate nohighlight">\(x=0\)</span> to any position <span class="math notranslate nohighlight">\(x\)</span>.</p></li>
+<li><p>1c (4pt) Use the integral to find <span class="math notranslate nohighlight">\(x(t)\)</span> and show that the period of the oscillator is <span class="math notranslate nohighlight">\(T=2\pi\sqrt{m/k}\)</span>.</p></li>
 </ul>
 </div>
-<div class="section" id="exsercise-2-15pt-rocket-momentum-and-mass">
-<h2>Exsercise 2 (15pt), Rocket, Momentum and mass<a class="headerlink" href="#exsercise-2-15pt-rocket-momentum-and-mass" title="Permalink to this heading">#</a></h2>
-<p>Taylor exercise 3.11.   This exercise is meant to illustrate momentum conservation or not.
-This exercise was partly discussed during the lectures, see the notes from the week of February 6-10  on <a class="reference external" href="https://mhjensen.github.io/Physics321/doc/pub/week6/html/week6.html">Energy and Momentum etc, see the part on Momentum conservation</a>. Taylor’s chapter 3.2 covers also this example.</p>
-</div>
-<div class="section" id="exercise-3-10pt-more-rockets">
-<h2>Exercise 3 (10pt), More Rockets<a class="headerlink" href="#exercise-3-10pt-more-rockets" title="Permalink to this heading">#</a></h2>
-<p>Taylor exercises 3.13 (5pt) and 3.14 (5pt). This is a continuation of
-the previous exercise and most of the relevant background material can
-be found in Taylor chapter 3.2.</p>
-</div>
-<div class="section" id="exercise-4-10pt-center-of-mass">
-<h2>Exercise 4 (10pt), Center of mass<a class="headerlink" href="#exercise-4-10pt-center-of-mass" title="Permalink to this heading">#</a></h2>
-<p>Taylor exercise 3.20. Here Taylor’s chapter 3.3 can be of use. This
-relation will turn out to be very useful when we discuss systems of
-many classical particles.</p>
-</div>
-<div class="section" id="exercise-5-10pt-warming-up-for-the-earth-sun-system-scaling-the-equations">
-<h2>Exercise 5 (10pt), Warming up for the Earth-Sun system, Scaling the Equations<a class="headerlink" href="#exercise-5-10pt-warming-up-for-the-earth-sun-system-scaling-the-equations" title="Permalink to this heading">#</a></h2>
-<p>The aim of this exercise (as well as the next) is to study the motion
-of objects under the influence of the gravitational force.  We will
-limit ourselves to the Earth-Sun system. Here we will scale the
-equations and sketch our first algorithm for solving the equations,
-namely using Euler’s method again, as we did in homework sets 3 and 4.  This part
-together with the numerical part forms also the entry point for the
-solar system honors project. Furthermore, we will reuse parts of these
-results when analyzing energy conservation in homework 6.</p>
-<p>We will limit ourselves (in order to test the algorithm) to a
-hypothetical solar system with the Earth only orbiting around the sun.
-The only force in the problem is gravity. Newton’s law of gravitation
-is given by a force <span class="math notranslate nohighlight">\(F_G\)</span></p>
-<div class="math notranslate nohighlight">
-\[
-F_G=\frac{GM_{\odot}M_{\mathrm{Earth}}}{r^2},
-\]</div>
-<p>where <span class="math notranslate nohighlight">\(M_{\odot}\)</span> is the mass of the Sun and <span class="math notranslate nohighlight">\(M_{\mathrm{Earth}}\)</span> is
-the mass of the Earth. The gravitational constant is <span class="math notranslate nohighlight">\(G\)</span> and <span class="math notranslate nohighlight">\(r\)</span> is
-the distance between the Earth and the Sun.  The Sun
-has a mass which is much larger than that of the Earth. We can
-therefore safely neglect the motion of the Sun in this problem.</p>
-<p>We assume that the orbit of the Earth around the Sun
-is co-planar, and we take this to be the <span class="math notranslate nohighlight">\(xy\)</span>-plane.
-Using Newton’s second law of motion we get the following equations</p>
-<div class="math notranslate nohighlight">
-\[
-\frac{d^2x}{dt^2}=\frac{F_{G,x}}{M_{\mathrm{Earth}}},
-\]</div>
-<p>and</p>
-<div class="math notranslate nohighlight">
-\[
-\frac{d^2y}{dt^2}=\frac{F_{G,y}}{M_{\mathrm{Earth}}},
-\]</div>
-<p>where <span class="math notranslate nohighlight">\(F_{G,x}\)</span> and <span class="math notranslate nohighlight">\(F_{G,y}\)</span> are the <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span> components of the
-gravitational force.</p>
-<p>We will use so-called astronomical units when rewriting our equations.
-Using astronomical units (AU as abbreviation)it means that one
-astronomical unit of length, known as 1 AU, is the average distance
-between the Sun and Earth, that is <span class="math notranslate nohighlight">\(1\)</span> AU = <span class="math notranslate nohighlight">\(1.5\times 10^{11}\)</span> m.  It
-can also be convenient to use years instead of seconds since years
-match better the time evolution of the solar system. The mass of the
-Sun is <span class="math notranslate nohighlight">\(M_{\mathrm{sun}}=M_{\odot}=2\times 10^{30}\)</span> kg. The mass of
-Earth is <span class="math notranslate nohighlight">\(M_{\mathrm{Earth}}=6\times 10^{24}\)</span> kg with a distance 1AU.</p>
-<p>In setting up the equations we limit ourselves to a co-planar
-motion and use only the <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span> coordinates. But you should feel
-free to extend your equations to three dimensions, it is not very
-difficult and the data from NASA are all in three dimensions.</p>
-<p><a class="reference external" href="http://www.nasa.gov/index.html">NASA</a> has an excellent site at <a class="reference external" href="http://ssd.jpl.nasa.gov/horizons.cgi#top">http://ssd.jpl.nasa.gov/horizons.cgi#top</a>.
-From there you can extract initial conditions in order to start your differential equation solver.
-At the above website you need to change from <strong>OBSERVER</strong> to <strong>VECTOR</strong> and then write in the planet you are interested in.
-The generated data contain the <span class="math notranslate nohighlight">\(x\)</span>, <span class="math notranslate nohighlight">\(y\)</span> and <span class="math notranslate nohighlight">\(z\)</span> values as well as their corresponding velocities. The velocities are in units of AU per day.
-Alternatively they can be obtained in terms of km and km/s.</p>
-<p>For the system below involving only the Earth and the Sun, you
-could just initialize the position with say <span class="math notranslate nohighlight">\(x=1\)</span> AU and <span class="math notranslate nohighlight">\(y=0\)</span> AU.</p>
-<p>We assume that mass units can be obtained by using the fact that
-Earth’s orbit is almost circular around the Sun.</p>
-<p>For circular motion we know that the force must obey the following relation</p>
-<div class="math notranslate nohighlight">
-\[
-F_G= \frac{M_{\mathrm{Earth}}v^2}{r}=\frac{GM_{\odot}M_{\mathrm{Earth}}}{r^2},
-\]</div>
-<p>where <span class="math notranslate nohighlight">\(v\)</span> is the velocity of Earth.
-The latter equation can be used to show that</p>
-<div class="math notranslate nohighlight">
-\[
-v^2r=GM_{\odot}=4\pi^2\mathrm{AU}^3/\mathrm{yr}^2.
-\]</div>
+<div class="section" id="exercise-2-10pt-kid-s-toy-and-stable-equilibrium">
+<h3>Exercise 2 (10pt), Kid’s toy and stable equilibrium<a class="headerlink" href="#exercise-2-10pt-kid-s-toy-and-stable-equilibrium" title="Permalink to this heading">#</a></h3>
+<p>A toy is made from a cylinder mounted on a hemisphere as shown in the figure below. The hemisphere has a radius of <span class="math notranslate nohighlight">\(R\)</span> and the center of mass of the whole toy is <span class="math notranslate nohighlight">\(h\)</span> above the ground.</p>
+<p><img alt="toy" src="../_images/5.2-kid_toy.png" /></p>
 <ul class="simple">
-<li><p>5a (5pt) Show how to derive the last equation and use this to scale the differential equations, getting thus rid of the constant <span class="math notranslate nohighlight">\(G\)</span> and the two masses. Split the differential equations for the motion in the <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span> directions in terms of four coupled differential equations.</p></li>
-<li><p>5b (5pt)  Discretize the above differential equations and set up an algorithm for solving these equations using Euler’s forward algorithm and the so-called velocity Verlet method <a class="reference external" href="https://mhjensen.github.io/Physics321/doc/pub/week7/html/week7.html">discussed in the lecture notes</a>. Here you can reuse what you did in homework sets 3 and 4.</p></li>
+<li><p>2a (2pt) Find the height of the center of mass of the toy as a function of the angle <span class="math notranslate nohighlight">\(\theta\)</span>.</p></li>
+<li><p>2b (3pt) Use this to find the gravitational potential energy <span class="math notranslate nohighlight">\(U(\theta)\)</span>. Show in a figure how the potential energy varies with <span class="math notranslate nohighlight">\(\theta\)</span>.</p></li>
+<li><p>2c (5pt) For which values of <span class="math notranslate nohighlight">\(R\)</span> and <span class="math notranslate nohighlight">\(h\)</span> is the toy in stable equilibrium so that it does not fall over? Why does this make sense to you? Or how would you explain it to a friend?</p></li>
 </ul>
 </div>
-<div class="section" id="exercise-6-40pt-numerical-elements-solving-exercise-5-numerically">
-<h2>Exercise 6 (40pt), Numerical elements, solving exercise 5 numerically<a class="headerlink" href="#exercise-6-40pt-numerical-elements-solving-exercise-5-numerically" title="Permalink to this heading">#</a></h2>
-<p><strong>This exercise should be handed in as a jupyter-notebook</strong> at D2L. Remember to write your name(s).</p>
-<p>In homework sets 3 and 4 we:</p>
-<ol class="arabic simple">
-<li><p>studied  Euler’s Method to find the position and the velocity of a falling object, including air resistance and gravity</p></li>
-<li><p>and added additional forces to our model and studied a bouncing ball.</p></li>
-</ol>
-<p>This week we will reuse our code from homework 4 (exercises 6)
-and replace the air resistance and force from the ground with the
-gravitational force. Then we will study the stability of the system as function of initial conditions and the time step length.</p>
-<p>We start by importing some standard packages</p>
+<div class="section" id="exercise-3-15pt-generic-1d-motion">
+<h3>Exercise 3 (15pt), “Generic” 1D motion<a class="headerlink" href="#exercise-3-15pt-generic-1d-motion" title="Permalink to this heading">#</a></h3>
+<p>We will eventually learn how to solve for equations of motion for generalized coordinates. That work requires us to think about the forces and constraints on a system. Here we will consider a particle moving along a curved path to begin to think about how to describe the motion of a particle in a more general way.</p>
+<p><img alt="curved-path" src="../_images/5.3-curved_path.png" /></p>
+<p>A bead follows the curved path above, you can imagine it is a wire or a track, and the bead is constrained to move along the path. The bead’s position is described by its distance along the path, <span class="math notranslate nohighlight">\(s\)</span> as measured from the origin <span class="math notranslate nohighlight">\(O\)</span>.</p>
+<ul class="simple">
+<li><p>3a (3pt) Write the velocity <span class="math notranslate nohighlight">\(\mathbf{v}\)</span> in terms of its components (e.g., <span class="math notranslate nohighlight">\(dx/dt\)</span>) and find it’s magnitude (<span class="math notranslate nohighlight">\(v\)</span>).</p></li>
+<li><p>3b (4pt) Use these results to show that bead’s speed is given by <span class="math notranslate nohighlight">\(v=\dot{s}\)</span>.</p></li>
+<li><p>3c (4pt) Prove that the tangential component of the net force (<span class="math notranslate nohighlight">\(F_{||}\)</span>, “parallel” to the motion) on the bead is <span class="math notranslate nohighlight">\(m\ddot{s}\)</span>.</p></li>
+</ul>
+<p>There is a force due to the wire (<span class="math notranslate nohighlight">\(\mathbf{F}_w\)</span>) that ensures the bead stays on the path. It is not in the direction of the path (i.e., friction), only perpendicular to the wire. Assume all other forces are conservative (i.e., can be derived from a generic potential <span class="math notranslate nohighlight">\(-\nabla U\)</span>).</p>
+<ul class="simple">
+<li><p>3d (4pt) Show that the tangential component of the net force due to the wire is <span class="math notranslate nohighlight">\(-\frac{dU}{ds}\)</span>.</p></li>
+</ul>
+<p>This 1D concept extends to multiple dimensions and can help us understand the Lagrangian method of solving for the equations of motion.</p>
+</div>
+<div class="section" id="exercise-4-15pt-another-1-d-conservative-system-baby-bifurcations">
+<h3>Exercise 4 (15pt), Another 1-D conservative system; baby bifurcations<a class="headerlink" href="#exercise-4-15pt-another-1-d-conservative-system-baby-bifurcations" title="Permalink to this heading">#</a></h3>
+<p>The apparatus below is a massless wheel of radius <span class="math notranslate nohighlight">\(R\)</span> that is mounted to a frictionless axle. A small, dense piece of clay with mass <span class="math notranslate nohighlight">\(M\)</span> is glued to edge of the wheel as shown. Another mass <span class="math notranslate nohighlight">\(m\)</span> hangs from a massless string that is wrapped around the wheel. We can assume the string is inextensible and does not slip, and the system is in a uniform gravitational field.</p>
+<p><img alt="apparatus" src="../_images/5.4-apparatus.png" /></p>
+<p>We can show that this complicated system is still one-dimensional (at least in space) and then we can see the effects of parameters like <span class="math notranslate nohighlight">\(m/M\)</span>.</p>
+<ul class="simple">
+<li><p>4a (3pt) In terms of the rotation angle <span class="math notranslate nohighlight">\(\phi\)</span> of the wheel, write down the total potential energy <span class="math notranslate nohighlight">\(U(\phi)\)</span> of the system of both masses. Take note of any constraints that you use to write this as a 1D problem.</p></li>
+<li><p>4b (2pt) Use this potential energy to find  values of <span class="math notranslate nohighlight">\(m\)</span> and <span class="math notranslate nohighlight">\(M\)</span> for which there are “fixed points”, “critical points”, or what we sometimes call “equilibrium points”. The language we use comes from different fields, but the concept is the same.</p></li>
+<li><p>4c (3pt) Describe the fixed points, determine their stability, and explain why they make sense in terms of the expected motion.</p></li>
+<li><p>4d (5pt) Plot the potential energy for two different values of <span class="math notranslate nohighlight">\(m/M\)</span> and explain the differences in the potential energy graphs. Consider cases when you observe very different motion. Think about an initial condition where the mass <span class="math notranslate nohighlight">\(m\)</span> is at rest and the wheel is at rest. What happens when you release the mass <span class="math notranslate nohighlight">\(m\)</span> for your two cases?</p></li>
+<li><p>4e (2pt) Determine the value of <span class="math notranslate nohighlight">\(m/M\)</span> for which the system begins to exhibit oscillations (if released from <span class="math notranslate nohighlight">\(\phi=0\)</span>).</p></li>
+</ul>
+<p>The value of <span class="math notranslate nohighlight">\(m/M\)</span> is a dimensionless quantity that characterizes the system. In a dynamical system, we think of it as a parameter that can change the qualitative behavior of the system. Such parameters can lead us to <a class="reference external" href="https://en.wikipedia.org/wiki/Bifurcation_theory">bifurcations</a>, <a class="reference external" href="https://en.wikipedia.org/wiki/Phase_transition">phase transitions</a>, and other interesting (often non-equilibrium) phenomena.</p>
+</div>
+<div class="section" id="exercise-5-20-pt-phase-diagrams">
+<h3>Exercise 5 (20 pt), Phase Diagrams<a class="headerlink" href="#exercise-5-20-pt-phase-diagrams" title="Permalink to this heading">#</a></h3>
+<p>One of the most useful tools we can learn from classical mechanics is the phase diagram. For us, it is the plot of the position and velocity of a particle in a 1D system, but the concept can be extended to higher dimensions and to other systems. The phase diagram can tell us about the stability of fixed points, the period of oscillations, and the qualitative behavior of the system.</p>
+<p>In this exercise, we will consider a particle in a potential <span class="math notranslate nohighlight">\(U(x)\)</span> and we will plot the phase diagrams using both <code class="docutils literal notranslate"><span class="pre">quiver</span></code> and <code class="docutils literal notranslate"><span class="pre">streamplot</span></code> in <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code>. The purpose of this exercise is to learn how to plot phase diagrams and to interpret the results.</p>
+<p>We start with a little code for plotting the phase diagram of the simple harmonic oscillator. The code is written in a way that you can easily modify it to plot the phase diagram of other systems. The key point is to make sure that the <code class="docutils literal notranslate"><span class="pre">quiver</span></code> or <code class="docutils literal notranslate"><span class="pre">streamplot</span></code> function is called with the correct arguments.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> inline
-
-<span class="c1"># let&#39;s start by importing useful packages we are familiar with</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="o">*</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="o">%</span><span class="k">matplotlib</span> inline
+<span class="n">plt</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;seaborn-v0_8-colorblind&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">SHO</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="n">V</span><span class="p">):</span>
+    
+    <span class="c1"># For a simple harmonic oscillator, x&#39; = v, and v&#39; = -x.</span>
+    <span class="n">dX</span> <span class="o">=</span> <span class="n">V</span>
+    <span class="n">dV</span> <span class="o">=</span> <span class="o">-</span><span class="n">X</span>
+    
+    <span class="k">return</span> <span class="n">dX</span><span class="p">,</span> <span class="n">dV</span>
+
+<span class="k">def</span> <span class="nf">generate_phase_space</span><span class="p">(</span><span class="n">x_lim</span><span class="p">,</span> <span class="n">v_lim</span><span class="p">,</span> <span class="n">grid_size</span><span class="p">):</span>
+
+    <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="n">x_lim</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">x_lim</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">grid_size</span><span class="p">)</span>
+    <span class="n">v</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="n">v_lim</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">v_lim</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">grid_size</span><span class="p">)</span>
+    
+    <span class="n">X</span><span class="p">,</span> <span class="n">V</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">meshgrid</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">v</span><span class="p">)</span>
+    
+    <span class="n">dX</span><span class="p">,</span> <span class="n">dV</span> <span class="o">=</span> <span class="n">SHO</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">V</span><span class="p">)</span>
+    
+    <span class="k">return</span> <span class="n">X</span><span class="p">,</span> <span class="n">V</span><span class="p">,</span> <span class="n">dX</span><span class="p">,</span> <span class="n">dV</span>
+
+<span class="c1"># Generate phase space</span>
+<span class="n">x_lim</span> <span class="o">=</span> <span class="p">(</span><span class="o">-</span><span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+<span class="n">v_lim</span> <span class="o">=</span> <span class="p">(</span><span class="o">-</span><span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+<span class="n">grid_size</span> <span class="o">=</span> <span class="mi">20</span>
+<span class="n">X</span><span class="p">,</span> <span class="n">V</span><span class="p">,</span> <span class="n">dX</span><span class="p">,</span> <span class="n">dV</span> <span class="o">=</span> <span class="n">generate_phase_space</span><span class="p">(</span><span class="n">x_lim</span><span class="p">,</span> <span class="n">v_lim</span><span class="p">,</span> <span class="n">grid_size</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">axs</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">10</span><span class="p">))</span>  <span class="c1"># Two rows, one column</span>
+    
+<span class="c1"># Quiver plot on the first subplot</span>
+<span class="n">axs</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">quiver</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">V</span><span class="p">,</span> <span class="n">dX</span><span class="p">,</span> <span class="n">dV</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;C0&#39;</span><span class="p">)</span>
+<span class="n">axs</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Quiver Plot of SHO Phase Diagram&#39;</span><span class="p">)</span>
+<span class="n">axs</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;$x$&#39;</span><span class="p">)</span>
+<span class="n">axs</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;$\dot</span><span class="si">{x}</span><span class="s1">$&#39;</span><span class="p">)</span>
+
+<span class="c1"># Stream plot on the second subplot</span>
+<span class="n">axs</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">streamplot</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">V</span><span class="p">,</span> <span class="n">dX</span><span class="p">,</span> <span class="n">dV</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;C1&#39;</span><span class="p">)</span>
+<span class="n">axs</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Stream Plot of SHO Phase Diagram&#39;</span><span class="p">)</span>
+<span class="n">axs</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;$x$&#39;</span><span class="p">)</span>
+<span class="n">axs</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;$\dot</span><span class="si">{x}</span><span class="s1">$&#39;</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/66f91dc076252bb0ee15179e87166c1aea6a46168ea335f5f2cd3007364a1b71.png" src="../_images/66f91dc076252bb0ee15179e87166c1aea6a46168ea335f5f2cd3007364a1b71.png" />
 </div>
 </div>
 <ul class="simple">
-<li><p>6a (30 pt)  Write then a program which solves the above differential equations for the Earth-Sun system using Euler’s  method and the velocity Verlet method.  Find out which initial value for the velocity that gives a circular orbit and test the stability of your algorithm as function of different time steps <span class="math notranslate nohighlight">\(\Delta t\)</span>.  Make a plot of the results you obtain for the position of the Earth (plot the <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span> values and/or if you prefer to use three dimensions the <span class="math notranslate nohighlight">\(z\)</span>-value as well) orbiting  the Sun. Discuss eventual differences between the Verlet algorithm and the Euler algorithm.</p></li>
-<li><p>6b (10pt) Consider then a planet which begins at a distance of 1 AU from the sun. Find out by trial and error what the initial velocity must be in order for the planet to escape from the sun.  Can you find an exact answer?  How does that match your numerical results?</p></li>
+<li><p>5a (2pt) Explain how the code works to produce the phase diagram. The key part is explaining what the function <code class="docutils literal notranslate"><span class="pre">SHO</span></code> does and how that relates to the <code class="docutils literal notranslate"><span class="pre">quiver</span></code> and <code class="docutils literal notranslate"><span class="pre">streamplot</span></code> calls. What does <code class="docutils literal notranslate"><span class="pre">np.meshgrid</span></code> do and why is it used?</p></li>
 </ul>
-<p>Here we add a code-example which may aid in the above studies using Euler’s forward method.</p>
+<p>We have discussed the physical pendulum in class where the potential energy is given by:</p>
+<div class="math notranslate nohighlight">
+\[U(\theta)=mgl(1-\cos\theta)\]</div>
+<ul class="simple">
+<li><p>5b (4pt) Modify the code to produce the phase diagram for the physical pendulum. You can choose mass and length. Make sure to explore the diagram outside of the small angle approximation. What new features do you observe in the phase diagram? What motion are they associated with?</p></li>
+</ul>
+<p>Now we have a code that we can use to plot the phase diagram of any 1D system. We will use it to explore the damped harmonic oscillator and the damped physical pendulum. Here we write the equations of motion as the system is still 1-D, but the forces are not derived from a potential.</p>
+<p>The damped harmonic oscillator has the equation of motion:
+$<span class="math notranslate nohighlight">\(\ddot{x}=-\frac{k}{m}x-\frac{b}{m}\dot{x}\)</span>$</p>
+<ul class="simple">
+<li><p>5c (5pt) Modify the code to produce the phase diagram for the damped harmonic oscillator. You can choose <span class="math notranslate nohighlight">\(k/m\)</span> and <span class="math notranslate nohighlight">\(b/m\)</span>, but might want to explore the values. What features do you observe in the phase diagram? What motion are they associated with?</p></li>
+</ul>
+<p>The damped physical pendulum has the equation of motion:
+$<span class="math notranslate nohighlight">\(\ddot{\theta}=-\frac{g}{l}\sin\theta-\frac{b}{ml}\dot{\theta}\)</span>$</p>
+<ul class="simple">
+<li><p>5d (5pt) Modify the code again to produce the phase diagram for the damped physical pendulum. You can choose <span class="math notranslate nohighlight">\(b/ml\)</span>, but might want to explore the values. How does this motion compare to the motion of the damped harmonic oscillator?</p></li>
+<li><p>5e (4pt) Return to the simple harmonic oscillator. Show using conservation of energy the phase diagram is a series of ellipses in <span class="math notranslate nohighlight">\((x,v)\)</span> space. Plot these ellipses on top of a phase diagram for the simple harmonic oscillator to illustrate how the phase diagram explains the total energy of the system.</p></li>
+</ul>
+</div>
+<div class="section" id="exercise-6-30pt-numerical-integration-techniques-and-oscillations">
+<h3>Exercise 6 (30pt), Numerical integration techniques and oscillations<a class="headerlink" href="#exercise-6-30pt-numerical-integration-techniques-and-oscillations" title="Permalink to this heading">#</a></h3>
+<p>We’ve discussed the Euler method and made use of it in the prior homeworks. However, the Euler method is not the most accurate method for solving ODEs. It has a real issue with energy conservation, which is a problem for conservative systems. Here we will explore the Euler-Cromer method and the Runge-Kutta methods for the simple harmonic oscillator. You will then apply these same methods to the various oscillators in Exercise 5.</p>
+<p>Below we have written a code to solve the ODE:</p>
+<div class="math notranslate nohighlight">
+\[\ddot{x}=-\omega^2 x\]</div>
+<p>where the initial position is 1 and the initial velocity is 0. The time step is set by the number of integration steps, <span class="math notranslate nohighlight">\(N\)</span>. We wrote a function called <code class="docutils literal notranslate"><span class="pre">euler</span></code> that will then solve the ODE using the Euler method. There’s a second function called <code class="docutils literal notranslate"><span class="pre">euler_cromer</span></code> that uses the Euler-Cromer method.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">DeltaT</span> <span class="o">=</span> <span class="mf">0.001</span>
-<span class="c1">#set up arrays </span>
-<span class="n">tfinal</span> <span class="o">=</span> <span class="mi">10</span> <span class="c1"># in years</span>
-<span class="n">n</span> <span class="o">=</span> <span class="n">ceil</span><span class="p">(</span><span class="n">tfinal</span><span class="o">/</span><span class="n">DeltaT</span><span class="p">)</span>
-<span class="c1"># set up arrays for time t, velocity v, and position r</span>
-<span class="n">t</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
-<span class="n">v</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">n</span><span class="p">,</span><span class="mi">2</span><span class="p">))</span>
-<span class="n">r</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">n</span><span class="p">,</span><span class="mi">2</span><span class="p">))</span>
-<span class="c1"># Initial conditions as compact 2-dimensional arrays</span>
-<span class="n">r0</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">1.0</span><span class="p">,</span><span class="mf">0.0</span><span class="p">])</span>
-<span class="n">v0</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">0.0</span><span class="p">,</span><span class="mi">2</span><span class="o">*</span><span class="n">pi</span><span class="p">])</span>
-<span class="n">r</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">r0</span>
-<span class="n">v</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">v0</span>
-<span class="n">Fourpi2</span> <span class="o">=</span> <span class="mi">4</span><span class="o">*</span><span class="n">pi</span><span class="o">*</span><span class="n">pi</span>
-<span class="c1"># Start integrating using Euler&#39;s method</span>
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">):</span>
-    <span class="c1"># Set up the acceleration</span>
-    <span class="c1"># Here you could have defined your own function for this</span>
-    <span class="n">rabs</span> <span class="o">=</span> <span class="n">sqrt</span><span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="n">r</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">*</span><span class="n">r</span><span class="p">[</span><span class="n">i</span><span class="p">]))</span>
-    <span class="n">a</span> <span class="o">=</span>  <span class="o">-</span><span class="n">Fourpi2</span><span class="o">*</span><span class="n">r</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">/</span><span class="p">(</span><span class="n">rabs</span><span class="o">**</span><span class="mi">3</span><span class="p">)</span>
-    <span class="c1"># update velocity, time and position using Euler&#39;s forward method</span>
-    <span class="n">v</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">v</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+</span> <span class="n">DeltaT</span><span class="o">*</span><span class="n">a</span>
-    <span class="n">r</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">r</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+</span> <span class="n">DeltaT</span><span class="o">*</span><span class="n">v</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
-    <span class="n">t</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">t</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+</span> <span class="n">DeltaT</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">omega</span> <span class="o">=</span> <span class="mi">1</span>  <span class="c1"># Angular frequency</span>
+<span class="n">x0</span> <span class="o">=</span> <span class="mi">1</span>  <span class="c1"># Initial position</span>
+<span class="n">v0</span> <span class="o">=</span> <span class="mi">0</span>  <span class="c1"># Initial velocity</span>
+<span class="n">t0</span> <span class="o">=</span> <span class="mi">0</span>  <span class="c1"># Start time</span>
+<span class="n">tf</span> <span class="o">=</span> <span class="mi">100</span>  <span class="c1"># End time</span>
+<span class="n">N</span> <span class="o">=</span> <span class="mi">10000</span>  <span class="c1"># Number of time steps</span>
+<span class="n">dt</span> <span class="o">=</span> <span class="p">(</span><span class="n">tf</span><span class="o">-</span><span class="n">t0</span><span class="p">)</span><span class="o">/</span><span class="n">N</span>  <span class="c1"># Time step</span>
 </pre></div>
 </div>
 </div>
 </div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">euler</span><span class="p">(</span><span class="n">omega</span><span class="p">,</span> <span class="n">x0</span><span class="p">,</span> <span class="n">v0</span><span class="p">,</span> <span class="n">t0</span><span class="p">,</span> <span class="n">tf</span><span class="p">,</span> <span class="n">dt</span><span class="p">):</span>
+    <span class="n">t</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">t0</span><span class="p">,</span> <span class="n">tf</span><span class="p">,</span> <span class="n">dt</span><span class="p">)</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">t</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+    <span class="n">v</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">t</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+    <span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">v</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">x0</span><span class="p">,</span> <span class="n">v0</span>
+
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">t</span><span class="p">)):</span>
+        <span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">dt</span> <span class="o">*</span> <span class="n">v</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+        <span class="n">v</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">v</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">dt</span> <span class="o">*</span> <span class="n">omega</span><span class="o">**</span><span class="mi">2</span> <span class="o">*</span> <span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+
+    <span class="k">return</span> <span class="n">t</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">v</span>
+
+<span class="k">def</span> <span class="nf">euler_cromer</span><span class="p">(</span><span class="n">omega</span><span class="p">,</span> <span class="n">x0</span><span class="p">,</span> <span class="n">v0</span><span class="p">,</span> <span class="n">t0</span><span class="p">,</span> <span class="n">tf</span><span class="p">,</span> <span class="n">dt</span><span class="p">):</span>
+    <span class="n">t</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">t0</span><span class="p">,</span> <span class="n">tf</span><span class="p">,</span> <span class="n">dt</span><span class="p">)</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">t</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+    <span class="n">v</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">t</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+    <span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">v</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">x0</span><span class="p">,</span> <span class="n">v0</span>
+
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">t</span><span class="p">)):</span>
+        <span class="n">v</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">v</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">dt</span> <span class="o">*</span> <span class="n">omega</span><span class="o">**</span><span class="mi">2</span> <span class="o">*</span> <span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+        <span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">dt</span> <span class="o">*</span> <span class="n">v</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+
+    <span class="k">return</span> <span class="n">t</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">v</span>
+</pre></div>
 </div>
-<div class="section" id="classical-mechanics-extra-credit-assignment-scientific-writing-and-attending-talks">
-<h2>Classical Mechanics Extra Credit Assignment: Scientific Writing and attending Talks<a class="headerlink" href="#classical-mechanics-extra-credit-assignment-scientific-writing-and-attending-talks" title="Permalink to this heading">#</a></h2>
-<p>The following gives you an opportunity to earn <strong>five extra credit
-points</strong> on each of the remaining homeworks and <strong>ten extra credit points</strong>
-on the midterms and finals.  This assignment also covers an aspect of
-the scientific process that is not taught in most undergraduate
-programs: scientific writing.  Writing scientific reports is how
-scientist communicate their results to the rest of the field.  Knowing
-how to assemble a well written scientific report will greatly benefit
-you in you upper level classes, in graduate school, and in the work
-place.</p>
-<p>The full information on extra credits is found at <a class="github reference external" href="https://github.com/mhjensen/Physics321/blob/master/doc/Homeworks/ExtraCredits/">mhjensen/Physics321</a>. There you will also find examples on how to write a scientific article.
-Below you can also find a description on how to gain extra credits by attending scientific talks.</p>
-<p>This assignment allows you to gain extra credit points by practicing
-your scientific writing.  For each of the remaining homeworks you can
-submit the specified section of a scientific report (written about the
-numerical aspect of the homework) for five extra credit points on the
-assignment.  For the two midterms and the final, submitting a full
-scientific report covering the numerical analysis problem will be
-worth ten extra points.  For credit the grader must be able to tell
-that you put effort into the assignment (i.e. well written, well
-formatted, etc.).  If you are unfamiliar with writing scientific
-reports, <a class="reference external" href="https://github.com/mhjensen/Physics321/blob/master/doc/Homeworks/ExtraCredits/IntroductionScientificWriting.md">see the information here</a></p>
-<p>The following table explains what aspect of a scientific report is due
-with which homework.  You can submit the assignment in any format you
-like, in the same document as your homework, or in a different one.
-Remember to cite any external references you use and include a
-reference list.  There are no length requirements, but make sure what
-you turn in is complete and through.  If you have any questions,
-please contact Julie Butler at <a class="reference external" href="mailto:butler&#37;&#52;&#48;frib&#46;msu&#46;edu">butler<span>&#64;</span>frib<span>&#46;</span>msu<span>&#46;</span>edu</a>.</p>
-<table class="dotable" border="1">
-<thead>
-<tr><th align="center">  HW/Project </th> <th align="center"> Due Date</th> <th align="center">Extra Credit Assignment</th> </tr>
-</thead>
-<tbody>
-<tr><td align="center">   HW 3             </td> <td align="center">   2-8          </td> <td align="center">   Abstract                   </td> </tr>
-<tr><td align="center">   HW 4             </td> <td align="center">   2-15         </td> <td align="center">   Introduction               </td> </tr>
-<tr><td align="center">   HW 5             </td> <td align="center">   2-22         </td> <td align="center">   Methods                    </td> </tr>
-<tr><td align="center">   HW 6             </td> <td align="center">   3-1          </td> <td align="center">   Results and Discussion     </td> </tr>
-<tr><td align="center">   **Midterm 1**    </td> <td align="center">   **3-12**     </td> <td align="center">   *Full Written Report*      </td> </tr>
-<tr><td align="center">   HW 7             </td> <td align="center">   3-22         </td> <td align="center">   Abstract                   </td> </tr>
-<tr><td align="center">   HW 8             </td> <td align="center">   3-29         </td> <td align="center">   Introduction               </td> </tr>
-<tr><td align="center">   HW 9             </td> <td align="center">   4-5          </td> <td align="center">   Results and Discussion     </td> </tr>
-<tr><td align="center">   **Midterm 2      </td> <td align="center">   ** _4-16_    </td> <td align="center">   *Full Written Report*      </td> </tr>
-<tr><td align="center">   HW 10            </td> <td align="center">   4-26         </td> <td align="center">   Abstract                   </td> </tr>
-<tr><td align="center">   **Final**        </td> <td align="center">   **4-30**     </td> <td align="center">   *Full Written Report*      </td> </tr>
-</tbody>
+</div>
+</div>
+<p>We now call the <code class="docutils literal notranslate"><span class="pre">euler</span></code> and <code class="docutils literal notranslate"><span class="pre">euler_cromer</span></code> functions and plot the position and velocity as a function of time. We do this by storing the position and velocity as <code class="docutils literal notranslate"><span class="pre">pandas</span></code> dataframes. This kind of data structure is useful for storing time series data and is easy to plot. It’s a good idea to get in the habit of working with data structures like this.</p>
+<p>In the resulting plots you can see how the Euler-Cromer method is more accurate than the Euler method. The Euler method has a systematic error that causes the amplitude of the oscillation to grow. The Euler-Cromer method does not have this problem.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">t</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">v</span> <span class="o">=</span> <span class="n">euler</span><span class="p">(</span><span class="n">omega</span><span class="p">,</span> <span class="n">x0</span><span class="p">,</span> <span class="n">v0</span><span class="p">,</span> <span class="n">t0</span><span class="p">,</span> <span class="n">tf</span><span class="p">,</span> <span class="n">dt</span><span class="p">)</span>
+<span class="n">eulerdf</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;t&#39;</span><span class="p">:</span> <span class="n">t</span><span class="p">,</span> <span class="s1">&#39;x&#39;</span><span class="p">:</span> <span class="n">x</span><span class="p">,</span> <span class="s1">&#39;v&#39;</span><span class="p">:</span> <span class="n">v</span><span class="p">})</span>
+
+<span class="n">t</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">v</span> <span class="o">=</span> <span class="n">euler_cromer</span><span class="p">(</span><span class="n">omega</span><span class="p">,</span> <span class="n">x0</span><span class="p">,</span> <span class="n">v0</span><span class="p">,</span> <span class="n">t0</span><span class="p">,</span> <span class="n">tf</span><span class="p">,</span> <span class="n">dt</span><span class="p">)</span>
+<span class="n">euler_cromerdf</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;t&#39;</span><span class="p">:</span> <span class="n">t</span><span class="p">,</span> <span class="s1">&#39;x&#39;</span><span class="p">:</span> <span class="n">x</span><span class="p">,</span> <span class="s1">&#39;v&#39;</span><span class="p">:</span> <span class="n">v</span><span class="p">})</span>
+
+<span class="n">eulerdf</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>t</th>
+      <th>x</th>
+      <th>v</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0.00</td>
+      <td>1.0000</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>0.01</td>
+      <td>1.0000</td>
+      <td>-0.010000</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>0.02</td>
+      <td>0.9999</td>
+      <td>-0.020000</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>0.03</td>
+      <td>0.9997</td>
+      <td>-0.029999</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>0.04</td>
+      <td>0.9994</td>
+      <td>-0.039996</td>
+    </tr>
+  </tbody>
 </table>
-<p>You can also gain extra credits if you attend scientific talks.
-This is described here.</p>
+</div></div></div>
 </div>
-<div class="section" id="integrating-classwork-with-research">
-<h2>Integrating Classwork With Research<a class="headerlink" href="#integrating-classwork-with-research" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># plot all positions vs time on the same graph</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">eulerdf</span><span class="p">[</span><span class="s1">&#39;t&#39;</span><span class="p">],</span> <span class="n">eulerdf</span><span class="p">[</span><span class="s1">&#39;x&#39;</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Euler&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">euler_cromerdf</span><span class="p">[</span><span class="s1">&#39;t&#39;</span><span class="p">],</span> <span class="n">euler_cromerdf</span><span class="p">[</span><span class="s1">&#39;x&#39;</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Euler-Cromer&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Position vs Time&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Time (s)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Position (m)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">();</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/b49415faf3d6ebb5997437f38d1708187dd58afa452ba0d2d6f720f9ede87903.png" src="../_images/b49415faf3d6ebb5997437f38d1708187dd58afa452ba0d2d6f720f9ede87903.png" />
+</div>
+</div>
+<ul class="simple">
+<li><p>6a (2pt) Graph the energy of the system as a function of time for both the Simple Euler and Euler-Cromer methods. You should use the same initial conditions and time step for both methods. What do you observe?</p></li>
+<li><p>6b (4pt) Write the exact solution for these initial conditions and compare the numerical solutions to the exact solution using a point-by-point measure. What do you observe? Come up with a measure of the overall error (or find one) in the numerical solution and discuss the results.</p></li>
+<li><p>6c (4pt) Write the code to solve the simple harmonic oscillator with second-order Runge Kutta (this needs to be from scratch, not using a library). You can use the lecture notes as a starting point.</p></li>
+<li><p>6d (2pt) Compare the results of this RK2 method to the previous methods. Use whatever comparison method you can develop or explain. Careful here because the time steps might not be the same for the different methods.</p></li>
+<li><p>6e (3pt) Look up <code class="docutils literal notranslate"><span class="pre">solve_ivp</span></code> in the <code class="docutils literal notranslate"><span class="pre">scipy</span></code> library and use it to solve the simple harmonic oscillator. Compare the results to the previous methods. What integrator are you using with <code class="docutils literal notranslate"><span class="pre">solve_ivp</span></code>?</p></li>
+<li><p>6f (15pt) Using your the integrator of your choosing, find numerical solutions for a given choice of initial conditions for each of the examples in exercise 5. Plot the phase diagram and the numerically computed trajectory on the phase diagram. See the example below for the simple harmonic oscillator.</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Generate phase space</span>
+<span class="n">x_lim</span> <span class="o">=</span> <span class="p">(</span><span class="o">-</span><span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+<span class="n">v_lim</span> <span class="o">=</span> <span class="p">(</span><span class="o">-</span><span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+<span class="n">grid_size</span> <span class="o">=</span> <span class="mi">20</span>
+<span class="n">X</span><span class="p">,</span> <span class="n">V</span><span class="p">,</span> <span class="n">dX</span><span class="p">,</span> <span class="n">dV</span> <span class="o">=</span> <span class="n">generate_phase_space</span><span class="p">(</span><span class="n">x_lim</span><span class="p">,</span> <span class="n">v_lim</span><span class="p">,</span> <span class="n">grid_size</span><span class="p">)</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">axs</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">10</span><span class="p">))</span> 
+
+<span class="c1"># Plot numerical trajectory on the quiver plot</span>
+<span class="n">axs</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">euler_cromerdf</span><span class="p">[</span><span class="s1">&#39;x&#39;</span><span class="p">],</span> <span class="n">euler_cromerdf</span><span class="p">[</span><span class="s1">&#39;v&#39;</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Sample trajectory&#39;</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="s1">&#39;C2&#39;</span><span class="p">)</span>
+
+<span class="n">axs</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">quiver</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">V</span><span class="p">,</span> <span class="n">dX</span><span class="p">,</span> <span class="n">dV</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;C0&#39;</span><span class="p">)</span>
+<span class="n">axs</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Quiver Plot of SHO Phase Diagram&#39;</span><span class="p">)</span>
+<span class="n">axs</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;$x$&#39;</span><span class="p">)</span>
+<span class="n">axs</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;$\dot</span><span class="si">{x}</span><span class="s1">$&#39;</span><span class="p">)</span>
+
+<span class="c1"># Plot numerical trajectory on the stream plot</span>
+<span class="n">axs</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">euler_cromerdf</span><span class="p">[</span><span class="s1">&#39;x&#39;</span><span class="p">],</span> <span class="n">euler_cromerdf</span><span class="p">[</span><span class="s1">&#39;v&#39;</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Sample trajectory&#39;</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="s1">&#39;C2&#39;</span><span class="p">)</span>
+
+<span class="n">axs</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">streamplot</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">V</span><span class="p">,</span> <span class="n">dX</span><span class="p">,</span> <span class="n">dV</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;C1&#39;</span><span class="p">)</span>
+<span class="n">axs</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Stream Plot of SHO Phase Diagram&#39;</span><span class="p">)</span>
+<span class="n">axs</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;$x$&#39;</span><span class="p">)</span>
+<span class="n">axs</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;$\dot</span><span class="si">{x}</span><span class="s1">$&#39;</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/18d5044c83634d33b810431782364fb9ba31bf4b1aefd2161fd53d04fec548ae.png" src="../_images/18d5044c83634d33b810431782364fb9ba31bf4b1aefd2161fd53d04fec548ae.png" />
+</div>
+</div>
+</div>
+<div class="section" id="extra-credit-integrating-classwork-with-research">
+<h3>Extra Credit - Integrating Classwork With Research<a class="headerlink" href="#extra-credit-integrating-classwork-with-research" title="Permalink to this heading">#</a></h3>
 <p>This opportunity will allow you to earn up to 5 extra credit points on a Homework per week. These points can push you above 100% or help make up for missed exercises.
 In order to earn all points you must:</p>
 <ol class="arabic simple">
@@ -687,8 +775,7 @@ Talks given by researchers through the following clubs:</p>
 <li><p>Astronomy Club​: Meets Monday Nights</p></li>
 <li><p>Facility For Rare Isotope Beam (FRIB) Seminars: ​Occur multiple times a week</p></li>
 </ul>
-<p>If you have any questions please consult Jeremy Rebenstock, <a class="reference external" href="mailto:rebensto&#37;&#52;&#48;msu&#46;edu">rebensto<span>&#64;</span>msu<span>&#46;</span>edu</a>.</p>
-<p>All the material on extra credits is at <a class="github reference external" href="https://github.com/mhjensen/Physics321/blob/master/doc/Homeworks/ExtraCredits/">mhjensen/Physics321</a>.</p>
+</div>
 </div>
 </div>
 
@@ -701,16 +788,16 @@ Talks given by researchers through the following clubs:</p>
         },
         codeMirrorConfig: {
             theme: "abcdef",
-            mode: "python"
+            mode: "teaching"
         },
         kernelOptions: {
-            name: "python3",
+            name: "teaching",
             path: "./homeworks"
         },
         predefinedOutput: true
     }
     </script>
-    <script>kernelName = 'python3'</script>
+    <script>kernelName = 'teaching'</script>
 
                 </article>
               
@@ -722,6 +809,24 @@ Talks given by researchers through the following clubs:</p>
                 <footer class="prev-next-footer">
                   <!-- Previous / next buttons -->
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="../midterms/midterm1.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Midterm 1 (Due 23 Feb)</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../honors-projects/ChaoticPendulum.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Chaos in the driven nonlinear pendulum</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               
@@ -737,16 +842,17 @@ Talks given by researchers through the following clubs:</p>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#practicalities-about-homeworks-and-projects">Practicalities about  homeworks and projects</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction-to-homework-5">Introduction to homework 5</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-1-15-pt-work-energy-theorem-and-conservation-laws">Exercise 1 (15 pt), Work-energy theorem and conservation laws</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exsercise-2-15pt-rocket-momentum-and-mass">Exsercise 2 (15pt), Rocket, Momentum and mass</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-3-10pt-more-rockets">Exercise 3 (10pt), More Rockets</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-4-10pt-center-of-mass">Exercise 4 (10pt), Center of mass</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-5-10pt-warming-up-for-the-earth-sun-system-scaling-the-equations">Exercise 5 (10pt), Warming up for the Earth-Sun system, Scaling the Equations</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-6-40pt-numerical-elements-solving-exercise-5-numerically">Exercise 6 (40pt), Numerical elements, solving exercise 5 numerically</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#classical-mechanics-extra-credit-assignment-scientific-writing-and-attending-talks">Classical Mechanics Extra Credit Assignment: Scientific Writing and attending Talks</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#integrating-classwork-with-research">Integrating Classwork With Research</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction-to-homework-5">Introduction to Homework 5</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#practicalities-about-homeworks-and-projects">Practicalities about  homeworks and projects</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-1-10-pt-sho-and-conservation-of-energy">Exercise 1 (10 pt), SHO and Conservation of Energy</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-2-10pt-kid-s-toy-and-stable-equilibrium">Exercise 2 (10pt), Kid’s toy and stable equilibrium</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-3-15pt-generic-1d-motion">Exercise 3 (15pt), “Generic” 1D motion</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-4-15pt-another-1-d-conservative-system-baby-bifurcations">Exercise 4 (15pt), Another 1-D conservative system; baby bifurcations</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-5-20-pt-phase-diagrams">Exercise 5 (20 pt), Phase Diagrams</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-6-30pt-numerical-integration-techniques-and-oscillations">Exercise 6 (30pt), Numerical integration techniques and oscillations</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#extra-credit-integrating-classwork-with-research">Extra Credit - Integrating Classwork With Research</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 
