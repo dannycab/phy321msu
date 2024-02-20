@@ -34,7 +34,7 @@ How do fireflies end up blinking together? How do walking people end up moving i
 - Handwritten Notes:
   - CW7: [Oscillations](../docs/handwritten-notes/CW7.pdf)
 - Lecture Videos:
-  - 19 Feb 2024
+  - [19 Feb 2024](https://mediaspace.msu.edu/media/t/1_n90d2mj6)
   - 21 Feb 2024
 
 #### Assignments
