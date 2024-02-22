@@ -53,6 +53,7 @@ parts:
   - file: homeworks/hw4.ipynb
   - file: solutions/solutionhw4.ipynb
   - file: midterms/midterm1.ipynb
+  - file: solutions/solutionmidterm1.ipynb
   - file: homeworks/hw5.ipynb
 - caption: Honors Projects
   numbered: false
