@@ -6,6 +6,39 @@ Materials will appear in reverse chronological order, with the most recent appea
 
 All recorded classes are added to [this playlist](https://mediaspace.msu.edu/playlist/dedicated/1_s1d57uud/.)
 
+### Week 9, March 4-8, 2024
+
+Topics: Damped Driven Oscillations, Resonance
+
+#### Videos to Watch
+
+While never required, these videos are recommended to help you see the larger picture of what we are doing in class.
+
+##### Collapse of the Tacoma Narrows Bridge (9 minute video)
+
+Driven oscillators are very common in the world. Analog radios use a driven oscillator that is tuned to a specific frequency (99.5 FM is tuned to 99.5 MHz). When you dial the radio you are "tuning" the oscillator to the frequency of the broadcast. This is an illustration of the phenomenon of [resonance](https://en.wikipedia.org/wiki/Resonance). Resonance is a phenomenon where a system is driven at a frequency that matches (or closely matches) its natural frequency. When this happens, the amplitude of the oscillation can grow very large. This is the phenomenon that caused the [collapse of the Tacoma Narrows Bridge](https://en.wikipedia.org/wiki/Tacoma_Narrows_Bridge_(1940)) in 1940.  T
+
+The video below describes the collapse and how the bridge was rebuilt to avoid the same problem. 
+
+[![](https://markdown-videos-api.jorgenkh.no/youtube/mXTSnZgrfxM?width=720&height=405)](https://inv.n8pjl.ca/watch?v=mXTSnZgrfxM)
+
+- Non-Commercial Link: [https://inv.n8pjl.ca/watch?v=mXTSnZgrfxM](https://inv.n8pjl.ca/watch?v=mXTSnZgrfxM)
+- Commercial Link: [https://youtube.com/watch?v=mXTSnZgrfxM](https://youtube.com/watch?v=mXTSnZgrfxM)
+
+#### Class Materials
+- Readings:
+  - JRT 5.5-5.6; MLB 8.6
+- Handwritten Notes:
+  - CW9: [Damped Driven Oscillations](../docs/handwritten-notes/CW9.pdf)
+- Lecture Videos:
+  - 4 Mar 2024
+  - 6 Mar 2024
+
+
+### Week 8, February 26-March 1, 2024
+
+SPRING BREAK
+
 ### Week 7, February 19-23, 2024
 
 Topics: Oscillations
