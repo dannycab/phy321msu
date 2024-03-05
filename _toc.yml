@@ -55,7 +55,7 @@ parts:
   - file: midterms/midterm1.ipynb
   - file: solutions/solutionmidterm1.ipynb
   - file: homeworks/hw5.ipynb
-  #- file: homeworks/hw6.ipynb
+  - file: homeworks/hw6.ipynb
 - caption: Honors Projects
   numbered: false
   chapters:
