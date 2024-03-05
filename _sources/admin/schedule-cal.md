@@ -56,7 +56,7 @@ All assignments are turned in using D2L as a PDF and/or Jupyter notebook.
 
 | Week | Day    | Topic                 | Readings to prepare                | Important events                                                       |
 | ---- | ------ | --------------------- | ---------------------------------- | ---------------------------------------------------------------------- |
-| CW7  | 19 Feb | Oscillations; Damping | JRT 5.1-5.2, 5.4; MLB 7.1-7.2; 8.5 | Homework 5 Assigned (Due 8 Mar)                                        |
+| CW7  | 19 Feb | Oscillations; Damping | JRT 5.1-5.2, 5.4; MLB 7.1-7.2; 8.5 | [Homework 5 Assigned (Due 8 Mar)](../homeworks/hw5.ipynb)                                        |
 |      | 21 Feb |                       |                                    |                                                                        |
 |      | 23 Feb |                       |                                    | **Midterm Project 1 Due** _([Turn-in using D2L](https://d2l.msu.edu))_ |
 
@@ -72,7 +72,7 @@ All assignments are turned in using D2L as a PDF and/or Jupyter notebook.
 
 | Week | Day    | Topic                          | Readings to prepare  | Important events                                                |
 | ---- | ------ | ------------------------------ | -------------------- | --------------------------------------------------------------- |
-| CW9  | 04 Mar | Driven Oscillations; Resonance | JRT 5.5-5.6; MLB 8.6 | Homework 6 Assigned (Due 15 Mar)                                |
+| CW9  | 04 Mar | Driven Oscillations; Resonance | JRT 5.5-5.6; MLB 8.6 | [Homework 6 Assigned (Due 15 Mar)](../homeworks/hw6.ipynb)                                |
 |      | 06 Mar |                                |                      |                                                                 |
 |      | 08 Mar |                                |                      | **Homework 5 Due** _([Turn-in using D2L](https://d2l.msu.edu))_ |
 

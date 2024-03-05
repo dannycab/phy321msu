@@ -31,7 +31,7 @@ The video below describes the collapse and how the bridge was rebuilt to avoid t
 - Handwritten Notes:
   - CW9: [Damped Driven Oscillations](../docs/handwritten-notes/CW9.pdf)
 - Lecture Videos:
-  - 4 Mar 2024
+  - [4 Mar 2024](https://mediaspace.msu.edu/media/t/1_qj6wzo83)
   - 6 Mar 2024
 
 
