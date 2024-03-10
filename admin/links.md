@@ -6,6 +6,36 @@ Materials will appear in reverse chronological order, with the most recent appea
 
 All recorded classes are added to [this playlist](https://mediaspace.msu.edu/playlist/dedicated/1_s1d57uud/.)
 
+### Week 10, March 11-15, 2024
+
+Topics: Fourier Series Expansions
+
+#### Videos to Watch
+
+While never required, these videos are recommended to help you see the larger picture of what we are doing in class.
+
+##### The Fast Fourier Transform (FFT) (26 minute video)
+
+We will be learning the analytical methods used to decompose periodic signals. The [Fourier Series](https://en.wikipedia.org/wiki/Fourier_series) is a mathematical tool that allows us to decompose periodic signals into a sum of sines and cosines. It is a super important tool in physics and engineering. 
+
+But, this kind of signal decomposition is a critical tool in many modern areas of research. In the time since Fourier's original work, the field has expanded to include other series, as well as development like the [Fourier Transform](https://en.wikipedia.org/wiki/Fourier_transform) and the incredibly useful [Fast Fourier Transform](https://en.wikipedia.org/wiki/Fast_Fourier_transform) (FFT). The FFT is a computational algorithm that allows us to compute Fourier Transforms very quickly and it has been one of the most important algorithms in the history of computing. It is used in a wide variety of applications, including signal processing, image processing, and data compression.
+
+The video below describes the concept and history of the FFT and its importance.
+
+[![](https://markdown-videos-api.jorgenkh.no/youtube/nmgFG7PUHfo?width=720&height=405)](https://inv.n8pjl.ca/watch?v=nmgFG7PUHfo)
+
+- Non-Commercial Link: [https://inv.n8pjl.ca/watch?v=nmgFG7PUHfo](https://inv.n8pjl.ca/watch?v=nmgFG7PUHfo)
+- Commercial Link: [https://youtube.com/watch?v=nmgFG7PUHfo](https://youtube.com/watch?v=nmgFG7PUHfo)
+
+#### Class Materials
+- Readings:
+  - JRT 5.7; MLB 7.3-7.5
+- Handwritten Notes:
+  - CW10: [Fourier Series](../docs/handwritten-notes/CW10.pdf)
+- Lecture Videos:
+  - 11 Mar 2024
+  - 13 Mar 2024
+
 ### Week 9, March 4-8, 2024
 
 Topics: Damped Driven Oscillations, Resonance
@@ -33,7 +63,7 @@ The video below describes the collapse and how the bridge was rebuilt to avoid t
 - Lecture Videos:
   - [4 Mar 2024](https://mediaspace.msu.edu/media/t/1_qj6wzo83)
   - 6 Mar 2024 - Homework Help Session
-  - 8 Mar 2024
+  - [8 Mar 2024](https://mediaspace.msu.edu/media/t/1_p8cll95m)
 
 
 ### Week 8, February 26-March 1, 2024
