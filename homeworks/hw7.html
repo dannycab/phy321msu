@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PHY321: Classical Mechanics 1 &#8212; Classical Mechanics</title>
+    <title>Homework 7 (Due 22 Mar) &#8212; Classical Mechanics</title>
   
   
   
@@ -66,6 +66,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'homeworks/hw7';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Chaos in the driven nonlinear pendulum" href="../honors-projects/ChaoticPendulum.html" />
+    <link rel="prev" title="Homework 6 (Due 15 Mar)" href="hw6.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -194,7 +196,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../in-class/cw6-phase_space.html">CW6 - Phase Portraits</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Weekly assignments, midterms and final projects with solutions</span></p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="hw1.html">Homework 1 (Due 19 Jan)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../solutions/solutionhw1.html">Solutions - Homework 1 (Due 19 Jan)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="hw2.html">Homework 2 (Due 26 Jan)</a></li>
@@ -204,6 +206,10 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="hw4.html">Homework 4 (Due 09 Feb)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../solutions/solutionhw4.html">Solutions - Homework 4 (Due 09 Feb)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../midterms/midterm1.html">Midterm 1 (Due 23 Feb)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../solutions/solutionmidterm1.html">Solutions - Midterm 1 (Due 23 Feb)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hw5.html">Homework 5 (Due 08 Mar)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hw6.html">Homework 6 (Due 15 Mar)</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Homework 7 (Due 22 Mar)</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Honors Projects</span></p>
 <ul class="nav bd-sidenav">
@@ -377,7 +383,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>PHY321: Classical Mechanics 1</h1>
+    <h1>Homework 7 (Due 22 Mar)</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -387,12 +393,21 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#practicalities-about-homeworks-and-projects">Practicalities about  homeworks and projects</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction-to-homework-7">Introduction to homework 7</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-1-80-pts-the-mathematical-pendulum">Exercise 1 (80 pts), the mathematical pendulum</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-2-20pt-center-of-mass-and-relative-coordinates-and-reference-frames">Exercise 2 (20pt), Center-of-Mass and Relative Coordinates and Reference Frames</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#classical-mechanics-extra-credit-assignment-scientific-writing-and-attending-talks">Classical Mechanics Extra Credit Assignment: Scientific Writing and attending Talks</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#integrating-classwork-with-research">Integrating Classwork With Research</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction-to-homework-7">Introduction to Homework 7</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#practicalities-about-homeworks-and-projects">Practicalities about  homeworks and projects</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-1-10pt-where-does-the-energy-go">Exercise 1 (10pt) Where does the energy go?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-2-10pt-unpacking-the-critically-damped-solution">Exercise 2 (10pt), Unpacking the critically damped solution</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-3-20pt-complex-analysis">Exercise 3 (20pt), Complex Analysis</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-4-15pt-exploring-the-damped-harmonic-oscillator">Exercise 4 (15pt), Exploring the damped harmonic oscillator</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#scenario-1">Scenario 1</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#scenario-2">Scenario 2</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-5-30pt-the-damped-driven-oscillator">Exercise 5 (30pt), The Damped Driven Oscillator</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-6-15pt-new-periodic-drivers">Exercise 6 (15pt), New Periodic Drivers</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#extra-credit-integrating-classwork-with-research">Extra Credit - Integrating Classwork With Research</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -405,222 +420,247 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <!-- HTML file automatically generated from DocOnce source (https://github.com/doconce/doconce/)
-doconce format html hw7.do.txt --no_mako -->
-<!-- dom:TITLE: PHY321: Classical Mechanics 1 --><div class="tex2jax_ignore mathjax_ignore section" id="phy321-classical-mechanics-1">
-<h1>PHY321: Classical Mechanics 1<a class="headerlink" href="#phy321-classical-mechanics-1" title="Permalink to this heading">#</a></h1>
-<p><strong>Homework 7, due Monday  March 27</strong></p>
-<p>Date: <strong>Mar 12, 2023</strong></p>
-<div class="section" id="practicalities-about-homeworks-and-projects">
-<h2>Practicalities about  homeworks and projects<a class="headerlink" href="#practicalities-about-homeworks-and-projects" title="Permalink to this heading">#</a></h2>
-<ol class="arabic simple">
-<li><p>You can work in groups (optimal groups are often 2-3 people) or by yourself. If you work as a group you can hand in one answer only if you wish. <strong>Remember to write your name(s)</strong>!</p></li>
-<li><p>Homeworks are available  the week before the deadline.</p></li>
-<li><p>How do I(we)  hand in?  Due to the corona virus and many of you not being on campus, we recommend that you scan your handwritten notes and upload them to D2L. If you are ok with typing mathematical formulae using say Latex, you can hand in everything as a single jupyter notebook at D2L. The numerical exercise(s) should always be handed in as a jupyter notebook by the deadline at D2L.</p></li>
-</ol>
+doconce format html hw5.do.txt --no_mako -->
+<!-- dom:TITLE: PHY321: Classical Mechanics 1 --><div class="tex2jax_ignore mathjax_ignore section" id="homework-7-due-22-mar">
+<h1>Homework 7 (Due 22 Mar)<a class="headerlink" href="#homework-7-due-22-mar" title="Permalink to this heading">#</a></h1>
+<p><strong>Due Mar 22 (midnight)</strong></p>
+<p>Date: <strong>Mar 11, 2024</strong>
+Total points: <strong>100</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="o">%</span><span class="k">matplotlib</span> inline
+<span class="n">plt</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;seaborn-v0_8-colorblind&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
 </div>
 <div class="section" id="introduction-to-homework-7">
-<h2>Introduction to homework 7<a class="headerlink" href="#introduction-to-homework-7" title="Permalink to this heading">#</a></h2>
-<p>In this week’s homework we will apply our insights about harmonic
-oscillations. The relevant material to survey is chapter 5 of Taylor.
-See also the slides from <a class="reference external" href="https://mhjensen.github.io/Physics321/doc/pub/week10/html/week10.html">week 11</a>.</p>
-<p>We have also added an exercise (exercise 2) related to our discussion of two-body problems.
-The relevant reading background for exercise 2 is given by sections 8.1-8.2 of Taylor.</p>
+<h2>Introduction to Homework 7<a class="headerlink" href="#introduction-to-homework-7" title="Permalink to this heading">#</a></h2>
+<p>This week’s exercises focus on oscillators and how to approximate the solution to the equations of motion using the SHO. The relevant reading background is:</p>
+<ol class="arabic simple">
+<li><p>chapter 5 of Taylor</p></li>
+<li><p>chapter 8.6 of Boas</p></li>
+</ol>
+<p>In both textbooks there are many nice worked out examples.</p>
+<div class="section" id="practicalities-about-homeworks-and-projects">
+<h3>Practicalities about  homeworks and projects<a class="headerlink" href="#practicalities-about-homeworks-and-projects" title="Permalink to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>You can work in groups (optimal groups are often 2-3 people) or by yourself. If you work as a group you can hand in one answer only if you wish. <strong>Remember to write your name(s)</strong>!</p></li>
+<li><p>Homeworks are available ten days before the deadline.</p></li>
+<li><p>How do I(we)  hand in?  You can hand in the paper and pencil exercises as a scanned document. For this homework this applies to exercises 1-4. Alternatively, you can hand in everything (if you are ok with typing mathematical formulae using say Latex) as a jupyter notebook at D2L. The numerical exercise(s) (exercise 5-6 here) should always be handed in as a jupyter notebook by the deadline at D2L.</p></li>
+</ol>
 </div>
-<div class="section" id="exercise-1-80-pts-the-mathematical-pendulum">
-<h2>Exercise 1 (80 pts), the mathematical pendulum<a class="headerlink" href="#exercise-1-80-pts-the-mathematical-pendulum" title="Permalink to this heading">#</a></h2>
-<p>Relevant reading here is Taylor chapter 5 and the lecture notes on oscillations from <a class="reference external" href="https://mhjensen.github.io/Physics321/doc/pub/week10/html/week10.html">week 11</a>.</p>
-<p>The angular equation of motion of the pendulum is given by
-Newton’s equation and with no external force it reads</p>
-<!-- Equation labels as ordinary links -->
-<div id="_auto1"></div>
+<div class="section" id="exercise-1-10pt-where-does-the-energy-go">
+<h3>Exercise 1 (10pt) Where does the energy go?<a class="headerlink" href="#exercise-1-10pt-where-does-the-energy-go" title="Permalink to this heading">#</a></h3>
+<p>The damped harmonic oscillator is described by the equation of motion is:</p>
 <div class="math notranslate nohighlight">
-\[
-\begin{equation}
-  ml\frac{d^2\theta}{dt^2}+mgsin(\theta)=0,
-\label{_auto1} \tag{1}
-\end{equation}
-\]</div>
-<p>with an angular velocity and acceleration given by</p>
-<!-- Equation labels as ordinary links -->
-<div id="_auto2"></div>
+\[m\ddot{x} + b\dot{x} + kx = 0\]</div>
+<p>where <span class="math notranslate nohighlight">\(m\)</span> is the mass, <span class="math notranslate nohighlight">\(b\)</span> is the damping coefficient, and <span class="math notranslate nohighlight">\(k\)</span> is the spring constant.</p>
+<p>The damping term (<span class="math notranslate nohighlight">\(F_{damp} = - b\dot{x}\)</span>) models the dissipative forces acting on the oscillator. The total energy for the oscillator is given by the sum of the kinetic and potential energies,</p>
 <div class="math notranslate nohighlight">
-\[
-\begin{equation}
-     v=l\frac{d\theta}{dt},
-\label{_auto2} \tag{2}
-\end{equation}
-\]</div>
-<p>and</p>
-<!-- Equation labels as ordinary links -->
-<div id="_auto3"></div>
-<div class="math notranslate nohighlight">
-\[
-\begin{equation}
-     a=l\frac{d^2\theta}{dt^2}.
-\label{_auto3} \tag{3}
-\end{equation}
-\]</div>
-<p>We do however expect that the motion will gradually come to an end
-due a viscous drag torque acting on the pendulum.
-In the presence of the drag, the above equation becomes</p>
-<!-- Equation labels as ordinary links -->
-<div id="eq:pend1"></div>
-<div class="math notranslate nohighlight">
-\[
-\begin{equation}
-   ml\frac{d^2\theta}{dt^2}+\nu\frac{d\theta}{dt}  +mgsin(\theta)=0,
-\label{eq:pend1} \tag{4}
-\end{equation}
-\]</div>
-<p>where <span class="math notranslate nohighlight">\(\nu\)</span> is now a positive constant parameterizing the viscosity
-of the medium in question. In order to maintain the motion against
-viscosity, it is necessary to add some external driving force.
-We choose here a periodic driving force. The last equation becomes then</p>
-<!-- Equation labels as ordinary links -->
-<div id="eq:pend2"></div>
-<div class="math notranslate nohighlight">
-\[
-\begin{equation}
-   ml\frac{d^2\theta}{dt^2}+\nu\frac{d\theta}{dt}  +mgsin(\theta)=Asin(\omega t),
-\label{eq:pend2} \tag{5}
-\end{equation}
-\]</div>
-<p>with <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(\omega\)</span> two constants representing the amplitude and
-the angular frequency respectively. The latter is called the driving frequency.</p>
+\[E = \frac{1}{2}m\dot{x}^2 + \frac{1}{2}kx^2.\]</div>
 <ul class="simple">
-<li><p>1a (10pts)</p></li>
+<li><p>1a (2pt) What is the energy per unit time dissipated by the damping force?</p></li>
+<li><p>1b (5pt) Take the time derivative of the total energy and show that it is equal (in magnitude) to the energy dissipated by the damping force.</p></li>
+<li><p>1c (3pt) What is the sign relationship between the energy dissipated by the damping force and the time derivative of the total energy?</p></li>
 </ul>
-<p>Rewrite Eqs. (<span class="xref myst">4</span>) and (<span class="xref myst">5</span>) as dimensionless
-equations in time.</p>
-<ul class="simple">
-<li><p>1b (40pts)</p></li>
-</ul>
-<p>Write then a code which solves Eq. (<span class="xref myst">4</span>) using the
-Euler-Cromer method or for example the fourth-order Runge Kutta method. Perform
-calculations for at least ten periods with <span class="math notranslate nohighlight">\(N=100\)</span>, <span class="math notranslate nohighlight">\(N=1000\)</span> and
-<span class="math notranslate nohighlight">\(N=10000\)</span> integration points/discretization points in time (such points are often called mesh points) and values of <span class="math notranslate nohighlight">\(\nu = 1\)</span>, <span class="math notranslate nohighlight">\(\nu = 5\)</span> and <span class="math notranslate nohighlight">\(\nu
-=10\)</span>.  Set <span class="math notranslate nohighlight">\(l=1.0\)</span> m, <span class="math notranslate nohighlight">\(g=1\)</span> m/s<span class="math notranslate nohighlight">\(^2\)</span> and <span class="math notranslate nohighlight">\(m=1\)</span> kg.  Choose as initial
-conditions <span class="math notranslate nohighlight">\(\theta(0) = 0.2\)</span> (radians) and <span class="math notranslate nohighlight">\(v(0) = 0\)</span> (radians/s).
-Make plots of <span class="math notranslate nohighlight">\(\theta\)</span> (in radians) as function of time and phase
-space plots of <span class="math notranslate nohighlight">\(\theta\)</span> versus the velocity <span class="math notranslate nohighlight">\(v\)</span>.  Check the stability
-of your results as functions of time and number of discretization/mesh points.  Which
-case corresponds to damped, underdamped and overdamped oscillatory
-motion?  Comment your results.</p>
-<ul class="simple">
-<li><p>1c (30pts)</p></li>
-</ul>
-<p>Now we switch to Eq. (<span class="xref myst">5</span>) for the rest of the exercise. Add
-an external driving force and set <span class="math notranslate nohighlight">\(l=g=1\)</span>, <span class="math notranslate nohighlight">\(m=1\)</span>, <span class="math notranslate nohighlight">\(\nu = 1/2\)</span> and
-<span class="math notranslate nohighlight">\(\omega = 2/3\)</span>.  Choose as initial conditions <span class="math notranslate nohighlight">\(\theta(0) = 0.2\)</span> and
-<span class="math notranslate nohighlight">\(v(0) = 0\)</span> and <span class="math notranslate nohighlight">\(A=0.5\)</span> and <span class="math notranslate nohighlight">\(A=1.2\)</span>.  Make plots of <span class="math notranslate nohighlight">\(\theta\)</span> (in
-radians) as function of time for at least 300 periods and phase space
-plots of <span class="math notranslate nohighlight">\(\theta\)</span> versus the velocity <span class="math notranslate nohighlight">\(v\)</span>. Choose an appropriate time
-step. Comment and explain the results for the different values of <span class="math notranslate nohighlight">\(A\)</span>.</p>
-<ul class="simple">
-<li><p>1d <strong>optional exercise</strong> (20pts bonus)</p></li>
-</ul>
-<p>Keep now the constants from the previous exercise fixed but
-set now <span class="math notranslate nohighlight">\(A=1.35\)</span>, <span class="math notranslate nohighlight">\(A=1.44\)</span> and <span class="math notranslate nohighlight">\(A=1.465\)</span>. Plot <span class="math notranslate nohighlight">\(\theta\)</span> (in radians)
-as function of time for at least 300 periods for these values of <span class="math notranslate nohighlight">\(A\)</span>
-and comment your results.</p>
-<ul class="simple">
-<li><p>1e <strong>optional exercise</strong> (20pts bonus)</p></li>
-</ul>
-<p>We want to analyse further these results by making phase space plots
-of <span class="math notranslate nohighlight">\(\theta\)</span> versus the velocity <span class="math notranslate nohighlight">\(v\)</span> using only the points where we
-have <span class="math notranslate nohighlight">\(\omega t=2n\pi\)</span> where <span class="math notranslate nohighlight">\(n\)</span> is an integer. These are normally
-called the drive periods.  This is an example of what is called a
-Poincare section and is a very useful way to plot and analyze the
-behavior of a dynamical system. Comment your results.</p>
 </div>
-<div class="section" id="exercise-2-20pt-center-of-mass-and-relative-coordinates-and-reference-frames">
-<h2>Exercise 2 (20pt), Center-of-Mass and Relative Coordinates and Reference Frames<a class="headerlink" href="#exercise-2-20pt-center-of-mass-and-relative-coordinates-and-reference-frames" title="Permalink to this heading">#</a></h2>
-<p>We define the two-body center-of-mass coordinate and relative coordinate by expressing the trajectories for
-<span class="math notranslate nohighlight">\(\boldsymbol{r}_1\)</span> and <span class="math notranslate nohighlight">\(\boldsymbol{r}_2\)</span> into the center-of-mass coordinate
-<span class="math notranslate nohighlight">\(\boldsymbol{R}_{\rm cm}\)</span></p>
+<div class="section" id="exercise-2-10pt-unpacking-the-critically-damped-solution">
+<h3>Exercise 2 (10pt), Unpacking the critically damped solution<a class="headerlink" href="#exercise-2-10pt-unpacking-the-critically-damped-solution" title="Permalink to this heading">#</a></h3>
+<p>The solution for critical damping (<span class="math notranslate nohighlight">\(\beta = \omega_0\)</span>) is given by,</p>
 <div class="math notranslate nohighlight">
-\[
-\boldsymbol{R}_{\rm cm}\equiv\frac{m_1\boldsymbol{r}_1+m_2\boldsymbol{r}_2}{m_1+m_2},
-\]</div>
-<p>and the relative coordinate</p>
+\[x(t) = x_1(t) + x_2(t) = Ae^{-\beta t} + Bte^{-\beta t},\]</div>
+<p>where <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span> are constants. Notice the second solution <span class="math notranslate nohighlight">\(x_2(t) = Bte^{-\omega_0t}\)</span> has an additional linear term <span class="math notranslate nohighlight">\(t\)</span>. We glossed over this solution in class, but it is important to understand why this term is present because it tells us about solving differential equations with pathologically difficult-to-see solutions.</p>
+<p>Start with the under damped solutions,</p>
 <div class="math notranslate nohighlight">
-\[
-\boldsymbol{r}\equiv\boldsymbol{r}_1-\boldsymbol{r_2}.
-\]</div>
-<p>Here, we assume the two particles interact only with one another, so <span class="math notranslate nohighlight">\(\boldsymbol{F}_{12}=-\boldsymbol{F}_{21}\)</span> (where <span class="math notranslate nohighlight">\(\boldsymbol{F}_{ij}\)</span> is the force on <span class="math notranslate nohighlight">\(i\)</span> due to <span class="math notranslate nohighlight">\(j\)</span>.</p>
+\[y_1(t) = e^{-\beta t}\cos(\omega_1 t) \quad \text{and} \quad y_2(t) = e^{-\beta t}\sin(\omega_1 t),\]</div>
+<p>where we have used the notation <span class="math notranslate nohighlight">\(\omega_1 = \sqrt{\omega_0^2 - \beta^2}\)</span>.</p>
 <ul class="simple">
-<li><p>2a (5pt) Show that the equations of motion then become <span class="math notranslate nohighlight">\(\ddot{\boldsymbol{R}}_{\rm cm}=0\)</span> and <span class="math notranslate nohighlight">\(\mu\ddot{\boldsymbol{r}}=\boldsymbol{F}_{12}\)</span>, with the reduced mass <span class="math notranslate nohighlight">\(\mu=m_1m_2/(m_1+m_2)\)</span>.</p></li>
+<li><p>2a (3pt) Show that you can recover the first solution <span class="math notranslate nohighlight">\(x_1(t)\)</span> by taking the limit of <span class="math notranslate nohighlight">\(\beta \rightarrow \omega_0\)</span> of <span class="math notranslate nohighlight">\(y_1(t)\)</span>.</p></li>
+<li><p>2b (2pt) Show that you cannot recover the second solution <span class="math notranslate nohighlight">\(x_2(t)\)</span> by taking the limit of <span class="math notranslate nohighlight">\(\beta \rightarrow \omega_0\)</span> of <span class="math notranslate nohighlight">\(y_2(t)\)</span> directly. What do you get?</p></li>
+<li><p>2c (5pt) If <span class="math notranslate nohighlight">\(\beta \neq \omega_0\)</span>, you can divide <span class="math notranslate nohighlight">\(y_2(t)\)</span> by <span class="math notranslate nohighlight">\(\omega_1\)</span>. Now show that in the limit <span class="math notranslate nohighlight">\(\beta \rightarrow \omega_0\)</span> of <span class="math notranslate nohighlight">\(y_2(t)/\omega_1\)</span>, we recover the form of <span class="math notranslate nohighlight">\(x_2(t)\)</span>.</p></li>
 </ul>
-<p>The first expression simply states that the center of mass coordinate <span class="math notranslate nohighlight">\(\boldsymbol{R}_{\rm cm}\)</span> moves at a fixed velocity. The second expression can be rewritten in terms of the reduced mass <span class="math notranslate nohighlight">\(\mu\)</span>.</p>
-<ul class="simple">
-<li><p>2b (5pt) Show that the linear momenta for the center-of-mass <span class="math notranslate nohighlight">\(\boldsymbol{P}\)</span> motion and the relative motion <span class="math notranslate nohighlight">\(\boldsymbol{q}\)</span> are given by <span class="math notranslate nohighlight">\(\boldsymbol{P}=M\dot{\boldsymbol{R}}_{\rm cm}\)</span> with <span class="math notranslate nohighlight">\(M=m_1+m_2\)</span> and <span class="math notranslate nohighlight">\(\boldsymbol{q}=\mu\dot{\boldsymbol{r}}\)</span>.  The linear momentum of the relative motion is defined <span class="math notranslate nohighlight">\(\boldsymbol{q} = (m_2\boldsymbol{p}_1-m_1\boldsymbol{p}_2)/(m_1+m_2)\)</span>.</p></li>
-<li><p>2c (5pt) Show then the kinetic energy for two objects can then be written as</p></li>
-</ul>
-<div class="math notranslate nohighlight">
-\[
-K=\frac{P^2}{2M}+\frac{q^2}{2\mu}.
-\]</div>
-<ul class="simple">
-<li><p>2d (5pt) Show that the total angular momentum for two-particles in the center-of-mass frame <span class="math notranslate nohighlight">\(\boldsymbol{R}=0\)</span>, is given by</p></li>
-</ul>
-<div class="math notranslate nohighlight">
-\[
-\boldsymbol{L}=\boldsymbol{r}\times \mu\dot{\boldsymbol{r}}.
-\]</div>
 </div>
-<div class="section" id="classical-mechanics-extra-credit-assignment-scientific-writing-and-attending-talks">
-<h2>Classical Mechanics Extra Credit Assignment: Scientific Writing and attending Talks<a class="headerlink" href="#classical-mechanics-extra-credit-assignment-scientific-writing-and-attending-talks" title="Permalink to this heading">#</a></h2>
-<p>The following gives you an opportunity to earn <strong>five extra credit
-points</strong> on each of the remaining homeworks and <strong>ten extra credit points</strong>
-on the midterms and finals.  This assignment also covers an aspect of
-the scientific process that is not taught in most undergraduate
-programs: scientific writing.  Writing scientific reports is how
-scientist communicate their results to the rest of the field.  Knowing
-how to assemble a well written scientific report will greatly benefit
-you in you upper level classes, in graduate school, and in the work
-place.</p>
-<p>The full information on extra credits is found at <a class="github reference external" href="https://github.com/mhjensen/Physics321/blob/master/doc/Homeworks/ExtraCredits/">mhjensen/Physics321</a>. There you will also find examples on how to write a scientific article.
-Below you can also find a description on how to gain extra credits by attending scientific talks.</p>
-<p>This assignment allows you to gain extra credit points by practicing
-your scientific writing.  For each of the remaining homeworks you can
-submit the specified section of a scientific report (written about the
-numerical aspect of the homework) for five extra credit points on the
-assignment.  For the two midterms and the final, submitting a full
-scientific report covering the numerical analysis problem will be
-worth ten extra points.  For credit the grader must be able to tell
-that you put effort into the assignment (i.e. well written, well
-formatted, etc.).  If you are unfamiliar with writing scientific
-reports, <a class="reference external" href="https://github.com/mhjensen/Physics321/blob/master/doc/Homeworks/ExtraCredits/IntroductionScientificWriting.md">see the information here</a></p>
-<p>The following table explains what aspect of a scientific report is due
-with which homework.  You can submit the assignment in any format you
-like, in the same document as your homework, or in a different one.
-Remember to cite any external references you use and include a
-reference list.  There are no length requirements, but make sure what
-you turn in is complete and through.  If you have any questions,
-please contact Julie Butler at <a class="reference external" href="mailto:butler&#37;&#52;&#48;frib&#46;msu&#46;edu">butler<span>&#64;</span>frib<span>&#46;</span>msu<span>&#46;</span>edu</a>.</p>
-<table class="dotable" border="1">
-<thead>
-<tr><th align="center">  HW/Project </th> <th align="center">Due Date</th> <th align="center">Extra Credit Assignment</th> </tr>
-</thead>
-<tbody>
-<tr><td align="center">   HW 3             </td> <td align="center">   2-8         </td> <td align="center">   Abstract                   </td> </tr>
-<tr><td align="center">   HW 4             </td> <td align="center">   2-15        </td> <td align="center">   Introduction               </td> </tr>
-<tr><td align="center">   HW 5             </td> <td align="center">   2-22        </td> <td align="center">   Methods                    </td> </tr>
-<tr><td align="center">   HW 6             </td> <td align="center">   3-1         </td> <td align="center">   Results and Discussion     </td> </tr>
-<tr><td align="center">   **Midterm 1**    </td> <td align="center">   **3-12**    </td> <td align="center">   *Full Written Report*      </td> </tr>
-<tr><td align="center">   HW 7             </td> <td align="center">   3-22        </td> <td align="center">   Abstract                   </td> </tr>
-<tr><td align="center">   HW 8             </td> <td align="center">   3-29        </td> <td align="center">   Introduction               </td> </tr>
-<tr><td align="center">   HW 9             </td> <td align="center">   4-5         </td> <td align="center">   Results and Discussion     </td> </tr>
-<tr><td align="center">   **Midterm 2**    </td> <td align="center">   **4-16**    </td> <td align="center">   *Full Written Report*      </td> </tr>
-<tr><td align="center">   HW 10            </td> <td align="center">   4-26        </td> <td align="center">   Abstract                   </td> </tr>
-<tr><td align="center">   **Final**        </td> <td align="center">   **4-30**    </td> <td align="center">   *Full Written Report*      </td> </tr>
-</tbody>
-</table>
-<p>You can also gain extra credits if you attend scientific talks.
-This is described here.</p>
+<div class="section" id="exercise-3-20pt-complex-analysis">
+<h3>Exercise 3 (20pt), Complex Analysis<a class="headerlink" href="#exercise-3-20pt-complex-analysis" title="Permalink to this heading">#</a></h3>
+<p>Many of the techniques we use to solve differential equations rely on complex analysis. In this exercise, we will explore the relationship between complex numbers and the solutions to the differential equation. This is to motivate why we bother using them in the case of oscillators.</p>
+<ul class="simple">
+<li><p>3a (5pt) Show that a complex number <span class="math notranslate nohighlight">\(z = a + bi\)</span> can be written in polar form as <span class="math notranslate nohighlight">\(z = r(e^{i\theta})\)</span>, where <span class="math notranslate nohighlight">\(r = \sqrt{a^2 + b^2}\)</span> and <span class="math notranslate nohighlight">\(\theta = \arctan(b/a)\)</span>. Draw a picture of the complex plane and the vector from the origin to the complex number <span class="math notranslate nohighlight">\(z\)</span>.</p></li>
+<li><p>3b (2pt) Prove that the absolute value of the complex number <span class="math notranslate nohighlight">\(z\)</span>, <span class="math notranslate nohighlight">\(|z| = \sqrt{a^2 + b^2}\)</span>, is given by the square root of the product <span class="math notranslate nohighlight">\(zz^{*}\)</span>.</p></li>
+<li><p>3c (2pt) Show that <span class="math notranslate nohighlight">\(z^{*} = r(e^{-i\theta})\)</span>. Start from the definition of <span class="math notranslate nohighlight">\(z\)</span>.</p></li>
+<li><p>3d (3pt) Show that (z_1z_2)^* = z_1^<em>z_2^</em>$.</p></li>
+<li><p>3e (3pt) Show that <span class="math notranslate nohighlight">\((1/z)^* = 1/z^*\)</span>.</p></li>
+<li><p>3f (5pt) Show that <span class="math notranslate nohighlight">\(z=Ce^{i(\omega t)}\)</span> produces an algebraic equation for C when used in the differential equation for the damped harmonic oscillator. What is the equation? What would happen if you instead used <span class="math notranslate nohighlight">\(x(t) = A\cos(\omega t)\)</span>?</p></li>
+</ul>
+<p>It is this last result that often motivates our use of complex numbers in solving differential equations. We can turn a differential equation into an algebraic equation, which is often easier to solve.</p>
 </div>
-<div class="section" id="integrating-classwork-with-research">
-<h2>Integrating Classwork With Research<a class="headerlink" href="#integrating-classwork-with-research" title="Permalink to this heading">#</a></h2>
+<div class="section" id="exercise-4-15pt-exploring-the-damped-harmonic-oscillator">
+<h3>Exercise 4 (15pt), Exploring the damped harmonic oscillator<a class="headerlink" href="#exercise-4-15pt-exploring-the-damped-harmonic-oscillator" title="Permalink to this heading">#</a></h3>
+<p>You can choose to solve this exercise using analytical, or graphical methods. Should you decide to use numerical methods, you should make sure to use a method that conserves energy. However, this exercise does not need to be solved numerically as closed form solutions exist.</p>
+<p>The solution to the simple harmonic oscillator is given by,</p>
+<div class="math notranslate nohighlight">
+\[x(t) = A_{sho}\cos(\omega_0 t) + B_{sho}\sin(\omega_0 t),\]</div>
+<p>where <span class="math notranslate nohighlight">\(A_{sho}\)</span> and <span class="math notranslate nohighlight">\(B_{sho}\)</span> are determined by the initial conditions. The solution to the underdamped harmonic oscillator is given by,</p>
+<div class="math notranslate nohighlight">
+\[x(t) = e^{-\beta t}\left(A\cos(\omega_1 t) + B\sin(\omega_1 t)\right),\]</div>
+<p>where <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span> are also determined by the initial conditions.</p>
+<div class="section" id="scenario-1">
+<h4>Scenario 1<a class="headerlink" href="#scenario-1" title="Permalink to this heading">#</a></h4>
+<p>An undamped oscillator has a period <span class="math notranslate nohighlight">\(T_0 = 1.000\mathrm{s}\)</span>, but then the damping is turned on. We observe the period increases by 0.001 seconds.</p>
+<ul class="simple">
+<li><p>4a (2pt) What is the damping coefficient <span class="math notranslate nohighlight">\(\beta\)</span>?</p></li>
+<li><p>4b (2pt) By how much does the amplitude of the oscillation decrease after 10 periods?</p></li>
+<li><p>4c (2pt) What would be able to notice more easily, the change in period or the change in amplitude?</p></li>
+</ul>
+</div>
+<div class="section" id="scenario-2">
+<h4>Scenario 2<a class="headerlink" href="#scenario-2" title="Permalink to this heading">#</a></h4>
+<p>An undamped oscillator has a period <span class="math notranslate nohighlight">\(T_0 = 1.000\mathrm{s}\)</span>. With weak damping, the amplitude drops by 50% in one period <span class="math notranslate nohighlight">\(T_1\)</span>. Recall the period of the damped oscillator is given by <span class="math notranslate nohighlight">\(T_1 = 2\pi/\omega_1\)</span>.</p>
+<ul class="simple">
+<li><p>4d (2pt) What is the damping coefficient <span class="math notranslate nohighlight">\(\beta\)</span>?</p></li>
+<li><p>4e (2pt) What is the period of the damped oscillator?</p></li>
+<li><p>4f (3pt) By how much does the amplitude of the oscillation decrease after 10 periods?</p></li>
+<li><p>4g (2pt) What would be able to notice more easily, the change in period or the change in amplitude?</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="exercise-5-30pt-the-damped-driven-oscillator">
+<h3>Exercise 5 (30pt), The Damped Driven Oscillator<a class="headerlink" href="#exercise-5-30pt-the-damped-driven-oscillator" title="Permalink to this heading">#</a></h3>
+<p>The damped driven oscillator is described by the equation of motion,</p>
+<div class="math notranslate nohighlight">
+\[m\ddot{x} + b\dot{x} + kx = F(t),\]</div>
+<p>where <span class="math notranslate nohighlight">\(F_0\)</span> is the amplitude of the driving force and <span class="math notranslate nohighlight">\(\omega\)</span> is the frequency of the driving force. We reduced this equation by dividing by <span class="math notranslate nohighlight">\(m\)</span> to get the equation of motion in terms of the damping coefficient <span class="math notranslate nohighlight">\(\beta = b/2m\)</span> and the natural frequency <span class="math notranslate nohighlight">\(\omega_0 = \sqrt{k/m}\)</span>. In the equation below, <span class="math notranslate nohighlight">\(f(t) = F_0/m\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[\ddot{x} + 2\beta\dot{x} + \omega_0^2x = f(t).\]</div>
+<p>We solve this equation for sinusoidal driving forces, <span class="math notranslate nohighlight">\(f(t) = f_0\cos(\omega t)\)</span> and demonstrated the resonance effect. In this exercise, we will numerically solve the equation of motion. This will allow us to explore the behavior of the damped driven oscillator for different periodic driving forces, not just sinusoidal ones.</p>
+<p>Below we have written a numerical solver for the damped undriven oscillator; it’s similar to the prior codes we’ve used. Your task is to modify the code to include a driving force. We have used the second order Runge-Kutta method to solve the equation of motion. You can use the code as a starting point for the damped driven oscillator.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">driver</span><span class="p">(</span><span class="n">t</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Function defining the driving force.</span>
+<span class="sd">    Can be modified to explore different driving mechanisms.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="mf">0.0</span><span class="o">*</span><span class="n">t</span>
+
+<span class="k">def</span> <span class="nf">DDHO</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">t</span><span class="p">,</span> <span class="n">omega_0</span><span class="p">,</span> <span class="n">beta</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Function to compute derivatives based on the damped driven oscillator model.</span>
+<span class="sd">    Notice the driving force is include but zero.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">x</span><span class="p">,</span> <span class="n">v</span> <span class="o">=</span> <span class="n">y</span>
+    <span class="n">dxdt</span> <span class="o">=</span> <span class="n">v</span>
+    <span class="n">dvdt</span> <span class="o">=</span> <span class="o">-</span><span class="mi">2</span> <span class="o">*</span> <span class="n">beta</span> <span class="o">*</span> <span class="n">v</span> <span class="o">-</span> <span class="n">omega_0</span><span class="o">**</span><span class="mi">2</span> <span class="o">*</span> <span class="n">x</span> <span class="o">+</span> <span class="n">driver</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">dxdt</span><span class="p">,</span> <span class="n">dvdt</span><span class="p">])</span>
+
+<span class="k">def</span> <span class="nf">rk2_step</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">t</span><span class="p">,</span> <span class="n">dt</span><span class="p">,</span> <span class="n">omega_0</span><span class="p">,</span> <span class="n">beta</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Performs a single step of the Runge-Kutta 2nd order (midpoint) method.</span>
+
+<span class="sd">    parameters:</span>
+<span class="sd">    - y: current state [position, velocity].</span>
+<span class="sd">    - t: current time.</span>
+<span class="sd">    - dt: time step size.</span>
+<span class="sd">    - omega_0: natural frequency of the oscillator.</span>
+<span class="sd">    - beta: damping coefficient.</span>
+
+<span class="sd">    returns:</span>
+<span class="sd">    - y_next: state time step dt [position, velocity].</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    
+    <span class="n">k1</span> <span class="o">=</span> <span class="n">DDHO</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">t</span><span class="p">,</span> <span class="n">omega_0</span><span class="p">,</span> <span class="n">beta</span><span class="p">)</span>
+    <span class="n">k2</span> <span class="o">=</span> <span class="n">DDHO</span><span class="p">(</span><span class="n">y</span> <span class="o">+</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="n">k1</span> <span class="o">*</span> <span class="n">dt</span><span class="p">,</span> <span class="n">t</span> <span class="o">+</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="n">dt</span><span class="p">,</span> <span class="n">omega_0</span><span class="p">,</span> <span class="n">beta</span><span class="p">)</span>
+    <span class="n">y_next</span> <span class="o">=</span> <span class="n">y</span> <span class="o">+</span> <span class="n">k2</span> <span class="o">*</span> <span class="n">dt</span>
+    
+    <span class="k">return</span> <span class="n">y_next</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Simulation parameters</span>
+<span class="n">T</span> <span class="o">=</span> <span class="mf">100.0</span>  <span class="c1"># total time</span>
+<span class="n">dt</span> <span class="o">=</span> <span class="mf">0.01</span>  <span class="c1"># time step</span>
+<span class="n">omega_0</span> <span class="o">=</span> <span class="mf">2.0</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span>  <span class="c1"># natural frequency</span>
+<span class="n">beta</span> <span class="o">=</span> <span class="mf">0.1</span>  <span class="c1"># damping coefficient</span>
+
+<span class="n">steps</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">T</span> <span class="o">/</span> <span class="n">dt</span><span class="p">)</span>
+<span class="n">t</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">T</span><span class="p">,</span> <span class="n">steps</span><span class="p">)</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">steps</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>  <span class="c1"># Array to hold position and velocity</span>
+
+<span class="c1">## Initial conditions</span>
+<span class="n">y</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">]</span>  <span class="c1"># x=1, v=0</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">steps</span> <span class="o">-</span> <span class="mi">1</span><span class="p">):</span>
+    <span class="n">y</span><span class="p">[</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">rk2_step</span><span class="p">(</span><span class="n">y</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">t</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">dt</span><span class="p">,</span> <span class="n">omega_0</span><span class="p">,</span> <span class="n">beta</span><span class="p">)</span>
+
+<span class="n">oscillator</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;Position&quot;</span><span class="p">,</span> <span class="s2">&quot;Velocity&quot;</span><span class="p">])</span>
+<span class="n">oscillator</span><span class="p">[</span><span class="s2">&quot;Time&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">t</span>
+
+<span class="c1"># Plotting the results</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">oscillator</span><span class="p">[</span><span class="s2">&quot;Time&quot;</span><span class="p">],</span> <span class="n">oscillator</span><span class="p">[</span><span class="s2">&quot;Position&quot;</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Position&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Time&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Position&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/a5483106e6ffe827ec036b498dbbefe8b548b512a5443b37feaea62df9a76ff2.png" src="../_images/a5483106e6ffe827ec036b498dbbefe8b548b512a5443b37feaea62df9a76ff2.png" />
+</div>
+</div>
+<p>For this exercise you need to:</p>
+<ul class="simple">
+<li><p>5a (4pt) Modify the code to include a driving force <span class="math notranslate nohighlight">\(f(t) = f_0\cos(\omega t)\)</span>. Choose <span class="math notranslate nohighlight">\(f_0 = 1.0\)</span> and <span class="math notranslate nohighlight">\(\omega = 1.0\)</span> for now. How does this choice of <span class="math notranslate nohighlight">\(omega\)</span> compare to the natural frequency of the oscillator? Should we expect a large response?</p></li>
+<li><p>5b (3pt) Plot the position of the oscillator as a function of time for this driving force. Choose initial conditions <span class="math notranslate nohighlight">\(x_0 = 1.0\)</span> and <span class="math notranslate nohighlight">\(v_0 = 0.0\)</span>. What do you observe?</p></li>
+<li><p>5c (3pt) Compute the kinetic and potential energy of the oscillator as a function of time. Plots those as a function of time. What do you notice about the energy moving into or out of the oscillator system?</p></li>
+</ul>
+<p>Then you are going to look at the long term behavior of the oscillator. So the remaining exercises engage in that analysis:</p>
+<ul class="simple">
+<li><p>5d. (4pt) In the last <span class="math notranslate nohighlight">\(10\%\)</span> of the time, find the maximum amplitude of the oscillation. How does this compare to initial amplitude? You should be able to do this consistently and programmatically.</p></li>
+<li><p>5e. (8pt) Plot the maximum amplitude in the long term limit as a line along with the position of the oscillator as a function of time. Noe change the driving frequency to be closer and further from the natural frequency of the oscillator. What do you observe?</p></li>
+<li><p>5f. (8pt) For at least 10 different driving frequencies, plot the maximum amplitude in the long term limit as a function of the driving frequency. What do you observe? You should be able to do this consistently and programmatically.</p></li>
+</ul>
+</div>
+<div class="section" id="exercise-6-15pt-new-periodic-drivers">
+<h3>Exercise 6 (15pt), New Periodic Drivers<a class="headerlink" href="#exercise-6-15pt-new-periodic-drivers" title="Permalink to this heading">#</a></h3>
+<p>Now that you have a working code for the damped sinusoidally-driven oscillator, we will explore the behavior of the damped periodically-driven oscillator for different periodic driving forces. Here, it might be the case that analytical solutions are not possible. Certainly, we can use the <a class="reference external" href="https://en.wikipedia.org/wiki/Fourier_series">Fourier Series</a> to start an analytical investigation into these periodic systems. However, it’s often more tractable to explore these numerically.</p>
+<p>Pick a different periodic signal, such as a square wave, a sawtooth wave, or a triangle wave. You can use the <code class="docutils literal notranslate"><span class="pre">scipy</span></code> library to generate these signals. For example, the following code generates a square wave.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">scipy.signal</span> <span class="k">as</span> <span class="nn">sig</span>
+
+<span class="n">t</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1000</span><span class="p">,</span> <span class="n">endpoint</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">sig</span><span class="o">.</span><span class="n">square</span><span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span> <span class="o">*</span> <span class="mi">5</span> <span class="o">*</span> <span class="n">t</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Time&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Amplitude&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Text(0, 0.5, &#39;Amplitude&#39;)
+</pre></div>
+</div>
+<img alt="../_images/1576786d1412ff974b2785933dd12cffd04fe0cd52136aeb48806b154ad7aa9a.png" src="../_images/1576786d1412ff974b2785933dd12cffd04fe0cd52136aeb48806b154ad7aa9a.png" />
+</div>
+</div>
+<p>For this exercise you need to:</p>
+<ul class="simple">
+<li><p>6a (5pt) Modify the code from Exercise 5 to include a different driving force that is not sinusoidal. Plot the position of the oscillator as a function of time for this driving force. Choose initial conditions <span class="math notranslate nohighlight">\(x_0 = 1.0\)</span> and <span class="math notranslate nohighlight">\(v_0 = 0.0\)</span>. What do you observe?</p></li>
+<li><p>6b (5pt) How does the energy story change for this oscillator? Plot the kinetic and potential energy of the oscillator as a function of time. What do you notice about the energy moving into or out of the oscillator system?</p></li>
+<li><p>6c (5pt) How does this driving force compare to the sinusoidal driving force? What do you observe? What are similarities to your findings in Exercise 5? What are the differences you observe?</p></li>
+</ul>
+</div>
+<div class="section" id="extra-credit-integrating-classwork-with-research">
+<h3>Extra Credit - Integrating Classwork With Research<a class="headerlink" href="#extra-credit-integrating-classwork-with-research" title="Permalink to this heading">#</a></h3>
 <p>This opportunity will allow you to earn up to 5 extra credit points on a Homework per week. These points can push you above 100% or help make up for missed exercises.
 In order to earn all points you must:</p>
 <ol class="arabic simple">
@@ -635,8 +675,7 @@ Talks given by researchers through the following clubs:</p>
 <li><p>Astronomy Club​: Meets Monday Nights</p></li>
 <li><p>Facility For Rare Isotope Beam (FRIB) Seminars: ​Occur multiple times a week</p></li>
 </ul>
-<p>If you have any questions please consult Jeremy Rebenstock, <a class="reference external" href="mailto:rebensto&#37;&#52;&#48;msu&#46;edu">rebensto<span>&#64;</span>msu<span>&#46;</span>edu</a>.</p>
-<p>All the material on extra credits is at <a class="github reference external" href="https://github.com/mhjensen/Physics321/blob/master/doc/Homeworks/ExtraCredits/">mhjensen/Physics321</a>.</p>
+</div>
 </div>
 </div>
 
@@ -649,16 +688,16 @@ Talks given by researchers through the following clubs:</p>
         },
         codeMirrorConfig: {
             theme: "abcdef",
-            mode: "python"
+            mode: "teaching"
         },
         kernelOptions: {
-            name: "python3",
+            name: "teaching",
             path: "./homeworks"
         },
         predefinedOutput: true
     }
     </script>
-    <script>kernelName = 'python3'</script>
+    <script>kernelName = 'teaching'</script>
 
                 </article>
               
@@ -670,6 +709,24 @@ Talks given by researchers through the following clubs:</p>
                 <footer class="prev-next-footer">
                   <!-- Previous / next buttons -->
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="hw6.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Homework 6 (Due 15 Mar)</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../honors-projects/ChaoticPendulum.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Chaos in the driven nonlinear pendulum</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               
@@ -685,12 +742,21 @@ Talks given by researchers through the following clubs:</p>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#practicalities-about-homeworks-and-projects">Practicalities about  homeworks and projects</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction-to-homework-7">Introduction to homework 7</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-1-80-pts-the-mathematical-pendulum">Exercise 1 (80 pts), the mathematical pendulum</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-2-20pt-center-of-mass-and-relative-coordinates-and-reference-frames">Exercise 2 (20pt), Center-of-Mass and Relative Coordinates and Reference Frames</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#classical-mechanics-extra-credit-assignment-scientific-writing-and-attending-talks">Classical Mechanics Extra Credit Assignment: Scientific Writing and attending Talks</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#integrating-classwork-with-research">Integrating Classwork With Research</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction-to-homework-7">Introduction to Homework 7</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#practicalities-about-homeworks-and-projects">Practicalities about  homeworks and projects</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-1-10pt-where-does-the-energy-go">Exercise 1 (10pt) Where does the energy go?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-2-10pt-unpacking-the-critically-damped-solution">Exercise 2 (10pt), Unpacking the critically damped solution</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-3-20pt-complex-analysis">Exercise 3 (20pt), Complex Analysis</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-4-15pt-exploring-the-damped-harmonic-oscillator">Exercise 4 (15pt), Exploring the damped harmonic oscillator</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#scenario-1">Scenario 1</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#scenario-2">Scenario 2</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-5-30pt-the-damped-driven-oscillator">Exercise 5 (30pt), The Damped Driven Oscillator</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-6-15pt-new-periodic-drivers">Exercise 6 (15pt), New Periodic Drivers</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#extra-credit-integrating-classwork-with-research">Extra Credit - Integrating Classwork With Research</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 
