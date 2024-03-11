@@ -3,11 +3,12 @@
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-content_root="" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
     <title>Homework 5 (Due 08 Mar) &#8212; Classical Mechanics</title>
   
   
@@ -18,28 +19,28 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+  <link href="../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
-  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -48,25 +49,21 @@
     <script src="../_static/doctools.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../_static/design-tabs.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'homeworks/hw5';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Homework 6 (Due 15 Mar)" href="hw6.html" />
+    <link rel="next" title="Solutions - Homework 5 (Due 08 Mar)" href="../solutions/solutionhw5.html" />
     <link rel="prev" title="Solutions - Midterm 1 (Due 23 Feb)" href="../solutions/solutionmidterm1.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -77,10 +74,9 @@ const thebe_selector_output = ".output, .cell_output"
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
   
   <div id="pst-scroll-pixel-helper"></div>
-
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
     <i class="fa-solid fa-arrow-up"></i>
@@ -121,11 +117,14 @@ const thebe_selector_output = ".output, .cell_output"
 </form></div>
   </div>
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
   
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
+      
+      
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -140,9 +139,11 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
   
 
 <a class="navbar-brand logo" href="../intro.html">
+  
   
   
   
@@ -152,12 +153,23 @@ const thebe_selector_output = ".output, .cell_output"
       
     
     
-    <img src="../_static/spartan-helmet.png" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="../_static/spartan-helmet.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="../_static/spartan-helmet.png" class="logo__image only-light" alt="Classical Mechanics - Home"/>
+    <script>document.write(`<img src="../_static/spartan-helmet.png" class="logo__image only-dark" alt="Classical Mechanics - Home"/>`);</script>
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -208,6 +220,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../midterms/midterm1.html">Midterm 1 (Due 23 Feb)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../solutions/solutionmidterm1.html">Solutions - Midterm 1 (Due 23 Feb)</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Homework 5 (Due 08 Mar)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../solutions/solutionhw5.html">Solutions - Homework 5 (Due 08 Mar)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="hw6.html">Homework 6 (Due 15 Mar)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="hw7.html">Homework 7 (Due 22 Mar)</a></li>
 </ul>
@@ -353,6 +366,7 @@ const thebe_selector_output = ".output, .cell_output"
 </button>
 
 
+
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
@@ -362,6 +376,7 @@ document.write(`
   </button>
 `);
 </script>
+
 
 <script>
 document.write(`
@@ -413,16 +428,16 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
   <!-- HTML file automatically generated from DocOnce source (https://github.com/doconce/doconce/)
 doconce format html hw5.do.txt --no_mako -->
-<!-- dom:TITLE: PHY321: Classical Mechanics 1 --><div class="tex2jax_ignore mathjax_ignore section" id="homework-5-due-08-mar">
+<!-- dom:TITLE: PHY321: Classical Mechanics 1 --><section class="tex2jax_ignore mathjax_ignore" id="homework-5-due-08-mar">
 <h1>Homework 5 (Due 08 Mar)<a class="headerlink" href="#homework-5-due-08-mar" title="Permalink to this heading">#</a></h1>
 <p><strong>Due Mar 08 (midnight)</strong></p>
 <p>Date: <strong>Feb 19, 2024</strong>
 Total points: <strong>100</strong></p>
-<div class="section" id="introduction-to-homework-5">
+<section id="introduction-to-homework-5">
 <h2>Introduction to Homework 5<a class="headerlink" href="#introduction-to-homework-5" title="Permalink to this heading">#</a></h2>
 <p>This week’s exercises focus on two major tools that we use in classical mechanics, the phase diagram and numerical integration methods. Here the pencil and paper exercises will focus on conservative systems, but the methods we develop are used in a much broader context. The numerical exercises are meant to introduce you to phase diagrams and how to solve ordinary differential equations numerically. We will ask you to plot a variety of diagrams and to interpret the results.</p>
 <p>The relevant reading background is</p>
@@ -433,15 +448,15 @@ Total points: <strong>100</strong></p>
 </ol>
 <p>In both textbooks there are many nice worked out examples.</p>
 <p>The numerical exercises are based on what you did in homework 4 and the material covered in the lectures, but we will write a basic code for you to start from.</p>
-<div class="section" id="practicalities-about-homeworks-and-projects">
+<section id="practicalities-about-homeworks-and-projects">
 <h3>Practicalities about  homeworks and projects<a class="headerlink" href="#practicalities-about-homeworks-and-projects" title="Permalink to this heading">#</a></h3>
 <ol class="arabic simple">
 <li><p>You can work in groups (optimal groups are often 2-3 people) or by yourself. If you work as a group you can hand in one answer only if you wish. <strong>Remember to write your name(s)</strong>!</p></li>
 <li><p>Homeworks are available ten days before the deadline.</p></li>
 <li><p>How do I(we)  hand in?  You can hand in the paper and pencil exercises as a scanned document. For this homework this applies to exercises 1-4. Alternatively, you can hand in everything (if you are ok with typing mathematical formulae using say Latex) as a jupyter notebook at D2L. The numerical exercise(s) (exercise 5-6 here) should always be handed in as a jupyter notebook by the deadline at D2L.</p></li>
 </ol>
-</div>
-<div class="section" id="exercise-1-10-pt-sho-and-conservation-of-energy">
+</section>
+<section id="exercise-1-10-pt-sho-and-conservation-of-energy">
 <h3>Exercise 1 (10 pt), SHO and Conservation of Energy<a class="headerlink" href="#exercise-1-10-pt-sho-and-conservation-of-energy" title="Permalink to this heading">#</a></h3>
 <p>Consider the standard harmonic oscillator with a mass <span class="math notranslate nohighlight">\(m\)</span> attached to a horizontal spring with spring constant <span class="math notranslate nohighlight">\(k\)</span>. It is constrained to move in the <span class="math notranslate nohighlight">\(x\)</span> direction only and there is no friction present. With the equilibrium position as <span class="math notranslate nohighlight">\(x=0\)</span>, then the potential energy is <span class="math notranslate nohighlight">\(U(x)=\frac{1}{2}kx^2\)</span>.</p>
 <p>We give the oscillator a little kick at <span class="math notranslate nohighlight">\(t=0\)</span> and let it go. It reaches a maximum distance of <span class="math notranslate nohighlight">\(A\)</span> from the equilibrium position.</p>
@@ -450,8 +465,8 @@ Total points: <strong>100</strong></p>
 <li><p>1b (4pt) Construct the integral for the time it takes for the oscillator from <span class="math notranslate nohighlight">\(x=0\)</span> to any position <span class="math notranslate nohighlight">\(x\)</span>.</p></li>
 <li><p>1c (4pt) Use the integral to find <span class="math notranslate nohighlight">\(x(t)\)</span> and show that the period of the oscillator is <span class="math notranslate nohighlight">\(T=2\pi\sqrt{m/k}\)</span>.</p></li>
 </ul>
-</div>
-<div class="section" id="exercise-2-10pt-kid-s-toy-and-stable-equilibrium">
+</section>
+<section id="exercise-2-10pt-kid-s-toy-and-stable-equilibrium">
 <h3>Exercise 2 (10pt), Kid’s toy and stable equilibrium<a class="headerlink" href="#exercise-2-10pt-kid-s-toy-and-stable-equilibrium" title="Permalink to this heading">#</a></h3>
 <p>A toy is made from a cylinder mounted on a hemisphere as shown in the figure below. The hemisphere has a radius of <span class="math notranslate nohighlight">\(R\)</span> and the center of mass of the whole toy is <span class="math notranslate nohighlight">\(h\)</span> above the ground.</p>
 <p><img alt="toy" src="../_images/5.2-kid_toy.png" /></p>
@@ -460,8 +475,8 @@ Total points: <strong>100</strong></p>
 <li><p>2b (3pt) Use this to find the gravitational potential energy <span class="math notranslate nohighlight">\(U(\theta)\)</span>. Show in a figure how the potential energy varies with <span class="math notranslate nohighlight">\(\theta\)</span>.</p></li>
 <li><p>2c (5pt) For which values of <span class="math notranslate nohighlight">\(R\)</span> and <span class="math notranslate nohighlight">\(h\)</span> is the toy in stable equilibrium so that it does not fall over? Why does this make sense to you? Or how would you explain it to a friend?</p></li>
 </ul>
-</div>
-<div class="section" id="exercise-3-15pt-generic-1d-motion">
+</section>
+<section id="exercise-3-15pt-generic-1d-motion">
 <h3>Exercise 3 (15pt), “Generic” 1D motion<a class="headerlink" href="#exercise-3-15pt-generic-1d-motion" title="Permalink to this heading">#</a></h3>
 <p>We will eventually learn how to solve for equations of motion for generalized coordinates. That work requires us to think about the forces and constraints on a system. Here we will consider a particle moving along a curved path to begin to think about how to describe the motion of a particle in a more general way.</p>
 <p><img alt="curved-path" src="../_images/5.3-curved_path.png" /></p>
@@ -476,8 +491,8 @@ Total points: <strong>100</strong></p>
 <li><p>3d (4pt) Show that the tangential component of the net force due to the wire is <span class="math notranslate nohighlight">\(-\frac{dU}{ds}\)</span>.</p></li>
 </ul>
 <p>This 1D concept extends to multiple dimensions and can help us understand the Lagrangian method of solving for the equations of motion.</p>
-</div>
-<div class="section" id="exercise-4-15pt-another-1-d-conservative-system-baby-bifurcations">
+</section>
+<section id="exercise-4-15pt-another-1-d-conservative-system-baby-bifurcations">
 <h3>Exercise 4 (15pt), Another 1-D conservative system; baby bifurcations<a class="headerlink" href="#exercise-4-15pt-another-1-d-conservative-system-baby-bifurcations" title="Permalink to this heading">#</a></h3>
 <p>The apparatus below is a massless wheel of radius <span class="math notranslate nohighlight">\(R\)</span> that is mounted to a frictionless axle. A small, dense piece of clay with mass <span class="math notranslate nohighlight">\(M\)</span> is glued to edge of the wheel as shown. Another mass <span class="math notranslate nohighlight">\(m\)</span> hangs from a massless string that is wrapped around the wheel. We can assume the string is inextensible and does not slip, and the system is in a uniform gravitational field.</p>
 <p><img alt="apparatus" src="../_images/5.4-apparatus.png" /></p>
@@ -490,8 +505,8 @@ Total points: <strong>100</strong></p>
 <li><p>4e (2pt) Determine the value of <span class="math notranslate nohighlight">\(m/M\)</span> for which the system begins to exhibit oscillations (if released from <span class="math notranslate nohighlight">\(\phi=0\)</span>).</p></li>
 </ul>
 <p>The value of <span class="math notranslate nohighlight">\(m/M\)</span> is a dimensionless quantity that characterizes the system. In a dynamical system, we think of it as a parameter that can change the qualitative behavior of the system. Such parameters can lead us to <a class="reference external" href="https://en.wikipedia.org/wiki/Bifurcation_theory">bifurcations</a>, <a class="reference external" href="https://en.wikipedia.org/wiki/Phase_transition">phase transitions</a>, and other interesting (often non-equilibrium) phenomena.</p>
-</div>
-<div class="section" id="exercise-5-20-pt-phase-diagrams">
+</section>
+<section id="exercise-5-20-pt-phase-diagrams">
 <h3>Exercise 5 (20 pt), Phase Diagrams<a class="headerlink" href="#exercise-5-20-pt-phase-diagrams" title="Permalink to this heading">#</a></h3>
 <p>One of the most useful tools we can learn from classical mechanics is the phase diagram. For us, it is the plot of the position and velocity of a particle in a 1D system, but the concept can be extended to higher dimensions and to other systems. The phase diagram can tell us about the stability of fixed points, the period of oscillations, and the qualitative behavior of the system.</p>
 <p>In this exercise, we will consider a particle in a potential <span class="math notranslate nohighlight">\(U(x)\)</span> and we will plot the phase diagrams using both <code class="docutils literal notranslate"><span class="pre">quiver</span></code> and <code class="docutils literal notranslate"><span class="pre">streamplot</span></code> in <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code>. The purpose of this exercise is to learn how to plot phase diagrams and to interpret the results.</p>
@@ -557,7 +572,7 @@ Total points: <strong>100</strong></p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/66f91dc076252bb0ee15179e87166c1aea6a46168ea335f5f2cd3007364a1b71.png" src="../_images/66f91dc076252bb0ee15179e87166c1aea6a46168ea335f5f2cd3007364a1b71.png" />
+<img alt="../_images/57a227d4f9d6c80b19ca048e4775ad51fa10c8f9ce5fd065de048ed646e2a397.png" src="../_images/57a227d4f9d6c80b19ca048e4775ad51fa10c8f9ce5fd065de048ed646e2a397.png" />
 </div>
 </div>
 <ul class="simple">
@@ -581,8 +596,8 @@ $<span class="math notranslate nohighlight">\(\ddot{\theta}=-\frac{g}{l}\sin\the
 <li><p>5d (5pt) Modify the code again to produce the phase diagram for the damped physical pendulum. You can choose <span class="math notranslate nohighlight">\(b/ml\)</span>, but might want to explore the values. How does this motion compare to the motion of the damped harmonic oscillator?</p></li>
 <li><p>5e (4pt) Return to the simple harmonic oscillator. Show using conservation of energy the phase diagram is a series of ellipses in <span class="math notranslate nohighlight">\((x,v)\)</span> space. Plot these ellipses on top of a phase diagram for the simple harmonic oscillator to illustrate how the phase diagram explains the total energy of the system.</p></li>
 </ul>
-</div>
-<div class="section" id="exercise-6-30pt-numerical-integration-techniques-and-oscillations">
+</section>
+<section id="exercise-6-30pt-numerical-integration-techniques-and-oscillations">
 <h3>Exercise 6 (30pt), Numerical integration techniques and oscillations<a class="headerlink" href="#exercise-6-30pt-numerical-integration-techniques-and-oscillations" title="Permalink to this heading">#</a></h3>
 <p>We’ve discussed the Euler method and made use of it in the prior homeworks. However, the Euler method is not the most accurate method for solving ODEs. It has a real issue with energy conservation, which is a problem for conservative systems. Here we will explore the Euler-Cromer method and the Runge-Kutta methods for the simple harmonic oscillator. You will then apply these same methods to the various oscillators in Exercise 5.</p>
 <p>Below we have written a code to solve the ODE:</p>
@@ -718,7 +733,7 @@ $<span class="math notranslate nohighlight">\(\ddot{\theta}=-\frac{g}{l}\sin\the
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/b49415faf3d6ebb5997437f38d1708187dd58afa452ba0d2d6f720f9ede87903.png" src="../_images/b49415faf3d6ebb5997437f38d1708187dd58afa452ba0d2d6f720f9ede87903.png" />
+<img alt="../_images/8e538d516f6468eeff6f5cda603f490d8c4673369ae61db5113ed573f80239bc.png" src="../_images/8e538d516f6468eeff6f5cda603f490d8c4673369ae61db5113ed573f80239bc.png" />
 </div>
 </div>
 <ul class="simple">
@@ -758,11 +773,11 @@ $<span class="math notranslate nohighlight">\(\ddot{\theta}=-\frac{g}{l}\sin\the
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/18d5044c83634d33b810431782364fb9ba31bf4b1aefd2161fd53d04fec548ae.png" src="../_images/18d5044c83634d33b810431782364fb9ba31bf4b1aefd2161fd53d04fec548ae.png" />
+<img alt="../_images/f2759e7015a5b391be213c5b6b5f76c6077c981e228419c0c139ea19f6f934e3.png" src="../_images/f2759e7015a5b391be213c5b6b5f76c6077c981e228419c0c139ea19f6f934e3.png" />
 </div>
 </div>
-</div>
-<div class="section" id="extra-credit-integrating-classwork-with-research">
+</section>
+<section id="extra-credit-integrating-classwork-with-research">
 <h3>Extra Credit - Integrating Classwork With Research<a class="headerlink" href="#extra-credit-integrating-classwork-with-research" title="Permalink to this heading">#</a></h3>
 <p>This opportunity will allow you to earn up to 5 extra credit points on a Homework per week. These points can push you above 100% or help make up for missed exercises.
 In order to earn all points you must:</p>
@@ -778,9 +793,9 @@ Talks given by researchers through the following clubs:</p>
 <li><p>Astronomy Club​: Meets Monday Nights</p></li>
 <li><p>Facility For Rare Isotope Beam (FRIB) Seminars: ​Occur multiple times a week</p></li>
 </ul>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -810,7 +825,7 @@ Talks given by researchers through the following clubs:</p>
               
               
                 <footer class="prev-next-footer">
-                  <!-- Previous / next buttons -->
+                  
 <div class="prev-next-area">
     <a class="left-prev"
        href="../solutions/solutionmidterm1.html"
@@ -822,11 +837,11 @@ Talks given by researchers through the following clubs:</p>
       </div>
     </a>
     <a class="right-next"
-       href="hw6.html"
+       href="../solutions/solutionhw5.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Homework 6 (Due 15 Mar)</p>
+        <p class="prev-next-title">Solutions - Homework 5 (Due 08 Mar)</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -838,6 +853,7 @@ Talks given by researchers through the following clubs:</p>
             
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -877,9 +893,10 @@ By Danny Caballero, Morten Hjorth-Jensen
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
-      © Copyright 2022.
+      © Copyright 2023.
       <br/>
     
   </p>
@@ -903,8 +920,8 @@ By Danny Caballero, Morten Hjorth-Jensen
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
 
   <footer class="bd-footer">
   </footer>
