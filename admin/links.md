@@ -6,6 +6,18 @@ Materials will appear in reverse chronological order, with the most recent appea
 
 All recorded classes are added to [this playlist](https://mediaspace.msu.edu/playlist/dedicated/1_s1d57uud/.)
 
+### Week 11, March 18-22, 2024
+
+Topics: Calculus of Variations
+
+#### Videos to Watch
+
+While never required, these videos are recommended to help you see the larger picture of what we are doing in class.
+
+##### The Math of Bubbles (17 minute video)
+
+
+
 ### Week 10, March 11-15, 2024
 
 Topics: Fourier Series Expansions
