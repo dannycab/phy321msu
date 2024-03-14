@@ -16,7 +16,23 @@ While never required, these videos are recommended to help you see the larger pi
 
 ##### The Math of Bubbles (17 minute video)
 
+We are eventually going to develop some deep principles of classical mechanics that will connect for us the motion of particles and the forces they experience to the energy that moves between aspects of the system. This formulation of mechanics is called [Lagrangian Mechanics](https://en.wikipedia.org/wiki/Lagrangian_mechanics). It is a powerful and elegant way to describe the motion of particles and systems. It is based on the [Calculus of Variations](https://en.wikipedia.org/wiki/Calculus_of_variations), a field of mathematics that is concerned with finding the path that minimizes or maximizes (called "extremization") a certain quantity.
 
+This mathematics is very powerful and underlies how we can develop equations of motion in particular systems. But is also describes the shape of surfaces like bubbles and droplets. The video below is a nice introduction to the concept of Calculus of Variations and it's relation to [minimal surfaces](https://en.wikipedia.org/wiki/Minimal_surface).
+
+[![The Math of Bubbles: Minimal Surfaces & the Calculus of Variations](https://markdown-videos-api.jorgenkh.no/youtube/8SABptOYUVk?width=720&height=405)](https://inv.n8pjl.ca/watch?v=8SABptOYUVk)
+
+- Non-Commercial Link: [https://inv.n8pjl.ca/watch?v=8SABptOYUVk](https://inv.n8pjl.ca/watch?v=8SABptOYUVk)
+- Commercial Link: [https://youtube.com/watch?v=8SABptOYUVk](https://youtube.com/watch?v=8SABptOYUVk)
+
+#### Class Materials
+- Readings:
+  - JRT 6.1-6.3; MLB 9.1-9.4
+- Handwritten Notes:
+  - CW11: [Calculus of Variations](../docs/handwritten-notes/CW11.pdf)
+- Lecture Videos:
+  - 18 Mar 2024
+  - 20 Mar 2024
 
 ### Week 10, March 11-15, 2024
 
@@ -34,7 +50,7 @@ But, this kind of signal decomposition is a critical tool in many modern areas o
 
 The video below describes the concept and history of the FFT and its importance.
 
-[![](https://markdown-videos-api.jorgenkh.no/youtube/nmgFG7PUHfo?width=720&height=405)](https://inv.n8pjl.ca/watch?v=nmgFG7PUHfo)
+[![The Remarkable Story Behind The Most Important Algorithm Of All Time](https://markdown-videos-api.jorgenkh.no/youtube/nmgFG7PUHfo?width=720&height=405)](https://inv.n8pjl.ca/watch?v=nmgFG7PUHfo)
 
 - Non-Commercial Link: [https://inv.n8pjl.ca/watch?v=nmgFG7PUHfo](https://inv.n8pjl.ca/watch?v=nmgFG7PUHfo)
 - Commercial Link: [https://youtube.com/watch?v=nmgFG7PUHfo](https://youtube.com/watch?v=nmgFG7PUHfo)
@@ -62,7 +78,7 @@ Driven oscillators are very common in the world. Analog radios use a driven osci
 
 The video below describes the collapse and how the bridge was rebuilt to avoid the same problem. 
 
-[![](https://markdown-videos-api.jorgenkh.no/youtube/mXTSnZgrfxM?width=720&height=405)](https://inv.n8pjl.ca/watch?v=mXTSnZgrfxM)
+[![Why the Tacoma Narrows Bridge Collapsed](https://markdown-videos-api.jorgenkh.no/youtube/mXTSnZgrfxM?width=720&height=405)](https://inv.n8pjl.ca/watch?v=mXTSnZgrfxM)
 
 - Non-Commercial Link: [https://inv.n8pjl.ca/watch?v=mXTSnZgrfxM](https://inv.n8pjl.ca/watch?v=mXTSnZgrfxM)
 - Commercial Link: [https://youtube.com/watch?v=mXTSnZgrfxM](https://youtube.com/watch?v=mXTSnZgrfxM)
@@ -99,7 +115,7 @@ How do fireflies end up blinking together? How do walking people end up moving i
 
  The video below is a good introduction to the topic of synchronization. 
 
-[![](https://markdown-videos-api.jorgenkh.no/youtube/t-_VPRCtiUg?width=720&height=405)](https://inv.n8pjl.ca/watch?v=t-_VPRCtiUg)
+[![The Surprising Secret of Synchronization](https://markdown-videos-api.jorgenkh.no/youtube/t-_VPRCtiUg?width=720&height=405)](https://inv.n8pjl.ca/watch?v=t-_VPRCtiUg)
 
 - Non-Commercial Link: [https://inv.n8pjl.ca/watch?v=t-_VPRCtiUg](https://inv.n8pjl.ca/watch?v=t-_VPRCtiUg)
 - Commercial Link: [https://youtube.com/watch?v=t-_VPRCtiUg](https://youtube.com/watch?v=t-_VPRCtiUg)
@@ -133,7 +149,7 @@ While never required, these videos are recommended to help you see the larger pi
 
 Below is a video describing 3 coupled ODEs, the [Lorenz equations](https://en.wikipedia.org/wiki/Lorenz_system), that are quite famous. You will be able to model systems like this, but for now think of it as motivation for why we want to learn numerical integration.
 
-[![](https://markdown-videos-api.jorgenkh.no/youtube/aAJkLh76QnM?width=720&height=405))](https://inv.n8pjl.ca/watch?v=aAJkLh76QnM)
+[![Chaos | Chapter 7 : Strange Attractors - The butterfly effect](https://markdown-videos-api.jorgenkh.no/youtube/aAJkLh76QnM?width=720&height=405))](https://inv.n8pjl.ca/watch?v=aAJkLh76QnM)
 - Non-Commercial Link: [https://inv.n8pjl.ca/watch?v=aAJkLh76QnM?](https://inv.n8pjl.ca/watch?v=aAJkLh76QnM?)
 - Commercial Link: [https://youtube.com/watch?v=aAJkLh76QnM?](https://youtube.com/watch?v=aAJkLh76QnM?)
 
@@ -145,7 +161,7 @@ One of the first things we will use to investigate systems from a dynamical syst
 
 We will go into the details of how to construct and develop phase portraits in class. This video from [Steve Brunton](https://www.me.washington.edu/facultyfinder/steve-brunton) is a good overview of the process. It's quite detailed and takes a mathematical perspective, so don't worry if you don't understand everything in the video. We have plenty of time to investigate how this works in practice.
 
-[![](https://markdown-videos-api.jorgenkh.no/youtube/vBwyD4JJlSs?width=720&height=405)](https://inv.n8pjl.ca/watch?v=vBwyD4JJlSs)
+[![Drawing Phase Portraits for Nonlinear Systems](https://markdown-videos-api.jorgenkh.no/youtube/vBwyD4JJlSs?width=720&height=405)](https://inv.n8pjl.ca/watch?v=vBwyD4JJlSs)
 
 - Non-Commercial Link: [https://inv.n8pjl.ca/watch?v=vBwyD4JJlSs](https://inv.n8pjl.ca/watch?v=vBwyD4JJlSs)
 - Commercial Link: [https://youtube.com/watch?v=vBwyD4JJlSs](https://youtube.com/watch?v=vBwyD4JJlSs)
@@ -179,7 +195,7 @@ While never required, these videos are recommended to help you see the larger pi
 
 The [Higgs Boson](https://en.wikipedia.org/wiki/Higgs_boson) is a particle that was discovered in 2012 at the [Large Hadron Collider](https://en.wikipedia.org/wiki/Large_Hadron_Collider) at [CERN](https://en.wikipedia.org/wiki/CERN). This discovery was a major milestone in the field of particle physics. Much of what we are trying to understand about the nature of mass is encapsulated in the [Higgs Field](https://en.wikipedia.org/wiki/Higgs_field). This is an advanced field with a potential that we are not intending to explore. However, the importance of the basic question of "where does mass come from?" is a fundamental question in physics and the concept of energy, potential, and fields is a critical part of the answer.
 
-[![Where do we think mass comes from?](https://markdown-videos-api.jorgenkh.no/youtube/R7dsACYTTXE?width=720&height=405)](https://inv.n8pjl.ca/watch?v=R7dsACYTTXE)
+[![The Crazy Mass-Giving Mechanism of the Higgs Field Simplified](https://markdown-videos-api.jorgenkh.no/youtube/R7dsACYTTXE?width=720&height=405)](https://inv.n8pjl.ca/watch?v=R7dsACYTTXE)
 
 - Non-Commercial Link: [https://inv.n8pjl.ca/watch?v=R7dsACYTTXE](https://inv.n8pjl.ca/watch?v=R7dsACYTTXE)
 - Commercial Link: [https://youtube.com/watch?v=R7dsACYTTXE](https://youtube.com/watch?v=R7dsACYTTXE)
@@ -233,7 +249,7 @@ To frame how interesting and complex energy can be, consider this video from the
 
 *How do we get light from a circuit when we close a switch?*
 
-[![How does electricity work?](https://markdown-videos-api.jorgenkh.no/youtube/bHIhgxav9LY?width=720&height=405)](https://inv.n8pjl.ca/watch?v=bHIhgxav9LY)
+[![The Big Misconception About Electricity](https://markdown-videos-api.jorgenkh.no/youtube/bHIhgxav9LY?width=720&height=405)](https://inv.n8pjl.ca/watch?v=bHIhgxav9LY)
 
 - Non-Commercial Link: [https://inv.n8pjl.ca/watch?v=bHIhgxav9LY](https://inv.n8pjl.ca/watch?v=bHIhgxav9LY)
 - Commercial Link: [https://youtube.com/watch?v=bHIhgxav9LY](https://youtube.com/watch?v=bHIhgxav9LY)
@@ -326,7 +342,7 @@ Topics: Introduction, Vectors, Kinematic Quantities
   - CW1: [Introduction to Classical Mechanics](../docs/handwritten-notes/CW1.pdf)
 - Lecture Videos:
   - 8 Jan 2024 (tech did not comply)
-  - 10 Jan 2024 [(Zoom Recording)](https://mediaspace.msu.edu/media/1_2m56jymf)
+  - [10 Jan 2024](https://mediaspace.msu.edu/media/1_2m56jymf)
 
 #### Assignments
 
