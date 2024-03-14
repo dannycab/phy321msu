@@ -34,7 +34,7 @@ The video below describes the concept and history of the FFT and its importance.
   - CW10: [Fourier Series](../docs/handwritten-notes/CW10.pdf)
 - Lecture Videos:
   - [11 Mar 2024](https://mediaspace.msu.edu/media/t/1_wtepzqw0)
-  - 13 Mar 2024
+  - [13 Mar 2024](https://mediaspace.msu.edu/media/t/1_fk8a37u1)
 
 ### Week 9, March 4-8, 2024
 
