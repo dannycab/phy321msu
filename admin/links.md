@@ -63,6 +63,7 @@ The video below describes the concept and history of the FFT and its importance.
 - Lecture Videos:
   - [11 Mar 2024](https://mediaspace.msu.edu/media/t/1_wtepzqw0)
   - [13 Mar 2024](https://mediaspace.msu.edu/media/t/1_fk8a37u1)
+  - [15 Mar 2024](https://mediaspace.msu.edu/media/t/1_g79z705y)
 
 ### Week 9, March 4-8, 2024
 
