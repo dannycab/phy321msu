@@ -3,11 +3,12 @@
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-content_root="" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
     <title>Solutions - Midterm 1 (Due 23 Feb) &#8212; Classical Mechanics</title>
   
   
@@ -18,28 +19,28 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+  <link href="../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
-  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -48,18 +49,14 @@
     <script src="../_static/doctools.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../_static/design-tabs.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
@@ -77,10 +74,9 @@ const thebe_selector_output = ".output, .cell_output"
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
   
   <div id="pst-scroll-pixel-helper"></div>
-
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
     <i class="fa-solid fa-arrow-up"></i>
@@ -121,11 +117,14 @@ const thebe_selector_output = ".output, .cell_output"
 </form></div>
   </div>
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
   
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
+      
+      
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -140,9 +139,11 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
   
 
 <a class="navbar-brand logo" href="../intro.html">
+  
   
   
   
@@ -152,12 +153,23 @@ const thebe_selector_output = ".output, .cell_output"
       
     
     
-    <img src="../_static/spartan-helmet.png" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="../_static/spartan-helmet.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="../_static/spartan-helmet.png" class="logo__image only-light" alt="Classical Mechanics - Home"/>
+    <script>document.write(`<img src="../_static/spartan-helmet.png" class="logo__image only-dark" alt="Classical Mechanics - Home"/>`);</script>
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -355,6 +367,7 @@ const thebe_selector_output = ".output, .cell_output"
 </button>
 
 
+
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
@@ -364,6 +377,7 @@ document.write(`
   </button>
 `);
 </script>
+
 
 <script>
 document.write(`
@@ -406,11 +420,11 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
   <!-- HTML file automatically generated from DocOnce source (https://github.com/doconce/doconce/)
 doconce format html Firstmidterm2022.do.txt --no_mako -->
-<!-- dom:TITLE: PHY321: Classical Mechanics 1 --><div class="tex2jax_ignore mathjax_ignore section" id="solutions-midterm-1-due-23-feb">
+<!-- dom:TITLE: PHY321: Classical Mechanics 1 --><section class="tex2jax_ignore mathjax_ignore" id="solutions-midterm-1-due-23-feb">
 <h1>Solutions - Midterm 1 (Due 23 Feb)<a class="headerlink" href="#solutions-midterm-1-due-23-feb" title="Permalink to this heading">#</a></h1>
 <p><strong>Solution Midterm 1, Spring 2024</strong></p>
 <div class="cell docutils container">
@@ -425,7 +439,7 @@ doconce format html Firstmidterm2022.do.txt --no_mako -->
 </div>
 </div>
 </div>
-<div class="section" id="part-1-particle-in-a-one-dimensional-potential">
+<section id="part-1-particle-in-a-one-dimensional-potential">
 <h2>Part 1, Particle in a one-dimensional  potential<a class="headerlink" href="#part-1-particle-in-a-one-dimensional-potential" title="Permalink to this heading">#</a></h2>
 <p>We consider a particle (for example an atom) of mass <span class="math notranslate nohighlight">\(m\)</span> moving in a one-dimensional potential,</p>
 <div class="math notranslate nohighlight">
@@ -483,7 +497,7 @@ V(x)=\frac{V_0}{d^4}\left(x^4-2x^2d^2+d^4\right).
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/54088692c8ecda2173d40ea5543f595792e602abe568db1538f1af982ed376ef.png" src="../_images/54088692c8ecda2173d40ea5543f595792e602abe568db1538f1af982ed376ef.png" />
+<img alt="../_images/19f93dc88008c020bd002aed95340f93a55ae6aa02dc38ad2b990092cd1f7622.png" src="../_images/19f93dc88008c020bd002aed95340f93a55ae6aa02dc38ad2b990092cd1f7622.png" />
 </div>
 </div>
 <ol class="arabic simple" start="2">
@@ -523,7 +537,7 @@ V(x)=\frac{V_0}{d^4}\left(x^4-2x^2d^2+d^4\right).
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/7c903879c4e4d56039415196cbf1cfb3e10093c3bb5ceb5af175b6a501b4cd3e.png" src="../_images/7c903879c4e4d56039415196cbf1cfb3e10093c3bb5ceb5af175b6a501b4cd3e.png" />
+<img alt="../_images/6e5d55351f818d54eab449240397c8c9ee882381cdfc1380a7057abe4c65471d.png" src="../_images/6e5d55351f818d54eab449240397c8c9ee882381cdfc1380a7057abe4c65471d.png" />
 </div>
 </div>
 <ol class="arabic simple" start="3">
@@ -644,7 +658,7 @@ V(x)=\frac{V_0}{d^4}\left(x^4-2x^2d^2+d^4\right).
 <p>The first thing to notice is that <span class="math notranslate nohighlight">\(V(d)=0\)</span>, so we increasing the velocity of the particle at <span class="math notranslate nohighlight">\(x=d\)</span> to see what happens. This does allow us to calculate the total energy of the particle in each trial and plot it directly. The table below shows the total energy of the particle in each trial where we use (<span class="math notranslate nohighlight">\(m=1\)</span>):</p>
 <div class="math notranslate nohighlight">
 \[E_{tot} = V(d) + K(v) = 0 + \dfrac{1}{2}mv^2 = 0.5v^2.\]</div>
-<table class="colwidths-auto table">
+<table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p><span class="math notranslate nohighlight">\(v_0\)</span> (m/s)</p></th>
 <th class="head"><p><span class="math notranslate nohighlight">\(E_{tot}\)</span> (J)</p></th>
@@ -694,7 +708,7 @@ V(x)=\frac{V_0}{d^4}\left(x^4-2x^2d^2+d^4\right).
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/da40c2f7229b92259f0a2ce665e70923a5ec4c33ba12004e6b908161d39b86a6.png" src="../_images/da40c2f7229b92259f0a2ce665e70923a5ec4c33ba12004e6b908161d39b86a6.png" />
+<img alt="../_images/2ac98da30d34968eb47ef7e4e8cff16d43173204ad07c4711f0137762e2dd518.png" src="../_images/2ac98da30d34968eb47ef7e4e8cff16d43173204ad07c4711f0137762e2dd518.png" />
 </div>
 </div>
 <div class="tip admonition">
@@ -744,10 +758,10 @@ V(x)=\frac{V_0}{d^4}\left(x^4-2x^2d^2+d^4\right).
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x1403be670&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x137a63560&gt;
 </pre></div>
 </div>
-<img alt="../_images/ba52baebc77b27e28f533b156b989339c92d9b93f95b67837b8c439743e67ce8.png" src="../_images/ba52baebc77b27e28f533b156b989339c92d9b93f95b67837b8c439743e67ce8.png" />
+<img alt="../_images/b3727bcdc87ce37910b9d450fcd04cd08f8ba467dcd3f55d67bf417c798de978.png" src="../_images/b3727bcdc87ce37910b9d450fcd04cd08f8ba467dcd3f55d67bf417c798de978.png" />
 </div>
 </div>
 <div class="tip admonition">
@@ -823,10 +837,10 @@ V(x)=\frac{V_0}{d^4}\left(x^4-2x^2d^2+d^4\right).
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x1404dc5b0&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x1376f19d0&gt;
 </pre></div>
 </div>
-<img alt="../_images/2885d279df443df29f138e294919ff5d42d434ca9eda16c5d8e1841ae5bc7bbb.png" src="../_images/2885d279df443df29f138e294919ff5d42d434ca9eda16c5d8e1841ae5bc7bbb.png" />
+<img alt="../_images/994584433c3ceebe4cd409c1d5741e2bcc399020e917d669eea561e882826b81.png" src="../_images/994584433c3ceebe4cd409c1d5741e2bcc399020e917d669eea561e882826b81.png" />
 </div>
 </div>
 <ol class="arabic simple" start="9">
@@ -873,13 +887,13 @@ V(x)=\frac{V_0}{d^4}\left(x^4-2x^2d^2+d^4\right).
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/8f0985e49d285c5e8877e0c1c8046d4078d0720956b4145b53df5309e2759a9a.png" src="../_images/8f0985e49d285c5e8877e0c1c8046d4078d0720956b4145b53df5309e2759a9a.png" />
-<img alt="../_images/2990000b76a0c87b28baa0475bb1486392b853ebad2b1f9ca814d40ef9bbc2d3.png" src="../_images/2990000b76a0c87b28baa0475bb1486392b853ebad2b1f9ca814d40ef9bbc2d3.png" />
-<img alt="../_images/ef9631c5c32715f8268c7f2cead2918764c16e1595a3f1714e652a6af2ad4e0d.png" src="../_images/ef9631c5c32715f8268c7f2cead2918764c16e1595a3f1714e652a6af2ad4e0d.png" />
+<img alt="../_images/c40cd19e78670f7c0cafc7cf9cbed4eb8afd72b2eca20310b14671d6b119bddf.png" src="../_images/c40cd19e78670f7c0cafc7cf9cbed4eb8afd72b2eca20310b14671d6b119bddf.png" />
+<img alt="../_images/3a3815408547d3065858e9c0e3c88e27fb993488d5ea5663aaadfa6f89aeaa48.png" src="../_images/3a3815408547d3065858e9c0e3c88e27fb993488d5ea5663aaadfa6f89aeaa48.png" />
+<img alt="../_images/6ea71ffd09861860be46fa38713c994af307207327d3a6d5c6861a26b2850305.png" src="../_images/6ea71ffd09861860be46fa38713c994af307207327d3a6d5c6861a26b2850305.png" />
 </div>
 </div>
-</div>
-<div class="section" id="part-2-a-model-of-quark-confinement">
+</section>
+<section id="part-2-a-model-of-quark-confinement">
 <h2>Part 2, a model of quark confinement<a class="headerlink" href="#part-2-a-model-of-quark-confinement" title="Permalink to this heading">#</a></h2>
 <p>In part 2, we are going to study a new potential. This potential contains the basic mathematical components needed to describe the confinement of quarks through a term <span class="math notranslate nohighlight">\(\kappa x\)</span>. The aim of this exercise is to try to develop your intuition about the motion of physical objects due to specific forces. Then we will test our intuition by running simulations. The potential, in one dimension only is defined for <span class="math notranslate nohighlight">\(x\in [0.2,\infty)\)</span>.  It reads:</p>
 <div class="math notranslate nohighlight">
@@ -928,7 +942,7 @@ V(x) = -\frac{\gamma}{x}+\frac{\delta}{x^2}+\kappa x,
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/3b4024d63d9caaf4cb2eb3331b6fae9399f6f3da16ef25360717f055c4ed0bc0.png" src="../_images/3b4024d63d9caaf4cb2eb3331b6fae9399f6f3da16ef25360717f055c4ed0bc0.png" />
+<img alt="../_images/be9e2325cca6ed2e3d97d8c4a538edde4627ebba4efdf2a7ce2fa5846de54aa4.png" src="../_images/be9e2325cca6ed2e3d97d8c4a538edde4627ebba4efdf2a7ce2fa5846de54aa4.png" />
 </div>
 </div>
 <ol class="arabic simple" start="2">
@@ -989,7 +1003,7 @@ V(x) = -\frac{\gamma}{x}+\frac{\delta}{x^2}+\kappa x,
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/a77772573aed9fd3983dab570d815dce9b6a97a49cb5422b2be50fa4c626c4d7.png" src="../_images/a77772573aed9fd3983dab570d815dce9b6a97a49cb5422b2be50fa4c626c4d7.png" />
+<img alt="../_images/0091e655adaf9dfe75a6ffa3ce46944f53dd5b4176d08ff5c1149bca8dce067f.png" src="../_images/0091e655adaf9dfe75a6ffa3ce46944f53dd5b4176d08ff5c1149bca8dce067f.png" />
 </div>
 </div>
 <div class="tip admonition">
@@ -1025,7 +1039,7 @@ V(x) = -\frac{\gamma}{x}+\frac{\delta}{x^2}+\kappa x,
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/172e15362082cbec2d4e055557e0126582e76ba44fc1ea9b85ff25653138a0de.png" src="../_images/172e15362082cbec2d4e055557e0126582e76ba44fc1ea9b85ff25653138a0de.png" />
+<img alt="../_images/e980a98944c566a0933b30077310545419be908de4758591315f42372b701054.png" src="../_images/e980a98944c566a0933b30077310545419be908de4758591315f42372b701054.png" />
 </div>
 </div>
 <ol class="arabic simple" start="4">
@@ -1086,8 +1100,8 @@ V(x) = -\frac{\gamma}{x}+\frac{\delta}{x^2}+\kappa x,
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/0ab2e7c2a902b6002eef0134c691c536683ac99184c17a1301a1edf149c5e86d.png" src="../_images/0ab2e7c2a902b6002eef0134c691c536683ac99184c17a1301a1edf149c5e86d.png" />
-<img alt="../_images/58e29272ffc1cfa7b89779831a2e1d8d0dba330204dc1190c4b8788477c6294d.png" src="../_images/58e29272ffc1cfa7b89779831a2e1d8d0dba330204dc1190c4b8788477c6294d.png" />
+<img alt="../_images/86fda4fc0c4cd6ab674a73f60b3b52973cf1e93f5e40180849127f54c1f63f55.png" src="../_images/86fda4fc0c4cd6ab674a73f60b3b52973cf1e93f5e40180849127f54c1f63f55.png" />
+<img alt="../_images/644aec65186e2876ea388e9d8238fdc8021dc30a05afd195765eac9c1526431e.png" src="../_images/644aec65186e2876ea388e9d8238fdc8021dc30a05afd195765eac9c1526431e.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -1108,11 +1122,11 @@ V(x) = -\frac{\gamma}{x}+\frac{\delta}{x^2}+\kappa x,
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/a8a413aa90bcb4a813322d9d0fc45c7e219f007c4893630c0e5dccabf6dbe745.png" src="../_images/a8a413aa90bcb4a813322d9d0fc45c7e219f007c4893630c0e5dccabf6dbe745.png" />
+<img alt="../_images/d52b3c016db1326ec1144bad7687fdad307a2962b7a6122c1d2e484b7fd153a1.png" src="../_images/d52b3c016db1326ec1144bad7687fdad307a2962b7a6122c1d2e484b7fd153a1.png" />
 </div>
 </div>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -1142,7 +1156,7 @@ V(x) = -\frac{\gamma}{x}+\frac{\delta}{x^2}+\kappa x,
               
               
                 <footer class="prev-next-footer">
-                  <!-- Previous / next buttons -->
+                  
 <div class="prev-next-area">
     <a class="left-prev"
        href="../midterms/midterm1.html"
@@ -1170,6 +1184,7 @@ V(x) = -\frac{\gamma}{x}+\frac{\delta}{x^2}+\kappa x,
             
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -1200,9 +1215,10 @@ By Danny Caballero, Morten Hjorth-Jensen
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
-      © Copyright 2022.
+      © Copyright 2023.
       <br/>
     
   </p>
@@ -1226,8 +1242,8 @@ By Danny Caballero, Morten Hjorth-Jensen
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
 
   <footer class="bd-footer">
   </footer>
