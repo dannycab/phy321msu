@@ -31,7 +31,7 @@ This mathematics is very powerful and underlies how we can develop equations of 
 - Handwritten Notes:
   - CW11: [Calculus of Variations](../docs/handwritten-notes/CW11.pdf)
 - Lecture Videos:
-  - 18 Mar 2024
+  - [18 Mar 2024](https://mediaspace.msu.edu/media/t/1_rr109ryy)
   - 20 Mar 2024
 
 ### Week 10, March 11-15, 2024
