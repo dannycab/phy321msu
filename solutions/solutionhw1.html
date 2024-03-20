@@ -3,11 +3,12 @@
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-content_root="" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
     <title>Solutions - Homework 1 (Due 19 Jan) &#8212; Classical Mechanics</title>
   
   
@@ -18,28 +19,28 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+  <link href="../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
-  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -48,18 +49,14 @@
     <script src="../_static/doctools.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../_static/design-tabs.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
@@ -77,10 +74,9 @@ const thebe_selector_output = ".output, .cell_output"
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
   
   <div id="pst-scroll-pixel-helper"></div>
-
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
     <i class="fa-solid fa-arrow-up"></i>
@@ -121,11 +117,14 @@ const thebe_selector_output = ".output, .cell_output"
 </form></div>
   </div>
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
   
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
+      
+      
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -140,9 +139,11 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
   
 
 <a class="navbar-brand logo" href="../intro.html">
+  
   
   
   
@@ -152,12 +153,23 @@ const thebe_selector_output = ".output, .cell_output"
       
     
     
-    <img src="../_static/spartan-helmet.png" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="../_static/spartan-helmet.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="../_static/spartan-helmet.png" class="logo__image only-light" alt="Classical Mechanics - Home"/>
+    <script>document.write(`<img src="../_static/spartan-helmet.png" class="logo__image only-dark" alt="Classical Mechanics - Home"/>`);</script>
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -211,6 +223,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../homeworks/hw5.html">Homework 5 (Due 08 Mar)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="solutionhw5.html">Solutions - Homework 5 (Due 08 Mar)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../homeworks/hw6.html">Homework 6 (Due 15 Mar)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="solutionhw6.html">Solutions - Homework 6 (Due 15 Mar)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../homeworks/hw7.html">Homework 7 (Due 22 Mar)</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Honors Projects</span></p>
@@ -355,6 +368,7 @@ const thebe_selector_output = ".output, .cell_output"
 </button>
 
 
+
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
@@ -364,6 +378,7 @@ document.write(`
   </button>
 `);
 </script>
+
 
 <script>
 document.write(`
@@ -416,12 +431,12 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
-  <div class="tex2jax_ignore mathjax_ignore section" id="solutions-homework-1-due-19-jan">
+  <section class="tex2jax_ignore mathjax_ignore" id="solutions-homework-1-due-19-jan">
 <h1>Solutions - Homework 1 (Due 19 Jan)<a class="headerlink" href="#solutions-homework-1-due-19-jan" title="Permalink to this heading">#</a></h1>
 <p><strong>Solution Homework 1, Spring 2024</strong></p>
-<div class="section" id="exercise-1-15-pt-math-reminder-properties-of-exponential-function">
+<section id="exercise-1-15-pt-math-reminder-properties-of-exponential-function">
 <h2>Exercise 1 (15 pt), math reminder, properties of exponential function<a class="headerlink" href="#exercise-1-15-pt-math-reminder-properties-of-exponential-function" title="Permalink to this heading">#</a></h2>
 <p>The first exercise is meant to remind ourselves about properties of the exponential function and imaginary numbers. This is highly relevant later in this course when we start analyzing oscillatory motion and some wave mechanics.</p>
 <p>As physicists we should thus feel comfortable with expressions that include <span class="math notranslate nohighlight">\(\exp{(\imath 2\pi f t)}\)</span>. Here <span class="math notranslate nohighlight">\(t\)</span> could be interpreted as time and <span class="math notranslate nohighlight">\(f\)</span> as a frequency. We know that <span class="math notranslate nohighlight">\(\imath = \sqrt(-1)\)</span> is the imaginary unit number.</p>
@@ -483,8 +498,8 @@ document.write(`
 <p class="admonition-title">SOLUTION</p>
 <p>Answers can vary.</p>
 </div>
-</div>
-<div class="section" id="exercise-2-15-pt-vector-algebra">
+</section>
+<section id="exercise-2-15-pt-vector-algebra">
 <h2>Exercise 2 (15 pt), Vector algebra<a class="headerlink" href="#exercise-2-15-pt-vector-algebra" title="Permalink to this heading">#</a></h2>
 <p>As we have quickly realized, forces and motion in three dimensions are best described using vectors. Here we perform some elementary vector algebra that we wil need to have as tacit knowledge for the rest of the course. These operations are not typicay taken with specific numbers, but rather with vectors in general. When we need to, we use the notation <span class="math notranslate nohighlight">\(\boldsymbol{a}=(a_x,a_y,a_z)\)</span> for vectors in three dimensions. To get us started the first two questions below include numerical values, but the third question expects you to use the general notation.</p>
 <ul class="simple">
@@ -603,8 +618,8 @@ c_z = a_x b_y - a_y b_x.
 \]</div>
 <p>The proof is identical for <span class="math notranslate nohighlight">\(\boldsymbol{b} \cdot \boldsymbol{c}\)</span>.</p>
 </div>
-</div>
-<div class="section" id="exercise-3-10-pt-more-vector-mathematics">
+</section>
+<section id="exercise-3-10-pt-more-vector-mathematics">
 <h2>Exercise 3 (10 pt), More vector mathematics<a class="headerlink" href="#exercise-3-10-pt-more-vector-mathematics" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>3a (5pt) Show (using the fact that multiplication of reals is distributive)
@@ -638,8 +653,8 @@ that <span class="math notranslate nohighlight">\(\boldsymbol{a}(\boldsymbol{b}+
 \end{align*}
 \end{split}\]</div>
 </div>
-</div>
-<div class="section" id="exercise-4-10-pt-algebra-of-cross-products">
+</section>
+<section id="exercise-4-10-pt-algebra-of-cross-products">
 <h2>Exercise 4 (10 pt), Algebra of cross products<a class="headerlink" href="#exercise-4-10-pt-algebra-of-cross-products" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>4a (5pt) Show that the cross products are distributive
@@ -746,8 +761,8 @@ c_x &amp; c_y &amp; c_z
 \[ \frac{d}{dt}(\boldsymbol{a}(t) \times \boldsymbol{b}(t)) = \boldsymbol{a}(t) \times \frac{d\boldsymbol{b}(t)}{dt} + \frac{d\boldsymbol{a}(t)}{dt} \times \boldsymbol{b}(t). \]</div>
 <p>This proves the required relationship and demonstrates that the time derivative of a cross product can be distributed across the cross product operation while maintaining the order of factors, which is crucial because the cross product is not commutative.</p>
 </div>
-</div>
-<div class="section" id="exercise-5-10-pt-area-of-triangle-and-law-of-sines">
+</section>
+<section id="exercise-5-10-pt-area-of-triangle-and-law-of-sines">
 <h2>Exercise 5 (10 pt), Area of triangle and law of sines<a class="headerlink" href="#exercise-5-10-pt-area-of-triangle-and-law-of-sines" title="Permalink to this heading">#</a></h2>
 <p>The three vectors <span class="math notranslate nohighlight">\(\boldsymbol{a}\)</span>, <span class="math notranslate nohighlight">\(\boldsymbol{b}\)</span>, and <span class="math notranslate nohighlight">\(\boldsymbol{c}\)</span> are the three sides of a triangle <em>ABC</em>. The angles <span class="math notranslate nohighlight">\(\alpha\)</span>, <span class="math notranslate nohighlight">\(\beta\)</span>, and <span class="math notranslate nohighlight">\(\gamma\)</span> are the angles opposite the sides <span class="math notranslate nohighlight">\(\boldsymbol{a}\)</span>, <span class="math notranslate nohighlight">\(\boldsymbol{b}\)</span>, and <span class="math notranslate nohighlight">\(\boldsymbol{c}\)</span>, respectively. as shown below.</p>
 <p><img alt="triangle" src="../_images/1.15-triangle.png" /></p>
@@ -787,8 +802,8 @@ We recognize that <span class="math notranslate nohighlight">\(c_y\)</span> is t
 \frac{abc}{2\mathrm{area}}=    \frac{c}{\sin{\gamma}}=\frac{a}{\sin{\alpha}}=\frac{b}{\sin{\beta}}.
 \]</div>
 </div>
-</div>
-<div class="section" id="exercise-6-40pt-numerical-elements-getting-started-with-some-simple-data">
+</section>
+<section id="exercise-6-40pt-numerical-elements-getting-started-with-some-simple-data">
 <h2>Exercise 6 (40pt), Numerical elements, getting started with some simple data<a class="headerlink" href="#exercise-6-40pt-numerical-elements-getting-started-with-some-simple-data" title="Permalink to this heading">#</a></h2>
 <p>Our first numerical attempt will involve reading data from file or
 just setting up two vectors, one for position and one for time. Our data are from
@@ -848,7 +863,7 @@ V2:  [4 5 6]
 <li><p>6d (2pt) Calculate the cross product <span class="math notranslate nohighlight">\(\boldsymbol{V}_1\times\boldsymbol{V}_2\)</span>.</p></li>
 </ul>
 <p>Here is some useful explanation on numpy array operations if you feel a bit confused by what is happening, see <a class="reference external" href="https://www.pluralsight.com/guides/overview-basic-numpy-operations">https://www.pluralsight.com/guides/overview-basic-numpy-operations</a></p>
-<div class="section" id="a-6d-solutions">
+<section id="a-6d-solutions">
 <h3>6a-6d, solutions<a class="headerlink" href="#a-6d-solutions" title="Permalink to this heading">#</a></h3>
 <p>The following code prints the first two exercises</p>
 <div class="cell docutils container">
@@ -937,8 +952,8 @@ have already imported)</p>
 <tr><td align="center">   x[m]    </td> <td align="center">   10      </td> <td align="center">   20      </td> <td align="center">   30      </td> <td align="center">   40      </td> <td align="center">   50      </td> <td align="center">   60      </td> <td align="center">   70      </td> <td align="center">   80      </td> <td align="center">   90      </td> <td align="center">   100     </td> </tr>
 <tr><td align="center">   t[s]    </td> <td align="center">   1.85    </td> <td align="center">   2.87    </td> <td align="center">   3.78    </td> <td align="center">   4.65    </td> <td align="center">   5.50    </td> <td align="center">   6.32    </td> <td align="center">   7.14    </td> <td align="center">   7.96    </td> <td align="center">   8.79    </td> <td align="center">   9.69    </td> </tr>
 </tbody>
-</table></div>
-<div class="section" id="e-6f-6pt-6pt-solution">
+</table></section>
+<section id="e-6f-6pt-6pt-solution">
 <h3>6e-6f (6pt)+(6pt), solution<a class="headerlink" href="#e-6f-6pt-6pt-solution" title="Permalink to this heading">#</a></h3>
 <p>You can here make a file with the above data and read them in and set
 up two vectors, one for time and one for position. Alternatively, you
@@ -960,11 +975,11 @@ your Python code.
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/8e12d3f9925a4bb92d9d2b65baf8109d5064df8c0dc96a101f7045dd10959e56.png" src="../_images/8e12d3f9925a4bb92d9d2b65baf8109d5064df8c0dc96a101f7045dd10959e56.png" />
+<img alt="../_images/f15627ce4da4333c47ec918481e4cef6362bccb6ddf9f219791819447af56471.png" src="../_images/f15627ce4da4333c47ec918481e4cef6362bccb6ddf9f219791819447af56471.png" />
 </div>
 </div>
-</div>
-<div class="section" id="g-10pt-solution">
+</section>
+<section id="g-10pt-solution">
 <h3>6g (10pt), solution<a class="headerlink" href="#g-10pt-solution" title="Permalink to this heading">#</a></h3>
 <p>Compute thereafter the mean velocity for every interval <span class="math notranslate nohighlight">\(i\)</span> and the total velocity (from <span class="math notranslate nohighlight">\(i=0\)</span> to the given interval <span class="math notranslate nohighlight">\(i\)</span>) for each interval and plot these two quantities as function of time. Comment your results.</p>
 <div class="cell docutils container">
@@ -981,8 +996,8 @@ your Python code.
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="h-10pt-solution">
+</section>
+<section id="h-10pt-solution">
 <h3>6h (10pt), solution<a class="headerlink" href="#h-10pt-solution" title="Permalink to this heading">#</a></h3>
 <p>Finally, compute and print and plot the mean velocities, total average velocity, acceleration for each interval and the total acceleration.</p>
 <div class="cell docutils container">
@@ -1156,9 +1171,9 @@ based on the present analysis, that is the above table? Assume he kept
 a constant velocity like the one he had from 60m to 80m. How fast
 could he have run if he had kept the same velocity till he reached
 100m?</p>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -1188,7 +1203,7 @@ could he have run if he had kept the same velocity till he reached
               
               
                 <footer class="prev-next-footer">
-                  <!-- Previous / next buttons -->
+                  
 <div class="prev-next-area">
     <a class="left-prev"
        href="../homeworks/hw1.html"
@@ -1216,6 +1231,7 @@ could he have run if he had kept the same velocity till he reached
             
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -1256,9 +1272,10 @@ By Danny Caballero, Morten Hjorth-Jensen
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
-      © Copyright 2022.
+      © Copyright 2023.
       <br/>
     
   </p>
@@ -1282,8 +1299,8 @@ By Danny Caballero, Morten Hjorth-Jensen
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
 
   <footer class="bd-footer">
   </footer>

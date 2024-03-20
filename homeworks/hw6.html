@@ -3,11 +3,12 @@
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-content_root="" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
     <title>Homework 6 (Due 15 Mar) &#8212; Classical Mechanics</title>
   
   
@@ -18,28 +19,28 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+  <link href="../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
-  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -48,25 +49,21 @@
     <script src="../_static/doctools.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../_static/design-tabs.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'homeworks/hw6';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Homework 7 (Due 22 Mar)" href="hw7.html" />
+    <link rel="next" title="Solutions - Homework 6 (Due 15 Mar)" href="../solutions/solutionhw6.html" />
     <link rel="prev" title="Solutions - Homework 5 (Due 08 Mar)" href="../solutions/solutionhw5.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -77,10 +74,9 @@ const thebe_selector_output = ".output, .cell_output"
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
   
   <div id="pst-scroll-pixel-helper"></div>
-
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
     <i class="fa-solid fa-arrow-up"></i>
@@ -121,11 +117,14 @@ const thebe_selector_output = ".output, .cell_output"
 </form></div>
   </div>
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
   
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
+      
+      
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -140,9 +139,11 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
   
 
 <a class="navbar-brand logo" href="../intro.html">
+  
   
   
   
@@ -152,12 +153,23 @@ const thebe_selector_output = ".output, .cell_output"
       
     
     
-    <img src="../_static/spartan-helmet.png" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="../_static/spartan-helmet.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="../_static/spartan-helmet.png" class="logo__image only-light" alt="Classical Mechanics - Home"/>
+    <script>document.write(`<img src="../_static/spartan-helmet.png" class="logo__image only-dark" alt="Classical Mechanics - Home"/>`);</script>
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -211,6 +223,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="hw5.html">Homework 5 (Due 08 Mar)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../solutions/solutionhw5.html">Solutions - Homework 5 (Due 08 Mar)</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Homework 6 (Due 15 Mar)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../solutions/solutionhw6.html">Solutions - Homework 6 (Due 15 Mar)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="hw7.html">Homework 7 (Due 22 Mar)</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Honors Projects</span></p>
@@ -355,6 +368,7 @@ const thebe_selector_output = ".output, .cell_output"
 </button>
 
 
+
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
@@ -364,6 +378,7 @@ document.write(`
   </button>
 `);
 </script>
+
 
 <script>
 document.write(`
@@ -418,11 +433,11 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
   <!-- HTML file automatically generated from DocOnce source (https://github.com/doconce/doconce/)
 doconce format html hw5.do.txt --no_mako -->
-<!-- dom:TITLE: PHY321: Classical Mechanics 1 --><div class="tex2jax_ignore mathjax_ignore section" id="homework-6-due-15-mar">
+<!-- dom:TITLE: PHY321: Classical Mechanics 1 --><section class="tex2jax_ignore mathjax_ignore" id="homework-6-due-15-mar">
 <h1>Homework 6 (Due 15 Mar)<a class="headerlink" href="#homework-6-due-15-mar" title="Permalink to this heading">#</a></h1>
 <p><strong>Due Mar 15 (midnight)</strong></p>
 <p>Date: <strong>Mar 4, 2024</strong>
@@ -439,7 +454,7 @@ Total points: <strong>100</strong></p>
 </div>
 </div>
 </div>
-<div class="section" id="introduction-to-homework-6">
+<section id="introduction-to-homework-6">
 <h2>Introduction to Homework 6<a class="headerlink" href="#introduction-to-homework-6" title="Permalink to this heading">#</a></h2>
 <p>This week’s exercises focus on oscillators and how to approximate the solution to the equations of motion using the SHO. The relevant reading background is:</p>
 <ol class="arabic simple">
@@ -448,15 +463,15 @@ Total points: <strong>100</strong></p>
 <li><p>chapters 2.0-2.3 and 5.0-5.2 of Strogatz</p></li>
 </ol>
 <p>In both textbooks there are many nice worked out examples.</p>
-<div class="section" id="practicalities-about-homeworks-and-projects">
+<section id="practicalities-about-homeworks-and-projects">
 <h3>Practicalities about  homeworks and projects<a class="headerlink" href="#practicalities-about-homeworks-and-projects" title="Permalink to this heading">#</a></h3>
 <ol class="arabic simple">
 <li><p>You can work in groups (optimal groups are often 2-3 people) or by yourself. If you work as a group you can hand in one answer only if you wish. <strong>Remember to write your name(s)</strong>!</p></li>
 <li><p>Homeworks are available ten days before the deadline.</p></li>
 <li><p>How do I(we)  hand in?  You can hand in the paper and pencil exercises as a scanned document. For this homework this applies to exercises 1-4. Alternatively, you can hand in everything (if you are ok with typing mathematical formulae using say Latex) as a jupyter notebook at D2L. The numerical exercise(s) (exercise 5-6 here) should always be handed in as a jupyter notebook by the deadline at D2L.</p></li>
 </ol>
-</div>
-<div class="section" id="exercise-1-10pt-morse-potential-as-an-sho">
+</section>
+<section id="exercise-1-10pt-morse-potential-as-an-sho">
 <h3>Exercise 1 (10pt) Morse Potential as an SHO<a class="headerlink" href="#exercise-1-10pt-morse-potential-as-an-sho" title="Permalink to this heading">#</a></h3>
 <p>If the potential has a local minimum, we can often find SHO approximation for that potential near the local minimum.</p>
 <p>The <a class="reference external" href="https://en.wikipedia.org/wiki/Morse_potential">Morse potential</a> is a convenient model for the potential energy of a diatomic molecule. The potential is a radial one and thus one-dimensional. It is given by,</p>
@@ -469,8 +484,8 @@ Total points: <strong>100</strong></p>
 <li><p>1c (3pt) Rewrite the potential in terms of the displacement from equilibrium, <span class="math notranslate nohighlight">\(r = r_e + x\)</span>. Expand the potential to second order in <span class="math notranslate nohighlight">\(x\)</span>.</p></li>
 <li><p>1d (2pt) Find the effective spring constant, <span class="math notranslate nohighlight">\(k\)</span>, for the potential near the minimum. What is the frequency of small oscillations about the minimum?</p></li>
 </ul>
-</div>
-<div class="section" id="exercise-2-10pt-simple-pendulum-as-an-sho">
+</section>
+<section id="exercise-2-10pt-simple-pendulum-as-an-sho">
 <h3>Exercise 2 (10pt), Simple Pendulum as an SHO<a class="headerlink" href="#exercise-2-10pt-simple-pendulum-as-an-sho" title="Permalink to this heading">#</a></h3>
 <p>Consider a pendulum of length <span class="math notranslate nohighlight">\(L\)</span> and mass <span class="math notranslate nohighlight">\(m\)</span>. It can swing back and forth in a plane, under the influence of gravity. The pendulum is designed so that it can swing through a full circle.</p>
 <ul class="simple">
@@ -478,8 +493,8 @@ Total points: <strong>100</strong></p>
 <li><p>2b (3pt) Find the potential energy of the pendulum as a function of the angle <span class="math notranslate nohighlight">\(\phi\)</span> it makes with the vertical. (Choose the zero of potential energy to be at the bottom of the pendulum’s swing.)</p></li>
 <li><p>2c (4pt) For small angles, show the potential reduces to an SHO. What is the effective spring constant, <span class="math notranslate nohighlight">\(k\)</span>, for the potential near the minimum? What is the frequency of small oscillations about the minimum?</p></li>
 </ul>
-</div>
-<div class="section" id="exercise-3-10pt-time-averaging-and-the-sho">
+</section>
+<section id="exercise-3-10pt-time-averaging-and-the-sho">
 <h3>Exercise 3 (10pt), Time Averaging and the SHO<a class="headerlink" href="#exercise-3-10pt-time-averaging-and-the-sho" title="Permalink to this heading">#</a></h3>
 <p>Time Averaging is a common tool to use with periodic systems. It also us to discuss what happens to different properties of the system over one period.</p>
 <p>An SHO has a period <span class="math notranslate nohighlight">\(\tau\)</span>. We can find the time average of a variable <span class="math notranslate nohighlight">\(f(t)\)</span> over one period, <span class="math notranslate nohighlight">\(\langle f \rangle\)</span>, by averaging over the period,</p>
@@ -492,8 +507,8 @@ Total points: <strong>100</strong></p>
 </ul>
 <div class="math notranslate nohighlight">
 \[\langle \sin^2(\omega t-\delta)\rangle = \langle \cos^2(\omega t-delta)\rangle = \frac{1}{2}\]</div>
-</div>
-<div class="section" id="exercise-4-10pt-toy-potential">
+</section>
+<section id="exercise-4-10pt-toy-potential">
 <h3>Exercise 4 (10pt), Toy Potential<a class="headerlink" href="#exercise-4-10pt-toy-potential" title="Permalink to this heading">#</a></h3>
 <p>Consider a toy potential of the form,</p>
 <div class="math notranslate nohighlight">
@@ -504,8 +519,8 @@ Total points: <strong>100</strong></p>
 <li><p>4b (3pt) Find the equilibrium position of the potential, i.e. the position where the potential is at a minimum. We will call this <span class="math notranslate nohighlight">\(r_e\)</span>.</p></li>
 <li><p>4c (5pt) Rewrite the potential in terms of the displacement from equilibrium, <span class="math notranslate nohighlight">\(r = r_e + x\)</span>. Expand the potential to second order in <span class="math notranslate nohighlight">\(x\)</span>. What is the effective spring constant, <span class="math notranslate nohighlight">\(k\)</span>, for the potential near the minimum? What is the frequency of small oscillations about the minimum?</p></li>
 </ul>
-</div>
-<div class="section" id="exercise-5-10pt-defining-periodicity">
+</section>
+<section id="exercise-5-10pt-defining-periodicity">
 <h3>Exercise 5 (10pt), Defining Periodicity<a class="headerlink" href="#exercise-5-10pt-defining-periodicity" title="Permalink to this heading">#</a></h3>
 <p>A common issue with oscillators is determining their periodicity. For the SHO, we can show that the period is <span class="math notranslate nohighlight">\(2\pi/\omega_0\)</span> where <span class="math notranslate nohighlight">\(\omega_0\)</span> is the natural frequency of the SHO. How might we define a periodicity more generally? Let’s start with the damped harmonic oscillator. Consider a weakly damped oscillator (<span class="math notranslate nohighlight">\(\beta &lt; \omega_0\)</span>). The motion of the oscillator is given by,</p>
 <div class="math notranslate nohighlight">
@@ -517,8 +532,8 @@ Total points: <strong>100</strong></p>
 <li><p>5b (3pt) Show that an equivalent definition of <span class="math notranslate nohighlight">\(\tau_1\)</span> is twice the time between zero crossings of the motion.</p></li>
 <li><p>5c (3pt) If the damping <span class="math notranslate nohighlight">\(\beta\)</span> is half the natural frequency (<span class="math notranslate nohighlight">\(\omega_0\)</span>), how does the amplitude of the motion decay in one period?</p></li>
 </ul>
-</div>
-<div class="section" id="exercise-6-50-pt-find-your-own-1d-oscillator">
+</section>
+<section id="exercise-6-50-pt-find-your-own-1d-oscillator">
 <h3>Exercise 6 (50 pt), Find your own 1D Oscillator<a class="headerlink" href="#exercise-6-50-pt-find-your-own-1d-oscillator" title="Permalink to this heading">#</a></h3>
 <p>We have built all the tools to study 1D unforced oscillators. Now you get to pick your own potential and study it. You can pick any 1D potential you like, but it should have a local minimum. Make sure it is not a driven oscillator (i.e., no explicit time dependence in the equations of motion). To earn full credit for this exercise, you must:</p>
 <ul class="simple">
@@ -529,7 +544,7 @@ Total points: <strong>100</strong></p>
 <li><p>6e (10pt) Plot the phase diagram of the trajectory (you don’t have to produce a phase diagram, but just plot the trajectory in phase space). What does the phase diagram tell you about the motion?</p></li>
 <li><p>6f (10pt) Find the period of your motion. Here you might have to make some definitions of what periodicity means for your potential.</p></li>
 </ul>
-<div class="section" id="examples-of-1d-potentials">
+<section id="examples-of-1d-potentials">
 <h4>Examples of 1D potentials<a class="headerlink" href="#examples-of-1d-potentials" title="Permalink to this heading">#</a></h4>
 <ol class="arabic simple">
 <li><p><strong>Simple Pendulum (Nonlinear Small Angle Approximation)</strong>:</p>
@@ -558,9 +573,9 @@ Total points: <strong>100</strong></p>
 </ul>
 </li>
 </ol>
-</div>
-</div>
-<div class="section" id="extra-credit-integrating-classwork-with-research">
+</section>
+</section>
+<section id="extra-credit-integrating-classwork-with-research">
 <h3>Extra Credit - Integrating Classwork With Research<a class="headerlink" href="#extra-credit-integrating-classwork-with-research" title="Permalink to this heading">#</a></h3>
 <p>This opportunity will allow you to earn up to 5 extra credit points on a Homework per week. These points can push you above 100% or help make up for missed exercises.
 In order to earn all points you must:</p>
@@ -576,9 +591,9 @@ Talks given by researchers through the following clubs:</p>
 <li><p>Astronomy Club​: Meets Monday Nights</p></li>
 <li><p>Facility For Rare Isotope Beam (FRIB) Seminars: ​Occur multiple times a week</p></li>
 </ul>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -608,7 +623,7 @@ Talks given by researchers through the following clubs:</p>
               
               
                 <footer class="prev-next-footer">
-                  <!-- Previous / next buttons -->
+                  
 <div class="prev-next-area">
     <a class="left-prev"
        href="../solutions/solutionhw5.html"
@@ -620,11 +635,11 @@ Talks given by researchers through the following clubs:</p>
       </div>
     </a>
     <a class="right-next"
-       href="hw7.html"
+       href="../solutions/solutionhw6.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Homework 7 (Due 22 Mar)</p>
+        <p class="prev-next-title">Solutions - Homework 6 (Due 15 Mar)</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -636,6 +651,7 @@ Talks given by researchers through the following clubs:</p>
             
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -678,9 +694,10 @@ By Danny Caballero, Morten Hjorth-Jensen
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
-      © Copyright 2022.
+      © Copyright 2023.
       <br/>
     
   </p>
@@ -704,8 +721,8 @@ By Danny Caballero, Morten Hjorth-Jensen
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
 
   <footer class="bd-footer">
   </footer>
