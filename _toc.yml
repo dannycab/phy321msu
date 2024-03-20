@@ -60,7 +60,7 @@ parts:
   - file: homeworks/hw6.ipynb
   - file: solutions/solutionhw6.ipynb
   - file: homeworks/hw7.ipynb
-  - file: midterms/midterm2.ipynb
+  #- file: midterms/midterm2.ipynb
 - caption: Honors Projects
   numbered: false
   chapters:
