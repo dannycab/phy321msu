@@ -32,7 +32,7 @@ This mathematics is very powerful and underlies how we can develop equations of 
   - CW11: [Calculus of Variations](../docs/handwritten-notes/CW11.pdf)
 - Lecture Videos:
   - [18 Mar 2024](https://mediaspace.msu.edu/media/t/1_rr109ryy)
-  - 20 Mar 2024
+  - [20 Mar 2024](https://mediaspace.msu.edu/media/t/1_dat6u1eo)
 
 ### Week 10, March 11-15, 2024
 
