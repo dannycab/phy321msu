@@ -6,6 +6,52 @@ Materials will appear in reverse chronological order, with the most recent appea
 
 All recorded classes are added to [this playlist](https://mediaspace.msu.edu/playlist/dedicated/1_s1d57uud/.)
 
+### Week 12, March 25-29, 2024
+
+Topics: Lagrangian Mechanics
+
+#### Videos to Watch
+
+While never required, these videos are recommended to help you see the larger picture of what we are doing in class.
+
+##### The Principle of Least Action (20 minute video)
+
+[Newtonian Mechanics](https://en.wikipedia.org/wiki/Newton%27s_laws_of_motion) is an incredibly useful model of the natural world. In fact, it wasn't until the mid 1970s that we were able to truly [test Einstein's gravity as a true replacement](https://en.wikipedia.org/wiki/Tests_of_general_relativity) for Newton. That being said, for most terrestrial situations (macroscopic objects moving at low speeds), Newton's mechanics is very good. However, the problem with Newton is that it requires a few things:
+
+1. We must be able identify each interaction on the object or model an average behavior from many littler interactions (e.g., models of friction vs. detailed E&M forces)
+2. We must be able to mathematically describe the size and direction of the interaction at all times we want to model
+3. We must be able to vectorially add the interactions to produce the net force $\sum_i \vec{F}_i = \vec{F}_{net}$.
+
+In many cases, we can do this. But consider a bead sliding inside a cone. How would you write down the contact force between the cone and the bead for all space and time?
+
+This is where [Lagrangian Mechanics](https://en.wikipedia.org/wiki/Lagrangian_mechanics) comes in. It is a powerful and elegant way to describe the motion of particles and systems. It is based on the [Calculus of Variations](https://en.wikipedia.org/wiki/Calculus_of_variations), a field of mathematics that is concerned with finding the path that minimizes or maximizes (called "extremization") a certain quantity. In the case of Lagrangian Mechanics, the quantity we are extremizing is the [action](https://en.wikipedia.org/wiki/Action_(physics)).
+
+The video below discusses the concept of the Principle of Least Action, which is the foundation of Lagrangian Mechanics.
+
+[![The Principle of Least Action](https://markdown-videos-api.jorgenkh.no/youtube/Q_CQDSlmboA?width=720&height=405)](https://inv.n8pjl.ca/watch?v=Q_CQDSlmboA)
+- Non-Commercial Link: [https://inv.n8pjl.ca/watch?v=Q_CQDSlmboA](https://inv.n8pjl.ca/watch?v=Q_CQDSlmboA)
+- Commercial Link: [https://youtube.com/watch?v=Q_CQDSlmboA](https://youtube.com/watch?v=Q_CQDSlmboA)
+
+##### Introduction to Lagrangian Dynamics (10 minute video)
+
+Parth G. has a lovely video below about the basics of Lagrangian Dynamics. We will do a lot of this in class and go over many examples. This video is a nice introduction to the concept.
+
+[![](https://markdown-videos-api.jorgenkh.no/youtube/KpLno70oYHE?width=720&height=405)](https://inv.n8pjl.ca/watch?v=KpLno70oYHE)
+- Non-Commercial Link: [https://inv.n8pjl.ca/watch?v=KpLno70oYHE](https://inv.n8pjl.ca/watch?v=KpLno70oYHE)
+- Commercial Link: [https://youtube.com/watch?v=KpLno70oYHE](https://youtube.com/watch?v=KpLno70oYHE)
+
+#### Class Materials
+- Readings:
+  - JRT 7.1-7.2, 7.5; MLB 9.5
+- Handwritten Notes:
+  - CW12: [Introduction to Lagrangian Dynamics](../docs/handwritten-notes/CW12.pdf)
+- Notes:
+  - [Lagrangian Mechanics](../lecture-notes/lagrangians.ipynb)
+- Lecture Videos:
+  - 25 Mar 2024
+  - 27 Mar 2024
+
+
 ### Week 11, March 18-22, 2024
 
 Topics: Calculus of Variations
