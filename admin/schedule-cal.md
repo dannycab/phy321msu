@@ -94,11 +94,11 @@ All assignments are turned in using D2L as a PDF and/or Jupyter notebook.
 
 ## Week 12
 
-| Week | Day    | Topic                                 | Readings to prepare       | Important events                       |
-| ---- | ------ | ------------------------------------- | ------------------------- | -------------------------------------- |
-| CW12 | 25 Mar | Lagrange's Equations; modeling motion | JRT 7.1-7.2, 7.5; MLB 9.5 | Midterm Project 2 Assigned (Due 5 Apr) |
-|      | 27 Mar |                                       |                           |                                        |
-|      | 29 Mar |                                       |                           |                                        |
+| Week | Day    | Topic                                 | Readings to prepare       | Important events                                                     |
+| ---- | ------ | ------------------------------------- | ------------------------- | -------------------------------------------------------------------- |
+| CW12 | 25 Mar | Lagrange's Equations; modeling motion | JRT 7.1-7.2, 7.5; MLB 9.5 | [Midterm Project 2 Assigned (Due 5 Apr)](../midterms/midterm2.ipynb) |
+|      | 27 Mar |                                       |                           |                                                                      |
+|      | 29 Mar |                                       |                           |                                                                      |
 
 ## Week 13
 
