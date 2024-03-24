@@ -66,6 +66,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'midterms/midterm2';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Chaos in the driven nonlinear pendulum" href="../honors-projects/ChaoticPendulum.html" />
+    <link rel="prev" title="Homework 7 (Due 22 Mar)" href="../homeworks/hw7.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -195,7 +197,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../in-class/cw11-plot-fourier.html">CW11 - Plot Fourier Expansion</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Weekly assignments, midterms and final projects with solutions</span></p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../homeworks/hw1.html">Homework 1 (Due 19 Jan)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../solutions/solutionhw1.html">Solutions - Homework 1 (Due 19 Jan)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../homeworks/hw2.html">Homework 2 (Due 26 Jan)</a></li>
@@ -211,6 +213,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../homeworks/hw6.html">Homework 6 (Due 15 Mar)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../solutions/solutionhw6.html">Solutions - Homework 6 (Due 15 Mar)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../homeworks/hw7.html">Homework 7 (Due 22 Mar)</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Midterm 2 (Due 5 Apr)</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Honors Projects</span></p>
 <ul class="nav bd-sidenav">
@@ -441,13 +444,17 @@ doconce format html Firstmidterm2022.do.txt --no_mako -->
 <div class="math notranslate nohighlight">
 \[\ddot{x} + \delta \dot{x} + \alpha x + \beta x^3 = \gamma \cos(\omega t).\]</div>
 <p>where <span class="math notranslate nohighlight">\(\alpha\)</span>, <span class="math notranslate nohighlight">\(\beta\)</span>, <span class="math notranslate nohighlight">\(\delta\)</span>, <span class="math notranslate nohighlight">\(\gamma\)</span>, and <span class="math notranslate nohighlight">\(\omega\)</span> are constants.</p>
+<p>Below is a figure showing the <a class="reference external" href="https://en.wikipedia.org/wiki/Attractor#Strange_attractor">strange attractor</a> of the Duffing Oscillator over four periods. It is locally chaotic, but globally it is stable. This is a common feature of non-linear systems.</p>
+<p><img alt="Strange attractor" src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Duffing_oscillator_strange_attractor_with_color.gif" /></p>
 <p>We focus on this one dimensional case, but we will analyze it in parts to put together a full picture of the dynamics of the system. If you are looking for useful parameter choices and initial conditions, we suggest using those listed on <a class="reference external" href="https://en.wikipedia.org/wiki/Duffing_equation">the Wikipedia page</a>.</p>
+<p>Recall that the potential for this system can give rise to different kinds of behavior depending on the parameters. The figure below shows the potential for different choices of <span class="math notranslate nohighlight">\(\alpha\)</span> and <span class="math notranslate nohighlight">\(\beta\)</span>. Make sure you choose your parameters to match the potential you want to study - pick a stable well for solving for trajectories.</p>
+<p><img alt="Duffing potential" src="../_images/duffing_potential.png" /></p>
 <div class="section" id="undamped-and-undriven-case-20-points">
 <h4>Undamped and undriven case (20 points)<a class="headerlink" href="#undamped-and-undriven-case-20-points" title="Permalink to this heading">#</a></h4>
 <ol class="arabic simple">
 <li><p>(5 pt) Consider the undriven and undamped case, <span class="math notranslate nohighlight">\(\delta = \gamma = 0\)</span>. What potential would give rise to this kind of equation of motion? Demonstrate that potential gives the expected equation of motion.</p></li>
 <li><p>(5 pt) Find the equilibrium points of the system for the undriven and undamped case. What are the conditions for stable and unstable equilibrium points? Plot the potential for some choices of <span class="math notranslate nohighlight">\(\alpha\)</span> and <span class="math notranslate nohighlight">\(\beta\)</span> to illustrate your findings.</p></li>
-<li><p>(5 pt) Plot the phase space for the undriven and undamped case. What are the trajectories of the system? What is the behavior of the system? Does it match your expectations from the potential?</p></li>
+<li><p>(5 pt) Plot the phase space for the undriven and undamped case. What are the trajectories of the system? What is the behavior of the system? Does it match your expectations from the potential? <em>The figure above only starts this discussion.</em></p></li>
 <li><p>(5 pt) <strong>Here you are likely to need a numerical solver.</strong>  Solve the equation of motion for the undriven and undamped case for a reasonable choice of <span class="math notranslate nohighlight">\(\alpha\)</span> and <span class="math notranslate nohighlight">\(\beta\)</span> and initial conditions. Plot the position as a function of time. What is the behavior of the system? Does it match your expectations from the potential and the phase portrait??</p></li>
 </ol>
 </div>
@@ -531,6 +538,24 @@ doconce format html Firstmidterm2022.do.txt --no_mako -->
                 <footer class="prev-next-footer">
                   <!-- Previous / next buttons -->
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="../homeworks/hw7.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Homework 7 (Due 22 Mar)</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../honors-projects/ChaoticPendulum.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Chaos in the driven nonlinear pendulum</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               
