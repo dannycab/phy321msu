@@ -3,11 +3,12 @@
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-content_root="" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
     <title>6. Two-body problems, from the Gravitational Force to Two-body Scattering &#8212; Classical Mechanics</title>
   
   
@@ -18,28 +19,28 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+  <link href="../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
-  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -48,18 +49,14 @@
     <script src="../_static/doctools.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../_static/design-tabs.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
@@ -77,10 +74,9 @@ const thebe_selector_output = ".output, .cell_output"
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
   
   <div id="pst-scroll-pixel-helper"></div>
-
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
     <i class="fa-solid fa-arrow-up"></i>
@@ -121,11 +117,14 @@ const thebe_selector_output = ".output, .cell_output"
 </form></div>
   </div>
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
   
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
+      
+      
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -140,9 +139,11 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
   
 
 <a class="navbar-brand logo" href="../intro.html">
+  
   
   
   
@@ -152,12 +153,23 @@ const thebe_selector_output = ".output, .cell_output"
       
     
     
-    <img src="../_static/spartan-helmet.png" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="../_static/spartan-helmet.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="../_static/spartan-helmet.png" class="logo__image only-light" alt="Classical Mechanics - Home"/>
+    <script>document.write(`<img src="../_static/spartan-helmet.png" class="logo__image only-dark" alt="Classical Mechanics - Home"/>`);</script>
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -199,21 +211,25 @@ const thebe_selector_output = ".output, .cell_output"
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Weekly assignments, midterms and final projects with solutions</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../homeworks/hw1.html">Homework 1 (Due 19 Jan)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../solutions/solutionhw1.html">Solutions - Homework 1 (Due 19 Jan)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../homeworks/hw2.html">Homework 2 (Due 26 Jan)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../solutions/solutionhw2.html">Solutions - Homework 2 (Due 26 Jan)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../homeworks/hw3.html">Homework 3 (Due 02 Feb)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../solutions/solutionhw3.html">Solutions - Homework 3 (Due 03 Feb)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../homeworks/hw4.html">Homework 4 (Due 09 Feb)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../solutions/solutionhw4.html">Solutions - Homework 4 (Due 09 Feb)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../midterms/midterm1.html">Midterm 1 (Due 23 Feb)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../solutions/solutionmidterm1.html">Solutions - Midterm 1 (Due 23 Feb)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../homeworks/hw5.html">Homework 5 (Due 08 Mar)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../solutions/solutionhw5.html">Solutions - Homework 5 (Due 08 Mar)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../homeworks/hw6.html">Homework 6 (Due 15 Mar)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../solutions/solutionhw6.html">Solutions - Homework 6 (Due 15 Mar)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../homeworks/hw7.html">Homework 7 (Due 22 Mar)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../midterms/midterm2.html">Midterm 2 (Due 5 Apr)</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Solutions</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../solutions/solutionhw1.html">Homework 1 (Due 19 Jan)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../solutions/solutionhw2.html">Homework 2 (Due 26 Jan)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../solutions/solutionhw3.html">Homework 3 (Due 03 Feb)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../solutions/solutionhw4.html">Homework 4 (Due 09 Feb)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../solutions/solutionmidterm1.html">Midterm 1 (Due 23 Feb)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../solutions/solutionhw5.html">Homework 5 (Due 08 Mar)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../solutions/solutionhw6.html">Homework 6 (Due 15 Mar)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../solutions/solutionhw7.html">Homework 7 (Due 22 Mar)</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Honors Projects</span></p>
 <ul class="nav bd-sidenav">
@@ -357,6 +373,7 @@ const thebe_selector_output = ".output, .cell_output"
 </button>
 
 
+
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
@@ -366,6 +383,7 @@ document.write(`
   </button>
 `);
 </script>
+
 
 <script>
 document.write(`
@@ -451,12 +469,12 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
   <!-- HTML file automatically generated from DocOnce source (https://github.com/doconce/doconce/)
-doconce format html chapter6.do.txt  --><div class="tex2jax_ignore mathjax_ignore section" id="two-body-problems-from-the-gravitational-force-to-two-body-scattering">
+doconce format html chapter6.do.txt  --><section class="tex2jax_ignore mathjax_ignore" id="two-body-problems-from-the-gravitational-force-to-two-body-scattering">
 <h1>6. Two-body problems, from the Gravitational Force to Two-body Scattering<a class="headerlink" href="#two-body-problems-from-the-gravitational-force-to-two-body-scattering" title="Permalink to this heading">#</a></h1>
-<div class="section" id="introduction-and-definitions">
+<section id="introduction-and-definitions">
 <h2>Introduction and Definitions<a class="headerlink" href="#introduction-and-definitions" title="Permalink to this heading">#</a></h2>
 <p>Central forces are forces which are directed towards or away from a
 reference point. A familiar force is the gravitional
@@ -537,8 +555,8 @@ compare our analytical equations with numerical studies.</p>
 <p>However, before we arrive at these lovely insights, we need to
 introduce some mathematical manipulations and definitions. We conclude
 this chapter with a discussion of two-body scattering.</p>
-</div>
-<div class="section" id="center-of-mass-and-relative-coordinates">
+</section>
+<section id="center-of-mass-and-relative-coordinates">
 <h2>Center of Mass and Relative Coordinates<a class="headerlink" href="#center-of-mass-and-relative-coordinates" title="Permalink to this heading">#</a></h2>
 <p>Thus far, we have considered the trajectory as if the force is
 centered around a fixed point. For two bodies interacting only with
@@ -568,7 +586,7 @@ coordinate <span class="math notranslate nohighlight">\(\boldsymbol{r}\)</span>.
 \[
 \boldsymbol{r}_2=\boldsymbol{R}-\frac{m_1}{M}\boldsymbol{r}.
 \]</div>
-<div class="section" id="conservation-of-total-linear-momentum">
+<section id="conservation-of-total-linear-momentum">
 <h3>Conservation of total  Linear Momentum<a class="headerlink" href="#conservation-of-total-linear-momentum" title="Permalink to this heading">#</a></h3>
 <p>In our discussions on conservative forces we defined
 the total linear momentum as</p>
@@ -652,8 +670,8 @@ trajectory depends only on the total mass <span class="math notranslate nohighli
 then treat the problem as one of a single particle of mass <span class="math notranslate nohighlight">\(\mu\)</span>
 undergoing a force <span class="math notranslate nohighlight">\(\boldsymbol{F}_{12}\)</span>. Scattering angles, see our discussion of scattering problems below, can also be
 expressed in this frame.  Before we proceed to our definition of the CoM frame we need to set up the expression for the energy in terms of the relative and CoM coordinates.</p>
-</div>
-<div class="section" id="kinetic-and-total-energy">
+</section>
+<section id="kinetic-and-total-energy">
 <h3>Kinetic and total Energy<a class="headerlink" href="#kinetic-and-total-energy" title="Permalink to this heading">#</a></h3>
 <p>The kinetic energy and momenta also have analogues in center-of-mass
 coordinates.
@@ -717,8 +735,8 @@ K=\frac{\dot{\boldsymbol{P}}^2}{2M}+\frac{\mu\dot{\boldsymbol{q}}^2}{2}.
 \]</div>
 <p>Below we will define a reference frame, the so-called CoM-frame, where
 <span class="math notranslate nohighlight">\(\boldsymbol{R}=0\)</span>. This is going to simplify our equations further.</p>
-</div>
-<div class="section" id="conservation-of-angular-momentum">
+</section>
+<section id="conservation-of-angular-momentum">
 <h3>Conservation of Angular Momentum<a class="headerlink" href="#conservation-of-angular-momentum" title="Permalink to this heading">#</a></h3>
 <p>The angular momentum (the total one) is the sum of the individual angular momenta. In our case we have two bodies only, meaning that our angular momentum is defined as</p>
 <div class="math notranslate nohighlight">
@@ -796,9 +814,9 @@ r=\sqrt{x^2+y^2},
 \]</div>
 <p>and <span class="math notranslate nohighlight">\(x=r\cos\phi\)</span> and <span class="math notranslate nohighlight">\(y=r\sin\phi\)</span>, we will rewrite our equation of motion by transforming from Cartesian coordinates to Polar coordinates. By so doing, we end up with two differential equations which can be solved analytically (it depends on the form of the potential).</p>
 <p>What follows now is a rewrite of these equations and the introduction of Kepler’s laws as well.</p>
-</div>
-</div>
-<div class="section" id="deriving-elliptical-orbits">
+</section>
+</section>
+<section id="deriving-elliptical-orbits">
 <h2>Deriving Elliptical Orbits<a class="headerlink" href="#deriving-elliptical-orbits" title="Permalink to this heading">#</a></h2>
 <p>Kepler’s laws state that a gravitational orbit should be an ellipse
 with the source of the gravitational field at one focus. Deriving this
@@ -904,7 +922,7 @@ momentum conservation, <span class="math notranslate nohighlight">\(\dot{\phi}=L
 -\frac{2}{r}\left(\frac{dr}{d\phi}\right)^2\left(\frac{L}{mr^2}\right)^2
 \end{eqnarray}
 \end{split}\]</div>
-<p>Equating the two expressions for <span class="math notranslate nohighlight">\(\ddot{r}\)</span> in Eq.s (<span class="xref myst">3</span>) and (<span class="xref myst">5</span>) eliminates all the derivatives w.r.t. time, and provides a differential equation with only derivatives w.r.t. <span class="math notranslate nohighlight">\(\phi\)</span>,</p>
+<p>Equating the two expressions for <span class="math notranslate nohighlight">\(\ddot{r}\)</span> in Eq.s (<a class="reference internal" href="#eq:radialeqofmotion2"><span class="xref myst">3</span></a>) and (<a class="reference internal" href="#eq:rtotheta"><span class="xref myst">5</span></a>) eliminates all the derivatives w.r.t. time, and provides a differential equation with only derivatives w.r.t. <span class="math notranslate nohighlight">\(\phi\)</span>,</p>
 <!-- Equation labels as ordinary links -->
 <div id="eq:rdotdot"></div>
 <div class="math notranslate nohighlight">
@@ -932,7 +950,7 @@ r&amp;=&amp;1/u,\\
 \frac{d^2r}{d\phi^2}&amp;=&amp;\frac{2}{u^3}\left(\frac{du}{d\phi}\right)^2-\frac{1}{u^2}\frac{d^2u}{d\phi^2}.
 \end{eqnarray}
 \end{split}\]</div>
-<p>Plugging these expressions into Eq. (<span class="xref myst">6</span>) gives an
+<p>Plugging these expressions into Eq. (<a class="reference internal" href="#eq:rdotdot"><span class="xref myst">6</span></a>) gives an
 expression in terms of <span class="math notranslate nohighlight">\(u\)</span>, <span class="math notranslate nohighlight">\(du/d\phi\)</span>, and <span class="math notranslate nohighlight">\(d^2u/d\phi^2\)</span>. After
 some tedious algebra,</p>
 <!-- Equation labels as ordinary links -->
@@ -974,7 +992,7 @@ expression <span class="math notranslate nohighlight">\(mv^2/r=-\alpha/r^2\)</sp
 substitution <span class="math notranslate nohighlight">\(v=L/(mr)\)</span>, one would reproduce the expression
 <span class="math notranslate nohighlight">\(r=L^2/(m\alpha)\)</span>.</p>
 <p>The form describing the elliptical trajectory in
-Eq. (<span class="xref myst">9</span>) can be identified as an ellipse with one
+Eq. (<a class="reference internal" href="#eq:Ctrajectory"><span class="xref myst">9</span></a>) can be identified as an ellipse with one
 focus being the center of the ellipse by considering the definition of
 an ellipse as being the points such that the sum of the two distances
 between the two foci are a constant. Making that distance <span class="math notranslate nohighlight">\(2D\)</span>, the
@@ -990,7 +1008,7 @@ origin,</p>
 r&amp;=&amp;\frac{D^2-a^2}{D+a\cos\phi}=\frac{1}{D/(D^2-a^2)-a\cos\phi/(D^2-a^2)}.
 \end{eqnarray}
 \end{split}\]</div>
-<p>By inspection, this is the same form as Eq. (<span class="xref myst">9</span>) with <span class="math notranslate nohighlight">\(D/(D^2-a^2)=m\alpha/L^2\)</span> and <span class="math notranslate nohighlight">\(a/(D^2-a^2)=A\)</span>.</p>
+<p>By inspection, this is the same form as Eq. (<a class="reference internal" href="#eq:Ctrajectory"><span class="xref myst">9</span></a>) with <span class="math notranslate nohighlight">\(D/(D^2-a^2)=m\alpha/L^2\)</span> and <span class="math notranslate nohighlight">\(a/(D^2-a^2)=A\)</span>.</p>
 <p>Let us remind ourselves about what an ellipse is before we proceed.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1013,11 +1031,11 @@ r&amp;=&amp;\frac{D^2-a^2}{D+a\cos\phi}=\frac{1}{D/(D^2-a^2)-a\cos\phi/(D^2-a^2)
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/fc546e1c45db1cf4571dc49c996889952a52531ab5877120507e31f667ad9e32.png" src="../_images/fc546e1c45db1cf4571dc49c996889952a52531ab5877120507e31f667ad9e32.png" />
+<img alt="../_images/0bd5d98cfa41d7c28242d960c94f3e91786a364a7527bfdb642a30ac775f1b8d.png" src="../_images/0bd5d98cfa41d7c28242d960c94f3e91786a364a7527bfdb642a30ac775f1b8d.png" />
 </div>
 </div>
-</div>
-<div class="section" id="effective-or-centrifugal-potential">
+</section>
+<section id="effective-or-centrifugal-potential">
 <h2>Effective or Centrifugal Potential<a class="headerlink" href="#effective-or-centrifugal-potential" title="Permalink to this heading">#</a></h2>
 <p>The total energy of a particle is</p>
 <div class="math notranslate nohighlight">
@@ -1050,7 +1068,7 @@ F_{\rm eff}&amp;=&amp;-\frac{d}{dr}V(r) -\frac{d}{dr}\frac{L^2}{2mr^2}\\
 &amp;=&amp;F(r)+\frac{L^2}{mr^3}=F(r)+m\frac{v_\perp^2}{r},
 \end{eqnarray}
 \end{split}\]</div>
-<p>which is indeed matches the form for <span class="math notranslate nohighlight">\(m\ddot{r}\)</span> in Eq. (<span class="xref myst">3</span>), which included the <strong>centrifugal</strong> force.</p>
+<p>which is indeed matches the form for <span class="math notranslate nohighlight">\(m\ddot{r}\)</span> in Eq. (<a class="reference internal" href="#eq:radialeqofmotion2"><span class="xref myst">3</span></a>), which included the <strong>centrifugal</strong> force.</p>
 <p>The following code plots this effective potential for a simple choice of parameters, with a standard gravitational potential <span class="math notranslate nohighlight">\(-\alpha/r\)</span>. Here we have chosen <span class="math notranslate nohighlight">\(L=m=\alpha=1\)</span>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1083,10 +1101,10 @@ F_{\rm eff}&amp;=&amp;-\frac{d}{dr}V(r) -\frac{d}{dr}\frac{L^2}{2mr^2}\\
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/3b1418c79414867b82039af82033e9c1567d54fd3a68c69fd137aef5b32dec67.png" src="../_images/3b1418c79414867b82039af82033e9c1567d54fd3a68c69fd137aef5b32dec67.png" />
+<img alt="../_images/96540b0720b5dc99cda3364d23a61f7e4da6500e3ace6030ba06e19cee670528.png" src="../_images/96540b0720b5dc99cda3364d23a61f7e4da6500e3ace6030ba06e19cee670528.png" />
 </div>
 </div>
-<div class="section" id="gravitational-force-example">
+<section id="gravitational-force-example">
 <h3>Gravitational force example<a class="headerlink" href="#gravitational-force-example" title="Permalink to this heading">#</a></h3>
 <p>Using the above parameters, we can now study the evolution of the system using for example the velocity Verlet method.
 This is done in the code here for an initial radius equal to the minimum of the potential well.  We seen then that the radius is always the same and corresponds to a circle (the radius is always constant).</p>
@@ -1168,12 +1186,12 @@ This is done in the code here for an initial radius equal to the minimum of the 
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/425b74d6d9ac5c3d9f9abe74382cafd8efbc0b123a2ed175873e4e3c2b378c80.png" src="../_images/425b74d6d9ac5c3d9f9abe74382cafd8efbc0b123a2ed175873e4e3c2b378c80.png" />
+<img alt="../_images/14640bbb5a7922a240493b507f230775ba505bc59349c35a41074eb7abca44b1.png" src="../_images/14640bbb5a7922a240493b507f230775ba505bc59349c35a41074eb7abca44b1.png" />
 </div>
 </div>
 <p>Changing the value of the initial position to a value where the energy is positive, leads to an increasing radius with time, a so-called unbound orbit. Choosing on the other hand an initial radius that corresponds to a negative energy and different from the minimum value leads to a radius that oscillates back and forth between two values.</p>
-</div>
-<div class="section" id="harmonic-oscillator-in-two-dimensions">
+</section>
+<section id="harmonic-oscillator-in-two-dimensions">
 <h3>Harmonic Oscillator in two dimensions<a class="headerlink" href="#harmonic-oscillator-in-two-dimensions" title="Permalink to this heading">#</a></h3>
 <p>Consider a particle of mass <span class="math notranslate nohighlight">\(m\)</span> in a 2-dimensional harmonic oscillator with potential</p>
 <div class="math notranslate nohighlight">
@@ -1214,7 +1232,7 @@ The potential is plotted here with the parameters <span class="math notranslate 
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/93aac30b661443a6977139aca68fb45816f924f7d9a763d36ac08b08ff43d987.png" src="../_images/93aac30b661443a6977139aca68fb45816f924f7d9a763d36ac08b08ff43d987.png" />
+<img alt="../_images/5cda788d4485f6278f7d0abdaba2b6dc0195d6ef85e8e5eb1aae6eec29fb71ef.png" src="../_images/5cda788d4485f6278f7d0abdaba2b6dc0195d6ef85e8e5eb1aae6eec29fb71ef.png" />
 </div>
 </div>
 <div class="math notranslate nohighlight">
@@ -1325,7 +1343,7 @@ y&amp;=&amp;C\cos\omega_0 t+D\sin\omega_0 t.
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/12515e3e0330312958b3aaa138c1779e39ef2154d6938b8c3005ca7e5c9e0832.png" src="../_images/12515e3e0330312958b3aaa138c1779e39ef2154d6938b8c3005ca7e5c9e0832.png" />
+<img alt="../_images/d94804eb1b90dcbedc7bfe808ee859d2753feb1fe63b87ba0909b4dedd7da452.png" src="../_images/d94804eb1b90dcbedc7bfe808ee859d2753feb1fe63b87ba0909b4dedd7da452.png" />
 </div>
 </div>
 <p>With some work using double angle formulas, one can calculate</p>
@@ -1394,14 +1412,14 @@ maxima for <span class="math notranslate nohighlight">\(x^2\)</span>, one at <sp
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/d24812b2a345bb8aa5e2057fc18a305a6f3eb4737397e2f1f0da01a13f65cc86.png" src="../_images/d24812b2a345bb8aa5e2057fc18a305a6f3eb4737397e2f1f0da01a13f65cc86.png" />
+<img alt="../_images/95b0c98962a66a42e78f07cbd4059f8c208d34f9ac2fb7274170b3c88a117eac.png" src="../_images/95b0c98962a66a42e78f07cbd4059f8c208d34f9ac2fb7274170b3c88a117eac.png" />
 </div>
 </div>
-</div>
-</div>
-<div class="section" id="stability-of-orbits">
+</section>
+</section>
+<section id="stability-of-orbits">
 <h2>Stability of Orbits<a class="headerlink" href="#stability-of-orbits" title="Permalink to this heading">#</a></h2>
-<p>The effective force can be extracted from the effective potential, <span class="math notranslate nohighlight">\(V_{\rm eff}\)</span>. Beginning from the equations of motion, Eq. (<span class="xref myst">1</span>), for <span class="math notranslate nohighlight">\(r\)</span>,</p>
+<p>The effective force can be extracted from the effective potential, <span class="math notranslate nohighlight">\(V_{\rm eff}\)</span>. Beginning from the equations of motion, Eq. (<a class="reference internal" href="#eq:radialeqofmotion"><span class="xref myst">1</span></a>), for <span class="math notranslate nohighlight">\(r\)</span>,</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \begin{eqnarray}
@@ -1466,7 +1484,7 @@ around. This is the case for the inverse-square force,
 <span class="math notranslate nohighlight">\(\omega=2\dot{\phi}\)</span>. In this case, <span class="math notranslate nohighlight">\(\omega=\sqrt{3}\dot{\phi}\)</span>,
 and the angles at which the maxima and minima occur change with each
 orbit.</p>
-<div class="section" id="code-example-with-gravitional-force">
+<section id="code-example-with-gravitional-force">
 <h3>Code example with gravitional force<a class="headerlink" href="#code-example-with-gravitional-force" title="Permalink to this heading">#</a></h3>
 <p>The code example here is meant to illustrate how we can make a plot of the final orbit. We solve the equations in polar coordinates (the example here uses the minimum of the potential as initial value) and then we transform back to cartesian coordinates and plot <span class="math notranslate nohighlight">\(x\)</span> versus <span class="math notranslate nohighlight">\(y\)</span>. We see that we get a perfect circle when we place ourselves at the minimum of the potential energy, as expected.</p>
 <div class="cell docutils container">
@@ -1527,7 +1545,13 @@ orbit.</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/6f399bf847c457f7cb810ce144c8afa6b95c09c14d62989b05ada77361e4d0e9.png" src="../_images/6f399bf847c457f7cb810ce144c8afa6b95c09c14d62989b05ada77361e4d0e9.png" />
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;&gt;:45: SyntaxWarning: invalid escape sequence &#39;\c&#39;
+&lt;&gt;:45: SyntaxWarning: invalid escape sequence &#39;\c&#39;
+/var/folders/6q/fl2y7xb92570fzrj3q_0pj1w0000gn/T/ipykernel_85537/1970895962.py:45: SyntaxWarning: invalid escape sequence &#39;\c&#39;
+  ax[1].set_ylabel(&#39;Angle $\cos{\phi}$&#39;)
+</pre></div>
+</div>
+<img alt="../_images/a5a63456bb7c3e494222f45eff2d87a4270fee7308ad5499703b8524ca405f29.png" src="../_images/a5a63456bb7c3e494222f45eff2d87a4270fee7308ad5499703b8524ca405f29.png" />
 </div>
 </div>
 <p>Try to change the initial value for <span class="math notranslate nohighlight">\(r\)</span> and see what kind of orbits you get.
@@ -1593,7 +1617,7 @@ In order to test different energies, it can be useful to look at the plot of the
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/23798503231d52b882c014618f7dc08571e5229b83950edba555e9ab1ae45ccc.png" src="../_images/23798503231d52b882c014618f7dc08571e5229b83950edba555e9ab1ae45ccc.png" />
+<img alt="../_images/6b30de7435f7c394ed233e088e6bfe9d65b1f1277991bbc8b99836f677ca1ca8.png" src="../_images/6b30de7435f7c394ed233e088e6bfe9d65b1f1277991bbc8b99836f677ca1ca8.png" />
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[-1.5        -1.49999996 -1.49999984 -1.49999964 -1.49999935 -1.49999898
  -1.49999853 -1.49999798 -1.49999734 -1.49999659 -1.49999574 -1.49999478
  -1.49999369 -1.49999247 -1.49999112 -1.49998961 -1.49998794 -1.49998609
@@ -1765,9 +1789,9 @@ In order to test different energies, it can be useful to look at the plot of the
 </div>
 </div>
 </div>
-</div>
-</div>
-<div class="section" id="scattering-and-cross-sections">
+</section>
+</section>
+<section id="scattering-and-cross-sections">
 <h2>Scattering and Cross Sections<a class="headerlink" href="#scattering-and-cross-sections" title="Permalink to this heading">#</a></h2>
 <p>Scattering experiments don’t measure entire trajectories. For elastic
 collisions, they measure the distribution of final scattering angles
@@ -1905,7 +1929,7 @@ later on.</p>
 <p>An asteroid of mass <span class="math notranslate nohighlight">\(m\)</span> and kinetic energy <span class="math notranslate nohighlight">\(E\)</span> approaches a planet of
 radius <span class="math notranslate nohighlight">\(R\)</span> and mass <span class="math notranslate nohighlight">\(M\)</span>. What is the cross section for the asteroid to
 impact the planet?</p>
-<div class="section" id="solution">
+<section id="solution">
 <h3>Solution<a class="headerlink" href="#solution" title="Permalink to this heading">#</a></h3>
 <p>Calculate the maximum impact parameter, <span class="math notranslate nohighlight">\(b_{\rm max}\)</span>, for which the asteroid will hit the planet. The total cross  section for impact is <span class="math notranslate nohighlight">\(\sigma_{\rm impact}=\pi b_{\rm max}^2\)</span>. The maximum cross-section can be found with the help of angular momentum conservation. The asteroid’s incoming momentum is <span class="math notranslate nohighlight">\(p_0=\sqrt{2mE}\)</span> and the angular momentum is <span class="math notranslate nohighlight">\(L=p_0b\)</span>. If the asteroid just grazes the planet, it is moving with zero radial kinetic energy at impact. Combining energy and angular momentum conservation and having <span class="math notranslate nohighlight">\(p_f\)</span> refer to the momentum of the asteroid at a distance <span class="math notranslate nohighlight">\(R\)</span>,</p>
 <div class="math notranslate nohighlight">
@@ -1924,9 +1948,9 @@ b_{\rm max}&amp;=&amp;R\frac{p_f}{p_0}\\
 \sigma_{\rm impact}&amp;=&amp;\pi R^2\frac{E+GMm/R}{E}.
 \end{eqnarray*}
 \end{split}\]</div>
-</div>
-</div>
-<div class="section" id="rutherford-scattering">
+</section>
+</section>
+<section id="rutherford-scattering">
 <h2>Rutherford Scattering<a class="headerlink" href="#rutherford-scattering" title="Permalink to this heading">#</a></h2>
 <p>This refers to the calculation of <span class="math notranslate nohighlight">\(d\sigma/d\Omega\)</span> due to an inverse
 square force, <span class="math notranslate nohighlight">\(F_{12}=\pm\alpha/r^2\)</span> for repulsive/attractive
@@ -1948,14 +1972,14 @@ to Spartan Stadium.</p>
 impact parameter is related to the scattering angle. This requires
 analysis of the trajectory. We consider our previous expression for
 the trajectory where we derived the elliptic form for the trajectory,
-Eq. (<span class="xref myst">9</span>). For that case we considered an attractive
+Eq. (<a class="reference internal" href="#eq:Ctrajectory"><span class="xref myst">9</span></a>). For that case we considered an attractive
 force with the particle’s energy being negative, i.e. it was
 bound. However, the same form will work for positive energy, and
 repulsive forces can be considered by simple flipping the sign of
 <span class="math notranslate nohighlight">\(\alpha\)</span>. For positive energies, the trajectories will be hyperbolas,
 rather than ellipses, with the asymptotes of the trajectories
 representing the directions of the incoming and outgoing
-tracks. Rewriting Eq. (<span class="xref myst">9</span>),</p>
+tracks. Rewriting Eq. (<a class="reference internal" href="#eq:Ctrajectory"><span class="xref myst">9</span></a>),</p>
 <!-- Equation labels as ordinary links -->
 <div id="eq:ruthtraj"></div>
 <div class="math notranslate nohighlight">
@@ -2012,7 +2036,7 @@ L^2=p_0^2b^2=2mEb^2.
 \]</div>
 <p>Finding <span class="math notranslate nohighlight">\(A\)</span> is more complicated. To accomplish this we realize that
 the point of closest approach occurs at <span class="math notranslate nohighlight">\(\phi=0\)</span>, so from
-Eq. (<span class="xref myst">15</span>)</p>
+Eq. (<a class="reference internal" href="#eq:ruthtraj"><span class="xref myst">15</span></a>)</p>
 <!-- Equation labels as ordinary links -->
 <div id="eq:rminofA"></div>
 <div class="math notranslate nohighlight">
@@ -2046,7 +2070,7 @@ E=-\frac{\alpha}{r_{\rm min}}+\frac{L^2}{2mr_{\rm min}^2}.
 \label{_auto13} \tag{21}
 \end{equation}
 \]</div>
-<p>We can plug the expression for <span class="math notranslate nohighlight">\(r_{\rm min}\)</span> into the expression for <span class="math notranslate nohighlight">\(A\)</span>, Eq. (<span class="xref myst">19</span>),</p>
+<p>We can plug the expression for <span class="math notranslate nohighlight">\(r_{\rm min}\)</span> into the expression for <span class="math notranslate nohighlight">\(A\)</span>, Eq. (<a class="reference internal" href="#eq:rminofA"><span class="xref myst">19</span></a>),</p>
 <!-- Equation labels as ordinary links -->
 <div id="_auto14"></div>
 <div class="math notranslate nohighlight">
@@ -2056,7 +2080,7 @@ A=\sqrt{(m\alpha/L^2)^2+2mE/L^2}=\sqrt{(\alpha^2/(4E^2b^4)+1/b^2}
 \label{_auto14} \tag{22}
 \end{equation}
 \]</div>
-<p>Finally, we insert the expression for <span class="math notranslate nohighlight">\(A\)</span> into that for the scattering angle, Eq. (<span class="xref myst">17</span>),</p>
+<p>Finally, we insert the expression for <span class="math notranslate nohighlight">\(A\)</span> into that for the scattering angle, Eq. (<a class="reference internal" href="#eq:sthetover2"><span class="xref myst">17</span></a>),</p>
 <!-- Equation labels as ordinary links -->
 <div id="eq:scattangle"></div>
 <div class="math notranslate nohighlight">
@@ -2097,9 +2121,9 @@ negative.</p>
 (Let it be the center-of-mass energy) incident on a heavy nucleus of
 mass <span class="math notranslate nohighlight">\(M\)</span> and charge <span class="math notranslate nohighlight">\(Z\)</span> and radius <span class="math notranslate nohighlight">\(R\)</span>. Find the angle at which the
 Rutherford scattering formula breaks down.</p>
-<div class="section" id="id1">
+<section id="id1">
 <h3>Solution<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h3>
-<p>Let <span class="math notranslate nohighlight">\(\alpha=Zze^2/(4\pi\epsilon_0)\)</span>. The scattering angle in Eq. (<span class="xref myst">23</span>) is</p>
+<p>Let <span class="math notranslate nohighlight">\(\alpha=Zze^2/(4\pi\epsilon_0)\)</span>. The scattering angle in Eq. (<a class="reference internal" href="#eq:scattangle"><span class="xref myst">23</span></a>) is</p>
 <div class="math notranslate nohighlight">
 \[
 \sin(\phi_s/2)=\frac{a}{\sqrt{a^2+b^2}}, ~~a\equiv \frac{\alpha}{2E}.
@@ -2174,14 +2198,14 @@ which it leaves the nozzle. The dot product ensures that only the
 component of <span class="math notranslate nohighlight">\(\boldsymbol{F}\)</span> into the surface contributes to the deposition
 of paint. Similarly, if <span class="math notranslate nohighlight">\(\boldsymbol{F}\)</span> is any radial inverse-square forces,
 that falls as <span class="math notranslate nohighlight">\(B/(4\pi r^2)\)</span>, then one can apply
-Eq. (<span class="xref myst">26</span>). For gravitational fields, <span class="math notranslate nohighlight">\(B/(4\pi)\)</span> is replaced
+Eq. (<a class="reference internal" href="#eq:paint"><span class="xref myst">26</span></a>). For gravitational fields, <span class="math notranslate nohighlight">\(B/(4\pi)\)</span> is replaced
 by <span class="math notranslate nohighlight">\(GM\)</span>, and one quickly “derives” Gauss’s law for gravity,
-Eq. (<span class="xref myst">25</span>).</p>
+Eq. (<a class="reference internal" href="#eq:GravGauss"><span class="xref myst">25</span></a>).</p>
 <p>Consider Earth to have its mass <span class="math notranslate nohighlight">\(M\)</span> uniformly distributed in a sphere
 of radius <span class="math notranslate nohighlight">\(R\)</span>. Find the magnitude of the gravitational acceleration as
 a function of the radius <span class="math notranslate nohighlight">\(r\)</span> in terms of the acceleration of gravity
 at the surface <span class="math notranslate nohighlight">\(g(R)\)</span>. Assume <span class="math notranslate nohighlight">\(r&lt;R\)</span>, i.e. you are inside the surface.</p>
-<p>{\bf Solution}: Take the ratio of Eq. (<span class="xref myst">25</span>) for two radii, <span class="math notranslate nohighlight">\(R\)</span> and <span class="math notranslate nohighlight">\(r&lt;R\)</span>,</p>
+<p>{\bf Solution}: Take the ratio of Eq. (<a class="reference internal" href="#eq:GravGauss"><span class="xref myst">25</span></a>) for two radii, <span class="math notranslate nohighlight">\(R\)</span> and <span class="math notranslate nohighlight">\(r&lt;R\)</span>,</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \begin{eqnarray*}
@@ -2193,9 +2217,9 @@ g(r)&amp;=&amp;g(R)\frac{r}{R}~.
 \end{eqnarray*}
 \end{split}\]</div>
 <p>The potential energy per mass is similar conceptually to the voltage, or electric potential energy per charge, that was studied in electromagnetism, if <span class="math notranslate nohighlight">\(V\equiv U/m\)</span>, <span class="math notranslate nohighlight">\(\boldsymbol{g}=-\nabla V\)</span>.</p>
-</div>
-</div>
-<div class="section" id="tidal-forces">
+</section>
+</section>
+<section id="tidal-forces">
 <h2>Tidal Forces<a class="headerlink" href="#tidal-forces" title="Permalink to this heading">#</a></h2>
 <p>Consider a spherical planet of radius <span class="math notranslate nohighlight">\(r\)</span> a distance <span class="math notranslate nohighlight">\(D\)</span> from another
 body of mass <span class="math notranslate nohighlight">\(M\)</span>. The magnitude of the force due to <span class="math notranslate nohighlight">\(M\)</span> on an small
@@ -2298,10 +2322,10 @@ F_{\rm tidal}\propto \frac{M}{D^3}R.
 \end{eqnarray*}
 \end{split}\]</div>
 <p>The Moon more strongly affects tides than the Sun.</p>
-</div>
-<div class="section" id="exercises">
+</section>
+<section id="exercises">
 <h2>Exercises<a class="headerlink" href="#exercises" title="Permalink to this heading">#</a></h2>
-<div class="section" id="the-earth-sun-system">
+<section id="the-earth-sun-system">
 <h3>The Earth-Sun System<a class="headerlink" href="#the-earth-sun-system" title="Permalink to this heading">#</a></h3>
 <p>We start with a simpler case first, the Earth-Sun system  in two dimensions only.  The gravitational force <span class="math notranslate nohighlight">\(F_G\)</span> on the earth from the sun is</p>
 <div class="math notranslate nohighlight">
@@ -2498,7 +2522,7 @@ y_{i+1}=y_i+hv_{y,i},
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/d65731f3a6c106465698561a6a71c4fae69c436812ad65cc3a3e8cba6e8097b2.png" src="../_images/d65731f3a6c106465698561a6a71c4fae69c436812ad65cc3a3e8cba6e8097b2.png" />
+<img alt="../_images/0ef262606b01f910e338e9f59316155aa9ec9eec1421741ec86d685d22c30499.png" src="../_images/0ef262606b01f910e338e9f59316155aa9ec9eec1421741ec86d685d22c30499.png" />
 </div>
 </div>
 <p>We notice here that Euler’s method doesn’t give a stable orbit with for example <span class="math notranslate nohighlight">\(\Delta t =0.01\)</span>. It
@@ -2670,7 +2694,7 @@ the position at the updated time <span class="math notranslate nohighlight">\(t_
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/827e861ec8f08a2b79fec9089578c98093975954311374479781d74fd6c3a58a.png" src="../_images/827e861ec8f08a2b79fec9089578c98093975954311374479781d74fd6c3a58a.png" />
+<img alt="../_images/5d3b74f3dea5b49e31fe530e33f228cb445d63d3440724e13aa25c0c35be4401.png" src="../_images/5d3b74f3dea5b49e31fe530e33f228cb445d63d3440724e13aa25c0c35be4401.png" />
 </div>
 </div>
 <p>You can easily generalize the calculation of the forces by defining a function
@@ -2729,11 +2753,11 @@ v = \sqrt{8\pi^2}{r},
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/60ee1b08a5ace1eec7ab46d44fc74efdb147ec0e9b61ed8e5b9b661ff1ed60b0.png" src="../_images/60ee1b08a5ace1eec7ab46d44fc74efdb147ec0e9b61ed8e5b9b661ff1ed60b0.png" />
+<img alt="../_images/5d372de4167e1d117870f626be553a33754f2ed6e5b332d79d371e38f3d6506d.png" src="../_images/5d372de4167e1d117870f626be553a33754f2ed6e5b332d79d371e38f3d6506d.png" />
 </div>
 </div>
-</div>
-<div class="section" id="testing-energy-conservation">
+</section>
+<section id="testing-energy-conservation">
 <h3>Testing Energy conservation<a class="headerlink" href="#testing-energy-conservation" title="Permalink to this heading">#</a></h3>
 <p>The code here implements Euler’s method for the Earth-Sun system using
 a more compact way of representing the vectors. Alternatively, you
@@ -2838,7 +2862,7 @@ again as function of time</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/15f8aee9aef9f4cf26208f4eb724ae1cb3d3038cb9827c9c3c7d0a2a1099244e.png" src="../_images/15f8aee9aef9f4cf26208f4eb724ae1cb3d3038cb9827c9c3c7d0a2a1099244e.png" />
+<img alt="../_images/e07856acd1de07e435203ee942021f346884d3df334fd80efaf44fddffe78b6d.png" src="../_images/e07856acd1de07e435203ee942021f346884d3df334fd80efaf44fddffe78b6d.png" />
 </div>
 </div>
 <p>We see very clearly that Euler’s method does not conserve energy!! Try to reduce the time step <span class="math notranslate nohighlight">\(\Delta t\)</span>. What do you see?</p>
@@ -2946,11 +2970,11 @@ max and a min value and never exceed these values.</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/9350ddc2ab68588e6c6e4cbce61837132d16b81d4d8c5f934677af154ae383c3.png" src="../_images/9350ddc2ab68588e6c6e4cbce61837132d16b81d4d8c5f934677af154ae383c3.png" />
+<img alt="../_images/a4c2bb48481382fa85c1f3cbd7b810d2b4a9714d88d3ce9da28e311fe3b2b2c6.png" src="../_images/a4c2bb48481382fa85c1f3cbd7b810d2b4a9714d88d3ce9da28e311fe3b2b2c6.png" />
 </div>
 </div>
-</div>
-<div class="section" id="adding-the-velocity-verlet-method">
+</section>
+<section id="adding-the-velocity-verlet-method">
 <h3>Adding the  velocity Verlet method<a class="headerlink" href="#adding-the-velocity-verlet-method" title="Permalink to this heading">#</a></h3>
 <p>Our final equations for the position and the velocity become then</p>
 <div class="math notranslate nohighlight">
@@ -3031,13 +3055,13 @@ the position at the updated time <span class="math notranslate nohighlight">\(t_
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/a5ce154b3a765c8d2ca8de783d4b0e6777bf9c8279d0022db1c2c9cc0116c04f.png" src="../_images/a5ce154b3a765c8d2ca8de783d4b0e6777bf9c8279d0022db1c2c9cc0116c04f.png" />
+<img alt="../_images/4b5fb2bc72b7c49a5a7dd7b62dbc1d74ec4b142b19cf127251d221afa7ea877e.png" src="../_images/4b5fb2bc72b7c49a5a7dd7b62dbc1d74ec4b142b19cf127251d221afa7ea877e.png" />
 </div>
 </div>
 <p>And we see that due to the smaller truncation error that energy conservation is improved as a function of time.
 Try out different time steps <span class="math notranslate nohighlight">\(\Delta t\)</span> and see if the results improve or worsen.</p>
-</div>
-<div class="section" id="exercise-center-of-mass-and-relative-coordinates-and-reference-frames">
+</section>
+<section id="exercise-center-of-mass-and-relative-coordinates-and-reference-frames">
 <h3>Exercise: Center-of-Mass and Relative Coordinates and Reference Frames<a class="headerlink" href="#exercise-center-of-mass-and-relative-coordinates-and-reference-frames" title="Permalink to this heading">#</a></h3>
 <p>We define the two-body center-of-mass coordinate and relative coordinate by expressing the trajectories for
 <span class="math notranslate nohighlight">\(\boldsymbol{r}_1\)</span> and <span class="math notranslate nohighlight">\(\boldsymbol{r}_2\)</span> into the center-of-mass coordinate
@@ -3249,8 +3273,8 @@ K=\frac{\dot{\boldsymbol{P}}^2}{2M}+\frac{\mu\dot{\boldsymbol{q}}^2}{2},
 \boldsymbol{L}=\boldsymbol{r}\times \mu\dot{\boldsymbol{r}},
 \]</div>
 <p>which is what we wanted to derive.</p>
-</div>
-<div class="section" id="exercise-conservation-of-energy">
+</section>
+<section id="exercise-conservation-of-energy">
 <h3>Exercise: Conservation of Energy<a class="headerlink" href="#exercise-conservation-of-energy" title="Permalink to this heading">#</a></h3>
 <p>The equations of motion in the center-of-mass frame in two dimensions with <span class="math notranslate nohighlight">\(x=r\cos{(\phi)}\)</span> and <span class="math notranslate nohighlight">\(y=r\sin{(\phi)}\)</span> and
 <span class="math notranslate nohighlight">\(r\in [0,\infty)\)</span>, <span class="math notranslate nohighlight">\(\phi\in [0,2\pi]\)</span> and <span class="math notranslate nohighlight">\(r=\sqrt{x^2+y^2}\)</span> are given by</p>
@@ -3386,7 +3410,7 @@ V_{\text{eff}}(r) = V(r) + \frac{L^2}{2\mu r^2}
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/3b1418c79414867b82039af82033e9c1567d54fd3a68c69fd137aef5b32dec67.png" src="../_images/3b1418c79414867b82039af82033e9c1567d54fd3a68c69fd137aef5b32dec67.png" />
+<img alt="../_images/96540b0720b5dc99cda3364d23a61f7e4da6500e3ace6030ba06e19cee670528.png" src="../_images/96540b0720b5dc99cda3364d23a61f7e4da6500e3ace6030ba06e19cee670528.png" />
 </div>
 </div>
 <p>If we select a potential energy below zero (and not necessarily one
@@ -3403,8 +3427,8 @@ by the value at the minimum and the orbit is a circle.</p>
 <p>If we select a potential energy larger than zero, then, since the
 kinetic energy is always larger or equal to zero, the object will move
 away from the origin. See also the discussion in Taylor, sections 8.4-8.6.</p>
-</div>
-<div class="section" id="exercise-harmonic-oscillator-again">
+</section>
+<section id="exercise-harmonic-oscillator-again">
 <h3>Exercise: Harmonic oscillator again<a class="headerlink" href="#exercise-harmonic-oscillator-again" title="Permalink to this heading">#</a></h3>
 <p>Consider a particle of mass <span class="math notranslate nohighlight">\(m\)</span> in a <span class="math notranslate nohighlight">\(2\)</span>-dimensional harmonic oscillator with potential</p>
 <div class="math notranslate nohighlight">
@@ -3450,7 +3474,7 @@ The potential is plotted here with the parameters <span class="math notranslate 
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/93aac30b661443a6977139aca68fb45816f924f7d9a763d36ac08b08ff43d987.png" src="../_images/93aac30b661443a6977139aca68fb45816f924f7d9a763d36ac08b08ff43d987.png" />
+<img alt="../_images/5cda788d4485f6278f7d0abdaba2b6dc0195d6ef85e8e5eb1aae6eec29fb71ef.png" src="../_images/5cda788d4485f6278f7d0abdaba2b6dc0195d6ef85e8e5eb1aae6eec29fb71ef.png" />
 </div>
 </div>
 <p>We have an effective potential</p>
@@ -3636,8 +3660,8 @@ r^2  = x^2+y^2
 \end{equation}
 \]</div>
 <p>which is what we wanted to show.</p>
-</div>
-<div class="section" id="exercise-numerical-solution-of-the-harmonic-oscillator">
+</section>
+<section id="exercise-numerical-solution-of-the-harmonic-oscillator">
 <h3>Exercise: Numerical Solution of the Harmonic Oscillator<a class="headerlink" href="#exercise-numerical-solution-of-the-harmonic-oscillator" title="Permalink to this heading">#</a></h3>
 <p>Using the code we developed in homeworks 5 and/or 6 for the Earth-Sun system, we can solve the above harmonic oscillator problem in two dimensions using our code from this homework. We need however to change the acceleration from the gravitational force to the one given by the harmonic oscillator potential.</p>
 <ul class="simple">
@@ -3757,7 +3781,7 @@ the <span class="math notranslate nohighlight">\(x\)</span>- and <span class="ma
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/1da60eeec332377cf837002c70ede6856b59f1bf0e77a777858593dcb6e413b9.png" src="../_images/1da60eeec332377cf837002c70ede6856b59f1bf0e77a777858593dcb6e413b9.png" />
+<img alt="../_images/c584b9558c92e51ecf5a6124a2e6f45798720d6c998d25037f9e93a687b515e9.png" src="../_images/c584b9558c92e51ecf5a6124a2e6f45798720d6c998d25037f9e93a687b515e9.png" />
 </div>
 </div>
 <p>We see that the radius (to within a given error), we obtain a constant radius.</p>
@@ -3813,11 +3837,11 @@ since we have transformed the equations to polar coordinates.</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/d24812b2a345bb8aa5e2057fc18a305a6f3eb4737397e2f1f0da01a13f65cc86.png" src="../_images/d24812b2a345bb8aa5e2057fc18a305a6f3eb4737397e2f1f0da01a13f65cc86.png" />
+<img alt="../_images/95b0c98962a66a42e78f07cbd4059f8c208d34f9ac2fb7274170b3c88a117eac.png" src="../_images/95b0c98962a66a42e78f07cbd4059f8c208d34f9ac2fb7274170b3c88a117eac.png" />
 </div>
 </div>
-</div>
-<div class="section" id="exercise-equations-for-an-ellipse">
+</section>
+<section id="exercise-equations-for-an-ellipse">
 <h3>Exercise: Equations for an ellipse<a class="headerlink" href="#exercise-equations-for-an-ellipse" title="Permalink to this heading">#</a></h3>
 <p>Consider an ellipse defined by the sum of the distances from the two foci being <span class="math notranslate nohighlight">\(2D\)</span>, which expressed in a Cartesian coordinates with the middle of the ellipse being at the origin becomes</p>
 <div class="math notranslate nohighlight">
@@ -3847,8 +3871,8 @@ since we have transformed the equations to polar coordinates.</p>
 \\ \frac{x^2}{D^2} + \frac{y^2}{D^2-a^2} = 1,
 \end{split}\]</div>
 <p>where the last line is indeed the equation for an ellipse.</p>
-</div>
-<div class="section" id="exercise-attractive-potential">
+</section>
+<section id="exercise-attractive-potential">
 <h3>Exercise: Attractive Potential<a class="headerlink" href="#exercise-attractive-potential" title="Permalink to this heading">#</a></h3>
 <p>Consider a particle in an attractive potential</p>
 <div class="math notranslate nohighlight">
@@ -3888,8 +3912,8 @@ r_{\min} = - \frac{\alpha}{2E} \pm \frac{1}{2} \sqrt{\frac{\alpha^2}{E^2} + 2\fr
 \\
 A = - \frac{\mu\alpha}{L^2} - \frac{2E}{\alpha + \sqrt{\alpha^2 + 2\frac{L^2E}{\mu}}}
 \end{split}\]</div>
-</div>
-<div class="section" id="exercise-inverse-square-force">
+</section>
+<section id="exercise-inverse-square-force">
 <h3>Exercise: Inverse-square force<a class="headerlink" href="#exercise-inverse-square-force" title="Permalink to this heading">#</a></h3>
 <p>Consider again the same effective potential as in the previous exercise. This leads to an attractive inverse-square-law force, <span class="math notranslate nohighlight">\(F=-\alpha/r^2\)</span>. Consider a particle of mass <span class="math notranslate nohighlight">\(m\)</span> with angular momentum <span class="math notranslate nohighlight">\(L\)</span>. Taylor sections 8.4-8.7 are relevant background material.  See also the harmonic oscillator potential from hw8. The equation of motion for the radial degrees of freedom is (see also hw8) in the center-of-mass frame in two dimensions with <span class="math notranslate nohighlight">\(x=r\cos{(\phi)}\)</span> and <span class="math notranslate nohighlight">\(y=r\sin{(\phi)}\)</span> and
 <span class="math notranslate nohighlight">\(r\in [0,\infty)\)</span>, <span class="math notranslate nohighlight">\(\phi\in [0,2\pi]\)</span> and <span class="math notranslate nohighlight">\(r=\sqrt{x^2+y^2}\)</span> are given by</p>
@@ -4089,8 +4113,8 @@ m\frac{d^2\left(  \delta r \right) }{dt^2} = -k \delta r
 \end{equation}
 \]</div>
 <p>This is in fact equal to the expression for <span class="math notranslate nohighlight">\(\dot{\theta}\)</span>. This means that small perturbations oscillate in sync with the orbit and this traces out an ellipse with a very small eccentricity, a very nice physical result.</p>
-</div>
-<div class="section" id="exercise-inverse-square-force-again">
+</section>
+<section id="exercise-inverse-square-force-again">
 <h3>Exercise: Inverse-square force again<a class="headerlink" href="#exercise-inverse-square-force-again" title="Permalink to this heading">#</a></h3>
 <p>Consider again a  particle of mass <span class="math notranslate nohighlight">\(m\)</span> in the same attractive potential, <span class="math notranslate nohighlight">\(U(r)=-\alpha/r\)</span>, with angular momentum <span class="math notranslate nohighlight">\(L\)</span> with just the right energy so that</p>
 <div class="math notranslate nohighlight">
@@ -4273,8 +4297,8 @@ and we get the final answer</p>
 \[
 x = r_0 - \frac{y^2}{4r_0}
 \]</div>
-</div>
-<div class="section" id="exercise-parabolic-and-hyperbolic-orbits">
+</section>
+<section id="exercise-parabolic-and-hyperbolic-orbits">
 <h3>Exercise: Parabolic and hyperbolic orbits<a class="headerlink" href="#exercise-parabolic-and-hyperbolic-orbits" title="Permalink to this heading">#</a></h3>
 <p>The solution to the radial function for an inverse-square-law force, see for example Taylor equation (8.59) or the equation above, is</p>
 <div class="math notranslate nohighlight">
@@ -4364,8 +4388,8 @@ and we obtain</p>
 \frac{(x-\delta)^2}{\alpha^2}-\frac{y^2}{\beta^2}=1,
 \]</div>
 <p>which is nothing but the equation for a hyperbola.</p>
-</div>
-<div class="section" id="exercise-testing-orbit-types">
+</section>
+<section id="exercise-testing-orbit-types">
 <h3>Exercise: Testing orbit types<a class="headerlink" href="#exercise-testing-orbit-types" title="Permalink to this heading">#</a></h3>
 <p>In this exercise we can use the program for <span class="math notranslate nohighlight">\(r(\phi)\)</span> we developed in hw8. We will use an inverse-square-law force as in the previous four exercises. The aim is to see that the orbits we get for <span class="math notranslate nohighlight">\(E&lt;0\)</span> become ellipses (or circles), parabola for <span class="math notranslate nohighlight">\(E=0\)</span> and hyperbola for <span class="math notranslate nohighlight">\(E&gt;0\)</span>.  An example code is shown here.</p>
 <p>Here we have defined the constants <span class="math notranslate nohighlight">\(L=m=\alpha=1\)</span>. Feel free to set new values. <strong>You need also to set the initial conditions</strong> in order to study the different types of orbits. It may be useful to plot the potential here and find the values for the initial conditions that fit <span class="math notranslate nohighlight">\(E&lt;0\)</span>, <span class="math notranslate nohighlight">\(E=0\)</span> and <span class="math notranslate nohighlight">\(E&gt;0\)</span>.</p>
@@ -4421,7 +4445,7 @@ and we obtain</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/425b74d6d9ac5c3d9f9abe74382cafd8efbc0b123a2ed175873e4e3c2b378c80.png" src="../_images/425b74d6d9ac5c3d9f9abe74382cafd8efbc0b123a2ed175873e4e3c2b378c80.png" />
+<img alt="../_images/14640bbb5a7922a240493b507f230775ba505bc59349c35a41074eb7abca44b1.png" src="../_images/14640bbb5a7922a240493b507f230775ba505bc59349c35a41074eb7abca44b1.png" />
 </div>
 </div>
 <p>Run your code and study and discuss the situations where you have
@@ -4443,22 +4467,22 @@ r_{\mathrm{min}} &lt;\frac{L^2}{m\alpha}\)</span>. For parabolic orbits
 have <span class="math notranslate nohighlight">\(0&lt;r_{\mathrm{min}} &lt;\frac{L^2}{m\alpha}\)</span>. Try out these
 different initial conditions in order to test these different types of
 motion.</p>
-</div>
-<div class="section" id="exercise-new-reference-frame">
+</section>
+<section id="exercise-new-reference-frame">
 <h3>Exercise: New reference frame<a class="headerlink" href="#exercise-new-reference-frame" title="Permalink to this heading">#</a></h3>
 <p>Show that if one transforms to a reference frame where the total
 momentum is zero, <span class="math notranslate nohighlight">\(\boldsymbol{p}_1=-\boldsymbol{p}_2\)</span>, that the relative momentum
 <span class="math notranslate nohighlight">\(\boldsymbol{q}\)</span> corresponds to either <span class="math notranslate nohighlight">\(\boldsymbol{p}_1\)</span> or <span class="math notranslate nohighlight">\(-\boldsymbol{p}_2\)</span>. This
 means that in this frame the magnitude of <span class="math notranslate nohighlight">\(\boldsymbol{q}\)</span> is one half the
 magnitude of <span class="math notranslate nohighlight">\(\boldsymbol{p}_1-\boldsymbol{p}_2\)</span>.</p>
-</div>
-<div class="section" id="exercise-center-of-mass-and-relative-coordinates">
+</section>
+<section id="exercise-center-of-mass-and-relative-coordinates">
 <h3>Exercise: Center of mass and relative coordinates<a class="headerlink" href="#exercise-center-of-mass-and-relative-coordinates" title="Permalink to this heading">#</a></h3>
 <p>Given the center of mass and relative coordinates <span class="math notranslate nohighlight">\(\boldsymbol{R}\)</span> and <span class="math notranslate nohighlight">\(\boldsymbol{r}\)</span>, respectively, for
 particles of mass <span class="math notranslate nohighlight">\(m_1\)</span> and <span class="math notranslate nohighlight">\(m_2\)</span>, find the coordinates <span class="math notranslate nohighlight">\(\boldsymbol{r}_1\)</span>
 and <span class="math notranslate nohighlight">\(\boldsymbol{r}_2\)</span> in terms of the masses, <span class="math notranslate nohighlight">\(\boldsymbol{R}\)</span> and <span class="math notranslate nohighlight">\(\boldsymbol{r}\)</span>.</p>
-</div>
-<div class="section" id="exercise-two-body-problems">
+</section>
+<section id="exercise-two-body-problems">
 <h3>Exercise: Two-body problems<a class="headerlink" href="#exercise-two-body-problems" title="Permalink to this heading">#</a></h3>
 <p>Consider a particle of mass <span class="math notranslate nohighlight">\(m\)</span> moving in a potential</p>
 <div class="math notranslate nohighlight">
@@ -4474,9 +4498,9 @@ V(r)=\alpha\ln(r/\alpha),
 <li><p>(e)  What is the effective spring constant for a particle at the minimum of <span class="math notranslate nohighlight">\(V_{\rm eff}\)</span>? Express your answer in terms of <span class="math notranslate nohighlight">\(L\)</span>, <span class="math notranslate nohighlight">\(m\)</span> and <span class="math notranslate nohighlight">\(\alpha\)</span>.</p></li>
 <li><p>(f)   What is the angular frequency, <span class="math notranslate nohighlight">\(\omega\)</span>, for small oscillations of <span class="math notranslate nohighlight">\(r\)</span> about the <span class="math notranslate nohighlight">\(R_{\rm min}\)</span>?  Express your answer in terms of <span class="math notranslate nohighlight">\(\dot{\theta}\)</span> from part (3a).</p></li>
 </ul>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -4506,7 +4530,7 @@ V(r)=\alpha\ln(r/\alpha),
               
               
                 <footer class="prev-next-footer">
-                  <!-- Previous / next buttons -->
+                  
 <div class="prev-next-area">
     <a class="left-prev"
        href="chapter5.html"
@@ -4534,6 +4558,7 @@ V(r)=\alpha\ln(r/\alpha),
             
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -4607,9 +4632,10 @@ By Danny Caballero, Morten Hjorth-Jensen
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
-      © Copyright 2022.
+      © Copyright 2023.
       <br/>
     
   </p>
@@ -4633,8 +4659,8 @@ By Danny Caballero, Morten Hjorth-Jensen
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
 
   <footer class="bd-footer">
   </footer>

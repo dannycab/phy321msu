@@ -3,11 +3,12 @@
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-content_root="" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
     <title>8. Variational Calculus and Lagrangian Formalism &#8212; Classical Mechanics</title>
   
   
@@ -18,28 +19,28 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+  <link href="../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
-  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -48,18 +49,14 @@
     <script src="../_static/doctools.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../_static/design-tabs.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
@@ -77,10 +74,9 @@ const thebe_selector_output = ".output, .cell_output"
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
   
   <div id="pst-scroll-pixel-helper"></div>
-
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
     <i class="fa-solid fa-arrow-up"></i>
@@ -121,11 +117,14 @@ const thebe_selector_output = ".output, .cell_output"
 </form></div>
   </div>
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
   
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
+      
+      
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -140,9 +139,11 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
   
 
 <a class="navbar-brand logo" href="../intro.html">
+  
   
   
   
@@ -152,12 +153,23 @@ const thebe_selector_output = ".output, .cell_output"
       
     
     
-    <img src="../_static/spartan-helmet.png" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="../_static/spartan-helmet.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="../_static/spartan-helmet.png" class="logo__image only-light" alt="Classical Mechanics - Home"/>
+    <script>document.write(`<img src="../_static/spartan-helmet.png" class="logo__image only-dark" alt="Classical Mechanics - Home"/>`);</script>
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -199,21 +211,25 @@ const thebe_selector_output = ".output, .cell_output"
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Weekly assignments, midterms and final projects with solutions</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../homeworks/hw1.html">Homework 1 (Due 19 Jan)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../solutions/solutionhw1.html">Solutions - Homework 1 (Due 19 Jan)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../homeworks/hw2.html">Homework 2 (Due 26 Jan)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../solutions/solutionhw2.html">Solutions - Homework 2 (Due 26 Jan)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../homeworks/hw3.html">Homework 3 (Due 02 Feb)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../solutions/solutionhw3.html">Solutions - Homework 3 (Due 03 Feb)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../homeworks/hw4.html">Homework 4 (Due 09 Feb)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../solutions/solutionhw4.html">Solutions - Homework 4 (Due 09 Feb)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../midterms/midterm1.html">Midterm 1 (Due 23 Feb)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../solutions/solutionmidterm1.html">Solutions - Midterm 1 (Due 23 Feb)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../homeworks/hw5.html">Homework 5 (Due 08 Mar)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../solutions/solutionhw5.html">Solutions - Homework 5 (Due 08 Mar)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../homeworks/hw6.html">Homework 6 (Due 15 Mar)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../solutions/solutionhw6.html">Solutions - Homework 6 (Due 15 Mar)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../homeworks/hw7.html">Homework 7 (Due 22 Mar)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../midterms/midterm2.html">Midterm 2 (Due 5 Apr)</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Solutions</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../solutions/solutionhw1.html">Homework 1 (Due 19 Jan)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../solutions/solutionhw2.html">Homework 2 (Due 26 Jan)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../solutions/solutionhw3.html">Homework 3 (Due 03 Feb)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../solutions/solutionhw4.html">Homework 4 (Due 09 Feb)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../solutions/solutionmidterm1.html">Midterm 1 (Due 23 Feb)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../solutions/solutionhw5.html">Homework 5 (Due 08 Mar)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../solutions/solutionhw6.html">Homework 6 (Due 15 Mar)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../solutions/solutionhw7.html">Homework 7 (Due 22 Mar)</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Honors Projects</span></p>
 <ul class="nav bd-sidenav">
@@ -357,6 +373,7 @@ const thebe_selector_output = ".output, .cell_output"
 </button>
 
 
+
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
@@ -366,6 +383,7 @@ document.write(`
   </button>
 `);
 </script>
+
 
 <script>
 document.write(`
@@ -423,9 +441,9 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
-  <div class="tex2jax_ignore mathjax_ignore section" id="variational-calculus-and-lagrangian-formalism">
+  <section class="tex2jax_ignore mathjax_ignore" id="variational-calculus-and-lagrangian-formalism">
 <h1>8. Variational Calculus and Lagrangian Formalism<a class="headerlink" href="#variational-calculus-and-lagrangian-formalism" title="Permalink to this heading">#</a></h1>
 <p>The calculus of variations involves
 problems where the quantity to be minimized or maximized is an integral.</p>
@@ -566,7 +584,7 @@ dx}\frac{\partial \cal{L}}{\partial \dot{q}}\right)\delta q(t)dt=\delta S = 0.
 \frac{\partial \cal{L}}{\partial q}-\frac{d}{dx}\frac{\partial \cal{L}}{\partial \dot{q}}=0,
 \]</div>
 <p>known as the <strong>Euler-Lagrange</strong> equation.</p>
-<div class="section" id="constrained-motion">
+<section id="constrained-motion">
 <h2>Constrained motion<a class="headerlink" href="#constrained-motion" title="Permalink to this heading">#</a></h2>
 <p>Sometimes an auxiliary constraint is added to the problem (beyond
 fixing the end poits <span class="math notranslate nohighlight">\(y_1\)</span> and <span class="math notranslate nohighlight">\(y_2\)</span>). Just ahead, we will work on the
@@ -735,7 +753,7 @@ Lagrange’s undetermined multiplier.  If we have a set of constraints
 \[
 \frac{\partial f}{\partial x_i}+\sum_k\lambda_k\frac{\partial \phi_k}{\partial x_i} =0.
 \]</div>
-<div class="section" id="example-brachiostone">
+<section id="example-brachiostone">
 <h3>Example: brachiostone<a class="headerlink" href="#example-brachiostone" title="Permalink to this heading">#</a></h3>
 <p>Consider a particle constrained to move along a path (like a bead
 moving without friction on a wire) and you need to design a path from
@@ -794,8 +812,8 @@ the constant <span class="math notranslate nohighlight">\(a\)</span> must be cho
 <span class="math notranslate nohighlight">\(y_2=y(x_2)\)</span>. You can see the textbook for more details, plus you get
 a chance to work with cycloids in the exercises at the end of this
 chapter.</p>
-</div>
-<div class="section" id="maximizing-a-function">
+</section>
+<section id="maximizing-a-function">
 <h3>Maximizing a Function<a class="headerlink" href="#maximizing-a-function" title="Permalink to this heading">#</a></h3>
 <p>As an example of using Lagrange multipliers for a standard
 optimization formula we attempt to maximize the following function,</p>
@@ -878,8 +896,8 @@ f\left\{y(t),y'(t),x\right\}\rightarrow f\left\{y(t),y'(t),x\right\}-\lambda C\l
 \label{_auto5} \tag{5}
 \end{equation}
 \]</div>
-</div>
-<div class="section" id="example">
+</section>
+<section id="example">
 <h3>Example<a class="headerlink" href="#example" title="Permalink to this heading">#</a></h3>
 <p>Consider a chain of length <span class="math notranslate nohighlight">\(L\)</span> and mass per unit length <span class="math notranslate nohighlight">\(\kappa\)</span> that
 hangs from point <span class="math notranslate nohighlight">\(x=0,y=0\)</span> to point <span class="math notranslate nohighlight">\(x_f,y_f\)</span>. The shape must minimize
@@ -954,9 +972,9 @@ the solution is that once you define the length and the end-point
 positions <span class="math notranslate nohighlight">\(y_1\)</span> and <span class="math notranslate nohighlight">\(y_2\)</span>, the solution does not depend on <span class="math notranslate nohighlight">\(\kappa\)</span> or
 <span class="math notranslate nohighlight">\(g\)</span>. Thus, the shape of the chain would be the same if you took it to
 the moon. These solutions are known as <a class="reference external" href="http://en.wikipedia.org/wiki/Catenary%7D%7Bhttp://en.wikipedia.org/wiki/Catenary">catenaries</a>.</p>
-</div>
-</div>
-<div class="section" id="lagrangians">
+</section>
+</section>
+<section id="lagrangians">
 <h2>Lagrangians<a class="headerlink" href="#lagrangians" title="Permalink to this heading">#</a></h2>
 <p>Lagrangians represent a powerful method for solving problems that
 would be nearly impossible by direct application of Newton’s third
@@ -1022,7 +1040,7 @@ m\ell^2\ddot{\theta}&amp;=&amp;-mg\ell\sin\theta,\\
 \ddot{\theta}&amp;\approx&amp;-\frac{g}{\ell}\theta.
 \end{eqnarray*}
 \end{split}\]</div>
-<div class="section" id="proving-lagrange-s-equations-of-motion-from-newton-s-laws">
+<section id="proving-lagrange-s-equations-of-motion-from-newton-s-laws">
 <h3>Proving Lagrange’s Equations of Motion from Newton’s Laws<a class="headerlink" href="#proving-lagrange-s-equations-of-motion-from-newton-s-laws" title="Permalink to this heading">#</a></h3>
 <p>Lagrange’s equations of motion can only be applied for the following conditions:</p>
 <ul class="simple">
@@ -1089,8 +1107,8 @@ see that the bottom expressions above are identical,</p>
 \label{_auto9} \tag{9}
 \end{equation}
 \]</div>
-</div>
-<div class="section" id="lagrangian-examples">
+</section>
+<section id="lagrangian-examples">
 <h3>Lagrangian Examples<a class="headerlink" href="#lagrangian-examples" title="Permalink to this heading">#</a></h3>
 <p>Two examples are presented here. In the first, there are two
 generalized coordinates, but the two equations of motion can be
@@ -1168,9 +1186,9 @@ U&amp;=&amp;mgkr^2/2.
 for the acceleration to be inward for small deviations of <span class="math notranslate nohighlight">\(r\)</span> one
 needs to have <span class="math notranslate nohighlight">\(gk&gt;\omega^2\)</span>. If <span class="math notranslate nohighlight">\(\omega^2&gt;gk\)</span> the bead will move
 outward indefinitely.</p>
-</div>
-</div>
-<div class="section" id="small-vibrations-and-normal-modes">
+</section>
+</section>
+<section id="small-vibrations-and-normal-modes">
 <h2>Small Vibrations and Normal Modes<a class="headerlink" href="#small-vibrations-and-normal-modes" title="Permalink to this heading">#</a></h2>
 <p>Two examples are provided for solving for normal modes. These are
 solutions with multiple generalized coordinates, where the motion is
@@ -1194,7 +1212,7 @@ coordinate system where the motion is simple for each coordinate. This
 involves finding the direction, or the linear combination of <span class="math notranslate nohighlight">\(x_i\)</span>
 that form the coordinates <span class="math notranslate nohighlight">\(q_i\)</span> in which the motion is that of a
 single oscillator in each coordinate.</p>
-<div class="section" id="coupled-springs">
+<section id="coupled-springs">
 <h3>Coupled Springs<a class="headerlink" href="#coupled-springs" title="Permalink to this heading">#</a></h3>
 <p>For a first example, we consider a system of springs, where we write
 the Lagrangian, then find the normal modes. For the second example, a
@@ -1328,8 +1346,8 @@ oscillates independently in a simple manner, one can better understand
 the motion. Further, the frequencies of these modes represent the
 natural resonant frequencies of the system. This is important in the
 construction of many structures, such as bridges or vehicles.</p>
-</div>
-<div class="section" id="double-pendulum">
+</section>
+<section id="double-pendulum">
 <h3>Double Pendulum<a class="headerlink" href="#double-pendulum" title="Permalink to this heading">#</a></h3>
 <p>Consider a double pendulum confined to the <span class="math notranslate nohighlight">\(x-y\)</span> plane, where <span class="math notranslate nohighlight">\(y\)</span> is
 vertical. A mass <span class="math notranslate nohighlight">\(m\)</span> is connected to the ceiling with a massless
@@ -1546,9 +1564,9 @@ has a system with dimensionality <span class="math notranslate nohighlight">\(n&
 the problem numerically due to the messiness of the algebra. The main
 programming languages all have packages which readily diagonalize
 matrices and find eigenvectors and eigenvalues.</p>
-</div>
-</div>
-<div class="section" id="conservation-laws">
+</section>
+</section>
+<section id="conservation-laws">
 <h2>Conservation Laws<a class="headerlink" href="#conservation-laws" title="Permalink to this heading">#</a></h2>
 <p>Energy is conserved only when the Lagrangian has no explicit
 dependence on time, i.e. <span class="math notranslate nohighlight">\(L(q,\dot{q})\)</span>, not <span class="math notranslate nohighlight">\(L(q,\dot{q},t)\)</span>. To show
@@ -1693,8 +1711,8 @@ instance, you may need to write the Lagrangian in terms of angles.</p>
 <!-- Add material about angular momentum conservation and linear momentum. -->
 <!-- Add material about non-inertial frames -->
 <!-- Double pendulum and Foucalt's pendulum -->
-<!-- Revisit oscillations and example on earthquake models --></div>
-</div>
+<!-- Revisit oscillations and example on earthquake models --></section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -1724,7 +1742,7 @@ instance, you may need to write the Lagrangian in terms of angles.</p>
               
               
                 <footer class="prev-next-footer">
-                  <!-- Previous / next buttons -->
+                  
 <div class="prev-next-area">
     <a class="left-prev"
        href="chapter7.html"
@@ -1752,6 +1770,7 @@ instance, you may need to write the Lagrangian in terms of angles.</p>
             
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -1797,9 +1816,10 @@ By Danny Caballero, Morten Hjorth-Jensen
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
-      © Copyright 2022.
+      © Copyright 2023.
       <br/>
     
   </p>
@@ -1823,8 +1843,8 @@ By Danny Caballero, Morten Hjorth-Jensen
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
 
   <footer class="bd-footer">
   </footer>

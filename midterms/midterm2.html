@@ -3,11 +3,12 @@
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-content_root="" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
     <title>Midterm 2 (Due 5 Apr) &#8212; Classical Mechanics</title>
   
   
@@ -18,28 +19,28 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+  <link href="../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
-  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -48,25 +49,21 @@
     <script src="../_static/doctools.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../_static/design-tabs.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'midterms/midterm2';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Chaos in the driven nonlinear pendulum" href="../honors-projects/ChaoticPendulum.html" />
+    <link rel="next" title="Homework 1 (Due 19 Jan)" href="../solutions/solutionhw1.html" />
     <link rel="prev" title="Homework 7 (Due 22 Mar)" href="../homeworks/hw7.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -77,10 +74,9 @@ const thebe_selector_output = ".output, .cell_output"
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
   
   <div id="pst-scroll-pixel-helper"></div>
-
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
     <i class="fa-solid fa-arrow-up"></i>
@@ -121,11 +117,14 @@ const thebe_selector_output = ".output, .cell_output"
 </form></div>
   </div>
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
   
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
+      
+      
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -140,9 +139,11 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
   
 
 <a class="navbar-brand logo" href="../intro.html">
+  
   
   
   
@@ -152,12 +153,23 @@ const thebe_selector_output = ".output, .cell_output"
       
     
     
-    <img src="../_static/spartan-helmet.png" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="../_static/spartan-helmet.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="../_static/spartan-helmet.png" class="logo__image only-light" alt="Classical Mechanics - Home"/>
+    <script>document.write(`<img src="../_static/spartan-helmet.png" class="logo__image only-dark" alt="Classical Mechanics - Home"/>`);</script>
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -199,21 +211,25 @@ const thebe_selector_output = ".output, .cell_output"
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Weekly assignments, midterms and final projects with solutions</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../homeworks/hw1.html">Homework 1 (Due 19 Jan)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../solutions/solutionhw1.html">Solutions - Homework 1 (Due 19 Jan)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../homeworks/hw2.html">Homework 2 (Due 26 Jan)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../solutions/solutionhw2.html">Solutions - Homework 2 (Due 26 Jan)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../homeworks/hw3.html">Homework 3 (Due 02 Feb)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../solutions/solutionhw3.html">Solutions - Homework 3 (Due 03 Feb)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../homeworks/hw4.html">Homework 4 (Due 09 Feb)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../solutions/solutionhw4.html">Solutions - Homework 4 (Due 09 Feb)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="midterm1.html">Midterm 1 (Due 23 Feb)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../solutions/solutionmidterm1.html">Solutions - Midterm 1 (Due 23 Feb)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../homeworks/hw5.html">Homework 5 (Due 08 Mar)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../solutions/solutionhw5.html">Solutions - Homework 5 (Due 08 Mar)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../homeworks/hw6.html">Homework 6 (Due 15 Mar)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../solutions/solutionhw6.html">Solutions - Homework 6 (Due 15 Mar)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../homeworks/hw7.html">Homework 7 (Due 22 Mar)</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Midterm 2 (Due 5 Apr)</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Solutions</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../solutions/solutionhw1.html">Homework 1 (Due 19 Jan)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../solutions/solutionhw2.html">Homework 2 (Due 26 Jan)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../solutions/solutionhw3.html">Homework 3 (Due 03 Feb)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../solutions/solutionhw4.html">Homework 4 (Due 09 Feb)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../solutions/solutionmidterm1.html">Midterm 1 (Due 23 Feb)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../solutions/solutionhw5.html">Homework 5 (Due 08 Mar)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../solutions/solutionhw6.html">Homework 6 (Due 15 Mar)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../solutions/solutionhw7.html">Homework 7 (Due 22 Mar)</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Honors Projects</span></p>
 <ul class="nav bd-sidenav">
@@ -357,6 +373,7 @@ const thebe_selector_output = ".output, .cell_output"
 </button>
 
 
+
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
@@ -366,6 +383,7 @@ document.write(`
   </button>
 `);
 </script>
+
 
 <script>
 document.write(`
@@ -418,14 +436,14 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
   <!-- HTML file automatically generated from DocOnce source (https://github.com/doconce/doconce/)
 doconce format html Firstmidterm2022.do.txt --no_mako -->
-<!-- dom:TITLE: PHY321: Classical Mechanics 1 --><div class="tex2jax_ignore mathjax_ignore section" id="midterm-2-due-5-apr">
+<!-- dom:TITLE: PHY321: Classical Mechanics 1 --><section class="tex2jax_ignore mathjax_ignore" id="midterm-2-due-5-apr">
 <h1>Midterm 2 (Due 5 Apr)<a class="headerlink" href="#midterm-2-due-5-apr" title="Permalink to this heading">#</a></h1>
 <p>Date: <strong>25 Mar 24</strong></p>
-<div class="section" id="introduction-to-the-second-midterm-project-total-score-100-points">
+<section id="introduction-to-the-second-midterm-project-total-score-100-points">
 <h2>Introduction to the second midterm project, total score 100 points<a class="headerlink" href="#introduction-to-the-second-midterm-project-total-score-100-points" title="Permalink to this heading">#</a></h2>
 <p>The relevant reading background is:</p>
 <ol class="arabic simple">
@@ -433,12 +451,12 @@ doconce format html Firstmidterm2022.do.txt --no_mako -->
 <li><p>chapters 6-8 of Boas.</p></li>
 </ol>
 <p>In this midterm project we will start modeling an oscillator. We pull together many of the elements we have used in our analysis of oscillators to do so. There is substantial extra credit for this midterm project and it involves some advanced analysis that we have not done. This is a good opportunity to learn something new and interesting. The second problem is a relatively standard signal processing problem, which is a little different than the examples we have done in class.</p>
-<div class="section" id="practicalities-about-midterm-projects">
+<section id="practicalities-about-midterm-projects">
 <h3>Practicalities about midterm projects<a class="headerlink" href="#practicalities-about-midterm-projects" title="Permalink to this heading">#</a></h3>
 <p>You can work in groups (optimal groups are often 2-3 people) or by yourself. If you work as a group, you <strong>must</strong> hand in your own work. <strong>Remember to write your name(s)</strong> and indicate how each person contributed.</p>
 <p>Midterms might cover topics from prior homework, lectures, and readings. It is likely that some of the problems might require a little research on your own or might be slightly beyond what we have done on class and in homework. The midterm is meant to be challenging, but it should also be a good place to learn more about the topics covered in the course. We encourage you to use the textbook, notes, and other resources when solving the midterm. Of course, you can also work with others on the midterm, but make sure you write up the solutions yourself. You can ask the any of the teaching staff for help.</p>
-</div>
-<div class="section" id="part-1-the-duffing-oscillator-60pt">
+</section>
+<section id="part-1-the-duffing-oscillator-60pt">
 <h3>Part 1, The Duffing Oscillator (60pt)<a class="headerlink" href="#part-1-the-duffing-oscillator-60pt" title="Permalink to this heading">#</a></h3>
 <p>Consider the following equation of motion for a damped and driven oscillator that is not necessarily linear. This is the <a class="reference external" href="https://en.wikipedia.org/wiki/Duffing_equation">Duffing equation</a>, which describes a damped driven simple harmonic oscillator with a cubic non-linearity. It’s equation of motion is given by:</p>
 <div class="math notranslate nohighlight">
@@ -449,7 +467,7 @@ doconce format html Firstmidterm2022.do.txt --no_mako -->
 <p>We focus on this one dimensional case, but we will analyze it in parts to put together a full picture of the dynamics of the system. If you are looking for useful parameter choices and initial conditions, we suggest using those listed on <a class="reference external" href="https://en.wikipedia.org/wiki/Duffing_equation">the Wikipedia page</a>.</p>
 <p>Recall that the potential for this system can give rise to different kinds of behavior depending on the parameters. The figure below shows the potential for different choices of <span class="math notranslate nohighlight">\(\alpha\)</span> and <span class="math notranslate nohighlight">\(\beta\)</span>. Make sure you choose your parameters to match the potential you want to study - pick a stable well for solving for trajectories.</p>
 <p><img alt="Duffing potential" src="../_images/duffing_potential.png" /></p>
-<div class="section" id="undamped-and-undriven-case-20-points">
+<section id="undamped-and-undriven-case-20-points">
 <h4>Undamped and undriven case (20 points)<a class="headerlink" href="#undamped-and-undriven-case-20-points" title="Permalink to this heading">#</a></h4>
 <ol class="arabic simple">
 <li><p>(5 pt) Consider the undriven and undamped case, <span class="math notranslate nohighlight">\(\delta = \gamma = 0\)</span>. What potential would give rise to this kind of equation of motion? Demonstrate that potential gives the expected equation of motion.</p></li>
@@ -457,32 +475,32 @@ doconce format html Firstmidterm2022.do.txt --no_mako -->
 <li><p>(5 pt) Plot the phase space for the undriven and undamped case. What are the trajectories of the system? What is the behavior of the system? Does it match your expectations from the potential? <em>The figure above only starts this discussion.</em></p></li>
 <li><p>(5 pt) <strong>Here you are likely to need a numerical solver.</strong>  Solve the equation of motion for the undriven and undamped case for a reasonable choice of <span class="math notranslate nohighlight">\(\alpha\)</span> and <span class="math notranslate nohighlight">\(\beta\)</span> and initial conditions. Plot the position as a function of time. What is the behavior of the system? Does it match your expectations from the potential and the phase portrait??</p></li>
 </ol>
-</div>
-<div class="section" id="damped-and-undriven-case-20-points">
+</section>
+<section id="damped-and-undriven-case-20-points">
 <h4>Damped and undriven case (20 points)<a class="headerlink" href="#damped-and-undriven-case-20-points" title="Permalink to this heading">#</a></h4>
 <ol class="arabic simple" start="5">
 <li><p>(5 pt) Now consider the damped and undriven case, <span class="math notranslate nohighlight">\(\gamma = 0\)</span>. What is the equation of motion in this case? Can you develop this equation of motion fully from a potential (like we did above)? If so, what is the potential? If not, why not?</p></li>
 <li><p>(5 pt) Plot the phase space for the damped and undriven case. What kinds of trajectories are there?</p></li>
 <li><p>(10 pt) <strong>Here you are likely to need a numerical solver.</strong>  Solve the equation of motion for the damped and undriven case for a reasonable choice of <span class="math notranslate nohighlight">\(\alpha\)</span>, <span class="math notranslate nohighlight">\(\beta\)</span>, <span class="math notranslate nohighlight">\(\delta\)</span>, and initial conditions. Plot the position as a function of time. What is the behavior of the system? Does it match your expectations from the phase portrait?</p></li>
 </ol>
-</div>
-<div class="section" id="driven-and-damped-case-20-points">
+</section>
+<section id="driven-and-damped-case-20-points">
 <h4>Driven and damped case (20 points)<a class="headerlink" href="#driven-and-damped-case-20-points" title="Permalink to this heading">#</a></h4>
 <ol class="arabic simple" start="8">
 <li><p>(5 pt) Now consider the damped and driven case, <span class="math notranslate nohighlight">\(\gamma \neq 0\)</span>. What is the equation of motion in this case? Can you develop this equation of motion fully from a potential (like we did above)? If so, what is the potential? If not, why not?</p></li>
 <li><p>(5 pt) Is it possible to plot the phase space for the driven and damped case? Why or why not? What solutions are available to you to understand the behavior of the system in phase space? <em>Here we are not looking for you to solve the problem, but to conduct research into how people make sense of the behavior of driven and damped systems.</em></p></li>
 <li><p>(10 pt) <strong>Here you are likely to need a numerical solver.</strong>  Solve the equation of motion for the driven and damped case for a reasonable choice of <span class="math notranslate nohighlight">\(\alpha\)</span>, <span class="math notranslate nohighlight">\(\beta\)</span>, <span class="math notranslate nohighlight">\(\delta\)</span>, <span class="math notranslate nohighlight">\(\gamma\)</span>, <span class="math notranslate nohighlight">\(\omega\)</span>, and initial conditions. Plot the position as a function of time. What is the behavior of the system?</p></li>
 </ol>
-</div>
-<div class="section" id="extra-credit-up-to-30-points">
+</section>
+<section id="extra-credit-up-to-30-points">
 <h4>Extra credit (up to 30 points)<a class="headerlink" href="#extra-credit-up-to-30-points" title="Permalink to this heading">#</a></h4>
 <ol class="arabic simple" start="11">
 <li><p>(10 pts) The Duffing oscillator can be either a soft or hard spring by changing the sign of the <span class="math notranslate nohighlight">\(\alpha\)</span> term. What happens to the behavior of the system when you change the sign of <span class="math notranslate nohighlight">\(\alpha\)</span>? Can you explain this behavior in terms of the potential?</p></li>
 <li><p>(20 pts) A critical tool for understanding the behavior of the Duffing oscillator is the <a class="reference external" href="https://en.wikipedia.org/wiki/Poincar%C3%A9_map">Poincaré section</a>. Can you implement a Poincaré section for the driven and damped case? What does it tell you about the behavior of the system?</p></li>
 </ol>
-</div>
-</div>
-<div class="section" id="part-2-signal-analysis-40pt">
+</section>
+</section>
+<section id="part-2-signal-analysis-40pt">
 <h3>Part 2, Signal Analysis (40pt)<a class="headerlink" href="#part-2-signal-analysis-40pt" title="Permalink to this heading">#</a></h3>
 <p>We learned that any periodic function can be written using a Fourier series. The expansion we wrote is:</p>
 <div class="math notranslate nohighlight">
@@ -504,9 +522,9 @@ doconce format html Firstmidterm2022.do.txt --no_mako -->
 <li><p>(10 pt) What is the expression for the approximation of the triangular wave using the first few terms of the Fourier series?</p></li>
 <li><p>(10 pt) Plot the Fourier series for the first few terms. How many terms do you need to get a good approximation of the triangular wave? Do you notice any problems with the Fourier series? If so, what are they?</p></li>
 </ol>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -536,7 +554,7 @@ doconce format html Firstmidterm2022.do.txt --no_mako -->
               
               
                 <footer class="prev-next-footer">
-                  <!-- Previous / next buttons -->
+                  
 <div class="prev-next-area">
     <a class="left-prev"
        href="../homeworks/hw7.html"
@@ -548,11 +566,11 @@ doconce format html Firstmidterm2022.do.txt --no_mako -->
       </div>
     </a>
     <a class="right-next"
-       href="../honors-projects/ChaoticPendulum.html"
+       href="../solutions/solutionhw1.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Chaos in the driven nonlinear pendulum</p>
+        <p class="prev-next-title">Homework 1 (Due 19 Jan)</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -564,6 +582,7 @@ doconce format html Firstmidterm2022.do.txt --no_mako -->
             
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -604,9 +623,10 @@ By Danny Caballero, Morten Hjorth-Jensen
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
-      © Copyright 2022.
+      © Copyright 2023.
       <br/>
     
   </p>
@@ -630,8 +650,8 @@ By Danny Caballero, Morten Hjorth-Jensen
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
 
   <footer class="bd-footer">
   </footer>
