@@ -48,7 +48,7 @@ Parth G. has a lovely video below about the basics of Lagrangian Dynamics. We wi
 - Notes:
   - [Lagrangian Mechanics](../lecture-notes/lagrangians.ipynb)
 - Lecture Videos:
-  - 25 Mar 2024
+  - [25 Mar 2024](https://mediaspace.msu.edu/media/t/1_zwd49u65)
   - 27 Mar 2024
 
 
