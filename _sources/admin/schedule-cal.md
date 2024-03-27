@@ -112,8 +112,8 @@ All assignments are turned in using D2L as a PDF and/or Jupyter notebook.
 
 | Week | Day    | Topic                         | Readings to prepare | Important events                                                |
 | ---- | ------ | ----------------------------- | ------------------- | --------------------------------------------------------------- |
-| CW14 | 08 Apr | Central Force; the 1D problem | JRT 8.1-8.3         | Homework 9 Assigned (Due 19 Apr)                                |
-|      | 10 Apr |                               |                     |                                                                 |
+| CW14 | 08 Apr | NO CLASS (WATCH ECLIPSE)      | JRT 8.1-8.3         | Homework 9 Assigned (Due 19 Apr)                                |
+|      | 10 Apr | Central Force; the 1D problem |                     |                                                                 |
 |      | 12 Apr |                               |                     | **Homework 8 Due** _([Turn-in using D2L](https://d2l.msu.edu))_ |
 
 ## Week 15
