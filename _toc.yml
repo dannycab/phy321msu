@@ -54,6 +54,7 @@ parts:
       - file: homeworks/hw6.ipynb
       - file: homeworks/hw7.ipynb
       - file: midterms/midterm2.ipynb
+      - file: homeworks/hw8.ipynb
   - caption: Solutions
     numbered: false
     chapters:
