@@ -104,7 +104,7 @@ All assignments are turned in using D2L as a PDF and/or Jupyter notebook.
 
 | Week | Day    | Topic                                      | Readings to prepare | Important events                                                       |
 | ---- | ------ | ------------------------------------------ | ------------------- | ---------------------------------------------------------------------- |
-| CW13 | 01 Apr | Lagrange's Equations; forces of constraint | JRT 7.3-7.7, 7.10   | Homework 8 Assigned (Due 12 Apr)                                       |
+| CW13 | 01 Apr | Lagrange's Equations; forces of constraint | JRT 7.3-7.7, 7.10   | [Homework 8 Assigned (Due 12 Apr)](../homeworks/hw8.ipynb)                                      |
 |      | 03 Apr |                                            |                     |                                                                        |
 |      | 05 Apr |                                            |                     | **Midterm Project 2 Due** _([Turn-in using D2L](https://d2l.msu.edu))_ |
 
