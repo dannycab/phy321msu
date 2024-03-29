@@ -6,6 +6,34 @@ Materials will appear in reverse chronological order, with the most recent appea
 
 All recorded classes are added to [this playlist](https://mediaspace.msu.edu/playlist/dedicated/1_s1d57uud/.)
 
+### Week 13, April 1-5, 2024
+
+Topics: Lagrangian Mechanics; Forces of Constraint
+
+#### Videos to Watch
+
+##### The Standard Model Lagrangian (17 minute video)
+
+An understanding of physics formulated through [Lagrangian Mechanics](https://en.wikipedia.org/wiki/Lagrangian_mechanics) is a powerful and elegant way to describe the motion of particles and systems. But it can be much more than that. Much of the work of particle physics is done in the context of the [Standard Model](https://en.wikipedia.org/wiki/Standard_Model). The Standard Model is a theory that describes the electromagnetic, weak, and strong nuclear interactions. The Standard Model is a [quantum field theory](https://en.wikipedia.org/wiki/Quantum_field_theory), which is formulated through a Lagrangian.
+
+The video below provides an introduction to this equation and the Standard Model.
+
+[![Standard Model Lagrangian](https://markdown-videos-api.jorgenkh.no/youtube/PHiyQID7SBs?width=720&height=405)](https://inv.n8pjl.ca/watch?v=PHiyQID7SBs)
+- Non-Commercial Link: [https://inv.n8pjl.ca/watch?v=PHiyQID7SBs](https://inv.n8pjl.ca/watch?v=PHiyQID7SBs)
+- Commercial Link: [https://youtube.com/watch?v=PHiyQID7SBs](https://youtube.com/watch?v=PHiyQID7SBs)
+
+
+#### Class Materials
+- Readings:
+  - JRT 7.3-7.7, 7.10
+- Handwritten Notes:
+  - CW12: [Lagrangian Dynamics Examples](../docs/handwritten-notes/CW13.pdf)
+- Notes:
+  - [Lagrangian Mechanics](../lecture-notes/lagrangians.ipynb)
+- Lecture Videos:
+  - 1 Apr 2024
+  - 3 Apr 2024
+
 ### Week 12, March 25-29, 2024
 
 Topics: Lagrangian Mechanics
@@ -49,7 +77,7 @@ Parth G. has a lovely video below about the basics of Lagrangian Dynamics. We wi
   - [Lagrangian Mechanics](../lecture-notes/lagrangians.ipynb)
 - Lecture Videos:
   - [25 Mar 2024](https://mediaspace.msu.edu/media/t/1_zwd49u65)
-  - 27 Mar 2024
+  - [27 Mar 2024](https://mediaspace.msu.edu/media/t/1_p7wcsxf4)
 
 
 ### Week 11, March 18-22, 2024
