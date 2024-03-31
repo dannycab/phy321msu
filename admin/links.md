@@ -18,7 +18,7 @@ An understanding of physics formulated through [Lagrangian Mechanics](https://en
 
 The video below provides an introduction to this equation and the Standard Model.
 
-[![Standard Model Lagrangian](https://markdown-videos-api.jorgenkh.no/youtube/PHiyQID7SBs?width=720&height=405)](https://inv.n8pjl.ca/watch?v=PHiyQID7SBs)
+[![Standard Model Lagrangian](https://markdown-videos-api.jorgenkh.no/youtube/PHiyQID7SBs?width=720&height=405)](https://youtube.com/watch?v=PHiyQID7SBs)
 - Non-Commercial Link: [https://inv.n8pjl.ca/watch?v=PHiyQID7SBs](https://inv.n8pjl.ca/watch?v=PHiyQID7SBs)
 - Commercial Link: [https://youtube.com/watch?v=PHiyQID7SBs](https://youtube.com/watch?v=PHiyQID7SBs)
 
@@ -56,7 +56,7 @@ This is where [Lagrangian Mechanics](https://en.wikipedia.org/wiki/Lagrangian_me
 
 The video below discusses the concept of the Principle of Least Action, which is the foundation of Lagrangian Mechanics.
 
-[![The Principle of Least Action](https://markdown-videos-api.jorgenkh.no/youtube/Q_CQDSlmboA?width=720&height=405)](https://inv.n8pjl.ca/watch?v=Q_CQDSlmboA)
+[![The Principle of Least Action](https://markdown-videos-api.jorgenkh.no/youtube/Q_CQDSlmboA?width=720&height=405)](https://youtube.com/watch?v=Q_CQDSlmboA)
 - Non-Commercial Link: [https://inv.n8pjl.ca/watch?v=Q_CQDSlmboA](https://inv.n8pjl.ca/watch?v=Q_CQDSlmboA)
 - Commercial Link: [https://youtube.com/watch?v=Q_CQDSlmboA](https://youtube.com/watch?v=Q_CQDSlmboA)
 
@@ -64,7 +64,7 @@ The video below discusses the concept of the Principle of Least Action, which is
 
 Parth G. has a lovely video below about the basics of Lagrangian Dynamics. We will do a lot of this in class and go over many examples. This video is a nice introduction to the concept.
 
-[![](https://markdown-videos-api.jorgenkh.no/youtube/KpLno70oYHE?width=720&height=405)](https://inv.n8pjl.ca/watch?v=KpLno70oYHE)
+[![](https://markdown-videos-api.jorgenkh.no/youtube/KpLno70oYHE?width=720&height=405)](https://youtube.com/watch?v=KpLno70oYHE)
 - Non-Commercial Link: [https://inv.n8pjl.ca/watch?v=KpLno70oYHE](https://inv.n8pjl.ca/watch?v=KpLno70oYHE)
 - Commercial Link: [https://youtube.com/watch?v=KpLno70oYHE](https://youtube.com/watch?v=KpLno70oYHE)
 
@@ -94,7 +94,7 @@ We are eventually going to develop some deep principles of classical mechanics t
 
 This mathematics is very powerful and underlies how we can develop equations of motion in particular systems. But is also describes the shape of surfaces like bubbles and droplets. The video below is a nice introduction to the concept of Calculus of Variations and it's relation to [minimal surfaces](https://en.wikipedia.org/wiki/Minimal_surface).
 
-[![The Math of Bubbles: Minimal Surfaces & the Calculus of Variations](https://markdown-videos-api.jorgenkh.no/youtube/8SABptOYUVk?width=720&height=405)](https://inv.n8pjl.ca/watch?v=8SABptOYUVk)
+[![The Math of Bubbles: Minimal Surfaces & the Calculus of Variations](https://markdown-videos-api.jorgenkh.no/youtube/8SABptOYUVk?width=720&height=405)](https://youtube.com/watch?v=8SABptOYUVk)
 
 - Non-Commercial Link: [https://inv.n8pjl.ca/watch?v=8SABptOYUVk](https://inv.n8pjl.ca/watch?v=8SABptOYUVk)
 - Commercial Link: [https://youtube.com/watch?v=8SABptOYUVk](https://youtube.com/watch?v=8SABptOYUVk)
@@ -124,7 +124,7 @@ But, this kind of signal decomposition is a critical tool in many modern areas o
 
 The video below describes the concept and history of the FFT and its importance.
 
-[![The Remarkable Story Behind The Most Important Algorithm Of All Time](https://markdown-videos-api.jorgenkh.no/youtube/nmgFG7PUHfo?width=720&height=405)](https://inv.n8pjl.ca/watch?v=nmgFG7PUHfo)
+[![The Remarkable Story Behind The Most Important Algorithm Of All Time](https://markdown-videos-api.jorgenkh.no/youtube/nmgFG7PUHfo?width=720&height=405)](https://youtube.com/watch?v=nmgFG7PUHfo)
 
 - Non-Commercial Link: [https://inv.n8pjl.ca/watch?v=nmgFG7PUHfo](https://inv.n8pjl.ca/watch?v=nmgFG7PUHfo)
 - Commercial Link: [https://youtube.com/watch?v=nmgFG7PUHfo](https://youtube.com/watch?v=nmgFG7PUHfo)
@@ -153,7 +153,7 @@ Driven oscillators are very common in the world. Analog radios use a driven osci
 
 The video below describes the collapse and how the bridge was rebuilt to avoid the same problem. 
 
-[![Why the Tacoma Narrows Bridge Collapsed](https://markdown-videos-api.jorgenkh.no/youtube/mXTSnZgrfxM?width=720&height=405)](https://inv.n8pjl.ca/watch?v=mXTSnZgrfxM)
+[![Why the Tacoma Narrows Bridge Collapsed](https://markdown-videos-api.jorgenkh.no/youtube/mXTSnZgrfxM?width=720&height=405)](https://youtube.com/watch?v=mXTSnZgrfxM)
 
 - Non-Commercial Link: [https://inv.n8pjl.ca/watch?v=mXTSnZgrfxM](https://inv.n8pjl.ca/watch?v=mXTSnZgrfxM)
 - Commercial Link: [https://youtube.com/watch?v=mXTSnZgrfxM](https://youtube.com/watch?v=mXTSnZgrfxM)
@@ -190,7 +190,7 @@ How do fireflies end up blinking together? How do walking people end up moving i
 
  The video below is a good introduction to the topic of synchronization. 
 
-[![The Surprising Secret of Synchronization](https://markdown-videos-api.jorgenkh.no/youtube/t-_VPRCtiUg?width=720&height=405)](https://inv.n8pjl.ca/watch?v=t-_VPRCtiUg)
+[![The Surprising Secret of Synchronization](https://markdown-videos-api.jorgenkh.no/youtube/t-_VPRCtiUg?width=720&height=405)](https://youtube.com/watch?v=t-_VPRCtiUg)
 
 - Non-Commercial Link: [https://inv.n8pjl.ca/watch?v=t-_VPRCtiUg](https://inv.n8pjl.ca/watch?v=t-_VPRCtiUg)
 - Commercial Link: [https://youtube.com/watch?v=t-_VPRCtiUg](https://youtube.com/watch?v=t-_VPRCtiUg)
@@ -236,7 +236,7 @@ One of the first things we will use to investigate systems from a dynamical syst
 
 We will go into the details of how to construct and develop phase portraits in class. This video from [Steve Brunton](https://www.me.washington.edu/facultyfinder/steve-brunton) is a good overview of the process. It's quite detailed and takes a mathematical perspective, so don't worry if you don't understand everything in the video. We have plenty of time to investigate how this works in practice.
 
-[![Drawing Phase Portraits for Nonlinear Systems](https://markdown-videos-api.jorgenkh.no/youtube/vBwyD4JJlSs?width=720&height=405)](https://inv.n8pjl.ca/watch?v=vBwyD4JJlSs)
+[![Drawing Phase Portraits for Nonlinear Systems](https://markdown-videos-api.jorgenkh.no/youtube/vBwyD4JJlSs?width=720&height=405)](https://youtube.com/watch?v=vBwyD4JJlSs)
 
 - Non-Commercial Link: [https://inv.n8pjl.ca/watch?v=vBwyD4JJlSs](https://inv.n8pjl.ca/watch?v=vBwyD4JJlSs)
 - Commercial Link: [https://youtube.com/watch?v=vBwyD4JJlSs](https://youtube.com/watch?v=vBwyD4JJlSs)
@@ -270,7 +270,7 @@ While never required, these videos are recommended to help you see the larger pi
 
 The [Higgs Boson](https://en.wikipedia.org/wiki/Higgs_boson) is a particle that was discovered in 2012 at the [Large Hadron Collider](https://en.wikipedia.org/wiki/Large_Hadron_Collider) at [CERN](https://en.wikipedia.org/wiki/CERN). This discovery was a major milestone in the field of particle physics. Much of what we are trying to understand about the nature of mass is encapsulated in the [Higgs Field](https://en.wikipedia.org/wiki/Higgs_field). This is an advanced field with a potential that we are not intending to explore. However, the importance of the basic question of "where does mass come from?" is a fundamental question in physics and the concept of energy, potential, and fields is a critical part of the answer.
 
-[![The Crazy Mass-Giving Mechanism of the Higgs Field Simplified](https://markdown-videos-api.jorgenkh.no/youtube/R7dsACYTTXE?width=720&height=405)](https://inv.n8pjl.ca/watch?v=R7dsACYTTXE)
+[![The Crazy Mass-Giving Mechanism of the Higgs Field Simplified](https://markdown-videos-api.jorgenkh.no/youtube/R7dsACYTTXE?width=720&height=405)](https://youtube.com/watch?v=R7dsACYTTXE)
 
 - Non-Commercial Link: [https://inv.n8pjl.ca/watch?v=R7dsACYTTXE](https://inv.n8pjl.ca/watch?v=R7dsACYTTXE)
 - Commercial Link: [https://youtube.com/watch?v=R7dsACYTTXE](https://youtube.com/watch?v=R7dsACYTTXE)
@@ -301,7 +301,7 @@ While never required, these videos are recommended to help you see the larger pi
 
 [Richard Feynman](https://en.wikipedia.org/wiki/Richard_Feynman) was a Nobel Prize winning physicist who was known for his ability to explain complex ideas in simple terms. In this video, he explains the units of energy. He's engaging and gregarious as he was known publicly. 
 
-[![Feynman on the units of energy](https://markdown-videos-api.jorgenkh.no/youtube/roX2NXDUTsM?width=720&height=405)](https://inv.n8pjl.ca/watch?v=roX2NXDUTsM)
+[![Feynman on the units of energy](https://markdown-videos-api.jorgenkh.no/youtube/roX2NXDUTsM?width=720&height=405)](https://youtube.com/watch?v=roX2NXDUTsM)
 
 - Non-Commercial Link: [https://inv.n8pjl.ca/watch?v=roX2NXDUTsM](https://inv.n8pjl.ca/watch?v=roX2NXDUTsM)
 - Commercial Link: [https://youtube.com/watch?v=roX2NXDUTsM](https://youtube.com/watch?v=roX2NXDUTsM)
@@ -324,7 +324,7 @@ To frame how interesting and complex energy can be, consider this video from the
 
 *How do we get light from a circuit when we close a switch?*
 
-[![The Big Misconception About Electricity](https://markdown-videos-api.jorgenkh.no/youtube/bHIhgxav9LY?width=720&height=405)](https://inv.n8pjl.ca/watch?v=bHIhgxav9LY)
+[![The Big Misconception About Electricity](https://markdown-videos-api.jorgenkh.no/youtube/bHIhgxav9LY?width=720&height=405)](https://youtube.com/watch?v=bHIhgxav9LY)
 
 - Non-Commercial Link: [https://inv.n8pjl.ca/watch?v=bHIhgxav9LY](https://inv.n8pjl.ca/watch?v=bHIhgxav9LY)
 - Commercial Link: [https://youtube.com/watch?v=bHIhgxav9LY](https://youtube.com/watch?v=bHIhgxav9LY)
@@ -354,7 +354,7 @@ While never required, these videos are recommended to help you see the larger pi
 ##### Physics of Life - Life at Low Reynolds Number (15 minute video)
 
 This video focuses on the biological aspects of the problem as the physics of low Reynolds numbers is important for understanding the motion of microorganisms. 
-[![Physics of Life - Life at Low Reynolds Number](https://markdown-videos-api.jorgenkh.no/youtube/Qme07fA3Fj4?width=720&height=405)](https://inv.n8pjl.ca/watch?v=gZk2bMaqs1E)
+[![Physics of Life - Life at Low Reynolds Number](https://markdown-videos-api.jorgenkh.no/youtube/Qme07fA3Fj4?width=720&height=405)](https://youtube.com/watch?v=gZk2bMaqs1E)
 
 - Non-Commercial Link: [https://inv.n8pjl.ca/watch?v=gZk2bMaqs1E](https://inv.n8pjl.ca/watch?v=gZk2bMaqs1E)
 - Commercial Link: [https://youtube.com/watch?v=gZk2bMaqs1E](https://youtube.com/watch?v=gZk2bMaqs1E)
@@ -363,7 +363,7 @@ This video focuses on the biological aspects of the problem as the physics of lo
 
 This video is a classic from [G.I. Taylor](https://en.wikipedia.org/wiki/Geoffrey_Ingram_Taylor) who was a physicist interested in sharing the conceptual beauty of physics with the general public. He was also a pioneer in the field of fluid mechanics. In fact, Taylor's [groundbreaking paper](https://royalsocietypublishing.org/doi/10.1098/rsta.1923.0008) on the stability of fluid flows between two rotating cylinders set off studies into turbulence. The [Taylor-Couette flow](https://en.wikipedia.org/wiki/Taylor%E2%80%93Couette_flow) is a critical tool for [studies of turbulence](https://pubmed.ncbi.nlm.nih.gov/20365623/).
 
-[![G.I. Taylor's Low Reynolds Number Flows](https://markdown-videos-api.jorgenkh.no/youtube/8Dst6V4CQME?width=720&height=405)](https://inv.n8pjl.ca/watch?v=8Dst6V4CQME)
+[![G.I. Taylor's Low Reynolds Number Flows](https://markdown-videos-api.jorgenkh.no/youtube/8Dst6V4CQME?width=720&height=405)](https://youtube.com/watch?v=8Dst6V4CQME)
 
 - Non-Commercial Link: [https://inv.n8pjl.ca/watch?v=8Dst6V4CQME](https://inv.n8pjl.ca/watch?v=8Dst6V4CQME)
 - Commercial Link: [https://youtube.com/watch?v=8Dst6V4CQME](https://youtube.com/watch?v=8Dst6V4CQME)
