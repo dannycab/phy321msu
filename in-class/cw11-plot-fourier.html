@@ -3,11 +3,12 @@
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-content_root="" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
     <title>CW11 - Plot Fourier Expansion &#8212; Classical Mechanics</title>
   
   
@@ -18,28 +19,28 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+  <link href="../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
-  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -48,18 +49,14 @@
     <script src="../_static/doctools.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../_static/design-tabs.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
@@ -77,10 +74,9 @@ const thebe_selector_output = ".output, .cell_output"
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
   
   <div id="pst-scroll-pixel-helper"></div>
-
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
     <i class="fa-solid fa-arrow-up"></i>
@@ -121,11 +117,14 @@ const thebe_selector_output = ".output, .cell_output"
 </form></div>
   </div>
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
   
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
+      
+      
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -140,9 +139,11 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
   
 
 <a class="navbar-brand logo" href="../intro.html">
+  
   
   
   
@@ -152,12 +153,23 @@ const thebe_selector_output = ".output, .cell_output"
       
     
     
-    <img src="../_static/spartan-helmet.png" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="../_static/spartan-helmet.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="../_static/spartan-helmet.png" class="logo__image only-light" alt="Classical Mechanics - Home"/>
+    <script>document.write(`<img src="../_static/spartan-helmet.png" class="logo__image only-dark" alt="Classical Mechanics - Home"/>`);</script>
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -362,6 +374,7 @@ const thebe_selector_output = ".output, .cell_output"
 </button>
 
 
+
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
@@ -371,6 +384,7 @@ document.write(`
   </button>
 `);
 </script>
+
 
 <script>
 document.write(`
@@ -418,11 +432,11 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
-  <div class="tex2jax_ignore mathjax_ignore section" id="cw11-plot-fourier-expansion">
+  <section class="tex2jax_ignore mathjax_ignore" id="cw11-plot-fourier-expansion">
 <h1>CW11 - Plot Fourier Expansion<a class="headerlink" href="#cw11-plot-fourier-expansion" title="Permalink to this heading">#</a></h1>
-<p>In our analysis of the the <span class="xref myst">Damped Driven Harmonic Oscillator</span>, we found that the long term solution for a sinusoidal driving force is a sinusoidal motion with the same frequency as the driving force. So for a particular driving force at a frequency <span class="math notranslate nohighlight">\(\omega\)</span>:</p>
+<p>In our analysis of the the <a class="reference internal" href="#"><span class="xref myst">Damped Driven Harmonic Oscillator</span></a>, we found that the long term solution for a sinusoidal driving force is a sinusoidal motion with the same frequency as the driving force. So for a particular driving force at a frequency <span class="math notranslate nohighlight">\(\omega\)</span>:</p>
 <div class="math notranslate nohighlight">
 \[f(t) = f_0 \cos(\omega t),\]</div>
 <p>we found the long term solution to be:</p>
@@ -434,7 +448,7 @@ document.write(`
 \[A = \frac{f_0}{m \sqrt{(\omega_0^2 - \omega^2)^2 + (b \omega)^2}}\]</div>
 <div class="math notranslate nohighlight">
 \[\delta = \arctan\left(\frac{b \omega}{\omega_0^2 - \omega^2}\right)\]</div>
-<div class="section" id="periodic-but-not-sinusoidal-driving-force">
+<section id="periodic-but-not-sinusoidal-driving-force">
 <h2>Periodic but not sinusoidal driving force<a class="headerlink" href="#periodic-but-not-sinusoidal-driving-force" title="Permalink to this heading">#</a></h2>
 <p>What if the driving force where periodic with some period <span class="math notranslate nohighlight">\(\tau\)</span> but not sinusoidal? For example, consider the following driving force:</p>
 <div class="math notranslate nohighlight">
@@ -476,11 +490,11 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/19f3e73399846133a0ae349abf7898410e966e98ba8741b427c04d6494243516.png" src="../_images/19f3e73399846133a0ae349abf7898410e966e98ba8741b427c04d6494243516.png" />
+<img alt="../_images/b8462e812642102db86833ad9c54b98ea5273efbffe6778defb5473800551f59.png" src="../_images/b8462e812642102db86833ad9c54b98ea5273efbffe6778defb5473800551f59.png" />
 </div>
 </div>
-</div>
-<div class="section" id="linear-differential-equations-and-building-solutions">
+</section>
+<section id="linear-differential-equations-and-building-solutions">
 <h2>Linear Differential Equations and Building Solutions<a class="headerlink" href="#linear-differential-equations-and-building-solutions" title="Permalink to this heading">#</a></h2>
 <p>Because the differential equation is linear, we can use solutions to other driving forces to build up solutions to more complicated driving forces. We can do this because of the superposition principle for our solutions.</p>
 <p>The differential operator <span class="math notranslate nohighlight">\(D\)</span> is:</p>
@@ -497,7 +511,7 @@ document.write(`
 <p>Then the solution for the sum of the two drivers is:</p>
 <div class="math notranslate nohighlight">
 \[x(t) = x_1(t) + x_2(t)\]</div>
-<div class="section" id="we-did-this-before">
+<section id="we-did-this-before">
 <h3>We did this before<a class="headerlink" href="#we-did-this-before" title="Permalink to this heading">#</a></h3>
 <p>We did this when we solved the driven damped harmonic oscillator. We found the solution for no driving and then used that solution to build up the solution for a periodic driver.</p>
 <div class="math notranslate nohighlight">
@@ -506,8 +520,8 @@ document.write(`
 \[D x_p(t) = f(t)\]</div>
 <div class="math notranslate nohighlight">
 \[x(t) = x_h(t) + x_p(t)\]</div>
-</div>
-<div class="section" id="fourier-series">
+</section>
+<section id="fourier-series">
 <h3>Fourier Series<a class="headerlink" href="#fourier-series" title="Permalink to this heading">#</a></h3>
 <p>Now if we have solutions to sinusoidal driving forces, we can add them up to get more complicated driving forces. We can do this because of the Fourier expansion of the driving force. For a periodic driving force, we can write the driving force as a sum of sinusoidal driving forces:</p>
 <div class="math notranslate nohighlight">
@@ -517,9 +531,9 @@ document.write(`
 \[a_n = \frac{2}{\tau} \int_0^\tau f(t) \cos(n \omega t) dt\]</div>
 <div class="math notranslate nohighlight">
 \[b_n = \frac{2}{\tau} \int_0^\tau f(t) \sin(n \omega t) dt\]</div>
-</div>
-</div>
-<div class="section" id="square-wave-example">
+</section>
+</section>
+<section id="square-wave-example">
 <h2>Square Wave Example<a class="headerlink" href="#square-wave-example" title="Permalink to this heading">#</a></h2>
 <p>The square wave driving force is periodic with period <span class="math notranslate nohighlight">\(\tau\)</span>. We can write the square wave as a sum of sinusoidal driving forces as we did in class. For that driving force we found a solution that was a sum of sine functions.</p>
 <div class="math notranslate nohighlight">
@@ -551,7 +565,7 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/3e2a89fec5b8bee9747d6774a4c1ad63c62650027c05efc9ddd36d3bcd93f3e0.png" src="../_images/3e2a89fec5b8bee9747d6774a4c1ad63c62650027c05efc9ddd36d3bcd93f3e0.png" />
+<img alt="../_images/d91d420904399557f392fc31ba3aa3c17e52a27e0be514bc8a1c47f33f7ece4a.png" src="../_images/d91d420904399557f392fc31ba3aa3c17e52a27e0be514bc8a1c47f33f7ece4a.png" />
 </div>
 </div>
 <p>You can see that the first few terms are starting to look like the square wave. We can add up more terms to get a better approximation to the square wave. Below we plot the first 11 terms of the Fourier expansion.</p>
@@ -575,7 +589,7 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/9f6dfb22b03bddd38c05228456c16d8250f1e46fb25d153d8631da7119d518c5.png" src="../_images/9f6dfb22b03bddd38c05228456c16d8250f1e46fb25d153d8631da7119d518c5.png" />
+<img alt="../_images/acb860d1f37a96950c6e7a32003ef0699357d82df37fd72f71eb7e74894e1c55.png" src="../_images/acb860d1f37a96950c6e7a32003ef0699357d82df37fd72f71eb7e74894e1c55.png" />
 </div>
 </div>
 <p>This is a little strange. It seems like the reconstructed singal, the one we are adding up with the Fourier expansion, is not quite right. It seems like we are overshooting the peaks and valleys. This is where the sqaure wave is not smooth. Let’s add up more terms to see if we can get a better approximation, say 101 terms.</p>
@@ -599,7 +613,7 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/1bde39898b43f998b27bfd70fcc90d2973c9c3385079503068ff44901bda7f96.png" src="../_images/1bde39898b43f998b27bfd70fcc90d2973c9c3385079503068ff44901bda7f96.png" />
+<img alt="../_images/3a6457696b95a8387b2c0d0c5ddd09c4eb70aa269296a09cd127a9056af6c3ef.png" src="../_images/3a6457696b95a8387b2c0d0c5ddd09c4eb70aa269296a09cd127a9056af6c3ef.png" />
 </div>
 </div>
 <p>That really doesn’t look any better on the edges. It seems like we are getting closer to the square wave in the middle, but the edges are still not quite right. Ok, let’s try 501 terms. And let’s zoom in on the edges to see if we are getting any better.</p>
@@ -646,12 +660,12 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/8bec1a9769f1a9329c78fe7ca3eee3fab9ec0ff538ac5962b7a9d5a555015f3b.png" src="../_images/8bec1a9769f1a9329c78fe7ca3eee3fab9ec0ff538ac5962b7a9d5a555015f3b.png" />
+<img alt="../_images/53a4873ecc898523ae753293c79f275e576f967fd1d996e22d41ca89de0571a7.png" src="../_images/53a4873ecc898523ae753293c79f275e576f967fd1d996e22d41ca89de0571a7.png" />
 </div>
 </div>
 <p>We are…sort of. This “ringing” that you see at the edges is a well-known issue called the <a class="reference external" href="https://en.wikipedia.org/wiki/Gibbs_phenomenon">Gibbs phenomenon</a>. It is a result of the fact that the Fourier expansion is trying to approximate a discontinuous function with a sum of continuous functions. The Fourier expansion is not very good at approximating discontinuous functions. This is why we are seeing the overshoot at the edges of the square wave. It is irreducible and will always be there. And if you are constructing signals that drive a system, this is important for issues like noise and stability, but also underlies other issues with finite signal processing.</p>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -681,7 +695,7 @@ document.write(`
               
               
                 <footer class="prev-next-footer">
-                  <!-- Previous / next buttons -->
+                  
 <div class="prev-next-area">
     <a class="left-prev"
        href="cw6-phase_space.html"
@@ -709,6 +723,7 @@ document.write(`
             
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -744,9 +759,10 @@ By Danny Caballero, Morten Hjorth-Jensen
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
-      © Copyright 2022.
+      © Copyright 2023.
       <br/>
     
   </p>
@@ -770,8 +786,8 @@ By Danny Caballero, Morten Hjorth-Jensen
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
 
   <footer class="bd-footer">
   </footer>
