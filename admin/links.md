@@ -32,7 +32,7 @@ The video below provides an introduction to this equation and the Standard Model
   - [Lagrangian Mechanics](../lecture-notes/lagrangians.ipynb)
 - Lecture Videos:
   - [1 Apr 2024](https://mediaspace.msu.edu/media/t/1_l46sljb1)
-  - 3 Apr 2024
+  - [3 Apr 2024](https://mediaspace.msu.edu/media/t/1_6ychyhzy) (Screen disconnected at some point)
 
 ### Week 12, March 25-29, 2024
 
