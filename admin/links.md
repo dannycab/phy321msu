@@ -6,6 +6,31 @@ Materials will appear in reverse chronological order, with the most recent appea
 
 All recorded classes are added to [this playlist](https://mediaspace.msu.edu/playlist/dedicated/1_s1d57uud/.)
 
+### Week 14, April 8-12, 2024
+
+Topics: Lagrangian Mechanics; Forces of Constraint
+
+#### Videos to Watch
+
+##### Solar Eclipses were terrifying (3 minute video)
+
+We do not have class Monday; please enjoy the solar eclipse. 
+
+[![Solar Eclipses were terrifying](https://markdown-videos-api.jorgenkh.no/youtube/-oYe7xM3hLE?width=720&height=405)](https://youtube.com/watch?v=-oYe7xM3hLE)
+- Non-Commercial Link: [https://inv.n8pjl.ca/watch?v=-oYe7xM3hLE](https://inv.n8pjl.ca/watch?v=-oYe7xM3hLE)
+- Commercial Link: [https://youtube.com/watch?v=-oYe7xM3hLE](https://youtube.com/watch?v=-oYe7xM3hLE)
+
+#### Class Materials
+- Readings:
+  - JRT Ch 7
+- Handwritten Notes:
+  - CW14: [Lagrangian Dynamics Examples](../docs/handwritten-notes/CW14.pdf)
+- Notes:
+  - [Lagrangian Mechanics](../lecture-notes/lagrangians.ipynb)
+- Lecture Videos:
+  - 8 Apr 2024 (NO CLASS; SOLAR ECLIPSE)
+  - 10 Apr 2024
+
 ### Week 13, April 1-5, 2024
 
 Topics: Lagrangian Mechanics; Forces of Constraint
@@ -27,7 +52,7 @@ The video below provides an introduction to this equation and the Standard Model
 - Readings:
   - JRT 7.3-7.7, 7.10
 - Handwritten Notes:
-  - CW12: [Lagrangian Dynamics Examples](../docs/handwritten-notes/CW13.pdf)
+  - CW13: [Lagrangian Dynamics Examples](../docs/handwritten-notes/CW13.pdf)
 - Notes:
   - [Lagrangian Mechanics](../lecture-notes/lagrangians.ipynb)
 - Lecture Videos:
