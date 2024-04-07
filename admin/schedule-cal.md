@@ -102,27 +102,27 @@ All assignments are turned in using D2L as a PDF and/or Jupyter notebook.
 
 ## Week 13
 
-| Week | Day    | Topic                                      | Readings to prepare | Important events                                                       |
-| ---- | ------ | ------------------------------------------ | ------------------- | ---------------------------------------------------------------------- |
-| CW13 | 01 Apr | Lagrange's Equations; forces of constraint | JRT 7.3-7.7, 7.10   | [Homework 8 Assigned (Due 12 Apr)](../homeworks/hw8.ipynb)                                      |
-|      | 03 Apr |                                            |                     |                                                                        |
-|      | 05 Apr |                                            |                     | **Midterm Project 2 Due** _([Turn-in using D2L](https://d2l.msu.edu))_ |
+| Week | Day    | Topic                      | Readings to prepare | Important events                                                       |
+| ---- | ------ | -------------------------- | ------------------- | ---------------------------------------------------------------------- |
+| CW13 | 01 Apr | Lagrange Equation Examples | JRT 7.3-7.7, 7.10   | [Homework 8 Assigned (Due 12 Apr)](../homeworks/hw8.ipynb)             |
+|      | 03 Apr |                            |                     |                                                                        |
+|      | 05 Apr |                            |                     | **Midterm Project 2 Due** _([Turn-in using D2L](https://d2l.msu.edu))_ |
 
 ## Week 14
 
-| Week | Day    | Topic                         | Readings to prepare | Important events                                                |
-| ---- | ------ | ----------------------------- | ------------------- | --------------------------------------------------------------- |
-| CW14 | 08 Apr | NO CLASS (WATCH ECLIPSE)      | JRT 8.1-8.3         | Homework 9 Assigned (Due 19 Apr)                                |
-|      | 10 Apr | Central Force; the 1D problem |                     |                                                                 |
-|      | 12 Apr |                               |                     | **Homework 8 Due** _([Turn-in using D2L](https://d2l.msu.edu))_ |
+| Week | Day    | Topic                      | Readings to prepare | Important events                                                |
+| ---- | ------ | -------------------------- | ------------------- | --------------------------------------------------------------- |
+| CW14 | 08 Apr | NO CLASS (WATCH ECLIPSE)   | JRT Ch 7            | Homework 9 Assigned (Due 19 Apr)                                |
+|      | 10 Apr | Lagrange Equation Examples |                     |                                                                 |
+|      | 12 Apr |                            |                     | **Homework 8 Due** _([Turn-in using D2L](https://d2l.msu.edu))_ |
 
 ## Week 15
 
-| Week | Day    | Topic                        | Readings to prepare | Important events                                                |
-| ---- | ------ | ---------------------------- | ------------------- | --------------------------------------------------------------- |
-| CW15 | 15 Apr | Effective Potentials; Orbits | JRT 8.4-8.7         | Final Exam Project Assigned (Due 26 Apr)                        |
-|      | 17 Apr |                              |                     |                                                                 |
-|      | 19 Apr |                              |                     | **Homework 9 Due** _([Turn-in using D2L](https://d2l.msu.edu))_ |
+| Week | Day    | Topic                         | Readings to prepare | Important events                                                |
+| ---- | ------ | ----------------------------- | ------------------- | --------------------------------------------------------------- |
+| CW15 | 15 Apr | Central Force; the 1D problem | JRT 8.1-8.3         | Final Exam Project Assigned (Due 26 Apr)                        |
+|      | 17 Apr |                               |                     |                                                                 |
+|      | 19 Apr |                               |                     | **Homework 9 Due** _([Turn-in using D2L](https://d2l.msu.edu))_ |
 
 ## Week 16
 
