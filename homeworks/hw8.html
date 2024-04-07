@@ -66,7 +66,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'homeworks/hw8';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Homework 1 (Due 19 Jan)" href="../solutions/solutionhw1.html" />
+    <link rel="next" title="Homework 9 (Due 19 Apr)" href="hw9.html" />
     <link rel="prev" title="Midterm 2 (Due 5 Apr)" href="../midterms/midterm2.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -208,6 +208,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="hw7.html">Homework 7 (Due 22 Mar)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../midterms/midterm2.html">Midterm 2 (Due 5 Apr)</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Homework 8 (Due 12 Apr)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hw9.html">Homework 9 (Due 19 Apr)</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Solutions</span></p>
 <ul class="nav bd-sidenav">
@@ -463,11 +464,17 @@ Total points: <strong>100</strong></p>
 <div class="section" id="exercise-1-10pt-paths-along-a-curved-surface">
 <h3>Exercise 1 (10pt) Paths along a curved surface<a class="headerlink" href="#exercise-1-10pt-paths-along-a-curved-surface" title="Permalink to this heading">#</a></h3>
 <p>We have shown by minimizing the path length on a 2D flat surface that we have generated a linear equation, which illustrates the shortest distance between two points is a straight line. On a curved surface, the shortest distance will be a curve of some kind. In the exercise you will be asked to show that the shortest distance between two points on a sphere and a cylinder, both of fixed radii.</p>
+<p>A step in spherical coordinates is given by:</p>
+<div class="math notranslate nohighlight">
+\[d\vec{s} = dr \hat{r} + r d\theta \hat{\theta} + r \sin\theta d\phi \hat{\phi}.\]</div>
+<p>A step in cylindrical coordinates is given by:</p>
+<div class="math notranslate nohighlight">
+\[d\vec{s} = d\rho \hat{\rho} + \rho d\phi \hat{\phi} + dz \hat{z}.\]</div>
 <ol class="arabic simple">
 <li><p>(5 pt) Demonstrate the integral for the shortest distance between two points on a sphere of radius <span class="math notranslate nohighlight">\(R\)</span> is given by:</p></li>
 </ol>
 <div class="math notranslate nohighlight">
-\[L = R \int_{\theta_1}^{\theta_2} \sqrt{1 + \sin^2\theta d\phi^2}\]</div>
+\[L = R \int_{\theta_1}^{\theta_2} \sqrt{1 + \left(\sin^2\theta\right) \left(\frac{d\phi}{d\theta}\right)^2} d\theta\]</div>
 <p>where <span class="math notranslate nohighlight">\(\theta\)</span> is the polar angle and <span class="math notranslate nohighlight">\(\phi\)</span> is the azimuthal angle. Note that you want to travel from (<span class="math notranslate nohighlight">\(\theta_1, \phi_1\)</span>) to (<span class="math notranslate nohighlight">\(\theta_2, \phi_2\)</span>) at fixed <span class="math notranslate nohighlight">\(R\)</span>.</p>
 <ol class="arabic simple" start="2">
 <li><p>(5 pt) Construct the integral for the shortest distance between two points on a cylinder of radius <span class="math notranslate nohighlight">\(R\)</span> and height <span class="math notranslate nohighlight">\(h\)</span>. The coordinates are <span class="math notranslate nohighlight">\((R, \phi_1, z_1)\)</span> and <span class="math notranslate nohighlight">\((R, \phi_2, z_2)\)</span> in the cylindrical coordinate system, where <span class="math notranslate nohighlight">\(\rho\)</span> is the radial difference, <span class="math notranslate nohighlight">\(\phi\)</span> is the azimuthal angle, and <span class="math notranslate nohighlight">\(z\)</span> is the height.</p></li>
@@ -512,11 +519,11 @@ Total points: <strong>100</strong></p>
 </div>
 <div class="section" id="exercise-5-35-pt-motion-inside-a-paraboloid">
 <h4>Exercise 5 (35 pt) Motion inside a paraboloid<a class="headerlink" href="#exercise-5-35-pt-motion-inside-a-paraboloid" title="Permalink to this heading">#</a></h4>
-<p>Let’s return to exercise 3.3 where you developed the equations of motion for a bead constrained to move on a paraboloid. Let’s add gravity to the problem. The potential energy of the bead is given by <span class="math notranslate nohighlight">\(U = mgz + \frac{1}{2}k(x^2 + y^2)\)</span>, where <span class="math notranslate nohighlight">\(m\)</span> is the mass of the bead, <span class="math notranslate nohighlight">\(g\)</span> is the acceleration due to gravity, and <span class="math notranslate nohighlight">\(k\)</span> is the spring constant. The coordinates are <span class="math notranslate nohighlight">\((x, y, z)\)</span> in the Cartesian coordinate system.</p>
+<p>Let’s figure out the motion of a particle stuck inside a paraboloid. The potential energy of the bead is given by <span class="math notranslate nohighlight">\(U = mgz\)</span>, where <span class="math notranslate nohighlight">\(m\)</span> is the mass of the bead, <span class="math notranslate nohighlight">\(g\)</span> is the acceleration due to gravity. The coordinates are <span class="math notranslate nohighlight">\((x, y, z)\)</span> in the Cartesian coordinate system.</p>
 <ol class="arabic simple">
 <li><p>(5 pt) Write down the Lagrangian for the system in terms of <span class="math notranslate nohighlight">\(x\)</span>, <span class="math notranslate nohighlight">\(y\)</span>, and <span class="math notranslate nohighlight">\(z\)</span> and their associated velocities <span class="math notranslate nohighlight">\(\mathcal{L}(x, y, z, \dot{x}, \dot{y}, \dot{z})\)</span>. Find the 3 equations of motion.</p></li>
-<li><p>(15 pt) The bead is constrained by the paraboloid <span class="math notranslate nohighlight">\(z = \frac{1}{2}k(x^2 + y^2)\)</span>. Find the constraint equation and use it to eliminate one of the coordinates from the Lagrangian. Find the 2 equations of motion. Here it can be useful to change to cylindrical coordinates <span class="math notranslate nohighlight">\((\rho, \phi, z)\)</span>. Hint it should be that the Lagrangian is a function of <span class="math notranslate nohighlight">\(\phi\)</span> and <span class="math notranslate nohighlight">\(z\)</span> and their associated velocities, <span class="math notranslate nohighlight">\(\mathcal{L}(\phi, \dot{\phi}, z, \dot{z})\)</span>.</p></li>
-<li><p>(15 pt) For an initial condition where the bead is moving relative to the parabolic at some height above the bottom of the paraboloid, numerically solve the equations of motion (i.e., for <span class="math notranslate nohighlight">\(\phi(t)\)</span> and <span class="math notranslate nohighlight">\(z(t)\)</span>) and plot the the motion of the bead. Does it stick to the paraboloid?</p></li>
+<li><p>(15 pt) The bead is constrained by the paraboloid <span class="math notranslate nohighlight">\(z = \frac{1}{2}k(x^2 + y^2)\)</span>. Find the constraint equation and use it to eliminate one of the coordinates from the Lagrangian. Find the 2 equations of motion. Here it can be useful to change to cylindrical coordinates <span class="math notranslate nohighlight">\((\rho, \phi, z)\)</span>. Hint it should be that the Lagrangian is a function of <span class="math notranslate nohighlight">\(\rho\)</span> and <span class="math notranslate nohighlight">\(\phi\)</span> and their associated velocities, <span class="math notranslate nohighlight">\(\mathcal{L}(\rho, \dot{\rho},\phi, \dot{\phi})\)</span>.</p></li>
+<li><p>(15 pt) For an initial condition where the bead is moving relative to the parabolic at some height above the bottom of the paraboloid, numerically solve the equations of motion (i.e., for <span class="math notranslate nohighlight">\(\rho(t)\)</span> and <span class="math notranslate nohighlight">\(\phi(t)\)</span>) and plot the the motion of the bead. Does it stick to the paraboloid?</p></li>
 </ol>
 </div>
 </div>
@@ -580,11 +587,11 @@ Talks given by researchers through the following clubs:</p>
       </div>
     </a>
     <a class="right-next"
-       href="../solutions/solutionhw1.html"
+       href="hw9.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Homework 1 (Due 19 Jan)</p>
+        <p class="prev-next-title">Homework 9 (Due 19 Apr)</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
