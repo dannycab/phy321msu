@@ -419,12 +419,12 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction-to-homework-9">Introduction to Homework 9</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#practicalities-about-homeworks-and-projects">Practicalities about  homeworks and projects</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-1-10pt-paths-along-a-curved-surface">Exercise 1 (10pt) Paths along a curved surface</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-2-15pt-snell-s-law">Exercise 2 (15pt) Snell’s Law</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-3-15pt-lagrangian-examples">Exercise 3 (15pt) Lagrangian Examples</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-4-25pt-changing-coordinates">Exercise 4 (25pt) Changing Coordinates</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-5-35-pt-motion-inside-a-paraboloid">Exercise 5 (35 pt) Motion inside a paraboloid</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#practicalities-about-homeworks-and-projects">Practicalities about  homeworks and projects</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-1-10pt-modifying-lagrangians-for-friction">Exercise 1 (10pt) Modifying Lagrangians for friction</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-2-15pt-modeling-a-yo-yo">Exercise 2 (15pt) Modeling a Yo-yo</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-3-15pt-constrained-to-a-helix">Exercise 3 (15pt) Constrained to a helix</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-4-25pt-lagrangians-with-rotating-systems">Exercise 4 (25pt) Lagrangians with rotating systems</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-5-35-pt-driven-pendulum">Exercise 5 (35 pt) Driven Pendulum</a></li>
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#extra-credit-integrating-classwork-with-research">Extra Credit - Integrating Classwork With Research</a></li>
@@ -475,64 +475,55 @@ Total points: <strong>100</strong></p>
 <li><p>Homeworks are available ten days before the deadline.</p></li>
 <li><p>How do I (we) hand in?  You can hand in the paper and pencil exercises as a scanned document. For this homework this applies to exercises 1-4. Alternatively, you can hand in everything (if you are ok with typing mathematical formulae using say Latex) as a jupyter notebook at D2L. The numerical exercise(s) (exercise 5-6 here) should always be handed in as a jupyter notebook by the deadline at D2L.</p></li>
 </ol>
-</section>
-<section id="exercise-1-10pt-paths-along-a-curved-surface">
-<h3>Exercise 1 (10pt) Paths along a curved surface<a class="headerlink" href="#exercise-1-10pt-paths-along-a-curved-surface" title="Permalink to this heading">#</a></h3>
-<p>We have shown by minimizing the path length on a 2D flat surface that we have generated a linear equation, which illustrates the shortest distance between two points is a straight line. On a curved surface, the shortest distance will be a curve of some kind. In the exercise you will be asked to show that the shortest distance between two points on a sphere and a cylinder, both of fixed radii.</p>
+<section id="exercise-1-10pt-modifying-lagrangians-for-friction">
+<h4>Exercise 1 (10pt) Modifying Lagrangians for friction<a class="headerlink" href="#exercise-1-10pt-modifying-lagrangians-for-friction" title="Permalink to this heading">#</a></h4>
+<p>We have seen that we have develop the Lagrangian formalism for a potential that depends on location <span class="math notranslate nohighlight">\(U({q}_1, {q}_2, \dots, {q}_N)\)</span> and a kinetic energy term that depends on speeds <span class="math notranslate nohighlight">\(T(\dot{q}_1, \dot{q}_2, \dots, \dot{q}_N)\)</span>. But we’ve said nothing about friction.</p>
+<p>Consider a single particle in one dimension that moves in a potential <span class="math notranslate nohighlight">\(U(x)\)</span> and is subject to a frictional force <span class="math notranslate nohighlight">\(F_{fric}\)</span>.</p>
 <ol class="arabic simple">
-<li><p>(5 pt) Demonstrate the integral for the shortest distance between two points on a sphere of radius <span class="math notranslate nohighlight">\(R\)</span> is given by:</p></li>
+<li><p>(5 pt) Write down the Lagrangian for this system.</p></li>
+<li><p>(5 pt) Show that you can write an equation of motion for this system in the form,</p></li>
 </ol>
 <div class="math notranslate nohighlight">
-\[L = R \int_{\theta_1}^{\theta_2} \sqrt{1 + \sin^2\theta d\phi^2}\]</div>
-<p>where <span class="math notranslate nohighlight">\(\theta\)</span> is the polar angle and <span class="math notranslate nohighlight">\(\phi\)</span> is the azimuthal angle. Note that you want to travel from (<span class="math notranslate nohighlight">\(\theta_1, \phi_1\)</span>) to (<span class="math notranslate nohighlight">\(\theta_2, \phi_2\)</span>) at fixed <span class="math notranslate nohighlight">\(R\)</span>.</p>
-<ol class="arabic simple" start="2">
-<li><p>(5 pt) Construct the integral for the shortest distance between two points on a cylinder of radius <span class="math notranslate nohighlight">\(R\)</span> and height <span class="math notranslate nohighlight">\(h\)</span>. The coordinates are <span class="math notranslate nohighlight">\((R, \phi_1, z_1)\)</span> and <span class="math notranslate nohighlight">\((R, \phi_2, z_2)\)</span> in the cylindrical coordinate system, where <span class="math notranslate nohighlight">\(\rho\)</span> is the radial difference, <span class="math notranslate nohighlight">\(\phi\)</span> is the azimuthal angle, and <span class="math notranslate nohighlight">\(z\)</span> is the height.</p></li>
+\[\frac{\partial L}{\partial x} + F_{fric} = \frac{d}{dt}\left(\frac{\partial L}{\partial \dot{x}}\right).\]</div>
+</section>
+<section id="exercise-2-15pt-modeling-a-yo-yo">
+<h4>Exercise 2 (15pt) Modeling a Yo-yo<a class="headerlink" href="#exercise-2-15pt-modeling-a-yo-yo" title="Permalink to this heading">#</a></h4>
+<p><img alt="Yo-yo" src="../_images/9.2-yoyo.png" /></p>
+<p>We have a rough model of a yo-yo above, really just a cylinder of mass <span class="math notranslate nohighlight">\(m\)</span> and radius <span class="math notranslate nohighlight">\(R\)</span> that can roll out on the string under the influence of gravity. The string is massless and inextensible. Choose the coordinate <span class="math notranslate nohighlight">\(x\)</span> as shown to be the generalized coordinate.</p>
+<ol class="arabic simple">
+<li><p>(7 pt) Write down the Lagrangian for this system.</p></li>
+<li><p>(8 pt) Show that the cylinder accelerates at a rate <span class="math notranslate nohighlight">\(2g/3\)</span>.</p></li>
 </ol>
 </section>
-<section id="exercise-2-15pt-snell-s-law">
-<h3>Exercise 2 (15pt) Snell’s Law<a class="headerlink" href="#exercise-2-15pt-snell-s-law" title="Permalink to this heading">#</a></h3>
-<p>We can develop Snell’s Law by minimizing the time it takes for light to travel between two points in different media. We note that the speed of light in a media is given by <span class="math notranslate nohighlight">\(v = c/n\)</span>, where <span class="math notranslate nohighlight">\(c\)</span> is the speed of light in a vacuum and <span class="math notranslate nohighlight">\(n\)</span> is the refractive index of the media. The time it takes for light to travel between two points is given by <span class="math notranslate nohighlight">\(t = L/v\)</span>, where <span class="math notranslate nohighlight">\(L\)</span> is the distance between the two points.</p>
-<p>Let a light ray travel in a medium with refractive index <span class="math notranslate nohighlight">\(n_1\)</span> into another medium with refractive index <span class="math notranslate nohighlight">\(n_2\)</span>.</p>
+<section id="exercise-3-15pt-constrained-to-a-helix">
+<h4>Exercise 3 (15pt) Constrained to a helix<a class="headerlink" href="#exercise-3-15pt-constrained-to-a-helix" title="Permalink to this heading">#</a></h4>
+<p>A bead is constrained to move on a helix with <span class="math notranslate nohighlight">\(\rho = a\)</span> and <span class="math notranslate nohighlight">\(z = b\phi\)</span>, where <span class="math notranslate nohighlight">\(a\)</span> and <span class="math notranslate nohighlight">\(b\)</span> are constants. The helix is oriented upright, so the <span class="math notranslate nohighlight">\(z\)</span> axis is vertical. The bead is subject to a gravitational force <span class="math notranslate nohighlight">\(-mg\hat{z}\)</span>.</p>
 <ol class="arabic simple">
-<li><p>(5 pt) Sketch the problem and indicate the relevant angles and distances in your figure. Recall that the angle of incidence is <span class="math notranslate nohighlight">\(\theta_1\)</span> and the angle of refraction is <span class="math notranslate nohighlight">\(\theta_2\)</span>. It is ok to use a 2D sketch.</p></li>
-<li><p>(5 pt) Set up the “integral” for the time it takes for light to travel between two points in different media. Use the fact that the speed of light in a media is given by <span class="math notranslate nohighlight">\(v = c/n\)</span>. Your answer needs to include the angles <span class="math notranslate nohighlight">\(\theta_1\)</span> and <span class="math notranslate nohighlight">\(\theta_2\)</span> and the refractive indices <span class="math notranslate nohighlight">\(n_1\)</span> and <span class="math notranslate nohighlight">\(n_2\)</span>.</p></li>
-<li><p>(5 pt) Minimize the time it takes for light to travel between two points in different media to derive Snell’s Law.</p></li>
-</ol>
-<div class="math notranslate nohighlight">
-\[n_1 \sin\theta_1 = n_2 \sin\theta_2\]</div>
-<section id="exercise-3-15pt-lagrangian-examples">
-<h4>Exercise 3 (15pt) Lagrangian Examples<a class="headerlink" href="#exercise-3-15pt-lagrangian-examples" title="Permalink to this heading">#</a></h4>
-<p>Constructing the Lagrangian for a system can be a bit tricky. In this exercise you will be asked to construct the Lagrangian for a few systems and quickly find equations of motion to illustrate the process.</p>
-<ol class="arabic simple">
-<li><p>(2 pt) Construct the Lagrangian in 3D for a projectile subject to no air resistance in a uniform gravitational field. The coordinates are <span class="math notranslate nohighlight">\((x, y, z)\)</span> in the Cartesian coordinate system. Find the 3 equations of motion.</p></li>
-<li><p>(2 pt) Construct the Lagrangian for a one-dimensional simple harmonic oscillator (<span class="math notranslate nohighlight">\(F=-kx\)</span>). The coordinate is <span class="math notranslate nohighlight">\(x\)</span> in the Cartesian coordinate system. Find the equation of motion.</p></li>
-<li><p>(3 pt) A mass moves in a potential well <span class="math notranslate nohighlight">\(U(x,y) = \frac{1}{2}k(x^2 + y^2)\)</span>. Construct the Lagrangian in 2D. The coordinates are <span class="math notranslate nohighlight">\((x, y)\)</span> in the Cartesian coordinate system. Find the 2 equations of motion.</p></li>
-</ol>
-<p>It’s common to use coordinates that are convenient for the problem. In these cases, you will need to write down the kinetic and potential energy in terms of the coordinates you choose. The single particle kinetic energy in these coordinates are commonly used.</p>
-<ol class="arabic simple" start="4">
-<li><p>(4 pt) Write or derive the velocity vector in spherical coordinates. The coordinates are <span class="math notranslate nohighlight">\((r, \theta, \phi)\)</span> in the spherical coordinate system. Show the kinetic energy is given by <span class="math notranslate nohighlight">\(T = \frac{1}{2}m(\dot{r}^2 + r^2\dot{\theta}^2 + r^2\sin^2\theta\dot{\phi}^2)\)</span>.</p></li>
-<li><p>(4 pt) Write or derive the velocity vector in cylindrical coordinates. The coordinates are <span class="math notranslate nohighlight">\((\rho, \phi, z)\)</span> in the cylindrical coordinate system. Show the kinetic energy is given by <span class="math notranslate nohighlight">\(T = \frac{1}{2}m(\dot{\rho}^2 + \rho^2\dot{\phi}^2 + \dot{z}^2)\)</span>.</p></li>
+<li><p>(5 pt) Write down the Lagrangian for this system.</p></li>
+<li><p>(5 pt) Find the equations of motion for this system. Explain what the motion of the bead looks like.</p></li>
+<li><p>(5 pt) What happens when <span class="math notranslate nohighlight">\(R \rightarrow 0\)</span>? Explain what the motion of the bead looks like in this limit.</p></li>
 </ol>
 </section>
-<section id="exercise-4-25pt-changing-coordinates">
-<h4>Exercise 4 (25pt) Changing Coordinates<a class="headerlink" href="#exercise-4-25pt-changing-coordinates" title="Permalink to this heading">#</a></h4>
-<p>Consider two particles with masses <span class="math notranslate nohighlight">\(m_1=m_2=m\)</span> connected by a spring with spring constant <span class="math notranslate nohighlight">\(k\)</span>. They sit on a frictionless surface but are constrained to the <span class="math notranslate nohighlight">\(x\)</span>-axis. The location of the first particle is <span class="math notranslate nohighlight">\(x_1\)</span> and the location of the second particle is <span class="math notranslate nohighlight">\(x_2\)</span>. The spring is at equilibrium when the particles are a distance <span class="math notranslate nohighlight">\(L\)</span> apart. Assume the spring is massless and that the left mass never changes position with the right mass (i.e., the spring is always horizontal).</p>
+<section id="exercise-4-25pt-lagrangians-with-rotating-systems">
+<h4>Exercise 4 (25pt) Lagrangians with rotating systems<a class="headerlink" href="#exercise-4-25pt-lagrangians-with-rotating-systems" title="Permalink to this heading">#</a></h4>
+<p>As we develop more complicated systems, we will encounter rotating systems. In this problem, we will consider a simple example of a rotating system. A bead is constrained to move on a straight frictionless rod. The rod can pivot about it’s center (like it’s spinning on a table). The rod rotates with a constant angular velocity <span class="math notranslate nohighlight">\(\omega\)</span> its center.</p>
 <ol class="arabic simple">
-<li><p>(3 pt) Write down the kinetic and potential energy for this system in terms of <span class="math notranslate nohighlight">\(x_1\)</span> and <span class="math notranslate nohighlight">\(x_2\)</span> and their associated velocities.</p></li>
-<li><p>(4 pt) Write down the Lagrangian for this system in terms of <span class="math notranslate nohighlight">\(x_1\)</span> and <span class="math notranslate nohighlight">\(x_2\)</span> and their associated velocities <span class="math notranslate nohighlight">\(\mathcal{L}(x_1, x_2, \dot{x}_1, \dot{x}_2)\)</span>. Find the 2 equations of motion.</p></li>
-<li><p>(5 pt) Now consider a new coordinate system where the center of mass is at <span class="math notranslate nohighlight">\(x_{cm} = \frac{1}{2}(x_1 + x_2)\)</span> and the relative coordinate is <span class="math notranslate nohighlight">\(x = x_1 - x_2\)</span>. Write down the kinetic and potential energy in terms of <span class="math notranslate nohighlight">\(x_{cm}\)</span> and <span class="math notranslate nohighlight">\(x\)</span> and their associated velocities.</p></li>
-<li><p>(8 pt) Write down the Lagrangian for this system in terms of the center of mass coordinate (<span class="math notranslate nohighlight">\(x_{cm}\)</span>) and the spring’s extension (<span class="math notranslate nohighlight">\(x\)</span>) and the associated velocities <span class="math notranslate nohighlight">\(\mathcal{L}(x_{cm}, x, \dot{x}_{cm}, \dot{x})\)</span>. Find the 2 equations of motion.</p></li>
-<li><p>(5 pt) Find <span class="math notranslate nohighlight">\(x_{cm}(t)\)</span> and <span class="math notranslate nohighlight">\(x(t)\)</span> for the system for some generic initial conditions of your choosing. Describe the motion of the system.</p></li>
+<li><p>(5pt) Write down the Lagrangian for the threaded bead using <span class="math notranslate nohighlight">\(r\)</span> as the generalized coordinate. Note: how is <span class="math notranslate nohighlight">\(\phi\)</span> related to <span class="math notranslate nohighlight">\(\omega\)</span>?</p></li>
+<li><p>(5pt) Find the equations of motion for this system, and solve for <span class="math notranslate nohighlight">\(r(t)\)</span>.</p></li>
+<li><p>(5pt) What happens if the bead starts at rest at <span class="math notranslate nohighlight">\(r = r_0\)</span>? What is the motion of the bead?</p></li>
+<li><p>(5pt) If it released from rest at <span class="math notranslate nohighlight">\(r = r_0\)</span>, what is the motion of the bead? Explain in terms of the centrifugal force (<span class="math notranslate nohighlight">\(m\omega^2r\)</span>).</p></li>
+<li><p>(5pt) What have you noticed about solving this problem, which is different from the other problems we’ve done so far?</p></li>
 </ol>
-<p>In this problem we are changing the coordinates to explore a different aspect of the problem (and to make the math easier). This is a common technique that will not always be obvious. But practice will help us identify when it is useful.</p>
 </section>
-<section id="exercise-5-35-pt-motion-inside-a-paraboloid">
-<h4>Exercise 5 (35 pt) Motion inside a paraboloid<a class="headerlink" href="#exercise-5-35-pt-motion-inside-a-paraboloid" title="Permalink to this heading">#</a></h4>
-<p>Let’s return to exercise 3.3 where you developed the equations of motion for a bead constrained to move on a paraboloid. Let’s add gravity to the problem. The potential energy of the bead is given by <span class="math notranslate nohighlight">\(U = mgz + \frac{1}{2}k(x^2 + y^2)\)</span>, where <span class="math notranslate nohighlight">\(m\)</span> is the mass of the bead, <span class="math notranslate nohighlight">\(g\)</span> is the acceleration due to gravity, and <span class="math notranslate nohighlight">\(k\)</span> is the spring constant. The coordinates are <span class="math notranslate nohighlight">\((x, y, z)\)</span> in the Cartesian coordinate system.</p>
+<section id="exercise-5-35-pt-driven-pendulum">
+<h4>Exercise 5 (35 pt) Driven Pendulum<a class="headerlink" href="#exercise-5-35-pt-driven-pendulum" title="Permalink to this heading">#</a></h4>
+<p><img alt="Pendulum" src="../_images/9.5-pendulum.png" /></p>
+<p>The pendulum above is driven by a motor that rotates the wheel shown. The set up is the wheel of radius <span class="math notranslate nohighlight">\(R\)</span> rotates at a constant angular velocity <span class="math notranslate nohighlight">\(\omega\)</span>. The pendulum is free to swing in the vertical plane. The pendulum has length <span class="math notranslate nohighlight">\(l\)</span> and mass <span class="math notranslate nohighlight">\(m\)</span>. The pendulum is attached the edge of the wheel at point <span class="math notranslate nohighlight">\(P\)</span>. The wheel rotates about it’s own center <span class="math notranslate nohighlight">\(O\)</span>.</p>
 <ol class="arabic simple">
-<li><p>(5 pt) Write down the Lagrangian for the system in terms of <span class="math notranslate nohighlight">\(x\)</span>, <span class="math notranslate nohighlight">\(y\)</span>, and <span class="math notranslate nohighlight">\(z\)</span> and their associated velocities <span class="math notranslate nohighlight">\(\mathcal{L}(x, y, z, \dot{x}, \dot{y}, \dot{z})\)</span>. Find the 3 equations of motion.</p></li>
-<li><p>(15 pt) The bead is constrained by the paraboloid <span class="math notranslate nohighlight">\(z = \frac{1}{2}k(x^2 + y^2)\)</span>. Find the constraint equation and use it to eliminate one of the coordinates from the Lagrangian. Find the 2 equations of motion. Here it can be useful to change to cylindrical coordinates <span class="math notranslate nohighlight">\((\rho, \phi, z)\)</span>. Hint it should be that the Lagrangian is a function of <span class="math notranslate nohighlight">\(\phi\)</span> and <span class="math notranslate nohighlight">\(z\)</span> and their associated velocities, <span class="math notranslate nohighlight">\(\mathcal{L}(\phi, \dot{\phi}, z, \dot{z})\)</span>.</p></li>
-<li><p>(15 pt) For an initial condition where the bead is moving relative to the parabolic at some height above the bottom of the paraboloid, numerically solve the equations of motion (i.e., for <span class="math notranslate nohighlight">\(\phi(t)\)</span> and <span class="math notranslate nohighlight">\(z(t)\)</span>) and plot the the motion of the bead. Does it stick to the paraboloid?</p></li>
+<li><p>(5 pt) Write down the Lagrangian for this system.</p></li>
+<li><p>(5 pt) Find the equations of motion for <span class="math notranslate nohighlight">\(\phi\)</span> - be careful with <span class="math notranslate nohighlight">\(T\)</span>, check when <span class="math notranslate nohighlight">\(\omega =0\)</span></p></li>
+<li><p>(5 pt) Take the limit that the wheel rotates very slowly, and the radius of the wheel is quite small. Find the equations of motion for <span class="math notranslate nohighlight">\(\phi\)</span> in this limit. Describe the motion of the pendulum.</p></li>
+<li><p>(20 pt) Write (or reuse) a numerical code to solve the equations of motion for <span class="math notranslate nohighlight">\(\phi\)</span> for the general case. Plot the motion for at least 3 interesting cases that you find. Explain the motion of the pendulum in each case.</p></li>
 </ol>
 </section>
 </section>
@@ -621,12 +612,12 @@ Talks given by researchers through the following clubs:</p>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction-to-homework-9">Introduction to Homework 9</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#practicalities-about-homeworks-and-projects">Practicalities about  homeworks and projects</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-1-10pt-paths-along-a-curved-surface">Exercise 1 (10pt) Paths along a curved surface</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-2-15pt-snell-s-law">Exercise 2 (15pt) Snell’s Law</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-3-15pt-lagrangian-examples">Exercise 3 (15pt) Lagrangian Examples</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-4-25pt-changing-coordinates">Exercise 4 (25pt) Changing Coordinates</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-5-35-pt-motion-inside-a-paraboloid">Exercise 5 (35 pt) Motion inside a paraboloid</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#practicalities-about-homeworks-and-projects">Practicalities about  homeworks and projects</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-1-10pt-modifying-lagrangians-for-friction">Exercise 1 (10pt) Modifying Lagrangians for friction</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-2-15pt-modeling-a-yo-yo">Exercise 2 (15pt) Modeling a Yo-yo</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-3-15pt-constrained-to-a-helix">Exercise 3 (15pt) Constrained to a helix</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-4-25pt-lagrangians-with-rotating-systems">Exercise 4 (25pt) Lagrangians with rotating systems</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-5-35-pt-driven-pendulum">Exercise 5 (35 pt) Driven Pendulum</a></li>
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#extra-credit-integrating-classwork-with-research">Extra Credit - Integrating Classwork With Research</a></li>
