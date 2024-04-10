@@ -3,11 +3,12 @@
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-content_root="" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
     <title>Homework 7 (Due 22 Mar) &#8212; Classical Mechanics</title>
   
   
@@ -18,28 +19,28 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+  <link href="../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
-  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -48,25 +49,21 @@
     <script src="../_static/doctools.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../_static/design-tabs.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'solutions/solutionhw7';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Chaos in the driven nonlinear pendulum" href="../honors-projects/ChaoticPendulum.html" />
+    <link rel="next" title="Midterm 2 (Due 5 Apr)" href="solutionmidterm2.html" />
     <link rel="prev" title="Homework 6 (Due 15 Mar)" href="solutionhw6.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -77,10 +74,9 @@ const thebe_selector_output = ".output, .cell_output"
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
   
   <div id="pst-scroll-pixel-helper"></div>
-
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
     <i class="fa-solid fa-arrow-up"></i>
@@ -121,11 +117,14 @@ const thebe_selector_output = ".output, .cell_output"
 </form></div>
   </div>
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
   
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
+      
+      
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -140,9 +139,11 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
   
 
 <a class="navbar-brand logo" href="../intro.html">
+  
   
   
   
@@ -152,12 +153,23 @@ const thebe_selector_output = ".output, .cell_output"
       
     
     
-    <img src="../_static/spartan-helmet.png" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="../_static/spartan-helmet.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="../_static/spartan-helmet.png" class="logo__image only-light" alt="Classical Mechanics - Home"/>
+    <script>document.write(`<img src="../_static/spartan-helmet.png" class="logo__image only-dark" alt="Classical Mechanics - Home"/>`);</script>
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -220,6 +232,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="solutionhw5.html">Homework 5 (Due 08 Mar)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="solutionhw6.html">Homework 6 (Due 15 Mar)</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Homework 7 (Due 22 Mar)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="solutionmidterm2.html">Midterm 2 (Due 5 Apr)</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Honors Projects</span></p>
 <ul class="nav bd-sidenav">
@@ -363,6 +376,7 @@ const thebe_selector_output = ".output, .cell_output"
 </button>
 
 
+
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
@@ -372,6 +386,7 @@ document.write(`
   </button>
 `);
 </script>
+
 
 <script>
 document.write(`
@@ -422,11 +437,11 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
   <!-- HTML file automatically generated from DocOnce source (https://github.com/doconce/doconce/)
 doconce format html hw5.do.txt --no_mako -->
-<!-- dom:TITLE: PHY321: Classical Mechanics 1 --><div class="tex2jax_ignore mathjax_ignore section" id="homework-7-due-22-mar">
+<!-- dom:TITLE: PHY321: Classical Mechanics 1 --><section class="tex2jax_ignore mathjax_ignore" id="homework-7-due-22-mar">
 <h1>Homework 7 (Due 22 Mar)<a class="headerlink" href="#homework-7-due-22-mar" title="Permalink to this heading">#</a></h1>
 <p><strong>Solution Homework 7, Spring 2024</strong></p>
 <div class="cell docutils container">
@@ -441,7 +456,7 @@ doconce format html hw5.do.txt --no_mako -->
 </div>
 </div>
 </div>
-<div class="section" id="exercise-1-10pt-where-does-the-energy-go">
+<section id="exercise-1-10pt-where-does-the-energy-go">
 <h2>Exercise 1 (10pt) Where does the energy go?<a class="headerlink" href="#exercise-1-10pt-where-does-the-energy-go" title="Permalink to this heading">#</a></h2>
 <p>The damped harmonic oscillator is described by the equation of motion is:</p>
 <div class="math notranslate nohighlight">
@@ -482,8 +497,8 @@ doconce format html hw5.do.txt --no_mako -->
 <p class="admonition-title">Solution</p>
 <p>The negative sign in both cases indicate that energy is leaving the system. We expect the energy to decrease over time, and the power dissipated by the damping force is the rate at which the energy is leaving the system.</p>
 </div>
-</div>
-<div class="section" id="exercise-2-10pt-unpacking-the-critically-damped-solution">
+</section>
+<section id="exercise-2-10pt-unpacking-the-critically-damped-solution">
 <h2>Exercise 2 (10pt), Unpacking the critically damped solution<a class="headerlink" href="#exercise-2-10pt-unpacking-the-critically-damped-solution" title="Permalink to this heading">#</a></h2>
 <p>The solution for critical damping (<span class="math notranslate nohighlight">\(\beta = \omega_0\)</span>) is given by,</p>
 <div class="math notranslate nohighlight">
@@ -531,8 +546,8 @@ doconce format html hw5.do.txt --no_mako -->
 \[\lim_{\beta \rightarrow \omega_0} \frac{y_2(t)}{\omega_1} = \lim_{\beta \rightarrow \omega_0} \frac{e^{-\beta t}\sin(\omega_1 t)}{\omega_1} = \lim_{\omega_1 \rightarrow 0} \frac{e^{-\beta t}\sin(\omega_1 t)}{\omega_1} = te^{-\omega_0 t}.\]</div>
 <p>This gives the form of the second solution <span class="math notranslate nohighlight">\(x_2(t) = Bte^{-\beta t}\)</span>.</p>
 </div>
-</div>
-<div class="section" id="exercise-3-10pt-complex-analysis">
+</section>
+<section id="exercise-3-10pt-complex-analysis">
 <h2>Exercise 3 (10pt), Complex Analysis<a class="headerlink" href="#exercise-3-10pt-complex-analysis" title="Permalink to this heading">#</a></h2>
 <p>Many of the techniques we use to solve differential equations rely on complex analysis. In this exercise, we will explore the relationship between complex numbers and the solutions to the differential equation. This is to motivate why we bother using them in the case of oscillators.</p>
 <ul class="simple">
@@ -613,8 +628,8 @@ doconce format html hw5.do.txt --no_mako -->
 <p>This gives us what frequencies <span class="math notranslate nohighlight">\(\omega\)</span> are allowable if our solution is meant to follow the form. This approach fails to be as simple if we choose the real solution <span class="math notranslate nohighlight">\(x(t) = A\cos(\omega t)\)</span>, because the derivatives of this function are not as simple as the complex exponential.</p>
 </div>
 <p>It is this last result that often motivates our use of complex numbers in solving differential equations. We can turn a differential equation into an algebraic equation, which is often easier to solve.</p>
-</div>
-<div class="section" id="exercise-4-10pt-exploring-the-damped-harmonic-oscillator">
+</section>
+<section id="exercise-4-10pt-exploring-the-damped-harmonic-oscillator">
 <h2>Exercise 4 (10pt), Exploring the damped harmonic oscillator<a class="headerlink" href="#exercise-4-10pt-exploring-the-damped-harmonic-oscillator" title="Permalink to this heading">#</a></h2>
 <p>You can choose to solve this exercise using analytical, or graphical methods. Should you decide to use numerical methods, you should make sure to use a method that conserves energy. However, this exercise does not need to be solved numerically as closed form solutions exist.</p>
 <p>The solution to the simple harmonic oscillator is given by,</p>
@@ -624,7 +639,7 @@ doconce format html hw5.do.txt --no_mako -->
 <div class="math notranslate nohighlight">
 \[x(t) = e^{-\beta t}\left(A\cos(\omega_1 t) + B\sin(\omega_1 t)\right),\]</div>
 <p>where <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span> are also determined by the initial conditions.</p>
-<div class="section" id="scenario-1">
+<section id="scenario-1">
 <h3>Scenario 1<a class="headerlink" href="#scenario-1" title="Permalink to this heading">#</a></h3>
 <p>An undamped oscillator has a period <span class="math notranslate nohighlight">\(T_0 = 1.000\mathrm{s}\)</span>, but then the damping is turned on. We observe the period increases by 0.001 seconds.</p>
 <ul class="simple">
@@ -658,8 +673,8 @@ doconce format html hw5.do.txt --no_mako -->
 <p class="admonition-title">Solution</p>
 <p>Definitely the change in amplitude. The change in period is only 0.1% of the original period, which is very difficult to notice. The amplitude, on the other hand, has decreased by 94%, which is very noticeable.</p>
 </div>
-</div>
-<div class="section" id="scenario-2">
+</section>
+<section id="scenario-2">
 <h3>Scenario 2<a class="headerlink" href="#scenario-2" title="Permalink to this heading">#</a></h3>
 <p>An undamped oscillator has a period <span class="math notranslate nohighlight">\(T_0 = 1.000\mathrm{s}\)</span>. With weak damping, the amplitude drops by 50% in one period <span class="math notranslate nohighlight">\(T_1\)</span>. Recall the period of the damped oscillator is given by <span class="math notranslate nohighlight">\(T_1 = 2\pi/\omega_1\)</span>.</p>
 <ul class="simple">
@@ -703,9 +718,9 @@ doconce format html hw5.do.txt --no_mako -->
 <p class="admonition-title">Solution</p>
 <p>Definitely the amplitude. The period has changed by 0.6%, which is very difficult to notice. The amplitude, on the other hand, has decreased by 99.9%, which is very noticeable.</p>
 </div>
-</div>
-</div>
-<div class="section" id="exercise-5-10pt-the-damped-driven-oscillator">
+</section>
+</section>
+<section id="exercise-5-10pt-the-damped-driven-oscillator">
 <h2>Exercise 5 (10pt), The Damped Driven Oscillator<a class="headerlink" href="#exercise-5-10pt-the-damped-driven-oscillator" title="Permalink to this heading">#</a></h2>
 <p>The damped driven oscillator is described by the equation of motion,</p>
 <div class="math notranslate nohighlight">
@@ -799,14 +814,14 @@ doconce format html hw5.do.txt --no_mako -->
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x13e23f910&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x11db82420&gt;
 </pre></div>
 </div>
-<img alt="../_images/ebf7ab841e939a300bfd1b6fca10150202532e2c5397745d65f5fb1e394103a4.png" src="../_images/ebf7ab841e939a300bfd1b6fca10150202532e2c5397745d65f5fb1e394103a4.png" />
+<img alt="../_images/2a66be03fc8daa20c649421ff8ccd15def9487771e616e70c92e86fbbd800a96.png" src="../_images/2a66be03fc8daa20c649421ff8ccd15def9487771e616e70c92e86fbbd800a96.png" />
 </div>
 </div>
-</div>
-<div class="section" id="extra-credit-integrating-classwork-with-research">
+</section>
+<section id="extra-credit-integrating-classwork-with-research">
 <h2>Extra Credit - Integrating Classwork With Research<a class="headerlink" href="#extra-credit-integrating-classwork-with-research" title="Permalink to this heading">#</a></h2>
 <p>This opportunity will allow you to earn up to 5 extra credit points on a Homework per week. These points can push you above 100% or help make up for missed exercises.
 In order to earn all points you must:</p>
@@ -822,8 +837,8 @@ Talks given by researchers through the following clubs:</p>
 <li><p>Astronomy Club​: Meets Monday Nights</p></li>
 <li><p>Facility For Rare Isotope Beam (FRIB) Seminars: ​Occur multiple times a week</p></li>
 </ul>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -853,7 +868,7 @@ Talks given by researchers through the following clubs:</p>
               
               
                 <footer class="prev-next-footer">
-                  <!-- Previous / next buttons -->
+                  
 <div class="prev-next-area">
     <a class="left-prev"
        href="solutionhw6.html"
@@ -865,11 +880,11 @@ Talks given by researchers through the following clubs:</p>
       </div>
     </a>
     <a class="right-next"
-       href="../honors-projects/ChaoticPendulum.html"
+       href="solutionmidterm2.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Chaos in the driven nonlinear pendulum</p>
+        <p class="prev-next-title">Midterm 2 (Due 5 Apr)</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -881,6 +896,7 @@ Talks given by researchers through the following clubs:</p>
             
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -919,9 +935,10 @@ By Danny Caballero, Morten Hjorth-Jensen
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
-      © Copyright 2022.
+      © Copyright 2023.
       <br/>
     
   </p>
@@ -945,8 +962,8 @@ By Danny Caballero, Morten Hjorth-Jensen
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
 
   <footer class="bd-footer">
   </footer>

@@ -3,11 +3,12 @@
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-content_root="" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
     <title>5. Harmonic Oscillations &#8212; Classical Mechanics</title>
   
   
@@ -18,28 +19,28 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+  <link href="../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
-  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -48,18 +49,14 @@
     <script src="../_static/doctools.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../_static/design-tabs.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
@@ -77,10 +74,9 @@ const thebe_selector_output = ".output, .cell_output"
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
   
   <div id="pst-scroll-pixel-helper"></div>
-
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
     <i class="fa-solid fa-arrow-up"></i>
@@ -121,11 +117,14 @@ const thebe_selector_output = ".output, .cell_output"
 </form></div>
   </div>
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
   
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
+      
+      
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -140,9 +139,11 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
   
 
 <a class="navbar-brand logo" href="../intro.html">
+  
   
   
   
@@ -152,12 +153,23 @@ const thebe_selector_output = ".output, .cell_output"
       
     
     
-    <img src="../_static/spartan-helmet.png" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="../_static/spartan-helmet.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="../_static/spartan-helmet.png" class="logo__image only-light" alt="Classical Mechanics - Home"/>
+    <script>document.write(`<img src="../_static/spartan-helmet.png" class="logo__image only-dark" alt="Classical Mechanics - Home"/>`);</script>
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -220,6 +232,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../solutions/solutionhw5.html">Homework 5 (Due 08 Mar)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../solutions/solutionhw6.html">Homework 6 (Due 15 Mar)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../solutions/solutionhw7.html">Homework 7 (Due 22 Mar)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../solutions/solutionmidterm2.html">Midterm 2 (Due 5 Apr)</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Honors Projects</span></p>
 <ul class="nav bd-sidenav">
@@ -363,6 +376,7 @@ const thebe_selector_output = ".output, .cell_output"
 </button>
 
 
+
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
@@ -372,6 +386,7 @@ document.write(`
   </button>
 `);
 </script>
+
 
 <script>
 document.write(`
@@ -433,9 +448,9 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
-  <div class="tex2jax_ignore mathjax_ignore section" id="harmonic-oscillations">
+  <section class="tex2jax_ignore mathjax_ignore" id="harmonic-oscillations">
 <h1>5. Harmonic Oscillations<a class="headerlink" href="#harmonic-oscillations" title="Permalink to this heading">#</a></h1>
 <p>The harmonic oscillator is omnipresent in physics. Although you may think
 of this as being related to springs, it, or an equivalent
@@ -452,7 +467,7 @@ repeatedly in atomic, nuclear and high-energy physics, when quantum
 mechanically the evolution of a state oscillates according to
 <span class="math notranslate nohighlight">\(e^{-iEt}\)</span> and exciting discrete quantum states has very similar
 mathematics as exciting discrete states of an oscillator.</p>
-<div class="section" id="harmonic-oscillator-deriving-the-equations">
+<section id="harmonic-oscillator-deriving-the-equations">
 <h2>Harmonic Oscillator, deriving the Equations<a class="headerlink" href="#harmonic-oscillator-deriving-the-equations" title="Permalink to this heading">#</a></h2>
 <p>The potential energy for a single particle as a function of its
 position <span class="math notranslate nohighlight">\(x\)</span> can be written as a Taylor expansion about some point
@@ -546,7 +561,7 @@ v(t=0) = 0=B,
 \[
 x(t) = x_0\cos{(\omega_0 t)}.
 \]</div>
-<div class="section" id="math-digression">
+<section id="math-digression">
 <h3>Math Digression<a class="headerlink" href="#math-digression" title="Permalink to this heading">#</a></h3>
 <p>We have that (we switch to <span class="math notranslate nohighlight">\(\omega\)</span> instead of <span class="math notranslate nohighlight">\(\omega_0\)</span>)</p>
 <div class="math notranslate nohighlight">
@@ -595,9 +610,9 @@ x(t) = A\left[\cos{(\delta)}\cos{(\omega t)}+\sin{(\delta)}\sin{(\omega t)}\righ
 x(t) = A\cos{(\omega t-\delta)},
 \]</div>
 <p>where <span class="math notranslate nohighlight">\(\delta\)</span> is a so-called phase shift.</p>
-</div>
-</div>
-<div class="section" id="energy-conservation">
+</section>
+</section>
+<section id="energy-conservation">
 <h2>Energy Conservation<a class="headerlink" href="#energy-conservation" title="Permalink to this heading">#</a></h2>
 <p>Our energy is given by the kinetic energy and the harmonic oscillator potential energy, that is we have (for a one-dimensional harmonic oscillator potential)</p>
 <div class="math notranslate nohighlight">
@@ -631,8 +646,8 @@ E(t)=\frac{1}{2}mv^2+\frac{1}{2}kx^2=\frac{1}{2}mx_0^2\omega_0^2\sin^2{(\omega_0
 E(t)=\frac{1}{2}kx_0^2\sin^2{(\omega_0 t)}+\frac{1}{2}kx_0^2\cos^2{(\omega_0 t)}=\frac{1}{2}kx_0^2=E_0.
 \]</div>
 <p>Energy is thus conserved</p>
-</div>
-<div class="section" id="the-mathematical-pendulumn">
+</section>
+<section id="the-mathematical-pendulumn">
 <h2>The Mathematical Pendulumn<a class="headerlink" href="#the-mathematical-pendulumn" title="Permalink to this heading">#</a></h2>
 <p><strong>Note</strong>: Figure to be inserted.</p>
 <p>We consider a pendulum of length <span class="math notranslate nohighlight">\(l\)</span> attached to the roof as illustrated in the figure (see <a class="reference external" href="https://github.com/mhjensen/Physics321/blob/master/doc/HandWrittenNotes/Spring2021/NotesFeb24.pdf">handwritten notes from Wednesday Feb 24</a>).</p>
@@ -732,8 +747,8 @@ ml\frac{d^2\phi}{dt^2}=-mg\sin{(\phi)}.
 \phi(t) = A\cos{(\omega_0 t)}+B\sin{(\omega_0 t)}.
 \]</div>
 <p>For the general case, we have to resort to numerical solutions.</p>
-</div>
-<div class="section" id="damped-oscillations">
+</section>
+<section id="damped-oscillations">
 <h2>Damped Oscillations<a class="headerlink" href="#damped-oscillations" title="Permalink to this heading">#</a></h2>
 <p>We consider only the case where the damping force is proportional to
 the velocity. This is counter to dragging friction, where the force is
@@ -779,7 +794,7 @@ x=Ae^{rt}
 \]</div>
 <p>that each derivative simply brings out an extra power of <span class="math notranslate nohighlight">\(r\)</span>. This
 means that the <span class="math notranslate nohighlight">\(Ae^{rt}\)</span> factors out and one can simply solve for an
-equation for <span class="math notranslate nohighlight">\(r\)</span>. Plugging this form into Eq. (<span class="xref myst">4</span>),</p>
+equation for <span class="math notranslate nohighlight">\(r\)</span>. Plugging this form into Eq. (<a class="reference internal" href="#eq:dampeddiffyq"><span class="xref myst">4</span></a>),</p>
 <!-- Equation labels as ordinary links -->
 <div id="_auto5"></div>
 <div class="math notranslate nohighlight">
@@ -818,8 +833,8 @@ imaginary if the damping is small and <span class="math notranslate nohighlight"
 <span class="math notranslate nohighlight">\(r\)</span> is complex and the factor <span class="math notranslate nohighlight">\(e{rt}\)</span> will have some oscillatory
 behavior. If the roots are real, there will only be exponentially
 decaying solutions. There are three cases:</p>
-</div>
-<div class="section" id="underdamped-beta-omega-0">
+</section>
+<section id="underdamped-beta-omega-0">
 <h2>Underdamped: <span class="math notranslate nohighlight">\(\beta&lt;\omega_0\)</span><a class="headerlink" href="#underdamped-beta-omega-0" title="Permalink to this heading">#</a></h2>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -845,7 +860,7 @@ x&amp;=&amp;B_1e^{-\beta t}\cos\omega't+B_2e^{-\beta t}\sin\omega't,\\
 \omega'&amp;\equiv&amp;\sqrt{\omega_0^2-\beta^2}.
 \end{eqnarray}
 \end{split}\]</div>
-<div class="section" id="critical-dampling-beta-omega-0">
+<section id="critical-dampling-beta-omega-0">
 <h3>Critical dampling: <span class="math notranslate nohighlight">\(\beta=\omega_0\)</span><a class="headerlink" href="#critical-dampling-beta-omega-0" title="Permalink to this heading">#</a></h3>
 <p>In this case the two terms involving <span class="math notranslate nohighlight">\(r_1\)</span> and <span class="math notranslate nohighlight">\(r_2\)</span> are identical
 because <span class="math notranslate nohighlight">\(\omega'=0\)</span>. Because we need to arbitrary constants, there
@@ -865,8 +880,8 @@ x=Ae^{-\beta t}+Bte^{-\beta t}.
 approaches zero quickly, but does not oscillate. For a problem with
 zero initial velocity, the solution never crosses zero. This is a good
 choice for designing shock absorbers or swinging doors.</p>
-</div>
-<div class="section" id="overdamped-beta-omega-0">
+</section>
+<section id="overdamped-beta-omega-0">
 <h3>Overdamped: <span class="math notranslate nohighlight">\(\beta&gt;\omega_0\)</span><a class="headerlink" href="#overdamped-beta-omega-0" title="Permalink to this heading">#</a></h3>
 <div class="math notranslate nohighlight">
 \[
@@ -921,7 +936,7 @@ have two arbitrary constants. Now consider solutions to the same
 equation without the driving term, which include two arbitrary
 constants. These are called either {\it homogenous solutions} or {\it
 complementary solutions}, and were given in the previous section,
-e.g. Eq. (<span class="xref myst">9</span>) for the underdamped case. The
+e.g. Eq. (<a class="reference internal" href="#eq:homogsolution"><span class="xref myst">9</span></a>) for the underdamped case. The
 homogenous solution already incorporates the two arbitrary constants,
 so any sum of a homogenous solution and a particular solution will
 represent the {\it general solution} of the equation. The general
@@ -1016,11 +1031,11 @@ driving force (<span class="math notranslate nohighlight">\(F_0/m\)</span>), but
 <span class="math notranslate nohighlight">\(\omega\)</span>. For small <span class="math notranslate nohighlight">\(\beta\)</span> the maximum will occur at
 <span class="math notranslate nohighlight">\(\omega=\omega_0\)</span>. This is referred to as a resonance. In the limit
 <span class="math notranslate nohighlight">\(\beta\rightarrow 0\)</span> the amplitude at resonance approaches infinity.</p>
-</div>
-</div>
-<div class="section" id="alternative-derivation-for-driven-oscillators">
+</section>
+</section>
+<section id="alternative-derivation-for-driven-oscillators">
 <h2>Alternative Derivation for Driven Oscillators<a class="headerlink" href="#alternative-derivation-for-driven-oscillators" title="Permalink to this heading">#</a></h2>
-<p>Here, we derive the same expressions as in Equations (<span class="xref myst">13</span>) and (<span class="xref myst">16</span>) but express the driving forces as</p>
+<p>Here, we derive the same expressions as in Equations (<a class="reference internal" href="#eq:partform"><span class="xref myst">13</span></a>) and (<a class="reference internal" href="#eq:Ddrive"><span class="xref myst">16</span></a>) but express the driving forces as</p>
 <div class="math notranslate nohighlight">
 \[
 \begin{eqnarray}
@@ -1039,7 +1054,7 @@ F(t)&amp;=&amp;F_0e^{i\omega t},
 \]</div>
 <p>one can treat <span class="math notranslate nohighlight">\(x(t)\)</span> as an imaginary function. Because the operations
 <span class="math notranslate nohighlight">\(d^2/dt^2\)</span> and <span class="math notranslate nohighlight">\(d/dt\)</span> are real and thus do not mix the real and
-imaginary parts of <span class="math notranslate nohighlight">\(x(t)\)</span>, Eq. (<span class="xref myst">17</span>) is effectively 2
+imaginary parts of <span class="math notranslate nohighlight">\(x(t)\)</span>, Eq. (<a class="reference internal" href="#eq:compdrive"><span class="xref myst">17</span></a>) is effectively 2
 equations. Because <span class="math notranslate nohighlight">\(e^{\omega t}=\cos\omega t+i\sin\omega t\)</span>, the real
 part of the solution for <span class="math notranslate nohighlight">\(x(t)\)</span> gives the solution for a driving force
 <span class="math notranslate nohighlight">\(F_0\cos\omega t\)</span>, and the imaginary part of <span class="math notranslate nohighlight">\(x\)</span> corresponds to the
@@ -1058,7 +1073,7 @@ x_p=De^{i\omega t},
 \end{equation}
 \]</div>
 <p>where <span class="math notranslate nohighlight">\(D\)</span> is a complex constant.</p>
-<p>From Eq. (<span class="xref myst">17</span>) one inserts the form for <span class="math notranslate nohighlight">\(x_p\)</span> above to get</p>
+<p>From Eq. (<a class="reference internal" href="#eq:compdrive"><span class="xref myst">17</span></a>) one inserts the form for <span class="math notranslate nohighlight">\(x_p\)</span> above to get</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \begin{eqnarray}
@@ -1102,8 +1117,8 @@ x_p(t)&amp;=&amp;\Im\frac{(F_0/m)e^{i\omega t-i\delta}}{\sqrt{(\omega_0^2-\omega
 &amp;=&amp;\frac{(F_0/m)\sin(\omega t-\delta)}{\sqrt{(\omega_0^2-\omega^2)^2+4\beta^2\omega^2}}.
 \end{eqnarray}
 \end{split}\]</div>
-</div>
-<div class="section" id="damped-and-driven-oscillator">
+</section>
+<section id="damped-and-driven-oscillator">
 <h2>Damped and Driven Oscillator<a class="headerlink" href="#damped-and-driven-oscillator" title="Permalink to this heading">#</a></h2>
 <p>Consider the damped and driven harmonic oscillator worked out above. Given <span class="math notranslate nohighlight">\(F_0, m,\beta\)</span> and <span class="math notranslate nohighlight">\(\omega_0\)</span>, solve for the complete solution <span class="math notranslate nohighlight">\(x(t)\)</span> for the case where <span class="math notranslate nohighlight">\(F=F_0\sin\omega t\)</span> with initial conditions <span class="math notranslate nohighlight">\(x(t=0)=0\)</span> and <span class="math notranslate nohighlight">\(v(t=0)=0\)</span>. Assume the underdamped case.</p>
 <p>The general solution including the arbitrary constants includes both the homogenous and particular solutions,</p>
@@ -1135,8 +1150,8 @@ v(t=0)=0&amp;=&amp;\omega\eta\cos\delta-\beta A+\omega'B,\\
 A&amp;=&amp; \eta\sin\delta ,~~~B=\frac{-\omega\eta\cos\delta+\beta\eta\sin\delta}{\omega'}.
 \end{eqnarray}
 \]</div>
-</div>
-<div class="section" id="resonance-widths-the-q-factor">
+</section>
+<section id="resonance-widths-the-q-factor">
 <h2>Resonance Widths; the <span class="math notranslate nohighlight">\(Q\)</span> factor<a class="headerlink" href="#resonance-widths-the-q-factor" title="Permalink to this heading">#</a></h2>
 <p>From the previous two sections, the particular solution for a driving force, <span class="math notranslate nohighlight">\(F=F_0\cos\omega t\)</span>, is</p>
 <div class="math notranslate nohighlight">
@@ -1191,8 +1206,8 @@ Q\equiv \frac{\omega_0}{2\beta}.
 \label{_auto15} \tag{24}
 \end{equation}
 \]</div>
-</div>
-<div class="section" id="our-sliding-block-code">
+</section>
+<section id="our-sliding-block-code">
 <h2>Our Sliding Block Code<a class="headerlink" href="#our-sliding-block-code" title="Permalink to this heading">#</a></h2>
 <p>Here we study first the case without additional friction term and scale our equation
 in terms of a dimensionless time <span class="math notranslate nohighlight">\(\tau\)</span>.</p>
@@ -1298,11 +1313,53 @@ that the dimensionality is correct) and rewrite our equation as</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/var/folders/rh/mck_zfls1nz00lkh8jq3cpv80000gn/T/ipykernel_88235/12235551.py:35: MatplotlibDeprecationWarning: The seaborn styles shipped by Matplotlib are deprecated since 3.6, as they no longer correspond to the styles shipped by seaborn. However, they will remain available as &#39;seaborn-v0_8-&lt;style&gt;&#39;. Alternatively, directly use the seaborn API instead.
-  plt.style.use(&#39;seaborn&#39;)
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">FileNotFoundError</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
+<span class="nn">File ~/anaconda3/envs/teaching/lib/python3.12/site-packages/matplotlib/style/core.py:137,</span> in <span class="ni">use</span><span class="nt">(style)</span>
+<span class="g g-Whitespace">    </span><span class="mi">136</span> <span class="k">try</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">137</span>     <span class="n">style</span> <span class="o">=</span> <span class="n">_rc_params_in_file</span><span class="p">(</span><span class="n">style</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">138</span> <span class="k">except</span> <span class="ne">OSError</span> <span class="k">as</span> <span class="n">err</span><span class="p">:</span>
+
+<span class="nn">File ~/anaconda3/envs/teaching/lib/python3.12/site-packages/matplotlib/__init__.py:866,</span> in <span class="ni">_rc_params_in_file</span><span class="nt">(fname, transform, fail_on_error)</span>
+<span class="g g-Whitespace">    </span><span class="mi">865</span> <span class="n">rc_temp</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="ne">--&gt; </span><span class="mi">866</span> <span class="k">with</span> <span class="n">_open_file_or_url</span><span class="p">(</span><span class="n">fname</span><span class="p">)</span> <span class="k">as</span> <span class="n">fd</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">867</span>     <span class="k">try</span><span class="p">:</span>
+
+<span class="nn">File ~/anaconda3/envs/teaching/lib/python3.12/contextlib.py:137,</span> in <span class="ni">_GeneratorContextManager.__enter__</span><span class="nt">(self)</span>
+<span class="g g-Whitespace">    </span><span class="mi">136</span> <span class="k">try</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">137</span>     <span class="k">return</span> <span class="nb">next</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">gen</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">138</span> <span class="k">except</span> <span class="ne">StopIteration</span><span class="p">:</span>
+
+<span class="nn">File ~/anaconda3/envs/teaching/lib/python3.12/site-packages/matplotlib/__init__.py:843,</span> in <span class="ni">_open_file_or_url</span><span class="nt">(fname)</span>
+<span class="g g-Whitespace">    </span><span class="mi">842</span> <span class="n">fname</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">expanduser</span><span class="p">(</span><span class="n">fname</span><span class="p">)</span>
+<span class="ne">--&gt; </span><span class="mi">843</span> <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">fname</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">844</span>     <span class="k">yield</span> <span class="n">f</span>
+
+<span class="ne">FileNotFoundError</span>: [Errno 2] No such file or directory: &#39;seaborn&#39;
+
+<span class="n">The</span> <span class="n">above</span> <span class="n">exception</span> <span class="n">was</span> <span class="n">the</span> <span class="n">direct</span> <span class="n">cause</span> <span class="n">of</span> <span class="n">the</span> <span class="n">following</span> <span class="n">exception</span><span class="p">:</span>
+
+<span class="ne">OSError</span><span class="g g-Whitespace">                                   </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">35</span>
+<span class="g g-Whitespace">     </span><span class="mi">31</span>     <span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="n">image_path</span><span class="p">(</span><span class="n">fig_id</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;.png&quot;</span><span class="p">,</span> <span class="nb">format</span><span class="o">=</span><span class="s1">&#39;png&#39;</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">34</span> <span class="kn">from</span> <span class="nn">pylab</span> <span class="kn">import</span> <span class="n">plt</span><span class="p">,</span> <span class="n">mpl</span>
+<span class="ne">---&gt; </span><span class="mi">35</span> <span class="n">plt</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;seaborn&#39;</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">36</span> <span class="n">mpl</span><span class="o">.</span><span class="n">rcParams</span><span class="p">[</span><span class="s1">&#39;font.family&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;serif&#39;</span>
+<span class="g g-Whitespace">     </span><span class="mi">38</span> <span class="n">DeltaT</span> <span class="o">=</span> <span class="mf">0.001</span>
+
+<span class="nn">File ~/anaconda3/envs/teaching/lib/python3.12/site-packages/matplotlib/style/core.py:139,</span> in <span class="ni">use</span><span class="nt">(style)</span>
+<span class="g g-Whitespace">    </span><span class="mi">137</span>         <span class="n">style</span> <span class="o">=</span> <span class="n">_rc_params_in_file</span><span class="p">(</span><span class="n">style</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">138</span>     <span class="k">except</span> <span class="ne">OSError</span> <span class="k">as</span> <span class="n">err</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">139</span>         <span class="k">raise</span> <span class="ne">OSError</span><span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">140</span>             <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">style</span><span class="si">!r}</span><span class="s2"> is not a valid package style, path of style &quot;</span>
+<span class="g g-Whitespace">    </span><span class="mi">141</span>             <span class="sa">f</span><span class="s2">&quot;file, URL of style file, or library style name (library &quot;</span>
+<span class="g g-Whitespace">    </span><span class="mi">142</span>             <span class="sa">f</span><span class="s2">&quot;styles are listed in `style.available`)&quot;</span><span class="p">)</span> <span class="kn">from</span> <span class="nn">err</span>
+<span class="g g-Whitespace">    </span><span class="mi">143</span> <span class="n">filtered</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="nn">    144 for k</span> in <span class="ni">style:  # don&#39;t trigger RcParams.__getitem__</span><span class="nt">(&#39;backend&#39;)</span>
+
+<span class="ne">OSError</span>: &#39;seaborn&#39; is not a valid package style, path of style file, URL of style file, or library style name (library styles are listed in `style.available`)
 </pre></div>
 </div>
-<img alt="../_images/bb9cf372c70090ab57a68d3948e96bfbf6ac239dadd1d995ff5e8c09975a7f5f.png" src="../_images/bb9cf372c70090ab57a68d3948e96bfbf6ac239dadd1d995ff5e8c09975a7f5f.png" />
 </div>
 </div>
 <p>When setting up the value of <span class="math notranslate nohighlight">\(\gamma\)</span> we see that for <span class="math notranslate nohighlight">\(\gamma=0\)</span> we get the simple oscillatory motion with no damping.
@@ -1310,8 +1367,8 @@ Choosing <span class="math notranslate nohighlight">\(\gamma &lt; 1\)</span> lea
 <p>Choosing <span class="math notranslate nohighlight">\(\gamma =1\)</span> leads to what normally is called critical damping and <span class="math notranslate nohighlight">\(\gamma&gt; 1\)</span> leads to critical overdamping.
 Try it out and try also to change the initial position and velocity. Setting <span class="math notranslate nohighlight">\(\gamma=1\)</span>
 yields a situation, as discussed above, where the solution approaches quickly zero and does not oscillate. With zero initial velocity it will never cross zero.</p>
-</div>
-<div class="section" id="numerical-studies-of-driven-oscillations">
+</section>
+<section id="numerical-studies-of-driven-oscillations">
 <h2>Numerical Studies of Driven Oscillations<a class="headerlink" href="#numerical-studies-of-driven-oscillations" title="Permalink to this heading">#</a></h2>
 <p>Solving the problem of driven oscillations numerically gives us much
 more flexibility to study different types of driving forces. We can
@@ -1430,13 +1487,6 @@ to define <span class="math notranslate nohighlight">\(\gamma = b/(2m\omega_0)\)
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/var/folders/rh/mck_zfls1nz00lkh8jq3cpv80000gn/T/ipykernel_88235/480274838.py:33: MatplotlibDeprecationWarning: The seaborn styles shipped by Matplotlib are deprecated since 3.6, as they no longer correspond to the styles shipped by seaborn. However, they will remain available as &#39;seaborn-v0_8-&lt;style&gt;&#39;. Alternatively, directly use the seaborn API instead.
-  plt.style.use(&#39;seaborn&#39;)
-</pre></div>
-</div>
-<img alt="../_images/cdd702dbabecab28c97c6acf54192575d93698d05df7a4c37ff58ca818c684b4.png" src="../_images/cdd702dbabecab28c97c6acf54192575d93698d05df7a4c37ff58ca818c684b4.png" />
 </div>
 </div>
 <p>In the above example we have focused on the Euler-Cromer method. This
@@ -1652,14 +1702,6 @@ It receives just an input the name. We can easily change the force by adding ano
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span>  <span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">7</span><span class="p">],</span> <span class="n">line</span> <span class="mi">14</span>
-    <span class="n">t</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">t</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">+</span><span class="n">DeltaT</span>
-    <span class="o">^</span>
-<span class="ne">TabError</span>: inconsistent use of tabs and spaces in indentation
-</pre></div>
-</div>
-</div>
 </div>
 <p>Finally, we can now add the Runge-Kutta2 method via a new function</p>
 <div class="cell docutils container">
@@ -1729,8 +1771,8 @@ The code below uses the Runge-Kutta4 methods.</p>
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="example-the-classical-pendulum-and-scaling-the-equations">
+</section>
+<section id="example-the-classical-pendulum-and-scaling-the-equations">
 <h2>Example: The classical pendulum and scaling the equations<a class="headerlink" href="#example-the-classical-pendulum-and-scaling-the-equations" title="Permalink to this heading">#</a></h2>
 <p>Let us end our discussion of oscillations with another classical case, the pendulum.</p>
 <p>The angular equation of motion of the pendulum is given by
@@ -1880,8 +1922,8 @@ frequency.</p>
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="principle-of-superposition-and-periodic-forces-fourier-transforms">
+</section>
+<section id="principle-of-superposition-and-periodic-forces-fourier-transforms">
 <h2>Principle of Superposition and Periodic Forces (Fourier Transforms)<a class="headerlink" href="#principle-of-superposition-and-periodic-forces-fourier-transforms" title="Permalink to this heading">#</a></h2>
 <p>If one has several driving forces, <span class="math notranslate nohighlight">\(F(t)=\sum_n F_n(t)\)</span>, one can find
 the particular solution to each <span class="math notranslate nohighlight">\(F_n\)</span>, <span class="math notranslate nohighlight">\(x_{pn}(t)\)</span>, and the particular
@@ -1998,9 +2040,9 @@ g_n&amp;=&amp;\frac{2}{\tau}\int_{-\tau/2}^{\tau/2} dt~F(t)\sin(2n\pi t/\tau).
 \end{eqnarray}
 \end{split}\]</div>
 <p>To check the consistency of these expressions and to verify
-Eq. (<span class="xref myst">42</span>), one can insert the expansion of <span class="math notranslate nohighlight">\(F(t)\)</span> in
-Eq. (<span class="xref myst">41</span>) into the expression for the coefficients in
-Eq. (<span class="xref myst">42</span>) and see whether</p>
+Eq. (<a class="reference internal" href="#eq:fourierdef2"><span class="xref myst">42</span></a>), one can insert the expansion of <span class="math notranslate nohighlight">\(F(t)\)</span> in
+Eq. (<a class="reference internal" href="#eq:fourierdef1"><span class="xref myst">41</span></a>) into the expression for the coefficients in
+Eq. (<a class="reference internal" href="#eq:fourierdef2"><span class="xref myst">42</span></a>) and see whether</p>
 <div class="math notranslate nohighlight">
 \[
 \begin{eqnarray}
@@ -2046,7 +2088,7 @@ F(t)=At/\tau,~~-\tau/2&lt;t&lt;\tau/2,~~~F(t+\tau)=F(t).
 \label{_auto31} \tag{44}
 \end{equation}
 \]</div>
-<p>Find the Fourier coefficients <span class="math notranslate nohighlight">\(f_n\)</span> and <span class="math notranslate nohighlight">\(g_n\)</span> for all <span class="math notranslate nohighlight">\(n\)</span> using Eq. (<span class="xref myst">42</span>).</p>
+<p>Find the Fourier coefficients <span class="math notranslate nohighlight">\(f_n\)</span> and <span class="math notranslate nohighlight">\(g_n\)</span> for all <span class="math notranslate nohighlight">\(n\)</span> using Eq. (<a class="reference internal" href="#eq:fourierdef2"><span class="xref myst">42</span></a>).</p>
 <p>Only the odd coefficients enter by symmetry, i.e. <span class="math notranslate nohighlight">\(f_n=0\)</span>. One can find <span class="math notranslate nohighlight">\(g_n\)</span> integrating by parts,</p>
 <!-- Equation labels as ordinary links -->
 <div id="eq:fouriersolution"></div>
@@ -2118,12 +2160,12 @@ components in the Fourier series, the Fourier series approximation gets closes a
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="solving-differential-equations-with-fouries-series">
+</section>
+<section id="solving-differential-equations-with-fouries-series">
 <h2>Solving differential equations with Fouries series<a class="headerlink" href="#solving-differential-equations-with-fouries-series" title="Permalink to this heading">#</a></h2>
 <p>Material to be added.</p>
-</div>
-<div class="section" id="response-to-transient-force">
+</section>
+<section id="response-to-transient-force">
 <h2>Response to Transient Force<a class="headerlink" href="#response-to-transient-force" title="Permalink to this heading">#</a></h2>
 <p>Consider a particle at rest in the bottom of an underdamped harmonic
 oscillator, that then feels a sudden impulse, or change in momentum,
@@ -2185,7 +2227,7 @@ force applied at a time <span class="math notranslate nohighlight">\(t'\)</span>
 function ensures that the response does not occur before the force is
 applied. One should remember that the form for <span class="math notranslate nohighlight">\(G\)</span> would change if the
 oscillator were either critically- or over-damped.</p>
-<p>When performing the integral in Eq. (<span class="xref myst">49</span>) one can use
+<p>When performing the integral in Eq. (<a class="reference internal" href="#eq:Greeny"><span class="xref myst">49</span></a>) one can use
 angle addition formulas to factor out the part with the <span class="math notranslate nohighlight">\(t'\)</span>
 dependence in the integrand,</p>
 <!-- Equation labels as ordinary links -->
@@ -2215,7 +2257,7 @@ F(t)&amp;=&amp;F_0 \exp\left\{\frac{-t^2}{2\tau^2}\right\}.
 \]</div>
 <p>For large times (<span class="math notranslate nohighlight">\(t&gt;&gt;\tau\)</span>), where the force has died off, find
 <span class="math notranslate nohighlight">\(x(t)\)</span>.\ Solve for the coefficients <span class="math notranslate nohighlight">\(I_c\)</span> and <span class="math notranslate nohighlight">\(I_s\)</span> in
-Eq. (<span class="xref myst">50</span>). Because the Gaussian is an even function,
+Eq. (<a class="reference internal" href="#eq:Greeny2"><span class="xref myst">50</span></a>). Because the Gaussian is an even function,
 <span class="math notranslate nohighlight">\(I_s=0\)</span>, and one need only solve for <span class="math notranslate nohighlight">\(I_c\)</span>,</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -2243,15 +2285,15 @@ I^2&amp;=&amp;\int_{-\infty}^\infty dxdy~e^{-(x^2+y^2)/2}\\
 &amp;=&amp;2\pi.
 \end{eqnarray*}
 \end{split}\]</div>
-<p>Finally, the expression for <span class="math notranslate nohighlight">\(x\)</span> from Eq. (<span class="xref myst">50</span>) is</p>
+<p>Finally, the expression for <span class="math notranslate nohighlight">\(x\)</span> from Eq. (<a class="reference internal" href="#eq:Greeny2"><span class="xref myst">50</span></a>) is</p>
 <div class="math notranslate nohighlight">
 \[
 \begin{eqnarray*}
 x(t&gt;&gt;\tau)&amp;=&amp;\frac{F_0\tau}{m\omega_0} \sqrt{2\pi} e^{-\omega_0^2\tau^2/2}\sin(\omega_0t).
 \end{eqnarray*}
 \]</div>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -2281,7 +2323,7 @@ x(t&gt;&gt;\tau)&amp;=&amp;\frac{F_0\tau}{m\omega_0} \sqrt{2\pi} e^{-\omega_0^2\
               
               
                 <footer class="prev-next-footer">
-                  <!-- Previous / next buttons -->
+                  
 <div class="prev-next-area">
     <a class="left-prev"
        href="chapter4.html"
@@ -2309,6 +2351,7 @@ x(t&gt;&gt;\tau)&amp;=&amp;\frac{F_0\tau}{m\omega_0} \sqrt{2\pi} e^{-\omega_0^2\
             
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -2358,9 +2401,10 @@ By Danny Caballero, Morten Hjorth-Jensen
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
-      © Copyright 2022.
+      © Copyright 2023.
       <br/>
     
   </p>
@@ -2384,8 +2428,8 @@ By Danny Caballero, Morten Hjorth-Jensen
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
 
   <footer class="bd-footer">
   </footer>
