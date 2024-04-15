@@ -112,17 +112,17 @@ All assignments are turned in using D2L as a PDF and/or Jupyter notebook.
 
 | Week | Day    | Topic                      | Readings to prepare | Important events                                                |
 | ---- | ------ | -------------------------- | ------------------- | --------------------------------------------------------------- |
-| CW14 | 08 Apr | NO CLASS (WATCH ECLIPSE)   | JRT Ch 7            | Homework 9 Assigned (Due 19 Apr)                                |
+| CW14 | 08 Apr | NO CLASS (WATCH ECLIPSE)   | JRT Ch 7            | [Homework 9 Assigned (Due 19 Apr)](../homeworks/hw9.ipynb)      |
 |      | 10 Apr | Lagrange Equation Examples |                     |                                                                 |
 |      | 12 Apr |                            |                     | **Homework 8 Due** _([Turn-in using D2L](https://d2l.msu.edu))_ |
 
 ## Week 15
 
-| Week | Day    | Topic                         | Readings to prepare | Important events                                                |
-| ---- | ------ | ----------------------------- | ------------------- | --------------------------------------------------------------- |
-| CW15 | 15 Apr | Central Force; the 1D problem | JRT 8.1-8.3         | Final Exam Project Assigned (Due 26 Apr)                        |
-|      | 17 Apr |                               |                     |                                                                 |
-|      | 19 Apr |                               |                     | **Homework 9 Due** _([Turn-in using D2L](https://d2l.msu.edu))_ |
+| Week | Day    | Topic                         | Readings to prepare | Important events                                                         |
+| ---- | ------ | ----------------------------- | ------------------- | ------------------------------------------------------------------------ |
+| CW15 | 15 Apr | Central Force; the 1D problem | JRT 8.1-8.3         | [Final Exam Project Assigned (Due 26 Apr)](../midterms/final-exam.ipynb) |
+|      | 17 Apr |                               |                     | Bonus Homework 10 Assigned (Due 26 Apr)                                  |
+|      | 19 Apr |                               |                     | **Homework 9 Due** _([Turn-in using D2L](https://d2l.msu.edu))_          |
 
 ## Week 16
 

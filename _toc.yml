@@ -56,6 +56,7 @@ parts:
       - file: midterms/midterm2.ipynb
       - file: homeworks/hw8.ipynb
       - file: homeworks/hw9.ipynb
+      - file: midterms/final-exam.ipynb
   - caption: Solutions
     numbered: false
     chapters:
@@ -68,6 +69,7 @@ parts:
       - file: solutions/solutionhw6.ipynb
       - file: solutions/solutionhw7.ipynb
       - file: solutions/solutionmidterm2.ipynb
+      - file: solutions/solutionhw8.ipynb
   - caption: Honors Projects
     numbered: false
     chapters:

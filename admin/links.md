@@ -6,6 +6,27 @@ Materials will appear in reverse chronological order, with the most recent appea
 
 All recorded classes are added to [this playlist](https://mediaspace.msu.edu/playlist/dedicated/1_s1d57uud/.)
 
+### Week 15, April 15-19, 2024
+
+Topics: Course Review
+
+#### Videos to Watch
+
+##### Where do we go from here? (20 video playlist)
+
+In this series of 1 minute videos, [Minute Physics](https://www.youtube.com/@MinutePhysics) presents some of the major conceptual elements and practical results of quantum mechanics. The next phase of classical mechanics after single particle dynamics was the development of [wave mechanics](https://en.wikipedia.org/wiki/Wave_equation), which was a precursor to [quantum mechanics](https://en.wikipedia.org/wiki/Quantum_mechanics). There's a lot of interesting physics in the classical theory of light, which lead us to the development of quantum mechanics. 
+
+[![Minute Physics Playlist](https://markdown-videos-api.jorgenkh.no/youtube/Q_h4IoPJXZw?width=720&height=405)](https://www.youtube.com/playlist?list=PL0E2ABD1D84697428)
+- Non-Commercial Link: [https://inv.n8pjl.ca/playlist?list=PL0E2ABD1D84697428](https://inv.n8pjl.ca/playlist?list=PL0E2ABD1D84697428)
+- Commercial Link: [https://www.youtube.com/playlist?list=PL0E2ABD1D84697428](https://www.youtube.com/playlist?list=PL0E2ABD1D84697428)
+
+#### Class Materials
+- Readings:
+  - JRT Ch 1-7
+- Lecture Videos:
+  - 15 Apr 2024
+  - 17 Apr 2024
+
 ### Week 14, April 8-12, 2024
 
 Topics: Lagrangian Mechanics; Forces of Constraint
@@ -29,7 +50,7 @@ We do not have class Monday; please enjoy the solar eclipse.
   - [Lagrangian Mechanics](../lecture-notes/lagrangians.ipynb)
 - Lecture Videos:
   - 8 Apr 2024 (NO CLASS; SOLAR ECLIPSE)
-  - 10 Apr 2024
+  - [10 Apr 2024](https://mediaspace.msu.edu/media/t/1_gjgctdk4)
 
 ### Week 13, April 1-5, 2024
 
