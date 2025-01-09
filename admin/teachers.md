@@ -6,7 +6,8 @@
 | ------------------ | --------------------- | ------------------ | ---------------------------------------------------------------------------- |
 | Monday 12:40-13:30 | Wednesday 12:40-13:30 | Friday 12:40-13:30 | STEM 1202 and [Zoom](https://msu.zoom.us/j/93683330722) |
 
-- [Zoom Link](https://msu.zoom.us/j/93683330722)
+> [!IMPORTANT]
+> The lecture portion of the course will be streamed and recorded via Zoom. You are encouraged to attend in person, but if you are unable to do so, you can join the lecture via Zoom. [Zoom Link](https://msu.zoom.us/j/93683330722)
 
 ## Professor
 
@@ -14,7 +15,7 @@
 
 | Instructor                  | Email            | Office                                                                                                |
 | --------------------------- | ---------------- | ----------------------------------------------------------------------------------------------------- |
-| _Danny Caballero (he/they)_ | caball14@msu.edu | MWF? [BPS 1310A](http://tinyurl.com/dc-bps-office); TTh? [EGR 1515](http://tinyurl.com/dc-egr-office) |
+| _Danny Caballero (he/they)_ | <caball14@msu.edu> | MWF? [BPS 1310A](http://tinyurl.com/dc-bps-office); TTh? [EGR 1515](http://tinyurl.com/dc-egr-office) |
 
 | Office Hours                                                                               |
 | ------------------------------------------------------------------------------------------ |
@@ -26,16 +27,18 @@ Danny will lead the course, design the homework and exams, and assign final grad
 
 | Homework Grader  | Email            |
 | ---------------- | ---------------- |
-| _Scarlett Rebolledo Caceres (she/her)_ | rebolle3@msu.edu |
+| _Scarlett Rebolledo Caceres (she/her)_ | <rebolle3@msu.edu> |
 
 Scarlett will be grading your homework assignments. She will provide overall feedback on the things that students struggled with on homework sets which will be addressed in class. If you have questions about your homework grade, please contact Scarlett directly.
 
 ## Undergraduate Learning Assistants
 
+![Elisha Alemao](../images/staff/elisha.png)
 
-| Learning Assistant         | Email            | Office Hour         | Location          |
-| -------------------------- | ---------------- | ------------------- | ----------------- |
-| _Elisha Alemao (she/her)_ | alemaoel@msu.edu | TBD | Physics Help Room |
+
+| Learning Assistant         | Email             | Office Hour         | Location          |
+| -------------------------- | ----------------- | ------------------- | ----------------- |
+| _Elisha Alemao (she/her)_ | <alemaoel@msu.edu> |     TBD             | Physics Help Room |
 
 Elisha will be helping you in class and during office hours. She has taken this course previously and has been selected because she is passionate about helping you learn classical mechanics. She is an incredible resource for you.
 

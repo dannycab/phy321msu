@@ -6,6 +6,7 @@ root: intro
 parts:
   - caption: About the course
     chapters:
+      - file: admin/getting-started.ipynb
       - file: admin/teachers
       - file: admin/resources
       - file: admin/textbooks
