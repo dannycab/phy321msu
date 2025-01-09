@@ -2,7 +2,7 @@
 # Learn more at https://jupyterbook.org/customize/config.html
 
 title: Classical Mechanics
-author: Danny Caballero, Morten Hjorth-Jensen
+author: Danny Caballero, Morten Hjorth-Jensen, Rachel Henderson
 logo: images/logos/spartan-helmet.png
 
 exclude_patterns: ["solutionhw*"]
@@ -68,7 +68,9 @@ html:
 #######################################################################################
 # LaTeX-specific settings
 latex:
-  latex_engine              : pdflatex  # one of 'pdflatex', 'xelatex' (recommended for unicode), 'luatex', 'platex', 'uplatex'
+  latex_documents:
+    targetname: book.tex
+  latex_engine              : xelatex  # one of 'pdflatex', 'xelatex' (recommended for unicode), 'luatex', 'platex', 'uplatex'
 
 #######################################################################################
 # Launch button settings
