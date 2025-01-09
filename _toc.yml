@@ -8,9 +8,9 @@ parts:
     chapters:
       - file: admin/getting-started.ipynb
       - file: admin/teachers
-      - file: admin/resources
       - file: admin/textbooks
       - file: admin/schedule-cal
+      - file: admin/resources
       - file: admin/links
   - caption: Weekly Course Materials
     chapters:
@@ -76,6 +76,12 @@ parts:
   #     - file: solutions/solutionhw7.ipynb
   #     - file: solutions/solutionmidterm2.ipynb
   #     - file: solutions/solutionhw8.ipynb
+  - caption: Resources
+    numbered: false
+    chapters:
+      - file: resources/iclicker-setup
+      - file: resources/gradescope-submissions
+      - file: resources/finding-research
   - caption: Honors Projects
     numbered: false
     chapters:

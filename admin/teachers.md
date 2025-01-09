@@ -6,8 +6,13 @@
 | ------------------ | --------------------- | ------------------ | ---------------------------------------------------------------------------- |
 | Monday 12:40-13:30 | Wednesday 12:40-13:30 | Friday 12:40-13:30 | STEM 1202 and [Zoom](https://msu.zoom.us/j/93683330722) |
 
-> [!IMPORTANT]
-> The lecture portion of the course will be streamed and recorded via Zoom. You are encouraged to attend in person, but if you are unable to do so, you can join the lecture via Zoom. [Zoom Link](https://msu.zoom.us/j/93683330722)
+> **IMPORTANT**
+>
+> Monday and Wednesday's class will be lecture-based; Friday's classes will be homework-based workshops. *We will work the more challenging exercises together in class on Friday.*
+>
+> The lecture portion of the course will be streamed and recorded via Zoom. *Only lecture will be recorded.*
+> 
+> You are encouraged to attend in person, but if you are unable to do so, you can join the lecture via this [Zoom Link](https://msu.zoom.us/j/93683330722).
 
 ## Professor
 
