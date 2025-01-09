@@ -79,6 +79,7 @@ parts:
   - caption: Resources
     numbered: false
     chapters:
+      - file: resources/course-commitments
       - file: resources/iclicker-setup
       - file: resources/gradescope-submissions
       - file: resources/finding-research

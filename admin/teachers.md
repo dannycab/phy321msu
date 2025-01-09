@@ -70,11 +70,10 @@ There are no curves in this course. The grading scale is as follows.
 | Activity                                                    | Percentage of total score |
 | ----------------------------------------------------------- | ------------------------- |
 | Homeworks, 9 in total and due Fridays the week after        | 15%                       |
-| Individual Reflections, 9 in and due with homework          | 5%                        |
+| Individual Reflections, weekly and HW                       | 5%                        |
 | First Midterm Project, _due Friday Feb 28_                  | 25%                       |
 | Second Midterm Project, _due Friday April 11_               | 25%                       |
 | Final Project, _due Friday May 02_                          | 30%                       |
-| Extra Credit Assignment, homework 10, (due Friday April 19) | 10%                       |
 
 #### Homework (15%)
 
@@ -101,6 +100,15 @@ If you worked individually:
 * What was the most challenging part of this assignment, and how did you address it? This could be related to the content of the assignment, your learning style, etc.
 * What did you learn about your own strengths through engaging with this assignment? 
 * What would you do differently if you were to approach this assignment again and why?
+
+##### Pre-class Reflections
+
+Before each class week, starting with week 2, you will be asked to reflect on the following questions based on your engagement with the pre-class materials. These reflections will be due on the Sunday of each week at 11:59pm ET via the D2L Assignments page. The questions are below and we expect a few sentences in response to each for full credit.
+
+* What was the most challenging part of the pre-class materials, and how did you address it? This could be related to the content of the pre-class materials, your learning style, etc.
+* What did you learn about your own strengths through engaging with the pre-class materials?
+* What would you do differently if you were to approach the pre-class materials again and why?
+* What questions do you have about the pre-class materials that you would like to discuss in class?
 
 #### Midterm Projects (25%)
 
