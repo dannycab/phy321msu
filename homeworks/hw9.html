@@ -1,75 +1,73 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-content_root="../" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <title>Homework 9 (Due 19 Apr) &#8212; Classical Mechanics</title>
   
   
   
   <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
   
-  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
-
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
-  
+  <!-- So that users can add custom icons -->
+  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
-  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
-    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
-    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="../_static/doctools.js"></script>
-    <script src="../_static/clipboard.min.js"></script>
-    <script src="../_static/copybutton.js"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../_static/design-tabs.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
-    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script src="../_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'homeworks/hw9';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="OPTIONAL Homework 10 (Due Apr 26)" href="hw10.html" />
-    <link rel="prev" title="Homework 8 (Due 12 Apr)" href="hw8.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
   </head>
   
   
@@ -77,32 +75,16 @@ const thebe_selector_output = ".output, .cell_output"
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
   
   <div id="pst-scroll-pixel-helper"></div>
-
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
-    <i class="fa-solid fa-arrow-up"></i>
-    Back to top
-  </button>
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
   
-  <input type="checkbox"
-          class="sidebar-toggle"
-          name="__primary"
-          id="__primary"/>
-  <label class="overlay overlay-primary" for="__primary"></label>
-  
-  <input type="checkbox"
-          class="sidebar-toggle"
-          name="__secondary"
-          id="__secondary"/>
-  <label class="overlay overlay-secondary" for="__secondary"></label>
-  
-  <div class="search-button__wrapper">
-    <div class="search-button__overlay"></div>
-    <div class="search-button__search-container">
+  <dialog id="pst-search-dialog">
+    
 <form class="bd-search d-flex align-items-center"
       action="../search.html"
       method="get">
@@ -110,7 +92,6 @@ const thebe_selector_output = ".output, .cell_output"
   <input type="search"
          class="form-control"
          name="q"
-         id="search-input"
          placeholder="Search this book..."
          aria-label="Search this book..."
          autocomplete="off"
@@ -118,16 +99,27 @@ const thebe_selector_output = ".output, .cell_output"
          autocapitalize="off"
          spellcheck="false"/>
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form></div>
-  </div>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
   
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
       
-      <div class="bd-sidebar-primary bd-sidebar">
+      
+      
+        
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -140,9 +132,13 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
+  
+    
   
 
 <a class="navbar-brand logo" href="../intro.html">
+  
   
   
   
@@ -152,62 +148,45 @@ const thebe_selector_output = ".output, .cell_output"
       
     
     
-    <img src="../_static/spartan-helmet.png" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="../_static/spartan-helmet.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="../_static/spartan-helmet.png" class="logo__image only-light" alt="Classical Mechanics - Home"/>
+    <img src="../_static/spartan-helmet.png" class="logo__image only-dark pst-js-only" alt="Classical Mechanics - Home"/>
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="../intro.html">
-                    PHY 321: Classical Mechanics 1, Michigan State University, Spring 2024
+                    PHY 321: Classical Mechanics 1, Michigan State University, Spring 2025
                 </a>
             </li>
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">About the course</span></p>
 <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../admin/getting-started.html">Getting Started</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../admin/teachers.html">Teachers and Grading</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../admin/resources.html">Additional Resources</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../admin/textbooks.html">Textbooks</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../admin/schedule-cal.html">Calendar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin/schedule-cal.html">Course Calendar</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../admin/links.html">Course Material and Links</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Introductory Material</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Weekly Course Materials</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter1.html">1. What is Classical Physics?</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter2-overview.html">What is Mathematical Modeling?</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter2.html">2. Classical Mechanics, Mathematics and Numerical background</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter3.html">3. Simple Motion problems and Reminder on Newton’s Laws</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter4.html">4. Work, Energy, Momentum and Conservation laws</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week1/01_start.html">Week 1- Overture: What is Classical Physics?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week1/01_notes.html">Week 1 - Notes: Introduction to Classical Mechanics</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Advanced Topics</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Assignments</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter5.html">5. Harmonic Oscillations</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter6.html">6. Two-body problems, from the Gravitational Force to Two-body Scattering</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter7.html">7. Non-inertial Frames, Translation and Rotating Coordinate Systems</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter8.html">8. Variational Calculus and Lagrangian Formalism</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">In-class handouts, activities, and other materials</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../in-class/cw1-python-test.html">CW1 - Python Test</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../in-class/cw6-phase_space.html">CW6 - Phase Portraits</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../in-class/cw11-plot-fourier.html">CW11 - Plot Fourier Expansion</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Weekly assignments, midterms and final projects with solutions</span></p>
-<ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="hw1.html">Homework 1 (Due 19 Jan)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="hw2.html">Homework 2 (Due 26 Jan)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="hw3.html">Homework 3 (Due 02 Feb)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="hw4.html">Homework 4 (Due 09 Feb)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="hw5.html">Homework 5 (Due 08 Mar)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="hw6.html">Homework 6 (Due 15 Mar)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="hw7.html">Homework 7 (Due 22 Mar)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="hw8.html">Homework 8 (Due 12 Apr)</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Homework 9 (Due 19 Apr)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="hw10.html">OPTIONAL Homework 10 (Due Apr 26)</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Honors Projects</span></p>
 <ul class="nav bd-sidenav">
@@ -222,14 +201,19 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
   </div>
-  
-  <div id="rtd-footer-container"></div>
 
 
       </div>
       
-      <main id="main-content" class="bd-main">
+      <main id="main-content" class="bd-main" role="main">
         
         
 
@@ -238,14 +222,14 @@ const thebe_selector_output = ".output, .cell_output"
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article">
+              <div class="bd-header-article d-print-none">
 <div class="header-article-items header-article__inner">
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</label></div>
+</button></div>
       
     </div>
   
@@ -270,14 +254,14 @@ const thebe_selector_output = ".output, .cell_output"
       
       <li><a href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/main?urlpath=tree/homeworks/hw9.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
-   title="Launch onBinder"
+   title="Launch on Binder"
    data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
 <span class="btn__icon-container">
   
-    <img src="../_static/images/logo_binder.svg">
+    <img alt="Binder logo" src="../_static/images/logo_binder.svg">
   </span>
 <span class="btn__text-container">Binder</span>
 </a>
@@ -351,26 +335,20 @@ const thebe_selector_output = ".output, .cell_output"
 </button>
 
 
-<script>
-document.write(`
-  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
-  </button>
-`);
-</script>
 
-<script>
-document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
-  </button>
-`);
-</script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
-</label>
+</button>
 </div></div>
       
     </div>
@@ -412,44 +390,58 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
   <!-- HTML file automatically generated from DocOnce source (https://github.com/doconce/doconce/)
 doconce format html hw5.do.txt --no_mako -->
-<!-- dom:TITLE: PHY321: Classical Mechanics 1 --><div class="tex2jax_ignore mathjax_ignore section" id="homework-9-due-19-apr">
-<h1>Homework 9 (Due 19 Apr)<a class="headerlink" href="#homework-9-due-19-apr" title="Permalink to this heading">#</a></h1>
+<!-- dom:TITLE: PHY321: Classical Mechanics 1 --><section class="tex2jax_ignore mathjax_ignore" id="homework-9-due-19-apr">
+<h1>Homework 9 (Due 19 Apr)<a class="headerlink" href="#homework-9-due-19-apr" title="Link to this heading">#</a></h1>
 <p><strong>Due Apr 19 (midnight)</strong></p>
 <p>Date: <strong>Apr 8, 2024</strong>
 Total points: <strong>100</strong></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="o">*</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">math</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
 <span class="o">%</span><span class="k">matplotlib</span> inline
 <span class="n">plt</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;seaborn-v0_8-colorblind&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">4</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="kn">from</span><span class="w"> </span><span class="nn">math</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="ne">----&gt; </span><span class="mi">4</span> <span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="n">get_ipython</span><span class="p">()</span><span class="o">.</span><span class="n">run_line_magic</span><span class="p">(</span><span class="s1">&#39;matplotlib&#39;</span><span class="p">,</span> <span class="s1">&#39;inline&#39;</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">6</span> <span class="n">plt</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;seaborn-v0_8-colorblind&#39;</span><span class="p">)</span>
+
+<span class="ne">ModuleNotFoundError</span>: No module named &#39;pandas&#39;
+</pre></div>
 </div>
-<div class="section" id="introduction-to-homework-9">
-<h2>Introduction to Homework 9<a class="headerlink" href="#introduction-to-homework-9" title="Permalink to this heading">#</a></h2>
+</div>
+</div>
+<section id="introduction-to-homework-9">
+<h2>Introduction to Homework 9<a class="headerlink" href="#introduction-to-homework-9" title="Link to this heading">#</a></h2>
 <p>This week’s exercises focus on Lagrangian Dynamics. The relevant reading background is:</p>
 <ol class="arabic simple">
 <li><p>chapter 6.1-6.3, 7.1-7.7, 7.10 of Taylor</p></li>
 <li><p>chapter 9.1-9.5 of Boas</p></li>
 </ol>
 <p>In both textbooks there are many nice worked out examples.</p>
-<div class="section" id="practicalities-about-homeworks-and-projects">
-<h3>Practicalities about  homeworks and projects<a class="headerlink" href="#practicalities-about-homeworks-and-projects" title="Permalink to this heading">#</a></h3>
+<section id="practicalities-about-homeworks-and-projects">
+<h3>Practicalities about  homeworks and projects<a class="headerlink" href="#practicalities-about-homeworks-and-projects" title="Link to this heading">#</a></h3>
 <ol class="arabic simple">
 <li><p>You can work in groups (optimal groups are often 2-3 people) or by yourself. If you work as a group you can hand in one answer only if you wish. <strong>Remember to write your name(s)</strong>!</p></li>
 <li><p>Homeworks are available ten days before the deadline.</p></li>
 <li><p>How do I (we) hand in?  You can hand in the paper and pencil exercises as a scanned document. For this homework this applies to exercises 1-4. Alternatively, you can hand in everything (if you are ok with typing mathematical formulae using say Latex) as a jupyter notebook at D2L. The numerical exercise(s) (exercise 5-6 here) should always be handed in as a jupyter notebook by the deadline at D2L.</p></li>
 </ol>
-<div class="section" id="exercise-1-10pt-modifying-lagrangians-for-friction">
-<h4>Exercise 1 (10pt) Modifying Lagrangians for friction<a class="headerlink" href="#exercise-1-10pt-modifying-lagrangians-for-friction" title="Permalink to this heading">#</a></h4>
+<section id="exercise-1-10pt-modifying-lagrangians-for-friction">
+<h4>Exercise 1 (10pt) Modifying Lagrangians for friction<a class="headerlink" href="#exercise-1-10pt-modifying-lagrangians-for-friction" title="Link to this heading">#</a></h4>
 <p>We have seen that we have develop the Lagrangian formalism for a potential that depends on location <span class="math notranslate nohighlight">\(U({q}_1, {q}_2, \dots, {q}_N)\)</span> and a kinetic energy term that depends on speeds <span class="math notranslate nohighlight">\(T(\dot{q}_1, \dot{q}_2, \dots, \dot{q}_N)\)</span>. But we’ve said nothing about friction.</p>
 <p>Consider a single particle in one dimension that moves in a potential <span class="math notranslate nohighlight">\(U(x)\)</span> and is subject to a frictional force <span class="math notranslate nohighlight">\(F_{fric}\)</span>.</p>
 <ol class="arabic simple">
@@ -458,27 +450,27 @@ Total points: <strong>100</strong></p>
 </ol>
 <div class="math notranslate nohighlight">
 \[\frac{\partial L}{\partial x} + F_{fric} = \frac{d}{dt}\left(\frac{\partial L}{\partial \dot{x}}\right).\]</div>
-</div>
-<div class="section" id="exercise-2-15pt-modeling-a-yo-yo">
-<h4>Exercise 2 (15pt) Modeling a Yo-yo<a class="headerlink" href="#exercise-2-15pt-modeling-a-yo-yo" title="Permalink to this heading">#</a></h4>
+</section>
+<section id="exercise-2-15pt-modeling-a-yo-yo">
+<h4>Exercise 2 (15pt) Modeling a Yo-yo<a class="headerlink" href="#exercise-2-15pt-modeling-a-yo-yo" title="Link to this heading">#</a></h4>
 <p><img alt="Yo-yo" src="../_images/9.2-yoyo.png" /></p>
 <p>We have a rough model of a yo-yo above, really just a cylinder of mass <span class="math notranslate nohighlight">\(m\)</span> and radius <span class="math notranslate nohighlight">\(R\)</span> that can roll out on the string under the influence of gravity. The string is massless and inextensible. Choose the coordinate <span class="math notranslate nohighlight">\(x\)</span> as shown to be the generalized coordinate.</p>
 <ol class="arabic simple">
 <li><p>(7 pt) Write down the Lagrangian for this system.</p></li>
 <li><p>(8 pt) Show that the cylinder accelerates at a rate <span class="math notranslate nohighlight">\(2g/3\)</span>.</p></li>
 </ol>
-</div>
-<div class="section" id="exercise-3-15pt-constrained-to-a-helix">
-<h4>Exercise 3 (15pt) Constrained to a helix<a class="headerlink" href="#exercise-3-15pt-constrained-to-a-helix" title="Permalink to this heading">#</a></h4>
+</section>
+<section id="exercise-3-15pt-constrained-to-a-helix">
+<h4>Exercise 3 (15pt) Constrained to a helix<a class="headerlink" href="#exercise-3-15pt-constrained-to-a-helix" title="Link to this heading">#</a></h4>
 <p>A bead is constrained to move on a helix with <span class="math notranslate nohighlight">\(\rho = a\)</span> and <span class="math notranslate nohighlight">\(z = b\phi\)</span>, where <span class="math notranslate nohighlight">\(a\)</span> and <span class="math notranslate nohighlight">\(b\)</span> are constants. The helix is oriented upright, so the <span class="math notranslate nohighlight">\(z\)</span> axis is vertical. The bead is subject to a gravitational force <span class="math notranslate nohighlight">\(-mg\hat{z}\)</span>.</p>
 <ol class="arabic simple">
 <li><p>(5 pt) Write down the Lagrangian for this system.</p></li>
 <li><p>(5 pt) Find the equations of motion for this system. Explain what the motion of the bead looks like.</p></li>
 <li><p>(5 pt) What happens when <span class="math notranslate nohighlight">\(a \rightarrow 0\)</span>? Explain what the motion of the bead looks like in this limit.</p></li>
 </ol>
-</div>
-<div class="section" id="exercise-4-25pt-lagrangians-with-rotating-systems">
-<h4>Exercise 4 (25pt) Lagrangians with rotating systems<a class="headerlink" href="#exercise-4-25pt-lagrangians-with-rotating-systems" title="Permalink to this heading">#</a></h4>
+</section>
+<section id="exercise-4-25pt-lagrangians-with-rotating-systems">
+<h4>Exercise 4 (25pt) Lagrangians with rotating systems<a class="headerlink" href="#exercise-4-25pt-lagrangians-with-rotating-systems" title="Link to this heading">#</a></h4>
 <p>As we develop more complicated systems, we will encounter rotating systems. In this problem, we will consider a simple example of a rotating system. A bead is constrained to move on a straight frictionless rod. The rod can pivot about it’s center (like it’s spinning on a table). The rod rotates with a constant angular velocity <span class="math notranslate nohighlight">\(\omega\)</span> its center.</p>
 <ol class="arabic simple">
 <li><p>(5pt) Write down the Lagrangian for the threaded bead using <span class="math notranslate nohighlight">\(r\)</span> as the generalized coordinate. Note: how is <span class="math notranslate nohighlight">\(\phi\)</span> related to <span class="math notranslate nohighlight">\(\omega\)</span>?</p></li>
@@ -487,9 +479,9 @@ Total points: <strong>100</strong></p>
 <li><p>(5pt) If it released from rest at <span class="math notranslate nohighlight">\(r = r_0\)</span>, what is the motion of the bead? Explain in terms of the centrifugal force (<span class="math notranslate nohighlight">\(m\omega^2r\)</span>).</p></li>
 <li><p>(5pt) What have you noticed about solving this problem, which is different from the other problems we’ve done so far?</p></li>
 </ol>
-</div>
-<div class="section" id="exercise-5-35-pt-driven-pendulum">
-<h4>Exercise 5 (35 pt) Driven Pendulum<a class="headerlink" href="#exercise-5-35-pt-driven-pendulum" title="Permalink to this heading">#</a></h4>
+</section>
+<section id="exercise-5-35-pt-driven-pendulum">
+<h4>Exercise 5 (35 pt) Driven Pendulum<a class="headerlink" href="#exercise-5-35-pt-driven-pendulum" title="Link to this heading">#</a></h4>
 <p><img alt="Pendulum" src="../_images/9.5-pendulum.png" /></p>
 <p>The pendulum above is driven by a motor that rotates the wheel shown. The set up is the wheel of radius <span class="math notranslate nohighlight">\(R\)</span> rotates at a constant angular velocity <span class="math notranslate nohighlight">\(\omega\)</span>. The pendulum is free to swing in the vertical plane. The pendulum has length <span class="math notranslate nohighlight">\(l\)</span> and mass <span class="math notranslate nohighlight">\(m\)</span>. The pendulum is attached the edge of the wheel at point <span class="math notranslate nohighlight">\(P\)</span>. The wheel rotates about it’s own center <span class="math notranslate nohighlight">\(O\)</span>.</p>
 <ol class="arabic simple">
@@ -498,10 +490,10 @@ Total points: <strong>100</strong></p>
 <li><p>(5 pt) Take the limit that the wheel rotates very slowly, and the radius of the wheel is quite small. Find the equations of motion for <span class="math notranslate nohighlight">\(\phi\)</span> in this limit. Describe the motion of the pendulum.</p></li>
 <li><p>(20 pt) Write (or reuse) a numerical code to solve the equations of motion for <span class="math notranslate nohighlight">\(\phi\)</span> for the general case. Plot the motion for at least 3 interesting cases that you find. Explain the motion of the pendulum in each case.</p></li>
 </ol>
-</div>
-</div>
-<div class="section" id="extra-credit-integrating-classwork-with-research">
-<h3>Extra Credit - Integrating Classwork With Research<a class="headerlink" href="#extra-credit-integrating-classwork-with-research" title="Permalink to this heading">#</a></h3>
+</section>
+</section>
+<section id="extra-credit-integrating-classwork-with-research">
+<h3>Extra Credit - Integrating Classwork With Research<a class="headerlink" href="#extra-credit-integrating-classwork-with-research" title="Link to this heading">#</a></h3>
 <p>This opportunity will allow you to earn up to 5 extra credit points on a Homework per week. These points can push you above 100% or help make up for missed exercises.
 In order to earn all points you must:</p>
 <ol class="arabic simple">
@@ -516,9 +508,9 @@ Talks given by researchers through the following clubs:</p>
 <li><p>Astronomy Club​: Meets Monday Nights</p></li>
 <li><p>Facility For Rare Isotope Beam (FRIB) Seminars: ​Occur multiple times a week</p></li>
 </ul>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -547,27 +539,9 @@ Talks given by researchers through the following clubs:</p>
               
               
               
-                <footer class="prev-next-footer">
-                  <!-- Previous / next buttons -->
+                <footer class="prev-next-footer d-print-none">
+                  
 <div class="prev-next-area">
-    <a class="left-prev"
-       href="hw8.html"
-       title="previous page">
-      <i class="fa-solid fa-angle-left"></i>
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Homework 8 (Due 12 Apr)</p>
-      </div>
-    </a>
-    <a class="right-next"
-       href="hw10.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">OPTIONAL Homework 10 (Due Apr 26)</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
-    </a>
 </div>
                 </footer>
               
@@ -575,7 +549,9 @@ Talks given by researchers through the following clubs:</p>
             
             
               
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -616,9 +592,10 @@ By Danny Caballero, Morten Hjorth-Jensen
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
-      © Copyright 2022.
+      © Copyright 2023.
       <br/>
     
   </p>
@@ -642,8 +619,8 @@ By Danny Caballero, Morten Hjorth-Jensen
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
+  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
 
   <footer class="bd-footer">
   </footer>

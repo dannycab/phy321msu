@@ -1,66 +1,65 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-content_root="../" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <title>Building a model for the solar system using ordinary differential equations &#8212; Classical Mechanics</title>
   
   
   
   <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
   
-  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
-
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
-  
+  <!-- So that users can add custom icons -->
+  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
-  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
-    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
-    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="../_static/doctools.js"></script>
-    <script src="../_static/clipboard.min.js"></script>
-    <script src="../_static/copybutton.js"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../_static/design-tabs.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
-    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script src="../_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'honors-projects/SolarSystem';</script>
@@ -69,6 +68,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="prev" title="From Ordinary Differential equations to Neural Networks, solving mechanics problems in a new way" href="NeuralNetworks.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
   </head>
   
   
@@ -76,32 +76,16 @@ const thebe_selector_output = ".output, .cell_output"
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
   
   <div id="pst-scroll-pixel-helper"></div>
-
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
-    <i class="fa-solid fa-arrow-up"></i>
-    Back to top
-  </button>
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
   
-  <input type="checkbox"
-          class="sidebar-toggle"
-          name="__primary"
-          id="__primary"/>
-  <label class="overlay overlay-primary" for="__primary"></label>
-  
-  <input type="checkbox"
-          class="sidebar-toggle"
-          name="__secondary"
-          id="__secondary"/>
-  <label class="overlay overlay-secondary" for="__secondary"></label>
-  
-  <div class="search-button__wrapper">
-    <div class="search-button__overlay"></div>
-    <div class="search-button__search-container">
+  <dialog id="pst-search-dialog">
+    
 <form class="bd-search d-flex align-items-center"
       action="../search.html"
       method="get">
@@ -109,7 +93,6 @@ const thebe_selector_output = ".output, .cell_output"
   <input type="search"
          class="form-control"
          name="q"
-         id="search-input"
          placeholder="Search this book..."
          aria-label="Search this book..."
          autocomplete="off"
@@ -117,16 +100,25 @@ const thebe_selector_output = ".output, .cell_output"
          autocapitalize="off"
          spellcheck="false"/>
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form></div>
-  </div>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
   
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
       
-      <div class="bd-sidebar-primary bd-sidebar">
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -139,9 +131,13 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
+  
+    
   
 
 <a class="navbar-brand logo" href="../intro.html">
+  
   
   
   
@@ -151,62 +147,51 @@ const thebe_selector_output = ".output, .cell_output"
       
     
     
-    <img src="../_static/spartan-helmet.png" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="../_static/spartan-helmet.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="../_static/spartan-helmet.png" class="logo__image only-light" alt="Classical Mechanics - Home"/>
+    <img src="../_static/spartan-helmet.png" class="logo__image only-dark pst-js-only" alt="Classical Mechanics - Home"/>
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="../intro.html">
-                    PHY 321: Classical Mechanics 1, Michigan State University, Spring 2024
+                    PHY 321: Classical Mechanics 1, Michigan State University, Spring 2025
                 </a>
             </li>
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">About the course</span></p>
 <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../admin/getting-started.html">Getting Started</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../admin/teachers.html">Teachers and Grading</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../admin/resources.html">Additional Resources</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../admin/textbooks.html">Textbooks</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../admin/schedule-cal.html">Calendar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin/schedule-cal.html">Course Calendar</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../admin/links.html">Course Material and Links</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Introductory Material</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Weekly Course Materials</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter1.html">1. What is Classical Physics?</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter2-overview.html">What is Mathematical Modeling?</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter2.html">2. Classical Mechanics, Mathematics and Numerical background</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter3.html">3. Simple Motion problems and Reminder on Newton’s Laws</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter4.html">4. Work, Energy, Momentum and Conservation laws</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week1/01_start.html">Week 1- Overture: What is Classical Physics?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week1/01_notes.html">Week 1 - Notes: Introduction to Classical Mechanics</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Advanced Topics</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter5.html">5. Harmonic Oscillations</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter6.html">6. Two-body problems, from the Gravitational Force to Two-body Scattering</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter7.html">7. Non-inertial Frames, Translation and Rotating Coordinate Systems</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter8.html">8. Variational Calculus and Lagrangian Formalism</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">In-class handouts, activities, and other materials</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../in-class/cw1-python-test.html">CW1 - Python Test</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../in-class/cw6-phase_space.html">CW6 - Phase Portraits</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../in-class/cw11-plot-fourier.html">CW11 - Plot Fourier Expansion</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Weekly assignments, midterms and final projects with solutions</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Assignments</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../homeworks/hw1.html">Homework 1 (Due 19 Jan)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw2.html">Homework 2 (Due 26 Jan)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw3.html">Homework 3 (Due 02 Feb)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw4.html">Homework 4 (Due 09 Feb)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw5.html">Homework 5 (Due 08 Mar)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw6.html">Homework 6 (Due 15 Mar)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw7.html">Homework 7 (Due 22 Mar)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw8.html">Homework 8 (Due 12 Apr)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw9.html">Homework 9 (Due 19 Apr)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw10.html">OPTIONAL Homework 10 (Due Apr 26)</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Resources</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../resources/course-commitments.html">Course Commitments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/iclicker-setup.html">i-Clicker Setup Instructions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/gradescope-submissions.html">Submitting Assignments on Gradescope</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/finding-research.html">Finding Research Opportunities</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Honors Projects</span></p>
 <ul class="current nav bd-sidenav">
@@ -221,14 +206,19 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
   </div>
-  
-  <div id="rtd-footer-container"></div>
 
 
       </div>
       
-      <main id="main-content" class="bd-main">
+      <main id="main-content" class="bd-main" role="main">
         
         
 
@@ -237,14 +227,14 @@ const thebe_selector_output = ".output, .cell_output"
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article">
+              <div class="bd-header-article d-print-none">
 <div class="header-article-items header-article__inner">
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</label></div>
+</button></div>
       
     </div>
   
@@ -319,26 +309,20 @@ const thebe_selector_output = ".output, .cell_output"
 </button>
 
 
-<script>
-document.write(`
-  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
-  </button>
-`);
-</script>
 
-<script>
-document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
-  </button>
-`);
-</script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
-</label>
+</button>
 </div></div>
       
     </div>
@@ -378,12 +362,12 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
-  <div class="tex2jax_ignore mathjax_ignore section" id="building-a-model-for-the-solar-system-using-ordinary-differential-equations">
-<h1>Building a model for the solar system using ordinary differential equations<a class="headerlink" href="#building-a-model-for-the-solar-system-using-ordinary-differential-equations" title="Permalink to this heading">#</a></h1>
-<div class="section" id="introduction">
-<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">#</a></h2>
+  <section class="tex2jax_ignore mathjax_ignore" id="building-a-model-for-the-solar-system-using-ordinary-differential-equations">
+<h1>Building a model for the solar system using ordinary differential equations<a class="headerlink" href="#building-a-model-for-the-solar-system-using-ordinary-differential-equations" title="Link to this heading">#</a></h1>
+<section id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h2>
 <p>The aim of this project is to develop a code for simulating the solar
 system using a widely popular algorithm for solving coupled ordinary
 differential equations, the so-called velocity Verlet algorithm. An
@@ -436,7 +420,7 @@ better the time evolution of the solar system. The mass of the Sun is
 <span class="math notranslate nohighlight">\(M_{\mathrm{sun}}=M_{\odot}=2\times 10^{30}\)</span> kg. The masses of all
 relevant planets and their distances from the sun are listed in the
 table here in kg and AU.</p>
-<table class="colwidths-auto table">
+<div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Planet</p></th>
 <th class="head"><p>Mass in kg</p></th>
@@ -482,6 +466,7 @@ table here in kg and AU.</p>
 </tr>
 </tbody>
 </table>
+</div>
 <p>Pluto is no longer considered a planet, but we add it here for
 historical reasons. It is optional in this project to include Pluto and
 eventual moons.</p>
@@ -489,7 +474,7 @@ eventual moons.</p>
 and use only the <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span> coordinates. But you should feel free to
 extend your equations to three dimensions, it is not very difficult and
 the data from NASA are all in three dimensions.</p>
-<p><span class="xref myst">NASA</span> has an excellent site at
+<p><a class="reference internal" href="#%7Bhttp://www.nasa.gov/index.html%7D"><span class="xref myst">NASA</span></a> has an excellent site at
 <a class="reference external" href="http://ssd.jpl.nasa.gov/horizons.cgi#top"><code class="docutils literal notranslate"><span class="pre">http://ssd.jpl.nasa.gov/horizons.cgi#top</span></code></a>.
 From there you can extract initial conditions in order to start your
 differential equation solver. At the above website you need to change
@@ -499,8 +484,8 @@ well as their corresponding velocities. The velocities are in units of
 AU per day. Alternatively they can be obtained in terms of km and km/s.</p>
 <p>For the first system below involving only the Earth and the Sun, you
 could just initialize the position with say <span class="math notranslate nohighlight">\(x=1\)</span> AU and <span class="math notranslate nohighlight">\(y=0\)</span> AU.</p>
-<div class="section" id="a-the-earth-sun-system">
-<h3>a: The Earth-Sun system.<a class="headerlink" href="#a-the-earth-sun-system" title="Permalink to this heading">#</a></h3>
+<section id="a-the-earth-sun-system">
+<h3>a: The Earth-Sun system.<a class="headerlink" href="#a-the-earth-sun-system" title="Link to this heading">#</a></h3>
 <p>We assume that mass units can be obtained by using the fact that Earth’s
 orbit is almost circular around the Sun. For circular motion we know
 that the force must obey the following relation</p>
@@ -518,9 +503,9 @@ v^2r=GM_{\odot}=4\pi^2\mathrm{AU}^3/\mathrm{yr}^2.
 solving these equations using Euler’s forward algorithm and the
 so-called velocity Verlet method discussed in the lecture notes and
 lecture slides.</p>
-</div>
-<div class="section" id="b-writing-an-object-oriented-code-for-the-earth-sun-system">
-<h3>b: Writing an object oriented code for the Earth-Sun system.<a class="headerlink" href="#b-writing-an-object-oriented-code-for-the-earth-sun-system" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="b-writing-an-object-oriented-code-for-the-earth-sun-system">
+<h3>b: Writing an object oriented code for the Earth-Sun system.<a class="headerlink" href="#b-writing-an-object-oriented-code-for-the-earth-sun-system" title="Link to this heading">#</a></h3>
 <p>Write then a program which solves the above differential equations for
 the Earth-Sun system using Euler’s method and the velocity Verlet
 method. Write these codes without object orientation first in order to
@@ -533,9 +518,9 @@ abstracted and reused for many types of operations.</p>
 Project 5, much of the structures developed here as well as the
 implementation of the Verlet algorithm, can be used in that project as
 well.</p>
-</div>
-<div class="section" id="c-test-of-the-algorithms">
-<h3>c: Test of the algorithms.<a class="headerlink" href="#c-test-of-the-algorithms" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="c-test-of-the-algorithms">
+<h3>c: Test of the algorithms.<a class="headerlink" href="#c-test-of-the-algorithms" title="Link to this heading">#</a></h3>
 <p>Find out which initial value for the velocity that gives a circular
 orbit and test the stability of your algorithm as function of different
 time steps <span class="math notranslate nohighlight">\(\Delta t\)</span>. Make a plot of the results you obtain for the
@@ -549,9 +534,9 @@ algorithm. Consider also the number of FLOPs involved and perform a
 timing of the two algorithms for equal final times.</p>
 <p>We will use the velocity Verlet algorithm in the remaining part of the
 project.</p>
-</div>
-<div class="section" id="d-escape-velocity">
-<h3>d: Escape velocity.<a class="headerlink" href="#d-escape-velocity" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="d-escape-velocity">
+<h3>d: Escape velocity.<a class="headerlink" href="#d-escape-velocity" title="Link to this heading">#</a></h3>
 <p>Consider then a planet which begins at a distance of 1 AU from the sun.
 Find out by trial and error what the initial velocity must be in order
 for the planet to escape from the sun. Can you find an exact answer? How
@@ -569,9 +554,9 @@ F_G=\frac{GM_{\odot}M_{\mathrm{Earth}}}{r^{\beta}},
 <p>where you let
 <span class="math notranslate nohighlight">\(\beta\in [2,3]\)</span>. What happens to the earth-sun system when <span class="math notranslate nohighlight">\(\beta\)</span>
 creeps towards <span class="math notranslate nohighlight">\(3\)</span>? Comment your results.</p>
-</div>
-<div class="section" id="e-the-three-body-problem">
-<h3>e: The three-body problem.<a class="headerlink" href="#e-the-three-body-problem" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="e-the-three-body-problem">
+<h3>e: The three-body problem.<a class="headerlink" href="#e-the-three-body-problem" title="Link to this heading">#</a></h3>
 <p>We will now study the three-body problem, still with the Sun kept fixed
 as the center of mass of the system but including Jupiter (the most
 massive planet in the solar system, having a mass that is approximately
@@ -601,9 +586,9 @@ solutions using your Verlet solver.</p>
 <p>Repeat the calculations by increasing the mass of Jupiter by a factor of
 10 and 1000 and plot the position of the Earth. Study again the
 stability of the Verlet solver.</p>
-</div>
-<div class="section" id="f-final-model-for-all-planets-of-the-solar-system">
-<h3>f: Final model for all planets of the solar system.<a class="headerlink" href="#f-final-model-for-all-planets-of-the-solar-system" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="f-final-model-for-all-planets-of-the-solar-system">
+<h3>f: Final model for all planets of the solar system.<a class="headerlink" href="#f-final-model-for-all-planets-of-the-solar-system" title="Link to this heading">#</a></h3>
 <p>Finally, using our Verlet solver, we carry out a real three-body
 calculation where all three systems, the Earth, Jupiter and the Sun are
 in motion. To do this, choose the center-of-mass position of the
@@ -615,9 +600,9 @@ results. Extend your program to include all planets in the solar system
 (if you have time, you can also include the various moons, but it is not
 required) and discuss your results. Use the above NASA link to set up
 the initial positions and velocities for all planets.</p>
-</div>
-<div class="section" id="g-the-perihelion-precession-of-mercury">
-<h3>g: The perihelion precession of Mercury.<a class="headerlink" href="#g-the-perihelion-precession-of-mercury" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="g-the-perihelion-precession-of-mercury">
+<h3>g: The perihelion precession of Mercury.<a class="headerlink" href="#g-the-perihelion-precession-of-mercury" title="Link to this heading">#</a></h3>
 <p>An important test of the general theory of relativity was to compare its
 prediction for the perihelion precession of Mercury to the observed
 value. The observed value of the perihelion precession, when all
@@ -662,9 +647,9 @@ checking that the perihelion precession you get with a pure Newtonian
 force is at least a few orders of magnitude smaller than the observed
 perihelion precession of Mercury. Can the observed perihelion precession
 of Mercury be explained by the general theory of relativity?</p>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -693,8 +678,8 @@ of Mercury be explained by the general theory of relativity?</p>
               
               
               
-                <footer class="prev-next-footer">
-                  <!-- Previous / next buttons -->
+                <footer class="prev-next-footer d-print-none">
+                  
 <div class="prev-next-area">
     <a class="left-prev"
        href="NeuralNetworks.html"
@@ -712,7 +697,9 @@ of Mercury be explained by the general theory of relativity?</p>
             
             
               
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -744,16 +731,17 @@ of Mercury be explained by the general theory of relativity?</p>
   <div class="footer-item">
     
 <p class="component-author">
-By Danny Caballero, Morten Hjorth-Jensen
+By Danny Caballero, Morten Hjorth-Jensen, Rachel Henderson
 </p>
 
   </div>
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
-      © Copyright 2022.
+      © Copyright 2023.
       <br/>
     
   </p>
@@ -777,8 +765,8 @@ By Danny Caballero, Morten Hjorth-Jensen
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
+  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
 
   <footer class="bd-footer">
   </footer>

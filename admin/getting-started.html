@@ -1,0 +1,637 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Getting Started &#8212; Classical Mechanics</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'admin/getting-started';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Teachers and Grading" href="teachers.html" />
+    <link rel="prev" title="PHY 321: Classical Mechanics 1, Michigan State University, Spring 2025" href="../intro.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/spartan-helmet.png" class="logo__image only-light" alt="Classical Mechanics - Home"/>
+    <img src="../_static/spartan-helmet.png" class="logo__image only-dark pst-js-only" alt="Classical Mechanics - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    PHY 321: Classical Mechanics 1, Michigan State University, Spring 2025
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">About the course</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="teachers.html">Teachers and Grading</a></li>
+<li class="toctree-l1"><a class="reference internal" href="textbooks.html">Textbooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="schedule-cal.html">Course Calendar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="links.html">Course Material and Links</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Weekly Course Materials</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week1/01_start.html">Week 1- Overture: What is Classical Physics?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week1/01_notes.html">Week 1 - Notes: Introduction to Classical Mechanics</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Assignments</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw1.html">Homework 1 (Due 24 Jan)</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Resources</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../resources/course-commitments.html">Course Commitments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/iclicker-setup.html">i-Clicker Setup Instructions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/gradescope-submissions.html">Submitting Assignments on Gradescope</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/finding-research.html">Finding Research Opportunities</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Honors Projects</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../honors-projects/ChaoticPendulum.html">Chaos in the driven nonlinear pendulum</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../honors-projects/NeuralNetworks.html">From Ordinary Differential equations to Neural Networks, solving mechanics problems in a new way</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../honors-projects/SolarSystem.html">Building a model for the solar system using ordinary differential equations</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/main?urlpath=tree/admin/getting-started.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch on Binder"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img alt="Binder logo" src="../_static/images/logo_binder.svg">
+  </span>
+<span class="btn__text-container">Binder</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/admin/getting-started.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Getting Started</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#before-the-first-class-and-into-the-first-week">Before the first class and into the first week</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preparing-for-class-each-week">Preparing for class each week</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-typical-class-week">A typical class week</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#homework-assignments">Homework Assignments</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#homework-reflections">Homework Reflections</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#midterm-and-final-projects">Midterm and Final Projects</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#midterms">Midterms</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#final-project">Final Project</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="getting-started">
+<h1>Getting Started<a class="headerlink" href="#getting-started" title="Link to this heading">#</a></h1>
+<p>PHY 321 is a course that has been organized to encourage your deep learning of classical mechanics, to provide you with opportunities for growth and agency, to initiate a process of lifelong self-education, and to enculturate you into the practices of physics. Because of this, it might seem there’s a lot for you to do. So this document will help you get started with the course.</p>
+<section id="before-the-first-class-and-into-the-first-week">
+<h2>Before the first class and into the first week<a class="headerlink" href="#before-the-first-class-and-into-the-first-week" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Read the administrative documents on the course website or linked in D2L. Most importantly:</p>
+<ul>
+<li><p>make sure you can log into <a class="reference external" href="https://d2l.msu.edu/d2l/login">D2L</a> and that you can find the course page,</p></li>
+<li><p>read about your <a class="reference internal" href="teachers.html"><span class="doc std std-doc">teachers and the grading policy</span></a>,</p></li>
+<li><p>review the <a class="reference internal" href="textbooks.html"><span class="doc std std-doc">textbook information</span></a> and make sure you have <a class="reference external" href="https://github.com/mhjensen/Physics321/tree/master/doc/Literature">access to the books</a>,</p></li>
+<li><p>look over the <a class="reference internal" href="schedule-cal.html"><span class="doc std std-doc">schedule</span></a> and let Danny (<a class="reference external" href="mailto:caball14&#37;&#52;&#48;msu&#46;edu">caball14<span>&#64;</span>msu<span>&#46;</span>edu</a>) know if you have any conflicts.</p></li>
+<li><p>consider your views of using generative AI in your classes, do some research, and be prepared to discuss your thoughts in class. <strong>We will generate a class policy together.</strong></p></li>
+<li><p>complete the <a class="reference external" href="https://forms.gle/7Q6Q7Q7Q7Q7Q7Q7Q7">pre-class survey</a> by the end of the first week of classes.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="preparing-for-class-each-week">
+<h2>Preparing for class each week<a class="headerlink" href="#preparing-for-class-each-week" title="Link to this heading">#</a></h2>
+<p>Classical Mechanics is a challenging course, but it is also a subject that is well-established with many examples, resources, and tools. For each class week, we will prepare a set of notes, links, and videos. They will be organized by the week and will be available on the course website, and linked in D2L.</p>
+<p>The idea is to provide you with multiple forms of resources and for you to find the ones that work best for you. You should not feel compelled to read, watch, or listen to everything, but you should feel compelled to do something. This might mean reading the textbook, watching a video, working through a problem, or discussing the material with a classmate. The goal is to engage with the material in a way that helps you learn and grow.</p>
+<p>We will have weekly pre-class surveys that will ask you to reflect on the material and your learning. These surveys will be due before Monday’s classes. These are both meant to help you reflect on your learning and to help us understand how to best support you. These surveys will be graded for completion only and factor into your reflection grade.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<ul class="simple">
+<li><p>There is far too much material for you to review and read in a given week.</p></li>
+<li><p>We expect you to spend <strong>at least 30 minutes per class hour</strong> reviewing materials that help you.</p></li>
+<li><p>We will provide suggested pathways through the material each week.</p></li>
+</ul>
+</div>
+<p>Look at <a class="reference internal" href="../lecture-notes/week1/01_start.html"><span class="std std-doc">Week 1</span></a> for an example of what to expect.</p>
+</section>
+<section id="a-typical-class-week">
+<h2>A typical class week<a class="headerlink" href="#a-typical-class-week" title="Link to this heading">#</a></h2>
+<p>Each class week will have a similar structure:</p>
+<p><strong>Monday and Wednesday will be lecture days.</strong> We will have a mix of lecture, clicker questions, and small group work. These class periods will be recorded and made available on D2L.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<ul class="simple">
+<li><p>These classes will follow the digital notes posted each week, so you can follow along, ask questions, and take notes as you see fit. <em>There are handwritten notes available for each class posted as well, but those are less accessible to folks.</em></p></li>
+<li><p>While the examples are worked in the notes, and the information is explained there, the lectures will provide space for us to discuss and work through the material together to deepen your understanding and grow your physics, computing, and mathematical skills.</p></li>
+<li><p><strong>We strongly encourage you to attend class.</strong></p></li>
+</ul>
+</div>
+<div class="admonition-iclickers admonition">
+<p class="admonition-title">iClickers</p>
+<p>We will use iClickers in class to help us gauge your understanding of the material and to help you engage with the material.</p>
+<p>How to <a class="reference internal" href="../resources/iclicker-setup.html"><span class="doc std std-doc">setup iClickers</span></a>.</p>
+</div>
+<p><strong>Friday’s class is a workshop day.</strong> We will work through homework problems together, discuss the material, and work on computational problems. These classes will not be recorded, but we will post the notes and problems on the course website.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<ul class="simple">
+<li><p>These classes will be more interactive and will provide you with opportunities to work through problems and ask questions in a smaller group setting.</p></li>
+<li><p><strong>We strongly encourage you to attend this class in person.</strong> Most students have found this part of the class to be the most helpful for their learning, and we get to learn more about you, which is important for us as instructors.</p></li>
+</ul>
+</div>
+</section>
+<section id="homework-assignments">
+<h2>Homework Assignments<a class="headerlink" href="#homework-assignments" title="Link to this heading">#</a></h2>
+<p>Our view of homework is that they should be helpful in deepening your learning and that you should be encouraged to work collaboratively on them. These exercises are often challenging, and it’s typical that a single student might not be able to solve them on their own – indeed, the time to solve and write solutions for them is often too long for a single student to complete.</p>
+<p>You may work collaboratively on homework assignments, but you must turn in solutions that are your collective work. This means that you should be able to explain the solutions to your peers and that you should be able to reproduce the solutions on your own. Each person must turn in their own assignment, but that assignment can be the same as up to two of your peers.</p>
+<div class="admonition caution">
+<p class="admonition-title">Caution</p>
+<ul class="simple">
+<li><p>You and your classmates must write up your own solutions. Each of you is responsible for keeping a copy of the solutions you turn in.</p></li>
+<li><p>You must list the names of the people you worked with on the assignment. If you worked alone, you must write “I worked alone” on the assignment.</p></li>
+<li><p>You must be able to explain the solutions to your peers. <strong>Do not copy solutions to problems or parts of problems with questioning every part, that is antithetical to the learning goals of the course.</strong></p></li>
+</ul>
+</div>
+<div class="admonition-homework-submission admonition">
+<p class="admonition-title">Homework Submission</p>
+<p>You will submit your homework assignments on <a class="reference external" href="https://www.gradescope.com/">Gradescope</a>.</p>
+<p>How to <a class="reference internal" href="../resources/gradescope-submissions.html"><span class="doc std std-doc">submit your homework on Gradescope</span></a>.</p>
+</div>
+<section id="homework-reflections">
+<h3>Homework Reflections<a class="headerlink" href="#homework-reflections" title="Link to this heading">#</a></h3>
+<p>In addition to the homework assignments, you will be asked to write a reflection on your learning for each homework assignment. These reflections are meant to help you think about your learning, to help us understand how to best support you, and to help you grow as a learner. They are also helping us to ensure that you and your classmates are working productively on homework assignments.</p>
+<p>These reflections will be graded for completion only and factor into your reflection grade.</p>
+</section>
+</section>
+<section id="midterm-and-final-projects">
+<h2>Midterm and Final Projects<a class="headerlink" href="#midterm-and-final-projects" title="Link to this heading">#</a></h2>
+<p>There are no exams in this course, instead, we will have two midterms and a final project. The midterms will be take-home exams that are similar to the homework assignments, but they will cover a broader range of material.</p>
+<section id="midterms">
+<h3>Midterms<a class="headerlink" href="#midterms" title="Link to this heading">#</a></h3>
+<p>The same rules apply to midterms with respect to collaboration; you are welcome to work with your classmates, and the teaching staff to complete the exams.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<ul class="simple">
+<li><p>The take-home midterms will be open for almost two weeks; you can often start some exercises early as they cover older material.</p></li>
+<li><p>They are meant to be challenging, but we will provide you with the resources and support you need to complete them.</p></li>
+<li><p>There is no homework due during the period in which the midterm is assigned.</p></li>
+<li><p>In contrast to homework assignments, you must turn in your own solutions to the midterms.</p></li>
+</ul>
+</div>
+</section>
+<section id="final-project">
+<h3>Final Project<a class="headerlink" href="#final-project" title="Link to this heading">#</a></h3>
+<p>The final project will be a computational project that will be due during the final exam period.</p>
+<p>The project will be a chance for you to explore a topic of interest to you, to deepen your understanding of the material, and to grow your physics and computational skills. Here, we are hoping you synthesize the various concepts and methods we have developed to investigate a physical problem of your interest.</p>
+<p>We will provide you with a list of projects to choose from, but you are welcome to propose your own project. We will provide a few examples of such projects later in the semester.</p>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./admin"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../intro.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">PHY 321: Classical Mechanics 1, Michigan State University, Spring 2025</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="teachers.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Teachers and Grading</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#before-the-first-class-and-into-the-first-week">Before the first class and into the first week</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preparing-for-class-each-week">Preparing for class each week</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-typical-class-week">A typical class week</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#homework-assignments">Homework Assignments</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#homework-reflections">Homework Reflections</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#midterm-and-final-projects">Midterm and Final Projects</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#midterms">Midterms</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#final-project">Final Project</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Danny Caballero, Morten Hjorth-Jensen, Rachel Henderson
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

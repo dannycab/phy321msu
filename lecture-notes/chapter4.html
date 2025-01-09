@@ -1,75 +1,73 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-content_root="../" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <title>4. Work, Energy, Momentum and Conservation laws &#8212; Classical Mechanics</title>
   
   
   
   <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
   
-  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
-
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
-  
+  <!-- So that users can add custom icons -->
+  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
-  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
-    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
-    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="../_static/doctools.js"></script>
-    <script src="../_static/clipboard.min.js"></script>
-    <script src="../_static/copybutton.js"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../_static/design-tabs.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
-    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script src="../_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'lecture-notes/chapter4';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="5. Harmonic Oscillations" href="chapter5.html" />
-    <link rel="prev" title="3. Simple Motion problems and Reminder on Newton’s Laws" href="chapter3.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
   </head>
   
   
@@ -77,32 +75,16 @@ const thebe_selector_output = ".output, .cell_output"
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
   
   <div id="pst-scroll-pixel-helper"></div>
-
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
-    <i class="fa-solid fa-arrow-up"></i>
-    Back to top
-  </button>
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
   
-  <input type="checkbox"
-          class="sidebar-toggle"
-          name="__primary"
-          id="__primary"/>
-  <label class="overlay overlay-primary" for="__primary"></label>
-  
-  <input type="checkbox"
-          class="sidebar-toggle"
-          name="__secondary"
-          id="__secondary"/>
-  <label class="overlay overlay-secondary" for="__secondary"></label>
-  
-  <div class="search-button__wrapper">
-    <div class="search-button__overlay"></div>
-    <div class="search-button__search-container">
+  <dialog id="pst-search-dialog">
+    
 <form class="bd-search d-flex align-items-center"
       action="../search.html"
       method="get">
@@ -110,7 +92,6 @@ const thebe_selector_output = ".output, .cell_output"
   <input type="search"
          class="form-control"
          name="q"
-         id="search-input"
          placeholder="Search this book..."
          aria-label="Search this book..."
          autocomplete="off"
@@ -118,16 +99,27 @@ const thebe_selector_output = ".output, .cell_output"
          autocapitalize="off"
          spellcheck="false"/>
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form></div>
-  </div>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
   
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
       
-      <div class="bd-sidebar-primary bd-sidebar">
+      
+      
+        
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -140,9 +132,13 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
+  
+    
   
 
 <a class="navbar-brand logo" href="../intro.html">
+  
   
   
   
@@ -152,62 +148,45 @@ const thebe_selector_output = ".output, .cell_output"
       
     
     
-    <img src="../_static/spartan-helmet.png" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="../_static/spartan-helmet.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="../_static/spartan-helmet.png" class="logo__image only-light" alt="Classical Mechanics - Home"/>
+    <img src="../_static/spartan-helmet.png" class="logo__image only-dark pst-js-only" alt="Classical Mechanics - Home"/>
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="../intro.html">
-                    PHY 321: Classical Mechanics 1, Michigan State University, Spring 2024
+                    PHY 321: Classical Mechanics 1, Michigan State University, Spring 2025
                 </a>
             </li>
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">About the course</span></p>
 <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../admin/getting-started.html">Getting Started</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../admin/teachers.html">Teachers and Grading</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../admin/resources.html">Additional Resources</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../admin/textbooks.html">Textbooks</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../admin/schedule-cal.html">Calendar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin/schedule-cal.html">Course Calendar</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../admin/links.html">Course Material and Links</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Introductory Material</span></p>
-<ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="chapter1.html">1. What is Classical Physics?</a></li>
-<li class="toctree-l1"><a class="reference internal" href="chapter2-overview.html">What is Mathematical Modeling?</a></li>
-<li class="toctree-l1"><a class="reference internal" href="chapter2.html">2. Classical Mechanics, Mathematics and Numerical background</a></li>
-<li class="toctree-l1"><a class="reference internal" href="chapter3.html">3. Simple Motion problems and Reminder on Newton’s Laws</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">4. Work, Energy, Momentum and Conservation laws</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Advanced Topics</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Weekly Course Materials</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="chapter5.html">5. Harmonic Oscillations</a></li>
-<li class="toctree-l1"><a class="reference internal" href="chapter6.html">6. Two-body problems, from the Gravitational Force to Two-body Scattering</a></li>
-<li class="toctree-l1"><a class="reference internal" href="chapter7.html">7. Non-inertial Frames, Translation and Rotating Coordinate Systems</a></li>
-<li class="toctree-l1"><a class="reference internal" href="chapter8.html">8. Variational Calculus and Lagrangian Formalism</a></li>
+<li class="toctree-l1"><a class="reference internal" href="week1/01_start.html">Week 1- Overture: What is Classical Physics?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="week1/01_notes.html">Week 1 - Notes: Introduction to Classical Mechanics</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">In-class handouts, activities, and other materials</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../in-class/cw1-python-test.html">CW1 - Python Test</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../in-class/cw6-phase_space.html">CW6 - Phase Portraits</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../in-class/cw11-plot-fourier.html">CW11 - Plot Fourier Expansion</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Weekly assignments, midterms and final projects with solutions</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Assignments</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../homeworks/hw1.html">Homework 1 (Due 19 Jan)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw2.html">Homework 2 (Due 26 Jan)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw3.html">Homework 3 (Due 02 Feb)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw4.html">Homework 4 (Due 09 Feb)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw5.html">Homework 5 (Due 08 Mar)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw6.html">Homework 6 (Due 15 Mar)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw7.html">Homework 7 (Due 22 Mar)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw8.html">Homework 8 (Due 12 Apr)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw9.html">Homework 9 (Due 19 Apr)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw10.html">OPTIONAL Homework 10 (Due Apr 26)</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Honors Projects</span></p>
 <ul class="nav bd-sidenav">
@@ -222,14 +201,19 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
   </div>
-  
-  <div id="rtd-footer-container"></div>
 
 
       </div>
       
-      <main id="main-content" class="bd-main">
+      <main id="main-content" class="bd-main" role="main">
         
         
 
@@ -238,14 +222,14 @@ const thebe_selector_output = ".output, .cell_output"
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article">
+              <div class="bd-header-article d-print-none">
 <div class="header-article-items header-article__inner">
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</label></div>
+</button></div>
       
     </div>
   
@@ -270,14 +254,14 @@ const thebe_selector_output = ".output, .cell_output"
       
       <li><a href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/main?urlpath=tree/lecture-notes/chapter4.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
-   title="Launch onBinder"
+   title="Launch on Binder"
    data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
 <span class="btn__icon-container">
   
-    <img src="../_static/images/logo_binder.svg">
+    <img alt="Binder logo" src="../_static/images/logo_binder.svg">
   </span>
 <span class="btn__text-container">Binder</span>
 </a>
@@ -351,26 +335,20 @@ const thebe_selector_output = ".output, .cell_output"
 </button>
 
 
-<script>
-document.write(`
-  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
-  </button>
-`);
-</script>
 
-<script>
-document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
-  </button>
-`);
-</script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
-</label>
+</button>
 </div></div>
       
     </div>
@@ -438,10 +416,10 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
-  <div class="tex2jax_ignore mathjax_ignore section" id="work-energy-momentum-and-conservation-laws">
-<h1>4. Work, Energy, Momentum and Conservation laws<a class="headerlink" href="#work-energy-momentum-and-conservation-laws" title="Permalink to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="work-energy-momentum-and-conservation-laws">
+<h1>4. Work, Energy, Momentum and Conservation laws<a class="headerlink" href="#work-energy-momentum-and-conservation-laws" title="Link to this heading">#</a></h1>
 <p>In the previous three chapters  we have shown how to use Newton’s laws of
 motion to determine the motion of an object based on the forces acting
 on it. For two of the cases there is an underlying assumption that we can find an analytical solution to a continuous problem.
@@ -463,8 +441,8 @@ an object even in cases when we cannot solve the equations of
 motion. This introduces us to the concept of work and kinetic energy,
 an energy related to the motion of an object.</p>
 <p>And finally, we will link the work-energy theorem with the principle of conservation of energy.</p>
-<div class="section" id="the-work-energy-theorem">
-<h2>The Work-Energy Theorem<a class="headerlink" href="#the-work-energy-theorem" title="Permalink to this heading">#</a></h2>
+<section id="the-work-energy-theorem">
+<h2>The Work-Energy Theorem<a class="headerlink" href="#the-work-energy-theorem" title="Link to this heading">#</a></h2>
 <p>Let us define the kinetic energy <span class="math notranslate nohighlight">\(K\)</span> with a given velocity <span class="math notranslate nohighlight">\(\boldsymbol{v}\)</span></p>
 <div class="math notranslate nohighlight">
 \[
@@ -545,8 +523,8 @@ W_{n0}=\frac{1}{2}mv_n^2-\frac{1}{2}mv_0^2=\int_{c}\boldsymbol{F}(\boldsymbol{r}
 <p>In order to study the work- energy, we will normally need to perform
 a numerical integration, unless we can integrate analytically. Here we
 present some of the simpler  methods such as the <strong>rectangle</strong> rule, the <strong>trapezoidal</strong> rule and higher-order methods like the Simpson family of methods.</p>
-<div class="section" id="example-of-an-electron-moving-along-a-surface">
-<h3>Example of an Electron moving along a Surface<a class="headerlink" href="#example-of-an-electron-moving-along-a-surface" title="Permalink to this heading">#</a></h3>
+<section id="example-of-an-electron-moving-along-a-surface">
+<h3>Example of an Electron moving along a Surface<a class="headerlink" href="#example-of-an-electron-moving-along-a-surface" title="Link to this heading">#</a></h3>
 <p>As an example, let us consider the following case.
 We have  classical electron which moves in the <span class="math notranslate nohighlight">\(x\)</span>-direction along a surface. The force from the surface is</p>
 <div class="math notranslate nohighlight">
@@ -582,9 +560,9 @@ v(x)=\pm \sqrt{v_0^2+\frac{F_0b}{m\pi}\left[\cos{(\frac{2\pi x}{b})}-\cos{(\frac
 \[
 v(x)=\pm \sqrt{\frac{F_0b}{m\pi}\left[\cos{(\frac{2\pi x}{b})}-1\right]},
 \]</div>
-</div>
-<div class="section" id="harmonic-oscillations">
-<h3>Harmonic Oscillations<a class="headerlink" href="#harmonic-oscillations" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="harmonic-oscillations">
+<h3>Harmonic Oscillations<a class="headerlink" href="#harmonic-oscillations" title="Link to this heading">#</a></h3>
 <p>Another well-known force (and we will derive when we come to Harmonic
 Oscillations) is the case of a sliding block attached to a wall
 through a spring. The block is attached to a spring with spring
@@ -615,18 +593,18 @@ W=\frac{1}{2}mv^2(x)-\frac{1}{2}mv_0^2=\frac{1}{2}k(x_0-L_0)^2-\frac{1}{2}k(x-L_
 \]</div>
 <p>What does this mean? The total energy, which is the sum of potential and kinetic energy, is conserved.
 Wow, this sounds interesting. We will analyze this next week in more detail when we study energy, momentum and angular momentum conservation.</p>
-</div>
-</div>
-<div class="section" id="numerical-integration">
-<h2>Numerical Integration<a class="headerlink" href="#numerical-integration" title="Permalink to this heading">#</a></h2>
+</section>
+</section>
+<section id="numerical-integration">
+<h2>Numerical Integration<a class="headerlink" href="#numerical-integration" title="Link to this heading">#</a></h2>
 <p>Let us now see how we could have solved the above integral numerically.</p>
 <p>There are several numerical algorithms for finding an integral
 numerically. The more familiar ones like the rectangular rule or the
 trapezoidal rule have simple geometric interpretations.</p>
 <p>Let us look at the mathematical details of what are called equal-step methods, also known as Newton-Cotes quadrature.</p>
-</div>
-<div class="section" id="newton-cotes-quadrature-or-equal-step-methods">
-<h2>Newton-Cotes Quadrature or equal-step methods<a class="headerlink" href="#newton-cotes-quadrature-or-equal-step-methods" title="Permalink to this heading">#</a></h2>
+</section>
+<section id="newton-cotes-quadrature-or-equal-step-methods">
+<h2>Newton-Cotes Quadrature or equal-step methods<a class="headerlink" href="#newton-cotes-quadrature-or-equal-step-methods" title="Link to this heading">#</a></h2>
 <p>The integral</p>
 <!-- Equation labels as ordinary links -->
 <div id="eq:integraldef"></div>
@@ -673,8 +651,8 @@ subintervals. Consider for example evaluating</p>
 \end{equation}
 \]</div>
 <p>We have chosen a midpoint <span class="math notranslate nohighlight">\(x_0\)</span> and have defined <span class="math notranslate nohighlight">\(x_0=a+h\)</span>.</p>
-<div class="section" id="the-rectangle-method">
-<h3>The rectangle method<a class="headerlink" href="#the-rectangle-method" title="Permalink to this heading">#</a></h3>
+<section id="the-rectangle-method">
+<h3>The rectangle method<a class="headerlink" href="#the-rectangle-method" title="Link to this heading">#</a></h3>
 <p>A very simple approach is the so-called midpoint or rectangle method.
 In this case the integration area is split in a given number of rectangles with length <span class="math notranslate nohighlight">\(h\)</span> and height given by the mid-point value of the function.  This gives the following simple rule for approximating an integral</p>
 <!-- Equation labels as ordinary links -->
@@ -708,11 +686,11 @@ W=\frac{1}{\pi}.
 <span class="math notranslate nohighlight">\(10^{-5}\)</span>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">sin</span><span class="p">,</span> <span class="n">pi</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="n">Symbol</span><span class="p">,</span> <span class="n">integrate</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">math</span><span class="w"> </span><span class="kn">import</span> <span class="n">sin</span><span class="p">,</span> <span class="n">pi</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">sympy</span><span class="w"> </span><span class="kn">import</span> <span class="n">Symbol</span><span class="p">,</span> <span class="n">integrate</span>
 <span class="c1"># function for the Rectangular rule                                                                                        </span>
-<span class="k">def</span> <span class="nf">Rectangular</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">f</span><span class="p">,</span><span class="n">n</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">Rectangular</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">f</span><span class="p">,</span><span class="n">n</span><span class="p">):</span>
    <span class="n">h</span> <span class="o">=</span> <span class="p">(</span><span class="n">b</span><span class="o">-</span><span class="n">a</span><span class="p">)</span><span class="o">/</span><span class="nb">float</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
    <span class="n">s</span> <span class="o">=</span> <span class="mi">0</span>
    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">n</span><span class="p">,</span><span class="mi">1</span><span class="p">):</span>
@@ -720,7 +698,7 @@ W=\frac{1}{\pi}.
        <span class="n">s</span> <span class="o">=</span> <span class="n">s</span><span class="o">+</span> <span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
    <span class="k">return</span> <span class="n">h</span><span class="o">*</span><span class="n">s</span>
 <span class="c1"># function to integrate</span>
-<span class="k">def</span> <span class="nf">function</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">function</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">sin</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">pi</span><span class="o">*</span><span class="n">x</span><span class="p">)</span>
 <span class="c1"># define integration limits and integration points                                                                         </span>
 <span class="n">a</span> <span class="o">=</span> <span class="mf">0.0</span><span class="p">;</span> <span class="n">b</span> <span class="o">=</span> <span class="mf">0.5</span><span class="p">;</span>
@@ -731,14 +709,23 @@ W=\frac{1}{\pi}.
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Relative error=  4.112453549290521e-05
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">3</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="kn">from</span><span class="w"> </span><span class="nn">math</span><span class="w"> </span><span class="kn">import</span> <span class="n">sin</span><span class="p">,</span> <span class="n">pi</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="ne">----&gt; </span><span class="mi">3</span> <span class="kn">from</span><span class="w"> </span><span class="nn">sympy</span><span class="w"> </span><span class="kn">import</span> <span class="n">Symbol</span><span class="p">,</span> <span class="n">integrate</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="c1"># function for the Rectangular rule                                                                                        </span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="k">def</span><span class="w"> </span><span class="nf">Rectangular</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">f</span><span class="p">,</span><span class="n">n</span><span class="p">):</span>
+
+<span class="ne">ModuleNotFoundError</span>: No module named &#39;sympy&#39;
 </pre></div>
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="the-trapezoidal-rule">
-<h3>The trapezoidal rule<a class="headerlink" href="#the-trapezoidal-rule" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="the-trapezoidal-rule">
+<h3>The trapezoidal rule<a class="headerlink" href="#the-trapezoidal-rule" title="Link to this heading">#</a></h3>
 <p>The other integral gives</p>
 <div class="math notranslate nohighlight">
 \[
@@ -796,10 +783,10 @@ through the following simple algorithm</p>
 <p>We use the same function and integrate now using the trapoezoidal rule.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="n">Symbol</span><span class="p">,</span> <span class="n">integrate</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">sympy</span><span class="w"> </span><span class="kn">import</span> <span class="n">Symbol</span><span class="p">,</span> <span class="n">integrate</span>
 <span class="c1"># function for the trapezoidal rule</span>
-<span class="k">def</span> <span class="nf">Trapez</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">f</span><span class="p">,</span><span class="n">n</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">Trapez</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">f</span><span class="p">,</span><span class="n">n</span><span class="p">):</span>
    <span class="n">h</span> <span class="o">=</span> <span class="p">(</span><span class="n">b</span><span class="o">-</span><span class="n">a</span><span class="p">)</span><span class="o">/</span><span class="nb">float</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
    <span class="n">s</span> <span class="o">=</span> <span class="mi">0</span>
    <span class="n">x</span> <span class="o">=</span> <span class="n">a</span>
@@ -809,7 +796,7 @@ through the following simple algorithm</p>
    <span class="n">s</span> <span class="o">=</span> <span class="mf">0.5</span><span class="o">*</span><span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="n">a</span><span class="p">)</span><span class="o">+</span><span class="n">f</span><span class="p">(</span><span class="n">b</span><span class="p">))</span> <span class="o">+</span><span class="n">s</span>
    <span class="k">return</span> <span class="n">h</span><span class="o">*</span><span class="n">s</span>
 <span class="c1"># function to integrate</span>
-<span class="k">def</span> <span class="nf">function</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">function</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">sin</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">pi</span><span class="o">*</span><span class="n">x</span><span class="p">)</span>
 <span class="c1"># define integration limits and integration points                                                                         </span>
 <span class="n">a</span> <span class="o">=</span> <span class="mf">0.0</span><span class="p">;</span> <span class="n">b</span> <span class="o">=</span> <span class="mf">0.5</span><span class="p">;</span>
@@ -819,15 +806,10 @@ through the following simple algorithm</p>
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Relative error=  8.224805627923717e-05
-</pre></div>
 </div>
-</div>
-</div>
-</div>
-<div class="section" id="simpsons-rule">
-<h3>Simpsons’ rule<a class="headerlink" href="#simpsons-rule" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="simpsons-rule">
+<h3>Simpsons’ rule<a class="headerlink" href="#simpsons-rule" title="Link to this heading">#</a></h3>
 <p>Instead of using the above first-order polynomials
 approximations for <span class="math notranslate nohighlight">\(f\)</span>, we attempt at using a second-order polynomials.
 In this case we need three points in order to define a second-order
@@ -843,7 +825,7 @@ P_2(x)=\frac{(x-x_0)(x-x_1)}{(x_2-x_0)(x_2-x_1)}y_2+
             \frac{(x-x_0)(x-x_2)}{(x_1-x_0)(x_1-x_2)}y_1+
             \frac{(x-x_1)(x-x_2)}{(x_0-x_1)(x_0-x_2)}y_0.
 \]</div>
-<p>Inserting this formula in the integral of Eq.  (<span class="xref myst">2</span>) we obtain</p>
+<p>Inserting this formula in the integral of Eq.  (<a class="reference internal" href="#eq:hhint"><span class="xref myst">2</span></a>) we obtain</p>
 <div class="math notranslate nohighlight">
 \[
 \int_{-h}^{+h}f(x)dx=\frac{h}{3}\left(f_h + 4f_0 + f_{-h}\right)+O(h^5),
@@ -853,7 +835,7 @@ P_2(x)=\frac{(x-x_0)(x-x_1)}{(x_2-x_0)(x_2-x_1)}y_2+
 the derivatives gives a better error approximation, <span class="math notranslate nohighlight">\(O(h^5)\)</span> vs.\ <span class="math notranslate nohighlight">\(O(h^3)\)</span> .
 But this is again the <em>local error approximation</em>.
 Using Simpson’s rule we can easily compute
-the integral     of Eq.  (<span class="xref myst">1</span>) to be</p>
+the integral     of Eq.  (<a class="reference internal" href="#eq:integraldef"><span class="xref myst">1</span></a>) to be</p>
 <!-- Equation labels as ordinary links -->
 <div id="eq:simpson"></div>
 <div class="math notranslate nohighlight">
@@ -886,11 +868,11 @@ can easily be implemented numerically through the following simple algorithm</p>
 </ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">sin</span><span class="p">,</span> <span class="n">pi</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="n">Symbol</span><span class="p">,</span> <span class="n">integrate</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">math</span><span class="w"> </span><span class="kn">import</span> <span class="n">sin</span><span class="p">,</span> <span class="n">pi</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">sympy</span><span class="w"> </span><span class="kn">import</span> <span class="n">Symbol</span><span class="p">,</span> <span class="n">integrate</span>
 <span class="c1"># function for the trapezoidal rule                                                                                        </span>
-<span class="k">def</span> <span class="nf">Simpson</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">f</span><span class="p">,</span><span class="n">n</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">Simpson</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">f</span><span class="p">,</span><span class="n">n</span><span class="p">):</span>
    <span class="n">h</span> <span class="o">=</span> <span class="p">(</span><span class="n">b</span><span class="o">-</span><span class="n">a</span><span class="p">)</span><span class="o">/</span><span class="nb">float</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
    <span class="nb">sum</span> <span class="o">=</span> <span class="n">f</span><span class="p">(</span><span class="n">a</span><span class="p">)</span><span class="o">/</span><span class="nb">float</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">n</span><span class="p">):</span>
@@ -898,7 +880,7 @@ can easily be implemented numerically through the following simple algorithm</p>
    <span class="nb">sum</span> <span class="o">=</span> <span class="nb">sum</span> <span class="o">+</span> <span class="n">f</span><span class="p">(</span><span class="n">b</span><span class="p">)</span><span class="o">/</span><span class="nb">float</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
    <span class="k">return</span> <span class="nb">sum</span><span class="o">*</span><span class="n">h</span><span class="o">/</span><span class="mf">3.0</span>
 <span class="c1"># function to integrate                                                                                                    </span>
-<span class="k">def</span> <span class="nf">function</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">function</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">sin</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">pi</span><span class="o">*</span><span class="n">x</span><span class="p">)</span>
 <span class="c1"># define integration limits and integration points                                                                         </span>
 <span class="n">a</span> <span class="o">=</span> <span class="mf">0.0</span><span class="p">;</span> <span class="n">b</span> <span class="o">=</span> <span class="mf">0.5</span><span class="p">;</span>
@@ -908,16 +890,11 @@ can easily be implemented numerically through the following simple algorithm</p>
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Relative error=  5.412252157986472e-09
-</pre></div>
-</div>
-</div>
 </div>
 <p>We see that Simpson’s rule gives a much better estimation of the relative error with the same amount of points as we had for the Rectangle rule and the Trapezoidal rule.</p>
-</div>
-<div class="section" id="symbolic-integration">
-<h3>Symbolic integration<a class="headerlink" href="#symbolic-integration" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="symbolic-integration">
+<h3>Symbolic integration<a class="headerlink" href="#symbolic-integration" title="Link to this heading">#</a></h3>
 <p>We could also use the symbolic mathematics. Here Python comes to our rescue with <a class="reference external" href="https://www.sympy.org/en/index.html">SymPy</a>, which is a Python library for symbolic mathematics.</p>
 <p>Here’s an example on how you could use <strong>Sympy</strong> where we compare the symbolic calculation with an
 integration of a function <span class="math notranslate nohighlight">\(f(x)\)</span> by the Trapezoidal rule.
@@ -929,12 +906,12 @@ The following code for  the trapezoidal rule allows you  to plot the relative er
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> inline
 
-<span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">log10</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="n">Symbol</span><span class="p">,</span> <span class="n">integrate</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">math</span><span class="w"> </span><span class="kn">import</span> <span class="n">log10</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">sympy</span><span class="w"> </span><span class="kn">import</span> <span class="n">Symbol</span><span class="p">,</span> <span class="n">integrate</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 <span class="c1"># function for the trapezoidal rule</span>
-<span class="k">def</span> <span class="nf">Trapez</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">f</span><span class="p">,</span><span class="n">n</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">Trapez</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">f</span><span class="p">,</span><span class="n">n</span><span class="p">):</span>
    <span class="n">h</span> <span class="o">=</span> <span class="p">(</span><span class="n">b</span><span class="o">-</span><span class="n">a</span><span class="p">)</span><span class="o">/</span><span class="nb">float</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
    <span class="n">s</span> <span class="o">=</span> <span class="mi">0</span>
    <span class="n">x</span> <span class="o">=</span> <span class="n">a</span>
@@ -944,7 +921,7 @@ The following code for  the trapezoidal rule allows you  to plot the relative er
    <span class="n">s</span> <span class="o">=</span> <span class="mf">0.5</span><span class="o">*</span><span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="n">a</span><span class="p">)</span><span class="o">+</span><span class="n">f</span><span class="p">(</span><span class="n">b</span><span class="p">))</span> <span class="o">+</span><span class="n">s</span>
    <span class="k">return</span> <span class="n">h</span><span class="o">*</span><span class="n">s</span>
 <span class="c1">#  function to compute pi</span>
-<span class="k">def</span> <span class="nf">function</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">function</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">x</span><span class="o">*</span><span class="n">x</span>
 <span class="c1"># define integration limits</span>
 <span class="n">a</span> <span class="o">=</span> <span class="mf">0.0</span><span class="p">;</span>  <span class="n">b</span> <span class="o">=</span> <span class="mf">1.0</span><span class="p">;</span>
@@ -967,14 +944,11 @@ The following code for  the trapezoidal rule allows you  to plot the relative er
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<img alt="../_images/1d9a4aeda4c3164a6daf517c9bb5c2105cc192620622a6326121ad36e27e97b3.png" src="../_images/1d9a4aeda4c3164a6daf517c9bb5c2105cc192620622a6326121ad36e27e97b3.png" />
 </div>
-</div>
-</div>
-</div>
-<div class="section" id="energy-conservation">
-<h2>Energy Conservation<a class="headerlink" href="#energy-conservation" title="Permalink to this heading">#</a></h2>
+</section>
+</section>
+<section id="energy-conservation">
+<h2>Energy Conservation<a class="headerlink" href="#energy-conservation" title="Link to this heading">#</a></h2>
 <p>Energy conservation is most convenient as a strategy for addressing
 problems where time does not appear. For example, a particle goes
 from position <span class="math notranslate nohighlight">\(x_0\)</span> with speed <span class="math notranslate nohighlight">\(v_0\)</span>, to position <span class="math notranslate nohighlight">\(x_f\)</span>; what is its
@@ -1141,8 +1115,8 @@ F_z=-\frac{\partial V}{\partial z},
 \boldsymbol{F}=-\frac{\partial V}{\partial x}\boldsymbol{e}_1-\frac{\partial V}{\partial y}\boldsymbol{e}_2-\frac{\partial V}{\partial z}\boldsymbol{e}_3=-\boldsymbol{\nabla}V(\boldsymbol{r}).
 \]</div>
 <p>And this connection is the one we wanted to show.</p>
-<div class="section" id="net-energy">
-<h3>Net Energy<a class="headerlink" href="#net-energy" title="Permalink to this heading">#</a></h3>
+<section id="net-energy">
+<h3>Net Energy<a class="headerlink" href="#net-energy" title="Link to this heading">#</a></h3>
 <p>The net energy, <span class="math notranslate nohighlight">\(E=V+K\)</span> where <span class="math notranslate nohighlight">\(K\)</span> is the kinetic energy, is then conserved,</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -1190,10 +1164,10 @@ you would have to determine which points, <span class="math notranslate nohighli
 reach in the trajectory, whereas in one dimension you can typically
 tell by simply seeing whether the kinetic energy is positive at every
 point between the old position and the new position.</p>
-</div>
-</div>
-<div class="section" id="the-earth-sun-system">
-<h2>The Earth-Sun system<a class="headerlink" href="#the-earth-sun-system" title="Permalink to this heading">#</a></h2>
+</section>
+</section>
+<section id="the-earth-sun-system">
+<h2>The Earth-Sun system<a class="headerlink" href="#the-earth-sun-system" title="Link to this heading">#</a></h2>
 <p>We will now venture into a study of a system which is energy
 conserving. The aim is to see if we (since it is not possible to solve
 the general equations analytically) we can develop stable numerical
@@ -1447,11 +1421,11 @@ y_{i+1}=y_i+hv_{y,i},
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Common imports</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="o">*</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">math</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
 
 <span class="c1"># Where to save the figures and data files</span>
 <span class="n">PROJECT_ROOT_DIR</span> <span class="o">=</span> <span class="s2">&quot;Results&quot;</span>
@@ -1467,13 +1441,13 @@ y_{i+1}=y_i+hv_{y,i},
 <span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">DATA_ID</span><span class="p">):</span>
     <span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">DATA_ID</span><span class="p">)</span>
 
-<span class="k">def</span> <span class="nf">image_path</span><span class="p">(</span><span class="n">fig_id</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">image_path</span><span class="p">(</span><span class="n">fig_id</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">FIGURE_ID</span><span class="p">,</span> <span class="n">fig_id</span><span class="p">)</span>
 
-<span class="k">def</span> <span class="nf">data_path</span><span class="p">(</span><span class="n">dat_id</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">data_path</span><span class="p">(</span><span class="n">dat_id</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">DATA_ID</span><span class="p">,</span> <span class="n">dat_id</span><span class="p">)</span>
 
-<span class="k">def</span> <span class="nf">save_fig</span><span class="p">(</span><span class="n">fig_id</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">save_fig</span><span class="p">(</span><span class="n">fig_id</span><span class="p">):</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="n">image_path</span><span class="p">(</span><span class="n">fig_id</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;.png&quot;</span><span class="p">,</span> <span class="nb">format</span><span class="o">=</span><span class="s1">&#39;png&#39;</span><span class="p">)</span>
 
 
@@ -1512,9 +1486,6 @@ y_{i+1}=y_i+hv_{y,i},
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<img alt="../_images/c1247b92a41d3dba72d5832c72592e740c9f04e10318121273a4a16a3ae7b3d8.png" src="../_images/c1247b92a41d3dba72d5832c72592e740c9f04e10318121273a4a16a3ae7b3d8.png" />
 </div>
 </div>
 <p>We notice here that Euler’s method doesn’t give a stable orbit. It
@@ -1598,8 +1569,8 @@ v_{n+1}=v_{n}+(\Delta t) a_{n}+O(\Delta t^2).
 \]</div>
 <p>The acceleration <span class="math notranslate nohighlight">\(a_n\)</span> is a function of <span class="math notranslate nohighlight">\(a_n(y_n, v_n, t_n)\)</span> and needs to be evaluated
 as well. This is the Euler-Cromer method.</p>
-<div class="section" id="deriving-the-velocity-verlet-method">
-<h3>Deriving the Velocity-Verlet Method<a class="headerlink" href="#deriving-the-velocity-verlet-method" title="Permalink to this heading">#</a></h3>
+<section id="deriving-the-velocity-verlet-method">
+<h3>Deriving the Velocity-Verlet Method<a class="headerlink" href="#deriving-the-velocity-verlet-method" title="Link to this heading">#</a></h3>
 <p>Let us stay with <span class="math notranslate nohighlight">\(x\)</span> (position) and <span class="math notranslate nohighlight">\(v\)</span> (velocity) as the quantities we are interested in.</p>
 <p>We have the Taylor expansion for the position given by</p>
 <div class="math notranslate nohighlight">
@@ -1684,16 +1655,13 @@ the position at the updated time <span class="math notranslate nohighlight">\(t_
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<img alt="../_images/827e861ec8f08a2b79fec9089578c98093975954311374479781d74fd6c3a58a.png" src="../_images/827e861ec8f08a2b79fec9089578c98093975954311374479781d74fd6c3a58a.png" />
-</div>
 </div>
 <p>You can easily generalize the calculation of the forces by defining a function
 which takes in as input the various variables. We leave this as a challenge to you.</p>
-</div>
-</div>
-<div class="section" id="additional-material-link-between-line-integrals-and-conservative-forces">
-<h2>Additional Material: Link between Line Integrals and Conservative forces<a class="headerlink" href="#additional-material-link-between-line-integrals-and-conservative-forces" title="Permalink to this heading">#</a></h2>
+</section>
+</section>
+<section id="additional-material-link-between-line-integrals-and-conservative-forces">
+<h2>Additional Material: Link between Line Integrals and Conservative forces<a class="headerlink" href="#additional-material-link-between-line-integrals-and-conservative-forces" title="Link to this heading">#</a></h2>
 <p>The concept of line integrals plays an important role in our discussion of energy conservation,
 our definition of potentials and conservative forces.</p>
 <p>Let us remind ourselves of some the basic elements (most of you may
@@ -1863,11 +1831,11 @@ then the line integral</p>
 \[
 \boldsymbol{\nabla}\times\boldsymbol{F}=\boldsymbol{\nabla}\times\left(-\boldsymbol{\nabla}V(\boldsymbol{r})\right)=0.
 \]</div>
-</div>
-<div class="section" id="exercises">
-<h2>Exercises<a class="headerlink" href="#exercises" title="Permalink to this heading">#</a></h2>
-<div class="section" id="exercise-conservation-laws-energy-and-momentum">
-<h3>Exercise: Conservation laws, Energy and momentum<a class="headerlink" href="#exercise-conservation-laws-energy-and-momentum" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="exercises">
+<h2>Exercises<a class="headerlink" href="#exercises" title="Link to this heading">#</a></h2>
+<section id="exercise-conservation-laws-energy-and-momentum">
+<h3>Exercise: Conservation laws, Energy and momentum<a class="headerlink" href="#exercise-conservation-laws-energy-and-momentum" title="Link to this heading">#</a></h3>
 <p>How do we define a conservative force?</p>
 <p>A conservative force is a force whose property is that the total work
 done in moving an object between two points is independent of the
@@ -1944,9 +1912,9 @@ If we then use the definition that</p>
 \]</div>
 <p>where we assumed that <span class="math notranslate nohighlight">\(m_i\)</span> is independent of time, we see that time derivative of the total momentum is zero.
 We say then that the linear momentum is a constant of the motion. It is conserved.</p>
-</div>
-<div class="section" id="exercise-conservation-of-angular-momentum">
-<h3>Exercise: Conservation of angular momentum<a class="headerlink" href="#exercise-conservation-of-angular-momentum" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="exercise-conservation-of-angular-momentum">
+<h3>Exercise: Conservation of angular momentum<a class="headerlink" href="#exercise-conservation-of-angular-momentum" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Define angular momentum and the torque for a single object with external forces only.</p></li>
 </ul>
@@ -2003,9 +1971,9 @@ We say then that the linear momentum is a constant of the motion. It is conserve
 \boldsymbol{\tau}=\sum_{i=1}^N\sum_{j&gt;i}^N(\boldsymbol{r}_i -\boldsymbol{r}_j) \times \boldsymbol{f}_{ji}.
 \]</div>
 <p>If the force is proportional to <span class="math notranslate nohighlight">\(\boldsymbol{r}_i -\boldsymbol{r}_j\)</span> then angular momentum is conserved since the cross-product of a vector with itself is zero. We say thus that angular momentum is a constant of the motion.</p>
-</div>
-<div class="section" id="exsercise-example-of-potential">
-<h3>Exsercise: Example of potential<a class="headerlink" href="#exsercise-example-of-potential" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="exsercise-example-of-potential">
+<h3>Exsercise: Example of potential<a class="headerlink" href="#exsercise-example-of-potential" title="Link to this heading">#</a></h3>
 <p>Consider a particle of mass <span class="math notranslate nohighlight">\(m\)</span> moving according to the potential</p>
 <div class="math notranslate nohighlight">
 \[
@@ -2090,9 +2058,9 @@ We see this directly from the above expressions for the force, since the derivat
 (\boldsymbol{r}\times\boldsymbol{F})_z = xF_y-yF_x=\frac{yxA}{a^2}\exp\left\{-\frac{x^2+z^2}{2a^2}\right\}.
 \]</div>
 <p>Only <span class="math notranslate nohighlight">\(L_y\)</span> is conserved.</p>
-</div>
-<div class="section" id="exercise-forces-and-potentials">
-<h3>Exercise: forces  and potentials<a class="headerlink" href="#exercise-forces-and-potentials" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="exercise-forces-and-potentials">
+<h3>Exercise: forces  and potentials<a class="headerlink" href="#exercise-forces-and-potentials" title="Link to this heading">#</a></h3>
 <p>A particle of mass <span class="math notranslate nohighlight">\(m\)</span> has velocity <span class="math notranslate nohighlight">\(v=\alpha/x\)</span>, where <span class="math notranslate nohighlight">\(x\)</span> is its displacement.</p>
 <ul class="simple">
 <li><p>Find the force <span class="math notranslate nohighlight">\(F(x)\)</span> responsible for the motion.</p></li>
@@ -2125,9 +2093,9 @@ V(x) = -\int_0^x F(x')dx'=\frac{kx^2}{2}-\frac{kx^4}{4\alpha^2}.
 <p>The following code plots the potential. We have chosen values of <span class="math notranslate nohighlight">\(\alpha=k=1.0\)</span>. Feel free to experiment with other values. We plot <span class="math notranslate nohighlight">\(V(x)\)</span> for a domain of <span class="math notranslate nohighlight">\(x\in [-2,2]\)</span>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">import</span> <span class="nn">math</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">math</span>
 
 <span class="n">x0</span><span class="o">=</span> <span class="o">-</span><span class="mf">2.0</span>
 <span class="n">xn</span> <span class="o">=</span> <span class="mf">2.1</span>
@@ -2146,9 +2114,6 @@ V(x) = -\int_0^x F(x')dx'=\frac{kx^2}{2}-\frac{kx^4}{4\alpha^2}.
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<img alt="../_images/3fbb32c8e9159e717d6b10f7858d917e987cb0d4554565fc8041e8294501e320.png" src="../_images/3fbb32c8e9159e717d6b10f7858d917e987cb0d4554565fc8041e8294501e320.png" />
-</div>
 </div>
 <p>From the plot here (with the chosen parameters)</p>
 <ol class="arabic simple">
@@ -2166,9 +2131,9 @@ V(x) = -\int_0^x F(x')dx'=\frac{kx^2}{2}-\frac{kx^4}{4\alpha^2}.
 the potential has a minimum at at <span class="math notranslate nohighlight">\(x=0\)</span> then rises until <span class="math notranslate nohighlight">\(x=\alpha\)</span> before falling off again. The maximum
 potential, <span class="math notranslate nohighlight">\(V(x\pm \alpha) = k\alpha^2/4\)</span>. If the energy is higher, the particle cannot be contained in the
 well. The turning points are thus defined by <span class="math notranslate nohighlight">\(x=\pm \alpha\)</span>. And from the previous plot you can easily see that this is the case (<span class="math notranslate nohighlight">\(\alpha=1\)</span> in the abovementioned Python code).</p>
-</div>
-<div class="section" id="exercise-work-energy-theorem-and-conservation-laws">
-<h3>Exercise: Work-energy theorem and conservation laws<a class="headerlink" href="#exercise-work-energy-theorem-and-conservation-laws" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="exercise-work-energy-theorem-and-conservation-laws">
+<h3>Exercise: Work-energy theorem and conservation laws<a class="headerlink" href="#exercise-work-energy-theorem-and-conservation-laws" title="Link to this heading">#</a></h3>
 <p>This exercise was partly discussed above.
 We will study a classical electron which moves in the <span class="math notranslate nohighlight">\(x\)</span>-direction along a surface. The force from the surface is</p>
 <div class="math notranslate nohighlight">
@@ -2245,10 +2210,10 @@ V(x)=\frac{F_0b}{2\pi}\left[\cos{(\frac{2\pi x}{b})}\right].
 <p>The following Python code plots the potential</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="o">*</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">math</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 <span class="n">Deltax</span> <span class="o">=</span> <span class="mf">0.01</span>
 <span class="c1">#set up arrays</span>
 <span class="n">xinitial</span> <span class="o">=</span> <span class="o">-</span><span class="mf">2.0</span>
@@ -2272,14 +2237,11 @@ V(x)=\frac{F_0b}{2\pi}\left[\cos{(\frac{2\pi x}{b})}\right].
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<img alt="../_images/b7c41f078aca503c4e83b9a44fb8ed805f9c9c6c371a25bbcac28c57a5f87023.png" src="../_images/b7c41f078aca503c4e83b9a44fb8ed805f9c9c6c371a25bbcac28c57a5f87023.png" />
-</div>
 </div>
 <p>We have stable equilibrium  points for every minimum of the <span class="math notranslate nohighlight">\(\cos\)</span> function and unstable equilibrium points where it has its maximimum values. At the minimum the particle has the lowest potential energy and the largest kinetic energy whereas at the maxima it has the largest potential energy and lowest kinetic energy.</p>
-</div>
-<div class="section" id="exsercise-rocket-momentum-and-mass">
-<h3>Exsercise: Rocket, Momentum and mass<a class="headerlink" href="#exsercise-rocket-momentum-and-mass" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="exsercise-rocket-momentum-and-mass">
+<h3>Exsercise: Rocket, Momentum and mass<a class="headerlink" href="#exsercise-rocket-momentum-and-mass" title="Link to this heading">#</a></h3>
 <p>Taylor exercise 3.11.</p>
 <p>Consider the rocket of mass <span class="math notranslate nohighlight">\(M\)</span> moving with velocity <span class="math notranslate nohighlight">\(v\)</span>. After a
 brief instant, the velocity of the rocket is <span class="math notranslate nohighlight">\(v+\Delta v\)</span> and the mass
@@ -2320,9 +2282,9 @@ v=v_e\ln[(M_0-k t)/M_0]-gt.
 \]</div>
 <p>Inserting numbers <span class="math notranslate nohighlight">\(v_e=3000\)</span> m/s, <span class="math notranslate nohighlight">\(M_0/M=2\)</span> and <span class="math notranslate nohighlight">\(g=9.8\)</span> m/s<span class="math notranslate nohighlight">\(^{2}\)</span>, we find <span class="math notranslate nohighlight">\(v=900\)</span> m/s. With <span class="math notranslate nohighlight">\(g=0\)</span> the corresponding number is <span class="math notranslate nohighlight">\(2100\)</span> m/s, so gravity reduces the speed acquired in the first two minutes to a little less than half its weight-free value.</p>
 <p>If the thrust <span class="math notranslate nohighlight">\(\Delta Mv_e\)</span> is less than the weight <span class="math notranslate nohighlight">\(mg\)</span>, the rocket will just sit on the ground until it has shed enough mass that the thrust can overcome the weight, definitely not a good design.</p>
-</div>
-<div class="section" id="exercise-more-rockets">
-<h3>Exercise: More Rockets<a class="headerlink" href="#exercise-more-rockets" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="exercise-more-rockets">
+<h3>Exercise: More Rockets<a class="headerlink" href="#exercise-more-rockets" title="Link to this heading">#</a></h3>
 <p>This is a continuation of the previous exercise and most of the relevant background material can be found in Taylor chapter 3.2.</p>
 <p>Taking the velocity from the previous exercise and integrating over time we find the height</p>
 <div class="math notranslate nohighlight">
@@ -2382,9 +2344,9 @@ y(t) = v_et-\frac{1}{2}gt^2-\frac{Mv_e}{k}\ln{(\frac{M_0}{M})}.
 \[
 v = \frac{kv_e}{b}\left[1-(\frac{M}{M_0})^{b/k}\right].
 \]</div>
-</div>
-<div class="section" id="exercise-center-of-mass">
-<h3>Exercise: Center of mass<a class="headerlink" href="#exercise-center-of-mass" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="exercise-center-of-mass">
+<h3>Exercise: Center of mass<a class="headerlink" href="#exercise-center-of-mass" title="Link to this heading">#</a></h3>
 <p>Taylor exercise 3.20. Here Taylor’s chapter 3.3 can be of use. This relation will turn out to be very useful when we discuss systems of many classical particles.</p>
 <p>The definition of the center of mass for <span class="math notranslate nohighlight">\(N\)</span> objects can be written as</p>
 <div class="math notranslate nohighlight">
@@ -2401,9 +2363,9 @@ with <span class="math notranslate nohighlight">\(j=1,\dots,N_2\)</span>.</p>
 M\boldsymbol{R}=\sum_{i=1}^{N_1}m_{1i}\boldsymbol{r}_{1i}+\sum_{j=1}^{N_2}m_{2j}\boldsymbol{r}_{2j}=M_1\boldsymbol{R}_1+M_2\boldsymbol{R}_2,
 \]</div>
 <p>where <span class="math notranslate nohighlight">\(\boldsymbol{R}_1\)</span> and <span class="math notranslate nohighlight">\(\boldsymbol{R}_2\)</span> are the the center of mass positions of the two separate bodies and the second equality follows from our rewritten definition of the center of mass applied to each body separately. This is the required result.</p>
-</div>
-<div class="section" id="exercise-the-earth-sun-problem">
-<h3>Exercise: The Earth-Sun problem<a class="headerlink" href="#exercise-the-earth-sun-problem" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="exercise-the-earth-sun-problem">
+<h3>Exercise: The Earth-Sun problem<a class="headerlink" href="#exercise-the-earth-sun-problem" title="Link to this heading">#</a></h3>
 <p>We start with the Earth-Sun system  in two dimensions only.  The gravitational force <span class="math notranslate nohighlight">\(F_G\)</span> on the earth from the sun is</p>
 <div class="math notranslate nohighlight">
 \[
@@ -2532,11 +2494,11 @@ y_{i+1}=y_i+hv_{y,i},
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Common imports</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="o">*</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">math</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
 
 <span class="c1"># Where to save the figures and data files</span>
 <span class="n">PROJECT_ROOT_DIR</span> <span class="o">=</span> <span class="s2">&quot;Results&quot;</span>
@@ -2552,13 +2514,13 @@ y_{i+1}=y_i+hv_{y,i},
 <span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">DATA_ID</span><span class="p">):</span>
     <span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">DATA_ID</span><span class="p">)</span>
 
-<span class="k">def</span> <span class="nf">image_path</span><span class="p">(</span><span class="n">fig_id</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">image_path</span><span class="p">(</span><span class="n">fig_id</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">FIGURE_ID</span><span class="p">,</span> <span class="n">fig_id</span><span class="p">)</span>
 
-<span class="k">def</span> <span class="nf">data_path</span><span class="p">(</span><span class="n">dat_id</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">data_path</span><span class="p">(</span><span class="n">dat_id</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">DATA_ID</span><span class="p">,</span> <span class="n">dat_id</span><span class="p">)</span>
 
-<span class="k">def</span> <span class="nf">save_fig</span><span class="p">(</span><span class="n">fig_id</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">save_fig</span><span class="p">(</span><span class="n">fig_id</span><span class="p">):</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="n">image_path</span><span class="p">(</span><span class="n">fig_id</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;.png&quot;</span><span class="p">,</span> <span class="nb">format</span><span class="o">=</span><span class="s1">&#39;png&#39;</span><span class="p">)</span>
 
 
@@ -2597,9 +2559,6 @@ y_{i+1}=y_i+hv_{y,i},
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<img alt="../_images/d65731f3a6c106465698561a6a71c4fae69c436812ad65cc3a3e8cba6e8097b2.png" src="../_images/d65731f3a6c106465698561a6a71c4fae69c436812ad65cc3a3e8cba6e8097b2.png" />
 </div>
 </div>
 <p>We notice here that Euler’s method doesn’t give a stable orbit with for example <span class="math notranslate nohighlight">\(\Delta t =0.01\)</span>. It
@@ -2766,9 +2725,6 @@ the position at the updated time <span class="math notranslate nohighlight">\(t_
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<img alt="../_images/827e861ec8f08a2b79fec9089578c98093975954311374479781d74fd6c3a58a.png" src="../_images/827e861ec8f08a2b79fec9089578c98093975954311374479781d74fd6c3a58a.png" />
-</div>
 </div>
 <p>You can easily generalize the calculation of the forces by defining a function
 which takes in as input the various variables. We leave this as a challenge to you.</p>
@@ -2825,13 +2781,10 @@ v = \sqrt{8\pi^2}{r},
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<img alt="../_images/60ee1b08a5ace1eec7ab46d44fc74efdb147ec0e9b61ed8e5b9b661ff1ed60b0.png" src="../_images/60ee1b08a5ace1eec7ab46d44fc74efdb147ec0e9b61ed8e5b9b661ff1ed60b0.png" />
 </div>
-</div>
-</div>
-<div class="section" id="exercise-conservative-forces">
-<h3>Exercise Conservative forces<a class="headerlink" href="#exercise-conservative-forces" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="exercise-conservative-forces">
+<h3>Exercise Conservative forces<a class="headerlink" href="#exercise-conservative-forces" title="Link to this heading">#</a></h3>
 <p>Which of the following force are conservative?  All three forces depend only on <span class="math notranslate nohighlight">\(\boldsymbol{r}\)</span> and satisfy the first condition for being conservative.</p>
 <ul class="simple">
 <li><p><span class="math notranslate nohighlight">\(\boldsymbol{F}=k(x\boldsymbol{i}+2y\boldsymbol{j}+3z\boldsymbol{k})\)</span> where <span class="math notranslate nohighlight">\(k\)</span> is a constant.</p></li>
@@ -2849,9 +2802,9 @@ v = \sqrt{8\pi^2}{r},
 <li><p>2d For those which are conservative, find the corresponding potential energy <span class="math notranslate nohighlight">\(V\)</span> and verify that direct differentiation that <span class="math notranslate nohighlight">\(\boldsymbol{F}=-\boldsymbol{\nabla} V\)</span>.</p></li>
 </ul>
 <p>See the answers to each exercise above.</p>
-</div>
-<div class="section" id="exercise-the-lennard-jones-potential">
-<h3>Exercise: The Lennard-Jones potential<a class="headerlink" href="#exercise-the-lennard-jones-potential" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="exercise-the-lennard-jones-potential">
+<h3>Exercise: The Lennard-Jones potential<a class="headerlink" href="#exercise-the-lennard-jones-potential" title="Link to this heading">#</a></h3>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Lennard-Jones_potential">The Lennard-Jones potential</a> is often used to describe
 the interaction between two atoms or ions or molecules. If you end up doing materals science and molecular dynamics calculations, it is very likely that you will encounter this potential model.
 The expression for the potential energy is</p>
@@ -2868,9 +2821,9 @@ V(r) = V_0\left((\frac{a}{r})^{12}-(\frac{b}{r})^{6}\right),
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Common imports</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="o">*</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">math</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 
 <span class="n">Deltar</span> <span class="o">=</span> <span class="mf">0.01</span>
 <span class="c1">#set up arrays</span>
@@ -2896,9 +2849,6 @@ V(r) = V_0\left((\frac{a}{r})^{12}-(\frac{b}{r})^{6}\right),
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<img alt="../_images/298d586b2c68b2148bde03d9fd73d35cc19d7d6319e8e2673fc8a12ce3c58628.png" src="../_images/298d586b2c68b2148bde03d9fd73d35cc19d7d6319e8e2673fc8a12ce3c58628.png" />
 </div>
 </div>
 <ul class="simple">
@@ -2937,9 +2887,9 @@ The force on particle <span class="math notranslate nohighlight">\(i\)</span> at
 \boldsymbol{a}_i=\frac{d^2\boldsymbol{r}_i}{dt^2} = \frac{6V_0}{m} \sum_{j \neq i}^{N}\left(2(\frac{a}{\vert\vert\boldsymbol{r}_i-\boldsymbol{r}_j\vert\vert})^{12}-(\frac{b}{\vert\vert\boldsymbol{r}_i-\boldsymbol{r}_j\vert\vert})^6\right)\frac{\boldsymbol{r}_i-\boldsymbol{r}_j}{\vert\vert\boldsymbol{r}_i-\boldsymbol{r}_j\vert\vert^2}.
 \]</div>
 <p>This is also a conservative force, with zero <strong>curl</strong> as well.</p>
-</div>
-<div class="section" id="exercise-particle-in-a-new-potential">
-<h3>Exercise: particle in a new potential<a class="headerlink" href="#exercise-particle-in-a-new-potential" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="exercise-particle-in-a-new-potential">
+<h3>Exercise: particle in a new potential<a class="headerlink" href="#exercise-particle-in-a-new-potential" title="Link to this heading">#</a></h3>
 <p>Consider a particle of mass <span class="math notranslate nohighlight">\(m\)</span> moving in a one-dimensional potential,</p>
 <div class="math notranslate nohighlight">
 \[
@@ -2952,9 +2902,9 @@ V(x)=-\alpha\frac{x^2}{2}+\beta\frac{x^4}{4}.
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Common imports</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="o">*</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">math</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 
 <span class="n">Deltax</span> <span class="o">=</span> <span class="mf">0.01</span>
 <span class="c1">#set up arrays</span>
@@ -2980,12 +2930,6 @@ V(x)=-\alpha\frac{x^2}{2}+\beta\frac{x^4}{4}.
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1.2727922061357855
-</pre></div>
-</div>
-<img alt="../_images/92ce2d268dd10ffabacb74af8633e481fc50d07f829416ca0b2f5cf8678af67d.png" src="../_images/92ce2d268dd10ffabacb74af8633e481fc50d07f829416ca0b2f5cf8678af67d.png" />
 </div>
 </div>
 <p>Here we have chosen <span class="math notranslate nohighlight">\(\alpha=0.81\)</span> and <span class="math notranslate nohighlight">\(\beta=0.5\)</span>. Taking the derivative of <span class="math notranslate nohighlight">\(V\)</span> with respect to <span class="math notranslate nohighlight">\(x\)</span> gives two minima (and it is easy to see here that the second derivative is positive) at <span class="math notranslate nohighlight">\(x\pm\sqrt{\alpha/\beta}\)</span> and a maximum at <span class="math notranslate nohighlight">\(x=0\)</span>. The derivative is</p>
@@ -3037,9 +2981,9 @@ F(x) = -kx,
 \]</div>
 <p>which has as analytical solution <span class="math notranslate nohighlight">\(x(t)=A\cos{(\omega_0t)}+B\sin{(\omega_0t)}\)</span> and velocity
 <span class="math notranslate nohighlight">\(x(t)=-\omega_0A\sin{(\omega_0t)}+\omega_0B\cos{(\omega_0t)}\)</span>. The initial conditions are used to define <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span>.</p>
-</div>
-<div class="section" id="exercise-testing-energy-conservation">
-<h3>Exercise: Testing Energy conservation<a class="headerlink" href="#exercise-testing-energy-conservation" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="exercise-testing-energy-conservation">
+<h3>Exercise: Testing Energy conservation<a class="headerlink" href="#exercise-testing-energy-conservation" title="Link to this heading">#</a></h3>
 <p>The code here implements Euler’s method for the Earth-Sun system using
 a more compact way of representing the vectors. Alternatively, you
 could have spelled out all the variables <span class="math notranslate nohighlight">\(v_x\)</span>, <span class="math notranslate nohighlight">\(v_y\)</span>, <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span> as
@@ -3050,11 +2994,11 @@ again as function of time</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Common imports</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="o">*</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">math</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
 
 <span class="c1"># Where to save the figures and data files</span>
 <span class="n">PROJECT_ROOT_DIR</span> <span class="o">=</span> <span class="s2">&quot;Results&quot;</span>
@@ -3070,13 +3014,13 @@ again as function of time</p>
 <span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">DATA_ID</span><span class="p">):</span>
     <span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">DATA_ID</span><span class="p">)</span>
 
-<span class="k">def</span> <span class="nf">image_path</span><span class="p">(</span><span class="n">fig_id</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">image_path</span><span class="p">(</span><span class="n">fig_id</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">FIGURE_ID</span><span class="p">,</span> <span class="n">fig_id</span><span class="p">)</span>
 
-<span class="k">def</span> <span class="nf">data_path</span><span class="p">(</span><span class="n">dat_id</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">data_path</span><span class="p">(</span><span class="n">dat_id</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">DATA_ID</span><span class="p">,</span> <span class="n">dat_id</span><span class="p">)</span>
 
-<span class="k">def</span> <span class="nf">save_fig</span><span class="p">(</span><span class="n">fig_id</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">save_fig</span><span class="p">(</span><span class="n">fig_id</span><span class="p">):</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="n">image_path</span><span class="p">(</span><span class="n">fig_id</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;.png&quot;</span><span class="p">,</span> <span class="nb">format</span><span class="o">=</span><span class="s1">&#39;png&#39;</span><span class="p">)</span>
 
 <span class="c1"># Initial values, time step, positions and velocites</span>
@@ -3142,9 +3086,6 @@ again as function of time</p>
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<img alt="../_images/15f8aee9aef9f4cf26208f4eb724ae1cb3d3038cb9827c9c3c7d0a2a1099244e.png" src="../_images/15f8aee9aef9f4cf26208f4eb724ae1cb3d3038cb9827c9c3c7d0a2a1099244e.png" />
-</div>
 </div>
 <p>We see very clearly that Euler’s method does not conserve energy!! Try to reduce the time step <span class="math notranslate nohighlight">\(\Delta t\)</span>. What do you see?</p>
 <p>With the Euler-Cromer method, the only thing we need is to update the
@@ -3157,11 +3098,11 @@ max and a min value and never exceed these values.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Common imports</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="o">*</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">math</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
 
 <span class="c1"># Where to save the figures and data files</span>
 <span class="n">PROJECT_ROOT_DIR</span> <span class="o">=</span> <span class="s2">&quot;Results&quot;</span>
@@ -3177,13 +3118,13 @@ max and a min value and never exceed these values.</p>
 <span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">DATA_ID</span><span class="p">):</span>
     <span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">DATA_ID</span><span class="p">)</span>
 
-<span class="k">def</span> <span class="nf">image_path</span><span class="p">(</span><span class="n">fig_id</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">image_path</span><span class="p">(</span><span class="n">fig_id</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">FIGURE_ID</span><span class="p">,</span> <span class="n">fig_id</span><span class="p">)</span>
 
-<span class="k">def</span> <span class="nf">data_path</span><span class="p">(</span><span class="n">dat_id</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">data_path</span><span class="p">(</span><span class="n">dat_id</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">DATA_ID</span><span class="p">,</span> <span class="n">dat_id</span><span class="p">)</span>
 
-<span class="k">def</span> <span class="nf">save_fig</span><span class="p">(</span><span class="n">fig_id</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">save_fig</span><span class="p">(</span><span class="n">fig_id</span><span class="p">):</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="n">image_path</span><span class="p">(</span><span class="n">fig_id</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;.png&quot;</span><span class="p">,</span> <span class="nb">format</span><span class="o">=</span><span class="s1">&#39;png&#39;</span><span class="p">)</span>
 
 <span class="c1"># Initial values, time step, positions and velocites</span>
@@ -3249,9 +3190,6 @@ max and a min value and never exceed these values.</p>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<img alt="../_images/9350ddc2ab68588e6c6e4cbce61837132d16b81d4d8c5f934677af154ae383c3.png" src="../_images/9350ddc2ab68588e6c6e4cbce61837132d16b81d4d8c5f934677af154ae383c3.png" />
 </div>
 </div>
 <p>Our final equations for the position and the velocity become then</p>
@@ -3332,15 +3270,12 @@ the position at the updated time <span class="math notranslate nohighlight">\(t_
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<img alt="../_images/a5ce154b3a765c8d2ca8de783d4b0e6777bf9c8279d0022db1c2c9cc0116c04f.png" src="../_images/a5ce154b3a765c8d2ca8de783d4b0e6777bf9c8279d0022db1c2c9cc0116c04f.png" />
-</div>
 </div>
 <p>And we see that due to the smaller truncation error that energy conservation is improved as a function of time.
 Try out different time steps <span class="math notranslate nohighlight">\(\Delta t\)</span> and see if the results improve or worsen.</p>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -3369,27 +3304,9 @@ Try out different time steps <span class="math notranslate nohighlight">\(\Delta
               
               
               
-                <footer class="prev-next-footer">
-                  <!-- Previous / next buttons -->
+                <footer class="prev-next-footer d-print-none">
+                  
 <div class="prev-next-area">
-    <a class="left-prev"
-       href="chapter3.html"
-       title="previous page">
-      <i class="fa-solid fa-angle-left"></i>
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">3. Simple Motion problems and Reminder on Newton’s Laws</p>
-      </div>
-    </a>
-    <a class="right-next"
-       href="chapter5.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">5. Harmonic Oscillations</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
-    </a>
 </div>
                 </footer>
               
@@ -3397,7 +3314,9 @@ Try out different time steps <span class="math notranslate nohighlight">\(\Delta
             
             
               
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -3457,16 +3376,17 @@ Try out different time steps <span class="math notranslate nohighlight">\(\Delta
   <div class="footer-item">
     
 <p class="component-author">
-By Danny Caballero, Morten Hjorth-Jensen
+By Danny Caballero, Morten Hjorth-Jensen, Rachel Henderson
 </p>
 
   </div>
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
-      © Copyright 2022.
+      © Copyright 2023.
       <br/>
     
   </p>
@@ -3490,8 +3410,8 @@ By Danny Caballero, Morten Hjorth-Jensen
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
+  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
 
   <footer class="bd-footer">
   </footer>

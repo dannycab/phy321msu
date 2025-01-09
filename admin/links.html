@@ -1,75 +1,73 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-content_root="../" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <title>Course Material and Links &#8212; Classical Mechanics</title>
   
   
   
   <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
   
-  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
-
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
-  
+  <!-- So that users can add custom icons -->
+  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
-  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
-    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
-    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="../_static/doctools.js"></script>
-    <script src="../_static/clipboard.min.js"></script>
-    <script src="../_static/copybutton.js"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../_static/design-tabs.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
-    <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'admin/links';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="1. What is Classical Physics?" href="../lecture-notes/chapter1.html" />
-    <link rel="prev" title="Calendar" href="schedule-cal.html" />
+    <link rel="next" title="Week 1- Overture: What is Classical Physics?" href="../lecture-notes/week1/01_start.html" />
+    <link rel="prev" title="Course Calendar" href="schedule-cal.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
   </head>
   
   
@@ -77,32 +75,16 @@ const thebe_selector_output = ".output, .cell_output"
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
   
   <div id="pst-scroll-pixel-helper"></div>
-
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
-    <i class="fa-solid fa-arrow-up"></i>
-    Back to top
-  </button>
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
   
-  <input type="checkbox"
-          class="sidebar-toggle"
-          name="__primary"
-          id="__primary"/>
-  <label class="overlay overlay-primary" for="__primary"></label>
-  
-  <input type="checkbox"
-          class="sidebar-toggle"
-          name="__secondary"
-          id="__secondary"/>
-  <label class="overlay overlay-secondary" for="__secondary"></label>
-  
-  <div class="search-button__wrapper">
-    <div class="search-button__overlay"></div>
-    <div class="search-button__search-container">
+  <dialog id="pst-search-dialog">
+    
 <form class="bd-search d-flex align-items-center"
       action="../search.html"
       method="get">
@@ -110,7 +92,6 @@ const thebe_selector_output = ".output, .cell_output"
   <input type="search"
          class="form-control"
          name="q"
-         id="search-input"
          placeholder="Search this book..."
          aria-label="Search this book..."
          autocomplete="off"
@@ -118,16 +99,25 @@ const thebe_selector_output = ".output, .cell_output"
          autocapitalize="off"
          spellcheck="false"/>
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form></div>
-  </div>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
   
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
       
-      <div class="bd-sidebar-primary bd-sidebar">
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -140,9 +130,13 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
+  
+    
   
 
 <a class="navbar-brand logo" href="../intro.html">
+  
   
   
   
@@ -152,62 +146,51 @@ const thebe_selector_output = ".output, .cell_output"
       
     
     
-    <img src="../_static/spartan-helmet.png" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="../_static/spartan-helmet.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="../_static/spartan-helmet.png" class="logo__image only-light" alt="Classical Mechanics - Home"/>
+    <img src="../_static/spartan-helmet.png" class="logo__image only-dark pst-js-only" alt="Classical Mechanics - Home"/>
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="../intro.html">
-                    PHY 321: Classical Mechanics 1, Michigan State University, Spring 2024
+                    PHY 321: Classical Mechanics 1, Michigan State University, Spring 2025
                 </a>
             </li>
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">About the course</span></p>
 <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="getting-started.html">Getting Started</a></li>
 <li class="toctree-l1"><a class="reference internal" href="teachers.html">Teachers and Grading</a></li>
-<li class="toctree-l1"><a class="reference internal" href="resources.html">Additional Resources</a></li>
 <li class="toctree-l1"><a class="reference internal" href="textbooks.html">Textbooks</a></li>
-<li class="toctree-l1"><a class="reference internal" href="schedule-cal.html">Calendar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="schedule-cal.html">Course Calendar</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Course Material and Links</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Introductory Material</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Weekly Course Materials</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter1.html">1. What is Classical Physics?</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter2-overview.html">What is Mathematical Modeling?</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter2.html">2. Classical Mechanics, Mathematics and Numerical background</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter3.html">3. Simple Motion problems and Reminder on Newton’s Laws</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter4.html">4. Work, Energy, Momentum and Conservation laws</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week1/01_start.html">Week 1- Overture: What is Classical Physics?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week1/01_notes.html">Week 1 - Notes: Introduction to Classical Mechanics</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Advanced Topics</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Assignments</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter5.html">5. Harmonic Oscillations</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter6.html">6. Two-body problems, from the Gravitational Force to Two-body Scattering</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter7.html">7. Non-inertial Frames, Translation and Rotating Coordinate Systems</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter8.html">8. Variational Calculus and Lagrangian Formalism</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw1.html">Homework 1 (Due 24 Jan)</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">In-class handouts, activities, and other materials</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Resources</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../in-class/cw1-python-test.html">CW1 - Python Test</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../in-class/cw6-phase_space.html">CW6 - Phase Portraits</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../in-class/cw11-plot-fourier.html">CW11 - Plot Fourier Expansion</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Weekly assignments, midterms and final projects with solutions</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw1.html">Homework 1 (Due 19 Jan)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw2.html">Homework 2 (Due 26 Jan)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw3.html">Homework 3 (Due 02 Feb)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw4.html">Homework 4 (Due 09 Feb)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw5.html">Homework 5 (Due 08 Mar)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw6.html">Homework 6 (Due 15 Mar)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw7.html">Homework 7 (Due 22 Mar)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw8.html">Homework 8 (Due 12 Apr)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw9.html">Homework 9 (Due 19 Apr)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw10.html">OPTIONAL Homework 10 (Due Apr 26)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/course-commitments.html">Course Commitments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/iclicker-setup.html">i-Clicker Setup Instructions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/gradescope-submissions.html">Submitting Assignments on Gradescope</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/finding-research.html">Finding Research Opportunities</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Honors Projects</span></p>
 <ul class="nav bd-sidenav">
@@ -222,14 +205,19 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
   </div>
-  
-  <div id="rtd-footer-container"></div>
 
 
       </div>
       
-      <main id="main-content" class="bd-main">
+      <main id="main-content" class="bd-main" role="main">
         
         
 
@@ -238,14 +226,14 @@ const thebe_selector_output = ".output, .cell_output"
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article">
+              <div class="bd-header-article d-print-none">
 <div class="header-article-items header-article__inner">
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</label></div>
+</button></div>
       
     </div>
   
@@ -320,26 +308,20 @@ const thebe_selector_output = ".output, .cell_output"
 </button>
 
 
-<script>
-document.write(`
-  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
-  </button>
-`);
-</script>
 
-<script>
-document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
-  </button>
-`);
-</script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
-</label>
+</button>
 </div></div>
       
     </div>
@@ -360,123 +342,9 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#zoom-playlist">Zoom Playlist</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#week-15-april-15-19-2024">Week 15, April 15-19, 2024</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#videos-to-watch">Videos to Watch</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#where-do-we-go-from-here-20-video-playlist">Where do we go from here? (20 video playlist)</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#class-week-1-january-13-17-2025-cw3">Class Week 1, January 13-17, 2025 (CW3)</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#class-materials">Class Materials</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#week-14-april-8-12-2024">Week 14, April 8-12, 2024</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Videos to Watch</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#solar-eclipses-were-terrifying-3-minute-video">Solar Eclipses were terrifying (3 minute video)</a></li>
-</ul>
-</li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Class Materials</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#week-13-april-1-5-2024">Week 13, April 1-5, 2024</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Videos to Watch</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#the-standard-model-lagrangian-17-minute-video">The Standard Model Lagrangian (17 minute video)</a></li>
-</ul>
-</li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Class Materials</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#week-12-march-25-29-2024">Week 12, March 25-29, 2024</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Videos to Watch</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#the-principle-of-least-action-20-minute-video">The Principle of Least Action (20 minute video)</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction-to-lagrangian-dynamics-10-minute-video">Introduction to Lagrangian Dynamics (10 minute video)</a></li>
-</ul>
-</li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Class Materials</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#week-11-march-18-22-2024">Week 11, March 18-22, 2024</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Videos to Watch</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#the-math-of-bubbles-17-minute-video">The Math of Bubbles (17 minute video)</a></li>
-</ul>
-</li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Class Materials</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#week-10-march-11-15-2024">Week 10, March 11-15, 2024</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Videos to Watch</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#the-fast-fourier-transform-fft-26-minute-video">The Fast Fourier Transform (FFT) (26 minute video)</a></li>
-</ul>
-</li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Class Materials</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#week-9-march-4-8-2024">Week 9, March 4-8, 2024</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">Videos to Watch</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#collapse-of-the-tacoma-narrows-bridge-9-minute-video">Collapse of the Tacoma Narrows Bridge (9 minute video)</a></li>
-</ul>
-</li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">Class Materials</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#week-8-february-26-march-1-2024">Week 8, February 26-March 1, 2024</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#week-7-february-19-23-2024">Week 7, February 19-23, 2024</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">Videos to Watch</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#synchronization-21-minute-video">Synchronization (21 minute video)</a></li>
-</ul>
-</li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">Class Materials</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#assignments">Assignments</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#week-6-february-12-16-2024">Week 6, February 12-16, 2024</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">Videos to Watch</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#numerical-integration">Numerical Integration</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#geometric-thinking-and-phase-portraits">Geometric Thinking and Phase Portraits</a></li>
-</ul>
-</li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">Class Materials</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">Assignments</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#week-5-february-5-9-2024">Week 5, February 5-9, 2024</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">Videos to Watch</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#where-do-we-think-mass-comes-from-13-minute-video">Where do we think mass comes from? (13 minute video)</a></li>
-</ul>
-</li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">Class Materials</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id20">Assignments</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#week-4-january-29-february-2-2024">Week 4, January 29-February 2, 2024</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id21">Videos to Watch</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#feynman-on-the-units-of-energy-2-minute-video">Feynman on the units of energy (2 minute video)</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#how-does-electricity-work-15-minute-video">How does electricity work? (15 minute video)</a></li>
-</ul>
-</li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id22">Class Materials</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id23">Assignments</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#week-3-january-22-26-2024">Week 3, January 22-26, 2024</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id24">Videos to Watch</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#physics-of-life-life-at-low-reynolds-number-15-minute-video">Physics of Life - Life at Low Reynolds Number (15 minute video)</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#g-i-taylor-s-low-reynolds-number-flows-32-minute-video">G.I. Taylor’s Low Reynolds Number Flows (32 minute video)</a></li>
-</ul>
-</li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id25">Class Materials</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id26">Assignments</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#week-2-january-16-19-2024">Week 2, January 16-19, 2024</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#web-resources">Web Resources</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id27">Class Materials</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id28">Assignments</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#week-1-january-8-12-2024">Week 1, January 8-12, 2024</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id29">Web Resources</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id30">Class Materials</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id31">Assignments</a></li>
 </ul>
 </li>
 </ul>
@@ -488,844 +356,498 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
-  <div class="section" id="course-material-and-links">
-<h1>Course Material and Links<a class="headerlink" href="#course-material-and-links" title="Permalink to this heading">#</a></h1>
+  <section id="course-material-and-links">
+<h1>Course Material and Links<a class="headerlink" href="#course-material-and-links" title="Link to this heading">#</a></h1>
 <p>Materials will appear in reverse chronological order, with the most recent appearing at the top.</p>
-<div class="section" id="zoom-playlist">
-<h2>Zoom Playlist<a class="headerlink" href="#zoom-playlist" title="Permalink to this heading">#</a></h2>
-<p>All recorded classes are added to <a class="reference external" href="https://mediaspace.msu.edu/playlist/dedicated/1_s1d57uud/.">this playlist</a></p>
-</div>
-<div class="section" id="week-15-april-15-19-2024">
-<h2>Week 15, April 15-19, 2024<a class="headerlink" href="#week-15-april-15-19-2024" title="Permalink to this heading">#</a></h2>
-<p>Topics: Course Review</p>
-<div class="section" id="videos-to-watch">
-<h3>Videos to Watch<a class="headerlink" href="#videos-to-watch" title="Permalink to this heading">#</a></h3>
-<div class="section" id="where-do-we-go-from-here-20-video-playlist">
-<h4>Where do we go from here? (20 video playlist)<a class="headerlink" href="#where-do-we-go-from-here-20-video-playlist" title="Permalink to this heading">#</a></h4>
-<p>In this series of 1 minute videos, <a class="reference external" href="https://www.youtube.com/&#64;MinutePhysics">Minute Physics</a> presents some of the major conceptual elements and practical results of quantum mechanics. The next phase of classical mechanics after single particle dynamics was the development of <a class="reference external" href="https://en.wikipedia.org/wiki/Wave_equation">wave mechanics</a>, which was a precursor to <a class="reference external" href="https://en.wikipedia.org/wiki/Quantum_mechanics">quantum mechanics</a>. There’s a lot of interesting physics in the classical theory of light, which lead us to the development of quantum mechanics.</p>
-<p><a class="reference external" href="https://www.youtube.com/playlist?list=PL0E2ABD1D84697428"><img alt="Minute Physics Playlist" src="https://markdown-videos-api.jorgenkh.no/youtube/Q_h4IoPJXZw?width=720&amp;height=405" /></a></p>
-<ul class="simple">
-<li><p>Non-Commercial Link: <a class="reference external" href="https://inv.n8pjl.ca/playlist?list=PL0E2ABD1D84697428">https://inv.n8pjl.ca/playlist?list=PL0E2ABD1D84697428</a></p></li>
-<li><p>Commercial Link: <a class="reference external" href="https://www.youtube.com/playlist?list=PL0E2ABD1D84697428">https://www.youtube.com/playlist?list=PL0E2ABD1D84697428</a></p></li>
-</ul>
-</div>
-</div>
-<div class="section" id="class-materials">
-<h3>Class Materials<a class="headerlink" href="#class-materials" title="Permalink to this heading">#</a></h3>
-<ul class="simple">
-<li><p>Readings:</p>
-<ul>
-<li><p>JRT Ch 1-7</p></li>
-</ul>
-</li>
-<li><p>Lecture Videos:</p>
-<ul>
-<li><p>15 Apr 2024</p></li>
-<li><p>17 Apr 2024</p></li>
-</ul>
-</li>
-</ul>
-</div>
-</div>
-<div class="section" id="week-14-april-8-12-2024">
-<h2>Week 14, April 8-12, 2024<a class="headerlink" href="#week-14-april-8-12-2024" title="Permalink to this heading">#</a></h2>
-<p>Topics: Lagrangian Mechanics; Forces of Constraint</p>
-<div class="section" id="id1">
-<h3>Videos to Watch<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h3>
-<div class="section" id="solar-eclipses-were-terrifying-3-minute-video">
-<h4>Solar Eclipses were terrifying (3 minute video)<a class="headerlink" href="#solar-eclipses-were-terrifying-3-minute-video" title="Permalink to this heading">#</a></h4>
-<p>We do not have class Monday; please enjoy the solar eclipse.</p>
-<p><a class="reference external" href="https://youtube.com/watch?v=-oYe7xM3hLE"><img alt="Solar Eclipses were terrifying" src="https://markdown-videos-api.jorgenkh.no/youtube/-oYe7xM3hLE?width=720&amp;height=405" /></a></p>
-<ul class="simple">
-<li><p>Non-Commercial Link: <a class="reference external" href="https://inv.n8pjl.ca/watch?v=-oYe7xM3hLE">https://inv.n8pjl.ca/watch?v=-oYe7xM3hLE</a></p></li>
-<li><p>Commercial Link: <a class="reference external" href="https://youtube.com/watch?v=-oYe7xM3hLE">https://youtube.com/watch?v=-oYe7xM3hLE</a></p></li>
-</ul>
-</div>
-</div>
-<div class="section" id="id2">
-<h3>Class Materials<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h3>
-<ul class="simple">
-<li><p>Readings:</p>
-<ul>
-<li><p>JRT Ch 7</p></li>
-</ul>
-</li>
-<li><p>Handwritten Notes:</p>
-<ul>
-<li><p>CW14: <a class="reference download internal" download="" href="../_downloads/dc69c508ec716f0021b8a4184c272fdf/CW14.pdf"><span class="xref download myst">Lagrangian Dynamics Examples</span></a></p></li>
-</ul>
-</li>
-<li><p>Notes:</p>
-<ul>
-<li><p><a class="reference internal" href="../lecture-notes/lagrangians.html"><span class="doc std std-doc">Lagrangian Mechanics</span></a></p></li>
-</ul>
-</li>
-<li><p>Lecture Videos:</p>
-<ul>
-<li><p>8 Apr 2024 (NO CLASS; SOLAR ECLIPSE)</p></li>
-<li><p><a class="reference external" href="https://mediaspace.msu.edu/media/t/1_gjgctdk4">10 Apr 2024</a></p></li>
-</ul>
-</li>
-</ul>
-</div>
-</div>
-<div class="section" id="week-13-april-1-5-2024">
-<h2>Week 13, April 1-5, 2024<a class="headerlink" href="#week-13-april-1-5-2024" title="Permalink to this heading">#</a></h2>
-<p>Topics: Lagrangian Mechanics; Forces of Constraint</p>
-<div class="section" id="id3">
-<h3>Videos to Watch<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h3>
-<div class="section" id="the-standard-model-lagrangian-17-minute-video">
-<h4>The Standard Model Lagrangian (17 minute video)<a class="headerlink" href="#the-standard-model-lagrangian-17-minute-video" title="Permalink to this heading">#</a></h4>
-<p>An understanding of physics formulated through <a class="reference external" href="https://en.wikipedia.org/wiki/Lagrangian_mechanics">Lagrangian Mechanics</a> is a powerful and elegant way to describe the motion of particles and systems. But it can be much more than that. Much of the work of particle physics is done in the context of the <a class="reference external" href="https://en.wikipedia.org/wiki/Standard_Model">Standard Model</a>. The Standard Model is a theory that describes the electromagnetic, weak, and strong nuclear interactions. The Standard Model is a <a class="reference external" href="https://en.wikipedia.org/wiki/Quantum_field_theory">quantum field theory</a>, which is formulated through a Lagrangian.</p>
-<p>The video below provides an introduction to this equation and the Standard Model.</p>
-<p><a class="reference external" href="https://youtube.com/watch?v=PHiyQID7SBs"><img alt="Standard Model Lagrangian" src="https://markdown-videos-api.jorgenkh.no/youtube/PHiyQID7SBs?width=720&amp;height=405" /></a></p>
-<ul class="simple">
-<li><p>Non-Commercial Link: <a class="reference external" href="https://inv.n8pjl.ca/watch?v=PHiyQID7SBs">https://inv.n8pjl.ca/watch?v=PHiyQID7SBs</a></p></li>
-<li><p>Commercial Link: <a class="reference external" href="https://youtube.com/watch?v=PHiyQID7SBs">https://youtube.com/watch?v=PHiyQID7SBs</a></p></li>
-</ul>
-</div>
-</div>
-<div class="section" id="id4">
-<h3>Class Materials<a class="headerlink" href="#id4" title="Permalink to this heading">#</a></h3>
-<ul class="simple">
-<li><p>Readings:</p>
-<ul>
-<li><p>JRT 7.3-7.7, 7.10</p></li>
-</ul>
-</li>
-<li><p>Handwritten Notes:</p>
-<ul>
-<li><p>CW13: <a class="reference download internal" download="" href="../_downloads/e17fa9bf8e05a750ceed0809f5d875be/CW13.pdf"><span class="xref download myst">Lagrangian Dynamics Examples</span></a></p></li>
-</ul>
-</li>
-<li><p>Notes:</p>
-<ul>
-<li><p><a class="reference internal" href="../lecture-notes/lagrangians.html"><span class="doc std std-doc">Lagrangian Mechanics</span></a></p></li>
-</ul>
-</li>
-<li><p>Lecture Videos:</p>
-<ul>
-<li><p><a class="reference external" href="https://mediaspace.msu.edu/media/t/1_l46sljb1">1 Apr 2024</a></p></li>
-<li><p><a class="reference external" href="https://mediaspace.msu.edu/media/t/1_6ychyhzy">3 Apr 2024</a> (Screen disconnected at some point)</p></li>
-</ul>
-</li>
-</ul>
-</div>
-</div>
-<div class="section" id="week-12-march-25-29-2024">
-<h2>Week 12, March 25-29, 2024<a class="headerlink" href="#week-12-march-25-29-2024" title="Permalink to this heading">#</a></h2>
-<p>Topics: Lagrangian Mechanics</p>
-<div class="section" id="id5">
-<h3>Videos to Watch<a class="headerlink" href="#id5" title="Permalink to this heading">#</a></h3>
-<p>While never required, these videos are recommended to help you see the larger picture of what we are doing in class.</p>
-<div class="section" id="the-principle-of-least-action-20-minute-video">
-<h4>The Principle of Least Action (20 minute video)<a class="headerlink" href="#the-principle-of-least-action-20-minute-video" title="Permalink to this heading">#</a></h4>
-<p><a class="reference external" href="https://en.wikipedia.org/wiki/Newton%27s_laws_of_motion">Newtonian Mechanics</a> is an incredibly useful model of the natural world. In fact, it wasn’t until the mid 1970s that we were able to truly <a class="reference external" href="https://en.wikipedia.org/wiki/Tests_of_general_relativity">test Einstein’s gravity as a true replacement</a> for Newton. That being said, for most terrestrial situations (macroscopic objects moving at low speeds), Newton’s mechanics is very good. However, the problem with Newton is that it requires a few things:</p>
-<ol class="arabic simple">
-<li><p>We must be able identify each interaction on the object or model an average behavior from many littler interactions (e.g., models of friction vs. detailed E&amp;M forces)</p></li>
-<li><p>We must be able to mathematically describe the size and direction of the interaction at all times we want to model</p></li>
-<li><p>We must be able to vectorially add the interactions to produce the net force <span class="math notranslate nohighlight">\(\sum_i \vec{F}_i = \vec{F}_{net}\)</span>.</p></li>
-</ol>
-<p>In many cases, we can do this. But consider a bead sliding inside a cone. How would you write down the contact force between the cone and the bead for all space and time?</p>
-<p>This is where <a class="reference external" href="https://en.wikipedia.org/wiki/Lagrangian_mechanics">Lagrangian Mechanics</a> comes in. It is a powerful and elegant way to describe the motion of particles and systems. It is based on the <a class="reference external" href="https://en.wikipedia.org/wiki/Calculus_of_variations">Calculus of Variations</a>, a field of mathematics that is concerned with finding the path that minimizes or maximizes (called “extremization”) a certain quantity. In the case of Lagrangian Mechanics, the quantity we are extremizing is the <a class="reference external" href="https://en.wikipedia.org/wiki/Action_(physics)">action</a>.</p>
-<p>The video below discusses the concept of the Principle of Least Action, which is the foundation of Lagrangian Mechanics.</p>
-<p><a class="reference external" href="https://youtube.com/watch?v=Q_CQDSlmboA"><img alt="The Principle of Least Action" src="https://markdown-videos-api.jorgenkh.no/youtube/Q_CQDSlmboA?width=720&amp;height=405" /></a></p>
-<ul class="simple">
-<li><p>Non-Commercial Link: <a class="reference external" href="https://inv.n8pjl.ca/watch?v=Q_CQDSlmboA">https://inv.n8pjl.ca/watch?v=Q_CQDSlmboA</a></p></li>
-<li><p>Commercial Link: <a class="reference external" href="https://youtube.com/watch?v=Q_CQDSlmboA">https://youtube.com/watch?v=Q_CQDSlmboA</a></p></li>
-</ul>
-</div>
-<div class="section" id="introduction-to-lagrangian-dynamics-10-minute-video">
-<h4>Introduction to Lagrangian Dynamics (10 minute video)<a class="headerlink" href="#introduction-to-lagrangian-dynamics-10-minute-video" title="Permalink to this heading">#</a></h4>
-<p>Parth G. has a lovely video below about the basics of Lagrangian Dynamics. We will do a lot of this in class and go over many examples. This video is a nice introduction to the concept.</p>
-<p><a class="reference external" href="https://youtube.com/watch?v=KpLno70oYHE"><img alt="" src="https://markdown-videos-api.jorgenkh.no/youtube/KpLno70oYHE?width=720&amp;height=405" /></a></p>
-<ul class="simple">
-<li><p>Non-Commercial Link: <a class="reference external" href="https://inv.n8pjl.ca/watch?v=KpLno70oYHE">https://inv.n8pjl.ca/watch?v=KpLno70oYHE</a></p></li>
-<li><p>Commercial Link: <a class="reference external" href="https://youtube.com/watch?v=KpLno70oYHE">https://youtube.com/watch?v=KpLno70oYHE</a></p></li>
-</ul>
-</div>
-</div>
-<div class="section" id="id6">
-<h3>Class Materials<a class="headerlink" href="#id6" title="Permalink to this heading">#</a></h3>
-<ul class="simple">
-<li><p>Readings:</p>
-<ul>
-<li><p>JRT 7.1-7.2, 7.5; MLB 9.5</p></li>
-</ul>
-</li>
-<li><p>Handwritten Notes:</p>
-<ul>
-<li><p>CW12: <a class="reference download internal" download="" href="../_downloads/6fd2575f74b8acadd65e6806782036c7/CW12.pdf"><span class="xref download myst">Introduction to Lagrangian Dynamics</span></a></p></li>
-</ul>
-</li>
-<li><p>Notes:</p>
-<ul>
-<li><p><a class="reference internal" href="../lecture-notes/lagrangians.html"><span class="doc std std-doc">Lagrangian Mechanics</span></a></p></li>
-</ul>
-</li>
-<li><p>Lecture Videos:</p>
-<ul>
-<li><p><a class="reference external" href="https://mediaspace.msu.edu/media/t/1_zwd49u65">25 Mar 2024</a></p></li>
-<li><p><a class="reference external" href="https://mediaspace.msu.edu/media/t/1_p7wcsxf4">27 Mar 2024</a></p></li>
-</ul>
-</li>
-</ul>
-</div>
-</div>
-<div class="section" id="week-11-march-18-22-2024">
-<h2>Week 11, March 18-22, 2024<a class="headerlink" href="#week-11-march-18-22-2024" title="Permalink to this heading">#</a></h2>
-<p>Topics: Calculus of Variations</p>
-<div class="section" id="id7">
-<h3>Videos to Watch<a class="headerlink" href="#id7" title="Permalink to this heading">#</a></h3>
-<p>While never required, these videos are recommended to help you see the larger picture of what we are doing in class.</p>
-<div class="section" id="the-math-of-bubbles-17-minute-video">
-<h4>The Math of Bubbles (17 minute video)<a class="headerlink" href="#the-math-of-bubbles-17-minute-video" title="Permalink to this heading">#</a></h4>
-<p>We are eventually going to develop some deep principles of classical mechanics that will connect for us the motion of particles and the forces they experience to the energy that moves between aspects of the system. This formulation of mechanics is called <a class="reference external" href="https://en.wikipedia.org/wiki/Lagrangian_mechanics">Lagrangian Mechanics</a>. It is a powerful and elegant way to describe the motion of particles and systems. It is based on the <a class="reference external" href="https://en.wikipedia.org/wiki/Calculus_of_variations">Calculus of Variations</a>, a field of mathematics that is concerned with finding the path that minimizes or maximizes (called “extremization”) a certain quantity.</p>
-<p>This mathematics is very powerful and underlies how we can develop equations of motion in particular systems. But is also describes the shape of surfaces like bubbles and droplets. The video below is a nice introduction to the concept of Calculus of Variations and it’s relation to <a class="reference external" href="https://en.wikipedia.org/wiki/Minimal_surface">minimal surfaces</a>.</p>
-<p><a class="reference external" href="https://youtube.com/watch?v=8SABptOYUVk"><img alt="The Math of Bubbles: Minimal Surfaces &amp; the Calculus of Variations" src="https://markdown-videos-api.jorgenkh.no/youtube/8SABptOYUVk?width=720&amp;height=405" /></a></p>
-<ul class="simple">
-<li><p>Non-Commercial Link: <a class="reference external" href="https://inv.n8pjl.ca/watch?v=8SABptOYUVk">https://inv.n8pjl.ca/watch?v=8SABptOYUVk</a></p></li>
-<li><p>Commercial Link: <a class="reference external" href="https://youtube.com/watch?v=8SABptOYUVk">https://youtube.com/watch?v=8SABptOYUVk</a></p></li>
-</ul>
-</div>
-</div>
-<div class="section" id="id8">
-<h3>Class Materials<a class="headerlink" href="#id8" title="Permalink to this heading">#</a></h3>
-<ul class="simple">
-<li><p>Readings:</p>
-<ul>
-<li><p>JRT 6.1-6.3; MLB 9.1-9.4</p></li>
-</ul>
-</li>
-<li><p>Handwritten Notes:</p>
-<ul>
-<li><p>CW11: <a class="reference download internal" download="" href="../_downloads/82221da1ed01fa92a66f329e3bb8b5a6/CW11.pdf"><span class="xref download myst">Calculus of Variations</span></a></p></li>
-</ul>
-</li>
-<li><p>Lecture Videos:</p>
-<ul>
-<li><p><a class="reference external" href="https://mediaspace.msu.edu/media/t/1_rr109ryy">18 Mar 2024</a></p></li>
-<li><p><a class="reference external" href="https://mediaspace.msu.edu/media/t/1_dat6u1eo">20 Mar 2024</a></p></li>
-</ul>
-</li>
-</ul>
-</div>
-</div>
-<div class="section" id="week-10-march-11-15-2024">
-<h2>Week 10, March 11-15, 2024<a class="headerlink" href="#week-10-march-11-15-2024" title="Permalink to this heading">#</a></h2>
-<p>Topics: Fourier Series Expansions</p>
-<div class="section" id="id9">
-<h3>Videos to Watch<a class="headerlink" href="#id9" title="Permalink to this heading">#</a></h3>
-<p>While never required, these videos are recommended to help you see the larger picture of what we are doing in class.</p>
-<div class="section" id="the-fast-fourier-transform-fft-26-minute-video">
-<h4>The Fast Fourier Transform (FFT) (26 minute video)<a class="headerlink" href="#the-fast-fourier-transform-fft-26-minute-video" title="Permalink to this heading">#</a></h4>
-<p>We will be learning the analytical methods used to decompose periodic signals. The <a class="reference external" href="https://en.wikipedia.org/wiki/Fourier_series">Fourier Series</a> is a mathematical tool that allows us to decompose periodic signals into a sum of sines and cosines. It is a super important tool in physics and engineering.</p>
-<p>But, this kind of signal decomposition is a critical tool in many modern areas of research. In the time since Fourier’s original work, the field has expanded to include other series, as well as development like the <a class="reference external" href="https://en.wikipedia.org/wiki/Fourier_transform">Fourier Transform</a> and the incredibly useful <a class="reference external" href="https://en.wikipedia.org/wiki/Fast_Fourier_transform">Fast Fourier Transform</a> (FFT). The FFT is a computational algorithm that allows us to compute Fourier Transforms very quickly and it has been one of the most important algorithms in the history of computing. It is used in a wide variety of applications, including signal processing, image processing, and data compression.</p>
-<p>The video below describes the concept and history of the FFT and its importance.</p>
-<p><a class="reference external" href="https://youtube.com/watch?v=nmgFG7PUHfo"><img alt="The Remarkable Story Behind The Most Important Algorithm Of All Time" src="https://markdown-videos-api.jorgenkh.no/youtube/nmgFG7PUHfo?width=720&amp;height=405" /></a></p>
-<ul class="simple">
-<li><p>Non-Commercial Link: <a class="reference external" href="https://inv.n8pjl.ca/watch?v=nmgFG7PUHfo">https://inv.n8pjl.ca/watch?v=nmgFG7PUHfo</a></p></li>
-<li><p>Commercial Link: <a class="reference external" href="https://youtube.com/watch?v=nmgFG7PUHfo">https://youtube.com/watch?v=nmgFG7PUHfo</a></p></li>
-</ul>
-</div>
-</div>
-<div class="section" id="id10">
-<h3>Class Materials<a class="headerlink" href="#id10" title="Permalink to this heading">#</a></h3>
-<ul class="simple">
-<li><p>Readings:</p>
-<ul>
-<li><p>JRT 5.7; MLB 7.3-7.5</p></li>
-</ul>
-</li>
-<li><p>Handwritten Notes:</p>
-<ul>
-<li><p>CW10: <a class="reference download internal" download="" href="../_downloads/3c10473c4d391be784d0a1d7388be06c/CW10.pdf"><span class="xref download myst">Fourier Series</span></a></p></li>
-</ul>
-</li>
-<li><p>Lecture Videos:</p>
-<ul>
-<li><p><a class="reference external" href="https://mediaspace.msu.edu/media/t/1_wtepzqw0">11 Mar 2024</a></p></li>
-<li><p><a class="reference external" href="https://mediaspace.msu.edu/media/t/1_fk8a37u1">13 Mar 2024</a></p></li>
-<li><p><a class="reference external" href="https://mediaspace.msu.edu/media/t/1_g79z705y">15 Mar 2024</a></p></li>
-</ul>
-</li>
-</ul>
-</div>
-</div>
-<div class="section" id="week-9-march-4-8-2024">
-<h2>Week 9, March 4-8, 2024<a class="headerlink" href="#week-9-march-4-8-2024" title="Permalink to this heading">#</a></h2>
-<p>Topics: Damped Driven Oscillations, Resonance</p>
-<div class="section" id="id11">
-<h3>Videos to Watch<a class="headerlink" href="#id11" title="Permalink to this heading">#</a></h3>
-<p>While never required, these videos are recommended to help you see the larger picture of what we are doing in class.</p>
-<div class="section" id="collapse-of-the-tacoma-narrows-bridge-9-minute-video">
-<h4>Collapse of the Tacoma Narrows Bridge (9 minute video)<a class="headerlink" href="#collapse-of-the-tacoma-narrows-bridge-9-minute-video" title="Permalink to this heading">#</a></h4>
-<p>Driven oscillators are very common in the world. Analog radios use a driven oscillator that is tuned to a specific frequency (99.5 FM is tuned to 99.5 MHz). When you dial the radio you are “tuning” the oscillator to the frequency of the broadcast. This is an illustration of the phenomenon of <a class="reference external" href="https://en.wikipedia.org/wiki/Resonance">resonance</a>. Resonance is a phenomenon where a system is driven at a frequency that matches (or closely matches) its natural frequency. When this happens, the amplitude of the oscillation can grow very large. This is the phenomenon that caused the <a class="reference external" href="https://en.wikipedia.org/wiki/Tacoma_Narrows_Bridge_(1940)">collapse of the Tacoma Narrows Bridge</a> in 1940.  T</p>
-<p>The video below describes the collapse and how the bridge was rebuilt to avoid the same problem.</p>
-<p><a class="reference external" href="https://youtube.com/watch?v=mXTSnZgrfxM"><img alt="Why the Tacoma Narrows Bridge Collapsed" src="https://markdown-videos-api.jorgenkh.no/youtube/mXTSnZgrfxM?width=720&amp;height=405" /></a></p>
-<ul class="simple">
-<li><p>Non-Commercial Link: <a class="reference external" href="https://inv.n8pjl.ca/watch?v=mXTSnZgrfxM">https://inv.n8pjl.ca/watch?v=mXTSnZgrfxM</a></p></li>
-<li><p>Commercial Link: <a class="reference external" href="https://youtube.com/watch?v=mXTSnZgrfxM">https://youtube.com/watch?v=mXTSnZgrfxM</a></p></li>
-</ul>
-</div>
-</div>
-<div class="section" id="id12">
-<h3>Class Materials<a class="headerlink" href="#id12" title="Permalink to this heading">#</a></h3>
-<ul class="simple">
-<li><p>Readings:</p>
-<ul>
-<li><p>JRT 5.5-5.6; MLB 8.6</p></li>
-</ul>
-</li>
-<li><p>Handwritten Notes:</p>
-<ul>
-<li><p>CW9: <a class="reference download internal" download="" href="../_downloads/6ba835f051dd98966e952f4cd0ad216f/CW9.pdf"><span class="xref download myst">Damped Driven Oscillations</span></a></p></li>
-</ul>
-</li>
-<li><p>Lecture Videos:</p>
-<ul>
-<li><p><a class="reference external" href="https://mediaspace.msu.edu/media/t/1_qj6wzo83">4 Mar 2024</a></p></li>
-<li><p>6 Mar 2024 - Homework Help Session</p></li>
-<li><p><a class="reference external" href="https://mediaspace.msu.edu/media/t/1_p8cll95m">8 Mar 2024</a></p></li>
-</ul>
-</li>
-</ul>
-</div>
-</div>
-<div class="section" id="week-8-february-26-march-1-2024">
-<h2>Week 8, February 26-March 1, 2024<a class="headerlink" href="#week-8-february-26-march-1-2024" title="Permalink to this heading">#</a></h2>
-<p>SPRING BREAK</p>
-</div>
-<div class="section" id="week-7-february-19-23-2024">
-<h2>Week 7, February 19-23, 2024<a class="headerlink" href="#week-7-february-19-23-2024" title="Permalink to this heading">#</a></h2>
-<p>Topics: Oscillations</p>
-<div class="section" id="id13">
-<h3>Videos to Watch<a class="headerlink" href="#id13" title="Permalink to this heading">#</a></h3>
-<p>While never required, these videos are recommended to help you see the larger picture of what we are doing in class.</p>
-<div class="section" id="synchronization-21-minute-video">
-<h4>Synchronization (21 minute video)<a class="headerlink" href="#synchronization-21-minute-video" title="Permalink to this heading">#</a></h4>
-<p>How do fireflies end up blinking together? How do walking people end up moving in step? How does your heart physically push blood through your body? Each of these questions has to do with the physics of <a class="reference external" href="https://en.wikipedia.org/wiki/Synchronization">synchronization</a>. There’s a lot of interesting physics in this space. The phenomenon of synchronization is rooted in the physics of <a class="reference external" href="https://en.wikipedia.org/wiki/Oscillation">oscillations</a> and <a class="reference external" href="https://en.wikipedia.org/wiki/Wave">waves</a>. When oscillators couple (or influence each other), we begin to see behavior that is more complex than the sole oscillator. These “coupled oscillators” can demonstrate a wide variety of behaviors, including synchronization. They also form the basis for important technologies like <a class="reference external" href="https://en.wikipedia.org/wiki/Laser">lasers</a> and <a class="reference external" href="https://en.wikipedia.org/wiki/Radio_transmitter">radio transmitters</a>.</p>
-<p>We will begin our study of oscillations with the <a class="reference external" href="https://en.wikipedia.org/wiki/Simple_harmonic_motion">simple harmonic oscillator</a> and then move to more complex systems (e.g., <a class="reference external" href="https://en.wikipedia.org/wiki/Duffing_equation">the Duffing oscillator</a>).</p>
-<p>The video below is a good introduction to the topic of synchronization.</p>
-<p><a class="reference external" href="https://youtube.com/watch?v=t-_VPRCtiUg"><img alt="The Surprising Secret of Synchronization" src="https://markdown-videos-api.jorgenkh.no/youtube/t-_VPRCtiUg?width=720&amp;height=405" /></a></p>
-<ul class="simple">
-<li><p>Non-Commercial Link: <a class="reference external" href="https://inv.n8pjl.ca/watch?v=t-_VPRCtiUg">https://inv.n8pjl.ca/watch?v=t-_VPRCtiUg</a></p></li>
-<li><p>Commercial Link: <a class="reference external" href="https://youtube.com/watch?v=t-_VPRCtiUg">https://youtube.com/watch?v=t-_VPRCtiUg</a></p></li>
-</ul>
-</div>
-</div>
-<div class="section" id="id14">
-<h3>Class Materials<a class="headerlink" href="#id14" title="Permalink to this heading">#</a></h3>
-<ul class="simple">
-<li><p>Readings:</p>
-<ul>
-<li><p>JRT 5.1-5.2, 5.4; MLB 7.1-7.2; 8.5</p></li>
-</ul>
-</li>
-<li><p>Handwritten Notes:</p>
-<ul>
-<li><p>CW7: <a class="reference download internal" download="" href="../_downloads/8ea620370c216881717804f0d97e8ba7/CW7.pdf"><span class="xref download myst">Oscillations</span></a></p></li>
-</ul>
-</li>
-<li><p>Lecture Videos:</p>
-<ul>
-<li><p><a class="reference external" href="https://mediaspace.msu.edu/media/t/1_n90d2mj6">19 Feb 2024</a></p></li>
-<li><p><a class="reference external" href="https://mediaspace.msu.edu/media/t/1_j6ltnm1h">21 Feb 2024</a></p></li>
-</ul>
-</li>
-</ul>
-</div>
-<div class="section" id="assignments">
-<h3>Assignments<a class="headerlink" href="#assignments" title="Permalink to this heading">#</a></h3>
-<ul class="simple">
-<li><p><a class="reference internal" href="../homeworks/hw5.html"><span class="doc std std-doc">Homework 5</span></a> (due March 8, 2024)</p></li>
-<li><p><a class="reference internal" href="../midterms/midterm1.html"><span class="doc std std-doc">Midterm 1</span></a> (due February 23, 2024)</p></li>
-</ul>
-</div>
-</div>
-<div class="section" id="week-6-february-12-16-2024">
-<h2>Week 6, February 12-16, 2024<a class="headerlink" href="#week-6-february-12-16-2024" title="Permalink to this heading">#</a></h2>
-<p>Topics: Phase Space and Non-Linear Dynamics</p>
-<div class="section" id="id15">
-<h3>Videos to Watch<a class="headerlink" href="#id15" title="Permalink to this heading">#</a></h3>
-<p>While never required, these videos are recommended to help you see the larger picture of what we are doing in class.</p>
-<div class="section" id="numerical-integration">
-<h4>Numerical Integration<a class="headerlink" href="#numerical-integration" title="Permalink to this heading">#</a></h4>
-<p><a class="reference external" href="https://en.wikipedia.org/wiki/Numerical_integration">Numerical Integration</a> is a vast and wide topic with lots of different approaches, important nuances, and difficult problems. Some of the most high profile numerical integration was done by NASA’s <a class="reference external" href="https://education.nationalgeographic.org/resource/women-nasa">human computers</a> – a now well-known story thanks to the film <a class="reference external" href="https://en.wikipedia.org/wiki/Hidden_Figures">Hidden Figures</a>. Black women formed a core group of these especially talented scientists (including <a class="reference external" href="https://en.wikipedia.org/wiki/Mary_Jackson_(engineer)">Mary Jackson</a>, <a class="reference external" href="https://en.wikipedia.org/wiki/Katherine_Johnson">Katherine Johnson</a>, and <a class="reference external" href="https://en.wikipedia.org/wiki/Dorothy_Vaughan">Dorothy Vaughn</a>), without whom, John Glenn would not have orbited the Earth in 1962. This is also a very interesting story about the importance of <a class="reference external" href="https://en.wikipedia.org/wiki/Historically_black_colleges_and_universities">Historically Black Colleges and Universities</a> to American science.</p>
-<p>Below is a video describing 3 coupled ODEs, the <a class="reference external" href="https://en.wikipedia.org/wiki/Lorenz_system">Lorenz equations</a>, that are quite famous. You will be able to model systems like this, but for now think of it as motivation for why we want to learn numerical integration.</p>
-<p><a class="reference external" href="https://inv.n8pjl.ca/watch?v=aAJkLh76QnM"><img alt="Chaos | Chapter 7 : Strange Attractors - The butterfly effect" src="https://markdown-videos-api.jorgenkh.no/youtube/aAJkLh76QnM?width=720&amp;height=405" />)</a></p>
-<ul class="simple">
-<li><p>Non-Commercial Link: <a class="reference external" href="https://inv.n8pjl.ca/watch?v=aAJkLh76QnM?">https://inv.n8pjl.ca/watch?v=aAJkLh76QnM?</a></p></li>
-<li><p>Commercial Link: <a class="reference external" href="https://youtube.com/watch?v=aAJkLh76QnM?">https://youtube.com/watch?v=aAJkLh76QnM?</a></p></li>
-</ul>
-</div>
-<div class="section" id="geometric-thinking-and-phase-portraits">
-<h4>Geometric Thinking and Phase Portraits<a class="headerlink" href="#geometric-thinking-and-phase-portraits" title="Permalink to this heading">#</a></h4>
-<p>One of the first things we will use to investigate systems from a dynamical systems perspective is the <a class="reference external" href="https://en.wikipedia.org/wiki/Phase_portrait">phase portrait</a>, where we will plot the velocity against the position. We can use the phase portrait to tell us what families of solutions we might expect to see.</p>
-<p><em>Phase portraits are quite useful for second order differential equations (or any two-dimensional system) because we frequently use and interpret 2D graphs.</em> Notice that we focused on “2nd order differential equations” not “linear 2nd order.” That is because, as we will see, <strong>phase portraits are particularly useful for nonlinear 2nd order differential equations.</strong></p>
-<p>We will go into the details of how to construct and develop phase portraits in class. This video from <a class="reference external" href="https://www.me.washington.edu/facultyfinder/steve-brunton">Steve Brunton</a> is a good overview of the process. It’s quite detailed and takes a mathematical perspective, so don’t worry if you don’t understand everything in the video. We have plenty of time to investigate how this works in practice.</p>
-<p><a class="reference external" href="https://youtube.com/watch?v=vBwyD4JJlSs"><img alt="Drawing Phase Portraits for Nonlinear Systems" src="https://markdown-videos-api.jorgenkh.no/youtube/vBwyD4JJlSs?width=720&amp;height=405" /></a></p>
-<ul class="simple">
-<li><p>Non-Commercial Link: <a class="reference external" href="https://inv.n8pjl.ca/watch?v=vBwyD4JJlSs">https://inv.n8pjl.ca/watch?v=vBwyD4JJlSs</a></p></li>
-<li><p>Commercial Link: <a class="reference external" href="https://youtube.com/watch?v=vBwyD4JJlSs">https://youtube.com/watch?v=vBwyD4JJlSs</a></p></li>
-</ul>
-</div>
-</div>
-<div class="section" id="id16">
-<h3>Class Materials<a class="headerlink" href="#id16" title="Permalink to this heading">#</a></h3>
-<ul class="simple">
-<li><p>Readings:</p>
-<ul>
-<li><p><a class="reference external" href="https://www.stevenstrogatz.com/books/nonlinear-dynamics-and-chaos-with-applications-to-physics-biology-chemistry-and-engineering">Strogatz</a> <a class="reference download internal" download="" href="../_downloads/7e54eb41e1f258178a7395b63d9083ac/strogatz_3rd_ch2.0-2.3.pdf"><span class="xref download myst">2.0-2.3</span></a>; <a class="reference download internal" download="" href="../_downloads/8339599b77d56567e7f8c520a73f056f/strogatz_3rd_ch5.0-5.2.pdf"><span class="xref download myst">5.0-5.2</span></a></p></li>
-</ul>
-</li>
-<li><p>Additional Readings:</p>
-<ul>
-<li><p><a class="reference download internal" download="" href="../_downloads/9e36563c2174913d37353656739d8346/Newman_Ch8_ODEs.pdf"><span class="xref download myst">Newman’s Computational Physics - Ch8 - Solving ODEs</span></a></p></li>
-<li><p><a class="reference download internal" download="" href="../_downloads/0712feb41f1af0317bd09164cd88d282/euler_cromer_1981.pdf"><span class="xref download myst">Cromer’s original paper on the Euler-Cromer method</span></a></p></li>
-</ul>
-</li>
-<li><p>Handwritten Notes:</p>
-<ul>
-<li><p>CW6: <a class="reference download internal" download="" href="../_downloads/5d7e38ed8b64d01ced12ec85ed5addca/CW6.pdf"><span class="xref download myst">Phase Space and Nonlinear Dynamics</span></a></p></li>
-</ul>
-</li>
-<li><p>Lecture Videos:</p>
-<ul>
-<li><p><a class="reference external" href="https://mediaspace.msu.edu/media/t/1_pa3afrh5">12 Feb 2024</a></p></li>
-<li><p><a class="reference external" href="https://mediaspace.msu.edu/media/t/1_zlcyf858">14 Feb 2024</a></p></li>
-</ul>
-</li>
-</ul>
-</div>
-<div class="section" id="id17">
-<h3>Assignments<a class="headerlink" href="#id17" title="Permalink to this heading">#</a></h3>
-<ul class="simple">
-<li><p><a class="reference internal" href="../midterms/midterm1.html"><span class="doc std std-doc">Midterm 1</span></a> (due February 23, 2024)</p></li>
-</ul>
-</div>
-</div>
-<div class="section" id="week-5-february-5-9-2024">
-<h2>Week 5, February 5-9, 2024<a class="headerlink" href="#week-5-february-5-9-2024" title="Permalink to this heading">#</a></h2>
-<p>Topics: Conservative Forces, Potential Energy, Stability</p>
-<div class="section" id="id18">
-<h3>Videos to Watch<a class="headerlink" href="#id18" title="Permalink to this heading">#</a></h3>
-<p>While never required, these videos are recommended to help you see the larger picture of what we are doing in class.</p>
-<div class="section" id="where-do-we-think-mass-comes-from-13-minute-video">
-<h4>Where do we think mass comes from? (13 minute video)<a class="headerlink" href="#where-do-we-think-mass-comes-from-13-minute-video" title="Permalink to this heading">#</a></h4>
-<p>The <a class="reference external" href="https://en.wikipedia.org/wiki/Higgs_boson">Higgs Boson</a> is a particle that was discovered in 2012 at the <a class="reference external" href="https://en.wikipedia.org/wiki/Large_Hadron_Collider">Large Hadron Collider</a> at <a class="reference external" href="https://en.wikipedia.org/wiki/CERN">CERN</a>. This discovery was a major milestone in the field of particle physics. Much of what we are trying to understand about the nature of mass is encapsulated in the <a class="reference external" href="https://en.wikipedia.org/wiki/Higgs_field">Higgs Field</a>. This is an advanced field with a potential that we are not intending to explore. However, the importance of the basic question of “where does mass come from?” is a fundamental question in physics and the concept of energy, potential, and fields is a critical part of the answer.</p>
-<p><a class="reference external" href="https://youtube.com/watch?v=R7dsACYTTXE"><img alt="The Crazy Mass-Giving Mechanism of the Higgs Field Simplified" src="https://markdown-videos-api.jorgenkh.no/youtube/R7dsACYTTXE?width=720&amp;height=405" /></a></p>
-<ul class="simple">
-<li><p>Non-Commercial Link: <a class="reference external" href="https://inv.n8pjl.ca/watch?v=R7dsACYTTXE">https://inv.n8pjl.ca/watch?v=R7dsACYTTXE</a></p></li>
-<li><p>Commercial Link: <a class="reference external" href="https://youtube.com/watch?v=R7dsACYTTXE">https://youtube.com/watch?v=R7dsACYTTXE</a></p></li>
-</ul>
-</div>
-</div>
-<div class="section" id="id19">
-<h3>Class Materials<a class="headerlink" href="#id19" title="Permalink to this heading">#</a></h3>
-<ul class="simple">
-<li><p>Readings:</p>
-<ul>
-<li><p>JRT 4.1-4.4, 4.6; MLB 6.6-6.8</p></li>
-</ul>
-</li>
-<li><p>Handwritten Notes:</p>
-<ul>
-<li><p>CW5: <a class="reference download internal" download="" href="../_downloads/45d53f9fede64f5961e4dabed5443496/CW5.pdf"><span class="xref download myst">Potential Energy</span></a></p></li>
-</ul>
-</li>
-<li><p>Lecture Videos:</p>
-<ul>
-<li><p><a class="reference external" href="https://mediaspace.msu.edu/media/t/1_womzepbu">5 Feb 2024</a></p></li>
-<li><p><a class="reference external" href="https://mediaspace.msu.edu/media/t/1_xwyxkt7m">7 Feb 2024</a></p></li>
-</ul>
-</li>
-</ul>
-</div>
-<div class="section" id="id20">
-<h3>Assignments<a class="headerlink" href="#id20" title="Permalink to this heading">#</a></h3>
-<ul class="simple">
-<li><p><a class="reference internal" href="../homeworks/hw4.html"><span class="doc std std-doc">Homework 4</span></a> (due February 9, 2024)</p></li>
-</ul>
-</div>
-</div>
-<div class="section" id="week-4-january-29-february-2-2024">
-<h2>Week 4, January 29-February 2, 2024<a class="headerlink" href="#week-4-january-29-february-2-2024" title="Permalink to this heading">#</a></h2>
-<p>Topics: Work-Energy Theorem, Conservative Forces, Momentum Conservation</p>
-<div class="section" id="id21">
-<h3>Videos to Watch<a class="headerlink" href="#id21" title="Permalink to this heading">#</a></h3>
-<p>While never required, these videos are recommended to help you see the larger picture of what we are doing in class.</p>
-<div class="section" id="feynman-on-the-units-of-energy-2-minute-video">
-<h4>Feynman on the units of energy (2 minute video)<a class="headerlink" href="#feynman-on-the-units-of-energy-2-minute-video" title="Permalink to this heading">#</a></h4>
-<p><a class="reference external" href="https://en.wikipedia.org/wiki/Richard_Feynman">Richard Feynman</a> was a Nobel Prize winning physicist who was known for his ability to explain complex ideas in simple terms. In this video, he explains the units of energy. He’s engaging and gregarious as he was known publicly.</p>
-<p><a class="reference external" href="https://youtube.com/watch?v=roX2NXDUTsM"><img alt="Feynman on the units of energy" src="https://markdown-videos-api.jorgenkh.no/youtube/roX2NXDUTsM?width=720&amp;height=405" /></a></p>
-<ul class="simple">
-<li><p>Non-Commercial Link: <a class="reference external" href="https://inv.n8pjl.ca/watch?v=roX2NXDUTsM">https://inv.n8pjl.ca/watch?v=roX2NXDUTsM</a></p></li>
-<li><p>Commercial Link: <a class="reference external" href="https://youtube.com/watch?v=roX2NXDUTsM">https://youtube.com/watch?v=roX2NXDUTsM</a></p></li>
-</ul>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>While we acknowledge the importance of Feynman’s contributions to physics and physics teaching, we should remind ourselves that he was not a perfect person.</p>
-<p>Feynman was also known for his <a class="reference external" href="https://caltechletters.org/viewpoints/feynman-harassment-science">sexist behavior and comments</a>. (<em>Trigger warning</em>: this link recounts instances of harassment)</p>
-<p>We should not ignore this aspect of his life, and remind ourselves that we can learn from his physics, and make a welcoming space for all people.</p>
-</div>
-</div>
-<div class="section" id="how-does-electricity-work-15-minute-video">
-<h4>How does electricity work? (15 minute video)<a class="headerlink" href="#how-does-electricity-work-15-minute-video" title="Permalink to this heading">#</a></h4>
-<p>Energy is a fundamental concept in physics, but it is also a very abstract concept. Feynman is quoted as saying: “<em>It is important to realize that in physics today, we have no knowledge of what energy is.</em>”</p>
-<p>It’s a number a quantity, that when we compute it, we find it stays the same before and after a process - so long as we account for all the interactions and uses in that case.</p>
-<p>To frame how interesting and complex energy can be, consider this video from the <a class="reference external" href="https://inv.n8pjl.ca/channel/UCHnyfMqiRRG1u-2MsSQLbXA">Veritasium channel</a>. [<a class="reference external" href="https://www.youtube.com/channel/UCHnyfMqiRRG1u-2MsSQLbXA">Commerical Link</a>]</p>
-<p><em>How do we get light from a circuit when we close a switch?</em></p>
-<p><a class="reference external" href="https://youtube.com/watch?v=bHIhgxav9LY"><img alt="The Big Misconception About Electricity" src="https://markdown-videos-api.jorgenkh.no/youtube/bHIhgxav9LY?width=720&amp;height=405" /></a></p>
-<ul class="simple">
-<li><p>Non-Commercial Link: <a class="reference external" href="https://inv.n8pjl.ca/watch?v=bHIhgxav9LY">https://inv.n8pjl.ca/watch?v=bHIhgxav9LY</a></p></li>
-<li><p>Commercial Link: <a class="reference external" href="https://youtube.com/watch?v=bHIhgxav9LY">https://youtube.com/watch?v=bHIhgxav9LY</a></p></li>
-</ul>
-</div>
-</div>
-<div class="section" id="id22">
-<h3>Class Materials<a class="headerlink" href="#id22" title="Permalink to this heading">#</a></h3>
-<ul class="simple">
-<li><p>Readings:</p>
-<ul>
-<li><p>JRT 4.1-4.3; JRT 3.1-3.4</p></li>
-</ul>
-</li>
-<li><p>Handwritten Notes:</p>
-<ul>
-<li><p>CW4: <a class="reference download internal" download="" href="../_downloads/387c0a91fd320ecdc6647e0f930199a5/CW4.pdf"><span class="xref download myst">Conservation Laws</span></a></p></li>
-</ul>
-</li>
-<li><p>Lecture Videos:</p>
-<ul>
-<li><p><a class="reference external" href="https://mediaspace.msu.edu/media/t/1_0of138eb">29 Jan 2024</a></p></li>
-<li><p><a class="reference external" href="https://mediaspace.msu.edu/media/t/1_m3w1c61k">31 Jan 2024</a></p></li>
-</ul>
-</li>
-</ul>
-</div>
-<div class="section" id="id23">
-<h3>Assignments<a class="headerlink" href="#id23" title="Permalink to this heading">#</a></h3>
-<ul class="simple">
-<li><p><a class="reference internal" href="../homeworks/hw3.html"><span class="doc std std-doc">Homework 3</span></a> (due February 2, 2024)</p></li>
-</ul>
-</div>
-</div>
-<div class="section" id="week-3-january-22-26-2024">
-<h2>Week 3, January 22-26, 2024<a class="headerlink" href="#week-3-january-22-26-2024" title="Permalink to this heading">#</a></h2>
-<p>Topics: Modeling with Newton’s Second Law, Motion in 2D, Drag Forces</p>
-<div class="section" id="id24">
-<h3>Videos to Watch<a class="headerlink" href="#id24" title="Permalink to this heading">#</a></h3>
-<p>While never required, these videos are recommended to help you see the larger picture of what we are doing in class. These two focus on the physics of low <a class="reference external" href="https://en.wikipedia.org/wiki/Reynolds_number">Reynolds number</a> flows.</p>
-<div class="section" id="physics-of-life-life-at-low-reynolds-number-15-minute-video">
-<h4>Physics of Life - Life at Low Reynolds Number (15 minute video)<a class="headerlink" href="#physics-of-life-life-at-low-reynolds-number-15-minute-video" title="Permalink to this heading">#</a></h4>
-<p>This video focuses on the biological aspects of the problem as the physics of low Reynolds numbers is important for understanding the motion of microorganisms.
-<a class="reference external" href="https://youtube.com/watch?v=gZk2bMaqs1E"><img alt="Physics of Life - Life at Low Reynolds Number" src="https://markdown-videos-api.jorgenkh.no/youtube/Qme07fA3Fj4?width=720&amp;height=405" /></a></p>
-<ul class="simple">
-<li><p>Non-Commercial Link: <a class="reference external" href="https://inv.n8pjl.ca/watch?v=gZk2bMaqs1E">https://inv.n8pjl.ca/watch?v=gZk2bMaqs1E</a></p></li>
-<li><p>Commercial Link: <a class="reference external" href="https://youtube.com/watch?v=gZk2bMaqs1E">https://youtube.com/watch?v=gZk2bMaqs1E</a></p></li>
-</ul>
-</div>
-<div class="section" id="g-i-taylor-s-low-reynolds-number-flows-32-minute-video">
-<h4>G.I. Taylor’s Low Reynolds Number Flows (32 minute video)<a class="headerlink" href="#g-i-taylor-s-low-reynolds-number-flows-32-minute-video" title="Permalink to this heading">#</a></h4>
-<p>This video is a classic from <a class="reference external" href="https://en.wikipedia.org/wiki/Geoffrey_Ingram_Taylor">G.I. Taylor</a> who was a physicist interested in sharing the conceptual beauty of physics with the general public. He was also a pioneer in the field of fluid mechanics. In fact, Taylor’s <a class="reference external" href="https://royalsocietypublishing.org/doi/10.1098/rsta.1923.0008">groundbreaking paper</a> on the stability of fluid flows between two rotating cylinders set off studies into turbulence. The <a class="reference external" href="https://en.wikipedia.org/wiki/Taylor%E2%80%93Couette_flow">Taylor-Couette flow</a> is a critical tool for <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/20365623/">studies of turbulence</a>.</p>
-<p><a class="reference external" href="https://youtube.com/watch?v=8Dst6V4CQME"><img alt="G.I. Taylor's Low Reynolds Number Flows" src="https://markdown-videos-api.jorgenkh.no/youtube/8Dst6V4CQME?width=720&amp;height=405" /></a></p>
-<ul class="simple">
-<li><p>Non-Commercial Link: <a class="reference external" href="https://inv.n8pjl.ca/watch?v=8Dst6V4CQME">https://inv.n8pjl.ca/watch?v=8Dst6V4CQME</a></p></li>
-<li><p>Commercial Link: <a class="reference external" href="https://youtube.com/watch?v=8Dst6V4CQME">https://youtube.com/watch?v=8Dst6V4CQME</a></p></li>
-</ul>
-</div>
-</div>
-<div class="section" id="id25">
-<h3>Class Materials<a class="headerlink" href="#id25" title="Permalink to this heading">#</a></h3>
-<ul class="simple">
-<li><p>Readings:</p>
-<ul>
-<li><p>JRT 2.1-2.4</p></li>
-</ul>
-</li>
-<li><p>Handwritten Notes:</p>
-<ul>
-<li><p>CW3: <a class="reference download internal" download="" href="../_downloads/101816dd77013dcec4d40d61ddf01f05/CW3.pdf"><span class="xref download myst">Forces and Motion</span></a></p></li>
-</ul>
-</li>
-<li><p>Lecture Videos:</p>
-<ul>
-<li><p><a class="reference external" href="https://mediaspace.msu.edu/media/t/1_injjcj1y">22 Jan 2024</a></p></li>
-<li><p><a class="reference external" href="https://mediaspace.msu.edu/media/t/1_p43v9u78">24 Jan 2024</a> - no audio first 27 minutes…</p></li>
-</ul>
-</li>
-</ul>
-</div>
-<div class="section" id="id26">
-<h3>Assignments<a class="headerlink" href="#id26" title="Permalink to this heading">#</a></h3>
-<ul class="simple">
-<li><p><a class="reference internal" href="../homeworks/hw2.html"><span class="doc std std-doc">Homework 2</span></a> (due January 26, 2024)</p></li>
-</ul>
-</div>
-</div>
-<div class="section" id="week-2-january-16-19-2024">
-<h2>Week 2, January 16-19, 2024<a class="headerlink" href="#week-2-january-16-19-2024" title="Permalink to this heading">#</a></h2>
-<p>Topics: Modeling with Newton’s Second Law, Motion in 1D</p>
-<div class="section" id="web-resources">
-<h3>Web Resources<a class="headerlink" href="#web-resources" title="Permalink to this heading">#</a></h3>
-<ul class="simple">
-<li><p><a class="reference internal" href="../lecture-notes/chapter2-overview.html"><span class="doc std std-doc">What is Mathematical Modeling?</span></a></p></li>
-<li><p><a class="reference internal" href="../lecture-notes/chapter2.html"><span class="doc std std-doc">Classical Mechanics, Mathematics, and Numerical background</span></a></p></li>
-</ul>
-</div>
-<div class="section" id="id27">
-<h3>Class Materials<a class="headerlink" href="#id27" title="Permalink to this heading">#</a></h3>
-<ul class="simple">
-<li><p>Readings:</p>
-<ul>
-<li><p>JRT 1.4-1.6; AMS Ch 4.2 and Ch 5</p></li>
-</ul>
-</li>
-<li><p>Handwritten Notes:</p>
-<ul>
-<li><p>CW1: <a class="reference download internal" download="" href="../_downloads/fb8670843d7e21e9b2f5ef83314c2b0c/CW2.pdf"><span class="xref download myst">Making Classical Models</span></a></p></li>
-</ul>
-</li>
-<li><p>Lecture Videos:</p>
-<ul>
-<li><p>17 Jan 2024 (ipad crashed zoom)</p></li>
-</ul>
-</li>
-</ul>
-</div>
-<div class="section" id="id28">
-<h3>Assignments<a class="headerlink" href="#id28" title="Permalink to this heading">#</a></h3>
-<ul class="simple">
-<li><p><a class="reference internal" href="../homeworks/hw2.html"><span class="doc std std-doc">Homework 2</span></a> (due January 26, 2024)</p></li>
-</ul>
-</div>
-</div>
-<div class="section" id="week-1-january-8-12-2024">
-<h2>Week 1, January 8-12, 2024<a class="headerlink" href="#week-1-january-8-12-2024" title="Permalink to this heading">#</a></h2>
+<section id="class-week-1-january-13-17-2025-cw3">
+<h2>Class Week 1, January 13-17, 2025 (CW3)<a class="headerlink" href="#class-week-1-january-13-17-2025-cw3" title="Link to this heading">#</a></h2>
 <p>Topics: Introduction, Vectors, Kinematic Quantities</p>
-<div class="section" id="id29">
-<h3>Web Resources<a class="headerlink" href="#id29" title="Permalink to this heading">#</a></h3>
+<p>This week is an introduction to the course and a reminder on vectors, space, time, and motion. We will also discuss Python programming and how it will be used in this course. We will also discuss the software we will use in this course.</p>
+<p>You should review the <a class="reference internal" href="#../admin/getting-started.md"><span class="xref myst">Getting Started</span></a> page to learn about the course. It will direct you to other pages that will help you get started.</p>
+<p>You should also review the first week’s notes on <a class="reference internal" href="../lecture-notes/week1/01_start.html"><span class="std std-doc">Classical Physics</span></a> and the <a class="reference internal" href="../lecture-notes/week1/01_notes.html"><span class="std std-doc">Introduction to Classical Mechanics</span></a>, or read Chapter 1.1-1.4 of JRT, Chapter 1-4 of AMS, and Chapter 3.4 of MLB. Again, these books are not required, but they are highly recommended.</p>
+<p>Embedded in both notes pages are videos that you can watch to help you understand the concepts. We do not require you to watch these videos, but they are recommended to help you see the larger picture of what we are doing in class.</p>
+<section id="class-materials">
+<h3>Class Materials<a class="headerlink" href="#class-materials" title="Link to this heading">#</a></h3>
 <ul class="simple">
-<li><p><a class="reference internal" href="teachers.html"><span class="doc std std-doc">Course syllabus</span></a></p></li>
-<li><p><a class="reference internal" href="../lecture-notes/chapter1.html"><span class="doc std std-doc">What is Classical Physics?</span></a></p></li>
-<li><p><a class="reference internal" href="../lecture-notes/chapter2.html"><span class="doc std std-doc">Classical Mechanics, Mathematics, and Numerical background</span></a></p></li>
+<li><p>Web Resources</p>
+<ul>
+<li><p><a class="reference internal" href="#../admin/getting-started.md"><span class="xref myst">Getting Started</span></a></p></li>
+<li><p><a class="reference internal" href="../lecture-notes/week1/01_start.html"><span class="std std-doc">What is Classical Physics?</span></a></p></li>
+<li><p><a class="reference internal" href="../lecture-notes/week1/01_notes.html"><span class="std std-doc">Introduction to Classical Mechanics</span></a></p></li>
 </ul>
-</div>
-<div class="section" id="id30">
-<h3>Class Materials<a class="headerlink" href="#id30" title="Permalink to this heading">#</a></h3>
-<ul class="simple">
+</li>
 <li><p>Readings:</p>
 <ul>
 <li><p>JRT 1.1-1.4; AMS Ch 1-4; MLB 3.4</p></li>
 </ul>
 </li>
-<li><p>Handwritten Notes:</p>
+<li><p>In-Class Materials:</p>
 <ul>
-<li><p>CW1: <a class="reference download internal" download="" href="../_downloads/15035c6c71b9991862f1726b19fc9e70/CW1.pdf"><span class="xref download myst">Introduction to Classical Mechanics</span></a></p></li>
+<li><p>CW1: <a class="reference internal" href="#../docs/slides/slides-CW1.pdf"><span class="xref myst">Slides</span></a></p></li>
+<li><p>CW1: <a class="reference download internal" download="" href="../_downloads/d2ef8e6c4f0d5e72ea55227febb217e5/notes-CW1.pdf"><span class="xref download myst">Handwritten Notes</span></a></p></li>
 </ul>
 </li>
 <li><p>Lecture Videos:</p>
 <ul>
-<li><p>8 Jan 2024 (tech did not comply)</p></li>
-<li><p><a class="reference external" href="https://mediaspace.msu.edu/media/1_2m56jymf">10 Jan 2024</a></p></li>
+<li><p>13 Jan 2025</p></li>
+<li><p>15 Jan 2025</p></li>
 </ul>
 </li>
 </ul>
-</div>
-<div class="section" id="id31">
-<h3>Assignments<a class="headerlink" href="#id31" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="assignments">
+<h3>Assignments<a class="headerlink" href="#assignments" title="Link to this heading">#</a></h3>
 <ul class="simple">
-<li><p><a class="reference internal" href="../homeworks/hw1.html"><span class="doc std std-doc">Homework 1</span></a> (due January 19, 2024)</p></li>
+<li><p><a class="reference internal" href="../homeworks/hw1.html"><span class="std std-doc">Homework 1</span></a> (due January 24, 2025)</p></li>
 </ul>
-<!-- ###  Week 2, January 9-13, 2023
+<!-- ### Zoom Playlist
 
-- Monday 1/9: Introduction to the course and reminder  on vectors, space, time and motion, JRT chapters 1.2 and 1.3 and lecture notes (https://mhjensen.github.io/Physics321/doc/pub/week2/html/week2.html). Python programming reminder, elements from CMSE 201 and how they are used in this course. Installing software (anaconda). See slides at https://mhjensen.github.io/Physics321/doc/pub/week2/html/week2.html). 
-AMS chapters 2 and 4 are very useful. 1st homework due January 21.
-  - Lecture video at https://youtu.be/BT2pSnYNYHE
-  - Handwritten notes from lecture at https://github.com/mhjensen/Physics321/blob/master/doc/HandWrittenNotes/Spring2023/NotesJanuary9.pdf
-- Wednesday 1/11: Forces and Newton's laws of motion. Free fall problems. JRT chapter 1.4 and lecture notes (https://mhjensen.github.io/Physics321/doc/pub/week2/html/week2.html). AMS chapters 2 and 4 are very useful.
-  - Lecture video at https://youtu.be/s-cqtSfOZ1Q
-  - Handwritten notes at https://github.com/mhjensen/Physics321/blob/master/doc/HandWrittenNotes/Spring2023/NotesJanuary11.pdf
-- Friday 1/13: Discussions and problem solving and discussion of first homework. 
-  - Short video on practicalities about exercises and the Friday sessions https://youtu.be/Rt5q3uFQGsk
+All recorded classes are added to [this playlist](https://mediaspace.msu.edu/playlist/dedicated/1_s1d57uud/.) -->
+<!-- ### Week 15, April 15-19, 2024
 
-###  Week 3, January 16-20, 2023
-- Monday 1/16: MLK day, no classes
-- Wednesday 1/18: Motion and forces, Newton's laws, examples.
-  - Handwritten notes from lecture at https://github.com/mhjensen/Physics321/blob/master/doc/HandWrittenNotes/Spring2023/NotesJanuary18.pdf
-  - Video of lecture at https://youtu.be/-nfzGH56v_w
-- Friday 1/20: Motion and forces, Newton's laws, examples. Problems solving. Deadline first homework.
-  - Video of first 20 min at https://youtu.be/iLX21OKuhp0
-- Good reads are Taylor chapters 1.4, 1.5, 1.6, 2.1-2.4 and AMS chapters 4.2 and  5 and and lecture notes (https://mhjensen.github.io/Physics321/doc/pub/week3/html/week3.html).
+Topics: Course Review
 
-- Solution to first hw at https://github.com/mhjensen/Physics321/tree/master/doc/Homeworks/Solutions
+#### Videos to Watch
 
-### Week 4, January 23-27, 2023
-- Monday 1/24: We discuss various forces and their pertinent equations of motion. Recommended reading: Taylor 2.1-2.4. Malthe-Sørenssen chapter 6-7 contains many examples. We will cover in particular a falling object in two dimensions with linear air resistance relevant for homework 3.
-  - Video of lecture at https://youtu.be/Izx1W4qqgmo
-  - Handwritten notes at https://github.com/mhjensen/Physics321/blob/master/doc/HandWrittenNotes/Spring2023/NotesJanuary23.pdf
-- Wednesday 1/25: We discuss other force models with examples such as the gravitational force and a spring force. See Malthe-Sørenssen chapter 7.3-7.5. We start also our discussion of energy and work, see Taylor 4.1
-  - Video of lecture at https://youtu.be/f9hqy6o6XCg
-  - Handwritten notes at https://github.com/mhjensen/Physics321/blob/master/doc/HandWrittenNotes/Spring2023/NotesJanuary25.pdf
-- Friday 1/27:  We discuss several examples of energy and work. Taylor 4.1-4.3. Problem solving. Deadline second homework. 
-  - Video of exercise session at https://youtu.be/MDO5fe2Rw70
-  - Handwritten notes at https://github.com/mhjensen/Physics321/blob/master/doc/HandWrittenNotes/Spring2023/NotesJanuary27.pdf
-- Solution to second hw at https://github.com/mhjensen/Physics321/tree/master/doc/Homeworks/Solutions
+##### Where do we go from here? (20 video playlist)
 
-### Week 5, January 30- February 3, 2023
-- Monday 1/30: Work energy theorem, conservative forces and momentum conservation, 4th homework available
-  - Video with subtitles at https://youtu.be/H_TuYjM9csk
-  - Handwritten notes at https://github.com/mhjensen/Physics321/blob/master/doc/HandWrittenNotes/Spring2023/NotesJanuary30.pdf
-- Wednesday 2/1: Examples of applications of conservation laws, angular momentum conservation.
-  - Video of lecture at https://youtu.be/t_bStzWIVJY
-  - Handwritten notes at https://github.com/mhjensen/Physics321/blob/master/doc/HandWrittenNotes/Spring2023/NotesFebruary1.pdf
-- Friday 2/3:  Conservation laws and problem solving. Deadline third homework.
-  - Video of exercise session, first 20 min, hints for exercises 5 and 6 at https://youtu.be/SN6Rms9LlNs
-- Good reads are Taylor sections 3.1-3.5 and 4.1-4.3 and AMS chapters 10-14.
-- Solution to third  hw at https://github.com/mhjensen/Physics321/tree/master/doc/Homeworks/Solutions
+In this series of 1 minute videos, [Minute Physics](https://www.youtube.com/@MinutePhysics) presents some of the major conceptual elements and practical results of quantum mechanics. The next phase of classical mechanics after single particle dynamics was the development of [wave mechanics](https://en.wikipedia.org/wiki/Wave_equation), which was a precursor to [quantum mechanics](https://en.wikipedia.org/wiki/Quantum_mechanics). There's a lot of interesting physics in the classical theory of light, which lead us to the development of quantum mechanics. 
 
-### Week 6, February 6-10, 2023
-- Monday 2/6: Conservation laws and examples.
-  - Video of lecture at https://youtu.be/plcIWuGXoms
-  - Handwritten notes at https://github.com/mhjensen/Physics321/blob/master/doc/HandWrittenNotes/Spring2023/NotesFebruary6.pdf
-- Wednesday 2/8: Examples of application of conservations laws (see chapter 4 of Taylor).
-  - Video of lecture at https://youtu.be/iKtX3EIzb0A
-  - Handwritten notes at https://github.com/mhjensen/Physics321/blob/master/doc/HandWrittenNotes/Spring2023/NotesFebruary8.pdf
-- Friday 2/10: Discussion of fourth homework. Deadline fourth homework.
-  - Handwritten notes at https://github.com/mhjensen/Physics321/blob/master/doc/HandWrittenNotes/Spring2023/NotesFebruary10.pdf
-- Taylor chapter 4 is the essential reading. See also chapter 7 of Malthe-Sørenssen for exercise 6 in homework 4
-- Video with hints and tips for hw 4 at https://youtu.be/nTQSb7-5xy0 
-- Solution to fourth  hw at https://github.com/mhjensen/Physics321/tree/master/doc/Homeworks/Solutions
+[![Minute Physics Playlist](https://markdown-videos-api.jorgenkh.no/youtube/Q_h4IoPJXZw?width=720&height=405)](https://www.youtube.com/playlist?list=PL0E2ABD1D84697428)
+- Non-Commercial Link: [https://inv.n8pjl.ca/playlist?list=PL0E2ABD1D84697428](https://inv.n8pjl.ca/playlist?list=PL0E2ABD1D84697428)
+- Commercial Link: [https://www.youtube.com/playlist?list=PL0E2ABD1D84697428](https://www.youtube.com/playlist?list=PL0E2ABD1D84697428)
 
-### Week 7, February 13-17, 2023
-- Monday 2/13: Discussion of conditions for conservative forces and summing up our
-discussion on conservative forces. Discussion of potential surfaces and their interpretations.  Start discussion of harmonic oscillations.
-  - Reading suggestion: Taylor sections 4.6, 4.9, 4.10 and 5.1 and 5.2 on harmonic oscillations and lecture notes
-  - Handwritten notes at https://github.com/mhjensen/Physics321/blob/master/doc/HandWrittenNotes/Spring2023/NotesFebruary13.pdf
-  - Video of lecture at https://youtu.be/3GCGhSN4nIw
-- Wednesday 2/15: The Earth-Sun problem and energy-conserving algorithms and how to encode in more efficient ways various algorithms for solving the equations of motion (Euler, Euler-Cromer and Velocity Verlet).
-  - Reading suggestions: Taylor section 4.8 and lecture notes
-- Friday 2/17:  Working on the Earth-Sun problem and hw 5.
-  - Reading suggestions: Taylor chapters 3 and 4 and lecture notes
-- Solution to fifth  hw at https://github.com/mhjensen/Physics321/tree/master/doc/Homeworks/Solutions
+#### Class Materials
+- Readings:
+  - JRT Ch 1-7
+- Lecture Videos:
+  - 15 Apr 2024
+  - 17 Apr 2024
+
+### Week 14, April 8-12, 2024
+
+Topics: Lagrangian Mechanics; Forces of Constraint
+
+#### Videos to Watch
+
+##### Solar Eclipses were terrifying (3 minute video)
+
+We do not have class Monday; please enjoy the solar eclipse. 
+
+[![Solar Eclipses were terrifying](https://markdown-videos-api.jorgenkh.no/youtube/-oYe7xM3hLE?width=720&height=405)](https://youtube.com/watch?v=-oYe7xM3hLE)
+- Non-Commercial Link: [https://inv.n8pjl.ca/watch?v=-oYe7xM3hLE](https://inv.n8pjl.ca/watch?v=-oYe7xM3hLE)
+- Commercial Link: [https://youtube.com/watch?v=-oYe7xM3hLE](https://youtube.com/watch?v=-oYe7xM3hLE)
+
+#### Class Materials
+- Readings:
+  - JRT Ch 7
+- Handwritten Notes:
+  - CW14: [Lagrangian Dynamics Examples](../docs/handwritten-notes/CW14.pdf)
+- Notes:
+  - [Lagrangian Mechanics](../lecture-notes/lagrangians.ipynb)
+- Lecture Videos:
+  - 8 Apr 2024 (NO CLASS; SOLAR ECLIPSE)
+  - [10 Apr 2024](https://mediaspace.msu.edu/media/t/1_gjgctdk4)
+
+### Week 13, April 1-5, 2024
+
+Topics: Lagrangian Mechanics; Forces of Constraint
+
+#### Videos to Watch
+
+##### The Standard Model Lagrangian (17 minute video)
+
+An understanding of physics formulated through [Lagrangian Mechanics](https://en.wikipedia.org/wiki/Lagrangian_mechanics) is a powerful and elegant way to describe the motion of particles and systems. But it can be much more than that. Much of the work of particle physics is done in the context of the [Standard Model](https://en.wikipedia.org/wiki/Standard_Model). The Standard Model is a theory that describes the electromagnetic, weak, and strong nuclear interactions. The Standard Model is a [quantum field theory](https://en.wikipedia.org/wiki/Quantum_field_theory), which is formulated through a Lagrangian.
+
+The video below provides an introduction to this equation and the Standard Model.
+
+[![Standard Model Lagrangian](https://markdown-videos-api.jorgenkh.no/youtube/PHiyQID7SBs?width=720&height=405)](https://youtube.com/watch?v=PHiyQID7SBs)
+- Non-Commercial Link: [https://inv.n8pjl.ca/watch?v=PHiyQID7SBs](https://inv.n8pjl.ca/watch?v=PHiyQID7SBs)
+- Commercial Link: [https://youtube.com/watch?v=PHiyQID7SBs](https://youtube.com/watch?v=PHiyQID7SBs)
 
 
+#### Class Materials
+- Readings:
+  - JRT 7.3-7.7, 7.10
+- Handwritten Notes:
+  - CW13: [Lagrangian Dynamics Examples](../docs/handwritten-notes/CW13.pdf)
+- Notes:
+  - [Lagrangian Mechanics](../lecture-notes/lagrangians.ipynb)
+- Lecture Videos:
+  - [1 Apr 2024](https://mediaspace.msu.edu/media/t/1_l46sljb1)
+  - [3 Apr 2024](https://mediaspace.msu.edu/media/t/1_6ychyhzy) (Screen disconnected at some point)
 
-### Week 8, February 20-24
-- Monday 2/20: Harmonic oscillations and Damped Oscillations. Reading suggestions Taylor 5.1-5.3
-  - Video of Lecture at https://youtu.be/3otwJIm796s
-  - Handwritten notes at https://github.com/mhjensen/Physics321/blob/master/doc/HandWrittenNotes/Spring2023/NotesFebruary20.pdf    
-- Wednesday 2/22:  Damped  oscillations
-  - Video of Lecture at https://youtu.be/Y1QfsBplX9k
-  - Handwritten notes at https://github.com/mhjensen/Physics321/blob/master/doc/HandWrittenNotes/Spring2023/NotesFebruary22.pdf    
-- Friday 2/24: Discussion of first midterm.
-- Good reads are sections 5.4-5.7 of Taylor on oscillations. 
-- First midterm project, available Feb 20 and due March 3, 2023
-  - Video with hints and tips for first midterm https://youtu.be/9rLx7MdLWs0
+### Week 12, March 25-29, 2024
 
-### Week 9, February 27- March 3, 2023
-- Monday 2/27: Damped and driven oscillations
-  - Video of lecture at https://youtu.be/39bqKrnEddk
-  - Handwritten notes at https://github.com/mhjensen/Physics321/blob/master/doc/HandWrittenNotes/Spring2023/NotesFebruary27.pdf    
-- Wednesday 3/1: Discussions  of oscillations and time-dependent forces.  Discussion of first midterm.  
-  - Video of lecture at https://youtu.be/OeaBq13izhM
-  - Handwritten notes at https://github.com/mhjensen/Physics321/blob/master/doc/HandWrittenNotes/Spring2023/NotesMarch1.pdf      
-- Friday 3/3:  Discussion  of first midterm. Deadline for first midterm.
-- Solution to first midterm  at https://github.com/mhjensen/Physics321/tree/master/doc/Homeworks/Solutions. See also codes for parts 1 and 2.
+Topics: Lagrangian Mechanics
 
-### Week 10 Spring break, no lectures
+#### Videos to Watch
 
-### Week 11, March  13-17, 2023
-- Monday 3/13:  Harmonic oscillations, damped and driven oscillations
-  - Video of lecture at https://youtu.be/3j2xxCGcqs4
-  - Handwritten notes at https://github.com/mhjensen/Physics321/blob/master/doc/HandWrittenNotes/Spring2023/NotesMarch13.pdf      
-- Wednesday 3/15: Harmonic oscillations, damping and driven oscillations
-  - Video of lecture at https://youtu.be/McYxOqDvOO4
-  - Handwritten notes at https://github.com/mhjensen/Physics321/blob/master/doc/HandWrittenNotes/Spring2023/NotesMarch15.pdf        
-  - Video on solving differential equations numerically at https://youtu.be/7nYIfV0z1VM
-  - Video on Fourier aanalysis at https://youtu.be/neXZ4fb-4Rs
-- Friday 3/17:  Discussion and work on homework 6. Deadline sixth homework.
-- Reading suggestions for week 11: Taylor sections 5.6-5.8 and lecture notes at URL:"https://mhjensen.github.io/Physics321/doc/pub/week10/html/week10-reveal.html"
-  - Short video at https://youtu.be/WqqD4zel-zg
-- Solution to sixth homework at https://github.com/mhjensen/Physics321/tree/master/doc/Homeworks/Solutions
+While never required, these videos are recommended to help you see the larger picture of what we are doing in class.
 
-### Week 12, March 20-24, 2023
-- Monday 3/20: Two-body problems and gravitational forces. Definition of the two-body problem, rewriting the equations in relative and center-of-mass coordinates
-  - Reading suggestion: Taylor sections 8.2-8.3 and lecture notes
-  - Video of lecture at https://youtu.be/z2jyJI-dryg
-  - Handwritten notes at https://github.com/mhjensen/Physics321/blob/master/doc/HandWrittenNotes/Spring2023/NotesMarch20.pdf  
-- Wednesday 3/21: Preparing the ground for the  gravitional force and its solution in two dimensions
-  - Video of lecture at https://youtu.be/Di-WVWTjKuw
-  - Handwritten notes at https://github.com/mhjensen/Physics321/blob/master/doc/HandWrittenNotes/Spring2023/NotesMarch22.pdf
-- Reading suggestion: Taylor chapter 8.4 and lecture notes
-- Friday 3/24:  Summary and discussions of two-body problems and work on homework 7.  Deadline seventh homework.
-- Solution to seventh homework at https://github.com/mhjensen/Physics321/tree/master/doc/Homeworks/Solutions
-### Week 13, March 27-31, 2023
-- Monday 3/27: Computational topics: functions and classes, the harmonic oscillator as warm-up case
-  - Reading suggestion: Lecture notes and Taylor section 8.4
-  - Video of lecture at https://youtu.be/SIaY-RTV4VE
-  - Handwritten notes for lecture at https://github.com/mhjensen/Physics321/blob/master/doc/HandWrittenNotes/Spring2023/NotesMarch27.pdf
- - Wednesday 3/29: Discussion of elliptical orbits and Kepler's laws
-  - Reading suggestion: lecture notes and Taylor sections 8.5-8.6
-  - Video of lecture at https://youtu.be/TlcHXrzVY-I
-  - Handwritten notes at https://github.com/mhjensen/Physics321/blob/master/doc/HandWrittenNotes/Spring2023/NotesMarch29.pdf
-- Friday 3/31:  Summary of week and discussion of homework 8
-  - Video of lecture at https://youtu.be/uTvuXu5J1N0
-  - Handwritten notes at https://github.com/mhjensen/Physics321/blob/master/doc/HandWrittenNotes/Spring2023/NotesMarch31.pdf
-- Solution to eighth  hw at https://github.com/mhjensen/Physics321/tree/master/doc/Homeworks/Solutions
+##### The Principle of Least Action (20 minute video)
 
-### Week 14, April 3-7, 2023
-- Monday 4/3: Physical interpretation of various orbit types
-  - Reading suggestions: lecture notes and Taylor section 8.5-8.8. Second midterm available April 3
-  - Video of lecture at https://youtu.be/HwaxZFeJ4eg
-  - Handwritten notes at https://github.com/mhjensen/Physics321/blob/master/doc/HandWrittenNotes/Spring2023/NotesApril3.pdf  
-- Wednesday 4/5:  Discussion of second midterm, hints and tips plus Kepler orbit analysis
-  - Video of Lecture at https://youtu.be/xnMIkLE_rzM
-  - Handwritten notes at https://github.com/mhjensen/Physics321/blob/master/doc/HandWrittenNotes/Spring2023/NotesApril5.pdf
+[Newtonian Mechanics](https://en.wikipedia.org/wiki/Newton%27s_laws_of_motion) is an incredibly useful model of the natural world. In fact, it wasn't until the mid 1970s that we were able to truly [test Einstein's gravity as a true replacement](https://en.wikipedia.org/wiki/Tests_of_general_relativity) for Newton. That being said, for most terrestrial situations (macroscopic objects moving at low speeds), Newton's mechanics is very good. However, the problem with Newton is that it requires a few things:
 
-- Friday 4/7: Summary of week and discussion of and work on second midterm. Deadline 2nd midterm is April 15
-  - Video at https://youtu.be/_JZbimHBwSI with hints for part 2
-  - Handwritten notes at https://github.com/mhjensen/Physics321/blob/master/doc/HandWrittenNotes/Spring2023/NotesApril7.pdf
-  
-### Week 15, April  10-14, 2023
-- Monday 4/10: Lagrangian formalism
-  - Reading suggestion: Lecture notes and Taylor sections 6.1-6.4
-  - Handwritten notes at https://github.com/mhjensen/Physics321/blob/master/doc/HandWrittenNotes/Spring2023/NotesApril10.pdf   - Video of lecture at https://youtu.be/Sfkdnq9JKB8
-- Wednesday 4/12: Lagrangian formalism and derivation of Euler-Lagrange equations
-  - Reading suggestions: lecture notes and Taylor sections 6.1-6.4
-  - Video of lecture at https://youtu.be/vNKn1HyC9kw
-  - Handwritten notes at https://github.com/mhjensen/Physics321/blob/master/doc/HandWrittenNotes/Spring2023/NotesApril12.pdf    
-- Friday 4/14: Summary of week and work on second midterm. Deadline second midterm.
-- Solution to second midterm at https://github.com/mhjensen/Physics321/tree/master/doc/Homeworks/Solutions
+1. We must be able identify each interaction on the object or model an average behavior from many littler interactions (e.g., models of friction vs. detailed E&M forces)
+2. We must be able to mathematically describe the size and direction of the interaction at all times we want to model
+3. We must be able to vectorially add the interactions to produce the net force $\sum_i \vec{F}_i = \vec{F}_{net}$.
 
-### Week 16, April 17-21, 2023
-- Monday 4/17:  Lagrangian formalism and Variational Calculus
-  - Reading suggestions: lecture notes and Taylor sections 6.1-6.4
-  - Video of lecture at https://youtu.be/IwVDDlQgJ60
-  - Handwritten notes at https://github.com/mhjensen/Physics321/blob/master/doc/HandWrittenNotes/Spring2023/NotesApril17.pdf    
-- Wednesday 4/19: Euler-Lagrange equations and the Lagrangian with examples and Principle of Least Action
-  - Video of lecture at https://youtu.be/f_Kwaf_W8WU
-  - Handwritten notes at https://github.com/mhjensen/Physics321/blob/master/doc/HandWrittenNotes/Spring2023/NotesApril19.pdf
-  - Reading suggestions: lecture notes and Taylor sections 6.3-6.4
-- Friday 4/21:  Work on homework nine. Deadline ninth homework April 28.
-- Solution to ninth  hw at https://github.com/mhjensen/Physics321/tree/master/doc/Homeworks/Solutions
+In many cases, we can do this. But consider a bead sliding inside a cone. How would you write down the contact force between the cone and the bead for all space and time?
 
-### Week 17, April 24- April 28, 2023
-- Monday 4/24:  Lagrangian formalism and discussion of final from 2022
-  - Video of lecture at	https://youtu.be/YwVy79eJ8uU
-  - Handwritten notes at https://github.com/mhjensen/Physics321/blob/master/doc/HandWrittenNotes/Spring2023/NotesApril24.pdf
-- Wednesday 4/26: Summary of course and	discussion of final
-  - Video of lecture at https://youtu.be/k-C6FU3hzNQ
-- Friday 4/28:	Discussion and work on final project
-### Week 18, May 1-5, 2023
-Depending on your availability, we can have at least two sessions in order to discuss the final project.
-- Final Exam:  The final exam will be a project similar to the two midterm projects. Deadline May 5 at midnight. -->
-</div>
-</div>
-</div>
+This is where [Lagrangian Mechanics](https://en.wikipedia.org/wiki/Lagrangian_mechanics) comes in. It is a powerful and elegant way to describe the motion of particles and systems. It is based on the [Calculus of Variations](https://en.wikipedia.org/wiki/Calculus_of_variations), a field of mathematics that is concerned with finding the path that minimizes or maximizes (called "extremization") a certain quantity. In the case of Lagrangian Mechanics, the quantity we are extremizing is the [action](https://en.wikipedia.org/wiki/Action_(physics)).
+
+The video below discusses the concept of the Principle of Least Action, which is the foundation of Lagrangian Mechanics.
+
+[![The Principle of Least Action](https://markdown-videos-api.jorgenkh.no/youtube/Q_CQDSlmboA?width=720&height=405)](https://youtube.com/watch?v=Q_CQDSlmboA)
+- Non-Commercial Link: [https://inv.n8pjl.ca/watch?v=Q_CQDSlmboA](https://inv.n8pjl.ca/watch?v=Q_CQDSlmboA)
+- Commercial Link: [https://youtube.com/watch?v=Q_CQDSlmboA](https://youtube.com/watch?v=Q_CQDSlmboA)
+
+##### Introduction to Lagrangian Dynamics (10 minute video)
+
+Parth G. has a lovely video below about the basics of Lagrangian Dynamics. We will do a lot of this in class and go over many examples. This video is a nice introduction to the concept.
+
+[![](https://markdown-videos-api.jorgenkh.no/youtube/KpLno70oYHE?width=720&height=405)](https://youtube.com/watch?v=KpLno70oYHE)
+- Non-Commercial Link: [https://inv.n8pjl.ca/watch?v=KpLno70oYHE](https://inv.n8pjl.ca/watch?v=KpLno70oYHE)
+- Commercial Link: [https://youtube.com/watch?v=KpLno70oYHE](https://youtube.com/watch?v=KpLno70oYHE)
+
+#### Class Materials
+- Readings:
+  - JRT 7.1-7.2, 7.5; MLB 9.5
+- Handwritten Notes:
+  - CW12: [Introduction to Lagrangian Dynamics](../docs/handwritten-notes/CW12.pdf)
+- Notes:
+  - [Lagrangian Mechanics](../lecture-notes/lagrangians.ipynb)
+- Lecture Videos:
+  - [25 Mar 2024](https://mediaspace.msu.edu/media/t/1_zwd49u65)
+  - [27 Mar 2024](https://mediaspace.msu.edu/media/t/1_p7wcsxf4)
+
+
+### Week 11, March 18-22, 2024
+
+Topics: Calculus of Variations
+
+#### Videos to Watch
+
+While never required, these videos are recommended to help you see the larger picture of what we are doing in class.
+
+##### The Math of Bubbles (17 minute video)
+
+We are eventually going to develop some deep principles of classical mechanics that will connect for us the motion of particles and the forces they experience to the energy that moves between aspects of the system. This formulation of mechanics is called [Lagrangian Mechanics](https://en.wikipedia.org/wiki/Lagrangian_mechanics). It is a powerful and elegant way to describe the motion of particles and systems. It is based on the [Calculus of Variations](https://en.wikipedia.org/wiki/Calculus_of_variations), a field of mathematics that is concerned with finding the path that minimizes or maximizes (called "extremization") a certain quantity.
+
+This mathematics is very powerful and underlies how we can develop equations of motion in particular systems. But is also describes the shape of surfaces like bubbles and droplets. The video below is a nice introduction to the concept of Calculus of Variations and it's relation to [minimal surfaces](https://en.wikipedia.org/wiki/Minimal_surface).
+
+[![The Math of Bubbles: Minimal Surfaces & the Calculus of Variations](https://markdown-videos-api.jorgenkh.no/youtube/8SABptOYUVk?width=720&height=405)](https://youtube.com/watch?v=8SABptOYUVk)
+
+- Non-Commercial Link: [https://inv.n8pjl.ca/watch?v=8SABptOYUVk](https://inv.n8pjl.ca/watch?v=8SABptOYUVk)
+- Commercial Link: [https://youtube.com/watch?v=8SABptOYUVk](https://youtube.com/watch?v=8SABptOYUVk)
+
+#### Class Materials
+- Readings:
+  - JRT 6.1-6.3; MLB 9.1-9.4
+- Handwritten Notes:
+  - CW11: [Calculus of Variations](../docs/handwritten-notes/CW11.pdf)
+- Lecture Videos:
+  - [18 Mar 2024](https://mediaspace.msu.edu/media/t/1_rr109ryy)
+  - [20 Mar 2024](https://mediaspace.msu.edu/media/t/1_dat6u1eo)
+
+### Week 10, March 11-15, 2024
+
+Topics: Fourier Series Expansions
+
+#### Videos to Watch
+
+While never required, these videos are recommended to help you see the larger picture of what we are doing in class.
+
+##### The Fast Fourier Transform (FFT) (26 minute video)
+
+We will be learning the analytical methods used to decompose periodic signals. The [Fourier Series](https://en.wikipedia.org/wiki/Fourier_series) is a mathematical tool that allows us to decompose periodic signals into a sum of sines and cosines. It is a super important tool in physics and engineering. 
+
+But, this kind of signal decomposition is a critical tool in many modern areas of research. In the time since Fourier's original work, the field has expanded to include other series, as well as development like the [Fourier Transform](https://en.wikipedia.org/wiki/Fourier_transform) and the incredibly useful [Fast Fourier Transform](https://en.wikipedia.org/wiki/Fast_Fourier_transform) (FFT). The FFT is a computational algorithm that allows us to compute Fourier Transforms very quickly and it has been one of the most important algorithms in the history of computing. It is used in a wide variety of applications, including signal processing, image processing, and data compression.
+
+The video below describes the concept and history of the FFT and its importance.
+
+[![The Remarkable Story Behind The Most Important Algorithm Of All Time](https://markdown-videos-api.jorgenkh.no/youtube/nmgFG7PUHfo?width=720&height=405)](https://youtube.com/watch?v=nmgFG7PUHfo)
+
+- Non-Commercial Link: [https://inv.n8pjl.ca/watch?v=nmgFG7PUHfo](https://inv.n8pjl.ca/watch?v=nmgFG7PUHfo)
+- Commercial Link: [https://youtube.com/watch?v=nmgFG7PUHfo](https://youtube.com/watch?v=nmgFG7PUHfo)
+
+#### Class Materials
+- Readings:
+  - JRT 5.7; MLB 7.3-7.5
+- Handwritten Notes:
+  - CW10: [Fourier Series](../docs/handwritten-notes/CW10.pdf)
+- Lecture Videos:
+  - [11 Mar 2024](https://mediaspace.msu.edu/media/t/1_wtepzqw0)
+  - [13 Mar 2024](https://mediaspace.msu.edu/media/t/1_fk8a37u1)
+  - [15 Mar 2024](https://mediaspace.msu.edu/media/t/1_g79z705y)
+
+### Week 9, March 4-8, 2024
+
+Topics: Damped Driven Oscillations, Resonance
+
+#### Videos to Watch
+
+While never required, these videos are recommended to help you see the larger picture of what we are doing in class.
+
+##### Collapse of the Tacoma Narrows Bridge (9 minute video)
+
+Driven oscillators are very common in the world. Analog radios use a driven oscillator that is tuned to a specific frequency (99.5 FM is tuned to 99.5 MHz). When you dial the radio you are "tuning" the oscillator to the frequency of the broadcast. This is an illustration of the phenomenon of [resonance](https://en.wikipedia.org/wiki/Resonance). Resonance is a phenomenon where a system is driven at a frequency that matches (or closely matches) its natural frequency. When this happens, the amplitude of the oscillation can grow very large. This is the phenomenon that caused the [collapse of the Tacoma Narrows Bridge](https://en.wikipedia.org/wiki/Tacoma_Narrows_Bridge_(1940)) in 1940.  T
+
+The video below describes the collapse and how the bridge was rebuilt to avoid the same problem. 
+
+[![Why the Tacoma Narrows Bridge Collapsed](https://markdown-videos-api.jorgenkh.no/youtube/mXTSnZgrfxM?width=720&height=405)](https://youtube.com/watch?v=mXTSnZgrfxM)
+
+- Non-Commercial Link: [https://inv.n8pjl.ca/watch?v=mXTSnZgrfxM](https://inv.n8pjl.ca/watch?v=mXTSnZgrfxM)
+- Commercial Link: [https://youtube.com/watch?v=mXTSnZgrfxM](https://youtube.com/watch?v=mXTSnZgrfxM)
+
+#### Class Materials
+- Readings:
+  - JRT 5.5-5.6; MLB 8.6
+- Handwritten Notes:
+  - CW9: [Damped Driven Oscillations](../docs/handwritten-notes/CW9.pdf)
+- Lecture Videos:
+  - [4 Mar 2024](https://mediaspace.msu.edu/media/t/1_qj6wzo83)
+  - 6 Mar 2024 - Homework Help Session
+  - [8 Mar 2024](https://mediaspace.msu.edu/media/t/1_p8cll95m)
+
+
+### Week 8, February 26-March 1, 2024
+
+SPRING BREAK
+
+### Week 7, February 19-23, 2024
+
+Topics: Oscillations
+
+#### Videos to Watch
+
+While never required, these videos are recommended to help you see the larger picture of what we are doing in class. 
+
+
+##### Synchronization (21 minute video)
+
+How do fireflies end up blinking together? How do walking people end up moving in step? How does your heart physically push blood through your body? Each of these questions has to do with the physics of [synchronization](https://en.wikipedia.org/wiki/Synchronization). There's a lot of interesting physics in this space. The phenomenon of synchronization is rooted in the physics of [oscillations](https://en.wikipedia.org/wiki/Oscillation) and [waves](https://en.wikipedia.org/wiki/Wave). When oscillators couple (or influence each other), we begin to see behavior that is more complex than the sole oscillator. These "coupled oscillators" can demonstrate a wide variety of behaviors, including synchronization. They also form the basis for important technologies like [lasers](https://en.wikipedia.org/wiki/Laser) and [radio transmitters](https://en.wikipedia.org/wiki/Radio_transmitter).
+
+ We will begin our study of oscillations with the [simple harmonic oscillator](https://en.wikipedia.org/wiki/Simple_harmonic_motion) and then move to more complex systems (e.g., [the Duffing oscillator](https://en.wikipedia.org/wiki/Duffing_equation)).
+
+ The video below is a good introduction to the topic of synchronization. 
+
+[![The Surprising Secret of Synchronization](https://markdown-videos-api.jorgenkh.no/youtube/t-_VPRCtiUg?width=720&height=405)](https://youtube.com/watch?v=t-_VPRCtiUg)
+
+- Non-Commercial Link: [https://inv.n8pjl.ca/watch?v=t-_VPRCtiUg](https://inv.n8pjl.ca/watch?v=t-_VPRCtiUg)
+- Commercial Link: [https://youtube.com/watch?v=t-_VPRCtiUg](https://youtube.com/watch?v=t-_VPRCtiUg)
+
+#### Class Materials
+- Readings:
+  - JRT 5.1-5.2, 5.4; MLB 7.1-7.2; 8.5
+- Handwritten Notes:
+  - CW7: [Oscillations](../docs/handwritten-notes/CW7.pdf)
+- Lecture Videos:
+  - [19 Feb 2024](https://mediaspace.msu.edu/media/t/1_n90d2mj6)
+  - [21 Feb 2024](https://mediaspace.msu.edu/media/t/1_j6ltnm1h)
+
+#### Assignments
+
+- [Homework 5](../homeworks/hw5.ipynb) (due March 8, 2024)
+- [Midterm 1](../midterms/midterm1.ipynb) (due February 23, 2024)
+
+### Week 6, February 12-16, 2024
+
+Topics: Phase Space and Non-Linear Dynamics
+
+#### Videos to Watch
+
+While never required, these videos are recommended to help you see the larger picture of what we are doing in class. 
+
+
+##### Numerical Integration 
+
+[Numerical Integration](https://en.wikipedia.org/wiki/Numerical_integration) is a vast and wide topic with lots of different approaches, important nuances, and difficult problems. Some of the most high profile numerical integration was done by NASA's [human computers](https://education.nationalgeographic.org/resource/women-nasa) -- a now well-known story thanks to the film [Hidden Figures](https://en.wikipedia.org/wiki/Hidden_Figures). Black women formed a core group of these especially talented scientists (including [Mary Jackson](https://en.wikipedia.org/wiki/Mary_Jackson_(engineer)), [Katherine Johnson](https://en.wikipedia.org/wiki/Katherine_Johnson), and [Dorothy Vaughn](https://en.wikipedia.org/wiki/Dorothy_Vaughan)), without whom, John Glenn would not have orbited the Earth in 1962. This is also a very interesting story about the importance of [Historically Black Colleges and Universities](https://en.wikipedia.org/wiki/Historically_black_colleges_and_universities) to American science.
+
+Below is a video describing 3 coupled ODEs, the [Lorenz equations](https://en.wikipedia.org/wiki/Lorenz_system), that are quite famous. You will be able to model systems like this, but for now think of it as motivation for why we want to learn numerical integration.
+
+[![Chaos | Chapter 7 : Strange Attractors - The butterfly effect](https://markdown-videos-api.jorgenkh.no/youtube/aAJkLh76QnM?width=720&height=405))](https://inv.n8pjl.ca/watch?v=aAJkLh76QnM)
+- Non-Commercial Link: [https://inv.n8pjl.ca/watch?v=aAJkLh76QnM?](https://inv.n8pjl.ca/watch?v=aAJkLh76QnM?)
+- Commercial Link: [https://youtube.com/watch?v=aAJkLh76QnM?](https://youtube.com/watch?v=aAJkLh76QnM?)
+
+##### Geometric Thinking and Phase Portraits
+
+One of the first things we will use to investigate systems from a dynamical systems perspective is the [phase portrait](https://en.wikipedia.org/wiki/Phase_portrait), where we will plot the velocity against the position. We can use the phase portrait to tell us what families of solutions we might expect to see. 
+
+*Phase portraits are quite useful for second order differential equations (or any two-dimensional system) because we frequently use and interpret 2D graphs.* Notice that we focused on "2nd order differential equations" not "linear 2nd order." That is because, as we will see, **phase portraits are particularly useful for nonlinear 2nd order differential equations.**
+
+We will go into the details of how to construct and develop phase portraits in class. This video from [Steve Brunton](https://www.me.washington.edu/facultyfinder/steve-brunton) is a good overview of the process. It's quite detailed and takes a mathematical perspective, so don't worry if you don't understand everything in the video. We have plenty of time to investigate how this works in practice.
+
+[![Drawing Phase Portraits for Nonlinear Systems](https://markdown-videos-api.jorgenkh.no/youtube/vBwyD4JJlSs?width=720&height=405)](https://youtube.com/watch?v=vBwyD4JJlSs)
+
+- Non-Commercial Link: [https://inv.n8pjl.ca/watch?v=vBwyD4JJlSs](https://inv.n8pjl.ca/watch?v=vBwyD4JJlSs)
+- Commercial Link: [https://youtube.com/watch?v=vBwyD4JJlSs](https://youtube.com/watch?v=vBwyD4JJlSs)
+
+#### Class Materials
+- Readings:
+  - [Strogatz](https://www.stevenstrogatz.com/books/nonlinear-dynamics-and-chaos-with-applications-to-physics-biology-chemistry-and-engineering) [2.0-2.3](../docs/textbook-chapters/strogatz_3rd_ch2.0-2.3.pdf); [5.0-5.2](../docs/textbook-chapters/strogatz_3rd_ch5.0-5.2.pdf) 
+- Additional Readings:
+  - [Newman's Computational Physics - Ch8 - Solving ODEs](../docs/textbook-chapters/Newman_Ch8_ODEs.pdf)
+  - [Cromer's original paper on the Euler-Cromer method](../docs/papers/euler_cromer_1981.pdf)
+- Handwritten Notes:
+  - CW6: [Phase Space and Nonlinear Dynamics](../docs/handwritten-notes/CW6.pdf)
+- Lecture Videos:
+  - [12 Feb 2024](https://mediaspace.msu.edu/media/t/1_pa3afrh5)
+  - [14 Feb 2024](https://mediaspace.msu.edu/media/t/1_zlcyf858)
+
+#### Assignments
+
+- [Midterm 1](../midterms/midterm1.ipynb) (due February 23, 2024)
+
+
+### Week 5, February 5-9, 2024
+
+Topics: Conservative Forces, Potential Energy, Stability
+
+#### Videos to Watch
+
+While never required, these videos are recommended to help you see the larger picture of what we are doing in class. 
+
+##### Where do we think mass comes from? (13 minute video)
+
+The [Higgs Boson](https://en.wikipedia.org/wiki/Higgs_boson) is a particle that was discovered in 2012 at the [Large Hadron Collider](https://en.wikipedia.org/wiki/Large_Hadron_Collider) at [CERN](https://en.wikipedia.org/wiki/CERN). This discovery was a major milestone in the field of particle physics. Much of what we are trying to understand about the nature of mass is encapsulated in the [Higgs Field](https://en.wikipedia.org/wiki/Higgs_field). This is an advanced field with a potential that we are not intending to explore. However, the importance of the basic question of "where does mass come from?" is a fundamental question in physics and the concept of energy, potential, and fields is a critical part of the answer.
+
+[![The Crazy Mass-Giving Mechanism of the Higgs Field Simplified](https://markdown-videos-api.jorgenkh.no/youtube/R7dsACYTTXE?width=720&height=405)](https://youtube.com/watch?v=R7dsACYTTXE)
+
+- Non-Commercial Link: [https://inv.n8pjl.ca/watch?v=R7dsACYTTXE](https://inv.n8pjl.ca/watch?v=R7dsACYTTXE)
+- Commercial Link: [https://youtube.com/watch?v=R7dsACYTTXE](https://youtube.com/watch?v=R7dsACYTTXE)
+
+
+#### Class Materials
+- Readings:
+  - JRT 4.1-4.4, 4.6; MLB 6.6-6.8
+- Handwritten Notes:
+  - CW5: [Potential Energy](../docs/handwritten-notes/CW5.pdf)
+- Lecture Videos:
+  - [5 Feb 2024](https://mediaspace.msu.edu/media/t/1_womzepbu)
+  - [7 Feb 2024](https://mediaspace.msu.edu/media/t/1_xwyxkt7m)
+
+#### Assignments
+
+- [Homework 4](../homeworks/hw4.ipynb) (due February 9, 2024)
+
+### Week 4, January 29-February 2, 2024
+
+Topics: Work-Energy Theorem, Conservative Forces, Momentum Conservation
+
+#### Videos to Watch
+
+While never required, these videos are recommended to help you see the larger picture of what we are doing in class. 
+
+##### Feynman on the units of energy (2 minute video)
+
+[Richard Feynman](https://en.wikipedia.org/wiki/Richard_Feynman) was a Nobel Prize winning physicist who was known for his ability to explain complex ideas in simple terms. In this video, he explains the units of energy. He's engaging and gregarious as he was known publicly. 
+
+[![Feynman on the units of energy](https://markdown-videos-api.jorgenkh.no/youtube/roX2NXDUTsM?width=720&height=405)](https://youtube.com/watch?v=roX2NXDUTsM)
+
+- Non-Commercial Link: [https://inv.n8pjl.ca/watch?v=roX2NXDUTsM](https://inv.n8pjl.ca/watch?v=roX2NXDUTsM)
+- Commercial Link: [https://youtube.com/watch?v=roX2NXDUTsM](https://youtube.com/watch?v=roX2NXDUTsM)
+
+```{note}
+While we acknowledge the importance of Feynman's contributions to physics and physics teaching, we should remind ourselves that he was not a perfect person. 
+
+Feynman was also known for his [sexist behavior and comments](https://caltechletters.org/viewpoints/feynman-harassment-science). (*Trigger warning*: this link recounts instances of harassment) 
+
+We should not ignore this aspect of his life, and remind ourselves that we can learn from his physics, and make a welcoming space for all people.
+```
+
+##### How does electricity work? (15 minute video)
+
+Energy is a fundamental concept in physics, but it is also a very abstract concept. Feynman is quoted as saying: "*It is important to realize that in physics today, we have no knowledge of what energy is.*" 
+
+It's a number a quantity, that when we compute it, we find it stays the same before and after a process - so long as we account for all the interactions and uses in that case. 
+
+To frame how interesting and complex energy can be, consider this video from the [Veritasium channel](https://inv.n8pjl.ca/channel/UCHnyfMqiRRG1u-2MsSQLbXA). [[Commerical Link](https://www.youtube.com/channel/UCHnyfMqiRRG1u-2MsSQLbXA)]
+
+*How do we get light from a circuit when we close a switch?*
+
+[![The Big Misconception About Electricity](https://markdown-videos-api.jorgenkh.no/youtube/bHIhgxav9LY?width=720&height=405)](https://youtube.com/watch?v=bHIhgxav9LY)
+
+- Non-Commercial Link: [https://inv.n8pjl.ca/watch?v=bHIhgxav9LY](https://inv.n8pjl.ca/watch?v=bHIhgxav9LY)
+- Commercial Link: [https://youtube.com/watch?v=bHIhgxav9LY](https://youtube.com/watch?v=bHIhgxav9LY)
+
+#### Class Materials
+- Readings:
+  - JRT 4.1-4.3; JRT 3.1-3.4
+- Handwritten Notes:
+  - CW4: [Conservation Laws](../docs/handwritten-notes/CW4.pdf)
+- Lecture Videos:
+  - [29 Jan 2024](https://mediaspace.msu.edu/media/t/1_0of138eb)
+  - [31 Jan 2024](https://mediaspace.msu.edu/media/t/1_m3w1c61k)
+
+#### Assignments
+
+- [Homework 3](../homeworks/hw3.ipynb) (due February 2, 2024)
+
+
+### Week 3, January 22-26, 2024
+
+Topics: Modeling with Newton's Second Law, Motion in 2D, Drag Forces
+
+#### Videos to Watch
+
+While never required, these videos are recommended to help you see the larger picture of what we are doing in class. These two focus on the physics of low [Reynolds number](https://en.wikipedia.org/wiki/Reynolds_number) flows.  
+
+##### Physics of Life - Life at Low Reynolds Number (15 minute video)
+
+This video focuses on the biological aspects of the problem as the physics of low Reynolds numbers is important for understanding the motion of microorganisms. 
+[![Physics of Life - Life at Low Reynolds Number](https://markdown-videos-api.jorgenkh.no/youtube/Qme07fA3Fj4?width=720&height=405)](https://youtube.com/watch?v=gZk2bMaqs1E)
+
+- Non-Commercial Link: [https://inv.n8pjl.ca/watch?v=gZk2bMaqs1E](https://inv.n8pjl.ca/watch?v=gZk2bMaqs1E)
+- Commercial Link: [https://youtube.com/watch?v=gZk2bMaqs1E](https://youtube.com/watch?v=gZk2bMaqs1E)
+
+##### G.I. Taylor's Low Reynolds Number Flows (32 minute video)
+
+This video is a classic from [G.I. Taylor](https://en.wikipedia.org/wiki/Geoffrey_Ingram_Taylor) who was a physicist interested in sharing the conceptual beauty of physics with the general public. He was also a pioneer in the field of fluid mechanics. In fact, Taylor's [groundbreaking paper](https://royalsocietypublishing.org/doi/10.1098/rsta.1923.0008) on the stability of fluid flows between two rotating cylinders set off studies into turbulence. The [Taylor-Couette flow](https://en.wikipedia.org/wiki/Taylor%E2%80%93Couette_flow) is a critical tool for [studies of turbulence](https://pubmed.ncbi.nlm.nih.gov/20365623/).
+
+[![G.I. Taylor's Low Reynolds Number Flows](https://markdown-videos-api.jorgenkh.no/youtube/8Dst6V4CQME?width=720&height=405)](https://youtube.com/watch?v=8Dst6V4CQME)
+
+- Non-Commercial Link: [https://inv.n8pjl.ca/watch?v=8Dst6V4CQME](https://inv.n8pjl.ca/watch?v=8Dst6V4CQME)
+- Commercial Link: [https://youtube.com/watch?v=8Dst6V4CQME](https://youtube.com/watch?v=8Dst6V4CQME)
+
+#### Class Materials
+- Readings:
+  - JRT 2.1-2.4
+- Handwritten Notes:
+  - CW3: [Forces and Motion](../docs/handwritten-notes/CW3.pdf)
+- Lecture Videos:
+  - [22 Jan 2024](https://mediaspace.msu.edu/media/t/1_injjcj1y)
+  - [24 Jan 2024](https://mediaspace.msu.edu/media/t/1_p43v9u78) - no audio first 27 minutes...
+
+#### Assignments
+
+- [Homework 2](../homeworks/hw2.ipynb) (due January 26, 2024)
+
+### Week 2, January 16-19, 2024
+
+Topics: Modeling with Newton's Second Law, Motion in 1D
+
+#### Web Resources
+  - [What is Mathematical Modeling?](../lecture-notes/chapter2-overview.ipynb)
+  - [Classical Mechanics, Mathematics, and Numerical background](../lecture-notes/chapter2.ipynb)
+
+#### Class Materials
+- Readings:
+  - JRT 1.4-1.6; AMS Ch 4.2 and Ch 5
+- Handwritten Notes:
+  - CW1: [Making Classical Models](../docs/handwritten-notes/CW2.pdf)
+- Lecture Videos:
+  - 17 Jan 2024 (ipad crashed zoom)
+
+#### Assignments
+
+- [Homework 2](../homeworks/hw2.ipynb) (due January 26, 2024) -->
+</section>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -1354,8 +876,8 @@ Depending on your availability, we can have at least two sessions in order to di
               
               
               
-                <footer class="prev-next-footer">
-                  <!-- Previous / next buttons -->
+                <footer class="prev-next-footer d-print-none">
+                  
 <div class="prev-next-area">
     <a class="left-prev"
        href="schedule-cal.html"
@@ -1363,15 +885,15 @@ Depending on your availability, we can have at least two sessions in order to di
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Calendar</p>
+        <p class="prev-next-title">Course Calendar</p>
       </div>
     </a>
     <a class="right-next"
-       href="../lecture-notes/chapter1.html"
+       href="../lecture-notes/week1/01_start.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">1. What is Classical Physics?</p>
+        <p class="prev-next-title">Week 1- Overture: What is Classical Physics?</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -1382,7 +904,9 @@ Depending on your availability, we can have at least two sessions in order to di
             
             
               
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -1390,123 +914,9 @@ Depending on your availability, we can have at least two sessions in order to di
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#zoom-playlist">Zoom Playlist</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#week-15-april-15-19-2024">Week 15, April 15-19, 2024</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#videos-to-watch">Videos to Watch</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#where-do-we-go-from-here-20-video-playlist">Where do we go from here? (20 video playlist)</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#class-week-1-january-13-17-2025-cw3">Class Week 1, January 13-17, 2025 (CW3)</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#class-materials">Class Materials</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#week-14-april-8-12-2024">Week 14, April 8-12, 2024</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Videos to Watch</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#solar-eclipses-were-terrifying-3-minute-video">Solar Eclipses were terrifying (3 minute video)</a></li>
-</ul>
-</li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Class Materials</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#week-13-april-1-5-2024">Week 13, April 1-5, 2024</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Videos to Watch</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#the-standard-model-lagrangian-17-minute-video">The Standard Model Lagrangian (17 minute video)</a></li>
-</ul>
-</li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Class Materials</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#week-12-march-25-29-2024">Week 12, March 25-29, 2024</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Videos to Watch</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#the-principle-of-least-action-20-minute-video">The Principle of Least Action (20 minute video)</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction-to-lagrangian-dynamics-10-minute-video">Introduction to Lagrangian Dynamics (10 minute video)</a></li>
-</ul>
-</li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Class Materials</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#week-11-march-18-22-2024">Week 11, March 18-22, 2024</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Videos to Watch</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#the-math-of-bubbles-17-minute-video">The Math of Bubbles (17 minute video)</a></li>
-</ul>
-</li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Class Materials</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#week-10-march-11-15-2024">Week 10, March 11-15, 2024</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Videos to Watch</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#the-fast-fourier-transform-fft-26-minute-video">The Fast Fourier Transform (FFT) (26 minute video)</a></li>
-</ul>
-</li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Class Materials</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#week-9-march-4-8-2024">Week 9, March 4-8, 2024</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">Videos to Watch</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#collapse-of-the-tacoma-narrows-bridge-9-minute-video">Collapse of the Tacoma Narrows Bridge (9 minute video)</a></li>
-</ul>
-</li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">Class Materials</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#week-8-february-26-march-1-2024">Week 8, February 26-March 1, 2024</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#week-7-february-19-23-2024">Week 7, February 19-23, 2024</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">Videos to Watch</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#synchronization-21-minute-video">Synchronization (21 minute video)</a></li>
-</ul>
-</li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">Class Materials</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#assignments">Assignments</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#week-6-february-12-16-2024">Week 6, February 12-16, 2024</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">Videos to Watch</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#numerical-integration">Numerical Integration</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#geometric-thinking-and-phase-portraits">Geometric Thinking and Phase Portraits</a></li>
-</ul>
-</li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">Class Materials</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">Assignments</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#week-5-february-5-9-2024">Week 5, February 5-9, 2024</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id18">Videos to Watch</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#where-do-we-think-mass-comes-from-13-minute-video">Where do we think mass comes from? (13 minute video)</a></li>
-</ul>
-</li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id19">Class Materials</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id20">Assignments</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#week-4-january-29-february-2-2024">Week 4, January 29-February 2, 2024</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id21">Videos to Watch</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#feynman-on-the-units-of-energy-2-minute-video">Feynman on the units of energy (2 minute video)</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#how-does-electricity-work-15-minute-video">How does electricity work? (15 minute video)</a></li>
-</ul>
-</li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id22">Class Materials</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id23">Assignments</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#week-3-january-22-26-2024">Week 3, January 22-26, 2024</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id24">Videos to Watch</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#physics-of-life-life-at-low-reynolds-number-15-minute-video">Physics of Life - Life at Low Reynolds Number (15 minute video)</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#g-i-taylor-s-low-reynolds-number-flows-32-minute-video">G.I. Taylor’s Low Reynolds Number Flows (32 minute video)</a></li>
-</ul>
-</li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id25">Class Materials</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id26">Assignments</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#week-2-january-16-19-2024">Week 2, January 16-19, 2024</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#web-resources">Web Resources</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id27">Class Materials</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id28">Assignments</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#week-1-january-8-12-2024">Week 1, January 8-12, 2024</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id29">Web Resources</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id30">Class Materials</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id31">Assignments</a></li>
 </ul>
 </li>
 </ul>
@@ -1523,16 +933,17 @@ Depending on your availability, we can have at least two sessions in order to di
   <div class="footer-item">
     
 <p class="component-author">
-By Danny Caballero, Morten Hjorth-Jensen
+By Danny Caballero, Morten Hjorth-Jensen, Rachel Henderson
 </p>
 
   </div>
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
-      © Copyright 2022.
+      © Copyright 2023.
       <br/>
     
   </p>
@@ -1556,8 +967,8 @@ By Danny Caballero, Morten Hjorth-Jensen
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
+  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
 
   <footer class="bd-footer">
   </footer>

@@ -1,40 +1,103 @@
 Traceback (most recent call last):
-  File "/Users/caballero/anaconda3/envs/teaching/lib/python3.9/site-packages/jupyter_cache/executors/utils.py", line 58, in single_nb_execution
+  File "/home/venv/lib/python3.12/site-packages/jupyter_cache/executors/utils.py", line 58, in single_nb_execution
     executenb(
-  File "/Users/caballero/anaconda3/envs/teaching/lib/python3.9/site-packages/nbclient/client.py", line 1305, in execute
+  File "/home/venv/lib/python3.12/site-packages/nbclient/client.py", line 1319, in execute
     return NotebookClient(nb=nb, resources=resources, km=km, **kwargs).execute()
-  File "/Users/caballero/anaconda3/envs/teaching/lib/python3.9/site-packages/jupyter_core/utils/__init__.py", line 173, in wrapped
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/venv/lib/python3.12/site-packages/jupyter_core/utils/__init__.py", line 165, in wrapped
     return loop.run_until_complete(inner)
-  File "/Users/caballero/anaconda3/envs/teaching/lib/python3.9/asyncio/base_events.py", line 647, in run_until_complete
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
     return future.result()
-  File "/Users/caballero/anaconda3/envs/teaching/lib/python3.9/site-packages/nbclient/client.py", line 705, in async_execute
+           ^^^^^^^^^^^^^^^
+  File "/home/venv/lib/python3.12/site-packages/nbclient/client.py", line 709, in async_execute
     await self.async_execute_cell(
-  File "/Users/caballero/anaconda3/envs/teaching/lib/python3.9/site-packages/nbclient/client.py", line 1058, in async_execute_cell
+  File "/home/venv/lib/python3.12/site-packages/nbclient/client.py", line 1062, in async_execute_cell
     await self._check_raise_for_error(cell, cell_index, exec_reply)
-  File "/Users/caballero/anaconda3/envs/teaching/lib/python3.9/site-packages/nbclient/client.py", line 914, in _check_raise_for_error
+  File "/home/venv/lib/python3.12/site-packages/nbclient/client.py", line 918, in _check_raise_for_error
     raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
 nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
 ------------------
-def RK2(v,x,t,n,Force):
-    for i in range(n-1):
-# Setting up k1
-        k1x = DeltaT*v[i]
-        k1v = DeltaT*Force(v[i],x[i],t[i])
-# Setting up k2
-        vv = v[i]+k1v*0.5
-        xx = x[i]+k1x*0.5
-        k2x = DeltaT*vv
-        k2v = DeltaT*Force(vv,xx,t[i]+DeltaT*0.5)
-# Final result
-        x[i+1] = x[i]+k2x
-        v[i+1] = v[i]+k2v
-	t[i+1] = t[i]+DeltaT
+%matplotlib inline
+
+# Common imports
+import numpy as np
+import pandas as pd
+from math import *
+import matplotlib.pyplot as plt
+import os
+
+# Where to save the figures and data files
+PROJECT_ROOT_DIR = "Results"
+FIGURE_ID = "Results/FigureFiles"
+DATA_ID = "DataFiles/"
+
+if not os.path.exists(PROJECT_ROOT_DIR):
+    os.mkdir(PROJECT_ROOT_DIR)
+
+if not os.path.exists(FIGURE_ID):
+    os.makedirs(FIGURE_ID)
+
+if not os.path.exists(DATA_ID):
+    os.makedirs(DATA_ID)
+
+def image_path(fig_id):
+    return os.path.join(FIGURE_ID, fig_id)
+
+def data_path(dat_id):
+    return os.path.join(DATA_ID, dat_id)
+
+def save_fig(fig_id):
+    plt.savefig(image_path(fig_id) + ".png", format='png')
+
+
+from pylab import plt, mpl
+plt.style.use('seaborn')
+mpl.rcParams['font.family'] = 'serif'
+
+DeltaT = 0.001
+#set up arrays 
+tfinal = 20 # in dimensionless time
+n = ceil(tfinal/DeltaT)
+# set up arrays for t, v, and x
+t = np.zeros(n)
+v = np.zeros(n)
+x = np.zeros(n)
+# Initial conditions as simple one-dimensional arrays of time
+x0 =  1.0 
+v0 = 0.0
+x[0] = x0
+v[0] = v0
+gamma = 0.0
+# Start integrating using Euler-Cromer's method
+for i in range(n-1):
+    # Set up the acceleration
+    # Here you could have defined your own function for this
+    a =  -2*gamma*v[i]-x[i]
+    # update velocity, time and position
+    v[i+1] = v[i] + DeltaT*a
+    x[i+1] = x[i] + DeltaT*v[i+1]
+    t[i+1] = t[i] + DeltaT
+# Plot position as function of time    
+fig, ax = plt.subplots()
+#ax.set_xlim(0, tfinal)
+ax.set_ylabel('x[m]')
+ax.set_xlabel('t[s]')
+ax.plot(t, x)
+fig.tight_layout()
+save_fig("BlockEulerCromer")
+plt.show()
 ------------------
 
 
-[0;36m  Cell [0;32mIn[7], line 14[0;36m[0m
-[0;31m    t[i+1] = t[i]+DeltaT[0m
-[0m    ^[0m
-[0;31mTabError[0m[0;31m:[0m inconsistent use of tabs and spaces in indentation
+[0;31m---------------------------------------------------------------------------[0m
+[0;31mModuleNotFoundError[0m                       Traceback (most recent call last)
+Cell [0;32mIn[1], line 5[0m
+[1;32m      3[0m [38;5;66;03m# Common imports[39;00m
+[1;32m      4[0m [38;5;28;01mimport[39;00m[38;5;250m [39m[38;5;21;01mnumpy[39;00m[38;5;250m [39m[38;5;28;01mas[39;00m[38;5;250m [39m[38;5;21;01mnp[39;00m
+[0;32m----> 5[0m [38;5;28;01mimport[39;00m[38;5;250m [39m[38;5;21;01mpandas[39;00m[38;5;250m [39m[38;5;28;01mas[39;00m[38;5;250m [39m[38;5;21;01mpd[39;00m
+[1;32m      6[0m [38;5;28;01mfrom[39;00m[38;5;250m [39m[38;5;21;01mmath[39;00m[38;5;250m [39m[38;5;28;01mimport[39;00m [38;5;241m*[39m
+[1;32m      7[0m [38;5;28;01mimport[39;00m[38;5;250m [39m[38;5;21;01mmatplotlib[39;00m[38;5;21;01m.[39;00m[38;5;21;01mpyplot[39;00m[38;5;250m [39m[38;5;28;01mas[39;00m[38;5;250m [39m[38;5;21;01mplt[39;00m
 
+[0;31mModuleNotFoundError[0m: No module named 'pandas'
 

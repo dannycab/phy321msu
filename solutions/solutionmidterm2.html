@@ -1,66 +1,65 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-content_root="../" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <title>Midterm 2 (Due 5 Apr) &#8212; Classical Mechanics</title>
   
   
   
   <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
   
-  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
-
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
-  
+  <!-- So that users can add custom icons -->
+  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
-  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
-    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
-    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="../_static/doctools.js"></script>
-    <script src="../_static/clipboard.min.js"></script>
-    <script src="../_static/copybutton.js"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../_static/design-tabs.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
-    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script src="../_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'solutions/solutionmidterm2';</script>
@@ -68,6 +67,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="search" title="Search" href="../search.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
   </head>
   
   
@@ -75,32 +75,16 @@ const thebe_selector_output = ".output, .cell_output"
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
   
   <div id="pst-scroll-pixel-helper"></div>
-
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
-    <i class="fa-solid fa-arrow-up"></i>
-    Back to top
-  </button>
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
   
-  <input type="checkbox"
-          class="sidebar-toggle"
-          name="__primary"
-          id="__primary"/>
-  <label class="overlay overlay-primary" for="__primary"></label>
-  
-  <input type="checkbox"
-          class="sidebar-toggle"
-          name="__secondary"
-          id="__secondary"/>
-  <label class="overlay overlay-secondary" for="__secondary"></label>
-  
-  <div class="search-button__wrapper">
-    <div class="search-button__overlay"></div>
-    <div class="search-button__search-container">
+  <dialog id="pst-search-dialog">
+    
 <form class="bd-search d-flex align-items-center"
       action="../search.html"
       method="get">
@@ -108,7 +92,6 @@ const thebe_selector_output = ".output, .cell_output"
   <input type="search"
          class="form-control"
          name="q"
-         id="search-input"
          placeholder="Search this book..."
          aria-label="Search this book..."
          autocomplete="off"
@@ -116,16 +99,27 @@ const thebe_selector_output = ".output, .cell_output"
          autocapitalize="off"
          spellcheck="false"/>
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form></div>
-  </div>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
   
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
       
-      <div class="bd-sidebar-primary bd-sidebar">
+      
+      
+        
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -138,9 +132,13 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
+  
+    
   
 
 <a class="navbar-brand logo" href="../intro.html">
+  
   
   
   
@@ -150,62 +148,45 @@ const thebe_selector_output = ".output, .cell_output"
       
     
     
-    <img src="../_static/spartan-helmet.png" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="../_static/spartan-helmet.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="../_static/spartan-helmet.png" class="logo__image only-light" alt="Classical Mechanics - Home"/>
+    <img src="../_static/spartan-helmet.png" class="logo__image only-dark pst-js-only" alt="Classical Mechanics - Home"/>
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="../intro.html">
-                    PHY 321: Classical Mechanics 1, Michigan State University, Spring 2024
+                    PHY 321: Classical Mechanics 1, Michigan State University, Spring 2025
                 </a>
             </li>
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">About the course</span></p>
 <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../admin/getting-started.html">Getting Started</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../admin/teachers.html">Teachers and Grading</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../admin/resources.html">Additional Resources</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../admin/textbooks.html">Textbooks</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../admin/schedule-cal.html">Calendar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin/schedule-cal.html">Course Calendar</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../admin/links.html">Course Material and Links</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Introductory Material</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Weekly Course Materials</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter1.html">1. What is Classical Physics?</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter2-overview.html">What is Mathematical Modeling?</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter2.html">2. Classical Mechanics, Mathematics and Numerical background</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter3.html">3. Simple Motion problems and Reminder on Newton’s Laws</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter4.html">4. Work, Energy, Momentum and Conservation laws</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week1/01_start.html">Week 1- Overture: What is Classical Physics?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week1/01_notes.html">Week 1 - Notes: Introduction to Classical Mechanics</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Advanced Topics</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter5.html">5. Harmonic Oscillations</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter6.html">6. Two-body problems, from the Gravitational Force to Two-body Scattering</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter7.html">7. Non-inertial Frames, Translation and Rotating Coordinate Systems</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter8.html">8. Variational Calculus and Lagrangian Formalism</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">In-class handouts, activities, and other materials</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../in-class/cw1-python-test.html">CW1 - Python Test</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../in-class/cw6-phase_space.html">CW6 - Phase Portraits</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../in-class/cw11-plot-fourier.html">CW11 - Plot Fourier Expansion</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Weekly assignments, midterms and final projects with solutions</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Assignments</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../homeworks/hw1.html">Homework 1 (Due 19 Jan)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw2.html">Homework 2 (Due 26 Jan)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw3.html">Homework 3 (Due 02 Feb)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw4.html">Homework 4 (Due 09 Feb)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw5.html">Homework 5 (Due 08 Mar)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw6.html">Homework 6 (Due 15 Mar)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw7.html">Homework 7 (Due 22 Mar)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw8.html">Homework 8 (Due 12 Apr)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw9.html">Homework 9 (Due 19 Apr)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw10.html">OPTIONAL Homework 10 (Due Apr 26)</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Honors Projects</span></p>
 <ul class="nav bd-sidenav">
@@ -220,14 +201,19 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
   </div>
-  
-  <div id="rtd-footer-container"></div>
 
 
       </div>
       
-      <main id="main-content" class="bd-main">
+      <main id="main-content" class="bd-main" role="main">
         
         
 
@@ -236,14 +222,14 @@ const thebe_selector_output = ".output, .cell_output"
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article">
+              <div class="bd-header-article d-print-none">
 <div class="header-article-items header-article__inner">
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</label></div>
+</button></div>
       
     </div>
   
@@ -268,14 +254,14 @@ const thebe_selector_output = ".output, .cell_output"
       
       <li><a href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/main?urlpath=tree/solutions/solutionmidterm2.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
-   title="Launch onBinder"
+   title="Launch on Binder"
    data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
 <span class="btn__icon-container">
   
-    <img src="../_static/images/logo_binder.svg">
+    <img alt="Binder logo" src="../_static/images/logo_binder.svg">
   </span>
 <span class="btn__text-container">Binder</span>
 </a>
@@ -349,26 +335,20 @@ const thebe_selector_output = ".output, .cell_output"
 </button>
 
 
-<script>
-document.write(`
-  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
-  </button>
-`);
-</script>
 
-<script>
-document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
-  </button>
-`);
-</script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
-</label>
+</button>
 </div></div>
       
     </div>
@@ -406,27 +386,41 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
   <!-- HTML file automatically generated from DocOnce source (https://github.com/doconce/doconce/)
 doconce format html Firstmidterm2022.do.txt --no_mako -->
-<!-- dom:TITLE: PHY321: Classical Mechanics 1 --><div class="tex2jax_ignore mathjax_ignore section" id="midterm-2-due-5-apr">
-<h1>Midterm 2 (Due 5 Apr)<a class="headerlink" href="#midterm-2-due-5-apr" title="Permalink to this heading">#</a></h1>
+<!-- dom:TITLE: PHY321: Classical Mechanics 1 --><section class="tex2jax_ignore mathjax_ignore" id="midterm-2-due-5-apr">
+<h1>Midterm 2 (Due 5 Apr)<a class="headerlink" href="#midterm-2-due-5-apr" title="Link to this heading">#</a></h1>
 <p><strong>Solution Midterm 2, Spring 2024</strong></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="o">*</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">math</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
 <span class="o">%</span><span class="k">matplotlib</span> inline
 <span class="n">plt</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;seaborn-v0_8-colorblind&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">4</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="kn">from</span><span class="w"> </span><span class="nn">math</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="ne">----&gt; </span><span class="mi">4</span> <span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="n">get_ipython</span><span class="p">()</span><span class="o">.</span><span class="n">run_line_magic</span><span class="p">(</span><span class="s1">&#39;matplotlib&#39;</span><span class="p">,</span> <span class="s1">&#39;inline&#39;</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">6</span> <span class="n">plt</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;seaborn-v0_8-colorblind&#39;</span><span class="p">)</span>
+
+<span class="ne">ModuleNotFoundError</span>: No module named &#39;pandas&#39;
+</pre></div>
 </div>
-<div class="section" id="part-1-the-duffing-oscillator-60pt">
-<h2>Part 1, The Duffing Oscillator (60pt)<a class="headerlink" href="#part-1-the-duffing-oscillator-60pt" title="Permalink to this heading">#</a></h2>
+</div>
+</div>
+<section id="part-1-the-duffing-oscillator-60pt">
+<h2>Part 1, The Duffing Oscillator (60pt)<a class="headerlink" href="#part-1-the-duffing-oscillator-60pt" title="Link to this heading">#</a></h2>
 <p>Consider the following equation of motion for a damped and driven oscillator that is not necessarily linear. This is the <a class="reference external" href="https://en.wikipedia.org/wiki/Duffing_equation">Duffing equation</a>, which describes a damped driven simple harmonic oscillator with a cubic non-linearity. It’s equation of motion is given by:</p>
 <div class="math notranslate nohighlight">
 \[\ddot{x} + \delta \dot{x} + \alpha x + \beta x^3 = \gamma \cos(\omega t).\]</div>
@@ -436,8 +430,8 @@ doconce format html Firstmidterm2022.do.txt --no_mako -->
 <p>We focus on this one dimensional case, but we will analyze it in parts to put together a full picture of the dynamics of the system. If you are looking for useful parameter choices and initial conditions, we suggest using those listed on <a class="reference external" href="https://en.wikipedia.org/wiki/Duffing_equation">the Wikipedia page</a>.</p>
 <p>Recall that the potential for this system can give rise to different kinds of behavior depending on the parameters. The figure below shows the potential for different choices of <span class="math notranslate nohighlight">\(\alpha\)</span> and <span class="math notranslate nohighlight">\(\beta\)</span>. Make sure you choose your parameters to match the potential you want to study - pick a stable well for solving for trajectories.</p>
 <p><img alt="Duffing potential" src="../_images/duffing_potential.png" /></p>
-<div class="section" id="undamped-and-undriven-case-20-points">
-<h3>Undamped and undriven case (20 points)<a class="headerlink" href="#undamped-and-undriven-case-20-points" title="Permalink to this heading">#</a></h3>
+<section id="undamped-and-undriven-case-20-points">
+<h3>Undamped and undriven case (20 points)<a class="headerlink" href="#undamped-and-undriven-case-20-points" title="Link to this heading">#</a></h3>
 <ol class="arabic simple">
 <li><p>(5 pt) Consider the undriven and undamped case, <span class="math notranslate nohighlight">\(\delta = \gamma = 0\)</span>. What potential would give rise to this kind of equation of motion? Demonstrate that potential gives the expected equation of motion.</p></li>
 </ol>
@@ -492,7 +486,7 @@ doconce format html Firstmidterm2022.do.txt --no_mako -->
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## Define the static Duffing Potential</span>
-<span class="k">def</span> <span class="nf">V</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">alpha</span><span class="p">,</span> <span class="n">beta</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">V</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">alpha</span><span class="p">,</span> <span class="n">beta</span><span class="p">):</span>
     <span class="k">return</span> <span class="mf">0.5</span><span class="o">*</span><span class="n">alpha</span><span class="o">*</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="mf">0.25</span><span class="o">*</span><span class="n">beta</span><span class="o">*</span><span class="n">x</span><span class="o">**</span><span class="mi">4</span>
 
 <span class="c1">## Define a series of parameters for the potential</span>
@@ -530,12 +524,12 @@ doconce format html Firstmidterm2022.do.txt --no_mako -->
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">DuffingStatic</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="n">V</span><span class="p">,</span><span class="n">alpha</span><span class="o">=-</span><span class="mf">1.0</span><span class="p">,</span><span class="n">beta</span><span class="o">=</span><span class="mf">1.0</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">DuffingStatic</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="n">V</span><span class="p">,</span><span class="n">alpha</span><span class="o">=-</span><span class="mf">1.0</span><span class="p">,</span><span class="n">beta</span><span class="o">=</span><span class="mf">1.0</span><span class="p">):</span>
     <span class="n">dX</span> <span class="o">=</span> <span class="n">V</span>
     <span class="n">dV</span> <span class="o">=</span> <span class="o">-</span><span class="n">alpha</span><span class="o">*</span><span class="n">X</span> <span class="o">-</span> <span class="n">beta</span><span class="o">*</span><span class="n">X</span><span class="o">**</span><span class="mi">3</span>
     <span class="k">return</span> <span class="n">dX</span><span class="p">,</span> <span class="n">dV</span>
 
-<span class="k">def</span> <span class="nf">DuffingPhaseSpace</span><span class="p">(</span><span class="n">x_lim</span><span class="p">,</span> <span class="n">y_lim</span><span class="p">,</span> <span class="n">grid_size</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">DuffingPhaseSpace</span><span class="p">(</span><span class="n">x_lim</span><span class="p">,</span> <span class="n">y_lim</span><span class="p">,</span> <span class="n">grid_size</span><span class="p">):</span>
     
     <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="n">x_lim</span><span class="p">,</span> <span class="n">x_lim</span><span class="p">,</span> <span class="n">grid_size</span><span class="p">)</span>
     <span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="n">y_lim</span><span class="p">,</span> <span class="n">y_lim</span><span class="p">,</span> <span class="n">grid_size</span><span class="p">)</span>
@@ -591,7 +585,7 @@ doconce format html Firstmidterm2022.do.txt --no_mako -->
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## Euler Cromer First Order Solver for the Duffing Oscillator</span>
 
-<span class="k">def</span> <span class="nf">DuffingEulerCromer</span><span class="p">(</span><span class="n">x0</span><span class="p">,</span> <span class="n">v0</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=-</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">beta</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">dt</span><span class="o">=</span><span class="mf">0.001</span><span class="p">,</span> <span class="n">t_max</span><span class="o">=</span><span class="mi">30</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">DuffingEulerCromer</span><span class="p">(</span><span class="n">x0</span><span class="p">,</span> <span class="n">v0</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=-</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">beta</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">dt</span><span class="o">=</span><span class="mf">0.001</span><span class="p">,</span> <span class="n">t_max</span><span class="o">=</span><span class="mi">30</span><span class="p">):</span>
     
     <span class="n">t</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">t_max</span><span class="p">,</span> <span class="n">dt</span><span class="p">)</span>
     
@@ -671,16 +665,16 @@ doconce format html Firstmidterm2022.do.txt --no_mako -->
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x141167d60&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x14103dd90&gt;
 </pre></div>
 </div>
 <img alt="../_images/c09143d690275ea2c101b0e3ce2624ca92a0af4a3059f8cde9746bcda7e7550b.png" src="../_images/c09143d690275ea2c101b0e3ce2624ca92a0af4a3059f8cde9746bcda7e7550b.png" />
 <img alt="../_images/81e1bcb91989e1c02723df0fd64145f445e863b3f61ece87199d1f61439bba33.png" src="../_images/81e1bcb91989e1c02723df0fd64145f445e863b3f61ece87199d1f61439bba33.png" />
 </div>
 </div>
-</div>
-<div class="section" id="damped-and-undriven-case-20-points">
-<h3>Damped and undriven case (20 points)<a class="headerlink" href="#damped-and-undriven-case-20-points" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="damped-and-undriven-case-20-points">
+<h3>Damped and undriven case (20 points)<a class="headerlink" href="#damped-and-undriven-case-20-points" title="Link to this heading">#</a></h3>
 <ol class="arabic simple" start="5">
 <li><p>(5 pt) Now consider the damped and undriven case, <span class="math notranslate nohighlight">\(\gamma = 0\)</span>. What is the equation of motion in this case? Can you develop this equation of motion fully from a potential (like we did above)? If so, what is the potential? If not, why not?</p></li>
 </ol>
@@ -701,13 +695,13 @@ doconce format html Firstmidterm2022.do.txt --no_mako -->
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">DuffingDamped</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">V</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=-</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">beta</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">gamma</span><span class="o">=</span><span class="mf">0.5</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">DuffingDamped</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">V</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=-</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">beta</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">gamma</span><span class="o">=</span><span class="mf">0.5</span><span class="p">):</span>
     <span class="n">dX</span> <span class="o">=</span> <span class="n">V</span>
     <span class="n">dV</span> <span class="o">=</span> <span class="o">-</span><span class="n">alpha</span><span class="o">*</span><span class="n">X</span> <span class="o">-</span> <span class="n">beta</span><span class="o">*</span><span class="n">X</span><span class="o">**</span><span class="mi">3</span> <span class="o">-</span> <span class="n">gamma</span><span class="o">*</span><span class="n">V</span>
     <span class="k">return</span> <span class="n">dX</span><span class="p">,</span> <span class="n">dV</span>
 
 
-<span class="k">def</span> <span class="nf">DuffingDampedPhaseSpace</span><span class="p">(</span><span class="n">x_lim</span><span class="p">,</span> <span class="n">y_lim</span><span class="p">,</span> <span class="n">grid_size</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">DuffingDampedPhaseSpace</span><span class="p">(</span><span class="n">x_lim</span><span class="p">,</span> <span class="n">y_lim</span><span class="p">,</span> <span class="n">grid_size</span><span class="p">):</span>
     
     <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="n">x_lim</span><span class="p">,</span> <span class="n">x_lim</span><span class="p">,</span> <span class="n">grid_size</span><span class="p">)</span>
     <span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="n">y_lim</span><span class="p">,</span> <span class="n">y_lim</span><span class="p">,</span> <span class="n">grid_size</span><span class="p">)</span>
@@ -754,7 +748,7 @@ doconce format html Firstmidterm2022.do.txt --no_mako -->
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## Euler Cromer First Order Solver for the Duffing Oscillator with damping</span>
 
-<span class="k">def</span> <span class="nf">DuffingDampedEulerCromer</span><span class="p">(</span><span class="n">x0</span><span class="p">,</span> <span class="n">v0</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=-</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">beta</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">gamma</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">dt</span><span class="o">=</span><span class="mf">0.001</span><span class="p">,</span> <span class="n">t_max</span><span class="o">=</span><span class="mi">30</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">DuffingDampedEulerCromer</span><span class="p">(</span><span class="n">x0</span><span class="p">,</span> <span class="n">v0</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=-</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">beta</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">gamma</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">dt</span><span class="o">=</span><span class="mf">0.001</span><span class="p">,</span> <span class="n">t_max</span><span class="o">=</span><span class="mi">30</span><span class="p">):</span>
     
     <span class="n">t</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">t_max</span><span class="p">,</span> <span class="n">dt</span><span class="p">)</span>
     
@@ -825,16 +819,16 @@ doconce format html Firstmidterm2022.do.txt --no_mako -->
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x140d5f730&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x141475b20&gt;
 </pre></div>
 </div>
 <img alt="../_images/e239d56fad2f4e4a0f1f53ea7ead3511d029ad22d8ba3f43732369d89f8c5186.png" src="../_images/e239d56fad2f4e4a0f1f53ea7ead3511d029ad22d8ba3f43732369d89f8c5186.png" />
 <img alt="../_images/1de97df011a485c0749a1394d252fdd376f8b906bd223e074fdc51ed562fc162.png" src="../_images/1de97df011a485c0749a1394d252fdd376f8b906bd223e074fdc51ed562fc162.png" />
 </div>
 </div>
-</div>
-<div class="section" id="driven-and-damped-case-20-points">
-<h3>Driven and damped case (20 points)<a class="headerlink" href="#driven-and-damped-case-20-points" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="driven-and-damped-case-20-points">
+<h3>Driven and damped case (20 points)<a class="headerlink" href="#driven-and-damped-case-20-points" title="Link to this heading">#</a></h3>
 <ol class="arabic simple" start="8">
 <li><p>(5 pt) Now consider the damped and driven case, <span class="math notranslate nohighlight">\(\gamma \neq 0\)</span>. What is the equation of motion in this case? Can you develop this equation of motion fully from a potential (like we did above)? If so, what is the potential? If not, why not?</p></li>
 </ol>
@@ -863,7 +857,7 @@ doconce format html Firstmidterm2022.do.txt --no_mako -->
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## Euler Cromer First Order Solver for the Duffing Oscillator with damping and oscillating force</span>
-<span class="k">def</span> <span class="nf">DuffingDampedForcedEulerCromer</span><span class="p">(</span><span class="n">x0</span><span class="p">,</span> <span class="n">v0</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=-</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">beta</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">delta</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">gamma</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">omega</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">dt</span><span class="o">=</span><span class="mf">0.001</span><span class="p">,</span> <span class="n">t_max</span><span class="o">=</span><span class="mi">10</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">DuffingDampedForcedEulerCromer</span><span class="p">(</span><span class="n">x0</span><span class="p">,</span> <span class="n">v0</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=-</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">beta</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">delta</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">gamma</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">omega</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">dt</span><span class="o">=</span><span class="mf">0.001</span><span class="p">,</span> <span class="n">t_max</span><span class="o">=</span><span class="mi">10</span><span class="p">):</span>
     <span class="n">t</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">t_max</span><span class="p">,</span> <span class="n">dt</span><span class="p">)</span>
     
     <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros_like</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
@@ -937,16 +931,16 @@ doconce format html Firstmidterm2022.do.txt --no_mako -->
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x140ae50d0&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x1415a2d30&gt;
 </pre></div>
 </div>
 <img alt="../_images/a90a9f75457d01918f692dc050de9292c5899a97c576c424ca843a77dc6f61ca.png" src="../_images/a90a9f75457d01918f692dc050de9292c5899a97c576c424ca843a77dc6f61ca.png" />
 <img alt="../_images/ac97bacd9bf4a263c3f69bb02cf0cd7f1f731262e6262c0ffb813a7fe6e43f2f.png" src="../_images/ac97bacd9bf4a263c3f69bb02cf0cd7f1f731262e6262c0ffb813a7fe6e43f2f.png" />
 </div>
 </div>
-</div>
-<div class="section" id="extra-credit-up-to-30-points">
-<h3>Extra credit (up to 30 points)<a class="headerlink" href="#extra-credit-up-to-30-points" title="Permalink to this heading">#</a></h3>
+</section>
+<section id="extra-credit-up-to-30-points">
+<h3>Extra credit (up to 30 points)<a class="headerlink" href="#extra-credit-up-to-30-points" title="Link to this heading">#</a></h3>
 <ol class="arabic simple" start="11">
 <li><p>(10 pts) The Duffing oscillator can be either a soft or hard spring by changing the sign of the <span class="math notranslate nohighlight">\(\alpha\)</span> term. What happens to the behavior of the system when you change the sign of <span class="math notranslate nohighlight">\(\alpha\)</span>? Can you explain this behavior in terms of the potential?</p></li>
 </ol>
@@ -957,7 +951,7 @@ doconce format html Firstmidterm2022.do.txt --no_mako -->
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">DuffingDampedPhaseSpace</span><span class="p">(</span><span class="n">x_lim</span><span class="p">,</span> <span class="n">y_lim</span><span class="p">,</span> <span class="n">grid_size</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">DuffingDampedPhaseSpace</span><span class="p">(</span><span class="n">x_lim</span><span class="p">,</span> <span class="n">y_lim</span><span class="p">,</span> <span class="n">grid_size</span><span class="p">):</span>
     
     <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="n">x_lim</span><span class="p">,</span> <span class="n">x_lim</span><span class="p">,</span> <span class="n">grid_size</span><span class="p">)</span>
     <span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="n">y_lim</span><span class="p">,</span> <span class="n">y_lim</span><span class="p">,</span> <span class="n">grid_size</span><span class="p">)</span>
@@ -1045,7 +1039,7 @@ doconce format html Firstmidterm2022.do.txt --no_mako -->
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x14152b370&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x14192d3a0&gt;
 </pre></div>
 </div>
 <img alt="../_images/d7f260c7a251037ff198b71b91a38a7ede40c61f4f00d8d5b9ec6678f474c3a4.png" src="../_images/d7f260c7a251037ff198b71b91a38a7ede40c61f4f00d8d5b9ec6678f474c3a4.png" />
@@ -1061,7 +1055,7 @@ doconce format html Firstmidterm2022.do.txt --no_mako -->
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">matplotlib.cm</span> <span class="kn">import</span> <span class="n">viridis</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">matplotlib.cm</span><span class="w"> </span><span class="kn">import</span> <span class="n">viridis</span>
 
 <span class="c1">## Solve the Duffing Oscillator for our set of initial conditions</span>
 
@@ -1103,17 +1097,17 @@ doconce format html Firstmidterm2022.do.txt --no_mako -->
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/var/folders/rh/mck_zfls1nz00lkh8jq3cpv80000gn/T/ipykernel_63165/3734017154.py:33: UserWarning: No data for colormapping provided via &#39;c&#39;. Parameters &#39;cmap&#39; will be ignored
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/var/folders/rh/mck_zfls1nz00lkh8jq3cpv80000gn/T/ipykernel_5907/3734017154.py:33: UserWarning: No data for colormapping provided via &#39;c&#39;. Parameters &#39;cmap&#39; will be ignored
   ax.scatter(trajDF_sampled[&#39;x&#39;], trajDF_sampled[&#39;v&#39;], c=colors, marker=&#39;o&#39;, cmap=&#39;viridis&#39;)
 </pre></div>
 </div>
 <img alt="../_images/bee3e8bdb2888c05373459a0f620dc323f030d1bd6c7863336209a956a0eaf60.png" src="../_images/bee3e8bdb2888c05373459a0f620dc323f030d1bd6c7863336209a956a0eaf60.png" />
 </div>
 </div>
-</div>
-</div>
-<div class="section" id="part-2-signal-analysis-40pt">
-<h2>Part 2, Signal Analysis (40pt)<a class="headerlink" href="#part-2-signal-analysis-40pt" title="Permalink to this heading">#</a></h2>
+</section>
+</section>
+<section id="part-2-signal-analysis-40pt">
+<h2>Part 2, Signal Analysis (40pt)<a class="headerlink" href="#part-2-signal-analysis-40pt" title="Link to this heading">#</a></h2>
 <p>We learned that any periodic function can be written using a Fourier series. The expansion we wrote is:</p>
 <div class="math notranslate nohighlight">
 \[f(t) = \dfrac{a_0}{2} + \sum_{n=1}^{\infty} \left( a_n \cos(n\omega t) + b_n \sin(n\omega t) \right).\]</div>
@@ -1140,7 +1134,7 @@ doconce format html Firstmidterm2022.do.txt --no_mako -->
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">T</span> <span class="o">=</span> <span class="mi">1</span>
 <span class="n">t_array</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="o">*</span><span class="n">T</span><span class="p">,</span> <span class="n">T</span><span class="o">/</span><span class="mi">100</span><span class="p">)</span>
 
-<span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">T</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">f</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">T</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">t</span> <span class="o">%</span> <span class="n">T</span> <span class="o">&lt;</span> <span class="mf">0.5</span><span class="o">*</span><span class="n">T</span><span class="p">:</span>
         <span class="k">return</span> <span class="mi">1</span><span class="o">-</span><span class="mi">2</span><span class="o">*</span><span class="p">(</span><span class="n">t</span> <span class="o">%</span> <span class="n">T</span><span class="p">)</span><span class="o">/</span><span class="n">T</span>
     <span class="k">else</span><span class="p">:</span>
@@ -1249,17 +1243,17 @@ doconce format html Firstmidterm2022.do.txt --no_mako -->
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## Function to calculate the Fourier Series Coefficients</span>
-<span class="k">def</span> <span class="nf">a0_coeff</span><span class="p">():</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">a0_coeff</span><span class="p">():</span>
     <span class="k">return</span> <span class="mf">0.5</span><span class="p">;</span>
 
-<span class="k">def</span> <span class="nf">an_coeff</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">an_coeff</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
     <span class="k">return</span> <span class="mi">2</span><span class="o">/</span><span class="p">(</span><span class="n">n</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">**</span><span class="n">n</span><span class="p">)</span>
 
-<span class="k">def</span> <span class="nf">bn_coeff</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">bn_coeff</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
     <span class="k">return</span> <span class="mi">0</span>
 
 <span class="c1">## Function to calculate the Fourier Series</span>
-<span class="k">def</span> <span class="nf">fourier_series</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">T</span><span class="p">,</span> <span class="n">n_max</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">fourier_series</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">T</span><span class="p">,</span> <span class="n">n_max</span><span class="p">):</span>
     <span class="n">f</span> <span class="o">=</span> <span class="mi">0</span>
     <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">n_max</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
         <span class="n">f</span> <span class="o">+=</span> <span class="n">an_coeff</span><span class="p">(</span><span class="n">n</span><span class="p">)</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">*</span><span class="n">n</span><span class="o">*</span><span class="n">t</span><span class="o">/</span><span class="n">T</span><span class="p">)</span> <span class="o">+</span> <span class="n">bn_coeff</span><span class="p">(</span><span class="n">n</span><span class="p">)</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">*</span><span class="n">n</span><span class="o">*</span><span class="n">t</span><span class="o">/</span><span class="n">T</span><span class="p">)</span>
@@ -1286,7 +1280,7 @@ doconce format html Firstmidterm2022.do.txt --no_mako -->
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x1416f59d0&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x1412ddc40&gt;
 </pre></div>
 </div>
 <img alt="../_images/8032008a4a585f83d5204266e16a7af5a81ee9c0813f425d65c654db578cb0cc.png" src="../_images/8032008a4a585f83d5204266e16a7af5a81ee9c0813f425d65c654db578cb0cc.png" />
@@ -1316,14 +1310,14 @@ doconce format html Firstmidterm2022.do.txt --no_mako -->
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x141758c10&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x1419e1a00&gt;
 </pre></div>
 </div>
 <img alt="../_images/a293fe7429d722780e65ad5f40a4f1d03d8208a96cb79ca33c9298f65ad8adac.png" src="../_images/a293fe7429d722780e65ad5f40a4f1d03d8208a96cb79ca33c9298f65ad8adac.png" />
 </div>
 </div>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -1352,8 +1346,8 @@ doconce format html Firstmidterm2022.do.txt --no_mako -->
               
               
               
-                <footer class="prev-next-footer">
-                  <!-- Previous / next buttons -->
+                <footer class="prev-next-footer d-print-none">
+                  
 <div class="prev-next-area">
 </div>
                 </footer>
@@ -1362,7 +1356,9 @@ doconce format html Firstmidterm2022.do.txt --no_mako -->
             
             
               
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -1399,9 +1395,10 @@ By Danny Caballero, Morten Hjorth-Jensen
   
   <div class="footer-item">
     
+
   <p class="copyright">
     
-      © Copyright 2022.
+      © Copyright 2023.
       <br/>
     
   </p>
@@ -1425,8 +1422,8 @@ By Danny Caballero, Morten Hjorth-Jensen
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
+  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
 
   <footer class="bd-footer">
   </footer>
