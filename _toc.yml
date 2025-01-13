@@ -81,6 +81,7 @@ parts:
     chapters:
       - file: resources/course-commitments
       - file: resources/iclicker-setup
+      - file: resources/generative-ai.ipynb
       - file: resources/gradescope-submissions
       - file: resources/finding-research
   - caption: Honors Projects
