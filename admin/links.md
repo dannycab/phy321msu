@@ -23,8 +23,7 @@ Embedded in both notes pages are videos that you can watch to help you understan
 - Readings:
   - JRT 1.1-1.4; AMS Ch 1-4; MLB 3.4
 - In-Class Materials:
-  - CW1: [Slides](../docs/slides/slides-CW1.pdf)
-  - CW1: [Handwritten Notes](../docs/handwritten-notes/notes-CW1.pdf)
+  - Day-02 Slides (15 Jan 2025) [MD](../slides/day-02-newtons-laws.md)[HTML](../slides/day-02-newtons-laws.html)[PDF](../slides/day-02-newtons-laws.pdf)
 - Lecture Videos:
   - 13 Jan 2025
   - 15 Jan 2025
