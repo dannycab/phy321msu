@@ -1,9 +1,23 @@
 ---
 marp: true
 theme: gaia
-_class: lead
+class:
+    - invert
+    - lead
 paginate: true
 ---
+
+<style>
+/**
+ * @theme enable-all-auto-scaling
+ * @auto-scaling true
+ */
+
+@import url('style.css');
+</style>
+
+
+
 
 # Day 02 - Newton's Laws
 
@@ -98,9 +112,9 @@ This formula makes me feel:
 
 We derived the following differential equation for the falling ball in one-dimension:
 
-$$\frac{d^2 y}{dt^2} = -g - \frac{b}{m} \frac{dy}{dt} - \frac{c}{m} \left(\frac{dy}{dt}\right)^2$$
+$$\frac{d^2 y}{dt^2} = +g - \frac{b}{m} \frac{dy}{dt} - \frac{c}{m} \left(\frac{dy}{dt}\right)^2$$
 
 Let's assume the turbulent drag term is negligible. Is there an anti-derivative of the right-hand side of this equation? If so, what is it?
 
-$$\frac{dv}{dt} = -g - \frac{b}{m}v$$
+$$\frac{dv}{dt} = +g - \frac{b}{m}v$$
 

@@ -36,7 +36,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=87e54e7c" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
   
   <!-- So that users can add custom icons -->
   <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
@@ -55,7 +55,7 @@
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script src="../_static/design-tabs.js?v=36754332"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
@@ -377,7 +377,15 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="day-02-newton-s-laws">
+  <style>
+/**
+ * @theme enable-all-auto-scaling
+ * @auto-scaling true
+ */
+
+@import url('style.css');
+</style>
+<section class="tex2jax_ignore mathjax_ignore" id="day-02-newton-s-laws">
 <h1>Day 02 - Newton’s Laws<a class="headerlink" href="#day-02-newton-s-laws" title="Link to this heading">#</a></h1>
 <div class="math notranslate nohighlight">
 \[\mathbf{F}_{net} = m \mathbf{a}\]</div>
@@ -470,10 +478,10 @@
 <h2>Think-Pair-Share<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
 <p>We derived the following differential equation for the falling ball in one-dimension:</p>
 <div class="math notranslate nohighlight">
-\[\frac{d^2 y}{dt^2} = -g - \frac{b}{m} \frac{dy}{dt} - \frac{c}{m} \left(\frac{dy}{dt}\right)^2\]</div>
+\[\frac{d^2 y}{dt^2} = +g - \frac{b}{m} \frac{dy}{dt} - \frac{c}{m} \left(\frac{dy}{dt}\right)^2\]</div>
 <p>Let’s assume the turbulent drag term is negligible. Is there an anti-derivative of the right-hand side of this equation? If so, what is it?</p>
 <div class="math notranslate nohighlight">
-\[\frac{dv}{dt} = -g - \frac{b}{m}v\]</div>
+\[\frac{dv}{dt} = +g - \frac{b}{m}v\]</div>
 </section>
 </section>
 
