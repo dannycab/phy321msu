@@ -1,16 +1,13 @@
 ---
 marp: true
-theme: gaia
-class: 
- - lead
- - invert
+theme: king
 paginate: true
 
-# title: Day 03 - Vectors
-# description: Slides for PHY 321 Spring 2025, Day 03: Vectors
-# author: Prof. Danny Caballero <caball14@msu.edu>
-# keywords: classical mechanics, vectors, differential equations, motion
-# url: https://dannycaballero.info/phy321msu/
+title: Day 03 - Vectors
+description: Slides for PHY 321 Spring 2025, Day 03: Vectors
+author: Prof. Danny Caballero <caball14@msu.edu>
+keywords: classical mechanics, vectors, differential equations, motion
+url: https://dannycaballero.info/phy321msu/slides/day-03-vectors.html
 ---
 
 
@@ -22,7 +19,7 @@ $$\mathbf{r} = r_x\hat{i} + r_y\hat{j} + r_z\hat{k}$$
 $$\mathbf{r} = r_x\hat{e}_1 + r_y\hat{e}_2 + r_z\hat{e}_3$$
 $$\mathbf{r} = \langle r_x, r_y, r_z\rangle$$
 
-![bg right:40%](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Portrait_of_Sir_Isaac_Newton%2C_1689_%28brightened%29.jpg/850px-Portrait_of_Sir_Isaac_Newton%2C_1689_%28brightened%29.jpg)
+![bg right:40%](./images/vector.jpeg)
 
 ---
 

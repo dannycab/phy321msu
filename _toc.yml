@@ -12,6 +12,7 @@ parts:
       - file: admin/schedule-cal
       - file: admin/resources
       - file: admin/links
+      - file: admin/slides
   - caption: Weekly Course Materials
     chapters:
       - file: lecture-notes/week1/01_start
