@@ -148,7 +148,3 @@ We define **productivity** as the ability to use Generative AI to deepen your un
 3. Once we define a policy, how should we collectively enforce it?
 
 Add your answers to the form at the following link: [https://forms.office.com/r/Bsh6ugKQ9Y](https://forms.office.com/r/Bsh6ugKQ9Y)
-
-
-
-
