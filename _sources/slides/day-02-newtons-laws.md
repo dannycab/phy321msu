@@ -1,21 +1,14 @@
 ---
 marp: true
-theme: gaia
-class:
-    - invert
-    - lead
+theme: king
 paginate: true
+
+title: Day 02 - Newton's Laws
+description: Slides for PHY 321 Spring 2025, Day 02: Newton's Laws
+author: Prof. Danny Caballero <caball14@msu.edu>
+keywords: classical mechanics, newton's laws, differential equations, motion
+url: https://dannycaballero.info/phy321msu/slides/day-02-newtons-laws.html
 ---
-
-<style>
-/**
- * @theme enable-all-auto-scaling
- * @auto-scaling true
- */
-
-@import url('style.css');
-</style>
-
 
 
 
@@ -23,11 +16,11 @@ paginate: true
 
 $$\mathbf{F}_{net} = m \mathbf{a}$$
 
-![bg right:40%](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Portrait_of_Sir_Isaac_Newton%2C_1689_%28brightened%29.jpg/850px-Portrait_of_Sir_Isaac_Newton%2C_1689_%28brightened%29.jpg)
+![bg right:40%](./images/newton.jpg)
 
 ---
 
-## Announcements
+# Announcements
 
 * Homework 1 is due next Friday
 * Help sessions will start next week
@@ -36,9 +29,9 @@ $$\mathbf{F}_{net} = m \mathbf{a}$$
 
 ---
 
-## Goals for this week
+# Goals for this week
 
-### Be able to answer the following questions.
+## Be able to answer the following questions.
 
 * What is Classical Mechanics?
 * How can we formulate it?
@@ -50,16 +43,16 @@ $$\mathbf{F}_{net} = m \mathbf{a}$$
 <br/>
 <br/>
 
-# Take 2 min to write down what comes to mind when asked:
+## Take 2 min to write down what comes to mind when asked:
 <br>
 
-# What is "Classical" Physics?
+## What is "Classical" Physics?
 
 ---
 
-## Classical Mechanics
+# Classical Mechanics
 
-### Modeling large, slow-moving objects
+## Modeling large, slow-moving objects
 
 Newton's Laws are but one of a number of formulations:
 * Lagrangian Mechanics
@@ -67,17 +60,23 @@ Newton's Laws are but one of a number of formulations:
 * Dynamical Systems Theory
 * ...
 
-![bg right 100%](https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Modernphysicsfields.svg/640px-Modernphysicsfields.svg.png)
+---
+
+<!-- _backgroundColor: DodgerBlue -->
+# An Overview of Different Physics
+
+![drop-shadow width:1000px](https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Modernphysicsfields.svg/640px-Modernphysicsfields.svg.png)
 
 --- 
 
 ### Classical Mechanics is still very relevant
 
 Tiny Limbs and Long Bodies: Coordinating Lizard Locomotion
-[Research Lab](https://research.gatech.edu/tiny-limbs-and-long-bodies-coordinating-lizard-locomotion) & [Link to Video](https://www.youtube.com/watch?v=Qme07fA3Fj4)
+[Research Lab](https://research.gatech.edu/tiny-limbs-and-long-bodies-coordinating-lizard-locomotion) 
 
 
-[![Tiny Limbs and Long Bodies: Coordinating Lizard Locomotion](https://img.youtube.com/vi/Qme07fA3Fj4/0.jpg)](https://www.youtube.com/watch?v=Qme07fA3Fj4)
+[![Tiny Limbs and Long Bodies: Coordinating Lizard Locomotion](https://markdown-videos-api.jorgenkh.no/youtube/Qme07fA3Fj4.gif?width=640&height=360&duration=800)](https://youtu.be/Qme07fA3Fj4)
+Source: <https://youtu.be/Qme07fA3Fj4>
 
 ---
 

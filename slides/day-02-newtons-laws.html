@@ -36,7 +36,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=87e54e7c" />
   
   <!-- So that users can add custom icons -->
   <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
@@ -55,7 +55,7 @@
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../_static/design-tabs.js?v=36754332"></script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
@@ -177,6 +177,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../admin/textbooks.html">Textbooks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../admin/schedule-cal.html">Course Calendar</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../admin/links.html">Course Material and Links</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin/slides.html">Slides</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Weekly Course Materials</span></p>
 <ul class="nav bd-sidenav">
@@ -345,21 +346,20 @@
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Day 02 - Newton’s Laws</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#announcements">Announcements</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#goals-for-this-week">Goals for this week</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#be-able-to-answer-the-following-questions">Be able to answer the following questions.</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Day 02 - Newton’s Laws</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#announcements">Announcements</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#goals-for-this-week">Goals for this week</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#be-able-to-answer-the-following-questions">Be able to answer the following questions.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#take-2-min-to-write-down-what-comes-to-mind-when-asked">Take 2 min to write down what comes to mind when asked:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-classical-physics">What is “Classical” Physics?</a></li>
 </ul>
 </li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#classical-mechanics">Classical Mechanics</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modeling-large-slow-moving-objects">Modeling large, slow-moving objects</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#take-2-min-to-write-down-what-comes-to-mind-when-asked">Take 2 min to write down what comes to mind when asked:</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-classical-physics">What is “Classical” Physics?</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#classical-mechanics">Classical Mechanics</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modeling-large-slow-moving-objects">Modeling large, slow-moving objects</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#classical-mechanics-is-still-very-relevant">Classical Mechanics is still very relevant</a></li>
-</ul>
-</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#an-overview-of-different-physics">An Overview of Different Physics</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#classical-mechanics-is-still-very-relevant">Classical Mechanics is still very relevant</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#think-pair-share">Think-Pair-Share</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-2-1">Clicker Question 2-1</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Think-Pair-Share</a></li>
@@ -377,22 +377,15 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <style>
-/**
- * @theme enable-all-auto-scaling
- * @auto-scaling true
- */
-
-@import url('style.css');
-</style>
-<section class="tex2jax_ignore mathjax_ignore" id="day-02-newton-s-laws">
+  <section class="tex2jax_ignore mathjax_ignore" id="day-02-newton-s-laws">
 <h1>Day 02 - Newton’s Laws<a class="headerlink" href="#day-02-newton-s-laws" title="Link to this heading">#</a></h1>
 <div class="math notranslate nohighlight">
 \[\mathbf{F}_{net} = m \mathbf{a}\]</div>
-<p><img alt="bg right:40%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Portrait_of_Sir_Isaac_Newton%2C_1689_%28brightened%29.jpg/850px-Portrait_of_Sir_Isaac_Newton%2C_1689_%28brightened%29.jpg" /></p>
+<p><img alt="bg right:40%" src="../_images/newton.jpg" /></p>
+</section>
 <hr class="docutils" />
-<section id="announcements">
-<h2>Announcements<a class="headerlink" href="#announcements" title="Link to this heading">#</a></h2>
+<section class="tex2jax_ignore mathjax_ignore" id="announcements">
+<h1>Announcements<a class="headerlink" href="#announcements" title="Link to this heading">#</a></h1>
 <ul class="simple">
 <li><p>Homework 1 is due next Friday</p></li>
 <li><p>Help sessions will start next week</p></li>
@@ -404,10 +397,10 @@
 </ul>
 </section>
 <hr class="docutils" />
-<section id="goals-for-this-week">
-<h2>Goals for this week<a class="headerlink" href="#goals-for-this-week" title="Link to this heading">#</a></h2>
+<section class="tex2jax_ignore mathjax_ignore" id="goals-for-this-week">
+<h1>Goals for this week<a class="headerlink" href="#goals-for-this-week" title="Link to this heading">#</a></h1>
 <section id="be-able-to-answer-the-following-questions">
-<h3>Be able to answer the following questions.<a class="headerlink" href="#be-able-to-answer-the-following-questions" title="Link to this heading">#</a></h3>
+<h2>Be able to answer the following questions.<a class="headerlink" href="#be-able-to-answer-the-following-questions" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>What is Classical Mechanics?</p></li>
 <li><p>How can we formulate it?</p></li>
@@ -418,19 +411,19 @@
 <br/>
 <br/>
 </section>
-</section>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="take-2-min-to-write-down-what-comes-to-mind-when-asked">
-<h1>Take 2 min to write down what comes to mind when asked:<a class="headerlink" href="#take-2-min-to-write-down-what-comes-to-mind-when-asked" title="Link to this heading">#</a></h1>
+<section id="take-2-min-to-write-down-what-comes-to-mind-when-asked">
+<h2>Take 2 min to write down what comes to mind when asked:<a class="headerlink" href="#take-2-min-to-write-down-what-comes-to-mind-when-asked" title="Link to this heading">#</a></h2>
 <br>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="what-is-classical-physics">
-<h1>What is “Classical” Physics?<a class="headerlink" href="#what-is-classical-physics" title="Link to this heading">#</a></h1>
+<section id="what-is-classical-physics">
+<h2>What is “Classical” Physics?<a class="headerlink" href="#what-is-classical-physics" title="Link to this heading">#</a></h2>
+</section>
+</section>
 <hr class="docutils" />
-<section id="classical-mechanics">
-<h2>Classical Mechanics<a class="headerlink" href="#classical-mechanics" title="Link to this heading">#</a></h2>
+<section class="tex2jax_ignore mathjax_ignore" id="classical-mechanics">
+<h1>Classical Mechanics<a class="headerlink" href="#classical-mechanics" title="Link to this heading">#</a></h1>
 <section id="modeling-large-slow-moving-objects">
-<h3>Modeling large, slow-moving objects<a class="headerlink" href="#modeling-large-slow-moving-objects" title="Link to this heading">#</a></h3>
+<h2>Modeling large, slow-moving objects<a class="headerlink" href="#modeling-large-slow-moving-objects" title="Link to this heading">#</a></h2>
 <p>Newton’s Laws are but one of a number of formulations:</p>
 <ul class="simple">
 <li><p>Lagrangian Mechanics</p></li>
@@ -438,15 +431,20 @@
 <li><p>Dynamical Systems Theory</p></li>
 <li><p>…</p></li>
 </ul>
-<p><img alt="bg right 100%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Modernphysicsfields.svg/640px-Modernphysicsfields.svg.png" /></p>
+<hr class="docutils" />
+<!-- _backgroundColor: DodgerBlue -->
 </section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="an-overview-of-different-physics">
+<h1>An Overview of Different Physics<a class="headerlink" href="#an-overview-of-different-physics" title="Link to this heading">#</a></h1>
+<p><img alt="drop-shadow width:1000px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Modernphysicsfields.svg/640px-Modernphysicsfields.svg.png" /></p>
 <hr class="docutils" />
 <section id="classical-mechanics-is-still-very-relevant">
-<h3>Classical Mechanics is still very relevant<a class="headerlink" href="#classical-mechanics-is-still-very-relevant" title="Link to this heading">#</a></h3>
+<h2>Classical Mechanics is still very relevant<a class="headerlink" href="#classical-mechanics-is-still-very-relevant" title="Link to this heading">#</a></h2>
 <p>Tiny Limbs and Long Bodies: Coordinating Lizard Locomotion
-<a class="reference external" href="https://research.gatech.edu/tiny-limbs-and-long-bodies-coordinating-lizard-locomotion">Research Lab</a> &amp; <a class="reference external" href="https://www.youtube.com/watch?v=Qme07fA3Fj4">Link to Video</a></p>
-<p><a class="reference external" href="https://www.youtube.com/watch?v=Qme07fA3Fj4"><img alt="Tiny Limbs and Long Bodies: Coordinating Lizard Locomotion" src="https://img.youtube.com/vi/Qme07fA3Fj4/0.jpg" /></a></p>
-</section>
+<a class="reference external" href="https://research.gatech.edu/tiny-limbs-and-long-bodies-coordinating-lizard-locomotion">Research Lab</a></p>
+<p><a class="reference external" href="https://youtu.be/Qme07fA3Fj4"><img alt="Tiny Limbs and Long Bodies: Coordinating Lizard Locomotion" src="https://markdown-videos-api.jorgenkh.no/youtube/Qme07fA3Fj4.gif?width=640&amp;height=360&amp;duration=800" /></a>
+Source: <a class="reference external" href="https://youtu.be/Qme07fA3Fj4">https://youtu.be/Qme07fA3Fj4</a></p>
 </section>
 <hr class="docutils" />
 <section id="think-pair-share">
@@ -532,21 +530,20 @@
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Day 02 - Newton’s Laws</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#announcements">Announcements</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#goals-for-this-week">Goals for this week</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#be-able-to-answer-the-following-questions">Be able to answer the following questions.</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Day 02 - Newton’s Laws</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#announcements">Announcements</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#goals-for-this-week">Goals for this week</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#be-able-to-answer-the-following-questions">Be able to answer the following questions.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#take-2-min-to-write-down-what-comes-to-mind-when-asked">Take 2 min to write down what comes to mind when asked:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-classical-physics">What is “Classical” Physics?</a></li>
 </ul>
 </li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#classical-mechanics">Classical Mechanics</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modeling-large-slow-moving-objects">Modeling large, slow-moving objects</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#take-2-min-to-write-down-what-comes-to-mind-when-asked">Take 2 min to write down what comes to mind when asked:</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-classical-physics">What is “Classical” Physics?</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#classical-mechanics">Classical Mechanics</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modeling-large-slow-moving-objects">Modeling large, slow-moving objects</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#classical-mechanics-is-still-very-relevant">Classical Mechanics is still very relevant</a></li>
-</ul>
-</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#an-overview-of-different-physics">An Overview of Different Physics</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#classical-mechanics-is-still-very-relevant">Classical Mechanics is still very relevant</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#think-pair-share">Think-Pair-Share</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-2-1">Clicker Question 2-1</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Think-Pair-Share</a></li>

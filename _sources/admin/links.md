@@ -1,9 +1,9 @@
-##  Course Material and Links
+#  Course Material and Links
 
 Materials will appear in reverse chronological order, with the most recent appearing at the top.
 
 
-### Class Week 1, January 13-17, 2025 (CW3)
+## Class Week 1, January 13-17, 2025 (CW3)
 
 Topics: Introduction, Vectors, Kinematic Quantities
 
@@ -15,22 +15,29 @@ You should also review the first week's notes on [Classical Physics](../lecture-
 
 Embedded in both notes pages are videos that you can watch to help you understand the concepts. We do not require you to watch these videos, but they are recommended to help you see the larger picture of what we are doing in class.
 
-#### Class Materials
-- Web Resources
+### Assignments
+
+- [Homework 1](../homeworks/hw1.ipynb) (due January 24, 2025)
+
+### Resources 
+
   - [Getting Started](../admin/getting-started.md)
   - [What is Classical Physics?](../lecture-notes/week1/01_start.ipynb)
   - [Introduction to Classical Mechanics](../lecture-notes/week1/01_notes.ipynb)
-- Readings:
-  - JRT 1.1-1.4; AMS Ch 1-4; MLB 3.4
-- In-Class Materials:
-  - Day-02 Slides (15 Jan 2025) [MD](../slides/day-02-newtons-laws.md)[HTML](../slides/day-02-newtons-laws.html)[PDF](../slides/day-02-newtons-laws.pdf)
-- Lecture Videos:
-  - 13 Jan 2025
-  - 15 Jan 2025
+  - Textbook Readings: JRT 1.1-1.4; AMS Ch 1-4; MLB 3.4
 
-#### Assignments
+### Lecture Videos:
 
-- [Homework 1](../homeworks/hw1.ipynb) (due January 24, 2025)
+17 Jan 2025 ([Slides](../slides/day-03-vectors.pdf))
+![Day 03](../slides/day-03-vectors.png)
+
+
+15 Jan 2025 ([Slides](../slides/day-02-newtons-laws.pdf)) - **NO VIDEO TECH FAILED**
+![Day 02](../slides/day-02-newtons-laws.png)
+
+13 Jan 2025 ([Slides](../slides/day-01-introduction.pdf))
+[![Day 01](../slides/day-01-introduction.png)](https://mediaspace.msu.edu/media/t/1_mncdlnec)
+
 
 
 <!-- ### Zoom Playlist
