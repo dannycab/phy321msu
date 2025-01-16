@@ -1,23 +1,17 @@
 ---
 marp: true
 theme: gaia
-class:
-    - invert
-    - lead
+class: 
+ - lead
+ - invert
 paginate: true
+
+# title: Day 02 - Newton's Laws
+# description: Slides for PHY 321 Spring 2025, Day 02: Newton's Laws
+# author: Prof. Danny Caballero <caball14@msu.edu>
+# keywords: classical mechanics, newton's laws, differential equations, motion
+# url: https://dannycaballero.info/phy321msu/
 ---
-
-<style>
-/**
- * @theme enable-all-auto-scaling
- * @auto-scaling true
- */
-
-@import url('style.css');
-</style>
-
-
-
 
 # Day 02 - Newton's Laws
 
