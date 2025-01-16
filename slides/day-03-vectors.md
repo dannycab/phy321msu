@@ -3,11 +3,11 @@ marp: true
 theme: king
 paginate: true
 
-# title: Day 03 - Vectors
-# description: Slides for PHY 321 Spring 2025, Day 03: Vectors
-# author: Prof. Danny Caballero <caball14@msu.edu>
-# keywords: classical mechanics, vectors, differential equations, motion
-# url: https://dannycaballero.info/phy321msu/slides/day-03-vectors.html
+title: Day 03 - Vectors
+description: Slides for PHY 321 Spring 2025, Day 03: Vectors
+author: Prof. Danny Caballero <caball14@msu.edu>
+keywords: classical mechanics, vectors, differential equations, motion
+url: https://dannycaballero.info/phy321msu/slides/day-03-vectors.html
 ---
 
 # Day 03 - Vectors
