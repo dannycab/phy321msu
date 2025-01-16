@@ -13,6 +13,8 @@ paginate: true
 # url: https://dannycaballero.info/phy321msu/
 ---
 
+
+
 # Day 02 - Newton's Laws
 
 $$\mathbf{F}_{net} = m \mathbf{a}$$
