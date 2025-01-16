@@ -30,6 +30,8 @@ Danny will lead the course, design the homework and exams, and assign final grad
 
 ## Graduate Teaching Assistant
 
+![Scarlett](../images/staff/scarlett.png)
+
 | Homework Grader  | Email            |
 | ---------------- | ---------------- |
 | _Scarlett Rebolledo Caceres (she/her)_ | <rebolle3@msu.edu> |
