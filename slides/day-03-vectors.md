@@ -3,14 +3,12 @@ marp: true
 theme: king
 paginate: true
 
-title: Day 03 - Vectors
-description: Slides for PHY 321 Spring 2025, Day 03: Vectors
-author: Prof. Danny Caballero <caball14@msu.edu>
-keywords: classical mechanics, vectors, differential equations, motion
-url: https://dannycaballero.info/phy321msu/slides/day-03-vectors.html
+# title: Day 03 - Vectors
+# description: Slides for PHY 321 Spring 2025, Day 03: Vectors
+# author: Prof. Danny Caballero <caball14@msu.edu>
+# keywords: classical mechanics, vectors, differential equations, motion
+# url: https://dannycaballero.info/phy321msu/slides/day-03-vectors.html
 ---
-
-
 
 # Day 03 - Vectors
 
@@ -23,20 +21,134 @@ $$\mathbf{r} = \langle r_x, r_y, r_z\rangle$$
 
 ---
 
-## Announcements
+# Announcements
 
 * Homework 1 is due next Friday
 * Help sessions will start next week
+* Last class was not recorded properly
 
 ---
 
-## Goals for this week
+# Goals for this week
 
-### Be able to answer the following questions.
+## Be able to answer the following questions.
 
 * What is Classical Mechanics?
 * How can we formulate it?
 * What are the essential physics models for single particles?
 * What mathematics do we need to get started?
+
+---
+
+# Reminders from Day 02
+
+* Classical Physics has existed for centuries
+* Newton's Laws are one formulation of Classical Mechanics
+* We can use Newton's Laws to describe the motion of particles
+* Newton's Laws give rise to differential equations
+
+--- 
+
+# Example: Ball Falling in 1D in Air
+
+We derived the following differential equation for the motion of a ball falling in air:
+
+$$m\ddot{y} = mg - b v - c v^2$$
+
+We argued for low speeds, we neglect the $v^2$ term. 
+
+$$m\ddot{y} = mg - b v$$
+
+We can instead write this differential equation for $v$:
+
+$$\dot{v} = g - \frac{b}{m}v$$
+
+---
+
+# Example: Ball Falling in 1D in Air
+
+Is this integrable? **Yes!**
+
+$$\frac{dv}{dt} = g - \frac{b}{m}v$$
+
+$$\frac{dv}{g - \frac{b}{m}v} = dt$$
+
+$$\int \frac{dv}{g - \frac{b}{m}v} = \int dt$$
+
+---
+
+# Example: Ball Falling in 1D in Air
+
+Let's perform a $u$-substitution:
+
+Let $u = g - \frac{b}{m}v$, then $du = -\frac{b}{m}dv$
+
+$$\int \frac{du}{u} = -\frac{m}{b}\int dt$$
+
+$$\ln|u| = -\frac{m}{b}t + C$$
+
+$$u = e^{-\frac{m}{b}t + C} = A e^{-\frac{m}{b}t}$$
+
+where $A = e^C$, a constant.
+
+---
+
+# Example: Ball Falling in 1D in Air
+
+In this limit, we are able to find an analytical solution for the velocity of the ball:
+
+$$u = A e^{-\frac{m}{b}t}$$
+
+$$v = \frac{m}{b}g - A e^{-\frac{m}{b}t}$$
+
+If the ball starts at rest, $v(0) = 0$, then $A = \frac{m}{b}g$.
+
+$$v = \frac{m}{b}g(1 - e^{-\frac{m}{b}t})$$
+
+In the limit of large times, $t \rightarrow \infty$, $v \rightarrow \frac{m}{b}g$, the terminal velocity.
+
+---
+
+# Vector Properties
+
+Newtonian Mechanics is a vector theory. Here are a few mathematical properties of vectors:
+
+* **Addition**: $\mathbf{A} + \mathbf{B} = (A_x + B_x)\hat{x} + (A_y + B_y)\hat{y} + (A_z + B_z)\hat{z}$
+* **Scalar Multiplication**: $c\mathbf{A} = \langle cA_x, cA_y, cA_z\rangle$
+* **Dot Product**: $\mathbf{A}\cdot\mathbf{B} = A_xB_x + A_yB_y + A_zB_z = AB\cos\theta$
+* **Cross Product**: $\mathbf{A}\times\mathbf{B} = \langle A_yB_z - A_zB_y, A_zB_x - A_xB_z, A_xB_y - A_yB_x\rangle$
+* **Unit Vectors**: $\hat{A} = \frac{\mathbf{A}}{|\mathbf{A}|} \qquad |\hat{A}| = 1$
+
+---
+
+# Creating a Generative Artificial Intelligence Policy
+
+*Underlying our work together is ensuring you develop a deep understanding of the physics and mathematics of Classical Mechanics.*
+
+We define **productivity** as the ability to use Generative AI to deepen your understanding of Classical Mechanics.
+
+## Take five minutes to answer the following for yourself:
+
+1. What are ways that you think that AI can be used productively in our classroom?
+2. What are ways that you think that AI can be used unproductively in our classroom?
+3. What do you think are acceptable uses of AI in our classroom?
+4. What do you think are unacceptable uses of AI in our classroom?
+5. Once we define a policy, how should we collectively enforce it?
+
+---
+
+# Creating a Generative Artificial Intelligence Policy
+
+We define **productivity** as the ability to use Generative AI to deepen your understanding of Classical Mechanics.
+
+## Share your ideas are your table. Develop a consensus on the following:
+
+1. What do y'all think are acceptable uses of AI in our classroom?
+2. What do y'all think are unacceptable uses of AI in our classroom?
+3. Once we define a policy, how should we collectively enforce it?
+
+Add your answers to the form at the following link: [https://forms.office.com/r/Bsh6ugKQ9Y](https://forms.office.com/r/Bsh6ugKQ9Y)
+
+
 
 
