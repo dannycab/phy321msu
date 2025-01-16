@@ -8,9 +8,9 @@ All assignments are turned in using Gradescope as a single PDF.
 
 | Week | Day    | Topic                                                               | Readings to prepare     | Important events                                            |
 | ---- | ------ | ------------------------------------------------------------------- | ----------------------- | ----------------------------------------------------------- |
-| CW3  | 13 Jan | Introduction to the course; reminders about vectors; software setup | MLB Ch 3.4              | [Homework 1 Assigned (Due 24 Jan )](../homeworks/hw1.ipynb) |
-|      | 15 Jan | Newton's 1st and 2nd Law; Motion in 1 dimension  [Slides](../slides/day-02-newtons-laws.pdf)                   | JRT 1.1-1.4; AMS Ch 1-4 |                                                             |
-|      | 17 Jan | Discussion of Homework 1                                            |                         |                                                             |
+| CW3  | 13 Jan | Introduction to the course; reminders about vectors; software setup ([Slides](../slides/day-01-introduction.pdf)) | MLB Ch 3.4              | [Homework 1 Assigned (Due 24 Jan )](../homeworks/hw1.ipynb) |
+|      | 15 Jan | Newton's 1st and 2nd Law; Motion in 1 dimension  ([Slides](../slides/day-02-newtons-laws.pdf))                   | JRT 1.1-1.4; AMS Ch 1-4 |                                                             |
+|      | 17 Jan | Discussion of Homework 1  ([Slides](../slides/day-03-vectors.pdf))                                          |                         |                                                             |
 
 ## Class Week 2
 

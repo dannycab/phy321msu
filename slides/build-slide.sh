@@ -9,8 +9,8 @@ MARKDOWN_FILE=$1
 THEME_PATH="../themes/"
 THEME="king.css"
 
-## Generate HTML Slides
-marp --theme ${THEME_PATH}${THEME} --allow-local-files ${MARKDOWN_FILE}
+# ## Generate HTML Slides
+# marp --theme ${THEME_PATH}${THEME} --allow-local-files ${MARKDOWN_FILE}
 
 ## Generate PDF Slides
 marp --theme ${THEME_PATH}${THEME} --allow-local-files --pdf ${MARKDOWN_FILE}
