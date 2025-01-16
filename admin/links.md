@@ -28,14 +28,15 @@ Embedded in both notes pages are videos that you can watch to help you understan
 
 ### Lecture Videos:
 
-13 Jan 2025 ([Slides](../slides/day-01-introduction.html))
+17 Jan 2025 ([Slides](../slides/day-03-vectors.pdf))
+![Day 03](../slides/day-03-vectors.png)
+
+
+15 Jan 2025 ([Slides](../slides/day-02-newtons-laws.pdf)) - **NO VIDEO TECH FAILED**
+![Day 02](../slides/day-02-newtons-laws.png)
+
+13 Jan 2025 ([Slides](../slides/day-01-introduction.pdf))
 [![Day 01](../slides/day-01-introduction.png)](https://mediaspace.msu.edu/media/t/1_mncdlnec)
-
-15 Jan 2025 ([Slides](../slides/day-02-newtons-laws.html))
-[![Day 02](../slides/day-02-newtons-laws.png)](../slides/day-02-newtons-laws.html)
-
-17 Jan 2025 ([Slides](../slides/day-03-vectors.html))
-[![Day 03](../slides/day-03-vectors.png)](../slides/day-03-vectors.html)
 
 
 
