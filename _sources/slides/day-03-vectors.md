@@ -26,6 +26,8 @@ $$\mathbf{r} = \langle r_x, r_y, r_z\rangle$$
 * Homework 1 is due next Friday
 * Help sessions will start next week
 * Last class was not recorded properly
+* No class on Monday (MLK Day)
+* Complete the [student information poll](https://forms.office.com/r/bqFghtWrbj) by Monday, please
 
 ---
 
@@ -75,9 +77,11 @@ $$\frac{dv}{g - \frac{b}{m}v} = dt$$
 
 $$\int \frac{dv}{g - \frac{b}{m}v} = \int dt$$
 
+We will come back to this next week.
+
 ---
 
-# Example: Ball Falling in 1D in Air
+<!-- # Example: Ball Falling in 1D in Air
 
 Let's perform a $u$-substitution:
 
@@ -107,7 +111,7 @@ $$v = \frac{m}{b}g(1 - e^{-\frac{m}{b}t})$$
 
 In the limit of large times, $t \rightarrow \infty$, $v \rightarrow \frac{m}{b}g$, the terminal velocity.
 
----
+--- -->
 
 # Vector Properties
 
@@ -121,9 +125,49 @@ Newtonian Mechanics is a vector theory. Here are a few mathematical properties o
 
 ---
 
-# Creating a Generative Artificial Intelligence Policy
+# Generative AI
 
-*Underlying our work together is ensuring you develop a deep understanding of the physics and mathematics of Classical Mechanics.*
+*Generative AI* is a type of artificial intelligence that can generate new data from existing data.
+
+* It is an **extractive** technology that has mined a vast data set.
+* It is a **probabilistic** technology that uses statistical models to generate new data.
+* It is **not** a **creative** technology that can generate new ideas, concepts, or products.
+* It is **not** a **truthful** technology that can generate new data that is intrinsically true.
+
+**The "Grow At Any Cost" approach to generative AI is destroying communities, violating federal and international laws, upending climate progress, and consolidating power in the hands of a few.** 
+
+---
+
+# Generative AI Energy Consumption
+
+![bg right:20%](./images/a100.png)
+
+* The max power of a single A100 chip is 400W.
+* The compute needed to perform a simple generation task takes roughly 1s.
+* One request thus uses about 400J.
+* If everyone in class performs one request, we would use roughly 40,000 J.
+    * That will charge your cell phone from 0-100% about 5 times.
+* If everyone on campus performs one request, we would use roughly 30,000,000 J.
+    * That will charge your cell phone from 0-100% everyday for 11 years.
+
+
+---
+
+# And yet,
+
+* Generative AI can be used productively.
+* Generative AI can support accessibility.
+* Generative AI can support creativity.
+* Generative AI can support learning.
+
+The complexity and tension of these issues are why we need to develop a policy together.
+
+**I will not live with the consequences of Generative AI, but y'all will, so this policy must be yours.**
+
+---
+
+
+# Creating a Generative Artificial Intelligence Policy
 
 We define **productivity** as the ability to use Generative AI to deepen your understanding of Classical Mechanics.
 
@@ -133,7 +177,8 @@ We define **productivity** as the ability to use Generative AI to deepen your un
 2. What are ways that you think that AI can be used unproductively in our classroom?
 3. What do you think are acceptable uses of AI in our classroom?
 4. What do you think are unacceptable uses of AI in our classroom?
-5. Once we define a policy, how should we collectively enforce it?
+5. How should we document the use of AI in our classroom?
+6. Once we define a policy, how should we collectively enforce it?
 
 ---
 
@@ -145,6 +190,7 @@ We define **productivity** as the ability to use Generative AI to deepen your un
 
 1. What do y'all think are acceptable uses of AI in our classroom?
 2. What do y'all think are unacceptable uses of AI in our classroom?
-3. Once we define a policy, how should we collectively enforce it?
+3. How should we document the use of AI in our classroom?
+4. Once we define a policy, how should we collectively enforce it?
 
 Add your answers to the form at the following link: [https://forms.office.com/r/Bsh6ugKQ9Y](https://forms.office.com/r/Bsh6ugKQ9Y)
