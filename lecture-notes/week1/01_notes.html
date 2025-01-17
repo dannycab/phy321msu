@@ -36,7 +36,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
-    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=87e54e7c" />
   
   <!-- So that users can add custom icons -->
   <script src="../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
@@ -55,7 +55,7 @@
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../../_static/design-tabs.js?v=36754332"></script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
@@ -65,8 +65,8 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'lecture-notes/week1/01_notes';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Homework 1 (Due 24 Jan)" href="../../homeworks/hw1.html" />
-    <link rel="prev" title="Week 1- Overture: What is Classical Physics?" href="01_start.html" />
+    <link rel="next" title="Week 2 - What is Mathematical Modeling?" href="../week2/02_start.html" />
+    <link rel="prev" title="Week 1 - Overture: What is Classical Physics?" href="01_start.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -181,8 +181,10 @@
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Weekly Course Materials</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="01_start.html">Week 1- Overture: What is Classical Physics?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="01_start.html">Week 1 - Overture: What is Classical Physics?</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Week 1 - Notes: Introduction to Classical Mechanics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week2/02_start.html">Week 2 - What is Mathematical Modeling?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week2/02_notes.html">Week 2 - Notes: Making Classical Models</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Assignments</span></p>
 <ul class="nav bd-sidenav">
@@ -454,7 +456,7 @@ F_{net,z} &amp;= m a_z
 <h3>Example: A Block on an Inclined Ramp<a class="headerlink" href="#example-a-block-on-an-inclined-ramp" title="Link to this heading">#</a></h3>
 <p>Consider the box (mass, <span class="math notranslate nohighlight">\(m\)</span>) above on an inclined ramp (angle, <span class="math notranslate nohighlight">\(\theta\)</span>). The box is at rest subject to static friction, <span class="math notranslate nohighlight">\(\mu_s\)</span>. <em>What angle of inclination will cause the box to start sliding down the ramp?</em></p>
 <p>We start by drawing the <a class="reference external" href="https://en.wikipedia.org/wiki/Free_body_diagram">Free Body Diagram</a> (FBD) of the box.</p>
-<p><img alt="Free Body Diagram of Box on a Inclined Ramp; the arrows label the direction of forces acting on the box" src="../../_images/box_fbd.png" />
+<p><img alt="Free Body Diagram of Box on a Inclined Ramp; the arrows label the direction of forces acting on the box" src="../../_images/box_fbd.png" /><br>
 <a class="reference external" href="https://homework.study.com/cimages/multimages/16/diagram_2_450x3002352212273710292.png">Source: homework.study.com</a></p>
 <p>The FBD is a diagram that shows all the forces acting on the object. In this case, the forces acting on the box are:</p>
 <ul class="simple">
@@ -513,7 +515,7 @@ F_{net,z} &amp;= m a_z
 <li><p>The force of gravity/weight, <span class="math notranslate nohighlight">\(W=mg\)</span>, acting downwards.</p></li>
 <li><p>The force due to air resistance, <span class="math notranslate nohighlight">\(F_{air}\)</span>, acting upwards.</p></li>
 </ul>
-<p><img alt="Free Body Diagram of Falling Object; the arrows label the direction of forces acting on the object" src="../../_images/falling_object.gif" />
+<p><img alt="Free Body Diagram of Falling Object; the arrows label the direction of forces acting on the object" src="../../_images/falling_object.gif" /><br>
 <a class="reference external" href="https://ibphysicsguide.weebly.com/uploads/3/0/6/1/30617491/570899611.gif">Source: ibphysicsguide.weebly.com</a></p>
 <p>Here we have chosen positive <span class="math notranslate nohighlight">\(y\)</span> to be the downward direction. We want to predict the motion (<span class="math notranslate nohighlight">\(a\)</span>, <span class="math notranslate nohighlight">\(v\)</span>, <span class="math notranslate nohighlight">\(y\)</span>) of the object as a function of time. This is a very common problem for classical mechanics.</p>
 <section id="air-drag">
@@ -752,7 +754,8 @@ F_{net,z} &amp;= m a_z
 \[\vec{a} \cdot \vec{b} = |\vec{a}||\vec{b}|\cos(\phi).\]</div>
 <p>The figure below shows the relationship between the vectors and the angle.</p>
 <p><img alt="Dot Product of Two Vectors; the dot product is the product of the magnitudes of the vectors and the cosine of the angle between them" src="../../_images/Dot-product-1.svg.png" />
-<a class="reference external" href="https://commons.wikimedia.org/wiki/File:Dot-product-1.svg">Source: Wikipedia</a></p>
+<br>
+Source: <a class="reference external" href="https://commons.wikimedia.org/wiki/File:Dot-product-1.svg">Wikipedia</a></p>
 <p>Much like scalar multiplication, a dot produce is distributive:</p>
 <div class="math notranslate nohighlight">
 \[\vec{a} \cdot (\vec{b} + \vec{c}) = \vec{a} \cdot \vec{b} + \vec{a} \cdot \vec{c}\]</div>
@@ -858,15 +861,15 @@ F_{net,z} &amp;= m a_z
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Week 1- Overture: What is Classical Physics?</p>
+        <p class="prev-next-title">Week 1 - Overture: What is Classical Physics?</p>
       </div>
     </a>
     <a class="right-next"
-       href="../../homeworks/hw1.html"
+       href="../week2/02_start.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Homework 1 (Due 24 Jan)</p>
+        <p class="prev-next-title">Week 2 - What is Mathematical Modeling?</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
