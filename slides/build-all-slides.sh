@@ -7,11 +7,11 @@ THEME="einstein.css"
 # and convert them to PDF using the specified theme.
 
 # # Generate slides with the specified theme
-# marp --theme ${THEME_PATH}${THEME} --allow-local-files ../slides
-# if [ $? -ne 0 ]; then
-#     echo "Failed to generate slides with theme ${THEME_PATH}${THEME}"
-#     exit 1
-# fi
+marp --theme ${THEME_PATH}${THEME} --allow-local-files ../slides
+if [ $? -ne 0 ]; then
+    echo "Failed to generate slides with theme ${THEME_PATH}${THEME}"
+    exit 1
+fi
 
 # Generate PDF from slides with the specified theme
 marp --theme ${THEME_PATH}${THEME} --allow-local-files --pdf ../slides
