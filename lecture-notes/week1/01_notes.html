@@ -36,7 +36,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
-    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=87e54e7c" />
   
   <!-- So that users can add custom icons -->
   <script src="../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
@@ -55,13 +55,11 @@
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../../_static/design-tabs.js?v=36754332"></script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'lecture-notes/week1/01_notes';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -189,6 +187,7 @@
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Assignments</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../homeworks/hw1.html">Homework 1 (Due 24 Jan)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../homeworks/hw2.html">Homework 2 (Due 31 Jan)</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Resources</span></p>
 <ul class="nav bd-sidenav">
@@ -262,7 +261,7 @@
       
       
       
-      <li><a href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/main?urlpath=tree/lecture-notes/week1/01_notes.ipynb" target="_blank"
+      <li><a href="https://mybinder.org/v2/gh/dannycab/phy321msu/spring2025?urlpath=lab/tree/lecture-notes/week1/01_notes.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
    title="Launch on Binder"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -274,6 +273,24 @@
     <img alt="Binder logo" src="../../_static/images/logo_binder.svg">
   </span>
 <span class="btn__text-container">Binder</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://colab.research.google.com/github/dannycab/phy321msu/blob/spring2025/lecture-notes/week1/01_notes.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch on Colab"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img alt="Colab logo" src="../../_static/images/logo_colab.png">
+  </span>
+<span class="btn__text-container">Colab</span>
 </a>
 </li>
       
@@ -426,7 +443,7 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="week-1-notes-introduction-to-classical-mechanics">
+  <section id="week-1-notes-introduction-to-classical-mechanics">
 <h1>Week 1 - Notes: Introduction to Classical Mechanics<a class="headerlink" href="#week-1-notes-introduction-to-classical-mechanics" title="Link to this heading">#</a></h1>
 <section id="how-do-we-formulate-classical-mechanics">
 <h2>How do we formulate Classical Mechanics?<a class="headerlink" href="#how-do-we-formulate-classical-mechanics" title="Link to this heading">#</a></h2>
@@ -442,66 +459,53 @@
 <section id="newton-s-second-law">
 <h2>Newton’s Second Law<a class="headerlink" href="#newton-s-second-law" title="Link to this heading">#</a></h2>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Newton%27s_laws_of_motion#Newton's_second_law">Newton’s Second Law</a> provides the mathematical foundation for classical mechanics. It provides a vector relationship between the net force acting on an object and its acceleration. The law is given by the equation:</p>
-<div class="math notranslate nohighlight">
-\[\vec{F}_{net} = m\vec{a}\]</div>
-<p>where <span class="math notranslate nohighlight">\(\vec{F}_{net}\)</span> is the net force acting on the object, <span class="math notranslate nohighlight">\(m\)</span> is the mass of the object, and <span class="math notranslate nohighlight">\(\vec{a}\)</span> is the acceleration of the object. This equation is a vector equation, meaning that it must be satisfied in each direction.</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{aligned}
-F_{net,x} &amp;= m a_x \\
-F_{net,y} &amp;= m a_y \\
+<p>$$\vec{F}_{net} = m\vec{a}$$</p>
+<p>where $\vec{F}_{net}$ is the net force acting on the object, $m$ is the mass of the object, and $\vec{a}$ is the acceleration of the object. This equation is a vector equation, meaning that it must be satisfied in each direction.</p>
+<p>$$\begin{aligned}
+F_{net,x} &amp;= m a_x \
+F_{net,y} &amp;= m a_y \
 F_{net,z} &amp;= m a_z
-\end{aligned}\end{split}\]</div>
+\end{aligned}$$</p>
 <p>Each push in a Cartesian direction results in a proportional response – an acceleration in the same direction of the net push. Let’s go through a common example to illustrate this relationship.</p>
 <section id="example-a-block-on-an-inclined-ramp">
 <h3>Example: A Block on an Inclined Ramp<a class="headerlink" href="#example-a-block-on-an-inclined-ramp" title="Link to this heading">#</a></h3>
-<p>Consider the box (mass, <span class="math notranslate nohighlight">\(m\)</span>) above on an inclined ramp (angle, <span class="math notranslate nohighlight">\(\theta\)</span>). The box is at rest subject to static friction, <span class="math notranslate nohighlight">\(\mu_s\)</span>. <em>What angle of inclination will cause the box to start sliding down the ramp?</em></p>
+<p>Consider the box (mass, $m$) above on an inclined ramp (angle, $\theta$). The box is at rest subject to static friction, $\mu_s$. <em>What angle of inclination will cause the box to start sliding down the ramp?</em></p>
 <p>We start by drawing the <a class="reference external" href="https://en.wikipedia.org/wiki/Free_body_diagram">Free Body Diagram</a> (FBD) of the box.</p>
 <p><img alt="Free Body Diagram of Box on a Inclined Ramp; the arrows label the direction of forces acting on the box" src="../../_images/box_fbd.png" /><br>
 <a class="reference external" href="https://homework.study.com/cimages/multimages/16/diagram_2_450x3002352212273710292.png">Source: homework.study.com</a></p>
 <p>The FBD is a diagram that shows all the forces acting on the object. In this case, the forces acting on the box are:</p>
 <ul class="simple">
-<li><p>The force of gravity, <span class="math notranslate nohighlight">\(mg\)</span>, acting downwards.</p></li>
+<li><p>The force of gravity, $mg$, acting downwards.</p></li>
 <li><p>The force due to the ramp, which is both perpendicular to the ramp surface (normal) and parallel to it (friction).</p></li>
 </ul>
-<p>We tilt our coordinate system to align with the ramp. This makes the normal force, <span class="math notranslate nohighlight">\(N\)</span>, act in the <span class="math notranslate nohighlight">\(y\)</span>-direction and the frictional force, <span class="math notranslate nohighlight">\(f\)</span>, act in the <span class="math notranslate nohighlight">\(x\)</span>-direction. The force of gravity is split into two components: <span class="math notranslate nohighlight">\(mg\sin(\theta)\)</span> and <span class="math notranslate nohighlight">\(mg\cos(\theta)\)</span>.</p>
-<p>The net force acting on the box is the sum of the forces acting on it, and is zero up to the point where the box starts sliding. At this point, the frictional force is at its maximum value, <span class="math notranslate nohighlight">\(\mu_s N\)</span>. Taking the sum of the forces acting on the box in each direction we have:</p>
-<div class="math notranslate nohighlight">
-\[\vec{F}_{net} = \vec{f} + \vec{N} + \vec{F}_{gravity} = 0\]</div>
-<div class="math notranslate nohighlight">
-\[\sum F_{x,i} = f - mg\sin(\theta) = 0\]</div>
-<div class="math notranslate nohighlight">
-\[\sum F_{y,i} = N - mg\cos(\theta) = 0\]</div>
+<p>We tilt our coordinate system to align with the ramp. This makes the normal force, $N$, act in the $y$-direction and the frictional force, $f$, act in the $x$-direction. The force of gravity is split into two components: $mg\sin(\theta)$ and $mg\cos(\theta)$.</p>
+<p>The net force acting on the box is the sum of the forces acting on it, and is zero up to the point where the box starts sliding. At this point, the frictional force is at its maximum value, $\mu_s N$. Taking the sum of the forces acting on the box in each direction we have:</p>
+<p>$$\vec{F}<em>{net} = \vec{f} + \vec{N} + \vec{F}</em>{gravity} = 0$$</p>
+<p>$$\sum F_{x,i} = f - mg\sin(\theta) = 0$$
+$$\sum F_{y,i} = N - mg\cos(\theta) = 0$$</p>
 <p>Thus,</p>
-<div class="math notranslate nohighlight">
-\[f = mg\sin(\theta)\]</div>
-<div class="math notranslate nohighlight">
-\[N = mg\cos(\theta)\]</div>
-<p>At the point where the box starts sliding, the frictional force is at its maximum value, <span class="math notranslate nohighlight">\(\mu_s N\)</span>. Thus, the box starts sliding when:</p>
-<div class="math notranslate nohighlight">
-\[f = \mu_s N\]</div>
-<p>Substituting the expressions for <span class="math notranslate nohighlight">\(f\)</span> and <span class="math notranslate nohighlight">\(N\)</span> into the equation above, we have:</p>
-<div class="math notranslate nohighlight">
-\[mg\sin(\theta) = \mu_s mg\cos(\theta)\]</div>
-<p>Solving for <span class="math notranslate nohighlight">\(\theta\)</span>:</p>
-<div class="math notranslate nohighlight">
-\[\tan(\theta) = \mu_s\]</div>
-<div class="math notranslate nohighlight">
-\[\theta = \tan^{-1}(\mu_s)\]</div>
+<p>$$f = mg\sin(\theta)$$
+$$N = mg\cos(\theta)$$</p>
+<p>At the point where the box starts sliding, the frictional force is at its maximum value, $\mu_s N$. Thus, the box starts sliding when:</p>
+<p>$$f = \mu_s N$$</p>
+<p>Substituting the expressions for $f$ and $N$ into the equation above, we have:</p>
+<p>$$mg\sin(\theta) = \mu_s mg\cos(\theta)$$</p>
+<p>Solving for $\theta$:</p>
+<p>$$\tan(\theta) = \mu_s$$
+$$\theta = \tan^{-1}(\mu_s)$$</p>
 <p>Thus, the box starts sliding when the angle of inclination is equal to the arctangent of the coefficient of static friction.</p>
 <div class="admonition-check admonition">
 <p class="admonition-title">Check</p>
 <p>We can check this with some numbers. Steel as a static friction coefficient of about 0.16, and rubber is closer to 0.8. Thus, the angle of inclinations for steel and rubber are:</p>
-<div class="math notranslate nohighlight">
-\[\theta_{steel} = \tan^{-1}(0.16) \approx 9^\circ\]</div>
-<div class="math notranslate nohighlight">
-\[\theta_{rubber} = \tan^{-1}(0.8) \approx 39^\circ\]</div>
+<p>$$\theta_{steel} = \tan^{-1}(0.16) \approx 9^\circ$$
+$$\theta_{rubber} = \tan^{-1}(0.8) \approx 39^\circ$$</p>
 <p>It seems quite reasonable that rubber would have a higher angle of inclination before sliding than steel.</p>
 </div>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>A few things to note about this problem:</p>
 <ol class="arabic simple">
-<li><p>This was a static problem, such that <span class="math notranslate nohighlight">\(\vec{F}_{net} = 0\)</span>.</p></li>
+<li><p>This was a static problem, such that $\vec{F}_{net} = 0$.</p></li>
 <li><p>We rotated our coordinate system to align with the ramp. This is a common technique in classical mechanics to simplify the problem.</p></li>
 <li><p>We still used Cartesian coordinates to solve the problem. This is because the forces could be easily decomposed in the titled coordinate system.</p></li>
 </ol>
@@ -510,63 +514,51 @@ F_{net,z} &amp;= m a_z
 </section>
 <section id="example-falling-object-in-one-dimension">
 <h3>Example: Falling Object in One Dimension<a class="headerlink" href="#example-falling-object-in-one-dimension" title="Link to this heading">#</a></h3>
-<p>Consider an object of mass <span class="math notranslate nohighlight">\(m\)</span> falling, but it is subject to air resistance. The free body diagram of the object shows that the forces acting on the object are:</p>
+<p>Consider an object of mass $m$ falling, but it is subject to air resistance. The free body diagram of the object shows that the forces acting on the object are:</p>
 <ul class="simple">
-<li><p>The force of gravity/weight, <span class="math notranslate nohighlight">\(W=mg\)</span>, acting downwards.</p></li>
-<li><p>The force due to air resistance, <span class="math notranslate nohighlight">\(F_{air}\)</span>, acting upwards.</p></li>
+<li><p>The force of gravity/weight, $W=mg$, acting downwards.</p></li>
+<li><p>The force due to air resistance, $F_{air}$, acting upwards.</p></li>
 </ul>
-<p><img alt="Free Body Diagram of Falling Object; the arrows label the direction of forces acting on the object" src="../../_images/falling_object.gif" /><br>
+<p><img alt="Free Body Diagram of Falling Object; the arrows label the direction of forces acting on the object" src="../../_images/falling_object.png" /><br>
 <a class="reference external" href="https://ibphysicsguide.weebly.com/uploads/3/0/6/1/30617491/570899611.gif">Source: ibphysicsguide.weebly.com</a></p>
-<p>Here we have chosen positive <span class="math notranslate nohighlight">\(y\)</span> to be the downward direction. We want to predict the motion (<span class="math notranslate nohighlight">\(a\)</span>, <span class="math notranslate nohighlight">\(v\)</span>, <span class="math notranslate nohighlight">\(y\)</span>) of the object as a function of time. This is a very common problem for classical mechanics.</p>
+<p>Here we have chosen positive $y$ to be the downward direction. We want to predict the motion ($a$, $v$, $y$) of the object as a function of time. This is a very common problem for classical mechanics.</p>
 <section id="air-drag">
 <h4>Air Drag?<a class="headerlink" href="#air-drag" title="Link to this heading">#</a></h4>
 <p>First, we notice that we do not know the force due to <a class="reference external" href="https://en.wikipedia.org/wiki/Drag_(physics)">air resistance</a>. We do know that the force is related to the velocity of the object. So let’s start by writing the air resistance force as a function of velocity:</p>
-<div class="math notranslate nohighlight">
-\[F_{air} = F(v)\]</div>
-<p>where <span class="math notranslate nohighlight">\(F(v)\)</span> is some function of velocity.</p>
+<p>$$F_{air} = F(v)$$</p>
+<p>where $F(v)$ is some function of velocity.</p>
 </section>
 <section id="taylor-series-expansion">
 <h4>Taylor Series Expansion<a class="headerlink" href="#taylor-series-expansion" title="Link to this heading">#</a></h4>
-<p>Because we know that the objects move slowly in classical mechanics, we can assume that the function can be expanded using a <a class="reference external" href="https://en.wikipedia.org/wiki/Taylor_series">Taylor Series</a>.  In general, the Taylor Series of a function <span class="math notranslate nohighlight">\(f(x)\)</span> about a point <span class="math notranslate nohighlight">\(a\)</span> is given by:</p>
-<div class="math notranslate nohighlight">
-\[f(x) = \sum_{n=0}^{\infty} \frac{f^{(n)}(a)}{n!}(x-a)^n\]</div>
-<p>where <span class="math notranslate nohighlight">\(f^{(n)}(a)\)</span> is the <span class="math notranslate nohighlight">\(n\)</span>-th derivative of <span class="math notranslate nohighlight">\(f(x)\)</span> evaluated at <span class="math notranslate nohighlight">\(x=a\)</span>. We can write the first few terms out,</p>
-<div class="math notranslate nohighlight">
-\[f(x) = f(a) + f'(a)(x-a) + \frac{f''(a)}{2!}(x-a)^2 + \frac{f'''(a)}{3!}(x-a)^3 + \ldots\]</div>
-<p>Because we know that the object is moving slowly, we can expand the function <span class="math notranslate nohighlight">\(F(v)\)</span> about <span class="math notranslate nohighlight">\(v=0\)</span>:</p>
-<div class="math notranslate nohighlight">
-\[F(v) = F(0) + F'(0)v + \frac{F''(0)}{2!}v^2 + \ldots\]</div>
-<p>We can assume that the first term is zero, <span class="math notranslate nohighlight">\(F(0)=0\)</span>, because there is no air resistance when the object is at rest. Thus, the force due to air resistance is approximately:</p>
-<div class="math notranslate nohighlight">
-\[F(v) \approx F'(0)v + \frac{F''(0)}{2!}v^2\]</div>
-<p>We call the first term the <strong>linear drag</strong> term and the second term the <strong>quadratic drag</strong> term. The linear drag term is proportional to the velocity of the object, and the quadratic drag term is proportional to the square of the velocity of the object. We also typically replace the evaluated derivatives with constants, <span class="math notranslate nohighlight">\(b\)</span> and <span class="math notranslate nohighlight">\(c\)</span> – because they are constants that depend on the object and the fluid it is moving through. And thus,</p>
-<div class="math notranslate nohighlight">
-\[F_{air} \approx bv + cv^2\]</div>
+<p>Because we know that the objects move slowly in classical mechanics, we can assume that the function can be expanded using a <a class="reference external" href="https://en.wikipedia.org/wiki/Taylor_series">Taylor Series</a>.  In general, the Taylor Series of a function $f(x)$ about a point $a$ is given by:</p>
+<p>$$f(x) = \sum_{n=0}^{\infty} \frac{f^{(n)}(a)}{n!}(x-a)^n$$</p>
+<p>where $f^{(n)}(a)$ is the $n$-th derivative of $f(x)$ evaluated at $x=a$. We can write the first few terms out,</p>
+<p>$$f(x) = f(a) + f’(a)(x-a) + \frac{f’’(a)}{2!}(x-a)^2 + \frac{f’’’(a)}{3!}(x-a)^3 + \ldots$$</p>
+<p>Because we know that the object is moving slowly, we can expand the function $F(v)$ about $v=0$:</p>
+<p>$$F(v) = F(0) + F’(0)v + \frac{F’’(0)}{2!}v^2 + \ldots$$</p>
+<p>We can assume that the first term is zero, $F(0)=0$, because there is no air resistance when the object is at rest. Thus, the force due to air resistance is approximately:</p>
+<p>$$F(v) \approx F’(0)v + \frac{F’’(0)}{2!}v^2$$</p>
+<p>We call the first term the <strong>linear drag</strong> term and the second term the <strong>quadratic drag</strong> term. The linear drag term is proportional to the velocity of the object, and the quadratic drag term is proportional to the square of the velocity of the object. We also typically replace the evaluated derivatives with constants, $b$ and $c$ – because they are constants that depend on the object and the fluid it is moving through. And thus,</p>
+<p>$$F_{air} \approx bv + cv^2$$</p>
 </section>
 <section id="back-to-newton-s-second-law">
 <h4>Back to Newton’s Second Law<a class="headerlink" href="#back-to-newton-s-second-law" title="Link to this heading">#</a></h4>
-<p>In the <span class="math notranslate nohighlight">\(y\)</span>-direction, the net force acting on the object is:</p>
-<div class="math notranslate nohighlight">
-\[F_y = W - F_{air} = mg - bv - cv^2\]</div>
+<p>In the $y$-direction, the net force acting on the object is:</p>
+<p>$$F_y = W - F_{air} = mg - bv - cv^2$$</p>
 <p>And thus, the acceleration of the object is:</p>
-<div class="math notranslate nohighlight">
-\[a = g - \frac{b}{m}v - \frac{c}{m}v^2\]</div>
+<p>$$a = g - \frac{b}{m}v - \frac{c}{m}v^2$$</p>
 <p>This <a class="reference internal" href="#(https://en.wikipedia.org/wiki/Differential_equation)"><span class="xref myst">differential equation</span></a> can be written in a variety of ways. One common way is to write the equation as a <a class="reference external" href="https://math.libretexts.org/Bookshelves/Differential_Equations/Introduction_to_Partial_Differential_Equations_(Herman)/12:_B_-_Ordinary_Differential_Equations_Review/12.02:_Second_Order_Linear_Differential_Equations">second-order differential equation</a>.</p>
-<div class="math notranslate nohighlight">
-\[\frac{d^2y}{dt^2} = g - \frac{b}{m}\frac{dy}{dt} - \frac{c}{m}\left(\frac{dy}{dt}\right)^2\]</div>
-<p>Note that this is a nonlinear differential equation (i.e., there’s a <span class="math notranslate nohighlight">\((d^ny/dt^n)^m\)</span> term where <span class="math notranslate nohighlight">\(m &gt; 1\)</span>), which are notoriously difficult to solve in general. We can write it using the dot notation for derivatives (i.e., <span class="math notranslate nohighlight">\(\dot{y} = dy/dt\)</span>, <span class="math notranslate nohighlight">\(\ddot{y} = d^2y/dt^2\)</span>):</p>
-<div class="math notranslate nohighlight">
-\[\ddot{y} = g - \frac{b}{m}\dot{y} - \frac{c}{m}\dot{y}^2\]</div>
-<p>We can also use the velocity as the independent variable, <span class="math notranslate nohighlight">\(v = \dot{y}\)</span>. Both equations below are equivalent:</p>
-<div class="math notranslate nohighlight">
-\[\frac{dv}{dt} = g - \frac{b}{m}v - \frac{c}{m}v^2\]</div>
-<div class="math notranslate nohighlight">
-\[\dot{v} = g - \frac{b}{m}v - \frac{c}{m}v^2\]</div>
+<p>$$\frac{d^2y}{dt^2} = g - \frac{b}{m}\frac{dy}{dt} - \frac{c}{m}\left(\frac{dy}{dt}\right)^2$$</p>
+<p>Note that this is a nonlinear differential equation (i.e., there’s a $(d^ny/dt^n)^m$ term where $m &gt; 1$), which are notoriously difficult to solve in general. We can write it using the dot notation for derivatives (i.e., $\dot{y} = dy/dt$, $\ddot{y} = d^2y/dt^2$):</p>
+<p>$$\ddot{y} = g - \frac{b}{m}\dot{y} - \frac{c}{m}\dot{y}^2$$</p>
+<p>We can also use the velocity as the independent variable, $v = \dot{y}$. Both equations below are equivalent:</p>
+<p>$$\frac{dv}{dt} = g - \frac{b}{m}v - \frac{c}{m}v^2$$
+$$\dot{v} = g - \frac{b}{m}v - \frac{c}{m}v^2$$</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>A few things to note:</p>
 <ol class="arabic simple">
-<li><p>This is a dynamic one-dimensional problem, such that <span class="math notranslate nohighlight">\(\vec{F}_{net} \neq 0\)</span>.</p></li>
+<li><p>This is a dynamic one-dimensional problem, such that $\vec{F}_{net} \neq 0$.</p></li>
 <li><p>This is a nonlinear problem, such that the acceleration is a function of the velocity of the object.</p></li>
 <li><p>We are stuck with a differential equation that we need to solve, and don’t have a simple algebraic solution (e.g., a simple antiderivative).</p></li>
 </ol>
@@ -578,8 +570,8 @@ F_{net,z} &amp;= m a_z
 <section id="euler-discretization">
 <h2>Euler Discretization<a class="headerlink" href="#euler-discretization" title="Link to this heading">#</a></h2>
 <p>Another useful formulation of Classical Mechanics uses discrete points in time to make approximate predictions of the motion. This is called the <a class="reference external" href="https://en.wikipedia.org/wiki/Euler_method">Euler Method</a>. The Euler Method is a simple numerical method to solve ordinary differential equations. The method is based on the idea of approximating the derivative of a function by a finite difference.</p>
-<p>We posit discrete time, like snapshots of the motion where a given measure of time <span class="math notranslate nohighlight">\(t_i\)</span> exists in a discrete set of times between <span class="math notranslate nohighlight">\(t_0\)</span> and <span class="math notranslate nohighlight">\(t_f\)</span>. That is, <span class="math notranslate nohighlight">\(t_i \in \{t_0, t_1, t_2, \ldots, t_f\}\)</span>. We conceive of the motion as discrete like the points in the figure below.</p>
-<p>In this case, the points are equally spaced in time, such that <span class="math notranslate nohighlight">\(t_{i+1} - t_i = \Delta t\)</span>. This gives a simple table of the motion of the object at each time step:</p>
+<p>We posit discrete time, like snapshots of the motion where a given measure of time $t_i$ exists in a discrete set of times between $t_0$ and $t_f$. That is, $t_i \in {t_0, t_1, t_2, \ldots, t_f}$. We conceive of the motion as discrete like the points in the figure below.</p>
+<p>In this case, the points are equally spaced in time, such that $t_{i+1} - t_i = \Delta t$. This gives a simple table of the motion of the object at each time step:</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>time</p></th>
@@ -587,42 +579,36 @@ F_{net,z} &amp;= m a_z
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(t_0\)</span></p></td>
-<td><p><span class="math notranslate nohighlight">\(y_0\)</span></p></td>
+<tr class="row-even"><td><p>$t_0$</p></td>
+<td><p>$y_0$</p></td>
 </tr>
-<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(t_1\)</span></p></td>
-<td><p><span class="math notranslate nohighlight">\(y_1\)</span></p></td>
+<tr class="row-odd"><td><p>$t_1$</p></td>
+<td><p>$y_1$</p></td>
 </tr>
-<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(t_2\)</span></p></td>
-<td><p><span class="math notranslate nohighlight">\(y_2\)</span></p></td>
+<tr class="row-even"><td><p>$t_2$</p></td>
+<td><p>$y_2$</p></td>
 </tr>
-<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(\ldots\)</span></p></td>
-<td><p><span class="math notranslate nohighlight">\(\ldots\)</span></p></td>
+<tr class="row-odd"><td><p>$\ldots$</p></td>
+<td><p>$\ldots$</p></td>
 </tr>
 </tbody>
 </table>
 </div>
-<p>where <span class="math notranslate nohighlight">\(y_i\)</span> is the position of the object at time <span class="math notranslate nohighlight">\(t_i\)</span>. Here, <span class="math notranslate nohighlight">\(t_i = t_0 + i\Delta t\)</span> – equal time spacing – and <span class="math notranslate nohighlight">\(y(t_i) = y_i\)</span> indicates the position of the object at time <span class="math notranslate nohighlight">\(t_i\)</span>.</p>
+<p>where $y_i$ is the position of the object at time $t_i$. Here, $t_i = t_0 + i\Delta t$ – equal time spacing – and $y(t_i) = y_i$ indicates the position of the object at time $t_i$.</p>
 <section id="predicting-the-motion">
 <h3>Predicting the Motion<a class="headerlink" href="#predicting-the-motion" title="Link to this heading">#</a></h3>
-<p>This formulation can be used to predict the motion of the object.  Let’s first define the average velocity over a time step, <span class="math notranslate nohighlight">\(\Delta t\)</span>, like this:</p>
-<div class="math notranslate nohighlight">
-\[v(t) = \dfrac{y(t+\Delta t) - y(t)}{\Delta t}\]</div>
-<p>Now, we know that at time, <span class="math notranslate nohighlight">\(t_i\)</span>, the velocity is <span class="math notranslate nohighlight">\(v_i\)</span>: <span class="math notranslate nohighlight">\(v(t_i) = v_i\)</span> If we make the time step small, <span class="math notranslate nohighlight">\(\Delta t \rightarrow 0\)</span>, then the average velocity is approximately the velocity at time <span class="math notranslate nohighlight">\(t_i\)</span>. Thus, we can write the velocity at time <span class="math notranslate nohighlight">\(t_{i}\)</span> as:</p>
-<div class="math notranslate nohighlight">
-\[v_{i} = \dfrac{y_{i+1} - y_i}{\Delta t}\]</div>
-<p><strong>Note</strong> If we take the limit that <span class="math notranslate nohighlight">\(\Delta t \rightarrow 0\)</span>, then the average velocity becomes the instantaneous velocity. This stems from the <a class="reference external" href="https://en.wikipedia.org/wiki/Fundamental_theorem_of_calculus">Fundamental Theorem of Calculus</a>.</p>
-<div class="math notranslate nohighlight">
-\[\lim_{\Delta t \rightarrow 0} \dfrac{y(t+\Delta t) - y(t)}{\Delta t} = \dfrac{dy}{dt} = \dot{y}\]</div>
+<p>This formulation can be used to predict the motion of the object.  Let’s first define the average velocity over a time step, $\Delta t$, like this:</p>
+<p>$$v(t) = \dfrac{y(t+\Delta t) - y(t)}{\Delta t}$$</p>
+<p>Now, we know that at time, $t_i$, the velocity is $v_i$: $v(t_i) = v_i$ If we make the time step small, $\Delta t \rightarrow 0$, then the average velocity is approximately the velocity at time $t_i$. Thus, we can write the velocity at time $t_{i}$ as:</p>
+<p>$$v_{i} = \dfrac{y_{i+1} - y_i}{\Delta t}$$</p>
+<p><strong>Note</strong> If we take the limit that $\Delta t \rightarrow 0$, then the average velocity becomes the instantaneous velocity. This stems from the <a class="reference external" href="https://en.wikipedia.org/wiki/Fundamental_theorem_of_calculus">Fundamental Theorem of Calculus</a>.</p>
+<p>$$\lim_{\Delta t \rightarrow 0} \dfrac{y(t+\Delta t) - y(t)}{\Delta t} = \dfrac{dy}{dt} = \dot{y}$$</p>
 <p>What about the acceleration? We can use the same idea to approximate the acceleration. The average acceleration is given by:</p>
-<div class="math notranslate nohighlight">
-\[a(t) = \dfrac{v(t+\Delta t) - v(t)}{\Delta t}\]</div>
-<p>And thus, the acceleration at time <span class="math notranslate nohighlight">\(t_i\)</span> is:</p>
-<div class="math notranslate nohighlight">
-\[a_i = \dfrac{v_{i+1} - v_i}{\Delta t}\]</div>
-<p>Again, if we take the limit that <span class="math notranslate nohighlight">\(\Delta t \rightarrow 0\)</span>, then the average acceleration becomes the instantaneous acceleration:</p>
-<div class="math notranslate nohighlight">
-\[\lim_{\Delta t \rightarrow 0} \dfrac{v(t+\Delta t) - v(t)}{\Delta t} = \dfrac{dv}{dt} = \dot{v}\]</div>
+<p>$$a(t) = \dfrac{v(t+\Delta t) - v(t)}{\Delta t}$$</p>
+<p>And thus, the acceleration at time $t_i$ is:</p>
+<p>$$a_i = \dfrac{v_{i+1} - v_i}{\Delta t}$$</p>
+<p>Again, if we take the limit that $\Delta t \rightarrow 0$, then the average acceleration becomes the instantaneous acceleration:</p>
+<p>$$\lim_{\Delta t \rightarrow 0} \dfrac{v(t+\Delta t) - v(t)}{\Delta t} = \dfrac{dv}{dt} = \dot{v}$$</p>
 </section>
 <section id="video-summary-13-minutes">
 <h3>Video Summary (13 minutes)<a class="headerlink" href="#video-summary-13-minutes" title="Link to this heading">#</a></h3>
@@ -655,21 +641,16 @@ F_{net,z} &amp;= m a_z
 <section id="discretizing-newton-s-second-law">
 <h2>Discretizing Newton’s Second Law<a class="headerlink" href="#discretizing-newton-s-second-law" title="Link to this heading">#</a></h2>
 <p>We can use the Euler Method to discretize Newton’s Second Law, and this allows us to predict the motion of the object using iterative methods. These methods are well-suited for computers, and we will learn how to implement them in this course.</p>
-<p>Let there be a 1D net force acting the x-direction on an object of mass <span class="math notranslate nohighlight">\(m\)</span>, <span class="math notranslate nohighlight">\(F(x)\)</span>. Here the force changes with position. We can discretize this force as a function of position, <span class="math notranslate nohighlight">\(F(x_i)\)</span>. The net force acting on the object is:</p>
-<div class="math notranslate nohighlight">
-\[F(x_i) = F_i\]</div>
+<p>Let there be a 1D net force acting the x-direction on an object of mass $m$, $F(x)$. Here the force changes with position. We can discretize this force as a function of position, $F(x_i)$. The net force acting on the object is:</p>
+<p>$$F(x_i) = F_i$$</p>
 <p>Using Newton’s Second Law, we can write the acceleration of the object as:</p>
-<div class="math notranslate nohighlight">
-\[a_i = \dfrac{F_i}{m}\]</div>
+<p>$$a_i = \dfrac{F_i}{m}$$</p>
 <p>But the definition of the average acceleration gives:</p>
-<div class="math notranslate nohighlight">
-\[a_i = \dfrac{v_{i+1} - v_i}{\Delta t}\]</div>
-<p>Or in terms of the predicted velocity, <span class="math notranslate nohighlight">\(v_{i+1}\)</span>:</p>
-<div class="math notranslate nohighlight">
-\[v_{i+1} = v_i + a_i\Delta t\]</div>
+<p>$$a_i = \dfrac{v_{i+1} - v_i}{\Delta t}$$</p>
+<p>Or in terms of the predicted velocity, $v_{i+1}$:</p>
+<p>$$v_{i+1} = v_i + a_i\Delta t$$</p>
 <p>Or in terms of the net force:</p>
-<div class="math notranslate nohighlight">
-\[v_{i+1} = v_i + \dfrac{F_i}{m}\Delta t\]</div>
+<p>$$v_{i+1} = v_i + \dfrac{F_i}{m}\Delta t$$</p>
 <p><strong>This is the Euler formulation for predicting the velocity of the object in the next time step – given the velocity at the current time step.</strong></p>
 <p>We pause here and will return to this formulation later, but this discretization is the basis for many numerical methods in classical mechanics, and we can apply it to solve the falling object problem above.</p>
 <section id="looking-ahead">
@@ -706,89 +687,68 @@ F_{net,z} &amp;= m a_z
 <section id="vectors-and-coordinates">
 <h3>Vectors and Coordinates<a class="headerlink" href="#vectors-and-coordinates" title="Link to this heading">#</a></h3>
 <p>The figure below shows a vector in two dimensions.</p>
-<p><img alt="Vector in Two Dimensions; the vector is defined by its magnitude, , and its direction, " src="../../_images/2dvector.png" /></p>
-<p>The vector is defined by its magnitude, <span class="math notranslate nohighlight">\(A\)</span>, and its direction, <span class="math notranslate nohighlight">\(\theta\)</span>. The vector can be decomposed into two components, <span class="math notranslate nohighlight">\(A_x\)</span> and <span class="math notranslate nohighlight">\(A_y\)</span>, in the <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span> directions, respectively.</p>
+<p><img alt="Vector in Two Dimensions; the vector is defined by its magnitude, $A$, and its direction, $heta$" src="../../_images/2dvector.png" /></p>
+<p>The vector is defined by its magnitude, $A$, and its direction, $\theta$. The vector can be decomposed into two components, $A_x$ and $A_y$, in the $x$ and $y$ directions, respectively.</p>
 <p>The magnitude of the vector is given by the Pythagorean theorem:</p>
-<div class="math notranslate nohighlight">
-\[|\vec{A}| = A = \sqrt{A_x^2 + A_y^2}\]</div>
+<p>$$|\vec{A}| = A = \sqrt{A_x^2 + A_y^2}$$</p>
 <p>The angle of the vector is given by the tangent of the angle:</p>
-<div class="math notranslate nohighlight">
-\[\theta = \tan^{-1}\left(\dfrac{A_y}{A_x}\right)\]</div>
+<p>$$\theta = \tan^{-1}\left(\dfrac{A_y}{A_x}\right)$$</p>
 <p>We can find the <em>vector components</em> using the magnitude and angle:</p>
-<div class="math notranslate nohighlight">
-\[A_x = A\cos(\theta)\]</div>
-<div class="math notranslate nohighlight">
-\[A_y = A\sin(\theta)\]</div>
-<p>It’s important to note that the vector components are the projections of the vector onto the <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span> axes. The vector components are scalars, and the vector is a sum of the components. We can write the vector in several common forms:</p>
-<div class="math notranslate nohighlight">
-\[\vec{A} = A_x\hat{x} + A_y\hat{y}  = A_x\hat{i} + A_y\hat{j} = A_x\hat{e}_x + A_y\hat{e}_y.\]</div>
+<p>$$A_x = A\cos(\theta)$$
+$$A_y = A\sin(\theta)$$</p>
+<p>It’s important to note that the vector components are the projections of the vector onto the $x$ and $y$ axes. The vector components are scalars, and the vector is a sum of the components. We can write the vector in several common forms:</p>
+<p>$$\vec{A} = A_x\hat{x} + A_y\hat{y}  = A_x\hat{i} + A_y\hat{j} = A_x\hat{e}_x + A_y\hat{e}_y.$$</p>
 <section id="unit-vectors">
 <h4>Unit Vectors<a class="headerlink" href="#unit-vectors" title="Link to this heading">#</a></h4>
-<p>The unit vectors, <span class="math notranslate nohighlight">\(\hat{x}\)</span>, <span class="math notranslate nohighlight">\(\hat{y}\)</span>, <span class="math notranslate nohighlight">\(\hat{i}\)</span>, <span class="math notranslate nohighlight">\(\hat{j}\)</span>, <span class="math notranslate nohighlight">\(\hat{e}_x\)</span>, and <span class="math notranslate nohighlight">\(\hat{e}_y\)</span>, are the basis vectors in the <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span> directions. The unit vectors are used to define the vector components.</p>
-<p>Interestingly, the angle of the vector is not needed to write the vector in Plane Polar Coordinates (<span class="math notranslate nohighlight">\(r\)</span>, <span class="math notranslate nohighlight">\(\theta\)</span>). The vector can be written as:</p>
-<div class="math notranslate nohighlight">
-\[\vec{A} = A\hat{A}\]</div>
-<p>where <span class="math notranslate nohighlight">\(\hat{A}\)</span> is the unit vector in the direction of <span class="math notranslate nohighlight">\(\vec{A}\)</span>. Let’s check that works out:</p>
-<div class="math notranslate nohighlight">
-\[\vec{A} = A_x\hat{x} + A_y\hat{y}\]</div>
-<div class="math notranslate nohighlight">
-\[|\vec{A}| = A = \sqrt{A_x^2 + A_y^2}\]</div>
-<div class="math notranslate nohighlight">
-\[\hat{A} = \dfrac{\vec{A}}{|\vec{A}|} = \dfrac{A_x\hat{x} + A_y\hat{y}}{\sqrt{A_x^2 + A_y^2}}\]</div>
+<p>The unit vectors, $\hat{x}$, $\hat{y}$, $\hat{i}$, $\hat{j}$, $\hat{e}_x$, and $\hat{e}_y$, are the basis vectors in the $x$ and $y$ directions. The unit vectors are used to define the vector components.</p>
+<p>Interestingly, the angle of the vector is not needed to write the vector in Plane Polar Coordinates ($r$, $\theta$). The vector can be written as:</p>
+<p>$$\vec{A} = A\hat{A}$$</p>
+<p>where $\hat{A}$ is the unit vector in the direction of $\vec{A}$. Let’s check that works out:</p>
+<p>$$\vec{A} = A_x\hat{x} + A_y\hat{y}$$</p>
+<p>$$|\vec{A}| = A = \sqrt{A_x^2 + A_y^2}$$</p>
+<p>$$\hat{A} = \dfrac{\vec{A}}{|\vec{A}|} = \dfrac{A_x\hat{x} + A_y\hat{y}}{\sqrt{A_x^2 + A_y^2}}$$</p>
 <p>Such that,</p>
-<div class="math notranslate nohighlight">
-\[\vec{A} = A\hat{A} = A_x\hat{x} + A_y\hat{y}\]</div>
+<p>$$\vec{A} = A\hat{A} = A_x\hat{x} + A_y\hat{y}$$</p>
 <p>Cartesian unit vectors are fixed in space and time when in an inertial reference frame. However, the unit vectors in Plane Polar Coordinates are not fixed in space and time. They rotate with the vector. This is a common source of confusion when working with vectors in different coordinate systems, which we will come back to later.</p>
-<p>The magnitude of a unit vector is always one, <span class="math notranslate nohighlight">\(|\hat{A}| = 1\)</span>. And unit vectors are orthogonal to each other, <span class="math notranslate nohighlight">\(\hat{x} \cdot \hat{y} = 0\)</span>.</p>
+<p>The magnitude of a unit vector is always one, $|\hat{A}| = 1$. And unit vectors are orthogonal to each other, $\hat{x} \cdot \hat{y} = 0$.</p>
 </section>
 </section>
 <section id="multiplication-of-vectors">
 <h3>Multiplication of Vectors<a class="headerlink" href="#multiplication-of-vectors" title="Link to this heading">#</a></h3>
 <section id="dot-scalar-product">
 <h4>Dot (Scalar) Product<a class="headerlink" href="#dot-scalar-product" title="Link to this heading">#</a></h4>
-<p>A dot product of two vectors is a scalar quantity. The dot product of two 3D vectors, <span class="math notranslate nohighlight">\(\vec{a}\)</span> and <span class="math notranslate nohighlight">\(\vec{b}\)</span>, is given by:</p>
-<div class="math notranslate nohighlight">
-\[\vec{a} \cdot \vec{b} = a_xb_x + a_yb_y + a_zb_z\]</div>
+<p>A dot product of two vectors is a scalar quantity. The dot product of two 3D vectors, $\vec{a}$ and $\vec{b}$, is given by:</p>
+<p>$$\vec{a} \cdot \vec{b} = a_xb_x + a_yb_y + a_zb_z$$</p>
 <p>This product is also equal to the product of the magnitudes of the vectors and the cosine of the angle between them:</p>
-<div class="math notranslate nohighlight">
-\[\vec{a} \cdot \vec{b} = |\vec{a}||\vec{b}|\cos(\phi).\]</div>
+<p>$$\vec{a} \cdot \vec{b} = |\vec{a}||\vec{b}|\cos(\phi).$$</p>
 <p>The figure below shows the relationship between the vectors and the angle.</p>
 <p><img alt="Dot Product of Two Vectors; the dot product is the product of the magnitudes of the vectors and the cosine of the angle between them" src="../../_images/Dot-product-1.svg.png" />
 <br>
 Source: <a class="reference external" href="https://commons.wikimedia.org/wiki/File:Dot-product-1.svg">Wikipedia</a></p>
 <p>Much like scalar multiplication, a dot produce is distributive:</p>
-<div class="math notranslate nohighlight">
-\[\vec{a} \cdot (\vec{b} + \vec{c}) = \vec{a} \cdot \vec{b} + \vec{a} \cdot \vec{c}\]</div>
+<p>$$\vec{a} \cdot (\vec{b} + \vec{c}) = \vec{a} \cdot \vec{b} + \vec{a} \cdot \vec{c}$$</p>
 <p>Here’s the proof:</p>
-<div class="math notranslate nohighlight">
-\[\vec{a} \cdot (\vec{b} + \vec{c}) = a_x(b_x + c_x) + a_y(b_y + c_y) + a_z(b_z + c_z)\]</div>
-<div class="math notranslate nohighlight">
-\[= a_xb_x + a_xc_x + a_yb_y + a_yc_y + a_zb_z + a_zc_z\]</div>
-<div class="math notranslate nohighlight">
-\[= \vec{a} \cdot \vec{b} + \vec{a} \cdot \vec{c}\]</div>
+<p>$$\vec{a} \cdot (\vec{b} + \vec{c}) = a_x(b_x + c_x) + a_y(b_y + c_y) + a_z(b_z + c_z)$$</p>
+<p>$$= a_xb_x + a_xc_x + a_yb_y + a_yc_y + a_zb_z + a_zc_z$$</p>
+<p>$$= \vec{a} \cdot \vec{b} + \vec{a} \cdot \vec{c}$$</p>
 </section>
 <section id="cross-vector-product">
 <h4>Cross (Vector) Product<a class="headerlink" href="#cross-vector-product" title="Link to this heading">#</a></h4>
-<p>The cross product of two vectors is a vector quantity. The cross product of two 3D vectors, <span class="math notranslate nohighlight">\(\vec{a}\)</span> and <span class="math notranslate nohighlight">\(\vec{b}\)</span>, is given by:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\vec{a} \times \vec{b} = \begin{vmatrix} \hat{x} &amp; \hat{y} &amp; \hat{z} \\ a_x &amp; a_y &amp; a_z \\ b_x &amp; b_y &amp; b_z \end{vmatrix}\end{split}\]</div>
+<p>The cross product of two vectors is a vector quantity. The cross product of two 3D vectors, $\vec{a}$ and $\vec{b}$, is given by:</p>
+<p>$$\vec{a} \times \vec{b} = \begin{vmatrix} \hat{x} &amp; \hat{y} &amp; \hat{z} \ a_x &amp; a_y &amp; a_z \ b_x &amp; b_y &amp; b_z \end{vmatrix}$$</p>
 <p>This results in a vector that has the following components:</p>
-<div class="math notranslate nohighlight">
-\[\vec{a} \times \vec{b} = (a_yb_z - a_zb_y)\hat{x} - (a_xb_z-a_zb_x)\hat{y} + (a_xb_y - a_yb_x)\hat{z}\]</div>
+<p>$$\vec{a} \times \vec{b} = (a_yb_z - a_zb_y)\hat{x} - (a_xb_z-a_zb_x)\hat{y} + (a_xb_y - a_yb_x)\hat{z}$$</p>
 <p>A few notes about cross products:</p>
 <ol class="arabic simple">
-<li><p><span class="math notranslate nohighlight">\(\vec{a} \times \vec{b}\)</span> always produces a vector and never a scalar.</p></li>
-<li><p><span class="math notranslate nohighlight">\((\vec{a} \times \vec{b})_i\)</span> denotes the <span class="math notranslate nohighlight">\(i\)</span>-th component of the cross product.</p></li>
-<li><p><span class="math notranslate nohighlight">\(\vec{a} \times \vec{b} \neq \vec{b} \times \vec{a}\)</span>; order matters.</p></li>
+<li><p>$\vec{a} \times \vec{b}$ always produces a vector and never a scalar.</p></li>
+<li><p>$(\vec{a} \times \vec{b})_i$ denotes the $i$-th component of the cross product.</p></li>
+<li><p>$\vec{a} \times \vec{b} \neq \vec{b} \times \vec{a}$; order matters.</p></li>
 </ol>
-<p>What is the relationship between <span class="math notranslate nohighlight">\(\vec{a} \times \vec{b}\)</span> and <span class="math notranslate nohighlight">\(\vec{a} \cdot \vec{b}\)</span>? The right-hand rule gives the direction of the cross product. The magnitude of the cross product is given by:</p>
-<div class="math notranslate nohighlight">
-\[|\vec{a} \times \vec{b}| = |\vec{a}||\vec{b}|\sin(\phi)\]</div>
-<div class="math notranslate nohighlight">
-\[|\vec{b} \times \vec{a}| = |\vec{a}||\vec{b}|\sin(\phi)\]</div>
+<p>What is the relationship between $\vec{a} \times \vec{b}$ and $\vec{a} \cdot \vec{b}$? The right-hand rule gives the direction of the cross product. The magnitude of the cross product is given by:</p>
+<p>$$|\vec{a} \times \vec{b}| = |\vec{a}||\vec{b}|\sin(\phi)$$
+$$|\vec{b} \times \vec{a}| = |\vec{a}||\vec{b}|\sin(\phi)$$</p>
 <p>And thus both magnitudes are the same, however, the directions are opposite.</p>
-<div class="math notranslate nohighlight">
-\[\vec{a} \times \vec{b} = -\vec{b} \times \vec{a}\]</div>
+<p>$$\vec{a} \times \vec{b} = -\vec{b} \times \vec{a}$$</p>
 </section>
 </section>
 </section>
@@ -796,31 +756,27 @@ Source: <a class="reference external" href="https://commons.wikimedia.org/wiki/F
 <h2>Units<a class="headerlink" href="#units" title="Link to this heading">#</a></h2>
 <p>In classical mechanics, we will use the <a class="reference external" href="https://en.wikipedia.org/wiki/International_System_of_Units">International System of Units (SI)</a>. The SI units are the standard units used in science and engineering. The primary units we will use in this course are related to the motion of objects:</p>
 <ul class="simple">
-<li><p><strong>Length</strong>: The meter, <span class="math notranslate nohighlight">\(m\)</span>, is the standard unit of length, <span class="math notranslate nohighlight">\([r] = \mathrm{length}\)</span>.</p></li>
-<li><p><strong>Mass</strong>: The kilogram, <span class="math notranslate nohighlight">\(kg\)</span>, is the standard unit of mass, <span class="math notranslate nohighlight">\([m] = \mathrm{mass}\)</span>.</p></li>
-<li><p><strong>Time</strong>: The second, <span class="math notranslate nohighlight">\(s\)</span>, is the standard unit of time, <span class="math notranslate nohighlight">\([t] = \mathrm{time}\)</span>.</p></li>
+<li><p><strong>Length</strong>: The meter, $m$, is the standard unit of length, $[r] = \mathrm{length}$.</p></li>
+<li><p><strong>Mass</strong>: The kilogram, $kg$, is the standard unit of mass, $[m] = \mathrm{mass}$.</p></li>
+<li><p><strong>Time</strong>: The second, $s$, is the standard unit of time, $[t] = \mathrm{time}$.</p></li>
 </ul>
 <p>From these basic units, we can derive the other units. We also use velocity, acceleration, force, momentum, and energy.</p>
 <ul class="simple">
-<li><p><strong>Velocity</strong>: The meter per second, <span class="math notranslate nohighlight">\(m/s\)</span>, is the standard unit of velocity, <span class="math notranslate nohighlight">\([v] = \mathrm{length/time}\)</span>.</p></li>
-<li><p><strong>Acceleration</strong>: The meter per second squared, <span class="math notranslate nohighlight">\(m/s^2\)</span>, is the standard unit of acceleration, <span class="math notranslate nohighlight">\([a] = \mathrm{length/time^2}\)</span>.</p></li>
-<li><p><strong>Force</strong>: The Newton, <span class="math notranslate nohighlight">\(N\)</span>, is the standard unit of force, <span class="math notranslate nohighlight">\([F] = \mathrm{mass*length/(time)^2}\)</span>.</p></li>
-<li><p><strong>Momentum</strong>: The kilogram meter per second, <span class="math notranslate nohighlight">\(kg\cdot m/s\)</span>, is the standard unit of momentum, <span class="math notranslate nohighlight">\([p] = \mathrm{mass*length/time}\)</span>.</p></li>
-<li><p><strong>Energy</strong>: The Joule, <span class="math notranslate nohighlight">\(J\)</span>, is the standard unit of energy, <span class="math notranslate nohighlight">\([E] = \mathrm{mass*length}^2/\mathrm{time}^2\)</span>.</p></li>
+<li><p><strong>Velocity</strong>: The meter per second, $m/s$, is the standard unit of velocity, $[v] = \mathrm{length/time}$.</p></li>
+<li><p><strong>Acceleration</strong>: The meter per second squared, $m/s^2$, is the standard unit of acceleration, $[a] = \mathrm{length/time^2}$.</p></li>
+<li><p><strong>Force</strong>: The Newton, $N$, is the standard unit of force, $[F] = \mathrm{mass*length/(time)^2}$.</p></li>
+<li><p><strong>Momentum</strong>: The kilogram meter per second, $kg\cdot m/s$, is the standard unit of momentum, $[p] = \mathrm{mass*length/time}$.</p></li>
+<li><p><strong>Energy</strong>: The Joule, $J$, is the standard unit of energy, $[E] = \mathrm{mass*length}^2/\mathrm{time}^2$.</p></li>
 </ul>
 <section id="example-what-are-the-units-of-the-drag-coefficients">
 <h3>Example: What are the units of the drag coefficients?<a class="headerlink" href="#example-what-are-the-units-of-the-drag-coefficients" title="Link to this heading">#</a></h3>
-<p>Recall the drag force, <span class="math notranslate nohighlight">\(F_{air} = bv + cv^2\)</span>. The units of the drag coefficients, <span class="math notranslate nohighlight">\(b\)</span> and <span class="math notranslate nohighlight">\(c\)</span>, can be found by examining the units of the force. The units of the force are:</p>
-<div class="math notranslate nohighlight">
-\[[F_{air}] = [b][v] + [c][v^2]\]</div>
-<div class="math notranslate nohighlight">
-\[\mathrm{mass*length/(time)^2} = [b]*\mathrm{length/time}+ [c]*(\mathrm{length/(time)})^2\]</div>
+<p>Recall the drag force, $F_{air} = bv + cv^2$. The units of the drag coefficients, $b$ and $c$, can be found by examining the units of the force. The units of the force are:</p>
+<p>$$[F_{air}] = [b][v] + [c][v^2]$$</p>
+<p>$$\mathrm{mass<em>length/(time)^2} = [b]</em>\mathrm{length/time}+ [c]*(\mathrm{length/(time)})^2$$</p>
 <p>The units need to match on both sides of the equation. Thus, the units of the drag coefficients are:</p>
 <p>Thus, the units of the drag coefficients are:</p>
-<div class="math notranslate nohighlight">
-\[[b] = \mathrm{mass*length/(time)^2} * \mathrm{time/length} = \mathrm{mass/time}\]</div>
-<div class="math notranslate nohighlight">
-\[[c] = \mathrm{mass*length/(time)^2} * (\mathrm{time/(length)})^2 = \mathrm{mass/length}\]</div>
+<p>$$[b] = \mathrm{mass*length/(time)^2} * \mathrm{time/length} = \mathrm{mass/time}$$</p>
+<p>$$[c] = \mathrm{mass*length/(time)^2} * (\mathrm{time/(length)})^2 = \mathrm{mass/length}$$</p>
 </section>
 </section>
 </section>

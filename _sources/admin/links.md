@@ -2,6 +2,30 @@
 
 Materials will appear in reverse chronological order, with the most recent appearing at the top.
 
+## Class Week 2, January 20-24, 2025 (CW4)
+
+Topics: Modeling with Newton's Second Law; Discrete Models
+
+This week we will continue our discussion of Newton's Second Law and how to model systems with it. We will focus on trajectories of objects without air resistance to start and ensure we all remember how to model those systems. We will shift to talking about how to discretize the equations of motion and solve them numerically. This method called [Euler-Cromer](https://en.wikipedia.org/wiki/Semi-implicit_Euler_method) is a simple and effective way to solve many problems in physics.
+
+You should review the overview on [What is Mathematical Modeling](../lecture-notes/week2/02_start.ipynb) and the notes that start us on the path of [Making Classical Models](../lecture-notes/week2/02_notes.ipynb). You should keep reading JRT up to Ch 1.6 and look over AMS Ch 4.2 and Ch 5. 
+
+### Assignments
+
+- [Homework 1](../homeworks/hw1.ipynb) (due January 24, 2025)
+- [Homework 2](../homeworks/hw2.ipynb) (due January 31, 2025) 
+
+### Resources 
+
+  - [What is Mathematical Modeling?](../lecture-notes/week2/02_start.ipynb)
+  - [Making Classical Models](../lecture-notes/week2/02_notes.ipynb)
+  - Textbook Readings: JRT 1.4-1.6; AMS Ch 4.2 and 5
+
+### Lecture Videos:
+
+22 Jan 2025 ([Slides](../slides/day-04-vector-reminders.pdf))
+![Day 04](../slides/day-04-vector-reminders.png)
+
 
 ## Class Week 1, January 13-17, 2025 (CW3)
 
@@ -9,7 +33,7 @@ Topics: Introduction, Vectors, Kinematic Quantities
 
 This week is an introduction to the course and a reminder on vectors, space, time, and motion. We will also discuss Python programming and how it will be used in this course. We will also discuss the software we will use in this course.
 
-You should review the [Getting Started](../admin/getting-started.md) page to learn about the course. It will direct you to other pages that will help you get started.
+You should review the [Getting Started](../admin/getting-started.ipynb) page to learn about the course. It will direct you to other pages that will help you get started.
 
 You should also review the first week's notes on [Classical Physics](../lecture-notes/week1/01_start.ipynb) and the [Introduction to Classical Mechanics](../lecture-notes/week1/01_notes.ipynb), or read Chapter 1.1-1.4 of JRT, Chapter 1-4 of AMS, and Chapter 3.4 of MLB. Again, these books are not required, but they are highly recommended.
 
@@ -21,7 +45,7 @@ Embedded in both notes pages are videos that you can watch to help you understan
 
 ### Resources 
 
-  - [Getting Started](../admin/getting-started.md)
+  - [Getting Started](../admin/getting-started.ipynb)
   - [What is Classical Physics?](../lecture-notes/week1/01_start.ipynb)
   - [Introduction to Classical Mechanics](../lecture-notes/week1/01_notes.ipynb)
   - Textbook Readings: JRT 1.1-1.4; AMS Ch 1-4; MLB 3.4
