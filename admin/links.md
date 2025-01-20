@@ -45,7 +45,7 @@ Embedded in both notes pages are videos that you can watch to help you understan
 
 ### Resources 
 
-  - [Getting Started](../admin/getting-started.md)
+  - [Getting Started](../admin/getting-started.ipynb)
   - [What is Classical Physics?](../lecture-notes/week1/01_start.ipynb)
   - [Introduction to Classical Mechanics](../lecture-notes/week1/01_notes.ipynb)
   - Textbook Readings: JRT 1.1-1.4; AMS Ch 1-4; MLB 3.4
