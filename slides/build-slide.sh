@@ -18,7 +18,7 @@ THEME="king.css"
 
 ## Generate HTML Slides
 # The following would generate HTML slides from the markdown file using the specified theme.
-# marp --theme ${THEME_PATH}${THEME} --allow-local-files ${MARKDOWN_FILE}
+marp --theme ${THEME_PATH}${THEME} --allow-local-files ${MARKDOWN_FILE}
 
 ## Generate PDF Slides
 # This command generates PDF slides from the markdown file using the specified theme.

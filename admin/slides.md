@@ -6,14 +6,14 @@ Slides for PHY 321 appear in reverse chronological order, with the most recent s
 
 ### Download PDF
 
-[![Day 04](../slides/day-04-modeling.png)](../slides/day-04-modeling.pdf)
+[![Day 04](../slides/day-04-vector-reminders.png)](../slides/day-04-vector-reminders.pdf)
 
 ### HTML Versions
 
 | Format | Link |
 |--|--|
-| HTML (Inline) | [day-04-modeling.md](../slides/day-04-modeling.md) |
-| HTML (Slides) | [day-04-modeling.html](../slides/day-04-modeling.html) |
+| HTML (Inline) | [day-04-vector-reminders.md](../slides/day-04-vector-reminders.md) |
+| HTML (Slides) | [day-04-vector-reminders.html](../slides/day-04-vector-reminders.html) |
 
 ## Day 03 - Vectors - 17 Jan 2025
 

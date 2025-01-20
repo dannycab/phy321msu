@@ -23,8 +23,8 @@ You should review the overview on [What is Mathematical Modeling](../lecture-not
 
 ### Lecture Videos:
 
-22 Jan 2025 ([Slides](../slides/day-04-modeling.pdf))
-![Day 04](../slides/day-04-modeling.png)
+22 Jan 2025 ([Slides](../slides/day-04-vector-reminders.pdf))
+![Day 04](../slides/day-04-vector-reminders.png)
 
 
 ## Class Week 1, January 13-17, 2025 (CW3)
@@ -33,7 +33,7 @@ Topics: Introduction, Vectors, Kinematic Quantities
 
 This week is an introduction to the course and a reminder on vectors, space, time, and motion. We will also discuss Python programming and how it will be used in this course. We will also discuss the software we will use in this course.
 
-You should review the [Getting Started](../admin/getting-started.md) page to learn about the course. It will direct you to other pages that will help you get started.
+You should review the [Getting Started](../admin/getting-started.ipynb) page to learn about the course. It will direct you to other pages that will help you get started.
 
 You should also review the first week's notes on [Classical Physics](../lecture-notes/week1/01_start.ipynb) and the [Introduction to Classical Mechanics](../lecture-notes/week1/01_notes.ipynb), or read Chapter 1.1-1.4 of JRT, Chapter 1-4 of AMS, and Chapter 3.4 of MLB. Again, these books are not required, but they are highly recommended.
 
