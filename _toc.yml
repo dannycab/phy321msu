@@ -54,7 +54,7 @@ parts:
     numbered: false
     chapters:
       - file: homeworks/hw1.ipynb
-      # - file: homeworks/hw2.ipynb
+      - file: homeworks/hw2.ipynb
       # - file: homeworks/hw3.ipynb
       # - file: homeworks/hw4.ipynb
       # - file: midterms/midterm1.ipynb
