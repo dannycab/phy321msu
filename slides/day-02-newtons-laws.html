@@ -57,6 +57,8 @@
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"tex2jax": {"inlineMath": [["$", "$"]]}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'slides/day-02-newtons-laws';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -394,7 +396,8 @@ document.write(`
                   
   <section id="day-02-newton-s-laws">
 <h1>Day 02 - Newton’s Laws<a class="headerlink" href="#day-02-newton-s-laws" title="Link to this heading">#</a></h1>
-<p>$$\mathbf{F}_{net} = m \mathbf{a}$$</p>
+<div class="math notranslate nohighlight">
+\[\mathbf{F}_{net} = m \mathbf{a}\]</div>
 <p><img alt="bg right:40%" src="../_images/newton.jpg" /></p>
 </section>
 <hr class="docutils" />
@@ -463,19 +466,20 @@ Source: <a class="reference external" href="https://youtu.be/Qme07fA3Fj4">https:
 <hr class="docutils" />
 <section id="think-pair-share">
 <h2>Think-Pair-Share<a class="headerlink" href="#think-pair-share" title="Link to this heading">#</a></h2>
-<p>We used a tilted coordinate system ($x-y$ plane) to analyze the motion of a block on an inclined plane. How can we check that we did the gravitational force decomposition correctly?</p>
+<p>We used a tilted coordinate system (<span class="math notranslate nohighlight">\(x-y\)</span> plane) to analyze the motion of a block on an inclined plane. How can we check that we did the gravitational force decomposition correctly?</p>
 <p>Recall:</p>
 <ul class="simple">
-<li><p>$F_{\text{gravity}},x = m g \sin(\theta)$</p></li>
-<li><p>$F_{\text{gravity}},y = m g \cos(\theta)$</p></li>
+<li><p><span class="math notranslate nohighlight">\(F_{\text{gravity}},x = m g \sin(\theta)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(F_{\text{gravity}},y = m g \cos(\theta)\)</span></p></li>
 </ul>
 <p>Come up with at least two checks.</p>
 </section>
 <hr class="docutils" />
 <section id="clicker-question-2-1">
 <h2>Clicker Question 2-1<a class="headerlink" href="#clicker-question-2-1" title="Link to this heading">#</a></h2>
-<p>The formal definition of a Taylor series expansion around a point $a$ is:</p>
-<p>$$f(x) = f(a) + f’(a)(x-a) + \frac{f’’(a)}{2!}(x-a)^2 + \frac{f’’’(a)}{3!}(x-a)^3 + \ldots$$</p>
+<p>The formal definition of a Taylor series expansion around a point <span class="math notranslate nohighlight">\(a\)</span> is:</p>
+<div class="math notranslate nohighlight">
+\[f(x) = f(a) + f'(a)(x-a) + \frac{f''(a)}{2!}(x-a)^2 + \frac{f'''(a)}{3!}(x-a)^3 + \ldots\]</div>
 <p>This formula makes me feel:</p>
 <ol class="arabic simple">
 <li><p>Confident, I got this.</p></li>
@@ -488,9 +492,11 @@ Source: <a class="reference external" href="https://youtu.be/Qme07fA3Fj4">https:
 <section id="id1">
 <h2>Think-Pair-Share<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
 <p>We derived the following differential equation for the falling ball in one-dimension:</p>
-<p>$$\frac{d^2 y}{dt^2} = +g - \frac{b}{m} \frac{dy}{dt} - \frac{c}{m} \left(\frac{dy}{dt}\right)^2$$</p>
+<div class="math notranslate nohighlight">
+\[\frac{d^2 y}{dt^2} = +g - \frac{b}{m} \frac{dy}{dt} - \frac{c}{m} \left(\frac{dy}{dt}\right)^2\]</div>
 <p>Let’s assume the turbulent drag term is negligible. Is there an anti-derivative of the right-hand side of this equation? If so, what is it?</p>
-<p>$$\frac{dv}{dt} = +g - \frac{b}{m}v$$</p>
+<div class="math notranslate nohighlight">
+\[\frac{dv}{dt} = +g - \frac{b}{m}v\]</div>
 </section>
 </section>
 

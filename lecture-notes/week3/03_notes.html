@@ -57,6 +57,8 @@
     <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"tex2jax": {"inlineMath": [["$", "$"]]}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'lecture-notes/week3/03_notes';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -369,7 +371,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#turning-observations-into-models">Turning Observations into Models</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modeling-process">Modeling Process</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-falling-ball-in-1d">Example: Falling Ball in 1D</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#question-what-happens-with-ddot-y-0">Question: What happens with $\ddot{y} = 0$?</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#question-what-happens-with-ddot-y-0">Question: What happens with <span class="math notranslate nohighlight">\(\ddot{y} = 0\)</span>?</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#question-can-we-solve-this-differential-equation">Question can we solve this differential equation?</a></li>
 </ul>
 </li>
@@ -398,36 +400,44 @@ document.write(`
 <section id="newtonian-examples-of-classical-models">
 <h2>Newtonian Examples of Classical Models<a class="headerlink" href="#newtonian-examples-of-classical-models" title="Link to this heading">#</a></h2>
 <p>From a Newtonian perspective, our equations of motion are often second-order differential equations. This stems from the fact that Newton’s second law relates the acceleration of a particle to the forces acting on it. The second law is given by the equation:</p>
-<p>$$\vec{F}_{\text{net}} = m \vec{a} = m\ddot{\vec{x}}$$</p>
-<p>where $\vec{x}$ is the position vector and $\ddot{\vec{x}}=\frac{d^2\vec{x}}{dt^2}$ is the acceleration vector. Thus, Newton’s second law is a general EOM that describes the dynamics of a particle of mass, $m$:</p>
-<p>$$\frac{d^2\vec{x}}{dt^2} = \dfrac{\vec{F}_{\text{net}}}{m}$$</p>
+<div class="math notranslate nohighlight">
+\[\vec{F}_{\text{net}} = m \vec{a} = m\ddot{\vec{x}}\]</div>
+<p>where <span class="math notranslate nohighlight">\(\vec{x}\)</span> is the position vector and <span class="math notranslate nohighlight">\(\ddot{\vec{x}}=\frac{d^2\vec{x}}{dt^2}\)</span> is the acceleration vector. Thus, Newton’s second law is a general EOM that describes the dynamics of a particle of mass, <span class="math notranslate nohighlight">\(m\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\frac{d^2\vec{x}}{dt^2} = \dfrac{\vec{F}_{\text{net}}}{m}\]</div>
 <div class="admonition-what-is-dynamics admonition">
 <p class="admonition-title">What is Dynamics?</p>
 <p>Dynamics is the study of the time evolution of a system in question. In classical mechanics, dynamics is the study of the motion of particles and the forces that cause that motion. In other physics, dynamics can refer to the study of the evolution of a system in time and space. And here, space might be an abstraction, such as a <a class="reference external" href="https://en.wikipedia.org/wiki/Phase_space">phase space</a>. We study phase spaces later in the term.</p>
 </div>
 <section id="example-falling-ball-with-no-air-resistance">
 <h3>Example: Falling Ball with No Air Resistance<a class="headerlink" href="#example-falling-ball-with-no-air-resistance" title="Link to this heading">#</a></h3>
-<p>Consider a ball of mass $m$ falling down. We define the positive $y$ direction to be down as in the figure showing the FBD of the ball.</p>
+<p>Consider a ball of mass <span class="math notranslate nohighlight">\(m\)</span> falling down. We define the positive <span class="math notranslate nohighlight">\(y\)</span> direction to be down as in the figure showing the FBD of the ball.</p>
 <p><img alt="FBD of a falling ball" src="images/notes/week2/1d-ball-fbd.png" /></p>
 <p>We can apply Newton’s laws to obtain the specific EOM for the ball.</p>
-<p>$$\vec{F}_{\text{net}} = m \vec{a} = m\ddot{\vec{x}}$$</p>
-<p>This is a 1D case in the $y$ direction,</p>
-<p>$$F_{\text{net,y}} = W = mg = m \ddot{y}$$</p>
+<div class="math notranslate nohighlight">
+\[\vec{F}_{\text{net}} = m \vec{a} = m\ddot{\vec{x}}\]</div>
+<p>This is a 1D case in the <span class="math notranslate nohighlight">\(y\)</span> direction,</p>
+<div class="math notranslate nohighlight">
+\[F_{\text{net,y}} = W = mg = m \ddot{y}\]</div>
 <p>Thus,</p>
-<p>$$\ddot{y} = g$$</p>
+<div class="math notranslate nohighlight">
+\[\ddot{y} = g\]</div>
 <p>is the specific EOM for the ball.</p>
 </section>
 <section id="example-simple-harmonic-oscillator">
 <h3>Example: Simple Harmonic Oscillator<a class="headerlink" href="#example-simple-harmonic-oscillator" title="Link to this heading">#</a></h3>
-<p>We will spend a lot of time studying the <a class="reference external" href="https://en.wikipedia.org/wiki/Harmonic_oscillator">simple harmonic oscillator</a> (SHO) in this course. The SHO is a system that oscillates back and forth around an equilibrium position. It is a very common system in physics and is used a base model for many more complex systems. Consider a mass, $m$, attached to a spring with spring constant, $k$, sitting on a frictionless horizontal plane as in the figure below.</p>
+<p>We will spend a lot of time studying the <a class="reference external" href="https://en.wikipedia.org/wiki/Harmonic_oscillator">simple harmonic oscillator</a> (SHO) in this course. The SHO is a system that oscillates back and forth around an equilibrium position. It is a very common system in physics and is used a base model for many more complex systems. Consider a mass, <span class="math notranslate nohighlight">\(m\)</span>, attached to a spring with spring constant, <span class="math notranslate nohighlight">\(k\)</span>, sitting on a frictionless horizontal plane as in the figure below.</p>
 <p><img alt="FBD of a simple harmonic oscillator" src="images/notes/week2/sho_horizontal.png" /></p>
 <p>The EOM for the SHO can be derived form Newton’s Second Law.</p>
-<p>$$\vec{F}_{\text{net}} = m \vec{a} = m\ddot{\vec{x}}$$</p>
-<p>This is a 1D case in the $x$ direction,</p>
-<p>$$F_{\text{net,x}} = F_{\text{spring}} = -kx = m \ddot{x}$$</p>
+<div class="math notranslate nohighlight">
+\[\vec{F}_{\text{net}} = m \vec{a} = m\ddot{\vec{x}}\]</div>
+<p>This is a 1D case in the <span class="math notranslate nohighlight">\(x\)</span> direction,</p>
+<div class="math notranslate nohighlight">
+\[F_{\text{net,x}} = F_{\text{spring}} = -kx = m \ddot{x}\]</div>
 <p>And thus,</p>
-<p>$$\ddot{x} = -\dfrac{k}{m}x$$</p>
-<p>is the specific EOM for the SHO. As we will learn, this restoring force causes the mass to oscillate back and forth around the equilibrium position, with a well known frequency, $\omega = \sqrt{\dfrac{k}{m}}$.</p>
+<div class="math notranslate nohighlight">
+\[\ddot{x} = -\dfrac{k}{m}x\]</div>
+<p>is the specific EOM for the SHO. As we will learn, this restoring force causes the mass to oscillate back and forth around the equilibrium position, with a well known frequency, <span class="math notranslate nohighlight">\(\omega = \sqrt{\dfrac{k}{m}}\)</span>.</p>
 </section>
 </section>
 <section id="turning-observations-into-models">
@@ -452,47 +462,64 @@ document.write(`
 </section>
 <section id="example-falling-ball-in-1d">
 <h3>Example: Falling Ball in 1D<a class="headerlink" href="#example-falling-ball-in-1d" title="Link to this heading">#</a></h3>
-<p>Consider a ball of mass $m$ falling with air resistance. Here, we have already done some of the work above. We have identified the phenomenon, and started to indicate the interactions.</p>
+<p>Consider a ball of mass <span class="math notranslate nohighlight">\(m\)</span> falling with air resistance. Here, we have already done some of the work above. We have identified the phenomenon, and started to indicate the interactions.</p>
 <p><img alt="FBD of a falling ball with air resistance" src="images/notes/week2/1d-ball-fbd-air.png" /></p>
-<p>In the figure above, we have identified the forces acting on the ball. We have the gravitational force, $W = mg$, and the air resistance, $F_{\text{air}}$. We have chosen the linear mode for air-resistance, which is a choice of model given the assumption that the ball moves very slowly – <em>this is not a good assumption in this case</em>, but makes the mathematical analysis simpler.</p>
-<p>We have also chosen our coordinate system, with the positive $y$ direction pointing down.</p>
+<p>In the figure above, we have identified the forces acting on the ball. We have the gravitational force, <span class="math notranslate nohighlight">\(W = mg\)</span>, and the air resistance, <span class="math notranslate nohighlight">\(F_{\text{air}}\)</span>. We have chosen the linear mode for air-resistance, which is a choice of model given the assumption that the ball moves very slowly – <em>this is not a good assumption in this case</em>, but makes the mathematical analysis simpler.</p>
+<p>We have also chosen our coordinate system, with the positive <span class="math notranslate nohighlight">\(y\)</span> direction pointing down.</p>
 <p>We choose a Newtonian framework for our physics because we are familiar with it. And thus, we can develop the EOM:</p>
-<p>$$\vec{F}_{\text{net}} = m \vec{a} = m\ddot{\vec{x}}$$</p>
+<div class="math notranslate nohighlight">
+\[\vec{F}_{\text{net}} = m \vec{a} = m\ddot{\vec{x}}\]</div>
 <p>In 1d,</p>
-<p>$$F_{\text{net,y}} = W - F_{\text{air}} = mg - bv = m \ddot{y}$$</p>
+<div class="math notranslate nohighlight">
+\[F_{\text{net,y}} = W - F_{\text{air}} = mg - bv = m \ddot{y}\]</div>
 <p>So that the EOM is,</p>
-<p>$$\ddot{y} = g - \dfrac{b}{m}v$$</p>
+<div class="math notranslate nohighlight">
+\[\ddot{y} = g - \dfrac{b}{m}v\]</div>
 <section id="question-what-happens-with-ddot-y-0">
-<h4>Question: What happens with $\ddot{y} = 0$?<a class="headerlink" href="#question-what-happens-with-ddot-y-0" title="Link to this heading">#</a></h4>
-<p>Once the ball has no acceleration, the two forces are balanced. This is the terminal velocity of the ball. We can solve for this by setting $\ddot{y} = 0$:</p>
-<p>$$0 = g - \dfrac{b}{m}v_{\text{term}}$$</p>
-<p>$$v_{\text{term}} = \dfrac{mg}{b}$$</p>
+<h4>Question: What happens with <span class="math notranslate nohighlight">\(\ddot{y} = 0\)</span>?<a class="headerlink" href="#question-what-happens-with-ddot-y-0" title="Link to this heading">#</a></h4>
+<p>Once the ball has no acceleration, the two forces are balanced. This is the terminal velocity of the ball. We can solve for this by setting <span class="math notranslate nohighlight">\(\ddot{y} = 0\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[0 = g - \dfrac{b}{m}v_{\text{term}}\]</div>
+<div class="math notranslate nohighlight">
+\[v_{\text{term}} = \dfrac{mg}{b}\]</div>
 <p>This is the terminal velocity of the ball for linear drag. When the ball reaches this speed (and does so asymptotically), the forces are balanced and the ball will fall at a constant speed.</p>
 </section>
 <section id="question-can-we-solve-this-differential-equation">
 <h4>Question can we solve this differential equation?<a class="headerlink" href="#question-can-we-solve-this-differential-equation" title="Link to this heading">#</a></h4>
-<p>The differential equation $\ddot{y} = g - \dfrac{b}{m}v$ is a second-order differential equation for $y$. We can solve this equation analytically by recasting it as a first-order differential equation for $v$, which we solve for and then integrate to find $y(t)$.</p>
-<p>$$\dot{v} = g - \dfrac{b}{m}v$$</p>
+<p>The differential equation <span class="math notranslate nohighlight">\(\ddot{y} = g - \dfrac{b}{m}v\)</span> is a second-order differential equation for <span class="math notranslate nohighlight">\(y\)</span>. We can solve this equation analytically by recasting it as a first-order differential equation for <span class="math notranslate nohighlight">\(v\)</span>, which we solve for and then integrate to find <span class="math notranslate nohighlight">\(y(t)\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[\dot{v} = g - \dfrac{b}{m}v\]</div>
 <p>We will do that later, for now, let’s hack off the drag bit and return to the simple falling ball. Our simplified EOM is:</p>
-<p>$$\ddot{y} = g$$</p>
-<p>Note this is written as a second order ODE for $y$:</p>
-<p>$$\dfrac{d^2y}{dt^2} = g$$</p>
-<p>It is possible also to recast these kinds of second-order differential equations as a pair of 1st order differential equations for $y$ and $v$:</p>
-<p>$$\dfrac{dv}{dt} = g \qquad \dfrac{dy}{dt} = v$$</p>
+<div class="math notranslate nohighlight">
+\[\ddot{y} = g\]</div>
+<p>Note this is written as a second order ODE for <span class="math notranslate nohighlight">\(y\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\dfrac{d^2y}{dt^2} = g\]</div>
+<p>It is possible also to recast these kinds of second-order differential equations as a pair of 1st order differential equations for <span class="math notranslate nohighlight">\(y\)</span> and <span class="math notranslate nohighlight">\(v\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\dfrac{dv}{dt} = g \qquad \dfrac{dy}{dt} = v\]</div>
 <p>This is a common technique in physics and engineering to solve second-order differential equations. Let’s solve this for completeness.</p>
-<p>$$\dfrac{dv}{dt} = g \longrightarrow \textrm{a constant}$$</p>
+<div class="math notranslate nohighlight">
+\[\dfrac{dv}{dt} = g \longrightarrow \textrm{a constant}\]</div>
 <p>We can integrate:</p>
-<p>$$\int_{v_0}^{v(t)} dv = \int_{0}^{t} g dt$$</p>
-<p>$$v(t) - v_0 = gt$$</p>
+<div class="math notranslate nohighlight">
+\[\int_{v_0}^{v(t)} dv = \int_{0}^{t} g dt\]</div>
+<div class="math notranslate nohighlight">
+\[v(t) - v_0 = gt\]</div>
 <p>We obtain the velocity as a function of time for constant acceleration:</p>
-<p>$$v(t) = v_0 + gt$$</p>
+<div class="math notranslate nohighlight">
+\[v(t) = v_0 + gt\]</div>
 <p>Now we can integrate the velocity to obtain the position as a function of time:</p>
-<p>$$\dfrac{dy}{dt} = v \longrightarrow \textrm{a function of time}$$</p>
-<p>$$\int_{y_0}^{y(t)} dy = \int_{0}^{t} v_0 + gt dt$$</p>
-<p>$$y(t) - y_0 = v_0 t + \dfrac{1}{2}gt^2$$</p>
+<div class="math notranslate nohighlight">
+\[\dfrac{dy}{dt} = v \longrightarrow \textrm{a function of time}\]</div>
+<div class="math notranslate nohighlight">
+\[\int_{y_0}^{y(t)} dy = \int_{0}^{t} v_0 + gt dt\]</div>
+<div class="math notranslate nohighlight">
+\[y(t) - y_0 = v_0 t + \dfrac{1}{2}gt^2\]</div>
 <p>We obtain the position as a function of time for constant acceleration, the standard kinematic equation:</p>
-<p>$$y(t) = y_0 + v_0 t + \dfrac{1}{2}gt^2$$</p>
-<p>Why the ‘plus’ sign on the last term? Because we choose positive $y$ to be down, and the ball is accelerating down.</p>
+<div class="math notranslate nohighlight">
+\[y(t) = y_0 + v_0 t + \dfrac{1}{2}gt^2\]</div>
+<p>Why the ‘plus’ sign on the last term? Because we choose positive <span class="math notranslate nohighlight">\(y\)</span> to be down, and the ball is accelerating down.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>This is really useful, but is contingent on finding or knowing the anti-derivative of the functions we are integrating. That is not always possible. What might we do if we weren’t sure that we could find the anti-derivative?</p>
@@ -505,38 +532,50 @@ document.write(`
 <p>Most of our experience so far has been solving problems where we can find continuous functions that are the anti-derivatives of the functions we are integrating. This leads to standard formulae that we can use to predict or plot our results.</p>
 <p>However, there are very few systems for which we can write down EOMs that have known solutions. In these cases, we need to turn to numerical methods to solve the equations of motion. To do this, we need a discrete formulation of the EOMs.</p>
 <p>Let’s focus on 1D:</p>
-<p>$$\dfrac{d^2y}{dt^2} = \dfrac{F}{m}$$</p>
+<div class="math notranslate nohighlight">
+\[\dfrac{d^2y}{dt^2} = \dfrac{F}{m}\]</div>
 <p>We can write this as a pair of first-order differential equations:</p>
-<p>$$\dfrac{dy}{dt} = v \quad \textrm{and} \quad \dfrac{dv}{dt} = \dfrac{F}{m}$$</p>
-<p>Let’s allow ourselves to consider instead a small time interval of the evolution, $\Delta t$. We can then write the velocity equation as:</p>
-<p>$$\dfrac{dv}{dt} = \dfrac{\Delta v}{\Delta t}= \dfrac{v(t+\Delta t) - v(t)}{\Delta t} = \dfrac{F}{m}$$</p>
-<p>We can turn this into a discrete equation by multiplying through by $\Delta t$: prediction of the velocity at the next time step:</p>
-<p>$$v(t+\Delta t) = v(t) + \dfrac{F}{m} \Delta t$$</p>
-<p>This is the “velocity update” equation, or more generally, the <a class="reference external" href="https://en.wikipedia.org/wiki/Euler_method">Euler step</a> for velocity. Given the information at time $t$, $F(t)$, $m$, and $v(t)$, we can predict the velocity at the next time step.</p>
-<p>$$v(t+\Delta t) = v(t) + \dfrac{F(t)}{m} \Delta t$$</p>
+<div class="math notranslate nohighlight">
+\[\dfrac{dy}{dt} = v \quad \textrm{and} \quad \dfrac{dv}{dt} = \dfrac{F}{m}\]</div>
+<p>Let’s allow ourselves to consider instead a small time interval of the evolution, <span class="math notranslate nohighlight">\(\Delta t\)</span>. We can then write the velocity equation as:</p>
+<div class="math notranslate nohighlight">
+\[\dfrac{dv}{dt} = \dfrac{\Delta v}{\Delta t}= \dfrac{v(t+\Delta t) - v(t)}{\Delta t} = \dfrac{F}{m}\]</div>
+<p>We can turn this into a discrete equation by multiplying through by <span class="math notranslate nohighlight">\(\Delta t\)</span>: prediction of the velocity at the next time step:</p>
+<div class="math notranslate nohighlight">
+\[v(t+\Delta t) = v(t) + \dfrac{F}{m} \Delta t\]</div>
+<p>This is the “velocity update” equation, or more generally, the <a class="reference external" href="https://en.wikipedia.org/wiki/Euler_method">Euler step</a> for velocity. Given the information at time <span class="math notranslate nohighlight">\(t\)</span>, <span class="math notranslate nohighlight">\(F(t)\)</span>, <span class="math notranslate nohighlight">\(m\)</span>, and <span class="math notranslate nohighlight">\(v(t)\)</span>, we can predict the velocity at the next time step.</p>
+<div class="math notranslate nohighlight">
+\[v(t+\Delta t) = v(t) + \dfrac{F(t)}{m} \Delta t\]</div>
 <p>Great! But that is just for velocity, can we do the same for position?</p>
 <p><strong>Yes</strong></p>
 <p>We can use the same logic to predict the position at the next time step:</p>
-<p>$$\dfrac{dy}{dt} = v$$</p>
+<div class="math notranslate nohighlight">
+\[\dfrac{dy}{dt} = v\]</div>
 <p>If we discretize this, we realize we just have the definition of the average velocity:</p>
-<p>$$\dfrac{dy}{dt} = v_{\textrm{avg}}$$</p>
+<div class="math notranslate nohighlight">
+\[\dfrac{dy}{dt} = v_{\textrm{avg}}\]</div>
 <p>We can then write the position update equation:</p>
-<p>$$y(t+\Delta t) = y(t) + v_{\textrm{avg}} \Delta t$$</p>
-<p>What is left is to determine what should be the estimate for $v_{\textrm{avg}}$.</p>
+<div class="math notranslate nohighlight">
+\[y(t+\Delta t) = y(t) + v_{\textrm{avg}} \Delta t\]</div>
+<p>What is left is to determine what should be the estimate for <span class="math notranslate nohighlight">\(v_{\textrm{avg}}\)</span>.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The idea that we have to pick a value for $v_{\textrm{avg}}$ is a key point in numerical methods. It might seem silly or overly subtle and it certainly the latter. We can select $v(t)$, $v(t+\Delta t)$, or some average of the two. The choice of $v_{\textrm{avg}}$ is the key to the accuracy of the method.</p>
-<p>As we will show in a later homework, the best choice is $v(t+\Delta t)$ as it preserves the energy of the system.</p>
+<p>The idea that we have to pick a value for <span class="math notranslate nohighlight">\(v_{\textrm{avg}}\)</span> is a key point in numerical methods. It might seem silly or overly subtle and it certainly the latter. We can select <span class="math notranslate nohighlight">\(v(t)\)</span>, <span class="math notranslate nohighlight">\(v(t+\Delta t)\)</span>, or some average of the two. The choice of <span class="math notranslate nohighlight">\(v_{\textrm{avg}}\)</span> is the key to the accuracy of the method.</p>
+<p>As we will show in a later homework, the best choice is <span class="math notranslate nohighlight">\(v(t+\Delta t)\)</span> as it preserves the energy of the system.</p>
 </div>
 <section id="euler-cromer-step">
 <h3>Euler-Cromer Step<a class="headerlink" href="#euler-cromer-step" title="Link to this heading">#</a></h3>
 <p>Taken together, we obtain the <a class="reference external" href="https://en.wikipedia.org/wiki/Semi-implicit_Euler_method">Euler-Cromer</a> step for the position and velocity:</p>
-<p>$$v(t+\Delta t) = v(t) + \dfrac{F(t)}{m} \Delta t$$
-$$y(t+\Delta t) = y(t) + v(t+\Delta t) \Delta t$$</p>
+<div class="math notranslate nohighlight">
+\[v(t+\Delta t) = v(t) + \dfrac{F(t)}{m} \Delta t\]</div>
+<div class="math notranslate nohighlight">
+\[y(t+\Delta t) = y(t) + v(t+\Delta t) \Delta t\]</div>
 <p>This method was accidentaly discovered by a high physics student called Abby Aspel. It was later explored by <a class="reference external" href="https://en.wikipedia.org/wiki/Alan_Cromer">Alan Cromer</a> whote wrote up this <a class="reference external" href="https://aapt.scitation.org/doi/10.1119/1.10903">method in the American Journal of Physics</a>.</p>
 <p>In three-dimensions, this method is simply written in a vector form:</p>
-<p>$$\vec{v}(t+\Delta t) = \vec{v}(t) + \dfrac{\vec{F}(t)}{m} \Delta t$$
-$$\vec{r}(t+\Delta t) = \vec{r}(t) + \vec{v}(t+\Delta t) \Delta t$$</p>
+<div class="math notranslate nohighlight">
+\[\vec{v}(t+\Delta t) = \vec{v}(t) + \dfrac{\vec{F}(t)}{m} \Delta t\]</div>
+<div class="math notranslate nohighlight">
+\[\vec{r}(t+\Delta t) = \vec{r}(t) + \vec{v}(t+\Delta t) \Delta t\]</div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>This method should be called the Euler-Aspel-Cromer method because Euler started it, Aspel discovered it, and Cromer formalized it.</p>
@@ -620,7 +659,7 @@ $$\vec{r}(t+\Delta t) = \vec{r}(t) + \vec{v}(t+\Delta t) \Delta t$$</p>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#turning-observations-into-models">Turning Observations into Models</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modeling-process">Modeling Process</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-falling-ball-in-1d">Example: Falling Ball in 1D</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#question-what-happens-with-ddot-y-0">Question: What happens with $\ddot{y} = 0$?</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#question-what-happens-with-ddot-y-0">Question: What happens with <span class="math notranslate nohighlight">\(\ddot{y} = 0\)</span>?</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#question-can-we-solve-this-differential-equation">Question can we solve this differential equation?</a></li>
 </ul>
 </li>

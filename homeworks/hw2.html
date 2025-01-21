@@ -57,6 +57,8 @@
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"tex2jax": {"inlineMath": [["$", "$"]]}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'homeworks/hw2';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -417,8 +419,8 @@ document.write(`
 <section id="exercise-3-10-pt-space-shuttle-with-air-resistance">
 <h2>Exercise 3 (10 pt), Space shuttle with air resistance<a class="headerlink" href="#exercise-3-10-pt-space-shuttle-with-air-resistance" title="Link to this heading">#</a></h2>
 <p>Useful material here to read is: Malthe-Sørenssen chapters 5.1, 5.2 and 5.3</p>
-<p>During lift-off of the space shuttle the engines provide a force of $35\times 10^{6}$ N. The mass of the shuttle is approximately
-$2\times 10^6$ kg.</p>
+<p>During lift-off of the space shuttle the engines provide a force of <span class="math notranslate nohighlight">\(35\times 10^{6}\)</span> N. The mass of the shuttle is approximately
+<span class="math notranslate nohighlight">\(2\times 10^6\)</span> kg.</p>
 <ul class="simple">
 <li><p>3a (3pt) Draw a free-body diagram of the space shuttle immediately after lift-off.</p></li>
 <li><p>3b (3pt)  Find an expression for the acceleration of the space shuttle immediately after lift-off.</p></li>
@@ -438,27 +440,27 @@ space shuttle does not change significantly over the first 20 s.</p>
 </ul>
 <p><strong>Do Taylor exercise 1.35</strong>. The formulae you obtain here will be useful for the numerical exercises below (see exercise 6 below).</p>
 <p><em>Repeated below consistent with <a class="reference external" href="https://en.wikipedia.org/wiki/Fair_use">fair use practices</a></em></p>
-<p>A golf ball is hit from ground level with a speed $v_0$  in a direction due east that is at an angle $\theta$ above the horizontal.</p>
+<p>A golf ball is hit from ground level with a speed <span class="math notranslate nohighlight">\(v_0\)</span>  in a direction due east that is at an angle <span class="math notranslate nohighlight">\(\theta\)</span> above the horizontal.</p>
 <ul class="simple">
-<li><p>4a (5 pt) Neglecting air resistance, use Newton’s second law to find the position as a function of time, using the coordinates $x$ measured east, $y$ measured north, and $z$ measured up.</p></li>
+<li><p>4a (5 pt) Neglecting air resistance, use Newton’s second law to find the position as a function of time, using the coordinates <span class="math notranslate nohighlight">\(x\)</span> measured east, <span class="math notranslate nohighlight">\(y\)</span> measured north, and <span class="math notranslate nohighlight">\(z\)</span> measured up.</p></li>
 <li><p>4b (5 pt) Find the time the golf ball is in the air and how far it travels in that time.</p></li>
 </ul>
 <p><strong>Reflect on the form of your answer.</strong></p>
 <ul class="simple">
-<li><p>4c (5 pt) Your answers should depend on $v_0$ and $\theta$. What can you say about the dependence of the time the golf ball is in the air and the distance it travels on these two variables? How can we believe this functional form of your answer? How can we check it? Propose a check and check that your answer is consistent with this check.</p></li>
+<li><p>4c (5 pt) Your answers should depend on <span class="math notranslate nohighlight">\(v_0\)</span> and <span class="math notranslate nohighlight">\(\theta\)</span>. What can you say about the dependence of the time the golf ball is in the air and the distance it travels on these two variables? How can we believe this functional form of your answer? How can we check it? Propose a check and check that your answer is consistent with this check.</p></li>
 </ul>
 </section>
 <section id="exercise-5-15-pt-ball-thrown-along-a-sloped-ramp">
 <h2>Exercise 5 (15 pt), ball thrown along a sloped ramp<a class="headerlink" href="#exercise-5-15-pt-ball-thrown-along-a-sloped-ramp" title="Link to this heading">#</a></h2>
 <p><strong>Taylor exercise 1.39.</strong> Make sure to draw your setup clearly, show your free-body diagram, and explain any assumptions you make to solve the problem.</p>
 <p><em>Repeated below consistent with <a class="reference external" href="https://en.wikipedia.org/wiki/Fair_use">fair use practices</a></em></p>
-<p>A ball is thrown with initial speed $v_0$ up an inclined plane. The plane is inclined at an angle $\phi$ above the horizontal, and the ball’s initial velocity is at an angle $\theta$ above the plane. Choose axes with $x$ measured up the slope, $y$ normal to the slope, and $z$ across it.</p>
+<p>A ball is thrown with initial speed <span class="math notranslate nohighlight">\(v_0\)</span> up an inclined plane. The plane is inclined at an angle <span class="math notranslate nohighlight">\(\phi\)</span> above the horizontal, and the ball’s initial velocity is at an angle <span class="math notranslate nohighlight">\(\theta\)</span> above the plane. Choose axes with <span class="math notranslate nohighlight">\(x\)</span> measured up the slope, <span class="math notranslate nohighlight">\(y\)</span> normal to the slope, and <span class="math notranslate nohighlight">\(z\)</span> across it.</p>
 <ul class="simple">
 <li><p>5a (5 pt) Write down Newton’s second law using these axes and find the ball’s position as a function of time. <strong>Make sure to include the FBD and any assumptions you make.</strong></p></li>
-<li><p>5b (5 pt) Show that the ball lands a distance $$R=2v_0^2\dfrac{\sin\theta\cos\left(\theta + \phi\right)}{g \cos^2 \phi}$$
+<li><p>5b (5 pt) Show that the ball lands a distance $<span class="math notranslate nohighlight">\(R=2v_0^2\dfrac{\sin\theta\cos\left(\theta + \phi\right)}{g \cos^2 \phi}\)</span>$
 from its launch point. <strong>This is measured up the ramp (i.e., along it).</strong></p></li>
-<li><p>5c (5 pt) Show that for given $v_0$ and $\phi$, the maximum range up the inclined plane is:
-$$R_{\text{max}}=\dfrac{v_0^2}{g(1+\sin\phi)}$$</p></li>
+<li><p>5c (5 pt) Show that for given <span class="math notranslate nohighlight">\(v_0\)</span> and <span class="math notranslate nohighlight">\(\phi\)</span>, the maximum range up the inclined plane is:
+$<span class="math notranslate nohighlight">\(R_{\text{max}}=\dfrac{v_0^2}{g(1+\sin\phi)}\)</span>$</p></li>
 </ul>
 </section>
 <section id="exercise-6-40pt-numerical-elements-moving-to-more-than-one-dimension">
@@ -495,10 +497,10 @@ $$R_{\text{max}}=\dfrac{v_0^2}{g(1+\sin\phi)}$$</p></li>
 In the first homework we used instead the position from experiment (Usain Bolt’s 100m record run) and stored this
 information with one-dimensional arrays in Python.</p>
 <p>Let us get some practice with this. The cell below creates two arrays,
-one containing the times to be analyzed and the other containing the $x$
-and $y$ components of the position vector at each point in time.  This is a two-dimensional object. The
+one containing the times to be analyzed and the other containing the <span class="math notranslate nohighlight">\(x\)</span>
+and <span class="math notranslate nohighlight">\(y\)</span> components of the position vector at each point in time.  This is a two-dimensional object. The
 second array is initially empty. Then we define  the initial
-position to be $x=2$ and $y=1$. Take a look at the code and comments
+position to be <span class="math notranslate nohighlight">\(x=2\)</span> and <span class="math notranslate nohighlight">\(y=1\)</span>. Take a look at the code and comments
 to get an understanding of what is happening. Feel free to play around with it.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -512,7 +514,7 @@ to get an understanding of what is happening. Feel free to play around with it.<
 </div>
 </div>
 <p>Below we are printing specific values of our array to see what is being
-stored where. The first number in the array $r[]$ represents which array
+stored where. The first number in the array <span class="math notranslate nohighlight">\(r[]\)</span> represents which array
 iteration we are looking at, while the number after the  represents
 which listed number in the array iteration we are getting back.</p>
 <div class="cell docutils container">
@@ -586,9 +588,9 @@ which listed number in the array iteration we are getting back.</p>
 </div>
 </div>
 <p>In the cell below we want to manipulate the arrays.
-In this example we make each vector’s $x$ component valued the same as their respective vector’s position in the iteration and the $y$ value will be twice that value, except for  the first vector, which we have already set.
-That is we have $p[0] = [2,1], p[1] = [1,2], p[2] = [2,4], p[3] = [3,6], …$</p>
-<p>Here we set up an array for $x$ and $y$ values.</p>
+In this example we make each vector’s <span class="math notranslate nohighlight">\(x\)</span> component valued the same as their respective vector’s position in the iteration and the <span class="math notranslate nohighlight">\(y\)</span> value will be twice that value, except for  the first vector, which we have already set.
+That is we have <span class="math notranslate nohighlight">\(p[0] = [2,1], p[1] = [1,2], p[2] = [2,4], p[3] = [3,6], ...\)</span></p>
+<p>Here we set up an array for <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span> values.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">3999</span><span class="p">):</span>
@@ -621,9 +623,9 @@ multidimensional objects.</p>
 moving in one dimension. This week we will be working with a three-dimensional variant. This will be useful for our next homeworks and numerical projects.</p>
 <p>Assume we have a soccer ball moving in three dimensions with the following trajectory:</p>
 <ol class="arabic simple">
-<li><p>$x(t) = 10t\cos{45^{\circ}} $</p></li>
-<li><p>$y(t) = 10t\sin{45^{\circ}} $</p></li>
-<li><p>$z(t) = 10t - \dfrac{9.81}{2}t^2$</p></li>
+<li><p><span class="math notranslate nohighlight">\(x(t) = 10t\cos{45^{\circ}} \)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(y(t) = 10t\sin{45^{\circ}} \)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(z(t) = 10t - \dfrac{9.81}{2}t^2\)</span></p></li>
 </ol>
 <p>Now let us create a three-dimensional (3D) plot using these equations. In the cell below
 we write the equations into their respective labels. We fix a final time in the code below.</p>
@@ -660,9 +662,9 @@ converts degrees to radians.</p>
 </div>
 </div>
 <ul class="simple">
-<li><p>6a (8pt) How would you express $x(t)$, $y(t)$, $z(t)$ for this problem as a single vector, $\boldsymbol{r}(t)$?</p></li>
+<li><p>6a (8pt) How would you express <span class="math notranslate nohighlight">\(x(t)\)</span>, <span class="math notranslate nohighlight">\(y(t)\)</span>, <span class="math notranslate nohighlight">\(z(t)\)</span> for this problem as a single vector, <span class="math notranslate nohighlight">\(\boldsymbol{r}(t)\)</span>?</p></li>
 </ul>
-<p>Then run the code and plot using the array $r$</p>
+<p>Then run the code and plot using the array <span class="math notranslate nohighlight">\(r\)</span></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## Run this code to plot using our r array </span>
@@ -676,13 +678,13 @@ converts degrees to radians.</p>
 </div>
 </div>
 <ul class="simple">
-<li><p>6b (8pt) What do you think the benefits and/or disadvantages are from expressing our three equations as a single array/vector? This can be both from a computational and physics stand point. Use the <strong>Numpy</strong> package to also print the maximum $x$, $y$ and $z$ components from $\boldsymbol{r}$.</p></li>
+<li><p>6b (8pt) What do you think the benefits and/or disadvantages are from expressing our three equations as a single array/vector? This can be both from a computational and physics stand point. Use the <strong>Numpy</strong> package to also print the maximum <span class="math notranslate nohighlight">\(x\)</span>, <span class="math notranslate nohighlight">\(y\)</span> and <span class="math notranslate nohighlight">\(z\)</span> components from <span class="math notranslate nohighlight">\(\boldsymbol{r}\)</span>.</p></li>
 </ul>
-<p>Complete Exercise 4 above (Taylor exercise 1.35) before moving further. (Recall that the golf ball was hit due east at an angle $\theta$ with respect to the horizontal, and the coordinate directions are $x$ measured east, $y$ north, and $z$ vertically up.)</p>
+<p>Complete Exercise 4 above (Taylor exercise 1.35) before moving further. (Recall that the golf ball was hit due east at an angle <span class="math notranslate nohighlight">\(\theta\)</span> with respect to the horizontal, and the coordinate directions are <span class="math notranslate nohighlight">\(x\)</span> measured east, <span class="math notranslate nohighlight">\(y\)</span> north, and <span class="math notranslate nohighlight">\(z\)</span> vertically up.)</p>
 <ul class="simple">
-<li><p>6c (8pt) What is the analytical solution for our theoretical golf ball’s position $\boldsymbol{r}(t)$ over time from Exercise 4?  Also what is the formula for the time $t_f$ when the golf ball hits the ground? Use this to develop a program with a function called for example Golfball that utilizes our analytical solutions. This program should take in an initial velocity and the angle $\theta$ that the golfball was hit with in degrees. It should also produce  a 3D graph of the motion. You need also to find the maximum values for $x$, $y$ and $z$.</p></li>
-<li><p>6d (8pt) Given initial values of $v_i = 90 m/s$, $\theta = 30^{\circ}$, what would our maximum x, y and z components be?</p></li>
-<li><p>6e (8pt) Given initial values of $v_i = 45 m/s$, $\theta = 45^{\circ}$, what would our maximum x, y and z components be?</p></li>
+<li><p>6c (8pt) What is the analytical solution for our theoretical golf ball’s position <span class="math notranslate nohighlight">\(\boldsymbol{r}(t)\)</span> over time from Exercise 4?  Also what is the formula for the time <span class="math notranslate nohighlight">\(t_f\)</span> when the golf ball hits the ground? Use this to develop a program with a function called for example Golfball that utilizes our analytical solutions. This program should take in an initial velocity and the angle <span class="math notranslate nohighlight">\(\theta\)</span> that the golfball was hit with in degrees. It should also produce  a 3D graph of the motion. You need also to find the maximum values for <span class="math notranslate nohighlight">\(x\)</span>, <span class="math notranslate nohighlight">\(y\)</span> and <span class="math notranslate nohighlight">\(z\)</span>.</p></li>
+<li><p>6d (8pt) Given initial values of <span class="math notranslate nohighlight">\(v_i = 90 m/s\)</span>, <span class="math notranslate nohighlight">\(\theta = 30^{\circ}\)</span>, what would our maximum x, y and z components be?</p></li>
+<li><p>6e (8pt) Given initial values of <span class="math notranslate nohighlight">\(v_i = 45 m/s\)</span>, <span class="math notranslate nohighlight">\(\theta = 45^{\circ}\)</span>, what would our maximum x, y and z components be?</p></li>
 </ul>
 </section>
 </section>

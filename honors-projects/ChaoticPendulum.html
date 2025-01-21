@@ -57,6 +57,8 @@
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"tex2jax": {"inlineMath": [["$", "$"]]}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'honors-projects/ChaoticPendulum';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -367,63 +369,68 @@ document.write(`
 <h1>Chaos in the driven nonlinear pendulum<a class="headerlink" href="#chaos-in-the-driven-nonlinear-pendulum" title="Link to this heading">#</a></h1>
 <p>The angular equation of motion of the pendulum is given by Newton’s
 equation and with no external force it reads:</p>
-<p>$$
+<div class="math notranslate nohighlight" id="equation-eqn-eom">
+<span class="eqno">(1)<a class="headerlink" href="#equation-eqn-eom" title="Link to this equation">#</a></span>\[
 ml\frac{d^2\theta}{dt^2}+mgsin(\theta)=0,
-$$(eqn_eom)</p>
+\]</div>
 <p>with an angular velocity
 and acceleration given by</p>
-<p>$$
+<div class="math notranslate nohighlight" id="equation-eqn-vel">
+<span class="eqno">(2)<a class="headerlink" href="#equation-eqn-vel" title="Link to this equation">#</a></span>\[
 v=l\frac{d\theta}{dt},
-$$(eqn_vel)</p>
+\]</div>
 <p>and</p>
-<p>$$
+<div class="math notranslate nohighlight" id="equation-eqn-accel">
+<span class="eqno">(3)<a class="headerlink" href="#equation-eqn-accel" title="Link to this equation">#</a></span>\[
 a=l\frac{d^2\theta}{dt^2}.
-$$(eqn_accel)</p>
+\]</div>
 <p>We do however expect that the motion will gradually come to an end due a
 viscous drag torque acting on the pendulum. In the presence of the drag,
 the above equation becomes:</p>
-<p>$$
+<div class="math notranslate nohighlight" id="equation-eqn-eom-drag">
+<span class="eqno">(4)<a class="headerlink" href="#equation-eqn-eom-drag" title="Link to this equation">#</a></span>\[
 ml\frac{d^2\theta}{dt^2}+\nu\frac{d\theta}{dt}+mgsin(\theta)=0,
-$$(eqn_eom_drag)</p>
-<p>where $\nu$ is now a positive constant parameterizing
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(\nu\)</span> is now a positive constant parameterizing
 the viscosity of the medium in question. In order to maintain the motion
 against viscosity, it is necessary to add some external driving force.
 We choose here a periodic driving force. The last equation becomes then</p>
-<p>$$
+<div class="math notranslate nohighlight" id="equation-eqn-eom-driven">
+<span class="eqno">(5)<a class="headerlink" href="#equation-eqn-eom-driven" title="Link to this equation">#</a></span>\[
 ml\frac{d^2\theta}{dt^2}+\nu\frac{d\theta}{dt}  +mgsin(\theta)=Asin(\omega t),
-$$(eqn_eom_driven)</p>
-<p>with $A$ and $\omega$ two constants representing the
+\]</div>
+<p>with <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(\omega\)</span> two constants representing the
 amplitude and the angular frequency respectively. The latter is called
 the driving frequency.</p>
 <ol class="arabic simple">
-<li><p>Rewrite Eqs. <code class="xref eq docutils literal notranslate"><span class="pre">eqn_eom_drag</span></code> and <code class="xref eq docutils literal notranslate"><span class="pre">eqn_eom_driven</span></code> as dimensionless equations. That is,
+<li><p>Rewrite Eqs. <a class="reference internal" href="#equation-eqn-eom-drag">(4)</a> and <a class="reference internal" href="#equation-eqn-eom-driven">(5)</a> as dimensionless equations. That is,
 scale the equations.</p></li>
-<li><p>Write then a code which solves Eq. <code class="xref eq docutils literal notranslate"><span class="pre">eqn_eom_drag</span></code> using
+<li><p>Write then a code which solves Eq. <a class="reference internal" href="#equation-eqn-eom-drag">(4)</a> using
 the Euler-Cromer method and fourth-order Runge Kutta method. Perform
-calculations for at least ten periods with $N=100$, $N=1000$ and
-$N=10000$ mesh points and values of $\nu = 1$, $\nu = 5$ and
-$\nu =10$. Set $l=1.0$ m, $g=1$ m/s$^2$ and $m=1$ kg. Choose as
-initial conditions $\theta(0) = 0.2$ (radians) and $v(0) = 0$
-(radians/s). Make plots of $\theta$ (in radians) as function of time
-and phase space plots of $\theta$ versus the velocity $v$. Check the
+calculations for at least ten periods with <span class="math notranslate nohighlight">\(N=100\)</span>, <span class="math notranslate nohighlight">\(N=1000\)</span> and
+<span class="math notranslate nohighlight">\(N=10000\)</span> mesh points and values of <span class="math notranslate nohighlight">\(\nu = 1\)</span>, <span class="math notranslate nohighlight">\(\nu = 5\)</span> and
+<span class="math notranslate nohighlight">\(\nu =10\)</span>. Set <span class="math notranslate nohighlight">\(l=1.0\)</span> m, <span class="math notranslate nohighlight">\(g=1\)</span> m/s<span class="math notranslate nohighlight">\(^2\)</span> and <span class="math notranslate nohighlight">\(m=1\)</span> kg. Choose as
+initial conditions <span class="math notranslate nohighlight">\(\theta(0) = 0.2\)</span> (radians) and <span class="math notranslate nohighlight">\(v(0) = 0\)</span>
+(radians/s). Make plots of <span class="math notranslate nohighlight">\(\theta\)</span> (in radians) as function of time
+and phase space plots of <span class="math notranslate nohighlight">\(\theta\)</span> versus the velocity <span class="math notranslate nohighlight">\(v\)</span>. Check the
 stability of your results as functions of time and number of mesh
 points. Which case corresponds to damped, underdamped and overdamped
 oscillatory motion? Comment your results.</p></li>
-<li><p>Now we switch to Eq. <code class="xref eq docutils literal notranslate"><span class="pre">eqn_eom_driven</span></code> for the rest of the
-project. Add an external driving force and set $l=g=1$, $m=1$,
-$\nu = 1/2$ and $\omega = 2/3$. Choose as initial conditions
-$\theta(0) = 0.2$ and $v(0) = 0$ and $A=0.5$ and $A=1.2$. Make plots
-of $\theta$ (in radians) as function of time for at least 300
-periods and phase space plots of $\theta$ versus the velocity $v$.
+<li><p>Now we switch to Eq. <a class="reference internal" href="#equation-eqn-eom-driven">(5)</a> for the rest of the
+project. Add an external driving force and set <span class="math notranslate nohighlight">\(l=g=1\)</span>, <span class="math notranslate nohighlight">\(m=1\)</span>,
+<span class="math notranslate nohighlight">\(\nu = 1/2\)</span> and <span class="math notranslate nohighlight">\(\omega = 2/3\)</span>. Choose as initial conditions
+<span class="math notranslate nohighlight">\(\theta(0) = 0.2\)</span> and <span class="math notranslate nohighlight">\(v(0) = 0\)</span> and <span class="math notranslate nohighlight">\(A=0.5\)</span> and <span class="math notranslate nohighlight">\(A=1.2\)</span>. Make plots
+of <span class="math notranslate nohighlight">\(\theta\)</span> (in radians) as function of time for at least 300
+periods and phase space plots of <span class="math notranslate nohighlight">\(\theta\)</span> versus the velocity <span class="math notranslate nohighlight">\(v\)</span>.
 Choose an appropriate time step. Comment and explain the results for
-the different values of $A$.</p></li>
+the different values of <span class="math notranslate nohighlight">\(A\)</span>.</p></li>
 <li><p>Keep now the constants from the previous exercise fixed but set now
-$A=1.35$, $A=1.44$ and $A=1.465$. Plot $\theta$ (in radians) as
-function of time for at least 300 periods for these values of $A$
+<span class="math notranslate nohighlight">\(A=1.35\)</span>, <span class="math notranslate nohighlight">\(A=1.44\)</span> and <span class="math notranslate nohighlight">\(A=1.465\)</span>. Plot <span class="math notranslate nohighlight">\(\theta\)</span> (in radians) as
+function of time for at least 300 periods for these values of <span class="math notranslate nohighlight">\(A\)</span>
 and comment your results.</p></li>
 <li><p>We want to analyse further these results by making phase space plots
-of $\theta$ versus the velocity $v$ using only the points where we
-have $\omega t=2n\pi$ where $n$ is an integer. These are normally
+of <span class="math notranslate nohighlight">\(\theta\)</span> versus the velocity <span class="math notranslate nohighlight">\(v\)</span> using only the points where we
+have <span class="math notranslate nohighlight">\(\omega t=2n\pi\)</span> where <span class="math notranslate nohighlight">\(n\)</span> is an integer. These are normally
 called the drive periods. This is an example of what is called a
 Poincare section and is a very useful way to plot and analyze the
 behavior of a dynamical system. Comment your results.</p></li>

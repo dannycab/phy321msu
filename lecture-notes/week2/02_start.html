@@ -57,6 +57,8 @@
     <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"tex2jax": {"inlineMath": [["$", "$"]]}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'lecture-notes/week2/02_start';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -381,15 +383,17 @@ document.write(`
   <section id="week-2-computing-as-a-tool-for-science">
 <h1>Week 2 - Computing as a tool for science<a class="headerlink" href="#week-2-computing-as-a-tool-for-science" title="Link to this heading">#</a></h1>
 <p>One of the first ideas that we developed was a model of a falling ball in one-dimension. We obtained the following differential equation that described the motion of the ball:</p>
-<p>$$\ddot{y} = g - \dfrac{b}{m}\dot{y} - \dfrac{c}{m}\dot{y}^2.$$</p>
-<p>This <em>nonlinear</em> second-order differential equation is the <strong>equation of motion</strong> for the ball. It is nonlinear because the term $\dot{y}^2$ appears in the equation.</p>
+<div class="math notranslate nohighlight">
+\[\ddot{y} = g - \dfrac{b}{m}\dot{y} - \dfrac{c}{m}\dot{y}^2.\]</div>
+<p>This <em>nonlinear</em> second-order differential equation is the <strong>equation of motion</strong> for the ball. It is nonlinear because the term <span class="math notranslate nohighlight">\(\dot{y}^2\)</span> appears in the equation.</p>
 <p><strong>Can you think of an anti-derivative for this equation?</strong> <em>Probably not.</em></p>
-<p>We can change the equation to a system of first-order differential equations by defining a new variable $v = \dot{y}$, so that the equation becomes:</p>
-<p>$$\begin{aligned}
-\dot{y} &amp;= v, \
+<p>We can change the equation to a system of first-order differential equations by defining a new variable <span class="math notranslate nohighlight">\(v = \dot{y}\)</span>, so that the equation becomes:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+\dot{y} &amp;= v, \\
 \dot{v} &amp;= g - \dfrac{b}{m}v - \dfrac{c}{m}v^2.
-\end{aligned}$$</p>
-<p>But the equation for $v$ is still nonlinear. Clearly we need a different approach to solving this problem. In fact, we need a more generic approach to investigate equations of motion for systems like this. Most models of physical systems cannot be solved in closed analytical form. But, this approach to writing $N$th order differential equations as a system of $N$ first-order differential equations is a powerful tool in computational physics.</p>
+\end{aligned}\end{split}\]</div>
+<p>But the equation for <span class="math notranslate nohighlight">\(v\)</span> is still nonlinear. Clearly we need a different approach to solving this problem. In fact, we need a more generic approach to investigate equations of motion for systems like this. Most models of physical systems cannot be solved in closed analytical form. But, this approach to writing <span class="math notranslate nohighlight">\(N\)</span>th order differential equations as a system of <span class="math notranslate nohighlight">\(N\)</span> first-order differential equations is a powerful tool in computational physics.</p>
 <div class="note admonition">
 <p class="admonition-title">Limitations of only working with analytically solvable problems</p>
 <p>The problems that we often present in physics classes lend themselves to analytical solutions because we (collectively as a physics community) decided on the kinds of illustrative problems for students to work and solve. We did this at a time when computing was inaccessible and less pervasive in society, but also when we knew little about how people learn.</p>
