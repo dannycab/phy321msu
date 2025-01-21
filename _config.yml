@@ -53,7 +53,7 @@ html:
   use_repository_button: true
 
 execute:
-  execute_notebooks         : auto  # Whether to execute notebooks at build time. Must be one of ("auto", "force", "cache", "off")
+  execute_notebooks         : force  # Whether to execute notebooks at build time. Must be one of ("auto", "force", "cache", "off")
   cache                     : ""    # A path to the jupyter cache that will be used to store execution artifacs. Defaults to `_build/.jupyter_cache/`
   exclude_patterns          : []    # A list of patterns to *skip* in execution (e.g. a notebook that takes a really long time)
   timeout                   : 60    # The maximum time (in seconds) each notebook cell is allowed to run.
@@ -65,9 +65,11 @@ execute:
 
 # Parse and render settings
 parse:
-  myst_extended_syntax      : false  # enable MyST extended syntax support (see documents for details)
+  myst_enable_extensions:
+    # don't forget to list any other extensions you want enabled,
+    # including those that are enabled by default! See here: https://jupyterbook.org/en/stable/customize/config.html
+    - html_image
   myst_url_schemes          : [mailto, http, https]  # URI schemes that will be recognised as external URLs in Markdown links
-
 
 # HTML-specific settings
 html:
