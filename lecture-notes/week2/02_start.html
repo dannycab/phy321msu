@@ -16,40 +16,37 @@
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
     document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
-  <!--
-    this give us a css class that will be invisible only if js is disabled
-  -->
-  <noscript>
-    <style>
-      .pst-js-only { display: none !important; }
-
-    </style>
-  </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
 
-    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
-    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=a3416100" />
+  
+  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=384b581d" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=87e54e7c" />
   
-  <!-- So that users can add custom icons -->
-  <script src="../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=3ee479438cf8b5e0d341" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=3ee479438cf8b5e0d341" />
+  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=3ee479438cf8b5e0d341"></script>
 
     <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
     <script src="../../_static/doctools.js?v=9a2dae69"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../../_static/copybutton.js?v=f281be69"></script>
-    <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
@@ -60,8 +57,6 @@
     <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>window.MathJax = {"tex2jax": {"inlineMath": [["$", "$"]]}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'lecture-notes/week2/02_start';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -69,7 +64,6 @@
     <link rel="prev" title="Week 1 - Notes: Introduction to Classical Mechanics" href="../week1/01_notes.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-  <meta name="docsearch:version" content="" />
   </head>
   
   
@@ -85,8 +79,19 @@
     <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
   
-  <dialog id="pst-search-dialog">
-    
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
 <form class="bd-search d-flex align-items-center"
       action="../../search.html"
       method="get">
@@ -94,6 +99,7 @@
   <input type="search"
          class="form-control"
          name="q"
+         id="search-input"
          placeholder="Search this book..."
          aria-label="Search this book..."
          autocomplete="off"
@@ -101,8 +107,8 @@
          autocapitalize="off"
          spellcheck="false"/>
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form>
-  </dialog>
+</form></div>
+  </div>
 
   <div class="pst-async-banner-revealer d-none">
   <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
@@ -118,8 +124,7 @@
       
       
       
-      <dialog id="pst-primary-sidebar-modal"></dialog>
-      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+      <div class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -134,8 +139,6 @@
         <div class="sidebar-primary-item">
 
   
-    
-  
 
 <a class="navbar-brand logo" href="../../intro.html">
   
@@ -149,17 +152,21 @@
     
     
     <img src="../../_static/spartan-helmet.png" class="logo__image only-light" alt="Classical Mechanics - Home"/>
-    <img src="../../_static/spartan-helmet.png" class="logo__image only-dark pst-js-only" alt="Classical Mechanics - Home"/>
+    <script>document.write(`<img src="../../_static/spartan-helmet.png" class="logo__image only-dark" alt="Classical Mechanics - Home"/>`);</script>
   
   
 </a></div>
         <div class="sidebar-primary-item">
 
-<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
- <i class="fa-solid fa-magnifying-glass"></i>
- <span class="search-button__default-text">Search</span>
- <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
-</button></div>
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
@@ -214,14 +221,9 @@
   
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
-      <div class="sidebar-primary-item">
-<div id="ethical-ad-placement"
-      class="flat"
-      data-ea-publisher="readthedocs"
-      data-ea-type="readthedocs-sidebar"
-      data-ea-manual="true">
-</div></div>
   </div>
+  
+  <div id="rtd-footer-container"></div>
 
 
       </div>
@@ -240,9 +242,9 @@
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</button></div>
+</label></div>
       
     </div>
   
@@ -318,19 +320,27 @@
 
 
 
-<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
-  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
-  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
-  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
-</button>
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
 
 
-<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
-</button>
-<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
-</button>
+</label>
 </div></div>
       
     </div>
@@ -371,17 +381,15 @@
   <section id="week-2-computing-as-a-tool-for-science">
 <h1>Week 2 - Computing as a tool for science<a class="headerlink" href="#week-2-computing-as-a-tool-for-science" title="Link to this heading">#</a></h1>
 <p>One of the first ideas that we developed was a model of a falling ball in one-dimension. We obtained the following differential equation that described the motion of the ball:</p>
-<div class="math notranslate nohighlight">
-\[\ddot{y} = g - \dfrac{b}{m}\dot{y} - \dfrac{c}{m}\dot{y}^2.\]</div>
-<p>This <em>nonlinear</em> second-order differential equation is the <strong>equation of motion</strong> for the ball. It is nonlinear because the term <span class="math notranslate nohighlight">\(\dot{y}^2\)</span> appears in the equation.</p>
+<p>$$\ddot{y} = g - \dfrac{b}{m}\dot{y} - \dfrac{c}{m}\dot{y}^2.$$</p>
+<p>This <em>nonlinear</em> second-order differential equation is the <strong>equation of motion</strong> for the ball. It is nonlinear because the term $\dot{y}^2$ appears in the equation.</p>
 <p><strong>Can you think of an anti-derivative for this equation?</strong> <em>Probably not.</em></p>
-<p>We can change the equation to a system of first-order differential equations by defining a new variable <span class="math notranslate nohighlight">\(v = \dot{y}\)</span>, so that the equation becomes:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{aligned}
-\dot{y} &amp;= v, \\
+<p>We can change the equation to a system of first-order differential equations by defining a new variable $v = \dot{y}$, so that the equation becomes:</p>
+<p>$$\begin{aligned}
+\dot{y} &amp;= v, \
 \dot{v} &amp;= g - \dfrac{b}{m}v - \dfrac{c}{m}v^2.
-\end{aligned}\end{split}\]</div>
-<p>But the equation for <span class="math notranslate nohighlight">\(v\)</span> is still nonlinear. Clearly we need a different approach to solving this problem. In fact, we need a more generic approach to investigate equations of motion for systems like this. Most models of physical systems cannot be solved in closed analytical form. But, this approach to writing <span class="math notranslate nohighlight">\(N\)</span>th order differential equations as a system of <span class="math notranslate nohighlight">\(N\)</span> first-order differential equations is a powerful tool in computational physics.</p>
+\end{aligned}$$</p>
+<p>But the equation for $v$ is still nonlinear. Clearly we need a different approach to solving this problem. In fact, we need a more generic approach to investigate equations of motion for systems like this. Most models of physical systems cannot be solved in closed analytical form. But, this approach to writing $N$th order differential equations as a system of $N$ first-order differential equations is a powerful tool in computational physics.</p>
 <div class="note admonition">
 <p class="admonition-title">Limitations of only working with analytically solvable problems</p>
 <p>The problems that we often present in physics classes lend themselves to analytical solutions because we (collectively as a physics community) decided on the kinds of illustrative problems for students to work and solve. We did this at a time when computing was inaccessible and less pervasive in society, but also when we knew little about how people learn.</p>
@@ -399,7 +407,7 @@
 <p>To get an introductory overview, the video below from Futurology is a helpful resource, but it is by no means comprehensive or critical.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">IPython.display</span><span class="w"> </span><span class="kn">import</span> <span class="n">YouTubeVideo</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">YouTubeVideo</span>
 
 <span class="n">YouTubeVideo</span><span class="p">(</span><span class="s1">&#39;-M6lANfzFsM&#39;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">600</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">405</span><span class="p">)</span>
 </pre></div>
@@ -442,200 +450,41 @@
 <section id="additional-resources-for-exploration">
 <h2>Additional Resources for Exploration<a class="headerlink" href="#additional-resources-for-exploration" title="Link to this heading">#</a></h2>
 <p>For deeper dives into these ideas, consider the following materials:</p>
-<style>
-  .resources-table {
-    border-collapse: collapse;
-    width: 100%;
-    margin-top: 20px;
-  }
-
-  .resources-table th, .resources-table td {
-    padding: 12px;
-    vertical-align: top;
-  }
-
-  .resources-table th {
-    font-weight: bold;
-    text-align: center;
-  }
-
-  .resources-table td {
-    text-align: left;
-  }
-
-  .resources-table img {
-    max-width: 100px;
-    border-radius: 4px;
-    margin-bottom: 10px;
-  }
-
-  .resources-table a {
-    text-decoration: none;
-    font-weight: bold;
-  }
-
-  .resources-table a:hover {
-    text-decoration: underline;
-  }
-
-  /* Light Mode Defaults */
-  :root {
-    --header-bg: #222;
-    --header-text: #fff;
-    --body-text: #000;
-    --link-color: #0066cc;
-    --link-hover: #004c99;
-  }
-
-  /* Dark Mode Defaults */
-  [data-theme="dark"] {
-    --header-bg: #444;
-    --header-text: #f4f4f4;
-    --body-text: #eaeaea;
-    --link-color: #4aa3ff;
-    --link-hover: #6fc1ff;
-  }
-
-  .resources-table th {
-    background-color: var(--header-bg);
-    color: var(--header-text);
-  }
-
-  .resources-table td {
-    color: var(--body-text);
-  }
-
-  .resources-table a {
-    color: var(--link-color);
-  }
-
-  .resources-table a:hover {
-    color: var(--link-hover);
-  }
-</style>
-<script>
-  // Detect dark mode and apply the appropriate theme
-  function applyTheme() {
-    const theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
-    document.documentElement.setAttribute("data-theme", theme);
-  }
-
-  // Apply the theme initially and watch for changes
-  applyTheme();
-  window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", applyTheme);
-</script>
-<table class="resources-table">
-  <tr>
-    <th>Resource</th>
-    <th>Description</th>
-  </tr>
-  <tr>
-    <td>
-      <a href="https://www.penguinrandomhouse.com/books/44425/turings-cathedral-by-george-dyson/">
-        George Dyson’s <i>Turing’s Cathedral</i>
-      </a><br>
-      <img src="https://images1.penguinrandomhouse.com/cover/9781400075997" alt="Turing's Cathedral">
-    </td>
-    <td>
-      Chronicles the origins of the modern computer, focusing on 
-      <a href="https://en.wikipedia.org/wiki/John_von_Neumann">John von Neumann</a> 
-      and his team at Princeton in the 1940s. This book delves into the intersection of mathematics, physics, and computation, 
-      highlighting the development of the first stored-program computers and their role in shaping the digital age.
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <a href="https://www.penguinrandomhouse.com/books/60765/the-information-by-james-gleick/">
-        James Gleick’s <i>The Information</i>
-      </a><br>
-      <img src="https://images3.penguinrandomhouse.com/cover/9781400096237" alt="The Information">
-    </td>
-    <td>
-      Explores the transformative impact of information theory on science, technology, and culture. From the invention of writing 
-      to the digital age, Gleick highlights key figures like Michigander 
-      <a href="https://en.wikipedia.org/wiki/Claude_Shannon">Claude Shannon</a>, who revolutionized communication with his groundbreaking 
-      mathematical theory of information.
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <a href="https://www.stevenlevy.com/hackers-heroes-of-the-computer-revolution">
-        Steven Levy’s <i>Hackers</i>
-      </a><br>
-      <img src="https://upload.wikimedia.org/wikipedia/en/1/1e/Hackersz_.jpg" alt="Hackers">
-    </td>
-    <td>
-      Chronicles the rise of hacker culture, from early computer pioneers to the creators of the personal computer revolution. Levy 
-      examines the "hacker ethic," emphasizing creativity, open access, and the joy of problem-solving, which shaped the tools and 
-      technologies we use today.
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <a href="https://www.penguinrandomhouse.com/books/241363/weapons-of-math-destruction-by-cathy-oneil/">
-        Cathy O’Neil’s <i>Weapons of Math Destruction</i>
-      </a><br>
-      <img src="https://images3.penguinrandomhouse.com/cover/9780553418835" alt="Weapons of Math Destruction">
-    </td>
-    <td>
-      Explores how algorithms, often marketed as objective, exacerbate inequality in policing, hiring, and credit scoring. 
-      O’Neil critically examines the dangers of data-driven systems that disproportionately harm marginalized communities 
-      while remaining opaque and unregulated.
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <a href="https://www.ruhabenjamin.com/race-after-technology">
-        Ruha Benjamin’s <i>Race After Technology</i>
-      </a><br>
-      <img src="https://images.squarespace-cdn.com/content/v1/5bbd85f3809d8e6a1a3c5c9e/1539747351919-A8XPCT283K2SQZI80UCZ/Race+After+Tech_Cover.jpg?format=200w" alt="Race After Technology">
-    </td>
-    <td>
-      Analyzes how algorithms and technologies reinforce systemic racism under the guise of neutrality. Benjamin 
-      introduces the concept of the “New Jim Code,” highlighting the ways in which technological tools amplify 
-      inequities while appearing fair and impartial.
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <a href="https://www.dukeupress.edu/dark-matters">
-        Simone Browne’s <i>Dark Matters</i>
-      </a><br>
-      <img src="https://assets-us-01.kc-usercontent.com/f7ca9afb-82c2-002a-a423-84e111d5b498/a3a39c57-0431-415d-8306-8cef1599d9f0/978-0-8223-5938-8_pr.jpg?fm=webp&auto=format&lossless=true" alt="Dark Matters">
-    </td>
-    <td>
-      Examines how surveillance technologies are deeply rooted in practices of racialized social control. Browne 
-      connects historical practices like slave surveillance to modern tools like facial recognition and predictive policing, 
-      revealing the persistence of systemic inequities in new forms.
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <a href="https://katecrawford.net/atlas">
-        Kate Crawford’s <i>Atlas of AI</i>
-      </a><br>
-      <img src="https://upload.wikimedia.org/wikipedia/en/9/9a/Atlas_of_AI.jpg" alt="Atlas of AI">
-    </td>
-    <td>
-      Explores the hidden costs of artificial intelligence, from resource extraction to labor exploitation and military applications. 
-      Crawford critiques AI as an extractive industry that reshapes power dynamics and perpetuates global inequalities while causing 
-      significant environmental damage.
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <a href="https://shoshanazuboff.com/book/about/">
-        Shoshana Zuboff’s <i>The Age of Surveillance Capitalism</i>
-      </a><br>
-      <img src="https://images.penguinrandomhouse.com/cover/9781610395694" alt="Age of Surveillance Capitalism">
-    </td>
-    <td>
-      Investigates how corporations and governments exploit personal data for profit and control. Zuboff coins the term 
-      "surveillance capitalism" to describe how the tech industry commodifies human behavior, eroding privacy and autonomy 
-      while reshaping society’s power structures.
-    </td>
-  </tr>
-</table></section>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Resource</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://www.penguinrandomhouse.com/books/44425/turings-cathedral-by-george-dyson/">George Dyson’s <em>Turing’s Cathedral</em></a> <img alt="Turing's Cathedral" src="../../_images/dyson.png" /></p></td>
+<td><p>Chronicles the origins of the modern computer, focusing on <a class="reference external" href="https://en.wikipedia.org/wiki/John_von_Neumann">John von Neumann</a> and his team at Princeton in the 1940s. This book delves into the intersection of mathematics, physics, and computation, highlighting the development of the first stored-program computers and their role in shaping the digital age.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://www.penguinrandomhouse.com/books/60765/the-information-by-james-gleick/">James Gleick’s <em>The Information</em></a> <img alt="The Information" src="../../_images/gleick.png" /></p></td>
+<td><p>Explores the transformative impact of information theory on science, technology, and culture. From the invention of writing to the digital age, Gleick highlights key figures like Michigander <a class="reference external" href="https://en.wikipedia.org/wiki/Claude_Shannon">Claude Shannon</a>, who revolutionized communication with his groundbreaking mathematical theory of information.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://www.stevenlevy.com/hackers-heroes-of-the-computer-revolution">Steven Levy’s <em>Hackers</em></a> <img alt="Hackers" src="../../_images/levy.png" /></p></td>
+<td><p>Chronicles the rise of hacker culture, from early computer pioneers to the creators of the personal computer revolution. Levy examines the “hacker ethic,” emphasizing creativity, open access, and the joy of problem-solving, which shaped the tools and technologies we use today.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://www.penguinrandomhouse.com/books/241363/weapons-of-math-destruction-by-cathy-oneil/">Cathy O’Neil’s <em>Weapons of Math Destruction</em></a> <img alt="Weapons of Math Destruction" src="../../_images/oneill.png" /></p></td>
+<td><p>Explores how algorithms, often marketed as objective, exacerbate inequality in policing, hiring, and credit scoring. O’Neil critically examines the dangers of data-driven systems that disproportionately harm marginalized communities while remaining opaque and unregulated.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://www.ruhabenjamin.com/race-after-technology">Ruha Benjamin’s <em>Race After Technology</em></a> <img alt="Race After Technology" src="../../_images/benjamin.png" /></p></td>
+<td><p>Analyzes how algorithms and technologies reinforce systemic racism under the guise of neutrality. Benjamin introduces the concept of the “New Jim Code,” highlighting the ways in which technological tools amplify inequities while appearing fair and impartial.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://www.dukeupress.edu/dark-matters">Simone Browne’s <em>Dark Matters</em></a> <img alt="Dark Matters" src="../../_images/browne.png" /></p></td>
+<td><p>Examines how surveillance technologies are deeply rooted in practices of racialized social control. Browne connects historical practices like slave surveillance to modern tools like facial recognition and predictive policing, revealing the persistence of systemic inequities in new forms.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://katecrawford.net/atlas">Kate Crawford’s <em>Atlas of AI</em></a> <img alt="Atlas of AI" src="../../_images/crawford.png" /></p></td>
+<td><p>Explores the hidden costs of artificial intelligence, from resource extraction to labor exploitation and military applications. Crawford critiques AI as an extractive industry that reshapes power dynamics and perpetuates global inequalities while causing significant environmental damage.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://shoshanazuboff.com/book/about/">Shoshana Zuboff’s <em>The Age of Surveillance Capitalism</em></a> <img alt="Age of Surveillance Capitalism" src="../../_images/zuboff.png" /></p></td>
+<td><p>Investigates how corporations and governments exploit personal data for profit and control. Zuboff coins the term “surveillance capitalism” to describe how the tech industry commodifies human behavior, eroding privacy and autonomy while reshaping society’s power structures.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -693,8 +542,7 @@
             
             
               
-                <dialog id="pst-secondary-sidebar-modal"></dialog>
-                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
 
   <div class="sidebar-secondary-item">
@@ -757,8 +605,8 @@ By Danny Caballero, Morten Hjorth-Jensen, Rachel Henderson
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script defer src="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
-<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+  <script src="../../_static/scripts/bootstrap.js?digest=3ee479438cf8b5e0d341"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=3ee479438cf8b5e0d341"></script>
 
   <footer class="bd-footer">
   </footer>
