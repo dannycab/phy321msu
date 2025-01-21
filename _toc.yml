@@ -19,6 +19,8 @@ parts:
       - file: lecture-notes/week1/01_notes  
       - file: lecture-notes/week2/02_start
       - file: lecture-notes/week2/02_notes
+      - file: lecture-notes/week3/03_start
+      - file: lecture-notes/week3/03_notes
   #- caption: Introductory Material
     #numbered: false
     #chapters:
