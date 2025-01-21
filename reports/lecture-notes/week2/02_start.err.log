@@ -18,14 +18,18 @@ Traceback (most recent call last):
     raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
 nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
 ------------------
-print(p[:,2])
+
+### Human Computers
+
+Of course, the development of electronic computers was a huge development for science. But prior to that, humans were employed to do the calculations that we now do with computational algorithms. This work occurred in a wide variety of fields and labs where calculations were done iteratively by hand, data were entered into tables, and results were tabulated manually. 
+
+Frequently the work was done by those with less power in the laboratory  (e.g., women, immigrants, and folks of color)
 ------------------
 
 
-[0;31m---------------------------------------------------------------------------[0m
-[0;31mIndexError[0m                                Traceback (most recent call last)
-Cell [0;32mIn[7], line 1[0m
-[0;32m----> 1[0m [38;5;28mprint[39m([43mp[49m[43m[[49m[43m:[49m[43m,[49m[38;5;241;43m2[39;49m[43m][49m)
+[0;36m  Cell [0;32mIn[2], line 3[0;36m[0m
+[0;31m    Of course, the development of electronic computers was a huge development for science. But prior to that, humans were employed to do the calculations that we now do with computational algorithms. This work occurred in a wide variety of fields and labs where calculations were done iteratively by hand, data were entered into tables, and results were tabulated manually.[0m
+[0m       ^[0m
+[0;31mSyntaxError[0m[0;31m:[0m invalid syntax
 
-[0;31mIndexError[0m: index 2 is out of bounds for axis 1 with size 2
 

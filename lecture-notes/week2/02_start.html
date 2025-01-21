@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Week 2 - What is Mathematical Modeling? &#8212; Classical Mechanics</title>
+    <title>Week 2 - Computing as a tool for science &#8212; Classical Mechanics</title>
   
   
   
@@ -16,37 +16,40 @@
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
     document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
-<link href="../../_static/styles/bootstrap.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
-  
-  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
-
-    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
-    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=87e54e7c" />
   
+  <!-- So that users can add custom icons -->
+  <script src="../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=3ee479438cf8b5e0d341" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=3ee479438cf8b5e0d341" />
-  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=3ee479438cf8b5e0d341"></script>
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
     <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
     <script src="../../_static/doctools.js?v=9a2dae69"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../../_static/copybutton.js?v=f281be69"></script>
-    <script src="../../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
@@ -57,13 +60,16 @@
     <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"tex2jax": {"inlineMath": [["$", "$"]]}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'lecture-notes/week2/02_start';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Week 2 - Notes: Making Classical Models" href="02_notes.html" />
+    <link rel="next" title="Week 2 - Notes: Mathematical Preliminaries" href="02_notes.html" />
     <link rel="prev" title="Week 1 - Notes: Introduction to Classical Mechanics" href="../week1/01_notes.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
   </head>
   
   
@@ -79,19 +85,8 @@
     <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
   
-  <input type="checkbox"
-          class="sidebar-toggle"
-          id="pst-primary-sidebar-checkbox"/>
-  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
-  
-  <input type="checkbox"
-          class="sidebar-toggle"
-          id="pst-secondary-sidebar-checkbox"/>
-  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
-  
-  <div class="search-button__wrapper">
-    <div class="search-button__overlay"></div>
-    <div class="search-button__search-container">
+  <dialog id="pst-search-dialog">
+    
 <form class="bd-search d-flex align-items-center"
       action="../../search.html"
       method="get">
@@ -99,7 +94,6 @@
   <input type="search"
          class="form-control"
          name="q"
-         id="search-input"
          placeholder="Search this book..."
          aria-label="Search this book..."
          autocomplete="off"
@@ -107,8 +101,8 @@
          autocapitalize="off"
          spellcheck="false"/>
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form></div>
-  </div>
+</form>
+  </dialog>
 
   <div class="pst-async-banner-revealer d-none">
   <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
@@ -124,7 +118,8 @@
       
       
       
-      <div class="bd-sidebar-primary bd-sidebar">
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -139,6 +134,8 @@
         <div class="sidebar-primary-item">
 
   
+    
+  
 
 <a class="navbar-brand logo" href="../../intro.html">
   
@@ -152,21 +149,17 @@
     
     
     <img src="../../_static/spartan-helmet.png" class="logo__image only-light" alt="Classical Mechanics - Home"/>
-    <script>document.write(`<img src="../../_static/spartan-helmet.png" class="logo__image only-dark" alt="Classical Mechanics - Home"/>`);</script>
+    <img src="../../_static/spartan-helmet.png" class="logo__image only-dark pst-js-only" alt="Classical Mechanics - Home"/>
   
   
 </a></div>
         <div class="sidebar-primary-item">
 
- <script>
- document.write(`
-   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
-    <span class="search-button__default-text">Search</span>
-    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
-   </button>
- `);
- </script></div>
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
@@ -190,8 +183,10 @@
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../week1/01_start.html">Week 1 - Overture: What is Classical Physics?</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../week1/01_notes.html">Week 1 - Notes: Introduction to Classical Mechanics</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Week 2 - What is Mathematical Modeling?</a></li>
-<li class="toctree-l1"><a class="reference internal" href="02_notes.html">Week 2 - Notes: Making Classical Models</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Week 2 - Computing as a tool for science</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02_notes.html">Week 2 - Notes: Mathematical Preliminaries</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week3/03_start.html">Week 3 - What is Mathematical Modeling?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week3/03_notes.html">Week 3 - Notes: Making Classical Models</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Assignments</span></p>
 <ul class="nav bd-sidenav">
@@ -219,9 +214,14 @@
   
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
   </div>
-  
-  <div id="rtd-footer-container"></div>
 
 
       </div>
@@ -240,9 +240,9 @@
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</label></div>
+</button></div>
       
     </div>
   
@@ -318,27 +318,19 @@
 
 
 
-<script>
-document.write(`
-  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
-  </button>
-`);
-</script>
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
 
 
-<script>
-document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
-  </button>
-`);
-</script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
-</label>
+</button>
 </div></div>
       
     </div>
@@ -349,7 +341,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Week 2 - What is Mathematical Modeling?</h1>
+    <h1>Week 2 - Computing as a tool for science</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -359,11 +351,12 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-a-model">What is a model?</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#feynman-on-the-process-of-science">Feynman on the Process of Science</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#history-and-philosophy-of-science">History and Philosophy of Science</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#scientific-computing">Scientific Computing</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#history-of-computing">History of Computing</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-critical-perspective-on-computing">A Critical Perspective on Computing</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#additional-resources-for-exploration">Additional Resources for Exploration</a></li>
 </ul>
             </nav>
         </div>
@@ -375,43 +368,274 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="week-2-what-is-mathematical-modeling">
-<h1>Week 2 - What is Mathematical Modeling?<a class="headerlink" href="#week-2-what-is-mathematical-modeling" title="Link to this heading">#</a></h1>
-<p>Nature reveals itself to us through interactions. We can tell from observations that it is nature’s interactions that lead to its evolution. How nature is changing and predicting how it will change in the future is the work of science. In this work, we observe nature and its interactions to make models of those observations. We aim to predict and explain our observations of nature through this building of models.</p>
-<p>In physics, our goals are typically to explain and predict observations of physical phenomenon. Here, we focus ourselves to those canonical things that physicists concern themselves with: motion, fields, waves, atoms, nuclei, and so on.</p>
+  <section id="week-2-computing-as-a-tool-for-science">
+<h1>Week 2 - Computing as a tool for science<a class="headerlink" href="#week-2-computing-as-a-tool-for-science" title="Link to this heading">#</a></h1>
+<p>One of the first ideas that we developed was a model of a falling ball in one-dimension. We obtained the following differential equation that described the motion of the ball:</p>
+<div class="math notranslate nohighlight">
+\[\ddot{y} = g - \dfrac{b}{m}\dot{y} - \dfrac{c}{m}\dot{y}^2.\]</div>
+<p>This <em>nonlinear</em> second-order differential equation is the <strong>equation of motion</strong> for the ball. It is nonlinear because the term <span class="math notranslate nohighlight">\(\dot{y}^2\)</span> appears in the equation.</p>
+<p><strong>Can you think of an anti-derivative for this equation?</strong> <em>Probably not.</em></p>
+<p>We can change the equation to a system of first-order differential equations by defining a new variable <span class="math notranslate nohighlight">\(v = \dot{y}\)</span>, so that the equation becomes:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+\dot{y} &amp;= v, \\
+\dot{v} &amp;= g - \dfrac{b}{m}v - \dfrac{c}{m}v^2.
+\end{aligned}\end{split}\]</div>
+<p>But the equation for <span class="math notranslate nohighlight">\(v\)</span> is still nonlinear. Clearly we need a different approach to solving this problem. In fact, we need a more generic approach to investigate equations of motion for systems like this. Most models of physical systems cannot be solved in closed analytical form. But, this approach to writing <span class="math notranslate nohighlight">\(N\)</span>th order differential equations as a system of <span class="math notranslate nohighlight">\(N\)</span> first-order differential equations is a powerful tool in computational physics.</p>
 <div class="note admonition">
-<p class="admonition-title">Why the word “observation”?</p>
-<p>We intentionally use the word observations here, because we are not simply talking about what we can see with our eyes. The visible spectrum is limited to a small portion of the <a class="reference external" href="https://en.wikipedia.org/wiki/Electromagnetic_spectrum">electromagnetic spectrum</a>.</p>
-<p>These observations can come in the form of light, but also as sound, voltage, or current. For example, most instrumentation in laboratories will report only voltages or currents – rather voltages and currents are what the equipment will measure precisely and report as measurements as different as <a class="reference external" href="https://en.wikipedia.org/wiki/Laser_rangefinder">distance</a> and <a class="reference external" href="https://en.wikipedia.org/wiki/Rheometer">shear stress response</a>.</p>
-<p>Lastly, we use “observation” because it includes the historical science that conducted qualitative investigations and conceptual observations. It is also language that includes the work of early cultures who made observations and constructed ways of knowing and explaining the world around them.</p>
+<p class="admonition-title">Limitations of only working with analytically solvable problems</p>
+<p>The problems that we often present in physics classes lend themselves to analytical solutions because we (collectively as a physics community) decided on the kinds of illustrative problems for students to work and solve. We did this at a time when computing was inaccessible and less pervasive in society, but also when we knew little about how people learn.</p>
+<p>The choices we made in the past convey a false impression that most physics problems can be solved analytically. But more importantly, our choices convey that finding the solution is the goal of physics. This is not the case. The goal of physics is to understand the world around us. When we continue to focus exclusively on systems that can be solved analytically, we continue to perpetuate those impressions.</p>
+<p>There’s a movement of physics instructors across the world building these forward-looking pedagogies and curricula. They work loosely through a collective called the <a class="reference external" href="https://www.compadre.org/PICUP/">Partnership for Integration of Computation into Undergraduate Physics (PICUP)</a>.</p>
+<p>In our class, we aim to build a set of investigative tools and approaches that we can use in Classical Mechanics.</p>
 </div>
-<section id="what-is-a-model">
-<h2>What is a model?<a class="headerlink" href="#what-is-a-model" title="Link to this heading">#</a></h2>
-<p>Physics is a science that builds models. Typically, these models are represented mathematically in the form of equations or formula, but we can use charts, graphs, animations, and so on to represent our models. Models used in physics are often constructed by a community of scientists who have agreed on the model’s utility and accuracy. Experimental observations are used to validate these models.</p>
-<p>Modeling is the process of constructing a model. This process is often iterative where the initial ideas and assumptions are used to formulate a model. It is then tested against observations and refined. This process is repeated until the model is accurate enough to be useful. Physicists are model builders and model users.</p>
-<p>Geoscientist <a class="reference external" href="https://mnky9800n.github.io/">John Aiken</a> made this short video when he was a graduate student at Georgia Tech. John cut clips from a lecture <a class="reference external" href="https://en.wikipedia.org/wiki/Richard_Feynman">Richard Feynman</a> gave. In this lecture, Feynman talks about the nature of models and the process of science.  John also interviewed different science researchers and teachers about their understanding of what a model is.</p>
-<p><a class="reference external" href="https://youtube.com/watch?v=dkTncoPqo5Y"><img alt="" src="https://markdown-videos-api.jorgenkh.no/youtube/dkTncoPqo5Y?width=720&amp;height=405&amp;t=1000" /></a></p>
-<section id="feynman-on-the-process-of-science">
-<h3>Feynman on the Process of Science<a class="headerlink" href="#feynman-on-the-process-of-science" title="Link to this heading">#</a></h3>
-<p><a class="reference external" href="https://en.wikipedia.org/wiki/Richard_Feynman">Richard Feynman</a> was a physicist who made significant contributions to physics, especially in the field of quantum mechanics. He was awarded the <a class="reference external" href="https://www.nobelprize.org/prizes/physics/1965/feynman/">Nobel Prize in Physics in 1965</a> for his work in quantum electrodynamics. In his time, he was known as a great teacher and communicator of physics. And <a class="reference external" href="https://www.feynmanlectures.caltech.edu/">his lectures</a> are still used in physics education today – even for planning this class.</p>
-<p>Feynman was a gifted communicator; his lectures are lively and conceptual. Here’s the longer version of the lecture he gave on the nature of models and the process of science.</p>
-<p><a class="reference external" href="https://youtube.com/watch?v=EYPapE-3FRw"><img alt="" src="https://markdown-videos-api.jorgenkh.no/youtube/EYPapE-3FRw?width=720&amp;height=405&amp;t=1000" /></a></p>
-<div class="warning admonition">
-<p class="admonition-title">Richard Feynman’s Legacy</p>
-<p>While we acknowledge the importance of Feynman’s contributions to physics and physics teaching, we should remind ourselves that he was not a perfect person. Feynman was also known for his <a class="reference external" href="https://thebaffler.com/outbursts/surely-youre-a-creep-mr-feynman-mcneill">sexist behavior and comments</a>. (<em>Trigger warning</em>: this link recounts instances of harassment)</p>
-<p>We should not ignore this aspect of his life, and remind ourselves that we can learn from his physics and make a welcoming space for all people.</p>
+<section id="scientific-computing">
+<h2>Scientific Computing<a class="headerlink" href="#scientific-computing" title="Link to this heading">#</a></h2>
+<p>In this course, we will explore a broad class of problems using plotting and numerical integration as principal tools. These techniques and algorithms, along with the software we use, fall within the broader field of <a class="reference external" href="https://en.wikipedia.org/wiki/Scientific_computing">scientific computing</a>. Scientific computing focuses on developing mathematical models and numerical methods to solve problems in the natural sciences and engineering.</p>
+<p>For historical context, the <a class="reference external" href="https://en.wikipedia.org/wiki/Timeline_of_scientific_computing">Timeline of the Development of Scientific Computing</a> provides an excellent overview. The roots of this field trace back to significant advancements long before modern electronic devices. Much of the foundational mathematics, such as <a class="reference external" href="https://en.wikipedia.org/wiki/Euler_method">Euler’s Method</a> for solving differential equations, was developed in the 18th century by <a class="reference external" href="https://en.wikipedia.org/wiki/Leonhard_Euler">Leonhard Euler</a>. Implementing these algorithms on computers was a natural progression in scientific problem-solving.</p>
+<section id="history-of-computing">
+<h3>History of Computing<a class="headerlink" href="#history-of-computing" title="Link to this heading">#</a></h3>
+<p>The history of scientific computing is deeply intertwined with the evolution of computing itself, a fascinating and complex narrative encompassing technical, social, political, and economic perspectives. Contributions to computing originated worldwide, starting with tools like the <a class="reference external" href="https://en.wikipedia.org/wiki/Abacus">abacus</a> in ancient China. Mechanical innovations such as <a class="reference external" href="https://en.wikipedia.org/wiki/Pascal%27s_calculator">Pascal’s adding machine</a> and <a class="reference external" href="https://en.wikipedia.org/wiki/Analytical_Engine">Babbage’s Analytical Engine</a> marked significant milestones leading toward the modern computer.</p>
+<p>To get an introductory overview, the video below from Futurology is a helpful resource, but it is by no means comprehensive or critical.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">IPython.display</span><span class="w"> </span><span class="kn">import</span> <span class="n">YouTubeVideo</span>
+
+<span class="n">YouTubeVideo</span><span class="p">(</span><span class="s1">&#39;-M6lANfzFsM&#39;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">600</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">405</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+        <iframe
+            width="600"
+            height="405"
+            src="https://www.youtube.com/embed/-M6lANfzFsM"
+            frameborder="0"
+            allowfullscreen
+            
+        ></iframe>
+        </div></div>
 </div>
 </section>
-<section id="history-and-philosophy-of-science">
-<h3>History and Philosophy of Science<a class="headerlink" href="#history-and-philosophy-of-science" title="Link to this heading">#</a></h3>
-<p>If you would like to dive deeper into models and modeling, there’s excellent work in history and philosophy of science. The field studies how science develops knowledge, practice, culture, and so on. It studies important events and provides critical information on important and, often, overlooked folks who do science. For example, historian and gender studies professor <a class="reference external" href="https://en.wikipedia.org/wiki/Sharon_Traweek">Sharon Traweek</a> studies the high energy physics field. Her book, <a class="reference external" href="https://en.wikipedia.org/wiki/Beamtimes_and_Lifetimes">Beamtimes and Lifetimes: The World of High Energy Physicists</a> is excellent.</p>
+</section>
+<section id="a-critical-perspective-on-computing">
+<h2>A Critical Perspective on Computing<a class="headerlink" href="#a-critical-perspective-on-computing" title="Link to this heading">#</a></h2>
+<p>While the history of computing is often celebrated as a story of innovation, it is deeply entangled with systems of power, exploitation, and violence. Computing technologies have not only been tools of scientific progress but also instruments for surveillance, war, and perpetuation of systemic biases.</p>
 <div class="note admonition">
-<p class="admonition-title">Dame Nancy Cartwright (philosopher of science)</p>
-<p>One of the more interesting scholars is <a class="reference external" href="https://en.wikipedia.org/wiki/Nancy_Cartwright_(philosopher)">Dame Nancy Cartwright</a> who wrote a lot about the ‘practice of science.’ Her philosophical work informed many of the innovations in physics and broader science education – including many science courses at MSU.</p>
-<p>Her writing is very interesting, but the style of writing can be a challenge to read. This is the nature of academic writing in different disciplines. Her book called “How The Laws of Physics Lie” is worth a read. Here’s a link to the <a class="reference external" href="http://www.generativescience.org/papers/nature/Cartwright-_1983.pdf">first chapter</a>.</p>
+<p class="admonition-title">Humans as Computers</p>
+<p>Of course, the development of electronic computers was a huge development for science. Prior to that, humans were employed to do the calculations that we now do with computational algorithms. This work occurred in a wide variety of labs where data were entered into tables, calculations were done by hand, and the results were tabulated manually.</p>
+<p>Frequently the work was done by those with less power in the laboratory and broader society (e.g., women, immigrants, and folks of color). A notable and well-known example is the work of the <a class="reference external" href="https://en.wikipedia.org/wiki/Harvard_Computers">Harvard Computers</a> in the late 19th and early 20th centuries where women were employed to do the calculations that led to significant discoveries in astronomy.</p>
+<p><img alt="Harvard Computers" src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Edward_Charles_Pickering%27s_Harem_13_May_1913.jpg" /></p>
+<p>One of the most important examples is the work done by African-American women at NASA in the 1960s, as depicted in the book and movie <a class="reference external" href="https://en.wikipedia.org/wiki/Hidden_Figures">Hidden Figures</a>.</p>
+<p><img alt="Hidden Figures" src="https://d1fc9gjses1kiw.cloudfront.net/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpbWFnZSI6Imh0dHBzOi8vYXNzZXRzLnJibC5tcy8yMjA3NDY5OC9vcmlnaW4uanBnIiwiZXhwaXJlc19hdCI6MTcyNDcxNjY5MH0.eh1goPPSvPICaDKLOXWPYidpTTdmw5Xgk2kgVq-82Ws/img.jpg" /></p>
+<p>Women highlighted in this work include: <a class="reference external" href="https://en.wikipedia.org/wiki/Williamina_Fleming">Williamina Fleming</a>, <a class="reference external" href="https://en.wikipedia.org/wiki/Florence_Cushman">Florence Cushman</a>, <a class="reference external" href="https://en.wikipedia.org/wiki/Katherine_Johnson">Katherine Johnson</a>, <a class="reference external" href="https://en.wikipedia.org/wiki/Dorothy_Vaughan">Dorothy Vaughan</a>, and <a class="reference external" href="https://en.wikipedia.org/wiki/Mary_Jackson">Mary Jackson</a>.</p>
 </div>
+<p>Of course, the development of electronic computers was a huge development for science. But prior to that, humans were employed to do the calculations that we now do with computational algorithms. This work occurred in a wide variety of fields and labs where calculations were done iteratively by hand, data were entered into tables, and results were tabulated manually.</p>
+<p>Frequently the work was done by those with less power in the laboratory  (e.g., women, immigrants, and folks of color)</p>
+<p>The algorithms driving modern computing are not neutral—they reflect the biases of the societies that create them. In <a class="reference external" href="https://www.penguinrandomhouse.com/books/241363/weapons-of-math-destruction-by-cathy-oneil/">Cathy O’Neil’s <em>Weapons of Math Destruction</em></a>, the author explores how algorithms used in areas like policing, hiring, and education often reinforce systemic inequality, disproportionately harming marginalized communities. Similarly, <a class="reference external" href="https://www.ruhabenjamin.com/race-after-technology">Ruha Benjamin’s <em>Race After Technology</em></a> examines how race and technology intersect, showing how seemingly “objective” systems encode and perpetuate racial biases.</p>
+<p>The use of AI in policing is another area of concern. <a class="reference external" href="https://www.dukeupress.edu/dark-matters">Simone Browne’s <em>Dark Matters</em></a> highlights how surveillance technologies, from facial recognition to predictive policing, are rooted in practices of racialized social control, extending systems of oppression into the digital realm.</p>
+<p>The militarization of AI is one of the most alarming developments in computing. AI-driven drones and autonomous weapons, often described as the future of warfare, raise profound ethical and humanitarian concerns. <a class="reference external" href="https://shoshanazuboff.com/book/about/">Shoshana Zuboff’s <em>The Age of Surveillance Capitalism</em></a> discusses how the same technologies used for corporate profit are repurposed for state surveillance and military applications, blurring the lines between civilian and combatant spaces.</p>
+<p>Additionally, <a class="reference external" href="https://peterasaro.org/writing/Asaro%20Oxford%20AI%20Ethics%20AWS.pdf">Peter Asaro’s work on lethal autonomous weapons</a> questions the morality and legality of machines making life-and-death decisions. Meanwhile, <a class="reference external" href="https://katecrawford.net/atlas">Kate Crawford’s <em>Atlas of AI</em></a> explores how AI systems, from mining rare earth materials to deployment in warfare, are deeply intertwined with colonial exploitation and ecological destruction.</p>
+<p>The tech industry’s focus on profit has devastating environmental and social impacts. Computing relies on the extraction of rare materials, energy-intensive processes, and exploitative labor practices. <a class="reference external" href="https://thischangeseverything.org/">Naomi Klein’s <em>This Changes Everything</em></a> examines how capitalism exacerbates climate change, with insights into the environmental toll of computing technologies. <a class="reference external" href="https://cup.columbia.edu/book/artificial-whiteness/9780231194914">Yarden Katz’s <em>Artificial Whiteness</em></a> connects the development of AI to broader systems of capitalist and racial oppression.</p>
 </section>
-</section>
+<section id="additional-resources-for-exploration">
+<h2>Additional Resources for Exploration<a class="headerlink" href="#additional-resources-for-exploration" title="Link to this heading">#</a></h2>
+<p>For deeper dives into these ideas, consider the following materials:</p>
+<style>
+  .resources-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .resources-table th, .resources-table td {
+    padding: 12px;
+    vertical-align: top;
+  }
+
+  .resources-table th {
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .resources-table td {
+    text-align: left;
+  }
+
+  .resources-table img {
+    max-width: 100px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+
+  .resources-table a {
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .resources-table a:hover {
+    text-decoration: underline;
+  }
+
+  /* Light Mode Defaults */
+  :root {
+    --header-bg: #222;
+    --header-text: #fff;
+    --body-text: #000;
+    --link-color: #0066cc;
+    --link-hover: #004c99;
+  }
+
+  /* Dark Mode Defaults */
+  [data-theme="dark"] {
+    --header-bg: #444;
+    --header-text: #f4f4f4;
+    --body-text: #eaeaea;
+    --link-color: #4aa3ff;
+    --link-hover: #6fc1ff;
+  }
+
+  .resources-table th {
+    background-color: var(--header-bg);
+    color: var(--header-text);
+  }
+
+  .resources-table td {
+    color: var(--body-text);
+  }
+
+  .resources-table a {
+    color: var(--link-color);
+  }
+
+  .resources-table a:hover {
+    color: var(--link-hover);
+  }
+</style>
+<script>
+  // Detect dark mode and apply the appropriate theme
+  function applyTheme() {
+    const theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+    document.documentElement.setAttribute("data-theme", theme);
+  }
+
+  // Apply the theme initially and watch for changes
+  applyTheme();
+  window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", applyTheme);
+</script>
+<table class="resources-table">
+  <tr>
+    <th>Resource</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://www.penguinrandomhouse.com/books/44425/turings-cathedral-by-george-dyson/">
+        George Dyson’s <i>Turing’s Cathedral</i>
+      </a><br>
+      <img src="https://images1.penguinrandomhouse.com/cover/9781400075997" alt="Turing's Cathedral">
+    </td>
+    <td>
+      Chronicles the origins of the modern computer, focusing on 
+      <a href="https://en.wikipedia.org/wiki/John_von_Neumann">John von Neumann</a> 
+      and his team at Princeton in the 1940s. This book delves into the intersection of mathematics, physics, and computation, 
+      highlighting the development of the first stored-program computers and their role in shaping the digital age.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://www.penguinrandomhouse.com/books/60765/the-information-by-james-gleick/">
+        James Gleick’s <i>The Information</i>
+      </a><br>
+      <img src="https://images3.penguinrandomhouse.com/cover/9781400096237" alt="The Information">
+    </td>
+    <td>
+      Explores the transformative impact of information theory on science, technology, and culture. From the invention of writing 
+      to the digital age, Gleick highlights key figures like Michigander 
+      <a href="https://en.wikipedia.org/wiki/Claude_Shannon">Claude Shannon</a>, who revolutionized communication with his groundbreaking 
+      mathematical theory of information.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://www.stevenlevy.com/hackers-heroes-of-the-computer-revolution">
+        Steven Levy’s <i>Hackers</i>
+      </a><br>
+      <img src="https://upload.wikimedia.org/wikipedia/en/1/1e/Hackersz_.jpg" alt="Hackers">
+    </td>
+    <td>
+      Chronicles the rise of hacker culture, from early computer pioneers to the creators of the personal computer revolution. Levy 
+      examines the "hacker ethic," emphasizing creativity, open access, and the joy of problem-solving, which shaped the tools and 
+      technologies we use today.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://www.penguinrandomhouse.com/books/241363/weapons-of-math-destruction-by-cathy-oneil/">
+        Cathy O’Neil’s <i>Weapons of Math Destruction</i>
+      </a><br>
+      <img src="https://images3.penguinrandomhouse.com/cover/9780553418835" alt="Weapons of Math Destruction">
+    </td>
+    <td>
+      Explores how algorithms, often marketed as objective, exacerbate inequality in policing, hiring, and credit scoring. 
+      O’Neil critically examines the dangers of data-driven systems that disproportionately harm marginalized communities 
+      while remaining opaque and unregulated.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://www.ruhabenjamin.com/race-after-technology">
+        Ruha Benjamin’s <i>Race After Technology</i>
+      </a><br>
+      <img src="https://images.squarespace-cdn.com/content/v1/5bbd85f3809d8e6a1a3c5c9e/1539747351919-A8XPCT283K2SQZI80UCZ/Race+After+Tech_Cover.jpg?format=200w" alt="Race After Technology">
+    </td>
+    <td>
+      Analyzes how algorithms and technologies reinforce systemic racism under the guise of neutrality. Benjamin 
+      introduces the concept of the “New Jim Code,” highlighting the ways in which technological tools amplify 
+      inequities while appearing fair and impartial.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://www.dukeupress.edu/dark-matters">
+        Simone Browne’s <i>Dark Matters</i>
+      </a><br>
+      <img src="https://assets-us-01.kc-usercontent.com/f7ca9afb-82c2-002a-a423-84e111d5b498/a3a39c57-0431-415d-8306-8cef1599d9f0/978-0-8223-5938-8_pr.jpg?fm=webp&auto=format&lossless=true" alt="Dark Matters">
+    </td>
+    <td>
+      Examines how surveillance technologies are deeply rooted in practices of racialized social control. Browne 
+      connects historical practices like slave surveillance to modern tools like facial recognition and predictive policing, 
+      revealing the persistence of systemic inequities in new forms.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://katecrawford.net/atlas">
+        Kate Crawford’s <i>Atlas of AI</i>
+      </a><br>
+      <img src="https://upload.wikimedia.org/wikipedia/en/9/9a/Atlas_of_AI.jpg" alt="Atlas of AI">
+    </td>
+    <td>
+      Explores the hidden costs of artificial intelligence, from resource extraction to labor exploitation and military applications. 
+      Crawford critiques AI as an extractive industry that reshapes power dynamics and perpetuates global inequalities while causing 
+      significant environmental damage.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://shoshanazuboff.com/book/about/">
+        Shoshana Zuboff’s <i>The Age of Surveillance Capitalism</i>
+      </a><br>
+      <img src="https://images.penguinrandomhouse.com/cover/9781610395694" alt="Age of Surveillance Capitalism">
+    </td>
+    <td>
+      Investigates how corporations and governments exploit personal data for profit and control. Zuboff coins the term 
+      "surveillance capitalism" to describe how the tech industry commodifies human behavior, eroding privacy and autonomy 
+      while reshaping society’s power structures.
+    </td>
+  </tr>
+</table></section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -423,16 +647,16 @@ document.write(`
         },
         codeMirrorConfig: {
             theme: "abcdef",
-            mode: "teaching"
+            mode: "python"
         },
         kernelOptions: {
-            name: "teaching",
+            name: "python3",
             path: "./lecture-notes/week2"
         },
         predefinedOutput: true
     }
     </script>
-    <script>kernelName = 'teaching'</script>
+    <script>kernelName = 'python3'</script>
 
                 </article>
               
@@ -458,7 +682,7 @@ document.write(`
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Week 2 - Notes: Making Classical Models</p>
+        <p class="prev-next-title">Week 2 - Notes: Mathematical Preliminaries</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -469,7 +693,8 @@ document.write(`
             
             
               
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
 
   <div class="sidebar-secondary-item">
@@ -478,11 +703,12 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-a-model">What is a model?</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#feynman-on-the-process-of-science">Feynman on the Process of Science</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#history-and-philosophy-of-science">History and Philosophy of Science</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#scientific-computing">Scientific Computing</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#history-of-computing">History of Computing</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-critical-perspective-on-computing">A Critical Perspective on Computing</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#additional-resources-for-exploration">Additional Resources for Exploration</a></li>
 </ul>
   </nav></div>
 
@@ -531,8 +757,8 @@ By Danny Caballero, Morten Hjorth-Jensen, Rachel Henderson
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/bootstrap.js?digest=3ee479438cf8b5e0d341"></script>
-<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=3ee479438cf8b5e0d341"></script>
+  <script defer src="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
 
   <footer class="bd-footer">
   </footer>
