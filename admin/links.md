@@ -2,13 +2,35 @@
 
 Materials will appear in reverse chronological order, with the most recent appearing at the top.
 
+<!-- ## Class Week 3, January 27-31, 2025 (CW5)
+
+Topics: Newton's Laws and Modeling Systems
+
+This week, we begin our analysis of physical systems in earnest with Newton's Laws. We will discuss the approach of developing a mathematical model of a system, how to investigate it's equation of motion, and to make predictions about the system's behavior.
+
+You should review the discussion about [Mathematical Modeling](../lecture-notes/week3/03_start.ipynb) and the [Newton's Laws](../lecture-notes/week3/03_notes.ipynb) notes. You should also make sure to have read JRT Ch 1.1-1.6 and AMS Ch 1-4.
+
+### Assignments
+
+- [Homework 2](../homeworks/hw2.ipynb) (due January 31, 2025)
+
+### Resources 
+
+  - [Mathematical Modeling](../lecture-notes/week3/03_start.ipynb)
+  - [Newton's Laws](../lecture-notes/week3/03_notes.ipynb)
+  - Textbook Readings: JRT 1.1-1.6; AMS Ch 1-4
+
+### Lecture Videos:
+
+  - Next week -->
+
 ## Class Week 2, January 20-24, 2025 (CW4)
 
-Topics: Modeling with Newton's Second Law; Discrete Models
+Topics: Mathematical Preliminaries; Discrete Models
 
-This week we will continue our discussion of Newton's Second Law and how to model systems with it. We will focus on trajectories of objects without air resistance to start and ensure we all remember how to model those systems. We will shift to talking about how to discretize the equations of motion and solve them numerically. This method called [Euler-Cromer](https://en.wikipedia.org/wiki/Semi-implicit_Euler_method) is a simple and effective way to solve many problems in physics.
+This week we will continue our discussion of the mathematics we need to investigate systems and how to begin making models. We will start talking about how to discretize the equations of motion and solve them numerically. This method called [Euler-Cromer](https://en.wikipedia.org/wiki/Semi-implicit_Euler_method) is a simple and effective way to solve many problems in physics.
 
-You should review the overview on [What is Mathematical Modeling](../lecture-notes/week2/02_start.ipynb) and the notes that start us on the path of [Making Classical Models](../lecture-notes/week2/02_notes.ipynb). You should keep reading JRT up to Ch 1.6 and look over AMS Ch 4.2 and Ch 5. 
+You should review the overview on [Computing as a tool for science](../lecture-notes/week2/02_start.ipynb) and the [Mathematical Preliminaries](../lecture-notes/week2/02_notes.ipynb). You should keep reading JRT up to Ch 1.6 and look over AMS Ch 4.2 and Ch 5. 
 
 ### Assignments
 
@@ -17,8 +39,8 @@ You should review the overview on [What is Mathematical Modeling](../lecture-not
 
 ### Resources 
 
-  - [What is Mathematical Modeling?](../lecture-notes/week2/02_start.ipynb)
-  - [Making Classical Models](../lecture-notes/week2/02_notes.ipynb)
+  - [Computing as a tool for science](../lecture-notes/week2/02_start.ipynb)
+  - [Mathematical Preliminaries](../lecture-notes/week2/02_notes.ipynb)
   - Textbook Readings: JRT 1.4-1.6; AMS Ch 4.2 and 5
 
 ### Lecture Videos:
