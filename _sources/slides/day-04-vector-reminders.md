@@ -22,6 +22,7 @@ url: https://dannycaballero.info/phy321msu/slides/day-04-vector-reminders.html
 * Homework 2 is posted now
 * Help sessions start this week
     * DC today at 4pm; Friday at 3pm (1248 BPS)
+* Elisha (ULA) will join us Friday; additional help hours soon
 
 ---
 
@@ -61,6 +62,76 @@ WEDNESDAY, January 22, 2025
 * How do we setup problems in classical mechanics?
 * What mathematics do we need to get started?
 * How do we solve the equations of motion?
+
+---
+
+# AI Policy Update
+
+## Acceptable use cases proposed by y'all: 
+
+* All uses are OK
+* Brainstorming, getting ideas, finding information
+* Asking for help, clarifying concepts, elaborating on ideas
+* Outlining, structuring, and editing writing
+* Fixing errors, debugging code, checking solutions
+
+---
+
+# AI Policy Update
+
+## Unacceptable use cases proposed by y'all: 
+
+* No use is OK
+* Asking directly for answers and solutions
+* Using AI to complete the entire assignment
+* Using AI to write papers or reports
+* Turning in work that is not your own
+
+---
+
+# AI Policy Update
+
+## Ways of documenting AI use proposed by y'all:
+* Summarizing the use of AI and how it helped
+* Documenting the use of AI in the assignment
+* Providing prompts, responses, and outcomes
+* Detailed documentation including screenshots and date/time of use
+
+---
+
+# AI Policy Update
+
+## Ways of collectively enforcing our policy:
+
+* It is not possible.
+* Honor system; hold old your friends accountable
+* Collective policy helps us all; encourage honesty and integrity
+* Report violations to Danny
+* Fail the assignment if you violate the policy
+* Fail the course if you violate the policy
+
+---
+
+## Ranked Choice Vote on our AI Policy
+
+* **Proposal 1: We adopt a policy that does not allow AI use at all.**
+    * Violation results in a failing grade on assignment. 
+    * Repeated violations result in failing the course.
+* **Proposal 2: We adopt a policy that allows AI use for brainstorming, help, and editing.** 
+    * AI cannot be used for direct answers or completion of assignments. 
+    * We expect documentation of AI use, but it can be informal. 
+    * Violations are discussed with Danny; the first violation requires a redo of the assignment, and repeated violations result in a failing grade.
+---
+
+## Ranked Choice Vote on our AI Policy
+
+* **Proposal 3: We adopt a policy that allows AI for use in nearly any way.**
+    * We require detailed documentation of use; this means screenshots, prompts, responses, and outcomes.
+    * Violations are discussed with Danny; the first violation requires a redo of the assignment, and repeated violations result in a failing grade.
+* **Proposal 4: We adopt a policy that allows AI for use in any way with no documentation required.**
+    * Violations of the policy are limited to sharing answers or solutions with others.
+
+Vote here: [https://forms.office.com/r/PwfNQYJ2Rm](https://forms.office.com/r/PwfNQYJ2Rm)
 
 ---
 
