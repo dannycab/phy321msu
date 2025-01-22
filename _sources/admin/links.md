@@ -32,6 +32,13 @@ This week we will continue our discussion of the mathematics we need to investig
 
 You should review the overview on [Computing as a tool for science](../lecture-notes/week2/02_start.ipynb) and the [Mathematical Preliminaries](../lecture-notes/week2/02_notes.ipynb). You should keep reading JRT up to Ch 1.6 and look over AMS Ch 4.2 and Ch 5. 
 
+### Polls to complete:
+
+**By Monday, Jan 27, 2025**
+
+* [AI Policy Vote](https://forms.office.com/r/PwfNQYJ2Rm)
+* [Office hours scheduling](https://crab.fit/elisha-ula-office-hours-scheduling-351733)
+
 ### Assignments
 
 - [Homework 1](../homeworks/hw1.ipynb) (due January 24, 2025)

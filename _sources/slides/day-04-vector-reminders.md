@@ -3,14 +3,14 @@ marp: true
 theme: king
 paginate: true
 
-title: Day 04 - Vector Reminders
-description: Slides for PHY 321 Spring 2025, Day 04: Vector Reminders
+title: Day 04 - Mathematical Preliminaries
+description: Slides for PHY 321 Spring 2025, Day 04: Mathematical Preliminaries
 author: Prof. Danny Caballero <caball14@msu.edu>
 keywords: classical mechanics, models, modeling, differential equations, motion
 url: https://dannycaballero.info/phy321msu/slides/day-04-vector-reminders.html
 ---
 
-# Day 04 - Vector Reminders
+# Day 04 - Mathematical Preliminaries
 
 ![bg right:60%](./images/vector.jpeg)
 
@@ -169,3 +169,13 @@ Note:
 $$\hat{r} = \cos(\phi) \hat{x} + \sin(\phi) \hat{y}$$
 
 $$\hat{\phi} = -\sin(\phi) \hat{x} + \cos(\phi) \hat{y}$$
+
+---
+
+# Group Discussion 4-2
+
+We found the following expression for the equation of motion of a falling ball subject to air resistance:
+
+$$m \ddot{y} = +mg - b \dot{y} - c \dot{y}^2$$
+
+What are the units of the constants $b$ and $c$?
