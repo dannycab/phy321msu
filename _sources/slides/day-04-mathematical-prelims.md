@@ -164,7 +164,7 @@ $$m \ddot{y} = +mg - b \dot{y} - c \dot{y}^2$$
 
 What are the units of the constants $b$ and $c$?
 
----
+<!-- ---
 
 # Group Discussion 4-2
 
@@ -178,5 +178,5 @@ Note:
 
 $$\hat{r} = \cos(\phi) \hat{x} + \sin(\phi) \hat{y}$$
 
-$$\hat{\phi} = -\sin(\phi) \hat{x} + \cos(\phi) \hat{y}$$
+$$\hat{\phi} = -\sin(\phi) \hat{x} + \cos(\phi) \hat{y}$$ -->
 

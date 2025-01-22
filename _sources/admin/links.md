@@ -2,7 +2,7 @@
 
 Materials will appear in reverse chronological order, with the most recent appearing at the top.
 
-<!-- ## Class Week 3, January 27-31, 2025 (CW5)
+## Class Week 3, January 27-31, 2025 (CW5)
 
 Topics: Newton's Laws and Modeling Systems
 
@@ -16,13 +16,13 @@ You should review the discussion about [Mathematical Modeling](../lecture-notes/
 
 ### Resources 
 
-  - [Mathematical Modeling](../lecture-notes/week3/03_start.ipynb)
-  - [Newton's Laws](../lecture-notes/week3/03_notes.ipynb)
-  - Textbook Readings: JRT 1.1-1.6; AMS Ch 1-4
+- [Mathematical Modeling](../lecture-notes/week3/03_start.ipynb)
+- [Newton's Laws](../lecture-notes/week3/03_notes.ipynb)
+- Textbook Readings: JRT 1.1-1.6; AMS Ch 1-4
 
 ### Lecture Videos:
 
-  - Next week -->
+  - Next week
 
 ## Class Week 2, January 20-24, 2025 (CW4)
 
@@ -52,8 +52,11 @@ You should review the overview on [Computing as a tool for science](../lecture-n
 
 ### Lecture Videos:
 
-22 Jan 2025 ([Slides](../slides/day-04-vector-reminders.pdf))
-![Day 04](../slides/day-04-vector-reminders.png)
+24 Jan 2025 ([Slides](../slides/day-05-homework-session.pdf))
+![Day 05](../slides/day-05-homework-session.png)
+
+22 Jan 2025 ([Slides](../slides/day-04-mathematical-prelims.pdf)) <- **only recorded audio, blank video**
+![Day 04](../slides/day-04-mathematical-prelims.png)
 
 
 ## Class Week 1, January 13-17, 2025 (CW3)
@@ -81,7 +84,7 @@ Embedded in both notes pages are videos that you can watch to help you understan
 
 ### Lecture Videos:
 
-17 Jan 2025 ([Slides](../slides/day-03-vectors.pdf))
+17 Jan 2025 ([Slides](../slides/day-03-vectors.pdf)) - **NO VIDEO ON FRIDAYS**
 ![Day 03](../slides/day-03-vectors.png)
 
 
