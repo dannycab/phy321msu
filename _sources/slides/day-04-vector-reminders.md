@@ -23,6 +23,7 @@ url: https://dannycaballero.info/phy321msu/slides/day-04-vector-reminders.html
 * Help sessions start this week
     * DC today at 4pm; Friday at 3pm (1248 BPS)
 * Elisha (ULA) will join us Friday; additional help hours soon
+    * Complete [poll for additional help hours](https://crab.fit/elisha-ula-office-hours-scheduling-351733)
 
 ---
 
