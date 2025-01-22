@@ -1,6 +1,6 @@
 ---
 marp: true
-theme: king
+theme: graph_paper
 paginate: true
 
 title: Day 04 - Mathematical Preliminaries
@@ -158,6 +158,16 @@ Consider the generic position vector $\vec{R}$ for a particle in 2D space. Which
 
 # Group Discussion 4-1
 
+We found the following expression for the equation of motion of a falling ball subject to air resistance:
+
+$$m \ddot{y} = +mg - b \dot{y} - c \dot{y}^2$$
+
+What are the units of the constants $b$ and $c$?
+
+<!-- ---
+
+# Group Discussion 4-2
+
 Consider the generic position vector $\vec{R}$ for a particle in 2D space. Find the velocity vector $\vec{V}$ for the particle in Cartesian coordinates ($x$, $y$).
 
 ## What happens in plane polar coordinates? 
@@ -168,14 +178,5 @@ Note:
 
 $$\hat{r} = \cos(\phi) \hat{x} + \sin(\phi) \hat{y}$$
 
-$$\hat{\phi} = -\sin(\phi) \hat{x} + \cos(\phi) \hat{y}$$
+$$\hat{\phi} = -\sin(\phi) \hat{x} + \cos(\phi) \hat{y}$$ -->
 
----
-
-# Group Discussion 4-2
-
-We found the following expression for the equation of motion of a falling ball subject to air resistance:
-
-$$m \ddot{y} = +mg - b \dot{y} - c \dot{y}^2$$
-
-What are the units of the constants $b$ and $c$?

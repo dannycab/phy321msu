@@ -1,7 +1,7 @@
 #!/bin/bash
 
 THEME_PATH="../themes/"
-THEME="einstein.css"
+THEME="graph_paper.css"
 
 # This script is used to generate the list of all the files in the repository
 # and convert them to PDF using the specified theme.

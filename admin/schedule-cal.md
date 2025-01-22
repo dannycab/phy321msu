@@ -17,8 +17,8 @@ All assignments are turned in using Gradescope as a single PDF.
 | Week | Day    | Topic                                       | Readings to prepare           | Important events                                                |
 | ---- | ------ | ------------------------------------------- | ----------------------------- | --------------------------------------------------------------- |
 | CW4  | 20 Jan | MLK Holiday (No Class)                      |                               | [Homework 2 Assigned (Due 31 Jan)](../homeworks/hw2.ipynb)      |
-|      | 22 Jan | Newton's Laws; Motion in 2 and 3 dimensions | JRT 1.4-1.6; AMS Ch 4.2 and 5 |                                                                 |
-|      | 24 Jan | Problem session for homework                |                               | **Homework 1 Due** |
+|      | 22 Jan | Newton's Laws; Motion in 2 and 3 dimensions ([Slides](../slides/day-04-mathematical-prelims.pdf)) | JRT 1.4-1.6; AMS Ch 4.2 and 5 |                                                                 |
+|      | 24 Jan | Problem session for homework ([Slides](../slides/day-05-homework-session.pdf))                |                               | **Homework 1 Due** |
 
 ## Class Week 3
 

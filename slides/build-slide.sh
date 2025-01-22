@@ -14,10 +14,10 @@ MARKDOWN_FILE=$1
 THEME_PATH="../themes/"
 
 # Define the name of the theme file to be used
-THEME="king.css"
+THEME="graph_paper.css"
 
 ## Generate HTML Slides
-# The following would generate HTML slides from the markdown file using the specified theme.
+# The following generates HTML slides from the markdown file using the specified theme.
 marp --theme ${THEME_PATH}${THEME} --allow-local-files ${MARKDOWN_FILE}
 
 ## Generate PDF Slides
