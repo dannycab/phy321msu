@@ -36,7 +36,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=87e54e7c" />
   
   <!-- So that users can add custom icons -->
   <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
@@ -55,18 +55,18 @@
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../_static/design-tabs.js?v=36754332"></script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script>window.MathJax = {"tex2jax": {"inlineMath": [["$", "$"]]}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'solutions/solutionhw1';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Homework 2 (Due 31 Jan)" href="../homeworks/hw2.html" />
-    <link rel="prev" title="Homework 1 (Due 24 Jan)" href="../homeworks/hw1.html" />
+    <link rel="next" title="Course Commitments" href="../resources/course-commitments.html" />
+    <link rel="prev" title="Homework 2 (Due 31 Jan)" href="../homeworks/hw2.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -183,15 +183,19 @@
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week1/01_start.html">Week 1 - Overture: What is Classical Physics?</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week1/01_notes.html">Week 1 - Notes: Introduction to Classical Mechanics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week2/02_start.html">Week 2 - What is Mathematical Modeling?</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week2/02_notes.html">Week 2 - Notes: Making Classical Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week2/02_start.html">Week 2 - Computing as a tool for science</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week2/02_notes.html">Week 2 - Notes: Mathematical Preliminaries</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week3/03_start.html">Week 3 - What is Mathematical Modeling?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week3/03_notes.html">Week 3 - Notes: Making Classical Models</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Assignments</span></p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../homeworks/hw1.html">Homework 1 (Due 24 Jan)</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Solution Homework 1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../homeworks/hw2.html">Homework 2 (Due 31 Jan)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="solutionhw2.html">Solution Homework 2</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Solutions</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Solution Homework 1</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Resources</span></p>
 <ul class="nav bd-sidenav">
@@ -252,37 +256,6 @@
         <div class="header-article-item">
 
 <div class="article-header-buttons">
-
-
-
-
-
-<div class="dropdown dropdown-launch-buttons">
-  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
-    <i class="fas fa-rocket"></i>
-  </button>
-  <ul class="dropdown-menu">
-      
-      
-      
-      <li><a href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/main?urlpath=tree/solutions/solutionhw1.ipynb" target="_blank"
-   class="btn btn-sm dropdown-item"
-   title="Launch on Binder"
-   data-bs-placement="left" data-bs-toggle="tooltip"
->
-  
-
-<span class="btn__icon-container">
-  
-    <img alt="Binder logo" src="../_static/images/logo_binder.svg">
-  </span>
-<span class="btn__text-container">Binder</span>
-</a>
-</li>
-      
-  </ul>
-</div>
-
 
 
 
@@ -405,13 +378,14 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="solution-homework-1">
+  <section id="solution-homework-1">
 <h1>Solution Homework 1<a class="headerlink" href="#solution-homework-1" title="Link to this heading">#</a></h1>
 <p><strong>Spring 2025</strong></p>
+<p><a class="reference download internal" download="" href="../_downloads/7086f8cfe6c92d9ad404d26708ed6711/solutionhw1.pdf"><span class="xref download myst">PDF</span></a></p>
 <section id="exercise-1-15-pt-math-reminder-properties-of-exponential-function">
 <h2>Exercise 1 (15 pt), math reminder, properties of exponential function<a class="headerlink" href="#exercise-1-15-pt-math-reminder-properties-of-exponential-function" title="Link to this heading">#</a></h2>
 <p>The first exercise is meant to remind ourselves about properties of the exponential function and imaginary numbers. This is highly relevant later in this course when we start analyzing oscillatory motion and some wave mechanics.</p>
-<p>As physicists we should thus feel comfortable with expressions that include <span class="math notranslate nohighlight">\(\exp{(\imath 2\pi f t)}\)</span>. Here <span class="math notranslate nohighlight">\(t\)</span> could be interpreted as time and <span class="math notranslate nohighlight">\(f\)</span> as a frequency. We know that <span class="math notranslate nohighlight">\(\imath = \sqrt(-1)\)</span> is the imaginary unit number.</p>
+<p>As physicists we should thus feel comfortable with expressions that include <span class="math notranslate nohighlight">\(\exp{(i 2\pi f t)}\)</span>. Here <span class="math notranslate nohighlight">\(t\)</span> could be interpreted as time and <span class="math notranslate nohighlight">\(f\)</span> as a frequency. We know that <span class="math notranslate nohighlight">\(i = \sqrt(-1)\)</span> is the imaginary unit number.</p>
 <ul class="simple">
 <li><p>1a (4pt): Perform Taylor expansions in powers of <span class="math notranslate nohighlight">\(2\pi f t\)</span> of the functions <span class="math notranslate nohighlight">\(\cos{(2\pi f t)}\)</span> and <span class="math notranslate nohighlight">\(\sin{(2\pi f t)}\)</span>.</p></li>
 </ul>
@@ -434,33 +408,31 @@
 <p class="admonition-title">SOLUTION</p>
 <div class="math notranslate nohighlight">
 \[
-\exp{(\imath 2 \pi f t)} = \sum_{n=0}^{\infty}\frac{(\imath 2 \pi f t)^{n}}{(n)!}=1+ 2 \pi f t+\frac{(\imath 2 \pi f t)^{2}}{2!}+\frac{(\imath 2 \pi f t)^{3}}{3!}+\frac{(\imath 2 \pi f t)^{4}}{4!}+\frac{(\imath 2 \pi f t)^{5}}{5!}+\dots.
+\exp{(i 2 \pi f t)} = \sum_{n=0}^{\infty}\frac{(i 2 \pi f t)^{n}}{(n)!}=1+ 2 \pi f t+\frac{(i 2 \pi f t)^{2}}{2!}+\frac{(i 2 \pi f t)^{3}}{3!}+\frac{(i 2 \pi f t)^{4}}{4!}+\frac{(i 2 \pi f t)^{5}}{5!}+\dots.
 \]</div>
 </div>
 <ul class="simple">
-<li><p>1c (2pt): Using parts (a) and (b) here, show that <span class="math notranslate nohighlight">\(\exp{(\imath2\pi f t)}=\cos{(2\pi f t)}+\imath\sin{(2\pi f t)}\)</span>.</p></li>
+<li><p>1c (2pt): Using parts (a) and (b) here, show that <span class="math notranslate nohighlight">\(\exp{(i2\pi f t)}=\cos{(2\pi f t)}+i\sin{(2\pi f t)}\)</span>.</p></li>
 </ul>
 <div class="hint admonition">
 <p class="admonition-title">SOLUTION</p>
-<p>Using <span class="math notranslate nohighlight">\(\imath^2=-1\)</span> we can rewrite the last results as</p>
+<p>Using <span class="math notranslate nohighlight">\(i^2=-1\)</span> we can rewrite the last results as</p>
 <div class="math notranslate nohighlight">
-\[\begin{split}
-\begin{align*}
-\exp{(2 \pi f t)} = &amp; \sum_{n=0}^{\infty}\frac{(2 \pi f t)^{n}}{(n)!}=1+2 \pi f t\frac{(2 \pi f t)^{2}}{2!}+\frac{(2 \pi f t)^{3}}{3!}+\frac{(2 \pi f t)^{4}}{4!}+\frac{(2 \pi f t)^{5}}{5!}+\dots\\
-=&amp; \left(1-\frac{(2 \pi f t)^{2}}{2!}+\frac{(2 \pi f t)^{4}}{4!}-\dots\right)+\left(2 \pi f t-\frac{(2 \pi f t)^{3}}{3!}+\frac{(2 \pi f t)^{5}}{5!}-\dots\right)\\
-= &amp; \cos{(2 \pi f t)}+\imath\sin{(2 \pi f t)}.
-\end{align*}
-\end{split}\]</div>
+\[\exp{(i 2 \pi f t)} = \sum_{n=0}^{\infty}\frac{(i 2 \pi f t)^{n}}{(n)!}=1+i 2 \pi f t-\frac{(2 \pi f t)^{2}}{2!}-i\frac{(2 \pi f t)^{3}}{3!}+\frac{(2 \pi f t)^{4}}{4!}+i\frac{(2 \pi f t)^{5}}{5!}-\dots \]</div>
+<div class="math notranslate nohighlight">
+\[\exp{(i 2 \pi f t)} = \left(1-\frac{(2 \pi f t)^{2}}{2!}+\frac{(2 \pi f t)^{4}}{4!}-\dots\right)+i\left(2 \pi f t-\frac{(2 \pi f t)^{3}}{3!}+\frac{(2 \pi f t)^{5}}{5!}-\dots\right)\]</div>
+<div class="math notranslate nohighlight">
+\[ \exp{(i 2 \pi f t)} = \cos{(2 \pi f t)}+i\sin{(2 \pi f t)}\]</div>
 </div>
 <ul class="simple">
-<li><p>1d (2pt): Show that <span class="math notranslate nohighlight">\(\ln{(−1)} = \imath\pi\)</span>.</p></li>
+<li><p>1d (2pt): Show that <span class="math notranslate nohighlight">\(\ln{(-1)} = i \pi\)</span>.</p></li>
 </ul>
 <div class="hint admonition">
 <p class="admonition-title">SOLUTION</p>
 <p>Let <span class="math notranslate nohighlight">\(2 \pi f t = \pi\)</span>, we get</p>
 <div class="math notranslate nohighlight">
 \[
-\exp{(\imath\pi)}=\cos{(\pi)}+\imath\sin{(\pi)}=-1.
+\exp{(i\pi)}=\cos{(\pi)}+i\sin{(\pi)}=-1.
 \]</div>
 </div>
 <ul class="simple">
@@ -495,7 +467,7 @@ The norm of <span class="math notranslate nohighlight">\(\vert \boldsymbol{a}\ve
 \[
 \boldsymbol{a}^T\boldsymbol{b} = 27 = 91 \cos{\theta_{ab}} = \vert \boldsymbol{a} \vert \vert \boldsymbol{b} \vert \cos{\theta_{ab}},
 \]</div>
-<p>leading to <span class="math notranslate nohighlight">\(\cos{\theta_{ab}}=27/91\)</span> and <span class="math notranslate nohighlight">\(\theta_{ab}=1.2695 \)</span> rad, with <span class="math notranslate nohighlight">\(1\)</span> rad being equal to <span class="math notranslate nohighlight">\(180/pi\)</span>. Thus we have <span class="math notranslate nohighlight">\(\theta_{ab}=72.74\)</span> degrees.</p>
+<p>leading to <span class="math notranslate nohighlight">\(\cos{\theta_{ab}}=\frac{27}{91}\)</span> and <span class="math notranslate nohighlight">\(\theta_{ab}=1.2695\)</span> rad, with <span class="math notranslate nohighlight">\(1\)</span> rad being equal to <span class="math notranslate nohighlight">\(180/\pi\)</span>. Thus we have <span class="math notranslate nohighlight">\(\theta_{ab}=72.74\)</span> degrees.</p>
 <p>A small digression on linear algebra useful for python programming of vectors.
 We define the vectors as one-dimensional arrays meaning that we write
 <span class="math notranslate nohighlight">\(\boldsymbol{a}^T=\begin{bmatrix} 1 &amp; 3 &amp; 9\end{bmatrix}\)</span> and  <span class="math notranslate nohighlight">\(\boldsymbol{b}^T=\begin{bmatrix} 9 &amp; 3 &amp; 1\end{bmatrix}\)</span>, where we use <span class="math notranslate nohighlight">\(T\)</span> to indicate the transpose of a vector.</p>
@@ -602,12 +574,10 @@ that <span class="math notranslate nohighlight">\(\boldsymbol{a}(\boldsymbol{b}+
 <p>Writing out the equations and keeping in mind that the norm of unit vectors is one, we have</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-\begin{align*}
-\boldsymbol{a}\cdot(\boldsymbol{b}+\boldsymbol{c})=&amp; a_1(b_1+c_1)+a_2(b_2+c_2)+a_3(b_3+c_3)\\
-=&amp; (a_1b_1+a_1c_1)+(a_2b_2+a_2c_2)+(a_3b_3+a_3c_3)\\
-= &amp; (a_1b_1+a_2b_2+a_3b_3)+(a_1c_1+a_2c_2+a_3c_3)\\
-= &amp; \boldsymbol{a}\cdot\boldsymbol{b}+\boldsymbol{a}\cdot\boldsymbol{c}. 
-\end{align*}
+\boldsymbol{a}\cdot(\boldsymbol{b}+\boldsymbol{c})= a_1(b_1+c_1)+a_2(b_2+c_2)+a_3(b_3+c_3)\\
+= (a_1b_1+a_1c_1)+(a_2b_2+a_2c_2)+(a_3b_3+a_3c_3)\\
+= (a_1b_1+a_2b_2+a_3b_3)+(a_1c_1+a_2c_2+a_3c_3)\\
+= \boldsymbol{a}\cdot\boldsymbol{b}+\boldsymbol{a}\cdot\boldsymbol{c}.
 \end{split}\]</div>
 </div>
 <ul class="simple">
@@ -617,12 +587,10 @@ that <span class="math notranslate nohighlight">\(\boldsymbol{a}(\boldsymbol{b}+
 <p class="admonition-title">SOLUTION</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
-\begin{align*}
-\frac{d}{dt}(\boldsymbol{a}\cdot\boldsymbol{b})=&amp; \frac{d}{dt}(a_1b_1+a_2b_2+a_3b_3)\\
-=&amp; \left(a_1\frac{db_1}{dt}+\frac{da_1}{dt}b_1\right)+\left(a_2\frac{db_2}{dt}+\frac{da_2}{dt}b_2\right)+\left(a_3\frac{db_3}{dt}+\frac{da_3}{dt}b_3\right)\\
-= &amp; \left(a_1\frac{db_1}{dt}+a_2\frac{db_2}{dt}+a_3\frac{db_3}{dt}\right)+\left(\frac{da_1}{dt}b_1+\frac{da_2}{dt}b_2+\frac{da_3}{dt}b_3\right)\\
-= &amp; \boldsymbol{a}\cdot\frac{d\boldsymbol{b}}{dt}+\frac{d\boldsymbol{a}}{dt}\cdot\boldsymbol{b}. 
-\end{align*}
+\frac{d}{dt}(\boldsymbol{a}\cdot\boldsymbol{b})= \frac{d}{dt}(a_1b_1+a_2b_2+a_3b_3)\\
+= \left(a_1\frac{db_1}{dt}+\frac{da_1}{dt}b_1\right)+\left(a_2\frac{db_2}{dt}+\frac{da_2}{dt}b_2\right)+\left(a_3\frac{db_3}{dt}+\frac{da_3}{dt}b_3\right)\\
+= \left(a_1\frac{db_1}{dt}+a_2\frac{db_2}{dt}+a_3\frac{db_3}{dt}\right)+\left(\frac{da_1}{dt}b_1+\frac{da_2}{dt}b_2+\frac{da_3}{dt}b_3\right)\\
+= \boldsymbol{a}\cdot\frac{d\boldsymbol{b}}{dt}+\frac{d\boldsymbol{a}}{dt}\cdot\boldsymbol{b}.
 \end{split}\]</div>
 </div>
 </section>
@@ -771,7 +739,7 @@ We recognize that <span class="math notranslate nohighlight">\(c_y\)</span> is t
 <p>which leads to,</p>
 <div class="math notranslate nohighlight">
 \[
-\frac{abc}{2\mathrm{area}}=    \frac{c}{\sin{\gamma}}=\frac{a}{\sin{\alpha}}=\frac{b}{\sin{\beta}}.
+\frac{abc}{2\;\mathrm{area}}=    \frac{c}{\sin{\gamma}}=\frac{a}{\sin{\alpha}}=\frac{b}{\sin{\beta}}.
 \]</div>
 </div>
 </section>
@@ -1204,20 +1172,20 @@ could he have run if he had kept the same velocity till he reached
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../homeworks/hw1.html"
+       href="../homeworks/hw2.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Homework 1 (Due 24 Jan)</p>
+        <p class="prev-next-title">Homework 2 (Due 31 Jan)</p>
       </div>
     </a>
     <a class="right-next"
-       href="../homeworks/hw2.html"
+       href="../resources/course-commitments.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Homework 2 (Due 31 Jan)</p>
+        <p class="prev-next-title">Course Commitments</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
