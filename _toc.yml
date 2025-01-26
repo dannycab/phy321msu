@@ -68,10 +68,10 @@ parts:
       # - file: homeworks/hw9.ipynb
       # - file: midterms/final-exam.ipynb
       # - file: homeworks/hw10.ipynb
-  # - caption: Solutions
-  #   numbered: false
-  #   chapters:
-  #     - file: solutions/solutionhw1.ipynb
+  - caption: Solutions
+    numbered: false
+    chapters:
+      - file: solutions/solutionhw1.ipynb
   #     - file: solutions/solutionhw2.ipynb
   #     - file: solutions/solutionhw3.ipynb
   #     - file: solutions/solutionhw4.ipynb
