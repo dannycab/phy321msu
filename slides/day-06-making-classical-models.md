@@ -127,7 +127,7 @@ Assuming the **restoring force is anti-symmetric*- about the equilibrium positio
 
 # Clicker Question 6-2
 
-Assuming a linear model for Air Resistance $\sim bv$, we obtained this EOM for a falling ball:
+Assuming a **linear model** for Air Resistance $\sim bv$, we obtained this EOM for a falling ball:
 
 $$\ddot{y} = -g + \frac{b}{m}\dot{y}$$
 
@@ -142,7 +142,7 @@ What happens when $\ddot{y} = 0$?
 
 # Clicker Question 6-3
 
-For the system of Linear Drag in 1D, we found a solution for the velocity as a function of time, with $v = 0$ at $t = 0$.
+For the system of **Linear Drag in 1D**, we found a solution for the velocity as a function of time, with $v = 0$ at $t = 0$.
 $$v(t) = v_{term}\left(1-e^{-\dfrac{Ct}{m}}\right)$$
 
 where $v_{term} = \sqrt{\frac{mg}{C}}$. 
@@ -159,7 +159,7 @@ where $v_{term} = \sqrt{\frac{mg}{C}}$.
 
 # Clicker Question 6-4
 
-For the system of Quadratic Drag in 1D, we found a solution for the velocity as a function of time, with $v = 0$ at $t = 0$.
+For the system of **Quadratic Drag in 1D**, we found a solution for the velocity as a function of time, with $v = 0$ at $t = 0$.
 
 $$v(t) = v_{term}\tanh(gt/v_{term})$$
 
@@ -168,6 +168,22 @@ where $v_{term} = (mg/D)^{1/2}$. Do the units make sense? What are the units of 
 2. No, the units for $\left[gt/v_{term}\right]$ are m/s; each side has different units.
 3. Yes, the units for $\left[gt/v_{term}\right]$ are unit-less; both sides have the same units.
 4. No, the units for $\left[gt/v_{term}\right]$ are unit-less; each side has the different units.
+
+---
+
+# Clicker Question 6-5
+
+For the system of **Quadratic Drag in 1D**, we found a solution for the velocity as a function of time, with $v = 0$ at $t = 0$.
+
+$$v(t) = v_{term}\tanh(gt/v_{term})$$ 
+
+where $v_{term} = \sqrt{mg/D}$. What happens when $t \rightarrow \infty$?
+
+1. The object stops moving.
+2. The object travels at a constant velocity.
+3. The object travels at an increasing velocity.
+4. The object travels at a decreasing velocity.
+5. I'm not sure.
 
 
 
