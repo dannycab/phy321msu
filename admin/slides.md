@@ -2,6 +2,19 @@
 
 Slides for PHY 321 appear in reverse chronological order, with the most recent slides at the top. The formats are PDF, HTML, and Markdown. The HTML slides are hosted on my website, and the Markdown slides are the source code for the HTML slides, built with [Marp](https://marp.app/).
 
+## Day 06 - Making Classical Models - 27 Jan 2025
+
+### Download PDF
+
+[![Day 06](../slides/day-06-making-classical-models.png)](../slides/day-06-making-classical-models.pdf)
+
+### HTML Versions
+
+| Format | Link |
+|--|--|
+| HTML (Inline) | [day-06-making-classical-models.md](../slides/day-06-making-classical-models.md) |
+| HTML (Slides) | [day-06-making-classical-models.html](../slides/day-06-making-classical-models.html) |
+
 ## Day 05 - Homework Session - 24 Jan 2025
 
 ### Download PDF
