@@ -44,7 +44,65 @@ $\frac{d}{d\phi} \cos \phi = -\sin \phi \qquad \frac{d}{d\phi} \sin \phi = \cos 
 
 - Homework 2 is due Friday
 - Video recordings have continued to fail.
-- Updated office hours:
+    - Zoom password: phy321
+- Updated office hours (Danny-DC; Elisha-EA):
+  - Monday 4-5pm (DC)
+  - Tuesday 5-6pm (EA)
+  - Wednesday 4-5pm (DC)
+  - Thursday 5-6pm  (EA)
+  - Friday 10-12pm (DC then EA); 3-4pm (DC)
+
+---
+
+# Seminars this week
+
+MONDAY, January 27, 2025          
+ 
+- Condensed Matter Seminar 4:10 pm,1400 BPS, Luca Delacretaz, University of Chicago, *Precision tests of thermalization and Planckian bound from hydrodynamic EFT*
+- CAPS Connect – Abigail (Abby) Weller BPS 1312C - Starts back up today          
+    - 30 minute Walk-ins are available or to schedule a meeting: <https://caps.msu.edu/services/CAPSConnect.html>
+ 
+---             
+
+# Seminars this week
+
+WEDNESDAY, January 29, 2025    
+                                     
+- Astronomy Seminar, 1:30 pm, 1400 BPS, Michiel Lambrechts, Univ. of Copenhagen, *Planet formation*
+- FRIB Nuclear Science Seminar, 3:30pm., FRIB 1300 Auditorium, Brenden Longfellow of Lawrence Livermore National Laboratory, *From Tensor Current Limits to Solar Neutrinos: 8Li and 8B Studies with the Beta-decay Paul Trap*
+
+---
+
+# AI Policy Proposals
+
+* **Proposal 1:** We adopt a policy that does not allow AI use at all.
+* **Proposal 2:** We adopt a policy that allows AI use for brainstorming, help, and editing. 
+* **Proposal 3:** We adopt a policy that allows AI for use in nearly any way.
+* **Proposal 4:** We adopt a policy that allows AI for use in any way with no documentation required.
+
+---
+
+# Updated AI Policy
+
+We have elected to use Proposal 2 for the AI Policy.
+- Proposal 2: 61.5% first choice; 12.8% second choice
+- Proposal 1: 26.5% first choice; 61.5% second choice
+- Proposal 3: 46.2% third choice; 23.1% last choice
+- Proposal 4: 17.9% third choice; 74.4% last choice
+
+![right:80%](../images/notes/week3/ai_vote_s2025.png)
+
+---
+
+# AI Policy going forward
+
+## To be posted on D2L and in the syllabus
+
+- We have adopted a policy that allows AI use for brainstorming, help, and editing. 
+- We will not use AI tools for direct answers or the completion of assignments. 
+- We expect documentation of AI use, but it can be informal. The documentation should at least contain the AI tool used, the prompts given, and the responses received. 
+- Policy violations are discussed with Danny; the first violation requires a redo of the assignment, and repeated violations result in a failing grade. 
+- We will review an amendment to this policy if 1/3 of the class prepares one.
 
 ---
 
