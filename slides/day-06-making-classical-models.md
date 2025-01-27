@@ -87,7 +87,9 @@ Source: <https://www.youtube.com/watch?v=dkTncoPqo5Y>
 # Model of vortex shedding behind a cylinder
 
 - Controlling vortex shedding is important in many engineering applications.
-<img src="../images/notes/week3/vortex-shedding.png" width="100%">
+
+![width:1000px](../images/notes/week3/vortex-shedding.png)
+<!-- <img src="../images/notes/week3/vortex-shedding.png" width="100%"> -->
 
 <p><small><i>Giosan, Ioan, and P. Eng. "<b>Vortex shedding induced loads on free standing structures</b>" Structural Vortex Shedding Response Estimation Methodology and Finite Element Simulation 42 (2013).</i></small></p>
 
@@ -109,19 +111,17 @@ Source: <https://www.youtube.com/watch?v=dkTncoPqo5Y>
 
 # Clicker Question 6-1
 
-The simple harmonic oscillator (SHO) is a useful model for many systems. 
+The SHO is a useful model: $m\ddot{x} = -kx$. 
 
-<img src="../images/notes/week3/sho_horizontal.png" width="40%" align="right">
-
-
-$m\ddot{x} = -kx$
-
-Assuming the **restoring force is anti-symmetric*- about the equilibrium position, what would be next term in the force model for a spring mass system?
+Assume the **restoring force is anti-symmetric** about the equilibrium position, what is the next term model?
 
 1. $\sim x^2$ 
 2. $\sim x^3$
 3. $\sim x^4$
 4. $\sim x^5$
+
+![bg right w:80%](../images/notes/week3/sho_horizontal.png)
+
 
 ---
 
@@ -143,13 +143,14 @@ What happens when $\ddot{y} = 0$?
 # Clicker Question 6-3
 
 For the system of **Linear Drag in 1D**, we found a solution for the velocity as a function of time, with $v = 0$ at $t = 0$.
-$$v(t) = v_{term}\left(1-e^{-\dfrac{Ct}{m}}\right)$$
+$$v(t) = v_{term}\left(1-e^{-\dfrac{bt}{m}}\right)$$
 
-where $v_{term} = \sqrt{\frac{mg}{C}}$. 
+where $v_{term} = \sqrt{\frac{mg}{b}}$. 
 
 ---
 
-<img src="../images/notes/week3/cq6-3.png" width="60%" align="right">
+![bg right w:100%](../images/notes/week3/cq6-3.png)
+
 
 # CQ 6-3
 
@@ -163,7 +164,7 @@ For the system of **Quadratic Drag in 1D**, we found a solution for the velocity
 
 $$v(t) = v_{term}\tanh(gt/v_{term})$$
 
-where $v_{term} = (mg/D)^{1/2}$. Do the units make sense? What are the units of $\left[gt/v_{term}\right]$? 
+where $v_{term} = (mg/c)^{1/2}$. Do the units make sense? What are the units of $\left[gt/v_{term}\right]$? 
 1. Yes, the units for $\left[gt/v_{term}\right]$ are $m/s$;both sides have the same units.
 2. No, the units for $\left[gt/v_{term}\right]$ are m/s; each side has different units.
 3. Yes, the units for $\left[gt/v_{term}\right]$ are unit-less; both sides have the same units.
@@ -177,7 +178,7 @@ For the system of **Quadratic Drag in 1D**, we found a solution for the velocity
 
 $$v(t) = v_{term}\tanh(gt/v_{term})$$ 
 
-where $v_{term} = \sqrt{mg/D}$. What happens when $t \rightarrow \infty$?
+where $v_{term} = \sqrt{mg/c}$. What happens when $t \rightarrow \infty$?
 
 1. The object stops moving.
 2. The object travels at a constant velocity.
