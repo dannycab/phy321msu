@@ -112,8 +112,8 @@ All assignments are turned in using Gradescope as a single PDF.
 
 | Week | Day    | Topic                      | Readings to prepare | Important events                                                |
 | ---- | ------ | -------------------------- | ------------------- | --------------------------------------------------------------- |
-| CW16 | 14 Apr | NO CLASS (WATCH ECLIPSE)   | JRT Ch 7            | [Homework 9 Assigned (Due 25 Apr)](../homeworks/hw9.ipynb)      |
-|      | 16 Apr | Lagrange Equation Examples |                     |                                                                 |
+| CW16 | 14 Apr | Lagrange Equation Examples   | JRT Ch 7            |       |
+|      | 16 Apr | Lagrange Equation Examples |                       |       |
 |      | 18 Apr |                            |                     | **Homework 8 Due** |
 
 ## Class Week 15
@@ -122,12 +122,12 @@ All assignments are turned in using Gradescope as a single PDF.
 | ---- | ------ | ----------------------------- | ------------------- | ------------------------------------------------------------------------ |
 | CW17 | 21 Apr | Central Force; the 1D problem | JRT 8.1-8.3         | [Final Project Assigned (Due 02 May)](../midterms/final-exam.ipynb) |
 |      | 23 Apr |                               |                     |                                   |
-|      | 25 Apr |                               |                     | **Homework 9 Due**          |
+|      | 25 Apr |                               |                     |           |
 
 ## Class Week 16
 
 | Week | Day    | Topic       | Readings to prepare | Important events                                                        |
 | ---- | ------ | ----------- | ------------------- | ----------------------------------------------------------------------- |
-| CW18 | 28 Apr | FINALS WEEK |                     |                                                                         |
+| CW18 | 28 Apr | FINALS WEEK |                     |  **Final Project Due**                                                  |
 |      | 30 Apr | FINALS WEEK |                     |                                                                         |
-|      | 02 May | FINALS WEEK |                     | **Final Project Due** |
+|      | 02 May | FINALS WEEK |                     |  |

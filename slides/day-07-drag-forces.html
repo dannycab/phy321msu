@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Day 03 - Vectors &#8212; Classical Mechanics</title>
+    <title>Day 07 - Drag Forces &#8212; Classical Mechanics</title>
   
   
   
@@ -62,7 +62,7 @@
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"tex2jax": {"inlineMath": [["$", "$"]]}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'slides/day-03-vectors';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'slides/day-07-drag-forces';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -270,7 +270,7 @@
       
       
       
-      <li><a href="../_sources/slides/day-03-vectors.md" target="_blank"
+      <li><a href="../_sources/slides/day-07-drag-forces.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -346,7 +346,7 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Day 03 - Vectors</h1>
+    <h1>Day 07 - Drag Forces</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -356,27 +356,15 @@
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Day 03 - Vectors</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Day 07 - Drag Forces</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#announcements">Announcements</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#goals-for-this-week">Goals for this week</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#be-able-to-answer-the-following-questions">Be able to answer the following questions.</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#reminders-from-day-02">Reminders from Day 02</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#example-ball-falling-in-1d-in-air">Example: Ball Falling in 1D in Air</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Example: Ball Falling in 1D in Air</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#vector-properties">Vector Properties</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#generative-ai">Generative AI</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#generative-ai-energy-consumption">Generative AI Energy Consumption</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#and-yet">And yet,</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-generative-artificial-intelligence-policy">Creating a Generative Artificial Intelligence Policy</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#take-five-minutes-to-answer-the-following-for-yourself">Take five minutes to answer the following for yourself:</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Creating a Generative Artificial Intelligence Policy</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#share-your-ideas-are-your-table-develop-a-consensus-on-the-following">Share your ideas are your table. Develop a consensus on the following:</a></li>
-</ul>
-</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#seminars-this-week">Seminars this week</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#goals-for-week-3">Goals for Week 3</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-6-2">Clicker Question 6-2</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-6-3">Clicker Question 6-3</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#cq-6-3">CQ 6-3</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-6-4">Clicker Question 6-4</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-6-5">Clicker Question 6-5</a></li>
 </ul>
 
             </nav>
@@ -389,194 +377,108 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="day-03-vectors">
-<h1>Day 03 - Vectors<a class="headerlink" href="#day-03-vectors" title="Link to this heading">#</a></h1>
-<div class="math notranslate nohighlight">
-\[\mathbf{r} = r_x\hat{x} + r_y\hat{y} + r_z\hat{z}\]</div>
-<div class="math notranslate nohighlight">
-\[\mathbf{r} = r_x\hat{i} + r_y\hat{j} + r_z\hat{k}\]</div>
-<div class="math notranslate nohighlight">
-\[\mathbf{r} = r_x\hat{e}_1 + r_y\hat{e}_2 + r_z\hat{e}_3\]</div>
-<div class="math notranslate nohighlight">
-\[\mathbf{r} = \langle r_x, r_y, r_z\rangle\]</div>
-<p><img alt="bg right:40%" src="../_images/vector.jpeg" /></p>
+  <section id="day-07-drag-forces">
+<h1>Day 07 - Drag Forces<a class="headerlink" href="#day-07-drag-forces" title="Link to this heading">#</a></h1>
+<p><img alt="bg right width:100%" src="../_images/drag.png" /></p>
 </section>
 <hr class="docutils" />
 <section id="announcements">
 <h1>Announcements<a class="headerlink" href="#announcements" title="Link to this heading">#</a></h1>
 <ul class="simple">
-<li><p>Homework 1 is due next Friday</p></li>
-<li><p>Help sessions will start next week</p></li>
-<li><p>Last class was not recorded properly</p></li>
-<li><p>No class on Monday (MLK Day)</p></li>
-<li><p>Complete the <a class="reference external" href="https://forms.office.com/r/bqFghtWrbj">student information poll</a> by Monday, please</p></li>
-</ul>
-</section>
-<hr class="docutils" />
-<section id="goals-for-this-week">
-<h1>Goals for this week<a class="headerlink" href="#goals-for-this-week" title="Link to this heading">#</a></h1>
-<section id="be-able-to-answer-the-following-questions">
-<h2>Be able to answer the following questions.<a class="headerlink" href="#be-able-to-answer-the-following-questions" title="Link to this heading">#</a></h2>
-<ul class="simple">
-<li><p>What is Classical Mechanics?</p></li>
-<li><p>How can we formulate it?</p></li>
-<li><p>What are the essential physics models for single particles?</p></li>
-<li><p>What mathematics do we need to get started?</p></li>
-</ul>
-</section>
-</section>
-<hr class="docutils" />
-<section id="reminders-from-day-02">
-<h1>Reminders from Day 02<a class="headerlink" href="#reminders-from-day-02" title="Link to this heading">#</a></h1>
-<ul class="simple">
-<li><p>Classical Physics has existed for centuries</p></li>
-<li><p>Newton’s Laws are one formulation of Classical Mechanics</p></li>
-<li><p>We can use Newton’s Laws to describe the motion of particles</p></li>
-<li><p>Newton’s Laws give rise to differential equations</p></li>
-</ul>
-</section>
-<hr class="docutils" />
-<section id="example-ball-falling-in-1d-in-air">
-<h1>Example: Ball Falling in 1D in Air<a class="headerlink" href="#example-ball-falling-in-1d-in-air" title="Link to this heading">#</a></h1>
-<p>We derived the following differential equation for the motion of a ball falling in air:</p>
-<div class="math notranslate nohighlight">
-\[m\ddot{y} = mg - b v - c v^2\]</div>
-<p>We argued for low speeds, we neglect the <span class="math notranslate nohighlight">\(v^2\)</span> term.</p>
-<div class="math notranslate nohighlight">
-\[m\ddot{y} = mg - b v\]</div>
-<p>We can instead write this differential equation for <span class="math notranslate nohighlight">\(v\)</span>:</p>
-<div class="math notranslate nohighlight">
-\[\dot{v} = g - \frac{b}{m}v\]</div>
-</section>
-<hr class="docutils" />
-<section id="id1">
-<h1>Example: Ball Falling in 1D in Air<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
-<p>Is this integrable? <strong>Yes!</strong></p>
-<div class="math notranslate nohighlight">
-\[\frac{dv}{dt} = g - \frac{b}{m}v\]</div>
-<div class="math notranslate nohighlight">
-\[\frac{dv}{g - \frac{b}{m}v} = dt\]</div>
-<div class="math notranslate nohighlight">
-\[\int \frac{dv}{g - \frac{b}{m}v} = \int dt\]</div>
-<p>We will come back to this next week.</p>
-<hr class="docutils" />
-<!-- # Example: Ball Falling in 1D in Air
-
-Let's perform a $u$-substitution:
-
-Let $u = g - \frac{b}{m}v$, then $du = -\frac{b}{m}dv$
-
-$$\int \frac{du}{u} = -\frac{m}{b}\int dt$$
-
-$$\ln|u| = -\frac{m}{b}t + C$$
-
-$$u = e^{-\frac{m}{b}t + C} = A e^{-\frac{m}{b}t}$$
-
-where $A = e^C$, a constant.
-
----
-
-# Example: Ball Falling in 1D in Air
-
-In this limit, we are able to find an analytical solution for the velocity of the ball:
-
-$$u = A e^{-\frac{m}{b}t}$$
-
-$$v = \frac{m}{b}g - A e^{-\frac{m}{b}t}$$
-
-If the ball starts at rest, $v(0) = 0$, then $A = \frac{m}{b}g$.
-
-$$v = \frac{m}{b}g(1 - e^{-\frac{m}{b}t})$$
-
-In the limit of large times, $t \rightarrow \infty$, $v \rightarrow \frac{m}{b}g$, the terminal velocity.
-
---- -->
-</section>
-<section id="vector-properties">
-<h1>Vector Properties<a class="headerlink" href="#vector-properties" title="Link to this heading">#</a></h1>
-<p>Newtonian Mechanics is a vector theory. Here are a few mathematical properties of vectors:</p>
-<ul class="simple">
-<li><p><strong>Addition</strong>: <span class="math notranslate nohighlight">\(\mathbf{A} + \mathbf{B} = (A_x + B_x)\hat{x} + (A_y + B_y)\hat{y} + (A_z + B_z)\hat{z}\)</span></p></li>
-<li><p><strong>Scalar Multiplication</strong>: <span class="math notranslate nohighlight">\(c\mathbf{A} = \langle cA_x, cA_y, cA_z\rangle\)</span></p></li>
-<li><p><strong>Dot Product</strong>: <span class="math notranslate nohighlight">\(\mathbf{A}\cdot\mathbf{B} = A_xB_x + A_yB_y + A_zB_z = AB\cos\theta\)</span></p></li>
-<li><p><strong>Cross Product</strong>: <span class="math notranslate nohighlight">\(\mathbf{A}\times\mathbf{B} = \langle A_yB_z - A_zB_y, A_zB_x - A_xB_z, A_xB_y - A_yB_x\rangle\)</span></p></li>
-<li><p><strong>Unit Vectors</strong>: <span class="math notranslate nohighlight">\(\hat{A} = \frac{\mathbf{A}}{|\mathbf{A}|} \qquad |\hat{A}| = 1\)</span></p></li>
-</ul>
-</section>
-<hr class="docutils" />
-<section id="generative-ai">
-<h1>Generative AI<a class="headerlink" href="#generative-ai" title="Link to this heading">#</a></h1>
-<p><em>Generative AI</em> is a type of artificial intelligence that can generate new data from existing data.</p>
-<ul class="simple">
-<li><p>It is an <strong>extractive</strong> technology that has mined a vast data set.</p></li>
-<li><p>It is a <strong>probabilistic</strong> technology that uses statistical models to generate new data.</p></li>
-<li><p>It is <strong>not</strong> a <strong>creative</strong> technology that can generate new ideas, concepts, or products.</p></li>
-<li><p>It is <strong>not</strong> a <strong>truthful</strong> technology that can generate new data that is intrinsically true.</p></li>
-</ul>
-<p><strong>The “Grow At Any Cost” approach to generative AI is destroying communities, violating federal and international laws, upending climate progress, and consolidating power in the hands of a few.</strong></p>
-</section>
-<hr class="docutils" />
-<section id="generative-ai-energy-consumption">
-<h1>Generative AI Energy Consumption<a class="headerlink" href="#generative-ai-energy-consumption" title="Link to this heading">#</a></h1>
-<p><img alt="bg right:20%" src="../_images/a100.png" /></p>
-<ul class="simple">
-<li><p>The max power of a single A100 chip is 400W.</p></li>
-<li><p>The compute needed to perform a simple generation task takes roughly 1s.</p></li>
-<li><p>One request thus uses about 400J.</p></li>
-<li><p>If everyone in class performs one request, we would use roughly 40,000 J.</p>
+<li><p>Homework 2 is due Friday</p></li>
+<li><p>Video recordings have continued to fail.</p>
 <ul>
-<li><p>That will charge your cell phone from 0-100% about 5 times.</p></li>
+<li><p>Zoom password: phy321</p></li>
 </ul>
 </li>
-<li><p>If everyone on campus performs one request, we would use roughly 30,000,000 J.</p>
+<li><p>Updated office hours (Danny-DC; Elisha-EA):</p>
 <ul>
-<li><p>That will charge your cell phone from 0-100% everyday for 11 years.</p></li>
+<li><p>Monday 4-5pm (DC) - change?</p></li>
+<li><p>Tuesday 5-6pm (EA)</p></li>
+<li><p>Wednesday 4-5pm (DC)</p></li>
+<li><p>Thursday 5-6pm  (EA)</p></li>
+<li><p>Friday 10-12pm (DC then EA); 3-4pm (DC)</p></li>
 </ul>
 </li>
 </ul>
 </section>
 <hr class="docutils" />
-<section id="and-yet">
-<h1>And yet,<a class="headerlink" href="#and-yet" title="Link to this heading">#</a></h1>
+<section id="seminars-this-week">
+<h1>Seminars this week<a class="headerlink" href="#seminars-this-week" title="Link to this heading">#</a></h1>
+<p>WEDNESDAY, January 29, 2025</p>
 <ul class="simple">
-<li><p>Generative AI can be used productively.</p></li>
-<li><p>Generative AI can support accessibility.</p></li>
-<li><p>Generative AI can support creativity.</p></li>
-<li><p>Generative AI can support learning.</p></li>
+<li><p>Astronomy Seminar, 1:30 pm, 1400 BPS, Michiel Lambrechts, Univ. of Copenhagen, <em>Planet formation</em></p></li>
+<li><p>FRIB Nuclear Science Seminar, 3:30pm., FRIB 1300 Auditorium, Brenden Longfellow of Lawrence Livermore National Laboratory, <em>From Tensor Current Limits to Solar Neutrinos: 8Li and 8B Studies with the Beta-decay Paul Trap</em></p></li>
 </ul>
-<p>The complexity and tension of these issues are why we need to develop a policy together.</p>
-<p><strong>I will not live with the consequences of Generative AI, but y’all will, so this policy must be yours.</strong></p>
 </section>
 <hr class="docutils" />
-<section id="creating-a-generative-artificial-intelligence-policy">
-<h1>Creating a Generative Artificial Intelligence Policy<a class="headerlink" href="#creating-a-generative-artificial-intelligence-policy" title="Link to this heading">#</a></h1>
-<p>We define <strong>productivity</strong> as the ability to use Generative AI to deepen your understanding of Classical Mechanics.</p>
-<section id="take-five-minutes-to-answer-the-following-for-yourself">
-<h2>Take five minutes to answer the following for yourself:<a class="headerlink" href="#take-five-minutes-to-answer-the-following-for-yourself" title="Link to this heading">#</a></h2>
-<ol class="arabic simple">
-<li><p>What are ways that you think that AI can be used productively in our classroom?</p></li>
-<li><p>What are ways that you think that AI can be used unproductively in our classroom?</p></li>
-<li><p>What do you think are acceptable uses of AI in our classroom?</p></li>
-<li><p>What do you think are unacceptable uses of AI in our classroom?</p></li>
-<li><p>How should we document the use of AI in our classroom?</p></li>
-<li><p>Once we define a policy, how should we collectively enforce it?</p></li>
-</ol>
-</section>
+<section id="goals-for-week-3">
+<h1>Goals for Week 3<a class="headerlink" href="#goals-for-week-3" title="Link to this heading">#</a></h1>
+<ul class="simple">
+<li><p>Be able to answer the following questions.</p>
+<ul>
+<li><p>What is Mathematical Modeling?</p></li>
+<li><p>What is the process for analyzing these models?</p></li>
+</ul>
+</li>
+<li><p>Be able to solve “Simple” Motion Problems with Newton’s Laws.</p></li>
+</ul>
 </section>
 <hr class="docutils" />
-<section id="id2">
-<h1>Creating a Generative Artificial Intelligence Policy<a class="headerlink" href="#id2" title="Link to this heading">#</a></h1>
-<p>We define <strong>productivity</strong> as the ability to use Generative AI to deepen your understanding of Classical Mechanics.</p>
-<section id="share-your-ideas-are-your-table-develop-a-consensus-on-the-following">
-<h2>Share your ideas are your table. Develop a consensus on the following:<a class="headerlink" href="#share-your-ideas-are-your-table-develop-a-consensus-on-the-following" title="Link to this heading">#</a></h2>
+<section id="clicker-question-6-2">
+<h1>Clicker Question 6-2<a class="headerlink" href="#clicker-question-6-2" title="Link to this heading">#</a></h1>
+<p>Assuming a <strong>linear model</strong> for Air Resistance <span class="math notranslate nohighlight">\(\sim bv\)</span>, we obtained this EOM for a falling ball:</p>
+<div class="math notranslate nohighlight">
+\[\ddot{y} = -g + \frac{b}{m}\dot{y}\]</div>
+<p>What happens when <span class="math notranslate nohighlight">\(\ddot{y} = 0\)</span>?</p>
 <ol class="arabic simple">
-<li><p>What do y’all think are acceptable uses of AI in our classroom?</p></li>
-<li><p>What do y’all think are unacceptable uses of AI in our classroom?</p></li>
-<li><p>How should we document the use of AI in our classroom?</p></li>
-<li><p>Once we define a policy, how should we collectively enforce it?</p></li>
+<li><p>The ball stops moving (<span class="math notranslate nohighlight">\(v = 0\)</span>).</p></li>
+<li><p>The ball reaches a velocity of <span class="math notranslate nohighlight">\(mg/b\)</span>.</p></li>
+<li><p>The ball reaches a terminal velocity.</p></li>
+<li><p>I’m not sure.</p></li>
 </ol>
-<p>Add your answers to the form at the following link: <a class="reference external" href="https://forms.office.com/r/Bsh6ugKQ9Y">https://forms.office.com/r/Bsh6ugKQ9Y</a></p>
 </section>
+<hr class="docutils" />
+<section id="clicker-question-6-3">
+<h1>Clicker Question 6-3<a class="headerlink" href="#clicker-question-6-3" title="Link to this heading">#</a></h1>
+<p>For the system of <strong>Linear Drag in 1D</strong>, we found a solution for the velocity as a function of time, with <span class="math notranslate nohighlight">\(v = 0\)</span> at <span class="math notranslate nohighlight">\(t = 0\)</span>.
+$<span class="math notranslate nohighlight">\(v(t) = v_{term}\left(1-e^{-\dfrac{bt}{m}}\right)\)</span>$</p>
+<p>where <span class="math notranslate nohighlight">\(v_{term} = \sqrt{\frac{mg}{b}}\)</span>.</p>
+<hr class="docutils" />
+<p><img alt="bg right w:100%" src="../_images/cq6-3.png" /></p>
+</section>
+<section id="cq-6-3">
+<h1>CQ 6-3<a class="headerlink" href="#cq-6-3" title="Link to this heading">#</a></h1>
+<p><strong>Which sketch could be correct for the velocity of the ball?</strong></p>
+</section>
+<hr class="docutils" />
+<section id="clicker-question-6-4">
+<h1>Clicker Question 6-4<a class="headerlink" href="#clicker-question-6-4" title="Link to this heading">#</a></h1>
+<p>For the system of <strong>Quadratic Drag in 1D</strong>, we found a solution for the velocity as a function of time, with <span class="math notranslate nohighlight">\(v = 0\)</span> at <span class="math notranslate nohighlight">\(t = 0\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[v(t) = v_{term}\tanh(gt/v_{term})\]</div>
+<p>where <span class="math notranslate nohighlight">\(v_{term} = (mg/c)^{1/2}\)</span>. Do the units make sense? What are the units of <span class="math notranslate nohighlight">\(\left[gt/v_{term}\right]\)</span>?</p>
+<ol class="arabic simple">
+<li><p>Yes, the units for <span class="math notranslate nohighlight">\(\left[gt/v_{term}\right]\)</span> are <span class="math notranslate nohighlight">\(m/s\)</span>;both sides have the same units.</p></li>
+<li><p>No, the units for <span class="math notranslate nohighlight">\(\left[gt/v_{term}\right]\)</span> are m/s; each side has different units.</p></li>
+<li><p>Yes, the units for <span class="math notranslate nohighlight">\(\left[gt/v_{term}\right]\)</span> are unit-less; both sides have the same units.</p></li>
+<li><p>No, the units for <span class="math notranslate nohighlight">\(\left[gt/v_{term}\right]\)</span> are unit-less; each side has the different units.</p></li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="clicker-question-6-5">
+<h1>Clicker Question 6-5<a class="headerlink" href="#clicker-question-6-5" title="Link to this heading">#</a></h1>
+<p>For the system of <strong>Quadratic Drag in 1D</strong>, we found a solution for the velocity as a function of time, with <span class="math notranslate nohighlight">\(v = 0\)</span> at <span class="math notranslate nohighlight">\(t = 0\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[v(t) = v_{term}\tanh(gt/v_{term})\]</div>
+<p>where <span class="math notranslate nohighlight">\(v_{term} = \sqrt{mg/c}\)</span>. What happens when <span class="math notranslate nohighlight">\(t \rightarrow \infty\)</span>?</p>
+<ol class="arabic simple">
+<li><p>The object stops moving.</p></li>
+<li><p>The object travels at a constant velocity.</p></li>
+<li><p>The object travels at an increasing velocity.</p></li>
+<li><p>The object travels at a decreasing velocity.</p></li>
+<li><p>I’m not sure.</p></li>
+</ol>
 </section>
 
     <script type="text/x-thebe-config">
@@ -626,27 +528,15 @@ In the limit of large times, $t \rightarrow \infty$, $v \rightarrow \frac{m}{b}g
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Day 03 - Vectors</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Day 07 - Drag Forces</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#announcements">Announcements</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#goals-for-this-week">Goals for this week</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#be-able-to-answer-the-following-questions">Be able to answer the following questions.</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#reminders-from-day-02">Reminders from Day 02</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#example-ball-falling-in-1d-in-air">Example: Ball Falling in 1D in Air</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Example: Ball Falling in 1D in Air</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#vector-properties">Vector Properties</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#generative-ai">Generative AI</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#generative-ai-energy-consumption">Generative AI Energy Consumption</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#and-yet">And yet,</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-a-generative-artificial-intelligence-policy">Creating a Generative Artificial Intelligence Policy</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#take-five-minutes-to-answer-the-following-for-yourself">Take five minutes to answer the following for yourself:</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Creating a Generative Artificial Intelligence Policy</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#share-your-ideas-are-your-table-develop-a-consensus-on-the-following">Share your ideas are your table. Develop a consensus on the following:</a></li>
-</ul>
-</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#seminars-this-week">Seminars this week</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#goals-for-week-3">Goals for Week 3</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-6-2">Clicker Question 6-2</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-6-3">Clicker Question 6-3</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#cq-6-3">CQ 6-3</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-6-4">Clicker Question 6-4</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-6-5">Clicker Question 6-5</a></li>
 </ul>
 
   </nav></div>

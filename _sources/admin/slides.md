@@ -2,6 +2,19 @@
 
 Slides for PHY 321 appear in reverse chronological order, with the most recent slides at the top. The formats are PDF, HTML, and Markdown. The HTML slides are hosted on my website, and the Markdown slides are the source code for the HTML slides, built with [Marp](https://marp.app/).
 
+## Day 07 - Drag Forces - 29 Jan 2025
+
+### Download PDF
+
+[![Day 07](../slides/day-07-drag-forces.png)](../slides/day-07-drag-forces.pdf)
+
+### HTML Versions
+
+| Format | Link |
+|--|--|
+| HTML (Inline) | [day-07-drag-forces.md](../slides/day-07-drag-forces.md) |
+| HTML (Slides) | [day-07-drag-forces.html](../slides/day-07-drag-forces.html) |
+
 ## Day 06 - Making Classical Models - 27 Jan 2025
 
 ### Download PDF
