@@ -187,6 +187,8 @@
 <li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week2/02_notes.html">Week 2 - Notes: Mathematical Preliminaries</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week3/03_start.html">Week 3 - What is Mathematical Modeling?</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week3/03_notes.html">Week 3 - Notes: Making Classical Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week4/04_start.html">Week 4 - Why does air drag complicate things? - WIP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week4/04_notes.html">Week 4 - Notes: Equations of Motion - WIP</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Assignments</span></p>
 <ul class="nav bd-sidenav">
@@ -358,8 +360,12 @@
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Day 07 - Drag Forces</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#announcements">Announcements</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#calendar-changes-and-apologies">Calendar changes and apologies</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#seminars-this-week">Seminars this week</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tomorrow-s-seminar">Tomorrow’s Seminar</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#goals-for-week-3">Goals for Week 3</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#our-man-reynolds">Our man, Reynolds</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Our man, Reynolds</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-6-2">Clicker Question 6-2</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-6-3">Clicker Question 6-3</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#cq-6-3">CQ 6-3</a></li>
@@ -386,9 +392,9 @@
 <h1>Announcements<a class="headerlink" href="#announcements" title="Link to this heading">#</a></h1>
 <ul class="simple">
 <li><p>Homework 2 is due Friday</p></li>
-<li><p>Video recordings have continued to fail.</p>
+<li><p>Video recordings will cease; I will try to record my tablet writing next week.</p>
 <ul>
-<li><p>Zoom password: phy321</p></li>
+<li><p>Class can still join zoom with password: phy321</p></li>
 </ul>
 </li>
 <li><p>Updated office hours (Danny-DC; Elisha-EA):</p>
@@ -403,6 +409,24 @@
 </ul>
 </section>
 <hr class="docutils" />
+<section id="calendar-changes-and-apologies">
+<h1>Calendar changes and apologies<a class="headerlink" href="#calendar-changes-and-apologies" title="Link to this heading">#</a></h1>
+<ul class="simple">
+<li><p>I’m very behind on class prep. And I’m very distracted right now.</p></li>
+<li><p>The notes for next week will be posted by Friday.</p>
+<ul>
+<li><p>If you need anything or I’m missing, just drop me a note. I probably just missed it.</p></li>
+</ul>
+</li>
+<li><p>There will be no homework 9, and there will be no new material for the last week of class.</p>
+<ul>
+<li><p>Instead, that week will be final prep for your projects that will be due Monday of finals week at midnight.</p></li>
+<li><p>More details soon, but we will also use homework and midterms to help you make progress on your final projects.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<hr class="docutils" />
 <section id="seminars-this-week">
 <h1>Seminars this week<a class="headerlink" href="#seminars-this-week" title="Link to this heading">#</a></h1>
 <p>WEDNESDAY, January 29, 2025</p>
@@ -410,6 +434,11 @@
 <li><p>Astronomy Seminar, 1:30 pm, 1400 BPS, Michiel Lambrechts, Univ. of Copenhagen, <em>Planet formation</em></p></li>
 <li><p>FRIB Nuclear Science Seminar, 3:30pm., FRIB 1300 Auditorium, Brenden Longfellow of Lawrence Livermore National Laboratory, <em>From Tensor Current Limits to Solar Neutrinos: 8Li and 8B Studies with the Beta-decay Paul Trap</em></p></li>
 </ul>
+</section>
+<hr class="docutils" />
+<section id="tomorrow-s-seminar">
+<h1>Tomorrow’s Seminar<a class="headerlink" href="#tomorrow-s-seminar" title="Link to this heading">#</a></h1>
+<p><img alt="w:1000px" src="../_images/trans_rally.png" /></p>
 </section>
 <hr class="docutils" />
 <section id="goals-for-week-3">
@@ -423,6 +452,40 @@
 </li>
 <li><p>Be able to solve “Simple” Motion Problems with Newton’s Laws.</p></li>
 </ul>
+</section>
+<hr class="docutils" />
+<section id="our-man-reynolds">
+<h1>Our man, Reynolds<a class="headerlink" href="#our-man-reynolds" title="Link to this heading">#</a></h1>
+<p><img alt="bg right width:300px" src="../_images/stokes.png" /></p>
+<ul class="simple">
+<li><p>The Reynolds number is a dimensionless quantity.</p></li>
+<li><p>It is a ratio of inertial forces to viscous forces.</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[Re = \frac{\rho v L}{\mu}\]</div>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\rho\)</span> - density of the fluid</p></li>
+<li><p><span class="math notranslate nohighlight">\(v\)</span> - velocity of the object</p></li>
+<li><p><span class="math notranslate nohighlight">\(L\)</span> - characteristic length</p></li>
+<li><p><span class="math notranslate nohighlight">\(\mu\)</span> is the dynamic viscosity</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="id1">
+<h1>Our man, Reynolds<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
+<p><img alt="bg right width:300px" src="../_images/stokes.png" /></p>
+<p>BTW, this is not a photo of Reynolds.</p>
+<ul class="simple">
+<li><p>This is Stokes.</p>
+<ul>
+<li><p>He developed the concept of the Reynolds number.</p></li>
+<li><p>Reynolds “popularized” it according to the Wikipedia.</p></li>
+</ul>
+</li>
+</ul>
+<div class="math notranslate nohighlight">
+\[Re = \frac{\rho v L}{\mu}\]</div>
+<p><strong>Discussion:</strong> What kinds of systems have a high/low Reynolds number?</p>
 </section>
 <hr class="docutils" />
 <section id="clicker-question-6-2">
@@ -530,8 +593,12 @@ $<span class="math notranslate nohighlight">\(v(t) = v_{term}\left(1-e^{-\dfrac{
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Day 07 - Drag Forces</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#announcements">Announcements</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#calendar-changes-and-apologies">Calendar changes and apologies</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#seminars-this-week">Seminars this week</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tomorrow-s-seminar">Tomorrow’s Seminar</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#goals-for-week-3">Goals for Week 3</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#our-man-reynolds">Our man, Reynolds</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Our man, Reynolds</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-6-2">Clicker Question 6-2</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-6-3">Clicker Question 6-3</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#cq-6-3">CQ 6-3</a></li>

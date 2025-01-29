@@ -20,14 +20,26 @@ url: https://dannycaballero.info/phy321msu/slides/day-07-drag-forces.html
 # Announcements
 
 - Homework 2 is due Friday
-- Video recordings have continued to fail.
-    - Zoom password: phy321
+- Video recordings will cease; I will try to record my tablet writing next week.
+    - Class can still join zoom with password: phy321
 - Updated office hours (Danny-DC; Elisha-EA):
   - Monday 4-5pm (DC) - change?
   - Tuesday 5-6pm (EA)
   - Wednesday 4-5pm (DC)
   - Thursday 5-6pm  (EA)
   - Friday 10-12pm (DC then EA); 3-4pm (DC)
+
+---
+
+# Calendar changes and apologies
+
+- I'm very behind on class prep. And I'm very distracted right now.
+- The notes for next week will be posted by Friday. 
+  - If you need anything or I'm missing, just drop me a note. I probably just missed it.
+- There will be no homework 9, and there will be no new material for the last week of class.
+  - Instead, that week will be final prep for your projects that will be due Monday of finals week at midnight.
+  - More details soon, but we will also use homework and midterms to help you make progress on your final projects.
+
 
 ---
 
@@ -40,6 +52,10 @@ WEDNESDAY, January 29, 2025
 
 ---
 
+# Tomorrow's Seminar
+![w:1000px](../images/notes/week3/trans_rally.png)
+
+---
 
 
 # Goals for Week 3
@@ -48,6 +64,37 @@ WEDNESDAY, January 29, 2025
     - What is Mathematical Modeling?
     - What is the process for analyzing these models?
 - Be able to solve "Simple" Motion Problems with Newton's Laws.
+
+---
+
+# Our man, Reynolds
+
+![bg right width:300px](../images/notes/week3/stokes.png)
+
+- The Reynolds number is a dimensionless quantity.
+- It is a ratio of inertial forces to viscous forces.
+
+$$Re = \frac{\rho v L}{\mu}$$
+
+* $\rho$ - density of the fluid
+* $v$ - velocity of the object
+* $L$ - characteristic length
+* $\mu$ is the dynamic viscosity
+
+---
+
+# Our man, Reynolds
+
+![bg right width:300px](../images/notes/week3/stokes.png)
+
+BTW, this is not a photo of Reynolds. 
+- This is Stokes. 
+  - He developed the concept of the Reynolds number. 
+  - Reynolds "popularized" it according to the Wikipedia.
+
+$$Re = \frac{\rho v L}{\mu}$$
+
+**Discussion:** What kinds of systems have a high/low Reynolds number?
 
 ---
 
