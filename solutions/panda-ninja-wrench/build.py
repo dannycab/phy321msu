@@ -31,8 +31,17 @@ def convert_to_html(temp_notebook_file, html_file):
     html_exporter = HTMLExporter()
     body, resources = html_exporter.from_notebook_node(notebook)
 
+    # Add MathJax to the HTML
+    mathjax = """
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+    """
+    body = body.replace('</head>', f'{mathjax}</head>')
+
     with open(html_file, "w") as f:
         f.write(body)
+
 
 def main():
     if len(sys.argv) < 2:
@@ -47,6 +56,7 @@ def main():
 
     notebook_file = f"{notebook_name}.ipynb"
     html_file = f"{notebook_name}.html"
+    pdf_file = f"{notebook_name}.pdf"
     temp_notebook_file = f"{notebook_name}_temp.ipynb"
 
     if not os.path.isfile(notebook_file):
