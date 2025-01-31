@@ -24,9 +24,9 @@ All assignments are turned in using Gradescope as a single PDF.
 
 | Week | Day    | Topic                                       | Readings to prepare | Important events                                                |
 | ---- | ------ | ------------------------------------------- | ------------------- | --------------------------------------------------------------- |
-| CW5  | 27 Jan | Modeling and equations of motion | JRT 1.4-1.6         | [Homework 3 Assigned (Due 07 Feb)](../homeworks/hw3.ipynb)       |
-|      | 29 Jan | Air Resistance          |                     |                                                                 |
-|      | 31 Jan | Problem session for homework                |                     | **Homework 2 Due** |
+| CW5  | 27 Jan | Modeling and equations of motion ([Slides](../slides/day-06-making-classical-models.pdf)) | JRT 1.4-1.6         | [Homework 3 Assigned (Due 07 Feb)](../homeworks/hw3.ipynb)       |
+|      | 29 Jan | Air Resistance ([Slides](../slides/day-07-drag-forces.pdf)]        |                     |                                                                 |
+|      | 31 Jan | Problem session for homework ([Slides](../slides/day-08-homework-session.pdf))               |                     | **Homework 2 Due** |
 
 ## Class Week 4
 
