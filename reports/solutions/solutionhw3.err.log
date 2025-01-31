@@ -1,0 +1,156 @@
+Traceback (most recent call last):
+  File "/home/venv/lib/python3.12/site-packages/jupyter_cache/executors/utils.py", line 58, in single_nb_execution
+    executenb(
+  File "/home/venv/lib/python3.12/site-packages/nbclient/client.py", line 1319, in execute
+    return NotebookClient(nb=nb, resources=resources, km=km, **kwargs).execute()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/venv/lib/python3.12/site-packages/jupyter_core/utils/__init__.py", line 165, in wrapped
+    return loop.run_until_complete(inner)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/venv/lib/python3.12/site-packages/nbclient/client.py", line 709, in async_execute
+    await self.async_execute_cell(
+  File "/home/venv/lib/python3.12/site-packages/nbclient/client.py", line 1062, in async_execute_cell
+    await self._check_raise_for_error(cell, cell_index, exec_reply)
+  File "/home/venv/lib/python3.12/site-packages/nbclient/client.py", line 918, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+# Exercise 6, hw3, brute force way with declaration of vx, vy, x and y
+# Common imports
+import numpy as np
+import pandas as pd
+from math import *
+import matplotlib.pyplot as plt
+import os
+
+# Where to save the figures and data files
+PROJECT_ROOT_DIR = "Results"
+FIGURE_ID = "Results/FigureFiles"
+DATA_ID = "DataFiles/"
+
+if not os.path.exists(PROJECT_ROOT_DIR):
+    os.mkdir(PROJECT_ROOT_DIR)
+
+if not os.path.exists(FIGURE_ID):
+    os.makedirs(FIGURE_ID)
+
+if not os.path.exists(DATA_ID):
+    os.makedirs(DATA_ID)
+
+def image_path(fig_id):
+    return os.path.join(FIGURE_ID, fig_id)
+
+def data_path(dat_id):
+    return os.path.join(DATA_ID, dat_id)
+
+def save_fig(fig_id):
+    plt.savefig(image_path(fig_id) + ".png", format='png')
+
+# Output file
+outfile = open(data_path("Eulerresults.dat"),'w')
+
+from pylab import plt, mpl
+plt.style.use('ggplot')
+mpl.rcParams['font.family'] = 'serif'
+
+
+g = 9.80655 #m/s^2
+# The mass and the drag constant D
+D = 0.00245 #mass/length   kg/m
+m = 0.2 #kg, mass of falling object
+DeltaT = 0.001
+#set up arrays 
+tfinal = 1.4
+# set up number of points for all variables
+n = ceil(tfinal/DeltaT)
+# define scaling constant vT used in analytical solution
+vT = sqrt(m*g/D)
+# set up arrays for t, a, v, and y and arrays for analytical results
+#brute force setting up of arrays for x and y, vx, vy, ax and ay
+t = np.zeros(n)
+vy = np.zeros(n)
+y = np.zeros(n)
+vx = np.zeros(n)
+x = np.zeros(n)
+yanalytic = np.zeros(n)
+# Initial conditions, note that these correspond to an object falling in the y-direction only.
+vx[0] = 0.0 #m/s
+vy[0] = 0.0  #m/s
+y[0] = 10.0 #m
+x[0] = 0.0 #m
+yanalytic[0] = y[0]
+# Start integrating using Euler's method
+for i in range(n-1):
+    # expression for acceleration, note the absolute value and division by mass
+    ax = -D*vx[i]*sqrt(vx[i]**2+vy[i]**2)/m
+    ay = -g - D*vy[i]*sqrt(vx[i]**2+vy[i]**2)/m
+    # update velocity and position
+    vx[i+1] = vx[i] + DeltaT*ax
+    x[i+1] = x[i] + DeltaT*vx[i]
+    vy[i+1] = vy[i] + DeltaT*ay
+    y[i+1] = y[i] + DeltaT*vy[i]
+    # update time to next time step and compute analytical answer
+    t[i+1] = t[i] + DeltaT
+    yanalytic[i+1] = y[0]-(vT*vT/g)*log(cosh(g*t[i+1]/vT))+vy[0]*t[i+1]
+    if ( y[i+1] < 0.0):
+        break
+data = {'t[s]': t,
+        'Relative error in y': abs((y-yanalytic)/yanalytic),
+        'vy[m/s]': vy,
+        'x[m]': x,
+        'vx[m/s]': vx
+}
+
+NewData = pd.DataFrame(data)
+err=NewData['Relative error in y']
+display(NewData)
+# save to file
+NewData.to_csv(outfile, index=False)
+
+#then plot
+fig, axs = plt.subplots(4, 1)
+axs[0].plot(t, y)
+axs[0].set_xlim(0, tfinal)
+axs[0].set_ylabel('y')
+axs[1].plot(t, vy)
+axs[1].set_ylabel('vy[m/s]')
+axs[1].set_xlabel('time[s]')
+axs[2].plot(t, x)
+axs[2].set_xlim(0, tfinal)
+axs[2].set_ylabel('x')
+axs[3].plot(t, vx)
+axs[3].set_ylabel('vx[m/s]')
+axs[3].set_xlabel('time[s]')
+
+fig.tight_layout()
+save_fig("EulerIntegration")
+plt.show()
+
+
+fig2, axs2 = plt.subplots(1,1)
+axs2.plot(t, err)
+axs2.set_xlim(0, tfinal)
+axs2.set_ylabel('error')
+axs2.set_xlabel('time[s]')
+
+fig2.tight_layout()
+save_fig("ErrorEuler")
+plt.show()
+------------------
+
+
+[0;31m---------------------------------------------------------------------------[0m
+[0;31mModuleNotFoundError[0m                       Traceback (most recent call last)
+Cell [0;32mIn[3], line 4[0m
+[1;32m      1[0m [38;5;66;03m# Exercise 6, hw3, brute force way with declaration of vx, vy, x and y[39;00m
+[1;32m      2[0m [38;5;66;03m# Common imports[39;00m
+[1;32m      3[0m [38;5;28;01mimport[39;00m[38;5;250m [39m[38;5;21;01mnumpy[39;00m[38;5;250m [39m[38;5;28;01mas[39;00m[38;5;250m [39m[38;5;21;01mnp[39;00m
+[0;32m----> 4[0m [38;5;28;01mimport[39;00m[38;5;250m [39m[38;5;21;01mpandas[39;00m[38;5;250m [39m[38;5;28;01mas[39;00m[38;5;250m [39m[38;5;21;01mpd[39;00m
+[1;32m      5[0m [38;5;28;01mfrom[39;00m[38;5;250m [39m[38;5;21;01mmath[39;00m[38;5;250m [39m[38;5;28;01mimport[39;00m [38;5;241m*[39m
+[1;32m      6[0m [38;5;28;01mimport[39;00m[38;5;250m [39m[38;5;21;01mmatplotlib[39;00m[38;5;21;01m.[39;00m[38;5;21;01mpyplot[39;00m[38;5;250m [39m[38;5;28;01mas[39;00m[38;5;250m [39m[38;5;21;01mplt[39;00m
+
+[0;31mModuleNotFoundError[0m: No module named 'pandas'
+
