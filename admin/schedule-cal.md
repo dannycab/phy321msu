@@ -24,110 +24,111 @@ All assignments are turned in using Gradescope as a single PDF.
 
 | Week | Day    | Topic                                       | Readings to prepare | Important events                                                |
 | ---- | ------ | ------------------------------------------- | ------------------- | --------------------------------------------------------------- |
-| CW5  | 27 Jan | Air resistance; writing equations of motion | JRT 2.1-2.4         | [Homework 3 Assigned (Due 07 Feb)](../homeworks/hw3.ipynb)       |
-|      | 29 Jan | Gravitational force; spring force           |                     |                                                                 |
+| CW5  | 27 Jan | Modeling and equations of motion | JRT 1.4-1.6         | [Homework 3 Assigned (Due 07 Feb)](../homeworks/hw3.ipynb)       |
+|      | 29 Jan | Air Resistance          |                     |                                                                 |
 |      | 31 Jan | Problem session for homework                |                     | **Homework 2 Due** |
 
 ## Class Week 4
 
 | Week | Day    | Topic                                                     | Readings to prepare | Important events                                                |
 | ---- | ------ | --------------------------------------------------------- | ------------------- | --------------------------------------------------------------- |
-| CW6  | 03 Feb | Work Energy Theorem                                       | JRT 4.1-4.3         | [Homework 4 Assigned (Due 14 Feb)](../homeworks/hw4.ipynb)       |
-|      | 05 Feb | Momentum Conservation, Newton's 3rd Law, Angular Momentum | JRT 3.1-3.4         |                                                                 |
+| CW6  | 03 Feb | Air Resistance; Central Forces                                  | JRT 2.1-2.4         | [Homework 4 Assigned (Due 21 Feb)](../homeworks/hw4.ipynb)       |
+|      | 05 Feb | Euler-Cromer Integration                                  |                     |                                                                 |
 |      | 07 Feb | Problem session for homework                              |                     | **Homework 3 Due** |
 
 ## Class Week 5
 
-| Week | Day    | Topic                             | Readings to prepare           | Important events                                                |
-| ---- | ------ | --------------------------------- | ----------------------------- | --------------------------------------------------------------- |
-| CW7  | 10 Feb | Conservative Forces and Potential | JRT 4.1-4.4, 4.6; MLB 6.6-6.8 |                                                                 |
-|      | 12 Feb | Examples and Stability Analysis   |                               |                                                                 |
-|      | 14 Feb |                                   |                               | **Homework 4 Due** |
+| Week | Day    | Topic                                                     | Readings to prepare | Important events                                                |
+| ---- | ------ | --------------------------------------------------------- | ------------------- | --------------------------------------------------------------- |
+| CW7  | 10 Feb | Work Energy Theorem                                       | JRT 4.1-4.3         |        |
+|      | 12 Feb | Momentum Conservation, Newton's 3rd Law, Angular Momentum | JRT 3.1-3.4         |                                                                 |
+|      | 14 Feb | Problem session for homework                              |                     | **Homework 4 Due** |
 
 ## Class Week 6
 
-| Week | Day    | Topic                                                                                 | Readings to prepare                                                                                                                                                                                                                                                           | Important events                                                      |
-| ---- | ------ | ------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------- |
-| CW8  | 17 Feb | [Nonlinear dynamics](https://en.wikipedia.org/wiki/Nonlinear_system), phase portraits | [Strogatz](https://www.stevenstrogatz.com/books/nonlinear-dynamics-and-chaos-with-applications-to-physics-biology-chemistry-and-engineering) [2.0-2.3](../docs/textbook-chapters/strogatz_3rd_ch2.0-2.3.pdf); [5.0-5.2](../docs/textbook-chapters/strogatz_3rd_ch5.0-5.2.pdf) | [Midterm Project 1 Assigned (Due 28 Feb)](../midterms/midterm1.ipynb) |
-|      | 19 Feb | Phase portraits, numerical modeling                                                   | PDFs posted are consistent with [educational fair use](https://www.copyright.gov/help/faq/faq-fairuse.html); will be removed after course has concluded                                                                                                                       |                                                                       |
-|      | 21 Feb |                                                                                       |                                                                                                                                                                                                                                                                               |                                                                       |
+| Week | Day    | Topic                             | Readings to prepare           | Important events                                                |
+| ---- | ------ | --------------------------------- | ----------------------------- | --------------------------------------------------------------- |
+| CW8  | 17 Feb | Conservative Forces and Potential | JRT 4.1-4.4, 4.6; MLB 6.6-6.8 |  [Midterm Project 1 Assigned (Due 28 Feb)](../midterms/midterm1.ipynb)                                                               |
+|      | 19 Feb | Examples and Stability Analysis   |                               |                                                                 |
+|      | 21 Feb |                                   |                               |   |
 
 ## Class Week 7
 
-| Week | Day    | Topic                 | Readings to prepare                | Important events                                                       |
-| ---- | ------ | --------------------- | ---------------------------------- | ---------------------------------------------------------------------- |
-| CW9  | 24 Feb | Oscillations; Damping | JRT 5.1-5.2, 5.4; MLB 7.1-7.2; 8.5 | [Homework 5 Assigned (Due 14 Mar)](../homeworks/hw5.ipynb)              |
-|      | 26 Feb |                       |                                    |                                                                        |
-|      | 28 Feb |                       |                                    | **Midterm Project 1 Due** |
+| Week | Day    | Topic                                                                                 | Readings to prepare                                                                                                                                                                                                                                                           | Important events                                                      |
+| ---- | ------ | ------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------- |
+| CW9  | 24 Feb | [Nonlinear dynamics](https://en.wikipedia.org/wiki/Nonlinear_system), phase portraits | [Strogatz](https://www.stevenstrogatz.com/books/nonlinear-dynamics-and-chaos-with-applications-to-physics-biology-chemistry-and-engineering) [2.0-2.3](../docs/textbook-chapters/strogatz_3rd_ch2.0-2.3.pdf); [5.0-5.2](../docs/textbook-chapters/strogatz_3rd_ch5.0-5.2.pdf) | [Homework 5 Assigned (Due 14 Mar)](../homeworks/hw5.ipynb) |
+|      | 26 Feb | Phase portraits, numerical modeling                                                   | PDFs posted are consistent with [educational fair use](https://www.copyright.gov/help/faq/faq-fairuse.html); will be removed after course has concluded                                                                                                                       |                                                                       |
+|      | 28 Feb |                                                                                       |                                                                                                                                                                                                                                                                               |  **Midterm Project 1 Due**                                                                     |
 
 ## Class Week 8
 
-| Week | Day    | Topic                     | Readings to prepare | Important events |
-| ---- | ------ | ------------------------- | ------------------- | ---------------- |
-| CW10  | 03 Mar | SPRING BREAK (NO CLASSES) |                     |                  |
-|      | 05 Mar | SPRING BREAK (NO CLASSES) |                     |                  |
-|      | 07 Mar | SPRING BREAK (NO CLASSES) |                     |                  |
+| Week | Day    | Topic                 | Readings to prepare                | Important events                                                       |
+| ---- | ------ | --------------------- | ---------------------------------- | ---------------------------------------------------------------------- |
+| CW10  | 03 Mar | SPRING BREAK | NO CLASS | |
+|      | 05 Mar | SPRING BREAK | NO CLASS |        |
+|      | 07 Mar |  SPRING BREAK | NO CLASS  |  |
 
 ## Class Week 9
 
-| Week | Day    | Topic                          | Readings to prepare  | Important events                                                |
-| ---- | ------ | ------------------------------ | -------------------- | --------------------------------------------------------------- |
-| CW11  | 10 Mar | Driven Oscillations; Resonance | JRT 5.5-5.6; MLB 8.6 | [Homework 6 Assigned (Due 21 Mar)](../homeworks/hw6.ipynb)      |
-|      | 12 Mar |                                |                      |                                                                 |
-|      | 14 Mar |                                |                      | **Homework 5 Due** |
+| Week | Day    | Topic                     | Readings to prepare | Important events |
+| ---- | ------ | ------------------------- | ------------------- | ---------------- |
+| CW11 | 10 Mar | Oscillations; Damping | JRT 5.1-5.2, 5.4; MLB 7.1-7.2; 8.5 | [Homework 6 Assigned (Due 21 Mar)](../homeworks/hw6.ipynb)                 |
+|      | 12 Mar |  |                     |                  |
+|      | 14 Mar | |                     |  Homework 5 Due                |
 
 ## Class Week 10
 
-| Week | Day    | Topic          | Readings to prepare  | Important events                                                |
-| ---- | ------ | -------------- | -------------------- | --------------------------------------------------------------- |
-| CW12 | 17 Mar | Fourier Series | JRT 5.7; MLB 7.3-7.5 | [Homework 7 Assigned (Due 28 Mar)](../homeworks/hw7.ipynb)      |
-|      | 19 Mar |                |                      |                                                                 |
-|      | 21 Mar |                |                      | **Homework 6 Due** |
+| Week | Day    | Topic                          | Readings to prepare  | Important events                                                |
+| ---- | ------ | ------------------------------ | -------------------- | --------------------------------------------------------------- |
+| CW12 | 17 Mar | Driven Oscillations; Resonance | JRT 5.5-5.6; MLB 8.6 | [Homework 7 Assigned (Due 28 Mar)](../homeworks/hw7.ipynb)      |
+|      | 19 Mar |                                |                      |                                                                 |
+|      | 21 Mar |                                |                      | **Homework 6 Due** |
 
 ## Class Week 11
 
-| Week | Day    | Topic                                           | Readings to prepare      | Important events                                                |
-| ---- | ------ | ----------------------------------------------- | ------------------------ | --------------------------------------------------------------- |
-| CW14 | 24 Mar | Calculus of Variations; Euler-Lagrange Equation | JRT 6.1-6.3; MLB 9.1-9.4 |                                                                 |
-|      | 26 Mar |                                                 |                          |                                                                 |
-|      | 28 Mar |                                                 |                          | **Homework 7 Due** |
+| Week | Day    | Topic          | Readings to prepare  | Important events                                                |
+| ---- | ------ | -------------- | -------------------- | --------------------------------------------------------------- |
+| CW13 | 24 Mar | Fourier Series | JRT 5.7; MLB 7.3-7.5 |      |
+|      | 26 Mar |                |                      |                                                                 |
+|      | 28 Mar |                |                      | **Homework 7 Due** |
 
 ## Class Week 12
 
-| Week | Day    | Topic                                 | Readings to prepare       | Important events                                                     |
-| ---- | ------ | ------------------------------------- | ------------------------- | -------------------------------------------------------------------- |
-| CW14 | 31 Mar | Lagrange's Equations; modeling motion | JRT 7.1-7.2, 7.5; MLB 9.5 | [Midterm Project 2 Assigned (Due 11 Apr)](../midterms/midterm2.ipynb) |
-|      | 02 Apr |                                       |                           |                                                                      |
-|      | 04 Apr |                                       |                           |                                                                      |
+| Week | Day    | Topic                                           | Readings to prepare      | Important events                                                |
+| ---- | ------ | ----------------------------------------------- | ------------------------ | --------------------------------------------------------------- |
+| CW14 | 31 Mar | Calculus of Variations; Euler-Lagrange Equation | JRT 6.1-6.3; MLB 9.1-9.4 |  [Midterm Project 2 Assigned (Due 18 Apr)](../midterms/midterm2.ipynb)  |
+|      | 02 Apr |                                                 |                          |                                                                 |
+|      | 04 Apr |                                                 |                          |     |
 
 ## Class Week 13
 
-| Week | Day    | Topic                      | Readings to prepare | Important events                                                       |
-| ---- | ------ | -------------------------- | ------------------- | ---------------------------------------------------------------------- |
-| CW15 | 07 Apr | Lagrange Equation Examples | JRT 7.3-7.7, 7.10   | [Homework 8 Assigned (Due 18 Apr)](../homeworks/hw8.ipynb)             |
-|      | 09 Apr |                            |                     |                                                                        |
-|      | 11 Apr |                            |                     | **Midterm Project 2 Due** |
+| Week | Day    | Topic                                 | Readings to prepare       | Important events                                                     |
+| ---- | ------ | ------------------------------------- | ------------------------- | -------------------------------------------------------------------- |
+| CW15 | 07 Apr | Lagrange's Equations; modeling motion | JRT 7.1-7.2, 7.5; MLB 9.5 | [Homework 8 Assigned (Due 18 Apr)](../homeworks/hw8.ipynb) |
+|      | 09 Apr |                                       |                           |                                                                      |
+|      | 11 Apr |                                       |                           |     **Midterm Project 2 Due**    |
 
 ## Class Week 14
 
-| Week | Day    | Topic                      | Readings to prepare | Important events                                                |
-| ---- | ------ | -------------------------- | ------------------- | --------------------------------------------------------------- |
-| CW16 | 14 Apr | Lagrange Equation Examples   | JRT Ch 7            |       |
-|      | 16 Apr | Lagrange Equation Examples |                       |       |
+| Week | Day    | Topic                      | Readings to prepare | Important events                                                       |
+| ---- | ------ | -------------------------- | ------------------- | ---------------------------------------------------------------------- |
+| CW16 | 14 Apr | Lagrange Equation Examples | JRT 7.3-7.7, 7.10   |   [Final Project Assigned (Due 28 Apr)](../midterms/final-exam.ipynb)           |
+|      | 16 Apr |   Lagrange Equation Examples   |          |  |
 |      | 18 Apr |                            |                     | **Homework 8 Due** |
 
 ## Class Week 15
 
-| Week | Day    | Topic                         | Readings to prepare | Important events                                                         |
-| ---- | ------ | ----------------------------- | ------------------- | ------------------------------------------------------------------------ |
-| CW17 | 21 Apr | Central Force; the 1D problem | JRT 8.1-8.3         | [Final Project Assigned (Due 02 May)](../midterms/final-exam.ipynb) |
-|      | 23 Apr |                               |                     |                                   |
-|      | 25 Apr |                               |                     |           |
+| Week | Day    | Topic                      | Readings to prepare | Important events                                                |
+| ---- | ------ | -------------------------- | ------------------- | --------------------------------------------------------------- |
+| CW17 | 20 Apr | Final Project Prep |            |                                                                 |
+|      | 22 Apr | Final Project Prep |                     |                                                                 |
+|      | 24 Apr |  Final Project Prep                          |                     |                                              |
 
 ## Class Week 16
 
-| Week | Day    | Topic       | Readings to prepare | Important events                                                        |
-| ---- | ------ | ----------- | ------------------- | ----------------------------------------------------------------------- |
-| CW18 | 28 Apr | FINALS WEEK |                     |  **Final Project Due**                                                  |
-|      | 30 Apr | FINALS WEEK |                     |                                                                         |
-|      | 02 May | FINALS WEEK |                     |  |
+| Week | Day    | Topic                         | Readings to prepare | Important events                                                         |
+| ---- | ------ | ----------------------------- | ------------------- | ------------------------------------------------------------------------ |
+| CW18 | 28 Apr |FINALS WEEK |         | **Final Project Due**  |
+|      | 29 Apr |   FINALS WEEK                            |                     |                                                                         |
+|      | 01 May |   FINALS WEEK                            |                     |                                                                          |
+

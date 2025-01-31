@@ -2,6 +2,26 @@
 
 Materials will appear in reverse chronological order, with the most recent appearing at the top.
 
+## Class Week 4, February 3-7, 2025 (CW6)
+
+Topics: Fluid Resistance, Drag Forces, and Equations of Motion
+
+This week, we start complicating our models with the addition of drag forces. We will discuss the physics of drag, cover examples that include drag forces, and learn how to set up and try to solve the equations of motion for these systems. We will extend the idea of equations of motion to two other canonical problems: central forces and the simple harmonic oscillator.
+
+You should review the discussion about [Fluid Resistance](../lecture-notes/week4/04_start.ipynb) and the notes on [Equations of Motion](../lecture-notes/week4/04_notes.ipynb). You should also make sure to have read JRT Ch 2.1-2.4.
+
+## Assignments
+
+- [Homework 3](../homeworks/hw3.ipynb) (due February 7, 2025)
+
+### Resources
+
+- [Why does fluid drag complicate things?
+](../lecture-notes/week4/04_start.ipynb)
+- [Equations of Motion](../lecture-notes/week4/04_notes.ipynb)
+- Textbook Readings: JRT 2.1-2.4
+
+
 ## Class Week 3, January 27-31, 2025 (CW5)
 
 Topics: Newton's Laws and Modeling Systems
@@ -20,9 +40,14 @@ You should review the discussion about [Mathematical Modeling](../lecture-notes/
 - [Newton's Laws](../lecture-notes/week3/03_notes.ipynb)
 - Textbook Readings: JRT 1.1-1.6; AMS Ch 1-4
 
-### Lecture Videos:
+### Slides
 
-  - Next week
+31 Jan 2025 ([Slides](../slides/day-08-homework-session.pdf))![Day 08](../slides/day-08-homework-session.png)
+
+29 Jan 2025 ([Slides](../slides/day-07-drag-forces.pdf))![Day 07](../slides/day-07-drag-forces.png)
+
+27 Jan 2025 ([Slides](../slides/day-06-making-classical-models.pdf))![Day 06](../slides/day-06-making-classical-models.png)
+
 
 ## Class Week 2, January 20-24, 2025 (CW4)
 
@@ -50,12 +75,12 @@ You should review the overview on [Computing as a tool for science](../lecture-n
   - [Mathematical Preliminaries](../lecture-notes/week2/02_notes.ipynb)
   - Textbook Readings: JRT 1.4-1.6; AMS Ch 4.2 and 5
 
-### Lecture Videos:
+### Slides:
 
 24 Jan 2025 ([Slides](../slides/day-05-homework-session.pdf))
 ![Day 05](../slides/day-05-homework-session.png)
 
-22 Jan 2025 ([Slides](../slides/day-04-mathematical-prelims.pdf)) <- **only recorded audio, blank video**
+22 Jan 2025 ([Slides](../slides/day-04-mathematical-prelims.pdf)) 
 ![Day 04](../slides/day-04-mathematical-prelims.png)
 
 
@@ -82,17 +107,17 @@ Embedded in both notes pages are videos that you can watch to help you understan
   - [Introduction to Classical Mechanics](../lecture-notes/week1/01_notes.ipynb)
   - Textbook Readings: JRT 1.1-1.4; AMS Ch 1-4; MLB 3.4
 
-### Lecture Videos:
+### Slides
 
-17 Jan 2025 ([Slides](../slides/day-03-vectors.pdf)) - **NO VIDEO ON FRIDAYS**
+17 Jan 2025 ([Slides](../slides/day-03-vectors.pdf))
 ![Day 03](../slides/day-03-vectors.png)
 
 
-15 Jan 2025 ([Slides](../slides/day-02-newtons-laws.pdf)) - **NO VIDEO TECH FAILED**
+15 Jan 2025 ([Slides](../slides/day-02-newtons-laws.pdf))
 ![Day 02](../slides/day-02-newtons-laws.png)
 
 13 Jan 2025 ([Slides](../slides/day-01-introduction.pdf))
-[![Day 01](../slides/day-01-introduction.png)](https://mediaspace.msu.edu/media/t/1_mncdlnec)
+![Day 01](../slides/day-01-introduction.png)
 
 
 
