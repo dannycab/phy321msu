@@ -7508,11 +7508,7 @@ a.anchor-link {
     white-space: normal;
   }
 </style>
-<!-- End of mermaid configuration -->
-    <script type="text/javascript" async
-      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
-    </script>
-    </head>
+<!-- End of mermaid configuration --></head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
 <main>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=50f8c06e">
@@ -7575,6 +7571,84 @@ $$</p>
 <ul>
 <li>1a (4pt) Find the velocity as a function of time for the electron.</li>
 </ul>
+<pre><code class="language-{admonition}">{admonition}
+:class: hint
+
+The electron is moving in the $x$-direction, but experiences an acceleration in the $y$-direction. The velocity in the $x$-direction is therefore constant, while the velocity in the $y$-direction is given by an integral over the acceleration:
+
+$$v_x = 100\;\mathrm{m/s}$$
+
+$$v_y(t) = \int a_y(t) dt = \int \left(−20 \mathrm{m/s^2} −10\mathrm{m/s^3}t\right) dt = (-20\;\mathrm{m/s^2})t - (5\;\mathrm{m/s^3})t^2$$
+
+Thus, the velocity vector is given by:
+
+$$\boldsymbol{v}(t) = v_x \boldsymbol{e}_x + v_y(t) \boldsymbol{e}_y = (100\;\mathrm{m/s}) \boldsymbol{e}_x + \left((-20\;\mathrm{m/s^2})t - (5\;\mathrm{m/s^3})t^2\right) \boldsymbol{e}_y$$
+
+</code></pre>
+<ul>
+<li>1b (4pt)  Find the position as a function of time for the electron.</li>
+</ul>
+<pre><code class="language-{admonition}">{admonition}
+:class: hint
+
+The position is given by an integral over the velocity. We can treat the $x$- and $y$-components separately, since they are independent in this case:
+
+$$x(t) = \int v_x dt = \int 100 dt = 100t$$
+
+$$y(t) = \int v_y(t) dt = \int \left(-20t - 5t^2\right) dt = -10t^2 - \frac{5}{3}t^3$$
+
+So that the position vector is given by:
+
+$$\boldsymbol{r}(t) = x(t) \boldsymbol{e}_x + y(t) \boldsymbol{e}_y$$
+$$\boldsymbol{r}(t) = (100\;\mathrm{m/s})t \boldsymbol{e}_x + \left((-10\;\mathrm{m/s^2})t^2 - (\frac{5}{3}\;\mathrm{m/s^3})t^3\right) \boldsymbol{e}_y$$
+
+
+</code></pre>
+<p>The field is only acting inside a box of length $L = 2m$.</p>
+<ul>
+<li>1c (4pt)  For how long time is the electron inside the field?</li>
+</ul>
+<pre><code class="language-{admonition}">{admonition}
+:class: hint
+
+While the electron is inside the field, the location is given by the expression above. The electron enters the field at $t=0$, and leaves the field at $t=t_f$. 
+
+Let's assume that $L$ is the $x$ length of the box, so that the electron enters the field at $x=0$ and leaves the field at $x=L$. We can then find the time $t_f$ by solving the equation $x(t_f) = L$. 
+
+*The reason we choose to solve for $x(t_f)$ is that motion in that direction is a result of constant velocity, so that $x(t) = v_x t$.*
+
+$$x(t_f) = v_x t_f = L \Rightarrow t_f = \frac{L}{v_x} = \frac{2}{100} = 0.02 \mathrm{s}$$
+
+
+</code></pre>
+<ul>
+<li>1d (4pt)  What is the displacement in the $y$-direction when the electron leaves the box. (We call this the deflection of the electron).</li>
+</ul>
+<pre><code class="language-{admonition}">{admonition}
+:class: hint
+
+The deflection of the electron is given by the difference in the $y$-component of the position vector at $t=t_f$ and $t=0$. Here we assume that the electron enters the field at $y=0$, which is already captured in the expression for $y(t)$ above.
+
+$$\Delta y = y(t_f) - y(0) = \left(-10t_f^2 - \frac{5}{3}t_f^3\right) - \left(-10 \cdot 0^2 - \frac{5}{3} \cdot 0^3\right) = -10t_f^2 - \frac{5}{3}t_f^3$$
+
+$$\Delta y = -10 \cdot 0.02^2 - \frac{5}{3} \cdot 0.02^3 = -0.004013 \mathrm{m}$$
+
+</code></pre>
+<ul>
+<li>1e (4pt)  Find the angle the velocity vector forms with the horizontal axis as the electron leaves the box.</li>
+</ul>
+<pre><code class="language-{admonition}">{admonition}
+:class: hint
+
+We've found the velocity vector above, and we know that the electron leaves the box at $t=t_f$. So we can find the angle by taking the arctangent of the $y$-component divided by the $x$-component of the velocity vector:
+
+$$\theta = \arctan \left(\frac{v_y(t_f)}{v_x}\right)$$
+$$\theta = \arctan \left(\frac{-20t_f - 5t_f^2}{v_x}\right)$$
+$$\theta = \arctan \left(\frac{-20 \cdot 0.02 - 5 \cdot 0.02^2}{100}\right) = -0.00402\;\mathrm{rad}$$
+
+or in degrees: $\theta = -0.23^\circ$
+
+</code></pre>
 </div>
 </div>
 </div>
@@ -7591,6 +7665,60 @@ $$</p>
 <ul>
 <li>2a (5pt) The Reynolds number is defined as $Re = \rho v D / \eta$. What is the physical meaning of this number? For a spherical object, show that the ratio of the quadratic drag force to the linear drag force is given by $f_{quad}/f_{lin} = Re/48$. Use this to explain the physical meaning of the Reynolds number. <strong>Note: you may assume that $\kappa = 0.25$ for a sphere.</strong></li>
 </ul>
+<pre><code class="language-{admonition}">{admonition}
+:class: hint
+
+For a spherical object, the cross-sectional area is $A = \pi (D / 2)^2$. The ratio of the quadratic drag force to the linear drag force is then:
+
+$$\dfrac{f_{quad}}{f_{lin}} = \dfrac{\kappa \rho A v^2}{3\pi \eta D v} = \dfrac{\kappa \rho \pi D^2 v^2 / 4}{3\pi \eta D v}$$
+$$\dfrac{f_{quad}}{f_{lin}} = \dfrac{\kappa \rho D v}{12 \eta} $$
+
+The value of $\kappa$ is of order unity, but for a sphere is known to be $\kappa_{sphere} = 0.25$. Thus,
+
+$$\dfrac{f_{quad}}{f_{lin}} = \dfrac{0.25 \rho D v}{12 \eta} = \dfrac{\rho v D}{48 \eta} = \dfrac{Re}{48}$$
+
+where we used the definition of the Reynolds number.
+
+The Reynolds number indicates the relative importance of the viscous forces ($f_{lin}$) to the inertial forces ($f_{quad}$). For low Reynolds numbers, the viscous forces dominate, and the fluid is said to be laminar. For high Reynolds numbers, the inertial forces dominate, and the fluid is said to be turbulent.
+
+</code></pre>
+<ul>
+<li>2b (2pt) Explain a situation where there would be a low Reynolds number. What about a high Reynolds number? Estimate the Reynolds number for a paramecium moving through water, a 1cm sphere drag through corn syrup, a falling rain drop, a parachutist, a car, and a plane.</li>
+</ul>
+<pre><code class="language-{admonition}">{admonition}
+:class: hint
+
+Low Reynolds number would be indicative of a slowly moving object in a viscous fluid, like dragging a marble through corn syrup. High Reynolds number would be indicative of a fast moving object in a low viscosity fluid, like a plane flying through air.
+
+We can make some order of magnitude estimates for the Reynolds numbers of the objects listed:
+
+* Water has a density of $\rho = 1000\;\mathrm{kg/m^3}$ and a viscosity around $\eta = 10^{-3}\;\mathrm{Pa\,s}$.
+* Corn syrup has a density of around $\rho = 1000\;\mathrm{kg/m^3}$ and a viscosity around $\eta = 10^3\;\mathrm{Pa\,s}$.
+* Air has a density of $\rho = 1.2\;\mathrm{kg/m^3}$ (we use 1) and a viscosity at room temp around $\eta = 10^{-5}\;\mathrm{Pa\,s}$.
+
+The speeds and sizes of the objects are estimated.
+
+| Object | $v$ (m/s) | $D$ (m) | $\rho$ (kg/m$^3$) | $\eta$ (Pa s) | $Re$ |
+|--------|-----------|---------|-------------------|---------------|------|
+| Paramecium | 0.001 | 0.0001 | 1000 | $10^{-3}$ | $10^{-1}$ |
+| Corn syrup | 0.01 | 0.01 | 1000 | $10^3$ | $10^{-4}$ |
+| Rain drop | 10 | 0.001 | 1 | $10^{-5}$ | $10^4$ |
+| Parachutist | 10 | 1 | 1 | $10^{-5}$ | $10^6$ |
+| Car | 30 | 2 | 1 | $10^{-5}$ | $10^7$ |
+| Plane | 250 | 20 | 1 | $10^{-5}$ | $10^8$ |
+
+Here we just did order of magnitude calculations with the definitions of the Reynolds number $Re = \rho v D / \eta$ and the values given in the table.
+
+</code></pre>
+<ul>
+<li>2c (3pt) Find another <a href="https://en.wikipedia.org/wiki/Dimensionless_numbers_in_fluid_mechanics">dimensionless number from fluid mechanics</a> and explain its physical meaning. Make sure you consider high and low values of the number you find.</li>
+</ul>
+<pre><code class="language-{admonition}">{admonition}
+:class: hint
+
+Answers will vary.
+
+</code></pre>
 </div>
 </div>
 </div>
@@ -7606,6 +7734,77 @@ $$</p>
 <ul>
 <li>3a (4pt) At first, the object will be moving slowly. Show that we can approximate this expression in that interval. We should find that $v_y = gt$ -- the standard result for free fall in vacuum. Demonstrate this.</li>
 </ul>
+<pre><code class="language-{admonition}">{admonition}
+:class: hint
+
+We can expand the exponential in a Taylor series:
+
+$$e^{-x} = 1 - x + \frac{x^2}{2} - \frac{x^3}{3!} + \frac{x^4}{4!} - \cdots$$
+
+It is important to note that this expansion is only valid for small $x$. So we need a small dimensionless parameter to expand in. For us this is $t/\tau$, for $t&lt;&lt;\tau$, the expansion is useful and accurate.
+
+Using this, we can write:
+
+$$v_y(t) = v_{ter}(1-e^{-t/\tau}) = v_{ter} - v_{ter}e^{-t/\tau}$$
+$$v_y(t) = v_{ter} - v_{ter}\left(1 - \frac{t}{\tau} + \frac{t^2}{2\tau^2} - \frac{t^3}{3!\tau^3} + \frac{t^4}{4!\tau^4} - \cdots\right)$$
+$$v_y(t) \approx v_{ter} - v_{ter}\left(1 - \frac{t}{\tau}\right) = v_{ter}\frac{t}{\tau}$$
+
+With $v_{term} = g\tau$, we get:
+
+$$v_y(t) \approx g\tau\frac{t}{\tau} = gt$$
+
+Here $\tau = m/\beta$ is the characteristic time scale for the motion, and $v_{ter} = g\tau$ is the terminal velocity.
+
+</code></pre>
+<ul>
+<li>3b (3pt) What is the next term, $O(t^2)$, in the expansion? What is the physical meaning of this term?</li>
+</ul>
+<pre><code class="language-{admonition}">{admonition}
+:class: hint
+
+From the earlier expansion, the next term would include:
+
+$$v_y(t) = v_{ter} - v_{ter}\left(1 - \frac{t}{\tau} + \frac{t^2}{2\tau^2} - \frac{t^3}{3!\tau^3} + \frac{t^4}{4!\tau^4} - \cdots\right)$$
+
+$$v_y(t) \approx v_{ter} - v_{ter}\left(1 - \frac{t}{\tau} + \frac{t^2}{2\tau^2}\right)$$
+$$v_y(t) \approx v_{ter}\left(\dfrac{t}{\tau} - \dfrac{t^2}{2\tau^2}\right)$$
+
+With $v_{term} = g\tau$ and $\tau=m/\beta$, that second term alone (i.e., $v_{y,2}(t)$) becomes:
+
+$$v_{y,2}(t) = -v_{term}\frac{t^2}{2\tau^2} = -g\tau\frac{t^2}{2\tau^2}$$
+$$v_{y,2}(t) = -\frac{gt^2}{2\tau} = -\frac{\beta gt^2}{2m}$$
+
+This term slows the object down, that is why it is negative. It scales with the drag, which is why it's linear in $\beta$. It also scales with the square of the time, which is why it's quadratic in $t$; this indicates that it becomes a more important influence to the motion as time goes on.
+
+</code></pre>
+<ul>
+<li>3c (4pt) The position of the object is given by: $y(t) = v_{ter}t + (v_{y0}-v_{ter})\tau(1-e^{-t/\tau})$. Show that this reduces to the standard result $y = \frac{1}{2}gt^2$ when $v_{y0} = 0$. What is the small parameter in your expansions in all cases?</li>
+</ul>
+<pre><code class="language-{admonition}">{admonition}
+:class: hint
+
+When $v_{y0} = 0$, we have the simpler expression:
+
+$$y(t) = v_{ter}t - v_{ter}\tau(1-e^{-t/\tau})$$
+
+We need to use the same small parameter $t/\tau$ as before. We should organize the expression so that we can see that the expansion is valid for small $t/\tau$:
+
+$$y(t) = v_{term}\tau\left(\frac{t}{\tau} - 1 + e^{-t/\tau} \right)$$
+
+We apply the same expansion as before:
+
+$$y(t) = v_{term}\tau\left(\frac{t}{\tau} - 1 + \left(1 - \frac{t}{\tau} + \frac{t^2}{2\tau^2} - \frac{t^3}{3!\tau^3} + \frac{t^4}{4!\tau^4} - \cdots\right) \right)$$
+
+Keeping up to quadratic terms in $t/\tau$:
+
+$$y(t) \approx v_{term}\tau\left(\frac{t}{\tau} - 1 + 1 - \frac{t}{\tau} + \frac{t^2}{2\tau^2} \right)$$
+$$y(t) \approx v_{term}\tau\left(\frac{t^2}{2\tau^2} \right) = \dfrac{v_{term} t^2}{2\tau}$$
+
+With $v_{term} = g\tau$, we get:
+
+$$y(t) \approx \dfrac{g\tau t^2}{2\tau} = \dfrac{1}{2}gt^2$$
+
+</code></pre>
 </div>
 </div>
 </div>
@@ -7628,46 +7827,90 @@ $$</p>
 <ul>
 <li>4a (4pt) For the given force above, write the equation of motion in a form: $\dfrac{m dv}{F(v)} = dt$. Integrate both sides to find an expression for the velocity $v$ as a function of $t$ ($v(t)$ not $t(v)$).</li>
 </ul>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell celltag_hide-input" id="cell-id=0a968096">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [1]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<pre><code class="language-{admonition}">{admonition}
+:class: hint
 
-<span class="c1"># Constants</span>
-<span class="n">c</span> <span class="o">=</span> <span class="mi">1</span>  <span class="c1"># Just for illustration, the actual value depends on the specific problem</span>
-<span class="n">m</span> <span class="o">=</span> <span class="mi">1</span>  <span class="c1"># Same as above</span>
-<span class="n">v0</span> <span class="o">=</span> <span class="mi">4</span>  <span class="c1"># A positive initial value for v0</span>
+So we can start by writing this using Newton's second law:
 
-<span class="c1"># Time array</span>
-<span class="n">t</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">400</span><span class="p">)</span>
+$$F = ma = m\dfrac{dv}{dt} = -c v^{3/2}$$
 
-<span class="c1"># Function v(t)</span>
-<span class="n">v_t</span> <span class="o">=</span> <span class="p">(</span><span class="mi">2</span> <span class="o">/</span> <span class="p">(</span><span class="n">c</span> <span class="o">*</span> <span class="n">t</span> <span class="o">/</span> <span class="n">m</span> <span class="o">+</span> <span class="mi">2</span> <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">v0</span><span class="p">)))</span><span class="o">**</span><span class="mi">2</span>
+Such that:
 
-<span class="c1"># Plot</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">v_t</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="sa">r</span><span class="s2">"$v(t) = \left( \frac</span><span class="si">{2}</span><span class="s2">{\frac</span><span class="si">{ct}{m}</span><span class="s2"> + \frac</span><span class="si">{2}</span><span class="s2">{\sqrt</span><span class="si">{v_0}</span><span class="s2">}} \right)^2$"</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">'Time (t)'</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">'v(t)'</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">'Graph of v(t)'</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">(</span><span class="n">bottom</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-</pre></div>
+$$\dfrac{dv}{dt} = -\dfrac{c}{m} v^{3/2}$$
+
+Using the separation of variables technique, we can write:
+
+$$\dfrac{dv}{v^{3/2}} = -\dfrac{c}{m} dt$$
+
+We can integrate both sides with the known initial conditions $v=v_0$ at $t=0$:
+
+$$\int_{v_0}^{v(t)} \dfrac{dv'}{v'^{3/2}} = -\dfrac{c}{m} \int_0^t dt'$$
+
+which gives:
+
+$$\left[-\dfrac{2}{\sqrt{v'}}\right]_{v_0}^{v(t)} = -\dfrac{c}{m} \left[t'\right]_0^t$$
+$$-\dfrac{2}{\sqrt{v(t)}} + \dfrac{2}{\sqrt{v_0}} = -\dfrac{ct}{m}$$
+
+We can solve this for $v(t)$:
+
+$$\dfrac{1}{\sqrt{v(t)}} = \dfrac{1}{\sqrt{v_0}} + \dfrac{ct}{2m}$$
+$$\dfrac{1}{\sqrt{v(t)}} = \dfrac{2m + \sqrt{v_0} ct}{2m\sqrt{v_0}}$$
+$$\sqrt{v(t)} = \dfrac{2m\sqrt{v_0}}{2m + \sqrt{v_0} ct}$$
+
+So that,
+
+$$v(t) = \dfrac{4m^2 v_0}{(2m + \sqrt{v_0} ct)^2}$$
+
+</code></pre>
+<ul>
+<li>4b (2pt) Check your answer by looking at the limits of its behavior. Does it agree with your intuition?</li>
+</ul>
+<pre><code class="language-{admonition}">{admonition}
+:class: hint
+
+At $t=0$, we should have $v=v_0$, which is the case. As $t\rightarrow\infty$, we should have $v\rightarrow 0$, which is also the case. Why? Because this is a resistive drag force, so the object will slow down and eventually stop.
+
+</code></pre>
+<ul>
+<li>4c (2pt) Sketch the expression and explain what the motion of the object looks like by interpreting this expression and your sketch.</li>
+</ul>
+<pre><code class="language-{admonition}">{admonition}
+:class: hint
+
+Initially, the object moves with a velocity $v_0$. As time goes on, the velocity decreases, and the object eventually comes to rest. The shape of the curve in time follows a $1/t^2$ behavior from the expression in part b. We can sketch that. Or below, we have written a little program to plot it. Here we choose $c=1$, $m=1$, and $v_0=4$.python
+
+```python
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Constants
+c = 1  # Just for illustration, the actual value depends on the specific problem
+m = 1  # Same as above
+v0 = 4  # A positive initial value for v0
+
+# Time array
+t = np.linspace(0, 10, 400)
+
+# Function v(t)
+v_t = (2 / (c * t / m + 2 / np.sqrt(v0)))**2
+
+# Plot
+plt.figure(figsize=(10, 6))
+plt.plot(t, v_t, label=r"$v(t) = \left( \frac{2}{\frac{ct}{m} + \frac{2}{\sqrt{v_0}}} \right)^2$")
+plt.xlabel('Time (t)')
+plt.ylabel('v(t)')
+plt.title('Graph of v(t)')
+plt.ylim(bottom=0)
+plt.grid(True)
+plt.legend()
+plt.show()
+```
+
+</code></pre>
 </div>
 </div>
 </div>
-</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noInput celltag_hide-input" id="cell-id=0a968096">
 <div class="jp-Cell-outputWrapper">
 <div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
@@ -7690,6 +7933,19 @@ $$</p>
 <ul>
 <li>4d (2pt) Will the object ever come to rest?</li>
 </ul>
+<pre><code class="language-{admonition}">{admonition}
+:class: hint
+
+When does $v(t) = 0$?
+
+$$v(t) = \dfrac{4m^2 v_0}{(2m + \sqrt{v_0} ct)^2} = 0$$
+
+That seems to happen when the numerator is zero, so that $4m^2 v_0 = 0$. This happens when $v_0 = 0$, which is the case when the object is initially at rest. So if the object is initially at rest, it will remain at rest.
+
+But the only other way for this expression to be zero is if the denominator goes to infinity. This happens as $t\rightarrow\infty$, so there's no finite time in which this happens. So if the object is initially moving, it will never truly come to rest.
+
+This result also aligns with our sketch in part c.
+</code></pre>
 </div>
 </div>
 </div>
@@ -7706,6 +7962,14 @@ force. We will reuse the code we develop here in homework 4 for a position-depen
 <p>Here we limit ourselves to a ball that is thrown from a height $h$
 above the ground with an initial velocity
 $\boldsymbol{v}_0$ at time $t=t_0$. We assume the air resistance is proportional to the square velocity. Together with the gravitational force these are the forces acting on our system.</p>
+<pre><code class="language-{note}">{note}
+Due to the specific velocity dependence, we cannot find an analytical solution for motion in the $x$ and $y$ directions, see the discussion in Taylor after eq. (2.61).
+</code></pre>
+<p>In order to find an analytical solution we need to assume that the object is falling in the $y$-direction (negative direction) only.</p>
+<p>The position of the ball as function of time is  $\boldsymbol{r}(t)$ where $t$ is time.
+The position is measured with respect to a coordinate system with origin at the floor.</p>
+<p>We assume we have an initial position $\boldsymbol{r}(t_0)=h\boldsymbol{e}_y$ and an initial velocity $\boldsymbol{v}_0=v_{x,0}\boldsymbol{e}_x+v_{y,0}\boldsymbol{e}_y$.</p>
+<p>In this exercise we assume the system is influenced by the gravitational force</p>
 </div>
 </div>
 </div>
@@ -7758,6 +8022,90 @@ time will be used to compare with the numerical results in exercise 6.</p>
 <ul>
 <li>5a (3pt) Identify the forces acting on the ball and set up a diagram with the forces acting on the ball. Find the equation of motion for the falling ball. <strong>Do not limit to 1D yet!</strong></li>
 </ul>
+<pre><code class="language-{admonition}">{admonition}
+:class: hint
+
+The forces acting on the ball are the gravitational force and the drag force. The equation of motion is given by Newton's second law:
+
+$$\boldsymbol{F}_{net} = m\boldsymbol{a}$$
+
+where $\boldsymbol{F}_{net} = \boldsymbol{F}_{grav} + \boldsymbol{F}_{drag}$. We can write this as
+
+$$m\boldsymbol{a} = -mg\boldsymbol{e}_y - Dv\boldsymbol{v}$$ 
+
+or as the differential equation we are going to eventually solve:
+
+$$\dfrac{dv}{dt} = -g\boldsymbol{e}_y - \dfrac{D}{m}v\boldsymbol{v}$$
+
+</code></pre>
+<ul>
+<li>5b (4pt) Assume now that the object is falling only in the $y$-direction (negative direction). Integrate the equation of motion from an initial time $t_0$ to a final time $t$ and find the velocity. Assume it is dropped from rest to simplify the mathematics. In Taylor equations (2.52) to (2.58) you will find a very good discussion of this.</li>
+</ul>
+<pre><code class="language-{admonition}">{admonition}
+:class: hint
+
+In 1d, our equation of motion is much simpler (positive $y$ is up):
+
+$$\dfrac{dv_y}{dt} = - g + \dfrac{D}{m}v_y^2$$
+
+We saw that we can use separation of variables to solve problems with pure functions of $v$:
+
+$$\dfrac{dv_y}{g-\frac{D}{m}v_y^2} = -dt$$
+
+Before we go further, let's simply our notation. Notice that when $a_y=0$, we have $v_y=v_{term}=\sqrt{gm/D}$, so that we can write:
+
+$$\dfrac{1}{g}\dfrac{dv_y}{1-\frac{D}{mg}v_y^2} = -dt$$
+$$\dfrac{dv_y}{1-\frac{v_y^2}{v_{term}^2}} = -gdt$$
+
+$$g dt = \dfrac{dv_y}{\frac{v_y^2}{v_{term}^2}-1}$$
+
+We now integrate both sides:
+
+$$\int_{0}^{t} g dt' = -\int_{0}^{v_y(t)} \dfrac{dv^{'}_y}{\frac{(v^{'}_y)^2}{v_{term}^2}-1}$$
+
+that integral on the right side is of [this form](https://en.wikipedia.org/wiki/List_of_integrals_of_rational_functions#Integrands_of_the_form_xm_/_(a_x2_+_b_x_+_c)n):
+
+$$\int \dfrac{dx}{1-(x/a)^2} = a \tanh^{-1}\left(\dfrac{x}{a}\right) + c$$
+
+Using this here,
+
+$$gt = -v_{term} \tanh^{-1}\left(\dfrac{v_y(t)}{v_{term}}\right) + v_{term} \tanh^{-1}\left(\dfrac{0}{v_{term}}\right)$$
+
+$$gt = -v_{term}  \left(\tanh^{-1}\left(\dfrac{v_y(t)}{v_{term}}\right)\right)$$
+
+So that,
+
+$$v_y(t) = v_{term} \tanh\left(-\dfrac{gt}{v_{term}}\right)$$
+
+</code></pre>
+<ul>
+<li>5c (4pt) Find thereafter the position as function of time starting with an initial time $t_0$. Find the time it takes to hit the floor.  Here you will find it convenient to set the initial velocity in the $y$-direction to zero. Taylor equations (2.52)-(2.58) should contain all relevant information for solving this part as well.</li>
+</ul>
+<pre><code class="language-{admonition}">{admonition}
+:class: hint
+
+To find this we integrate the velocity expression we found in part b:
+
+$$y(t) = \int_{0}^{t} v_y(t') dt'$$
+
+Fall from a height $h$ with $v_y(0)=0$:
+
+$$\int_h^0 dy' = \int_{0}^{t} v_{term} \tanh\left(-\dfrac{gt'}{v_{term}}\right) dt'$$
+
+$$-h = \left[-\dfrac{v_{term}^2}{g} \ln\left(\cosh\left(-\dfrac{gt'}{v_{term}}\right)\right)\right]_{0}^{t}$$
+
+Note: $cosh(x) = cosh(-x)$, so that $\ln(cosh(-x)) = \ln(cosh(x))$ and $cosh(0) = 0$.
+
+$$h = \left[\dfrac{v_{term}^2}{g} \ln\left(\cosh\left(\dfrac{gt'}{v_{term}}\right)\right)\right]_{0}^{t}$$
+
+$$h = \dfrac{v_{term}^2}{g} \ln\left(\cosh\left(\dfrac{gt}{v_{term}}\right)\right)$$
+
+So the time to fall a distance $h$ is:
+
+$$t = \dfrac{v_{term}}{g} \ln\left(\cosh^{-1}\left(\dfrac{gh}{v_{term}^2}\right)\right)$$
+
+</code></pre>
+<p>We will use the above analytical results in our numerical calculations in exercise 6. The analytical solution in the $y$-direction only will serve as a test for our numerical solution. <strong>We don't often know the solutions to our problems exactly, so we have to check them against things we do know.</strong></p>
 </div>
 </div>
 </div>
@@ -7788,25 +8136,7 @@ time will be used to compare with the numerical results in exercise 6.</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=d6128a77">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [1]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> inline
-
-<span class="c1"># let's start by importing useful packages we are familiar with</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
-<span class="o">%</span><span class="k">matplotlib</span> inline
-</pre></div>
-</div>
-</div>
-</div>
-</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs jp-mod-noInput" id="cell-id=d6128a77">
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=c12f3ea0">
 <div class="jp-Cell-inputWrapper" tabindex="0">
@@ -7876,143 +8206,138 @@ use. In our case the step size is $\Delta t$.</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<pre><code class="language-{admonition}">{admonition}
+:class: hint
+
+```python
+# Exercise 6, hw3, brute force way with declaration of vx, vy, x and y
+# Common imports
+import numpy as np
+import pandas as pd
+from math import *
+import matplotlib.pyplot as plt
+import os
+
+# Where to save the figures and data files
+PROJECT_ROOT_DIR = "Results"
+FIGURE_ID = "Results/FigureFiles"
+DATA_ID = "DataFiles/"
+
+if not os.path.exists(PROJECT_ROOT_DIR):
+    os.mkdir(PROJECT_ROOT_DIR)
+
+if not os.path.exists(FIGURE_ID):
+    os.makedirs(FIGURE_ID)
+
+if not os.path.exists(DATA_ID):
+    os.makedirs(DATA_ID)
+
+def image_path(fig_id):
+    return os.path.join(FIGURE_ID, fig_id)
+
+def data_path(dat_id):
+    return os.path.join(DATA_ID, dat_id)
+
+def save_fig(fig_id):
+    plt.savefig(image_path(fig_id) + ".png", format='png')
+
+# Output file
+outfile = open(data_path("Eulerresults.dat"),'w')
+
+from pylab import plt, mpl
+plt.style.use('ggplot')
+mpl.rcParams['font.family'] = 'serif'
+
+
+g = 9.80655 #m/s^2
+# The mass and the drag constant D
+D = 0.00245 #mass/length   kg/m
+m = 0.2 #kg, mass of falling object
+DeltaT = 0.001
+#set up arrays 
+tfinal = 1.4
+# set up number of points for all variables
+n = ceil(tfinal/DeltaT)
+# define scaling constant vT used in analytical solution
+vT = sqrt(m*g/D)
+# set up arrays for t, a, v, and y and arrays for analytical results
+#brute force setting up of arrays for x and y, vx, vy, ax and ay
+t = np.zeros(n)
+vy = np.zeros(n)
+y = np.zeros(n)
+vx = np.zeros(n)
+x = np.zeros(n)
+yanalytic = np.zeros(n)
+# Initial conditions, note that these correspond to an object falling in the y-direction only.
+vx[0] = 0.0 #m/s
+vy[0] = 0.0  #m/s
+y[0] = 10.0 #m
+x[0] = 0.0 #m
+yanalytic[0] = y[0]
+# Start integrating using Euler's method
+for i in range(n-1):
+    # expression for acceleration, note the absolute value and division by mass
+    ax = -D*vx[i]*sqrt(vx[i]**2+vy[i]**2)/m
+    ay = -g - D*vy[i]*sqrt(vx[i]**2+vy[i]**2)/m
+    # update velocity and position
+    vx[i+1] = vx[i] + DeltaT*ax
+    x[i+1] = x[i] + DeltaT*vx[i]
+    vy[i+1] = vy[i] + DeltaT*ay
+    y[i+1] = y[i] + DeltaT*vy[i]
+    # update time to next time step and compute analytical answer
+    t[i+1] = t[i] + DeltaT
+    yanalytic[i+1] = y[0]-(vT*vT/g)*log(cosh(g*t[i+1]/vT))+vy[0]*t[i+1]
+    if ( y[i+1] &lt; 0.0):
+        break
+data = {'t[s]': t,
+        'Relative error in y': abs((y-yanalytic)/yanalytic),
+        'vy[m/s]': vy,
+        'x[m]': x,
+        'vx[m/s]': vx
+}
+
+NewData = pd.DataFrame(data)
+err=NewData['Relative error in y']
+display(NewData)
+# save to file
+NewData.to_csv(outfile, index=False)
+
+#then plot
+fig, axs = plt.subplots(4, 1)
+axs[0].plot(t, y)
+axs[0].set_xlim(0, tfinal)
+axs[0].set_ylabel('y')
+axs[1].plot(t, vy)
+axs[1].set_ylabel('vy[m/s]')
+axs[1].set_xlabel('time[s]')
+axs[2].plot(t, x)
+axs[2].set_xlim(0, tfinal)
+axs[2].set_ylabel('x')
+axs[3].plot(t, vx)
+axs[3].set_ylabel('vx[m/s]')
+axs[3].set_xlabel('time[s]')
+
+fig.tight_layout()
+save_fig("EulerIntegration")
+plt.show()
+
+
+fig2, axs2 = plt.subplots(1,1)
+axs2.plot(t, err)
+axs2.set_xlim(0, tfinal)
+axs2.set_ylabel('error')
+axs2.set_xlabel('time[s]')
+
+fig2.tight_layout()
+save_fig("ErrorEuler")
+plt.show()
+```
+
+</code></pre>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell celltag_hide-input" id="cell-id=e4e1d368">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [15]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Exercise 6, hw3, brute force way with declaration of vx, vy, x and y</span>
-<span class="c1"># Common imports</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">math</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
-
-<span class="c1"># Where to save the figures and data files</span>
-<span class="n">PROJECT_ROOT_DIR</span> <span class="o">=</span> <span class="s2">"Results"</span>
-<span class="n">FIGURE_ID</span> <span class="o">=</span> <span class="s2">"Results/FigureFiles"</span>
-<span class="n">DATA_ID</span> <span class="o">=</span> <span class="s2">"DataFiles/"</span>
-
-<span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">PROJECT_ROOT_DIR</span><span class="p">):</span>
-    <span class="n">os</span><span class="o">.</span><span class="n">mkdir</span><span class="p">(</span><span class="n">PROJECT_ROOT_DIR</span><span class="p">)</span>
-
-<span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">FIGURE_ID</span><span class="p">):</span>
-    <span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">FIGURE_ID</span><span class="p">)</span>
-
-<span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">DATA_ID</span><span class="p">):</span>
-    <span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">DATA_ID</span><span class="p">)</span>
-
-<span class="k">def</span><span class="w"> </span><span class="nf">image_path</span><span class="p">(</span><span class="n">fig_id</span><span class="p">):</span>
-    <span class="k">return</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">FIGURE_ID</span><span class="p">,</span> <span class="n">fig_id</span><span class="p">)</span>
-
-<span class="k">def</span><span class="w"> </span><span class="nf">data_path</span><span class="p">(</span><span class="n">dat_id</span><span class="p">):</span>
-    <span class="k">return</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">DATA_ID</span><span class="p">,</span> <span class="n">dat_id</span><span class="p">)</span>
-
-<span class="k">def</span><span class="w"> </span><span class="nf">save_fig</span><span class="p">(</span><span class="n">fig_id</span><span class="p">):</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="n">image_path</span><span class="p">(</span><span class="n">fig_id</span><span class="p">)</span> <span class="o">+</span> <span class="s2">".png"</span><span class="p">,</span> <span class="nb">format</span><span class="o">=</span><span class="s1">'png'</span><span class="p">)</span>
-
-<span class="c1"># Output file</span>
-<span class="n">outfile</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">data_path</span><span class="p">(</span><span class="s2">"Eulerresults.dat"</span><span class="p">),</span><span class="s1">'w'</span><span class="p">)</span>
-
-<span class="kn">from</span><span class="w"> </span><span class="nn">pylab</span><span class="w"> </span><span class="kn">import</span> <span class="n">plt</span><span class="p">,</span> <span class="n">mpl</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">'ggplot'</span><span class="p">)</span>
-<span class="n">mpl</span><span class="o">.</span><span class="n">rcParams</span><span class="p">[</span><span class="s1">'font.family'</span><span class="p">]</span> <span class="o">=</span> <span class="s1">'serif'</span>
-
-
-<span class="n">g</span> <span class="o">=</span> <span class="mf">9.80655</span> <span class="c1">#m/s^2</span>
-<span class="c1"># The mass and the drag constant D</span>
-<span class="n">D</span> <span class="o">=</span> <span class="mf">0.00245</span> <span class="c1">#mass/length   kg/m</span>
-<span class="n">m</span> <span class="o">=</span> <span class="mf">0.2</span> <span class="c1">#kg, mass of falling object</span>
-<span class="n">DeltaT</span> <span class="o">=</span> <span class="mf">0.001</span>
-<span class="c1">#set up arrays </span>
-<span class="n">tfinal</span> <span class="o">=</span> <span class="mf">1.4</span>
-<span class="c1"># set up number of points for all variables</span>
-<span class="n">n</span> <span class="o">=</span> <span class="n">ceil</span><span class="p">(</span><span class="n">tfinal</span><span class="o">/</span><span class="n">DeltaT</span><span class="p">)</span>
-<span class="c1"># define scaling constant vT used in analytical solution</span>
-<span class="n">vT</span> <span class="o">=</span> <span class="n">sqrt</span><span class="p">(</span><span class="n">m</span><span class="o">*</span><span class="n">g</span><span class="o">/</span><span class="n">D</span><span class="p">)</span>
-<span class="c1"># set up arrays for t, a, v, and y and arrays for analytical results</span>
-<span class="c1">#brute force setting up of arrays for x and y, vx, vy, ax and ay</span>
-<span class="n">t</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
-<span class="n">vy</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
-<span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
-<span class="n">vx</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
-<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
-<span class="n">yanalytic</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
-<span class="c1"># Initial conditions, note that these correspond to an object falling in the y-direction only.</span>
-<span class="n">vx</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mf">0.0</span> <span class="c1">#m/s</span>
-<span class="n">vy</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mf">0.0</span>  <span class="c1">#m/s</span>
-<span class="n">y</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mf">10.0</span> <span class="c1">#m</span>
-<span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mf">0.0</span> <span class="c1">#m</span>
-<span class="n">yanalytic</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">y</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-<span class="c1"># Start integrating using Euler's method</span>
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">):</span>
-    <span class="c1"># expression for acceleration, note the absolute value and division by mass</span>
-    <span class="n">ax</span> <span class="o">=</span> <span class="o">-</span><span class="n">D</span><span class="o">*</span><span class="n">vx</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">*</span><span class="n">sqrt</span><span class="p">(</span><span class="n">vx</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">**</span><span class="mi">2</span><span class="o">+</span><span class="n">vy</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">/</span><span class="n">m</span>
-    <span class="n">ay</span> <span class="o">=</span> <span class="o">-</span><span class="n">g</span> <span class="o">-</span> <span class="n">D</span><span class="o">*</span><span class="n">vy</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">*</span><span class="n">sqrt</span><span class="p">(</span><span class="n">vx</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">**</span><span class="mi">2</span><span class="o">+</span><span class="n">vy</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">/</span><span class="n">m</span>
-    <span class="c1"># update velocity and position</span>
-    <span class="n">vx</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">vx</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+</span> <span class="n">DeltaT</span><span class="o">*</span><span class="n">ax</span>
-    <span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+</span> <span class="n">DeltaT</span><span class="o">*</span><span class="n">vx</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
-    <span class="n">vy</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">vy</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+</span> <span class="n">DeltaT</span><span class="o">*</span><span class="n">ay</span>
-    <span class="n">y</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">y</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+</span> <span class="n">DeltaT</span><span class="o">*</span><span class="n">vy</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
-    <span class="c1"># update time to next time step and compute analytical answer</span>
-    <span class="n">t</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">t</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+</span> <span class="n">DeltaT</span>
-    <span class="n">yanalytic</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">y</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">-</span><span class="p">(</span><span class="n">vT</span><span class="o">*</span><span class="n">vT</span><span class="o">/</span><span class="n">g</span><span class="p">)</span><span class="o">*</span><span class="n">log</span><span class="p">(</span><span class="n">cosh</span><span class="p">(</span><span class="n">g</span><span class="o">*</span><span class="n">t</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="n">vT</span><span class="p">))</span><span class="o">+</span><span class="n">vy</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="n">t</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span>
-    <span class="k">if</span> <span class="p">(</span> <span class="n">y</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mf">0.0</span><span class="p">):</span>
-        <span class="k">break</span>
-<span class="n">data</span> <span class="o">=</span> <span class="p">{</span><span class="s1">'t[s]'</span><span class="p">:</span> <span class="n">t</span><span class="p">,</span>
-        <span class="s1">'Relative error in y'</span><span class="p">:</span> <span class="nb">abs</span><span class="p">((</span><span class="n">y</span><span class="o">-</span><span class="n">yanalytic</span><span class="p">)</span><span class="o">/</span><span class="n">yanalytic</span><span class="p">),</span>
-        <span class="s1">'vy[m/s]'</span><span class="p">:</span> <span class="n">vy</span><span class="p">,</span>
-        <span class="s1">'x[m]'</span><span class="p">:</span> <span class="n">x</span><span class="p">,</span>
-        <span class="s1">'vx[m/s]'</span><span class="p">:</span> <span class="n">vx</span>
-<span class="p">}</span>
-
-<span class="n">NewData</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
-<span class="n">err</span><span class="o">=</span><span class="n">NewData</span><span class="p">[</span><span class="s1">'Relative error in y'</span><span class="p">]</span>
-<span class="n">display</span><span class="p">(</span><span class="n">NewData</span><span class="p">)</span>
-<span class="c1"># save to file</span>
-<span class="n">NewData</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">outfile</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-
-<span class="c1">#then plot</span>
-<span class="n">fig</span><span class="p">,</span> <span class="n">axs</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
-<span class="n">axs</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
-<span class="n">axs</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">tfinal</span><span class="p">)</span>
-<span class="n">axs</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">'y'</span><span class="p">)</span>
-<span class="n">axs</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">vy</span><span class="p">)</span>
-<span class="n">axs</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">'vy[m/s]'</span><span class="p">)</span>
-<span class="n">axs</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">'time[s]'</span><span class="p">)</span>
-<span class="n">axs</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
-<span class="n">axs</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">tfinal</span><span class="p">)</span>
-<span class="n">axs</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">'x'</span><span class="p">)</span>
-<span class="n">axs</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">vx</span><span class="p">)</span>
-<span class="n">axs</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">'vx[m/s]'</span><span class="p">)</span>
-<span class="n">axs</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">'time[s]'</span><span class="p">)</span>
-
-<span class="n">fig</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
-<span class="n">save_fig</span><span class="p">(</span><span class="s2">"EulerIntegration"</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-
-
-<span class="n">fig2</span><span class="p">,</span> <span class="n">axs2</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">axs2</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">err</span><span class="p">)</span>
-<span class="n">axs2</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">tfinal</span><span class="p">)</span>
-<span class="n">axs2</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">'error'</span><span class="p">)</span>
-<span class="n">axs2</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">'time[s]'</span><span class="p">)</span>
-
-<span class="n">fig2</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
-<span class="n">save_fig</span><span class="p">(</span><span class="s2">"ErrorEuler"</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noInput celltag_hide-input" id="cell-id=e4e1d368">
 <div class="jp-Cell-outputWrapper">
 <div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>

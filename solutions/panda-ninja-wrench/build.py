@@ -1,73 +1,43 @@
 import os
-import json
 import sys
 import nbformat
 from nbconvert import HTMLExporter
 
-def remove_fencing(notebook_file, temp_notebook_file):
-    with open(notebook_file, "r") as f:
-        notebook = json.load(f)
+def convert_notebook_to_html(base_name):
+    # Remove extensions if they are passed
+    if base_name.endswith('.ipynb') or base_name.endswith('.html'):
+        print(f"Warning: Extension provided in the base name. Removing extension and proceeding.")
+        base_name = os.path.splitext(base_name)[0]
 
-    for cell in notebook["cells"]:
-        if cell["cell_type"] == "markdown":
-            new_source = []
-            in_admonition = False
-            for line in cell["source"]:
-                if line.startswith("::{admonition} SOLUTION :class: hint") or line.startswith("```"):
-                    in_admonition = True
-                elif line.startswith(":::") or line.startswith("```"):
-                    in_admonition = False
-                elif not in_admonition:
-                    new_source.append(line)
-            cell["source"] = new_source
+    notebook_path = f"{base_name}.ipynb"
+    output_path = f"{base_name}.html"
 
-    with open(temp_notebook_file, "w") as f:
-        json.dump(notebook, f, indent=1)
+    # Check if the notebook file exists
+    if not os.path.exists(notebook_path):
+        print(f"Error: The file {notebook_path} does not exist.")
+        sys.exit(1)
 
-def convert_to_html(temp_notebook_file, html_file):
-    with open(temp_notebook_file, "r") as f:
+    # Load the notebook
+    with open(notebook_path, 'r', encoding='utf-8') as f:
         notebook = nbformat.read(f, as_version=4)
 
+    # Initialize the HTML exporter
     html_exporter = HTMLExporter()
-    body, resources = html_exporter.from_notebook_node(notebook)
+    html_exporter.exclude_input = True  # Exclude input cells if desired
 
-    # Add MathJax to the HTML
-    mathjax = """
-    <script type="text/javascript" async
-      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
-    </script>
-    """
-    body = body.replace('</head>', f'{mathjax}</head>')
+    # Convert the notebook to HTML
+    (body, resources) = html_exporter.from_notebook_node(notebook)
 
-    with open(html_file, "w") as f:
+    # Write the HTML output to a file
+    with open(output_path, 'w', encoding='utf-8') as f:
         f.write(body)
 
-
-def main():
-    if len(sys.argv) < 2:
-        print("Usage: python build_solution.py <notebook-name-without-extension>")
-        sys.exit(1)
-
-    notebook_name = sys.argv[1]
-
-    if notebook_name.endswith(".ipynb"):
-        print("Warning: Removing .ipynb extension from input")
-        notebook_name = notebook_name[:-6]
-
-    notebook_file = f"{notebook_name}.ipynb"
-    html_file = f"{notebook_name}.html"
-    pdf_file = f"{notebook_name}.pdf"
-    temp_notebook_file = f"{notebook_name}_temp.ipynb"
-
-    if not os.path.isfile(notebook_file):
-        print(f"Error: Notebook file '{notebook_file}' does not exist.")
-        sys.exit(1)
-
-    remove_fencing(notebook_file, temp_notebook_file)
-    convert_to_html(temp_notebook_file, html_file)
-
-    print(f"HTML conversion successful: '{html_file}' created.")
-    os.remove(temp_notebook_file)
+    print(f"Converted {notebook_path} to {output_path}")
 
 if __name__ == "__main__":
-    main()
+    if len(sys.argv) != 2:
+        print("Usage: python build.py <base_name>")
+        sys.exit(1)
+
+    base_name = sys.argv[1]
+    convert_notebook_to_html(base_name)
