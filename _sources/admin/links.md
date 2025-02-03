@@ -21,6 +21,10 @@ You should review the discussion about [Fluid Resistance](../lecture-notes/week4
 - [Equations of Motion](../lecture-notes/week4/04_notes.ipynb)
 - Textbook Readings: JRT 2.1-2.4
 
+### Slides
+
+03 Feb 2025 ([Slides](../slides/day-09-modeling-drag.pdf))![Day 09](../slides/day-09-modeling-drag.png)
+
 
 ## Class Week 3, January 27-31, 2025 (CW5)
 

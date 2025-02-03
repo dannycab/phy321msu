@@ -60,6 +60,8 @@
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"tex2jax": {"inlineMath": [["$", "$"]]}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'slides/day-09-modeling-drag';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -364,6 +366,10 @@
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Day 09 - Modeling Drag</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#announcements">Announcements</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Announcements</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-6-3">Clicker Question 6-3</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#cq-6-3">CQ 6-3</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-6-4">Clicker Question 6-4</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-6-5">Clicker Question 6-5</a></li>
 </ul>
 
             </nav>
@@ -404,13 +410,55 @@
 <h1>Announcements<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
 <ul class="simple">
 <li><p>All handwritten notes are now posted.</p></li>
-<li><p>Reminder: email me your extra credit seminar writeups.</p></li>
+<li><p>Reminder: email me your extra credit seminar write-ups.</p></li>
 <li><p><strong>DC Office Hours today on zoom from 15:00-16:00</strong></p>
 <ul>
 <li><p><a class="reference external" href="https://dannycab.github.io/meet">https://dannycab.github.io/meet</a></p></li>
 </ul>
 </li>
 </ul>
+</section>
+<hr class="docutils" />
+<section id="clicker-question-6-3">
+<h1>Clicker Question 6-3<a class="headerlink" href="#clicker-question-6-3" title="Link to this heading">#</a></h1>
+<p>For the system of <strong>Linear Drag in 1D</strong>, we found a solution for the velocity as a function of time, with <span class="math notranslate nohighlight">\(v = 0\)</span> at <span class="math notranslate nohighlight">\(t = 0\)</span>.
+$<span class="math notranslate nohighlight">\(v(t) = v_{term}\left(1-e^{-\dfrac{bt}{m}}\right)\)</span>$</p>
+<p>where <span class="math notranslate nohighlight">\(v_{term} = \sqrt{\frac{mg}{b}}\)</span>.</p>
+<hr class="docutils" />
+<p><img alt="bg right w:100%" src="../_images/cq6-3.png" /></p>
+</section>
+<section id="cq-6-3">
+<h1>CQ 6-3<a class="headerlink" href="#cq-6-3" title="Link to this heading">#</a></h1>
+<p><strong>Which sketch could be correct for the velocity of the ball?</strong></p>
+</section>
+<hr class="docutils" />
+<section id="clicker-question-6-4">
+<h1>Clicker Question 6-4<a class="headerlink" href="#clicker-question-6-4" title="Link to this heading">#</a></h1>
+<p>For the system of <strong>Quadratic Drag in 1D</strong>, we found a solution for the velocity as a function of time, with <span class="math notranslate nohighlight">\(v = 0\)</span> at <span class="math notranslate nohighlight">\(t = 0\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[v(t) = v_{term}\tanh(gt/v_{term})\]</div>
+<p>where <span class="math notranslate nohighlight">\(v_{term} = (mg/c)^{1/2}\)</span>. Do the units make sense? What are the units of <span class="math notranslate nohighlight">\(\left[gt/v_{term}\right]\)</span>?</p>
+<ol class="arabic simple">
+<li><p>Yes, the units for <span class="math notranslate nohighlight">\(\left[gt/v_{term}\right]\)</span> are <span class="math notranslate nohighlight">\(m/s\)</span>;both sides have the same units.</p></li>
+<li><p>No, the units for <span class="math notranslate nohighlight">\(\left[gt/v_{term}\right]\)</span> are m/s; each side has different units.</p></li>
+<li><p>Yes, the units for <span class="math notranslate nohighlight">\(\left[gt/v_{term}\right]\)</span> are unit-less; both sides have the same units.</p></li>
+<li><p>No, the units for <span class="math notranslate nohighlight">\(\left[gt/v_{term}\right]\)</span> are unit-less; each side has the different units.</p></li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="clicker-question-6-5">
+<h1>Clicker Question 6-5<a class="headerlink" href="#clicker-question-6-5" title="Link to this heading">#</a></h1>
+<p>For the system of <strong>Quadratic Drag in 1D</strong>, we found a solution for the velocity as a function of time, with <span class="math notranslate nohighlight">\(v = 0\)</span> at <span class="math notranslate nohighlight">\(t = 0\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[v(t) = v_{term}\tanh(gt/v_{term})\]</div>
+<p>where <span class="math notranslate nohighlight">\(v_{term} = \sqrt{mg/c}\)</span>. What happens when <span class="math notranslate nohighlight">\(t \rightarrow \infty\)</span>?</p>
+<ol class="arabic simple">
+<li><p>The object stops moving.</p></li>
+<li><p>The object travels at a constant velocity.</p></li>
+<li><p>The object travels at an increasing velocity.</p></li>
+<li><p>The object travels at a decreasing velocity.</p></li>
+<li><p>I’m not sure.</p></li>
+</ol>
 </section>
 
     <script type="text/x-thebe-config">
@@ -463,6 +511,10 @@
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Day 09 - Modeling Drag</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#announcements">Announcements</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Announcements</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-6-3">Clicker Question 6-3</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#cq-6-3">CQ 6-3</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-6-4">Clicker Question 6-4</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-6-5">Clicker Question 6-5</a></li>
 </ul>
 
   </nav></div>
