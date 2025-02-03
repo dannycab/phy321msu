@@ -111,53 +111,6 @@ What happens when $\ddot{y} = 0$?
 3. The ball reaches a terminal velocity.
 4. I'm not sure.
 
----
-
-# Clicker Question 6-3
-
-For the system of **Linear Drag in 1D**, we found a solution for the velocity as a function of time, with $v = 0$ at $t = 0$.
-$$v(t) = v_{term}\left(1-e^{-\dfrac{bt}{m}}\right)$$
-
-where $v_{term} = \sqrt{\frac{mg}{b}}$. 
-
----
-
-![bg right w:100%](../images/notes/week3/cq6-3.png)
-
-
-# CQ 6-3
-
-**Which sketch could be correct for the velocity of the ball?**
-
----
-
-# Clicker Question 6-4
-
-For the system of **Quadratic Drag in 1D**, we found a solution for the velocity as a function of time, with $v = 0$ at $t = 0$.
-
-$$v(t) = v_{term}\tanh(gt/v_{term})$$
-
-where $v_{term} = (mg/c)^{1/2}$. Do the units make sense? What are the units of $\left[gt/v_{term}\right]$? 
-1. Yes, the units for $\left[gt/v_{term}\right]$ are $m/s$;both sides have the same units.
-2. No, the units for $\left[gt/v_{term}\right]$ are m/s; each side has different units.
-3. Yes, the units for $\left[gt/v_{term}\right]$ are unit-less; both sides have the same units.
-4. No, the units for $\left[gt/v_{term}\right]$ are unit-less; each side has the different units.
-
----
-
-# Clicker Question 6-5
-
-For the system of **Quadratic Drag in 1D**, we found a solution for the velocity as a function of time, with $v = 0$ at $t = 0$.
-
-$$v(t) = v_{term}\tanh(gt/v_{term})$$ 
-
-where $v_{term} = \sqrt{mg/c}$. What happens when $t \rightarrow \infty$?
-
-1. The object stops moving.
-2. The object travels at a constant velocity.
-3. The object travels at an increasing velocity.
-4. The object travels at a decreasing velocity.
-5. I'm not sure.
 
 
 
