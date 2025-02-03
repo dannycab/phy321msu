@@ -2,6 +2,19 @@
 
 Slides for PHY 321 appear in reverse chronological order, with the most recent slides at the top. The formats are PDF, HTML, and Markdown. The HTML slides are hosted on my website, and the Markdown slides are the source code for the HTML slides, built with [Marp](https://marp.app/).
 
+## Day 09 - Modeling Drag - 03 Feb 2025
+
+### Download PDF
+
+[![Day 09](../slides/day-09-modeling-drag.png)](../slides/day-09-modeling-drag.pdf)
+
+### HTML Versions
+
+| Format | Link |
+|--|--|
+| HTML (Inline) | [day-09-modeling-drag.md](../slides/day-09-modeling-drag.md) |
+| HTML (Slides) | [day-09-modeling-drag.html](../slides/day-09-modeling-drag.html) |
+
 ## Day 08 - Homework Session - 31 Jan 2025
 
 ### Download PDF

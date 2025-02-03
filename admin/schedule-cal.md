@@ -32,7 +32,7 @@ All assignments are turned in using Gradescope as a single PDF.
 
 | Week | Day    | Topic                                                     | Readings to prepare | Important events                                                |
 | ---- | ------ | --------------------------------------------------------- | ------------------- | --------------------------------------------------------------- |
-| CW6  | 03 Feb | Air Resistance; Central Forces                                  | JRT 2.1-2.4         | [Homework 4 Assigned (Due 21 Feb)](../homeworks/hw4.ipynb)       |
+| CW6  | 03 Feb | Air Resistance; Central Forces  ([Slides](../slides/day-09-modeling-drag.pdf))                                 | JRT 2.1-2.4         | [Homework 4 Assigned (Due 21 Feb)](../homeworks/hw4.ipynb)       |
 |      | 05 Feb | Euler-Cromer Integration                                  |                     |                                                                 |
 |      | 07 Feb | Problem session for homework                              |                     | **Homework 3 Due** |
 
