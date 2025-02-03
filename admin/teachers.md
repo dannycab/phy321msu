@@ -24,7 +24,7 @@
 
 | Office Hours                                                                               |
 | ------------------------------------------------------------------------------------------ |
-| Monday/Wednesday 16:00-17:00 and Friday 15:00-16:00 in the Strosacker Center (1248 BPS) or [schedule me](https://cal.com/dannycaballero/15min) |
+| **Wednesday 16:00-17:00**; **Fridays 10:00-12:00** and **15:00-16:00** in the Strosacker Center (1248 BPS) or [schedule me](https://cal.com/dannycaballero/15min) |
 
 Danny will lead the course, design the homework and exams, and assign final grades. Danny is also responsible for the course content, so if you have any suggestions for how to improve the course, please let him know. Danny will also grade your midterm and final projects.
 
@@ -43,9 +43,9 @@ Scarlett will be grading your homework assignments. She will provide overall fee
 ![Elisha Alemao](../images/staff/elisha.png)
 
 
-| Learning Assistant         | Email             | Office Hour         | Location          |
+| Learning Assistant         | Email             | Office Hours         | Location          |
 | -------------------------- | ----------------- | ------------------- | ----------------- |
-| _Elisha Alemao (she/her)_ | <alemaoel@msu.edu> |     TBD             | Physics Help Room |
+| _Elisha Alemao (she/her)_ | <alemaoel@msu.edu> |    **Tuesday and Thursday 17:00-18:00** in the Strosacker Center (1248 BPS)            | Physics Help Room |
 
 Elisha will be helping you in class and during office hours. She has taken this course previously and has been selected because she is passionate about helping you learn classical mechanics. She is an incredible resource for you.
 
