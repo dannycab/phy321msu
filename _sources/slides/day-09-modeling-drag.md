@@ -12,30 +12,113 @@ url: https://dannycaballero.info/phy321msu/slides/day-09-modeling-drag.html
 
 # Day 09 - Modeling Drag
 
-![bg right width:600px](../images/notes/week3/quack.png)
+![bg right width:600px](../images/notes/week4/paramecium-swimming.png)
+
+Somersault of Paramecium in extremely confined environments ->
+
+source: <https://www.nature.com/articles/srep13148>
 
 ---
 
 # Announcements
 
-* We are behind on grading the first assignment
-* Homework 2 is due today
-    * Homeworks are due at 23:59
-    * Gradescope is open until Sunday at 9:00
-* Homework 3 is posted
-    * Due next Friday
-    * Also open until next Sunday at 9:00
+* All hand-written notes are now posted
+* Week 5 notes and HW 4 will be posted by tomorrow night
+* **PERMANENT CHANGE:** OFFICE HOURS
+    * DC Office hours 10:00-12:00 on Fridays (No Monday office hours)
+* **CHANGE THIS WEEK** (DC has a conflict):
+    * 15:00-16:00 on Friday -> 14:00-15:00 on Friday
 
 ---
 
-# Announcements
+## Seminars this week
 
-* All handwritten notes are now posted.
-* Reminder: email me your extra credit seminar write-ups.
-* **DC Office Hours today on zoom from 15:00-16:00**
-    * https://dannycab.github.io/meet
+**CMP Seminar**, Monday Feb 3rd at 4:10pm in 1400 BPS
+* Xiaoming Mao, University of Michigan, *Topological mechanics in Maxwell lattices and continuum*
+
+**Astronomy Seminar**, Wednesday Feb 5th at 1:30pm in 1400 BPS
+* 	Lia Corrales, Univ. of Michigan, *The cosmic journey of the elements, from dust to life*
+
+**Physics & Astronomy Colloquium**, Thursday Feb 6th at 3:30pm in 1415 BPS
+* Andreas Jung, Purdue University, *Entangled Titans:  unraveling the mysteries of Quantum Mechanics with top quarks*
+
+**Reminder: email me your extra credit seminar write-ups**
 
 ---
+
+# Goals for this week
+
+![bg right width:600px](../images/notes/week4/paramecium-swimming.png)
+
+* Establish a model for drag forces
+* Develop an understanding of the process for modeling forces
+* Produce equations of motion that can be investigated
+* Start probing the behavior of these systems with math and computing
+
+---
+
+# Reminders
+
+## Force Models
+
+We have been modeling the drag force using a functional dependence on velocity.
+
+$$\vec{F}_{\text{drag}} = -f(v)\hat{v}$$
+
+where $f(v)$ is a function of velocity.
+
+We established (in 1D) there are two common forms of drag force:
+
+$$f(v) = bv \quad \text{Linear Drag}$$
+
+$$f(v) = cv^2 \quad \text{Quadratic Drag}$$
+
+---
+
+# Reminders
+
+## Equations of Motion
+
+The next step is to use Newton's 2nd Law to write the equations of motion for the system. We found those equation of motion to be:
+
+$$m\dot{v} = -f(v)$$
+
+where $f(v)$ is the drag force. So for each form of drag we have:
+
+$$\dot{v} = g-\frac{b}{m}v \quad \text{Linear Drag}$$
+
+$$\dot{v} = g-\frac{c}{m}v^2 \quad \text{Quadratic Drag}$$
+
+---
+
+# Reminders
+
+## Trajectories
+
+We can integrate these equations of motion to find the velocity as a function of time. We found:
+
+$$v(t) = v_{\text{t,lin}}\left(1-e^{-\frac{bt}{m}}\right) \quad \text{Linear Drag}$$
+
+$$v(t) = v_{\text{t,quad}}\tanh\left(\frac{gt}{v_{\text{t,quad}}}\right) \quad \text{Quadratic Drag}$$
+
+where $v_{\text{t,lin}} = \frac{mg}{b}$ for linear drag and $v_{\text{t,quad}} = \sqrt{\frac{mg}{c}}$ for quadratic drag.
+
+---
+
+# Our Current Investigatory Process
+
+## The Model-to-Trajectory Pipeline
+
+1. Model the forces acting on the system
+2. Write the equations of motion using Newton's 2nd Law
+3. Solve the equations of motion to find trajectories
+
+This is incomplete. We will need to learn how stability, critical points, and phase space can help us understand the behavior of these systems.
+
+We have also only done step 3 analytically. We will need to learn how to use computing to investigate these systems.
+
+---
+
 
 # Clicker Question 6-3
 
