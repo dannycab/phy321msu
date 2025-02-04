@@ -193,6 +193,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week3/03_notes.html">Week 3 - Notes: Making Classical Models</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week4/04_start.html">Week 4 - Why does fluid drag complicate things?</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week4/04_notes.html">Week 4 - Notes: Equations of Motion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week5/05_notes.html">Week 5 - Notes: Work-Energy Theorem</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Assignments</span></p>
 <ul class="current nav bd-sidenav">
@@ -577,17 +578,7 @@ which listed number in the array iteration we are getting back.</p>
 <p>Then try running this cell. Notice how it gives an error since we did not implement a third dimension into our arrays</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">p</span><span class="p">[:,</span><span class="mi">2</span><span class="p">])</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">IndexError</span><span class="g g-Whitespace">                                </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">7</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
-<span class="ne">----&gt; </span><span class="mi">1</span> <span class="nb">print</span><span class="p">(</span><span class="n">p</span><span class="p">[:,</span><span class="mi">2</span><span class="p">])</span>
-
-<span class="ne">IndexError</span>: index 2 is out of bounds for axis 1 with size 2
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#print(p[:,2])</span>
 </pre></div>
 </div>
 </div>
@@ -618,6 +609,11 @@ That is we have <span class="math notranslate nohighlight">\(p[0] = [2,1], p[1] 
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Success!&quot;</span><span class="p">)</span>
 <span class="k">else</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;There is an error in your code&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Success!
 </pre></div>
 </div>
 </div>
@@ -665,6 +661,12 @@ converts degrees to radians.</p>
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;mpl_toolkits.mplot3d.art3d.Path3DCollection at 0xffff743e0500&gt;
+</pre></div>
+</div>
+<img alt="../_images/f03236440e541edea03b7892cd487c1301a729eb7c328c553a7a19e372f478c0.png" src="../_images/f03236440e541edea03b7892cd487c1301a729eb7c328c553a7a19e372f478c0.png" />
+</div>
 </div>
 <ul class="simple">
 <li><p>6a (8pt) How would you express <span class="math notranslate nohighlight">\(x(t)\)</span>, <span class="math notranslate nohighlight">\(y(t)\)</span>, <span class="math notranslate nohighlight">\(z(t)\)</span> for this problem as a single vector, <span class="math notranslate nohighlight">\(\boldsymbol{r}(t)\)</span>?</p></li>
@@ -673,11 +675,11 @@ converts degrees to radians.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## Run this code to plot using our r array </span>
-<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">axes</span><span class="p">(</span><span class="n">projection</span><span class="o">=</span><span class="s1">&#39;3d&#39;</span><span class="p">)</span>
-<span class="n">fig</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
-<span class="n">fig</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;y&#39;</span><span class="p">)</span>
-<span class="n">fig</span><span class="o">.</span><span class="n">set_zlabel</span><span class="p">(</span><span class="s1">&#39;z&#39;</span><span class="p">)</span>
-<span class="n">fig</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">r</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="n">r</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span><span class="n">r</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+<span class="c1"># fig = plt.axes(projection=&#39;3d&#39;)</span>
+<span class="c1"># fig.set_xlabel(&#39;x&#39;)</span>
+<span class="c1"># fig.set_ylabel(&#39;y&#39;)</span>
+<span class="c1"># fig.set_zlabel(&#39;z&#39;)</span>
+<span class="c1"># fig.scatter(r[0],r[1],r[2])</span>
 </pre></div>
 </div>
 </div>
@@ -703,16 +705,16 @@ converts degrees to radians.</p>
         },
         codeMirrorConfig: {
             theme: "abcdef",
-            mode: "jbook"
+            mode: "python"
         },
         kernelOptions: {
-            name: "jbook",
+            name: "python3",
             path: "./homeworks"
         },
         predefinedOutput: true
     }
     </script>
-    <script>kernelName = 'jbook'</script>
+    <script>kernelName = 'python3'</script>
 
                 </article>
               
