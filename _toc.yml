@@ -25,7 +25,7 @@ parts:
       - file: lecture-notes/week3/03_notes
       - file: lecture-notes/week4/04_start
       - file: lecture-notes/week4/04_notes
-      #- file: lecture-notes/week5/05_start
+      - file: lecture-notes/week5/05_start
       - file: lecture-notes/week5/05_notes
   #- caption: Introductory Material
     #numbered: false
