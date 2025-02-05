@@ -12,11 +12,8 @@ url: https://dannycaballero.info/phy321msu/slides/day-10-integrating-eoms-numeri
 
 # Day 10 - Integrating EOMs Numerically
 
-![bg right width:600px](../images/notes/week4/paramecium-swimming.png)
+![bg right width:600px](../images/notes/week4/numerical_integration.png)
 
-Somersault of Paramecium in extremely confined environments ->
-
-source: <https://www.nature.com/articles/srep13148>
 
 ---
 
@@ -32,9 +29,6 @@ source: <https://www.nature.com/articles/srep13148>
 
 ## Seminars this week
 
-**CMP Seminar**, Monday Feb 3rd at 4:10pm in 1400 BPS
-* Xiaoming Mao, University of Michigan, *Topological mechanics in Maxwell lattices and continuum*
-
 **Astronomy Seminar**, Wednesday Feb 5th at 1:30pm in 1400 BPS
 * 	Lia Corrales, Univ. of Michigan, *The cosmic journey of the elements, from dust to life*
 
@@ -47,7 +41,7 @@ source: <https://www.nature.com/articles/srep13148>
 
 # Goals for this week
 
-![bg right width:600px](../images/notes/week4/paramecium-swimming.png)
+![bg right width:600px](../images/notes/week4/numerical_integration.png)
 
 * Establish a model for drag forces
 * Develop an understanding of the process for modeling forces
@@ -56,100 +50,19 @@ source: <https://www.nature.com/articles/srep13148>
 
 ---
 
-# Reminders
+# Model-to-EOM Pipeline for Classical Mechanics
 
-## Force Models
+1. ✅ Develop conceptual description of the system; make justifiable assumptions
+2. ✅ Using a framework of physics (i.e., Newton's Laws, Lagrangian Dynamics), develop a mathematical model of the system
+3. ✅ Produce the equations of motion (EOM) by following the framework (i.e., ordinary differential equations)
+4. 😵 **Solve for trajectories of the system** (e.g., $x(t)$, $v(t)$, $v(x)$)
 
-We have been modeling the drag force using a functional dependence on velocity.
+## Most EOMs are nonlinear
 
-$$\vec{F}_{\text{drag}} = -f(v)\hat{v}$$
-
-where $f(v)$ is a function of velocity.
-
-We established (in 1D) there are two common forms of drag force:
-
-$$f(v) = bv \quad \text{Linear Drag}$$
-
-$$f(v) = cv^2 \quad \text{Quadratic Drag}$$
-
----
-
-# Reminders
-
-## Equations of Motion
-
-The next step is to use Newton's 2nd Law to write the equations of motion for the system. We found those equation of motion to be:
-
-$$m\dot{v} = -f(v)$$
-
-where $f(v)$ is the drag force. So for each form of drag we have:
-
-$$\dot{v} = g-\frac{b}{m}v \quad \text{Linear Drag}$$
-
-$$\dot{v} = g-\frac{c}{m}v^2 \quad \text{Quadratic Drag}$$
-
----
-
-# Reminders
-
-## Trajectories
-
-We can integrate these equations of motion to find the velocity as a function of time. We found:
-
-$$v(t) = v_{\text{t,lin}}\left(1-e^{-\frac{bt}{m}}\right) \quad \text{Linear Drag}$$
-
-$$v(t) = v_{\text{t,quad}}\tanh\left(\frac{gt}{v_{\text{t,quad}}}\right) \quad \text{Quadratic Drag}$$
-
-where $v_{\text{t,lin}} = \frac{mg}{b}$ for linear drag and $v_{\text{t,quad}} = \sqrt{\frac{mg}{c}}$ for quadratic drag.
-
----
-
-# Our Current Investigatory Process
-
-## The Model-to-Trajectory Pipeline
-
-1. Model the forces acting on the system
-2. Write the equations of motion using Newton's 2nd Law
-3. Solve the equations of motion to find trajectories
-
-This is incomplete. We will need to learn how stability, critical points, and phase space can help us understand the behavior of these systems.
-
-We have also only done step 3 analytically. We will need to learn how to use computing to investigate these systems.
-
+## We need approximate methods to produce trajectories
 ---
 
 
-# Clicker Question 6-3
-
-For the system of **Linear Drag in 1D**, we found a solution for the velocity as a function of time, with $v = 0$ at $t = 0$.
-$$v(t) = v_{term}\left(1-e^{-\dfrac{bt}{m}}\right)$$
-
-where $v_{term} = \sqrt{\frac{mg}{b}}$. 
-
----
-
-![bg right w:100%](../images/notes/week3/cq6-3.png)
-
-
-# CQ 6-3
-
-**Which sketch could be correct for the velocity of the ball?**
-
----
-
-# Clicker Question 6-4
-
-For the system of **Quadratic Drag in 1D**, we found a solution for the velocity as a function of time, with $v = 0$ at $t = 0$.
-
-$$v(t) = v_{term}\tanh(gt/v_{term})$$
-
-where $v_{term} = (mg/c)^{1/2}$. Do the units make sense? What are the units of $\left[gt/v_{term}\right]$? 
-1. Yes, the units for $\left[gt/v_{term}\right]$ are $m/s$;both sides have the same units.
-2. No, the units for $\left[gt/v_{term}\right]$ are m/s; each side has different units.
-3. Yes, the units for $\left[gt/v_{term}\right]$ are unit-less; both sides have the same units.
-4. No, the units for $\left[gt/v_{term}\right]$ are unit-less; each side has the different units.
-
----
 
 # Clicker Question 6-5
 
@@ -164,3 +77,40 @@ where $v_{term} = \sqrt{mg/c}$. What happens when $t \rightarrow \infty$?
 3. The object travels at an increasing velocity.
 4. The object travels at a decreasing velocity.
 5. I'm not sure.
+
+---
+
+# Clicker Question 6-6
+
+For the gravitational interaction, I want to compute the force acting on body B, located at $\vec{r}_B$, by body A, located at $\vec{r}_A$.
+
+The gravitational force is given by:
+
+$$\vec{F} = -G\dfrac{m_1 m_2}{r^2}\hat{r}$$
+
+What is the appropriate form of $\vec{r}$?
+
+1. $\vec{r} = \vec{r}_A - \vec{r}_B$
+2. $\vec{r} = \vec{r}_B - \vec{r}_A$
+3. Either is ok
+
+--- 
+
+# Clicker Question 6-7
+
+We found that the equation of motion for the spring-mass system was:
+
+$$\ddot{x} = -\dfrac{k}{m}x = -\omega^2 x$$
+
+Your friends have proposed the following **general solutions**:
+
+$$1.\;x(t) = A\cos(\omega t) \qquad 2.\;x(t) = B\sin(\omega t) \qquad 3.\;x(t) = A\cos(\omega t) + B\sin(\omega t) $$
+$$ 4.\;x(t) = A\cos(\omega t + \phi) \qquad 5.\;x(t) = B\sin(\omega t + \phi) \qquad 6.\;x(t) = A\cos(\omega t + \phi) + B\sin(\omega t + \phi) $$
+
+How many of them are correct? 
+(1) Only one (2) Two (3) Three
+(4) Four (5) All of them
+
+
+
+
