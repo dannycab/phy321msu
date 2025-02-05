@@ -2,6 +2,19 @@
 
 Slides for PHY 321 appear in reverse chronological order, with the most recent slides at the top. The formats are PDF, HTML, and Markdown. The HTML slides are hosted on my website, and the Markdown slides are the source code for the HTML slides, built with [Marp](https://marp.app/).
 
+## Day 10 - Integrating EOMs numerically - 05 Feb 2025
+
+### Download PDF
+
+[![Day 10](../slides/day-10-integrating-eoms-numerically.png)](../slides/day-10-integrating-eoms-numerically.pdf)
+
+### HTML Versions
+
+| Format | Link |
+|--|--|
+| HTML (Inline) | [day-10-integrating-eoms-numerically.md](../slides/day-10-integrating-eoms-numerically.md) |
+| HTML (Slides) | [day-10-integrating-eoms-numerically.html](../slides/day-10-integrating-eoms-numerically.html) |
+
 ## Day 09 - Modeling Drag - 03 Feb 2025
 
 ### Download PDF

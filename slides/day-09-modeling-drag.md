@@ -150,18 +150,4 @@ where $v_{term} = (mg/c)^{1/2}$. Do the units make sense? What are the units of 
 3. Yes, the units for $\left[gt/v_{term}\right]$ are unit-less; both sides have the same units.
 4. No, the units for $\left[gt/v_{term}\right]$ are unit-less; each side has the different units.
 
----
 
-# Clicker Question 6-5
-
-For the system of **Quadratic Drag in 1D**, we found a solution for the velocity as a function of time, with $v = 0$ at $t = 0$.
-
-$$v(t) = v_{term}\tanh(gt/v_{term})$$ 
-
-where $v_{term} = \sqrt{mg/c}$. What happens when $t \rightarrow \infty$?
-
-1. The object stops moving.
-2. The object travels at a constant velocity.
-3. The object travels at an increasing velocity.
-4. The object travels at a decreasing velocity.
-5. I'm not sure.
