@@ -7312,7 +7312,6 @@ a.anchor-link {
                     processEnvironments: true
                 },
                 displayAlign: 'center',
-                messageStyle: 'none',
                 CommonHTML: {
                     linebreaks: {
                     automatic: true
@@ -7555,9 +7554,9 @@ varies with time, causing an acceleration of the electron that varies in time</p
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>$$
+$$
 \boldsymbol{a}(t)=\left(−20 \mathrm{m/s}^2 −10\mathrm{m/s}^3t\right) \boldsymbol{e}_y
-$$</p>
+$$
 </div>
 </div>
 </div>
@@ -7660,8 +7659,7 @@ or in degrees: $\theta = -0.23^\circ$
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h2 id="Exercise-2-(10-pt),-Drag-force">Exercise 2 (10 pt), Drag force<a class="anchor-link" href="#Exercise-2-(10-pt),-Drag-force">¶</a></h2><p>We can observe that the models for linear and quadratic drag forces are given by:</p>
-<p>$$f_{lin} = 3\pi \eta D v \qquad f_{quad} = \kappa \rho A v^2$$</p>
-<p>where $D$ is the "length scale" of the object (e.g., the diameter of the sphere), $\eta$ is the viscosity of the fluid, $\rho$ is the density of the fluid, $A$ is the cross-sectional area of the object, and $\kappa$ is a constant of order unity (larger for flat and blunt bodies; smaller for streamlined bodies).</p>
+$$f_{lin} = 3\pi \eta D v \qquad f_{quad} = \kappa \rho A v^2$$<p>where $D$ is the "length scale" of the object (e.g., the diameter of the sphere), $\eta$ is the viscosity of the fluid, $\rho$ is the density of the fluid, $A$ is the cross-sectional area of the object, and $\kappa$ is a constant of order unity (larger for flat and blunt bodies; smaller for streamlined bodies).</p>
 <ul>
 <li>2a (5pt) The Reynolds number is defined as $Re = \rho v D / \eta$. What is the physical meaning of this number? For a spherical object, show that the ratio of the quadratic drag force to the linear drag force is given by $f_{quad}/f_{lin} = Re/48$. Use this to explain the physical meaning of the Reynolds number. <strong>Note: you may assume that $\kappa = 0.25$ for a sphere.</strong></li>
 </ul>
@@ -7730,8 +7728,7 @@ Answers will vary.
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h2 id="Exercise-3-(10-pt),-Falling-object">Exercise 3 (10 pt), Falling object<a class="anchor-link" href="#Exercise-3-(10-pt),-Falling-object">¶</a></h2><p>We have shown that an object that is dropped from rest and experiences linear drag force will reach a terminal velocity and do so exponentially:</p>
-<p>$$v_y(t) = v_{ter}(1-e^{-t/\tau}).$$</p>
-<ul>
+$$v_y(t) = v_{ter}(1-e^{-t/\tau}).$$<ul>
 <li>3a (4pt) At first, the object will be moving slowly. Show that we can approximate this expression in that interval. We should find that $v_y = gt$ -- the standard result for free fall in vacuum. Demonstrate this.</li>
 </ul>
 <pre><code class="language-{admonition}">{admonition}
@@ -7816,15 +7813,11 @@ $$y(t) \approx \dfrac{g\tau t^2}{2\tau} = \dfrac{1}{2}gt^2$$
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h2 id="Exercise-4-(10-pt),-and-now-a-theoretical-exercise">Exercise 4 (10 pt), and now a theoretical exercise<a class="anchor-link" href="#Exercise-4-(10-pt),-and-now-a-theoretical-exercise">¶</a></h2><p>Finding and exploring equations of motion is the central enterprise of classical mechanics. You will encounter (and derive) many equations you have not seen before, and you will need to explain them. Consider a hypothetical one-dimensional system where a mass $m$ has a speed of $v_0$ and coasts along the x-axis. The surrounding medium produces a drag force that is modeled using:</p>
-<p>$$F(v) = -c v^{3/2}.$$</p>
-<p>When the force is a pure function of velocity, using the technique called separation of variables on Newton's 2nd Law, we can find the velocity as a function of time:</p>
+$$F(v) = -c v^{3/2}.$$<p>When the force is a pure function of velocity, using the technique called separation of variables on Newton's 2nd Law, we can find the velocity as a function of time:</p>
 <p>We can separate variables and write:</p>
-<p>$$F(v) = m a = m \dfrac{dv}{dt}$$</p>
-<p>Divide both sides by $F(v)$ and multiply both sides by $dt$:</p>
-<p>$$dt = \dfrac{m}{F(v)}dv$$</p>
-<p>And then, given starting (initial) conditions, we integrate both sides to find an expression for $t$ as a function of $v$.</p>
-<p>$$t = m \int_{v_0}^v \dfrac{dv'}{F(v')}$$</p>
-<ul>
+$$F(v) = m a = m \dfrac{dv}{dt}$$<p>Divide both sides by $F(v)$ and multiply both sides by $dt$:</p>
+$$dt = \dfrac{m}{F(v)}dv$$<p>And then, given starting (initial) conditions, we integrate both sides to find an expression for $t$ as a function of $v$.</p>
+$$t = m \int_{v_0}^v \dfrac{dv'}{F(v')}$$<ul>
 <li>4a (4pt) For the given force above, write the equation of motion in a form: $\dfrac{m dv}{F(v)} = dt$. Integrate both sides to find an expression for the velocity $v$ as a function of $t$ ($v(t)$ not $t(v)$).</li>
 </ul>
 <pre><code class="language-{admonition}">{admonition}
@@ -7967,7 +7960,7 @@ Due to the specific velocity dependence, we cannot find an analytical solution f
 </code></pre>
 <p>In order to find an analytical solution we need to assume that the object is falling in the $y$-direction (negative direction) only.</p>
 <p>The position of the ball as function of time is  $\boldsymbol{r}(t)$ where $t$ is time.
-The position is measured with respect to a coordinate system with origin at the floor.</p>
+ The position is measured with respect to a coordinate system with origin at the floor.</p>
 <p>We assume we have an initial position $\boldsymbol{r}(t_0)=h\boldsymbol{e}_y$ and an initial velocity $\boldsymbol{v}_0=v_{x,0}\boldsymbol{e}_x+v_{y,0}\boldsymbol{e}_y$.</p>
 <p>In this exercise we assume the system is influenced by the gravitational force</p>
 </div>
@@ -7980,9 +7973,9 @@ The position is measured with respect to a coordinate system with origin at the 
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>$$
+$$
 \boldsymbol{F}_{grav}=-mg\boldsymbol{e}_y
-$$</p>
+$$
 </div>
 </div>
 </div>
@@ -8004,9 +7997,9 @@ $$</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>$$
+$$
 \boldsymbol{F}_{drag} = -Dv\boldsymbol{v}.
-$$</p>
+$$
 </div>
 </div>
 </div>
@@ -8156,7 +8149,7 @@ $$t = \dfrac{v_{term}}{g} \ln\left(\cosh^{-1}\left(\dfrac{gh}{v_{term}^2}\right)
 </li>
 </ol>
 <p>Can you find a reasonable value for the drag coefficient $D$?
-You need also to define an initial time and
+You need also to define an initial time and 
 the step size $\Delta t$. We can define the step size $\Delta t$ as the difference between any
 two neighboring values in time (time steps) that we analyze within
 some range. It can be determined by dividing the interval we are

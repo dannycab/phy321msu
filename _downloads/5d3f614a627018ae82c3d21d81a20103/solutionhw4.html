@@ -7593,8 +7593,19 @@ $$\nabla \times \vec{F} = \left(\frac{\partial F_y}{\partial x} - \frac{\partial
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h3 id="Exercise-2-(10-pt),-Sliding-puck">Exercise 2 (10 pt), Sliding puck<a class="anchor-link" href="#Exercise-2-(10-pt),-Sliding-puck">¶</a></h3><p>A small puck rests on a fixed sphere of radius $R$. The puck is given a tiny nudge and it slides down the sphere. Using conservation of energy, we can determine the point at which the puck leaves the sphere.</p>
 <ul>
-<li>2a (3pt) Setup the problem with a sketch. Explain the setup and include any assumptions that you need to make in order to solve the problem analytically.</li>
-<li>2b (2pt) Use conservation of energy to find the speed of the puck as a function of it's height.</li>
+<li>2a (3pt) Setup the problem with a sketch. Explain the setup and include any assumptions that you need to make in order to solve the problem analytically. Identify the height as a function of the polar angle, $h(\theta)$. What is the maximum possible angle $\theta$ that the puck could reach before falling off? Why?</li>
+</ul>
+<p>:::{admonition} Solution
+:class: hint
+The figure below shows the setup at a given time. Here we have chosen the puck to be a point particle, such that it only translates and its kinetic energy is much simpler. We also assume the travel of the puck is completely azimuthal (i.e., it falls in a line the meets the equator perpendicularly).</p>
+<p><img alt="setup of problem with puck" src="../../images/assignments/sol_images/sphere_a.png"/></p>
+<p>From the figure you can see we choose the angle $\theta$ as the polar angle, and measure it from the vertical axis (i.e., the North Pole).</p>
+<p>This also gives us a useful definition for the height in terms of the polar angle. In the sketch below, we show how you can find this relationship using the ground as the location of $h=0$.</p>
+<p><img alt="setup of problem with puck" src="../../images/assignments/sol_images/sphere_b.png"/></p>
+<p>From this, we see that $h(\theta) = R + R\cos \theta$, this becomes useful later. From any of these figures, it should be clear once the puck reaches the equator, it will fall off. So any answer we should have must be such that:</p>
+$$\theta &lt; \frac{\pi}{2}$$<p>:::</p>
+<ul>
+<li>2b (2pt) Use conservation of energy to find the speed of the puck as a function of it's height. Your answer should be in terms of the polar angle, $\theta$.</li>
 </ul>
 <p>:::{admonition} Solution
 :class: hint</p>
@@ -7603,16 +7614,19 @@ $$\Delta T + \Delta U_{grav} = 0$$<p>The height of the puck is given by the loca
 $$h(\theta) = R+R\cos \theta = R(1+\cos\theta)$$<p>where $\theta$ is the angle between the vertical and the location of the puck on the sphere as shown in part a. We choose the ground as $U=0$, so that the potential energy of the puck is given by $U = mgh$. The potential energy of the puck is then given by:</p>
 $$U = mgR(1+\cos\theta)$$<p>:::</p>
 <ul>
-<li>2c (3pt) Use Newton's Second Law to find the normal force acting on the puck as a function of it's height.</li>
+<li>2c (3pt) Use Newton's Second Law to find the normal force acting on the puck as a function of it's height. Your answer should be in terms of the polar angle, $\theta$. What is the condition for the puck to leave the sphere?</li>
 </ul>
 <p>:::{admonition} Solution
 :class: hint</p>
 <p>At the location shown the puck is moving along a circular path, but speeding up as it does so. There are only two forces acting on the puck: the gravitational force $-mg\hat{j}$ and the normal force $\vec{N}$. The <strong>vector</strong> sum of these two forces must equal to the net force at that instant.</p>
 <p>We know that the normal force is perpendicular to the surface of the sphere. There is also a component of the gravitational force that is perpendicular to the surface of the sphere at the location of the puck.  See the sketch below.</p>
-<p><strong>ADD SKETCH</strong></p>
+<p><img alt="Force decomposition for puck problem" src="../../images/assignments/sol_images/sphere_c.png"/></p>
+<p><img alt="Force decomposition for puck problem" src="../../images/assignments/sol_images/sphere_d.png"/></p>
 <p>We can write the component of that net force that is perpendicular to the surface of the sphere as:</p>
 $$F_{net,\perp} = N - mg\cos\theta$$<p>Because the puck is moving in a circular arc, there is a component of net force that is directed towards the center of the sphere. We can write that component of the net force as:</p>
-$$F_{net,\perp} = -m\frac{v^2}{R},$$<p>where the minus sign stems from the fact that this component of the net force, <a href="https://en.wikipedia.org/wiki/Centripetal_force">the centripetal force</a>, points inward. And thus the normal force is given by:</p>
+$$F_{net,\perp} = -m\frac{v^2}{R},$$<p>where the minus sign stems from the fact that this component of the net force, <a href="https://en.wikipedia.org/wiki/Centripetal_force">the centripetal force</a>, points inward.</p>
+<p><img alt="Force decomposition for puck problem" src="../../images/assignments/sol_images/sphere_e.png"/></p>
+<p>And thus the normal force is given by:</p>
 $$N = mg\cos\theta - m\frac{v^2}{R}$$<p>where $v$ is the speed of the puck at that instant. We can get that speed from conservation of energy. This speed can be written in terms of the angle $\theta$. Starting from energy conservation, we have:</p>
 $$\Delta T + \Delta U_{grav} = 0,$$$$\frac{1}{2}mv^2 + mgR(1+\cos (0)) - mgR(1+\cos\theta) = 0$$$$\frac{1}{2}mv^2 = mgR(1-\cos\theta)$$<p>where we started at the top of the sphere and $\theta = 0$ at rest. We can solve for $v$ as a function of $\theta$.</p>
 $$v(\theta) = \sqrt{2gR(1-\cos\theta)}$$<p>At the moment the puck leaves the sphere, the normal force is zero. We can use this to find the condition for the puck to leave the sphere.</p>
@@ -7620,7 +7634,7 @@ $$N = 0 = mg\cos\theta - m\frac{v^2}{R}.$$<p>From this equation, we obtain a dif
 $$v^2 = gR\cos\theta.$$<p>Thus we set our two expressions for $v^2$ equal to each other and solve for $\theta$.</p>
 $$gR\cos\theta = 2gR(1-\cos\theta)$$$$\cos\theta = 2-2\cos\theta$$$$3\cos\theta = 2$$$$\cos\theta = \frac{2}{3}$$<p>:::</p>
 <ul>
-<li>2d (2pt) At what height does the puck leave the sphere? What is the condition for the puck to leave the sphere?</li>
+<li>2d (2pt) At what height does the puck leave the sphere?</li>
 </ul>
 <p>:::{admonition} Solution
 :class: hint

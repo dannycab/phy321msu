@@ -7582,29 +7582,29 @@ Answers can vary.
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Exercise-2-(15-pt),-Vector-algebra">Exercise 2 (15 pt), Vector algebra<a class="anchor-link" href="#Exercise-2-(15-pt),-Vector-algebra">¶</a></h2><p>As we have quickly realized, forces and motion in three dimensions are best described using vectors. Here we perform some elementary vector algebra that we wil need to have as tacit knowledge for the rest of the course. These operations are not typicay taken with specific numbers, but rather with vectors in general. When we need to, we use the notation $\boldsymbol{a}=(a_x,a_y,a_z)$ for vectors in three dimensions. To get us started the first two questions below include numerical values, but the third question expects you to use the general notation.</p>
+<h2 id="Exercise-2-(15-pt),-Vector-algebra">Exercise 2 (15 pt), Vector algebra<a class="anchor-link" href="#Exercise-2-(15-pt),-Vector-algebra">¶</a></h2><p>As we have quickly realized, forces and motion in three dimensions are best described using vectors. Here we perform some elementary vector algebra that we wil need to have as tacit knowledge for the rest of the course. These operations are not typically taken with specific numbers, but rather with vectors in general. When we need to, we use the notation $\mathbf{a}=(a_x,a_y,a_z)$ for vectors in three dimensions. To get us started the first two questions below include numerical values, but the third question expects you to use the general notation.</p>
 <ul>
-<li>2a (4pt) One of the many uses of the scalar product is to find the angle between two given vectors. Find the angle between the vectors $\boldsymbol{a}=(1,3,9)$ and $\boldsymbol{b}=(9,3,1)$ by evaluating their scalar product.</li>
+<li>2a (4pt) One of the many uses of the scalar product is to find the angle between two given vectors. Find the angle between the vectors $\mathbf{a}=(1,3,9)$ and $\mathbf{b}=(9,3,1)$ by evaluating their scalar product.</li>
 </ul>
 <p>:::{admonition} SOLUTION
 :class: hint</p>
-<p>One of the many uses of the scalar product is to find the angle between two given vectors. Find the angle between the vectors $\boldsymbol{a}=(1,3,9)$ and $\boldsymbol{b}=(9,3,1)$ by evaluating their scalar product. The vector product is given by:</p>
+<p>One of the many uses of the scalar product is to find the angle between two given vectors. Find the angle between the vectors $\mathbf{a}=(1,3,9)$ and $\mathbf{b}=(9,3,1)$ by evaluating their scalar product. The vector product is given by:</p>
 $$
-\boldsymbol{a}\cdot\boldsymbol{b} = \vert \boldsymbol{a} \vert \vert \boldsymbol{b} \vert \cos{\theta_{ab}}.
+\mathbf{a}\cdot\mathbf{b} = \vert \mathbf{a} \vert \vert \mathbf{b} \vert \cos{\theta_{ab}}.
 $$<p>We have</p>
 $$
-\boldsymbol{a}^T\boldsymbol{b} = 1(9) \boldsymbol{e}_1\cdot\boldsymbol{e}_1+ 3(3)\boldsymbol{e}_2\cdot\boldsymbol{e}_2+ 9(1)\boldsymbol{e}_3\cdot\boldsymbol{e}_3= 9+9+9=27,
-$$<p>since $\boldsymbol{e}_i\cdot\boldsymbol{e}_i=1$ for our unit vectors, with $i=1,2,3$. Note also that the unit vectors are orthogonal, that is $\boldsymbol{e}_i \cdot \boldsymbol{e}_j=0$ if $i\ne j$.
-The norm of $\vert \boldsymbol{a}\vert^2 = 1+9+81=91$. The norm of $\vert \boldsymbol{b}\vert^2 = 81+9+1=91$. This means we have:</p>
+\mathbf{a}^T\mathbf{b} = 1(9) \mathbf{e}_1\cdot\mathbf{e}_1+ 3(3)\mathbf{e}_2\cdot\mathbf{e}_2+ 9(1)\mathbf{e}_3\cdot\mathbf{e}_3= 9+9+9=27,
+$$<p>since $\mathbf{e}_i\cdot\mathbf{e}_i=1$ for our unit vectors, with $i=1,2,3$. Note also that the unit vectors are orthogonal, that is $\mathbf{e}_i \cdot \mathbf{e}_j=0$ if $i\ne j$.
+The norm of $\vert \mathbf{a}\vert^2 = 1+9+81=91$. The norm of $\vert \mathbf{b}\vert^2 = 81+9+1=91$. This means we have:</p>
 $$
-\boldsymbol{a}^T\boldsymbol{b} = 27 = 91 \cos{\theta_{ab}} = \vert \boldsymbol{a} \vert \vert \boldsymbol{b} \vert \cos{\theta_{ab}},
+\mathbf{a}^T\mathbf{b} = 27 = 91 \cos{\theta_{ab}} = \vert \mathbf{a} \vert \vert \mathbf{b} \vert \cos{\theta_{ab}},
 $$<p>leading to $\cos{\theta_{ab}}=\frac{27}{91}$ and $\theta_{ab}=1.2695$ rad, with $1$ rad being equal to $180/\pi$. Thus we have $\theta_{ab}=72.74$ degrees.</p>
 <p>A small digression on linear algebra useful for python programming of vectors.
 We define the vectors as one-dimensional arrays meaning that we write
-$\boldsymbol{a}^T=\begin{bmatrix} 1 &amp; 3 &amp; 9\end{bmatrix}$ and  $\boldsymbol{b}^T=\begin{bmatrix} 9 &amp; 3 &amp; 1\end{bmatrix}$, where we use $T$ to indicate the transpose of a vector.</p>
+$\mathbf{a}^T=\begin{bmatrix} 1 &amp; 3 &amp; 9\end{bmatrix}$ and  $\mathbf{b}^T=\begin{bmatrix} 9 &amp; 3 &amp; 1\end{bmatrix}$, where we use $T$ to indicate the transpose of a vector.</p>
 <p>We would then write the dot product as:</p>
 $$
-\boldsymbol{a}^T\boldsymbol{b}=\begin{bmatrix} 1 &amp; 3 &amp; 9\end{bmatrix}\begin{bmatrix} 9 \\ 3 \\ 1\end{bmatrix}=27.
+\mathbf{a}^T\mathbf{b}=\begin{bmatrix} 1 &amp; 3 &amp; 9\end{bmatrix}\begin{bmatrix} 9 \\ 3 \\ 1\end{bmatrix}=27.
 $$<p>:::</p>
 </div>
 </div>
@@ -7642,48 +7642,44 @@ $$<p>:::</p>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <ul>
-<li>2b (5pt) For a cube with sides of length 1, one vertex at the origin, and sides along the $x$, $y$, and $z$ axes, the vector of the body diagonal from the origin can be written $\boldsymbol{a}=(1, 1, 1)$ and the vector of the face diagonal in the $xy$ plane from the origin is $\boldsymbol{b}=(1,1,0)$. Find first the lengths of the body diagonal and the face diagonal. Use then part (2a) to find the angle between the body diagonal and the face diagonal. <strong>Make sure to include a sketch of your cube, the relevant vectors, and the angle you find.</strong></li>
+<li>2b (5pt) For a cube with sides of length 1, one vertex at the origin, and sides along the $x$, $y$, and $z$ axes, the vector of the body diagonal from the origin can be written $\mathbf{a}=(1, 1, 1)$ and the vector of the face diagonal in the $xy$ plane from the origin is $\mathbf{b}=(1,1,0)$. Find first the lengths of the body diagonal and the face diagonal. Use then part (2a) to find the angle between the body diagonal and the face diagonal. <strong>Make sure to include a sketch of your cube, the relevant vectors, and the angle you find.</strong></li>
 </ul>
 <p>:::{admonition} SOLUTION
 :class: hint</p>
-<p>For a cube with sides of length 1, one vertex at the origin, and sides along the $x$, $y$, and $z$ axes, the vector of the body diagonal from the origin can be written $\boldsymbol{a}=(1, 1, 1)$ and the vector of the face diagonal in the $xy$ plane from the origin is $\boldsymbol{b}=(1,1,0)$. Find first the lengths of the body diagonal and the face diagonal. Use then part (2a) to find the angle between the body diagonal and the face diagonal.</p>
-<p>The length of the body diagonal $\vert\boldsymbol{b}\vert=\sqrt{3}$ and the length of the face diagonal is $\vert \boldsymbol{f}\vert = \sqrt{2}$. From this we find</p>
+<p>For a cube with sides of length 1, one vertex at the origin, and sides along the $x$, $y$, and $z$ axes, the vector of the body diagonal from the origin can be written $\mathbf{a}=(1, 1, 1)$ and the vector of the face diagonal in the $xy$ plane from the origin is $\mathbf{b}=(1,1,0)$. Find first the lengths of the body diagonal and the face diagonal. Use then part (2a) to find the angle between the body diagonal and the face diagonal.</p>
+<p>The length of the body diagonal $\vert\mathbf{b}\vert=\sqrt{3}$ and the length of the face diagonal is $\vert \mathbf{f}\vert = \sqrt{2}$. From this we find</p>
 $$
-\boldsymbol{b}^T\boldsymbol{f}=2=\sqrt{2}\sqrt{3}\cos{\theta_{bf}},
+\mathbf{b}^T\mathbf{f}=2=\sqrt{2}\sqrt{3}\cos{\theta_{bf}},
 $$<p>leading to $\cos{\theta_{bf}}=\sqrt{2}/\sqrt{3}$ and $\theta_{bf}=0.615$ rad or
 $\theta_{bf}=35.3$ degrees.
 :::</p>
 <ul>
-<li>2c (6pt) Consider two arbitrary vectors in three dimensions, $\boldsymbol{a}=(a_x, a_y, a_z)$ and $\boldsymbol{b}=(b_x, b_y, b_z)$. Prove that the cross product $\boldsymbol{a} \times \boldsymbol{b}$ results in a vector that is perpendicular to both $\boldsymbol{a}$ and $\boldsymbol{b}$. Use the properties of the dot product and the cross product to support your proof. Include a diagram illustrating the vectors and their cross product.</li>
+<li>2c (6pt) Consider two arbitrary vectors in three dimensions, $\mathbf{a}=(a_x, a_y, a_z)$ and $\mathbf{b}=(b_x, b_y, b_z)$. Prove that the cross product $\mathbf{a} \times \mathbf{b}$ results in a vector that is perpendicular to both $\mathbf{a}$ and $\mathbf{b}$. Use the properties of the dot product and the cross product to support your proof. Include a diagram illustrating the vectors and their cross product.</li>
 </ul>
 <p>:::{admonition} SOLUTION
 :class: hint</p>
-<p>The cross product of two vectors $\boldsymbol{a}$ and $\boldsymbol{b}$ is defined as:</p>
+<p>The cross product of two vectors $\mathbf{a}$ and $\mathbf{b}$ is defined as:</p>
 $$
-\boldsymbol{a} \times \boldsymbol{b} = \begin{vmatrix}
-\boldsymbol{i} &amp; \boldsymbol{j} &amp; \boldsymbol{k} \\
+\mathbf{a} \times \mathbf{b} = \begin{vmatrix}
+\mathbf{i} &amp; \mathbf{j} &amp; \mathbf{k} \\
 a_x &amp; a_y &amp; a_z \\
 b_x &amp; b_y &amp; b_z
 \end{vmatrix},
-$$<p>where $\boldsymbol{i}$, $\boldsymbol{j}$, and $\boldsymbol{k}$ are the unit vectors in the x, y, and z directions, respectively.</p>
+$$<p>where $\mathbf{i}$, $\mathbf{j}$, and $\mathbf{k}$ are the unit vectors in the x, y, and z directions, respectively.</p>
 <p>Using the determinant formula for the cross product, we have:</p>
 $$
-\boldsymbol{a} \times \boldsymbol{b} = (a_y b_z - a_z b_y)\boldsymbol{i} - (a_x b_z - a_z b_x)\boldsymbol{j} + (a_x b_y - a_y b_x)\boldsymbol{k}.
-$$<p>Let $\boldsymbol{c} = \boldsymbol{a} \times \boldsymbol{b}$, so $\boldsymbol{c} = (c_x, c_y, c_z)$, where:</p>
+\mathbf{a} \times \mathbf{b} = (a_y b_z - a_z b_y)\mathbf{i} - (a_x b_z - a_z b_x)\mathbf{j} + (a_x b_y - a_y b_x)\mathbf{k}.
+$$<p>Let $\mathbf{c} = \mathbf{a} \times \mathbf{b}$, so $\mathbf{c} = (c_x, c_y, c_z)$, where:</p>
+$$c_x = a_y b_z - a_z b_y$$$$c_y = a_z b_x - a_x b_z$$$$c_z = a_x b_y - a_y b_x.$$<p>To prove that $\mathbf{c}$ is perpendicular to $\mathbf{a}$ and $\mathbf{b}$, we need to show that their dot products are zero:</p>
 $$
-c_x = a_y b_z - a_z b_y, \\
-c_y = a_z b_x - a_x b_z, \\
-c_z = a_x b_y - a_y b_x.
-$$<p>To prove that $\boldsymbol{c}$ is perpendicular to $\boldsymbol{a}$ and $\boldsymbol{b}$, we need to show that their dot products are zero:</p>
+\mathbf{a} \cdot \mathbf{c} = a_x c_x + a_y c_y + a_z c_z.
+$$<p>Substitute the components of $\mathbf{c}$:</p>
 $$
-\boldsymbol{a} \cdot \boldsymbol{c} = a_x c_x + a_y c_y + a_z c_z.
-$$<p>Substitute the components of $\boldsymbol{c}$:</p>
-$$
-\boldsymbol{a} \cdot \boldsymbol{c} = a_x (a_y b_z - a_z b_y) + a_y (a_z b_x - a_x b_z) + a_z (a_x b_y - a_y b_x).
+\mathbf{a} \cdot \mathbf{c} = a_x (a_y b_z - a_z b_y) + a_y (a_z b_x - a_x b_z) + a_z (a_x b_y - a_y b_x).
 $$<p>Expanding and simplifying, we find that all terms cancel out:</p>
 $$
-\boldsymbol{a} \cdot \boldsymbol{c} = a_x a_y b_z - a_x a_z b_y + a_y a_z b_x - a_y a_x b_z + a_z a_x b_y - a_z a_y b_x = 0.
-$$<p>The proof is identical for $\boldsymbol{b} \cdot \boldsymbol{c}$.
+\mathbf{a} \cdot \mathbf{c} = a_x a_y b_z - a_x a_z b_y + a_y a_z b_x - a_y a_x b_z + a_z a_x b_y - a_z a_y b_x = 0.
+$$<p>The proof is identical for $\mathbf{b} \cdot \mathbf{c}$.
 :::</p>
 </div>
 </div>
@@ -7709,16 +7705,11 @@ $$<p>The proof is identical for $\boldsymbol{b} \cdot \boldsymbol{c}$.
 <ul>
 <li>3a (5pt) Show (using the fact that multiplication of reals is distributive)</li>
 </ul>
-<p>that $\boldsymbol{a}(\boldsymbol{b}+\boldsymbol{c})=\boldsymbol{a}\boldsymbol{b}+\boldsymbol{a}\boldsymbol{c}$.</p>
+<p>that $\mathbf{a}(\mathbf{b}+\mathbf{c})=\mathbf{a}\mathbf{b}+\mathbf{a}\mathbf{c}$.</p>
 <p>:::{admonition} SOLUTION
 :class: hint</p>
 <p>Writing out the equations and keeping in mind that the norm of unit vectors is one, we have</p>
-$$
-\boldsymbol{a}\cdot(\boldsymbol{b}+\boldsymbol{c})= a_1(b_1+c_1)+a_2(b_2+c_2)+a_3(b_3+c_3)\\
-= (a_1b_1+a_1c_1)+(a_2b_2+a_2c_2)+(a_3b_3+a_3c_3)\\
-= (a_1b_1+a_2b_2+a_3b_3)+(a_1c_1+a_2c_2+a_3c_3)\\
-= \boldsymbol{a}\cdot\boldsymbol{b}+\boldsymbol{a}\cdot\boldsymbol{c}.
-$$<p>:::</p>
+$$\mathbf{a}\cdot(\mathbf{b}+\mathbf{c})= a_1(b_1+c_1)+a_2(b_2+c_2)+a_3(b_3+c_3)$$$$\mathbf{a}\cdot(\mathbf{b}+\mathbf{c})= (a_1b_1+a_1c_1)+(a_2b_2+a_2c_2)+(a_3b_3+a_3c_3)$$$$\mathbf{a}\cdot(\mathbf{b}+\mathbf{c})= (a_1b_1+a_2b_2+a_3b_3)+(a_1c_1+a_2c_2+a_3c_3)$$$$\mathbf{a}\cdot(\mathbf{b}+\mathbf{c})= \mathbf{a}\cdot\mathbf{b}+\mathbf{a}\cdot\mathbf{c}.$$<p>:::</p>
 </div>
 </div>
 </div>
@@ -7730,17 +7721,15 @@ $$<p>:::</p>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <ul>
-<li>3b (5pt) Show that (using product rule for differentiating reals) $\frac{d}{dt}(\boldsymbol{a}\boldsymbol{b})=\boldsymbol{a}\frac{d\boldsymbol{b}}{dt}+\boldsymbol{b}\frac{d\boldsymbol{a}}{dt}$.</li>
+<li>3b (5pt) Show that (using product rule for differentiating reals) $\frac{d}{dt}(\mathbf{a}\mathbf{b})=\mathbf{a}\frac{d\mathbf{b}}{dt}+\mathbf{b}\frac{d\mathbf{a}}{dt}$.</li>
 </ul>
 <p>:::{admonition} SOLUTION
 :class: hint
-$$
-\frac{d}{dt}(\boldsymbol{a}\cdot\boldsymbol{b})= \frac{d}{dt}(a_1b_1+a_2b_2+a_3b_3)\\
-= \left(a_1\frac{db_1}{dt}+\frac{da_1}{dt}b_1\right)+\left(a_2\frac{db_2}{dt}+\frac{da_2}{dt}b_2\right)+\left(a_3\frac{db_3}{dt}+\frac{da_3}{dt}b_3\right)\\
-= \left(a_1\frac{db_1}{dt}+a_2\frac{db_2}{dt}+a_3\frac{db_3}{dt}\right)+\left(\frac{da_1}{dt}b_1+\frac{da_2}{dt}b_2+\frac{da_3}{dt}b_3\right)\\
-= \boldsymbol{a}\cdot\frac{d\boldsymbol{b}}{dt}+\frac{d\boldsymbol{a}}{dt}\cdot\boldsymbol{b}.
-$$
-:::</p>
+$$\frac{d}{dt}(\mathbf{a}\cdot\mathbf{b}) = \frac{d}{dt}(a_1 b_1 + a_2 b_2 + a_3 b_3)$$
+$$\frac{d}{dt}(\mathbf{a}\cdot\mathbf{b}) = \left(a_1\frac{db_1}{dt}+\frac{da_1}{dt}b_1\right)+\left(a_2\frac{db_2}{dt}+\frac{da_2}{dt}b_2\right)+\left(a_3\frac{db_3}{dt}+\frac{da_3}{dt}b_3\right)$$
+$$\frac{d}{dt}(\mathbf{a}\cdot\mathbf{b}) = \left(a_1\frac{db_1}{dt}+a_2\frac{db_2}{dt}+a_3\frac{db_3}{dt}\right)+\left(\frac{da_1}{dt}b_1+\frac{da_2}{dt}b_2+\frac{da_3}{dt}b_3\right)$$
+$$\frac{d}{dt}(\mathbf{a}\cdot\mathbf{b}) = \mathbf{a}\cdot\frac{d\mathbf{b}}{dt}+\frac{d\mathbf{a}}{dt}\cdot\mathbf{b}.$$</p>
+<p>:::</p>
 </div>
 </div>
 </div>
@@ -7765,50 +7754,50 @@ $$
 <ul>
 <li>4a (5pt) Show that the cross products are distributive</li>
 </ul>
-<p>$\boldsymbol{a}\times(\boldsymbol{b}+\boldsymbol{c})=\boldsymbol{a}\times\boldsymbol{b}+\boldsymbol{a}\times\boldsymbol{c}$.</p>
+<p>$\mathbf{a}\times(\mathbf{b}+\mathbf{c})=\mathbf{a}\times\mathbf{b}+\mathbf{a}\times\mathbf{c}$.</p>
 <p>:::{admonition} SOLUTION
 :class: hint</p>
-<p>To prove the distributive property of the cross product for vectors in three-dimensional space, we need to show that for any vectors $\boldsymbol{a}$, $\boldsymbol{b}$, and $\boldsymbol{c}$, the following holds:</p>
-$$ \boldsymbol{a}\times(\boldsymbol{b}+\boldsymbol{c})=\boldsymbol{a}\times\boldsymbol{b}+\boldsymbol{a}\times\boldsymbol{c}. $$<p>Let's denote $\boldsymbol{a} = (a_x, a_y, a_z)$, $\boldsymbol{b} = (b_x, b_y, b_z)$, and $\boldsymbol{c} = (c_x, c_y, c_z)$.</p>
-<p>The vector sum $\boldsymbol{b}+\boldsymbol{c}$ is given by:</p>
-$$ \boldsymbol{b}+\boldsymbol{c} = (b_x + c_x, b_y + c_y, b_z + c_z). $$<p>Now, we compute the cross product of $\boldsymbol{a}$ with this sum:</p>
+<p>To prove the distributive property of the cross product for vectors in three-dimensional space, we need to show that for any vectors $\mathbf{a}$, $\mathbf{b}$, and $\mathbf{c}$, the following holds:</p>
+$$ \mathbf{a}\times(\mathbf{b}+\mathbf{c})=\mathbf{a}\times\mathbf{b}+\mathbf{a}\times\mathbf{c}. $$<p>Let's denote $\mathbf{a} = (a_x, a_y, a_z)$, $\mathbf{b} = (b_x, b_y, b_z)$, and $\mathbf{c} = (c_x, c_y, c_z)$.</p>
+<p>The vector sum $\mathbf{b}+\mathbf{c}$ is given by:</p>
+$$ \mathbf{b}+\mathbf{c} = (b_x + c_x, b_y + c_y, b_z + c_z). $$<p>Now, we compute the cross product of $\mathbf{a}$ with this sum:</p>
 $$
-\boldsymbol{a}\times(\boldsymbol{b}+\boldsymbol{c}) = \begin{vmatrix}
-\boldsymbol{i} &amp; \boldsymbol{j} &amp; \boldsymbol{k} \\
+\mathbf{a}\times(\mathbf{b}+\mathbf{c}) = \begin{vmatrix}
+\mathbf{i} &amp; \mathbf{j} &amp; \mathbf{k} \\
 a_x &amp; a_y &amp; a_z \\
 b_x + c_x &amp; b_y + c_y &amp; b_z + c_z
 \end{vmatrix},
 $$<p>which yields:</p>
 $$
-\boldsymbol{a}\times(\boldsymbol{b}+\boldsymbol{c}) = (a_y(b_z + c_z) - a_z(b_y + c_y))\boldsymbol{i} - (a_x(b_z + c_z) - a_z(b_x + c_x))\boldsymbol{j} + (a_x(b_y + c_y) - a_y(b_x + c_x))\boldsymbol{k}.
+\mathbf{a}\times(\mathbf{b}+\mathbf{c}) = (a_y(b_z + c_z) - a_z(b_y + c_y))\mathbf{i} - (a_x(b_z + c_z) - a_z(b_x + c_x))\mathbf{j} + (a_x(b_y + c_y) - a_y(b_x + c_x))\mathbf{k}.
 $$<p>Expanding this, we get:</p>
 $$
-\boldsymbol{a}\times(\boldsymbol{b}+\boldsymbol{c}) = (a_y b_z + a_y c_z - a_z b_y - a_z c_y)\boldsymbol{i} - (a_x b_z + a_x c_z - a_z b_x - a_z c_x)\boldsymbol{j} + (a_x b_y + a_x c_y - a_y b_x - a_y c_x)\boldsymbol{k}.
-$$<p>Next, we compute the cross products $\boldsymbol{a}\times\boldsymbol{b}$ and $\boldsymbol{a}\times\boldsymbol{c}$ separately:</p>
+\mathbf{a}\times(\mathbf{b}+\mathbf{c}) = (a_y b_z + a_y c_z - a_z b_y - a_z c_y)\mathbf{i} - (a_x b_z + a_x c_z - a_z b_x - a_z c_x)\mathbf{j} + (a_x b_y + a_x c_y - a_y b_x - a_y c_x)\mathbf{k}.
+$$<p>Next, we compute the cross products $\mathbf{a}\times\mathbf{b}$ and $\mathbf{a}\times\mathbf{c}$ separately:</p>
 $$
-\boldsymbol{a}\times\boldsymbol{b} = \begin{vmatrix}
-\boldsymbol{i} &amp; \boldsymbol{j} &amp; \boldsymbol{k} \\
+\mathbf{a}\times\mathbf{b} = \begin{vmatrix}
+\mathbf{i} &amp; \mathbf{j} &amp; \mathbf{k} \\
 a_x &amp; a_y &amp; a_z \\
 b_x &amp; b_y &amp; b_z
 \end{vmatrix}
-= (a_y b_z - a_z b_y)\boldsymbol{i} - (a_x b_z - a_z b_x)\boldsymbol{j} + (a_x b_y - a_y b_x)\boldsymbol{k},
+= (a_y b_z - a_z b_y)\mathbf{i} - (a_x b_z - a_z b_x)\mathbf{j} + (a_x b_y - a_y b_x)\mathbf{k},
 $$<p>and</p>
 $$
-\boldsymbol{a}\times\boldsymbol{c} = \begin{vmatrix}
-\boldsymbol{i} &amp; \boldsymbol{j} &amp; \boldsymbol{k} \\
+\mathbf{a}\times\mathbf{c} = \begin{vmatrix}
+\mathbf{i} &amp; \mathbf{j} &amp; \mathbf{k} \\
 a_x &amp; a_y &amp; a_z \\
 c_x &amp; c_y &amp; c_z
 \end{vmatrix}
-= (a_y c_z - a_z c_y)\boldsymbol{i} - (a_x c_z - a_z c_x)\boldsymbol{j} + (a_x c_y - a_y c_x)\boldsymbol{k}.
+= (a_y c_z - a_z c_y)\mathbf{i} - (a_x c_z - a_z c_x)\mathbf{j} + (a_x c_y - a_y c_x)\mathbf{k}.
 $$<p>Now, we add the two cross products:</p>
 $$
-(\boldsymbol{a}\times\boldsymbol{b}) + (\boldsymbol{a}\times\boldsymbol{c}) = [(a_y b_z - a_z b_y) + (a_y c_z - a_z c_y)]\boldsymbol{i} - [(a_x b_z - a_z b_x) + (a_x c_z - a_z c_x)]\boldsymbol{j} + [(a_x b_y - a_y b_x) + (a_x c_y - a_y c_x)]\boldsymbol{k}.
+(\mathbf{a}\times\mathbf{b}) + (\mathbf{a}\times\mathbf{c}) = [(a_y b_z - a_z b_y) + (a_y c_z - a_z c_y)]\mathbf{i} - [(a_x b_z - a_z b_x) + (a_x c_z - a_z c_x)]\mathbf{j} + [(a_x b_y - a_y b_x) + (a_x c_y - a_y c_x)]\mathbf{k}.
 $$<p>Simplifying, we get:</p>
 $$
-(\boldsymbol{a}\times\boldsymbol{b}) + (\boldsymbol{a}\times\boldsymbol{c}) = (a_y b_z + a_y c_z - a_z b_y - a_z c_y)\boldsymbol{i} - (a_x b_z + a_x c_z - a_z b_x - a_z c_x)\boldsymbol{j} + (a_x b_y + a_x c_y - a_y b_x - a_y c_x)\boldsymbol{k}.
-$$<p>Comparing the expanded form of $\boldsymbol{a}\times(\boldsymbol{b}+\boldsymbol{c})$ with the sum $(\boldsymbol{a}\times\boldsymbol{b}) + (\boldsymbol{a}\times\boldsymbol{c})$, we can see that they are identical:</p>
+(\mathbf{a}\times\mathbf{b}) + (\mathbf{a}\times\mathbf{c}) = (a_y b_z + a_y c_z - a_z b_y - a_z c_y)\mathbf{i} - (a_x b_z + a_x c_z - a_z b_x - a_z c_x)\mathbf{j} + (a_x b_y + a_x c_y - a_y b_x - a_y c_x)\mathbf{k}.
+$$<p>Comparing the expanded form of $\mathbf{a}\times(\mathbf{b}+\mathbf{c})$ with the sum $(\mathbf{a}\times\mathbf{b}) + (\mathbf{a}\times\mathbf{c})$, we can see that they are identical:</p>
 $$
-\boldsymbol{a}\times(\boldsymbol{b}+\boldsymbol{c}) = (\boldsymbol{a}\times\boldsymbol{b}) + (\boldsymbol{a}\times\boldsymbol{c}).
+\mathbf{a}\times(\mathbf{b}+\mathbf{c}) = (\mathbf{a}\times\mathbf{b}) + (\mathbf{a}\times\mathbf{c}).
 $$<p>:::</p>
 </div>
 </div>
@@ -7821,19 +7810,19 @@ $$<p>:::</p>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <ul>
-<li>*4b (5pt) Show that $\frac{d}{dt}(\boldsymbol{a}\times\boldsymbol{b})=\boldsymbol{a}\times\frac{d\boldsymbol{b}}{dt}+\boldsymbol{b}\times\frac{d\boldsymbol{a}}{dt}$. Be careful with the order of factors.</li>
+<li>4b (5pt) Show that $\frac{d}{dt}(\mathbf{a}\times\mathbf{b})=\mathbf{a}\times\frac{d\mathbf{b}}{dt}+\mathbf{b}\times\frac{d\mathbf{a}}{dt}$. Be careful with the order of factors.</li>
 </ul>
 <p>:::{admonition} SOLUTION
 :class: hint</p>
-<p>To show that the time derivative of the cross product of two vectors $\boldsymbol{a}$ and $\boldsymbol{b}$ equals the cross product of the first vector and the time derivative of the second vector plus the time derivative of the first vector cross the second vector, we can use the properties of derivatives and the cross product.</p>
-<p>Given two time-dependent vectors $\boldsymbol{a}(t) = (a_x(t), a_y(t), a_z(t))$ and $\boldsymbol{b}(t) = (b_x(t), b_y(t), b_z(t))$, we want to prove that:</p>
-$$ \frac{d}{dt}(\boldsymbol{a}(t) \times \boldsymbol{b}(t)) = \boldsymbol{a}(t) \times \frac{d\boldsymbol{b}(t)}{dt} + \frac{d\boldsymbol{a}(t)}{dt} \times \boldsymbol{b}(t). $$<p>The cross product $\boldsymbol{a}(t) \times \boldsymbol{b}(t)$ is given by:</p>
-$$ \boldsymbol{a}(t) \times \boldsymbol{b}(t) = (a_y(t) b_z(t) - a_z(t) b_y(t), a_z(t) b_x(t) - a_x(t) b_z(t), a_x(t) b_y(t) - a_y(t) b_x(t)). $$<p>Now, take the time derivative of the cross product component-wise:</p>
-$$ \frac{d}{dt}(\boldsymbol{a}(t) \times \boldsymbol{b}(t)) = \left(\frac{d}{dt}(a_y(t) b_z(t) - a_z(t) b_y(t)), \frac{d}{dt}(a_z(t) b_x(t) - a_x(t) b_z(t)), \frac{d}{dt}(a_x(t) b_y(t) - a_y(t) b_x(t))\right). $$<p>Applying the product rule to each component, we get:</p>
-$$ \frac{d}{dt}(\boldsymbol{a}(t) \times \boldsymbol{b}(t)) = \left(a_y(t) \frac{db_z(t)}{dt} + \frac{da_y(t)}{dt} b_z(t) - a_z(t) \frac{db_y(t)}{dt} - \frac{da_z(t)}{dt} b_y(t), \right. $$$$ \left. a_z(t) \frac{db_x(t)}{dt} + \frac{da_z(t)}{dt} b_x(t) - a_x(t) \frac{db_z(t)}{dt} - \frac{da_x(t)}{dt} b_z(t), \right. $$$$ \left. a_x(t) \frac{db_y(t)}{dt} + \frac{da_x(t)}{dt} b_y(t) - a_y(t) \frac{db_x(t)}{dt} - \frac{da_y(t)}{dt} b_x(t) \right). $$<p>Now, we rearrange the terms to separate the contributions from $\boldsymbol{a}(t)$ and the derivatives of $\boldsymbol{b}(t)$, and vice versa:</p>
-$$ \frac{d}{dt}(\boldsymbol{a}(t) \times \boldsymbol{b}(t)) = \left(a_y(t) \frac{db_z(t)}{dt} - a_z(t) \frac{db_y(t)}{dt}, a_z(t) \frac{db_x(t)}{dt} - a_x(t) \frac{db_z(t)}{dt}, a_x(t) \frac{db_y(t)}{dt} - a_y(t) \frac{db_x(t)}{dt}\right) $$$$ + \left(\frac{da_y(t)}{dt} b_z(t) - \frac{da_z(t)}{dt} b_y(t), \frac{da_z(t)}{dt} b_x(t) - \frac{da_x(t)}{dt} b_z(t), \frac{da_x(t)}{dt} b_y(t) - \frac{da_y(t)}{dt} b_x(t)\right). $$<p>The first set of terms corresponds to $\boldsymbol{a}(t)$ crossed with the time derivative of $\boldsymbol{b}(t)$, and the second set of terms corresponds to the time derivative of $\boldsymbol{a}(t)$ crossed with $\boldsymbol{b}(t)$:</p>
-$$ \boldsymbol{a}(t) \times \frac{d\boldsymbol{b}(t)}{dt} = \left(a_y(t) \frac{db_z(t)}{dt} - a_z(t) \frac{db_y(t)}{dt}, a_z(t) \frac{db_x(t)}{dt} - a_x(t) \frac{db_z(t)}{dt}, a_x(t) \frac{db_y(t)}{dt} - a_y(t) \frac{db_x(t)}{dt}\right), $$$$ \frac{d\boldsymbol{a}(t)}{dt} \times \boldsymbol{b}(t) = \left(\frac{da_y(t)}{dt} b_z(t) - \frac{da_z(t)}{dt} b_y(t), \frac{da_z(t)}{dt} b_x(t) - \frac{da_x(t)}{dt} b_z(t), \frac{da_x(t)}{dt} b_y(t) - \frac{da_y(t)}{dt} b_x(t)\right). $$<p>Combining these two cross products, we obtain the original expression:</p>
-$$ \frac{d}{dt}(\boldsymbol{a}(t) \times \boldsymbol{b}(t)) = \boldsymbol{a}(t) \times \frac{d\boldsymbol{b}(t)}{dt} + \frac{d\boldsymbol{a}(t)}{dt} \times \boldsymbol{b}(t). $$<p>This proves the required relationship and demonstrates that the time derivative of a cross product can be distributed across the cross product operation while maintaining the order of factors, which is crucial because the cross product is not commutative.
+<p>To show that the time derivative of the cross product of two vectors $\mathbf{a}$ and $\mathbf{b}$ equals the cross product of the first vector and the time derivative of the second vector plus the time derivative of the first vector cross the second vector, we can use the properties of derivatives and the cross product.</p>
+<p>Given two time-dependent vectors $\mathbf{a}(t) = (a_x(t), a_y(t), a_z(t))$ and $\mathbf{b}(t) = (b_x(t), b_y(t), b_z(t))$, we want to prove that:</p>
+$$ \frac{d}{dt}(\mathbf{a}(t) \times \mathbf{b}(t)) = \mathbf{a}(t) \times \frac{d\mathbf{b}(t)}{dt} + \frac{d\mathbf{a}(t)}{dt} \times \mathbf{b}(t). $$<p>The cross product $\mathbf{a}(t) \times \mathbf{b}(t)$ is given by:</p>
+$$ \mathbf{a}(t) \times \mathbf{b}(t) = (a_y(t) b_z(t) - a_z(t) b_y(t), a_z(t) b_x(t) - a_x(t) b_z(t), a_x(t) b_y(t) - a_y(t) b_x(t)). $$<p>Now, take the time derivative of the cross product component-wise:</p>
+$$ \frac{d}{dt}(\mathbf{a}(t) \times \mathbf{b}(t)) = \left(\frac{d}{dt}(a_y(t) b_z(t) - a_z(t) b_y(t)), \frac{d}{dt}(a_z(t) b_x(t) - a_x(t) b_z(t)), \frac{d}{dt}(a_x(t) b_y(t) - a_y(t) b_x(t))\right). $$<p>Applying the product rule to each component, we get:</p>
+<h3 id="x-component">x-component<a class="anchor-link" href="#x-component">¶</a></h3>$$\frac{d}{dt}(\mathbf{a}(t) \times \mathbf{b}(t))_{x} = a_y(t) \frac{db_z(t)}{dt} + \frac{da_y(t)}{dt} b_z(t) - a_z(t) \frac{db_y(t)}{dt} - \frac{da_z(t)}{dt} b_y(t) $$<h3 id="y-component">y-component<a class="anchor-link" href="#y-component">¶</a></h3>$$\frac{d}{dt}(\mathbf{a}(t) \times \mathbf{b}(t))_{y} = a_z(t) \frac{db_x(t)}{dt} + \frac{da_z(t)}{dt} b_x(t) - a_x(t) \frac{db_z(t)}{dt} - \frac{da_x(t)}{dt} b_z(t)$$<h3 id="z-component">z-component<a class="anchor-link" href="#z-component">¶</a></h3>$$\frac{d}{dt}(\mathbf{a}(t) \times \mathbf{b}(t))_{z} = a_x(t) \frac{db_y(t)}{dt} + \frac{da_x(t)}{dt} b_y(t) - a_y(t) \frac{db_x(t)}{dt} - \frac{da_y(t)}{dt} b_x(t)$$<p>Now, we rearrange the terms to separate the contributions from $\mathbf{a}(t)$ and the derivatives of $\mathbf{b}(t)$, and vice versa:</p>
+<h3 id="x-component">x-component<a class="anchor-link" href="#x-component">¶</a></h3>$$\frac{d}{dt}(\mathbf{a}(t) \times \mathbf{b}(t))_{x} = \left(\frac{da_y(t)}{dt} b_z(t) - \frac{da_z(t)}{dt} b_y(t) \right) + \left(a_y(t) \frac{db_z(t)}{dt} - a_z(t) \frac{db_y(t)}{dt}\right)$$<h3 id="y-component">y-component<a class="anchor-link" href="#y-component">¶</a></h3>$$\frac{d}{dt}(\mathbf{a}(t) \times \mathbf{b}(t))_{y} = \left(\frac{da_z(t)}{dt} b_x(t) - \frac{da_x(t)}{dt} b_z(t)\right) + \left(a_z(t) \frac{db_x(t)}{dt} - a_x(t) \frac{db_z(t)}{dt}\right)$$<h3 id="z-component">z-component<a class="anchor-link" href="#z-component">¶</a></h3>$$\frac{d}{dt}(\mathbf{a}(t) \times \mathbf{b}(t))_{z} = \left(\frac{da_x(t)}{dt} b_y(t) - \frac{da_y(t)}{dt} b_x(t)\right) + \left(a_x(t) \frac{db_y(t)}{dt} - a_y(t) \frac{db_x(t)}{dt}\right)$$<p>The first set of terms corresponds to $\mathbf{a}(t)$ crossed with the time derivative of $\mathbf{b}(t)$, and the second set of terms corresponds to the time derivative of $\mathbf{a}(t)$ crossed with $\mathbf{b}(t)$:</p>
+$$ \mathbf{a}(t) \times \frac{d\mathbf{b}(t)}{dt} = \left(a_y(t) \frac{db_z(t)}{dt} - a_z(t) \frac{db_y(t)}{dt}, a_z(t) \frac{db_x(t)}{dt} - a_x(t) \frac{db_z(t)}{dt}, a_x(t) \frac{db_y(t)}{dt} - a_y(t) \frac{db_x(t)}{dt}\right), $$$$ \frac{d\mathbf{a}(t)}{dt} \times \mathbf{b}(t) = \left(\frac{da_y(t)}{dt} b_z(t) - \frac{da_z(t)}{dt} b_y(t), \frac{da_z(t)}{dt} b_x(t) - \frac{da_x(t)}{dt} b_z(t), \frac{da_x(t)}{dt} b_y(t) - \frac{da_y(t)}{dt} b_x(t)\right). $$<p>Combining these two cross products, we obtain the original expression:</p>
+$$ \frac{d}{dt}(\mathbf{a}(t) \times \mathbf{b}(t)) = \mathbf{a}(t) \times \frac{d\mathbf{b}(t)}{dt} + \frac{d\mathbf{a}(t)}{dt} \times \mathbf{b}(t). $$<p>This proves the required relationship and demonstrates that the time derivative of a cross product can be distributed across the cross product operation while maintaining the order of factors, which is crucial because the cross product is not commutative.
 :::</p>
 </div>
 </div>
@@ -7845,9 +7834,9 @@ $$ \frac{d}{dt}(\boldsymbol{a}(t) \times \boldsymbol{b}(t)) = \boldsymbol{a}(t) 
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Exercise-5-(10-pt),-Area-of-triangle-and-law-of-sines">Exercise 5 (10 pt), Area of triangle and law of sines<a class="anchor-link" href="#Exercise-5-(10-pt),-Area-of-triangle-and-law-of-sines">¶</a></h2><p>The three vectors $\boldsymbol{a}$, $\boldsymbol{b}$, and $\boldsymbol{c}$ are the three sides of a triangle <em>ABC</em>. The angles $\alpha$, $\beta$, and $\gamma$ are the angles opposite the sides $\boldsymbol{a}$, $\boldsymbol{b}$, and $\boldsymbol{c}$, respectively. as shown below.</p>
+<h2 id="Exercise-5-(10-pt),-Area-of-triangle-and-law-of-sines">Exercise 5 (10 pt), Area of triangle and law of sines<a class="anchor-link" href="#Exercise-5-(10-pt),-Area-of-triangle-and-law-of-sines">¶</a></h2><p>The three vectors $\mathbf{a}$, $\mathbf{b}$, and $\mathbf{c}$ are the three sides of a triangle <em>ABC</em>. The angles $\alpha$, $\beta$, and $\gamma$ are the angles opposite the sides $\mathbf{a}$, $\mathbf{b}$, and $\mathbf{c}$, respectively. as shown below.</p>
 <p><img alt="triangle" src="../../images/assignments/1.15-triangle.png"/></p>
-<p><em>(Figure: A triangle with sides $\boldsymbol{a}$, $\boldsymbol{b}$, and $\boldsymbol{c}$ and angles $\alpha$, $\beta$, and $\gamma$; reproduced from JRT.)</em></p>
+<p><em>(Figure: A triangle with sides $\mathbf{a}$, $\mathbf{b}$, and $\mathbf{c}$ and angles $\alpha$, $\beta$, and $\gamma$; reproduced from JRT.)</em></p>
 </div>
 </div>
 </div>
@@ -7859,18 +7848,18 @@ $$ \frac{d}{dt}(\boldsymbol{a}(t) \times \boldsymbol{b}(t)) = \boldsymbol{a}(t) 
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <ul>
-<li>5a (5pt) Show that the area of the triangle can be given by any of these three equivalent expressions: $A=\frac{1}{2}|\boldsymbol{a}\times\boldsymbol{b}|=\frac{1}{2}|\boldsymbol{b}\times\boldsymbol{c}|=\frac{1}{2}|\boldsymbol{c}\times\boldsymbol{a}|$.</li>
+<li>5a (5pt) Show that the area of the triangle can be given by any of these three equivalent expressions: $A=\frac{1}{2}|\mathbf{a}\times\mathbf{b}|=\frac{1}{2}|\mathbf{b}\times\mathbf{c}|=\frac{1}{2}|\mathbf{c}\times\mathbf{a}|$.</li>
 </ul>
 <p>:::{admonition} SOLUTION
 :class: hint</p>
 <p>If we place the vertex $A$ at the origin and side $b$ along the $x$-axis, then the magnitude
-of the cross product $\boldsymbol{b}\times \boldsymbol{c}$ gives,</p>
+of the cross product $\mathbf{b}\times \mathbf{c}$ gives,</p>
 $$
-\vert \boldsymbol{b}\times \boldsymbol{c}\vert = \vert b_xc_y-b_yc_x\vert =\vert b_xc_y-0\dots c_x\vert =b_xc_y,
+\vert \mathbf{b}\times \mathbf{c}\vert = \vert b_xc_y-b_yc_x\vert =\vert b_xc_y-0\dots c_x\vert =b_xc_y,
 $$<p>which is nothing but the magnitude of the base multiplied with the magnitude of the height.
 We recognize that $c_y$ is the height of the vertex $B$ above the $x$-axis. From this we get that the area is,</p>
 $$
-\mathrm{area}=\frac{1}{2}(\mathrm{base})\cdot(\mathrm{height})=\frac{1}{2}\vert \boldsymbol{b}\times \boldsymbol{c}\vert,
+\mathrm{area}=\frac{1}{2}(\mathrm{base})\cdot(\mathrm{height})=\frac{1}{2}\vert \mathbf{b}\times \mathbf{c}\vert,
 $$<p>which we were supposed to show.
 :::</p>
 </div>
@@ -7973,13 +7962,13 @@ V2:  [4 5 6]
 <p>Now lets do some basic mathematics with vectors.</p>
 <p>Compute and print the following, and double check with hand calculations:</p>
 <ul>
-<li><p>6a (2pt)  Calculate $\boldsymbol{V}_1-\boldsymbol{V}_2$.</p>
+<li><p>6a (2pt)  Calculate $\mathbf{V}_1-\mathbf{V}_2$.</p>
 </li>
-<li><p>6b (2pt)  Calculate $\boldsymbol{V}_2-\boldsymbol{V}_1$.</p>
+<li><p>6b (2pt)  Calculate $\mathbf{V}_2-\mathbf{V}_1$.</p>
 </li>
-<li><p>6c (2pt) Calculate the dot product $\boldsymbol{V}_1\boldsymbol{V}_2$.</p>
+<li><p>6c (2pt) Calculate the dot product $\mathbf{V}_1\mathbf{V}_2$.</p>
 </li>
-<li><p>6d (2pt) Calculate the cross product $\boldsymbol{V}_1\times\boldsymbol{V}_2$.</p>
+<li><p>6d (2pt) Calculate the cross product $\mathbf{V}_1\times\mathbf{V}_2$.</p>
 </li>
 </ul>
 <p>Here is some useful explanation on numpy array operations if you feel a bit confused by what is happening, see <a href="https://www.pluralsight.com/guides/overview-basic-numpy-operations">https://www.pluralsight.com/guides/overview-basic-numpy-operations</a></p>

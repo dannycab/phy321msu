@@ -476,8 +476,21 @@ doconce format html hw4.do.txt --no_mako -->
 <h2>Exercise 2 (10 pt), Sliding puck<a class="headerlink" href="#exercise-2-10-pt-sliding-puck" title="Link to this heading">#</a></h2>
 <p>A small puck rests on a fixed sphere of radius <span class="math notranslate nohighlight">\(R\)</span>. The puck is given a tiny nudge and it slides down the sphere. Using conservation of energy, we can determine the point at which the puck leaves the sphere.</p>
 <ul class="simple">
-<li><p>2a (3pt) Setup the problem with a sketch. Explain the setup and include any assumptions that you need to make in order to solve the problem analytically.</p></li>
-<li><p>2b (2pt) Use conservation of energy to find the speed of the puck as a function of it’s height.</p></li>
+<li><p>2a (3pt) Setup the problem with a sketch. Explain the setup and include any assumptions that you need to make in order to solve the problem analytically. Identify the height as a function of the polar angle, <span class="math notranslate nohighlight">\(h(\theta)\)</span>. What is the maximum possible angle <span class="math notranslate nohighlight">\(\theta\)</span> that the puck could reach before falling off? Why?</p></li>
+</ul>
+<div class="hint admonition">
+<p class="admonition-title">Solution</p>
+<p>The figure below shows the setup at a given time. Here we have chosen the puck to be a point particle, such that it only translates and its kinetic energy is much simpler. We also assume the travel of the puck is completely azimuthal (i.e., it falls in a line the meets the equator perpendicularly).</p>
+<p><img alt="setup of problem with puck" src="../../_images/sphere_a.png" /></p>
+<p>From the figure you can see we choose the angle <span class="math notranslate nohighlight">\(\theta\)</span> as the polar angle, and measure it from the vertical axis (i.e., the North Pole).</p>
+<p>This also gives us a useful definition for the height in terms of the polar angle. In the sketch below, we show how you can find this relationship using the ground as the location of <span class="math notranslate nohighlight">\(h=0\)</span>.</p>
+<p><img alt="setup of problem with puck" src="../../_images/sphere_b.png" /></p>
+<p>From this, we see that <span class="math notranslate nohighlight">\(h(\theta) = R + R\cos \theta\)</span>, this becomes useful later. From any of these figures, it should be clear once the puck reaches the equator, it will fall off. So any answer we should have must be such that:</p>
+<div class="math notranslate nohighlight">
+\[\theta &lt; \frac{\pi}{2}\]</div>
+</div>
+<ul class="simple">
+<li><p>2b (2pt) Use conservation of energy to find the speed of the puck as a function of it’s height. Your answer should be in terms of the polar angle, <span class="math notranslate nohighlight">\(\theta\)</span>.</p></li>
 </ul>
 <div class="hint admonition">
 <p class="admonition-title">Solution</p>
@@ -492,20 +505,23 @@ doconce format html hw4.do.txt --no_mako -->
 \[U = mgR(1+\cos\theta)\]</div>
 </div>
 <ul class="simple">
-<li><p>2c (3pt) Use Newton’s Second Law to find the normal force acting on the puck as a function of it’s height.</p></li>
+<li><p>2c (3pt) Use Newton’s Second Law to find the normal force acting on the puck as a function of it’s height. Your answer should be in terms of the polar angle, <span class="math notranslate nohighlight">\(\theta\)</span>. What is the condition for the puck to leave the sphere?</p></li>
 </ul>
 <div class="hint admonition">
 <p class="admonition-title">Solution</p>
 <p>At the location shown the puck is moving along a circular path, but speeding up as it does so. There are only two forces acting on the puck: the gravitational force <span class="math notranslate nohighlight">\(-mg\hat{j}\)</span> and the normal force <span class="math notranslate nohighlight">\(\vec{N}\)</span>. The <strong>vector</strong> sum of these two forces must equal to the net force at that instant.</p>
 <p>We know that the normal force is perpendicular to the surface of the sphere. There is also a component of the gravitational force that is perpendicular to the surface of the sphere at the location of the puck.  See the sketch below.</p>
-<p><strong>ADD SKETCH</strong></p>
+<p><img alt="Force decomposition for puck problem" src="../../_images/sphere_c.png" /></p>
+<p><img alt="Force decomposition for puck problem" src="../../_images/sphere_d.png" /></p>
 <p>We can write the component of that net force that is perpendicular to the surface of the sphere as:</p>
 <div class="math notranslate nohighlight">
 \[F_{net,\perp} = N - mg\cos\theta\]</div>
 <p>Because the puck is moving in a circular arc, there is a component of net force that is directed towards the center of the sphere. We can write that component of the net force as:</p>
 <div class="math notranslate nohighlight">
 \[F_{net,\perp} = -m\frac{v^2}{R},\]</div>
-<p>where the minus sign stems from the fact that this component of the net force, <a class="reference external" href="https://en.wikipedia.org/wiki/Centripetal_force">the centripetal force</a>, points inward. And thus the normal force is given by:</p>
+<p>where the minus sign stems from the fact that this component of the net force, <a class="reference external" href="https://en.wikipedia.org/wiki/Centripetal_force">the centripetal force</a>, points inward.</p>
+<p><img alt="Force decomposition for puck problem" src="../../_images/sphere_e.png" /></p>
+<p>And thus the normal force is given by:</p>
 <div class="math notranslate nohighlight">
 \[N = mg\cos\theta - m\frac{v^2}{R}\]</div>
 <p>where <span class="math notranslate nohighlight">\(v\)</span> is the speed of the puck at that instant. We can get that speed from conservation of energy. This speed can be written in terms of the angle <span class="math notranslate nohighlight">\(\theta\)</span>. Starting from energy conservation, we have:</p>
@@ -535,7 +551,7 @@ doconce format html hw4.do.txt --no_mako -->
 \[\cos\theta = \frac{2}{3}\]</div>
 </div>
 <ul class="simple">
-<li><p>2d (2pt) At what height does the puck leave the sphere? What is the condition for the puck to leave the sphere?</p></li>
+<li><p>2d (2pt) At what height does the puck leave the sphere?</p></li>
 </ul>
 <div class="hint admonition">
 <p class="admonition-title">Solution</p>
