@@ -7312,7 +7312,6 @@ a.anchor-link {
                     processEnvironments: true
                 },
                 displayAlign: 'center',
-                messageStyle: 'none',
                 CommonHTML: {
                     linebreaks: {
                     automatic: true
@@ -7777,8 +7776,7 @@ $$y(t) = v_0 \sin \theta t - \frac{1}{2} g \cos \phi t^2$$
 <ul>
 <li>5b (5 pt) Show that the ball lands a distance</li>
 </ul>
-<p>$$R=2v_0^2\dfrac{\sin\theta\cos\left(\theta + \phi\right)}{g \cos^2 \phi}$$</p>
-<p>from its launch point. <strong>This is measured up the ramp (i.e., along it).</strong></p>
+$$R=2v_0^2\dfrac{\sin\theta\cos\left(\theta + \phi\right)}{g \cos^2 \phi}$$<p>from its launch point. <strong>This is measured up the ramp (i.e., along it).</strong></p>
 <pre><code class="language-{admonition}">{admonition}
 :::class: hint
 
@@ -7811,8 +7809,7 @@ $$R(v_0,\theta,\phi)=x(t_{flight}) = \frac{2 v_0^2 \sin \theta}{g}\frac{\cos(\ph
 <ul>
 <li>5c (5 pt) Show that for given $v_0$ and $\phi$, the maximum range up the inclined plane is:</li>
 </ul>
-<p>$$R_{\text{max}}=\dfrac{v_0^2}{g(1+\sin\phi)}$$</p>
-<pre><code class="language-{admonition}">{admonition}
+$$R_{\text{max}}=\dfrac{v_0^2}{g(1+\sin\phi)}$$<pre><code class="language-{admonition}">{admonition}
 :class: hint
 
 To find the maximum range for a given $v_0$ and $\phi$ means we need to find the maximum of the function $R(v_0,\theta,\phi)$ holding $v_0$ and $\phi$ constant. We do that by taking the partial derivative with respect to $\theta$ and setting it equal to zero. This will help us find the angle $\theta$ that gives the maximum range, and then we can use that to compute the maximum range. We treat the range equation above like a function of 3 variables,
@@ -8011,7 +8008,7 @@ Cell <span class="ansi-green-fg">In[7], line 1</span>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p>In the cell below we want to manipulate the arrays.
-In this example we make each vector's $x$ component valued the same as their respective vector's position in the iteration and the $y$ value will be twice that value, except for  the first vector, which we have already set.
+In this example we make each vector's $x$ component valued the same as their respective vector's position in the iteration and the $y$ value will be twice that value, except for  the first vector, which we have already set. 
 That is we have $p[0] = [2,1], p[1] = [1,2], p[2] = [2,4], p[3] = [3,6], ...$</p>
 <p>Here we set up an array for $x$ and $y$ values.</p>
 </div>
@@ -8196,19 +8193,19 @@ def golfball(vi, theta):
     x = t*vi*np.cos(theta_rad)
     y = 0*t
     z = t*vi*np.sin(theta_rad)-9.81/2*t**2
-    
+
     r = [x,y,z]
     fig = plt.axes(projection='3d')
     fig.set_xlabel('x')
     fig.set_ylabel('y')
     fig.set_zlabel('z')
     fig.scatter(r[0],r[1],r[2])
-    
+
     print("Maximum x:", tf*vi*np.cos(theta_rad))
     print("Maximum y:", 0)
     print("Maximum z:", (tf/2.0)*vi*np.sin(theta_rad)-9.81/2*(tf/2.0)**2)
-    
-    
+
+
 print("6d:")
 golfball(90, 30)
 print("6e:")
