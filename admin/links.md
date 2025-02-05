@@ -2,6 +2,25 @@
 
 Materials will appear in reverse chronological order, with the most recent appearing at the top.
 
+Class Zoom: <https://msu.zoom.us/j/92295821308>
+
+## Class Week 5, February 10-14, 2025 (CW7)
+
+This week we begin to talk about conservation laws and dive into conservation of energy. We will discuss how energy is another useful tool for investigating physical systems and how to look at graphs of potential energy to gain insight into motion.
+
+You should review the discussion about [Conservation Laws](../lecture-notes/week5/05_start.ipynb) and the notes on [Energy Conservation](../lecture-notes/week5/05_notes.ipynb). You should also make sure to have read JRT Ch 4.1-4.4.
+
+## Assignments
+
+- [Homework 4](../homeworks/hw4.ipynb) (due February 14, 2025)
+
+### Resources
+
+- [Conservation Laws](../lecture-notes/week5/05_start.ipynb)
+- [Conservation of Energy](../lecture-notes/week5/05_notes.ipynb)
+- Textbook Readings: JRT 4.1-4.4
+
+
 ## Class Week 4, February 3-7, 2025 (CW6)
 
 Topics: Fluid Resistance, Drag Forces, and Equations of Motion

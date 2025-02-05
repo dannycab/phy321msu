@@ -4,7 +4,7 @@
 
 | Meetings           |                       |                    | Location                                                                     |
 | ------------------ | --------------------- | ------------------ | ---------------------------------------------------------------------------- |
-| Monday 12:40-13:30 | Wednesday 12:40-13:30 | Friday 12:40-13:30 | STEM 1202 and [Zoom](https://msu.zoom.us/j/93683330722) |
+| Monday 12:40-13:30 | Wednesday 12:40-13:30 | Friday 12:40-13:30 | STEM 1202 and [Zoom](https://msu.zoom.us/j/92295821308) |
 
 > **IMPORTANT**
 >
@@ -12,7 +12,7 @@
 >
 > The lecture portion of the course will be streamed and recorded via Zoom. *Only lecture will be recorded.*
 > 
-> You are encouraged to attend in person, but if you are unable to do so, you can join the lecture via this [Zoom Link](https://msu.zoom.us/j/93683330722).
+> You are encouraged to attend in person, but if you are unable to do so, you can join the lecture via this [Zoom Link](https://msu.zoom.us/j/92295821308).
 
 ## Professor
 

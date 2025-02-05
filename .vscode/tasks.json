@@ -1,0 +1,16 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Open Word Document",
+        "type": "shell",
+        "command": "open", // Use "open" on macOS or "xdg-open" on Linux
+        "args": ["${file}"],
+        "problemMatcher": [],
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        }
+      }
+    ]
+  }

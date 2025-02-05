@@ -2,6 +2,8 @@
 
 **Topics are subject to change based on course pace and student needs.**
 
+Zoom: <https://msu.zoom.us/j/92295821308>
+
 All assignments are turned in using Gradescope as a single PDF.
 
 ## Class Week 1
@@ -41,8 +43,10 @@ All assignments are turned in using Gradescope as a single PDF.
 | Week | Day    | Topic                                                     | Readings to prepare | Important events                                                |
 | ---- | ------ | --------------------------------------------------------- | ------------------- | --------------------------------------------------------------- |
 | CW7  | 10 Feb | Work Energy Theorem                                       | JRT 4.1-4.3         |        |
-|      | 12 Feb | Momentum Conservation, Newton's 3rd Law, Angular Momentum | JRT 3.1-3.4         |                                                                 |
+|      | 12 Feb | Conservative Forces and Potential | JRT 4.1-4.4, 4.6        |                                                                 |
 |      | 14 Feb | Problem session for homework                              |                     | **Homework 4 Due** |
+
+**UPDATED TO HERE**
 
 ## Class Week 6
 
