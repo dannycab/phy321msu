@@ -48,6 +48,8 @@ You should review the discussion about [Fluid Resistance](../lecture-notes/week4
 
 05 Feb 2025 ([Slides](../slides/day-10-integrating-eoms-numerically.pdf))![Day 10](../slides/day-10-integrating-eoms-numerically.png)
 
+07 Feb 2025 ([Slides](../slides/day-11-homework-session.pdf))![Day 10](../slides/day-11-homework-session.png)
+
 ## Class Week 3, January 27-31, 2025 (CW5)
 
 Topics: Newton's Laws and Modeling Systems
