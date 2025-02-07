@@ -44,9 +44,11 @@ You should review the discussion about [Fluid Resistance](../lecture-notes/week4
 
 ### Slides
 
-03 Feb 2025 ([Slides](../slides/day-09-modeling-drag.pdf))![Day 09](../slides/day-09-modeling-drag.png)
+03 Feb 2025 ([Slides](../slides/day-09-modeling-drag.pdf) | [Recording](https://mediaspace.msu.edu/media/1_pyvn2ffv))![Day 09](../slides/day-09-modeling-drag.png)
 
 05 Feb 2025 ([Slides](../slides/day-10-integrating-eoms-numerically.pdf))![Day 10](../slides/day-10-integrating-eoms-numerically.png)
+
+07 Feb 2025 ([Slides](../slides/day-11-homework-session.pdf))![Day 10](../slides/day-11-homework-session.png)
 
 ## Class Week 3, January 27-31, 2025 (CW5)
 
