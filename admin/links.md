@@ -4,6 +4,23 @@ Materials will appear in reverse chronological order, with the most recent appea
 
 Class Zoom: <https://msu.zoom.us/j/92295821308>
 
+## Class Week 6, February 17-21, 2025 (CW8)
+
+Topics: Equilibrium, Stability, Introduction to Momentum
+
+This week we will start to investigate the concept of equilibrium and stability, which are powerful tools to understand the behavior of systems. We will also introduce the concepts of linear and momentum and how they are conserved. We will revisit both concepts throughout the semester adding more detail.
+
+You should review the discussion about [Equilibrium and Stability](../lecture-notes/week6/06_start.ipynb) and the notes on [Stability and Energy](../lecture-notes/week6/06_notes.ipynb) and [Linear and Angular Momentum](../lecture-notes/week6/06_notes_2.ipynb). You should also make sure to have read JRT Ch 3.1, 3.3-3.4 and 4.6.
+
+## Assignments
+
+## Resources
+
+- [Equilibrium and Stability](../lecture-notes/week6/06_start.ipynb)
+- [Stability and Energy](../lecture-notes/week6/06_notes.ipynb)
+- [Linear and Angular Momentum](../lecture-notes/week6/06_notes_2.ipynb)
+- Textbook Readings: JRT 3.1, 3.3-3.4, 4.6
+
 ## Class Week 5, February 10-14, 2025 (CW7)
 
 Topics: Work, Energy, Conservative Forces
