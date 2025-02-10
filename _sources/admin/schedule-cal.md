@@ -44,16 +44,15 @@ All assignments are turned in using Gradescope as a single PDF.
 | ---- | ------ | --------------------------------------------------------- | ------------------- | --------------------------------------------------------------- |
 | CW7  | 10 Feb | Work Energy Theorem                                       | JRT 4.1-4.3         |        |
 |      | 12 Feb | Conservative Forces and Potential | JRT 4.1-4.4, 4.6        |                                                                 |
-|      | 14 Feb | Problem session for homework                              |                     | **Homework 4 Due** |
+|      | 14 Feb | Problem session for homework                              |                     |  |
 
-**UPDATED TO HERE**
 
 ## Class Week 6
 
 | Week | Day    | Topic                             | Readings to prepare           | Important events                                                |
 | ---- | ------ | --------------------------------- | ----------------------------- | --------------------------------------------------------------- |
-| CW8  | 17 Feb | Conservative Forces and Potential | JRT 4.1-4.4, 4.6; MLB 6.6-6.8 |  [Midterm Project 1 Assigned (Due 28 Feb)](../midterms/midterm1.ipynb)                                                               |
-|      | 19 Feb | Examples and Stability Analysis   |                               |                                                                 |
+| CW8  | 17 Feb | Examples and Stability Analysis | JRT 4.1-4.4, 4.6; MLB 6.6-6.8 |  **Homework 4 Due** & [Midterm Project 1 Assigned (Due 28 Feb)](../midterms/midterm1.ipynb)                                                               |
+|      | 19 Feb | Conservation of Momentum and Angular Momentum   |  JRT 3.1, 3.3-3.4                            |                                                                 |
 |      | 21 Feb |  Problem session for homework        |                               |   |
 
 ## Class Week 7
