@@ -12,7 +12,12 @@ url: https://dannycaballero.info/phy321msu/slides/day-13-conservative-forces.htm
 
 # Day 13 - Conservative Forces
 
+![Conservative Forces bg right 100%](../images/notes/week5/conservative-forces.png)
+
+$$\vec{F} = - \nabla U$$
+$$U = - \int \vec{F} \cdot d\vec{r}$$
 $$\nabla \times \vec{F} = 0$$
+
 
 ---
 
