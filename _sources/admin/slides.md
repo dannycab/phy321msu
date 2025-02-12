@@ -2,6 +2,19 @@
 
 Slides for PHY 321 appear in reverse chronological order, with the most recent slides at the top. The formats are PDF, HTML, and Markdown. The HTML slides are hosted on my website, and the Markdown slides are the source code for the HTML slides, built with [Marp](https://marp.app/).
 
+## Day 13 - Conservative Forces - 12 Feb 2025
+
+### Download PDF
+
+[![Day 13](../slides/day-13-conservative-forces.png)](../slides/day-13-conservative-forces.pdf)
+
+### HTML Versions
+
+| Format | Link |
+|--|--|
+| HTML (Inline) | [day-13-conservative-forces.md](../slides/day-13-conservative-forces.md) |
+| HTML (Slides) | [day-13-conservative-forces.html](../slides/day-13-conservative-forces.html) |
+
 ## Day 12 - Conservation of Energy - 10 Feb 2025
 
 ### Download PDF
