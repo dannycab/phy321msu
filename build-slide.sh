@@ -11,7 +11,7 @@ fi
 MARKDOWN_FILE=$1
 
 # Define the path to the directory containing the theme files
-THEME_PATH="../themes/"
+THEME_PATH="./themes/"
 
 # Define the name of the theme file to be used
 THEME="graph_paper.css"

@@ -26,6 +26,7 @@ $$\nabla \times \vec{F} = 0$$
 * HW 4 is due next Monday, Feb 17th NOT on Friday the 14th
 * There are no office hours on Feb 13th
 * Midterm 1 will be available on Monday as well.
+* DC Office Hours on Friday [in person] (10am-12pm and 3pm-4pm)
 
 ---
 
@@ -107,7 +108,7 @@ $$U_s = \dfrac{1}{2} k x^2$$
 
 # Clicker Question 13-1
 
-The gravitation force near the Earth's surface is given by $F = -mg$. What is the potential energy function for this force? Choose $+z$ to be up.
+The gravitation force near the Earth's surface is given by $\vec{F} = -mg\hat{z}$. What is the potential energy function for this force? Choose $+\hat{z}$ to be up.
 
 1. $U = -mgz$
 2. $U = mgz$
@@ -133,6 +134,64 @@ A model for a lattice chain acting on a electron is given by $F(x) = - F_0 \sin\
 
 I say "Stokes' Theorem" and you say...
 
+![Gravedigger bg right ](../images/notes/week5/gravedigger.png)
+
 1. HELL YEAH BROTHER
 2. I'm not sure what that is
 3. DEAR GOD WHY?!?!
+
+---
+
+# Clicker Question 13-4
+
+The curl of a vector field is given by $\nabla \times \vec{F}$. If the curl of a vector field is zero, what can we say about the vector field?
+
+1. It is a conservative force
+2. It is a non-conservative force
+3. It is a constant force
+4. It is a force that does no work
+
+--- 
+
+# Clicker Question 13-5
+
+Which of the following fields have no divergence?
+
+<div style="display: flex; align-items: center; gap: 20px; max-width: 800px; margin: 0 auto; white-space: nowrap; height: 400px;">
+  A. <img src="../images/notes/week5/cq_left_field.png" alt="A" width="400">
+  B. <img src="../images/notes/week5/cq_right_field.png" alt="B" width="400">
+</div>
+
+1. A
+2. B
+3. Both A and B
+4. Neither A nor B
+
+---
+
+# Clicker Question 13-5
+
+Which of the following fields have no curl?
+
+<div style="display: flex; align-items: center; gap: 20px; max-width: 800px; margin: 0 auto; white-space: nowrap; height: 400px;">
+  A. <img src="../images/notes/week5/cq_left_field.png" alt="A" width="400">
+  B. <img src="../images/notes/week5/cq_right_field.png" alt="B" width="400">
+</div>
+
+1. A
+2. B
+3. Both A and B
+4. Neither A nor B
+
+---
+
+# Clicker Question 13-6
+
+Consider a vector field with zero curl: $\nabla \times \vec{F} = 0$. Which of the following statements is true?
+
+1. The field is conservative
+2. $\int \nabla \times \vec{F} \cdot d\vec{A} = 0$
+3. $\oint \vec{F} \cdot d\vec{r} \neq 0$
+4. $\vec{F}$ is the gradient of some scalar function, e.g., $\vec{F} = - \nabla U$
+5. Some combination of the above
+
