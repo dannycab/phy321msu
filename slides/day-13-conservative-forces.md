@@ -103,5 +103,36 @@ $$K_f + U_{s,f} = K_i + U_{s,i}$$
 
 $$U_s = \dfrac{1}{2} k x^2$$
 
+---
 
+# Clicker Question 13-1
 
+The gravitation force near the Earth's surface is given by $F = -mg$. What is the potential energy function for this force? Choose $+z$ to be up.
+
+1. $U = -mgz$
+2. $U = mgz$
+3. $U = -mgz + U_0$
+4. $U = mgz + U_0$
+5. None of the above
+
+---
+
+# Clicker Question 13-2
+
+A model for a lattice chain acting on a electron is given by $F(x) = - F_0 \sin\left(\dfrac{2\pi x}{b}\right)$. What is the potential energy function for this force?
+
+1. $U = -F_0 \cos\left(\dfrac{2\pi x}{b}\right)$
+2. $U = F_0 \cos\left(\dfrac{2\pi x}{b}\right)$
+3. $U = -\dfrac{F_0 b}{2\pi} \cos\left(\dfrac{2\pi x}{b}\right)$
+4. $U = \dfrac{F_0 b}{2\pi} \cos\left(\dfrac{2\pi x}{b}\right)$
+5. None of the above
+
+---
+
+# Clicker Question 13-3
+
+I say "Stokes' Theorem" and you say...
+
+1. HELL YEAH BROTHER
+2. I'm not sure what that is
+3. DEAR GOD WHY?!?!
