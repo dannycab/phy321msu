@@ -1,5 +1,6 @@
 #!/bin/bash
 
+SLIDE_PATH="../slides/"
 THEME_PATH="../themes/"
 THEME="graph_paper.css"
 
