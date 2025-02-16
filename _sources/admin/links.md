@@ -14,6 +14,8 @@ You should review the discussion about [Equilibrium and Stability](../lecture-no
 
 ## Assignments
 
+- [Midterm 1](../midterms/midterm1.ipynb) (due February 28, 2025)
+
 ## Resources
 
 - [Equilibrium and Stability](../lecture-notes/week6/06_start.ipynb)
