@@ -10,6 +10,7 @@ web:
 update:
 	jupyter-book build ${BOOK_DIR}
 rebuild:
+	python ${BOOK_DIR}/update_kernels.py
 	jupyter-book build --all ${BOOK_DIR}
 viewhtml:
 	open ${BOOK_DIR}${BUILD_DIR}/index.html
