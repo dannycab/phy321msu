@@ -4,6 +4,24 @@ Materials will appear in reverse chronological order, with the most recent appea
 
 Class Zoom: <https://msu.zoom.us/j/92295821308>
 
+## Class Week 7, February 24-28, 2025 (CW9)
+
+Topics: Nonlinear Dynamics, Phase Portraits
+
+This week we will introduce how to investigate nonlinear systems with he tools we have developed. We will bring in a new tool, called the phase portrait, to help us visualize the behavior of these systems. We will also discuss the concept of chaos and how it arises in nonlinear systems.
+
+You should review the discussion about [Nonlinear Dynamics](../lecture-notes/week7/07_start.ipynb) and the notes on [Critical Points and Phase Portraits](../lecture-notes/week7/07_notes.ipynb). You should also make sure to have read [Strogatz](https://www.stevenstrogatz.com/books/nonlinear-dynamics-and-chaos-with-applications-to-physics-biology-chemistry-and-engineering) [2.0-2.3](../docs/textbook-chapters/strogatz_3rd_ch2.0-2.3.pdf); [5.0-5.2](../docs/textbook-chapters/strogatz_3rd_ch5.0-5.2.pdf).
+
+## Assignments
+
+- [Midterm 1](../midterms/midterm1.ipynb) (due February 28, 2025)
+
+## Resources
+
+- [Nonlinear Dynamics](../lecture-notes/week7/07_start.ipynb)
+- [Critical Points and Phase Portraits](../lecture-notes/week7/07_notes.ipynb)
+- Textbook Readings: [Strogatz 2.0-2.3](../docs/textbook-chapters/strogatz_3rd_ch2.0-2.3.pdf); [5.0-5.2](../docs/textbook-chapters/strogatz_3rd_ch5.0-5.2.pdf)
+
 ## Class Week 6, February 17-21, 2025 (CW8)
 
 Topics: Equilibrium, Stability, Introduction to Momentum
