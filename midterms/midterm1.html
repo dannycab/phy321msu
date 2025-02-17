@@ -55,7 +55,7 @@
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script src="../_static/design-tabs.js?v=36754332"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
@@ -222,6 +222,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../resources/generative-ai.html">Generative Artificial Intelligence</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../resources/gradescope-submissions.html">Submitting Assignments on Gradescope</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../resources/finding-research.html">Finding Research Opportunities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/integrators.html">Numerical Integrators</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Honors Projects</span></p>
 <ul class="nav bd-sidenav">
@@ -456,7 +457,7 @@ V(x)=\frac{V_0}{d^4}\left(x^4-2x^2d^2+d^4\right).
 <li><p>(5pts) Write down the potential and start to demonstrate that it meets the above criteria. <strong>Make sure it is conservative and that the force is nonlinear before proceeding.</strong></p></li>
 <li><p>(5pts) Sketch or plot the potential and find the equilibrium points. You need to show you can compute the equilibrium points and characterize their stability. For some choices of potential, you may need to use a numerical method to find the equilibrium points and conceptual arguments to determine their stability.</p></li>
 <li><p>(10pts) Pick a total energy that gives rise to oscillatory motion. Show this by sketching or plotting the energy diagram and describing the motion. Are there any other kinds of motion that can occur for other choices of total energy?</p></li>
-<li><p>(20pts) Write a numerical algorithm to find the position and velocity of the particle (it’s trajectories) for the choice of total energy where the motion is oscillatory. Here you must use two methods: (1) the standard forward Euler, and either (2) the Euler-Cromer or the <a class="reference external" href="https://en.wikipedia.org/wiki/Verlet_integration">Velocity Verlet</a> algorithms. You will need to pick the time step <span class="math notranslate nohighlight">\(\Delta t\)</span> and the total time <span class="math notranslate nohighlight">\(t_{\rm max}\)</span> for your simulation. Compare the results of the two algorithms. Which one is better? Justify your answer.</p></li>
+<li><p>(20pts) Write a numerical algorithm to find the position and velocity of the particle (it’s trajectories) for the choice of total energy where the motion is oscillatory. Here you must use two methods: (1) the standard forward Euler, and either (2) the Euler-Cromer or the <a class="reference external" href="https://en.wikipedia.org/wiki/Verlet_integration">Velocity Verlet</a> algorithms. You will need to pick the time step <span class="math notranslate nohighlight">\(\Delta t\)</span> and the total time <span class="math notranslate nohighlight">\(t_{\rm max}\)</span> for your simulation. Compare the results of the two algorithms. Which one is better? Justify your answer. <strong>You might find this <a class="reference internal" href="../resources/integrators.html"><span class="std std-doc">numerical integration resource</span></a> helpful.</strong></p></li>
 <li><p>(10pts) Use your program to plot the energy of the particle (T), the potential energy (V), and the total energy (E) as a function of time. Discuss the behavior of the energy between each choice of algorithm. Is energy conserved in your simulations?</p></li>
 </ol>
 </section>
