@@ -42,7 +42,40 @@ $V(\phi) = -5|\phi|^2 + |\phi|^4$
 
 # Seminars this week
 
+## MONDAY, February 17, 2025             
+
+* QuIC Seminar, 12:30 pm, 1400 BPS, Dr. Michael Hilke, *The history of quantum computing*
+* High Energy Physics Seminar, 12:30pm, BPS 1400 BPS, Joshua Isaacson, *Event Generation for Next-Gen HEP Experiments*
+* Condensed Matter Seminar 4:10 pm, 1400 BPS, Lisa Lapidus, *The Physics of Biomolecular Condensation*
+
 ---
+
+# Seminars this week
+
+## TUESDAY, February 18, 2025
+
+* Theory Seminar, 11:00am., FRIB 1200 lab, Ibrahim Abdurahman, *Investigating Fission Dynamics within Time-Dependent Density Functional Theory Extended to Superfluid Systems*
+
+---
+
+# Seminars this week
+
+## WEDNESDAY, February 19, 2025    
+
+* Astronomy Seminar, 1:30 pm, 1400 BPS, Aaron Bello-Arufa, *The atmospheres of small exoplanets with JWST*
+* **PER Seminar**, 3:00 pm., BPS 1400, Anthony Escuardo, *OPTYCS: A Community of Practice Supporting Teaching and Scholarship at Two-Year College*
+* FRIB Nuclear Science Seminar, 3:30pm., FRIB 1300 Auditorium, Elise Novitski, *A new approach to measuring neutrino mass*
+
+---
+
+# Seminars this week
+
+## THURSDAY, February 20, 2025
+
+* High Energy Physics Seminar, 1:30pm, BPS 1400 BPS, Ben Assi, *Precision QCD and EFT for Next-Generation Collider Studies*
+* Physics and Astronomy sColloquium, 3:30 pm, 1415 BPS, Eric Hudson, *Laser spectroscopy of a nucleus*
+
+ ---
 
 # This Week's Goals
 
