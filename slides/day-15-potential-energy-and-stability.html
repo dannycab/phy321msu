@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Clicker Question 6-3 &#8212; Classical Mechanics</title>
+    <title>Day 15 - Potential Energy and Stability &#8212; Classical Mechanics</title>
   
   
   
@@ -62,7 +62,7 @@
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"tex2jax": {"inlineMath": [["$", "$"]]}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'slides/generate_figures';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'slides/day-15-potential-energy-and-stability';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -287,7 +287,7 @@
       
       
       
-      <li><a href="../_sources/slides/generate_figures.ipynb" target="_blank"
+      <li><a href="../_sources/slides/day-15-potential-energy-and-stability.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -297,7 +297,7 @@
 <span class="btn__icon-container">
   <i class="fas fa-file"></i>
   </span>
-<span class="btn__text-container">.ipynb</span>
+<span class="btn__text-container">.md</span>
 </a>
 </li>
       
@@ -350,7 +350,9 @@
 <button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
 </button>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -361,11 +363,47 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Clicker Question 6-3</h1>
+    <h1>Day 15 - Potential Energy and Stability</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Day 15 - Potential Energy and Stability</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#mexican-hat-potential">Mexican Hat Potential</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#announcements">Announcements</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#seminars-this-week">Seminars this week</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#monday-february-17-2025">MONDAY, February 17, 2025</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Seminars this week</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tuesday-february-18-2025">TUESDAY, February 18, 2025</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Seminars this week</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#wednesday-february-19-2025">WEDNESDAY, February 19, 2025</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Seminars this week</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#thursday-february-20-2025">THURSDAY, February 20, 2025</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#this-week-s-goals">This Week’s Goals</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#reminders-conservative-forces">Reminders: Conservative Forces</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-15-1">Clicker Question 15-1</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-15-2">Clicker Question 15-2</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-15-3">Clicker Question 15-3</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-15-4">Clicker Question 15-4</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-15-5">Clicker Question 15-5</a></li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -375,113 +413,188 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">matplotlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">style</span>
-
-<span class="n">plt</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;seaborn-v0_8-colorblind&#39;</span><span class="p">)</span>
-
-<span class="n">CQFOLDER</span> <span class="o">=</span> <span class="s1">&#39;../images/notes/&#39;</span>
-</pre></div>
-</div>
-</div>
-</div>
-<section id="clicker-question-6-3">
-<h1>Clicker Question 6-3<a class="headerlink" href="#clicker-question-6-3" title="Link to this heading">#</a></h1>
-<p>For the system of Linear Drag in 1D, we found a solution for the velocity as a function of time, with <span class="math notranslate nohighlight">\(v = 0\)</span> at <span class="math notranslate nohighlight">\(t = 0\)</span>.
-$<span class="math notranslate nohighlight">\(v(t) = v_{term}\left(1-e^{-\dfrac{Ct}{m}}\right)\)</span>$</p>
-<p>where <span class="math notranslate nohighlight">\(v_{term} = \sqrt{\frac{mg}{C}}\)</span>.</p>
-<p>Which sketch is correct for the velocity of the ball?
-$<span class="math notranslate nohighlight">\(v(t) = v_{term}\left(1-e^{-\dfrac{Ct}{m}}\right)\)</span>$</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Clicker Question 6-3</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">matplotlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">style</span>
-
-<span class="n">plt</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;seaborn-v0_8-colorblind&#39;</span><span class="p">)</span>
-
-<span class="c1"># Define constants</span>
-<span class="n">CQFOLDER</span> <span class="o">=</span> <span class="s1">&#39;../images/notes/&#39;</span>
-<span class="n">WEEK</span> <span class="o">=</span> <span class="s1">&#39;week3/&#39;</span>
-<span class="n">TITLE</span> <span class="o">=</span> <span class="s1">&#39;cq6-3&#39;</span>
-
-<span class="c1"># Define time array and constants</span>
-<span class="n">t</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">30</span><span class="p">)</span>
-<span class="n">m</span> <span class="o">=</span> <span class="mf">68.1</span>
-<span class="n">g</span> <span class="o">=</span> <span class="mf">9.8</span>
-<span class="n">c</span> <span class="o">=</span> <span class="mf">12.5</span>
-
-<span class="c1"># Define the correct terminal velocity function</span>
-<span class="k">def</span><span class="w"> </span><span class="nf">terminal_velocity</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">g</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="n">t</span><span class="p">):</span>
-    <span class="k">return</span> <span class="p">(</span><span class="n">m</span> <span class="o">*</span> <span class="n">g</span> <span class="o">/</span> <span class="n">c</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">c</span> <span class="o">*</span> <span class="n">t</span> <span class="o">/</span> <span class="n">m</span><span class="p">))</span>
-
-<span class="c1"># Define incorrect terminal velocity functions</span>
-<span class="k">def</span><span class="w"> </span><span class="nf">terminal_velocity1</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">g</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="n">t</span><span class="p">):</span>
-    <span class="k">return</span> <span class="o">-</span><span class="n">m</span> <span class="o">*</span> <span class="n">g</span> <span class="o">/</span> <span class="n">c</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">c</span> <span class="o">*</span> <span class="n">t</span> <span class="o">/</span> <span class="n">m</span><span class="p">))</span>
-
-<span class="k">def</span><span class="w"> </span><span class="nf">terminal_velocity2</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">g</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="n">t</span><span class="p">):</span>
-    <span class="k">return</span> <span class="o">-</span><span class="mi">1</span> <span class="o">/</span> <span class="p">(</span><span class="n">m</span> <span class="o">*</span> <span class="n">g</span> <span class="o">/</span> <span class="n">c</span> <span class="o">*</span> <span class="p">(</span><span class="o">-</span><span class="n">c</span> <span class="o">*</span> <span class="n">t</span> <span class="o">/</span> <span class="n">m</span><span class="p">))</span>
-
-<span class="k">def</span><span class="w"> </span><span class="nf">terminal_velocity3</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">g</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="n">t</span><span class="p">):</span>
-    <span class="k">return</span> <span class="o">-</span><span class="n">m</span> <span class="o">*</span> <span class="n">g</span> <span class="o">/</span> <span class="n">c</span> <span class="o">*</span> <span class="p">((</span><span class="o">-</span><span class="n">c</span> <span class="o">*</span> <span class="n">t</span> <span class="o">/</span> <span class="n">m</span><span class="p">)</span> <span class="o">**</span> <span class="mi">2</span><span class="p">)</span>
-
-<span class="c1"># Calculate velocities</span>
-<span class="n">v</span> <span class="o">=</span> <span class="n">terminal_velocity</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">g</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="n">t</span><span class="p">)</span>
-<span class="n">v1</span> <span class="o">=</span> <span class="n">terminal_velocity1</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">g</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="n">t</span><span class="p">)</span>
-<span class="n">v2</span> <span class="o">=</span> <span class="n">terminal_velocity2</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">g</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="n">t</span><span class="p">)</span>
-<span class="n">v3</span> <span class="o">=</span> <span class="n">terminal_velocity3</span><span class="p">(</span><span class="n">m</span><span class="p">,</span> <span class="n">g</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="n">t</span><span class="p">)</span>
-
-<span class="c1"># Plot all four functions in subplots</span>
-<span class="n">fig</span><span class="p">,</span> <span class="n">axs</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
-
-<span class="c1"># Plot incorrect function A</span>
-<span class="n">axs</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">v1</span><span class="p">,</span> <span class="s1">&#39;C0o-&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;A&#39;</span><span class="p">)</span>
-<span class="n">axs</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;$v(t) = v_</span><span class="si">{term}</span><span class="s1">\left(1-e^{-\dfrac</span><span class="si">{Ct}{m}</span><span class="s1">}\right)$&#39;</span><span class="p">)</span>
-<span class="n">axs</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
-<span class="n">axs</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_xticks</span><span class="p">([])</span>
-<span class="n">axs</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_yticks</span><span class="p">([])</span>
-<span class="n">axs</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;v&#39;</span><span class="p">)</span>
-
-<span class="c1"># Plot correct function B</span>
-<span class="n">axs</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">v</span><span class="p">,</span> <span class="s1">&#39;C1o-&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;B&#39;</span><span class="p">)</span>
-<span class="n">axs</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
-<span class="n">axs</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_xticks</span><span class="p">([])</span>
-<span class="n">axs</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_yticks</span><span class="p">([])</span>
-
-<span class="c1"># Plot incorrect function C</span>
-<span class="n">axs</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">v2</span><span class="p">,</span> <span class="s1">&#39;C2o-&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;C&#39;</span><span class="p">)</span>
-<span class="n">axs</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
-<span class="n">axs</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_xticks</span><span class="p">([])</span>
-<span class="n">axs</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_yticks</span><span class="p">([])</span>
-<span class="n">axs</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;t&#39;</span><span class="p">)</span>
-<span class="n">axs</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;v&#39;</span><span class="p">)</span>
-
-<span class="c1"># Plot incorrect function D</span>
-<span class="n">axs</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">v3</span><span class="p">,</span> <span class="s1">&#39;C3o-&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;D&#39;</span><span class="p">)</span>
-<span class="n">axs</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
-<span class="n">axs</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_xticks</span><span class="p">([])</span>
-<span class="n">axs</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_yticks</span><span class="p">([])</span>
-<span class="n">axs</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;t&#39;</span><span class="p">)</span>
-
-<span class="c1"># Adjust layout and save the figure</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="n">CQFOLDER</span> <span class="o">+</span> <span class="n">WEEK</span> <span class="o">+</span> <span class="n">TITLE</span> <span class="o">+</span> <span class="s1">&#39;.png&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_1532/3490806856.py:28: RuntimeWarning: divide by zero encountered in divide
-  return -1 / (m * g / c * (-c * t / m))
-</pre></div>
-</div>
-<img alt="../_images/88d13e6640f6f249484240ffe8b5d92a7a7cb193e407930c57b97b59964d7275.png" src="../_images/88d13e6640f6f249484240ffe8b5d92a7a7cb193e407930c57b97b59964d7275.png" />
-</div>
-</div>
+  <section id="day-15-potential-energy-and-stability">
+<h1>Day 15 - Potential Energy and Stability<a class="headerlink" href="#day-15-potential-energy-and-stability" title="Link to this heading">#</a></h1>
+<p><img alt="bg right width:600px" src="../_images/mexican-hat-potential.png" /></p>
+<p>Mexican Hat/Sombrero Potential <span class="math notranslate nohighlight">\(\longrightarrow\)</span></p>
+</section>
+<hr class="docutils" />
+<section id="mexican-hat-potential">
+<h1>Mexican Hat Potential<a class="headerlink" href="#mexican-hat-potential" title="Link to this heading">#</a></h1>
+<p><span class="math notranslate nohighlight">\(V(\phi) = -5|\phi|^2 + |\phi|^4\)</span></p>
+<p><img alt="bg right width:80%" src="../_images/mexican-hat-potential.png" /></p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://en.m.wikipedia.org/wiki/Spontaneous_symmetry_breaking#Sombrero_potential">Spontaneous Symmetry Breaking</a> (<a class="reference external" href="https://en.m.wikipedia.org/wiki/Jeffrey_Goldstone">Jeffery Goldstone, 1961</a>)</p></li>
+<li><p>Unstable vacuum state at <span class="math notranslate nohighlight">\(\phi = 0\)</span></p>
+<ul>
+<li><p>Peak of the hat</p></li>
+</ul>
+</li>
+<li><p>Infinite number of stable minima</p>
+<ul>
+<li><p><span class="math notranslate nohighlight">\(\phi = \sqrt{5/2}e^{i\phi}\)</span></p></li>
+</ul>
+</li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="announcements">
+<h1>Announcements<a class="headerlink" href="#announcements" title="Link to this heading">#</a></h1>
+<ul class="simple">
+<li><p>HW 4 is due today</p></li>
+<li><p>Midterm 1 is available today (Due Feb 24th)</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="seminars-this-week">
+<h1>Seminars this week<a class="headerlink" href="#seminars-this-week" title="Link to this heading">#</a></h1>
+<section id="monday-february-17-2025">
+<h2>MONDAY, February 17, 2025<a class="headerlink" href="#monday-february-17-2025" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>QuIC Seminar, 12:30 pm, 1400 BPS, Dr. Michael Hilke, <em>The history of quantum computing</em></p></li>
+<li><p>High Energy Physics Seminar, 12:30pm, BPS 1400 BPS, Joshua Isaacson, <em>Event Generation for Next-Gen HEP Experiments</em></p></li>
+<li><p>Condensed Matter Seminar 4:10 pm, 1400 BPS, Lisa Lapidus, <em>The Physics of Biomolecular Condensation</em></p></li>
+</ul>
+</section>
+</section>
+<hr class="docutils" />
+<section id="id1">
+<h1>Seminars this week<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
+<section id="tuesday-february-18-2025">
+<h2>TUESDAY, February 18, 2025<a class="headerlink" href="#tuesday-february-18-2025" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Theory Seminar, 11:00am., FRIB 1200 lab, Ibrahim Abdurahman, <em>Investigating Fission Dynamics within Time-Dependent Density Functional Theory Extended to Superfluid Systems</em></p></li>
+</ul>
+</section>
+</section>
+<hr class="docutils" />
+<section id="id2">
+<h1>Seminars this week<a class="headerlink" href="#id2" title="Link to this heading">#</a></h1>
+<section id="wednesday-february-19-2025">
+<h2>WEDNESDAY, February 19, 2025<a class="headerlink" href="#wednesday-february-19-2025" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Astronomy Seminar, 1:30 pm, 1400 BPS, Aaron Bello-Arufa, <em>The atmospheres of small exoplanets with JWST</em></p></li>
+<li><p><strong>PER Seminar</strong>, 3:00 pm., BPS 1400, Anthony Escuardo, <em>OPTYCS: A Community of Practice Supporting Teaching and Scholarship at Two-Year College</em></p></li>
+<li><p>FRIB Nuclear Science Seminar, 3:30pm., FRIB 1300 Auditorium, Elise Novitski, <em>A new approach to measuring neutrino mass</em></p></li>
+</ul>
+</section>
+</section>
+<hr class="docutils" />
+<section id="id3">
+<h1>Seminars this week<a class="headerlink" href="#id3" title="Link to this heading">#</a></h1>
+<section id="thursday-february-20-2025">
+<h2>THURSDAY, February 20, 2025<a class="headerlink" href="#thursday-february-20-2025" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>High Energy Physics Seminar, 1:30pm, BPS 1400 BPS, Ben Assi, <em>Precision QCD and EFT for Next-Generation Collider Studies</em></p></li>
+<li><p>Physics and Astronomy sColloquium, 3:30 pm, 1415 BPS, Eric Hudson, <em>Laser spectroscopy of a nucleus</em></p></li>
+</ul>
+</section>
+</section>
+<hr class="docutils" />
+<section id="this-week-s-goals">
+<h1>This Week’s Goals<a class="headerlink" href="#this-week-s-goals" title="Link to this heading">#</a></h1>
+<ul class="simple">
+<li><p>Understand the concept of potential energy</p></li>
+<li><p>Determine the equilibrium points of a system using potential energy</p></li>
+<li><p>Analyze the stability of equilibrium points</p></li>
+<li><p>Define and begin to apply conservation of linear and angular momentum</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="reminders-conservative-forces">
+<h1>Reminders: Conservative Forces<a class="headerlink" href="#reminders-conservative-forces" title="Link to this heading">#</a></h1>
+<ul class="simple">
+<li><p>Conservative forces are those with zero curl</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[\nabla \times \vec{F} = 0\]</div>
+<ul class="simple">
+<li><p>The work done by a conservative force is path-independent; on a closed path, the work done is zero</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[\oint \vec{F} \cdot d\vec{r} = 0\]</div>
+<ul class="simple">
+<li><p>The force can be written as the gradient of a scalar potential energy function</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[\vec{F} = - \nabla U\]</div>
+</section>
+<hr class="docutils" />
+<section id="clicker-question-15-1">
+<h1>Clicker Question 15-1<a class="headerlink" href="#clicker-question-15-1" title="Link to this heading">#</a></h1>
+<p>Here’s the graph of the potential energy function <span class="math notranslate nohighlight">\(U(x)\)</span> for a pendulum.</p>
+<p><img alt="bg right width:80%" src="../_images/pendulum-potential-energy.png" /></p>
+<p>What can you say about the equilibrium points? There is/are:</p>
+<ol class="arabic simple">
+<li><p>One stable point</p></li>
+<li><p>Two stable points</p></li>
+<li><p>One stable and one unstable point</p></li>
+<li><p>Two unstable and one stable point</p></li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="clicker-question-15-2">
+<h1>Clicker Question 15-2<a class="headerlink" href="#clicker-question-15-2" title="Link to this heading">#</a></h1>
+<p>Here’s a potential energy function <span class="math notranslate nohighlight">\(U(x)\)</span> for a pendulum:</p>
+<div class="math notranslate nohighlight">
+\[U(\phi) = -mgL\cos(\phi) + U_0\]</div>
+<ol class="arabic simple">
+<li><p>Find the equilibrium points (<span class="math notranslate nohighlight">\(\phi^*\)</span>) of the pendulum by setting:</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[\frac{dU(\phi^*)}{d\phi} = 0.\]</div>
+<ol class="arabic simple" start="2">
+<li><p>Characterize the stability of the equilibrium points (<span class="math notranslate nohighlight">\(\phi^*\)</span>) by examining the second derivative:</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[\frac{d^2U(\phi^*)}{d\phi^2}&gt;0? \qquad \frac{d^2U(\phi^*)}{d\phi^2}&lt;0?\]</div>
+<p><strong>Click when done.</strong></p>
+<hr class="docutils" />
+<section id="clicker-question-15-3">
+<h2>Clicker Question 15-3<a class="headerlink" href="#clicker-question-15-3" title="Link to this heading">#</a></h2>
+<p>A double-well potential energy function <span class="math notranslate nohighlight">\(U(x)\)</span> is given by</p>
+<div class="math notranslate nohighlight">
+\[U(x) = -\frac{1}{2}kx^2 + \frac{1}{4}kx^4.\]</div>
+<p><em>We assume we have scaled the potential energy so that all the units are consistent.</em></p>
+<p>How many equilibrium points does this system have?</p>
+<ol class="arabic simple">
+<li><p>1</p></li>
+<li><p>2</p></li>
+<li><p>3</p></li>
+<li><p>4</p></li>
+</ol>
+</section>
+</section>
+<hr class="docutils" />
+<section id="clicker-question-15-4">
+<h1>Clicker Question 15-4<a class="headerlink" href="#clicker-question-15-4" title="Link to this heading">#</a></h1>
+<p>A double-well potential energy function <span class="math notranslate nohighlight">\(U(x)\)</span> is given by</p>
+<div class="math notranslate nohighlight">
+\[U(x) = -\frac{1}{2}kx^2 + \frac{1}{4}kx^4.\]</div>
+<ol class="arabic simple">
+<li><p>Find the equilibrium points (<span class="math notranslate nohighlight">\(x^*\)</span>) of the pendulum by setting:</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[\frac{dU(x^*)}{dx} = 0.\]</div>
+<ol class="arabic simple" start="2">
+<li><p>Characterize the stability of the equilibrium points (<span class="math notranslate nohighlight">\(x^*\)</span>) by examining the second derivative:</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[\frac{d^2U(x^*)}{dx^2}&gt;0? \qquad \frac{d^2U(x^*)}{dx^2}&lt;0?\]</div>
+<p><strong>Click when done.</strong></p>
+</section>
+<hr class="docutils" />
+<section id="clicker-question-15-5">
+<h1>Clicker Question 15-5<a class="headerlink" href="#clicker-question-15-5" title="Link to this heading">#</a></h1>
+<p>Here’s a graph of the potential energy function <span class="math notranslate nohighlight">\(U(x)\)</span> for a double-well potential.</p>
+<p><img alt="bg right width:90%" src="../_images/cq15-5.png" /></p>
+<p>Describe the motion of a particle with the total energy, <span class="math notranslate nohighlight">\(E=\)</span></p>
+<ol class="arabic simple">
+<li><p><span class="math notranslate nohighlight">\(0.4\,\mathrm{J}\)</span>, <span class="math notranslate nohighlight">\(&lt;\)</span> barrier height</p></li>
+<li><p><span class="math notranslate nohighlight">\(1.2\,\mathrm{J}\)</span>, <span class="math notranslate nohighlight">\(&gt;\)</span> barrier height</p></li>
+<li><p><span class="math notranslate nohighlight">\(1.0\,\mathrm{J}\)</span>, <span class="math notranslate nohighlight">\(=\)</span> barrier height</p></li>
+</ol>
+<p><strong>Click when done.</strong></p>
 </section>
 
     <script type="text/x-thebe-config">
@@ -493,16 +606,16 @@ $<span class="math notranslate nohighlight">\(v(t) = v_{term}\left(1-e^{-\dfrac{
         },
         codeMirrorConfig: {
             theme: "abcdef",
-            mode: "jbook"
+            mode: "python"
         },
         kernelOptions: {
-            name: "jbook",
+            name: "python3",
             path: "./slides"
         },
         predefinedOutput: true
     }
     </script>
-    <script>kernelName = 'jbook'</script>
+    <script>kernelName = 'python3'</script>
 
                 </article>
               
@@ -520,6 +633,50 @@ $<span class="math notranslate nohighlight">\(v(t) = v_{term}\left(1-e^{-\dfrac{
             </div>
             
             
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Day 15 - Potential Energy and Stability</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#mexican-hat-potential">Mexican Hat Potential</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#announcements">Announcements</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#seminars-this-week">Seminars this week</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#monday-february-17-2025">MONDAY, February 17, 2025</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Seminars this week</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tuesday-february-18-2025">TUESDAY, February 18, 2025</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Seminars this week</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#wednesday-february-19-2025">WEDNESDAY, February 19, 2025</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Seminars this week</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#thursday-february-20-2025">THURSDAY, February 20, 2025</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#this-week-s-goals">This Week’s Goals</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#reminders-conservative-forces">Reminders: Conservative Forces</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-15-1">Clicker Question 15-1</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-15-2">Clicker Question 15-2</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-15-3">Clicker Question 15-3</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-15-4">Clicker Question 15-4</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-15-5">Clicker Question 15-5</a></li>
+</ul>
+
+  </nav></div>
+
+</div></div>
               
             
           </div>
