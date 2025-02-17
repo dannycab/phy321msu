@@ -100,6 +100,7 @@ parts:
       - file: resources/generative-ai.ipynb
       - file: resources/gradescope-submissions
       - file: resources/finding-research
+      - file: resources/integrators.ipynb
   - caption: Honors Projects
     numbered: false
     chapters:
