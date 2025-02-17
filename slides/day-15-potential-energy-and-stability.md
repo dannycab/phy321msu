@@ -45,7 +45,7 @@ $V(\phi) = -5|\phi|^2 + |\phi|^4$
 ## MONDAY, February 17, 2025             
 
 * QuIC Seminar, 12:30 pm, 1400 BPS, Dr. Michael Hilke, *The history of quantum computing*
-* High Energy Physics Seminar, 12:30pm, BPS 1400 BPS, Joshua Isaacson, *Event Generation for Next-Gen HEP Experiments*
+* High Energy Physics Seminar, 1:30pm, BPS 1400 BPS, Joshua Isaacson, *Event Generation for Next-Gen HEP Experiments*
 * Condensed Matter Seminar 4:10 pm, 1400 BPS, Lisa Lapidus, *The Physics of Biomolecular Condensation*
 
 ---
