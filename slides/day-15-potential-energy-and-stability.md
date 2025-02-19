@@ -4,7 +4,7 @@ theme: graph_paper
 paginate: true
 
 title: Day 15 - Potential Energy and Stability
-description: Slides for PHY 321 Spring 2025, Day 14: Potential Energy and Stability
+description: Slides for PHY 321 Spring 2025, Day 15: Potential Energy and Stability
 author: Prof. Danny Caballero <caball14@msu.edu>
 keywords: classical mechanics, models, modeling, differential equations, energy, stability
 url: https://dannycaballero.info/phy321msu/slides/day-15-potential-energy-and-stability.html

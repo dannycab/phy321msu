@@ -2,6 +2,19 @@
 
 Slides for PHY 321 appear in reverse chronological order, with the most recent slides at the top. The formats are PDF, HTML, and Markdown. The HTML slides are hosted on my website, and the Markdown slides are the source code for the HTML slides, built with [Marp](https://marp.app/).
 
+## Day 16 - Conservation of Linear and Angular Momentum - 19 Feb 2025
+
+### Download PDF
+
+[![Day 16](../slides/day-16-conservation-of-momentum.png)](../slides/day-16-conservation-of-momentum.pdf)
+
+### HTML Versions
+
+| Format | Link |
+|--|--|
+| HTML (Inline) | [day-16-conservation-of-momentum.md](../slides/day-16-conservation-of-momentum.md) |
+| HTML (Slides) | [day-16-conservation-of-momentum.html](../slides/day-16-conservation-of-momentum.html) |
+
 
 ## Day 15 - Potential Energy and Stability - 17 Feb 2025
 
