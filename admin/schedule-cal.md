@@ -42,16 +42,16 @@ All assignments are turned in using Gradescope as a single PDF.
 
 | Week | Day    | Topic                                                     | Readings to prepare | Important events                                                |
 | ---- | ------ | --------------------------------------------------------- | ------------------- | --------------------------------------------------------------- |
-| CW7  | 10 Feb | Work Energy Theorem [Slides](../slides/day-12-conservation-of-energy.pdf)                                      | JRT 4.1-4.3         |        |
-|      | 12 Feb | Conservative Forces and Potential [Slides](../slides/day-13-conservative-forces.pdf) | JRT 4.1-4.4, 4.6        |                                                                 |
-|      | 14 Feb | Problem session for homework [Slides](../slides/day-14-homework-session.pdf)                             |                     |  |
+| CW7  | 10 Feb | Work Energy Theorem ([Slides](../slides/day-12-conservation-of-energy.pdf))                                      | JRT 4.1-4.3         |        |
+|      | 12 Feb | Conservative Forces and Potential ([Slides](../slides/day-13-conservative-forces.pdf)) | JRT 4.1-4.4, 4.6        |                                                                 |
+|      | 14 Feb | Problem session for homework ([Slides](../slides/day-14-homework-session.pdf))                             |                     |  |
 
 
 ## Class Week 6
 
 | Week | Day    | Topic                             | Readings to prepare           | Important events                                                |
 | ---- | ------ | --------------------------------- | ----------------------------- | --------------------------------------------------------------- |
-| CW8  | 17 Feb | Examples and Stability Analysis | JRT 4.1-4.4, 4.6; MLB 6.6-6.8 |  **Homework 4 Due** & [Midterm Project 1 Assigned (Due 28 Feb)](../midterms/midterm1.ipynb)                                                               |
+| CW8  | 17 Feb | Examples and Stability Analysis ([Slides](../slides/day-15-potential-energy-and-stability.pdf)) | JRT 4.1-4.4, 4.6; MLB 6.6-6.8 |  **Homework 4 Due** & [Midterm Project 1 Assigned (Due 28 Feb)](../midterms/midterm1.ipynb)                                                               |
 |      | 19 Feb | Conservation of Momentum and Angular Momentum   |  JRT 3.1, 3.3-3.4                            |                                                                 |
 |      | 21 Feb |  Problem session for homework        |                               |   |
 
