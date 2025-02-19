@@ -55,7 +55,7 @@
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script src="../_static/design-tabs.js?v=36754332"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
@@ -351,7 +351,9 @@
 <button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
 </button>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -367,6 +369,16 @@
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Clicker Question 6-3</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-15-5">Clicker Question 15-5</a></li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -476,11 +488,61 @@ $<span class="math notranslate nohighlight">\(v(t) = v_{term}\left(1-e^{-\dfrac{
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_575/3490806856.py:28: RuntimeWarning: divide by zero encountered in divide
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_1492/3490806856.py:28: RuntimeWarning: divide by zero encountered in divide
   return -1 / (m * g / c * (-c * t / m))
 </pre></div>
 </div>
 <img alt="../_images/88d13e6640f6f249484240ffe8b5d92a7a7cb193e407930c57b97b59964d7275.png" src="../_images/88d13e6640f6f249484240ffe8b5d92a7a7cb193e407930c57b97b59964d7275.png" />
+</div>
+</div>
+</section>
+<section id="clicker-question-15-5">
+<h1>Clicker Question 15-5<a class="headerlink" href="#clicker-question-15-5" title="Link to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">matplotlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">style</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;seaborn-v0_8-colorblind&#39;</span><span class="p">)</span>
+
+<span class="c1"># Define constants</span>
+<span class="n">CQFOLDER</span> <span class="o">=</span> <span class="s1">&#39;../images/notes/&#39;</span>
+<span class="n">WEEK</span> <span class="o">=</span> <span class="s1">&#39;week6/&#39;</span>
+<span class="n">TITLE</span> <span class="o">=</span> <span class="s1">&#39;cq15-5&#39;</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">Potential</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">V0</span><span class="o">/</span><span class="p">(</span><span class="n">d</span><span class="o">**</span><span class="mi">4</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="mi">4</span> <span class="o">-</span> <span class="mi">2</span><span class="o">*</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="o">*</span><span class="n">d</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">d</span><span class="o">**</span><span class="mi">4</span><span class="p">)</span>
+
+<span class="n">xlim</span> <span class="o">=</span> <span class="mf">1.5</span>
+<span class="n">steps</span> <span class="o">=</span> <span class="mi">1000</span>
+<span class="n">V0</span> <span class="o">=</span> <span class="mf">1.0</span>
+<span class="n">d</span> <span class="o">=</span> <span class="mf">1.0</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="n">xlim</span><span class="p">,</span> <span class="n">xlim</span><span class="p">,</span> <span class="n">steps</span><span class="p">)</span>
+<span class="n">V</span> <span class="o">=</span> <span class="n">Potential</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">V</span><span class="p">,</span><span class="n">lw</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="sa">r</span><span class="s1">&#39;$V(x)$&#39;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">Potential</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span><span class="s1">&#39;C1o&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Unstable&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="o">-</span><span class="n">d</span><span class="p">,</span><span class="n">Potential</span><span class="p">(</span><span class="o">-</span><span class="n">d</span><span class="p">),</span><span class="s1">&#39;C2o&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Stable&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">d</span><span class="p">,</span><span class="n">Potential</span><span class="p">(</span><span class="n">d</span><span class="p">),</span><span class="s1">&#39;C2o&#39;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;x (m)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;V (J)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="c1"># Adjust layout and save the figure</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="n">CQFOLDER</span> <span class="o">+</span> <span class="n">WEEK</span> <span class="o">+</span> <span class="n">TITLE</span> <span class="o">+</span> <span class="s1">&#39;.png&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/2ec13df8d35334e8f01f23a2756767bf364c3c191147ab8a4f4e8cee2812ad52.png" src="../_images/2ec13df8d35334e8f01f23a2756767bf364c3c191147ab8a4f4e8cee2812ad52.png" />
 </div>
 </div>
 </section>
@@ -521,6 +583,24 @@ $<span class="math notranslate nohighlight">\(v(t) = v_{term}\left(1-e^{-\dfrac{
             </div>
             
             
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Clicker Question 6-3</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-15-5">Clicker Question 15-5</a></li>
+</ul>
+
+  </nav></div>
+
+</div></div>
               
             
           </div>
