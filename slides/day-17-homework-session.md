@@ -20,3 +20,9 @@ url: https://dannycaballero.info/phy321msu/slides/day-17-homework-session.html
 
 * Midterm 1 is due Feb 28th
 * Homework 5 is now posted; due Mar 14th
+
+---
+
+# 6pm next Monday (SPS/Astro Club)
+
+![width:70%](../images/notes/week6/resisting.png)
