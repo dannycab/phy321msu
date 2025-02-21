@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Homework 5 (Due 08 Mar) &#8212; Classical Mechanics</title>
+    <title>Homework 5 &#8212; Classical Mechanics</title>
   
   
   
@@ -55,7 +55,7 @@
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../../_static/design-tabs.js?v=36754332"></script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
@@ -208,6 +208,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../homeworks/hw3.html">Homework 3 (Due 07 Feb)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../homeworks/hw4.html">Homework 4 (Due 17 Feb)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../midterms/midterm1.html">Midterm 1 (Due 28 Feb)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../homeworks/hw5.html">Homework 5 (Due 14 Mar)</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Solutions</span></p>
 <ul class="nav bd-sidenav">
@@ -364,7 +365,7 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Homework 5 (Due 08 Mar)</h1>
+    <h1>Homework 5</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -394,9 +395,9 @@
                   
   <!-- HTML file automatically generated from DocOnce source (https://github.com/doconce/doconce/)
 doconce format html hw5.do.txt --no_mako -->
-<!-- dom:TITLE: PHY321: Classical Mechanics 1 --><section id="homework-5-due-08-mar">
-<h1>Homework 5 (Due 08 Mar)<a class="headerlink" href="#homework-5-due-08-mar" title="Link to this heading">#</a></h1>
-<p><strong>Solution Homework 5, Spring 2024</strong></p>
+<!-- dom:TITLE: PHY321: Classical Mechanics 1 --><section id="homework-5">
+<h1>Homework 5<a class="headerlink" href="#homework-5" title="Link to this heading">#</a></h1>
+<p><strong>Solution Homework 5, Spring 2025</strong></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
@@ -475,16 +476,16 @@ doconce format html hw5.do.txt --no_mako -->
 <section id="exercise-2-10pt-kid-s-toy-and-stable-equilibrium">
 <h2>Exercise 2 (10pt), Kid’s toy and stable equilibrium<a class="headerlink" href="#exercise-2-10pt-kid-s-toy-and-stable-equilibrium" title="Link to this heading">#</a></h2>
 <p>A toy is made from a cylinder mounted on a hemisphere as shown in the figure below. The hemisphere has a radius of <span class="math notranslate nohighlight">\(R\)</span> and the center of mass of the whole toy is <span class="math notranslate nohighlight">\(h\)</span> above the ground.</p>
-<p><img alt="toy" src="solutions/images/assignments/5.2-kid_toy.png" /></p>
+<p><img alt="toy" src="../../_images/5.2-kid_toy.png" /></p>
 <ul class="simple">
-<li><p>2a (2pt) Find the height of the center of mass of the toy as a function of the angle <span class="math notranslate nohighlight">\(\theta\)</span>.</p></li>
+<li><p>2a (2pt) Find the height of the center of mass of the toy as a function of the angle <span class="math notranslate nohighlight">\(\theta\)</span>, measured from the vertical.</p></li>
 </ul>
 <div class="tip admonition">
 <p class="admonition-title">Solution</p>
 <p>With the toy tipped at an angle <span class="math notranslate nohighlight">\(\theta\)</span> with respect to the vertical, the center of mass is a height <span class="math notranslate nohighlight">\((h-R)cos(\theta) + R\)</span> above the ground. You can see this when it’s toppled over, where the center of mass is at a height <span class="math notranslate nohighlight">\(R\)</span> above the ground. This is because it tips around <span class="math notranslate nohighlight">\(O\)</span>, the point where the hemisphere meets the cylinder.</p>
 </div>
 <ul class="simple">
-<li><p>2b (3pt) Use this to find the gravitational potential energy <span class="math notranslate nohighlight">\(U(\theta)\)</span>. Show in a figure how the potential energy varies with <span class="math notranslate nohighlight">\(\theta\)</span>.</p></li>
+<li><p>2b (3pt) Use this to find the gravitational potential energy <span class="math notranslate nohighlight">\(U(\theta)\)</span>. Show in a figure how the potential energy varies with <span class="math notranslate nohighlight">\(\theta\)</span>. Note that <span class="math notranslate nohighlight">\(h/R\)</span> becomes an important parameter. For different choices of <span class="math notranslate nohighlight">\(h/R\)</span> do the equilibrium points change? How?</p></li>
 </ul>
 <div class="tip admonition">
 <p class="admonition-title">Solution</p>
@@ -523,7 +524,7 @@ doconce format html hw5.do.txt --no_mako -->
 </div>
 </div>
 <ul class="simple">
-<li><p>2c (5pt) For which values of <span class="math notranslate nohighlight">\(R\)</span> and <span class="math notranslate nohighlight">\(h\)</span> is the toy in stable equilibrium so that it does not fall over? Why does this make sense to you? Or how would you explain it to a friend?</p></li>
+<li><p>2c (5pt) For which values of <span class="math notranslate nohighlight">\(R\)</span> and <span class="math notranslate nohighlight">\(h\)</span> is the toy in stable equilibrium so that it does not fall over? Does it fit with your graphical analysis? Why does this make sense to you? Or how would you explain it to a friend?</p></li>
 </ul>
 <div class="tip admonition">
 <p class="admonition-title">Solution</p>
@@ -547,10 +548,10 @@ doconce format html hw5.do.txt --no_mako -->
 <section id="exercise-3-15pt-generic-1d-motion">
 <h2>Exercise 3 (15pt), “Generic” 1D motion<a class="headerlink" href="#exercise-3-15pt-generic-1d-motion" title="Link to this heading">#</a></h2>
 <p>We will eventually learn how to solve for equations of motion for generalized coordinates. That work requires us to think about the forces and constraints on a system. Here we will consider a particle moving along a curved path to begin to think about how to describe the motion of a particle in a more general way.</p>
-<p><img alt="curved-path" src="solutions/images/assignments/5.3-curved_path.png" /></p>
-<p>A bead follows the curved path above, you can imagine it is a wire or a track, and the bead is constrained to move along the path. The bead’s position is described by its distance along the path, <span class="math notranslate nohighlight">\(s\)</span> as measured from the origin <span class="math notranslate nohighlight">\(O\)</span>.</p>
+<p><img alt="curved-path" src="../../_images/5.3-curved_path.png" /></p>
+<p>A bead follows the curved path above, you can imagine it is a wire or a track, and the bead is constrained to move along the path. The bead’s position is described by its distance along the path, <span class="math notranslate nohighlight">\(s\)</span> as measured from the origin <span class="math notranslate nohighlight">\(O\)</span>. The <span class="math notranslate nohighlight">\(\hat{s}\)</span> direction is always along the path - that is, it’s always tangent to the wire.</p>
 <ul class="simple">
-<li><p>3a (3pt) Write the velocity <span class="math notranslate nohighlight">\(\mathbf{v}\)</span> in terms of its components (e.g., <span class="math notranslate nohighlight">\(dx/dt\)</span>) and find it’s magnitude (<span class="math notranslate nohighlight">\(v\)</span>).</p></li>
+<li><p>3a (3pt) Let’s start by writing the velocity <span class="math notranslate nohighlight">\(\mathbf{v}\)</span> in terms of its Cartesian components (e.g., <span class="math notranslate nohighlight">\(dx/dt\)</span>) and find it’s magnitude (<span class="math notranslate nohighlight">\(v\)</span>). How does this approach seem given the shape of the wire? Do you think we have chosen a good set of coordinates?</p></li>
 </ul>
 <div class="tip admonition">
 <p class="admonition-title">Solution</p>
@@ -560,15 +561,13 @@ doconce format html hw5.do.txt --no_mako -->
 <p>The speed of the bead is then given by,</p>
 <div class="math notranslate nohighlight">
 \[v = \sqrt{\left(\dfrac{dx}{dt}\right)^2 + \left(\dfrac{dy}{dt}\right)^2}.\]</div>
+<p>This is definitely a standard approach, but not the best. The complication of finding the <span class="math notranslate nohighlight">\(x-y\)</span> components at every location seems a bit insurmountable. It is very challenging.</p>
 </div>
 <ul class="simple">
-<li><p>3b (4pt) Use these results to show that bead’s speed is given by <span class="math notranslate nohighlight">\(v=\dot{s}\)</span>.</p></li>
+<li><p>3b (4pt) Instead, consider the coordinate system <span class="math notranslate nohighlight">\(\langle \hat{s}, \hat{s}_{\perp}\rangle\)</span>. That is the the direction along the path and the direction perpendicular to it (assume we are solving this in a plane for the moment). Use this coordinate system to show that bead’s speed is given by <span class="math notranslate nohighlight">\(v=\dot{s}\)</span>, that is there is no dependence of the speed on the <span class="math notranslate nohighlight">\(\hat{s}_{\perp}\)</span> component of <span class="math notranslate nohighlight">\(\vec{v}\)</span>. How might this be a better choice?</p></li>
 </ul>
 <div class="tip admonition">
 <p class="admonition-title">Solution</p>
-<p>The location of the bead is given by the position vector <span class="math notranslate nohighlight">\(\mathbf{r}(t) = \langle x(t), y(t)\rangle\)</span>. As we move along the path, the velocity of the bead is given by the time derivative of the position vector,</p>
-<div class="math notranslate nohighlight">
-\[\mathbf{v} = \dfrac{d\mathbf{r}}{dt} = \dfrac{d}{dt}\langle x(t), y(t)\rangle = \langle \dfrac{dx}{dt}, \dfrac{dy}{dt}\rangle.\]</div>
 <p>This velocity is always tangent to the path. If we consider a generic vector along the path, <span class="math notranslate nohighlight">\(\mathbf{s} = s(t)\hat{s}\)</span>, then the velocity is given by,</p>
 <div class="math notranslate nohighlight">
 \[\mathbf{v} = \dfrac{d\mathbf{s}}{dt} = \dfrac{d}{dt}(|s(t)|\hat{s}) = \dfrac{d|s|}{dt}\hat{s} + |s|\frac{d\hat{s}}{dt} .\]</div>
@@ -576,9 +575,10 @@ doconce format html hw5.do.txt --no_mako -->
 <div class="math notranslate nohighlight">
 \[\mathbf{v} = \dfrac{d|s|}{dt}\hat{s} = \dot{s}\hat{s}.\]</div>
 <p>This shows that the speed of the bead is given by <span class="math notranslate nohighlight">\(v = \dot{s}\)</span>.</p>
+<p>This approach makes this problem one-dimensional, along the path. This is the introduction of <a class="reference external" href="https://en.wikipedia.org/wiki/Generalized_coordinates">generalized coordinates</a>, which are a core part of <a class="reference external" href="https://en.wikipedia.org/wiki/Lagrangian_mechanics">Lagrangian Dynamics</a>.</p>
 </div>
 <ul class="simple">
-<li><p>3c (4pt) Prove that the tangential component of the net force (<span class="math notranslate nohighlight">\(F_{||}\)</span>, “parallel” to the motion) on the bead is <span class="math notranslate nohighlight">\(m\ddot{s}\)</span>.</p></li>
+<li><p>3c (4pt) Still using this coordinate system, prove that the tangential component of the net force (<span class="math notranslate nohighlight">\(F_{||}\)</span>, “parallel” to the motion) on the bead is <span class="math notranslate nohighlight">\(m\ddot{s}\)</span>.</p></li>
 </ul>
 <div class="tip admonition">
 <p class="admonition-title">Solution</p>
@@ -600,6 +600,13 @@ doconce format html hw5.do.txt --no_mako -->
 <li><p>3d (4pt) Show that the tangential component of the net force due to the wire is <span class="math notranslate nohighlight">\(-\frac{dU}{ds}\)</span>.</p></li>
 </ul>
 <p>This 1D concept extends to multiple dimensions and can help us understand the Lagrangian method of solving for the equations of motion.</p>
+<div class="info admonition">
+<p class="admonition-title">Projection of a gradient</p>
+<p>We can calculate the projection for a generic potential in a particular Cartesian direction.</p>
+<div class="math notranslate nohighlight">
+\[\nabla U(\vec{r}) \cdot \hat{x} = \langle \dfrac{dU(\vec{r})}{dx}, \dfrac{dU(\vec{r})}{dy}, \dfrac{dU(\vec{r})}{dz} \rangle \cdot \langle 1,0,0 \rangle = \dfrac{dU(\vec{r})}{dx}\]</div>
+<p>Ultimately, the projection is the what the potential changes with respect to the projection direction.</p>
+</div>
 <div class="tip admonition">
 <p class="admonition-title">Solution</p>
 <p>If we consider Newton’s second law for the bead, we have,</p>
@@ -614,16 +621,16 @@ doconce format html hw5.do.txt --no_mako -->
 <p>where <span class="math notranslate nohighlight">\(\mathbf{F}_{cons} = -\nabla U\)</span>. This means that the tangential component of the net force is given by,</p>
 <div class="math notranslate nohighlight">
 \[F_{||} = -\nabla U\cdot\hat{s} = -\dfrac{dU}{ds},\]</div>
-<p>where the last step comes from the definition of the gradient and it’s projection.</p>
+<p>where the last step comes from the definition of the gradient and its projection.</p>
 </div>
 </section>
 <section id="exercise-4-15pt-another-1-d-conservative-system-baby-bifurcations">
 <h2>Exercise 4 (15pt), Another 1-D conservative system; baby bifurcations<a class="headerlink" href="#exercise-4-15pt-another-1-d-conservative-system-baby-bifurcations" title="Link to this heading">#</a></h2>
 <p>The apparatus below is a massless wheel of radius <span class="math notranslate nohighlight">\(R\)</span> that is mounted to a frictionless axle. A small, dense piece of clay with mass <span class="math notranslate nohighlight">\(M\)</span> is glued to edge of the wheel as shown. Another mass <span class="math notranslate nohighlight">\(m\)</span> hangs from a massless string that is wrapped around the wheel. We can assume the string is inextensible and does not slip, and the system is in a uniform gravitational field.</p>
-<p><img alt="apparatus" src="solutions/images/assignments/5.4-apparatus.png" /></p>
+<p><img alt="apparatus" src="../../_images/5.4-apparatus.png" /></p>
 <p>We can show that this complicated system is still one-dimensional (at least in space) and then we can see the effects of parameters like <span class="math notranslate nohighlight">\(m/M\)</span>.</p>
 <ul class="simple">
-<li><p>4a (3pt) In terms of the rotation angle <span class="math notranslate nohighlight">\(\phi\)</span> of the wheel, write down the total potential energy <span class="math notranslate nohighlight">\(U(\phi)\)</span> of the system of both masses. Take note of any constraints that you use to write this as a 1D problem.</p></li>
+<li><p>4a (3pt) In terms of the rotation angle <span class="math notranslate nohighlight">\(\phi\)</span> of the wheel, write down the total potential energy <span class="math notranslate nohighlight">\(U(\phi)\)</span> of the system of both masses. Take note of any constraints that you use to write this as a 1D problem. When working this kind of problem, every object-Earth pair has gravitational potential energy and we must have the same zero of potential energy for every pair.</p></li>
 </ul>
 <div class="tip admonition">
 <p class="admonition-title">Solution</p>
@@ -638,7 +645,7 @@ doconce format html hw5.do.txt --no_mako -->
 \[U(\phi) = -mgR\phi - MgR\cos\phi.\]</div>
 </div>
 <ul class="simple">
-<li><p>4b (2pt) Use this potential energy to find  values of <span class="math notranslate nohighlight">\(m\)</span> and <span class="math notranslate nohighlight">\(M\)</span> for which there are “fixed points”, “critical points”, or what we sometimes call “equilibrium points”. The language we use comes from different fields, but the concept is the same.</p></li>
+<li><p>4b (2pt) Use this potential energy to find  values of <span class="math notranslate nohighlight">\(m\)</span> and <span class="math notranslate nohighlight">\(M\)</span> for which there are “fixed points”, “critical points”, or what we sometimes call “equilibrium points”. The language we use comes from different fields, but the concept is the same. What is the condition for the existence of any critical points?</p></li>
 </ul>
 <div class="tip admonition">
 <p class="admonition-title">Solution</p>
@@ -711,7 +718,7 @@ doconce format html hw5.do.txt --no_mako -->
 </div>
 <div class="tip admonition">
 <p class="admonition-title">Solution</p>
-<p>It’s interesting that there’s something weird happening when <span class="math notranslate nohighlight">\(m/M&gt;1\)</span>. Because it looks like the last point is the selected minimum. Let’s plot the potential energy for <span class="math notranslate nohighlight">\(m/M = 1.1\)</span> and <span class="math notranslate nohighlight">\(m/M = 0.9\)</span> but let phi go from -<span class="math notranslate nohighlight">\(pi/2\)</span> to 2<span class="math notranslate nohighlight">\(\pi\)</span>. And now we see what is happening. The potential energy has local minima and local maxima. The curve for <span class="math notranslate nohighlight">\(m/M &lt; 1\)</span> tends to have a local minimum before <span class="math notranslate nohighlight">\(phi=pi/2\)</span> at the top. So there’s a chance for stable oscillations. However, if <span class="math notranslate nohighlight">\(m/M&gt;1\)</span>, then that local minimum disappears and the potential energy has no local minima. This is a sign that the system has no stable points, but it also appears to be a sign there’s no local extrema (i.e., no fixed points at all). This could have come from part 1, but now we see why. This is an example of a system the bifurcates - it goes from having stable points to having no stable points with a parameter change. This is a baby bifurcation.</p>
+<p>It’s interesting that there’s something weird happening when <span class="math notranslate nohighlight">\(m/M&gt;1\)</span>. Because it looks like the last point is the selected minimum. Let’s plot the potential energy for <span class="math notranslate nohighlight">\(m/M = 1.1\)</span> and <span class="math notranslate nohighlight">\(m/M = 0.9\)</span> but let phi go from -<span class="math notranslate nohighlight">\(\pi/2\)</span> to 2<span class="math notranslate nohighlight">\(\pi\)</span>. And now we see what is happening. The potential energy has local minima and local maxima. The curve for <span class="math notranslate nohighlight">\(m/M &lt; 1\)</span> tends to have a local minimum before <span class="math notranslate nohighlight">\(\phi=\pi/2\)</span> at the top. So there’s a chance for stable oscillations. However, if <span class="math notranslate nohighlight">\(m/M&gt;1\)</span>, then that local minimum disappears and the potential energy has no local minima. This is a sign that the system has no stable points, but it also appears to be a sign there’s no local extrema (i.e., no fixed points at all). This could have come from part 1, but now we see why. This is an example of a system the bifurcates - it goes from having stable points to having no stable points with a parameter change. This is a baby bifurcation.</p>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1117,9 +1124,9 @@ $<span class="math notranslate nohighlight">\(\ddot{\theta}=-\frac{g}{l}\sin\the
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_1921/2996982062.py:33: RuntimeWarning: invalid value encountered in sqrt
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_6256/2996982062.py:33: RuntimeWarning: invalid value encountered in sqrt
   v1 = np.sqrt(2*energies[&#39;E&#39;][i]-x**2)
-/tmp/ipykernel_1921/2996982062.py:34: RuntimeWarning: invalid value encountered in sqrt
+/tmp/ipykernel_6256/2996982062.py:34: RuntimeWarning: invalid value encountered in sqrt
   v2 = -np.sqrt(2*energies[&#39;E&#39;][i]-x**2)
 </pre></div>
 </div>
