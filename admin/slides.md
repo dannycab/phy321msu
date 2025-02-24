@@ -2,6 +2,19 @@
 
 Slides for PHY 321 appear in reverse chronological order, with the most recent slides at the top. The formats are PDF, HTML, and Markdown. The HTML slides are hosted on my website, and the Markdown slides are the source code for the HTML slides, built with [Marp](https://marp.app/).
 
+## Day 18 - Introduction to Nonlinear Dynamics - 24 Feb 2025
+
+### Download PDF
+
+[![Day 18](../slides/day-18-introduction-to-nonlinear-dynamics.png)](../slides/day-18-introduction-to-nonlinear-dynamics.pdf)
+
+### HTML Versions
+
+| Format | Link |
+|--|--|
+| HTML (Inline) | [day-18-introduction-to-nonlinear-dynamics.md](../slides/day-18-introduction-to-nonlinear-dynamics.md) |
+| HTML (Slides) | [day-18-introduction-to-nonlinear-dynamics.html](../slides/day-18-introduction-to-nonlinear-dynamics.html) |
+
 ## Day 17 - Homework Session - 21 Feb 2025
 
 ### Download PDF
