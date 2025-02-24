@@ -1,0 +1,1200 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Homework 4 (Due 09 Feb) &#8212; Classical Mechanics</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'solutions/solutionhw4';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/spartan-helmet.png" class="logo__image only-light" alt="Classical Mechanics - Home"/>
+    <img src="../_static/spartan-helmet.png" class="logo__image only-dark pst-js-only" alt="Classical Mechanics - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    PHY 321: Classical Mechanics 1, Michigan State University, Spring 2024
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">About the course</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../admin/teachers.html">Teachers and Grading</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin/resources.html">Additional Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin/textbooks.html">Textbooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin/schedule-cal.html">Calendar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin/links.html">Course Material and Links</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Introductory Material</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter1.html">1. What is Classical Physics?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter2-overview.html">What is Mathematical Modeling?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter2.html">2. Classical Mechanics, Mathematics and Numerical background</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter3.html">3. Simple Motion problems and Reminder on Newton’s Laws</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter4.html">4. Work, Energy, Momentum and Conservation laws</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Advanced Topics</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter5.html">5. Harmonic Oscillations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter6.html">6. Two-body problems, from the Gravitational Force to Two-body Scattering</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter7.html">7. Non-inertial Frames, Translation and Rotating Coordinate Systems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter8.html">8. Variational Calculus and Lagrangian Formalism</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">In-class handouts, activities, and other materials</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../in-class/cw1-python-test.html">CW1 - Python Test</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../in-class/cw6-phase_space.html">CW6 - Phase Portraits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../in-class/cw11-plot-fourier.html">CW11 - Plot Fourier Expansion</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Weekly assignments, midterms and final projects with solutions</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw1.html">Homework 1 (Due 19 Jan)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw2.html">Homework 2 (Due 26 Jan)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw3.html">Homework 3 (Due 02 Feb)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw4.html">Homework 4 (Due 09 Feb)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw5.html">Homework 5 (Due 08 Mar)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw6.html">Homework 6 (Due 15 Mar)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw7.html">Homework 7 (Due 22 Mar)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw8.html">Homework 8 (Due 12 Apr)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw9.html">Homework 9 (Due 19 Apr)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw10.html">OPTIONAL Homework 10 (Due Apr 26)</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Honors Projects</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../honors-projects/ChaoticPendulum.html">Chaos in the driven nonlinear pendulum</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../honors-projects/NeuralNetworks.html">From Ordinary Differential equations to Neural Networks, solving mechanics problems in a new way</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../honors-projects/SolarSystem.html">Building a model for the solar system using ordinary differential equations</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/main?urlpath=tree/solutions/solutionhw4.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch on Binder"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img alt="Binder logo" src="../_static/images/logo_binder.svg">
+  </span>
+<span class="btn__text-container">Binder</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/solutions/solutionhw4.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Homework 4 (Due 09 Feb)</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-1-10-pt-conservation-laws-energy-and-momentum">Exercise 1 (10 pt), Conservation laws, Energy and momentum</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-2-10-pt-conservation-of-angular-momentum">Exercise 2 (10 pt), Conservation of angular momentum</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-3-10pt-example-of-potential">Exercise 3 (10pt), Example of potential</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-4-10pt-angular-momentum-case">Exercise 4 (10pt), Angular momentum case</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-5-10pt-forces-and-potentials">Exercise 5 (10pt), forces  and potentials</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-6-40pt-numerical-elements-adding-the-bouncing-from-the-floor-to-the-code-from-hw-3">Exercise 6 (40pt), Numerical elements, adding the bouncing from the floor to the code from hw 3</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <!-- HTML file automatically generated from DocOnce source (https://github.com/doconce/doconce/)
+doconce format html solutionhw4.do.txt  -->
+<!-- dom:TITLE: PHY321: Classical Mechanics 1 --><section class="tex2jax_ignore mathjax_ignore" id="homework-4-due-09-feb">
+<h1>Homework 4 (Due 09 Feb)<a class="headerlink" href="#homework-4-due-09-feb" title="Link to this heading">#</a></h1>
+<p><strong>Solution Homework 4, Spring 2024</strong></p>
+<section id="exercise-1-10-pt-conservation-laws-energy-and-momentum">
+<h2>Exercise 1 (10 pt), Conservation laws, Energy and momentum<a class="headerlink" href="#exercise-1-10-pt-conservation-laws-energy-and-momentum" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>1a (2pt) How do we define a conservative force? Explain in words and indicate what property/properties must be fulfilled.</p></li>
+</ul>
+<div class="hint admonition">
+<p class="admonition-title">SOLUTION</p>
+<p>A conservative force is a force whose property is that the total work
+done in moving an object between two points is independent of the
+taken path. This means that the work on an object under the influence
+of a conservative force, is independent on the path of the object. It
+depends only on the spatial degrees of freedom and it is possible to
+assign a numerical value for the potential at any point. It leads to
+conservation of energy. The <a class="reference external" href="https://en.wikipedia.org/wiki/Gravity#Newton's_theory_of_gravitation">gravitational force</a> is an example of a
+conservative force.</p>
+<p>If you wish to read more about conservative forces or not, Feyman’s lectures from 1963 are quite interesting.
+He states for example that <strong>All fundamental forces in nature appear to be conservative</strong>.
+This statement was made while developing his argument that <em>there are no nonconservative forces</em>.
+You may enjoy the link to <a class="reference external" href="http://www.feynmanlectures.caltech.edu/I_14.html">Feynman’s lecture</a>.</p>
+<p>An important condition for the final work to be independent of the path is that the <strong>curl</strong> of the force is zero, that</p>
+<div class="math notranslate nohighlight">
+\[
+\boldsymbol{\nabla} \times \boldsymbol{F}=0
+\]</div>
+</div>
+<ul class="simple">
+<li><p>1b (4pt) Use the work-energy theorem to show that energy is conserved with a conservative force.</p></li>
+</ul>
+<div class="hint admonition">
+<p class="admonition-title">SOLUTION</p>
+<p>The work-energy theorem states that the work done <span class="math notranslate nohighlight">\(W\)</span> by a force <span class="math notranslate nohighlight">\(\boldsymbol{F}\)</span> that moves an object from a position <span class="math notranslate nohighlight">\(\boldsymbol{r}_0\)</span> to a new position <span class="math notranslate nohighlight">\(\boldsymbol{r}_1\)</span> is equal to the change in kinetic energy of the object:</p>
+<div class="math notranslate nohighlight">
+\[
+W=\int_{\boldsymbol{r}_0}^{\boldsymbol{r}_1}\boldsymbol{F}\cdot\boldsymbol{dr}=\frac{1}{2}mv_1^2-\frac{1}{2}mv_0^2,
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(v_1^2\)</span> is the velocity squared at a time <span class="math notranslate nohighlight">\(t_1\)</span> and <span class="math notranslate nohighlight">\(v_0^2\)</span> the corresponding quantity at a time <span class="math notranslate nohighlight">\(t_0\)</span>. This work need not be path independent, that is for different paths that start and end at the same location, we might see different final kinetic energies. However, if <span class="math notranslate nohighlight">\(\mathbf{F}\)</span> is a conservative force, then the work done by that force is path independent. More importantly, it means that there’s no change in potential energy for any closed path, that is,</p>
+<div class="math notranslate nohighlight">
+\[\oint_C \boldsymbol{F}_{cons}\cdot\boldsymbol{dr}=0\]</div>
+<p>for any closed path <span class="math notranslate nohighlight">\(C\)</span>. So that if we start and end at the same location, the work done by a conservative force is zero. So we can see that energy is conserved before and after this action:</p>
+<div class="math notranslate nohighlight">
+\[
+W=0=\int_{\boldsymbol{r}_0}^{\boldsymbol{r}_0}\boldsymbol{F}\cdot\boldsymbol{dr}=\frac{1}{2}mv_0^2-\frac{1}{2}mv_0^2.
+\]</div>
+<p>Thus no change in kinetic energy. This means that the total energy is conserved in such a process.</p>
+</div>
+<ul class="simple">
+<li><p>1c (4pt) Assume that you have only internal two-body forces acting on <span class="math notranslate nohighlight">\(N\)</span> objects in an isolated system. The force from object <span class="math notranslate nohighlight">\(i\)</span> on object <span class="math notranslate nohighlight">\(j\)</span> is <span class="math notranslate nohighlight">\(\boldsymbol{f}_{ij}\)</span>. Show that the linear momentum is conserved.</p></li>
+</ul>
+<div class="hint admonition">
+<p class="admonition-title">SOLUTION</p>
+<p>Here we use Newton’s third law and assume that our system is only
+affected by so-called internal forces.  This means that the force
+<span class="math notranslate nohighlight">\(\boldsymbol{f}_{ij}\)</span> from object <span class="math notranslate nohighlight">\(i\)</span> acting on object <span class="math notranslate nohighlight">\(j\)</span> is equal to the
+force acting on object <span class="math notranslate nohighlight">\(j\)</span> from object <span class="math notranslate nohighlight">\(i\)</span> but with opposite sign,
+that is <span class="math notranslate nohighlight">\(\boldsymbol{f}_{ij}=-\boldsymbol{f}_{ji}\)</span>.</p>
+<p>The total linear momentum for a system is the sum of all the individual momenta:</p>
+<div class="math notranslate nohighlight">
+\[
+\boldsymbol{P}=\sum_{i=1}^N\boldsymbol{p}_i=\sum_{i=1}^Nm_i\boldsymbol{v}_i,
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(i\)</span> runs over all objects, <span class="math notranslate nohighlight">\(m_i\)</span> is the mass of object <span class="math notranslate nohighlight">\(i\)</span> and <span class="math notranslate nohighlight">\(\boldsymbol{v}_i\)</span> its corresponding velocity.</p>
+<p>The force acting on object <span class="math notranslate nohighlight">\(i\)</span> from all the other objects is (lower
+case letters for individual objects and upper case letters for total
+quantities)</p>
+<div class="math notranslate nohighlight">
+\[
+\boldsymbol{f}_i=\sum_{j=1}^N\boldsymbol{f}_{ji}.
+\]</div>
+<p>Summing over all objects the net force is</p>
+<div class="math notranslate nohighlight">
+\[
+\boldsymbol{F}_{net}=\sum_{i=1}^N\boldsymbol{f}_i=\sum_{i=1}^N\sum_{j=1;j\ne i}^N\boldsymbol{f}_{ji}.
+\]</div>
+<p>We are summing freely over all objects with the constraint that <span class="math notranslate nohighlight">\(i\ne j\)</span> (there are no self-interactions; self-forces). We can now manipulate the double sum.</p>
+<div class="note admonition">
+<p class="admonition-title">Rewriting the double sum as Newton’s third law pairs</p>
+<p>This technique is clever because it works incredibly well in a computational algorithm when you need to exclude self interactions. Here the idea is that you start with the one agent, add up all the pairwise interactions that agent has with all the others, then move to the next one excluding the first one from consideration (as you took care of that already). Mathematically, that means that we can write the double sum as</p>
+<div class="math notranslate nohighlight">
+\[
+\boldsymbol{F}_{net}=\sum_{i=1}^N\sum_{j=1;j\ne i}^N\boldsymbol{f}_{ji}=\sum_{i=1}^N\sum_{j&gt;i}^N(\boldsymbol{f}_{ji}+\boldsymbol{f}_{ij}).
+\]</div>
+<p><strong>Really try to convince yourself about this algorithmic process</strong> by setting <span class="math notranslate nohighlight">\(N=2\)</span> and <span class="math notranslate nohighlight">\(N=3\)</span>.</p>
+</div>
+<p>Next, Newton’s third law says <span class="math notranslate nohighlight">\(\boldsymbol{f}_{ij}=-\boldsymbol{f}_{ji}\)</span>, which means we have</p>
+<div class="math notranslate nohighlight">
+\[
+\boldsymbol{F}_{net}=\sum_{i=1}^N\sum_{j=1;j\ne i}^N\boldsymbol{f}_{ji}=\sum_{i=1}^N\sum_{j&gt;i}^N(\boldsymbol{f}_{ji}-\boldsymbol{f}_{ji})=0.
+\]</div>
+<p>The total force due to internal degrees of freedom only is thus <span class="math notranslate nohighlight">\(0\)</span>.
+If we then use the definition that</p>
+<div class="math notranslate nohighlight">
+\[\boldsymbol{F}_{net} = \dfrac{d\boldsymbol{P}}{dt},\]</div>
+<div class="math notranslate nohighlight">
+\[
+\sum_{i=1}^N\boldsymbol{f}_i=\sum_{i=1}^Nm_i\frac{d\boldsymbol{v}_i}{dt}=\sum_{i=1}^N\frac{d\boldsymbol{p}_i}{dt}=\frac{d \boldsymbol{P}}{dt}=0,
+\]</div>
+<p>where we assumed that <span class="math notranslate nohighlight">\(m_i\)</span> is independent of time, we see that time derivative of the total momentum is zero.
+We say then that the linear momentum is a constant of the motion. It is conserved. It also makes sense that the net force is zero. It is the net <strong>external</strong> force that changes the momentum of the system. If there are no external forces, the momentum is conserved.</p>
+</div>
+</section>
+<section id="exercise-2-10-pt-conservation-of-angular-momentum">
+<h2>Exercise 2 (10 pt), Conservation of angular momentum<a class="headerlink" href="#exercise-2-10-pt-conservation-of-angular-momentum" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>2a (2pt) Define angular momentum and the torque for a single object with external forces only.</p></li>
+</ul>
+<div class="hint admonition">
+<p class="admonition-title">SOLUTION</p>
+<p>The angular moment <span class="math notranslate nohighlight">\(\boldsymbol{l}_i\)</span> for a given object <span class="math notranslate nohighlight">\(i\)</span> is defined as</p>
+<div class="math notranslate nohighlight">
+\[
+\boldsymbol{l}_i = \boldsymbol{r}_i \times \boldsymbol{p}_i,
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(\boldsymbol{p}_i=m_i\boldsymbol{v}_i\)</span>. With external forces only defining the acceleration and the mass being time independent, the momentum is the integral over the external force as function of time, that is</p>
+<div class="math notranslate nohighlight">
+\[
+\boldsymbol{p}_i(t)=\boldsymbol{p}_i(t_0)+\int_{t_0}^t \boldsymbol{f}_i^{\mathrm{ext}}(t')dt'.
+\]</div>
+<p>The torque for one object is</p>
+<div class="math notranslate nohighlight">
+\[
+\boldsymbol{\tau}_i=\frac{d\boldsymbol{l}_i}{dt} = \frac{dt(\boldsymbol{r}_i \times \boldsymbol{p}_i)}{dt}=\boldsymbol{r}_i \times \frac{d\boldsymbol{p}_i}{dt}=\boldsymbol{r}_i \times \boldsymbol{f}_i,
+\]</div>
+</div>
+<ul class="simple">
+<li><p>2b (4pt) Define angular momentum and the torque for a system with <span class="math notranslate nohighlight">\(N\)</span> objects/particles  with external and internal forces. The force from object <span class="math notranslate nohighlight">\(i\)</span> on object <span class="math notranslate nohighlight">\(j\)</span> is <span class="math notranslate nohighlight">\(\boldsymbol{F}_{ij}\)</span>. Let external forces on the <span class="math notranslate nohighlight">\(i\)</span>-th particle be <span class="math notranslate nohighlight">\(\boldsymbol{F}_{\mathrm{ext},i}\)</span></p></li>
+</ul>
+<div class="hint admonition">
+<p class="admonition-title">SOLUTION</p>
+<p>The total angular momentum <span class="math notranslate nohighlight">\(\boldsymbol{L}\)</span> is defined as</p>
+<div class="math notranslate nohighlight">
+\[
+\boldsymbol{L}=\sum_{i=1}^N\boldsymbol{l}_i = \sum_{i=1}^N\boldsymbol{r}_i \times \boldsymbol{p}_i.
+\]</div>
+<p>and the total torque is (using the expression for one object from 2a)</p>
+<div class="math notranslate nohighlight">
+\[
+\boldsymbol{\tau}=\sum_{i=1}^N\frac{d\boldsymbol{l}_i}{dt} = \sum_{i=1}^N\boldsymbol{r}_i \times \boldsymbol{f}_i.
+\]</div>
+<p>The force acting on one object is <span class="math notranslate nohighlight">\(\boldsymbol{f}_i=\boldsymbol{f}_i^{\mathrm{ext}}+\sum_{j=1}^N\boldsymbol{f}_{ji}\)</span>.</p>
+</div>
+<ul class="simple">
+<li><p>2c (4pt) With internal forces only, what is the mathematical form of the forces that allows for angular momentum to be conserved?</p></li>
+</ul>
+<div class="hint admonition">
+<p class="admonition-title">SOLUTION</p>
+<p>Using the results from 1c, we can rewrite without external forces our torque as</p>
+<div class="math notranslate nohighlight">
+\[
+\boldsymbol{\tau}=\sum_{i=1}^N\frac{d\boldsymbol{l}_i}{dt} = \sum_{i=1}^N\boldsymbol{r}_i \times \boldsymbol{f}_i=\sum_{i=1}^N(\boldsymbol{r}_i \times \sum_{j=1}^N\boldsymbol{f}_{ji}),
+\]</div>
+<p>which gives</p>
+<div class="math notranslate nohighlight">
+\[
+\boldsymbol{\tau}=\sum_{i=1}^N\sum_{j=1;j\ne i}^N(\boldsymbol{r}_i \times \boldsymbol{f}_{ji}).
+\]</div>
+<div class="note admonition">
+<p class="admonition-title">REMINDER</p>
+<p>We can rewrite this sum. This is a modification of the double sum we had in 1c. Now we have the cross product to include. Note that the vector <span class="math notranslate nohighlight">\(\boldsymbol{r}_j\)</span> is the vector pointing from the origin to the position of object <span class="math notranslate nohighlight">\(j\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[
+\boldsymbol{\tau}=\sum_{i=1}^N\sum_{j&gt;i}^N(\boldsymbol{r}_i \times \boldsymbol{f}_{ji}+\boldsymbol{r}_j \times \boldsymbol{f}_{ij}),
+\]</div>
+</div>
+<p>and using Newton’s third law we have</p>
+<div class="math notranslate nohighlight">
+\[
+\boldsymbol{\tau}=\sum_{i=1}^N\sum_{j&gt;i}^N(\boldsymbol{r}_i -\boldsymbol{r}_j) \times \boldsymbol{f}_{ji}.
+\]</div>
+<p>If the force is proportional to <span class="math notranslate nohighlight">\(\boldsymbol{r}_i -\boldsymbol{r}_j\)</span> then angular momentum is conserved since the cross-product of a vector with itself is zero. We say thus that angular momentum is a constant of the motion. This can be the case for the gravitational force and the Coulomb force where the interactions are proportional to the distance between the objects.</p>
+</div>
+</section>
+<section id="exercise-3-10pt-example-of-potential">
+<h2>Exercise 3 (10pt), Example of potential<a class="headerlink" href="#exercise-3-10pt-example-of-potential" title="Link to this heading">#</a></h2>
+<p>Consider a particle of mass <span class="math notranslate nohighlight">\(m\)</span> moving according to the potential</p>
+<div class="math notranslate nohighlight">
+\[
+V(x,y,z)=A\exp\left\{-\frac{x^2+z^2}{2a^2}\right\}.
+\]</div>
+<ul class="simple">
+<li><p>3a (2pt) Is energy conserved? If so, why?</p></li>
+</ul>
+<div class="hint admonition">
+<p class="admonition-title">SOLUTION</p>
+<p>In this exercise <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(a\)</span> are constants. The force is given by the derivative of <span class="math notranslate nohighlight">\(V\)</span> with respect to the spatial degrees of freedom and since the potential depends only on position, the force is conservative and energy is conserved. Furthermore, the curl of the force is zero. To see this we need first to compute the derivatives of the potential with respect to <span class="math notranslate nohighlight">\(x\)</span>, <span class="math notranslate nohighlight">\(y\)</span> and <span class="math notranslate nohighlight">\(z\)</span>.
+We have that</p>
+<div class="math notranslate nohighlight">
+\[
+F_x = -\frac{\partial V}{\partial x}=-\frac{xA}{a^2}\exp\left\{-\frac{x^2+z^2}{2a^2}\right\},
+\]</div>
+<p>and</p>
+<div class="math notranslate nohighlight">
+\[
+F_y = 0,
+\]</div>
+<p>and</p>
+<div class="math notranslate nohighlight">
+\[
+F_z = -\frac{\partial V}{\partial z}=-\frac{zA}{a^2}\exp\left\{-\frac{x^2+z^2}{2a^2}\right\}.
+\]</div>
+<p>The components of the <strong>curl</strong> of <span class="math notranslate nohighlight">\(\boldsymbol{F}\)</span> are</p>
+<div class="math notranslate nohighlight">
+\[
+(\boldsymbol{\nabla}\times\boldsymbol{F})_x = \frac{\partial F_y}{\partial z}-\frac{\partial F_z}{\partial y}=0,
+\]</div>
+<p>and</p>
+<div class="math notranslate nohighlight">
+\[
+(\boldsymbol{\nabla}\times\boldsymbol{F})_y = \frac{\partial F_x}{\partial z}-\frac{\partial F_z}{\partial x}=\frac{xzA}{a^4}\exp\left\{-\frac{x^2+z^2}{2a^2}\right\}-\frac{xzA}{a^4}\exp\left\{-\frac{x^2+z^2}{2a^2}\right\}=0,
+\]</div>
+<p>and</p>
+<div class="math notranslate nohighlight">
+\[
+(\boldsymbol{\nabla}\times\boldsymbol{F})_z = \frac{\partial F_y}{\partial x}-\frac{\partial F_x}{\partial y}=0.
+\]</div>
+<p>The force is a conservative one.</p>
+</div>
+<ul class="simple">
+<li><p>3b (4pt) Which of  the quantities, <span class="math notranslate nohighlight">\(p_x,p_y,p_z\)</span> are conserved?</p></li>
+</ul>
+<div class="hint admonition">
+<p class="admonition-title">SOLUTION</p>
+<p>Taking the derivatives with respect to time shows that only <span class="math notranslate nohighlight">\(p_y\)</span> is conserved
+We see this directly from the above expressions for the force, since the derivative with respect to time of the momentum is simply the force. Thus, only the <span class="math notranslate nohighlight">\(y\)</span>-component of the momentum is conserved, see the expressions above for the forces,</p>
+<p>For the next exercise (3c), we need also the following derivatives</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{\partial F_x}{\partial x} = \frac{x^2A}{a^4}\exp\left\{-\frac{x^2+z^2}{2a^2}\right\}-\frac{A}{a^2}\exp\left\{-\frac{x^2+z^2}{2a^2}\right\},
+\]</div>
+<p>and</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{\partial F_y}{\partial y} = 0,
+\]</div>
+<p>and</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{\partial F_z}{\partial z} = \frac{z^2A}{a^4}\exp\left\{-\frac{x^2+z^2}{2a^2}\right\}-\frac{A}{a^2}\exp\left\{-\frac{x^2+z^2}{2a^2}\right\},
+\]</div>
+</div>
+<ul class="simple">
+<li><p>3c (4pt) Which of  the quantities, <span class="math notranslate nohighlight">\(L_x,L_y,L_z\)</span> are conserved?</p></li>
+</ul>
+<div class="hint admonition">
+<p class="admonition-title">SOLUTION</p>
+<p>Using that <span class="math notranslate nohighlight">\(\boldsymbol{L}=\boldsymbol{r}\times\boldsymbol{p}\)</span> and that</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{d\boldsymbol{L}}{dt}=\boldsymbol{r}\times\boldsymbol{F},
+\]</div>
+<p>we have that the different components are</p>
+<div class="math notranslate nohighlight">
+\[
+(\boldsymbol{r}\times\boldsymbol{F})_x = zF_y-yF_z=\frac{yzA}{a^2}\exp\left\{-\frac{x^2+z^2}{2a^2}\right\}.
+\]</div>
+<p>and</p>
+<div class="math notranslate nohighlight">
+\[
+(\boldsymbol{r}\times\boldsymbol{F})_y = xF_z-zF_x=-\frac{xzA}{a^2}\exp\left\{-\frac{x^2+z^2}{2a^2}\right\}+\frac{xzA}{a^2}\exp\left\{-\frac{x^2+z^2}{2a^2}\right\}=0,
+\]</div>
+<p>and</p>
+<div class="math notranslate nohighlight">
+\[
+(\boldsymbol{r}\times\boldsymbol{F})_z = xF_y-yF_x=\frac{yxA}{a^2}\exp\left\{-\frac{x^2+z^2}{2a^2}\right\}.
+\]</div>
+<p>Only <span class="math notranslate nohighlight">\(L_y\)</span> is conserved.</p>
+</div>
+</section>
+<section id="exercise-4-10pt-angular-momentum-case">
+<h2>Exercise 4 (10pt), Angular momentum case<a class="headerlink" href="#exercise-4-10pt-angular-momentum-case" title="Link to this heading">#</a></h2>
+<p>At <span class="math notranslate nohighlight">\(t=0\)</span> we have a single object with position <span class="math notranslate nohighlight">\(\boldsymbol{r}_0=x_0\boldsymbol{e}_x+y_0\boldsymbol{e}_y\)</span>. We add also a force in the <span class="math notranslate nohighlight">\(x\)</span>-direction at <span class="math notranslate nohighlight">\(t=0\)</span>. We assume that the object is at rest at <span class="math notranslate nohighlight">\(t=0\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[
+\boldsymbol{F} = F\boldsymbol{e}_x.
+\]</div>
+<ul class="simple">
+<li><p>4a (3pt) Find the velocity and momentum at a given time <span class="math notranslate nohighlight">\(t\)</span> by integrating over time with the above initial conditions.</p></li>
+</ul>
+<div class="hint admonition">
+<p class="admonition-title">SOLUTION</p>
+<p>There is no velocity in the <span class="math notranslate nohighlight">\(x\)</span>- and <span class="math notranslate nohighlight">\(y\)</span>-directions at <span class="math notranslate nohighlight">\(t=0\)</span>, thus <span class="math notranslate nohighlight">\(\boldsymbol{v}_0=0\)</span>. The force is constant and acting only in the <span class="math notranslate nohighlight">\(x\)</span>-direction. We have then (dropping vector symbols and setting <span class="math notranslate nohighlight">\(t_0=0\)</span>)</p>
+<div class="math notranslate nohighlight">
+\[
+v_x(t) = \int_0^t a(t')dt'=\int_0^t\frac{F}{m}dt'=\frac{F}{m}t.
+\]</div>
+</div>
+<ul class="simple">
+<li><p>4b (3pt) Find also the position at a time <span class="math notranslate nohighlight">\(t\)</span>.</p></li>
+</ul>
+<div class="hint admonition">
+<p class="admonition-title">SOLUTION</p>
+<p>In the <span class="math notranslate nohighlight">\(x\)</span>-direction we have then</p>
+<div class="math notranslate nohighlight">
+\[
+x(t) = \int_0^t v_x(t')dt'=x_0+\frac{F}{2m}t^2,
+\]</div>
+<p>resulting in</p>
+<div class="math notranslate nohighlight">
+\[
+\boldsymbol{r}(t)=(x_0+\frac{F}{2m}t^2)\boldsymbol{e}_x+y_0\boldsymbol{e}_y.
+\]</div>
+</div>
+<ul class="simple">
+<li><p>4c (4pt) Use the position and the momentum to find the angular momentum and the torque. Is angular momentum conserved?</p></li>
+</ul>
+<div class="hint admonition">
+<p class="admonition-title">SOLUTION</p>
+<p>Velocity and position are defined in the <span class="math notranslate nohighlight">\(xy\)</span>-plane only which means that only angular momentum in the <span class="math notranslate nohighlight">\(z\)</span>-direction is non-zero. The angular momentum is</p>
+<div class="math notranslate nohighlight">
+\[
+\boldsymbol{l} = (x(t)v_y(t)-y(t)v_x(t))\boldsymbol{e}_z=-y_0Ft\boldsymbol{e}_z,
+\]</div>
+<p>which results in a torque <span class="math notranslate nohighlight">\(\boldsymbol{\tau}=-y_0\frac{F}{m}\boldsymbol{e}_z\)</span>, which is not zero. Thus, angular momentum is not conserved.</p>
+</div>
+</section>
+<section id="exercise-5-10pt-forces-and-potentials">
+<h2>Exercise 5 (10pt), forces  and potentials<a class="headerlink" href="#exercise-5-10pt-forces-and-potentials" title="Link to this heading">#</a></h2>
+<p>A particle of mass <span class="math notranslate nohighlight">\(m\)</span> has velocity <span class="math notranslate nohighlight">\(v=\alpha/x\)</span>, where <span class="math notranslate nohighlight">\(x\)</span> is its displacement.</p>
+<ul class="simple">
+<li><p>5a (3pt) Find the force <span class="math notranslate nohighlight">\(F(x)\)</span> responsible for the motion.</p></li>
+</ul>
+<div class="hint admonition">
+<p class="admonition-title">SOLUTION</p>
+<p>Here, since the force is assumed to be conservative (only dependence on <span class="math notranslate nohighlight">\(x\)</span>), we can use energy conservation.
+Assuming that the total energy at <span class="math notranslate nohighlight">\(t=0\)</span> is <span class="math notranslate nohighlight">\(E_0\)</span>, we have</p>
+<div class="math notranslate nohighlight">
+\[
+E_0=V(x)+\frac{1}{2}mv^2=V(x)+\frac{1}{2}m\frac{\alpha^2}{x^2}.
+\]</div>
+<p>Taking the derivative wrt <span class="math notranslate nohighlight">\(x\)</span> we have</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{dV}{dx}-m\frac{\alpha^2}{x^3}=0,
+\]</div>
+<p>and since <span class="math notranslate nohighlight">\(F(x)=-dV/dx\)</span> we have</p>
+<div class="math notranslate nohighlight">
+\[
+F(x)=-m\frac{\alpha^2}{x^3}.
+\]</div>
+</div>
+<p>A particle is thereafter under the influence of a force <span class="math notranslate nohighlight">\(F=-kx+kx^3/\alpha^2\)</span>, where <span class="math notranslate nohighlight">\(k\)</span> and <span class="math notranslate nohighlight">\(\alpha\)</span> are constants and <span class="math notranslate nohighlight">\(k\)</span> is positive.</p>
+<ul class="simple">
+<li><p>5b (3pt) Determine <span class="math notranslate nohighlight">\(V(x)\)</span>  and discuss the motion. It can be convenient here to make a sketch/plot of the potential as function of <span class="math notranslate nohighlight">\(x\)</span>.</p></li>
+</ul>
+<div class="hint admonition">
+<p class="admonition-title">SOLUTION</p>
+<p>We assume that the potential is zero at say <span class="math notranslate nohighlight">\(x=0\)</span>. Integrating the force from zero to <span class="math notranslate nohighlight">\(x\)</span> gives</p>
+<div class="math notranslate nohighlight">
+\[
+V(x) = -\int_0^x F(x')dx'=\frac{kx^2}{2}-\frac{kx^4}{4\alpha^2}.
+\]</div>
+<p>The following code plots the potential. We have chosen values of <span class="math notranslate nohighlight">\(\alpha=k=1.0\)</span>. Feel free to experiment with other values. We plot <span class="math notranslate nohighlight">\(V(x)\)</span> for a domain of <span class="math notranslate nohighlight">\(x\in [-2,2]\)</span>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="n">matplotlib</span> <span class="n">inline</span>
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">math</span>
+
+<span class="n">x0</span><span class="o">=</span> <span class="o">-</span><span class="mf">2.0</span>
+<span class="n">xn</span> <span class="o">=</span> <span class="mf">2.1</span>
+<span class="n">Deltax</span> <span class="o">=</span> <span class="mf">0.1</span>
+<span class="n">alpha</span> <span class="o">=</span> <span class="mf">1.0</span>
+<span class="n">k</span> <span class="o">=</span> <span class="mf">1.0</span>
+<span class="c1">#set up arrays</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">x0</span><span class="p">,</span><span class="n">xn</span><span class="p">,</span><span class="n">Deltax</span><span class="p">)</span>
+<span class="n">n</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">size</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="n">V</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+<span class="n">V</span> <span class="o">=</span> <span class="mf">0.5</span><span class="o">*</span><span class="n">k</span><span class="o">*</span><span class="n">x</span><span class="o">*</span><span class="n">x</span><span class="o">-</span><span class="mf">0.25</span><span class="o">*</span><span class="n">k</span><span class="o">*</span><span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="mi">4</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">alpha</span><span class="o">*</span><span class="n">alpha</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">V</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;x&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;V&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell tag_hide-input docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> inline
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">math</span>
+
+<span class="n">x0</span><span class="o">=</span> <span class="o">-</span><span class="mf">2.0</span>
+<span class="n">xn</span> <span class="o">=</span> <span class="mf">2.1</span>
+<span class="n">Deltax</span> <span class="o">=</span> <span class="mf">0.1</span>
+<span class="n">alpha</span> <span class="o">=</span> <span class="mf">1.0</span>
+<span class="n">k</span> <span class="o">=</span> <span class="mf">1.0</span>
+<span class="c1">#set up arrays</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">x0</span><span class="p">,</span><span class="n">xn</span><span class="p">,</span><span class="n">Deltax</span><span class="p">)</span>
+<span class="n">n</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">size</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="n">V</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+<span class="n">V</span> <span class="o">=</span> <span class="mf">0.5</span><span class="o">*</span><span class="n">k</span><span class="o">*</span><span class="n">x</span><span class="o">*</span><span class="n">x</span><span class="o">-</span><span class="mf">0.25</span><span class="o">*</span><span class="n">k</span><span class="o">*</span><span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="mi">4</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">alpha</span><span class="o">*</span><span class="n">alpha</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">V</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;x&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;V&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</details>
+<div class="cell_output docutils container">
+<img alt="../_images/e2c40c82a6aed59af29224dc31357192bff5bd4207015e44fbdafe9b43800a1f.png" src="../_images/e2c40c82a6aed59af29224dc31357192bff5bd4207015e44fbdafe9b43800a1f.png" />
+</div>
+</div>
+<div class="hint admonition">
+<p class="admonition-title">SOLUTION CONT’D</p>
+<p>From the plot here (with the chosen parameters)</p>
+<ol class="arabic simple">
+<li><p>we see that with a given initial velocity we can overcome the potential energy barrier</p></li>
+</ol>
+<p>and leave the potential well for good.</p>
+<ol class="arabic simple">
+<li><p>If the initial velocity is smaller (see next exercise) than a certain value, it will remain trapped in the potential well and oscillate back and forth around <span class="math notranslate nohighlight">\(x=0\)</span>. This is where the potential has its minimum value.</p></li>
+<li><p>If the kinetic energy at <span class="math notranslate nohighlight">\(x=0\)</span> equals the maximum potential energy, the object will oscillate back and forth between the minimum potential energy at <span class="math notranslate nohighlight">\(x=0\)</span> and the turning points where the kinetic energy turns zero. These are the so-called non-equilibrium points.</p></li>
+</ol>
+<ul class="simple">
+<li><p>5c (4pt)  What happens when the energy of the particle is <span class="math notranslate nohighlight">\(E=(1/4)k\alpha^2\)</span>? Hint: what is the maximum value of the potential energy?</p></li>
+</ul>
+<p>From the figure we see that
+the potential has a minimum at at <span class="math notranslate nohighlight">\(x=0\)</span> then rises until <span class="math notranslate nohighlight">\(x=\alpha\)</span> before falling off again. The maximum
+potential, <span class="math notranslate nohighlight">\(V(x\pm \alpha) = k\alpha^2/4\)</span>. If the energy is higher, the particle cannot be contained in the
+well. The turning points are thus defined by <span class="math notranslate nohighlight">\(x=\pm \alpha\)</span>. And from the previous plot you can easily see that this is the case (<span class="math notranslate nohighlight">\(\alpha=1\)</span> in the aforementioned Python code).</p>
+</div>
+</section>
+<section id="exercise-6-40pt-numerical-elements-adding-the-bouncing-from-the-floor-to-the-code-from-hw-3">
+<h2>Exercise 6 (40pt), Numerical elements, adding the bouncing from the floor to the code from hw 3<a class="headerlink" href="#exercise-6-40pt-numerical-elements-adding-the-bouncing-from-the-floor-to-the-code-from-hw-3" title="Link to this heading">#</a></h2>
+<p><strong>This exercise should be handed in as a jupyter-notebook</strong> at D2L. Remember to write your name(s).</p>
+<p>Till now we have only introduced gravity and air resistance and studied
+their effects via a constant acceleration due to gravity and the force
+arising from air resistance. But what happens when the ball hits the
+floor? What if we would like to simulate the normal force from the floor acting on the ball?</p>
+<p>We need then to include a force model for the normal force from
+the floor on the ball. The simplest approach to such a system is to introduce a contact force
+model represented by a spring model.  We model the interaction between the floor
+and the ball as a single spring. But the normal force is zero when
+there is no contact. Here  we define a simple model that allows us to include
+such effects in our models.</p>
+<p>The normal force from the floor on the ball is represented by a spring force. This
+is a strong simplification of the actual deformation process occurring at the contact
+between the ball and the floor due to the deformation of both the ball and the floor.</p>
+<p>The deformed region corresponds roughly to the region of <strong>overlap</strong> between the
+ball and the floor. The depth of this region is <span class="math notranslate nohighlight">\(\Delta y = R − y(t)\)</span>, where <span class="math notranslate nohighlight">\(R\)</span>
+is the radius of the ball. This is supposed to represent the compression of the spring.
+Our model for the normal force acting on the ball is then</p>
+<div class="math notranslate nohighlight">
+\[
+\boldsymbol{N} = −k (R − y(t)) \boldsymbol{e}_y.
+\]</div>
+<p>The normal force must act upward when <span class="math notranslate nohighlight">\(y &lt; R\)</span>,
+hence the sign must be negative.
+However, we must also ensure that the normal force only acts when the ball is in
+contact with the floor, otherwise the normal force is zero. The full formation of the
+normal force is therefore</p>
+<div class="math notranslate nohighlight">
+\[
+\boldsymbol{N} = −k (R − y(t)) \boldsymbol{e}_y,
+\]</div>
+<p>when <span class="math notranslate nohighlight">\(y(t) &lt; R\)</span> and zero when <span class="math notranslate nohighlight">\(y(t) \le R\)</span>.
+In the numerical calculations you can choose <span class="math notranslate nohighlight">\(R=0.1\)</span> m and the spring constant <span class="math notranslate nohighlight">\(k=1000\)</span> N/m.</p>
+<ul class="simple">
+<li><p>6a (10pt) Identify the forces acting on the ball and set up a diagram with the forces acting on the ball. Find the acceleration of the falling ball now with the normal force as well.</p></li>
+<li><p>6b (30pt) Choose a large enough final time so you can study the ball bouncing up and down several times. Add the normal force and compute the height of the ball as function of time with and without air resistance. Comment your results.</p></li>
+</ul>
+<p>For 6a, see Malthe-Sørenssen chapter 7.5.1, in particular figure
+7.10. The forces are in equation (7.10).  The following code shows how
+to set up the problem with gravitation, a drag force and a normal
+force from the ground. The normal force makes the ball bounce up
+again.</p>
+<div class="hint admonition">
+<p class="admonition-title">SOLUTION</p>
+<p>The code here includes all forces. Commenting out the air resistance will result in a ball which bounces up and down to the same height.
+Furthermore, you will note that for larger values of <span class="math notranslate nohighlight">\(\Delta t\)</span> the results will not be physically meaningful. Can you figure out why?  Try also different values for the step size in order to see whether the final results agrees with what you expect.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Exercise 6, hw4, smarter way with declaration of vx, vy, x and y</span>
+<span class="c1"># Here we have added a normal force from the ground</span>
+<span class="c1"># Common imports</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">math</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+
+<span class="c1"># Where to save the figures and data files</span>
+<span class="n">PROJECT_ROOT_DIR</span> <span class="o">=</span> <span class="s2">&quot;Results&quot;</span>
+<span class="n">FIGURE_ID</span> <span class="o">=</span> <span class="s2">&quot;Results/FigureFiles&quot;</span>
+<span class="n">DATA_ID</span> <span class="o">=</span> <span class="s2">&quot;DataFiles/&quot;</span>
+
+<span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">PROJECT_ROOT_DIR</span><span class="p">):</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">mkdir</span><span class="p">(</span><span class="n">PROJECT_ROOT_DIR</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">FIGURE_ID</span><span class="p">):</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">FIGURE_ID</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">DATA_ID</span><span class="p">):</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">DATA_ID</span><span class="p">)</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">image_path</span><span class="p">(</span><span class="n">fig_id</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">FIGURE_ID</span><span class="p">,</span> <span class="n">fig_id</span><span class="p">)</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">data_path</span><span class="p">(</span><span class="n">dat_id</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">DATA_ID</span><span class="p">,</span> <span class="n">dat_id</span><span class="p">)</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">save_fig</span><span class="p">(</span><span class="n">fig_id</span><span class="p">):</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="n">image_path</span><span class="p">(</span><span class="n">fig_id</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;.png&quot;</span><span class="p">,</span> <span class="nb">format</span><span class="o">=</span><span class="s1">&#39;png&#39;</span><span class="p">)</span>
+
+
+<span class="kn">from</span><span class="w"> </span><span class="nn">pylab</span><span class="w"> </span><span class="kn">import</span> <span class="n">plt</span><span class="p">,</span> <span class="n">mpl</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;ggplot&#39;</span><span class="p">)</span>
+<span class="n">mpl</span><span class="o">.</span><span class="n">rcParams</span><span class="p">[</span><span class="s1">&#39;font.family&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;serif&#39;</span>
+
+<span class="c1"># Define constants</span>
+<span class="n">g</span> <span class="o">=</span> <span class="mf">9.80655</span> <span class="c1">#in m/s^2</span>
+<span class="n">D</span> <span class="o">=</span> <span class="mf">0.0245</span> <span class="c1"># in mass/length, kg/m</span>
+<span class="n">m</span> <span class="o">=</span> <span class="mf">0.2</span> <span class="c1"># in kg</span>
+<span class="n">R</span> <span class="o">=</span> <span class="mf">0.1</span> <span class="c1"># in meters</span>
+<span class="n">k</span> <span class="o">=</span> <span class="mf">1000.0</span> <span class="c1"># in mass/time^2</span>
+<span class="c1"># Define Gravitational force as a vector in x and y, zero x component</span>
+<span class="n">G</span> <span class="o">=</span> <span class="o">-</span><span class="n">m</span><span class="o">*</span><span class="n">g</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">0.0</span><span class="p">,</span><span class="mi">1</span><span class="p">])</span>
+<span class="n">DeltaT</span> <span class="o">=</span> <span class="mf">0.001</span>
+<span class="c1">#set up arrays </span>
+<span class="n">tfinal</span> <span class="o">=</span> <span class="mf">15.0</span>
+<span class="n">n</span> <span class="o">=</span> <span class="n">ceil</span><span class="p">(</span><span class="n">tfinal</span><span class="o">/</span><span class="n">DeltaT</span><span class="p">)</span>
+<span class="c1"># set up arrays for t, v, and r, the latter contain the x and y comps</span>
+<span class="n">t</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+<span class="n">v</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">n</span><span class="p">,</span><span class="mi">2</span><span class="p">))</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">n</span><span class="p">,</span><span class="mi">2</span><span class="p">))</span>
+<span class="c1"># Initial conditions</span>
+<span class="n">r0</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">0.0</span><span class="p">,</span><span class="mf">2.0</span><span class="p">])</span>
+<span class="n">v0</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">10.0</span><span class="p">,</span><span class="mf">10.0</span><span class="p">])</span>
+<span class="n">r</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">r0</span>
+<span class="n">v</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">v0</span>
+<span class="c1"># Start integrating using Euler&#39;s method</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">):</span>
+    <span class="c1"># Set up forces, air resistance FD</span>
+    <span class="k">if</span> <span class="p">(</span> <span class="n">r</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">R</span><span class="p">):</span>
+        <span class="n">N</span> <span class="o">=</span> <span class="n">k</span><span class="o">*</span><span class="p">(</span><span class="n">R</span><span class="o">-</span><span class="n">r</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="mi">1</span><span class="p">])</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">])</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">N</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">])</span>
+    <span class="n">vabs</span> <span class="o">=</span> <span class="n">sqrt</span><span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="n">v</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">*</span><span class="n">v</span><span class="p">[</span><span class="n">i</span><span class="p">]))</span>
+    <span class="n">FD</span> <span class="o">=</span> <span class="o">-</span><span class="n">D</span><span class="o">*</span><span class="n">v</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">*</span><span class="n">vabs</span>
+    <span class="n">Fnet</span> <span class="o">=</span> <span class="n">FD</span><span class="o">+</span><span class="n">G</span><span class="o">+</span><span class="n">N</span>
+    <span class="n">a</span> <span class="o">=</span> <span class="n">Fnet</span><span class="o">/</span><span class="n">m</span>
+    <span class="c1"># update velocity, time and position</span>
+    <span class="n">v</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">v</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+</span> <span class="n">DeltaT</span><span class="o">*</span><span class="n">a</span>
+    <span class="n">r</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">r</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+</span> <span class="n">DeltaT</span><span class="o">*</span><span class="n">v</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+    <span class="n">t</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">t</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+</span> <span class="n">DeltaT</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">tfinal</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;y[m]&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;x[m]&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">r</span><span class="p">[:,</span><span class="mi">0</span><span class="p">],</span> <span class="n">r</span><span class="p">[:,</span><span class="mi">1</span><span class="p">])</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">save_fig</span><span class="p">(</span><span class="s2">&quot;BouncingBallEuler&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell tag_hide-input docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Exercise 6, hw4, smarter way with declaration of vx, vy, x and y</span>
+<span class="c1"># Here we have added a normal force from the ground</span>
+<span class="c1"># Common imports</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">math</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+
+<span class="c1"># Where to save the figures and data files</span>
+<span class="n">PROJECT_ROOT_DIR</span> <span class="o">=</span> <span class="s2">&quot;Results&quot;</span>
+<span class="n">FIGURE_ID</span> <span class="o">=</span> <span class="s2">&quot;Results/FigureFiles&quot;</span>
+<span class="n">DATA_ID</span> <span class="o">=</span> <span class="s2">&quot;DataFiles/&quot;</span>
+
+<span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">PROJECT_ROOT_DIR</span><span class="p">):</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">mkdir</span><span class="p">(</span><span class="n">PROJECT_ROOT_DIR</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">FIGURE_ID</span><span class="p">):</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">FIGURE_ID</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">DATA_ID</span><span class="p">):</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">DATA_ID</span><span class="p">)</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">image_path</span><span class="p">(</span><span class="n">fig_id</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">FIGURE_ID</span><span class="p">,</span> <span class="n">fig_id</span><span class="p">)</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">data_path</span><span class="p">(</span><span class="n">dat_id</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">DATA_ID</span><span class="p">,</span> <span class="n">dat_id</span><span class="p">)</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">save_fig</span><span class="p">(</span><span class="n">fig_id</span><span class="p">):</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="n">image_path</span><span class="p">(</span><span class="n">fig_id</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;.png&quot;</span><span class="p">,</span> <span class="nb">format</span><span class="o">=</span><span class="s1">&#39;png&#39;</span><span class="p">)</span>
+
+
+<span class="kn">from</span><span class="w"> </span><span class="nn">pylab</span><span class="w"> </span><span class="kn">import</span> <span class="n">plt</span><span class="p">,</span> <span class="n">mpl</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;ggplot&#39;</span><span class="p">)</span>
+<span class="n">mpl</span><span class="o">.</span><span class="n">rcParams</span><span class="p">[</span><span class="s1">&#39;font.family&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;serif&#39;</span>
+
+<span class="c1"># Define constants</span>
+<span class="n">g</span> <span class="o">=</span> <span class="mf">9.80655</span> <span class="c1">#in m/s^2</span>
+<span class="n">D</span> <span class="o">=</span> <span class="mf">0.0245</span> <span class="c1"># in mass/length, kg/m</span>
+<span class="n">m</span> <span class="o">=</span> <span class="mf">0.2</span> <span class="c1"># in kg</span>
+<span class="n">R</span> <span class="o">=</span> <span class="mf">0.1</span> <span class="c1"># in meters</span>
+<span class="n">k</span> <span class="o">=</span> <span class="mf">1000.0</span> <span class="c1"># in mass/time^2</span>
+<span class="c1"># Define Gravitational force as a vector in x and y, zero x component</span>
+<span class="n">G</span> <span class="o">=</span> <span class="o">-</span><span class="n">m</span><span class="o">*</span><span class="n">g</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">0.0</span><span class="p">,</span><span class="mi">1</span><span class="p">])</span>
+<span class="n">DeltaT</span> <span class="o">=</span> <span class="mf">0.001</span>
+<span class="c1">#set up arrays </span>
+<span class="n">tfinal</span> <span class="o">=</span> <span class="mf">15.0</span>
+<span class="n">n</span> <span class="o">=</span> <span class="n">ceil</span><span class="p">(</span><span class="n">tfinal</span><span class="o">/</span><span class="n">DeltaT</span><span class="p">)</span>
+<span class="c1"># set up arrays for t, v, and r, the latter contain the x and y comps</span>
+<span class="n">t</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+<span class="n">v</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">n</span><span class="p">,</span><span class="mi">2</span><span class="p">))</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">n</span><span class="p">,</span><span class="mi">2</span><span class="p">))</span>
+<span class="c1"># Initial conditions</span>
+<span class="n">r0</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">0.0</span><span class="p">,</span><span class="mf">2.0</span><span class="p">])</span>
+<span class="n">v0</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">10.0</span><span class="p">,</span><span class="mf">10.0</span><span class="p">])</span>
+<span class="n">r</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">r0</span>
+<span class="n">v</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">v0</span>
+<span class="c1"># Start integrating using Euler&#39;s method</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">):</span>
+    <span class="c1"># Set up forces, air resistance FD</span>
+    <span class="k">if</span> <span class="p">(</span> <span class="n">r</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">R</span><span class="p">):</span>
+        <span class="n">N</span> <span class="o">=</span> <span class="n">k</span><span class="o">*</span><span class="p">(</span><span class="n">R</span><span class="o">-</span><span class="n">r</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="mi">1</span><span class="p">])</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">])</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">N</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">])</span>
+    <span class="n">vabs</span> <span class="o">=</span> <span class="n">sqrt</span><span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="n">v</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">*</span><span class="n">v</span><span class="p">[</span><span class="n">i</span><span class="p">]))</span>
+    <span class="n">FD</span> <span class="o">=</span> <span class="o">-</span><span class="n">D</span><span class="o">*</span><span class="n">v</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">*</span><span class="n">vabs</span>
+    <span class="n">Fnet</span> <span class="o">=</span> <span class="n">FD</span><span class="o">+</span><span class="n">G</span><span class="o">+</span><span class="n">N</span>
+    <span class="n">a</span> <span class="o">=</span> <span class="n">Fnet</span><span class="o">/</span><span class="n">m</span>
+    <span class="c1"># update velocity, time and position</span>
+    <span class="n">v</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">v</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+</span> <span class="n">DeltaT</span><span class="o">*</span><span class="n">a</span>
+    <span class="n">r</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">r</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+</span> <span class="n">DeltaT</span><span class="o">*</span><span class="n">v</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+    <span class="n">t</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">t</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+</span> <span class="n">DeltaT</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">tfinal</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;y[m]&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;x[m]&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">r</span><span class="p">[:,</span><span class="mi">0</span><span class="p">],</span> <span class="n">r</span><span class="p">[:,</span><span class="mi">1</span><span class="p">])</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">save_fig</span><span class="p">(</span><span class="s2">&quot;BouncingBallEuler&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</details>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">line</span> <span class="mi">5</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># Exercise 6, hw4, smarter way with declaration of vx, vy, x and y</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="c1"># Here we have added a normal force from the ground</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="c1"># Common imports</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="ne">----&gt; </span><span class="mi">5</span> <span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="g g-Whitespace">      </span><span class="mi">6</span> <span class="kn">from</span><span class="w"> </span><span class="nn">math</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+<span class="g g-Whitespace">      </span><span class="mi">7</span> <span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+
+<span class="ne">ModuleNotFoundError</span>: No module named &#39;pandas&#39;
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "teaching"
+        },
+        kernelOptions: {
+            name: "teaching",
+            path: "./solutions"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'teaching'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-1-10-pt-conservation-laws-energy-and-momentum">Exercise 1 (10 pt), Conservation laws, Energy and momentum</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-2-10-pt-conservation-of-angular-momentum">Exercise 2 (10 pt), Conservation of angular momentum</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-3-10pt-example-of-potential">Exercise 3 (10pt), Example of potential</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-4-10pt-angular-momentum-case">Exercise 4 (10pt), Angular momentum case</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-5-10pt-forces-and-potentials">Exercise 5 (10pt), forces  and potentials</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-6-40pt-numerical-elements-adding-the-bouncing-from-the-floor-to-the-code-from-hw-3">Exercise 6 (40pt), Numerical elements, adding the bouncing from the floor to the code from hw 3</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Danny Caballero, Morten Hjorth-Jensen
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

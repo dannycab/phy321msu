@@ -1,0 +1,855 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Course Material and Links &#8212; Classical Mechanics</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
+  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'admin/schedule';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Calendar" href="schedule-cal.html" />
+    <link rel="prev" title="PHY 321: Classical Mechanics 1, Michigan State University, Spring 2024" href="../intro.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/spartan-helmet.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../_static/spartan-helmet.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    PHY 321: Classical Mechanics 1, Michigan State University, Spring 2024
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">About the course</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Course Material and Links</a></li>
+<li class="toctree-l1"><a class="reference internal" href="schedule-cal.html">Calendar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="teachers.html">Teachers and Grading</a></li>
+<li class="toctree-l1"><a class="reference internal" href="textbooks.html">Textbooks</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Introductory Material</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter1-overview.html">What is Classical Physics?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter1.html">1. Classical Mechanics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter2-overview.html">Why do we use vectors?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter2.html">2. Classical Mechanics, Mathematics and Numerical background</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter3-overview.html">How do we model motion?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter3.html">3. Simple Motion problems and Reminder on Newton’s Laws</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter4-overview.html">What are the governing principles of classical mechanics?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter4.html">4. Work, Energy, Momentum and Conservation laws</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Advanced Topics</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter5-overview.html">Why does nature exhibit recurrent patterns?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter5.html">5. Harmonic Oscillations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter6-overview.html">What do we do with multi-particle systems?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter6.html">6. Two-body problems, from the Gravitational Force to Two-body Scattering</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter7-overview.html">How do we trust measurements and models?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter7.html">7. Non-inertial Frames, Translation and Rotating Coordinate Systems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter8-overview.html">How do we formulate Classical Mechanics as an optimization problem?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter8.html">8. Variational Calculus and Lagrangian Formalism</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Weekly assignments, midterms and final projects with solutions</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw1.html">Homework 1</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/admin/schedule.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Course Material and Links</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#week-2-january-9-13-2023">Week 2, January 9-13, 2023</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#week-3-january-16-20-2023">Week 3, January 16-20, 2023</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#week-4-january-23-27-2023">Week 4, January 23-27, 2023</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#week-5-january-30-february-3-2023">Week 5, January 30- February 3, 2023</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#week-6-february-6-10-2023">Week 6, February 6-10, 2023</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#week-7-february-13-17-2023">Week 7, February 13-17, 2023</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#week-8-february-20-24">Week 8, February 20-24</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#week-9-february-27-march-3-2023">Week 9, February 27- March 3, 2023</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#week-10-spring-break-no-lectures">Week 10 Spring break, no lectures</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#week-11-march-13-17-2023">Week 11, March  13-17, 2023</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#week-12-march-20-24-2023">Week 12, March 20-24, 2023</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#week-13-march-27-31-2023">Week 13, March 27-31, 2023</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#week-14-april-3-7-2023">Week 14, April 3-7, 2023</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#week-15-april-10-14-2023">Week 15, April  10-14, 2023</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#week-16-april-17-21-2023">Week 16, April 17-21, 2023</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#week-17-april-24-april-28-2023">Week 17, April 24- April 28, 2023</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#week-18-may-1-5-2023">Week 18, May 1-5, 2023</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <div class="section" id="course-material-and-links">
+<h1>Course Material and Links<a class="headerlink" href="#course-material-and-links" title="Permalink to this heading">#</a></h1>
+<div class="section" id="week-2-january-9-13-2023">
+<h2>Week 2, January 9-13, 2023<a class="headerlink" href="#week-2-january-9-13-2023" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Monday 1/9: Introduction to the course and reminder  on vectors, space, time and motion, JRT chapters 1.2 and 1.3 and lecture notes (<a class="reference external" href="https://mhjensen.github.io/Physics321/doc/pub/week2/html/week2.html">https://mhjensen.github.io/Physics321/doc/pub/week2/html/week2.html</a>). Python programming reminder, elements from CMSE 201 and how they are used in this course. Installing software (anaconda). See slides at <a class="reference external" href="https://mhjensen.github.io/Physics321/doc/pub/week2/html/week2.html">https://mhjensen.github.io/Physics321/doc/pub/week2/html/week2.html</a>).
+AMS chapters 2 and 4 are very useful. 1st homework due January 21.</p>
+<ul>
+<li><p>Lecture video at <a class="reference external" href="https://youtu.be/BT2pSnYNYHE">https://youtu.be/BT2pSnYNYHE</a></p></li>
+<li><p>Handwritten notes from lecture at <a class="github reference external" href="https://github.com/mhjensen/Physics321/blob/master/doc/HandWrittenNotes/Spring2023/NotesJanuary9.pdf">mhjensen/Physics321</a></p></li>
+</ul>
+</li>
+<li><p>Wednesday 1/11: Forces and Newton’s laws of motion. Free fall problems. JRT chapter 1.4 and lecture notes (<a class="reference external" href="https://mhjensen.github.io/Physics321/doc/pub/week2/html/week2.html">https://mhjensen.github.io/Physics321/doc/pub/week2/html/week2.html</a>). AMS chapters 2 and 4 are very useful.</p>
+<ul>
+<li><p>Lecture video at <a class="reference external" href="https://youtu.be/s-cqtSfOZ1Q">https://youtu.be/s-cqtSfOZ1Q</a></p></li>
+<li><p>Handwritten notes at <a class="github reference external" href="https://github.com/mhjensen/Physics321/blob/master/doc/HandWrittenNotes/Spring2023/NotesJanuary11.pdf">mhjensen/Physics321</a></p></li>
+</ul>
+</li>
+<li><p>Friday 1/13: Discussions and problem solving and discussion of first homework.</p>
+<ul>
+<li><p>Short video on practicalities about exercises and the Friday sessions <a class="reference external" href="https://youtu.be/Rt5q3uFQGsk">https://youtu.be/Rt5q3uFQGsk</a></p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="week-3-january-16-20-2023">
+<h2>Week 3, January 16-20, 2023<a class="headerlink" href="#week-3-january-16-20-2023" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Monday 1/16: MLK day, no classes</p></li>
+<li><p>Wednesday 1/18: Motion and forces, Newton’s laws, examples.</p>
+<ul>
+<li><p>Handwritten notes from lecture at <a class="github reference external" href="https://github.com/mhjensen/Physics321/blob/master/doc/HandWrittenNotes/Spring2023/NotesJanuary18.pdf">mhjensen/Physics321</a></p></li>
+<li><p>Video of lecture at <a class="reference external" href="https://youtu.be/-nfzGH56v_w">https://youtu.be/-nfzGH56v_w</a></p></li>
+</ul>
+</li>
+<li><p>Friday 1/20: Motion and forces, Newton’s laws, examples. Problems solving. Deadline first homework.</p>
+<ul>
+<li><p>Video of first 20 min at <a class="reference external" href="https://youtu.be/iLX21OKuhp0">https://youtu.be/iLX21OKuhp0</a></p></li>
+</ul>
+</li>
+<li><p>Good reads are Taylor chapters 1.4, 1.5, 1.6, 2.1-2.4 and AMS chapters 4.2 and  5 and and lecture notes (<a class="reference external" href="https://mhjensen.github.io/Physics321/doc/pub/week3/html/week3.html">https://mhjensen.github.io/Physics321/doc/pub/week3/html/week3.html</a>).</p></li>
+<li><p>Solution to first hw at <a class="github reference external" href="https://github.com/mhjensen/Physics321/tree/master/doc/Homeworks/Solutions">mhjensen/Physics321</a></p></li>
+</ul>
+</div>
+<div class="section" id="week-4-january-23-27-2023">
+<h2>Week 4, January 23-27, 2023<a class="headerlink" href="#week-4-january-23-27-2023" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Monday 1/24: We discuss various forces and their pertinent equations of motion. Recommended reading: Taylor 2.1-2.4. Malthe-Sørenssen chapter 6-7 contains many examples. We will cover in particular a falling object in two dimensions with linear air resistance relevant for homework 3.</p>
+<ul>
+<li><p>Video of lecture at <a class="reference external" href="https://youtu.be/Izx1W4qqgmo">https://youtu.be/Izx1W4qqgmo</a></p></li>
+<li><p>Handwritten notes at <a class="github reference external" href="https://github.com/mhjensen/Physics321/blob/master/doc/HandWrittenNotes/Spring2023/NotesJanuary23.pdf">mhjensen/Physics321</a></p></li>
+</ul>
+</li>
+<li><p>Wednesday 1/25: We discuss other force models with examples such as the gravitational force and a spring force. See Malthe-Sørenssen chapter 7.3-7.5. We start also our discussion of energy and work, see Taylor 4.1</p>
+<ul>
+<li><p>Video of lecture at <a class="reference external" href="https://youtu.be/f9hqy6o6XCg">https://youtu.be/f9hqy6o6XCg</a></p></li>
+<li><p>Handwritten notes at <a class="github reference external" href="https://github.com/mhjensen/Physics321/blob/master/doc/HandWrittenNotes/Spring2023/NotesJanuary25.pdf">mhjensen/Physics321</a></p></li>
+</ul>
+</li>
+<li><p>Friday 1/27:  We discuss several examples of energy and work. Taylor 4.1-4.3. Problem solving. Deadline second homework.</p>
+<ul>
+<li><p>Video of exercise session at <a class="reference external" href="https://youtu.be/MDO5fe2Rw70">https://youtu.be/MDO5fe2Rw70</a></p></li>
+<li><p>Handwritten notes at <a class="github reference external" href="https://github.com/mhjensen/Physics321/blob/master/doc/HandWrittenNotes/Spring2023/NotesJanuary27.pdf">mhjensen/Physics321</a></p></li>
+</ul>
+</li>
+<li><p>Solution to second hw at <a class="github reference external" href="https://github.com/mhjensen/Physics321/tree/master/doc/Homeworks/Solutions">mhjensen/Physics321</a></p></li>
+</ul>
+</div>
+<div class="section" id="week-5-january-30-february-3-2023">
+<h2>Week 5, January 30- February 3, 2023<a class="headerlink" href="#week-5-january-30-february-3-2023" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Monday 1/30: Work energy theorem, conservative forces and momentum conservation, 4th homework available</p>
+<ul>
+<li><p>Video with subtitles at <a class="reference external" href="https://youtu.be/H_TuYjM9csk">https://youtu.be/H_TuYjM9csk</a></p></li>
+<li><p>Handwritten notes at <a class="github reference external" href="https://github.com/mhjensen/Physics321/blob/master/doc/HandWrittenNotes/Spring2023/NotesJanuary30.pdf">mhjensen/Physics321</a></p></li>
+</ul>
+</li>
+<li><p>Wednesday 2/1: Examples of applications of conservation laws, angular momentum conservation.</p>
+<ul>
+<li><p>Video of lecture at <a class="reference external" href="https://youtu.be/t_bStzWIVJY">https://youtu.be/t_bStzWIVJY</a></p></li>
+<li><p>Handwritten notes at <a class="github reference external" href="https://github.com/mhjensen/Physics321/blob/master/doc/HandWrittenNotes/Spring2023/NotesFebruary1.pdf">mhjensen/Physics321</a></p></li>
+</ul>
+</li>
+<li><p>Friday 2/3:  Conservation laws and problem solving. Deadline third homework.</p>
+<ul>
+<li><p>Video of exercise session, first 20 min, hints for exercises 5 and 6 at <a class="reference external" href="https://youtu.be/SN6Rms9LlNs">https://youtu.be/SN6Rms9LlNs</a></p></li>
+</ul>
+</li>
+<li><p>Good reads are Taylor sections 3.1-3.5 and 4.1-4.3 and AMS chapters 10-14.</p></li>
+<li><p>Solution to third  hw at <a class="github reference external" href="https://github.com/mhjensen/Physics321/tree/master/doc/Homeworks/Solutions">mhjensen/Physics321</a></p></li>
+</ul>
+</div>
+<div class="section" id="week-6-february-6-10-2023">
+<h2>Week 6, February 6-10, 2023<a class="headerlink" href="#week-6-february-6-10-2023" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Monday 2/6: Conservation laws and examples.</p>
+<ul>
+<li><p>Video of lecture at <a class="reference external" href="https://youtu.be/plcIWuGXoms">https://youtu.be/plcIWuGXoms</a></p></li>
+<li><p>Handwritten notes at <a class="github reference external" href="https://github.com/mhjensen/Physics321/blob/master/doc/HandWrittenNotes/Spring2023/NotesFebruary6.pdf">mhjensen/Physics321</a></p></li>
+</ul>
+</li>
+<li><p>Wednesday 2/8: Examples of application of conservations laws (see chapter 4 of Taylor).</p>
+<ul>
+<li><p>Video of lecture at <a class="reference external" href="https://youtu.be/iKtX3EIzb0A">https://youtu.be/iKtX3EIzb0A</a></p></li>
+<li><p>Handwritten notes at <a class="github reference external" href="https://github.com/mhjensen/Physics321/blob/master/doc/HandWrittenNotes/Spring2023/NotesFebruary8.pdf">mhjensen/Physics321</a></p></li>
+</ul>
+</li>
+<li><p>Friday 2/10: Discussion of fourth homework. Deadline fourth homework.</p>
+<ul>
+<li><p>Handwritten notes at <a class="github reference external" href="https://github.com/mhjensen/Physics321/blob/master/doc/HandWrittenNotes/Spring2023/NotesFebruary10.pdf">mhjensen/Physics321</a></p></li>
+</ul>
+</li>
+<li><p>Taylor chapter 4 is the essential reading. See also chapter 7 of Malthe-Sørenssen for exercise 6 in homework 4</p></li>
+<li><p>Video with hints and tips for hw 4 at <a class="reference external" href="https://youtu.be/nTQSb7-5xy0">https://youtu.be/nTQSb7-5xy0</a></p></li>
+<li><p>Solution to fourth  hw at <a class="github reference external" href="https://github.com/mhjensen/Physics321/tree/master/doc/Homeworks/Solutions">mhjensen/Physics321</a></p></li>
+</ul>
+</div>
+<div class="section" id="week-7-february-13-17-2023">
+<h2>Week 7, February 13-17, 2023<a class="headerlink" href="#week-7-february-13-17-2023" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Monday 2/13: Discussion of conditions for conservative forces and summing up our
+discussion on conservative forces. Discussion of potential surfaces and their interpretations.  Start discussion of harmonic oscillations.</p>
+<ul>
+<li><p>Reading suggestion: Taylor sections 4.6, 4.9, 4.10 and 5.1 and 5.2 on harmonic oscillations and lecture notes</p></li>
+<li><p>Handwritten notes at <a class="github reference external" href="https://github.com/mhjensen/Physics321/blob/master/doc/HandWrittenNotes/Spring2023/NotesFebruary13.pdf">mhjensen/Physics321</a></p></li>
+<li><p>Video of lecture at <a class="reference external" href="https://youtu.be/3GCGhSN4nIw">https://youtu.be/3GCGhSN4nIw</a></p></li>
+</ul>
+</li>
+<li><p>Wednesday 2/15: The Earth-Sun problem and energy-conserving algorithms and how to encode in more efficient ways various algorithms for solving the equations of motion (Euler, Euler-Cromer and Velocity Verlet).</p>
+<ul>
+<li><p>Reading suggestions: Taylor section 4.8 and lecture notes</p></li>
+</ul>
+</li>
+<li><p>Friday 2/17:  Working on the Earth-Sun problem and hw 5.</p>
+<ul>
+<li><p>Reading suggestions: Taylor chapters 3 and 4 and lecture notes</p></li>
+</ul>
+</li>
+<li><p>Solution to fifth  hw at <a class="github reference external" href="https://github.com/mhjensen/Physics321/tree/master/doc/Homeworks/Solutions">mhjensen/Physics321</a></p></li>
+</ul>
+</div>
+<div class="section" id="week-8-february-20-24">
+<h2>Week 8, February 20-24<a class="headerlink" href="#week-8-february-20-24" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Monday 2/20: Harmonic oscillations and Damped Oscillations. Reading suggestions Taylor 5.1-5.3</p>
+<ul>
+<li><p>Video of Lecture at <a class="reference external" href="https://youtu.be/3otwJIm796s">https://youtu.be/3otwJIm796s</a></p></li>
+<li><p>Handwritten notes at <a class="github reference external" href="https://github.com/mhjensen/Physics321/blob/master/doc/HandWrittenNotes/Spring2023/NotesFebruary20.pdf">mhjensen/Physics321</a></p></li>
+</ul>
+</li>
+<li><p>Wednesday 2/22:  Damped  oscillations</p>
+<ul>
+<li><p>Video of Lecture at <a class="reference external" href="https://youtu.be/Y1QfsBplX9k">https://youtu.be/Y1QfsBplX9k</a></p></li>
+<li><p>Handwritten notes at <a class="github reference external" href="https://github.com/mhjensen/Physics321/blob/master/doc/HandWrittenNotes/Spring2023/NotesFebruary22.pdf">mhjensen/Physics321</a></p></li>
+</ul>
+</li>
+<li><p>Friday 2/24: Discussion of first midterm.</p></li>
+<li><p>Good reads are sections 5.4-5.7 of Taylor on oscillations.</p></li>
+<li><p>First midterm project, available Feb 20 and due March 3, 2023</p>
+<ul>
+<li><p>Video with hints and tips for first midterm <a class="reference external" href="https://youtu.be/9rLx7MdLWs0">https://youtu.be/9rLx7MdLWs0</a></p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="week-9-february-27-march-3-2023">
+<h2>Week 9, February 27- March 3, 2023<a class="headerlink" href="#week-9-february-27-march-3-2023" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Monday 2/27: Damped and driven oscillations</p>
+<ul>
+<li><p>Video of lecture at <a class="reference external" href="https://youtu.be/39bqKrnEddk">https://youtu.be/39bqKrnEddk</a></p></li>
+<li><p>Handwritten notes at <a class="github reference external" href="https://github.com/mhjensen/Physics321/blob/master/doc/HandWrittenNotes/Spring2023/NotesFebruary27.pdf">mhjensen/Physics321</a></p></li>
+</ul>
+</li>
+<li><p>Wednesday 3/1: Discussions  of oscillations and time-dependent forces.  Discussion of first midterm.</p>
+<ul>
+<li><p>Video of lecture at <a class="reference external" href="https://youtu.be/OeaBq13izhM">https://youtu.be/OeaBq13izhM</a></p></li>
+<li><p>Handwritten notes at <a class="github reference external" href="https://github.com/mhjensen/Physics321/blob/master/doc/HandWrittenNotes/Spring2023/NotesMarch1.pdf">mhjensen/Physics321</a></p></li>
+</ul>
+</li>
+<li><p>Friday 3/3:  Discussion  of first midterm. Deadline for first midterm.</p></li>
+<li><p>Solution to first midterm  at <a class="github reference external" href="https://github.com/mhjensen/Physics321/tree/master/doc/Homeworks/Solutions">mhjensen/Physics321</a>. See also codes for parts 1 and 2.</p></li>
+</ul>
+</div>
+<div class="section" id="week-10-spring-break-no-lectures">
+<h2>Week 10 Spring break, no lectures<a class="headerlink" href="#week-10-spring-break-no-lectures" title="Permalink to this heading">#</a></h2>
+</div>
+<div class="section" id="week-11-march-13-17-2023">
+<h2>Week 11, March  13-17, 2023<a class="headerlink" href="#week-11-march-13-17-2023" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Monday 3/13:  Harmonic oscillations, damped and driven oscillations</p>
+<ul>
+<li><p>Video of lecture at <a class="reference external" href="https://youtu.be/3j2xxCGcqs4">https://youtu.be/3j2xxCGcqs4</a></p></li>
+<li><p>Handwritten notes at <a class="github reference external" href="https://github.com/mhjensen/Physics321/blob/master/doc/HandWrittenNotes/Spring2023/NotesMarch13.pdf">mhjensen/Physics321</a></p></li>
+</ul>
+</li>
+<li><p>Wednesday 3/15: Harmonic oscillations, damping and driven oscillations</p>
+<ul>
+<li><p>Video of lecture at <a class="reference external" href="https://youtu.be/McYxOqDvOO4">https://youtu.be/McYxOqDvOO4</a></p></li>
+<li><p>Handwritten notes at <a class="github reference external" href="https://github.com/mhjensen/Physics321/blob/master/doc/HandWrittenNotes/Spring2023/NotesMarch15.pdf">mhjensen/Physics321</a></p></li>
+<li><p>Video on solving differential equations numerically at <a class="reference external" href="https://youtu.be/7nYIfV0z1VM">https://youtu.be/7nYIfV0z1VM</a></p></li>
+<li><p>Video on Fourier aanalysis at <a class="reference external" href="https://youtu.be/neXZ4fb-4Rs">https://youtu.be/neXZ4fb-4Rs</a></p></li>
+</ul>
+</li>
+<li><p>Friday 3/17:  Discussion and work on homework 6. Deadline sixth homework.</p></li>
+<li><p>Reading suggestions for week 11: Taylor sections 5.6-5.8 and lecture notes at URL:”<a class="reference external" href="https://mhjensen.github.io/Physics321/doc/pub/week10/html/week10-reveal.html">https://mhjensen.github.io/Physics321/doc/pub/week10/html/week10-reveal.html</a>”</p>
+<ul>
+<li><p>Short video at <a class="reference external" href="https://youtu.be/WqqD4zel-zg">https://youtu.be/WqqD4zel-zg</a></p></li>
+</ul>
+</li>
+<li><p>Solution to sixth homework at <a class="github reference external" href="https://github.com/mhjensen/Physics321/tree/master/doc/Homeworks/Solutions">mhjensen/Physics321</a></p></li>
+</ul>
+</div>
+<div class="section" id="week-12-march-20-24-2023">
+<h2>Week 12, March 20-24, 2023<a class="headerlink" href="#week-12-march-20-24-2023" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Monday 3/20: Two-body problems and gravitational forces. Definition of the two-body problem, rewriting the equations in relative and center-of-mass coordinates</p>
+<ul>
+<li><p>Reading suggestion: Taylor sections 8.2-8.3 and lecture notes</p></li>
+<li><p>Video of lecture at <a class="reference external" href="https://youtu.be/z2jyJI-dryg">https://youtu.be/z2jyJI-dryg</a></p></li>
+<li><p>Handwritten notes at <a class="github reference external" href="https://github.com/mhjensen/Physics321/blob/master/doc/HandWrittenNotes/Spring2023/NotesMarch20.pdf">mhjensen/Physics321</a></p></li>
+</ul>
+</li>
+<li><p>Wednesday 3/21: Preparing the ground for the  gravitional force and its solution in two dimensions</p>
+<ul>
+<li><p>Video of lecture at <a class="reference external" href="https://youtu.be/Di-WVWTjKuw">https://youtu.be/Di-WVWTjKuw</a></p></li>
+<li><p>Handwritten notes at <a class="github reference external" href="https://github.com/mhjensen/Physics321/blob/master/doc/HandWrittenNotes/Spring2023/NotesMarch22.pdf">mhjensen/Physics321</a></p></li>
+</ul>
+</li>
+<li><p>Reading suggestion: Taylor chapter 8.4 and lecture notes</p></li>
+<li><p>Friday 3/24:  Summary and discussions of two-body problems and work on homework 7.  Deadline seventh homework.</p></li>
+<li><p>Solution to seventh homework at <a class="github reference external" href="https://github.com/mhjensen/Physics321/tree/master/doc/Homeworks/Solutions">mhjensen/Physics321</a></p></li>
+</ul>
+</div>
+<div class="section" id="week-13-march-27-31-2023">
+<h2>Week 13, March 27-31, 2023<a class="headerlink" href="#week-13-march-27-31-2023" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Monday 3/27: Computational topics: functions and classes, the harmonic oscillator as warm-up case</p>
+<ul>
+<li><p>Reading suggestion: Lecture notes and Taylor section 8.4</p></li>
+<li><p>Video of lecture at <a class="reference external" href="https://youtu.be/SIaY-RTV4VE">https://youtu.be/SIaY-RTV4VE</a></p></li>
+<li><p>Handwritten notes for lecture at <a class="github reference external" href="https://github.com/mhjensen/Physics321/blob/master/doc/HandWrittenNotes/Spring2023/NotesMarch27.pdf">mhjensen/Physics321</a></p></li>
+</ul>
+</li>
+<li><p>Wednesday 3/29: Discussion of elliptical orbits and Kepler’s laws</p></li>
+<li><p>Reading suggestion: lecture notes and Taylor sections 8.5-8.6</p></li>
+<li><p>Video of lecture at <a class="reference external" href="https://youtu.be/TlcHXrzVY-I">https://youtu.be/TlcHXrzVY-I</a></p></li>
+<li><p>Handwritten notes at <a class="github reference external" href="https://github.com/mhjensen/Physics321/blob/master/doc/HandWrittenNotes/Spring2023/NotesMarch29.pdf">mhjensen/Physics321</a></p></li>
+<li><p>Friday 3/31:  Summary of week and discussion of homework 8</p>
+<ul>
+<li><p>Video of lecture at <a class="reference external" href="https://youtu.be/uTvuXu5J1N0">https://youtu.be/uTvuXu5J1N0</a></p></li>
+<li><p>Handwritten notes at <a class="github reference external" href="https://github.com/mhjensen/Physics321/blob/master/doc/HandWrittenNotes/Spring2023/NotesMarch31.pdf">mhjensen/Physics321</a></p></li>
+</ul>
+</li>
+<li><p>Solution to eighth  hw at <a class="github reference external" href="https://github.com/mhjensen/Physics321/tree/master/doc/Homeworks/Solutions">mhjensen/Physics321</a></p></li>
+</ul>
+</div>
+<div class="section" id="week-14-april-3-7-2023">
+<h2>Week 14, April 3-7, 2023<a class="headerlink" href="#week-14-april-3-7-2023" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Monday 4/3: Physical interpretation of various orbit types</p>
+<ul>
+<li><p>Reading suggestions: lecture notes and Taylor section 8.5-8.8. Second midterm available April 3</p></li>
+<li><p>Video of lecture at <a class="reference external" href="https://youtu.be/HwaxZFeJ4eg">https://youtu.be/HwaxZFeJ4eg</a></p></li>
+<li><p>Handwritten notes at <a class="github reference external" href="https://github.com/mhjensen/Physics321/blob/master/doc/HandWrittenNotes/Spring2023/NotesApril3.pdf">mhjensen/Physics321</a></p></li>
+</ul>
+</li>
+<li><p>Wednesday 4/5:  Discussion of second midterm, hints and tips plus Kepler orbit analysis</p>
+<ul>
+<li><p>Video of Lecture at <a class="reference external" href="https://youtu.be/xnMIkLE_rzM">https://youtu.be/xnMIkLE_rzM</a></p></li>
+<li><p>Handwritten notes at <a class="github reference external" href="https://github.com/mhjensen/Physics321/blob/master/doc/HandWrittenNotes/Spring2023/NotesApril5.pdf">mhjensen/Physics321</a></p></li>
+</ul>
+</li>
+<li><p>Friday 4/7: Summary of week and discussion of and work on second midterm. Deadline 2nd midterm is April 15</p>
+<ul>
+<li><p>Video at <a class="reference external" href="https://youtu.be/_JZbimHBwSI">https://youtu.be/_JZbimHBwSI</a> with hints for part 2</p></li>
+<li><p>Handwritten notes at <a class="github reference external" href="https://github.com/mhjensen/Physics321/blob/master/doc/HandWrittenNotes/Spring2023/NotesApril7.pdf">mhjensen/Physics321</a></p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="week-15-april-10-14-2023">
+<h2>Week 15, April  10-14, 2023<a class="headerlink" href="#week-15-april-10-14-2023" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Monday 4/10: Lagrangian formalism</p>
+<ul>
+<li><p>Reading suggestion: Lecture notes and Taylor sections 6.1-6.4</p></li>
+<li><p>Handwritten notes at <a class="github reference external" href="https://github.com/mhjensen/Physics321/blob/master/doc/HandWrittenNotes/Spring2023/NotesApril10.pdf">mhjensen/Physics321</a>   - Video of lecture at <a class="reference external" href="https://youtu.be/Sfkdnq9JKB8">https://youtu.be/Sfkdnq9JKB8</a></p></li>
+</ul>
+</li>
+<li><p>Wednesday 4/12: Lagrangian formalism and derivation of Euler-Lagrange equations</p>
+<ul>
+<li><p>Reading suggestions: lecture notes and Taylor sections 6.1-6.4</p></li>
+<li><p>Video of lecture at <a class="reference external" href="https://youtu.be/vNKn1HyC9kw">https://youtu.be/vNKn1HyC9kw</a></p></li>
+<li><p>Handwritten notes at <a class="github reference external" href="https://github.com/mhjensen/Physics321/blob/master/doc/HandWrittenNotes/Spring2023/NotesApril12.pdf">mhjensen/Physics321</a></p></li>
+</ul>
+</li>
+<li><p>Friday 4/14: Summary of week and work on second midterm. Deadline second midterm.</p></li>
+<li><p>Solution to second midterm at <a class="github reference external" href="https://github.com/mhjensen/Physics321/tree/master/doc/Homeworks/Solutions">mhjensen/Physics321</a></p></li>
+</ul>
+</div>
+<div class="section" id="week-16-april-17-21-2023">
+<h2>Week 16, April 17-21, 2023<a class="headerlink" href="#week-16-april-17-21-2023" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Monday 4/17:  Lagrangian formalism and Variational Calculus</p>
+<ul>
+<li><p>Reading suggestions: lecture notes and Taylor sections 6.1-6.4</p></li>
+<li><p>Video of lecture at <a class="reference external" href="https://youtu.be/IwVDDlQgJ60">https://youtu.be/IwVDDlQgJ60</a></p></li>
+<li><p>Handwritten notes at <a class="github reference external" href="https://github.com/mhjensen/Physics321/blob/master/doc/HandWrittenNotes/Spring2023/NotesApril17.pdf">mhjensen/Physics321</a></p></li>
+</ul>
+</li>
+<li><p>Wednesday 4/19: Euler-Lagrange equations and the Lagrangian with examples and Principle of Least Action</p>
+<ul>
+<li><p>Video of lecture at <a class="reference external" href="https://youtu.be/f_Kwaf_W8WU">https://youtu.be/f_Kwaf_W8WU</a></p></li>
+<li><p>Handwritten notes at <a class="github reference external" href="https://github.com/mhjensen/Physics321/blob/master/doc/HandWrittenNotes/Spring2023/NotesApril19.pdf">mhjensen/Physics321</a></p></li>
+<li><p>Reading suggestions: lecture notes and Taylor sections 6.3-6.4</p></li>
+</ul>
+</li>
+<li><p>Friday 4/21:  Work on homework nine. Deadline ninth homework April 28.</p></li>
+<li><p>Solution to ninth  hw at <a class="github reference external" href="https://github.com/mhjensen/Physics321/tree/master/doc/Homeworks/Solutions">mhjensen/Physics321</a></p></li>
+</ul>
+</div>
+<div class="section" id="week-17-april-24-april-28-2023">
+<h2>Week 17, April 24- April 28, 2023<a class="headerlink" href="#week-17-april-24-april-28-2023" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Monday 4/24:  Lagrangian formalism and discussion of final from 2022</p>
+<ul>
+<li><p>Video of lecture at	<a class="reference external" href="https://youtu.be/YwVy79eJ8uU">https://youtu.be/YwVy79eJ8uU</a></p></li>
+<li><p>Handwritten notes at <a class="github reference external" href="https://github.com/mhjensen/Physics321/blob/master/doc/HandWrittenNotes/Spring2023/NotesApril24.pdf">mhjensen/Physics321</a></p></li>
+</ul>
+</li>
+<li><p>Wednesday 4/26: Summary of course and	discussion of final</p>
+<ul>
+<li><p>Video of lecture at <a class="reference external" href="https://youtu.be/k-C6FU3hzNQ">https://youtu.be/k-C6FU3hzNQ</a></p></li>
+</ul>
+</li>
+<li><p>Friday 4/28:	Discussion and work on final project</p></li>
+</ul>
+</div>
+<div class="section" id="week-18-may-1-5-2023">
+<h2>Week 18, May 1-5, 2023<a class="headerlink" href="#week-18-may-1-5-2023" title="Permalink to this heading">#</a></h2>
+<p>Depending on your availability, we can have at least two sessions in order to discuss the final project.</p>
+<ul class="simple">
+<li><p>Final Exam:  The final exam will be a project similar to the two midterm projects. Deadline May 5 at midnight.</p></li>
+</ul>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./admin"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  <!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../intro.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">PHY 321: Classical Mechanics 1, Michigan State University, Spring 2024</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="schedule-cal.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Calendar</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#week-2-january-9-13-2023">Week 2, January 9-13, 2023</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#week-3-january-16-20-2023">Week 3, January 16-20, 2023</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#week-4-january-23-27-2023">Week 4, January 23-27, 2023</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#week-5-january-30-february-3-2023">Week 5, January 30- February 3, 2023</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#week-6-february-6-10-2023">Week 6, February 6-10, 2023</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#week-7-february-13-17-2023">Week 7, February 13-17, 2023</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#week-8-february-20-24">Week 8, February 20-24</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#week-9-february-27-march-3-2023">Week 9, February 27- March 3, 2023</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#week-10-spring-break-no-lectures">Week 10 Spring break, no lectures</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#week-11-march-13-17-2023">Week 11, March  13-17, 2023</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#week-12-march-20-24-2023">Week 12, March 20-24, 2023</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#week-13-march-27-31-2023">Week 13, March 27-31, 2023</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#week-14-april-3-7-2023">Week 14, April 3-7, 2023</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#week-15-april-10-14-2023">Week 15, April  10-14, 2023</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#week-16-april-17-21-2023">Week 16, April 17-21, 2023</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#week-17-april-24-april-28-2023">Week 17, April 24- April 28, 2023</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#week-18-may-1-5-2023">Week 18, May 1-5, 2023</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Danny Caballero, Morten Hjorth-Jensen
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
