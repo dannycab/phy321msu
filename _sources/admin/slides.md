@@ -2,6 +2,19 @@
 
 Slides for PHY 321 appear in reverse chronological order, with the most recent slides at the top. The formats are PDF, HTML, and Markdown. The HTML slides are hosted on my website, and the Markdown slides are the source code for the HTML slides, built with [Marp](https://marp.app/).
 
+## Day 19 - Phase Diagrams - 26 Feb 2025
+
+### Download PDF
+
+[![Day 19](../slides/day-19-phase-diagrams.png)](../slides/day-19-phase-diagrams.pdf)
+
+### HTML Versions
+| Format | Link |
+|--|--|
+| HTML (Inline) | [day-19-phase-diagrams.md](../slides/day-19-phase-diagrams.md) |
+| HTML (Slides) | [day-19-phase-diagrams.html](../slides/day-19-phase-diagrams.html) |
+
+
 ## Day 18 - Introduction to Nonlinear Dynamics - 24 Feb 2025
 
 ### Download PDF
