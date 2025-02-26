@@ -32,8 +32,8 @@ parts:
       - file: lecture-notes/week6/06_notes_2
       - file: lecture-notes/week7/07_start
       - file: lecture-notes/week7/07_notes
-      - file: lecture-notes/week8/08_start
-      - file: lecture-notes/week8/08_notes
+      # - file: lecture-notes/week8/08_start
+      # - file: lecture-notes/week8/08_notes
   #- caption: Introductory Material
     #numbered: false
     #chapters:
@@ -104,6 +104,7 @@ parts:
       - file: resources/gradescope-submissions
       - file: resources/finding-research
       - file: resources/integrators.ipynb
+      - file: resources/phase_diagrams.ipynb
   - caption: Honors Projects
     numbered: false
     chapters:
