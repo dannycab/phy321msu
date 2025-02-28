@@ -2,6 +2,17 @@
 
 Slides for PHY 321 appear in reverse chronological order, with the most recent slides at the top. The formats are PDF, HTML, and Markdown. The HTML slides are hosted on my website, and the Markdown slides are the source code for the HTML slides, built with [Marp](https://marp.app/).
 
+## Day 20 - Homework Session - 28 Feb 2025
+### Download PDF
+
+[![Day 20](../slides/day-20-homework-session.png)](../slides/day-20-homework-session.pdf)
+
+### HTML Versions
+| Format | Link |
+|--|--|
+| HTML (Inline) | [day-20-homework-session.md](../slides/day-20-homework-session.md) |
+| HTML (Slides) | [day-20-homework-session.html](../slides/day-20-homework-session.html) |
+
 ## Day 19 - Phase Diagrams - 26 Feb 2025
 
 ### Download PDF
