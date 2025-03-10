@@ -2,6 +2,17 @@
 
 Slides for PHY 321 appear in reverse chronological order, with the most recent slides at the top. The formats are PDF, HTML, and Markdown. The HTML slides are hosted on my website, and the Markdown slides are the source code for the HTML slides, built with [Marp](https://marp.app/).
 
+## Day 21 - Oscillations - 10 Mar 2025
+
+### Download PDF
+
+[![Day 21](../slides/day-21-oscillations.png)](../slides/day-21-oscillations.pdf)
+### HTML Versions
+| Format | Link |
+|--|--|
+| HTML (Inline) | [day-21-oscillations.md](../slides/day-21-oscillations.md) |
+| HTML (Slides) | [day-21-oscillations.html](../slides/day-21-oscillations.html) |
+
 ## Day 20 - Homework Session - 28 Feb 2025
 ### Download PDF
 
