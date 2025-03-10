@@ -4,6 +4,22 @@ Materials will appear in reverse chronological order, with the most recent appea
 
 Class Zoom: <https://msu.zoom.us/j/92295821308>
 
+
+## Class Week 8, March 4-8, 2025 (CW10)
+
+Topics: Oscillations
+
+This week, we will add damping to our oscillators and see what effects we can predict. We will focus on the damped harmonic oscillator because it's solutions are so important and provide the basis for many other systems.We will (re)introduce complex numbers and how they can be used to solve differential equations.
+
+You should review the discussion about [Oscillations](../lecture-notes/week8/08_start.ipynb) and the notes on [Damped Oscillators](../lecture-notes/week8/08_notes.ipynb). You should also make sure to have read JRT 5.1-5.2, 5.4; MLB 7.1-7.2; 8.5.
+
+## Assignments
+- [Homework 5](../homeworks/hw5.ipynb) (due March 14, 2025)
+
+## Resources
+- [Oscillations](../lecture-notes/week8/08_start.ipynb)
+- [Modeling Oscillators](../lecture-notes/week8/08_notes.ipynb)
+
 ## Class Week 7, February 24-28, 2025 (CW9)
 
 Topics: Nonlinear Dynamics, Phase Portraits

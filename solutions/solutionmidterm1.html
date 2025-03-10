@@ -1,0 +1,1342 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Midterm 1 &#8212; Classical Mechanics</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"tex2jax": {"inlineMath": [["$", "$"]]}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'solutions/solutionmidterm1';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Course Commitments" href="../resources/course-commitments.html" />
+    <link rel="prev" title="Solution Homework 4" href="solutionhw4.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/spartan-helmet.png" class="logo__image only-light" alt="Classical Mechanics - Home"/>
+    <img src="../_static/spartan-helmet.png" class="logo__image only-dark pst-js-only" alt="Classical Mechanics - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    PHY 321: Classical Mechanics 1, Michigan State University, Spring 2025
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">About the course</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../admin/getting-started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin/teachers.html">Teachers and Grading</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin/textbooks.html">Textbooks</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Calendar &amp; Lecture Materials</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../admin/schedule-cal.html">Course Calendar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin/links.html">Course Material and Links</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin/slides.html">Slides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin/handwritten-notes.html">Handwritten Notes</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Weekly Course Materials</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week1/01_start.html">Week 1 - Overture: What is Classical Physics?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week1/01_notes.html">Week 1 - Notes: Introduction to Classical Mechanics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week2/02_start.html">Week 2 - Computing as a tool for science</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week2/02_notes.html">Week 2 - Notes: Mathematical Preliminaries</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week3/03_start.html">Week 3 - What is Mathematical Modeling?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week3/03_notes.html">Week 3 - Notes: Making Classical Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week4/04_start.html">Week 4 - Why does fluid drag complicate things?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week4/04_notes.html">Week 4 - Notes: Equations of Motion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week5/05_start.html">Week 5 - Conservation Laws</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week5/05_notes.html">Week 5 - Notes: Conservation of Energy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week6/06_start.html">Week 6 - Stability and Equilibria</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week6/06_notes.html">Week 6 - Notes: Stability and Energy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week6/06_notes_2.html">Week 6 - Notes: Linear and Angular Momentum</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week7/07_start.html">Week 7 - Nonlinear Dynamics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week7/07_notes.html">Week 7 - Notes: Critical Points; Phase Space; Trajectories</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week8/08_start.html">Week 8 - Oscillations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week8/08_notes.html">Week 8 - Notes: Oscillators and Modeling Oscillations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week9/09_start.html">Week 9 - Driven Oscillators and Resonance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week9/09_notes.html">Week 9 - Notes: Driven Oscillations</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Assignments</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw1.html">Homework 1 (Due 24 Jan)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw2.html">Homework 2 (Due 31 Jan)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw3.html">Homework 3 (Due 07 Feb)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw4.html">Homework 4 (Due 17 Feb)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../midterms/midterm1.html">Midterm 1 (Due 28 Feb)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw5.html">Homework 5 (Due 14 Mar)</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Solutions</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="solutionhw1.html">Solution Homework 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="solutionhw2.html">Solution Homework 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="solutionhw3.html">Solution Homework 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="solutionhw4.html">Solution Homework 4</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Midterm 1</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Resources</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../resources/course-commitments.html">Course Commitments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/iclicker-setup.html">i-Clicker Setup Instructions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/generative-ai.html">Generative Artificial Intelligence</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/gradescope-submissions.html">Submitting Assignments on Gradescope</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/finding-research.html">Finding Research Opportunities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/integrators.html">Numerical Integrators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/phase_diagrams.html">Plotting Phase Diagrams</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Honors Projects</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../honors-projects/ChaoticPendulum.html">Chaos in the driven nonlinear pendulum</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../honors-projects/NeuralNetworks.html">From Ordinary Differential equations to Neural Networks, solving mechanics problems in a new way</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../honors-projects/SolarSystem.html">Building a model for the solar system using ordinary differential equations</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/solutions/solutionmidterm1.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Midterm 1</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#part-1-particle-in-a-one-dimensional-potential">Part 1, Particle in a one-dimensional  potential</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#part-2-model-your-own-system">Part 2, model your own system</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-solution-a-model-of-quark-confinement">EXAMPLE SOLUTION: A model of quark confinement</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#part-3-planning-your-project">Part 3, Planning your project</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#each-student-should-complete-this-part-individually">Each student should complete this part individually.</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <!-- HTML file automatically generated from DocOnce source (https://github.com/doconce/doconce/)
+doconce format html Firstmidterm2022.do.txt --no_mako -->
+<!-- dom:TITLE: PHY321: Classical Mechanics 1 --><section id="midterm-1">
+<h1>Midterm 1<a class="headerlink" href="#midterm-1" title="Link to this heading">#</a></h1>
+<p><strong>Solution Midterm 1, Spring 2025</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">math</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="o">%</span><span class="k">matplotlib</span> inline
+<span class="n">plt</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;seaborn-v0_8-colorblind&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<section id="part-1-particle-in-a-one-dimensional-potential">
+<h2>Part 1, Particle in a one-dimensional  potential<a class="headerlink" href="#part-1-particle-in-a-one-dimensional-potential" title="Link to this heading">#</a></h2>
+<p>We consider a particle (for example an atom) of mass <span class="math notranslate nohighlight">\(m\)</span> moving in a one-dimensional potential,</p>
+<div class="math notranslate nohighlight">
+\[
+V(x)=\frac{V_0}{d^4}\left(x^4-2x^2d^2+d^4\right).
+\]</div>
+<p>We will assume all other forces on the particle are small in comparison, and neglect them in our model.  The parameters <span class="math notranslate nohighlight">\(V_0\)</span> and <span class="math notranslate nohighlight">\(d\)</span> are known constants.</p>
+<ol class="arabic simple">
+<li><p>(5pt) Sketch or plot the potential and find the equilibrium points (stable and unstable) by requiring that the first derivative of the potential is zero. Make an energy diagram (see for example Malthe-Sørenssen chapter 11.3) and mark the equilibrium points on the diagram and characterize their stability. The position of the particle is <span class="math notranslate nohighlight">\(x\)</span>.</p></li>
+</ol>
+<div class="hint admonition">
+<p class="admonition-title">Solution</p>
+<p>To find the equilibrium points, we need to set the first derivative of the potential equal to zero and solve for <span class="math notranslate nohighlight">\(x\)</span>. This gives us the following equation:</p>
+<div class="math notranslate nohighlight">
+\[\dfrac{dV(x)}{dx} = 4V_0\left(\dfrac{x^3}{d^4}-\dfrac{x}{d^2}\right) = 0.\]</div>
+<div class="math notranslate nohighlight">
+\[ \dfrac{x}{d^2}\left(\dfrac{x^2}{d^2}-1\right) = 0.\]</div>
+<p>We can solve this equation for <span class="math notranslate nohighlight">\(x\)</span> and we find the equilibrium points.</p>
+<div class="math notranslate nohighlight">
+\[x = 0, \quad x = \pm d.\]</div>
+<p>To characterize their stability, we need to look at the second derivative of the potential. If the second derivative is positive, the equilibrium point is stable, if it is negative, the equilibrium point is unstable. The second derivative of the potential is given by:</p>
+<div class="math notranslate nohighlight">
+\[\dfrac{d^2V(x)}{dx^2} = 4V_0\left(\dfrac{3x^2}{d^4}-\dfrac{1}{d^2}\right).\]</div>
+<p>Evaluating those at each of the equilibrium points gives,</p>
+<div class="math notranslate nohighlight">
+\[\dfrac{d^2V(0)}{dx^2} &lt; 0, \quad \dfrac{d^2V(d)}{dx^2} &gt; 0, \quad \dfrac{d^2V(-d)}{dx^2} &gt; 0.\]</div>
+<p>So that <span class="math notranslate nohighlight">\(x=0\)</span> is an unstable equilibrium point and <span class="math notranslate nohighlight">\(x = \pm d\)</span> are stable equilibrium points.</p>
+<p>The code below plots <span class="math notranslate nohighlight">\(V(x)\)</span> and locates the equilibrium points.</p>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">Potential</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">V0</span><span class="o">/</span><span class="p">(</span><span class="n">d</span><span class="o">**</span><span class="mi">4</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="mi">4</span> <span class="o">-</span> <span class="mi">2</span><span class="o">*</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="o">*</span><span class="n">d</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">d</span><span class="o">**</span><span class="mi">4</span><span class="p">)</span>
+
+<span class="n">xlim</span> <span class="o">=</span> <span class="mf">1.5</span>
+<span class="n">steps</span> <span class="o">=</span> <span class="mi">1000</span>
+<span class="n">V0</span> <span class="o">=</span> <span class="mf">1.0</span>
+<span class="n">d</span> <span class="o">=</span> <span class="mf">1.0</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="n">xlim</span><span class="p">,</span> <span class="n">xlim</span><span class="p">,</span> <span class="n">steps</span><span class="p">)</span>
+<span class="n">V</span> <span class="o">=</span> <span class="n">Potential</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">V</span><span class="p">,</span><span class="n">lw</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="sa">r</span><span class="s1">&#39;$V(x)$&#39;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">Potential</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span><span class="s1">&#39;C1o&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Unstable&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="o">-</span><span class="n">d</span><span class="p">,</span><span class="n">Potential</span><span class="p">(</span><span class="o">-</span><span class="n">d</span><span class="p">),</span><span class="s1">&#39;C2o&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Stable&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">d</span><span class="p">,</span><span class="n">Potential</span><span class="p">(</span><span class="n">d</span><span class="p">),</span><span class="s1">&#39;C2o&#39;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;x (m)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;V (J)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/88ea0355c6e7dbf96e4fa1ea9d5df3443ad49690c317007299a494f5c16351fb.png" src="../_images/88ea0355c6e7dbf96e4fa1ea9d5df3443ad49690c317007299a494f5c16351fb.png" />
+</div>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>(5pt) Choose two different energies that give two distinct types of motions, draw them on the energy diagram, and describe the motion in each case.</p></li>
+</ol>
+<div class="tip admonition">
+<p class="admonition-title">Solution</p>
+<p>We can see from the energy diagram that there’s two really distinct kinds of motion. The first is where the total energy is below <span class="math notranslate nohighlight">\(V(0)\)</span>, and the second is where the total energy is above <span class="math notranslate nohighlight">\(V(0)\)</span>. In the graph above, that is the region where there’s not enough total energy to overcome the potential barrier at <span class="math notranslate nohighlight">\(x=0\)</span>, and the region where there’s enough total energy to overcome the potential barrier at <span class="math notranslate nohighlight">\(x=0\)</span>. These both give rise to oscillatory motion. In the first case, the motion is confined to a small region around the equilibrium points; the motion is only possible in one side of the well. In the second case, the motion can traverse the entire well, up to the total energy.</p>
+<p>Below, we graph the two different energies.</p>
+<p>For the first case, we choose <span class="math notranslate nohighlight">\(E = \frac{V(0)}{2}\)</span>. And the second case, we choose <span class="math notranslate nohighlight">\(E = \frac{3V(0)}{2}\)</span>.</p>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">xlim</span> <span class="o">=</span> <span class="mf">1.5</span>
+<span class="n">steps</span> <span class="o">=</span> <span class="mi">1000</span>
+
+<span class="n">V0</span> <span class="o">=</span> <span class="mf">1.0</span>
+<span class="n">E1</span> <span class="o">=</span> <span class="n">V0</span><span class="o">/</span><span class="mi">2</span>
+<span class="n">E2</span> <span class="o">=</span> <span class="mi">3</span><span class="o">*</span><span class="n">V0</span><span class="o">/</span><span class="mi">2</span>
+
+<span class="n">d</span> <span class="o">=</span> <span class="mf">1.0</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="n">xlim</span><span class="p">,</span> <span class="n">xlim</span><span class="p">,</span> <span class="n">steps</span><span class="p">)</span>
+<span class="n">V</span> <span class="o">=</span> <span class="n">Potential</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">V</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">E1</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">(</span><span class="n">steps</span><span class="p">),</span> <span class="s1">&#39;C1--&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="sa">r</span><span class="s1">&#39;$E_</span><span class="si">{tot}</span><span class="s1">=\frac{V(0)}</span><span class="si">{2}</span><span class="s1">$&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">E2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">(</span><span class="n">steps</span><span class="p">),</span> <span class="s1">&#39;C2--&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="sa">r</span><span class="s1">&#39;$E_</span><span class="si">{tot}</span><span class="s1">=\frac{3V(0)}</span><span class="si">{2}</span><span class="s1">$&#39;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;x (m)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;V (J)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/0bb3ff130856e226b5d94e90ca36ccfaa2d861d127d4038fab723382d53f8b00.png" src="../_images/0bb3ff130856e226b5d94e90ca36ccfaa2d861d127d4038fab723382d53f8b00.png" />
+</div>
+</div>
+<ol class="arabic simple" start="3">
+<li><p>(5pt) If the particle  starts at rest at <span class="math notranslate nohighlight">\(x=2d\)</span>, what is the velocity of the particle at the point <span class="math notranslate nohighlight">\(x=d\)</span>?</p></li>
+</ol>
+<div class="tip admonition">
+<p class="admonition-title">Solution</p>
+<p>This system conserves energy, so that at any point the total energy is constant. The total energy of the particle is given by <span class="math notranslate nohighlight">\(E=V(x)+K(v)\)</span> at any point <span class="math notranslate nohighlight">\(x\)</span>. We can use this to find the velocity of the particle at <span class="math notranslate nohighlight">\(x=d\)</span>.</p>
+<p>The total energy of the particle at <span class="math notranslate nohighlight">\(x=2d\)</span> is given by,</p>
+<div class="math notranslate nohighlight">
+\[E_{tot} = V(2d) + K(0) = \dfrac{V_0}{d^4}\left(16d^4-8d^4+d^4\right)+0\]</div>
+<div class="math notranslate nohighlight">
+\[E_{tot} = 9V_0.\]</div>
+<p>At the point <span class="math notranslate nohighlight">\(x=d\)</span>, the total energy is still given by <span class="math notranslate nohighlight">\(E=V(d)+K(v)\)</span>. We can solve for the velocity of the particle at this point.</p>
+<div class="math notranslate nohighlight">
+\[E_{tot} = V(d) + K(v) = \dfrac{V_0}{d^4}\left(d^4-2d^2d^2+d^4\right) + \dfrac{1}{2}mv^2\]</div>
+<div class="math notranslate nohighlight">
+\[E_{tot} = 9V_0= \dfrac{1}{2}mv^2\]</div>
+<p>So that,</p>
+<div class="math notranslate nohighlight">
+\[v = \sqrt{\dfrac{18V_0}{m}}.\]</div>
+</div>
+<ol class="arabic simple" start="4">
+<li><p>(5pt) If the particle  starts at <span class="math notranslate nohighlight">\(x=d\)</span> with velocity <span class="math notranslate nohighlight">\(v_0\)</span>, how large must <span class="math notranslate nohighlight">\(v_0\)</span> be for the  particle to reach the point <span class="math notranslate nohighlight">\(x=−d\)</span>?</p></li>
+</ol>
+<div class="tip admonition">
+<p class="admonition-title">Solution</p>
+<p>Again, we can use the conservation of energy to solve this problem. What we must notice is that if the particle is meant to reach <span class="math notranslate nohighlight">\(x=-d\)</span>, it must have enough energy to overcome the potential barrier at <span class="math notranslate nohighlight">\(x=0\)</span>. This means that the total energy of the particle at <span class="math notranslate nohighlight">\(x=d\)</span> must be just greater than <span class="math notranslate nohighlight">\(V(0)\)</span>. We can use this as a limit and solve for the velocity of the particle at <span class="math notranslate nohighlight">\(x=d\)</span>. We must have a velocity just greater than this to reach <span class="math notranslate nohighlight">\(x=-d\)</span> (i.e., to go over the potential barrier at <span class="math notranslate nohighlight">\(x=0\)</span>).</p>
+<p>The total energy of the particle at <span class="math notranslate nohighlight">\(x=d\)</span> is given by,</p>
+<div class="math notranslate nohighlight">
+\[E_{tot} = V(d) + K(v) = 0 + \dfrac{1}{2}mv^2.\]</div>
+<p>We know this because the potential energy at <span class="math notranslate nohighlight">\(x=d\)</span> is zero. The total energy of the particle at <span class="math notranslate nohighlight">\(x=d\)</span> must be just greater than <span class="math notranslate nohighlight">\(V(0)\)</span>, so that,</p>
+<div class="math notranslate nohighlight">
+\[E_{tot} = \dfrac{1}{2}mv^2 = V(0)\]</div>
+<p>with <span class="math notranslate nohighlight">\(V(0) = \dfrac{V_0}{d^4}\left((0^4)-2(0^2)d^2+d^4\right) = V_0\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[v &gt; \sqrt{\dfrac{2V_0}{m}}.\]</div>
+</div>
+<ol class="arabic simple" start="5">
+<li><p>(5pt) Use the above potential to find the net force acting on the particle.  Find the acceleration acting on the particle. Is this net force conservative? Calculate the <strong>curl</strong> of the force  <span class="math notranslate nohighlight">\(\boldsymbol{\nabla}\times \boldsymbol{F}\)</span> in order to validate your conclusion.</p></li>
+</ol>
+<div class="tip admonition">
+<p class="admonition-title">Solution</p>
+<p>With a potential given by <span class="math notranslate nohighlight">\(V(x) = \frac{V_0}{d^4}\left(x^4-2x^2d^2+d^4\right)\)</span>, the net force acting on the particle is given by the negative gradient of the potential. We know this is one dimensional, so that the force is given as it was in part 1,</p>
+<div class="math notranslate nohighlight">
+\[F(x) = -\dfrac{dV(x)}{dx} = -4V_0\left(\dfrac{x^3}{d^4}-\dfrac{x}{d^2}\right).\]</div>
+<p>The acceleration acting on the particle is given by <span class="math notranslate nohighlight">\(a = F/m\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[a(x) = -\dfrac{4V_0}{m}\left(\dfrac{x^3}{d^4}-\dfrac{x}{d^2}\right).\]</div>
+<p>The force is conservative because it is derived from a potential. We can also check this by calculating the curl of the force. The curl of the force is given by,</p>
+<div class="math notranslate nohighlight">
+\[\boldsymbol{\nabla}\times \boldsymbol{F}\]</div>
+<p>Because this is a one-dimensional problem, the only relevant components of the curl are those in <span class="math notranslate nohighlight">\(y\)</span> and <span class="math notranslate nohighlight">\(z\)</span>, but they result from derivatives in <span class="math notranslate nohighlight">\(y\)</span> and <span class="math notranslate nohighlight">\(z\)</span>, which are zero.</p>
+<div class="math notranslate nohighlight">
+\[\boldsymbol{\nabla}\times \boldsymbol{F} = +\dfrac{dF(x)}{dz}\hat{y} - \dfrac{dF(x)}{dy}\hat{z} = 0.\]</div>
+</div>
+<ol class="arabic simple" start="6">
+<li><p>(5pt) Are linear momentum and angular momentum conserved? You need to show this by calculating these quantities.</p></li>
+</ol>
+<div class="tip admonition">
+<p class="admonition-title">Solution</p>
+<p>The linear momentum conservation is related to the net force acting on the particle. In three dimensions, this is given by:</p>
+<div class="math notranslate nohighlight">
+\[\dfrac{d\boldsymbol{p}}{dt} = \boldsymbol{F}.\]</div>
+<p>Here, momentum is conserved in <span class="math notranslate nohighlight">\(y\)</span> and <span class="math notranslate nohighlight">\(z\)</span> simply because the force is zero in those directions. In the <span class="math notranslate nohighlight">\(x\)</span> direction, the force is given by <span class="math notranslate nohighlight">\(F(x) = -\dfrac{dV(x)}{dx}\)</span>, so that we have a force acting on the particle. This means that the linear momentum is not conserved.</p>
+<p>With respect to the angular momentum, we can calculate it as <span class="math notranslate nohighlight">\(\boldsymbol{L} = \boldsymbol{r}\times\boldsymbol{p}\)</span>. The angular momentum is given by,</p>
+<div class="math notranslate nohighlight">
+\[\boldsymbol{L} = \boldsymbol{r}\times\boldsymbol{p} = x\hat{x} \times p\hat{x} = 0.\]</div>
+<p>Because we have a one-dimensional problem, the angular momentum is zero. This also means that the angular momentum is conserved in this case as well, because it is zero at all times. Why? There’s no torque acting on the particle, so that the angular momentum is conserved.</p>
+<div class="math notranslate nohighlight">
+\[\dfrac{d\boldsymbol{L}}{dt} = \boldsymbol{r}\times\boldsymbol{F} = x\hat{x} \times F(x)\hat{x} = 0.\]</div>
+</div>
+<ol class="arabic simple" start="7">
+<li><p>(10pt) Write a numerical algorithm to find the position and velocity of the particle at a time <span class="math notranslate nohighlight">\(t+\Delta t\)</span> given the position and velocity at a time <span class="math notranslate nohighlight">\(t\)</span>. Here you can use either the standard forward Euler, or the Euler-Cromer or the Velocity Verlet algorithms.   You need to justify your choice here (hint: consider energy conservation).</p></li>
+</ol>
+<div class="tip admonition">
+<p class="admonition-title">Solution</p>
+<p>To start we need to write the equations of motion for the particle. The equations of motion are given by,</p>
+<div class="math notranslate nohighlight">
+\[F(x) = m\ddot{x} = -\dfrac{dV(x)}{dx} = -4V_0\left(\dfrac{x^3}{d^4}-\dfrac{x}{d^2}\right)\]</div>
+<p>so that,</p>
+<div class="math notranslate nohighlight">
+\[\ddot{x} = -\dfrac{4V_0}{m}\left(\dfrac{x^3}{d^4}-\dfrac{x}{d^2}\right).\]</div>
+<p>We need to seperate this into two first order differential equations. We can do this by defining the velocity of the particle as <span class="math notranslate nohighlight">\(\dot{x} = v\)</span>, so that,</p>
+<div class="math notranslate nohighlight">
+\[\dot{x} = v,\]</div>
+<div class="math notranslate nohighlight">
+\[\dot{v} = -\dfrac{4V_0}{m}\left(\dfrac{x^3}{d^4}-\dfrac{x}{d^2}\right).\]</div>
+<p>This leads to the following Euler-Cromer step,</p>
+<div class="math notranslate nohighlight">
+\[v_{i+1} = v_i - \dfrac{4V_0}{m}\left(\dfrac{x_i^3}{d^4}-\dfrac{x_i}{d^2}\right)\Delta t,\]</div>
+<div class="math notranslate nohighlight">
+\[x_{i+1} = x_i + v_{i+1}\Delta t.\]</div>
+<p>Below we implement this algorithm in Python. We use Euler-Cromer because we expect oscillatory motion, and we want to conserve energy.</p>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">integrateEOM</span><span class="p">(</span><span class="n">V0</span><span class="p">,</span> <span class="n">m</span><span class="p">,</span> <span class="n">d</span><span class="p">,</span> <span class="n">x0</span><span class="p">,</span> <span class="n">v0</span><span class="p">,</span> <span class="n">t0</span><span class="p">,</span> <span class="n">tf</span><span class="p">,</span> <span class="n">dt</span><span class="p">):</span>
+    <span class="n">t</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">t0</span><span class="p">,</span> <span class="n">tf</span><span class="p">,</span> <span class="n">dt</span><span class="p">)</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">t</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+    <span class="n">v</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">t</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+    <span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">v</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">x0</span><span class="p">,</span> <span class="n">v0</span>
+
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">t</span><span class="p">)):</span>
+        <span class="n">v</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">v</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">dt</span> <span class="o">*</span> <span class="mi">4</span><span class="o">*</span><span class="n">V0</span><span class="o">/</span><span class="n">m</span><span class="o">*</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">**</span><span class="mi">3</span><span class="o">/</span><span class="n">d</span><span class="o">**</span><span class="mi">4</span> <span class="o">-</span> <span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="n">d</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+        <span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">dt</span> <span class="o">*</span> <span class="n">v</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+
+    <span class="k">return</span> <span class="n">t</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">v</span>
+</pre></div>
+</div>
+</div>
+</div>
+<ol class="arabic simple" start="8">
+<li><p>(10pt) Use now your program to find the position of the particle as function of time from <span class="math notranslate nohighlight">\(t=0\)</span> to <span class="math notranslate nohighlight">\(t=30\)</span> s using a mass  <span class="math notranslate nohighlight">\(m=1.0\)</span> kg, the parameter <span class="math notranslate nohighlight">\(V_0=1\)</span> J and <span class="math notranslate nohighlight">\(d=0.1\)</span> m. Make a plot of three distinct positions with initial conditions <span class="math notranslate nohighlight">\(x_0=d\)</span> and <span class="math notranslate nohighlight">\(v_0=0.5\)</span> m/s, <span class="math notranslate nohighlight">\(x_0=d\)</span> and <span class="math notranslate nohighlight">\(v_0=1.5\)</span> m/s, and <span class="math notranslate nohighlight">\(x_0=d\)</span> and <span class="math notranslate nohighlight">\(v_0=2.5\)</span> m/s. Plot the velocity.  Perform these analyses with and without the term <span class="math notranslate nohighlight">\(x^4\)</span> in the potential. Do you see a difference? What do you notice?</p></li>
+</ol>
+<div class="tip admonition">
+<p class="admonition-title">Solution</p>
+<p>The first thing to notice is that <span class="math notranslate nohighlight">\(V(d)=0\)</span>, so we increasing the velocity of the particle at <span class="math notranslate nohighlight">\(x=d\)</span> to see what happens. This does allow us to calculate the total energy of the particle in each trial and plot it directly. The table below shows the total energy of the particle in each trial where we use (<span class="math notranslate nohighlight">\(m=1\)</span>):</p>
+<div class="math notranslate nohighlight">
+\[E_{tot} = V(d) + K(v) = 0 + \dfrac{1}{2}mv^2 = 0.5v^2.\]</div>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p><span class="math notranslate nohighlight">\(v_0\)</span> (m/s)</p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(E_{tot}\)</span> (J)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>0.5</p></td>
+<td><p>0.125</p></td>
+</tr>
+<tr class="row-odd"><td><p>1.5</p></td>
+<td><p>1.125</p></td>
+</tr>
+<tr class="row-even"><td><p>2.5</p></td>
+<td><p>3.125</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>We can see that the total energy does exceed <span class="math notranslate nohighlight">\(V(0)=1\)</span> J, so that the particle will have enough energy to overcome the potential barrier at <span class="math notranslate nohighlight">\(x=0\)</span>. This means that the particle will oscillate around <span class="math notranslate nohighlight">\(x=d\)</span> in trial 1, but it is able to oscillate in across both wells in the other two trials. We can also see the as the energy increases, the symmetry of the oscillation is broken. The graph of the energy is shown below.</p>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">xlim</span> <span class="o">=</span> <span class="mf">0.2</span>
+<span class="n">steps</span> <span class="o">=</span> <span class="mi">1000</span>
+
+<span class="n">V0</span> <span class="o">=</span> <span class="mf">1.0</span>
+<span class="n">E1</span> <span class="o">=</span> <span class="mf">0.125</span>
+<span class="n">E2</span> <span class="o">=</span> <span class="mf">1.125</span>
+<span class="n">E3</span> <span class="o">=</span> <span class="mf">3.125</span>
+
+<span class="n">d</span> <span class="o">=</span> <span class="mf">0.1</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="n">xlim</span><span class="p">,</span> <span class="n">xlim</span><span class="p">,</span> <span class="n">steps</span><span class="p">)</span>
+<span class="n">V</span> <span class="o">=</span> <span class="n">Potential</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">V</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">E1</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">(</span><span class="n">steps</span><span class="p">),</span> <span class="s1">&#39;C1--&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Trial 1&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">E2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">(</span><span class="n">steps</span><span class="p">),</span> <span class="s1">&#39;C2--&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Trial 2&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">E3</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">(</span><span class="n">steps</span><span class="p">),</span> <span class="s1">&#39;C3--&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Trial 3&#39;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;x (m)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;V (J)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/75588cdef2d8e16eb561637dc403299e810edd1d0c65bce982034cdd2acc8d98.png" src="../_images/75588cdef2d8e16eb561637dc403299e810edd1d0c65bce982034cdd2acc8d98.png" />
+</div>
+</div>
+<div class="tip admonition">
+<p class="admonition-title">Solution</p>
+<p>We can see the motion is different in each case by using our integrator we wrote for the different trials. We plot the position and velocity for each trial below for 0 to 30 seconds. We can see the motion stays confined. But it’s hard to see the differences in the motion because the object oscillates rapidly in the window. We plot a shorter time window as well to see the differences in the motion.</p>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">m</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">V0</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">d</span> <span class="o">=</span> <span class="mf">0.1</span>
+
+<span class="n">t0</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">tf</span> <span class="o">=</span> <span class="mi">30</span>
+<span class="n">N</span> <span class="o">=</span> <span class="mi">10000</span>
+<span class="n">dt</span> <span class="o">=</span> <span class="p">(</span><span class="n">tf</span> <span class="o">-</span> <span class="n">t0</span><span class="p">)</span><span class="o">/</span><span class="n">N</span>
+
+<span class="n">end</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">floor</span><span class="p">(</span><span class="n">N</span><span class="o">/</span><span class="mi">20</span><span class="p">))</span>
+
+<span class="n">short</span><span class="o">=</span><span class="kc">True</span>
+<span class="n">vel</span><span class="o">=</span><span class="kc">False</span>
+
+<span class="n">initial_conditions</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;x0&#39;</span><span class="p">:</span> <span class="p">[</span><span class="n">d</span><span class="p">,</span><span class="n">d</span><span class="p">,</span><span class="n">d</span><span class="p">],</span> <span class="s1">&#39;v0&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">1.5</span><span class="p">,</span> <span class="mf">2.5</span><span class="p">]})</span>
+
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;t (s)&#39;</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="n">vel</span><span class="p">:</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Velocity of the particle&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;v (m/s)&#39;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Position of the particle&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;x (m)&#39;</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">initial_conditions</span><span class="p">)):</span>
+    <span class="n">x0</span> <span class="o">=</span> <span class="n">initial_conditions</span><span class="o">.</span><span class="n">x0</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+    <span class="n">v0</span> <span class="o">=</span> <span class="n">initial_conditions</span><span class="o">.</span><span class="n">v0</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+    <span class="n">t</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">v</span> <span class="o">=</span> <span class="n">integrateEOM</span><span class="p">(</span><span class="n">V0</span><span class="p">,</span> <span class="n">m</span><span class="p">,</span> <span class="n">d</span><span class="p">,</span> <span class="n">x0</span><span class="p">,</span> <span class="n">v0</span><span class="p">,</span> <span class="n">t0</span><span class="p">,</span> <span class="n">tf</span><span class="p">,</span> <span class="n">dt</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">short</span><span class="p">:</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="n">end</span><span class="p">],</span> <span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="n">end</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Trial </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">))</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Trial </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">))</span>
+        
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0xffff6246e000&gt;
+</pre></div>
+</div>
+<img alt="../_images/34bd78e87d5e79d325eb31cd39a7c0aadf673a52853710bd279e2c4bb05e480a.png" src="../_images/34bd78e87d5e79d325eb31cd39a7c0aadf673a52853710bd279e2c4bb05e480a.png" />
+</div>
+</div>
+<div class="tip admonition">
+<p class="admonition-title">Solution</p>
+<p>If we remove the <span class="math notranslate nohighlight">\(x^4\)</span> term from the potential, we can see that the motion is different. The potential is given by,</p>
+<div class="math notranslate nohighlight">
+\[V(x) = \dfrac{V_0}{d^4}\left(-2x^2d^2+d^4\right).\]</div>
+<p>So that the force acting on the particle is given by,</p>
+<div class="math notranslate nohighlight">
+\[F(x) = -\dfrac{dV(x)}{dx} = 4V_0\left(\dfrac{x}{d^2}\right).\]</div>
+<p>We have a new set of equations of motion,</p>
+<div class="math notranslate nohighlight">
+\[\ddot{x} = +\dfrac{4V_0}{m}\left(\dfrac{x}{d^2}\right),\]</div>
+<p>And the Euler-Cromer step is given by,</p>
+<div class="math notranslate nohighlight">
+\[v_{i+1} = v_i + \dfrac{4V_0}{m}\left(\dfrac{x_i}{d^2}\right)\Delta t,\]</div>
+<div class="math notranslate nohighlight">
+\[x_{i+1} = x_i + v_{i+1}\Delta t.\]</div>
+<p>We can program that and model the motion. But we should notice we’ve lost the confinement part of the potential. We expect the particle to run off to infinity. We can plot figures showing shorter and shorter times. This illustrates the blow up of the motion. You can see the motion is unbounded and the particle runs off to infinity.</p>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">integrateEOMnoConfine</span><span class="p">(</span><span class="n">V0</span><span class="p">,</span> <span class="n">m</span><span class="p">,</span> <span class="n">d</span><span class="p">,</span> <span class="n">x0</span><span class="p">,</span> <span class="n">v0</span><span class="p">,</span> <span class="n">t0</span><span class="p">,</span> <span class="n">tf</span><span class="p">,</span> <span class="n">dt</span><span class="p">):</span>
+    <span class="n">t</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">t0</span><span class="p">,</span> <span class="n">tf</span><span class="p">,</span> <span class="n">dt</span><span class="p">)</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">t</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+    <span class="n">v</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">t</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+    <span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">v</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">x0</span><span class="p">,</span> <span class="n">v0</span>
+
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">t</span><span class="p">)):</span>
+        <span class="n">v</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">v</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">dt</span> <span class="o">*</span> <span class="mi">4</span><span class="o">*</span><span class="n">V0</span><span class="o">/</span><span class="n">m</span><span class="o">*</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="n">d</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+        <span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">dt</span> <span class="o">*</span> <span class="n">v</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+
+    <span class="k">return</span> <span class="n">t</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">v</span>
+
+<span class="n">m</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">V0</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">d</span> <span class="o">=</span> <span class="mf">0.1</span>
+
+<span class="n">t0</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">tf</span> <span class="o">=</span> <span class="mi">30</span>
+<span class="n">N</span> <span class="o">=</span> <span class="mi">10000</span>
+<span class="n">dt</span> <span class="o">=</span> <span class="p">(</span><span class="n">tf</span> <span class="o">-</span> <span class="n">t0</span><span class="p">)</span><span class="o">/</span><span class="n">N</span>
+
+<span class="n">end</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">floor</span><span class="p">(</span><span class="n">N</span><span class="o">/</span><span class="mi">100</span><span class="p">))</span>
+
+<span class="n">short</span><span class="o">=</span><span class="kc">True</span>
+<span class="n">vel</span><span class="o">=</span><span class="kc">False</span>
+
+<span class="n">initial_conditions</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;x0&#39;</span><span class="p">:</span> <span class="p">[</span><span class="n">d</span><span class="p">,</span><span class="n">d</span><span class="p">,</span><span class="n">d</span><span class="p">],</span> <span class="s1">&#39;v0&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">1.5</span><span class="p">,</span> <span class="mf">2.5</span><span class="p">]})</span>
+
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;t (s)&#39;</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="n">vel</span><span class="p">:</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Velocity of the particle&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;v (m/s)&#39;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Position of the particle&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;x (m)&#39;</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">initial_conditions</span><span class="p">)):</span>
+    <span class="n">x0</span> <span class="o">=</span> <span class="n">initial_conditions</span><span class="o">.</span><span class="n">x0</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+    <span class="n">v0</span> <span class="o">=</span> <span class="n">initial_conditions</span><span class="o">.</span><span class="n">v0</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+    <span class="n">t</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">v</span> <span class="o">=</span> <span class="n">integrateEOMnoConfine</span><span class="p">(</span><span class="n">V0</span><span class="p">,</span> <span class="n">m</span><span class="p">,</span> <span class="n">d</span><span class="p">,</span> <span class="n">x0</span><span class="p">,</span> <span class="n">v0</span><span class="p">,</span> <span class="n">t0</span><span class="p">,</span> <span class="n">tf</span><span class="p">,</span> <span class="n">dt</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">short</span><span class="p">:</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="n">end</span><span class="p">],</span> <span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="n">end</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Trial </span><span class="si">{}</span><span class="s1"> (short time)&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">))</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Trial </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">))</span>
+        
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0xffff5ff91b20&gt;
+</pre></div>
+</div>
+<img alt="../_images/b1796a580f0a98d7a83ed32d82e3866f574bd265af5053a30849ef37bda21de2.png" src="../_images/b1796a580f0a98d7a83ed32d82e3866f574bd265af5053a30849ef37bda21de2.png" />
+</div>
+</div>
+<ol class="arabic simple" start="9">
+<li><p>(10pt) Describe the behavior of the particle for the three initial conditions  and sketch the motion in an energy diagram. Is energy conserved in your simulations?</p></li>
+</ol>
+<div class="tip admonition">
+<p class="admonition-title">Solution</p>
+<p>We sketched the energy diagram above, and discussed the motion we expected to see. We can illustrate that the energy is conserved by direct calculation. We plot them below for each trial. We can see that the energy is roughly conserved in each trial. If we adjust the step size, it will be better conserved.</p>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">m</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">V0</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">d</span> <span class="o">=</span> <span class="mf">0.1</span>
+
+<span class="n">t0</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">tf</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="n">N</span> <span class="o">=</span> <span class="mi">10000</span>
+<span class="n">dt</span> <span class="o">=</span> <span class="p">(</span><span class="n">tf</span> <span class="o">-</span> <span class="n">t0</span><span class="p">)</span><span class="o">/</span><span class="n">N</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">ComputeEnergies</span><span class="p">(</span><span class="n">V0</span><span class="p">,</span> <span class="n">m</span><span class="p">,</span> <span class="n">d</span><span class="p">,</span> <span class="n">x0</span><span class="p">,</span> <span class="n">v0</span><span class="p">,</span> <span class="n">t0</span><span class="p">,</span> <span class="n">tf</span><span class="p">,</span> <span class="n">dt</span><span class="p">):</span>
+    <span class="n">t</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">v</span> <span class="o">=</span> <span class="n">integrateEOM</span><span class="p">(</span><span class="n">V0</span><span class="p">,</span> <span class="n">m</span><span class="p">,</span> <span class="n">d</span><span class="p">,</span> <span class="n">x0</span><span class="p">,</span> <span class="n">v0</span><span class="p">,</span> <span class="n">t0</span><span class="p">,</span> <span class="n">tf</span><span class="p">,</span> <span class="n">dt</span><span class="p">)</span>
+    <span class="n">KE</span> <span class="o">=</span> <span class="mf">0.5</span><span class="o">*</span><span class="n">m</span><span class="o">*</span><span class="n">v</span><span class="o">**</span><span class="mi">2</span>
+    <span class="n">PE</span> <span class="o">=</span> <span class="n">Potential</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">t</span><span class="p">,</span> <span class="n">KE</span><span class="p">,</span> <span class="n">PE</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">PlotEnergy</span><span class="p">(</span><span class="n">V0</span><span class="p">,</span> <span class="n">m</span><span class="p">,</span> <span class="n">d</span><span class="p">,</span> <span class="n">x0</span><span class="p">,</span> <span class="n">v0</span><span class="p">,</span> <span class="n">t0</span><span class="p">,</span> <span class="n">tf</span><span class="p">,</span> <span class="n">dt</span><span class="p">):</span>
+    
+    <span class="n">t</span><span class="p">,</span> <span class="n">KE</span><span class="p">,</span> <span class="n">PE</span> <span class="o">=</span> <span class="n">ComputeEnergies</span><span class="p">(</span><span class="n">V0</span><span class="p">,</span> <span class="n">m</span><span class="p">,</span> <span class="n">d</span><span class="p">,</span> <span class="n">x0</span><span class="p">,</span> <span class="n">v0</span><span class="p">,</span> <span class="n">t0</span><span class="p">,</span> <span class="n">tf</span><span class="p">,</span> <span class="n">dt</span><span class="p">)</span>
+
+    <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">KE</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Kinetic Energy&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">PE</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Potential Energy&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">KE</span><span class="o">+</span><span class="n">PE</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Total Energy&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;t (s)&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Energy (J)&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+    
+<span class="n">initial_conditions</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;x0&#39;</span><span class="p">:</span> <span class="p">[</span><span class="n">d</span><span class="p">,</span> <span class="n">d</span><span class="p">,</span> <span class="n">d</span><span class="p">],</span> <span class="s1">&#39;v0&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">1.5</span><span class="p">,</span> <span class="mf">2.5</span><span class="p">]})</span>
+<span class="n">PlotEnergy</span><span class="p">(</span><span class="n">V0</span><span class="p">,</span> <span class="n">m</span><span class="p">,</span> <span class="n">d</span><span class="p">,</span> <span class="n">initial_conditions</span><span class="o">.</span><span class="n">x0</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">initial_conditions</span><span class="o">.</span><span class="n">v0</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">t0</span><span class="p">,</span> <span class="n">tf</span><span class="p">,</span> <span class="n">dt</span><span class="p">)</span>
+<span class="n">PlotEnergy</span><span class="p">(</span><span class="n">V0</span><span class="p">,</span> <span class="n">m</span><span class="p">,</span> <span class="n">d</span><span class="p">,</span> <span class="n">initial_conditions</span><span class="o">.</span><span class="n">x0</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">initial_conditions</span><span class="o">.</span><span class="n">v0</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">t0</span><span class="p">,</span> <span class="n">tf</span><span class="p">,</span> <span class="n">dt</span><span class="p">)</span>
+<span class="n">PlotEnergy</span><span class="p">(</span><span class="n">V0</span><span class="p">,</span> <span class="n">m</span><span class="p">,</span> <span class="n">d</span><span class="p">,</span> <span class="n">initial_conditions</span><span class="o">.</span><span class="n">x0</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">initial_conditions</span><span class="o">.</span><span class="n">v0</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">t0</span><span class="p">,</span> <span class="n">tf</span><span class="p">,</span> <span class="n">dt</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/2f384d9298f8946ca69d209095fb7e82b1703fedfdc6d9e4db424f3dc7eeb608.png" src="../_images/2f384d9298f8946ca69d209095fb7e82b1703fedfdc6d9e4db424f3dc7eeb608.png" />
+<img alt="../_images/f221309f75a74b61785b48c4794f1808ad72bb224f317f276ee5f2be75b21da4.png" src="../_images/f221309f75a74b61785b48c4794f1808ad72bb224f317f276ee5f2be75b21da4.png" />
+<img alt="../_images/a311467df6ecb7372ec09cb5f2646b86a55550f3a14a6c2e9e4f25f27062b579.png" src="../_images/a311467df6ecb7372ec09cb5f2646b86a55550f3a14a6c2e9e4f25f27062b579.png" />
+</div>
+</div>
+</section>
+<section id="part-2-model-your-own-system">
+<h2>Part 2, model your own system<a class="headerlink" href="#part-2-model-your-own-system" title="Link to this heading">#</a></h2>
+<p>In this problem, you will choose a one dimensional system of your own. You may choose a known potential, or you may invent your own. Your potential must:</p>
+<ol class="arabic simple">
+<li><p>Have at least one stable equilibrium point.</p></li>
+<li><p>Have at least one unstable equilibrium point, or some other interesting feature (e.g., asymptotic behavior).</p></li>
+<li><p>For some choice of total energy, it should have oscillatory motion (i.e., classical turning points).</p></li>
+<li><p>Produce a non-linear and conservative force.</p></li>
+<li><p>Be continuous and differentiable over the range of interest.</p></li>
+</ol>
+<p>For this problem, you will need to perform the following tasks:</p>
+<ol class="arabic simple">
+<li><p>(5pts) Write down the potential and start to demonstrate that it meets the above criteria. <strong>Make sure it is conservative and that the force is nonlinear before proceeding.</strong></p></li>
+<li><p>(5pts) Sketch or plot the potential and find the equilibrium points. You need to show you can compute the equilibrium points and characterize their stability. For some choices of potential, you may need to use a numerical method to find the equilibrium points and conceptual arguments to determine their stability.</p></li>
+<li><p>(10pts) Pick a total energy that gives rise to oscillatory motion. Show this by sketching or plotting the energy diagram and describing the motion. Are there any other kinds of motion that can occur for other choices of total energy?</p></li>
+<li><p>(20pts) Write a numerical algorithm to find the position and velocity of the particle (it’s trajectories) for the choice of total energy where the motion is oscillatory. Here you must use two methods: (1) the standard forward Euler, and either (2) the Euler-Cromer or the <a class="reference external" href="https://en.wikipedia.org/wiki/Verlet_integration">Velocity Verlet</a> algorithms. You will need to pick the time step <span class="math notranslate nohighlight">\(\Delta t\)</span> and the total time <span class="math notranslate nohighlight">\(t_{max}\)</span> for your simulation. Compare the results of the two algorithms. Which one is better? Justify your answer.</p></li>
+<li><p>(10pts) Use your program to plot the energy of the particle (T), the potential energy (V), and the total energy (E) as a function of time. Discuss the behavior of the energy between each choice of algorithm. Is energy conserved in your simulations?</p></li>
+</ol>
+</section>
+<section id="example-solution-a-model-of-quark-confinement">
+<h2>EXAMPLE SOLUTION: A model of quark confinement<a class="headerlink" href="#example-solution-a-model-of-quark-confinement" title="Link to this heading">#</a></h2>
+<div class="tip admonition">
+<p class="admonition-title">Solution</p>
+<p>In part 2, we are going to study a new potential. This potential contains the basic mathematical components needed to describe the confinement of quarks through a term <span class="math notranslate nohighlight">\(\kappa x\)</span>. The aim of this exercise is to try to develop your intuition about the motion of physical objects due to specific forces. Then we will test our intuition by running simulations. The potential, in one dimension only is defined for <span class="math notranslate nohighlight">\(x\in [0.2,\infty)\)</span>.  It reads:</p>
+<div class="math notranslate nohighlight">
+\[
+V(x) = -\frac{\gamma}{x}+\frac{\delta}{x^2}+\kappa x,
+\]</div>
+<p>where the last term is the one which ensures confinement of for example quarks. We can show that this potential leads to an energy conserving force by calculating the <strong>curl</strong> of the resulting force.</p>
+<p>This potential is <span class="math notranslate nohighlight">\(V(x) = -\frac{\gamma}{x}+\frac{\delta}{x^2}+\kappa x\)</span>. The force is given by the negative gradient of the potential, so that,</p>
+<div class="math notranslate nohighlight">
+\[F(x) = -\dfrac{dV(x)}{dx} = -\dfrac{\gamma}{x^2}+\dfrac{2\delta}{x^3}-\kappa.\]</div>
+<p>This is again a 1D force, so that the curl will be zero. We can show this explicitly by calculating the curl,</p>
+<div class="math notranslate nohighlight">
+\[\boldsymbol{\nabla}\times \boldsymbol{F} = +\dfrac{dF(x)}{dz}\hat{y} - \dfrac{dF(x)}{dy}\hat{z} = 0.\]</div>
+<p>Thus we expect the force to conserve energy, and because it is the only force acting on the particle, we expect the total energy to be conserved.</p>
+<p>We also notice that the force is non-linear, so that the potential meets the criteria.</p>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>(5pt) Plot the potential for <span class="math notranslate nohighlight">\(x\in [0.2,10]\)</span> and set <span class="math notranslate nohighlight">\(\gamma=10\)</span>, <span class="math notranslate nohighlight">\(\delta = 3\)</span> and <span class="math notranslate nohighlight">\(\kappa =1\)</span>. Find the value of <span class="math notranslate nohighlight">\(x\)</span> where the potential has a minimum.</p></li>
+</ol>
+<div class="tip admonition">
+<p class="admonition-title">Solution</p>
+<p>We can plot the potential using the given parameters. It might be hard to compute the location of the energy minimum sometimes. Graphing is a helpful tool to see if we are on the right track.</p>
+<p>We can see from the plot that there is a minimum in the potential. We can find the location of the minimum by setting the first derivative of the potential equal to zero and solving for <span class="math notranslate nohighlight">\(x\)</span>. This gives us the following equation,</p>
+<div class="math notranslate nohighlight">
+\[\dfrac{dV(x)}{dx} = 0 = -\dfrac{\gamma}{x^2}+\dfrac{2\delta}{x^3}-\kappa.\]</div>
+<div class="math notranslate nohighlight">
+\[\dfrac{\gamma}{x^2} = \dfrac{2\delta}{x^3}-\kappa.\]</div>
+<p>We could solve this equation for <span class="math notranslate nohighlight">\(x\)</span> to find the location of the minimum, but the algebra is a bit messy - this equation looks transcendental. We instead plot the potential and find the minimum by inspection. We can see the minimum is stable locally because the potential is concave up at the minimum.</p>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">quarkPotential</span><span class="p">(</span><span class="n">gamma</span><span class="p">,</span> <span class="n">delta</span><span class="p">,</span> <span class="n">kappa</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+    <span class="k">return</span> <span class="o">-</span><span class="n">gamma</span><span class="o">/</span><span class="n">x</span><span class="o">+</span><span class="n">delta</span><span class="o">/</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="o">+</span><span class="n">kappa</span><span class="o">*</span><span class="n">x</span>
+
+<span class="n">xstart</span> <span class="o">=</span> <span class="mf">0.2</span>
+<span class="n">xend</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">steps</span> <span class="o">=</span> <span class="mi">1000</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="n">xstart</span><span class="p">,</span> <span class="n">xend</span><span class="p">,</span> <span class="n">steps</span><span class="p">)</span>
+
+<span class="n">gamma</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">delta</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="n">kappa</span> <span class="o">=</span> <span class="mi">1</span>
+
+<span class="n">V</span> <span class="o">=</span> <span class="n">quarkPotential</span><span class="p">(</span><span class="n">gamma</span><span class="p">,</span> <span class="n">delta</span><span class="p">,</span> <span class="n">kappa</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
+
+<span class="n">minV</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">min</span><span class="p">(</span><span class="n">V</span><span class="p">)</span>
+<span class="n">minX</span> <span class="o">=</span> <span class="n">x</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">argmin</span><span class="p">(</span><span class="n">V</span><span class="p">)]</span>
+
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">V</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="sa">r</span><span class="s1">&#39;$V(x)$&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">minX</span><span class="p">,</span> <span class="n">minV</span><span class="p">,</span> <span class="s1">&#39;C1o&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Min. V=</span><span class="si">{:.2e}</span><span class="s1">V, x=</span><span class="si">{:.2e}</span><span class="s1">m&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">minV</span><span class="p">,</span> <span class="n">minX</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">0</span><span class="o">*</span><span class="n">x</span><span class="p">,</span> <span class="s1">&#39;k--&#39;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;x (m)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;V (J)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/c5b7f419cbb06c6266bfd89b7fed0e0a68d4764b031e019a7a57b3c8328eb895.png" src="../_images/c5b7f419cbb06c6266bfd89b7fed0e0a68d4764b031e019a7a57b3c8328eb895.png" />
+</div>
+</div>
+<ol class="arabic simple" start="3">
+<li><p>(10pt) Assume now that at <span class="math notranslate nohighlight">\(x=2\)</span> the particle moving in this potential is at rest, that is its velocity is zero. Find the total energy and describe what kind of motion you can expect. The point <span class="math notranslate nohighlight">\(x=2\)</span> is a so-called turning point. Can you find the other turning point where the kinetic energy is zero. If you keep increasing <span class="math notranslate nohighlight">\(x\)</span>, will the particle ever be able to escape the potential well?</p></li>
+</ol>
+<div class="tip admonition">
+<p class="admonition-title">Solution</p>
+<p>We can find the total energy of the particle at <span class="math notranslate nohighlight">\(x=2\)</span> by using the potential and kinetic energy. The total energy is given by,</p>
+<div class="math notranslate nohighlight">
+\[E_{tot} = V(2) + K(0) = -\dfrac{\gamma}{2}+\dfrac{\delta}{4}+2\kappa,\]</div>
+<div class="math notranslate nohighlight">
+\[E_{tot} = -\dfrac{10}{2}+\dfrac{3}{4}+2(1) = 3.75 J\]</div>
+<p>This sets the cap on the energy, so we expect that the particle will oscillate between <span class="math notranslate nohighlight">\(x=2\)</span> and some other point. By graphing the potential, and the total energy line, we can see where that point is. We can also see with this energy the particle will never escape the potential well.</p>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">xstart</span> <span class="o">=</span> <span class="mf">0.2</span>
+<span class="n">xend</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">steps</span> <span class="o">=</span> <span class="mi">1000</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="n">xstart</span><span class="p">,</span> <span class="n">xend</span><span class="p">,</span> <span class="n">steps</span><span class="p">)</span>
+
+<span class="n">xstart</span> <span class="o">=</span> <span class="mf">0.2</span>
+<span class="n">xend</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">steps</span> <span class="o">=</span> <span class="mi">1000</span>
+
+<span class="n">gamma</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">delta</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="n">kappa</span> <span class="o">=</span> <span class="mi">1</span>
+
+<span class="n">Etot</span> <span class="o">=</span> <span class="mf">3.75</span>
+
+<span class="n">V</span> <span class="o">=</span> <span class="n">quarkPotential</span><span class="p">(</span><span class="n">gamma</span><span class="p">,</span> <span class="n">delta</span><span class="p">,</span> <span class="n">kappa</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
+
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">V</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="sa">r</span><span class="s1">&#39;$V(x)$&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">Etot</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">(</span><span class="n">steps</span><span class="p">),</span> <span class="s1">&#39;C1--&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="sa">r</span><span class="s1">&#39;$E_</span><span class="si">{tot}</span><span class="s1">=3.75\; \mathrm</span><span class="si">{J}</span><span class="s1">$&#39;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;x (m)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;V (J)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/0e15c699a79a6e9db05ca68c75bdf25a8509744ed102986cb47510a11b8b3184.png" src="../_images/0e15c699a79a6e9db05ca68c75bdf25a8509744ed102986cb47510a11b8b3184.png" />
+</div>
+</div>
+<div class="tip admonition">
+<p class="admonition-title">Solution</p>
+<p>It’s hard to see what might happen with the little patch of space we plotted. We can see what happens as <span class="math notranslate nohighlight">\(x \rightarrow \infty\)</span> by graphing the potential. It grows without bound. That follows from the expression itself where the <span class="math notranslate nohighlight">\(\kappa x\)</span> term blows up at large <span class="math notranslate nohighlight">\(x\)</span>. Thus the particle will never escape the potential well.</p>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">xstart</span> <span class="o">=</span> <span class="mf">0.2</span>
+<span class="n">xend</span> <span class="o">=</span> <span class="mi">200</span>
+<span class="n">steps</span> <span class="o">=</span> <span class="mi">10000</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="n">xstart</span><span class="p">,</span> <span class="n">xend</span><span class="p">,</span> <span class="n">steps</span><span class="p">)</span>
+
+<span class="n">gamma</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">delta</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="n">kappa</span> <span class="o">=</span> <span class="mi">1</span>
+
+<span class="n">Etot</span> <span class="o">=</span> <span class="mi">100</span>
+
+<span class="n">V</span> <span class="o">=</span> <span class="n">quarkPotential</span><span class="p">(</span><span class="n">gamma</span><span class="p">,</span> <span class="n">delta</span><span class="p">,</span> <span class="n">kappa</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
+
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">V</span><span class="p">,</span> <span class="n">lw</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="sa">r</span><span class="s1">&#39;$V(x)$&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">Etot</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">(</span><span class="n">steps</span><span class="p">),</span> <span class="s1">&#39;C1--&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="sa">r</span><span class="s1">&#39;$E_</span><span class="si">{tot}</span><span class="s1">=100\; \mathrm</span><span class="si">{J}</span><span class="s1">$&#39;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;x (m)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;V (J)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/1a776a7926cdcd54da8216d764cded5bde802e3d0f26e749be867936c6317ff2.png" src="../_images/1a776a7926cdcd54da8216d764cded5bde802e3d0f26e749be867936c6317ff2.png" />
+</div>
+</div>
+<ol class="arabic simple" start="4">
+<li><p>(20pt) We will now change our program (using either the standard Euler and the Euler-Cromer methods) and compute the position and the velocity as functions of time using the force computed from the above potential. Use as initial condition at time <span class="math notranslate nohighlight">\(t=0\)</span> that the particle is <span class="math notranslate nohighlight">\(x_0=2\)</span> and has initial velocity <span class="math notranslate nohighlight">\(v_0=0\)</span>.</p></li>
+</ol>
+<div class="tip admonition">
+<p class="admonition-title">Solution</p>
+<p>We start by writing an EulerCromer integrator for the force. We then use this to model the motion of the particle. We can plot the position and velocity of the particle as a function of time. We can also plot the total energy of the particle as a function of time. We can see that the energy is conserved in the simulation.</p>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">IntegrateQuarkEOM_EC</span><span class="p">(</span><span class="n">gamma</span><span class="p">,</span> <span class="n">delta</span><span class="p">,</span> <span class="n">kappa</span><span class="p">,</span> <span class="n">x0</span><span class="p">,</span> <span class="n">v0</span><span class="p">,</span> <span class="n">t0</span><span class="p">,</span> <span class="n">tf</span><span class="p">,</span> <span class="n">dt</span><span class="p">):</span>
+    <span class="n">t</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">t0</span><span class="p">,</span> <span class="n">tf</span><span class="p">,</span> <span class="n">dt</span><span class="p">)</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">t</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+    <span class="n">v</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">t</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+    <span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">v</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">x0</span><span class="p">,</span> <span class="n">v0</span>
+
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">t</span><span class="p">)):</span>
+        <span class="n">v</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">v</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">dt</span> <span class="o">*</span> <span class="p">(</span><span class="o">-</span><span class="n">gamma</span><span class="o">/</span><span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">2</span><span class="o">*</span><span class="n">delta</span><span class="o">/</span><span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">**</span><span class="mi">3</span> <span class="o">-</span> <span class="n">kappa</span><span class="p">)</span>
+        <span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">dt</span> <span class="o">*</span> <span class="n">v</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+
+    <span class="k">return</span> <span class="n">t</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">v</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">IntegrateQuarkEOM_Euler</span><span class="p">(</span><span class="n">gamma</span><span class="p">,</span> <span class="n">delta</span><span class="p">,</span> <span class="n">kappa</span><span class="p">,</span> <span class="n">x0</span><span class="p">,</span> <span class="n">v0</span><span class="p">,</span> <span class="n">t0</span><span class="p">,</span> <span class="n">tf</span><span class="p">,</span> <span class="n">dt</span><span class="p">):</span>
+    <span class="n">t</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">t0</span><span class="p">,</span> <span class="n">tf</span><span class="p">,</span> <span class="n">dt</span><span class="p">)</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">t</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+    <span class="n">v</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">t</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+    <span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">v</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">x0</span><span class="p">,</span> <span class="n">v0</span>
+
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">t</span><span class="p">)):</span>
+        <span class="n">v</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">v</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">dt</span> <span class="o">*</span> <span class="p">(</span><span class="o">-</span><span class="n">gamma</span><span class="o">/</span><span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">2</span><span class="o">*</span><span class="n">delta</span><span class="o">/</span><span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">**</span><span class="mi">3</span> <span class="o">-</span> <span class="n">kappa</span><span class="p">)</span>
+        <span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">dt</span> <span class="o">*</span> <span class="n">v</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+
+    <span class="k">return</span> <span class="n">t</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">v</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">gamma</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">delta</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="n">kappa</span> <span class="o">=</span> <span class="mi">1</span>
+
+<span class="n">x0</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">v0</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="n">t0</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">tf</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">N</span> <span class="o">=</span> <span class="mi">100000</span>
+<span class="n">dt</span> <span class="o">=</span> <span class="p">(</span><span class="n">tf</span> <span class="o">-</span> <span class="n">t0</span><span class="p">)</span><span class="o">/</span><span class="n">N</span>
+
+<span class="n">t</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">v</span> <span class="o">=</span> <span class="n">IntegrateQuarkEOM_EC</span><span class="p">(</span><span class="n">gamma</span><span class="p">,</span> <span class="n">delta</span><span class="p">,</span> <span class="n">kappa</span><span class="p">,</span> <span class="n">x0</span><span class="p">,</span> <span class="n">v0</span><span class="p">,</span> <span class="n">t0</span><span class="p">,</span> <span class="n">tf</span><span class="p">,</span> <span class="n">dt</span><span class="p">)</span>
+<span class="n">Quark_EC</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;t&#39;</span><span class="p">:</span> <span class="n">t</span><span class="p">,</span> <span class="s1">&#39;x&#39;</span><span class="p">:</span> <span class="n">x</span><span class="p">,</span> <span class="s1">&#39;v&#39;</span><span class="p">:</span> <span class="n">v</span><span class="p">})</span>
+<span class="n">t</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">v</span> <span class="o">=</span> <span class="n">IntegrateQuarkEOM_Euler</span><span class="p">(</span><span class="n">gamma</span><span class="p">,</span> <span class="n">delta</span><span class="p">,</span> <span class="n">kappa</span><span class="p">,</span> <span class="n">x0</span><span class="p">,</span> <span class="n">v0</span><span class="p">,</span> <span class="n">t0</span><span class="p">,</span> <span class="n">tf</span><span class="p">,</span> <span class="n">dt</span><span class="p">)</span>
+<span class="n">QuarkEuler</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;t&#39;</span><span class="p">:</span> <span class="n">t</span><span class="p">,</span> <span class="s1">&#39;x&#39;</span><span class="p">:</span> <span class="n">x</span><span class="p">,</span> <span class="s1">&#39;v&#39;</span><span class="p">:</span> <span class="n">v</span><span class="p">})</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">Quark_EC</span><span class="o">.</span><span class="n">t</span><span class="p">,</span> <span class="n">Quark_EC</span><span class="o">.</span><span class="n">x</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;x(t) (Euler-Cromer)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">QuarkEuler</span><span class="o">.</span><span class="n">t</span><span class="p">,</span> <span class="n">QuarkEuler</span><span class="o">.</span><span class="n">x</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;x(t) (Euler)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;t (s)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;x (m)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">Quark_EC</span><span class="o">.</span><span class="n">t</span><span class="p">,</span> <span class="n">Quark_EC</span><span class="o">.</span><span class="n">v</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;v(t) (Euler-Cromer)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">QuarkEuler</span><span class="o">.</span><span class="n">t</span><span class="p">,</span> <span class="n">QuarkEuler</span><span class="o">.</span><span class="n">v</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;v(t) (Euler)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;t (s)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;v (m/s)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/605045dca2de16f7e1b137482d527c4a8d54607e66072effea65f54ef8e94e3a.png" src="../_images/605045dca2de16f7e1b137482d527c4a8d54607e66072effea65f54ef8e94e3a.png" />
+<img alt="../_images/453ae64e737e8343642614fa2ff142137a95d5629830774294bb4218e6a1374b.png" src="../_images/453ae64e737e8343642614fa2ff142137a95d5629830774294bb4218e6a1374b.png" />
+</div>
+</div>
+<ol class="arabic simple" start="5">
+<li><p>(10 pts) Test numerically that energy is conserved as function of time in either algorithm.</p></li>
+</ol>
+<div class="tip admonition">
+<p class="admonition-title">Solution</p>
+<p>In the plots below, we can see that the motion is oscillatory. We can also see that the energy is conserved in the Euler-Cromer simulation over one integration interval, but in the Euler integration it just grows.</p>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">PE_EC</span> <span class="o">=</span> <span class="n">quarkPotential</span><span class="p">(</span><span class="n">gamma</span><span class="p">,</span> <span class="n">delta</span><span class="p">,</span> <span class="n">kappa</span><span class="p">,</span> <span class="n">Quark_EC</span><span class="o">.</span><span class="n">x</span><span class="p">)</span>
+<span class="n">KE_EC</span> <span class="o">=</span> <span class="mf">0.5</span><span class="o">*</span><span class="n">Quark_EC</span><span class="o">.</span><span class="n">v</span><span class="o">**</span><span class="mi">2</span>
+<span class="n">Etot_EC</span> <span class="o">=</span> <span class="n">PE_EC</span> <span class="o">+</span> <span class="n">KE_EC</span>
+
+<span class="n">PE_Euler</span> <span class="o">=</span> <span class="n">quarkPotential</span><span class="p">(</span><span class="n">gamma</span><span class="p">,</span> <span class="n">delta</span><span class="p">,</span> <span class="n">kappa</span><span class="p">,</span> <span class="n">QuarkEuler</span><span class="o">.</span><span class="n">x</span><span class="p">)</span>
+<span class="n">KE_Euler</span> <span class="o">=</span> <span class="mf">0.5</span><span class="o">*</span><span class="n">QuarkEuler</span><span class="o">.</span><span class="n">v</span><span class="o">**</span><span class="mi">2</span>
+<span class="n">Etot_Euler</span> <span class="o">=</span> <span class="n">PE_Euler</span> <span class="o">+</span> <span class="n">KE_Euler</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span> <span class="mi">12</span><span class="p">))</span>
+
+<span class="c1"># Plot 1: PE comparison</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">Quark_EC</span><span class="o">.</span><span class="n">t</span><span class="p">,</span> <span class="n">PE_EC</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;PE(t) (Euler-Cromer)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">QuarkEuler</span><span class="o">.</span><span class="n">t</span><span class="p">,</span> <span class="n">PE_Euler</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;PE(t) (Euler)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;t (s)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;PE (J)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Potential Energy Comparison&#39;</span><span class="p">)</span>
+
+<span class="c1"># Plot 2: KE comparison</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">Quark_EC</span><span class="o">.</span><span class="n">t</span><span class="p">,</span> <span class="n">KE_EC</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;KE(t) (Euler-Cromer)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">QuarkEuler</span><span class="o">.</span><span class="n">t</span><span class="p">,</span> <span class="n">KE_Euler</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;KE(t) (Euler)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;t (s)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;KE (J)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Kinetic Energy Comparison&#39;</span><span class="p">)</span>
+
+<span class="c1"># Plot 3: Etot comparison</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">Quark_EC</span><span class="o">.</span><span class="n">t</span><span class="p">,</span> <span class="n">Etot_EC</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Etot(t) (Euler-Cromer)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">QuarkEuler</span><span class="o">.</span><span class="n">t</span><span class="p">,</span> <span class="n">Etot_Euler</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Etot(t) (Euler)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;t (s)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Etot (J)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Total Energy Comparison&#39;</span><span class="p">)</span>
+
+<span class="c1"># Plot 4: Euler-Cromer energies</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">Quark_EC</span><span class="o">.</span><span class="n">t</span><span class="p">,</span> <span class="n">PE_EC</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;PE(t) (Euler-Cromer)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">Quark_EC</span><span class="o">.</span><span class="n">t</span><span class="p">,</span> <span class="n">KE_EC</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;KE(t) (Euler-Cromer)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">Quark_EC</span><span class="o">.</span><span class="n">t</span><span class="p">,</span> <span class="n">Etot_EC</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Etot(t) (Euler-Cromer)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;t (s)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Energy (J)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Euler-Cromer Energies&#39;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/e2c95f62cb6706ac98f6c697034c261ee5a7fd11c803d9b8435281193182961b.png" src="../_images/e2c95f62cb6706ac98f6c697034c261ee5a7fd11c803d9b8435281193182961b.png" />
+</div>
+</div>
+</section>
+<section id="part-3-planning-your-project">
+<h2>Part 3, Planning your project<a class="headerlink" href="#part-3-planning-your-project" title="Link to this heading">#</a></h2>
+<section id="each-student-should-complete-this-part-individually">
+<h3>Each student should complete this part individually.<a class="headerlink" href="#each-student-should-complete-this-part-individually" title="Link to this heading">#</a></h3>
+<p><strong>Why?</strong></p>
+<p><em>This question assesses a core part of the learning goals for our course. Even if you are working on a team for this final project, you should be able to articulate your own ideas and plans. This is an important skill for working on a team and for developing your own ideas.</em></p>
+<p>On homework 4, we asked you to review the <a class="reference external" href="https://uio-ccse.github.io/computational-essay-showroom/">University of Oslo’s computational essay showroom</a>. We asked you to find a computational essay that you found interesting and to write a short paragraph about why you found it interesting. In this part of the midterm, we ask you to plan your own computational essay.</p>
+<p>We hear from students that often the hardest part of developing a computational essay is often finding a question worth investigating. So we are trying to help you with that. You are not expected to write the computational essay for this midterm. Instead, you are expected to plan it.</p>
+<p>For your final project, you will develop a computational essay. Your answers to this question do not commit you to completing this project on the idea you present here. You can change your mind later. This is a good exercise to get you thinking about what you might want to do, and you might find that you want to work on this plan for your final project.</p>
+<p>For each of the questions below, you should write a paragraph or two (minimum 250 words, maximum 500 words) to answer the question. You may include equations, code, or figures in any of your answers.</p>
+<ol class="arabic simple">
+<li><p>(5pt) What is the question(s) you want to investigate? What background information do you need to understand the question(s)? Where can you find that information?</p></li>
+<li><p>(5pt) What is the motivation for the question(s)? Why is it interesting to you? Why is it interesting to others?</p></li>
+<li><p>(5pt) What is the computational aspect of the question(s)? What will you calculate? What will you simulate? What will you visualize?</p></li>
+<li><p>(5pt) Outline the structure of the set up and the analysis that you think that you need in order to answer the question(s) you have. What are the key steps you would need to take? What are the key challenges you anticipate?</p></li>
+<li><p>(5pt) How will you know if you have answered the question(s)? What are the key results you would be looking for?</p></li>
+</ol>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "jbook"
+        },
+        kernelOptions: {
+            name: "jbook",
+            path: "./solutions"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'jbook'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="solutionhw4.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Solution Homework 4</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../resources/course-commitments.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Course Commitments</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#part-1-particle-in-a-one-dimensional-potential">Part 1, Particle in a one-dimensional  potential</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#part-2-model-your-own-system">Part 2, model your own system</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-solution-a-model-of-quark-confinement">EXAMPLE SOLUTION: A model of quark confinement</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#part-3-planning-your-project">Part 3, Planning your project</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#each-student-should-complete-this-part-individually">Each student should complete this part individually.</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Danny Caballero, Morten Hjorth-Jensen, Rachel Henderson
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
