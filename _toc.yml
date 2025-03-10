@@ -90,8 +90,7 @@ parts:
       - file: solutions/solutionhw2.ipynb
       - file: solutions/solutionhw3.ipynb
       - file: solutions/solutionhw4.ipynb
-  #     - file: solutions/solutionhw4.ipynb
-  #     - file: solutions/solutionmidterm1.ipynb
+      - file: solutions/solutionmidterm1.ipynb
   #     - file: solutions/solutionhw5.ipynb
   #     - file: solutions/solutionhw6.ipynb
   #     - file: solutions/solutionhw7.ipynb

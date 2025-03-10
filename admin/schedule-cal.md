@@ -52,16 +52,16 @@ All assignments are turned in using Gradescope as a single PDF.
 | Week | Day    | Topic                             | Readings to prepare           | Important events                                                |
 | ---- | ------ | --------------------------------- | ----------------------------- | --------------------------------------------------------------- |
 | CW8  | 17 Feb | Examples and Stability Analysis ([Slides](../slides/day-15-potential-energy-and-stability.pdf)) | JRT 4.1-4.4, 4.6; MLB 6.6-6.8 |  **Homework 4 Due** & [Midterm Project 1 Assigned (Due 28 Feb)](../midterms/midterm1.ipynb)                                                               |
-|      | 19 Feb | Conservation of Momentum and Angular Momentum   |  JRT 3.1, 3.3-3.4                            |                                                                 |
-|      | 21 Feb |  Problem session for homework        |                               |   |
+|      | 19 Feb | Conservation of Momentum and Angular Momentum ([Slides](../slides/day-16-conservation-of-momentum.pdf))   |  JRT 3.1, 3.3-3.4                            |                                                                 |
+|      | 21 Feb |  Problem session for homework  ([Slides](../slides/day-17-homework-session.pdf))       |                               |   |
 
 ## Class Week 7
 
 | Week | Day    | Topic                                                                                 | Readings to prepare                                                                                                                                                                                                                                                           | Important events                                                      |
 | ---- | ------ | ------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------- |
-| CW9  | 24 Feb | [Nonlinear dynamics](https://en.wikipedia.org/wiki/Nonlinear_system), phase portraits | [Strogatz](https://www.stevenstrogatz.com/books/nonlinear-dynamics-and-chaos-with-applications-to-physics-biology-chemistry-and-engineering) [2.0-2.3](../docs/textbook-chapters/strogatz_3rd_ch2.0-2.3.pdf); [5.0-5.2](../docs/textbook-chapters/strogatz_3rd_ch5.0-5.2.pdf) | [Homework 5 Assigned (Due 14 Mar)](../homeworks/hw5.ipynb) |
-|      | 26 Feb | Phase portraits, numerical modeling                                                   | PDFs posted are consistent with [educational fair use](https://www.copyright.gov/help/faq/faq-fairuse.html); will be removed after course has concluded                                                                                                                       |                                                                       |
-|      | 28 Feb |    Problem session for homework      |                                                                                                                                                                                                                                                                               |  **Midterm Project 1 Due**                                                                     |
+| CW9  | 24 Feb | [Nonlinear dynamics](https://en.wikipedia.org/wiki/Nonlinear_system), phase portraits ([Slides](../slides/day-18-introduction-to-nonlinear-dynamics.pdf)) | [Strogatz](https://www.stevenstrogatz.com/books/nonlinear-dynamics-and-chaos-with-applications-to-physics-biology-chemistry-and-engineering) [2.0-2.3](../docs/textbook-chapters/strogatz_3rd_ch2.0-2.3.pdf); [5.0-5.2](../docs/textbook-chapters/strogatz_3rd_ch5.0-5.2.pdf) | [Homework 5 Assigned (Due 14 Mar)](../homeworks/hw5.ipynb) |
+|      | 26 Feb | Phase portraits, numerical modeling ([Slides](../slides/day-19-phase-diagrams.pdf))                                                  | PDFs posted are consistent with [educational fair use](https://www.copyright.gov/help/faq/faq-fairuse.html); will be removed after course has concluded                                                                                                                       |                                                                       |
+|      | 28 Feb |    Problem session for homework ([Slides](../slides/day-20-homework-session.pdf))     |                                                                                                                                                                                                                                                                               |  **Midterm Project 1 Due**                                                                     |
 
 ## Class Week 8
 
@@ -75,7 +75,7 @@ All assignments are turned in using Gradescope as a single PDF.
 
 | Week | Day    | Topic                     | Readings to prepare | Important events |
 | ---- | ------ | ------------------------- | ------------------- | ---------------- |
-| CW11 | 10 Mar | Oscillations; Damping | JRT 5.1-5.2, 5.4; MLB 7.1-7.2; 8.5 | [Homework 6 Assigned (Due 21 Mar)](../homeworks/hw6.ipynb)                 |
+| CW11 | 10 Mar ([Slides](../slides/day-21-oscillations.pdf)) | Oscillations; Damping | JRT 5.1-5.2, 5.4; MLB 7.1-7.2; 8.5 | [Homework 6 Assigned (Due 21 Mar)](../homeworks/hw6.ipynb)                 |
 |      | 12 Mar | Oscillations; Damping |                     |                  |
 |      | 14 Mar | Problem session for homework |                     |  Homework 5 Due                |
 
