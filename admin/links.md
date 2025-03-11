@@ -5,7 +5,7 @@ Materials will appear in reverse chronological order, with the most recent appea
 Class Zoom: <https://msu.zoom.us/j/92295821308>
 
 
-## Class Week 8, March 4-8, 2025 (CW10)
+## Class Week 8, March 10-14, 2025 (CW11)
 
 Topics: Oscillations
 
@@ -15,10 +15,16 @@ You should review the discussion about [Oscillations](../lecture-notes/week8/08_
 
 ## Assignments
 - [Homework 5](../homeworks/hw5.ipynb) (due March 14, 2025)
+- [Homework 6](../homeworks/hw6.ipynb) (due March 21, 2025)
 
 ## Resources
 - [Oscillations](../lecture-notes/week8/08_start.ipynb)
 - [Modeling Oscillators](../lecture-notes/week8/08_notes.ipynb)
+
+## No Class Week, March 4-8, 2025 (CW10)
+
+- Spring Break
+
 
 ## Class Week 7, February 24-28, 2025 (CW9)
 

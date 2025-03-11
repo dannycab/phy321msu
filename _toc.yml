@@ -76,7 +76,7 @@ parts:
       - file: homeworks/hw4.ipynb
       - file: midterms/midterm1.ipynb
       - file: homeworks/hw5.ipynb
-      # - file: homeworks/hw6.ipynb
+      - file: homeworks/hw6.ipynb
       # - file: homeworks/hw7.ipynb
       # - file: midterms/midterm2.ipynb
       # - file: homeworks/hw8.ipynb
