@@ -2,6 +2,18 @@
 
 Slides for PHY 321 appear in reverse chronological order, with the most recent slides at the top. The formats are PDF, HTML, and Markdown. The HTML slides are hosted on my website, and the Markdown slides are the source code for the HTML slides, built with [Marp](https://marp.app/).
 
+## Day 22 - Damped Oscillations - 12 Mar 2025
+
+### Download PDF
+
+[![Day 22](../slides/day-22-damped-oscillations.png)](../slides/day-22-damped-oscillations.pdf)
+
+### HTML Versions
+| Format | Link |
+|--|--|
+| HTML (Inline) | [day-22-damped-oscillations.md](../slides/day-22-damped-oscillations.md) |
+| HTML (Slides) | [day-22-damped-oscillations.html](../slides/day-22-damped-oscillations.html) |
+
 ## Day 21 - Oscillations - 10 Mar 2025
 
 ### Download PDF
