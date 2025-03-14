@@ -2,6 +2,17 @@
 
 Slides for PHY 321 appear in reverse chronological order, with the most recent slides at the top. The formats are PDF, HTML, and Markdown. The HTML slides are hosted on my website, and the Markdown slides are the source code for the HTML slides, built with [Marp](https://marp.app/).
 
+## Day 23 - Homework Session - 14 Mar 2025
+### Download PDF
+
+[![Day 23](../slides/day-23-homework-session.png)](../slides/day-23-homework-session.pdf)
+
+### HTML Versions
+| Format | Link |
+|--|--|
+| HTML (Inline) | [day-23-homework-session.md](../slides/day-23-homework-session.md) |
+| HTML (Slides) | [day-23-homework-session.html](../slides/day-23-homework-session.html) |
+
 ## Day 22 - Damped Oscillations - 12 Mar 2025
 
 ### Download PDF
