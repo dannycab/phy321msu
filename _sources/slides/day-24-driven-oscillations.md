@@ -112,6 +112,18 @@ $$x(t) = (C_1 + C_2 t) e^{-\beta t}$$
 
 # Clicker Question 24-1
 
+Next week, we can choose what to do in class. What would you like to do?
+
+1. Fourier Series for solving ODEs (currently scheduled)
+2. Pathways to Chaos (build off oscillations)
+3. Collisions and Conservation Laws (momentum and angular momentum)
+4. Calculus of Variations (spend more time on this?)
+5. Other ideas?
+
+---
+
+# Clicker Question 24-2
+
 What do we expect the phase space diagram ($x$ vs $\dot{x}$) to look like for a weakly damped harmonic oscillator?
 
 1. A set of ellipses
@@ -122,7 +134,7 @@ What do we expect the phase space diagram ($x$ vs $\dot{x}$) to look like for a 
 
 ---
 
-# Clicker Question 24-2
+# Clicker Question 24-3
 
 The driven harmonic oscillator equation is:
 
@@ -137,7 +149,7 @@ with $w_0^2 = k/m$ and $2\beta = b/m$. What is the dimension of the driving forc
 
 ---
 
-# Clicker Question 24-3
+# Clicker Question 24-4
 
 The driven harmonic oscillator equation is:
 
@@ -169,7 +181,7 @@ Interesting, $e^{i \omega t} = \cos(\omega t) + i \sin(\omega t)$, let try to wo
 
 ---
 
-# Clicker Question 24-4
+# Clicker Question 24-5
 
 We found that the square amplitude of the driven harmonic oscillator is:
 
