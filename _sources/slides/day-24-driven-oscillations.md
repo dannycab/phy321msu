@@ -24,7 +24,7 @@ Source: [Wikipedia](https://upload.wikimedia.org/wikipedia/commons/2/25/Driven-p
 
 * Midterm 1 is still being graded
 * Homework 6 is due next Friday
-* Homework 7 will be posted soon
+* Homework 7 is posted, due next Friday
     * Final project check-in #1
 * Danny will be out this Wednesday
     * Class will be on zoom <https://msu.zoom.us/j/92295821308>
