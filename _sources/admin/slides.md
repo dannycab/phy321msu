@@ -2,6 +2,17 @@
 
 Slides for PHY 321 appear in reverse chronological order, with the most recent slides at the top. The formats are PDF, HTML, and Markdown. The HTML slides are hosted on my website, and the Markdown slides are the source code for the HTML slides, built with [Marp](https://marp.app/).
 
+## Day 24 - Driven Oscillations - 17 Mar 2025
+### Download PDF
+
+[![Day 24](../slides/day-24-driven-oscillations.png)](../slides/day-24-driven-oscillations.pdf)
+
+### HTML Versions
+| Format | Link |
+|--|--|
+| HTML (Inline) | [day-24-driven-oscillations.md](../slides/day-24-driven-oscillations.md) |
+| HTML (Slides) | [day-24-driven-oscillations.html](../slides/day-24-driven-oscillations.html) |
+
 ## Day 23 - Homework Session - 14 Mar 2025
 ### Download PDF
 
