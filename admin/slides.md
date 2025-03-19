@@ -2,6 +2,17 @@
 
 Slides for PHY 321 appear in reverse chronological order, with the most recent slides at the top. The formats are PDF, HTML, and Markdown. The HTML slides are hosted on my website, and the Markdown slides are the source code for the HTML slides, built with [Marp](https://marp.app/).
 
+## Day 25 - Resonance - 19 Mar 2025
+### Download PDF
+
+[![Day 25](../slides/day-25-resonance.png)](../slides/day-25-resonance.pdf)
+
+### HTML Versions
+| Format | Link |
+|--|--|
+| HTML (Inline) | [day-25-resonance.md](../slides/day-25-resonance.md) |
+| HTML (Slides) | [day-25-resonance.html](../slides/day-25-resonance.html) |
+
 ## Day 24 - Driven Oscillations - 17 Mar 2025
 ### Download PDF
 
