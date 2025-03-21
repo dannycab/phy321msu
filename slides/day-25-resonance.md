@@ -83,7 +83,7 @@ $$z_h(t) = C_1 e^{rt} + C_2 e^{r^* t}$$
 
 where $r = -\beta \pm i \sqrt{\omega_0^2 - \beta^2}$. In the case of a weakly damped oscillator ($\beta^2 < \omega_0^2$), we have:
 
-$$z_h(t) = C_1 e^{-\beta t} e^{-i \sqrt{\beta^2-\omega_0^2} t} + C_2 e^{-\beta t} e^{+i \sqrt{\beta^2-\omega_0^2} t}$$
+$$z_h(t) = e^{-\beta t} \left( C_1 e^{-i \sqrt{\omega_0^2 - \beta^2} t} + C_2 e^{+i \sqrt{\omega_0^2 - \beta^2} t} \right)$$
 
 These solutions die out as $t \to \infty$. They are called **transient solutions**.
 
@@ -108,7 +108,7 @@ $$\left(-\omega^2 + 2 i \beta \omega + \omega_0^2\right) C = f_0$$
 
 # Amplitude of the particular solution
 
-$$C =\dfrac{f_0}{\left(-\omega^2 + 2 i \beta \omega + \omega_0^2\right)}$$
+$$C =\dfrac{f_0}{\left(\omega_0^2-\omega^2 + 2 i \beta \omega\right)}$$
 
 We want to convert this to polar form:
 
@@ -116,7 +116,7 @@ $$C = A e^{-i \delta}$$
 
 where $A$ and $\delta$ are real numbers. We use the complex form to compute the magnitude of the amplitude:
 
-$$A^2 = C \bar{C} = \dfrac{f_0^2}{\left(-\omega^2 + 2 i \beta \omega + \omega_0^2\right)\left(-\omega^2 - 2 i \beta \omega + \omega_0^2\right)}$$
+$$A^2 = C \bar{C} = \dfrac{f_0^2}{\left(\omega_0^2-\omega^2 + 2 i \beta \omega \right)\left(\omega_0^2-\omega^2 - 2 i \beta \omega \right)}$$
 
 $$A^2 = \dfrac{f_0^2}{(\omega_0^2 - \omega^2)^2 + 4 \beta^2 \omega^2}$$
 
@@ -142,11 +142,11 @@ When is the amplitude of the driven oscillator maximized?
 
 With,
 
-$$C =\dfrac{f_0}{\left(-\omega^2 + 2 i \beta \omega + \omega_0^2\right)} = Ae^{-i\delta}$$
+$$C =\dfrac{f_0}{\left(\omega_0^2-\omega^2 + 2 i \beta \omega \right)} = Ae^{-i\delta}$$
 
 then we can compare the complex forms:
 
-$$f_0 e^{i \delta} = A \left(-\omega^2 + 2 i \beta \omega + \omega_0^2\right).$$
+$$f_0 e^{i \delta} = A \left(\omega_0^2-\omega^2 + 2 i \beta \omega \right).$$
 
 Both $f_0$ and $A$ are real numbers, so the phase $\delta$ is the same phase as the complex number:
 
@@ -186,7 +186,7 @@ $$x_h(t) = A_{tr}e^{-\beta t} \cos(\sqrt{\omega_0^2 - \beta^2} t + \delta_{tr})$
 
 where $A_{tr}$ and $\delta_{tr}$ are real numbers and are the amplitude and phase of the transient solution. Both are determined by the initial conditions.
 
-$$x_p(t) = A e^{i(\omega t - \delta)}$$
+$$x_p(t) = A \cos(\omega t - \delta)$$
 
 where $A$ and $\delta$ are real numbers and are the amplitude and phase of the steady-state solution.
 
@@ -196,11 +196,11 @@ where $A$ and $\delta$ are real numbers and are the amplitude and phase of the s
 
 The transient plus the steady-state solution is the full solution:
 
-$$x(t) = A_{tr}e^{-\beta t} \cos(\sqrt{\omega_0^2 - \beta^2} t + \delta_{tr}) + A e^{i(\omega t - \delta)}$$
+$$x(t) = A_{tr}e^{-\beta t} \cos(\sqrt{\omega_0^2 - \beta^2} t + \delta_{tr}) + A \cos(\omega t - \delta)$$
 
 As $t \to \infty$, the transient solution dies out and the steady-state solution persists.
 
-$$x(t \to \infty) = A e^{i(\omega t - \delta)}$$
+$$x(t \to \infty) = A \cos(\omega t - \delta)$$
 
 where 
 
