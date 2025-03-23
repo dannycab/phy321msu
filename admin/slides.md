@@ -2,6 +2,18 @@
 
 Slides for PHY 321 appear in reverse chronological order, with the most recent slides at the top. The formats are PDF, HTML, and Markdown. The HTML slides are hosted on my website, and the Markdown slides are the source code for the HTML slides, built with [Marp](https://marp.app/).
 
+## Day 27 - Introduction to Chaos - 24 Mar 2025
+
+### Download PDF
+
+[![Day 27](../slides/day-27-introduction-to-chaos.png)](../slides/day-27-introduction-to-chaos.pdf)
+
+### HTML Versions
+| Format | Link |
+|--|--|
+| HTML (Inline) | [day-27-introduction-to-chaos.md](../slides/day-27-introduction-to-chaos.md) |
+| HTML (Slides) | [day-27-introduction-to-chaos.html](../slides/day-27-introduction-to-chaos.html) |
+
 ## Day 26 - Homework Session - 21 Mar 2025
 
 ### Download PDF
