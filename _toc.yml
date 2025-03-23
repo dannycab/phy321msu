@@ -37,7 +37,7 @@ parts:
       - file: lecture-notes/week9/09_start
       - file: lecture-notes/week9/09_notes
       - file: lecture-notes/week10/10_start
-      #- file: lecture-notes/week10/10_notes
+      - file: lecture-notes/week10/10_notes
   #- caption: Introductory Material
     #numbered: false
     #chapters:
@@ -108,6 +108,7 @@ parts:
       - file: resources/finding-research
       - file: resources/integrators.ipynb
       - file: resources/phase_diagrams.ipynb
+      - file: resources/chaotic_dynamics.ipynb
   - caption: Honors Projects
     numbered: false
     chapters:
