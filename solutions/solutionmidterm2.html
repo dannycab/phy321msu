@@ -1,0 +1,1455 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Midterm 2 (Due 5 Apr) &#8212; Classical Mechanics</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'solutions/solutionmidterm2';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/spartan-helmet.png" class="logo__image only-light" alt="Classical Mechanics - Home"/>
+    <img src="../_static/spartan-helmet.png" class="logo__image only-dark pst-js-only" alt="Classical Mechanics - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    PHY 321: Classical Mechanics 1, Michigan State University, Spring 2024
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">About the course</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../admin/teachers.html">Teachers and Grading</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin/resources.html">Additional Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin/textbooks.html">Textbooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin/schedule-cal.html">Calendar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin/links.html">Course Material and Links</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Introductory Material</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter1.html">1. What is Classical Physics?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter2-overview.html">What is Mathematical Modeling?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter2.html">2. Classical Mechanics, Mathematics and Numerical background</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter3.html">3. Simple Motion problems and Reminder on Newton’s Laws</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter4.html">4. Work, Energy, Momentum and Conservation laws</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Advanced Topics</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter5.html">5. Harmonic Oscillations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter6.html">6. Two-body problems, from the Gravitational Force to Two-body Scattering</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter7.html">7. Non-inertial Frames, Translation and Rotating Coordinate Systems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter8.html">8. Variational Calculus and Lagrangian Formalism</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">In-class handouts, activities, and other materials</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../in-class/cw1-python-test.html">CW1 - Python Test</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../in-class/cw6-phase_space.html">CW6 - Phase Portraits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../in-class/cw11-plot-fourier.html">CW11 - Plot Fourier Expansion</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Weekly assignments, midterms and final projects with solutions</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw1.html">Homework 1 (Due 19 Jan)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw2.html">Homework 2 (Due 26 Jan)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw3.html">Homework 3 (Due 02 Feb)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw4.html">Homework 4 (Due 09 Feb)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw5.html">Homework 5 (Due 08 Mar)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw6.html">Homework 6 (Due 15 Mar)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw7.html">Homework 7 (Due 22 Mar)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw8.html">Homework 8 (Due 12 Apr)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw9.html">Homework 9 (Due 19 Apr)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw10.html">OPTIONAL Homework 10 (Due Apr 26)</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Honors Projects</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../honors-projects/ChaoticPendulum.html">Chaos in the driven nonlinear pendulum</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../honors-projects/NeuralNetworks.html">From Ordinary Differential equations to Neural Networks, solving mechanics problems in a new way</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../honors-projects/SolarSystem.html">Building a model for the solar system using ordinary differential equations</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/main?urlpath=tree/solutions/solutionmidterm2.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch on Binder"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img alt="Binder logo" src="../_static/images/logo_binder.svg">
+  </span>
+<span class="btn__text-container">Binder</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/solutions/solutionmidterm2.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Midterm 2 (Due 5 Apr)</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#part-1-the-duffing-oscillator-60pt">Part 1, The Duffing Oscillator (60pt)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#undamped-and-undriven-case-20-points">Undamped and undriven case (20 points)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#damped-and-undriven-case-20-points">Damped and undriven case (20 points)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#driven-and-damped-case-20-points">Driven and damped case (20 points)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#extra-credit-up-to-30-points">Extra credit (up to 30 points)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#part-2-signal-analysis-40pt">Part 2, Signal Analysis (40pt)</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <!-- HTML file automatically generated from DocOnce source (https://github.com/doconce/doconce/)
+doconce format html Firstmidterm2022.do.txt --no_mako -->
+<!-- dom:TITLE: PHY321: Classical Mechanics 1 --><section class="tex2jax_ignore mathjax_ignore" id="midterm-2-due-5-apr">
+<h1>Midterm 2 (Due 5 Apr)<a class="headerlink" href="#midterm-2-due-5-apr" title="Link to this heading">#</a></h1>
+<p><strong>Solution Midterm 2, Spring 2024</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">math</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="o">%</span><span class="k">matplotlib</span> inline
+<span class="n">plt</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;seaborn-v0_8-colorblind&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">4</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="kn">from</span><span class="w"> </span><span class="nn">math</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="ne">----&gt; </span><span class="mi">4</span> <span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="n">get_ipython</span><span class="p">()</span><span class="o">.</span><span class="n">run_line_magic</span><span class="p">(</span><span class="s1">&#39;matplotlib&#39;</span><span class="p">,</span> <span class="s1">&#39;inline&#39;</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">6</span> <span class="n">plt</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;seaborn-v0_8-colorblind&#39;</span><span class="p">)</span>
+
+<span class="ne">ModuleNotFoundError</span>: No module named &#39;pandas&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<section id="part-1-the-duffing-oscillator-60pt">
+<h2>Part 1, The Duffing Oscillator (60pt)<a class="headerlink" href="#part-1-the-duffing-oscillator-60pt" title="Link to this heading">#</a></h2>
+<p>Consider the following equation of motion for a damped and driven oscillator that is not necessarily linear. This is the <a class="reference external" href="https://en.wikipedia.org/wiki/Duffing_equation">Duffing equation</a>, which describes a damped driven simple harmonic oscillator with a cubic non-linearity. It’s equation of motion is given by:</p>
+<div class="math notranslate nohighlight">
+\[\ddot{x} + \delta \dot{x} + \alpha x + \beta x^3 = \gamma \cos(\omega t).\]</div>
+<p>where <span class="math notranslate nohighlight">\(\alpha\)</span>, <span class="math notranslate nohighlight">\(\beta\)</span>, <span class="math notranslate nohighlight">\(\delta\)</span>, <span class="math notranslate nohighlight">\(\gamma\)</span>, and <span class="math notranslate nohighlight">\(\omega\)</span> are constants.</p>
+<p>Below is a figure showing the <a class="reference external" href="https://en.wikipedia.org/wiki/Attractor#Strange_attractor">strange attractor</a> of the Duffing Oscillator over four periods. It is locally chaotic, but globally it is stable. This is a common feature of non-linear systems.</p>
+<p><img alt="Strange attractor" src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Duffing_oscillator_strange_attractor_with_color.gif" /></p>
+<p>We focus on this one dimensional case, but we will analyze it in parts to put together a full picture of the dynamics of the system. If you are looking for useful parameter choices and initial conditions, we suggest using those listed on <a class="reference external" href="https://en.wikipedia.org/wiki/Duffing_equation">the Wikipedia page</a>.</p>
+<p>Recall that the potential for this system can give rise to different kinds of behavior depending on the parameters. The figure below shows the potential for different choices of <span class="math notranslate nohighlight">\(\alpha\)</span> and <span class="math notranslate nohighlight">\(\beta\)</span>. Make sure you choose your parameters to match the potential you want to study - pick a stable well for solving for trajectories.</p>
+<p><img alt="Duffing potential" src="../_images/duffing_potential.png" /></p>
+<section id="undamped-and-undriven-case-20-points">
+<h3>Undamped and undriven case (20 points)<a class="headerlink" href="#undamped-and-undriven-case-20-points" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>(5 pt) Consider the undriven and undamped case, <span class="math notranslate nohighlight">\(\delta = \gamma = 0\)</span>. What potential would give rise to this kind of equation of motion? Demonstrate that potential gives the expected equation of motion.</p></li>
+</ol>
+<div class="tip admonition">
+<p class="admonition-title">Solution</p>
+<p>We are focusing on the one-dimensional and undamped case, so we can write the equation of motion as:</p>
+<div class="math notranslate nohighlight">
+\[\ddot{x} + \alpha x + \beta x^3 = 0.\]</div>
+<p>This equation of motion is related to the spatial dependence of a potential energy. We can see this because the two terms that are not the acceleration are dependent only on position. We can write this as:</p>
+<div class="math notranslate nohighlight">
+\[\ddot{x} = \dfrac{F_{x}}{m} = -\dfrac{1}{m}\dfrac{dV}{dx} = -\alpha x - \beta x^3.\]</div>
+<p>This means that the potential energy is, up to a constant, <span class="math notranslate nohighlight">\(V(x) = \dfrac{1}{2} m\alpha x^2 + \dfrac{1}{4} m\beta x^4\)</span>.</p>
+<p>We can verify that this potential gives the expected equation of motion by taking the derivative of the potential with respect to <span class="math notranslate nohighlight">\(x\)</span> and plugging it into the equation of motion. We find:</p>
+<div class="math notranslate nohighlight">
+\[\dfrac{dV}{dx} = m\alpha x + m\beta x^3,\]</div>
+<p>So that the equation of motion becomes:</p>
+<div class="math notranslate nohighlight">
+\[\ddot{x} = -\dfrac{1}{m}\dfrac{dV}{dx} = -\alpha x - \beta x^3.\]</div>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>(5 pt) Find the equilibrium points of the system for the undriven and undamped case. What are the conditions for stable and unstable equilibrium points? Plot the potential for some choices of <span class="math notranslate nohighlight">\(\alpha\)</span> and <span class="math notranslate nohighlight">\(\beta\)</span> to illustrate your findings.</p></li>
+</ol>
+<div class="tip admonition">
+<p class="admonition-title">Solution</p>
+<p>Here we can find the equilbrium points by setting the net force to zero (i.e., the derivative of the potential energy is zero). We have:</p>
+<div class="math notranslate nohighlight">
+\[\dfrac{dV}{dx} = m\alpha x + m\beta x^3 = 0.\]</div>
+<p>We can factor this to find the equilibrium points:</p>
+<div class="math notranslate nohighlight">
+\[x(\alpha + \beta x^2) = 0.\]</div>
+<p>So that there are in principle up to three equilibrium points.</p>
+<div class="math notranslate nohighlight">
+\[x = 0, \quad x = \pm \sqrt{-\dfrac{\alpha}{\beta}}.\]</div>
+<p>The stability of these points is determined by the concavity of the potential. If the potential is concave up, the equilibrium point is stable. If the potential is concave down, the equilibrium point is unstable. We can see this by looking at the second derivative of the potential:</p>
+<div class="math notranslate nohighlight">
+\[\dfrac{d^2V}{dx^2} = m\alpha + 3m\beta x^2.\]</div>
+<p>For <span class="math notranslate nohighlight">\(x=0\)</span>, we have</p>
+<div class="math notranslate nohighlight">
+\[\dfrac{d^2V}{dx^2} = m\alpha,\]</div>
+<p>and for <span class="math notranslate nohighlight">\(x = \pm \sqrt{-\dfrac{\alpha}{\beta}}\)</span>, we have</p>
+<div class="math notranslate nohighlight">
+\[\dfrac{d^2V}{dx^2} = m\alpha - 3m\beta\dfrac{\alpha}{\beta} = m\alpha - 3m\alpha = -2m\alpha.\]</div>
+<p>Note that there’s a condition on the existence on two of the equilibrium points, namely that <span class="math notranslate nohighlight">\(\alpha &lt; 0\)</span> and <span class="math notranslate nohighlight">\(\beta &gt; 0\)</span> or <span class="math notranslate nohighlight">\(alpha &gt; 0\)</span> and <span class="math notranslate nohighlight">\(\beta &lt; 0\)</span>. This is because the square root of a negative number is imaginary, and we need a real value for <span class="math notranslate nohighlight">\(x\)</span>.</p>
+<ul class="simple">
+<li><p>If <span class="math notranslate nohighlight">\(\alpha &gt; 0\)</span>, the equilibrium point at <span class="math notranslate nohighlight">\(x = 0\)</span> is stable.</p></li>
+<li><p>If <span class="math notranslate nohighlight">\(\alpha &gt; 0\)</span> and <span class="math notranslate nohighlight">\(\beta &lt; 0\)</span>, the equilibrium points at <span class="math notranslate nohighlight">\(x = \pm \sqrt{-\dfrac{\alpha}{\beta}}\)</span> exist and are unstable.</p></li>
+<li><p>If <span class="math notranslate nohighlight">\(\alpha &lt; 0\)</span>, the equilibrium point at <span class="math notranslate nohighlight">\(x = 0\)</span> is unstable.</p></li>
+<li><p>If <span class="math notranslate nohighlight">\(\alpha &lt; 0\)</span> and <span class="math notranslate nohighlight">\(\beta &gt; 0\)</span>, the equilibrium points at <span class="math notranslate nohighlight">\(x = \pm \sqrt{-\dfrac{\alpha}{\beta}}\)</span> exist and are stable.</p></li>
+</ul>
+<p>The picture above shows the potential for different choices of <span class="math notranslate nohighlight">\(\alpha\)</span> and <span class="math notranslate nohighlight">\(\beta\)</span>. We reproduce that figure below.</p>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## Define the static Duffing Potential</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">V</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">alpha</span><span class="p">,</span> <span class="n">beta</span><span class="p">):</span>
+    <span class="k">return</span> <span class="mf">0.5</span><span class="o">*</span><span class="n">alpha</span><span class="o">*</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="mf">0.25</span><span class="o">*</span><span class="n">beta</span><span class="o">*</span><span class="n">x</span><span class="o">**</span><span class="mi">4</span>
+
+<span class="c1">## Define a series of parameters for the potential</span>
+
+<span class="n">alpha</span> <span class="o">=</span> <span class="p">[</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.0</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.0</span><span class="p">]</span>
+<span class="n">beta</span> <span class="o">=</span> <span class="p">[</span><span class="mf">1.0</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.0</span><span class="p">]</span>
+
+<span class="c1">## Create four plots of the potential</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1000</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">8</span><span class="p">))</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">V</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">alpha</span><span class="p">[</span><span class="n">i</span><span class="p">],</span><span class="n">beta</span><span class="p">[</span><span class="n">i</span><span class="p">]))</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;V(x)&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;$\alpha = $&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">alpha</span><span class="p">[</span><span class="n">i</span><span class="p">])</span> <span class="o">+</span> <span class="sa">r</span><span class="s1">&#39;, $\beta = $&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">beta</span><span class="p">[</span><span class="n">i</span><span class="p">]))</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+    
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/de768cc5dc8ab0b3e2fd747681bb44f7c6968f26178057176f9978114e058101.png" src="../_images/de768cc5dc8ab0b3e2fd747681bb44f7c6968f26178057176f9978114e058101.png" />
+</div>
+</div>
+<ol class="arabic simple" start="3">
+<li><p>(5 pt) Plot the phase space for the undriven and undamped case. What are the trajectories of the system? What is the behavior of the system? Does it match your expectations from the potential? <em>The figure above only starts this discussion.</em></p></li>
+</ol>
+<div class="tip admonition">
+<p class="admonition-title">Solution</p>
+<p>For this we will choose the double well stable potential where <span class="math notranslate nohighlight">\(\alpha &lt; 0\)</span> and <span class="math notranslate nohighlight">\(\beta &gt; 0\)</span>. We can plot the phase space by plotting the velocity as a function of position. And we do that for the choices of <span class="math notranslate nohighlight">\(\alpha = -1\)</span> and <span class="math notranslate nohighlight">\(\beta = 1\)</span>. We plot that below (with <span class="math notranslate nohighlight">\(m =1\)</span>).</p>
+<p>We can see that the system always exhibits oscillatory behavior. The system will somtimes oscillate between the two stable equilibrium points. For lower energy choices, it might oscillate around one or the other stable points. This is consistent with the potential we chose, which has two stable equilibrium points.</p>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">DuffingStatic</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="n">V</span><span class="p">,</span><span class="n">alpha</span><span class="o">=-</span><span class="mf">1.0</span><span class="p">,</span><span class="n">beta</span><span class="o">=</span><span class="mf">1.0</span><span class="p">):</span>
+    <span class="n">dX</span> <span class="o">=</span> <span class="n">V</span>
+    <span class="n">dV</span> <span class="o">=</span> <span class="o">-</span><span class="n">alpha</span><span class="o">*</span><span class="n">X</span> <span class="o">-</span> <span class="n">beta</span><span class="o">*</span><span class="n">X</span><span class="o">**</span><span class="mi">3</span>
+    <span class="k">return</span> <span class="n">dX</span><span class="p">,</span> <span class="n">dV</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">DuffingPhaseSpace</span><span class="p">(</span><span class="n">x_lim</span><span class="p">,</span> <span class="n">y_lim</span><span class="p">,</span> <span class="n">grid_size</span><span class="p">):</span>
+    
+    <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="n">x_lim</span><span class="p">,</span> <span class="n">x_lim</span><span class="p">,</span> <span class="n">grid_size</span><span class="p">)</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="n">y_lim</span><span class="p">,</span> <span class="n">y_lim</span><span class="p">,</span> <span class="n">grid_size</span><span class="p">)</span>
+    
+    <span class="n">X</span><span class="p">,</span> <span class="n">Y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">meshgrid</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+    
+    <span class="n">dX</span><span class="p">,</span> <span class="n">dY</span> <span class="o">=</span> <span class="n">DuffingStatic</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">Y</span><span class="p">)</span>
+    
+    <span class="k">return</span> <span class="n">X</span><span class="p">,</span> <span class="n">Y</span><span class="p">,</span> <span class="n">dX</span><span class="p">,</span> <span class="n">dY</span>
+
+<span class="c1"># Generate the phase space for the Duffing Oscillator</span>
+<span class="n">x_lim</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">y_lim</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">grid_size</span> <span class="o">=</span> <span class="mi">20</span>
+
+<span class="n">X</span><span class="p">,</span> <span class="n">Y</span><span class="p">,</span> <span class="n">dX</span><span class="p">,</span> <span class="n">dY</span> <span class="o">=</span> <span class="n">DuffingPhaseSpace</span><span class="p">(</span><span class="n">x_lim</span><span class="p">,</span> <span class="n">y_lim</span><span class="p">,</span> <span class="n">grid_size</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">8</span><span class="p">))</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">streamplot</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">Y</span><span class="p">,</span> <span class="n">dX</span><span class="p">,</span> <span class="n">dY</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">density</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;v&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Duffing Oscillator Phase Space&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/21bca3b7ce7abbdf12f4bd7ff32fb70c1de81b71372963a1ff39ff913bf84895.png" src="../_images/21bca3b7ce7abbdf12f4bd7ff32fb70c1de81b71372963a1ff39ff913bf84895.png" />
+</div>
+</div>
+<ol class="arabic simple" start="4">
+<li><p>(5 pt) <strong>Here you are likely to need a numerical solver.</strong>  Solve the equation of motion for the undriven and undamped case for a reasonable choice of <span class="math notranslate nohighlight">\(\alpha\)</span> and <span class="math notranslate nohighlight">\(\beta\)</span> and initial conditions. Plot the position as a function of time. What is the behavior of the system? Does it match your expectations from the potential and the phase portrait?</p></li>
+</ol>
+<div class="tip admonition">
+<p class="admonition-title">Solution</p>
+<p>We will solve the equation of motion for two cases, one where the oscillator moves between the two stable points and one where it stays near one or the other. Here it’s a measure of the total energy (which is conserved) that determines the behavior of the system. We will continue to use <span class="math notranslate nohighlight">\(\alpha = -1\)</span> and <span class="math notranslate nohighlight">\(\beta = 1\)</span>.</p>
+<p>But we generate three scenarios. One where the total energy is high, one where the total energy is low, and one where the total energy is in between. We plot the position as a function of time for these three cases below.</p>
+<ul class="simple">
+<li><p>For high energy, the system oscillates between the two stable points. We choose initial conditions <span class="math notranslate nohighlight">\(x(0) = 1\)</span> and <span class="math notranslate nohighlight">\(\dot{x}(0) = 1.5\)</span>.</p></li>
+<li><p>For low energy, the system oscillates around one of the stable points. We choose initial conditions <span class="math notranslate nohighlight">\(x(0) = 1.0\)</span> and <span class="math notranslate nohighlight">\(\dot{x}(0) = 0.3\)</span>. And we choose additional initial conditions <span class="math notranslate nohighlight">\(x(0) = -1.0\)</span> and <span class="math notranslate nohighlight">\(\dot{x}(0) = 0.3\)</span>, to see the system oscillate around the other stable point.</p></li>
+<li><p>For intermediate energy, the system oscillates around one of the stable points. We choose initial conditions <span class="math notranslate nohighlight">\(x(0) = 0.0\)</span> and <span class="math notranslate nohighlight">\(\dot{x}(0) = 0.01\)</span>.</p></li>
+</ul>
+<p>We write the code below.</p>
+<p>These different trajectories are consistent with the potential we chose, which has two stable equilibrium points, and we can see that the system oscillates between the two stable points for high energy, and around one (or the other) of the stable points for low energy.</p>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## Euler Cromer First Order Solver for the Duffing Oscillator</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">DuffingEulerCromer</span><span class="p">(</span><span class="n">x0</span><span class="p">,</span> <span class="n">v0</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=-</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">beta</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">dt</span><span class="o">=</span><span class="mf">0.001</span><span class="p">,</span> <span class="n">t_max</span><span class="o">=</span><span class="mi">30</span><span class="p">):</span>
+    
+    <span class="n">t</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">t_max</span><span class="p">,</span> <span class="n">dt</span><span class="p">)</span>
+    
+    <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros_like</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
+    <span class="n">v</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros_like</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
+    
+    <span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">x0</span>
+    <span class="n">v</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">v0</span>
+    
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">t</span><span class="p">)):</span>
+        <span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">v</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">*</span><span class="n">dt</span>
+        <span class="n">v</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">v</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="p">(</span><span class="n">alpha</span><span class="o">*</span><span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">beta</span><span class="o">*</span><span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">**</span><span class="mi">3</span><span class="p">)</span><span class="o">*</span><span class="n">dt</span>
+        
+    <span class="k">return</span> <span class="n">t</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">v</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## Solve the Duffing Oscillator for our set of initial conditions</span>
+
+<span class="c1">## Define the initial conditions</span>
+<span class="n">initialPositions</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">]</span>
+<span class="n">initialVelocities</span> <span class="o">=</span> <span class="p">[</span><span class="mf">1.5</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">,</span> <span class="mf">0.01</span><span class="p">]</span>
+
+<span class="c1">## Find numerical solutions for the Duffing Oscillator</span>
+<span class="c1">## for our choices of initial conditions</span>
+<span class="c1">## store the results in separate pandas dataframes</span>
+
+<span class="n">t</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">v</span> <span class="o">=</span> <span class="n">DuffingEulerCromer</span><span class="p">(</span><span class="n">initialPositions</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">initialVelocities</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="n">highEnergyDF</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;t&#39;</span><span class="p">:</span> <span class="n">t</span><span class="p">,</span> <span class="s1">&#39;x&#39;</span><span class="p">:</span> <span class="n">x</span><span class="p">,</span> <span class="s1">&#39;v&#39;</span><span class="p">:</span> <span class="n">v</span><span class="p">})</span>
+
+<span class="n">t</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">v</span> <span class="o">=</span> <span class="n">DuffingEulerCromer</span><span class="p">(</span><span class="n">initialPositions</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">initialVelocities</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+<span class="n">lowEnergy1DF</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;t&#39;</span><span class="p">:</span> <span class="n">t</span><span class="p">,</span> <span class="s1">&#39;x&#39;</span><span class="p">:</span> <span class="n">x</span><span class="p">,</span> <span class="s1">&#39;v&#39;</span><span class="p">:</span> <span class="n">v</span><span class="p">})</span>
+
+<span class="n">t</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">v</span> <span class="o">=</span> <span class="n">DuffingEulerCromer</span><span class="p">(</span><span class="n">initialPositions</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">initialVelocities</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+<span class="n">lowEnergy2DF</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;t&#39;</span><span class="p">:</span> <span class="n">t</span><span class="p">,</span> <span class="s1">&#39;x&#39;</span><span class="p">:</span> <span class="n">x</span><span class="p">,</span> <span class="s1">&#39;v&#39;</span><span class="p">:</span> <span class="n">v</span><span class="p">})</span>
+
+<span class="n">t</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">v</span> <span class="o">=</span> <span class="n">DuffingEulerCromer</span><span class="p">(</span><span class="n">initialPositions</span><span class="p">[</span><span class="mi">3</span><span class="p">],</span> <span class="n">initialVelocities</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span>
+<span class="n">medEnergyDF</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;t&#39;</span><span class="p">:</span> <span class="n">t</span><span class="p">,</span> <span class="s1">&#39;x&#39;</span><span class="p">:</span> <span class="n">x</span><span class="p">,</span> <span class="s1">&#39;v&#39;</span><span class="p">:</span> <span class="n">v</span><span class="p">})</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## Plot the numerical solutions for the Duffing Oscillator in time</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">8</span><span class="p">))</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">highEnergyDF</span><span class="p">[</span><span class="s1">&#39;t&#39;</span><span class="p">],</span> <span class="n">highEnergyDF</span><span class="p">[</span><span class="s1">&#39;x&#39;</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;High Energy&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">lowEnergy1DF</span><span class="p">[</span><span class="s1">&#39;t&#39;</span><span class="p">],</span> <span class="n">lowEnergy1DF</span><span class="p">[</span><span class="s1">&#39;x&#39;</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Low Energy 1&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">lowEnergy2DF</span><span class="p">[</span><span class="s1">&#39;t&#39;</span><span class="p">],</span> <span class="n">lowEnergy2DF</span><span class="p">[</span><span class="s1">&#39;x&#39;</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Low Energy 2&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">medEnergyDF</span><span class="p">[</span><span class="s1">&#39;t&#39;</span><span class="p">],</span> <span class="n">medEnergyDF</span><span class="p">[</span><span class="s1">&#39;x&#39;</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Medium Energy&#39;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;t&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Duffing Oscillator Solutions&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+
+<span class="c1">## Plot the numerical solutions for the Duffing Oscillator in phase space</span>
+
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">8</span><span class="p">))</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">highEnergyDF</span><span class="p">[</span><span class="s1">&#39;x&#39;</span><span class="p">],</span> <span class="n">highEnergyDF</span><span class="p">[</span><span class="s1">&#39;v&#39;</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;High Energy&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">lowEnergy1DF</span><span class="p">[</span><span class="s1">&#39;x&#39;</span><span class="p">],</span> <span class="n">lowEnergy1DF</span><span class="p">[</span><span class="s1">&#39;v&#39;</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Low Energy 1&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">lowEnergy2DF</span><span class="p">[</span><span class="s1">&#39;x&#39;</span><span class="p">],</span> <span class="n">lowEnergy2DF</span><span class="p">[</span><span class="s1">&#39;v&#39;</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Low Energy 2&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">medEnergyDF</span><span class="p">[</span><span class="s1">&#39;x&#39;</span><span class="p">],</span> <span class="n">medEnergyDF</span><span class="p">[</span><span class="s1">&#39;v&#39;</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Medium Energy&#39;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;v&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Duffing Oscillator Phase Space Trajectories&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x14103dd90&gt;
+</pre></div>
+</div>
+<img alt="../_images/c09143d690275ea2c101b0e3ce2624ca92a0af4a3059f8cde9746bcda7e7550b.png" src="../_images/c09143d690275ea2c101b0e3ce2624ca92a0af4a3059f8cde9746bcda7e7550b.png" />
+<img alt="../_images/81e1bcb91989e1c02723df0fd64145f445e863b3f61ece87199d1f61439bba33.png" src="../_images/81e1bcb91989e1c02723df0fd64145f445e863b3f61ece87199d1f61439bba33.png" />
+</div>
+</div>
+</section>
+<section id="damped-and-undriven-case-20-points">
+<h3>Damped and undriven case (20 points)<a class="headerlink" href="#damped-and-undriven-case-20-points" title="Link to this heading">#</a></h3>
+<ol class="arabic simple" start="5">
+<li><p>(5 pt) Now consider the damped and undriven case, <span class="math notranslate nohighlight">\(\gamma = 0\)</span>. What is the equation of motion in this case? Can you develop this equation of motion fully from a potential (like we did above)? If so, what is the potential? If not, why not?</p></li>
+</ol>
+<div class="tip admonition">
+<p class="admonition-title">Solution</p>
+<p>In this case, the equation of motion is:</p>
+<div class="math notranslate nohighlight">
+\[\ddot{x} + \delta \dot{x} + \alpha x + \beta x^3 = 0.\]</div>
+<p>We are unable to write this full equation of motion as a derivative of a potential energy. This is because the damping term is a velocity dependent term, and the potential energy is only dependent on position. This system is not conservative. We are stuck with the equation of motion as it is.</p>
+</div>
+<ol class="arabic simple" start="6">
+<li><p>(5 pt) Plot the phase space for the damped and undriven case. What kinds of trajectories are there?</p></li>
+</ol>
+<div class="tip admonition">
+<p class="admonition-title">Solution</p>
+<p>We can follow the same idea as we did for the static case and plot the phase space. This is possible, because there is no explicit time dependence in the equation of motion. We can plot the phase space for <span class="math notranslate nohighlight">\(\alpha = -1\)</span>, <span class="math notranslate nohighlight">\(\beta = 1\)</span>, and <span class="math notranslate nohighlight">\(\delta = 0.5\)</span>. We plot that below.</p>
+<p>We see from that phase space that we should expect every trajectory to spiral inwards towards one or the other stable equilibrium point. This seems to make sense as we are shedding energy due to the damping term, so the system eventually comes to rest at one of the stable points.</p>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">DuffingDamped</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">V</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=-</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">beta</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">gamma</span><span class="o">=</span><span class="mf">0.5</span><span class="p">):</span>
+    <span class="n">dX</span> <span class="o">=</span> <span class="n">V</span>
+    <span class="n">dV</span> <span class="o">=</span> <span class="o">-</span><span class="n">alpha</span><span class="o">*</span><span class="n">X</span> <span class="o">-</span> <span class="n">beta</span><span class="o">*</span><span class="n">X</span><span class="o">**</span><span class="mi">3</span> <span class="o">-</span> <span class="n">gamma</span><span class="o">*</span><span class="n">V</span>
+    <span class="k">return</span> <span class="n">dX</span><span class="p">,</span> <span class="n">dV</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">DuffingDampedPhaseSpace</span><span class="p">(</span><span class="n">x_lim</span><span class="p">,</span> <span class="n">y_lim</span><span class="p">,</span> <span class="n">grid_size</span><span class="p">):</span>
+    
+    <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="n">x_lim</span><span class="p">,</span> <span class="n">x_lim</span><span class="p">,</span> <span class="n">grid_size</span><span class="p">)</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="n">y_lim</span><span class="p">,</span> <span class="n">y_lim</span><span class="p">,</span> <span class="n">grid_size</span><span class="p">)</span>
+    
+    <span class="n">X</span><span class="p">,</span> <span class="n">Y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">meshgrid</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+    
+    <span class="n">dX</span><span class="p">,</span> <span class="n">dY</span> <span class="o">=</span> <span class="n">DuffingDamped</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">Y</span><span class="p">)</span>
+    
+    <span class="k">return</span> <span class="n">X</span><span class="p">,</span> <span class="n">Y</span><span class="p">,</span> <span class="n">dX</span><span class="p">,</span> <span class="n">dY</span>
+
+<span class="c1"># Generate the phase space for the Duffing Oscillator</span>
+<span class="n">x_lim</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">y_lim</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">grid_size</span> <span class="o">=</span> <span class="mi">20</span>
+
+<span class="n">X</span><span class="p">,</span> <span class="n">Y</span><span class="p">,</span> <span class="n">dX</span><span class="p">,</span> <span class="n">dY</span> <span class="o">=</span> <span class="n">DuffingDampedPhaseSpace</span><span class="p">(</span><span class="n">x_lim</span><span class="p">,</span> <span class="n">y_lim</span><span class="p">,</span> <span class="n">grid_size</span><span class="p">)</span>
+
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">8</span><span class="p">))</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">streamplot</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">Y</span><span class="p">,</span> <span class="n">dX</span><span class="p">,</span> <span class="n">dY</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">density</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;v&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Duffing Oscillator Phase Space&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/3512d3874220768274a965cc6accb03fb1386decaab42784f7bc7d06107763ab.png" src="../_images/3512d3874220768274a965cc6accb03fb1386decaab42784f7bc7d06107763ab.png" />
+</div>
+</div>
+<ol class="arabic simple" start="7">
+<li><p>(10 pt) <strong>Here you are likely to need a numerical solver.</strong>  Solve the equation of motion for the damped and undriven case for a reasonable choice of <span class="math notranslate nohighlight">\(\alpha\)</span>, <span class="math notranslate nohighlight">\(\beta\)</span>, <span class="math notranslate nohighlight">\(\delta\)</span>, and initial conditions. Plot the position as a function of time. What is the behavior of the system? Does it match your expectations from the phase portrait?</p></li>
+</ol>
+<div class="tip admonition">
+<p class="admonition-title">Solution</p>
+<p>We will solve the equation of motion for two cases, one where the system spirals inwards towards one of the stable points and one where the system spirals inwards towards the other stable point. We will use <span class="math notranslate nohighlight">\(\alpha = -1\)</span>, <span class="math notranslate nohighlight">\(\beta = 1\)</span>, and <span class="math notranslate nohighlight">\(\delta = 0.5\)</span>.</p>
+<ul class="simple">
+<li><p>For the left hand stable point, we choose initial conditions <span class="math notranslate nohighlight">\(x(0) = 0.5\)</span> and <span class="math notranslate nohighlight">\(\dot{x}(0) = -1.5\)</span>.</p></li>
+<li><p>For the right hand stable point, we choose initial conditions <span class="math notranslate nohighlight">\(x(0) = -0.5\)</span> and <span class="math notranslate nohighlight">\(\dot{x}(0) = +1.5\)</span>. We use Euler Cromer to integrate the equations of motion and plot the position as a function of time (and their phase trajectories) for these two cases below.</p></li>
+</ul>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## Euler Cromer First Order Solver for the Duffing Oscillator with damping</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">DuffingDampedEulerCromer</span><span class="p">(</span><span class="n">x0</span><span class="p">,</span> <span class="n">v0</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=-</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">beta</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">gamma</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">dt</span><span class="o">=</span><span class="mf">0.001</span><span class="p">,</span> <span class="n">t_max</span><span class="o">=</span><span class="mi">30</span><span class="p">):</span>
+    
+    <span class="n">t</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">t_max</span><span class="p">,</span> <span class="n">dt</span><span class="p">)</span>
+    
+    <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros_like</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
+    <span class="n">v</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros_like</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
+    
+    <span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">x0</span>
+    <span class="n">v</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">v0</span>
+    
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">t</span><span class="p">)):</span>
+        <span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">v</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">*</span><span class="n">dt</span>
+        <span class="n">v</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">v</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="p">(</span><span class="n">alpha</span><span class="o">*</span><span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">beta</span><span class="o">*</span><span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">**</span><span class="mi">3</span> <span class="o">+</span> <span class="n">gamma</span><span class="o">*</span><span class="n">v</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span><span class="o">*</span><span class="n">dt</span>
+        
+    <span class="k">return</span> <span class="n">t</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">v</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## Solve the Duffing Oscillator for our set of initial conditions</span>
+
+<span class="c1">## Define the initial conditions</span>
+<span class="n">initialPositions</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.5</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.5</span><span class="p">]</span>
+<span class="n">initialVelocities</span> <span class="o">=</span> <span class="p">[</span><span class="o">-</span><span class="mf">1.5</span><span class="p">,</span> <span class="mf">1.5</span><span class="p">]</span>
+
+<span class="c1">## Find numerical solutions for the Duffing Oscillator</span>
+<span class="c1">## for our choices of initial conditions</span>
+<span class="c1">## store the results in separate pandas dataframes</span>
+
+<span class="n">t</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">v</span> <span class="o">=</span> <span class="n">DuffingDampedEulerCromer</span><span class="p">(</span><span class="n">initialPositions</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">initialVelocities</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="n">leftDF</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;t&#39;</span><span class="p">:</span> <span class="n">t</span><span class="p">,</span> <span class="s1">&#39;x&#39;</span><span class="p">:</span> <span class="n">x</span><span class="p">,</span> <span class="s1">&#39;v&#39;</span><span class="p">:</span> <span class="n">v</span><span class="p">})</span>
+
+<span class="n">t</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">v</span> <span class="o">=</span> <span class="n">DuffingDampedEulerCromer</span><span class="p">(</span><span class="n">initialPositions</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">initialVelocities</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+<span class="n">rightDF</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;t&#39;</span><span class="p">:</span> <span class="n">t</span><span class="p">,</span> <span class="s1">&#39;x&#39;</span><span class="p">:</span> <span class="n">x</span><span class="p">,</span> <span class="s1">&#39;v&#39;</span><span class="p">:</span> <span class="n">v</span><span class="p">})</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## Plot the numerical solutions for the Duffing Oscillator in time</span>
+
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">8</span><span class="p">))</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">leftDF</span><span class="p">[</span><span class="s1">&#39;t&#39;</span><span class="p">],</span> <span class="n">leftDF</span><span class="p">[</span><span class="s1">&#39;x&#39;</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Left&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">rightDF</span><span class="p">[</span><span class="s1">&#39;t&#39;</span><span class="p">],</span> <span class="n">rightDF</span><span class="p">[</span><span class="s1">&#39;x&#39;</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Right&#39;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;t&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Duffing Oscillator Solutions&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+
+<span class="c1">## Plot the numerical solutions for the Duffing Oscillator in phase space</span>
+
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">8</span><span class="p">))</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">leftDF</span><span class="p">[</span><span class="s1">&#39;x&#39;</span><span class="p">],</span> <span class="n">leftDF</span><span class="p">[</span><span class="s1">&#39;v&#39;</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Left&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">rightDF</span><span class="p">[</span><span class="s1">&#39;x&#39;</span><span class="p">],</span> <span class="n">rightDF</span><span class="p">[</span><span class="s1">&#39;v&#39;</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Right&#39;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;v&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Duffing Oscillator Phase Space Trajectories&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x141475b20&gt;
+</pre></div>
+</div>
+<img alt="../_images/e239d56fad2f4e4a0f1f53ea7ead3511d029ad22d8ba3f43732369d89f8c5186.png" src="../_images/e239d56fad2f4e4a0f1f53ea7ead3511d029ad22d8ba3f43732369d89f8c5186.png" />
+<img alt="../_images/1de97df011a485c0749a1394d252fdd376f8b906bd223e074fdc51ed562fc162.png" src="../_images/1de97df011a485c0749a1394d252fdd376f8b906bd223e074fdc51ed562fc162.png" />
+</div>
+</div>
+</section>
+<section id="driven-and-damped-case-20-points">
+<h3>Driven and damped case (20 points)<a class="headerlink" href="#driven-and-damped-case-20-points" title="Link to this heading">#</a></h3>
+<ol class="arabic simple" start="8">
+<li><p>(5 pt) Now consider the damped and driven case, <span class="math notranslate nohighlight">\(\gamma \neq 0\)</span>. What is the equation of motion in this case? Can you develop this equation of motion fully from a potential (like we did above)? If so, what is the potential? If not, why not?</p></li>
+</ol>
+<div class="tip admonition">
+<p class="admonition-title">Solution</p>
+<p>Again, we are unable to write this full equation of motion as a derivative of a potential energy. This is because the driving term is time dependent, and the potential energy is only dependent on position. This system is not conservative. We are stuck with the equation of motion as it is.</p>
+<p>We can write it as:</p>
+<div class="math notranslate nohighlight">
+\[\ddot{x} + \delta \dot{x} + \alpha x + \beta x^3 = \gamma \cos(\omega t).\]</div>
+</div>
+<ol class="arabic simple" start="9">
+<li><p>(5 pt) Is it possible to plot the phase space for the driven and damped case? Why or why not? What solutions are available to you to understand the behavior of the system in phase space? <em>Here we are not looking for you to solve the problem, but to conduct research into how people make sense of the behavior of driven and damped systems.</em></p></li>
+</ol>
+<div class="tip admonition">
+<p class="admonition-title">Solution</p>
+<p>It is not possible to plot the phase space for the driven and damped case. This is because the driving term is time dependent, and the phase space is a plot of position versus velocity, but it assumes the phase space is time independent. This is where the Poincaré section comes in. The Poincaré section is a plot of position versus velocity at a fixed time interval. This allows us to see the behavior of the system in phase space, even though the system is time dependent.</p>
+</div>
+<ol class="arabic simple" start="10">
+<li><p>(10 pt) <strong>Here you are likely to need a numerical solver.</strong>  Solve the equation of motion for the driven and damped case for a reasonable choice of <span class="math notranslate nohighlight">\(\alpha\)</span>, <span class="math notranslate nohighlight">\(\beta\)</span>, <span class="math notranslate nohighlight">\(\delta\)</span>, <span class="math notranslate nohighlight">\(\gamma\)</span>, <span class="math notranslate nohighlight">\(\omega\)</span>, and initial conditions. Plot the position as a function of time. What is the behavior of the system?</p></li>
+</ol>
+<div class="tip admonition">
+<p class="admonition-title">Solution</p>
+<p>We will solve the equation of motion for the driven and damped case. We will use <span class="math notranslate nohighlight">\(\alpha = -1\)</span>, <span class="math notranslate nohighlight">\(\beta = 1\)</span>, <span class="math notranslate nohighlight">\(\delta = 0.5\)</span>, <span class="math notranslate nohighlight">\(\gamma = 1.0\)</span>, and <span class="math notranslate nohighlight">\(\omega = 2\pi\)</span>. We will choose the same initial conditions as before for the initially observed left and right stable points. We use Euler Cromer to integrate the equations of motion and plot the position as a function of time for this case below.</p>
+<p>The behavior is very complicated, but we can see that the motion is bounded. This is because the system forced and damped. The combination we chose keeps the system from going off to infinity. The system with our chosen parameters appears chaotic, but it seems globally stable (i.e., bounded to a region of space).</p>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## Euler Cromer First Order Solver for the Duffing Oscillator with damping and oscillating force</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">DuffingDampedForcedEulerCromer</span><span class="p">(</span><span class="n">x0</span><span class="p">,</span> <span class="n">v0</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=-</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">beta</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">delta</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">gamma</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">omega</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">dt</span><span class="o">=</span><span class="mf">0.001</span><span class="p">,</span> <span class="n">t_max</span><span class="o">=</span><span class="mi">10</span><span class="p">):</span>
+    <span class="n">t</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">t_max</span><span class="p">,</span> <span class="n">dt</span><span class="p">)</span>
+    
+    <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros_like</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
+    <span class="n">v</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros_like</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
+    
+    <span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">x0</span>
+    <span class="n">v</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">v0</span>
+    
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">t</span><span class="p">)):</span>
+        <span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">v</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">*</span><span class="n">dt</span>
+        <span class="n">v</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">v</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="p">(</span><span class="n">alpha</span><span class="o">*</span><span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">beta</span><span class="o">*</span><span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">**</span><span class="mi">3</span> <span class="o">+</span> <span class="n">delta</span><span class="o">*</span><span class="n">v</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">gamma</span><span class="o">*</span><span class="n">cos</span><span class="p">(</span><span class="n">omega</span><span class="o">*</span><span class="n">t</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]))</span><span class="o">*</span><span class="n">dt</span>
+        
+    <span class="k">return</span> <span class="n">t</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">v</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## Solve the Duffing Oscillator for our set of initial conditions</span>
+
+<span class="c1">## Define the initial conditions</span>
+<span class="n">initialPositions</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.5</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.5</span><span class="p">]</span>
+<span class="n">initialVelocities</span> <span class="o">=</span> <span class="p">[</span><span class="o">-</span><span class="mf">1.5</span><span class="p">,</span> <span class="mf">1.5</span><span class="p">]</span>
+<span class="n">omega</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span>
+<span class="n">T</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">/</span><span class="n">omega</span>
+<span class="n">tmax</span> <span class="o">=</span> <span class="mi">30</span><span class="o">*</span><span class="n">T</span>
+<span class="n">dt</span> <span class="o">=</span> <span class="n">T</span><span class="o">/</span><span class="mi">10000</span>
+
+<span class="c1">## Find numerical solutions for the Duffing Oscillator</span>
+<span class="c1">## for our choices of initial conditions</span>
+<span class="c1">## store the results in separate pandas dataframes</span>
+
+<span class="n">t</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">v</span> <span class="o">=</span> <span class="n">DuffingDampedForcedEulerCromer</span><span class="p">(</span><span class="n">initialPositions</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">initialVelocities</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">omega</span><span class="o">=</span><span class="n">omega</span><span class="p">,</span> <span class="n">dt</span><span class="o">=</span><span class="n">dt</span><span class="p">,</span> <span class="n">t_max</span><span class="o">=</span><span class="n">tmax</span><span class="p">)</span>
+<span class="n">leftDF</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;t&#39;</span><span class="p">:</span> <span class="n">t</span><span class="p">,</span> <span class="s1">&#39;x&#39;</span><span class="p">:</span> <span class="n">x</span><span class="p">,</span> <span class="s1">&#39;v&#39;</span><span class="p">:</span> <span class="n">v</span><span class="p">})</span>
+
+<span class="n">t</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">v</span> <span class="o">=</span> <span class="n">DuffingDampedForcedEulerCromer</span><span class="p">(</span><span class="n">initialPositions</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">initialVelocities</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">omega</span><span class="o">=</span><span class="n">omega</span><span class="p">,</span> <span class="n">dt</span><span class="o">=</span><span class="n">dt</span><span class="p">,</span> <span class="n">t_max</span><span class="o">=</span><span class="n">tmax</span><span class="p">)</span>
+<span class="n">rightDF</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;t&#39;</span><span class="p">:</span> <span class="n">t</span><span class="p">,</span> <span class="s1">&#39;x&#39;</span><span class="p">:</span> <span class="n">x</span><span class="p">,</span> <span class="s1">&#39;v&#39;</span><span class="p">:</span> <span class="n">v</span><span class="p">})</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## Plot the numerical solutions for the Duffing Oscillator in time</span>
+
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">8</span><span class="p">))</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">leftDF</span><span class="p">[</span><span class="s1">&#39;t&#39;</span><span class="p">],</span> <span class="n">leftDF</span><span class="p">[</span><span class="s1">&#39;x&#39;</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Left&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">rightDF</span><span class="p">[</span><span class="s1">&#39;t&#39;</span><span class="p">],</span> <span class="n">rightDF</span><span class="p">[</span><span class="s1">&#39;x&#39;</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Right&#39;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;t&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Duffing Oscillator Solutions&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+
+<span class="c1">## Plot the numerical solutions for the Duffing Oscillator in phase space</span>
+
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">8</span><span class="p">))</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">leftDF</span><span class="p">[</span><span class="s1">&#39;x&#39;</span><span class="p">],</span> <span class="n">leftDF</span><span class="p">[</span><span class="s1">&#39;v&#39;</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Left&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">rightDF</span><span class="p">[</span><span class="s1">&#39;x&#39;</span><span class="p">],</span> <span class="n">rightDF</span><span class="p">[</span><span class="s1">&#39;v&#39;</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Right&#39;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;v&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Duffing Oscillator Phase Space Trajectories&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x1415a2d30&gt;
+</pre></div>
+</div>
+<img alt="../_images/a90a9f75457d01918f692dc050de9292c5899a97c576c424ca843a77dc6f61ca.png" src="../_images/a90a9f75457d01918f692dc050de9292c5899a97c576c424ca843a77dc6f61ca.png" />
+<img alt="../_images/ac97bacd9bf4a263c3f69bb02cf0cd7f1f731262e6262c0ffb813a7fe6e43f2f.png" src="../_images/ac97bacd9bf4a263c3f69bb02cf0cd7f1f731262e6262c0ffb813a7fe6e43f2f.png" />
+</div>
+</div>
+</section>
+<section id="extra-credit-up-to-30-points">
+<h3>Extra credit (up to 30 points)<a class="headerlink" href="#extra-credit-up-to-30-points" title="Link to this heading">#</a></h3>
+<ol class="arabic simple" start="11">
+<li><p>(10 pts) The Duffing oscillator can be either a soft or hard spring by changing the sign of the <span class="math notranslate nohighlight">\(\alpha\)</span> term. What happens to the behavior of the system when you change the sign of <span class="math notranslate nohighlight">\(\alpha\)</span>? Can you explain this behavior in terms of the potential?</p></li>
+</ol>
+<div class="tip admonition">
+<p class="admonition-title">Solution</p>
+<p>In all of our choices, we selected <span class="math notranslate nohighlight">\(\alpha &lt; 0\)</span>. This means that the potential is a double well potential. If we change the sign of <span class="math notranslate nohighlight">\(\alpha\)</span>, the potential becomes a single well potential. This means that the system will always oscillate around the single stable equilibrium point. We can see this in the phase space plot we made below. It looks similar to the regular damped simple harmonic oscillator.</p>
+<p>Let’s drive it as before with <span class="math notranslate nohighlight">\(\gamma = 0.5\)</span> and <span class="math notranslate nohighlight">\(\omega = 1\)</span>. We will use <span class="math notranslate nohighlight">\(\alpha = 1\)</span>, <span class="math notranslate nohighlight">\(\beta = 1\)</span>, <span class="math notranslate nohighlight">\(\delta = 0.5\)</span>, and the same initial conditions as before. We use Euler Cromer to integrate the equations of motion and plot the position as a function of time for this case below. And it really does look like a damped simple harmonic oscillator.</p>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">DuffingDampedPhaseSpace</span><span class="p">(</span><span class="n">x_lim</span><span class="p">,</span> <span class="n">y_lim</span><span class="p">,</span> <span class="n">grid_size</span><span class="p">):</span>
+    
+    <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="n">x_lim</span><span class="p">,</span> <span class="n">x_lim</span><span class="p">,</span> <span class="n">grid_size</span><span class="p">)</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="n">y_lim</span><span class="p">,</span> <span class="n">y_lim</span><span class="p">,</span> <span class="n">grid_size</span><span class="p">)</span>
+    
+    <span class="n">X</span><span class="p">,</span> <span class="n">Y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">meshgrid</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+    
+    <span class="n">dX</span><span class="p">,</span> <span class="n">dY</span> <span class="o">=</span> <span class="n">DuffingDamped</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">Y</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">1.0</span><span class="p">)</span>
+    
+    <span class="k">return</span> <span class="n">X</span><span class="p">,</span> <span class="n">Y</span><span class="p">,</span> <span class="n">dX</span><span class="p">,</span> <span class="n">dY</span>
+
+<span class="c1"># Generate the phase space for the Duffing Oscillator</span>
+<span class="n">x_lim</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">y_lim</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">grid_size</span> <span class="o">=</span> <span class="mi">20</span>
+
+<span class="n">X</span><span class="p">,</span> <span class="n">Y</span><span class="p">,</span> <span class="n">dX</span><span class="p">,</span> <span class="n">dY</span> <span class="o">=</span> <span class="n">DuffingDampedPhaseSpace</span><span class="p">(</span><span class="n">x_lim</span><span class="p">,</span> <span class="n">y_lim</span><span class="p">,</span> <span class="n">grid_size</span><span class="p">)</span>
+
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">8</span><span class="p">))</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">streamplot</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">Y</span><span class="p">,</span> <span class="n">dX</span><span class="p">,</span> <span class="n">dY</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">density</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;v&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Duffing Oscillator Phase Space&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/c983d9b67d91b6bf5d30c841868804b827f4f434dd662ce5429bac8643f82eb8.png" src="../_images/c983d9b67d91b6bf5d30c841868804b827f4f434dd662ce5429bac8643f82eb8.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## Solve the Duffing Oscillator for our set of initial conditions</span>
+
+<span class="c1">## Define the initial conditions</span>
+<span class="n">initialPositions</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.5</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.5</span><span class="p">]</span>
+<span class="n">initialVelocities</span> <span class="o">=</span> <span class="p">[</span><span class="o">-</span><span class="mf">1.5</span><span class="p">,</span> <span class="mf">1.5</span><span class="p">]</span>
+<span class="n">omega</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span>
+<span class="n">T</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">/</span><span class="n">omega</span>
+<span class="n">tmax</span> <span class="o">=</span> <span class="mi">30</span><span class="o">*</span><span class="n">T</span>
+<span class="n">dt</span> <span class="o">=</span> <span class="n">T</span><span class="o">/</span><span class="mi">10000</span>
+
+<span class="c1">## Find numerical solutions for the Duffing Oscillator</span>
+<span class="c1">## for our choices of initial conditions</span>
+<span class="c1">## store the results in separate pandas dataframes</span>
+
+<span class="n">t</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">v</span> <span class="o">=</span> <span class="n">DuffingDampedForcedEulerCromer</span><span class="p">(</span><span class="n">initialPositions</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">initialVelocities</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">omega</span><span class="o">=</span><span class="n">omega</span><span class="p">,</span> <span class="n">dt</span><span class="o">=</span><span class="n">dt</span><span class="p">,</span> <span class="n">t_max</span><span class="o">=</span><span class="n">tmax</span><span class="p">)</span>
+<span class="n">leftDF</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;t&#39;</span><span class="p">:</span> <span class="n">t</span><span class="p">,</span> <span class="s1">&#39;x&#39;</span><span class="p">:</span> <span class="n">x</span><span class="p">,</span> <span class="s1">&#39;v&#39;</span><span class="p">:</span> <span class="n">v</span><span class="p">})</span>
+
+<span class="n">t</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">v</span> <span class="o">=</span> <span class="n">DuffingDampedForcedEulerCromer</span><span class="p">(</span><span class="n">initialPositions</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">initialVelocities</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">alpha</span> <span class="o">=</span> <span class="mf">1.0</span><span class="p">,</span> <span class="n">omega</span><span class="o">=</span><span class="n">omega</span><span class="p">,</span> <span class="n">dt</span><span class="o">=</span><span class="n">dt</span><span class="p">,</span> <span class="n">t_max</span><span class="o">=</span><span class="n">tmax</span><span class="p">)</span>
+<span class="n">rightDF</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;t&#39;</span><span class="p">:</span> <span class="n">t</span><span class="p">,</span> <span class="s1">&#39;x&#39;</span><span class="p">:</span> <span class="n">x</span><span class="p">,</span> <span class="s1">&#39;v&#39;</span><span class="p">:</span> <span class="n">v</span><span class="p">})</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## Plot the numerical solutions for the Duffing Oscillator in time</span>
+
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">8</span><span class="p">))</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">leftDF</span><span class="p">[</span><span class="s1">&#39;t&#39;</span><span class="p">],</span> <span class="n">leftDF</span><span class="p">[</span><span class="s1">&#39;x&#39;</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Left&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">rightDF</span><span class="p">[</span><span class="s1">&#39;t&#39;</span><span class="p">],</span> <span class="n">rightDF</span><span class="p">[</span><span class="s1">&#39;x&#39;</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Right&#39;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;t&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Duffing Oscillator Solutions&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+
+<span class="c1">## Plot the numerical solutions for the Duffing Oscillator in phase space</span>
+
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">8</span><span class="p">))</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">leftDF</span><span class="p">[</span><span class="s1">&#39;x&#39;</span><span class="p">],</span> <span class="n">leftDF</span><span class="p">[</span><span class="s1">&#39;v&#39;</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Left&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">rightDF</span><span class="p">[</span><span class="s1">&#39;x&#39;</span><span class="p">],</span> <span class="n">rightDF</span><span class="p">[</span><span class="s1">&#39;v&#39;</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Right&#39;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;v&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Duffing Oscillator Phase Space Trajectories&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x14192d3a0&gt;
+</pre></div>
+</div>
+<img alt="../_images/d7f260c7a251037ff198b71b91a38a7ede40c61f4f00d8d5b9ec6678f474c3a4.png" src="../_images/d7f260c7a251037ff198b71b91a38a7ede40c61f4f00d8d5b9ec6678f474c3a4.png" />
+<img alt="../_images/a3b800e6c598ce3f7b8e14783cb3dd063feed6ffabce65aeb31861b06eb951f1.png" src="../_images/a3b800e6c598ce3f7b8e14783cb3dd063feed6ffabce65aeb31861b06eb951f1.png" />
+</div>
+</div>
+<ol class="arabic simple" start="12">
+<li><p>(20 pts) A critical tool for understanding the behavior of the Duffing oscillator is the <a class="reference external" href="https://en.wikipedia.org/wiki/Poincar%C3%A9_map">Poincaré section</a>. Can you implement a Poincaré section for the driven and damped case? What does it tell you about the behavior of the system?</p></li>
+</ol>
+<div class="tip admonition">
+<p class="admonition-title">Solution</p>
+<p>In an analysis where we want to use Poincare sections, we need to keep track of the location and velocity at a fixed time interval. We can do this by integrating the equations of motion and then plotting the position and velocity at a fixed time interval. This allows us to see the behavior of the system in phase space, even though the system is time dependent. It’s common to choose the period of the driving force as the time interval. We set that up below.</p>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">matplotlib.cm</span><span class="w"> </span><span class="kn">import</span> <span class="n">viridis</span>
+
+<span class="c1">## Solve the Duffing Oscillator for our set of initial conditions</span>
+
+<span class="c1">## Define the initial conditions</span>
+<span class="n">initialPos</span> <span class="o">=</span> <span class="mf">0.5</span>
+<span class="n">initialVel</span> <span class="o">=</span> <span class="o">-</span><span class="mf">1.5</span>
+<span class="n">omega</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span>
+<span class="n">T</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">/</span><span class="n">omega</span>
+<span class="n">tmax</span> <span class="o">=</span> <span class="mi">100</span><span class="o">*</span><span class="n">T</span>
+<span class="n">dt</span> <span class="o">=</span> <span class="n">T</span><span class="o">/</span><span class="mi">10000</span>
+
+<span class="c1">## Find numerical solutions for the Duffing Oscillator</span>
+<span class="c1">## for our choices of initial conditions</span>
+<span class="c1">## store the results in separate pandas dataframes</span>
+
+<span class="n">t</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">v</span> <span class="o">=</span> <span class="n">DuffingDampedForcedEulerCromer</span><span class="p">(</span><span class="n">initialPos</span><span class="p">,</span> <span class="n">initialVel</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">omega</span><span class="o">=</span><span class="n">omega</span><span class="p">,</span> <span class="n">dt</span><span class="o">=</span><span class="n">dt</span><span class="p">,</span> <span class="n">t_max</span><span class="o">=</span><span class="n">tmax</span><span class="p">)</span>
+<span class="n">trajDF</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;t&#39;</span><span class="p">:</span> <span class="n">t</span><span class="p">,</span> <span class="s1">&#39;x&#39;</span><span class="p">:</span> <span class="n">x</span><span class="p">,</span> <span class="s1">&#39;v&#39;</span><span class="p">:</span> <span class="n">v</span><span class="p">})</span>
+
+<span class="c1">## Extract the position and velocity data for the left and right solutions</span>
+<span class="c1">## at regular time intervals associated with the period of the driving force</span>
+<span class="c1">## With omega = 2*pi, the period is 1, we want to sample every 1/T.</span>
+
+<span class="n">trajDF_sampled</span> <span class="o">=</span> <span class="n">trajDF</span><span class="o">.</span><span class="n">iloc</span><span class="p">[::</span><span class="nb">int</span><span class="p">(</span><span class="n">T</span><span class="o">/</span><span class="n">dt</span><span class="p">)]</span>
+
+<span class="c1">## Plot the numerical solutions for the Duffing Oscillator in phase space</span>
+<span class="c1">## with the solutions sampled at regular intervals</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
+
+<span class="c1"># Main plot</span>
+<span class="n">colors</span> <span class="o">=</span> <span class="n">viridis</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">trajDF_sampled</span><span class="p">)))</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">trajDF_sampled</span><span class="p">[</span><span class="s1">&#39;x&#39;</span><span class="p">],</span> <span class="n">trajDF_sampled</span><span class="p">[</span><span class="s1">&#39;v&#39;</span><span class="p">],</span> <span class="n">c</span><span class="o">=</span><span class="n">colors</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;o&#39;</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;viridis&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;v&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/var/folders/rh/mck_zfls1nz00lkh8jq3cpv80000gn/T/ipykernel_5907/3734017154.py:33: UserWarning: No data for colormapping provided via &#39;c&#39;. Parameters &#39;cmap&#39; will be ignored
+  ax.scatter(trajDF_sampled[&#39;x&#39;], trajDF_sampled[&#39;v&#39;], c=colors, marker=&#39;o&#39;, cmap=&#39;viridis&#39;)
+</pre></div>
+</div>
+<img alt="../_images/bee3e8bdb2888c05373459a0f620dc323f030d1bd6c7863336209a956a0eaf60.png" src="../_images/bee3e8bdb2888c05373459a0f620dc323f030d1bd6c7863336209a956a0eaf60.png" />
+</div>
+</div>
+</section>
+</section>
+<section id="part-2-signal-analysis-40pt">
+<h2>Part 2, Signal Analysis (40pt)<a class="headerlink" href="#part-2-signal-analysis-40pt" title="Link to this heading">#</a></h2>
+<p>We learned that any periodic function can be written using a Fourier series. The expansion we wrote is:</p>
+<div class="math notranslate nohighlight">
+\[f(t) = \dfrac{a_0}{2} + \sum_{n=1}^{\infty} \left( a_n \cos(n\omega t) + b_n \sin(n\omega t) \right).\]</div>
+<p>where <span class="math notranslate nohighlight">\(\omega = 2\pi/T\)</span> and <span class="math notranslate nohighlight">\(T\)</span> is the period of the function. The coefficients <span class="math notranslate nohighlight">\(a_n\)</span> and <span class="math notranslate nohighlight">\(b_n\)</span> are given by:</p>
+<div class="math notranslate nohighlight">
+\[a_n = \dfrac{2}{T} \int_{-T/2}^{T/2} f(t) \cos(n\omega t) dt, \quad b_n = \dfrac{2}{T} \int_{-T/2}^{T/2} f(t) \sin(n\omega t) dt.\]</div>
+<p>For this part of the midterm you will analyze a triangular wave both analytically and numerically.</p>
+<p>Consider the following triangular wave:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}f(t) = \begin{cases} 
+      1 - 2t &amp; 0 \leq t &lt; 1/2 \\
+      2t - 1 &amp; 1/2 \leq t &lt; 1
+   \end{cases}\end{split}\]</div>
+<p>which repeats every <span class="math notranslate nohighlight">\(T = 1\)</span>.</p>
+<ol class="arabic simple">
+<li><p>(5 pt) Plot the triangular wave. What is the frequency of the wave? Show this on the plot.</p></li>
+</ol>
+<div class="tip admonition">
+<p class="admonition-title">Solution</p>
+<p>We can prepare a simple plot of the triangular wave. We plot it below. We can see that the wave repeats every <span class="math notranslate nohighlight">\(T = 1\)</span>.</p>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">T</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">t_array</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="o">*</span><span class="n">T</span><span class="p">,</span> <span class="n">T</span><span class="o">/</span><span class="mi">100</span><span class="p">)</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">f</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">T</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">t</span> <span class="o">%</span> <span class="n">T</span> <span class="o">&lt;</span> <span class="mf">0.5</span><span class="o">*</span><span class="n">T</span><span class="p">:</span>
+        <span class="k">return</span> <span class="mi">1</span><span class="o">-</span><span class="mi">2</span><span class="o">*</span><span class="p">(</span><span class="n">t</span> <span class="o">%</span> <span class="n">T</span><span class="p">)</span><span class="o">/</span><span class="n">T</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="mi">2</span><span class="o">*</span><span class="p">(</span><span class="n">t</span> <span class="o">%</span> <span class="n">T</span><span class="p">)</span><span class="o">/</span><span class="n">T</span><span class="o">-</span><span class="mi">1</span>
+    
+<span class="n">wave</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">t_array</span><span class="p">))</span>
+
+<span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="k">for</span> <span class="n">t</span> <span class="ow">in</span> <span class="n">t_array</span><span class="p">:</span>
+    
+    <span class="n">wave</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">=</span> <span class="n">f</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">T</span><span class="p">)</span>
+    <span class="c1">#print(&#39;wave:&#39;, i, wave[i])</span>
+    <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+    
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">8</span><span class="p">))</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">t_array</span><span class="p">,</span> <span class="n">wave</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;t&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;f(t)&#39;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Triangle Wave Function&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/99a20bdb8f55e1e68ea70296500373d59d1268eee46cd526d08bc6a7c176706d.png" src="../_images/99a20bdb8f55e1e68ea70296500373d59d1268eee46cd526d08bc6a7c176706d.png" />
+</div>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>(15 pt) Determine the Fourier coefficients <span class="math notranslate nohighlight">\(a_n\)</span> and <span class="math notranslate nohighlight">\(b_n\)</span> for the triangular wave. This should be done analytically.</p></li>
+</ol>
+<div class="tip admonition">
+<p class="admonition-title">Solution</p>
+<p>The original function is defined piecewise,</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}f(t) = \begin{cases} 
+      1 - 2t &amp; 0 \leq t &lt; 1/2 \\
+      2t - 1 &amp; 1/2 \leq t &lt; 1
+   \end{cases}\end{split}\]</div>
+<p>so we will eventually have to perform two integrals to find the Fourier coefficients. We can write the Fourier series as:</p>
+<div class="math notranslate nohighlight">
+\[f(t) = \dfrac{a_0}{2} + \sum_{n=1}^{\infty} \left( a_n \cos(n\omega t) + b_n \sin(n\omega t) \right).\]</div>
+<p>where <span class="math notranslate nohighlight">\(\omega = 2\pi/T = 2\pi\)</span>. The coefficients <span class="math notranslate nohighlight">\(a_n\)</span> and <span class="math notranslate nohighlight">\(b_n\)</span> are given by:</p>
+<div class="math notranslate nohighlight">
+\[a_n = \dfrac{2}{T} \int_{T} f(t) \cos(n\omega t) dt, \quad b_n = \dfrac{2}{T} \int_{T} f(t) \sin(n\omega t) dt.\]</div>
+<p>We should note that this signal appears to be an even functions, so that we expect only the cosine terms to be present. So we start with the <span class="math notranslate nohighlight">\(a_n\)</span> terms,</p>
+<div class="math notranslate nohighlight">
+\[a_n = \dfrac{2}{1} \int_{0}^{1} f(t) \cos(n2\pi t) dt,\]</div>
+<div class="math notranslate nohighlight">
+\[a_n = I_1 + I_2 = 2 \int_{0}^{1/2} (1 - 2t) \cos(2n\pi t) dt + 2 \int_{1/2}^{1} (2t - 1) \cos(2n\pi t) dt.\]</div>
+<p>We evaluate each integral separately. For the first integral, <span class="math notranslate nohighlight">\(I_1\)</span>, we have</p>
+<div class="math notranslate nohighlight">
+\[I_1 = 2 \int_{0}^{1/2} (1 - 2t) \cos(2n\pi t) dt = 2  \left[\int_{0}^{1/2} \cos(2n\pi t) dt\right] - 4 \left[\int_{0}^{1/2} t \cos(2n\pi t) dt\right],\]</div>
+<div class="math notranslate nohighlight">
+\[I_1 = \left(\dfrac{\sin(n\pi)}{n\pi}\right) - \left(\dfrac{n\pi \sin(n \pi) + \cos(n\pi) -1}{n^2\pi^2}\right)\]</div>
+<p>We should note that <span class="math notranslate nohighlight">\(\sin(n\pi) = 0\)</span> and <span class="math notranslate nohighlight">\(\cos(n\pi) = (-1)^n\)</span> for all integers <span class="math notranslate nohighlight">\(n\)</span>. So we have,</p>
+<div class="math notranslate nohighlight">
+\[I_1 = \dfrac{1 - (-1)^n}{n^2\pi^2}.\]</div>
+<p>For the second integral, <span class="math notranslate nohighlight">\(I_2\)</span>, we have</p>
+<div class="math notranslate nohighlight">
+\[I_2 = 2 \int_{1/2}^{1} (2t - 1) \cos(2n\pi t) dt = 2 \left[\int_{1/2}^{1} 2t \cos(2n\pi t) dt\right] - 2 \left[\int_{1/2}^{1} \cos(2n\pi t) dt\right],\]</div>
+<div class="math notranslate nohighlight">
+\[I_2 = 2 \left(\dfrac{2\sin(n\pi) - 2n\pi \cos(n\pi) - 1}{4n^2\pi^2}\right) - 2 \left(\dfrac{\sin(2n\pi) - \sin(n\pi)}{2n\pi}\right),\]</div>
+<div class="math notranslate nohighlight">
+\[I_2 = \dfrac{1 - (-1)^n}{n^2\pi^2}.\]</div>
+<p>So that the <span class="math notranslate nohighlight">\(a_n\)</span> terms are</p>
+<div class="math notranslate nohighlight">
+\[a_n = \left(\dfrac{1 - (-1)^n}{n^2\pi^2} + \dfrac{1 - (-1)^n}{n^2\pi^2}\right) = 2\dfrac{1 - (-1)^n}{n^2\pi^2}.\]</div>
+<p>As we indicated above, the <span class="math notranslate nohighlight">\(b_n\)</span> terms are likely zero. We can verify this by calculating them. We have</p>
+<div class="math notranslate nohighlight">
+\[b_n = \dfrac{2}{1} \int_{0}^{1} f(t) \sin(n2\pi t) dt,\]</div>
+<div class="math notranslate nohighlight">
+\[b_n = 2 \int_{0}^{1/2} (1 - 2t) \sin(2n\pi t) dt + 2 \int_{1/2}^{1} (2t - 1) \sin(2n\pi t) dt.\]</div>
+<p>We evaluate each integral separately and quickly. For the first integral, we have</p>
+<div class="math notranslate nohighlight">
+\[2 \int_{0}^{1/2} (1 - 2t) \sin(2n\pi t) dt = -\dfrac{\sin(n\pi)-n\pi}{n^2\pi^2} = \dfrac{1}{n\pi}.\]</div>
+<p>For the second integral, we have</p>
+<div class="math notranslate nohighlight">
+\[2 \int_{1/2}^{1} (2t - 1) \sin(2n\pi t) dt = -\dfrac{\sin(n \pi) - \sin(2n\pi)+ n\pi\cos(2n\pi)}{n^2\pi^2} = -\dfrac{1}{n\pi}.\]</div>
+<p>So that the <span class="math notranslate nohighlight">\(b_n\)</span> terms are zero.</p>
+<div class="math notranslate nohighlight">
+\[b_n = \dfrac{1}{n\pi} - \dfrac{1}{n\pi} = 0.\]</div>
+</div>
+<ol class="arabic simple" start="3">
+<li><p>(10 pt) What is the expression for the approximation of the triangular wave using the first few terms of the Fourier series?</p></li>
+</ol>
+<div class="tip admonition">
+<p class="admonition-title">Solution</p>
+<p>The Fourier series for this triangular wave is</p>
+<div class="math notranslate nohighlight">
+\[f(t) = \dfrac{a_0}{2} + \sum_{n=1}^{\infty} a_n \cos(n2\pi t),\]</div>
+<p>where <span class="math notranslate nohighlight">\(a_n = 2\dfrac{1 - (-1)^n}{n^2\pi^2}\)</span>. The approximation of the triangular wave using the first few terms of the Fourier series is</p>
+<div class="math notranslate nohighlight">
+\[f(t) = \dfrac{1}{2} - \dfrac{2}{\pi^2} \sum_{n=1}^{\infty} \dfrac{1 - (-1)^n}{n^2} \cos(2n\pi t).\]</div>
+</div>
+<ol class="arabic simple" start="4">
+<li><p>(10 pt) Plot the Fourier series for the first few terms. How many terms do you need to get a good approximation of the triangular wave? Do you notice any problems with the Fourier series? If so, what are they?</p></li>
+</ol>
+<div class="tip admonition">
+<p class="admonition-title">Solution</p>
+<p>We wrote a few small functions to compute the coefficients below and plot the approximation. From that we notice that there’s maybe a small issue where the triangle wave is not perfectly continuous at the transition points. This is a common issue with Fourier series. We can see that the approximation is good, but not perfect. We zoom in on that part in the second plot.</p>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## Function to calculate the Fourier Series Coefficients</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">a0_coeff</span><span class="p">():</span>
+    <span class="k">return</span> <span class="mf">0.5</span><span class="p">;</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">an_coeff</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="k">return</span> <span class="mi">2</span><span class="o">/</span><span class="p">(</span><span class="n">n</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">**</span><span class="n">n</span><span class="p">)</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">bn_coeff</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="k">return</span> <span class="mi">0</span>
+
+<span class="c1">## Function to calculate the Fourier Series</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">fourier_series</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">T</span><span class="p">,</span> <span class="n">n_max</span><span class="p">):</span>
+    <span class="n">f</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">n_max</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+        <span class="n">f</span> <span class="o">+=</span> <span class="n">an_coeff</span><span class="p">(</span><span class="n">n</span><span class="p">)</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">*</span><span class="n">n</span><span class="o">*</span><span class="n">t</span><span class="o">/</span><span class="n">T</span><span class="p">)</span> <span class="o">+</span> <span class="n">bn_coeff</span><span class="p">(</span><span class="n">n</span><span class="p">)</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">*</span><span class="n">n</span><span class="o">*</span><span class="n">t</span><span class="o">/</span><span class="n">T</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">f</span><span class="o">+</span><span class="n">a0_coeff</span><span class="p">()</span>
+
+<span class="n">T</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">n_terms</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">100</span><span class="p">]</span>
+<span class="n">t_array</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="o">*</span><span class="n">T</span><span class="p">,</span> <span class="n">T</span><span class="o">/</span><span class="mi">100</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">8</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">t_array</span><span class="p">,</span> <span class="n">wave</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Original Wave&#39;</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">n_terms</span><span class="p">:</span>
+    <span class="n">f</span> <span class="o">=</span> <span class="n">fourier_series</span><span class="p">(</span><span class="n">t_array</span><span class="p">,</span> <span class="n">T</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">t_array</span><span class="p">,</span> <span class="n">f</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;n = &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">n</span><span class="p">))</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;t&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;f(t)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Fourier Series Approximation of Triangle Wave&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x1412ddc40&gt;
+</pre></div>
+</div>
+<img alt="../_images/8032008a4a585f83d5204266e16a7af5a81ee9c0813f425d65c654db578cb0cc.png" src="../_images/8032008a4a585f83d5204266e16a7af5a81ee9c0813f425d65c654db578cb0cc.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">T</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">n_terms</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">100</span><span class="p">]</span>
+<span class="n">t_array</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="o">*</span><span class="n">T</span><span class="p">,</span> <span class="n">T</span><span class="o">/</span><span class="mi">100</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">8</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">t_array</span><span class="p">,</span> <span class="n">wave</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Original Wave&#39;</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">n_terms</span><span class="p">:</span>
+    <span class="n">f</span> <span class="o">=</span> <span class="n">fourier_series</span><span class="p">(</span><span class="n">t_array</span><span class="p">,</span> <span class="n">T</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">t_array</span><span class="p">,</span> <span class="n">f</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;n = &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">n</span><span class="p">))</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;t&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;f(t)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Fourier Series Approximation of Triangle Wave (zoomed in)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlim</span><span class="p">(</span><span class="mf">0.95</span><span class="p">,</span><span class="mf">1.05</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">(</span><span class="mf">0.95</span><span class="p">,</span><span class="mf">1.01</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x1419e1a00&gt;
+</pre></div>
+</div>
+<img alt="../_images/a293fe7429d722780e65ad5f40a4f1d03d8208a96cb79ca33c9298f65ad8adac.png" src="../_images/a293fe7429d722780e65ad5f40a4f1d03d8208a96cb79ca33c9298f65ad8adac.png" />
+</div>
+</div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "teaching"
+        },
+        kernelOptions: {
+            name: "teaching",
+            path: "./solutions"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'teaching'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#part-1-the-duffing-oscillator-60pt">Part 1, The Duffing Oscillator (60pt)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#undamped-and-undriven-case-20-points">Undamped and undriven case (20 points)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#damped-and-undriven-case-20-points">Damped and undriven case (20 points)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#driven-and-damped-case-20-points">Driven and damped case (20 points)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#extra-credit-up-to-30-points">Extra credit (up to 30 points)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#part-2-signal-analysis-40pt">Part 2, Signal Analysis (40pt)</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Danny Caballero, Morten Hjorth-Jensen
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
