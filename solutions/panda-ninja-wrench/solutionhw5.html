@@ -1152,9 +1152,9 @@ $<span class="math notranslate nohighlight">\(\ddot{\theta}=-\frac{g}{l}\sin\the
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_2416/2996982062.py:33: RuntimeWarning: invalid value encountered in sqrt
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_2308/2996982062.py:33: RuntimeWarning: invalid value encountered in sqrt
   v1 = np.sqrt(2*energies[&#39;E&#39;][i]-x**2)
-/tmp/ipykernel_2416/2996982062.py:34: RuntimeWarning: invalid value encountered in sqrt
+/tmp/ipykernel_2308/2996982062.py:34: RuntimeWarning: invalid value encountered in sqrt
   v2 = -np.sqrt(2*energies[&#39;E&#39;][i]-x**2)
 </pre></div>
 </div>
@@ -1702,17 +1702,7 @@ Total Error for Euler-Cromer: 33.264837282230076
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">24</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
-<span class="ne">----&gt; </span><span class="mi">1</span> <span class="kn">from</span><span class="w"> </span><span class="nn">scipy.integrate</span><span class="w"> </span><span class="kn">import</span> <span class="n">solve_ivp</span>
-<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="c1">## Define the simple harmonic oscillator for the solve_ivp function</span>
-<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="c1">## Note it expects a particular data structure to be returned</span>
-<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="k">def</span><span class="w"> </span><span class="nf">SHOIVP</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">omega</span><span class="p">):</span>
-
-<span class="ne">ModuleNotFoundError</span>: No module named &#39;scipy&#39;
-</pre></div>
-</div>
+<img alt="../../_images/58edb1fb9e461ad1f9cdeae55ad854bf2a7fa4936981fb15285652bfca96b86d.png" src="../../_images/58edb1fb9e461ad1f9cdeae55ad854bf2a7fa4936981fb15285652bfca96b86d.png" />
 </div>
 </div>
 <ul class="simple">
@@ -1747,19 +1737,7 @@ Total Error for Euler-Cromer: 33.264837282230076
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">25</span><span class="p">],</span> <span class="n">line</span> <span class="mi">10</span>
-<span class="g g-Whitespace">      </span><span class="mi">7</span> <span class="n">fig</span><span class="p">,</span> <span class="n">axs</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">10</span><span class="p">))</span> 
-<span class="g g-Whitespace">      </span><span class="mi">9</span> <span class="c1"># Plot numerical trajectory on the quiver plot</span>
-<span class="ne">---&gt; </span><span class="mi">10</span> <span class="n">axs</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">solve_ivpdf</span><span class="p">[</span><span class="s1">&#39;x&#39;</span><span class="p">],</span> <span class="n">solve_ivpdf</span><span class="p">[</span><span class="s1">&#39;v&#39;</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Sample trajectory&#39;</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="s1">&#39;C3&#39;</span><span class="p">)</span>
-<span class="g g-Whitespace">     </span><span class="mi">12</span> <span class="n">axs</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">quiver</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">V</span><span class="p">,</span> <span class="n">dX</span><span class="p">,</span> <span class="n">dV</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;C0&#39;</span><span class="p">)</span>
-<span class="g g-Whitespace">     </span><span class="mi">13</span> <span class="n">axs</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Quiver Plot of SHO Phase Diagram&#39;</span><span class="p">)</span>
-
-<span class="ne">NameError</span>: name &#39;solve_ivpdf&#39; is not defined
-</pre></div>
-</div>
-<img alt="../../_images/e0a42c6eb3f8502b26d8df046961a2d8a67e53009963f8c612278881b22034e4.png" src="../../_images/e0a42c6eb3f8502b26d8df046961a2d8a67e53009963f8c612278881b22034e4.png" />
+<img alt="../../_images/f34b3251f2c66fbd7051e472a56d5201bca3a187c3b9af0cb8ad82dd9cb15f92.png" src="../../_images/f34b3251f2c66fbd7051e472a56d5201bca3a187c3b9af0cb8ad82dd9cb15f92.png" />
 </div>
 </div>
 </section>
