@@ -237,6 +237,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../solutionhw4.html">Solution Homework 4</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../solutionmidterm1.html">Midterm 1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../solutionhw5.html">Solution Homework 5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../solutionhw6.html">Solution Homework 6</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Resources</span></p>
 <ul class="nav bd-sidenav">
@@ -462,7 +463,8 @@ doconce format html hw5.do.txt --no_mako -->
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">MorsePotential</span><span class="p">(</span><span class="n">r</span><span class="p">,</span> <span class="n">A</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">R</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">S</span><span class="o">=</span><span class="mf">0.01</span><span class="p">):</span>
-    <span class="k">return</span> <span class="n">A</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">S</span> <span class="o">*</span> <span class="p">(</span><span class="n">r</span> <span class="o">-</span> <span class="n">R</span><span class="p">)))</span><span class="o">**</span><span class="mi">2</span>
+    
+    <span class="k">return</span> <span class="n">A</span> <span class="o">*</span> <span class="p">((</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">S</span> <span class="o">*</span> <span class="p">(</span><span class="n">r</span> <span class="o">-</span> <span class="n">R</span><span class="p">))</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
 
 <span class="n">r</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mf">0.01</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">r</span><span class="p">,</span> <span class="n">MorsePotential</span><span class="p">(</span><span class="n">r</span><span class="p">))</span>
@@ -476,7 +478,7 @@ doconce format html hw5.do.txt --no_mako -->
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Text(0.5, 1.0, &#39;Morse Potential&#39;)
 </pre></div>
 </div>
-<img alt="../../_images/d805e548fc0f3e9c79f8edad0620814f67c6f68ea87616d89a55ba9af7bba9c5.png" src="../../_images/d805e548fc0f3e9c79f8edad0620814f67c6f68ea87616d89a55ba9af7bba9c5.png" />
+<img alt="../../_images/72fc903a5d03824e49cb75affaee1b3bd7d1629d058b4d51565eaac9d43fa7c6.png" src="../../_images/72fc903a5d03824e49cb75affaee1b3bd7d1629d058b4d51565eaac9d43fa7c6.png" />
 </div>
 </div>
 <ul class="simple">
@@ -901,16 +903,16 @@ Talks given by researchers through the following clubs:</p>
         },
         codeMirrorConfig: {
             theme: "abcdef",
-            mode: "jbook"
+            mode: "python"
         },
         kernelOptions: {
-            name: "jbook",
+            name: "python3",
             path: "./solutions/panda-ninja-wrench"
         },
         predefinedOutput: true
     }
     </script>
-    <script>kernelName = 'jbook'</script>
+    <script>kernelName = 'python3'</script>
 
                 </article>
               

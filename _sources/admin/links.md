@@ -4,6 +4,40 @@ Materials will appear in reverse chronological order, with the most recent appea
 
 Class Zoom: <https://msu.zoom.us/j/92295821308>
 
+## Class Week 10, March 24-28, 2025 (CW13)
+
+Topic: Chaos
+
+As decided by the class, we will spend this week discussing the concept of chaos and how it arises in nonlinear systems. We will focus on the conceptual aspects of chaos and how systems can exhibit chaotic behavior. We will also discuss the concept of fractals and how they are related to chaos.
+
+You should review the discussion about [Chaos](../lecture-notes/week10/10_start.ipynb) and the [activity that we are going to do in class](../lecture-notes/week10/10_notes.ipynb) exploring chaotic systems.
+
+### Assignments
+
+- [Homework 7](../homeworks/hw7.ipynb) (due March 28, 2025)
+
+### Resources
+
+- [Chaos](../lecture-notes/week10/10_start.ipynb)
+- [Chaos Activity](../lecture-notes/week10/10_notes.ipynb)
+
+## Class Week 9, March 17-21, 2025 (CW12)
+
+Topic: Damped Driven Oscillations
+
+This week, we will start to drive our oscillators with an external force. We will discuss how to model these systems and how to predict their behavior. We will also discuss the concept of resonance and how it arises in driven systems.
+
+You should review the discussion about [Damped Driven Oscillations](../lecture-notes/week9/09_start.ipynb) and the notes on [Damped Driven Oscillations](../lecture-notes/week9/09_notes.ipynb). You should also make sure to have read JRT 5.5-5.6; MLB 8.6.
+
+### Assignments
+
+- [Homework 6](../homeworks/hw6.ipynb) (due March 21, 2025)
+- [Homework 7](../homeworks/hw7.ipynb) (due March 28, 2025)
+
+### Resources
+
+- [Modeling Oscillations](../lecture-notes/week9/09_start.ipynb)
+- [Damped Driven Oscillations](../lecture-notes/week9/09_notes.ipynb)
 
 ## Class Week 8, March 10-14, 2025 (CW11)
 
@@ -13,11 +47,11 @@ This week, we will add damping to our oscillators and see what effects we can pr
 
 You should review the discussion about [Oscillations](../lecture-notes/week8/08_start.ipynb) and the notes on [Damped Oscillators](../lecture-notes/week8/08_notes.ipynb). You should also make sure to have read JRT 5.1-5.2, 5.4; MLB 7.1-7.2; 8.5.
 
-## Assignments
+### Assignments
 - [Homework 5](../homeworks/hw5.ipynb) (due March 14, 2025)
 - [Homework 6](../homeworks/hw6.ipynb) (due March 21, 2025)
 
-## Resources
+### Resources
 - [Oscillations](../lecture-notes/week8/08_start.ipynb)
 - [Modeling Oscillators](../lecture-notes/week8/08_notes.ipynb)
 
@@ -34,11 +68,11 @@ This week we will introduce how to investigate nonlinear systems with he tools w
 
 You should review the discussion about [Nonlinear Dynamics](../lecture-notes/week7/07_start.ipynb) and the notes on [Critical Points and Phase Portraits](../lecture-notes/week7/07_notes.ipynb). You should also make sure to have read [Strogatz](https://www.stevenstrogatz.com/books/nonlinear-dynamics-and-chaos-with-applications-to-physics-biology-chemistry-and-engineering) [2.0-2.3](../docs/textbook-chapters/strogatz_3rd_ch2.0-2.3.pdf); [5.0-5.2](../docs/textbook-chapters/strogatz_3rd_ch5.0-5.2.pdf).
 
-## Assignments
+### Assignments
 
 - [Midterm 1](../midterms/midterm1.ipynb) (due February 28, 2025)
 
-## Resources
+### Resources
 
 - [Nonlinear Dynamics](../lecture-notes/week7/07_start.ipynb)
 - [Critical Points and Phase Portraits](../lecture-notes/week7/07_notes.ipynb)
@@ -52,11 +86,11 @@ This week we will start to investigate the concept of equilibrium and stability,
 
 You should review the discussion about [Equilibrium and Stability](../lecture-notes/week6/06_start.ipynb) and the notes on [Stability and Energy](../lecture-notes/week6/06_notes.ipynb) and [Linear and Angular Momentum](../lecture-notes/week6/06_notes_2.ipynb). You should also make sure to have read JRT Ch 3.1, 3.3-3.4 and 4.6.
 
-## Assignments
+### Assignments
 
 - [Midterm 1](../midterms/midterm1.ipynb) (due February 28, 2025)
 
-## Resources
+### Resources
 
 - [Equilibrium and Stability](../lecture-notes/week6/06_start.ipynb)
 - [Stability and Energy](../lecture-notes/week6/06_notes.ipynb)
@@ -71,7 +105,7 @@ This week we begin to talk about conservation laws and dive into conservation of
 
 You should review the discussion about [Conservation Laws](../lecture-notes/week5/05_start.ipynb) and the notes on [Energy Conservation](../lecture-notes/week5/05_notes.ipynb). You should also make sure to have read JRT Ch 4.1-4.4.
 
-## Assignments
+### Assignments
 
 - [Homework 4](../homeworks/hw4.ipynb) (due February 14, 2025)
 
@@ -90,7 +124,7 @@ This week, we start complicating our models with the addition of drag forces. We
 
 You should review the discussion about [Fluid Resistance](../lecture-notes/week4/04_start.ipynb) and the notes on [Equations of Motion](../lecture-notes/week4/04_notes.ipynb). You should also make sure to have read JRT Ch 2.1-2.4.
 
-## Assignments
+### Assignments
 
 - [Homework 3](../homeworks/hw3.ipynb) (due February 7, 2025)
 
@@ -456,7 +490,7 @@ How do fireflies end up blinking together? How do walking people end up moving i
   - [19 Feb 2024](https://mediaspace.msu.edu/media/t/1_n90d2mj6)
   - [21 Feb 2024](https://mediaspace.msu.edu/media/t/1_j6ltnm1h)
 
-#### Assignments
+##### Assignments
 
 - [Homework 5](../homeworks/hw5.ipynb) (due March 8, 2024)
 - [Midterm 1](../midterms/midterm1.ipynb) (due February 23, 2024)
@@ -505,7 +539,7 @@ We will go into the details of how to construct and develop phase portraits in c
   - [12 Feb 2024](https://mediaspace.msu.edu/media/t/1_pa3afrh5)
   - [14 Feb 2024](https://mediaspace.msu.edu/media/t/1_zlcyf858)
 
-#### Assignments
+##### Assignments
 
 - [Midterm 1](../midterms/midterm1.ipynb) (due February 23, 2024)
 
@@ -537,7 +571,7 @@ The [Higgs Boson](https://en.wikipedia.org/wiki/Higgs_boson) is a particle that 
   - [5 Feb 2024](https://mediaspace.msu.edu/media/t/1_womzepbu)
   - [7 Feb 2024](https://mediaspace.msu.edu/media/t/1_xwyxkt7m)
 
-#### Assignments
+##### Assignments
 
 - [Homework 4](../homeworks/hw4.ipynb) (due February 9, 2024)
 
@@ -590,7 +624,7 @@ To frame how interesting and complex energy can be, consider this video from the
   - [29 Jan 2024](https://mediaspace.msu.edu/media/t/1_0of138eb)
   - [31 Jan 2024](https://mediaspace.msu.edu/media/t/1_m3w1c61k)
 
-#### Assignments
+##### Assignments
 
 - [Homework 3](../homeworks/hw3.ipynb) (due February 2, 2024)
 
@@ -629,7 +663,7 @@ This video is a classic from [G.I. Taylor](https://en.wikipedia.org/wiki/Geoffre
   - [22 Jan 2024](https://mediaspace.msu.edu/media/t/1_injjcj1y)
   - [24 Jan 2024](https://mediaspace.msu.edu/media/t/1_p43v9u78) - no audio first 27 minutes...
 
-#### Assignments
+##### Assignments
 
 - [Homework 2](../homeworks/hw2.ipynb) (due January 26, 2024)
 
@@ -649,7 +683,7 @@ Topics: Modeling with Newton's Second Law, Motion in 1D
 - Lecture Videos:
   - 17 Jan 2024 (ipad crashed zoom)
 
-#### Assignments
+##### Assignments
 
 - [Homework 2](../homeworks/hw2.ipynb) (due January 26, 2024) -->
 
