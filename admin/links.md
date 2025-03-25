@@ -21,6 +21,16 @@ You should review the discussion about [Chaos](../lecture-notes/week10/10_start.
 - [Chaos](../lecture-notes/week10/10_start.ipynb)
 - [Chaos Activity](../lecture-notes/week10/10_notes.ipynb)
 
+### Slides
+
+24 Mar 2025 ([Slides](../slides/day-27-introduction-to-chaos.pdf))
+
+![Day 27](../slides/day-27-introduction-to-chaos.png)
+
+26 Mar 2025 ([Slides](../slides/day-28-hallmarks-of-chaos.pdf))
+
+![Day 28](../slides/day-28-hallmarks-of-chaos.png)
+
 ## Class Week 9, March 17-21, 2025 (CW12)
 
 Topic: Damped Driven Oscillations
@@ -39,6 +49,20 @@ You should review the discussion about [Damped Driven Oscillations](../lecture-n
 - [Modeling Oscillations](../lecture-notes/week9/09_start.ipynb)
 - [Damped Driven Oscillations](../lecture-notes/week9/09_notes.ipynb)
 
+### Slides
+
+17 Mar 2025 ([Slides](../slides/day-24-driven-oscillations.pdf))
+
+![Day 24](../slides/day-24-driven-oscillations.png)
+
+19 Mar 2025 ([Slides](../slides/day-25-resonance.pdf))
+
+![Day 25](../slides/day-25-resonance.png)
+
+21 Mar 2025 ([Slides](../slides/day-26-homework-session.pdf))
+
+![Day 26](../slides/day-26-homework-session.png)
+
 ## Class Week 8, March 10-14, 2025 (CW11)
 
 Topics: Oscillations
@@ -54,6 +78,21 @@ You should review the discussion about [Oscillations](../lecture-notes/week8/08_
 ### Resources
 - [Oscillations](../lecture-notes/week8/08_start.ipynb)
 - [Modeling Oscillators](../lecture-notes/week8/08_notes.ipynb)
+
+### Slides
+
+10 Mar 2025 ([Slides](../slides/day-21-oscillations.pdf))
+
+![Day 21](../slides/day-21-oscillations.png)
+
+12 Mar 2025 ([Slides](../slides/day-22-damped-oscillations.pdf))
+
+![Day 22](../slides/day-22-damped-oscillations.png)
+
+14 Mar 2025 ([Slides](../slides/day-23-homework-session.pdf))
+
+![Day 23](../slides/day-23-homework-session.png)
+
 
 ## No Class Week, March 4-8, 2025 (CW10)
 
@@ -78,6 +117,22 @@ You should review the discussion about [Nonlinear Dynamics](../lecture-notes/wee
 - [Critical Points and Phase Portraits](../lecture-notes/week7/07_notes.ipynb)
 - Textbook Readings: [Strogatz 2.0-2.3](../docs/textbook-chapters/strogatz_3rd_ch2.0-2.3.pdf); [5.0-5.2](../docs/textbook-chapters/strogatz_3rd_ch5.0-5.2.pdf)
 
+
+## Slides
+
+24 Feb 2025 ([Slides](../slides/day-18-introduction-to-nonlinear-dynamics.pdf))
+
+![Day 18](../slides/day-18-introduction-to-nonlinear-dynamics.png)
+
+26 Feb 2025 ([Slides](../slides/day-19-phase-diagrams.pdf))
+
+![Day 19](../slides/day-19-phase-diagrams.png)
+
+28 Feb 2025 ([Slides](../slides/day-20-homework-session.pdf))
+
+![Day 20](../slides/day-20-homework-session.png)
+
+
 ## Class Week 6, February 17-21, 2025 (CW8)
 
 Topics: Equilibrium, Stability, Introduction to Momentum
@@ -97,6 +152,20 @@ You should review the discussion about [Equilibrium and Stability](../lecture-no
 - [Linear and Angular Momentum](../lecture-notes/week6/06_notes_2.ipynb)
 - Textbook Readings: JRT 3.1, 3.3-3.4, 4.6
 
+### Slides
+
+17 Feb 2025 ([Slides](../slides/day-15-potential-energy-and-stability.pdf))
+
+![Day 15](../slides/day-15-potential-energy-and-stability.png)
+
+19 Feb 2025 ([Slides](../slides/day-16-conservation-of-momentum.pdf))
+
+![Day 16](../slides/day-16-conservation-of-momentum.png)
+
+21 Feb 2025 ([Slides](../slides/day-17-homework-session.pdf))
+
+![Day 17](../slides/day-17-homework-session.png)
+
 ## Class Week 5, February 10-14, 2025 (CW7)
 
 Topics: Work, Energy, Conservative Forces
@@ -114,6 +183,20 @@ You should review the discussion about [Conservation Laws](../lecture-notes/week
 - [Conservation Laws](../lecture-notes/week5/05_start.ipynb)
 - [Conservation of Energy](../lecture-notes/week5/05_notes.ipynb)
 - Textbook Readings: JRT 4.1-4.4, 4.6
+
+### Slides
+
+10 Feb 2025 ([Slides](../slides/day-12-conservation-of-energy.pdf))
+
+![Day 12](../slides/day-12-conservation-of-energy.png)
+
+12 Feb 2025 ([Slides](../slides/day-13-conservative-forces.pdf))
+
+![Day 13](../slides/day-13-conservative-forces.png)
+
+14 Feb 2025 ([Slides](../slides/day-14-homework-session.pdf))
+
+![Day 14](../slides/day-14-homework-session.png)
 
 
 ## Class Week 4, February 3-7, 2025 (CW6)
