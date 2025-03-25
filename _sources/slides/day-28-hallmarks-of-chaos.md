@@ -22,8 +22,7 @@ url: https://dannycaballero.info/phy321msu/slides/day-28-hallmarks-of-chaos.html
 
 # Announcements
 
-* Midterm 1 (problems 2 and 3) is graded
-    * Problem 1 is still being graded
+* Midterm 1 is graded
 * Homework 7 is due Friday
     * No homework next week
 * Midterm 2 will be assigned next Monday (due 18 April)
