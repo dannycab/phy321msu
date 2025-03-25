@@ -76,23 +76,23 @@ All assignments are turned in using Gradescope as a single PDF.
 | Week | Day    | Topic                     | Readings to prepare | Important events |
 | ---- | ------ | ------------------------- | ------------------- | ---------------- |
 | CW11 | 10 Mar ([Slides](../slides/day-21-oscillations.pdf)) | Oscillations; Damping | JRT 5.1-5.2, 5.4; MLB 7.1-7.2; 8.5 | [Homework 6 Assigned (Due 21 Mar)](../homeworks/hw6.ipynb)                 |
-|      | 12 Mar | Oscillations; Damping |                     |                  |
-|      | 14 Mar | Problem session for homework |                     |  Homework 5 Due                |
+|      | 12 Mar ([Slides](../slides/day-22-damped-oscillations.pdf)) | Oscillations; Damping |                     |                  |
+|      | 14 Mar ([Slides](../slides/day-23-homework-session.pdf)) | Problem session for homework |                     |  Homework 5 Due                |
 
 ## Class Week 10
 
 | Week | Day    | Topic                          | Readings to prepare  | Important events                                                |
 | ---- | ------ | ------------------------------ | -------------------- | --------------------------------------------------------------- |
-| CW12 | 17 Mar | Driven Oscillations; Resonance | JRT 5.5-5.6; MLB 8.6 | [Homework 7 Assigned (Due 28 Mar)](../homeworks/hw7.ipynb)      |
-|      | 19 Mar |  Driven Oscillations; Resonance                              |                      |                                                                 |
-|      | 21 Mar |   Problem session for homework                             |                      | **Homework 6 Due** |
+| CW12 | 17 Mar ([Slides](../slides/day-24-driven-oscillations.pdf)) | Driven Oscillations; Resonance | JRT 5.5-5.6; MLB 8.6 | [Homework 7 Assigned (Due 28 Mar)](../homeworks/hw7.ipynb)      |
+|      | 19 Mar ([Slides](../slides/day-25-resonance.pdf)) |  Driven Oscillations; Resonance                              |                      |                                                                 |
+|      | 21 Mar ([Slides](../slides/day-26-homework-session.pdf)) |   Problem session for homework                             |                      | **Homework 6 Due** |
 
 ## Class Week 11
 
 | Week | Day    | Topic          | Readings to prepare  | Important events                                                |
 | ---- | ------ | -------------- | -------------------- | --------------------------------------------------------------- |
-| CW13 | 24 Mar | Fourier Series | JRT 5.7; MLB 7.3-7.5 |      |
-|      | 26 Mar |  Fourier Series              |                      |                                                                 |
+| CW13 | 24 Mar ([Slides](../slides/day-27-introduction-to-chaos.pdf)) | Introduction to Chaos | [Chaotic Dynamics](../lecture-notes/week10/10_start.ipynb) |      |
+|      | 26 Mar  |  Hallmarks of Classical Chaos Series              |                      |                                                                 |
 |      | 28 Mar |   Problem session for homework             |                      | **Homework 7 Due** |
 
 ## Class Week 12
