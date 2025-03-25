@@ -92,7 +92,7 @@ All assignments are turned in using Gradescope as a single PDF.
 | Week | Day    | Topic          | Readings to prepare  | Important events                                                |
 | ---- | ------ | -------------- | -------------------- | --------------------------------------------------------------- |
 | CW13 | 24 Mar ([Slides](../slides/day-27-introduction-to-chaos.pdf)) | Introduction to Chaos | [Chaotic Dynamics](../lecture-notes/week10/10_start.ipynb) |      |
-|      | 26 Mar  |  Hallmarks of Classical Chaos Series              |                      |                                                                 |
+|      | 26 Mar ([Slides](../slides/day-28-hallmarks-of-chaos.pdf)) |  Hallmarks of Classical Chaos Series              |                      |                                                                 |
 |      | 28 Mar |   Problem session for homework             |                      | **Homework 7 Due** |
 
 ## Class Week 12

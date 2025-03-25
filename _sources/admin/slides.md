@@ -2,6 +2,18 @@
 
 Slides for PHY 321 appear in reverse chronological order, with the most recent slides at the top. The formats are PDF, HTML, and Markdown. The HTML slides are hosted on my website, and the Markdown slides are the source code for the HTML slides, built with [Marp](https://marp.app/).
 
+## Day 28 - Hallmarks of Chaos - 26 Mar 2025
+
+### Download PDF
+
+[![Day 28](../slides/day-28-hallmarks-of-chaos.png)](../slides/day-28-hallmarks-of-chaos.pdf)
+
+### HTML Versions
+| Format | Link |
+|--|--|
+| HTML (Inline) | [day-28-hallmarks-of-chaos.md](../slides/day-28-hallmarks-of-chaos.md) |
+| HTML (Slides) | [day-28-hallmarks-of-chaos.html](../slides/day-28-hallmarks-of-chaos.html) |
+
 ## Day 27 - Introduction to Chaos - 24 Mar 2025
 
 ### Download PDF
