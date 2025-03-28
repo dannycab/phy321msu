@@ -2,6 +2,19 @@
 
 Slides for PHY 321 appear in reverse chronological order, with the most recent slides at the top. The formats are PDF, HTML, and Markdown. The HTML slides are hosted on my website, and the Markdown slides are the source code for the HTML slides, built with [Marp](https://marp.app/).
 
+## Day 29 - Homework Session - 28 Mar 2025
+
+### Download PDF
+
+[![Day 29](../slides/day-29-homework-session.png)](../slides/day-29-homework-session.pdf)
+
+### HTML Versions
+
+| Format | Link |
+|--|--|
+| HTML (Inline) | [day-29-homework-session.md](../slides/day-29-homework-session.md) |
+| HTML (Slides) | [day-29-homework-session.html](../slides/day-29-homework-session.html) |
+
 ## Day 28 - Hallmarks of Chaos - 26 Mar 2025
 
 ### Download PDF
