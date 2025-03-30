@@ -4,6 +4,24 @@ Materials will appear in reverse chronological order, with the most recent appea
 
 Class Zoom: <https://msu.zoom.us/j/92295821308>
 
+## Class Week 11, March 31-April 4, 2025 (CW14)
+
+Topic: Calculus of Variations 
+
+We will introduce a new topic this week: the Calculus of Variations. This powerful mathematical tool allows us to find the path that minimizes or maximizes a certain quantity, which is foundational for understanding Lagrangian mechanics. We will discuss the theory behind the Calculus of Variations, discuss how to set up problems with it, and find solutions to a few canonical problems.
+
+You should review the discussion about [Calculus of Variations](../lecture-notes/week11/11_start.ipynb) and the notes on the [Euler-Lagrange Equation](../lecture-notes/week11/11_notes.ipynb). You should also make sure to have read JRT 6.1-6.3; MLB 9.1-9.4.
+
+### Assignments
+
+- [Midterm 2](../midterms/midterm2.ipynb) (due April 11, 2025)
+
+### Resources
+
+- [Calculus of Variations](../lecture-notes/week11/11_start.ipynb)
+- [Euler-Lagrange Equation](../lecture-notes/week11/11_notes.ipynb)
+
+
 ## Class Week 10, March 24-28, 2025 (CW13)
 
 Topic: Chaos
