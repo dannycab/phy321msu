@@ -23,6 +23,33 @@ url: https://dannycaballero.info/phy321msu/slides/day-30-calculus-of-variations.
 
 ---
 
+# Seminars this Week
+
+## MONDAY, March 31, 2025
+
+* **Condensed Matter Seminar** 4:10 pm,1400 BPS, *Justin Wilson, Louisiana State University*,  Title: Measurement and Feedback Driven Adaptive Dynamics in the Classical and Quantum Kicked Top
+
+## TUESDAY, April 1, 2025
+ 
+* **Theory Seminar**, 11:00am., FRIB 1200, *Kazuyuki Ogata, Kyushu University*, Title: “Knock It Out of the Nucleus -Structure of Nuclei Revealed by Knockout Reactions”
+* **High Energy Physics Seminar**, 1:00 pm, 1400 BPS, *Manel Errando, Washington University in St. Louis*, Title: Extracting Meson Distribution Amplitudes from Nonlocal Euclidean Correlations at Next-to-Next-to-Leading Order
+
+---
+
+# Seminars this Week
+## WEDNESDAY, April 2, 2025    
+ 
+                                     
+* **Astronomy Seminar**, 1:30 pm, 1400 BPS, *Andy Tzandikas, Univ. of Washington*, Title: Searching for the Rarest Stellar Occultations
+ 
+* **PER Seminar**, 3:00 pm., BPS 1400, *Abigail Daane, Professor of Physics, South Seattle College*, Title: The obstacles, stumbles, and growth in examining the “decolonization” of physics education
+ 
+## THURSDAY, April 3, 2025
+ 
+* **Colloquium**, 3:30 pm, 1415 BPS, *Alex Sushkov, Boston University*, Title: Nuclear magnetic resonance at the quantum sensitivity limit
+
+---
+
 # Clicker Question 30-1
 
 The generic segment, $ds$, of a curve in 2D Cartesian coordinates is given by 
@@ -97,3 +124,17 @@ I can explain why this surface term is equal to zero:
 5. I don't know what a surface term is
 
 ---
+
+# Clicker Question 30-6
+
+We completed this derivation with the following mathematical statement:
+
+$$\int_{s_1}^{s_2} \eta(x) \left[\dfrac{\partial f}{\partial y} - \dfrac{d}{dx}\left(\dfrac{\partial f}{\partial y'}\right)\right] = 0$$
+
+where $\eta(x)$ is an arbitrary function. What does this imply about the term in square brackets?
+
+1. The term in square brackets must be a pure function of $x$.
+2. The term in square brackets must be a pure function of $y$.
+2. The term in square brackets must be a pure function of $y'$.
+3. The term in square brackets must be zero.
+4. The term in square brackets must be a non-zero constant.

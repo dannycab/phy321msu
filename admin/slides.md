@@ -2,6 +2,18 @@
 
 Slides for PHY 321 appear in reverse chronological order, with the most recent slides at the top. The formats are PDF, HTML, and Markdown. The HTML slides are hosted on my website, and the Markdown slides are the source code for the HTML slides, built with [Marp](https://marp.app/).
 
+## Day 30 - Calculus of Variations - 31 Mar 2025
+
+### Download PDF
+
+[![Day 30](../slides/day-30-calculus-of-variations.png)](../slides/day-30-calculus-of-variations.pdf)
+
+### HTML Versions
+| Format | Link |
+|--|--|
+| HTML (Inline) | [day-30-calculus-of-variations.md](../slides/day-30-calculus-of-variations.md) |
+| HTML (Slides) | [day-30-calculus-of-variations.html](../slides/day-30-calculus-of-variations.html) |
+
 ## Day 29 - Homework Session - 28 Mar 2025
 
 ### Download PDF
