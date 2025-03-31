@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Midterm 2 (Due 5 Apr) &#8212; Classical Mechanics</title>
+    <title>Midterm 2 &#8212; Classical Mechanics</title>
   
   
   
@@ -219,6 +219,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../homeworks/hw5.html">Homework 5 (Due 14 Mar)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../homeworks/hw6.html">Homework 6 (Due 21 Mar)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../homeworks/hw7.html">Homework 7 (Due 28 Mar)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../midterms/midterm2.html">Midterm 2 (Due 11 Apr)</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Solutions</span></p>
 <ul class="nav bd-sidenav">
@@ -229,6 +230,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../solutionmidterm1.html">Midterm 1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../solutionhw5.html">Solution Homework 5</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../solutionhw6.html">Solution Homework 6</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../solutionhw7.html">Solution Homework 7</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Resources</span></p>
 <ul class="nav bd-sidenav">
@@ -381,7 +383,7 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Midterm 2 (Due 5 Apr)</h1>
+    <h1>Midterm 2</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -398,7 +400,8 @@
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#extra-credit-up-to-30-points">Extra credit (up to 30 points)</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#part-2-signal-analysis-40pt">Part 2, Signal Analysis (40pt)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#part-2-strange-attractor-40pt">Part 2, Strange Attractor (40pt)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#part-3-project-check-in-2-20pt">Part 3, Project Check-in 2 (20pt)</a></li>
 </ul>
             </nav>
         </div>
@@ -412,9 +415,9 @@
                   
   <!-- HTML file automatically generated from DocOnce source (https://github.com/doconce/doconce/)
 doconce format html Firstmidterm2022.do.txt --no_mako -->
-<!-- dom:TITLE: PHY321: Classical Mechanics 1 --><section id="midterm-2-due-5-apr">
-<h1>Midterm 2 (Due 5 Apr)<a class="headerlink" href="#midterm-2-due-5-apr" title="Link to this heading">#</a></h1>
-<p><strong>Solution Midterm 2, Spring 2024</strong></p>
+<!-- dom:TITLE: PHY321: Classical Mechanics 1 --><section id="midterm-2">
+<h1>Midterm 2<a class="headerlink" href="#midterm-2" title="Link to this heading">#</a></h1>
+<p><strong>Solution Midterm 2, Spring 2025</strong></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
@@ -437,7 +440,7 @@ doconce format html Firstmidterm2022.do.txt --no_mako -->
 <p><img alt="Strange attractor" src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Duffing_oscillator_strange_attractor_with_color.gif" /></p>
 <p>We focus on this one dimensional case, but we will analyze it in parts to put together a full picture of the dynamics of the system. If you are looking for useful parameter choices and initial conditions, we suggest using those listed on <a class="reference external" href="https://en.wikipedia.org/wiki/Duffing_equation">the Wikipedia page</a>.</p>
 <p>Recall that the potential for this system can give rise to different kinds of behavior depending on the parameters. The figure below shows the potential for different choices of <span class="math notranslate nohighlight">\(\alpha\)</span> and <span class="math notranslate nohighlight">\(\beta\)</span>. Make sure you choose your parameters to match the potential you want to study - pick a stable well for solving for trajectories.</p>
-<p><img alt="Duffing potential" src="solutions/images/assignments/duffing_potential.png" /></p>
+<p><img alt="Duffing potential" src="../../_images/duffing_potential.png" /></p>
 <section id="undamped-and-undriven-case-20-points">
 <h3>Undamped and undriven case (20 points)<a class="headerlink" href="#undamped-and-undriven-case-20-points" title="Link to this heading">#</a></h3>
 <ol class="arabic simple">
@@ -673,7 +676,7 @@ doconce format html Firstmidterm2022.do.txt --no_mako -->
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0xffff563bcbf0&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0xffff3116a390&gt;
 </pre></div>
 </div>
 <img alt="../../_images/c4d6730ade88564e86e4a1d61710c9037edfabfc1ad552f843d998f62a729c9f.png" src="../../_images/c4d6730ade88564e86e4a1d61710c9037edfabfc1ad552f843d998f62a729c9f.png" />
@@ -827,7 +830,7 @@ doconce format html Firstmidterm2022.do.txt --no_mako -->
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0xffff5378cbf0&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0xffff306efbc0&gt;
 </pre></div>
 </div>
 <img alt="../../_images/efa394af5fb1132073f32fac0b7bf6617062a14a7b65ed26aa1593bedab32bfe.png" src="../../_images/efa394af5fb1132073f32fac0b7bf6617062a14a7b65ed26aa1593bedab32bfe.png" />
@@ -939,7 +942,7 @@ doconce format html Firstmidterm2022.do.txt --no_mako -->
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0xffff5370fd40&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0xffff3044b770&gt;
 </pre></div>
 </div>
 <img alt="../../_images/f5b2a8ba4a71caa43ea57c8a76c692c49c64dddb6bbbf87de9e9c90e40dfd544.png" src="../../_images/f5b2a8ba4a71caa43ea57c8a76c692c49c64dddb6bbbf87de9e9c90e40dfd544.png" />
@@ -1047,7 +1050,7 @@ doconce format html Firstmidterm2022.do.txt --no_mako -->
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0xffff52df1d00&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0xffff3026fbc0&gt;
 </pre></div>
 </div>
 <img alt="../../_images/2421d93835a26e58403f8d8d8ff7b2638675bd4947b452ce8c43b66011a2582b.png" src="../../_images/2421d93835a26e58403f8d8d8ff7b2638675bd4947b452ce8c43b66011a2582b.png" />
@@ -1105,7 +1108,7 @@ doconce format html Firstmidterm2022.do.txt --no_mako -->
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_14302/3734017154.py:33: UserWarning: No data for colormapping provided via &#39;c&#39;. Parameters &#39;cmap&#39; will be ignored
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_6256/3734017154.py:33: UserWarning: No data for colormapping provided via &#39;c&#39;. Parameters &#39;cmap&#39; will be ignored
   ax.scatter(trajDF_sampled[&#39;x&#39;], trajDF_sampled[&#39;v&#39;], c=colors, marker=&#39;o&#39;, cmap=&#39;viridis&#39;)
 </pre></div>
 </div>
@@ -1114,216 +1117,527 @@ doconce format html Firstmidterm2022.do.txt --no_mako -->
 </div>
 </section>
 </section>
-<section id="part-2-signal-analysis-40pt">
-<h2>Part 2, Signal Analysis (40pt)<a class="headerlink" href="#part-2-signal-analysis-40pt" title="Link to this heading">#</a></h2>
-<p>We learned that any periodic function can be written using a Fourier series. The expansion we wrote is:</p>
+<section id="part-2-strange-attractor-40pt">
+<h2>Part 2, Strange Attractor (40pt)<a class="headerlink" href="#part-2-strange-attractor-40pt" title="Link to this heading">#</a></h2>
+<p>We learned about <a class="reference external" href="https://en.wikipedia.org/wiki/Attractor#Strange_attractor">Strange Attractors</a> when modeling the <a class="reference external" href="https://en.wikipedia.org/wiki/Lorenz_system">Lorenz system</a> in class. In this part of the exam, we will explore the <a class="reference external" href="https://www.dynamicmath.xyz/calculus/velfields/Chen/">Chen system</a>, which is another example of a system that exhibits chaotic behavior and has a strange attractor. The Chen system is given by the following set of ordinary differential equations:</p>
 <div class="math notranslate nohighlight">
-\[f(t) = \dfrac{a_0}{2} + \sum_{n=1}^{\infty} \left( a_n \cos(n\omega t) + b_n \sin(n\omega t) \right).\]</div>
-<p>where <span class="math notranslate nohighlight">\(\omega = 2\pi/T\)</span> and <span class="math notranslate nohighlight">\(T\)</span> is the period of the function. The coefficients <span class="math notranslate nohighlight">\(a_n\)</span> and <span class="math notranslate nohighlight">\(b_n\)</span> are given by:</p>
-<div class="math notranslate nohighlight">
-\[a_n = \dfrac{2}{T} \int_{-T/2}^{T/2} f(t) \cos(n\omega t) dt, \quad b_n = \dfrac{2}{T} \int_{-T/2}^{T/2} f(t) \sin(n\omega t) dt.\]</div>
-<p>For this part of the midterm you will analyze a triangular wave both analytically and numerically.</p>
-<p>Consider the following triangular wave:</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}f(t) = \begin{cases} 
-      1 - 2t &amp; 0 \leq t &lt; 1/2 \\
-      2t - 1 &amp; 1/2 \leq t &lt; 1
-   \end{cases}\end{split}\]</div>
-<p>which repeats every <span class="math notranslate nohighlight">\(T = 1\)</span>.</p>
+\[\begin{split}\begin{align}
+\dot{x} &amp;= \alpha x-yz,\\
+\dot{y} &amp;= \beta y + xz,\\
+\dot{z} &amp;= \delta z + xy/3,\\
+\end{align}\end{split}\]</div>
+<p>where <span class="math notranslate nohighlight">\(\alpha\)</span>, <span class="math notranslate nohighlight">\(\beta\)</span>, and <span class="math notranslate nohighlight">\(\delta\)</span> are constants that determine the behavior of the system. For this problem, we will use the following values:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Parameter</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(\alpha\)</span></p></td>
+<td><p>5.0</p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(\beta\)</span></p></td>
+<td><p>-10.0</p></td>
+</tr>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(\delta\)</span></p></td>
+<td><p>-0.38</p></td>
+</tr>
+</tbody>
+</table>
+</div>
 <ol class="arabic simple">
-<li><p>(5 pt) Plot the triangular wave. What is the frequency of the wave? Show this on the plot.</p></li>
+<li><p>(10 pts) For this choice of parameters, numerically integrate (using <code class="docutils literal notranslate"><span class="pre">solve_ivp</span></code> or a similar integrator) the Chen system over a reasonable time interval (e.g., 100 time units). <strong>Recall that for <code class="docutils literal notranslate"><span class="pre">solve_ivp</span></code>, you need to specify the time span and initial conditions.</strong> For the initial conditions, you can choose <span class="math notranslate nohighlight">\(x(0) = y(0) = z(0) = 1.0\)</span>. Integrate for at least 100 time units. This will give you a starting point to observe the chaotic behavior of the system.</p></li>
 </ol>
-<div class="tip admonition">
-<p class="admonition-title">Solution</p>
-<p>We can prepare a simple plot of the triangular wave. We plot it below. We can see that the wave repeats every <span class="math notranslate nohighlight">\(T = 1\)</span>.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">T</span> <span class="o">=</span> <span class="mi">1</span>
-<span class="n">t_array</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="o">*</span><span class="n">T</span><span class="p">,</span> <span class="n">T</span><span class="o">/</span><span class="mi">100</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">scipy.integrate</span><span class="w"> </span><span class="kn">import</span> <span class="n">solve_ivp</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;seaborn-v0_8-colorblind&#39;</span><span class="p">)</span>
 
-<span class="k">def</span><span class="w"> </span><span class="nf">f</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">T</span><span class="p">):</span>
-    <span class="k">if</span> <span class="n">t</span> <span class="o">%</span> <span class="n">T</span> <span class="o">&lt;</span> <span class="mf">0.5</span><span class="o">*</span><span class="n">T</span><span class="p">:</span>
-        <span class="k">return</span> <span class="mi">1</span><span class="o">-</span><span class="mi">2</span><span class="o">*</span><span class="p">(</span><span class="n">t</span> <span class="o">%</span> <span class="n">T</span><span class="p">)</span><span class="o">/</span><span class="n">T</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="k">return</span> <span class="mi">2</span><span class="o">*</span><span class="p">(</span><span class="n">t</span> <span class="o">%</span> <span class="n">T</span><span class="p">)</span><span class="o">/</span><span class="n">T</span><span class="o">-</span><span class="mi">1</span>
-    
-<span class="n">wave</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">t_array</span><span class="p">))</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">chen</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">yy</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">5.0</span><span class="p">,</span> <span class="n">beta</span><span class="o">=-</span><span class="mf">10.0</span><span class="p">,</span> <span class="n">delta</span><span class="o">=-</span><span class="mf">0.38</span><span class="p">):</span>
+    <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span> <span class="o">=</span> <span class="n">yy</span>
+    <span class="n">dxdt</span> <span class="o">=</span> <span class="n">alpha</span><span class="o">*</span><span class="n">x</span><span class="o">-</span><span class="n">y</span><span class="o">*</span><span class="n">z</span>
+    <span class="n">dydt</span> <span class="o">=</span> <span class="n">beta</span><span class="o">*</span><span class="n">y</span> <span class="o">+</span> <span class="n">x</span><span class="o">*</span><span class="n">z</span>
+    <span class="n">dzdt</span> <span class="o">=</span> <span class="n">delta</span><span class="o">*</span><span class="n">z</span> <span class="o">+</span> <span class="n">x</span><span class="o">*</span><span class="n">y</span><span class="o">/</span><span class="mi">3</span>
+    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">dxdt</span><span class="p">,</span> <span class="n">dydt</span><span class="p">,</span> <span class="n">dzdt</span><span class="p">])</span>
 
-<span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="c1"># Parameters</span>
+<span class="n">alpha</span> <span class="o">=</span> <span class="mf">5.0</span>
+<span class="n">beta</span> <span class="o">=</span> <span class="o">-</span><span class="mf">10.0</span>
+<span class="n">delta</span> <span class="o">=</span> <span class="o">-</span><span class="mf">0.38</span>
 
-<span class="k">for</span> <span class="n">t</span> <span class="ow">in</span> <span class="n">t_array</span><span class="p">:</span>
-    
-    <span class="n">wave</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">=</span> <span class="n">f</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">T</span><span class="p">)</span>
-    <span class="c1">#print(&#39;wave:&#39;, i, wave[i])</span>
-    <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
-    
-<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">8</span><span class="p">))</span>
+<span class="c1"># Time parameters</span>
+<span class="n">t_span</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>   <span class="c1"># Time span for the simulation</span>
+<span class="n">t_eval</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="n">t_span</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">t_span</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="mi">10000</span><span class="p">)</span>  
 
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">t_array</span><span class="p">,</span> <span class="n">wave</span><span class="p">)</span>
+<span class="c1"># Initial conditions</span>
+<span class="n">yy0</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">])</span>  <span class="c1"># Initial conditions for x, y, z</span>
 
-<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;t&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;f(t)&#39;</span><span class="p">)</span>
-
-<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Triangle Wave Function&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+<span class="n">solution</span> <span class="o">=</span> <span class="n">solve_ivp</span><span class="p">(</span><span class="n">chen</span><span class="p">,</span> <span class="n">t_span</span><span class="p">,</span> <span class="n">yy0</span><span class="p">,</span> <span class="n">args</span><span class="o">=</span><span class="p">(</span><span class="n">alpha</span><span class="p">,</span> <span class="n">beta</span><span class="p">,</span> <span class="n">delta</span><span class="p">),</span> <span class="n">t_eval</span><span class="o">=</span><span class="n">t_eval</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s1">&#39;RK45&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<img alt="../../_images/be13e632bc679b4b0ab87933de26f90d6961c1d5850049e422a49f9668b2d9f2.png" src="../../_images/be13e632bc679b4b0ab87933de26f90d6961c1d5850049e422a49f9668b2d9f2.png" />
 </div>
 </div>
 <ol class="arabic simple" start="2">
-<li><p>(15 pt) Determine the Fourier coefficients <span class="math notranslate nohighlight">\(a_n\)</span> and <span class="math notranslate nohighlight">\(b_n\)</span> for the triangular wave. This should be done analytically.</p></li>
+<li><p>(10 pts) Plot the system in 3D <strong>and</strong> in 3 subplots showing the projection of the trajectory in the <span class="math notranslate nohighlight">\(x-y\)</span>, <span class="math notranslate nohighlight">\(x-z\)</span>, and <span class="math notranslate nohighlight">\(y-z\)</span> planes.</p></li>
 </ol>
-<div class="tip admonition">
-<p class="admonition-title">Solution</p>
-<p>The original function is defined piecewise,</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}f(t) = \begin{cases} 
-      1 - 2t &amp; 0 \leq t &lt; 1/2 \\
-      2t - 1 &amp; 1/2 \leq t &lt; 1
-   \end{cases}\end{split}\]</div>
-<p>so we will eventually have to perform two integrals to find the Fourier coefficients. We can write the Fourier series as:</p>
-<div class="math notranslate nohighlight">
-\[f(t) = \dfrac{a_0}{2} + \sum_{n=1}^{\infty} \left( a_n \cos(n\omega t) + b_n \sin(n\omega t) \right).\]</div>
-<p>where <span class="math notranslate nohighlight">\(\omega = 2\pi/T = 2\pi\)</span>. The coefficients <span class="math notranslate nohighlight">\(a_n\)</span> and <span class="math notranslate nohighlight">\(b_n\)</span> are given by:</p>
-<div class="math notranslate nohighlight">
-\[a_n = \dfrac{2}{T} \int_{T} f(t) \cos(n\omega t) dt, \quad b_n = \dfrac{2}{T} \int_{T} f(t) \sin(n\omega t) dt.\]</div>
-<p>We should note that this signal appears to be an even functions, so that we expect only the cosine terms to be present. So we start with the <span class="math notranslate nohighlight">\(a_n\)</span> terms,</p>
-<div class="math notranslate nohighlight">
-\[a_n = \dfrac{2}{1} \int_{0}^{1} f(t) \cos(n2\pi t) dt,\]</div>
-<div class="math notranslate nohighlight">
-\[a_n = I_1 + I_2 = 2 \int_{0}^{1/2} (1 - 2t) \cos(2n\pi t) dt + 2 \int_{1/2}^{1} (2t - 1) \cos(2n\pi t) dt.\]</div>
-<p>We evaluate each integral separately. For the first integral, <span class="math notranslate nohighlight">\(I_1\)</span>, we have</p>
-<div class="math notranslate nohighlight">
-\[I_1 = 2 \int_{0}^{1/2} (1 - 2t) \cos(2n\pi t) dt = 2  \left[\int_{0}^{1/2} \cos(2n\pi t) dt\right] - 4 \left[\int_{0}^{1/2} t \cos(2n\pi t) dt\right],\]</div>
-<div class="math notranslate nohighlight">
-\[I_1 = \left(\dfrac{\sin(n\pi)}{n\pi}\right) - \left(\dfrac{n\pi \sin(n \pi) + \cos(n\pi) -1}{n^2\pi^2}\right)\]</div>
-<p>We should note that <span class="math notranslate nohighlight">\(\sin(n\pi) = 0\)</span> and <span class="math notranslate nohighlight">\(\cos(n\pi) = (-1)^n\)</span> for all integers <span class="math notranslate nohighlight">\(n\)</span>. So we have,</p>
-<div class="math notranslate nohighlight">
-\[I_1 = \dfrac{1 - (-1)^n}{n^2\pi^2}.\]</div>
-<p>For the second integral, <span class="math notranslate nohighlight">\(I_2\)</span>, we have</p>
-<div class="math notranslate nohighlight">
-\[I_2 = 2 \int_{1/2}^{1} (2t - 1) \cos(2n\pi t) dt = 2 \left[\int_{1/2}^{1} 2t \cos(2n\pi t) dt\right] - 2 \left[\int_{1/2}^{1} \cos(2n\pi t) dt\right],\]</div>
-<div class="math notranslate nohighlight">
-\[I_2 = 2 \left(\dfrac{2\sin(n\pi) - 2n\pi \cos(n\pi) - 1}{4n^2\pi^2}\right) - 2 \left(\dfrac{\sin(2n\pi) - \sin(n\pi)}{2n\pi}\right),\]</div>
-<div class="math notranslate nohighlight">
-\[I_2 = \dfrac{1 - (-1)^n}{n^2\pi^2}.\]</div>
-<p>So that the <span class="math notranslate nohighlight">\(a_n\)</span> terms are</p>
-<div class="math notranslate nohighlight">
-\[a_n = \left(\dfrac{1 - (-1)^n}{n^2\pi^2} + \dfrac{1 - (-1)^n}{n^2\pi^2}\right) = 2\dfrac{1 - (-1)^n}{n^2\pi^2}.\]</div>
-<p>As we indicated above, the <span class="math notranslate nohighlight">\(b_n\)</span> terms are likely zero. We can verify this by calculating them. We have</p>
-<div class="math notranslate nohighlight">
-\[b_n = \dfrac{2}{1} \int_{0}^{1} f(t) \sin(n2\pi t) dt,\]</div>
-<div class="math notranslate nohighlight">
-\[b_n = 2 \int_{0}^{1/2} (1 - 2t) \sin(2n\pi t) dt + 2 \int_{1/2}^{1} (2t - 1) \sin(2n\pi t) dt.\]</div>
-<p>We evaluate each integral separately and quickly. For the first integral, we have</p>
-<div class="math notranslate nohighlight">
-\[2 \int_{0}^{1/2} (1 - 2t) \sin(2n\pi t) dt = -\dfrac{\sin(n\pi)-n\pi}{n^2\pi^2} = \dfrac{1}{n\pi}.\]</div>
-<p>For the second integral, we have</p>
-<div class="math notranslate nohighlight">
-\[2 \int_{1/2}^{1} (2t - 1) \sin(2n\pi t) dt = -\dfrac{\sin(n \pi) - \sin(2n\pi)+ n\pi\cos(2n\pi)}{n^2\pi^2} = -\dfrac{1}{n\pi}.\]</div>
-<p>So that the <span class="math notranslate nohighlight">\(b_n\)</span> terms are zero.</p>
-<div class="math notranslate nohighlight">
-\[b_n = \dfrac{1}{n\pi} - \dfrac{1}{n\pi} = 0.\]</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;seaborn-v0_8-colorblind&#39;</span><span class="p">)</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">mpl_toolkits.mplot3d</span><span class="w"> </span><span class="kn">import</span> <span class="n">Axes3D</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="n">solution</span><span class="o">.</span><span class="n">y</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> 
+<span class="n">y</span> <span class="o">=</span> <span class="n">solution</span><span class="o">.</span><span class="n">y</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">z</span> <span class="o">=</span> <span class="n">solution</span><span class="o">.</span><span class="n">y</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">111</span><span class="p">,</span> <span class="n">projection</span><span class="o">=</span><span class="s1">&#39;3d&#39;</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;C0&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;y&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_zlabel</span><span class="p">(</span><span class="s1">&#39;z&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;3D Trajectory of the Chen System&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../_images/a2f5da8b10c73fdc0d2564d6dae646072bc35f96296908460bc7eea5e8a6cc68.png" src="../../_images/a2f5da8b10c73fdc0d2564d6dae646072bc35f96296908460bc7eea5e8a6cc68.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;seaborn-v0_8-colorblind&#39;</span><span class="p">)</span>
+
+<span class="n">t</span> <span class="o">=</span> <span class="n">solution</span><span class="o">.</span><span class="n">t</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">solution</span><span class="o">.</span><span class="n">y</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">solution</span><span class="o">.</span><span class="n">y</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">z</span> <span class="o">=</span> <span class="n">solution</span><span class="o">.</span><span class="n">y</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">matplotlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">gridspec</span>
+<span class="n">gs</span> <span class="o">=</span> <span class="n">gridspec</span><span class="o">.</span><span class="n">GridSpec</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="n">figure</span><span class="o">=</span><span class="n">fig</span><span class="p">)</span>
+
+<span class="c1"># First subplot: x vs y</span>
+<span class="n">ax1</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="n">gs</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;C0&#39;</span><span class="p">)</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;y&#39;</span><span class="p">)</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;x vs y&#39;</span><span class="p">)</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="c1"># Second subplot: x vs z</span>
+<span class="n">ax2</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="n">gs</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;C1&#39;</span><span class="p">)</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;z&#39;</span><span class="p">)</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;x vs z&#39;</span><span class="p">)</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="c1"># Third subplot: y vs z</span>
+<span class="n">ax3</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="n">gs</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+<span class="n">ax3</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;C2&#39;</span><span class="p">)</span>
+<span class="n">ax3</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;y&#39;</span><span class="p">)</span>
+<span class="n">ax3</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;z&#39;</span><span class="p">)</span>
+<span class="n">ax3</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;y vs z&#39;</span><span class="p">)</span>
+<span class="n">ax3</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../_images/6f7078a45941dcfa430518fef56fa17a40fc8df6b5f5eee605cb067f0f87530d.png" src="../../_images/6f7078a45941dcfa430518fef56fa17a40fc8df6b5f5eee605cb067f0f87530d.png" />
+</div>
 </div>
 <ol class="arabic simple" start="3">
-<li><p>(10 pt) What is the expression for the approximation of the triangular wave using the first few terms of the Fourier series?</p></li>
+<li><p>(10 pts) For two nearby points in phase space, numerically integrate the Chen system for 100 time units. Use the same initial conditions as before, but slightly perturb one of the points (e.g., <span class="math notranslate nohighlight">\(x(0) = 1.0\)</span>, <span class="math notranslate nohighlight">\(y(0) = 1.0\)</span>, <span class="math notranslate nohighlight">\(z(0) = 1.0\)</span> for the first point and <span class="math notranslate nohighlight">\(x(0) = 1.01\)</span>, <span class="math notranslate nohighlight">\(y(0) = 1.0\)</span>, <span class="math notranslate nohighlight">\(z(0) = 1.0\)</span> for the second point). Plot both trajectories in 3D to observe how they diverge over time. How can you tell that the system is chaotic from this behavior? What features of the trajectories indicate chaotic behavior?</p></li>
 </ol>
-<div class="tip admonition">
-<p class="admonition-title">Solution</p>
-<p>The Fourier series for this triangular wave is</p>
-<div class="math notranslate nohighlight">
-\[f(t) = \dfrac{a_0}{2} + \sum_{n=1}^{\infty} a_n \cos(n2\pi t),\]</div>
-<p>where <span class="math notranslate nohighlight">\(a_n = 2\dfrac{1 - (-1)^n}{n^2\pi^2}\)</span>. The approximation of the triangular wave using the first few terms of the Fourier series is</p>
-<div class="math notranslate nohighlight">
-\[f(t) = \dfrac{1}{2} - \dfrac{2}{\pi^2} \sum_{n=1}^{\infty} \dfrac{1 - (-1)^n}{n^2} \cos(2n\pi t).\]</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">scipy.integrate</span><span class="w"> </span><span class="kn">import</span> <span class="n">solve_ivp</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;seaborn-v0_8-colorblind&#39;</span><span class="p">)</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">chen</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">yy</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">5.0</span><span class="p">,</span> <span class="n">beta</span><span class="o">=-</span><span class="mf">10.0</span><span class="p">,</span> <span class="n">delta</span><span class="o">=-</span><span class="mf">0.38</span><span class="p">):</span>
+    <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span> <span class="o">=</span> <span class="n">yy</span>
+    <span class="n">dxdt</span> <span class="o">=</span> <span class="n">alpha</span><span class="o">*</span><span class="n">x</span><span class="o">-</span><span class="n">y</span><span class="o">*</span><span class="n">z</span>
+    <span class="n">dydt</span> <span class="o">=</span> <span class="n">beta</span><span class="o">*</span><span class="n">y</span> <span class="o">+</span> <span class="n">x</span><span class="o">*</span><span class="n">z</span>
+    <span class="n">dzdt</span> <span class="o">=</span> <span class="n">delta</span><span class="o">*</span><span class="n">z</span> <span class="o">+</span> <span class="n">x</span><span class="o">*</span><span class="n">y</span><span class="o">/</span><span class="mi">3</span>
+    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">dxdt</span><span class="p">,</span> <span class="n">dydt</span><span class="p">,</span> <span class="n">dzdt</span><span class="p">])</span>
+
+<span class="n">alpha</span> <span class="o">=</span> <span class="mf">5.0</span>
+<span class="n">beta</span> <span class="o">=</span> <span class="o">-</span><span class="mf">10.0</span>
+<span class="n">delta</span> <span class="o">=</span> <span class="o">-</span><span class="mf">0.38</span>
+
+<span class="n">t_span</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span>  
+<span class="n">t_eval</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="n">t_span</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">t_span</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="mi">100000</span><span class="p">)</span>  
+
+<span class="n">yy1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">])</span>  <span class="c1"># Initial conditions for x, y, z</span>
+<span class="n">yy2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">1.01</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">])</span>  <span class="c1"># Slightly perturbed initial conditions</span>
+
+<span class="n">solution1</span> <span class="o">=</span> <span class="n">solve_ivp</span><span class="p">(</span><span class="n">chen</span><span class="p">,</span> <span class="n">t_span</span><span class="p">,</span> <span class="n">yy1</span><span class="p">,</span> <span class="n">args</span><span class="o">=</span><span class="p">(</span><span class="n">alpha</span><span class="p">,</span> <span class="n">beta</span><span class="p">,</span> <span class="n">delta</span><span class="p">),</span> <span class="n">t_eval</span><span class="o">=</span><span class="n">t_eval</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s1">&#39;RK45&#39;</span><span class="p">)</span>
+<span class="n">solution2</span> <span class="o">=</span> <span class="n">solve_ivp</span><span class="p">(</span><span class="n">chen</span><span class="p">,</span> <span class="n">t_span</span><span class="p">,</span> <span class="n">yy2</span><span class="p">,</span> <span class="n">args</span><span class="o">=</span><span class="p">(</span><span class="n">alpha</span><span class="p">,</span> <span class="n">beta</span><span class="p">,</span> <span class="n">delta</span><span class="p">),</span> <span class="n">t_eval</span><span class="o">=</span><span class="n">t_eval</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s1">&#39;RK45&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">matplotlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">gridspec</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">mpl_toolkits.mplot3d</span><span class="w"> </span><span class="kn">import</span> <span class="n">Axes3D</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;seaborn-v0_8-colorblind&#39;</span><span class="p">)</span>
+
+<span class="n">t1</span> <span class="o">=</span> <span class="n">solution1</span><span class="o">.</span><span class="n">t</span>
+<span class="n">t2</span> <span class="o">=</span> <span class="n">solution2</span><span class="o">.</span><span class="n">t</span>
+<span class="n">x1</span> <span class="o">=</span> <span class="n">solution1</span><span class="o">.</span><span class="n">y</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">y1</span> <span class="o">=</span> <span class="n">solution1</span><span class="o">.</span><span class="n">y</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">z1</span> <span class="o">=</span> <span class="n">solution1</span><span class="o">.</span><span class="n">y</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+<span class="n">x2</span> <span class="o">=</span> <span class="n">solution2</span><span class="o">.</span><span class="n">y</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">y2</span> <span class="o">=</span> <span class="n">solution2</span><span class="o">.</span><span class="n">y</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">z2</span> <span class="o">=</span> <span class="n">solution2</span><span class="o">.</span><span class="n">y</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+
+
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">111</span><span class="p">,</span> <span class="n">projection</span><span class="o">=</span><span class="s1">&#39;3d&#39;</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x1</span><span class="p">,</span> <span class="n">y1</span><span class="p">,</span> <span class="n">z1</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;C0&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Trajectory 1 (Initial: [1.0, 1.0, 1.0])&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x2</span><span class="p">,</span> <span class="n">y2</span><span class="p">,</span> <span class="n">z2</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;C1&#39;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;:&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Trajectory 2 (Initial: [1.01, 1.0, 1.0])&#39;</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;y&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_zlabel</span><span class="p">(</span><span class="s1">&#39;z&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;3D Trajectory of the Chen System with Different Initial Conditions&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="c1"># Plotting the results for both trajectories</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+<span class="n">gs</span> <span class="o">=</span> <span class="n">gridspec</span><span class="o">.</span><span class="n">GridSpec</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="n">figure</span><span class="o">=</span><span class="n">fig</span><span class="p">)</span>
+
+<span class="c1"># First subplot: x vs y for both trajectories</span>
+<span class="n">ax1</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="n">gs</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x1</span><span class="p">,</span> <span class="n">y1</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;C0&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Trajectory 1&#39;</span><span class="p">)</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x2</span><span class="p">,</span> <span class="n">y2</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;C1&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Trajectory 2&#39;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;:&#39;</span><span class="p">)</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;y&#39;</span><span class="p">)</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;x vs y&#39;</span><span class="p">)</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+
+<span class="c1"># Second subplot: x vs z for both trajectories</span>
+<span class="n">ax2</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="n">gs</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x1</span><span class="p">,</span> <span class="n">z1</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;C0&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Trajectory 1&#39;</span><span class="p">)</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x2</span><span class="p">,</span> <span class="n">z2</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;C1&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Trajectory 2&#39;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;:&#39;</span><span class="p">)</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;z&#39;</span><span class="p">)</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;x vs z&#39;</span><span class="p">)</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+
+<span class="c1"># Third subplot: y vs z for both trajectories</span>
+<span class="n">ax3</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="n">gs</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+<span class="n">ax3</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">y1</span><span class="p">,</span> <span class="n">z1</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;C0&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Trajectory 1&#39;</span><span class="p">)</span>
+<span class="n">ax3</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">y2</span><span class="p">,</span> <span class="n">z2</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;C1&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Trajectory 2&#39;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;:&#39;</span><span class="p">)</span>
+<span class="n">ax3</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;y&#39;</span><span class="p">)</span>
+<span class="n">ax3</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;z&#39;</span><span class="p">)</span>
+<span class="n">ax3</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;y vs z&#39;</span><span class="p">)</span>
+<span class="n">ax3</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">ax3</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../_images/a4d40110af8714ecbf8c92fdf80deea672e168f8279a6a0428811ca86eb7dc80.png" src="../../_images/a4d40110af8714ecbf8c92fdf80deea672e168f8279a6a0428811ca86eb7dc80.png" />
+<img alt="../../_images/595f5c99f62d3db2fdcb43c6950797ca9e5ea6c217757c9ee616c4b4c749f95a.png" src="../../_images/595f5c99f62d3db2fdcb43c6950797ca9e5ea6c217757c9ee616c4b4c749f95a.png" />
+</div>
 </div>
 <ol class="arabic simple" start="4">
-<li><p>(10 pt) Plot the Fourier series for the first few terms. How many terms do you need to get a good approximation of the triangular wave? Do you notice any problems with the Fourier series? If so, what are they?</p></li>
+<li><p>(10 pts) The Chen system has two attractors that we can observe. Which attractor we end up on depends on the initial conditions. To illustrate this, numerically integrate the Chen system for 100 time units with two different sets of initial conditions. For example, you can use <span class="math notranslate nohighlight">\(x(0) = y(0) = z(0) = 1.0\)</span> for the first trajectory and <span class="math notranslate nohighlight">\(x(0) = y(0) = z(0) = -1.0\)</span> for the second trajectory. Plot both trajectories in 3D and in 3 projections (<span class="math notranslate nohighlight">\(x-y\)</span>, <span class="math notranslate nohighlight">\(x-z\)</span>, and <span class="math notranslate nohighlight">\(y-z\)</span>) to observe the different attractors that the system can exhibit. How can you tell that the system is chaotic from this behavior? What features of the trajectories indicate chaotic behavior?</p></li>
 </ol>
-<div class="tip admonition">
-<p class="admonition-title">Solution</p>
-<p>We wrote a few small functions to compute the coefficients below and plot the approximation. From that we notice that there’s maybe a small issue where the triangle wave is not perfectly continuous at the transition points. This is a common issue with Fourier series. We can see that the approximation is good, but not perfect. We zoom in on that part in the second plot.</p>
-</div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## Function to calculate the Fourier Series Coefficients</span>
-<span class="k">def</span><span class="w"> </span><span class="nf">a0_coeff</span><span class="p">():</span>
-    <span class="k">return</span> <span class="mf">0.5</span><span class="p">;</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">scipy.integrate</span><span class="w"> </span><span class="kn">import</span> <span class="n">solve_ivp</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;seaborn-v0_8-colorblind&#39;</span><span class="p">)</span>
 
-<span class="k">def</span><span class="w"> </span><span class="nf">an_coeff</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
-    <span class="k">return</span> <span class="mi">2</span><span class="o">/</span><span class="p">(</span><span class="n">n</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">**</span><span class="n">n</span><span class="p">)</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">chen</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">yy</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">5.0</span><span class="p">,</span> <span class="n">beta</span><span class="o">=-</span><span class="mf">10.0</span><span class="p">,</span> <span class="n">delta</span><span class="o">=-</span><span class="mf">0.38</span><span class="p">):</span>
+    <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span> <span class="o">=</span> <span class="n">yy</span>
+    <span class="n">dxdt</span> <span class="o">=</span> <span class="n">alpha</span><span class="o">*</span><span class="n">x</span><span class="o">-</span><span class="n">y</span><span class="o">*</span><span class="n">z</span>
+    <span class="n">dydt</span> <span class="o">=</span> <span class="n">beta</span><span class="o">*</span><span class="n">y</span> <span class="o">+</span> <span class="n">x</span><span class="o">*</span><span class="n">z</span>
+    <span class="n">dzdt</span> <span class="o">=</span> <span class="n">delta</span><span class="o">*</span><span class="n">z</span> <span class="o">+</span> <span class="n">x</span><span class="o">*</span><span class="n">y</span><span class="o">/</span><span class="mi">3</span>
+    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">dxdt</span><span class="p">,</span> <span class="n">dydt</span><span class="p">,</span> <span class="n">dzdt</span><span class="p">])</span>
 
-<span class="k">def</span><span class="w"> </span><span class="nf">bn_coeff</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
-    <span class="k">return</span> <span class="mi">0</span>
+<span class="n">alpha</span> <span class="o">=</span> <span class="mf">5.0</span>
+<span class="n">beta</span> <span class="o">=</span> <span class="o">-</span><span class="mf">10.0</span>
+<span class="n">delta</span> <span class="o">=</span> <span class="o">-</span><span class="mf">0.38</span>
 
-<span class="c1">## Function to calculate the Fourier Series</span>
-<span class="k">def</span><span class="w"> </span><span class="nf">fourier_series</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">T</span><span class="p">,</span> <span class="n">n_max</span><span class="p">):</span>
-    <span class="n">f</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">n_max</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
-        <span class="n">f</span> <span class="o">+=</span> <span class="n">an_coeff</span><span class="p">(</span><span class="n">n</span><span class="p">)</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">*</span><span class="n">n</span><span class="o">*</span><span class="n">t</span><span class="o">/</span><span class="n">T</span><span class="p">)</span> <span class="o">+</span> <span class="n">bn_coeff</span><span class="p">(</span><span class="n">n</span><span class="p">)</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">*</span><span class="n">n</span><span class="o">*</span><span class="n">t</span><span class="o">/</span><span class="n">T</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">f</span><span class="o">+</span><span class="n">a0_coeff</span><span class="p">()</span>
+<span class="n">t_span</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span>
+<span class="n">t_eval</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="n">t_span</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">t_span</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="mi">100000</span><span class="p">)</span>  
 
-<span class="n">T</span> <span class="o">=</span> <span class="mi">1</span>
-<span class="n">n_terms</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">100</span><span class="p">]</span>
-<span class="n">t_array</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="o">*</span><span class="n">T</span><span class="p">,</span> <span class="n">T</span><span class="o">/</span><span class="mi">100</span><span class="p">)</span>
+<span class="n">yy1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">])</span>  
+<span class="n">yy2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="o">-</span><span class="mf">1.0</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.0</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.0</span><span class="p">])</span>  
 
-<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">8</span><span class="p">))</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">t_array</span><span class="p">,</span> <span class="n">wave</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Original Wave&#39;</span><span class="p">)</span>
+<span class="n">solution1</span> <span class="o">=</span> <span class="n">solve_ivp</span><span class="p">(</span><span class="n">chen</span><span class="p">,</span> <span class="n">t_span</span><span class="p">,</span> <span class="n">yy1</span><span class="p">,</span> <span class="n">args</span><span class="o">=</span><span class="p">(</span><span class="n">alpha</span><span class="p">,</span> <span class="n">beta</span><span class="p">,</span> <span class="n">delta</span><span class="p">),</span> <span class="n">t_eval</span><span class="o">=</span><span class="n">t_eval</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s1">&#39;RK45&#39;</span><span class="p">)</span>
+<span class="n">solution2</span> <span class="o">=</span> <span class="n">solve_ivp</span><span class="p">(</span><span class="n">chen</span><span class="p">,</span> <span class="n">t_span</span><span class="p">,</span> <span class="n">yy2</span><span class="p">,</span> <span class="n">args</span><span class="o">=</span><span class="p">(</span><span class="n">alpha</span><span class="p">,</span> <span class="n">beta</span><span class="p">,</span> <span class="n">delta</span><span class="p">),</span> <span class="n">t_eval</span><span class="o">=</span><span class="n">t_eval</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s1">&#39;RK45&#39;</span><span class="p">)</span>
 
-<span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">n_terms</span><span class="p">:</span>
-    <span class="n">f</span> <span class="o">=</span> <span class="n">fourier_series</span><span class="p">(</span><span class="n">t_array</span><span class="p">,</span> <span class="n">T</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">t_array</span><span class="p">,</span> <span class="n">f</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;n = &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">n</span><span class="p">))</span>
+<span class="n">t1</span> <span class="o">=</span> <span class="n">solution1</span><span class="o">.</span><span class="n">t</span>
+<span class="n">t2</span> <span class="o">=</span> <span class="n">solution2</span><span class="o">.</span><span class="n">t</span>
+<span class="n">x1</span> <span class="o">=</span> <span class="n">solution1</span><span class="o">.</span><span class="n">y</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">y1</span> <span class="o">=</span> <span class="n">solution1</span><span class="o">.</span><span class="n">y</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">z1</span> <span class="o">=</span> <span class="n">solution1</span><span class="o">.</span><span class="n">y</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+<span class="n">x2</span> <span class="o">=</span> <span class="n">solution2</span><span class="o">.</span><span class="n">y</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">y2</span> <span class="o">=</span> <span class="n">solution2</span><span class="o">.</span><span class="n">y</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">z2</span> <span class="o">=</span> <span class="n">solution2</span><span class="o">.</span><span class="n">y</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
 
-<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;t&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;f(t)&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Fourier Series Approximation of Triangle Wave&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">xlim</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">111</span><span class="p">,</span> <span class="n">projection</span><span class="o">=</span><span class="s1">&#39;3d&#39;</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x1</span><span class="p">,</span> <span class="n">y1</span><span class="p">,</span> <span class="n">z1</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;C0&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Trajectory 1 (Initial: [1.0, 1.0, 1.0])&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x2</span><span class="p">,</span> <span class="n">y2</span><span class="p">,</span> <span class="n">z2</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;C1&#39;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;:&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Trajectory 2 (Initial: [1.01, 1.0, 1.0])&#39;</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;y&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_zlabel</span><span class="p">(</span><span class="s1">&#39;z&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;3D Trajectory of the Chen System with Different Initial Conditions&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="c1"># Plotting the results for both trajectories</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+<span class="n">gs</span> <span class="o">=</span> <span class="n">gridspec</span><span class="o">.</span><span class="n">GridSpec</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="n">figure</span><span class="o">=</span><span class="n">fig</span><span class="p">)</span>
+
+<span class="c1"># First subplot: x vs y for both trajectories</span>
+<span class="n">ax1</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="n">gs</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x1</span><span class="p">,</span> <span class="n">y1</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;C0&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Trajectory 1&#39;</span><span class="p">)</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x2</span><span class="p">,</span> <span class="n">y2</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;C1&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Trajectory 2&#39;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;:&#39;</span><span class="p">)</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;y&#39;</span><span class="p">)</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;x vs y&#39;</span><span class="p">)</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+
+<span class="c1"># Second subplot: x vs z for both trajectories</span>
+<span class="n">ax2</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="n">gs</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x1</span><span class="p">,</span> <span class="n">z1</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;C0&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Trajectory 1&#39;</span><span class="p">)</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x2</span><span class="p">,</span> <span class="n">z2</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;C1&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Trajectory 2&#39;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;:&#39;</span><span class="p">)</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;z&#39;</span><span class="p">)</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;x vs z&#39;</span><span class="p">)</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+
+<span class="c1"># Third subplot: y vs z for both trajectories</span>
+<span class="n">ax3</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="n">gs</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+<span class="n">ax3</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">y1</span><span class="p">,</span> <span class="n">z1</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;C0&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Trajectory 1&#39;</span><span class="p">)</span>
+<span class="n">ax3</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">y2</span><span class="p">,</span> <span class="n">z2</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;C1&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Trajectory 2&#39;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;:&#39;</span><span class="p">)</span>
+<span class="n">ax3</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;y&#39;</span><span class="p">)</span>
+<span class="n">ax3</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;z&#39;</span><span class="p">)</span>
+<span class="n">ax3</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;y vs z&#39;</span><span class="p">)</span>
+<span class="n">ax3</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">ax3</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0xffff509dc0e0&gt;
+<img alt="../../_images/52e4fce1caa6eecab8b0332079b9547594f3205fe0c3e3adc3b8357521ff17b4.png" src="../../_images/52e4fce1caa6eecab8b0332079b9547594f3205fe0c3e3adc3b8357521ff17b4.png" />
+<img alt="../../_images/79bbd6669db732426f8203b6a887dd0f5a1d0ec9bc423f5a96e2b461f17384fd.png" src="../../_images/79bbd6669db732426f8203b6a887dd0f5a1d0ec9bc423f5a96e2b461f17384fd.png" />
+</div>
+</div>
+<p><strong>Extra Credit</strong></p>
+<ol class="arabic simple" start="5">
+<li><p>(20 pts) For the Chen system integrate a bundle of trajectories (<span class="math notranslate nohighlight">\(N&gt;100\)</span>) with slightly different initial conditions. Make sure that your conditions are such that you cover both attractors. Plot the starting and ending points of the trajectories in 3D and in 3 projections (<span class="math notranslate nohighlight">\(x-y\)</span>, <span class="math notranslate nohighlight">\(x-z\)</span>, and <span class="math notranslate nohighlight">\(y-z\)</span>). How can you tell that the system is chaotic from this behavior? What features of the trajectories indicate chaotic behavior?</p></li>
+</ol>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">bundleOfTrajectories</span><span class="p">(</span><span class="n">initial_conditions</span><span class="p">,</span> <span class="n">t_span</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="p">),</span> <span class="n">t_eval_steps</span><span class="o">=</span><span class="mi">10000</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">5.0</span><span class="p">,</span> <span class="n">beta</span><span class="o">=-</span><span class="mf">10.0</span><span class="p">,</span> <span class="n">delta</span><span class="o">=-</span><span class="mf">0.38</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Simulate multiple trajectories of the Chen system with different initial conditions.</span>
+<span class="sd">    Return only the starting and ending points of each trajectory.</span>
+
+<span class="sd">    Parameters:</span>
+<span class="sd">    - initial_conditions: list of tuples (x0, y0, z0) for initial conditions</span>
+<span class="sd">    - t_span: time span for the simulation</span>
+<span class="sd">    - t_eval_steps: number of steps for time evaluation</span>
+<span class="sd">    - alpha, beta, delta: parameters for the Chen system</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">    - solutions: array of starting and ending points for each trajectory</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">t_eval</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="n">t_span</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">t_span</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">t_eval_steps</span><span class="p">)</span>
+    <span class="n">solutions</span> <span class="o">=</span> <span class="p">[]</span>
+
+    <span class="k">for</span> <span class="n">ic</span> <span class="ow">in</span> <span class="n">initial_conditions</span><span class="p">:</span>
+        <span class="c1"># Solve the Chen system for each initial condition</span>
+        <span class="n">solution</span> <span class="o">=</span> <span class="n">solve_ivp</span><span class="p">(</span><span class="n">chen</span><span class="p">,</span> <span class="n">t_span</span><span class="p">,</span> <span class="n">ic</span><span class="p">,</span> <span class="n">args</span><span class="o">=</span><span class="p">(</span><span class="n">alpha</span><span class="p">,</span> <span class="n">beta</span><span class="p">,</span> <span class="n">delta</span><span class="p">),</span> <span class="n">t_eval</span><span class="o">=</span><span class="n">t_eval</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s1">&#39;RK45&#39;</span><span class="p">)</span>
+        
+        <span class="c1"># Extract the final state of the trajectory</span>
+        <span class="k">if</span> <span class="n">solution</span><span class="o">.</span><span class="n">success</span><span class="p">:</span>
+            <span class="n">start_point</span> <span class="o">=</span> <span class="n">solution</span><span class="o">.</span><span class="n">y</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">]</span>
+            <span class="n">end_point</span> <span class="o">=</span> <span class="n">solution</span><span class="o">.</span><span class="n">y</span><span class="p">[:,</span> <span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+            <span class="n">solutions</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">start_point</span><span class="p">,</span> <span class="n">end_point</span><span class="p">))</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Integration failed for initial condition </span><span class="si">{</span><span class="n">ic</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
+            <span class="n">solutions</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">ic</span><span class="p">,</span> <span class="kc">None</span><span class="p">))</span>
+            
+    <span class="k">return</span> <span class="n">solutions</span>
 </pre></div>
 </div>
-<img alt="../../_images/ccc570a00dc8cc8de8649a9120360e8745c9b4a8e4cb916da1d084ddd27d21f9.png" src="../../_images/ccc570a00dc8cc8de8649a9120360e8745c9b4a8e4cb916da1d084ddd27d21f9.png" />
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">T</span> <span class="o">=</span> <span class="mi">1</span>
-<span class="n">n_terms</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">100</span><span class="p">]</span>
-<span class="n">t_array</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="o">*</span><span class="n">T</span><span class="p">,</span> <span class="n">T</span><span class="o">/</span><span class="mi">100</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">matplotlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">gridspec</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">scipy.integrate</span><span class="w"> </span><span class="kn">import</span> <span class="n">solve_ivp</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">mpl_toolkits.mplot3d</span><span class="w"> </span><span class="kn">import</span> <span class="n">Axes3D</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;seaborn-v0_8-colorblind&#39;</span><span class="p">)</span>
 
-<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">8</span><span class="p">))</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">t_array</span><span class="p">,</span> <span class="n">wave</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Original Wave&#39;</span><span class="p">)</span>
+<span class="n">alpha</span> <span class="o">=</span> <span class="mf">5.0</span>
+<span class="n">beta</span> <span class="o">=</span> <span class="o">-</span><span class="mf">10.0</span>
+<span class="n">delta</span> <span class="o">=</span> <span class="o">-</span><span class="mf">0.38</span>
 
-<span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">n_terms</span><span class="p">:</span>
-    <span class="n">f</span> <span class="o">=</span> <span class="n">fourier_series</span><span class="p">(</span><span class="n">t_array</span><span class="p">,</span> <span class="n">T</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">t_array</span><span class="p">,</span> <span class="n">f</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;n = &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">n</span><span class="p">))</span>
+<span class="c1"># Define a set of initial conditions for the trajectories randomly</span>
+<span class="n">N</span> <span class="o">=</span> <span class="mi">1000</span>  <span class="c1"># Number of trajectories</span>
+<span class="n">initial_conditions</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="p">):</span>
+    <span class="c1"># Generate random initial conditions within a certain range</span>
+    <span class="n">x0</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="o">-</span><span class="mf">1.01</span><span class="p">,</span> <span class="mf">1.01</span><span class="p">)</span>
+    <span class="n">y0</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="o">-</span><span class="mf">1.01</span><span class="p">,</span> <span class="mf">1.01</span><span class="p">)</span>
+    <span class="n">z0</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="o">-</span><span class="mf">1.01</span><span class="p">,</span> <span class="mf">1.01</span><span class="p">)</span>
+    <span class="n">initial_conditions</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">x0</span><span class="p">,</span> <span class="n">y0</span><span class="p">,</span> <span class="n">z0</span><span class="p">))</span>
+    
+<span class="c1"># Simulate the trajectories and get the starting and ending points</span>
+<span class="n">trajectories</span> <span class="o">=</span> <span class="n">bundleOfTrajectories</span><span class="p">(</span><span class="n">initial_conditions</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="n">alpha</span><span class="p">,</span> <span class="n">beta</span><span class="o">=</span><span class="n">beta</span><span class="p">,</span> <span class="n">delta</span><span class="o">=</span><span class="n">delta</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Plotting the starting and ending points of the trajectories in 3D space</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">111</span><span class="p">,</span> <span class="n">projection</span><span class="o">=</span><span class="s1">&#39;3d&#39;</span><span class="p">)</span>
 
-<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;t&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;f(t)&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Fourier Series Approximation of Triangle Wave (zoomed in)&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">xlim</span><span class="p">(</span><span class="mf">0.95</span><span class="p">,</span><span class="mf">1.05</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">(</span><span class="mf">0.95</span><span class="p">,</span><span class="mf">1.01</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="c1"># Plot the starting points</span>
+<span class="k">for</span> <span class="n">start</span><span class="p">,</span> <span class="n">end</span> <span class="ow">in</span> <span class="n">trajectories</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">end</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">start</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">start</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">start</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;C3&#39;</span><span class="p">)</span>  <span class="c1"># Starting points</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">end</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">end</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">end</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;C4&#39;</span><span class="p">)</span>  <span class="c1"># Ending points</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="c1"># If the trajectory failed to integrate, just plot the starting point</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">start</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">start</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">start</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;C3&#39;</span><span class="p">)</span>
+
+<span class="c1"># Plot the trajectory for the first initial condition</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x1</span><span class="p">,</span> <span class="n">y1</span><span class="p">,</span> <span class="n">z1</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;C0&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Trajectory 1 (Initial: [1.0, 1.0, 1.0])&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.3</span><span class="p">)</span>
+<span class="c1"># Plot the trajectory for the second initial condition</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x2</span><span class="p">,</span> <span class="n">y2</span><span class="p">,</span> <span class="n">z2</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;C1&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Trajectory 2 (Initial: [1.01, 1.0, 1.0])&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.3</span><span class="p">)</span>
+
+<span class="c1"># Set labels and title</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;y&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_zlabel</span><span class="p">(</span><span class="s1">&#39;z&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Starting and Ending Points of Multiple Chen System Trajectories&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="c1"># Plotting the starting and ending points of the trajectories in 2D projections</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+<span class="n">gs</span> <span class="o">=</span> <span class="n">gridspec</span><span class="o">.</span><span class="n">GridSpec</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="n">figure</span><span class="o">=</span><span class="n">fig</span><span class="p">)</span>
+
+<span class="c1"># First subplot: x vs y</span>
+<span class="n">ax1</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="n">gs</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="k">for</span> <span class="n">start</span><span class="p">,</span> <span class="n">end</span> <span class="ow">in</span> <span class="n">trajectories</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">end</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">ax1</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">start</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">start</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;C3&#39;</span><span class="p">)</span>  <span class="c1"># Starting points</span>
+        <span class="n">ax1</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">end</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">end</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;C4&#39;</span><span class="p">)</span>  <span class="c1"># Ending points</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">ax1</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">start</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">start</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;C3&#39;</span><span class="p">)</span>
+
+<span class="n">ax1</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x1</span><span class="p">,</span> <span class="n">y1</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;C0&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Trajectory 1 (Initial: [1.0, 1.0, 1.0])&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.3</span><span class="p">)</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x2</span><span class="p">,</span> <span class="n">y2</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;C1&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Trajectory 2 (Initial: [1.01, 1.0, 1.0])&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.3</span><span class="p">)</span>
+
+<span class="n">ax1</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;y&#39;</span><span class="p">)</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;x vs y&#39;</span><span class="p">)</span>
+
+<span class="c1"># Second subplot: x vs z</span>
+<span class="n">ax2</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="n">gs</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+<span class="k">for</span> <span class="n">start</span><span class="p">,</span> <span class="n">end</span> <span class="ow">in</span> <span class="n">trajectories</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">end</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">ax2</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">start</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">start</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;C3&#39;</span><span class="p">)</span>  <span class="c1"># Starting points</span>
+        <span class="n">ax2</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">end</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">end</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;C4&#39;</span><span class="p">)</span>  <span class="c1"># Ending points</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">ax2</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">start</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">start</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;C3&#39;</span><span class="p">)</span>
+        
+<span class="n">ax2</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x1</span><span class="p">,</span> <span class="n">z1</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;C0&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Trajectory 1 (Initial: [1.0, 1.0, 1.0])&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.3</span><span class="p">)</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x2</span><span class="p">,</span> <span class="n">z2</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;C1&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Trajectory 2 (Initial: [1.01, 1.0, 1.0])&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.3</span><span class="p">)</span>
+
+<span class="n">ax2</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;z&#39;</span><span class="p">)</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;x vs z&#39;</span><span class="p">)</span>
+
+<span class="c1"># Third subplot: y vs z</span>
+<span class="n">ax3</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="n">gs</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+<span class="k">for</span> <span class="n">start</span><span class="p">,</span> <span class="n">end</span> <span class="ow">in</span> <span class="n">trajectories</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">end</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">ax3</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">start</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">start</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;C3&#39;</span><span class="p">)</span>  <span class="c1"># Starting points</span>
+        <span class="n">ax3</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">end</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">end</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;C4&#39;</span><span class="p">)</span>  <span class="c1"># Ending points</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">ax3</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">start</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">start</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;C3&#39;</span><span class="p">)</span>
+        
+<span class="n">ax3</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">y1</span><span class="p">,</span> <span class="n">z1</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;C0&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Trajectory 1 (Initial: [1.0, 1.0, 1.0])&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.3</span><span class="p">)</span>
+<span class="n">ax3</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">y2</span><span class="p">,</span> <span class="n">z2</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;C1&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Trajectory 2 (Initial: [1.01, 1.0, 1.0])&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.3</span><span class="p">)</span>
+
+<span class="n">ax3</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;y&#39;</span><span class="p">)</span>
+<span class="n">ax3</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;z&#39;</span><span class="p">)</span>
+<span class="n">ax3</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">ax3</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;y vs z&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0xffff509410d0&gt;
-</pre></div>
-</div>
-<img alt="../../_images/e8300dea27a634ed052e8082461a6b1941c7fb04e8b359be0fe1ef4c1e7e46b7.png" src="../../_images/e8300dea27a634ed052e8082461a6b1941c7fb04e8b359be0fe1ef4c1e7e46b7.png" />
+<img alt="../../_images/7922114ace273b6c32a244bde8b0c26c1c6b7b2fb32b69e517be3b6caab1d8c4.png" src="../../_images/7922114ace273b6c32a244bde8b0c26c1c6b7b2fb32b69e517be3b6caab1d8c4.png" />
+<img alt="../../_images/e459f89f9ac3162dd19c93c443cfc09c1f5e84f747ad0c7a7abae301adc4d7fb.png" src="../../_images/e459f89f9ac3162dd19c93c443cfc09c1f5e84f747ad0c7a7abae301adc4d7fb.png" />
 </div>
 </div>
+</section>
+<section id="part-3-project-check-in-2-20pt">
+<h2>Part 3, Project Check-in 2 (20pt)<a class="headerlink" href="#part-3-project-check-in-2-20pt" title="Link to this heading">#</a></h2>
+<p>This is the second of three check-ins for your final project. Last week, you submitted your first “annual” report. This week, you will submit another report on your progress. This is a chance for you to reflect on your project and to make sure you are on track for the final project.</p>
+<p>A second report typically has more details than the first because you have made more progress on your project. You should reflect on the work you have done so far, any challenges you have faced, and any changes you need to make to your project plan. This is also a chance for you to ask for feedback. Notice that the questions remain roughly the same as the first report (this is true in science also).</p>
+<ul class="simple">
+<li><p>3a (5 pts). Review your project status. What have you been able to accomplish so far? What were you unable to do in the time you had? Be honest in your evaluation of your progress. You will not be penalized for not reaching your milestones. What does that mean you need to prioritize in the coming weeks? (at least 250 words)</p></li>
+<li><p>3b (5 pts). What problems have you encountered in doing you research? What questions came up and how did you resolve them? Are there any unresolved questions? (at least 250 words)</p></li>
+<li><p>3c (5 pts). Provide an <strong>updated</strong> artifact from your project. This could be a plot, a code snippet, a data set, or a figure. Explain what this artifact is and how it fits into your project. (at least 100-200 words)</p></li>
+<li><p>3d (5 pts). Update your project timeline and milestones. How will you adjust your timeline to account for the work you have done and the work you have left to do? (at least 100-200 words)</p></li>
+</ul>
 </section>
 </section>
 
@@ -1381,7 +1695,8 @@ doconce format html Firstmidterm2022.do.txt --no_mako -->
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#extra-credit-up-to-30-points">Extra credit (up to 30 points)</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#part-2-signal-analysis-40pt">Part 2, Signal Analysis (40pt)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#part-2-strange-attractor-40pt">Part 2, Strange Attractor (40pt)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#part-3-project-check-in-2-20pt">Part 3, Project Check-in 2 (20pt)</a></li>
 </ul>
   </nav></div>
 

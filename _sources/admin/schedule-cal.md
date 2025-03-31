@@ -99,7 +99,7 @@ All assignments are turned in using Gradescope as a single PDF.
 
 | Week | Day    | Topic                                           | Readings to prepare      | Important events                                                |
 | ---- | ------ | ----------------------------------------------- | ------------------------ | --------------------------------------------------------------- |
-| CW14 | 31 Mar | Calculus of Variations; Euler-Lagrange Equation | JRT 6.1-6.3; MLB 9.1-9.4 |  [Midterm Project 2 Assigned (Due 18 Apr)](../midterms/midterm2.ipynb)  |
+| CW14 | 31 Mar | Calculus of Variations; Euler-Lagrange Equation | JRT 6.1-6.3; MLB 9.1-9.4 |  [Midterm Project 2 Assigned (Due 11 Apr)](../midterms/midterm2.ipynb)  |
 |      | 02 Apr |  Euler-Lagrange Equation Examples                                               |                          |                                                                 |
 |      | 04 Apr |    Problem session for homework                                             |                          |     |
 
