@@ -82,7 +82,7 @@ parts:
       - file: homeworks/hw5.ipynb
       - file: homeworks/hw6.ipynb
       - file: homeworks/hw7.ipynb
-      # - file: midterms/midterm2.ipynb
+      - file: midterms/midterm2.ipynb
       # - file: homeworks/hw8.ipynb
       # - file: homeworks/hw9.ipynb
       # - file: midterms/final-exam.ipynb
@@ -97,7 +97,7 @@ parts:
       - file: solutions/solutionmidterm1.ipynb
       - file: solutions/solutionhw5.ipynb
       - file: solutions/solutionhw6.ipynb
-  #     - file: solutions/solutionhw7.ipynb
+      - file: solutions/solutionhw7.ipynb
   #     - file: solutions/solutionmidterm2.ipynb
   #     - file: solutions/solutionhw8.ipynb
   - caption: Resources
