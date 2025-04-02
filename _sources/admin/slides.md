@@ -2,6 +2,18 @@
 
 Slides for PHY 321 appear in reverse chronological order, with the most recent slides at the top. The formats are PDF, HTML, and Markdown. The HTML slides are hosted on my website, and the Markdown slides are the source code for the HTML slides, built with [Marp](https://marp.app/).
 
+## Day 31 - Euler-Lagrange Equation - 02 Apr 2025
+
+### Download PDF
+
+[![Day 31](../slides/day-31-euler-lagrange-equation.png)](../slides/day-31-euler-lagrange-equation.pdf)
+
+### HTML Versions
+| Format | Link |
+|--|--|
+| HTML (Inline) | [day-31-euler-lagrange-equation.md](../slides/day-31-euler-lagrange-equation.md) |
+| HTML (Slides) | [day-31-euler-lagrange-equation.html](../slides/day-31-euler-lagrange-equation.html) |
+
 ## Day 30 - Calculus of Variations - 31 Mar 2025
 
 ### Download PDF

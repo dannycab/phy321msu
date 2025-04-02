@@ -93,14 +93,14 @@ All assignments are turned in using Gradescope as a single PDF.
 | ---- | ------ | -------------- | -------------------- | --------------------------------------------------------------- |
 | CW13 | 24 Mar ([Slides](../slides/day-27-introduction-to-chaos.pdf)) | Introduction to Chaos | [Chaotic Dynamics](../lecture-notes/week10/10_start.ipynb) |      |
 |      | 26 Mar ([Slides](../slides/day-28-hallmarks-of-chaos.pdf)) |  Hallmarks of Classical Chaos Series              |                      |                                                                 |
-|      | 28 Mar |   Problem session for homework             |                      | **Homework 7 Due** |
+|      | 28 Mar ([Slides](../slides/day-29-homework-session.pdf)) |   Problem session for homework             |                      | **Homework 7 Due** |
 
 ## Class Week 12
 
 | Week | Day    | Topic                                           | Readings to prepare      | Important events                                                |
 | ---- | ------ | ----------------------------------------------- | ------------------------ | --------------------------------------------------------------- |
-| CW14 | 31 Mar | Calculus of Variations; Euler-Lagrange Equation | JRT 6.1-6.3; MLB 9.1-9.4 |  [Midterm Project 2 Assigned (Due 11 Apr)](../midterms/midterm2.ipynb)  |
-|      | 02 Apr |  Euler-Lagrange Equation Examples                                               |                          |                                                                 |
+| CW14 | 31 Mar ([Slides](../slides/day-30-calculus-of-variations.pdf)) | Calculus of Variations; Euler-Lagrange Equation | JRT 6.1-6.3; MLB 9.1-9.4 |  [Midterm Project 2 Assigned (Due 11 Apr)](../midterms/midterm2.ipynb)  |
+|      | 02 Apr ([Slides](../slides/day-31-euler-lagrange-equation.pdf)) |  Euler-Lagrange Equation Examples                                               |                          |                                                                 |
 |      | 04 Apr |    Problem session for homework                                             |                          |     |
 
 ## Class Week 13
