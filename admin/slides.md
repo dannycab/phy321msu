@@ -2,6 +2,18 @@
 
 Slides for PHY 321 appear in reverse chronological order, with the most recent slides at the top. The formats are PDF, HTML, and Markdown. The HTML slides are hosted on my website, and the Markdown slides are the source code for the HTML slides, built with [Marp](https://marp.app/).
 
+## Day 32 - Homework Session - 04 Apr 2025
+
+### Download PDF
+
+[![Day 32](../slides/day-32-homework-session.png)](../slides/day-32-homework-session.pdf)
+
+### HTML Versions
+| Format | Link |
+|--|--|
+| HTML (Inline) | [day-32-homework-session.md](../slides/day-32-homework-session.md) |
+| HTML (Slides) | [day-32-homework-session.html](../slides/day-32-homework-session.html) |
+
 ## Day 31 - Euler-Lagrange Equation - 02 Apr 2025
 
 ### Download PDF
