@@ -101,15 +101,15 @@ All assignments are turned in using Gradescope as a single PDF.
 | ---- | ------ | ----------------------------------------------- | ------------------------ | --------------------------------------------------------------- |
 | CW14 | 31 Mar ([Slides](../slides/day-30-calculus-of-variations.pdf)) | Calculus of Variations; Euler-Lagrange Equation | JRT 6.1-6.3; MLB 9.1-9.4 |  [Midterm Project 2 Assigned (Due 11 Apr)](../midterms/midterm2.ipynb)  |
 |      | 02 Apr ([Slides](../slides/day-31-euler-lagrange-equation.pdf)) |  Euler-Lagrange Equation Examples                                               |                          |                                                                 |
-|      | 04 Apr |    Problem session for homework                                             |                          |     |
+|      | 04 Apr ([Slides](../slides/day-32-homework-session.pdf)) |    Problem session for homework                                             |                          |     |
 
 ## Class Week 13
 
 | Week | Day    | Topic                                 | Readings to prepare       | Important events                                                     |
 | ---- | ------ | ------------------------------------- | ------------------------- | -------------------------------------------------------------------- |
-| CW15 | 07 Apr | Lagrange's Equations; modeling motion | JRT 7.1-7.2, 7.5; MLB 9.5 | [Homework 8 Assigned (Due 18 Apr)](../homeworks/hw8.ipynb) |
-|      | 09 Apr |    Lagrange's Equations; modeling motion                                   |                           |                                                                      |
-|      | 11 Apr |    Problem session for homework                                   |                           |     **Midterm Project 2 Due**    |
+| CW15 | 07 Apr | Introduction to Lagrangian Dynamics | JRT 7.1-7.2, 7.5; MLB 9.5 | [Homework 8 Assigned (Due 18 Apr)](../homeworks/hw8.ipynb) |
+|      | 09 Apr |    Midterm 2 Help Session                                   |                           |                                                                      |
+|      | 11 Apr |    **NO CLASS (DC OUT)**                                  |                           |     **Midterm Project 2 Due**    |
 
 ## Class Week 14
 
