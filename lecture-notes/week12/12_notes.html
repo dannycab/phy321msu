@@ -55,7 +55,7 @@
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script src="../../_static/design-tabs.js?v=36754332"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
@@ -475,15 +475,20 @@
 &amp;= \ddot{r} \hat{r} + \dot{r} \dot{\phi} \hat{\phi} + \dot{r} \dot{\phi} \hat{\phi} + r \ddot{\phi} \hat{\phi} - r \dot{\phi}^2 \hat{r}.\\
 &amp;= \left(\ddot{r} - r \dot{\phi}^2\right) \hat{r} + \left(2 \dot{r} \dot{\phi} + r \ddot{\phi}\right) \hat{\phi}.
 \end{align*}\end{split}\]</div>
-<p>Using Newton’s second law, we know that the acceleration <span class="math notranslate nohighlight">\(\vec{a}\)</span> is equal to the net force <span class="math notranslate nohighlight">\(\vec{F}\)</span> divided by the mass <span class="math notranslate nohighlight">\(m\)</span> of the particle:
-$<span class="math notranslate nohighlight">\(\vec{a} = \frac{\vec{F}}{m}.\)</span>$</p>
-<p>Equating the two expressions for <span class="math notranslate nohighlight">\(\vec{a}\)</span>, we have:
-$<span class="math notranslate nohighlight">\(\vec{F}_{net} = m\left[\left(\ddot{r} - r \dot{\phi}^2\right) \hat{r} + \left(2 \dot{r} \dot{\phi} + r \ddot{\phi}\right) \hat{\phi}\right]\)</span><span class="math notranslate nohighlight">\(
-\)</span><span class="math notranslate nohighlight">\(\vec{F}_{net} = \vec{F}_{r} + \vec{F}_{\phi}\)</span>$</p>
-<p>Where we can identify the radial and angular components of the net force as:
-$<span class="math notranslate nohighlight">\(\vec{F}_{r} = m\left(\ddot{r} - r \dot{\phi}^2\right) \hat{r}\)</span><span class="math notranslate nohighlight">\(
-\)</span><span class="math notranslate nohighlight">\(\vec{F}_{\phi} = m\left(2 \dot{r} \dot{\phi} + r \ddot{\phi}\right) \hat{\phi}\)</span>$
-This gives us the net force in terms of the radial and angular components in polar coordinates.</p>
+<p>Using Newton’s second law, we know that the acceleration <span class="math notranslate nohighlight">\(\vec{a}\)</span> is equal to the net force <span class="math notranslate nohighlight">\(\vec{F}\)</span> divided by the mass <span class="math notranslate nohighlight">\(m\)</span> of the particle:</p>
+<div class="math notranslate nohighlight">
+\[\vec{a} = \frac{\vec{F}}{m}.\]</div>
+<p>Equating the two expressions for <span class="math notranslate nohighlight">\(\vec{a}\)</span>, we have:</p>
+<div class="math notranslate nohighlight">
+\[\vec{F}_{net} = m\left[\left(\ddot{r} - r \dot{\phi}^2\right) \hat{r} + \left(2 \dot{r} \dot{\phi} + r \ddot{\phi}\right) \hat{\phi}\right]\]</div>
+<div class="math notranslate nohighlight">
+\[\vec{F}_{net} = \vec{F}_{r} + \vec{F}_{\phi}\]</div>
+<p>Where we can identify the radial and angular components of the net force as:</p>
+<div class="math notranslate nohighlight">
+\[\vec{F}_{r} = m\left(\ddot{r} - r \dot{\phi}^2\right) \hat{r}\]</div>
+<div class="math notranslate nohighlight">
+\[\vec{F}_{\phi} = m\left(2 \dot{r} \dot{\phi} + r \ddot{\phi}\right) \hat{\phi}\]</div>
+<p>This gives us the net force in terms of the radial and angular components in polar coordinates.</p>
 <section id="skateboard-example">
 <h3>Skateboard Example<a class="headerlink" href="#skateboard-example" title="Link to this heading">#</a></h3>
 <p>Let’s see the utility of using polar coordinates by applying it to a skateboarder moving on a circular track. In this case, the skateboarder is constrained to move along a circular path of radius <span class="math notranslate nohighlight">\(r\)</span>. Consider a skateboarder moving on that circular track as shown below:</p>
@@ -494,8 +499,9 @@ This gives us the net force in terms of the radial and angular components in pol
 <p>The sum of all forces in the radial direction are given by:</p>
 <div class="math notranslate nohighlight">
 \[\sum F_r = ma_r = -F_{ramp} + mg \cos(\phi) = m\left(\ddot{r} - r \dot{\phi}^2\right)\]</div>
-<p>We note that <span class="math notranslate nohighlight">\(r=R\)</span>, that is the radius is fixed, so $<span class="math notranslate nohighlight">\(\ddot{r} = 0\)</span><span class="math notranslate nohighlight">\(. Therefore, we can simplify the equation to:
-\)</span><span class="math notranslate nohighlight">\(-F_{ramp} + mg \cos(\phi) = -mR \dot{\phi}^2.\)</span>$</p>
+<p>We note that <span class="math notranslate nohighlight">\(r=R\)</span>, that is the radius is fixed, so</p>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}\ddot{r} = 0$$. \\Therefore, we can simplify the equation to:\\$$-F_{ramp} + mg \cos(\phi) = -mR \dot{\phi}^2.\end{aligned}\end{align} \]</div>
 <p>In the tangential direction, we have:</p>
 <div class="math notranslate nohighlight">
 \[\sum F_{\phi} = ma_{\phi} = -mg \sin(\phi) = m\left(2 \dot{r} \dot{\phi} + r \ddot{\phi}\right)\]</div>
@@ -507,8 +513,9 @@ This gives us the net force in terms of the radial and angular components in pol
 \[\ddot{\phi} = -\frac{g}{R} \sin(\phi).\]</div>
 <section id="the-normal-force-as-a-function-of-time">
 <h4>The Normal Force as a Function of Time<a class="headerlink" href="#the-normal-force-as-a-function-of-time" title="Link to this heading">#</a></h4>
-<p>We can solve this equation using numerical methods to find <span class="math notranslate nohighlight">\(\phi(t)\)</span>, the angular position of the skateboarder as a function of time. This can be used to then find the normal force as a function of time by substituting <span class="math notranslate nohighlight">\(\phi(t)\)</span> back into the radial equation we derived above:
-$<span class="math notranslate nohighlight">\(F_{ramp} = mg \cos(\phi(t)) + mR \dot{\phi}^2(t).\)</span>$</p>
+<p>We can solve this equation using numerical methods to find <span class="math notranslate nohighlight">\(\phi(t)\)</span>, the angular position of the skateboarder as a function of time. This can be used to then find the normal force as a function of time by substituting <span class="math notranslate nohighlight">\(\phi(t)\)</span> back into the radial equation we derived above:</p>
+<div class="math notranslate nohighlight">
+\[F_{ramp} = mg \cos(\phi(t)) + mR \dot{\phi}^2(t).\]</div>
 <p>Note that this force is a <a class="reference external" href="https://en.wikipedia.org/wiki/Constraint_force">force of constraint</a> because it is not an external force acting on the skateboarder but rather a force that arises from the constraint of the circular track. These forces are important in mechanics and can be analyzed using Lagrangian mechanics as well. They are not typically conservative forces and do not have a potential energy associated with them.</p>
 </section>
 <section id="simple-harmonic-motion">
@@ -516,9 +523,10 @@ $<span class="math notranslate nohighlight">\(F_{ramp} = mg \cos(\phi(t)) + mR \
 <p>If we consider small angles, i.e., <span class="math notranslate nohighlight">\(\sin(\phi) \approx \phi\)</span>, then the equation of motion for <span class="math notranslate nohighlight">\(\ddot{\phi}\)</span> becomes:</p>
 <div class="math notranslate nohighlight">
 \[\ddot{\phi} \approx -\frac{g}{R} \phi.\]</div>
-<p>This is the equation for simple harmonic motion (SHM) with angular frequency <span class="math notranslate nohighlight">\(\omega = \sqrt{\frac{g}{R}}\)</span>. Thus, for small angles, the motion of the skateboarder on the circular track will exhibit SHM. The solution to this equation will be:
-$<span class="math notranslate nohighlight">\(\phi(t) = A \cos(\omega t) + B \sin(\omega t),\)</span><span class="math notranslate nohighlight">\(
-where \)</span>A<span class="math notranslate nohighlight">\( and \)</span>B$ are constants determined by the initial conditions of the problem.</p>
+<p>on (SHM) with angular frequency <span class="math notranslate nohighlight">\(\omega = \sqrt{\frac{g}{R}}\)</span>. Thus, for small angles, the motion of the skateboarder on the circular track will exhibit SHM. The solution to this equation will be:</p>
+<div class="math notranslate nohighlight">
+\[\phi(t) = A \cos(\omega t) + B \sin(\omega t),\]</div>
+<p>where <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span> are constants determined by the initial conditions of the problem.</p>
 </section>
 </section>
 <section id="newton-s-laws-and-equations-of-motion">
@@ -658,11 +666,15 @@ where \)</span>A<span class="math notranslate nohighlight">\( and \)</span>B$ ar
 <div class="math notranslate nohighlight">
 \[\frac{d}{dt} \left( m \dot{x} \right) = 0.\]</div>
 <p>This suggests that the momentum in the <span class="math notranslate nohighlight">\(x\)</span>-direction (<span class="math notranslate nohighlight">\(p_x= m\dot{x}\)</span>) is conserved, which cannot be correct for a pendulum.</p>
-<p>For <span class="math notranslate nohighlight">\(y\)</span>, we have:
-$<span class="math notranslate nohighlight">\(\frac{d}{dt} \left( \frac{\partial \mathcal{L}}{\partial \dot{y}} \right) - \frac{\partial \mathcal{L}}{\partial y} = 0\)</span><span class="math notranslate nohighlight">\(
-\)</span><span class="math notranslate nohighlight">\(\frac{d}{dt} \left( m \dot{y} \right) - (-mg) = 0\)</span><span class="math notranslate nohighlight">\(
-\)</span><span class="math notranslate nohighlight">\(m\ddot{y} + mg = 0\)</span><span class="math notranslate nohighlight">\(
-\)</span><span class="math notranslate nohighlight">\(\ddot{y} = -g.\)</span>$</p>
+<p>For <span class="math notranslate nohighlight">\(y\)</span>, we have:</p>
+<div class="math notranslate nohighlight">
+\[\frac{d}{dt} \left( \frac{\partial \mathcal{L}}{\partial \dot{y}} \right) - \frac{\partial \mathcal{L}}{\partial y} = 0\]</div>
+<div class="math notranslate nohighlight">
+\[\frac{d}{dt} \left( m \dot{y} \right) - (-mg) = 0\]</div>
+<div class="math notranslate nohighlight">
+\[m\ddot{y} + mg = 0\]</div>
+<div class="math notranslate nohighlight">
+\[\ddot{y} = -g.\]</div>
 <p>There’s no tension force? That can’t be right.</p>
 <p><strong>We failed to include the constraint of the pendulum!</strong> The pendulum is constrained to move along a circular arc of radius <span class="math notranslate nohighlight">\(l\)</span>. This means that the coordinates <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span> are not independent, and we cannot just use <span class="math notranslate nohighlight">\(x,y\)</span> as coordinates. This is a classic example of why we need to use generalized coordinates in Lagrangian mechanics.</p>
 <p>The constraint for the pendulum is given by:</p>
