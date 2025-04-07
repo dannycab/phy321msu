@@ -40,6 +40,8 @@ parts:
       - file: lecture-notes/week10/10_notes
       - file: lecture-notes/week11/11_start
       - file: lecture-notes/week11/11_notes
+      - file: lecture-notes/week12/12_start
+      - file: lecture-notes/week12/12_notes
   #- caption: Introductory Material
     #numbered: false
     #chapters:
