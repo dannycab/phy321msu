@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Homework 8 (Due 12 Apr) &#8212; Classical Mechanics</title>
+    <title>Homework 8 &#8212; Classical Mechanics</title>
   
   
   
@@ -222,6 +222,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../homeworks/hw6.html">Homework 6 (Due 21 Mar)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../homeworks/hw7.html">Homework 7 (Due 28 Mar)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../midterms/midterm2.html">Midterm 2 (Due 11 Apr)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../homeworks/hw8.html">Homework 8 (Due 18 Apr)</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Solutions</span></p>
 <ul class="nav bd-sidenav">
@@ -244,6 +245,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../resources/integrators.html">Numerical Integrators</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../resources/phase_diagrams.html">Plotting Phase Diagrams</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../resources/chaotic_dynamics.html">Modeling Chaotic Systems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../resources/computational-essay-rubric.html">Rubric for Computational Essay Final Project</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Honors Projects</span></p>
 <ul class="nav bd-sidenav">
@@ -385,7 +387,7 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Homework 8 (Due 12 Apr)</h1>
+    <h1>Homework 8</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -396,12 +398,11 @@
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-1-10pt-paths-along-a-curved-surface">Exercise 1 (10pt) Paths along a curved surface</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-2-15pt-snell-s-law">Exercise 2 (15pt) Snell’s Law</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-3-15pt-lagrangian-examples">Exercise 3 (15pt) Lagrangian Examples</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-4-25pt-changing-coordinates">Exercise 4 (25pt) Changing Coordinates</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-5-35-pt-motion-inside-a-paraboloid">Exercise 5 (35 pt) Motion inside a paraboloid</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-2-15pt-snell-s-law">Exercise 2 (15pt) Snell’s Law</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-3-15pt-lagrangian-examples">Exercise 3 (15pt) Lagrangian Examples</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-4-25pt-changing-coordinates">Exercise 4 (25pt) Changing Coordinates</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-5-35-pt-motion-inside-a-paraboloid">Exercise 5 (35 pt) Motion inside a paraboloid</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-6-20pt-project-check-in-3">Exercise 6 (20pt), Project Check-in 3</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#extra-credit-integrating-classwork-with-research">Extra Credit - Integrating Classwork With Research</a></li>
 </ul>
             </nav>
@@ -416,9 +417,9 @@
                   
   <!-- HTML file automatically generated from DocOnce source (https://github.com/doconce/doconce/)
 doconce format html hw5.do.txt --no_mako -->
-<!-- dom:TITLE: PHY321: Classical Mechanics 1 --><section id="homework-8-due-12-apr">
-<h1>Homework 8 (Due 12 Apr)<a class="headerlink" href="#homework-8-due-12-apr" title="Link to this heading">#</a></h1>
-<p><strong>Solution Homework 8, Spring 2024</strong></p>
+<!-- dom:TITLE: PHY321: Classical Mechanics 1 --><section id="homework-8">
+<h1>Homework 8<a class="headerlink" href="#homework-8" title="Link to this heading">#</a></h1>
+<p><strong>Spring 2025</strong></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
@@ -503,7 +504,7 @@ doconce format html hw5.do.txt --no_mako -->
 <ol class="arabic simple">
 <li><p>(5 pt) Sketch the problem and indicate the relevant angles and distances in your figure. Recall that the angle of incidence is <span class="math notranslate nohighlight">\(\theta_1\)</span> and the angle of refraction is <span class="math notranslate nohighlight">\(\theta_2\)</span>. It is ok to use a 2D sketch.</p></li>
 </ol>
-<p><img alt="Snell's Law" src="solutions/images/assignments/sol_images/hw8_2.1.png" /></p>
+<p><img alt="Snell's Law" src="../../_images/hw8_2.1.png" /></p>
 <ol class="arabic simple" start="2">
 <li><p>(5 pt) Set up the “integral” for the time it takes for light to travel between two points in different media. Use the fact that the speed of light in a media is given by <span class="math notranslate nohighlight">\(v = c/n\)</span>. Your answer needs to include the angles <span class="math notranslate nohighlight">\(\theta_1\)</span> and <span class="math notranslate nohighlight">\(\theta_2\)</span> and the refractive indices <span class="math notranslate nohighlight">\(n_1\)</span> and <span class="math notranslate nohighlight">\(n_2\)</span>.</p></li>
 </ol>
@@ -545,8 +546,9 @@ doconce format html hw5.do.txt --no_mako -->
 <div class="math notranslate nohighlight">
 \[n_1 \sin\theta_1 = n_2 \sin\theta_2.\]</div>
 </div>
+</section>
 <section id="exercise-3-15pt-lagrangian-examples">
-<h3>Exercise 3 (15pt) Lagrangian Examples<a class="headerlink" href="#exercise-3-15pt-lagrangian-examples" title="Link to this heading">#</a></h3>
+<h2>Exercise 3 (15pt) Lagrangian Examples<a class="headerlink" href="#exercise-3-15pt-lagrangian-examples" title="Link to this heading">#</a></h2>
 <p>Constructing the Lagrangian for a system can be a bit tricky. In this exercise you will be asked to construct the Lagrangian for a few systems and quickly find equations of motion to illustrate the process.</p>
 <ol class="arabic simple">
 <li><p>(2 pt) Construct the Lagrangian in 3D for a projectile subject to no air resistance in a uniform gravitational field. The coordinates are <span class="math notranslate nohighlight">\((x, y, z)\)</span> in the Cartesian coordinate system. Find the 3 equations of motion.</p></li>
@@ -647,7 +649,7 @@ doconce format html hw5.do.txt --no_mako -->
 </div>
 </section>
 <section id="exercise-4-25pt-changing-coordinates">
-<h3>Exercise 4 (25pt) Changing Coordinates<a class="headerlink" href="#exercise-4-25pt-changing-coordinates" title="Link to this heading">#</a></h3>
+<h2>Exercise 4 (25pt) Changing Coordinates<a class="headerlink" href="#exercise-4-25pt-changing-coordinates" title="Link to this heading">#</a></h2>
 <p>Consider two particles with masses <span class="math notranslate nohighlight">\(m_1=m_2=m\)</span> connected by a spring with spring constant <span class="math notranslate nohighlight">\(k\)</span>. They sit on a frictionless surface but are constrained to the <span class="math notranslate nohighlight">\(x\)</span>-axis. The location of the first particle is <span class="math notranslate nohighlight">\(x_1\)</span> and the location of the second particle is <span class="math notranslate nohighlight">\(x_2\)</span>. The spring is at equilibrium when the particles are a distance <span class="math notranslate nohighlight">\(L\)</span> apart. Assume the spring is massless and that the left mass never changes position with the right mass (i.e., the spring is always horizontal).</p>
 <ol class="arabic simple">
 <li><p>(3 pt) Write down the kinetic and potential energy for this system in terms of <span class="math notranslate nohighlight">\(x_1\)</span> and <span class="math notranslate nohighlight">\(x_2\)</span> and their associated velocities.</p></li>
@@ -774,7 +776,7 @@ doconce format html hw5.do.txt --no_mako -->
 <p>In this problem we are changing the coordinates to explore a different aspect of the problem (and to make the math easier). This is a common technique that will not always be obvious. But practice will help us identify when it is useful.</p>
 </section>
 <section id="exercise-5-35-pt-motion-inside-a-paraboloid">
-<h3>Exercise 5 (35 pt) Motion inside a paraboloid<a class="headerlink" href="#exercise-5-35-pt-motion-inside-a-paraboloid" title="Link to this heading">#</a></h3>
+<h2>Exercise 5 (35 pt) Motion inside a paraboloid<a class="headerlink" href="#exercise-5-35-pt-motion-inside-a-paraboloid" title="Link to this heading">#</a></h2>
 <p>Let’s figure out the motion of a particle stuck inside a paraboloid. The potential energy of the bead is given by <span class="math notranslate nohighlight">\(U = mgz\)</span>, where <span class="math notranslate nohighlight">\(m\)</span> is the mass of the bead, <span class="math notranslate nohighlight">\(g\)</span> is the acceleration due to gravity. The coordinates are <span class="math notranslate nohighlight">\((x, y, z)\)</span> in the Cartesian coordinate system.</p>
 <ol class="arabic simple">
 <li><p>(5 pt) Write down the Lagrangian for the system in terms of <span class="math notranslate nohighlight">\(x\)</span>, <span class="math notranslate nohighlight">\(y\)</span>, and <span class="math notranslate nohighlight">\(z\)</span> and their associated velocities <span class="math notranslate nohighlight">\(\mathcal{L}(x, y, z, \dot{x}, \dot{y}, \dot{z})\)</span>. Find the 3 equations of motion.</p></li>
@@ -937,6 +939,15 @@ doconce format html hw5.do.txt --no_mako -->
 </div>
 </div>
 </section>
+<section id="exercise-6-20pt-project-check-in-3">
+<h2>Exercise 6 (20pt), Project Check-in 3<a class="headerlink" href="#exercise-6-20pt-project-check-in-3" title="Link to this heading">#</a></h2>
+<p>This is the last of three check-ins for your final project. This week, you should be preparing to finish your computational essay. Following the posted <a class="reference internal" href="#../../resources/project_rubric.md"><span class="xref myst">rubric</span></a> for the computational essay, you should reflect on your progress and update your project. This is a chance to evaluate where you are in the process of completing your computational essay.</p>
+<ul class="simple">
+<li><p>5a (5 pts). Review your project in the context of the rubric. What have you been able to accomplish so far? What were you unable to do in the time you had? Be honest in your evaluation of your progress. What do you have left to do? (at least 250 words)</p></li>
+<li><p>5b (5 pts). What problems did you encounter in doing you work? What questions came up and how did you resolve them? Are there any unresolved questions? (at least 250 words)</p></li>
+<li><p>5c (5 pts). Provide an artifact from your project. This could be a plot, a code snippet, a data set, or a figure. Explain what this artifact is and how it fits into your project. (at least 100-200 words)</p></li>
+<li><p>5d (5 pts). Update your project timeline and milestones. How will you adjust your timeline to account for the work you have done and the work you have left to do? How will you meet the expectations from the rubric? (at least 100-200 words)</p></li>
+</ul>
 </section>
 <section id="extra-credit-integrating-classwork-with-research">
 <h2>Extra Credit - Integrating Classwork With Research<a class="headerlink" href="#extra-credit-integrating-classwork-with-research" title="Link to this heading">#</a></h2>
@@ -1005,12 +1016,11 @@ Talks given by researchers through the following clubs:</p>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-1-10pt-paths-along-a-curved-surface">Exercise 1 (10pt) Paths along a curved surface</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-2-15pt-snell-s-law">Exercise 2 (15pt) Snell’s Law</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-3-15pt-lagrangian-examples">Exercise 3 (15pt) Lagrangian Examples</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-4-25pt-changing-coordinates">Exercise 4 (25pt) Changing Coordinates</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-5-35-pt-motion-inside-a-paraboloid">Exercise 5 (35 pt) Motion inside a paraboloid</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-2-15pt-snell-s-law">Exercise 2 (15pt) Snell’s Law</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-3-15pt-lagrangian-examples">Exercise 3 (15pt) Lagrangian Examples</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-4-25pt-changing-coordinates">Exercise 4 (25pt) Changing Coordinates</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-5-35-pt-motion-inside-a-paraboloid">Exercise 5 (35 pt) Motion inside a paraboloid</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-6-20pt-project-check-in-3">Exercise 6 (20pt), Project Check-in 3</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#extra-credit-integrating-classwork-with-research">Extra Credit - Integrating Classwork With Research</a></li>
 </ul>
   </nav></div>
