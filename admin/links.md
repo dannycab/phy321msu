@@ -4,6 +4,30 @@ Materials will appear in reverse chronological order, with the most recent appea
 
 Class Zoom: <https://msu.zoom.us/j/92295821308>
 
+## Class Week 12, April 7-11, 2025 (CW15)
+
+Topic: Introduction to Lagrangian Dynamics
+
+This week, we will continue our discussion of Lagrangian dynamics. We will focus on the Euler-Lagrange equations and how to derive them for various systems. We will also discuss how to apply these equations to solve problems in classical mechanics.
+
+You should review the discussion about [Introduction to Lagrangian Dynamics](../lecture-notes/week12/12_start.ipynb) and the notes on [Lagrangian Mechanics](../lecture-notes/week12/12_notes.ipynb). You should also make sure to have read JRT 5.1-5.3; MLB 9.1-9.4.
+
+### Assignments
+
+- [Midterm 2](../midterms/midterm2.ipynb) (due April 11, 2025)
+- [Homework 8](../homeworks/hw8.ipynb) (due April 18, 2025)
+
+### Resources
+
+- [Introduction to Lagrangian Dynamics](../lecture-notes/week12/12_start.ipynb)
+- [Lagrangian Mechanics](../lecture-notes/week12/12_notes.ipynb)
+- [Computational Essay Rubric](../resources//computational-essay-rubric.md)
+
+### Slides
+
+7 Apr 2025 ([Slides](../slides/day-33-introduction-to-lagrangian-dynamics.pdf))
+![Day 33](../slides/day-33-introduction-to-lagrangian-dynamics.png)
+
 ## Class Week 11, March 31-April 4, 2025 (CW14)
 
 Topic: Calculus of Variations 
@@ -20,6 +44,19 @@ You should review the discussion about [Calculus of Variations](../lecture-notes
 
 - [Calculus of Variations](../lecture-notes/week11/11_start.ipynb)
 - [Euler-Lagrange Equation](../lecture-notes/week11/11_notes.ipynb)
+
+### Slides
+
+31 Mar 2025 ([Slides](../slides/day-30-calculus-of-variations.pdf))
+![Day 30](../slides/day-30-calculus-of-variations.png)
+
+2 Apr 2025 ([Slides](../slides/day-31-euler-lagrange-equation.pdf))
+![Day 31](../slides/day-31-euler-lagrange-equation.png)
+
+4 Apr 2025 ([Slides](../slides/day-32-homework-session.pdf))
+![Day 32](../slides/day-32-homework-session.png)
+
+
 
 
 ## Class Week 10, March 24-28, 2025 (CW13)
@@ -48,6 +85,10 @@ You should review the discussion about [Chaos](../lecture-notes/week10/10_start.
 26 Mar 2025 ([Slides](../slides/day-28-hallmarks-of-chaos.pdf))
 
 ![Day 28](../slides/day-28-hallmarks-of-chaos.png)
+
+28 Mar 2025 ([Slides](../slides/day-29-homework-session.pdf))
+
+![Day 29](../slides/day-29-homework-session.png)
 
 ## Class Week 9, March 17-21, 2025 (CW12)
 

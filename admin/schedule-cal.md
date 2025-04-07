@@ -107,7 +107,7 @@ All assignments are turned in using Gradescope as a single PDF.
 
 | Week | Day    | Topic                                 | Readings to prepare       | Important events                                                     |
 | ---- | ------ | ------------------------------------- | ------------------------- | -------------------------------------------------------------------- |
-| CW15 | 07 Apr | Introduction to Lagrangian Dynamics | JRT 7.1-7.2, 7.5; MLB 9.5 | [Homework 8 Assigned (Due 18 Apr)](../homeworks/hw8.ipynb) |
+| CW15 | 07 Apr ([Slides](../slides/day-33-introduction-to-lagrangian-dynamics.pdf)) | Introduction to Lagrangian Dynamics | JRT 7.1-7.2, 7.5; MLB 9.5 | [Homework 8 Assigned (Due 18 Apr)](../homeworks/hw8.ipynb) |
 |      | 09 Apr |    Midterm 2 Help Session                                   |                           |                                                                      |
 |      | 11 Apr |    **NO CLASS (DC OUT)**                                  |                           |     **Midterm Project 2 Due**    |
 
@@ -115,7 +115,7 @@ All assignments are turned in using Gradescope as a single PDF.
 
 | Week | Day    | Topic                      | Readings to prepare | Important events                                                       |
 | ---- | ------ | -------------------------- | ------------------- | ---------------------------------------------------------------------- |
-| CW16 | 14 Apr | Lagrange Equation Examples | JRT 7.3-7.7, 7.10   |   [Final Project Assigned (Due 28 Apr)](../midterms/final-exam.ipynb)           |
+| CW16 | 14 Apr | Lagrange Equation Examples | JRT 7.3-7.7, 7.10   |   [Final Project Rubric (Due 28 Apr)](../resources/computational-essay-rubric.md)           |
 |      | 16 Apr |   Lagrange Equation Examples   |          |  |
 |      | 18 Apr |    Problem session for homework                        |                     | **Homework 8 Due** |
 
