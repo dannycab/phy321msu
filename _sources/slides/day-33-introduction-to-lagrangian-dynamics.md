@@ -30,6 +30,30 @@ url: https://dannycaballero.info/phy331msu/slides/day-33-introduction-to-lagrang
 
 ---
 
+# Seminars This Week
+
+## WEDNESDAY, April 9, 2025    
+ 
+                                     
+* **Astronomy Seminar**, 1:30 pm, 1400 BPS, *Bertram Bitsch, University College Cork*      
+Title: Planetary Dynamics
+ 
+* **FRIB Nuclear Science Seminar**, 3:30pm., FRIB 1300 Auditorium, *Dr. Suzanne Lapi of University of Alabama at Birmingham*, Title: Development of new 
+
+---
+
+# Seminars This Week
+
+## THURSDAY, April 10, 2025
+ 
+* **Colloquium**, 3:30 pm, 1415 BPS, *Grant Tremblay, Harvard Smithsonian Astrophysical Observatory*, Title: Our fading age of discovery:  Why it's happening, and why we can't give up
+ 
+## FRIDAY, April 11, 2025 
+ 
+* **IReNA Online Seminar**, 2:00 pm, FRIB 2025 Nuclear Conference Room, *Marco La Cognata, INFN LNS, Italy*, Title: Nuclear reactions for Astrophysics and the opportunity of indirect methods
+
+---
+
 # Final Project Rubric
 
 * $P$, **Physics Content (40%)**: 
