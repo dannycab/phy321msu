@@ -155,10 +155,10 @@ The appropriate definition of the $\hat{r}$ vector using Cartesian coordinates (
 
 The appropriate definition of the $\hat{\phi}$ vector using Cartesian coordinates ($x,y$) is:
 
-1. $\hat{r} = \left( \cos(\phi), \sin(\phi) \right)$
-2. $\hat{r} = \left( \sin(\phi), \cos(\phi) \right)$
-3. $\hat{r} = \left(-\sin(\phi), \cos(\phi) \right)$
-4. $\hat{r} = \left( \cos(\phi), -\sin(\phi) \right)$
+1. $\hat{\phi} = \left( \cos(\phi), \sin(\phi) \right)$
+2. $\hat{\phi} = \left( \sin(\phi), \cos(\phi) \right)$
+3. $\hat{\phi} = \left(-\sin(\phi), \cos(\phi) \right)$
+4. $\hat{\phi} = \left( \cos(\phi), -\sin(\phi) \right)$
 5. None of the above.
 
 ---
@@ -249,7 +249,7 @@ $$
 
 # Clicker Question 33-4
 
-For a 1D SHO, the kintetic and potential energy are given by:
+For a 1D SHO, the kinetic and potential energy are given by:
 
 $$
 T = \frac{1}{2} m \dot{x}^2 \quad \text{and} \quad V = \frac{1}{2} k x^2

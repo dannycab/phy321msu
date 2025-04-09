@@ -55,7 +55,7 @@
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../../_static/design-tabs.js?v=36754332"></script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
@@ -210,6 +210,8 @@
 <li class="toctree-l1"><a class="reference internal" href="../../lecture-notes/week11/11_notes.html">Week 11 - Notes: The Euler-Lagrange Equation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../lecture-notes/week12/12_start.html">Week 12 - The Principle of Least Action</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../lecture-notes/week12/12_notes.html">Week 12 - Notes: Introduction to Lagrangian Mechanics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lecture-notes/week13/13_start.html">Week 13 - Lagrangian Mechanics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lecture-notes/week13/13_notes.html">Week 13 - Notes: Examples of Lagrangian Mechanics</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Assignments</span></p>
 <ul class="nav bd-sidenav">
@@ -680,7 +682,7 @@ doconce format html Firstmidterm2022.do.txt --no_mako -->
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0xffff5cf22c60&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0xffff40d27d40&gt;
 </pre></div>
 </div>
 <img alt="../../_images/c4d6730ade88564e86e4a1d61710c9037edfabfc1ad552f843d998f62a729c9f.png" src="../../_images/c4d6730ade88564e86e4a1d61710c9037edfabfc1ad552f843d998f62a729c9f.png" />
@@ -834,7 +836,7 @@ doconce format html Firstmidterm2022.do.txt --no_mako -->
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0xffff5bf1a870&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0xffff3cd35160&gt;
 </pre></div>
 </div>
 <img alt="../../_images/efa394af5fb1132073f32fac0b7bf6617062a14a7b65ed26aa1593bedab32bfe.png" src="../../_images/efa394af5fb1132073f32fac0b7bf6617062a14a7b65ed26aa1593bedab32bfe.png" />
@@ -946,7 +948,7 @@ doconce format html Firstmidterm2022.do.txt --no_mako -->
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0xffff5ab4f0b0&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0xffff3c3536b0&gt;
 </pre></div>
 </div>
 <img alt="../../_images/f5b2a8ba4a71caa43ea57c8a76c692c49c64dddb6bbbf87de9e9c90e40dfd544.png" src="../../_images/f5b2a8ba4a71caa43ea57c8a76c692c49c64dddb6bbbf87de9e9c90e40dfd544.png" />
@@ -1054,7 +1056,7 @@ doconce format html Firstmidterm2022.do.txt --no_mako -->
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0xffff5f59efc0&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0xffff3c16f800&gt;
 </pre></div>
 </div>
 <img alt="../../_images/2421d93835a26e58403f8d8d8ff7b2638675bd4947b452ce8c43b66011a2582b.png" src="../../_images/2421d93835a26e58403f8d8d8ff7b2638675bd4947b452ce8c43b66011a2582b.png" />
@@ -1112,7 +1114,7 @@ doconce format html Firstmidterm2022.do.txt --no_mako -->
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_4361/3734017154.py:33: UserWarning: No data for colormapping provided via &#39;c&#39;. Parameters &#39;cmap&#39; will be ignored
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_1439/3734017154.py:33: UserWarning: No data for colormapping provided via &#39;c&#39;. Parameters &#39;cmap&#39; will be ignored
   ax.scatter(trajDF_sampled[&#39;x&#39;], trajDF_sampled[&#39;v&#39;], c=colors, marker=&#39;o&#39;, cmap=&#39;viridis&#39;)
 </pre></div>
 </div>
@@ -1627,8 +1629,8 @@ doconce format html Firstmidterm2022.do.txt --no_mako -->
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../_images/6ac6a8b559d85e6a2f00727dc1de2121d836bab0be668a0e4d3e97975cbf5a3f.png" src="../../_images/6ac6a8b559d85e6a2f00727dc1de2121d836bab0be668a0e4d3e97975cbf5a3f.png" />
-<img alt="../../_images/3bebe3aba728d831a2b12a1d4df15abef45754815bba8cde1946f75a9551af17.png" src="../../_images/3bebe3aba728d831a2b12a1d4df15abef45754815bba8cde1946f75a9551af17.png" />
+<img alt="../../_images/de29d129db332b2eacabcccc4a7a86301bd1b7e028a0c0da135db32c900ad2ba.png" src="../../_images/de29d129db332b2eacabcccc4a7a86301bd1b7e028a0c0da135db32c900ad2ba.png" />
+<img alt="../../_images/827a62e5abde684580496617019a4cdfbd103edd5d7b1c23d2be3602ccf793a4.png" src="../../_images/827a62e5abde684580496617019a4cdfbd103edd5d7b1c23d2be3602ccf793a4.png" />
 </div>
 </div>
 </section>
