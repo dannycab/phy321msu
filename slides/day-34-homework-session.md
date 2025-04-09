@@ -51,6 +51,22 @@ Title: Planetary Dynamics
 
 ---
 
+# Stand Up for Higher Education
+
+* Graduate Employee Union
+* Union of Nontenure Track Faculty
+* Union of Tenure System Faculty
+
+**Thursday, April 17th at 3pm**
+
+**Please make time to show up!**
+
+[www.dayofactionforhighered.org](https://www.dayofactionforhighered.org)
+
+![bg right width:500px](../images/notes/week12/standup.png)
+
+---
+
 ## Reminders
 
 We used the Lagrangian formalism to derive the equations of motion for a plane pendulum. We chose the $x$ and $y$ coordinates.
