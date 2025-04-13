@@ -60,6 +60,8 @@
     <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"tex2jax": {"inlineMath": [["$", "$"]]}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'lecture-notes/week13/13_start';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
@@ -411,15 +413,29 @@
                   
   <section id="week-13-lagrangian-mechanics">
 <h1>Week 13 - Lagrangian Mechanics<a class="headerlink" href="#week-13-lagrangian-mechanics" title="Link to this heading">#</a></h1>
+<p>The Lagrangian formulation of mechanics allows us to describe the motion of a system in terms of its kinetic and potential energy, rather than its forces. This approach is particularly useful for systems with constraints or when dealing with generalized coordinates. There’s a few general concepts that arise in Lagrangian mechanics that make it a powerful tool for analyzing mechanical systems.</p>
+<p>First, the Lagrangian formulation emphasizes the idea of independent coordinates while also providing the flexibility to use any set of coordinates that are convenient for the problem at hand. This is in contrast to Newtonian mechanics, which often relies clearly structured position and velocity vectors.</p>
+<p>Because the Lagrangian uses this generalized coordinate system, it is often easier to analyze complex systems with many degrees of freedom. Moreover, when dealing with constraints, the Lagrangian formulation allows us to incorporate these constraints directly into the equations of motion, which reduces the dimensionality of the problem.</p>
+<p>In addition, the Lagrangian formulation is particularly useful for systems with symmetries. By applying <a class="reference external" href="https://en.wikipedia.org/wiki/Noether%27s_theorem">Noether’s theorem</a>, we can relate symmetries of the system to conserved quantities, which can simplify the analysis of the system’s motion. For example, if a particular system is invariant under time translations (for us no explicit time dependence in <span class="math notranslate nohighlight">\(\mathcal{L}\)</span>), we can conclude that energy is conserved. If a coordinate is cyclic (e.g., no <span class="math notranslate nohighlight">\(x\)</span> dependence in <span class="math notranslate nohighlight">\(\mathcal{L}\)</span>), we can conclude that the corresponding momentum (in this example, <span class="math notranslate nohighlight">\(p_x\)</span>) is conserved.</p>
+<p>Lastly, the formalism produces <a class="reference external" href="https://en.wikipedia.org/wiki/Generalized_force">generalized forces</a> that are not necessarily equal to the physical forces acting on the system, but have corresponding generalized momenta. These are always produced in our equations of motion, but they might not be forces or momenta that we can measure directly, or that we can even define as a “force”, some are torques, for example.</p>
+<p>Consider an <span class="math notranslate nohighlight">\(N\)</span> dimensional system with <span class="math notranslate nohighlight">\(N\)</span> generalized coordinates <span class="math notranslate nohighlight">\(q_i\)</span> and <span class="math notranslate nohighlight">\(N\)</span> generalized velocities <span class="math notranslate nohighlight">\(\dot{q}_i\)</span>. The Lagrangian is defined as the difference between the kinetic energy <span class="math notranslate nohighlight">\(T\)</span> and the potential energy <span class="math notranslate nohighlight">\(V\)</span> of the system:</p>
+<div class="math notranslate nohighlight">
+\[
+\mathcal{L} = T(\dot{q}_1, \dot{q}_2, \dots, \dot{q}_N) - V(q_1, q_2, \dots, q_N)
+\]</div>
+<p>The derivative of the Lagrangian with respect to a generalized coordinate <span class="math notranslate nohighlight">\(q_i\)</span> is given by:</p>
+<div class="math notranslate nohighlight">
+\[\dfrac{\partial \mathcal{L}}{\partial q_i} = \dfrac{\partial V}{\partial q_i} = F_{q_i}\]</div>
+<p>where <span class="math notranslate nohighlight">\(F_{q_i}\)</span> is the generalized force conjugate to the coordinate <span class="math notranslate nohighlight">\(q_i\)</span>.</p>
+<p>The derivative of the Lagrangian with respect to a generalized velocity <span class="math notranslate nohighlight">\(\dot{q}_i\)</span> is given by:</p>
+<div class="math notranslate nohighlight">
+\[\dfrac{\partial \mathcal{L}}{\partial \dot{q}_i} = \dfrac{\partial T}{\partial \dot{q}_i} = p_{q_i}\]</div>
+<p>where <span class="math notranslate nohighlight">\(p_{q_i}\)</span> is the generalized momentum conjugate to the coordinate <span class="math notranslate nohighlight">\(q_i\)</span>.</p>
 <section id="the-standard-model-lagrangian-17-minute-video">
 <h2>The Standard Model Lagrangian (17 minute video)<a class="headerlink" href="#the-standard-model-lagrangian-17-minute-video" title="Link to this heading">#</a></h2>
 <p>An understanding of physics formulated through <a class="reference external" href="https://en.wikipedia.org/wiki/Lagrangian_mechanics">Lagrangian Mechanics</a> is a powerful and elegant way to describe the motion of particles and systems. But it can be much more than that. Much of the work of particle physics is done in the context of the <a class="reference external" href="https://en.wikipedia.org/wiki/Standard_Model">Standard Model</a>. The Standard Model is a theory that describes the electromagnetic, weak, and strong nuclear interactions. The Standard Model is a <a class="reference external" href="https://en.wikipedia.org/wiki/Quantum_field_theory">quantum field theory</a>, which is formulated through a Lagrangian.</p>
 <p>The video below provides an introduction to this equation and the Standard Model.</p>
-<p><a class="reference external" href="https://youtube.com/watch?v=PHiyQID7SBs"><img alt="Standard Model Lagrangian" src="https://markdown-videos-api.jorgenkh.no/youtube/PHiyQID7SBs?width=720&amp;height=405" /></a></p>
-<ul class="simple">
-<li><p>Non-Commercial Link: <a class="reference external" href="https://inv.n8pjl.ca/watch?v=PHiyQID7SBs">https://inv.n8pjl.ca/watch?v=PHiyQID7SBs</a></p></li>
-<li><p>Commercial Link: <a class="reference external" href="https://youtube.com/watch?v=PHiyQID7SBs">https://youtube.com/watch?v=PHiyQID7SBs</a></p></li>
-</ul>
+<p><a class="reference external" href="https://youtube.com/watch?v=PHiyQID7SBs"><img alt="Standard Model Lagrangian" src="https://img.youtube.com/vi/PHiyQID7SBs/hqdefault.jpg" /></a></p>
 </section>
 </section>
 
