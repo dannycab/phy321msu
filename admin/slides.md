@@ -2,12 +2,28 @@
 
 Slides for PHY 321 appear in reverse chronological order, with the most recent slides at the top. The formats are PDF, HTML, and Markdown. The HTML slides are hosted on my website, and the Markdown slides are the source code for the HTML slides, built with [Marp](https://marp.app/).
 
+
+## Day 35 - Lagrangian Examples - 14 Apr 2025
+
+### Download PDF
+
+[![Day 35](../slides/day-35-lagrangian-examples.png)](../slides/day-35-lagrangian-examples.pdf)
+
+### HTML Versions
+
+| Format | Link |
+|--|--|
+| HTML (Inline) | [day-35-lagrangian-examples.md](../slides/day-35-lagrangian-examples.md) |
+| HTML (Slides) | [day-35-lagrangian-examples.html](../slides/day-35-lagrangian-examples.html) |
+
 ## Day 34 - Homework Session - 09 Apr 2025
 
 ### Download PDF
 
 [![Day 34](../slides/day-34-homework-session.png)](../slides/day-34-homework-session.pdf)
+
 ### HTML Versions
+
 | Format | Link |
 |--|--|
 | HTML (Inline) | [day-34-homework-session.md](../slides/day-34-homework-session.md) |
@@ -18,7 +34,9 @@ Slides for PHY 321 appear in reverse chronological order, with the most recent s
 ### Download PDF
 
 [![Day 33](../slides/day-33-introduction-to-lagrangian-dynamics.png)](../slides/day-33-introduction-to-lagrangian-dynamics.pdf)
+
 ### HTML Versions
+
 | Format | Link |
 |--|--|
 | HTML (Inline) | [day-33-introduction-to-lagrangian-dynamics.md](../slides/day-33-introduction-to-lagrangian-dynamics.md) |
@@ -31,6 +49,7 @@ Slides for PHY 321 appear in reverse chronological order, with the most recent s
 [![Day 32](../slides/day-32-homework-session.png)](../slides/day-32-homework-session.pdf)
 
 ### HTML Versions
+
 | Format | Link |
 |--|--|
 | HTML (Inline) | [day-32-homework-session.md](../slides/day-32-homework-session.md) |
@@ -42,7 +61,8 @@ Slides for PHY 321 appear in reverse chronological order, with the most recent s
 
 [![Day 31](../slides/day-31-euler-lagrange-equation.png)](../slides/day-31-euler-lagrange-equation.pdf)
 
-### HTML Versions
+### HTML Versions 
+
 | Format | Link |
 |--|--|
 | HTML (Inline) | [day-31-euler-lagrange-equation.md](../slides/day-31-euler-lagrange-equation.md) |
@@ -54,7 +74,8 @@ Slides for PHY 321 appear in reverse chronological order, with the most recent s
 
 [![Day 30](../slides/day-30-calculus-of-variations.png)](../slides/day-30-calculus-of-variations.pdf)
 
-### HTML Versions
+### HTML Versions 
+
 | Format | Link |
 |--|--|
 | HTML (Inline) | [day-30-calculus-of-variations.md](../slides/day-30-calculus-of-variations.md) |
@@ -79,7 +100,8 @@ Slides for PHY 321 appear in reverse chronological order, with the most recent s
 
 [![Day 28](../slides/day-28-hallmarks-of-chaos.png)](../slides/day-28-hallmarks-of-chaos.pdf)
 
-### HTML Versions
+### HTML Versions 
+
 | Format | Link |
 |--|--|
 | HTML (Inline) | [day-28-hallmarks-of-chaos.md](../slides/day-28-hallmarks-of-chaos.md) |
@@ -91,7 +113,8 @@ Slides for PHY 321 appear in reverse chronological order, with the most recent s
 
 [![Day 27](../slides/day-27-introduction-to-chaos.png)](../slides/day-27-introduction-to-chaos.pdf)
 
-### HTML Versions
+### HTML Versions 
+
 | Format | Link |
 |--|--|
 | HTML (Inline) | [day-27-introduction-to-chaos.md](../slides/day-27-introduction-to-chaos.md) |
@@ -103,7 +126,8 @@ Slides for PHY 321 appear in reverse chronological order, with the most recent s
 
 [![Day 26](../slides/day-26-homework-session.png)](../slides/day-26-homework-session.pdf)
 
-### HTML Versions
+### HTML Versions 
+
 | Format | Link |
 |--|--|
 | HTML (Inline) | [day-26-homework-session.md](../slides/day-26-homework-session.md) |
@@ -114,7 +138,8 @@ Slides for PHY 321 appear in reverse chronological order, with the most recent s
 
 [![Day 25](../slides/day-25-resonance.png)](../slides/day-25-resonance.pdf)
 
-### HTML Versions
+### HTML Versions 
+
 | Format | Link |
 |--|--|
 | HTML (Inline) | [day-25-resonance.md](../slides/day-25-resonance.md) |
@@ -125,7 +150,8 @@ Slides for PHY 321 appear in reverse chronological order, with the most recent s
 
 [![Day 24](../slides/day-24-driven-oscillations.png)](../slides/day-24-driven-oscillations.pdf)
 
-### HTML Versions
+### HTML Versions 
+
 | Format | Link |
 |--|--|
 | HTML (Inline) | [day-24-driven-oscillations.md](../slides/day-24-driven-oscillations.md) |
@@ -136,7 +162,8 @@ Slides for PHY 321 appear in reverse chronological order, with the most recent s
 
 [![Day 23](../slides/day-23-homework-session.png)](../slides/day-23-homework-session.pdf)
 
-### HTML Versions
+### HTML Versions 
+
 | Format | Link |
 |--|--|
 | HTML (Inline) | [day-23-homework-session.md](../slides/day-23-homework-session.md) |
@@ -148,7 +175,8 @@ Slides for PHY 321 appear in reverse chronological order, with the most recent s
 
 [![Day 22](../slides/day-22-damped-oscillations.png)](../slides/day-22-damped-oscillations.pdf)
 
-### HTML Versions
+### HTML Versions 
+
 | Format | Link |
 |--|--|
 | HTML (Inline) | [day-22-damped-oscillations.md](../slides/day-22-damped-oscillations.md) |
@@ -159,7 +187,8 @@ Slides for PHY 321 appear in reverse chronological order, with the most recent s
 ### Download PDF
 
 [![Day 21](../slides/day-21-oscillations.png)](../slides/day-21-oscillations.pdf)
-### HTML Versions
+### HTML Versions 
+
 | Format | Link |
 |--|--|
 | HTML (Inline) | [day-21-oscillations.md](../slides/day-21-oscillations.md) |
@@ -170,7 +199,8 @@ Slides for PHY 321 appear in reverse chronological order, with the most recent s
 
 [![Day 20](../slides/day-20-homework-session.png)](../slides/day-20-homework-session.pdf)
 
-### HTML Versions
+### HTML Versions 
+
 | Format | Link |
 |--|--|
 | HTML (Inline) | [day-20-homework-session.md](../slides/day-20-homework-session.md) |
@@ -182,7 +212,8 @@ Slides for PHY 321 appear in reverse chronological order, with the most recent s
 
 [![Day 19](../slides/day-19-phase-diagrams.png)](../slides/day-19-phase-diagrams.pdf)
 
-### HTML Versions
+### HTML Versions 
+
 | Format | Link |
 |--|--|
 | HTML (Inline) | [day-19-phase-diagrams.md](../slides/day-19-phase-diagrams.md) |

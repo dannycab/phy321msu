@@ -4,6 +4,29 @@ Materials will appear in reverse chronological order, with the most recent appea
 
 Class Zoom: <https://msu.zoom.us/j/92295821308>
 
+## Class Week 13, April 14-18, 2025 (CW16)
+
+Topic: Lagrangian Dynamics and Examples
+
+This week, we will work with examples of Lagrangian dynamics. We will focus on how to apply the Euler-Lagrange equations to various systems and how to interpret the results. We will also discuss the concept of forces of constraint and how they can be incorporated into the Lagrangian framework.
+
+You should review the discussion about [Lagrangian Dynamics](../lecture-notes/week13/13_start.ipynb) and the notes on [Lagrangian Dynamics Examples](../lecture-notes/week13/13_notes.ipynb). You should also make sure to have read JRT 5.1-5.3; MLB 9.1-9.4.
+
+### Assignments
+
+- [Homework 8](../homeworks/hw8.ipynb) (due April 18, 2025)
+
+### Resources
+
+- [Lagrangian Dynamics](../lecture-notes/week13/13_start.ipynb)
+- [Lagrangian Dynamics Examples](../lecture-notes/week13/13_notes.ipynb)
+- [Computational Essay Rubric](../resources//computational-essay-rubric.md)
+
+### Slides
+
+14 Apr 2025 ([Slides](../slides/day-35-lagrangian-dynamics.pdf))
+![Day 35](../slides/day-35-lagrangian-examples.png)
+
 ## Class Week 12, April 7-11, 2025 (CW15)
 
 Topic: Introduction to Lagrangian Dynamics

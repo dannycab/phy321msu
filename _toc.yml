@@ -99,7 +99,7 @@ parts:
       - file: solutions/solutionhw5.ipynb
       - file: solutions/solutionhw6.ipynb
       - file: solutions/solutionhw7.ipynb
-  #     - file: solutions/solutionmidterm2.ipynb
+      - file: solutions/solutionmidterm2.ipynb
   #     - file: solutions/solutionhw8.ipynb
   - caption: Resources
     numbered: false
