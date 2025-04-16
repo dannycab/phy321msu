@@ -93,9 +93,9 @@ $$V(y) = mgy = mg r \sin(\phi) = V(r, \phi)$$
 
 Now we include the constraint $r = L$, so that $\dot{r} = 0$.
 
-$$T(\phi, \dot{\phi}) = \dfrac{1}{2} m L^2 \dot{\phi}^2 \quad V(\phi) = mgL \sin(\phi)$$
+$$T(\phi, \dot{\phi}) = \dfrac{1}{2} m L^2 \dot{\phi}^2 \quad V(\phi) = mgL \cos(\phi)$$
 
-$$\mathcal{L} = \dfrac{1}{2} m L^2 \dot{\phi}^2 - mgL \sin(\phi)$$
+$$\mathcal{L} = \dfrac{1}{2} m L^2 \dot{\phi}^2 - mgL \cos(\phi)$$
 
 ---
 
@@ -115,7 +115,7 @@ What does that tell you about the dimensions of the system? The system is:
 
 # Clicker Question 35-2
 
-With $\mathcal{L} = \dfrac{1}{2} m L^2 \dot{\phi}^2 - mgL \sin(\phi)$, we can find the equations of motion. 
+With $\mathcal{L} = \dfrac{1}{2} m L^2 \dot{\phi}^2 - mgL \cos(\phi)$, we can find the equations of motion. 
 
 $$\dfrac{\partial \mathcal{L}}{\partial \phi} - \dfrac{d}{dt} \left( \dfrac{\partial \mathcal{L}}{\partial \dot{\phi}} \right) = 0$$
 
@@ -131,12 +131,12 @@ Which of the following equations of motion is correct?
 
 # Clicker Question 35-3
 
-For the Atwood's machine, $M$ is connected to $m$ by a string of total length $l$. Each mass has a length of string extended as measured from the center of the pulley to be $y_1$ and $y_2$ respectively. The pulley has a radius $R$ and the remaing string wraps around half the pulley. 
+For the Atwood's machine, $M$ is connected to $m$ by a string of length $l$. Each mass has a length of string extended as measured from the center of the pulley ($R$) of $y_1$ and $y_2$, respectively. The string wraps around half the pulley. 
 
-Which of he following represents the equation of constraint for the system?
+Which of the following represents the equation of constraint for the system?
 
-1. $y_1 + y_2 = l - R \theta$
-2. $y_1 - y_2 = l + R \theta$
+1. $y_1 + y_2 = l - R \phi$
+2. $y_1 - y_2 = l + R \phi$
 3. $y_1 + y_2 = l - \pi R$
 4. $y_1 - y_2 = l + \pi R$
 5. None of these
@@ -147,7 +147,7 @@ Which of he following represents the equation of constraint for the system?
 
 # Clicker Question 35-4
 
-With a Lagrangian of the form $\mathcal{L} = \frac{1}{2}(M+m)\dot{y}^2 - (M-m)gy_1$, we can find the **generalized forces** and **generalized momenta**.
+With a Lagrangian of the form $\mathcal{L} = \frac{1}{2}(M+m)\dot{y}^2_1 - (M-m)gy_1$, we can find the **generalized forces** and **generalized momenta**.
 
 $$F_{y_1} = \frac{\partial \mathcal{L}}{\partial y_1} = -\frac{\partial V}{\partial y_1} \quad p_{y_1} = \frac{\partial \mathcal{L}}{\partial \dot{y}_1} = \frac{\partial T}{\partial \dot{y}_1}$$
 
@@ -155,8 +155,8 @@ What are $F_{y_1}$ and $p_{y_1}$ for the Atwood's machine?
 
 1. $F_{y_1} = -mg$ and $p_{y_1} = m\dot{y}_1$
 2. $F_{y_1} = -Mgy_1$ and $p_{y_1} = M\dot{y}_1$
-3. $F_{y_1} = -(M-m)gy_1$ and $p_{y_1} = (M+m)\dot{y}_1$
-4. $F_{y_1} = -(M+m)gy_1$ and $p_{y_1} = (M-m)\dot{y}_1$
+3. $F_{y_1} = -(M-m)g$ and $p_{y_1} = (M+m)\dot{y}_1$
+4. $F_{y_1} = -(M+m)g$ and $p_{y_1} = (M-m)\dot{y}_1$
 5. None of these
 
 ---
@@ -164,7 +164,7 @@ What are $F_{y_1}$ and $p_{y_1}$ for the Atwood's machine?
 # Clicker Question 35-5
 
 Now, we allow the pulley (mass, $M_p$) to rotate. The Lagrangian is given by:
-$$\mathcal{L} = \frac{1}{2}(M+m)\dot{y}^2 - (M-m)gy_1 - \frac{1}{2}I\dot{\phi}^2$$
+$$\mathcal{L} = \frac{1}{2}(M+m)\dot{y}_1^2 + \frac{1}{2}I\dot{\phi}^2 - (M-m)gy_1$$
 
 Where $I$ is the moment of inertia of the pulley. What is the moment of inertia of the pulley?
 
@@ -180,7 +180,7 @@ Where $I$ is the moment of inertia of the pulley. What is the moment of inertia 
 
 The rope moves without slipping on the pulley. A rotation of $R d\phi$ corresponds to a displacement of $dy_1$ for the first mass, $M$. What is the **new** equation of constraint for the system?
 
-1. $y_1 + y_2 = l - R \theta$
+1. $y_1 + y_2 = l - R \phi$
 2. $dy_1 = R d\phi$
 3. $y_1 = R\phi$
 4. $\dot{y}_1 = R \dot{\phi}$
