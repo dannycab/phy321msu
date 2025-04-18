@@ -2,6 +2,18 @@
 
 Slides for PHY 321 appear in reverse chronological order, with the most recent slides at the top. The formats are PDF, HTML, and Markdown. The HTML slides are hosted on my website, and the Markdown slides are the source code for the HTML slides, built with [Marp](https://marp.app/).
 
+## Day 37 - Homework Session - 18 Apr 2025
+
+### Download PDF
+
+[![Day 37](../slides/day-37-homework-session.png)](../slides/day-37-homework-session.pdf)
+
+### HTML Versions
+| Format | Link |
+|--|--|
+| HTML (Inline) | [day-37-homework-session.md](../slides/day-37-homework-session.md) |
+| HTML (Slides) | [day-37-homework-session.html](../slides/day-37-homework-session.html) |
+
 
 ## Day 36 - Lagrangian Examples - 16 Apr 2025
 
