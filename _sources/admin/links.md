@@ -4,6 +4,21 @@ Materials will appear in reverse chronological order, with the most recent appea
 
 Class Zoom: <https://msu.zoom.us/j/92295821308>
 
+## Class Week 14, April 21-25, 2025 (CW17)
+
+Topic: Project Work
+
+This week, we will work on our projects. Projects are due Monday, April 28, 2025. You should be working on your projects in class.
+
+### Resources 
+
+- [Computational Essay Rubric](../resources/computational-essay-rubric.md)
+
+### Slides
+
+21 Apr 2025 ([Slides](../slides/day-38-project-session.pdf))
+![Day 38](../slides/day-38-project-session.png)
+
 ## Class Week 13, April 14-18, 2025 (CW16)
 
 Topic: Lagrangian Dynamics and Examples
@@ -20,12 +35,18 @@ You should review the discussion about [Lagrangian Dynamics](../lecture-notes/we
 
 - [Lagrangian Dynamics](../lecture-notes/week13/13_start.ipynb)
 - [Lagrangian Dynamics Examples](../lecture-notes/week13/13_notes.ipynb)
-- [Computational Essay Rubric](../resources//computational-essay-rubric.md)
+- [Computational Essay Rubric](../resources/computational-essay-rubric.md)
 
 ### Slides
 
-14 Apr 2025 ([Slides](../slides/day-35-lagrangian-dynamics.pdf))
+14 Apr 2025 ([Slides](../slides/day-35-lagrangian-exmaples.pdf))
 ![Day 35](../slides/day-35-lagrangian-examples.png)
+
+16 Apr 2025 ([Slides](../slides/day-36-lagrangian-examples.pdf))
+![Day 36](../slides/day-36-lagrangian-examples.png)
+
+18 Apr 2025 ([Slides](../slides/day-37-homework-session.pdf))
+![Day 37](../slides/day-37-homework-session.png)
 
 ## Class Week 12, April 7-11, 2025 (CW15)
 
