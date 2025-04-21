@@ -16,33 +16,30 @@
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
     document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
-  <!--
-    this give us a css class that will be invisible only if js is disabled
-  -->
-  <noscript>
-    <style>
-      .pst-js-only { display: none !important; }
-
-    </style>
-  </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
-    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
   
-  <!-- So that users can add custom icons -->
-  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
     <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
     <script src="../_static/doctools.js?v=9a2dae69"></script>
@@ -55,7 +52,7 @@
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script src="../_static/design-tabs.js?v=36754332"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
@@ -65,11 +62,10 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'solutions/solutionmidterm2';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Course Commitments" href="../resources/course-commitments.html" />
+    <link rel="next" title="Solution Homework 8" href="solutionhw8.html" />
     <link rel="prev" title="Solution Homework 7" href="solutionhw7.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-  <meta name="docsearch:version" content="" />
   </head>
   
   
@@ -85,8 +81,19 @@
     <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
   
-  <dialog id="pst-search-dialog">
-    
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
 <form class="bd-search d-flex align-items-center"
       action="../search.html"
       method="get">
@@ -94,6 +101,7 @@
   <input type="search"
          class="form-control"
          name="q"
+         id="search-input"
          placeholder="Search this book..."
          aria-label="Search this book..."
          autocomplete="off"
@@ -101,8 +109,8 @@
          autocapitalize="off"
          spellcheck="false"/>
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form>
-  </dialog>
+</form></div>
+  </div>
 
   <div class="pst-async-banner-revealer d-none">
   <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
@@ -118,8 +126,7 @@
       
       
       
-      <dialog id="pst-primary-sidebar-modal"></dialog>
-      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+      <div class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -149,17 +156,21 @@
     
     
     <img src="../_static/spartan-helmet.png" class="logo__image only-light" alt="Classical Mechanics - Home"/>
-    <img src="../_static/spartan-helmet.png" class="logo__image only-dark pst-js-only" alt="Classical Mechanics - Home"/>
+    <script>document.write(`<img src="../_static/spartan-helmet.png" class="logo__image only-dark" alt="Classical Mechanics - Home"/>`);</script>
   
   
 </a></div>
         <div class="sidebar-primary-item">
 
-<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
- <i class="fa-solid fa-magnifying-glass"></i>
- <span class="search-button__default-text">Search</span>
- <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
-</button></div>
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
@@ -237,6 +248,7 @@
 <li class="toctree-l1"><a class="reference internal" href="solutionhw6.html">Solution Homework 6</a></li>
 <li class="toctree-l1"><a class="reference internal" href="solutionhw7.html">Solution Homework 7</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Midterm 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="solutionhw8.html">Solution Homework 8</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Resources</span></p>
 <ul class="nav bd-sidenav">
@@ -263,14 +275,9 @@
   
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
-      <div class="sidebar-primary-item">
-<div id="ethical-ad-placement"
-      class="flat"
-      data-ea-publisher="readthedocs"
-      data-ea-type="readthedocs-sidebar"
-      data-ea-manual="true">
-</div></div>
   </div>
+  
+  <div id="rtd-footer-container"></div>
 
 
       </div>
@@ -367,16 +374,24 @@
 
 
 
-<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
-  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
-  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
-  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
-</button>
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
 
 
-<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
-</button>
+  </button>
+`);
+</script>
 <button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
 </button>
@@ -529,7 +544,7 @@ doconce format html Firstmidterm2022.do.txt --no_mako -->
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/64d905b76c49d3b741bc9346d9d553d980454627efb69d97aab40879c7e5b7dd.png" src="../_images/64d905b76c49d3b741bc9346d9d553d980454627efb69d97aab40879c7e5b7dd.png" />
+<img alt="../_images/b22d81bb57478922e73f54020020e21644f050f33aaef41b25d47c460da79579.png" src="../_images/b22d81bb57478922e73f54020020e21644f050f33aaef41b25d47c460da79579.png" />
 </div>
 </div>
 <ol class="arabic simple" start="3">
@@ -581,7 +596,7 @@ doconce format html Firstmidterm2022.do.txt --no_mako -->
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/a27915fab6a506864e020b5e352d73164cdab9a417a5f8ea10f0dccb5eddb8bf.png" src="../_images/a27915fab6a506864e020b5e352d73164cdab9a417a5f8ea10f0dccb5eddb8bf.png" />
+<img alt="../_images/af218437728fc3998469a880d980ac409c7117a3432cde8416f644e4f0e86ee3.png" src="../_images/af218437728fc3998469a880d980ac409c7117a3432cde8416f644e4f0e86ee3.png" />
 </div>
 </div>
 <ol class="arabic simple" start="4">
@@ -683,11 +698,11 @@ doconce format html Firstmidterm2022.do.txt --no_mako -->
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0xffff4671f110&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0xffff389b2d50&gt;
 </pre></div>
 </div>
-<img alt="../_images/c4d6730ade88564e86e4a1d61710c9037edfabfc1ad552f843d998f62a729c9f.png" src="../_images/c4d6730ade88564e86e4a1d61710c9037edfabfc1ad552f843d998f62a729c9f.png" />
-<img alt="../_images/3559a4187287df69cbe3902ae62811c9f8d9856efa78cfc9484eb1a67253fdda.png" src="../_images/3559a4187287df69cbe3902ae62811c9f8d9856efa78cfc9484eb1a67253fdda.png" />
+<img alt="../_images/d8549a75a2ebfe2fc1e9e50494ef72df9198cb7c859a4262620c3b93ec2b7199.png" src="../_images/d8549a75a2ebfe2fc1e9e50494ef72df9198cb7c859a4262620c3b93ec2b7199.png" />
+<img alt="../_images/95cfc073a23d1a0decff853f50bffa8665540f3e89b3852335745319e39ab251.png" src="../_images/95cfc073a23d1a0decff853f50bffa8665540f3e89b3852335745319e39ab251.png" />
 </div>
 </div>
 </section>
@@ -748,7 +763,7 @@ doconce format html Firstmidterm2022.do.txt --no_mako -->
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/ffa66a41d9310a6dfbe76e28b14da57cadd5cb9e7eb1eddcb588c3b67e6a9aff.png" src="../_images/ffa66a41d9310a6dfbe76e28b14da57cadd5cb9e7eb1eddcb588c3b67e6a9aff.png" />
+<img alt="../_images/958721b0ab9fa6e878c4798ffa507ce892ffe59b21eda2f16db2fa024f3c3084.png" src="../_images/958721b0ab9fa6e878c4798ffa507ce892ffe59b21eda2f16db2fa024f3c3084.png" />
 </div>
 </div>
 <ol class="arabic simple" start="7">
@@ -837,11 +852,11 @@ doconce format html Firstmidterm2022.do.txt --no_mako -->
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0xffff4574ea20&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0xffff35f25790&gt;
 </pre></div>
 </div>
-<img alt="../_images/efa394af5fb1132073f32fac0b7bf6617062a14a7b65ed26aa1593bedab32bfe.png" src="../_images/efa394af5fb1132073f32fac0b7bf6617062a14a7b65ed26aa1593bedab32bfe.png" />
-<img alt="../_images/7128ee6a94523db399664d1dfd16aa0a67c9bac5dd95efda8db6c23617997380.png" src="../_images/7128ee6a94523db399664d1dfd16aa0a67c9bac5dd95efda8db6c23617997380.png" />
+<img alt="../_images/6d26346b0a03c826890f4594304510476caaeed4b81e090391717866de8346f9.png" src="../_images/6d26346b0a03c826890f4594304510476caaeed4b81e090391717866de8346f9.png" />
+<img alt="../_images/4a084584b3e4682a2b04a70904b870d04e31f6c29b7d7b0c593109c6d0ece317.png" src="../_images/4a084584b3e4682a2b04a70904b870d04e31f6c29b7d7b0c593109c6d0ece317.png" />
 </div>
 </div>
 </section>
@@ -949,11 +964,11 @@ doconce format html Firstmidterm2022.do.txt --no_mako -->
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0xffff44345cd0&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0xffff35f94260&gt;
 </pre></div>
 </div>
-<img alt="../_images/f5b2a8ba4a71caa43ea57c8a76c692c49c64dddb6bbbf87de9e9c90e40dfd544.png" src="../_images/f5b2a8ba4a71caa43ea57c8a76c692c49c64dddb6bbbf87de9e9c90e40dfd544.png" />
-<img alt="../_images/24abc55a0deccdcf8a2e6645a176e96247a67f3d19a3c82de39903283c0d63a8.png" src="../_images/24abc55a0deccdcf8a2e6645a176e96247a67f3d19a3c82de39903283c0d63a8.png" />
+<img alt="../_images/081b6a9425d813bda34653d67c5180422f51a4d321cb45b9af0f32c22067a30f.png" src="../_images/081b6a9425d813bda34653d67c5180422f51a4d321cb45b9af0f32c22067a30f.png" />
+<img alt="../_images/7fe22fc35528fe905c8bf05f9c09b575fc92dc8848d4afd018c023bfc23b18c3.png" src="../_images/7fe22fc35528fe905c8bf05f9c09b575fc92dc8848d4afd018c023bfc23b18c3.png" />
 </div>
 </div>
 </section>
@@ -998,7 +1013,7 @@ doconce format html Firstmidterm2022.do.txt --no_mako -->
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/9b6f7b945cf092645158c0570f891fec7f67e6e83f58b0d8d2108c855d1db81f.png" src="../_images/9b6f7b945cf092645158c0570f891fec7f67e6e83f58b0d8d2108c855d1db81f.png" />
+<img alt="../_images/821e5a299ed1e49c002463777202cbe60a1cf25fa7bc13889388dc8d825e364a.png" src="../_images/821e5a299ed1e49c002463777202cbe60a1cf25fa7bc13889388dc8d825e364a.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -1012,6 +1027,8 @@ doconce format html Firstmidterm2022.do.txt --no_mako -->
 <span class="n">T</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">/</span><span class="n">omega</span>
 <span class="n">tmax</span> <span class="o">=</span> <span class="mi">30</span><span class="o">*</span><span class="n">T</span>
 <span class="n">dt</span> <span class="o">=</span> <span class="n">T</span><span class="o">/</span><span class="mi">10000</span>
+
+
 
 <span class="c1">## Find numerical solutions for the Duffing Oscillator</span>
 <span class="c1">## for our choices of initial conditions</span>
@@ -1057,11 +1074,11 @@ doconce format html Firstmidterm2022.do.txt --no_mako -->
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0xffff4439a960&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0xffff341b2510&gt;
 </pre></div>
 </div>
-<img alt="../_images/2421d93835a26e58403f8d8d8ff7b2638675bd4947b452ce8c43b66011a2582b.png" src="../_images/2421d93835a26e58403f8d8d8ff7b2638675bd4947b452ce8c43b66011a2582b.png" />
-<img alt="../_images/1768a54241bb59145ff09af61b566a6e7cfaa9284edfd47fe64011eae3ec318c.png" src="../_images/1768a54241bb59145ff09af61b566a6e7cfaa9284edfd47fe64011eae3ec318c.png" />
+<img alt="../_images/b8bc50c6247de92e67afbf2a6ec078e5fa1e21df4f5b3e1f4185e8edd2624bbd.png" src="../_images/b8bc50c6247de92e67afbf2a6ec078e5fa1e21df4f5b3e1f4185e8edd2624bbd.png" />
+<img alt="../_images/ec6f183227f184c791118816616782948098387e91d65a54d658f08109649da7.png" src="../_images/ec6f183227f184c791118816616782948098387e91d65a54d658f08109649da7.png" />
 </div>
 </div>
 <ol class="arabic simple" start="12">
@@ -1071,28 +1088,51 @@ doconce format html Firstmidterm2022.do.txt --no_mako -->
 <p class="admonition-title">Solution</p>
 <p>In an analysis where we want to use Poincare sections, we need to keep track of the location and velocity at a fixed time interval. We can do this by integrating the equations of motion and then plotting the position and velocity at a fixed time interval. This allows us to see the behavior of the system in phase space, even though the system is time dependent. It’s common to choose the period of the driving force as the time interval. We set that up below.</p>
 </div>
+<p><em><strong>This code is not working; I think the integrator is improperly set up. I will fix it using solve_ivp later.</strong></em></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">matplotlib.cm</span><span class="w"> </span><span class="kn">import</span> <span class="n">viridis</span>
-
-<span class="c1">## Solve the Duffing Oscillator for our set of initial conditions</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## Solve the Duffing Oscillator for our set of initial conditions</span>
 
 <span class="c1">## Define the initial conditions</span>
-<span class="n">initialPos</span> <span class="o">=</span> <span class="mf">0.5</span>
-<span class="n">initialVel</span> <span class="o">=</span> <span class="o">-</span><span class="mf">1.5</span>
-<span class="n">omega</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span>
+<span class="n">initialPos</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">initialVel</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">omega</span> <span class="o">=</span> <span class="mi">2</span>
 <span class="n">T</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">/</span><span class="n">omega</span>
-<span class="n">tmax</span> <span class="o">=</span> <span class="mi">100</span><span class="o">*</span><span class="n">T</span>
-<span class="n">dt</span> <span class="o">=</span> <span class="n">T</span><span class="o">/</span><span class="mi">10000</span>
+<span class="n">tmax</span> <span class="o">=</span> <span class="mi">1000</span><span class="o">*</span><span class="n">T</span>
+<span class="n">dt</span> <span class="o">=</span> <span class="n">T</span><span class="o">/</span><span class="mi">1000</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">dt</span><span class="p">)</span>
+
+<span class="c1">## Parameters for the Duffing Oscillator</span>
+<span class="n">alpha</span><span class="o">=-</span><span class="mf">1.0</span>
+<span class="n">beta</span><span class="o">=</span><span class="mf">0.25</span>
+<span class="n">delta</span><span class="o">=</span><span class="mf">0.1</span>
+<span class="n">gamma</span><span class="o">=</span><span class="mf">2.5</span>
 
 <span class="c1">## Find numerical solutions for the Duffing Oscillator</span>
 <span class="c1">## for our choices of initial conditions</span>
 <span class="c1">## store the results in separate pandas dataframes</span>
 
-<span class="n">t</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">v</span> <span class="o">=</span> <span class="n">DuffingDampedForcedEulerCromer</span><span class="p">(</span><span class="n">initialPos</span><span class="p">,</span> <span class="n">initialVel</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">omega</span><span class="o">=</span><span class="n">omega</span><span class="p">,</span> <span class="n">dt</span><span class="o">=</span><span class="n">dt</span><span class="p">,</span> <span class="n">t_max</span><span class="o">=</span><span class="n">tmax</span><span class="p">)</span>
+<span class="n">t</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">v</span> <span class="o">=</span> <span class="n">DuffingDampedForcedEulerCromer</span><span class="p">(</span><span class="n">initialPos</span><span class="p">,</span> <span class="n">initialVel</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="n">alpha</span><span class="p">,</span> <span class="n">beta</span><span class="o">=</span><span class="n">beta</span><span class="p">,</span> <span class="n">delta</span><span class="o">=</span><span class="n">delta</span><span class="p">,</span> <span class="n">gamma</span><span class="o">=</span><span class="n">gamma</span><span class="p">,</span> <span class="n">omega</span><span class="o">=</span><span class="n">omega</span><span class="p">,</span> <span class="n">dt</span><span class="o">=</span><span class="n">dt</span><span class="p">,</span> <span class="n">t_max</span><span class="o">=</span><span class="n">tmax</span><span class="p">)</span>
 <span class="n">trajDF</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;t&#39;</span><span class="p">:</span> <span class="n">t</span><span class="p">,</span> <span class="s1">&#39;x&#39;</span><span class="p">:</span> <span class="n">x</span><span class="p">,</span> <span class="s1">&#39;v&#39;</span><span class="p">:</span> <span class="n">v</span><span class="p">})</span>
 
-<span class="c1">## Extract the position and velocity data for the left and right solutions</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">,</span><span class="n">x</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.0031415926535897933
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&lt;matplotlib.lines.Line2D at 0xffff34053620&gt;]
+</pre></div>
+</div>
+<img alt="../_images/600be7f0781cd8eca5418096e0aba3c71177a4e5f01f36cb58133ed92e079d88.png" src="../_images/600be7f0781cd8eca5418096e0aba3c71177a4e5f01f36cb58133ed92e079d88.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## Extract the position and velocity data for the left and right solutions</span>
 <span class="c1">## at regular time intervals associated with the period of the driving force</span>
 <span class="c1">## With omega = 2*pi, the period is 1, we want to sample every 1/T.</span>
 
@@ -1104,8 +1144,7 @@ doconce format html Firstmidterm2022.do.txt --no_mako -->
 <span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
 
 <span class="c1"># Main plot</span>
-<span class="n">colors</span> <span class="o">=</span> <span class="n">viridis</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">trajDF_sampled</span><span class="p">)))</span>
-<span class="n">ax</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">trajDF_sampled</span><span class="p">[</span><span class="s1">&#39;x&#39;</span><span class="p">],</span> <span class="n">trajDF_sampled</span><span class="p">[</span><span class="s1">&#39;v&#39;</span><span class="p">],</span> <span class="n">c</span><span class="o">=</span><span class="n">colors</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;o&#39;</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;viridis&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">trajDF_sampled</span><span class="p">[</span><span class="s1">&#39;x&#39;</span><span class="p">],</span> <span class="n">trajDF_sampled</span><span class="p">[</span><span class="s1">&#39;v&#39;</span><span class="p">],</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;o&#39;</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;v&#39;</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
@@ -1115,11 +1154,7 @@ doconce format html Firstmidterm2022.do.txt --no_mako -->
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_1743/3734017154.py:33: UserWarning: No data for colormapping provided via &#39;c&#39;. Parameters &#39;cmap&#39; will be ignored
-  ax.scatter(trajDF_sampled[&#39;x&#39;], trajDF_sampled[&#39;v&#39;], c=colors, marker=&#39;o&#39;, cmap=&#39;viridis&#39;)
-</pre></div>
-</div>
-<img alt="../_images/de8ec6825f9507cdedd2d344607f71cb28e8f8242c80647eb6f02ac1e421d6ec.png" src="../_images/de8ec6825f9507cdedd2d344607f71cb28e8f8242c80647eb6f02ac1e421d6ec.png" />
+<img alt="../_images/d77216eb352de5e054f24c01a31d5bfa9bd9d638aa16f86ba2903a529319013f.png" src="../_images/d77216eb352de5e054f24c01a31d5bfa9bd9d638aa16f86ba2903a529319013f.png" />
 </div>
 </div>
 </section>
@@ -1218,7 +1253,7 @@ doconce format html Firstmidterm2022.do.txt --no_mako -->
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/a2f5da8b10c73fdc0d2564d6dae646072bc35f96296908460bc7eea5e8a6cc68.png" src="../_images/a2f5da8b10c73fdc0d2564d6dae646072bc35f96296908460bc7eea5e8a6cc68.png" />
+<img alt="../_images/9c4cf3bfe52e502f3e6c2a3381aa34dce98ad260e229cd3eef1e3b2af64f5721.png" src="../_images/9c4cf3bfe52e502f3e6c2a3381aa34dce98ad260e229cd3eef1e3b2af64f5721.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -1262,7 +1297,7 @@ doconce format html Firstmidterm2022.do.txt --no_mako -->
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/6f7078a45941dcfa430518fef56fa17a40fc8df6b5f5eee605cb067f0f87530d.png" src="../_images/6f7078a45941dcfa430518fef56fa17a40fc8df6b5f5eee605cb067f0f87530d.png" />
+<img alt="../_images/94ebb8927cdce6b9958d6a2f516ba43aa3e337f9a8ffd4fc1121ac27fb20e9eb.png" src="../_images/94ebb8927cdce6b9958d6a2f516ba43aa3e337f9a8ffd4fc1121ac27fb20e9eb.png" />
 </div>
 </div>
 <ol class="arabic simple" start="3">
@@ -1369,8 +1404,8 @@ doconce format html Firstmidterm2022.do.txt --no_mako -->
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/a4d40110af8714ecbf8c92fdf80deea672e168f8279a6a0428811ca86eb7dc80.png" src="../_images/a4d40110af8714ecbf8c92fdf80deea672e168f8279a6a0428811ca86eb7dc80.png" />
-<img alt="../_images/595f5c99f62d3db2fdcb43c6950797ca9e5ea6c217757c9ee616c4b4c749f95a.png" src="../_images/595f5c99f62d3db2fdcb43c6950797ca9e5ea6c217757c9ee616c4b4c749f95a.png" />
+<img alt="../_images/73499c4449894647abd560612b44ab3c38ced4f79fbcfd1a2c97d15b581e6121.png" src="../_images/73499c4449894647abd560612b44ab3c38ced4f79fbcfd1a2c97d15b581e6121.png" />
+<img alt="../_images/3391a89eceb123290727de80b536752f40db3e772d2effa20d69cf67079b0e0d.png" src="../_images/3391a89eceb123290727de80b536752f40db3e772d2effa20d69cf67079b0e0d.png" />
 </div>
 </div>
 <ol class="arabic simple" start="4">
@@ -1467,8 +1502,8 @@ doconce format html Firstmidterm2022.do.txt --no_mako -->
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/52e4fce1caa6eecab8b0332079b9547594f3205fe0c3e3adc3b8357521ff17b4.png" src="../_images/52e4fce1caa6eecab8b0332079b9547594f3205fe0c3e3adc3b8357521ff17b4.png" />
-<img alt="../_images/79bbd6669db732426f8203b6a887dd0f5a1d0ec9bc423f5a96e2b461f17384fd.png" src="../_images/79bbd6669db732426f8203b6a887dd0f5a1d0ec9bc423f5a96e2b461f17384fd.png" />
+<img alt="../_images/0938123c347b52539ba28a241d6723e89c3ae13264e58b39f03fe62c97b8498a.png" src="../_images/0938123c347b52539ba28a241d6723e89c3ae13264e58b39f03fe62c97b8498a.png" />
+<img alt="../_images/ed8aa29a98b964cb64ca80dfd5168dd001fb3fa06f7c5776094cef8114dcb836.png" src="../_images/ed8aa29a98b964cb64ca80dfd5168dd001fb3fa06f7c5776094cef8114dcb836.png" />
 </div>
 </div>
 <p><strong>Extra Credit</strong></p>
@@ -1630,8 +1665,8 @@ doconce format html Firstmidterm2022.do.txt --no_mako -->
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/3396252ec181175a3b1a4b26fd6682a04ee55b2ba148c8f0f7e53e9c91c983fc.png" src="../_images/3396252ec181175a3b1a4b26fd6682a04ee55b2ba148c8f0f7e53e9c91c983fc.png" />
-<img alt="../_images/ff455300e986bc4ff5596a567417489609b6a996c85d62ced12678a0c541bd2f.png" src="../_images/ff455300e986bc4ff5596a567417489609b6a996c85d62ced12678a0c541bd2f.png" />
+<img alt="../_images/274717a2d630d03b5941ddab8d3289722e89d11db98fc817d086c675cb9847c9.png" src="../_images/274717a2d630d03b5941ddab8d3289722e89d11db98fc817d086c675cb9847c9.png" />
+<img alt="../_images/c2a6d352ebcb986123e55d98551bbd6bb67f7e95498a7bde29c993f87c882691.png" src="../_images/c2a6d352ebcb986123e55d98551bbd6bb67f7e95498a7bde29c993f87c882691.png" />
 </div>
 </div>
 </section>
@@ -1688,11 +1723,11 @@ doconce format html Firstmidterm2022.do.txt --no_mako -->
       </div>
     </a>
     <a class="right-next"
-       href="../resources/course-commitments.html"
+       href="solutionhw8.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Course Commitments</p>
+        <p class="prev-next-title">Solution Homework 8</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -1703,8 +1738,7 @@ doconce format html Firstmidterm2022.do.txt --no_mako -->
             
             
               
-                <dialog id="pst-secondary-sidebar-modal"></dialog>
-                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
 
   <div class="sidebar-secondary-item">
@@ -1770,8 +1804,8 @@ By Danny Caballero, Morten Hjorth-Jensen, Rachel Henderson
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
-<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
 
   <footer class="bd-footer">
   </footer>
