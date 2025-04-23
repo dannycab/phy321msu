@@ -2,6 +2,17 @@
 
 Slides for PHY 321 appear in reverse chronological order, with the most recent slides at the top. The formats are PDF, HTML, and Markdown. The HTML slides are hosted on my website, and the Markdown slides are the source code for the HTML slides, built with [Marp](https://marp.app/).
 
+## Day 39 - Project Session - 23 Apr 2025
+
+### Download PDF
+
+[![Day 39](../slides/day-39-project-session.png)](../slides/day-39-project-session.pdf)
+### HTML Versions
+| Format | Link |
+|--|--|
+| HTML (Inline) | [day-39-project-session.md](../slides/day-39-project-session.md) |
+| HTML (Slides) | [day-39-project-session.html](../slides/day-39-project-session.html) |
+
 ## Day 38 - Project Session - 21 Apr 2025
 ### Download PDF
 
