@@ -28,50 +28,13 @@ $$a = 2.07 \quad b = 1.79$$
 
 # Announcements
 
-* Midterm 1 (problems 2 and 3) is graded
-    * Problem 1 is still being graded
 * Homework 7 is due Friday
-    * No homework next week
-* Midterm 2 will be assigned next Monday (due 18 April)
-    * Second project check-in 
 
 ---
-
-# Seminars This Week
-
-## MONDAY, March 24, 2025             
- 
-* **Condensed Matter Seminar** 4:10 pm, 1400 BPS, **Andrew Kirkpatrick, MSU**, *Fabrication of orientated NV centres in diamond by ultrafast laser fabrication* AND **Ankang Liu, MSU** *Effect of hole-strain coupling on the eigenmodes of semiconductor-based nanomechanical systems*
-
----
-
-# Seminars This Week
- 
-## WEDNESDAY, March 26, 2025    
-                                    
-* **Astronomy Seminar**, 1:30 pm, 1400 BPS, **Bryan Terrazas, Oberlin College**, *Galaxy evolution and feedback modeling*
-* FRIB Nuclear Science Seminar, 3:30pm., FRIB 1300 Auditorium, **Dr. Jacklyn Gates of Lawrence Berkeley National Laboratory**, *Toward Pursuing New Superheavy Elements*
-
----
-
-# Seminars This Week
-
-## THURSDAY, March 27, 2025
- 
-* **Special FRIB/MSU Nuclear Science Seminar with
-Colloquium**, 3:30 pm, 1415 BPS, **Mandie Gehring, LANL**, *Measuring Intense X-ray Spectra and an Overview of Space Research at Los Alamos National Laboratory*
- 
- 
-## FRIDAY, March 28, 2025 
- 
-* **IReNA Online Seminar**, 2:00 pm, In Person and Zoom, FRIB 2025 Nuclear Conference Room, **Jordi José, Technical University of Catalonia, UPC (Barcelona, Spain)**, *Classical novae at the crossroads of nuclear physics, astrophysics and cosmochemistry*
-
----
-
 
 # What is Chaos?
 
-![bg right width:600px](../images/notes/week10/hellmo.gif)
+## Activity: What does it mean for a system to be chaotic?
 
 **At your table, discuss what it means for a system to be chaotic.**
 
@@ -173,16 +136,4 @@ t_eval = np.linspace(t_span[0], t_span[1], 10000)
 # Solve the system of equations
 solution = solve_ivp(damped_driven_pendulum, t_span, y0, args=(beta, A, omegaD), t_eval=t_eval)
 ```
-
----
-
-# Damped Driven Pendulum
-
-**Long Term Behavior is Periodic**
-
-![damped](../images/notes/week10/damped-long-term.png)
-
-**"Period-1" Dynamics** is a term to indicate there's a single frequency governing the motion
-
-Phase space plots can provide a better window into the system's behavior
 
