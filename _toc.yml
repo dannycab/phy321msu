@@ -9,41 +9,28 @@ parts:
       - file: admin/getting-started.ipynb
       - file: admin/teachers
       - file: admin/textbooks
-  - caption: Calendar & Lecture Materials
-    chapters:
-      - file: admin/schedule-cal
-      - file: admin/links
-      - file: admin/slides
-      - file: admin/handwritten-notes
+  # - caption: Calendar & Lecture Materials
+  #   chapters:
+  #     - file: admin/schedule-cal
+  #     - file: admin/links
+  #     - file: admin/slides
+  #     - file: admin/handwritten-notes
   - caption: Weekly Course Materials
     chapters:
-      - file: lecture-notes/week1/01_start
-      - file: lecture-notes/week1/01_notes  
-      - file: lecture-notes/week2/02_start
-      - file: lecture-notes/week2/02_notes
-      - file: lecture-notes/week3/03_start
-      - file: lecture-notes/week3/03_notes
-      - file: lecture-notes/week4/04_start
-      - file: lecture-notes/week4/04_notes
-      - file: lecture-notes/week5/05_start
-      - file: lecture-notes/week5/05_notes
-      - file: lecture-notes/week6/06_start
-      - file: lecture-notes/week6/06_notes
+      - file: lecture-notes/01_notes  
+      - file: lecture-notes/02_notes
+      - file: lecture-notes/03_notes
+      - file: lecture-notes/04_notes
+      - file: lecture-notes/05_notes
+      - file: lecture-notes/06_notes
       - file: lecture-notes/week6/06_notes_2
-      - file: lecture-notes/week7/07_start
-      - file: lecture-notes/week7/07_notes
-      - file: lecture-notes/week8/08_start
-      - file: lecture-notes/week8/08_notes
-      - file: lecture-notes/week9/09_start
-      - file: lecture-notes/week9/09_notes
-      - file: lecture-notes/week10/10_start
-      - file: lecture-notes/week10/10_notes
-      - file: lecture-notes/week11/11_start
-      - file: lecture-notes/week11/11_notes
-      - file: lecture-notes/week12/12_start
-      - file: lecture-notes/week12/12_notes
-      - file: lecture-notes/week13/13_start
-      - file: lecture-notes/week13/13_notes
+      - file: lecture-notes/07_notes
+      - file: lecture-notes/08_notes
+      - file: lecture-notes/09_notes
+      - file: lecture-notes/10_notes
+      - file: lecture-notes/11_notes
+      - file: lecture-notes/12_notes
+      - file: lecture-notes/13_notes
   #- caption: Introductory Material
     #numbered: false
     #chapters:
@@ -75,35 +62,35 @@ parts:
   #     - file: in-class/cw1-python-test.ipynb
   #     - file: in-class/cw6-phase_space.ipynb
   #     - file: in-class/cw11-plot-fourier.ipynb
-  - caption: Assignments
-    numbered: false
-    chapters:
-      - file: homeworks/hw1.ipynb
-      - file: homeworks/hw2.ipynb
-      - file: homeworks/hw3.ipynb
-      - file: homeworks/hw4.ipynb
-      - file: midterms/midterm1.ipynb
-      - file: homeworks/hw5.ipynb
-      - file: homeworks/hw6.ipynb
-      - file: homeworks/hw7.ipynb
-      - file: midterms/midterm2.ipynb
-      - file: homeworks/hw8.ipynb
-  - caption: Resources
-    numbered: false
-    chapters:
-      - file: resources/course-commitments
-      - file: resources/iclicker-setup
-      - file: resources/generative-ai.ipynb
-      - file: resources/gradescope-submissions
-      - file: resources/finding-research
-      - file: resources/integrators.ipynb
-      - file: resources/phase_diagrams.ipynb
-      - file: resources/chaotic_dynamics.ipynb
-      - file: resources/computational-essay-rubric.md
-  - caption: Honors Projects
-    numbered: false
-    chapters:
-      - file: honors-projects/ChaoticPendulum
-      #- file: honors-projects/MolecularDynamics
-      - file: honors-projects/NeuralNetworks
-      - file: honors-projects/SolarSystem
+  # - caption: Assignments
+  #   numbered: false
+  #   chapters:
+  #     - file: homeworks/hw1.ipynb
+  #     - file: homeworks/hw2.ipynb
+  #     - file: homeworks/hw3.ipynb
+  #     - file: homeworks/hw4.ipynb
+  #     - file: midterms/midterm1.ipynb
+  #     - file: homeworks/hw5.ipynb
+  #     - file: homeworks/hw6.ipynb
+  #     - file: homeworks/hw7.ipynb
+  #     - file: midterms/midterm2.ipynb
+  #     - file: homeworks/hw8.ipynb
+  # - caption: Resources
+  #   numbered: false
+  #   chapters:
+  #     - file: resources/course-commitments
+  #     - file: resources/iclicker-setup
+  #     - file: resources/generative-ai.ipynb
+  #     - file: resources/gradescope-submissions
+  #     - file: resources/finding-research
+  #     - file: resources/integrators.ipynb
+  #     - file: resources/phase_diagrams.ipynb
+  #     - file: resources/chaotic_dynamics.ipynb
+  #     - file: resources/computational-essay-rubric.md
+  # - caption: Honors Projects
+  #   numbered: false
+  #   chapters:
+  #     - file: honors-projects/ChaoticPendulum
+  #     #- file: honors-projects/MolecularDynamics
+  #     - file: honors-projects/NeuralNetworks
+  #     - file: honors-projects/SolarSystem

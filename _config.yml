@@ -2,10 +2,19 @@
 # Learn more at https://jupyterbook.org/customize/config.html
 
 title: Classical Mechanics
-author: Danny Caballero, Morten Hjorth-Jensen, Rachel Henderson
+author: Danny Caballero, Morten Hjorth-Jensen, Rachel Henderson, Alia Valentine
 logo: images/logos/spartan-helmet.png
+copyright: ""
 
-exclude_patterns: ["solutionhw*"]
+exclude_patterns:
+  - "solutionhw*"
+  - "lecture-notes/chapter*.ipynb"
+  - "slides/*"
+  - "in-class/*"
+  - "homeworks/*"
+  - "midterms/*"
+  - "resources/*"
+  - "honors-projects/*"
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
@@ -44,7 +53,7 @@ bibtex_bibfiles:
 repository:
   url: https://github.com/dannycab/phy321msu  # Online location of your book
   #path_to_book: docs  # Optional path to your book, relative to the repository root
-  branch: spring2025  # Which branch of the repository should be used when creating links (optional)
+  branch: fall2026  # Which branch of the repository should be used when creating links (optional)
 
 # Add GitHub buttons to your book
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
@@ -101,3 +110,11 @@ launch_buttons:
 # #  jupyterhub_url            : ""  # The URL of the JupyterHub (e.g., https://datahub.berkeley.edu)
 #   thebe                     : false  # Add a thebe button to pages (requires the repository to run on Binder)
 #   colab_url                 : https://colab.research.google.com # The URL of Google Colab (https://colab.research.google.com)
+
+html:
+  extra_footer: |
+    <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+      <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" />
+    </a>
+    <br />
+    This work is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
