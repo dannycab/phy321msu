@@ -18,13 +18,14 @@ def update_kernel_in_notebook(notebook_path, kernel_name=".venv", display_name="
     with open(notebook_path, "r", encoding="utf-8") as f:
         nb = nbformat.read(f, as_version=nbformat.NO_CONVERT)
 
+
     # Ensure the 'kernelspec' metadata exists
     if "kernelspec" not in nb["metadata"]:
         nb["metadata"]["kernelspec"] = {}
 
-    # Update the kernel name and display name
-    nb["metadata"]["kernelspec"]["name"] = kernel_name
-    nb["metadata"]["kernelspec"]["display_name"] = display_name
+    # Always set to python3 kernel
+    nb["metadata"]["kernelspec"]["name"] = "python3"
+    nb["metadata"]["kernelspec"]["display_name"] = "Python 3"
 
     # Write the updated notebook back to disk
     with open(notebook_path, "w", encoding="utf-8") as f:
