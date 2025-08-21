@@ -23,7 +23,6 @@ parts:
       - file: lecture-notes/04_notes
       - file: lecture-notes/05_notes
       - file: lecture-notes/06_notes
-      - file: lecture-notes/week6/06_notes_2
       - file: lecture-notes/07_notes
       - file: lecture-notes/08_notes
       - file: lecture-notes/09_notes
