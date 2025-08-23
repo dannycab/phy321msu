@@ -9,12 +9,11 @@ parts:
       - file: admin/getting-started.ipynb
       - file: admin/teachers
       - file: admin/textbooks
-  # - caption: Calendar & Lecture Materials
-  #   chapters:
-  #     - file: admin/schedule-cal
-  #     - file: admin/links
-  #     - file: admin/slides
-  #     - file: admin/handwritten-notes
+  - caption: Calendar & Lecture Materials
+    chapters:
+      - file: admin/schedule-cal
+      - file: admin/links
+      - file: admin/slides
   - caption: Weekly Course Materials
     chapters:
       - file: lecture-notes/01_notes  

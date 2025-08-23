@@ -4,15 +4,13 @@
 
 | Meetings           |                       |                    | Location                                                                     |
 | ------------------ | --------------------- | ------------------ | ---------------------------------------------------------------------------- |
-| Monday 12:40-13:30 | Wednesday 12:40-13:30 | Friday 12:40-13:30 | STEM 1202 and [Zoom](https://msu.zoom.us/j/92295821308) |
+| Monday 12:00-12:50 | Wednesday 12:00-12:50 | Friday 12:00-12:50 | STEM 3202 |
 
 > **IMPORTANT**
 >
-> Monday and Wednesday's class will be lecture-based; Friday's classes will be homework-based workshops. *We will work the more challenging exercises together in class on Friday.*
->
-> The lecture portion of the course will be streamed and recorded via Zoom. *Only lecture will be recorded.*
+> Monday and Wednesday's class will be lecture-based; Friday's classes will be activity-based workshops. *We will work the more challenging exercises together in class on Friday.*
 > 
-> You are encouraged to attend in person, but if you are unable to do so, you can join the lecture via this [Zoom Link](https://msu.zoom.us/j/92295821308).
+> You are encouraged to attend in person, but if you are unable to do so, you can join the lecture via this [Zoom Link](https://dannycab.github.io/meet). **Classes will not be recorded.**
 
 ## Professor
 
@@ -24,30 +22,28 @@
 
 | Office Hours                                                                               |
 | ------------------------------------------------------------------------------------------ |
-| **Wednesday 16:00-17:00**; **Fridays 10:00-12:00** and **15:00-16:00** in the Strosacker Center (1248 BPS) or [schedule me](https://cal.com/dannycaballero/15min) |
+| TBD or [schedule me](https://cal.com/dannycaballero/15min) |
 
-Danny will lead the course, design the homework and exams, and assign final grades. Danny is also responsible for the course content, so if you have any suggestions for how to improve the course, please let him know. Danny will also grade your midterm and final projects.
+Danny will lead the course, design the homework and exams, and assign final grades. Danny is also responsible for the course content, so if you have any suggestions for how to improve the course, please let him know. Danny will also grade your midterms and final projects.
 
 ## Graduate Teaching Assistant
 
-![Scarlett](../images/staff/scarlett.png)
+
 
 | Homework Grader  | Email            |
 | ---------------- | ---------------- |
-| _Scarlett Rebolledo Caceres (she/her)_ | <rebolle3@msu.edu> |
+| _Alex Carrothers_ | <carroth5@msu.edu> |
 
-Scarlett will be grading your homework assignments. She will provide overall feedback on the things that students struggled with on homework sets which will be addressed in class. If you have questions about your homework grade, please contact Scarlett directly.
+Alex will be grading your homework assignments. Alex will provide overall feedback on the things that students struggled with on homework sets which will be addressed in class. If you have questions about your homework grade, please contact Alex directly.
 
 ## Undergraduate Learning Assistants
-
-![Elisha Alemao](../images/staff/elisha.png)
 
 
 | Learning Assistant         | Email             | Office Hours         | Location          |
 | -------------------------- | ----------------- | ------------------- | ----------------- |
-| _Elisha Alemao (she/her)_ | <alemaoel@msu.edu> |    **Tuesday and Thursday 17:00-18:00** in the Strosacker Center (1248 BPS)            | Physics Help Room |
+| _Mihir Naik (he/him)_ | <naikmihi@msu.edu>|    TBD           | Physics Help Room |
 
-Elisha will be helping you in class and during office hours. She has taken this course previously and has been selected because she is passionate about helping you learn classical mechanics. She is an incredible resource for you.
+Mihir will be helping you during office hours. He has taken this course previously and has been selected because he is passionate about helping you learn classical mechanics. He is an incredible resource for you.
 
 ## Getting Help
 
