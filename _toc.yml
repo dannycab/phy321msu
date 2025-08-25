@@ -10,11 +10,12 @@ parts:
       - file: admin/teachers
       - file: admin/grading
       - file: admin/textbooks
-  - caption: Calendar & Lecture Materials
-    chapters:
       - file: admin/schedule-cal
-      - file: admin/links
-      - file: admin/slides
+  # - caption: Calendar & Lecture Materials
+  #   chapters:
+  #     - file: admin/schedule-cal
+  #     - file: admin/links
+  #     - file: admin/slides
   - caption: Weekly Course Materials
     chapters:
       - file: lecture-notes/01_notes  
@@ -30,41 +31,10 @@ parts:
       - file: lecture-notes/11_notes
       - file: lecture-notes/12_notes
       - file: lecture-notes/13_notes
-  #- caption: Introductory Material
-    #numbered: false
-    #chapters:
-      #- file: lecture-notes/chapter1.ipynb
-      #- file: lecture-notes/chapter2-overview.ipynb
-      #- file: lecture-notes/chapter2.ipynb
-      # - file: lecture-notes/chapter3-overview.ipynb
-      #- file: lecture-notes/chapter3.ipynb
-      # - file: lecture-notes/chapter4-overview.ipynb
-      #- file: lecture-notes/chapter4.ipynb
-  #- caption: Advanced Topics
-    #numbered: false
-    #chapters:
-      # - file: lecture-notes/chapter5-overview.ipynb
-      #- file: lecture-notes/chapter5.ipynb
-      # - file: lecture-notes/chapter6-overview.ipynb
-      #- file: lecture-notes/chapter6.ipynb
-      # - file: lecture-notes/chapter7-overview.ipynb
-      #- file: lecture-notes/chapter7.ipynb
-      # - file: lecture-notes/chapter8-overview.ipynb
-      #- file: lecture-notes/chapter8.ipynb
-  # - caption: Slides
-  #   numbered: false
-  #   chapters:
-  #   - file: slides/cw1.ipynb
-  # - caption: In-class handouts, activities, and other materials
-  #   numbered: false
-  #   chapters:
-  #     - file: in-class/cw1-python-test.ipynb
-  #     - file: in-class/cw6-phase_space.ipynb
-  #     - file: in-class/cw11-plot-fourier.ipynb
-  # - caption: Assignments
-  #   numbered: false
-  #   chapters:
-  #     - file: homeworks/hw1.ipynb
+  - caption: Assignments
+    numbered: false
+    chapters:
+      - file: homeworks/hw1.ipynb
   #     - file: homeworks/hw2.ipynb
   #     - file: homeworks/hw3.ipynb
   #     - file: homeworks/hw4.ipynb
@@ -74,14 +44,14 @@ parts:
   #     - file: homeworks/hw7.ipynb
   #     - file: midterms/midterm2.ipynb
   #     - file: homeworks/hw8.ipynb
-  # - caption: Resources
-  #   numbered: false
-  #   chapters:
-  #     - file: resources/course-commitments
-  #     - file: resources/iclicker-setup
+  - caption: Resources
+    numbered: false
+    chapters:
+      - file: resources/course-commitments
+      - file: resources/iclicker-setup
   #     - file: resources/generative-ai.ipynb
-  #     - file: resources/gradescope-submissions
-  #     - file: resources/finding-research
+      - file: resources/gradescope-submissions
+      - file: resources/finding-research
   #     - file: resources/integrators.ipynb
   #     - file: resources/phase_diagrams.ipynb
   #     - file: resources/chaotic_dynamics.ipynb

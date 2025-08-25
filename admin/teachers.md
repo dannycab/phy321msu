@@ -22,7 +22,7 @@
 
 | Office Hours                                                                               |
 | ------------------------------------------------------------------------------------------ |
-| TBD or [schedule me](https://cal.com/dannycaballero/15min) |
+| TBD or [schedule me](https://cal.com/dannycaballero/phy-321) |
 
 Danny will lead the course, design the homework and exams, and assign final grades. Danny is also responsible for the course content, so if you have any suggestions for how to improve the course, please let him know. Danny will also grade your midterms and final projects.
 

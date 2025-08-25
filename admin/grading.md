@@ -9,15 +9,17 @@ There are no curves in this course. The grading scale is as follows.
 | ------- | ------- | ------- | ------- | ------- | ------- | ------- |
 | 90%     | 80%     | 70%     | 65%     | 60%     | 55%     | 50%     |
 
+> This class isn't trying to trick you or order you in terms of capabilities or knowledge. Far from it, we recoagnize that each of you start with different skills and knowledge and learning will be different for each person. But if you keep up with the work and make real efforts on your midterms and final project, you will earn a good grade. If you are concerned at all, at anytime, talk with Danny.
+
 ## Course Activities
 
-| Activity                                                    | Percentage of total score |
-| ----------------------------------------------------------- | ------------------------- |
-| Homeworks, 9 in total and due Fridays the week after        | 15%                       |
-| Individual Reflections, weekly and HW                       | 5%                        |
-| First Midterm Project, _due Friday Feb 28_                  | 25%                       |
-| Second Midterm Project, _due Friday April 11_               | 25%                       |
-| Final Project, _due Friday May 02_                          | 30%                       |
+| Activity                                                      | Percentage of total score |
+| ------------------------------------------------------------- | ------------------------- |
+| Homeworks, 8 in total and due Fridays the week after          | 15%                       |
+| Individual Reflections, weekly and HW                         | 5%                        |
+| First Midterm Project, _due Friday Oct 10_                    | 25%                       |
+| Second Midterm Project, _due Friday Nov 14_                   | 25%                       |
+| Final Project, _due Monday Dec 08_  (Presentations 01-05 Dec) | 30%                       |
 
 ### Homework (15%)
 
@@ -60,9 +62,11 @@ The midterm projects are an individual effort to showcase your learning. They wi
 
 ### Final Project (30%)
 
-The final project is designed for you to show your understanding of the various physics and mathematical topics we have covered during the semester. The final project will be due by Friday, May 2nd via the D2L Assignments page. For the final exam project, you will choose a physical system to analyze fully. You will prepare a narrative report (as a Jupyter notebook) that shows your work and explains your results. By the end of the semester, you will hopefully feel confident in your ability to choose a system to study. However, if you are unsure, please reach out to Danny for guidance. 
+The final project is designed for you to show your understanding of the various physics and mathematical topics we have covered during the semester. The final project has two parts: (1) an in-class presentation and (2) a computational essay. Presentations will occur the final week of classes (01-05 Dec; time slots will be assigned at random). The computational essay will be due the first day of finals week (08 Dec) via the D2L Assignments page. 
 
-You can work in pairs (2 people) OR by yourself. The expectation is that if you work together on the project, you will turn in your own work. In other words, the final project should be turned in by each student individually and should represent their own work. 
+For the final exam project, you will choose a physical system to analyze fully. You will prepare a narrative report (as a Jupyter notebook) that shows your work and explains your results. Your presentation will educate us on your system and present your computational essay and findings. We will have project update homework problems starting with the first midterm to ensure you make good progress and to reduce end of semester stress. By the end of the semester, you will hopefully feel confident in your ability to choose a system to study. However, if you are unsure, please reach out to Danny for guidance. 
+
+You can work in pairs (2 people) OR by yourself. A rubric and breakdown of the grading will be available later in the semester. It will include your reviewing of classmates presentations throughout that last week of class.
 
 
 ## Extra Credit Opportunities
