@@ -15,6 +15,9 @@ exclude_patterns:
   - "midterms/*"
   - "resources/*"
   - "honors-projects/*"
+  - ".venv/*"
+  - "_build/*"
+  - "**/.ipynb_checkpoints/*"
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html

@@ -164,5 +164,3 @@ _All assignments are turned in using Gradescope as a single PDF._
 | CW50     | 08 Dec    | **FINALS WEEK**                   |                        | 🎉 **Final Project Due**                                                        |
 |          | 10 Dec    | **FINALS WEEK**                   |                        |                                                                             |
 |          | 12 Dec    | **FINALS WEEK**                   |                        |                                                                             |
-
----
