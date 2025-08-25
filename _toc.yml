@@ -8,6 +8,7 @@ parts:
     chapters:
       - file: admin/getting-started.ipynb
       - file: admin/teachers
+      - file: admin/grading
       - file: admin/textbooks
   - caption: Calendar & Lecture Materials
     chapters:
