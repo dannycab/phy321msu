@@ -1,137 +1,166 @@
 # Course Calendar
 
-**Topics are subject to change based on course pace and student needs.**
+> **Topics are subject to change based on course pace and student needs.**
 
-Zoom: <https://msu.zoom.us/j/92295821308>
+**Zoom:** [https://dannycab.github.io/meet](https://dannycab.github.io/meet)  
+_All assignments are turned in using Gradescope as a single PDF._
 
-All assignments are turned in using Gradescope as a single PDF.
+---
 
-## Class Week 1
+## 📅 Class Week 1
 
-| Week | Day    | Topic                                                               | Readings to prepare     | Important events                                            |
-| ---- | ------ | ------------------------------------------------------------------- | ----------------------- | ----------------------------------------------------------- |
-| CW3  | 13 Jan | Introduction to the course; reminders about vectors; software setup ([Slides](../slides/day-01-introduction.pdf)) | MLB Ch 3.4              | [Homework 1 Assigned (Due 24 Jan )](../homeworks/hw1.ipynb) |
-|      | 15 Jan | Newton's 1st and 2nd Law; Motion in 1 dimension  ([Slides](../slides/day-02-newtons-laws.pdf))                   | JRT 1.1-1.4; AMS Ch 1-4 |                                                             |
-|      | 17 Jan | Discussion of Homework 1  ([Slides](../slides/day-03-vectors.pdf))                                          |                         |                                                             |
+| **Week** | **Day**   | **Topic**                                                               | **Readings to Prepare**     | **Important Events**                                            |
+|:--------:|:---------:|:-----------------------------------------------------------------------:|:---------------------------|:---------------------------------------------------------------|
+| CW35     | 25 Aug    | Introduction to the course; reminders about vectors; software setup     | 📓 [01 - Overture: What is Classical Physics?](../lecture-notes/01_notes.ipynb)<br>📚 MLB Ch 3.4 | 📄 Homework 1 Assigned (Due 5 Sep)   |
+|          | 27 Aug    | Newton's 1st and 2nd Law; Motion in 1 dimension                        | 📚 JRT 1.1-1.4; AMS Ch 1-4    |                                                               |
+|          | 29 Aug    | Getting Started with VS Code; Using AI in this Class                   | 📓 [02 - Computing is a Necessary Tool for Science](../lecture-notes/02_notes.ipynb) |                                                               |
 
-## Class Week 2
+---
 
-| Week | Day    | Topic                                       | Readings to prepare           | Important events                                                |
-| ---- | ------ | ------------------------------------------- | ----------------------------- | --------------------------------------------------------------- |
-| CW4  | 20 Jan | MLK Holiday (No Class)                      |                               | [Homework 2 Assigned (Due 31 Jan)](../homeworks/hw2.ipynb)      |
-|      | 22 Jan | Newton's Laws; Motion in 2 and 3 dimensions ([Slides](../slides/day-04-mathematical-prelims.pdf)) | JRT 1.4-1.6; AMS Ch 4.2 and 5 |                                                                 |
-|      | 24 Jan | Problem session for homework ([Slides](../slides/day-05-homework-session.pdf))                |                               | **Homework 1 Due** |
+## 📅 Class Week 2
 
-## Class Week 3
+| **Week** | **Day**   | **Topic**                                       | **Readings to Prepare**           | **Important Events**                                                |
+|:--------:|:---------:|:-----------------------------------------------:|:----------------------------------|:-------------------------------------------------------------------|
+| CW36     | 1 Sep     | **Labor Day (No Class)**                        |                                  | 📄 Homework 2 Assigned (Due 12 Sep)      |
+|          | 3 Sep     | Newton's Laws; Motion in 2 and 3 dimensions     | 📚 JRT 1.4-1.6; AMS Ch 4.2 and 5    |                                                                   |
+|          | 5 Sep     | Workshop day                                    |                                  | 📥 **Homework 1 Due**                                                |
 
-| Week | Day    | Topic                                       | Readings to prepare | Important events                                                |
-| ---- | ------ | ------------------------------------------- | ------------------- | --------------------------------------------------------------- |
-| CW5  | 27 Jan | Modeling and equations of motion ([Slides](../slides/day-06-making-classical-models.pdf)) | JRT 1.4-1.6         | [Homework 3 Assigned (Due 07 Feb)](../homeworks/hw3.ipynb)       |
-|      | 29 Jan | Air Resistance ([Slides](../slides/day-07-drag-forces.pdf)]        |                     |                                                                 |
-|      | 31 Jan | Problem session for homework ([Slides](../slides/day-08-homework-session.pdf))               |                     | **Homework 2 Due** |
+---
 
-## Class Week 4
+## 📅 Class Week 3
 
-| Week | Day    | Topic                                                     | Readings to prepare | Important events                                                |
-| ---- | ------ | --------------------------------------------------------- | ------------------- | --------------------------------------------------------------- |
-| CW6  | 03 Feb | Air Resistance; Central Forces  ([Slides](../slides/day-09-modeling-drag.pdf)) ([Recording](https://mediaspace.msu.edu/media/1_pyvn2ffv))                                | JRT 2.1-2.4         | [Homework 4 Assigned (Due 21 Feb)](../homeworks/hw4.ipynb)       |
-|      | 05 Feb | Euler-Cromer Integration ([Slides](../slides/day-10-integrating-eoms-numerically.pdf))                                  |                     |                                                                 |
-|      | 07 Feb | Problem session for homework ([Slides](../slides/day-11-homework-session.pdf))                             |                     | **Homework 3 Due** |
+| **Week** | **Day**   | **Topic**                                       | **Readings to Prepare** | **Important Events**                                                |
+|:--------:|:---------:|:-----------------------------------------------:|:-----------------------|:-------------------------------------------------------------------|
+| CW37     | 8 Sep     | Modeling and equations of motion                | 📓 [03 - What is Mathematical Modeling?](../lecture-notes/03_notes.ipynb)<br>📚 JRT 1.4-1.6 | 📄 Homework 3 Assigned (Due 19 Sep)      |
+|          | 10 Sep    | Air Resistance                                  |                        |                                                                   |
+|          | 12 Sep    | Workshop day                                    |                        | 📥 **Homework 2 Due**                                                |
 
-## Class Week 5
+---
 
-| Week | Day    | Topic                                                     | Readings to prepare | Important events                                                |
-| ---- | ------ | --------------------------------------------------------- | ------------------- | --------------------------------------------------------------- |
-| CW7  | 10 Feb | Work Energy Theorem ([Slides](../slides/day-12-conservation-of-energy.pdf))                                      | JRT 4.1-4.3         |        |
-|      | 12 Feb | Conservative Forces and Potential ([Slides](../slides/day-13-conservative-forces.pdf)) | JRT 4.1-4.4, 4.6        |                                                                 |
-|      | 14 Feb | Problem session for homework ([Slides](../slides/day-14-homework-session.pdf))                             |                     |  |
+## 📅 Class Week 4
 
+| **Week** | **Day**   | **Topic**                                                     | **Readings to Prepare** | **Important Events**                                                |
+|:--------:|:---------:|:-------------------------------------------------------------:|:-----------------------|:-------------------------------------------------------------------|
+| CW38     | 15 Sep    | Air Resistance; Central Forces                                | 📓 [04 - Why does fluid drag complicate things?](../lecture-notes/04_notes.ipynb)<br>📚 JRT 2.1-2.4 | 📄 Homework 4 Assigned (Due 26 Sep)      |
+|          | 17 Sep    | Euler-Cromer Integration                                     | 📓 [02 - Computing is a Necessary Tool for Science - Euler Discretization](../lecture-notes/02_notes.ipynb#euler-discretization)<br>📚 Newman, *Computational Physics* [Ch 08 - Ordinary Differential Equations](../docs/textbook-chapters/Newman_Ch8_ODEs.pdf) |                                                                   |
+|          | 19 Sep    | Workshop day                                                 |                        | 📥 **Homework 3 Due**                                                |
 
-## Class Week 6
+---
 
-| Week | Day    | Topic                             | Readings to prepare           | Important events                                                |
-| ---- | ------ | --------------------------------- | ----------------------------- | --------------------------------------------------------------- |
-| CW8  | 17 Feb | Examples and Stability Analysis ([Slides](../slides/day-15-potential-energy-and-stability.pdf)) | JRT 4.1-4.4, 4.6; MLB 6.6-6.8 |  **Homework 4 Due** & [Midterm Project 1 Assigned (Due 28 Feb)](../midterms/midterm1.ipynb)                                                               |
-|      | 19 Feb | Conservation of Momentum and Angular Momentum ([Slides](../slides/day-16-conservation-of-momentum.pdf))   |  JRT 3.1, 3.3-3.4                            |                                                                 |
-|      | 21 Feb |  Problem session for homework  ([Slides](../slides/day-17-homework-session.pdf))       |                               |   |
+## 📅 Class Week 5
 
-## Class Week 7
+| **Week** | **Day**   | **Topic**                                                     | **Readings to Prepare** | **Important Events**                                                |
+|:--------:|:---------:|:-------------------------------------------------------------:|:-----------------------|:-------------------------------------------------------------------|
+| CW39     | 22 Sep    | Work Energy Theorem                                           | 📓 [05 - Conservation Laws Govern and Constrain our Physics](../lecture-notes/05_notes.ipynb)<br>📚 JRT 4.1-4.3 |                                                               |
+|          | 24 Sep    | Conservative Forces and Potential                             | 📚 JRT 4.1-4.4, 4.6       |                                                               |
+|          | 26 Sep    | Workshop day                                                  |                        | 📥 **Homework 4 Due**                                               |
 
-| Week | Day    | Topic                                                                                 | Readings to prepare                                                                                                                                                                                                                                                           | Important events                                                      |
-| ---- | ------ | ------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------- |
-| CW9  | 24 Feb | [Nonlinear dynamics](https://en.wikipedia.org/wiki/Nonlinear_system), phase portraits ([Slides](../slides/day-18-introduction-to-nonlinear-dynamics.pdf)) | [Strogatz](https://www.stevenstrogatz.com/books/nonlinear-dynamics-and-chaos-with-applications-to-physics-biology-chemistry-and-engineering) [2.0-2.3](../docs/textbook-chapters/strogatz_3rd_ch2.0-2.3.pdf); [5.0-5.2](../docs/textbook-chapters/strogatz_3rd_ch5.0-5.2.pdf) | [Homework 5 Assigned (Due 14 Mar)](../homeworks/hw5.ipynb) |
-|      | 26 Feb | Phase portraits, numerical modeling ([Slides](../slides/day-19-phase-diagrams.pdf))                                                  | PDFs posted are consistent with [educational fair use](https://www.copyright.gov/help/faq/faq-fairuse.html); will be removed after course has concluded                                                                                                                       |                                                                       |
-|      | 28 Feb |    Problem session for homework ([Slides](../slides/day-20-homework-session.pdf))     |                                                                                                                                                                                                                                                                               |  **Midterm Project 1 Due**                                                                     |
+---
 
-## Class Week 8
+## 📅 Class Week 6
 
-| Week | Day    | Topic                 | Readings to prepare                | Important events                                                       |
-| ---- | ------ | --------------------- | ---------------------------------- | ---------------------------------------------------------------------- |
-| CW10  | 03 Mar | SPRING BREAK | NO CLASS | |
-|      | 05 Mar | SPRING BREAK | NO CLASS |        |
-|      | 07 Mar |  SPRING BREAK | NO CLASS  |  |
+| **Week** | **Day**   | **Topic**                             | **Readings to Prepare**           | **Important Events**                                                |
+|:--------:|:---------:|:-------------------------------------:|:----------------------------------|:-------------------------------------------------------------------|
+| CW40     | 29 Sep    | Examples and Stability Analysis       | 📓 [06 - Nature Often Seeks Stability](../lecture-notes/06_notes.ipynb)<br>📚 JRT 4.1-4.4, 4.6; MLB 6.6-6.8 | 📄 Midterm Project 1 Assigned (Due 10 Oct) |
+|          | 1 Oct     | Conservation of Momentum and Angular Momentum | 📓 [05 - Conservation Laws Govern and Constrain our Physics](../lecture-notes/05_notes.ipynb#conservation-of-momentum-and-angular-momentum)<br>📚 JRT 3.1, 3.3-3.4 | |
+|          | 3 Oct     | Workshop day                          |                                  |                                                                   |
 
-## Class Week 9
+---
 
-| Week | Day    | Topic                     | Readings to prepare | Important events |
-| ---- | ------ | ------------------------- | ------------------- | ---------------- |
-| CW11 | 10 Mar ([Slides](../slides/day-21-oscillations.pdf)) | Oscillations; Damping | JRT 5.1-5.2, 5.4; MLB 7.1-7.2; 8.5 | [Homework 6 Assigned (Due 21 Mar)](../homeworks/hw6.ipynb)                 |
-|      | 12 Mar ([Slides](../slides/day-22-damped-oscillations.pdf)) | Oscillations; Damping |                     |                  |
-|      | 14 Mar ([Slides](../slides/day-23-homework-session.pdf)) | Problem session for homework |                     |  Homework 5 Due                |
+## 📅 Class Week 7
 
-## Class Week 10
+| **Week** | **Day**   | **Topic**                                                                                 | **Readings to Prepare**                                                                                                                                                                                                                                                           | **Important Events**                                                      |
+|:--------:|:---------:|:-----------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------|
+| CW41     | 6 Oct     | Nonlinear dynamics, phase portraits                                                       | 📓 [07 - Introducing Nonlinear Dynamics](../lecture-notes/07_notes.ipynb)<br>📚 Strogatz, *Nonlinear Dynamics* [2.0-2.3](../docs/textbook-chapters/strogatz_3rd_ch2.0-2.3.pdf); [5.0-5.2](../docs/textbook-chapters/strogatz_3rd_ch5.0-5.2.pdf) | 📄 Homework 5 Assigned (Due 17 Oct) |
+|          | 8 Oct     | Phase portraits, numerical modeling                                                       | PDFs posted are consistent with [educational fair use](https://www.copyright.gov/help/faq/faq-fairuse.html); will be removed after course has concluded |                                  |
+|          | 10 Oct    | Workshop day                                                                              |     |  📥 **Midterm Project 1 Due**                    |
 
-| Week | Day    | Topic                          | Readings to prepare  | Important events                                                |
-| ---- | ------ | ------------------------------ | -------------------- | --------------------------------------------------------------- |
-| CW12 | 17 Mar ([Slides](../slides/day-24-driven-oscillations.pdf)) | Driven Oscillations; Resonance | JRT 5.5-5.6; MLB 8.6 | [Homework 7 Assigned (Due 28 Mar)](../homeworks/hw7.ipynb)      |
-|      | 19 Mar ([Slides](../slides/day-25-resonance.pdf)) |  Driven Oscillations; Resonance                              |                      |                                                                 |
-|      | 21 Mar ([Slides](../slides/day-26-homework-session.pdf)) |   Problem session for homework                             |                      | **Homework 6 Due** |
+---
 
-## Class Week 11
+## 📅 Class Week 8
 
-| Week | Day    | Topic          | Readings to prepare  | Important events                                                |
-| ---- | ------ | -------------- | -------------------- | --------------------------------------------------------------- |
-| CW13 | 24 Mar ([Slides](../slides/day-27-introduction-to-chaos.pdf)) | Introduction to Chaos | [Chaotic Dynamics](../lecture-notes/week10/10_start.ipynb) |      |
-|      | 26 Mar ([Slides](../slides/day-28-hallmarks-of-chaos.pdf)) |  Hallmarks of Classical Chaos Series              |                      |                                                                 |
-|      | 28 Mar ([Slides](../slides/day-29-homework-session.pdf)) |   Problem session for homework             |                      | **Homework 7 Due** |
+| **Week** | **Day**   | **Topic**                     | **Readings to Prepare** | **Important Events** |
+|:--------:|:---------:|:-----------------------------:|:-----------------------|:--------------------|
+| CW42     | 13 Oct    | Oscillations; Damping         | 📓 [08 - Oscillations, Cycles, and Nature’s Recurrences](../lecture-notes/08_notes.ipynb)<br>📚 JRT 5.1-5.2, 5.4; MLB 7.1-7.2; 8.5 | 📄 Homework 6 Assigned (Due 24 Oct)                 |
+|          | 15 Oct    | Oscillations; Damping         |                        |                    |
+|          | 17 Oct    | Workshop day                  |                        | 📥 **Homework 5 Due**     |
 
-## Class Week 12
+---
 
-| Week | Day    | Topic                                           | Readings to prepare      | Important events                                                |
-| ---- | ------ | ----------------------------------------------- | ------------------------ | --------------------------------------------------------------- |
-| CW14 | 31 Mar ([Slides](../slides/day-30-calculus-of-variations.pdf)) | Calculus of Variations; Euler-Lagrange Equation | JRT 6.1-6.3; MLB 9.1-9.4 |  [Midterm Project 2 Assigned (Due 11 Apr)](../midterms/midterm2.ipynb)  |
-|      | 02 Apr ([Slides](../slides/day-31-euler-lagrange-equation.pdf)) |  Euler-Lagrange Equation Examples                                               |                          |                                                                 |
-|      | 04 Apr ([Slides](../slides/day-32-homework-session.pdf)) |    Problem session for homework                                             |                          |     |
+## 📅 Class Week 9
 
-## Class Week 13
+| **Week** | **Day**   | **Topic**                     | **Readings to Prepare** | **Important Events** |
+|:--------:|:---------:|:-----------------------------:|:-----------------------|:--------------------|
+| CW43     | 20 Oct    | **No Class - Fall Break**     |                        | 📄 Homework 7 Assigned (Due 31 Oct)                 |
+|          | 22 Oct    | Driven Oscillations; Resonance| 📓 [09 - Driving Oscillators and Resonance Phenomenon](../lecture-notes/09_notes.ipynb)<br>📚 JRT 5.5-5.6; MLB 8.6   |                    |
+|          | 24 Oct    | Driven Oscillations; Resonance|                        | 📥 **Homework 6 Due**  |
 
-| Week | Day    | Topic                                 | Readings to prepare       | Important events                                                     |
-| ---- | ------ | ------------------------------------- | ------------------------- | -------------------------------------------------------------------- |
-| CW15 | 07 Apr ([Slides](../slides/day-33-introduction-to-lagrangian-dynamics.pdf)) | Introduction to Lagrangian Dynamics | JRT 7.1-7.2, 7.5; MLB 9.5 | [Homework 8 Assigned (Due 18 Apr)](../homeworks/hw8.ipynb) |
-|      | 09 Apr |    Midterm 2 Help Session                                   |                           |                                                                      |
-|      | 11 Apr |    **NO CLASS (DC OUT)**                                  |                           |     **Midterm Project 2 Due**    |
+---
 
-## Class Week 14
+## 📅 Class Week 10
 
-| Week | Day    | Topic                      | Readings to prepare | Important events                                                       |
-| ---- | ------ | -------------------------- | ------------------- | ---------------------------------------------------------------------- |
-| CW16 | 14 Apr | Lagrange Equation Examples | JRT 7.3-7.7, 7.10   |   [Final Project Rubric (Due 28 Apr)](../resources/computational-essay-rubric.md)           |
-|      | 16 Apr |   Lagrange Equation Examples   |          |  |
-|      | 18 Apr |    Problem session for homework                        |                     | **Homework 8 Due** |
+| **Week** | **Day**   | **Topic**          | **Readings to Prepare**  | **Important Events**                                                |
+|:--------:|:---------:|:------------------:|:------------------------|:-------------------------------------------------------------------|
+| CW44     | 27 Oct    | Introduction to Chaos | 📓 [10 - Investigating Systems that Exhibit Chaotic Dynamics](../lecture-notes/10_notes.ipynb)        |      |
+|          | 29 Oct    | Hallmarks of Classical Chaos Series |                    |                                                                   |
+|          | 31 Oct    | Workshop day        |                        | 📥 **Homework 7 Due** |
 
-## Class Week 15
+---
 
-| Week | Day    | Topic                      | Readings to prepare | Important events                                                |
-| ---- | ------ | -------------------------- | ------------------- | --------------------------------------------------------------- |
-| CW17 | 20 Apr | Final Project Prep |            |                                                                 |
-|      | 22 Apr | Final Project Prep |                     |                                                                 |
-|      | 24 Apr |  Final Project Prep                          |                     |                                              |
+## 📅 Class Week 11
 
-## Class Week 16
+| **Week** | **Day**   | **Topic**                                           | **Readings to Prepare**      | **Important Events**                                                |
+|:--------:|:---------:|:---------------------------------------------------:|:----------------------------|:-------------------------------------------------------------------|
+| CW45     | 03 Nov    | Calculus of Variations; Euler-Lagrange Equation     | 📓 [11 - Reformulating Classical Mechanics using the Calculus of Variations](../lecture-notes/11_notes.ipynb)<br>📚 JRT 6.1-6.3; MLB 9.1-9.4    | 📄 Midterm Project 2 Assigned (Due 14 Nov)  |
+|          | 05 Nov    | Euler-Lagrange Equation Examples                    |                             |                                                                   |
+|          | 07 Nov    | Workshop day                                        |                             |                                                                   |
 
-| Week | Day    | Topic                         | Readings to prepare | Important events                                                         |
-| ---- | ------ | ----------------------------- | ------------------- | ------------------------------------------------------------------------ |
-| CW18 | 28 Apr |FINALS WEEK |         | **Final Project Due**  |
-|      | 29 Apr |   FINALS WEEK                            |                     |                                                                         |
-|      | 01 May |   FINALS WEEK                            |                     |                                                                          |
+---
 
+## 📅 Class Week 12
+
+| **Week** | **Day**   | **Topic**                                 | **Readings to Prepare**       | **Important Events**                                                     |
+|:--------:|:---------:|:-----------------------------------------:|:-----------------------------|:------------------------------------------------------------------------|
+| CW46     | 10 Nov    | Introduction to Lagrangian Dynamics       | 📓 [12 - The Core Principle of Classical Mechanics? The Principle of Least Action](../lecture-notes/12_notes.ipynb)<br>📚 JRT 7.1-7.2, 7.5; MLB 9.5    | 📄 Homework 8 Assigned (Due 21 Nov) |
+|          | 12 Nov    | Lagrangian Dynamics Examples Session      |                             |                                                                        |
+|          | 14 Nov    | Workshop Day                              |                             | 📥 **Midterm Project 2 Due**    |
+
+---
+
+## 📅 Class Week 13
+
+| **Week** | **Day**   | **Topic**                      | **Readings to Prepare** | **Important Events**                                                       |
+|:--------:|:---------:|:------------------------------:|:-----------------------|:--------------------------------------------------------------------------|
+| CW47     | 17 Nov    | Lagrangian Dynamics Examples   | 📓 [13 - Applying the Lagrangian Formulation](../lecture-notes/13_notes.ipynb)<br>📚 JRT 7.3-7.7, 7.10      | 📄 Final Project Assigned<br>Presentations (01-05 Dec)<br>Computational Essay (08 Dec) |
+|          | 19 Nov    | Lagrangian Dynamics with Constraints |                   |                    |
+|          | 21 Nov    | Workshop day                   |                        | 📥 **Homework 8 Due** |
+
+---
+
+## 📅 Class Week 14
+
+| **Week** | **Day**   | **Topic**                      | **Readings to Prepare** | **Important Events**                                                       |
+|:--------:|:---------:|:------------------------------:|:-----------------------|:--------------------------------------------------------------------------|
+| CW48     | 24 Nov    | Final Project Prep             |                        | 📄 Final Project Assigned<br>Presentations (01-05 Dec)<br>Computational Essay (08 Dec) |
+|          | 26 Nov    | Final Project Prep             |                        |                    |
+|          | 28 Nov    | **No Class - University Closed** |                      | **Homework 8 Due** |
+
+---
+
+## 📅 Class Week 15
+
+| **Week** | **Day**   | **Topic**                      | **Readings to Prepare** | **Important Events**                                                |
+|:--------:|:---------:|:------------------------------:|:-----------------------|:-------------------------------------------------------------------|
+| CW49     | 01 Dec    | Final Project Presentations    |                        | 👀 Must review at least 2 presentations daily                        |
+|          | 03 Dec    | Final Project Presentations    |                        | 👀 Must review at least 2 presentations                              |
+|          | 05 Dec    | Final Project Presentations    |                        | 👀 Must review at least 2 presentations                              |
+
+---
+
+## 📅 Class Week 16
+
+| **Week** | **Day**   | **Topic**                         | **Readings to Prepare** | **Important Events**                                                         |
+|:--------:|:---------:|:---------------------------------:|:-----------------------|:----------------------------------------------------------------------------|
+| CW50     | 08 Dec    | **FINALS WEEK**                   |                        | 🎉 **Final Project Due**                                                        |
+|          | 10 Dec    | **FINALS WEEK**                   |                        |                                                                             |
+|          | 12 Dec    | **FINALS WEEK**                   |                        |                                                                             |
