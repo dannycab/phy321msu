@@ -8,6 +8,7 @@ parts:
       - file: admin/grading
       - file: admin/textbooks
       - file: admin/schedule-cal
+      - file: admin/slides
   - caption: Resources
     chapters:
       - file: admin/course-commitments

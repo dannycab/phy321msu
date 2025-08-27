@@ -4,7 +4,7 @@ theme: king
 paginate: true
 
 title: Day 01 - Introduction
-description: Slides for PHY 321 Spring 2025, Day 01: Introduction
+description: Slides for PHY 321 Fall 2025, Day 01: Introduction
 author: Prof. Danny Caballero <caball14@msu.edu>
 keywords: classical mechanics, newton's laws, differential equations, motion
 url: https://dannycaballero.info/phy321msu/slides/day-01-introduction.html
@@ -81,11 +81,3 @@ url: https://dannycaballero.info/phy321msu/slides/day-01-introduction.html
 ---
 
 ![bg 100%](./images/day-01/Slide18.png)
-
----
-
-![bg 100%](./images/day-01/Slide19.png)
-
----
-
-![bg 100%](./images/day-01/Slide20.png)
