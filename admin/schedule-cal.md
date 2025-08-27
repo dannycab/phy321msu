@@ -11,8 +11,8 @@ _All assignments are turned in using Gradescope as a single PDF._
 
 | **Week** | **Day**   | **Topic**                                                               | **Readings to Prepare**     | **Important Events**                                            |
 |:--------:|:---------:|:-----------------------------------------------------------------------:|:---------------------------|:---------------------------------------------------------------|
-| CW35     | 25 Aug    | Introduction to the course; reminders about vectors; software setup     | 📓 [01 - Overture: What is Classical Physics?](../lecture-notes/01_notes.ipynb)<br>📚 MLB Ch 3.4 | 📄 Homework 1 Assigned (Due 5 Sep)   |
-|          | 27 Aug    | Newton's 1st and 2nd Law; Motion in 1 dimension                        | 📚 JRT 1.1-1.4; AMS Ch 1-4    |                                                               |
+| CW35     | 25 Aug ([Slides](../slides/day-01-introduction.pdf))    | Introduction to the course; reminders about vectors; software setup     | 📓 [01 - Overture: What is Classical Physics?](../lecture-notes/01_notes.ipynb)<br>📚 MLB Ch 3.4 | 📄 Homework 1 Assigned (Due 5 Sep)   |
+|          | 27 Aug ([Slides](../slides/day-02-newtons-laws.pdf)))    | Newton's 1st and 2nd Law; Motion in 1 dimension                        | 📚 JRT 1.1-1.4; AMS Ch 1-4    |                                                               |
 |          | 29 Aug    | Getting Started with VS Code; Using AI in this Class                   | 📓 [02 - Computing is a Necessary Tool for Science](../lecture-notes/02_notes.ipynb) |                                                               |
 
 ---

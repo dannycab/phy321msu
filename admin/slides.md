@@ -11,7 +11,7 @@ Slides for PHY 321 appear in reverse chronological order, with the most recent s
 :::info
 
 ### 📂 Download Slides
-[HTML](../slides/day-02-newtons-laws.html) | [PDF](../slides/day-02-newtons-laws.pdf)
+[HTML](../slides/day-02-newtons-laws.md) | [PDF](../slides/day-02-newtons-laws.pdf)
 
 :::
 
@@ -24,6 +24,6 @@ Slides for PHY 321 appear in reverse chronological order, with the most recent s
 :::info 
 
 ### 📂 Download Slides
-[HTML](../slides/day-01-introduction.html) | [PDF](../slides/day-01-introduction.pdf)
+[HTML](../slides/day-01-introduction.md) | [PDF](../slides/day-01-introduction.pdf)
 
 :::

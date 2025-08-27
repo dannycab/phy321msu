@@ -22,23 +22,23 @@ $$\mathbf{F}_{net} = m \mathbf{a}$$
 
 # Announcements
 
-* Homework 1 is due next Friday
-* Help sessions will start next week
-    * Complete the student information survey; help session survey
-* Friday's class will include AI policy discussion
-    * We will get folks started with VS Code
-    * We will also work Homework 1 Exercise 3 together
-* DC aware of Gradescope issues; let's check in Friday.
+- Homework 1 is due next Friday
+- Help sessions will start next week
+    - Complete the student information survey; help session survey
+- Friday's class will include AI policy discussion
+    - We will get folks started with VS Code
+    - We will also work Homework 1 Exercise 3 together
+- DC aware of Gradescope issues; let's check in Friday.
 ---
 
 # Goals for this week
 
 ## Be able to answer the following questions.
 
-* What is Classical Mechanics?
-* How can we formulate it?
-* What are the essential physics models for single particles?
-* What mathematics do we need to get started?
+- What is Classical Mechanics?
+- How can we formulate it?
+- What are the essential physics models for single particles?
+- What mathematics do we need to get started?
 
 ---
 
@@ -57,10 +57,10 @@ $$\mathbf{F}_{net} = m \mathbf{a}$$
 ## Modeling large, slow-moving objects
 
 Newton's Laws are but one of a number of formulations:
-* Lagrangian Mechanics
-* Hamiltonian Mechanics
-* Dynamical Systems Theory
-* ...
+- Lagrangian Mechanics
+- Hamiltonian Mechanics
+- Dynamical Systems Theory
+- ...
 
 ---
 
@@ -80,7 +80,7 @@ Newton's Laws are but one of a number of formulations:
 - [The Islamic Golden Age](https://en.wikipedia.org/wiki/Islamic_Golden_Age) 
 - [Indigenous astronomy](https://en.wikipedia.org/wiki/Indigenous_astronomy)
 
-![bg right:50%](../images/notes/week1/Su_Song_Star_Map_1.jpeg)
+![bg right:50%](./images/Su_Song_Star_Map_1.jpeg)
 
 ---
 
@@ -111,8 +111,8 @@ Source: <https://youtu.be/Qme07fA3Fj4>
 We used a tilted coordinate system ($x-y$ plane) to analyze the motion of a block on an inclined plane. How can we check that we did the gravitational force decomposition correctly?
 
 Recall:
-* $F_{\text{gravity}},x = m g \sin(\theta)$
-* $F_{\text{gravity}},y = m g \cos(\theta)$
+- $F_{\text{gravity}},x = m g \sin(\theta)$
+- $F_{\text{gravity}},y = m g \cos(\theta)$
 
 Come up with at least two checks.
 
@@ -179,8 +179,8 @@ We will come back to this next week.
 
 Newtonian Mechanics is a vector theory. Here are a few mathematical properties of vectors:
 
-* **Addition**: $\mathbf{A} + \mathbf{B} = (A_x + B_x)\hat{x} + (A_y + B_y)\hat{y} + (A_z + B_z)\hat{z}$
-* **Scalar Multiplication**: $c\mathbf{A} = \langle cA_x, cA_y, cA_z\rangle$
-* **Dot Product**: $\mathbf{A}\cdot\mathbf{B} = A_xB_x + A_yB_y + A_zB_z = AB\cos\theta$
-* **Cross Product**: $\mathbf{A}\times\mathbf{B} = \langle A_yB_z - A_zB_y, A_zB_x - A_xB_z, A_xB_y - A_yB_x\rangle$
-* **Unit Vectors**: $\hat{A} = \frac{\mathbf{A}}{|\mathbf{A}|} \qquad |\hat{A}| = 1$
+- **Addition**: $\mathbf{A} + \mathbf{B} = (A_x + B_x)\hat{x} + (A_y + B_y)\hat{y} + (A_z + B_z)\hat{z}$
+- **Scalar Multiplication**: $c\mathbf{A} = \langle cA_x, cA_y, cA_z\rangle$
+- **Dot Product**: $\mathbf{A}\cdot\mathbf{B} = A_xB_x + A_yB_y + A_zB_z = AB\cos\theta$
+- **Cross Product**: $\mathbf{A}\times\mathbf{B} = \langle A_yB_z - A_zB_y, A_zB_x - A_xB_z, A_xB_y - A_yB_x\rangle$
+- **Unit Vectors**: $\hat{A} = \frac{\mathbf{A}}{|\mathbf{A}|} \qquad |\hat{A}| = 1$

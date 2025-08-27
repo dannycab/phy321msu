@@ -22,6 +22,7 @@ import argparse
 import os
 import subprocess
 import sys
+import shutil
 
 def run_marp(markdown_file, theme_path, theme, output_dir,
              build_html, build_pdf, build_image):
@@ -44,28 +45,39 @@ def run_marp(markdown_file, theme_path, theme, output_dir,
     out_pdf = os.path.join(output_dir, f"{base_name}.pdf")
     out_png = os.path.join(output_dir, f"{base_name}.png")
 
-    # Build the theme argument for Marp CLI
-    theme_arg = f"--theme {os.path.join(theme_path, theme)}"
+    # Build the theme argument for Marp CLI (use absolute path)
+    theme_file = os.path.abspath(os.path.join(theme_path, theme))
+    theme_arg = f"--theme {theme_file}"
     # Allow Marp to access local files
     allow_local = "--allow-local-files"
+    
+    # Copy images directory to output directory if it exists and is different
+    source_dir = os.path.dirname(os.path.abspath(markdown_file))
+    images_source = os.path.join(source_dir, "images")
+    images_dest = os.path.join(output_dir, "images")
+    
+    if os.path.exists(images_source) and source_dir != output_dir:
+        if os.path.exists(images_dest):
+            shutil.rmtree(images_dest)
+        shutil.copytree(images_source, images_dest)
 
     # Generate HTML output if requested
     if build_html:
         subprocess.run(
-            f"marp {theme_arg} {allow_local} -o {out_html} {markdown_file}",
-            shell=True, check=True
+            f"marp {theme_arg} {allow_local} -o {os.path.abspath(out_html)} {os.path.basename(markdown_file)}",
+            shell=True, check=True, cwd=os.path.dirname(os.path.abspath(markdown_file))
         )
     # Generate PDF output if requested
     if build_pdf:
         subprocess.run(
-            f"marp {theme_arg} {allow_local} --pdf -o {out_pdf} {markdown_file}",
-            shell=True, check=True
+            f"marp {theme_arg} {allow_local} --pdf -o {os.path.abspath(out_pdf)} {os.path.basename(markdown_file)}",
+            shell=True, check=True, cwd=os.path.dirname(os.path.abspath(markdown_file))
         )
     # Generate PNG cover image if requested
     if build_image:
         subprocess.run(
-            f"marp {theme_arg} {allow_local} --image png -o {out_png} {markdown_file}",
-            shell=True, check=True
+            f"marp {theme_arg} {allow_local} --image png -o {os.path.abspath(out_png)} {os.path.basename(markdown_file)}",
+            shell=True, check=True, cwd=os.path.dirname(os.path.abspath(markdown_file))
         )
 
 def main():
