@@ -18,6 +18,7 @@ parts:
   - caption: Assignments
     chapters:
       - file: assignments/hw1.ipynb
+      - file: assignments/hw2.ipynb
   - caption: Weekly Course Materials
     chapters:
       - file: lecture-notes/01_notes  
