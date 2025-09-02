@@ -11,7 +11,7 @@ _All assignments are turned in using Gradescope as a single PDF._
 
 | **Week** | **Day**   | **Topic**                                                               | **Readings to Prepare**     | **Important Events**                                            |
 |:--------:|:---------:|:-----------------------------------------------------------------------:|:---------------------------|:---------------------------------------------------------------|
-| CW35     | 25 Aug ([Slides](../slides/day-01-introduction.pdf))    | Introduction to the course; reminders about vectors; software setup     | 📓 [01 - Overture: What is Classical Physics?](../lecture-notes/01_notes.ipynb)<br>📚 MLB Ch 3.4 | 📄 Homework 1 Assigned (Due 5 Sep)   |
+| CW35     | 25 Aug ([Slides](../slides/day-01-introduction.pdf))    | Introduction to the course; reminders about vectors; software setup     | 📓 [01 - Overture: What is Classical Physics?](../lecture-notes/01_notes.ipynb)<br>📚 MLB Ch 3.4 | 📝 [Homework 1 Assigned (Due 5 Sep)](../assignments/hw1.ipynb)   |
 |          | 27 Aug ([Slides](../slides/day-02-newtons-laws.pdf))    | Newton's 1st and 2nd Law; Motion in 1 dimension                        | 📚 JRT 1.1-1.4; AMS Ch 1-4    |                                                               |
 |          | 29 Aug ([Slides](../slides/day-03-computing-setup.pdf))   | Getting Started with VS Code; Using AI in this Class                   | 📓 [02 - Computing is a Necessary Tool for Science](../lecture-notes/02_notes.ipynb) |                                                               |
 
@@ -21,7 +21,7 @@ _All assignments are turned in using Gradescope as a single PDF._
 
 | **Week** | **Day**   | **Topic**                                       | **Readings to Prepare**           | **Important Events**                                                |
 |:--------:|:---------:|:-----------------------------------------------:|:----------------------------------|:-------------------------------------------------------------------|
-| CW36     | 1 Sep     | **Labor Day (No Class)**                        |                                  | 📄 Homework 2 Assigned (Due 12 Sep)      |
+| CW36     | 1 Sep     | **Labor Day (No Class)**                        |                                  | 📝 [Homework 2 Assigned (Due 12 Sep)](../assignments/hw2.ipynb)      |
 |          | 3 Sep     | Newton's Laws; Motion in 2 and 3 dimensions     | 📚 JRT 1.4-1.6; AMS Ch 4.2 and 5    |                                                                   |
 |          | 5 Sep     | Workshop day                                    |                                  | 📥 **Homework 1 Due**                                                |
 
@@ -31,7 +31,7 @@ _All assignments are turned in using Gradescope as a single PDF._
 
 | **Week** | **Day**   | **Topic**                                       | **Readings to Prepare** | **Important Events**                                                |
 |:--------:|:---------:|:-----------------------------------------------:|:-----------------------|:-------------------------------------------------------------------|
-| CW37     | 8 Sep     | Modeling and equations of motion                | 📓 [03 - What is Mathematical Modeling?](../lecture-notes/03_notes.ipynb)<br>📚 JRT 1.4-1.6 | 📄 Homework 3 Assigned (Due 19 Sep)      |
+| CW37     | 8 Sep     | Modeling and equations of motion                | 📓 [03 - What is Mathematical Modeling?](../lecture-notes/03_notes.ipynb)<br>📚 JRT 1.4-1.6 | 📝 Homework 3 Assigned (Due 19 Sep)      |
 |          | 10 Sep    | Air Resistance                                  |                        |                                                                   |
 |          | 12 Sep    | Workshop day                                    |                        | 📥 **Homework 2 Due**                                                |
 
@@ -41,7 +41,7 @@ _All assignments are turned in using Gradescope as a single PDF._
 
 | **Week** | **Day**   | **Topic**                                                     | **Readings to Prepare** | **Important Events**                                                |
 |:--------:|:---------:|:-------------------------------------------------------------:|:-----------------------|:-------------------------------------------------------------------|
-| CW38     | 15 Sep    | Air Resistance; Central Forces                                | 📓 [04 - Why does fluid drag complicate things?](../lecture-notes/04_notes.ipynb)<br>📚 JRT 2.1-2.4 | 📄 Homework 4 Assigned (Due 26 Sep)      |
+| CW38     | 15 Sep    | Air Resistance; Central Forces                                | 📓 [04 - Why does fluid drag complicate things?](../lecture-notes/04_notes.ipynb)<br>📚 JRT 2.1-2.4 | 📝 Homework 4 Assigned (Due 26 Sep)      |
 |          | 17 Sep    | Euler-Cromer Integration                                     | 📓 [02 - Computing is a Necessary Tool for Science - Euler Discretization](../lecture-notes/02_notes.ipynb#euler-discretization)<br>📚 Newman, *Computational Physics* [Ch 08 - Ordinary Differential Equations](../docs/textbook-chapters/Newman_Ch8_ODEs.pdf) |                                                                   |
 |          | 19 Sep    | Workshop day                                                 |                        | 📥 **Homework 3 Due**                                                |
 
@@ -61,7 +61,7 @@ _All assignments are turned in using Gradescope as a single PDF._
 
 | **Week** | **Day**   | **Topic**                             | **Readings to Prepare**           | **Important Events**                                                |
 |:--------:|:---------:|:-------------------------------------:|:----------------------------------|:-------------------------------------------------------------------|
-| CW40     | 29 Sep    | Examples and Stability Analysis       | 📓 [06 - Nature Often Seeks Stability](../lecture-notes/06_notes.ipynb)<br>📚 JRT 4.1-4.4, 4.6; MLB 6.6-6.8 | 📄 Midterm Project 1 Assigned (Due 10 Oct) |
+| CW40     | 29 Sep    | Examples and Stability Analysis       | 📓 [06 - Nature Often Seeks Stability](../lecture-notes/06_notes.ipynb)<br>📚 JRT 4.1-4.4, 4.6; MLB 6.6-6.8 | 📝 Midterm Project 1 Assigned (Due 10 Oct) |
 |          | 1 Oct     | Conservation of Momentum and Angular Momentum | 📓 [05 - Conservation Laws Govern and Constrain our Physics](../lecture-notes/05_notes.ipynb#conservation-of-momentum-and-angular-momentum)<br>📚 JRT 3.1, 3.3-3.4 | |
 |          | 3 Oct     | Workshop day                          |                                  |                                                                   |
 
@@ -71,7 +71,7 @@ _All assignments are turned in using Gradescope as a single PDF._
 
 | **Week** | **Day**   | **Topic**                                                                                 | **Readings to Prepare**                                                                                                                                                                                                                                                           | **Important Events**                                                      |
 |:--------:|:---------:|:-----------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------|
-| CW41     | 6 Oct     | Nonlinear dynamics, phase portraits                                                       | 📓 [07 - Introducing Nonlinear Dynamics](../lecture-notes/07_notes.ipynb)<br>📚 Strogatz, *Nonlinear Dynamics* [2.0-2.3](../docs/textbook-chapters/strogatz_3rd_ch2.0-2.3.pdf); [5.0-5.2](../docs/textbook-chapters/strogatz_3rd_ch5.0-5.2.pdf) | 📄 Homework 5 Assigned (Due 17 Oct) |
+| CW41     | 6 Oct     | Nonlinear dynamics, phase portraits                                                       | 📓 [07 - Introducing Nonlinear Dynamics](../lecture-notes/07_notes.ipynb)<br>📚 Strogatz, *Nonlinear Dynamics* [2.0-2.3](../docs/textbook-chapters/strogatz_3rd_ch2.0-2.3.pdf); [5.0-5.2](../docs/textbook-chapters/strogatz_3rd_ch5.0-5.2.pdf) | 📝 Homework 5 Assigned (Due 17 Oct) |
 |          | 8 Oct     | Phase portraits, numerical modeling                                                       | PDFs posted are consistent with [educational fair use](https://www.copyright.gov/help/faq/faq-fairuse.html); will be removed after course has concluded |                                  |
 |          | 10 Oct    | Workshop day                                                                              |     |  📥 **Midterm Project 1 Due**                    |
 
@@ -81,7 +81,7 @@ _All assignments are turned in using Gradescope as a single PDF._
 
 | **Week** | **Day**   | **Topic**                     | **Readings to Prepare** | **Important Events** |
 |:--------:|:---------:|:-----------------------------:|:-----------------------|:--------------------|
-| CW42     | 13 Oct    | Oscillations; Damping         | 📓 [08 - Oscillations, Cycles, and Nature’s Recurrences](../lecture-notes/08_notes.ipynb)<br>📚 JRT 5.1-5.2, 5.4; MLB 7.1-7.2; 8.5 | 📄 Homework 6 Assigned (Due 24 Oct)                 |
+| CW42     | 13 Oct    | Oscillations; Damping         | 📓 [08 - Oscillations, Cycles, and Nature’s Recurrences](../lecture-notes/08_notes.ipynb)<br>📚 JRT 5.1-5.2, 5.4; MLB 7.1-7.2; 8.5 | 📝 Homework 6 Assigned (Due 24 Oct)                 |
 |          | 15 Oct    | Oscillations; Damping         |                        |                    |
 |          | 17 Oct    | Workshop day                  |                        | 📥 **Homework 5 Due**     |
 
@@ -91,7 +91,7 @@ _All assignments are turned in using Gradescope as a single PDF._
 
 | **Week** | **Day**   | **Topic**                     | **Readings to Prepare** | **Important Events** |
 |:--------:|:---------:|:-----------------------------:|:-----------------------|:--------------------|
-| CW43     | 20 Oct    | **No Class - Fall Break**     |                        | 📄 Homework 7 Assigned (Due 31 Oct)                 |
+| CW43     | 20 Oct    | **No Class - Fall Break**     |                        | 📝 Homework 7 Assigned (Due 31 Oct)                 |
 |          | 22 Oct    | Driven Oscillations; Resonance| 📓 [09 - Driving Oscillators and Resonance Phenomenon](../lecture-notes/09_notes.ipynb)<br>📚 JRT 5.5-5.6; MLB 8.6   |                    |
 |          | 24 Oct    | Driven Oscillations; Resonance|                        | 📥 **Homework 6 Due**  |
 
@@ -111,7 +111,7 @@ _All assignments are turned in using Gradescope as a single PDF._
 
 | **Week** | **Day**   | **Topic**                                           | **Readings to Prepare**      | **Important Events**                                                |
 |:--------:|:---------:|:---------------------------------------------------:|:----------------------------|:-------------------------------------------------------------------|
-| CW45     | 03 Nov    | Calculus of Variations; Euler-Lagrange Equation     | 📓 [11 - Reformulating Classical Mechanics using the Calculus of Variations](../lecture-notes/11_notes.ipynb)<br>📚 JRT 6.1-6.3; MLB 9.1-9.4    | 📄 Midterm Project 2 Assigned (Due 14 Nov)  |
+| CW45     | 03 Nov    | Calculus of Variations; Euler-Lagrange Equation     | 📓 [11 - Reformulating Classical Mechanics using the Calculus of Variations](../lecture-notes/11_notes.ipynb)<br>📚 JRT 6.1-6.3; MLB 9.1-9.4    | 📝 Midterm Project 2 Assigned (Due 14 Nov)  |
 |          | 05 Nov    | Euler-Lagrange Equation Examples                    |                             |                                                                   |
 |          | 07 Nov    | Workshop day                                        |                             |                                                                   |
 
@@ -121,7 +121,7 @@ _All assignments are turned in using Gradescope as a single PDF._
 
 | **Week** | **Day**   | **Topic**                                 | **Readings to Prepare**       | **Important Events**                                                     |
 |:--------:|:---------:|:-----------------------------------------:|:-----------------------------|:------------------------------------------------------------------------|
-| CW46     | 10 Nov    | Introduction to Lagrangian Dynamics       | 📓 [12 - The Core Principle of Classical Mechanics? The Principle of Least Action](../lecture-notes/12_notes.ipynb)<br>📚 JRT 7.1-7.2, 7.5; MLB 9.5    | 📄 Homework 8 Assigned (Due 21 Nov) |
+| CW46     | 10 Nov    | Introduction to Lagrangian Dynamics       | 📓 [12 - The Core Principle of Classical Mechanics? The Principle of Least Action](../lecture-notes/12_notes.ipynb)<br>📚 JRT 7.1-7.2, 7.5; MLB 9.5    | 📝 Homework 8 Assigned (Due 21 Nov) |
 |          | 12 Nov    | Lagrangian Dynamics Examples Session      |                             |                                                                        |
 |          | 14 Nov    | Workshop Day                              |                             | 📥 **Midterm Project 2 Due**    |
 
@@ -131,7 +131,7 @@ _All assignments are turned in using Gradescope as a single PDF._
 
 | **Week** | **Day**   | **Topic**                      | **Readings to Prepare** | **Important Events**                                                       |
 |:--------:|:---------:|:------------------------------:|:-----------------------|:--------------------------------------------------------------------------|
-| CW47     | 17 Nov    | Lagrangian Dynamics Examples   | 📓 [13 - Applying the Lagrangian Formulation](../lecture-notes/13_notes.ipynb)<br>📚 JRT 7.3-7.7, 7.10      | 📄 Final Project Assigned<br>Presentations (01-05 Dec)<br>Computational Essay (08 Dec) |
+| CW47     | 17 Nov    | Lagrangian Dynamics Examples   | 📓 [13 - Applying the Lagrangian Formulation](../lecture-notes/13_notes.ipynb)<br>📚 JRT 7.3-7.7, 7.10      | 📝 Final Project Assigned<br>Presentations (01-05 Dec)<br>Computational Essay (08 Dec) |
 |          | 19 Nov    | Lagrangian Dynamics with Constraints |                   |                    |
 |          | 21 Nov    | Workshop day                   |                        | 📥 **Homework 8 Due** |
 
@@ -141,7 +141,7 @@ _All assignments are turned in using Gradescope as a single PDF._
 
 | **Week** | **Day**   | **Topic**                      | **Readings to Prepare** | **Important Events**                                                       |
 |:--------:|:---------:|:------------------------------:|:-----------------------|:--------------------------------------------------------------------------|
-| CW48     | 24 Nov    | Final Project Prep             |                        | 📄 Final Project Assigned<br>Presentations (01-05 Dec)<br>Computational Essay (08 Dec) |
+| CW48     | 24 Nov    | Final Project Prep             |                        | 📝 Final Project Assigned<br>Presentations (01-05 Dec)<br>Computational Essay (08 Dec) |
 |          | 26 Nov    | Final Project Prep             |                        |                    |
 |          | 28 Nov    | **No Class - University Closed** |                      | **Homework 8 Due** |
 
