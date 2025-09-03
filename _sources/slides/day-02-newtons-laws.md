@@ -25,7 +25,7 @@ $$\mathbf{F}_{net} = m \mathbf{a}$$
 - Homework 1 is due next Friday
 - Help sessions will start next week
     - Complete the student information survey; help session survey
-- Friday's class will include AI policy discussion
+- Friday's class will include AI policy discussiong
     - We will get folks started with VS Code
     - We will also work Homework 1 Exercise 3 together
 - DC aware of Gradescope issues; let's check in Friday.
