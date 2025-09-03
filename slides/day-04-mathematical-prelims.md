@@ -7,7 +7,7 @@ title: Day 04 - Mathematical Preliminaries
 description: Slides for PHY 321 Spring 2025, Day 04: Mathematical Preliminaries
 author: Prof. Danny Caballero <caball14@msu.edu>
 keywords: classical mechanics, models, modeling, differential equations, motion
-url: https://dannycaballero.info/phy321msu/slides/day-04-vector-reminders.html
+url: https://dannycaballero.info/phy321msu/slides/day-04-mathematical-prelims.html
 ---
 
 # Day 04 - Mathematical Preliminaries
@@ -21,37 +21,36 @@ url: https://dannycaballero.info/phy321msu/slides/day-04-vector-reminders.html
 * Homework 1 is due this Friday
 * Homework 2 is posted now
 * Help sessions start this week
-    * DC today at 4pm; Friday at 3pm (1248 BPS)
-* Elisha (ULA) will join us Friday; additional help hours soon
-    * Complete [poll for additional help hours](https://crab.fit/elisha-ula-office-hours-scheduling-351733)
+    * DC Friday at 2-4pm (1248 BPS)
+* Mihir (ULA) will host additional help hours soon
 
 ---
 
-# Seminars this week (Tuesday and Wednesday)
+# Seminars this week (Wednesday)
 
-TUESDAY, January 21, 2025
 
-* **High Energy Physics Theory Seminar**
-    * 11:00am, FRIB 1200 lab; Speaker: **Alexei Bazavov**, MSU-CMSE/PA
-    * Title: *Lattice QCD: From classical computation to quantum simulation*
-           
-WEDNESDAY, January 22, 2025    
-                                     
-* **Astronomy Seminar**
-    * 1:30 pm, 1400 BPS; Speaker: **Allyson Bieryla**, CfA | Harvard & Smithsonian
-    * Title:  *Exoplanets and Solar Eclipses for Research and Community Engagement*
+## WEDNESDAY, September 3, 2025
+ 
+Astronomy Seminar, 1:30 pm, 1400 BPS, In Person and Zoom, Host~
+Speaker:   Group Introductions
+Title:
+Zoom Link: https://msu.zoom.us/j/887295421?pwd=N1NFb0tVU29JL2FFSkk0cStpanR3UT09
+Meeting ID: 887-295-421
+Passcode: 002454
 
 ---
 
-# Seminars this week (Wednesday, cont.)   
+# Seminars this week (Wednesday)
 
-* **PER Seminar**
-    * 3:00 pm., BPS 1400; Speaker: **Justin Gambrell**, Assistant Professor, Department of Computational Mathematics, Science, and Engineering, Michigan State University - **MSU PA ALUMNUS**
-    * Title: *Computational Thinking Assessment for Introductory Physics: Design, Implementation, and Future Directions*
 
-* **FRIB Nuclear Science Seminar**
-    * 3:30pm., FRIB 1300 Auditorium; Speaker: Calem Hoffman of Argonne National Laboratory
-    * Title:  The Influence of Near-Threshold States on Nuclear Observables
+## WEDNESDAY, September 3, 2025
+
+Nuclear Science Seminar, 3:30Pm., FRIB 1300 lab in person and online via Zoom
+Speaker: Mark Spieker, Florida State University
+Title: Experimental studies of the pygmy dipole resonance
+Zoom Link: https://msu.zoom.us/j/95277003505?pwd=hTILu1oLqmhTCU7jlVKFTlXXZBmuGb.1
+Meeting ID: 952 7700 3505
+Passcode: 404830
 
 ---
 
@@ -66,85 +65,60 @@ WEDNESDAY, January 22, 2025
 
 ---
 
-# AI Policy Update
-
-## Acceptable use cases proposed by y'all: 
-
-* All uses are OK
-* Brainstorming, getting ideas, finding information
-* Asking for help, clarifying concepts, elaborating on ideas
-* Outlining, structuring, and editing writing
-* Fixing errors, debugging code, checking solutions
-
----
-
-# AI Policy Update
-
-## Unacceptable use cases proposed by y'all: 
-
-* No use is OK
-* Asking directly for answers and solutions
-* Using AI to complete the entire assignment
-* Using AI to write papers or reports
-* Turning in work that is not your own
-
----
-
-# AI Policy Update
-
-## Ways of documenting AI use proposed by y'all:
-* Summarizing the use of AI and how it helped
-* Documenting the use of AI in the assignment
-* Providing prompts, responses, and outcomes
-* Detailed documentation including screenshots and date/time of use
-
----
-
-# AI Policy Update
-
-## Ways of collectively enforcing our policy:
-
-* It is not possible.
-* Honor system; hold old your friends accountable
-* Collective policy helps us all; encourage honesty and integrity
-* Report violations to Danny
-* Fail the assignment if you violate the policy
-* Fail the course if you violate the policy
-
----
-
-## Ranked Choice Vote on our AI Policy
-
-* **Proposal 1: We adopt a policy that does not allow AI use at all.**
-    * Violation results in a failing grade on assignment. 
-    * Repeated violations result in failing the course.
-* **Proposal 2: We adopt a policy that allows AI use for brainstorming, help, and editing.** 
-    * AI cannot be used for direct answers or completion of assignments. 
-    * We expect documentation of AI use, but it can be informal. 
-    * Violations are discussed with Danny; the first violation requires a redo of the assignment, and repeated violations result in a failing grade.
----
-
-## Ranked Choice Vote on our AI Policy
-
-* **Proposal 3: We adopt a policy that allows AI for use in nearly any way.**
-    * We require detailed documentation of use; this means screenshots, prompts, responses, and outcomes.
-    * Violations are discussed with Danny; the first violation requires a redo of the assignment, and repeated violations result in a failing grade.
-* **Proposal 4: We adopt a policy that allows AI for use in any way with no documentation required.**
-    * Violations of the policy are limited to sharing answers or solutions with others.
-
-Vote here: [https://forms.office.com/r/PwfNQYJ2Rm](https://forms.office.com/r/PwfNQYJ2Rm)
-
----
-
 # Reminders from Day 03
 
 * In a Newtonian world, we start from a vector description of motion
 * Differential equations are mathematical models that describe the motion of particles
 * We can use different methods to solve these differential equations
 
+**i-Clicker: https://join.iclicker.com/QTEC**
+
 --- 
 
+# Projectile Motion
+
+$$\mathbf{a} = \langle a_x, a_y \rangle$$
+
+$$x_f = x_i + v_{x,i}t + \dfrac{1}{2}a_x t^2$$
+
+$$y_f = y_i + v_{y,i}t + \dfrac{1}{2}a_y t^2$$
+
+![bg left:60%](https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/ParabolicWaterTrajectory.jpg/960px-ParabolicWaterTrajectory.jpg)
+
+---
+
 # Clicker Question 4-1
+
+For this fountain, what is the best guess for the acceleration ($\mathbf{a} = ??$) experienced by a fluid particle? <br> *Assume $y$ is positive upward; $x$ is positive to the right.*
+
+1. $a_x \neq 0, a_y = g$
+2. $a_x = 0, a_y = g$
+3. $a_x \neq 0, a_y = -g$
+4. $a_x = 0, a_y = -g$
+5. Something else
+
+
+![bg left:40%](https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/ParabolicWaterTrajectory.jpg/960px-ParabolicWaterTrajectory.jpg)
+
+---
+
+# Clicker Question 4-2
+
+The average velocity for a macroscopic time step $\Delta t = t_f - t_i$ is given by:
+
+$$\mathbf{v}_{avg} = \dfrac{\Delta \mathbf{r}}{dt}$$
+
+where $\Delta \mathbf{r} = \mathbf{r}_f - \mathbf{r}_i$. At what time do we estimate the average velocity occurs?
+
+1. $t_i$
+2. $t_f$
+3. Sometime between $t_f$ and $t_i$
+4. $\dfrac{t_f-t_i}{2}$
+
+
+---
+
+# Clicker Question 4-3
 
 Consider the generic position vector $\vec{R}$ for a particle in 2D space. Which of the following describes the direction of the vector in plane polar coordinates ($r$, $\phi$)?
 
