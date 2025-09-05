@@ -23,7 +23,7 @@ _All assignments are turned in using Gradescope as a single PDF._
 |:--------:|:---------:|:-----------------------------------------------:|:----------------------------------|:-------------------------------------------------------------------|
 | CW36     | 1 Sep     | **Labor Day (No Class)**                        |                                  | 📝 [Homework 2 Assigned (Due 12 Sep)](../assignments/hw2.ipynb)      |
 |          | 3 Sep ([Slides](../slides/day-04-mathematical-prelims.pdf))    | Newton's Laws; Motion in 2 and 3 dimensions     | 📚 JRT 1.4-1.6; AMS Ch 4.2 and 5    |                                                                   |
-|          | 5 Sep     | Workshop day                                    |                                  | 📥 **Homework 1 Due**                                                |
+|          | 5 Sep ([Slides](../slides/day-05-help-session.pdf))    | Workshop day                                    |                                  | 📥 **Homework 1 Due**                                                |
 
 ---
 
