@@ -48,7 +48,7 @@ Violations of the policy are limited to sharing answers or solutions with others
 * Homework 2 is posted
 * Help Session today 2-4pm (1248 BPS); DC has to run out from 2:10-2:30.
 * More help hours next week; evening also
-* Vote here for our AI policy: <https://forms.cloud.microsoft/r/0GT4umz7qY>>
+* Vote here for our AI policy: <https://forms.cloud.microsoft/r/0GT4umz7qY>
 
 ---
 

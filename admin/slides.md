@@ -4,9 +4,22 @@ Slides for PHY 321 appear in reverse chronological order, with the most recent s
 
 ---
 
+## Day 05 - Mathematical Prelims - 05 Sep 2025
+
+[![Day 05](../slides/day-05-help-session.png)](../slides/day-05-help-session.pdf)
+
+:::info
+
+### 📂 Download Slides
+[HTML](../slides/day-05-help-session.md) | [PDF](../slides/day-05-help-session.pdf)
+
+:::
+
+---
+
 ## Day 04 - Mathematical Prelims - 03 Sep 2025
 
-[![Day 02](../slides/day-04-mathematical-prelims.png)](../slides/day-04-mathematical-prelims.pdf)
+[![Day 04](../slides/day-04-mathematical-prelims.png)](../slides/day-04-mathematical-prelims.pdf)
 
 :::info
 
@@ -19,7 +32,7 @@ Slides for PHY 321 appear in reverse chronological order, with the most recent s
 
 ## Day 03 - Computing Setup - 29 Aug 2025
 
-[![Day 02](../slides/day-03-computing-setup.png)](../slides/day-03-computing-setup.pdf)
+[![Day 03](../slides/day-03-computing-setup.png)](../slides/day-03-computing-setup.pdf)
 
 :::info
 
