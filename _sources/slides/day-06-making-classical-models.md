@@ -4,7 +4,7 @@ theme: graph_paper
 paginate: true
 
 title: Day 06 - Making Classical Models
-description: Slides for PHY 321 Spring 2025, Day 06: Making Classical Models
+description: Slides for PHY 321 Fall 2025, Day 06: Making Classical Models
 author: Prof. Danny Caballero <caball14@msu.edu>
 keywords: classical mechanics, models, modeling, differential equations, motion
 url: https://dannycaballero.info/phy321msu/slides/day-06-making-classical-models.html
@@ -17,7 +17,7 @@ url: https://dannycaballero.info/phy321msu/slides/day-06-making-classical-models
 
 ---
 
-# Plane Polar Coordinates Warm-Up
+# Plane Polar Coordinates Warm-Up (5 minutes)
 
 We introduced plane polar coordinates ($r,\phi$). For any position vector, $\vec{R}$, we can write:
 
@@ -34,42 +34,103 @@ $\frac{d}{d\phi} \cos \phi = -\sin \phi \qquad \frac{d}{d\phi} \sin \phi = \cos 
 
 ---
 
-# Day 06 - Making Classical Models
-
-![bg right:60%](../images/notes/week3/von_karman.png)
-
----
-
 # Announcements
 
 - Homework 2 is due Friday
-- Video recordings have continued to fail.
-    - Zoom password: phy321
-- Updated office hours (Danny-DC; Elisha-EA):
-  - Monday 4-5pm (DC)
-  - Tuesday 5-6pm (EA)
-  - Wednesday 4-5pm (DC)
-  - Thursday 5-6pm  (EA)
-  - Friday 10-12pm (DC then EA); 3-4pm (DC)
+- Homework 3 is now posted
+- Office hours, for now (Mihir-MN; Danny-DC):
+  - Tuesday 6-8pm (MN, Zoom)
+  - Thursday 6-8pm (MN, Zoom)
+  - Friday 2-4pm (DC, 1248 BPS)
+- Zoom Link: <https://msu.zoom.us/j/96882248075> 
+    - password: `phy321msu`
 
 ---
 
 # Seminars this week
 
-MONDAY, January 27, 2025          
+
+## TUESDAY, September 9, 2025
  
-- Condensed Matter Seminar 4:10 pm,1400 BPS, Luca Delacretaz, University of Chicago, *Precision tests of thermalization and Planckian bound from hydrodynamic EFT*
-- CAPS Connect – Abigail (Abby) Weller BPS 1312C - Starts back up today          
-    - 30 minute Walk-ins are available or to schedule a meeting: <https://caps.msu.edu/services/CAPSConnect.html>
  
----             
+High Energy Physics Seminar, 1:30 pm, 1400 BPS, Host ~ Joey Huston
+Speaker: Joshua Isaacson, MSU
+Title: Single pion-production and pion propagation in Achilles           
+Organized by: Joey Huston, Sophie Berkman and Brenda Wenzlick
+ 
+---
 
 # Seminars this week
 
-WEDNESDAY, January 29, 2025    
-                                     
-- Astronomy Seminar, 1:30 pm, 1400 BPS, Michiel Lambrechts, Univ. of Copenhagen, *Planet formation*
-- FRIB Nuclear Science Seminar, 3:30pm., FRIB 1300 Auditorium, Brenden Longfellow of Lawrence Livermore National Laboratory, *From Tensor Current Limits to Solar Neutrinos: 8Li and 8B Studies with the Beta-decay Paul Trap*
+
+## WEDNESDAY, September 10, 2025    
+ 
+                                    
+Astronomy Seminar, 1:30 pm, 1400 BPS, In Person and Zoom, Host~ 
+Speaker: Rachael Roettenbacher,  University of Michigan
+Title: Imaging Spotted Stars for an Improved Understanding of Stars and Exoplanets
+Zoom Link: https://msu.zoom.us/j/887295421?pwd=N1NFb0tVU29JL2FFSkk0cStpanR3UT09
+Meeting ID: 887-295-421
+Passcode: 002454
+ 
+---
+
+# Seminars this week
+
+
+## WEDNESDAY, September 10, 2025 
+ 
+FRIB Nuclear Science Seminar, 3:30pm., FRIB 1300 Auditorium and online via Zoom 
+Speaker: Suzanne Lapi of the University of Alabama at Birmingham
+Title: Development of new isotopes for theranostic applications
+Please see website for full abstract.
+Please click the link below to join the webinar:
+Join Zoom: https://msu.zoom.us/j/96485010083?pwd=O0rXwspn80aYGEI06QEZag6Ao4siq7.1
+Meeting ID: 964 8501 0083
+Passcode: 261744
+ 
+---
+
+# Seminars this week
+
+## THURSDAY, September 11, 2025
+ 
+Colloquium, 3:30 pm, 1415 BPS, in person and zoom.  Host ~ 
+Refreshments and social half-hour in BPS 1400 starting at 3 pm
+Speaker: Laura Chomiuk,  MSU
+Title:  Fall 2025 Physics and Astronomy Kickoff
+Background: 
+For more information and to schedule time with the speaker, see the colloquium calendar at https://pa.msu.edu/news-events-seminars/colloquium-schedule.aspx
+Zoom Link: https://msu.zoom.us/j/94951062663
+Password: 2002  Or complete link:  https://msu.zoom.us/j/94951062663?pwd=c48uM25P9UsRVuR74rkOioOWgpoxgC.1
+ 
+ 
+ 
+---
+
+# Seminars this week
+
+## FRIDAY, September 12, 2025 
+ 
+ 
+QuIC Seminar, 12:30pm, -1:30pm, 1300 BPS, In Person  
+Speaker: Jean Paul Sadia, MSU
+Title: Introduction to Quantum Information and Computation
+Full Scheule is at: https://sites.google.com/msu.edu/quic-seminar/
+For more information, reach out to Ryan LaRose
+ 
+---
+
+# Seminars this week
+
+## FRIDAY, September 12, 2025 
+
+IReNA Online Seminar, 2:00 pm, via Zoom.
+Hosted by: Artemis Tsantiri (University of Regina, Canada)
+Speaker:  Lorenzo Roberti, INFN-LNS, Italy/Konkoly, Observatory Hungary
+Title: Carbon-Oxygen Shell Mergers in Massive Stars
+Zoom Link: https://msu.zoom.us/j/827950260
+Password: JINA
 
 ---
 
@@ -84,25 +145,11 @@ WEDNESDAY, January 29, 2025
 
 # Updated AI Policy
 
-We have elected to use Proposal 2 for the AI Policy.
-- Proposal 2: 61.5% first choice; 12.8% second choice
-- Proposal 1: 26.5% first choice; 61.5% second choice
-- Proposal 3: 46.2% third choice; 23.1% last choice
-- Proposal 4: 17.9% third choice; 74.4% last choice
+We have only 12 votes! Vote now, please.
 
-![right:80%](../images/notes/week3/ai_vote_s2025.png)
+<https://forms.cloud.microsoft/r/0GT4umz7qY>
 
----
-
-# AI Policy going forward
-
-## To be posted on D2L and in the syllabus
-
-- We have adopted a policy that allows AI use for brainstorming, help, and editing. 
-- We will not use AI tools for direct answers or the completion of assignments. 
-- We expect documentation of AI use, but it can be informal. The documentation should at least contain the AI tool used, the prompts given, and the responses received. 
-- Policy violations are discussed with Danny; the first violation requires a redo of the assignment, and repeated violations result in a failing grade. 
-- We will review an amendment to this policy if 1/3 of the class prepares one.
+![QR Code](./images/ai-form.png)
 
 ---
 
@@ -222,11 +269,11 @@ For the system of **Quadratic Drag in 1D**, we found a solution for the velocity
 
 $$v(t) = v_{term}\tanh(gt/v_{term})$$
 
-where $v_{term} = (mg/c)^{1/2}$. Do the units make sense? What are the units of $\left[gt/v_{term}\right]$? 
-1. Yes, the units for $\left[gt/v_{term}\right]$ are $m/s$;both sides have the same units.
-2. No, the units for $\left[gt/v_{term}\right]$ are m/s; each side has different units.
-3. Yes, the units for $\left[gt/v_{term}\right]$ are unit-less; both sides have the same units.
-4. No, the units for $\left[gt/v_{term}\right]$ are unit-less; each side has the different units.
+where $v_{term} = (mg/c)^{1/2}$. Do the units make sense? What are the units $\left[gt/v_{term}\right]$? 
+1. Yes, the units for $\left[gt/v_{term}\right]$ are m/s; **$v$ and $(mg/c)^{1/2}$ have the same units**.
+2. No, the units for $\left[gt/v_{term}\right]$ are m/s; **$v$ and $(mg/c)^{1/2}$ have different units**.
+3. Yes, the units for $\left[gt/v_{term}\right]$ are unit-less; **$v$ and $(mg/c)^{1/2}$ have the same units**.
+4. No, the units for $\left[gt/v_{term}\right]$ are unit-less; **$v$ and $(mg/c)^{1/2}$ have the different units**.
 
 ---
 

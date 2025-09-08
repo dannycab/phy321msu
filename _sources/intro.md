@@ -1,4 +1,4 @@
-# PHY 321: Classical Mechanics 1, Michigan State University, Spring 2025
+# PHY 321: Classical Mechanics 1, Michigan State University, Fall 2025
 
 This is the Jupyter-Book for the Classical Mechanics course at MSU
 
