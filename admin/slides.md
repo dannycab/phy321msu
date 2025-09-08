@@ -4,7 +4,20 @@ Slides for PHY 321 appear in reverse chronological order, with the most recent s
 
 ---
 
-## Day 05 - Mathematical Prelims - 05 Sep 2025
+## Day 06 - Making Classical Models - 08 Sep 2025
+
+[![Day 05](../slides/day-06-making-classical-models.png)](../slides/day-06-making-classical-models.pdf)
+
+:::info
+
+### 📂 Download Slides
+[HTML](../slides/day-06-making-classical-models.md) | [PDF](../slides/day-06-making-classical-models.pdf)
+
+:::
+
+---
+
+## Day 05 - Help Session - 05 Sep 2025
 
 [![Day 05](../slides/day-05-help-session.png)](../slides/day-05-help-session.pdf)
 

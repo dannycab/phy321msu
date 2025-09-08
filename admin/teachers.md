@@ -22,7 +22,7 @@
 
 | Office Hours                                                                               |
 | ------------------------------------------------------------------------------------------ |
-| TBD or [schedule me](https://cal.com/dannycaballero/phy-321) |
+| 2-4pm Fri (1248 BPS) or [schedule me](https://cal.com/dannycaballero/phy-321) |
 
 Danny will lead the course, design the homework and exams, and assign final grades. Danny is also responsible for the course content, so if you have any suggestions for how to improve the course, please let him know. Danny will also grade your midterms and final projects.
 
@@ -40,9 +40,9 @@ Alex will be grading your homework assignments. Alex will provide overall feedba
 
 | Learning Assistant         | Email             | Office Hours         | Location          |
 | -------------------------- | ----------------- | ------------------- | ----------------- |
-| _Mihir Naik (he/him)_ | <naikmihi@msu.edu>|    TBD           | Physics Help Room |
+| _Mihir Naik (he/him)_ | <naikmihi@msu.edu>|    6-8pm TuTh           | [Zoom](https://msu.zoom.us/j/96882248075) |
 
-Mihir will be helping you during office hours. He has taken this course previously and has been selected because he is passionate about helping you learn classical mechanics. He is an incredible resource for you.
+Mihir will be helping you during office hours. He has taken this course previously and has been selected because he is passionate about helping you learn classical mechanics. He is an incredible resource for you. Zoom link: <https://msu.zoom.us/j/96882248075>; you will need a passcode that was given in class and on D2L.
 
 ## Getting Help
 
