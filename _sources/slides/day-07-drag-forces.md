@@ -17,43 +17,131 @@ url: https://dannycaballero.info/phy321msu/slides/day-07-drag-forces.html
 
 ---
 
-# Announcements
-
-- Homework 2 is due Friday
-- Video recordings will cease; I will try to record my tablet writing next week.
-    - Class can still join zoom with password: phy321
-- Updated office hours (Danny-DC; Elisha-EA):
-  - Monday 4-5pm (DC) - change?
-  - Tuesday 5-6pm (EA)
-  - Wednesday 4-5pm (DC)
-  - Thursday 5-6pm  (EA)
-  - Friday 10-12pm (DC then EA); 3-4pm (DC)
+# Big Announcement
 
 ---
 
-# Calendar changes and apologies
+# MSU Tenure System Faculty Union Recognized
 
-- I'm very behind on class prep. And I'm very distracted right now.
-- The notes for next week will be posted by Friday. 
-  - If you need anything or I'm missing, just drop me a note. I probably just missed it.
-- There will be no homework 9, and there will be no new material for the last week of class.
-  - Instead, that week will be final prep for your projects that will be due Monday of finals week at midnight.
-  - More details soon, but we will also use homework and midterms to help you make progress on your final projects.
+## What does that mean for you?
 
+* Faculty can bargain with the university for what's needed to meet our educational needs
+- For example, there's more of y'all every year, but not more of us.
+![bg right 90%](./images/union_square.png)
+
+---
+
+# Announcements
+
+- Homework 2 is due Friday; late after Sunday 11:59pm (always)
+- Homework 3 is now posted; due next Friday; late after Sunday...
+- Office hours, for now (Mihir-MN; Danny-DC):
+  - Tuesday 6-8pm (MN, Zoom)
+  - Thursday 6-8pm (MN, Zoom)
+  - Friday 2-4pm (DC, 1248 BPS)
+- Zoom Link: <https://msu.zoom.us/j/96882248075> 
+    - password: `phy321msu`
+- Friday's Class: **Will work Exercises 3a, 5a, & 5b form HW 3 together + questions**
 
 ---
 
 # Seminars this week
 
-WEDNESDAY, January 29, 2025    
-                                     
-- Astronomy Seminar, 1:30 pm, 1400 BPS, Michiel Lambrechts, Univ. of Copenhagen, *Planet formation*
-- FRIB Nuclear Science Seminar, 3:30pm., FRIB 1300 Auditorium, Brenden Longfellow of Lawrence Livermore National Laboratory, *From Tensor Current Limits to Solar Neutrinos: 8Li and 8B Studies with the Beta-decay Paul Trap*
+
+## WEDNESDAY, September 10, 2025    
+ 
+                                    
+Astronomy Seminar, 1:30 pm, 1400 BPS, In Person and Zoom, Host~ 
+Speaker: Rachael Roettenbacher,  University of Michigan
+Title: Imaging Spotted Stars for an Improved Understanding of Stars and Exoplanets
+Zoom Link: https://msu.zoom.us/j/887295421?pwd=N1NFb0tVU29JL2FFSkk0cStpanR3UT09
+Meeting ID: 887-295-421
+Passcode: 002454
+ 
+---
+
+# Seminars this week
+
+
+## WEDNESDAY, September 10, 2025 
+ 
+FRIB Nuclear Science Seminar, 3:30pm., FRIB 1300 Auditorium and online via Zoom 
+Speaker: Suzanne Lapi of the University of Alabama at Birmingham
+Title: Development of new isotopes for theranostic applications
+Please see website for full abstract.
+Please click the link below to join the webinar:
+Join Zoom: https://msu.zoom.us/j/96485010083?pwd=O0rXwspn80aYGEI06QEZag6Ao4siq7.1
+Meeting ID: 964 8501 0083
+Passcode: 261744
+ 
+---
+
+# Seminars this week
+
+## THURSDAY, September 11, 2025
+ 
+Colloquium, 3:30 pm, 1415 BPS, in person and zoom.  Host ~ 
+Refreshments and social half-hour in BPS 1400 starting at 3 pm
+Speaker: Laura Chomiuk,  MSU
+Title:  Fall 2025 Physics and Astronomy Kickoff
+Background: 
+For more information and to schedule time with the speaker, see the colloquium calendar at https://pa.msu.edu/news-events-seminars/colloquium-schedule.aspx
+Zoom Link: https://msu.zoom.us/j/94951062663
+Password: 2002  Or complete link:  https://msu.zoom.us/j/94951062663?pwd=c48uM25P9UsRVuR74rkOioOWgpoxgC.1
+ 
+ 
+ 
+---
+
+# Seminars this week
+
+## FRIDAY, September 12, 2025 
+ 
+ 
+QuIC Seminar, 12:30pm, -1:30pm, 1300 BPS, In Person  
+Speaker: Jean Paul Sadia, MSU
+Title: Introduction to Quantum Information and Computation
+Full Scheule is at: https://sites.google.com/msu.edu/quic-seminar/
+For more information, reach out to Ryan LaRose
+ 
+---
+
+# Seminars this week
+
+## FRIDAY, September 12, 2025 
+
+IReNA Online Seminar, 2:00 pm, via Zoom.
+Hosted by: Artemis Tsantiri (University of Regina, Canada)
+Speaker:  Lorenzo Roberti, INFN-LNS, Italy/Konkoly, Observatory Hungary
+Title: Carbon-Oxygen Shell Mergers in Massive Stars
+Zoom Link: https://msu.zoom.us/j/827950260
+Password: JINA
 
 ---
 
-# Tomorrow's Seminar
-![w:1000px](../images/notes/week3/trans_rally.png)
+# AI Policy Proposals
+
+* **Proposal 1:** We adopt a policy that does not allow AI use at all.
+* **Proposal 2:** We adopt a policy that allows AI use for brainstorming, help, and editing. 
+* **Proposal 3:** We adopt a policy that allows AI for use in nearly any way.
+* **Proposal 4:** We adopt a policy that allows AI for use in any way with no documentation required.
+
+---
+
+# Updated AI Policy
+
+![](./images/ai_policy_vote_f2025.png)
+
+---
+
+# Proposal 2
+
+**We adopt a policy that allows AI use for brainstorming, help, and editing.**
+- AI cannot be used for direct answers or completion of assignments.
+- We expect documentation of AI use, but it can be informal.
+- Violations are discussed with Danny; the first violation requires a redo of the assignment, and repeated violations result in a failing grade.
+
+**Received 75% of first choice votes**
 
 ---
 
@@ -98,18 +186,81 @@ $$Re = \frac{\rho v L}{\mu}$$
 
 ---
 
-# Clicker Question 6-2
+# Clicker Question 6-2a
 
-Assuming a **linear model** for Air Resistance $\sim bv$, we obtained this EOM for a falling ball:
+I made a mistake explaining our linear drag model derivation. 
 
-$$\ddot{y} = -g + \frac{b}{m}\dot{y}$$
+Consider a ball falling down with a coordinate system such that $y$ is positive downward (as before). Which of the following is correct for the differential equation:
+
+1. $m\ddot{y}=-mg+bv_y$
+2. $m\ddot{y}=-mg-bv_y$
+3. $m\ddot{y}=+mg+bv_y$
+4. $m\ddot{y}=+mg-bv_y$
+
+**Think about the SIGN of $v_y$; it's a component not a speed!**
+
+---
+
+# Clicker Question 6-2b
+
+Assuming a **linear model** for Air Resistance $\sim bv$, we can obtain this EOM for the velocity a falling ball, after *separation of variables*:
+
+$$\dfrac{dv_y}{v_y - v_{term}} = -\frac{b}{m}dt$$
+
+ 
+Assume we try to integrate this equation from $v_y = v_{y0}$ at $t=0$ to $v_y(t)$ at time $t$.
+
+**Write the integral (on both sides) that is needed to solve this equation.**
+
+*This integral setup is common in physics derivations with ODEs; provided we can find an anti-derivative.*
+
+---
+
+# Clicker Question 6-3
+
+For the system of **Linear Drag in 1D**, we found a solution for the velocity as a function of time, with $v = 0$ at $t = 0$.
+$$v(t) = v_{term}\left(1-e^{-\dfrac{bt}{m}}\right)$$
+
+where $v_{term} = \sqrt{\frac{mg}{b}}$. 
+
+---
+
+![bg right w:100%](../images/notes/week3/cq6-3.png)
 
 
-What happens when $\ddot{y} = 0$?
-1. The ball stops moving ($v = 0$).
-2. The ball reaches a velocity of $mg/b$.
-3. The ball reaches a terminal velocity.
-4. I'm not sure.
+# CQ 6-3
+
+**Which sketch could be correct for the velocity of the ball?**
+
+---
+
+# Clicker Question 6-4
+
+For the system of **Quadratic Drag in 1D**, we found a solution for the velocity as a function of time, with $v = 0$ at $t = 0$.
+
+$$v(t) = v_{term}\tanh(gt/v_{term})$$
+
+where $v_{term} = (mg/c)^{1/2}$. Do the units make sense? What are the units $\left[gt/v_{term}\right]$? 
+1. Yes,**$v$ and $(mg/c)^{1/2}$ have the same units**; the units for $\left[gt/v_{term}\right]$ are m/s.
+2. No, **$v$ and $(mg/c)^{1/2}$ have different units**; the units for $\left[gt/v_{term}\right]$ are m/s.
+3. Yes, **$v$ and $(mg/c)^{1/2}$ have the same units**; the units for $\left[gt/v_{term}\right]$ are unit-less.
+4. No, **$v$ and $(mg/c)^{1/2}$ have different units**; the units for $\left[gt/v_{term}\right]$ are unit-less.
+
+---
+
+# Clicker Question 6-5
+
+For the system of **Quadratic Drag in 1D**, we found a solution for the velocity as a function of time, with $v = 0$ at $t = 0$.
+
+$$v(t) = v_{term}\tanh(gt/v_{term})$$ 
+
+where $v_{term} = \sqrt{mg/c}$. What happens when $t \rightarrow \infty$?
+
+1. The object stops moving.
+2. The object travels at a constant velocity.
+3. The object travels at an increasing velocity.
+4. The object travels at a decreasing velocity.
+5. I'm not sure.
 
 
 
