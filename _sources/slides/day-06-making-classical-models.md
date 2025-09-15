@@ -270,10 +270,10 @@ For the system of **Quadratic Drag in 1D**, we found a solution for the velocity
 $$v(t) = v_{term}\tanh(gt/v_{term})$$
 
 where $v_{term} = (mg/c)^{1/2}$. Do the units make sense? What are the units $\left[gt/v_{term}\right]$? 
-1. Yes, the units for $\left[gt/v_{term}\right]$ are m/s; **$v$ and $(mg/c)^{1/2}$ have the same units**.
-2. No, the units for $\left[gt/v_{term}\right]$ are m/s; **$v$ and $(mg/c)^{1/2}$ have different units**.
-3. Yes, the units for $\left[gt/v_{term}\right]$ are unit-less; **$v$ and $(mg/c)^{1/2}$ have the same units**.
-4. No, the units for $\left[gt/v_{term}\right]$ are unit-less; **$v$ and $(mg/c)^{1/2}$ have the different units**.
+1. Yes,**$v$ and $(mg/c)^{1/2}$ have the same units**; the units for $\left[gt/v_{term}\right]$ are m/s.
+2. No, **$v$ and $(mg/c)^{1/2}$ have different units**; the units for $\left[gt/v_{term}\right]$ are m/s.
+3. Yes, **$v$ and $(mg/c)^{1/2}$ have the same units**; the units for $\left[gt/v_{term}\right]$ are unit-less.
+4. No, **$v$ and $(mg/c)^{1/2}$ have different units**; the units for $\left[gt/v_{term}\right]$ are unit-less.
 
 ---
 
