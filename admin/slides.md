@@ -4,6 +4,19 @@ Slides for PHY 321 appear in reverse chronological order, with the most recent s
 
 ---
 
+## Day 09 - Modeling Drag - 15 Sep 2025
+
+[![Day 09](../slides/day-09-modeling-drag.png)](../slides/day-09-modeling-drag.pdf)
+
+:::info
+
+### 📂 Download Slides
+[HTML](../slides/day-09-modeling-drag.md) | [PDF](../slides/day-09-modeling-drag.pdf)
+
+:::
+
+---
+
 ## Day 08 - Help Session - 12 Sep 2025
 
 [![Day 08](../slides/day-08-help-session.png)](../slides/day-08-help-session.pdf)

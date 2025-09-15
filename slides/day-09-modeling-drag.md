@@ -4,7 +4,7 @@ theme: graph_paper
 paginate: true
 
 title: Day 09 - Modeling Drag
-description: Slides for PHY 321 Spring 2025, Day 09: Modeling Drag
+description: Slides for PHY 321 Fall 2025, Day 09: Modeling Drag
 author: Prof. Danny Caballero <caball14@msu.edu>
 keywords: classical mechanics, models, modeling, differential equations, motion
 url: https://dannycaballero.info/phy321msu/slides/day-09-modeling-drag.html
@@ -22,25 +22,94 @@ source: <https://www.nature.com/articles/srep13148>
 
 # Announcements
 
-* All hand-written notes are now posted
-* Week 5 notes and HW 4 will be posted by tomorrow night
-* **PERMANENT CHANGE:** OFFICE HOURS
-    * DC Office hours 10:00-12:00 on Fridays (No Monday office hours)
-* **CHANGE THIS WEEK** (DC has a conflict):
-    * 15:00-16:00 on Friday -> 14:00-15:00 on Friday
+* HW 4 is posted; starting project work
+* Midterm 1 is coming up (Assigned 29 Sep; Due 10 Oct)
+- **REMINDER:** Office hours, for now (Mihir-MN; Danny-DC):
+  - Tuesday 6-8pm (MN, Zoom)
+  - Thursday 6-8pm (MN, Zoom)
+  - Friday 2-4pm (DC, 1248 BPS)
+- Zoom Link: <https://msu.zoom.us/j/96882248075> 
+    - password: `phy321msu`
 
 ---
 
-## Seminars this week
+# Seminars this week
 
-**CMP Seminar**, Monday Feb 3rd at 4:10pm in 1400 BPS
-* Xiaoming Mao, University of Michigan, *Topological mechanics in Maxwell lattices and continuum*
+## MONDAY, September 15, 2025             
+      
+Condensed Matter Seminar 4:10 pm,1400 BPS, In Person and Zoom, Host Tyler Cocker
+Speaker: Marcos Dantus, Michigan State University 
+Title: Ultrafast Electron-Molecule Interactions: From Fragmentation Dynamics to H3+ Formation
+Zoom Link: https://msu.zoom.us/j/93613644939
+Meeting ID: 936 1364 4939
+Password: CMP
+ 
+---
 
-**Astronomy Seminar**, Wednesday Feb 5th at 1:30pm in 1400 BPS
-* 	Lia Corrales, Univ. of Michigan, *The cosmic journey of the elements, from dust to life*
+# Seminars this week
 
-**Physics & Astronomy Colloquium**, Thursday Feb 6th at 3:30pm in 1415 BPS
-* Andreas Jung, Purdue University, *Entangled Titans:  unraveling the mysteries of Quantum Mechanics with top quarks*
+## TUESDAY, September 16, 2025
+ 
+Theory Seminar, 11:00am., FRIB 1200 lab in person and online via Zoom
+Speaker: Nadezda Smirnova, CNRS
+Title: Isospin Symmetry Breaking and Nuclear Beta Decay
+Zoom Link: 964 7281 4717
+Meeting ID: 48824
+ 
+---
+ 
+# Seminars this week
+
+## TUESDAY, September 16, 2025
+ 
+High Energy Physics Seminar, 1:30 pm, 1400 BPS, Host ~ Kirtimaan Mohan
+Speaker:  Neil Christensen, Illinois State University
+Title: Progress in the Constructive Standard Model
+Zoom:
+Passcode:
+ (Joining the Zoom meeting requires a password. Please contact one of the organizers, if you haven't received it.)             
+Organized by: Joey Huston, Sophie Berkman and Brenda Wenzlick
+ 
+---
+ 
+# Seminars this week
+
+## WEDNESDAY, September 17, 2025    
+                                 
+Astronomy Seminar, 1:30 pm, 1400 BPS, In Person and Zoom, Host~ 
+Speaker: Matthew Murphy, Michigan State University
+Title:
+Zoom Link: https://msu.zoom.us/j/887295421?pwd=N1NFb0tVU29JL2FFSkk0cStpanR3UT09
+Meeting ID: 887-295-421
+Passcode: 002454
+ 
+---
+ 
+# Seminars this week
+
+## WEDNESDAY, September 17, 2025 
+
+FRIB Nuclear Science Seminar, 3:30pm., FRIB 1300 Auditorium and online via Zoom 
+Speaker: Katie Yurkewicz of Argonne National Laboratory
+Title: From Nuclei to Narratives: Lessons Learned on the Journey from NSCL Student to Lab Communications Leader
+Please see website for full abstract.
+Please click the link below to join the webinar:
+Join Zoom: https://msu.zoom.us/j/96657965451?pwd=Isaf23sK5agzaao0Kwaei7AaWHkc4W.1
+Meeting ID: 966 5796 5451
+Passcode: 479842
+ 
+ 
+---
+ 
+# Seminars this week
+
+## FRIDAY, September 19, 2025 
+ 
+QuIC Seminar, 12:30pm, -1:30pm, 1300 BPS, In Person  
+Speaker: Jeremiah Rowland, Michigan State University
+Title: Measurement Reduction Techniques for Measuring Hamiltonians
+Full Scheule is at: https://sites.google.com/msu.edu/quic-seminar/
+For more information, reach out to Ryan LaRose
 
 **Reminder: email me your extra credit seminar write-ups**
 
@@ -120,7 +189,7 @@ We have also only done step 3 analytically. We will need to learn how to use com
 ---
 
 
-# Clicker Question 6-3
+# Clicker Question 9-1
 
 For the system of **Linear Drag in 1D**, we found a solution for the velocity as a function of time, with $v = 0$ at $t = 0$.
 $$v(t) = v_{term}\left(1-e^{-\dfrac{bt}{m}}\right)$$
@@ -132,22 +201,85 @@ where $v_{term} = \sqrt{\frac{mg}{b}}$.
 ![bg right w:100%](../images/notes/week3/cq6-3.png)
 
 
-# CQ 6-3
+# CQ 9-1
 
 **Which sketch could be correct for the velocity of the ball?**
 
 ---
 
-# Clicker Question 6-4
+# Clicker Question 9-2
 
 For the system of **Quadratic Drag in 1D**, we found a solution for the velocity as a function of time, with $v = 0$ at $t = 0$.
 
-$$v(t) = v_{term}\tanh(gt/v_{term})$$
+$$v(t) = v_{term}\tanh(gt/v_{term})$$ 
 
-where $v_{term} = (mg/c)^{1/2}$. Do the units make sense? What are the units of $\left[gt/v_{term}\right]$? 
-1. Yes, the units for $\left[gt/v_{term}\right]$ are $m/s$;both sides have the same units.
-2. No, the units for $\left[gt/v_{term}\right]$ are m/s; each side has different units.
-3. Yes, the units for $\left[gt/v_{term}\right]$ are unit-less; both sides have the same units.
-4. No, the units for $\left[gt/v_{term}\right]$ are unit-less; each side has the different units.
+where $v_{term} = \sqrt{mg/c}$. What happens when $t \rightarrow \infty$?
 
+1. The object stops moving.
+2. The object travels at a constant velocity.
+3. The object travels at an increasing velocity.
+4. The object travels at a decreasing velocity.
+5. I'm not sure.
 
+---
+
+# Clicker Question 9-3
+
+For quadratic drag in 2D, we found the following pair of differential equations:
+
+$$\dot{v}_x = -\tilde{D}v_x\sqrt{v_x^2+v_y^2}$$
+$$\dot{v}_y = -\tilde{D}v_y\sqrt{v_x^2+v_y^2}-g$$
+
+**True or False:** This pair of differential equations can be decoupled.
+
+1. True
+2. False
+3. ???
+
+---
+
+# Clicker Question 9-4
+
+For linear drag in 2D, we found the following pair of differential equations:
+
+$$\dot{v}_x = -\gamma v_x$$
+$$\dot{v}_y = -\gamma v_y-g$$
+
+**True or False:** This pair of differential equations is decoupled.
+
+1. True
+2. False
+3. ???
+
+---
+
+# Clicker Question 9-5
+
+For the gravitational interaction, I want to compute the force acting on body B, located at $\vec{r}_B$, by body A, located at $\vec{r}_A$.
+
+The gravitational force is given by:
+
+$$\vec{F} = -G\dfrac{m_1 m_2}{r^2}\hat{r}$$
+
+What is the appropriate form of $\vec{r}$?
+
+1. $\vec{r} = \vec{r}_A - \vec{r}_B$
+2. $\vec{r} = \vec{r}_B - \vec{r}_A$
+3. Either is ok
+
+--- 
+
+# Clicker Question 9-6
+
+We found that the equation of motion for the spring-mass system was:
+
+$$\ddot{x} = -\dfrac{k}{m}x = -\omega^2 x$$
+
+Your friends have proposed the following **general solutions**:
+
+$$1.\;x(t) = A\cos(\omega t) \qquad 2.\;x(t) = B\sin(\omega t) \qquad 3.\;x(t) = A\cos(\omega t) + B\sin(\omega t) $$
+$$ 4.\;x(t) = A\cos(\omega t + \phi) \qquad 5.\;x(t) = B\sin(\omega t + \phi) \qquad 6.\;x(t) = A\cos(\omega t + \phi) + B\sin(\omega t + \phi) $$
+
+How many of them are correct? 
+(1) Only one (2) Two (3) Three
+(4) Four (5) All of them
