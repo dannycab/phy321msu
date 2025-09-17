@@ -52,7 +52,7 @@
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script src="../_static/design-tabs.js?v=36754332"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
@@ -62,6 +62,8 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'resources/integrators';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Plotting Phase Diagrams" href="phase_diagrams.html" />
+    <link rel="prev" title="Euler Integration" href="euler_integration.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -123,8 +125,6 @@
     <div class="bd-container__inner bd-page-width">
       
       
-      
-        
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -204,6 +204,12 @@
 <li class="toctree-l1"><a class="reference internal" href="../assignments/hw2.html">Homework 2 (Due 12 Sep)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../assignments/hw3.html">Homework 3 (Due 19 Sep)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../assignments/hw4.html">Homework 4 (Due 26 Sep)</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Programming Resources</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="euler_integration.html">Euler Integration</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Numerical Integrators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="phase_diagrams.html">Plotting Phase Diagrams</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Weekly Course Materials</span></p>
 <ul class="nav bd-sidenav">
@@ -372,6 +378,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#euler-cromer-method">Euler-Cromer Method</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#velocity-verlet-method">Velocity Verlet Method</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#runge-kutta-2nd-order-method">Runge Kutta 2nd Order Method</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#runge-kutta-4th-order-method">Runge-Kutta 4th Order Method</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#built-in-python-integrators">Built-in Python Integrators</a></li>
 </ul>
             </nav>
@@ -772,6 +779,122 @@ document.write(`
 </div>
 </div>
 </section>
+<section id="runge-kutta-4th-order-method">
+<h2>Runge-Kutta 4th Order Method<a class="headerlink" href="#runge-kutta-4th-order-method" title="Link to this heading">#</a></h2>
+<p>The Runge Kutta 4th Order method is a more accurate numerical integrator. The update equations are:</p>
+<div class="math notranslate nohighlight">
+\[k_{1x} = v_n \Delta t\]</div>
+<div class="math notranslate nohighlight">
+\[k_{1v} = -\omega^2 x_n \Delta t\]</div>
+<div class="math notranslate nohighlight">
+\[k_{2x} = (v_n + k_{1v}/2) \Delta t\]</div>
+<div class="math notranslate nohighlight">
+\[k_{2v} = -\omega^2 (x_n + k_{1x}/2) \Delta t\]</div>
+<div class="math notranslate nohighlight">
+\[k_{3x} = (v_n + k_{2v}/2) \Delta t\]</div>
+<div class="math notranslate nohighlight">
+\[k_{3v} = -\omega^2 (x_n + k_{2x}/2) \Delta t\]</div>
+<div class="math notranslate nohighlight">
+\[k_{4x} = (v_n + k_{3v}) \Delta t\]</div>
+<div class="math notranslate nohighlight">
+\[k_{4v} = -\omega^2 (x_n + k_{3x}) \Delta t\]</div>
+<div class="math notranslate nohighlight">
+\[x_{n+1} = x_n + \frac{1}{6}(k_{1x} + 2k_{2x} + 2k_{3x} + k_{4x})\]</div>
+<div class="math notranslate nohighlight">
+\[v_{n+1} = v_n + \frac{1}{6}(k_{1v} + 2k_{2v} + 2k_{3v} + k_{4v})\]</div>
+<p>The RK4 method evaluates the derivative at four different points within the time step and takes a weighted average. This provides excellent accuracy and energy conservation, making it one of the most widely used numerical integration methods for ODEs.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Runge-Kutta Method 4th Order</span>
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">matplotlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">style</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;seaborn-v0_8-colorblind&#39;</span><span class="p">)</span>
+
+<span class="n">x0</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">v0</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">omega</span> <span class="o">=</span> <span class="mi">1</span>
+
+<span class="n">t0</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">tf</span> <span class="o">=</span> <span class="mi">50</span>
+<span class="n">dt</span> <span class="o">=</span> <span class="mf">0.01</span>
+
+<span class="n">N</span> <span class="o">=</span> <span class="nb">int</span><span class="p">((</span><span class="n">tf</span> <span class="o">-</span> <span class="n">t0</span><span class="p">)</span> <span class="o">/</span> <span class="n">dt</span><span class="p">)</span>
+
+<span class="n">t</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="n">t0</span><span class="p">,</span> <span class="n">tf</span><span class="p">,</span> <span class="n">N</span><span class="p">)</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">N</span><span class="p">)</span>
+<span class="n">v</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">N</span><span class="p">)</span>
+
+<span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">x0</span>
+<span class="n">v</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">v0</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">N</span><span class="p">):</span>
+    
+    <span class="n">k1x</span> <span class="o">=</span> <span class="n">v</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="n">dt</span>
+    <span class="n">k1v</span> <span class="o">=</span> <span class="o">-</span><span class="n">omega</span><span class="o">**</span><span class="mi">2</span> <span class="o">*</span> <span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="n">dt</span>
+    
+    <span class="n">k2x</span> <span class="o">=</span> <span class="p">(</span><span class="n">v</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">k1v</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span> <span class="o">*</span> <span class="n">dt</span>
+    <span class="n">k2v</span> <span class="o">=</span> <span class="o">-</span><span class="n">omega</span><span class="o">**</span><span class="mi">2</span> <span class="o">*</span> <span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">k1x</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span> <span class="o">*</span> <span class="n">dt</span>
+    
+    <span class="n">k3x</span> <span class="o">=</span> <span class="p">(</span><span class="n">v</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">k2v</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span> <span class="o">*</span> <span class="n">dt</span>
+    <span class="n">k3v</span> <span class="o">=</span> <span class="o">-</span><span class="n">omega</span><span class="o">**</span><span class="mi">2</span> <span class="o">*</span> <span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">k2x</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span> <span class="o">*</span> <span class="n">dt</span>
+    
+    <span class="n">k4x</span> <span class="o">=</span> <span class="p">(</span><span class="n">v</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">k3v</span><span class="p">)</span> <span class="o">*</span> <span class="n">dt</span>
+    <span class="n">k4v</span> <span class="o">=</span> <span class="o">-</span><span class="n">omega</span><span class="o">**</span><span class="mi">2</span> <span class="o">*</span> <span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">k3x</span><span class="p">)</span> <span class="o">*</span> <span class="n">dt</span>
+    
+    <span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="p">(</span><span class="n">k1x</span> <span class="o">+</span> <span class="mi">2</span><span class="o">*</span><span class="n">k2x</span> <span class="o">+</span> <span class="mi">2</span><span class="o">*</span><span class="n">k3x</span> <span class="o">+</span> <span class="n">k4x</span><span class="p">)</span> <span class="o">/</span> <span class="mi">6</span>
+    <span class="n">v</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">v</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="p">(</span><span class="n">k1v</span> <span class="o">+</span> <span class="mi">2</span><span class="o">*</span><span class="n">k2v</span> <span class="o">+</span> <span class="mi">2</span><span class="o">*</span><span class="n">k3v</span> <span class="o">+</span> <span class="n">k4v</span><span class="p">)</span> <span class="o">/</span> <span class="mi">6</span>
+    
+<span class="c1"># Plot the position and velocity as a function of time</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">))</span>
+
+<span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Runge-Kutta 4th Order Method&#39;</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Position&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Position&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Time&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">v</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Velocity&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Velocity&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Time&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="c1">## Plot the kinetic, potential, and total energy as a function of time</span>
+
+<span class="n">KE</span> <span class="o">=</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="n">v</span><span class="o">**</span><span class="mi">2</span>
+<span class="n">PE</span> <span class="o">=</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="n">omega</span><span class="o">**</span><span class="mi">2</span> <span class="o">*</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span>
+<span class="n">ETOT</span> <span class="o">=</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="n">v</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="n">omega</span><span class="o">**</span><span class="mi">2</span> <span class="o">*</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Runge-Kutta 4th Order Method&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">KE</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Kinetic Energy&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">PE</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Potential Energy&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">ETOT</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Total Energy&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Energy&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Time&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/b1d73c0f722c12bb0f002d542b984e935404692668ddae1915b474401d479592.png" src="../_images/b1d73c0f722c12bb0f002d542b984e935404692668ddae1915b474401d479592.png" />
+<img alt="../_images/79567674d34dcbd8a146c2b86d6694d80e08054e5ec5bda44aaa9572c7495de8.png" src="../_images/79567674d34dcbd8a146c2b86d6694d80e08054e5ec5bda44aaa9572c7495de8.png" />
+</div>
+</div>
+</section>
 <section id="built-in-python-integrators">
 <h2>Built-in Python Integrators<a class="headerlink" href="#built-in-python-integrators" title="Link to this heading">#</a></h2>
 <p>All of the approaches above use a fixed time step. Python has built-in integrators that can adapt the time step to the problem. We will use the <code class="docutils literal notranslate"><span class="pre">odeint</span></code> function from the <code class="docutils literal notranslate"><span class="pre">scipy.integrate</span></code> module. This function uses the LSODA (Livermore Solver for Ordinary Differential Equations) algorithm, which is a variable time step integrator. The <code class="docutils literal notranslate"><span class="pre">odeint</span></code> function requires the user to define a function that returns the derivatives of the dependent variables.</p>
@@ -909,6 +1032,24 @@ document.write(`
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="euler_integration.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Euler Integration</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="phase_diagrams.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Plotting Phase Diagrams</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               
@@ -929,6 +1070,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#euler-cromer-method">Euler-Cromer Method</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#velocity-verlet-method">Velocity Verlet Method</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#runge-kutta-2nd-order-method">Runge Kutta 2nd Order Method</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#runge-kutta-4th-order-method">Runge-Kutta 4th Order Method</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#built-in-python-integrators">Built-in Python Integrators</a></li>
 </ul>
   </nav></div>

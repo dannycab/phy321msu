@@ -52,7 +52,7 @@
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script src="../_static/design-tabs.js?v=36754332"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
@@ -204,6 +204,12 @@
 <li class="toctree-l1"><a class="reference internal" href="../assignments/hw2.html">Homework 2 (Due 12 Sep)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../assignments/hw3.html">Homework 3 (Due 19 Sep)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../assignments/hw4.html">Homework 4 (Due 26 Sep)</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Programming Resources</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../resources/euler_integration.html">Euler Integration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/integrators.html">Numerical Integrators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/phase_diagrams.html">Plotting Phase Diagrams</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Weekly Course Materials</span></p>
 <ul class="nav bd-sidenav">
@@ -369,8 +375,17 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Day 10 - Integrating EOMs Numerically</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#announcements">Announcements</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#seminars-this-week">Seminars this week</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#announcements">Announcements</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#seminars-this-week">Seminars this week</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#wednesday-september-17-2025">WEDNESDAY, September 17, 2025</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Seminars this week</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">WEDNESDAY, September 17, 2025</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Seminars this week</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#friday-september-19-2025">FRIDAY, September 19, 2025</a></li>
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#goals-for-this-week">Goals for this week</a></li>
@@ -379,9 +394,11 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#we-need-approximate-methods-to-produce-trajectories">We need approximate methods to produce trajectories</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-6-5">Clicker Question 6-5</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-6-6">Clicker Question 6-6</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-6-7">Clicker Question 6-7</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-10-1">Clicker Question 10-1</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-10-2">Clicker Question 10-2</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Clicker Question 10-2</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-10-3">Clicker Question 10-3</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Clicker Question 10-3</a></li>
 </ul>
 
             </nav>
@@ -402,29 +419,63 @@ document.write(`
 <section id="announcements">
 <h1>Announcements<a class="headerlink" href="#announcements" title="Link to this heading">#</a></h1>
 <ul class="simple">
-<li><p><strong>PERMANENT CHANGE:</strong> OFFICE HOURS</p>
+<li><p>HW 4 is posted; starting project work</p></li>
+<li><p>Midterm 1 is coming up (Assigned 29 Sep; Due 10 Oct)</p></li>
+</ul>
+<ul class="simple">
+<li><p><strong>REMINDER:</strong> Office hours, for now (Mihir-MN; Danny-DC):</p>
 <ul>
-<li><p>DC Office hours 10:00-12:00 on Fridays (No Monday office hours)</p></li>
+<li><p>Tuesday 6-8pm (MN, Zoom)</p></li>
+<li><p>Thursday 6-8pm (MN, Zoom)</p></li>
+<li><p>Friday 2-4pm (DC, 1248 BPS)</p></li>
 </ul>
 </li>
-<li><p><strong>CHANGES THIS WEEK</strong> (DC has a conflict):</p>
+<li><p>Zoom Link: <a class="reference external" href="https://msu.zoom.us/j/96882248075">https://msu.zoom.us/j/96882248075</a></p>
 <ul>
-<li><p>Office Hrs on Zoom today 16:00-17:00 <a class="reference external" href="https://msu.zoom.us/j/92295821308">https://msu.zoom.us/j/92295821308</a></p></li>
-<li><p>15:00-16:00 on Friday -&gt; 14:00-15:00 on Friday</p></li>
+<li><p>password: <code class="docutils literal notranslate"><span class="pre">phy321msu</span></code></p></li>
 </ul>
 </li>
+<li><p><strong>Friday’s Class:</strong> Homework 4 Exercise 3 + Q&amp;A</p></li>
 </ul>
+</section>
 <hr class="docutils" />
 <section id="seminars-this-week">
-<h2>Seminars this week<a class="headerlink" href="#seminars-this-week" title="Link to this heading">#</a></h2>
-<p><strong>Astronomy Seminar</strong>, Wednesday Feb 5th at 1:30pm in 1400 BPS</p>
-<ul class="simple">
-<li><p>Lia Corrales, Univ. of Michigan, <em>The cosmic journey of the elements, from dust to life</em></p></li>
-</ul>
-<p><strong>Physics &amp; Astronomy Colloquium</strong>, Thursday Feb 6th at 3:30pm in 1415 BPS</p>
-<ul class="simple">
-<li><p>Andreas Jung, Purdue University, <em>Entangled Titans:  unraveling the mysteries of Quantum Mechanics with top quarks</em></p></li>
-</ul>
+<h1>Seminars this week<a class="headerlink" href="#seminars-this-week" title="Link to this heading">#</a></h1>
+<section id="wednesday-september-17-2025">
+<h2>WEDNESDAY, September 17, 2025<a class="headerlink" href="#wednesday-september-17-2025" title="Link to this heading">#</a></h2>
+<p>Astronomy Seminar, 1:30 pm, 1400 BPS, In Person and Zoom, Host~
+Speaker: Matthew Murphy, Michigan State University
+Title:
+Zoom Link: <a class="reference external" href="https://msu.zoom.us/j/887295421?pwd=N1NFb0tVU29JL2FFSkk0cStpanR3UT09">https://msu.zoom.us/j/887295421?pwd=N1NFb0tVU29JL2FFSkk0cStpanR3UT09</a>
+Meeting ID: 887-295-421
+Passcode: 002454</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="id1">
+<h1>Seminars this week<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
+<section id="id2">
+<h2>WEDNESDAY, September 17, 2025<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<p>FRIB Nuclear Science Seminar, 3:30pm., FRIB 1300 Auditorium and online via Zoom
+Speaker: Katie Yurkewicz of Argonne National Laboratory (<strong>MSU ALUM</strong>)
+Title: From Nuclei to Narratives: Lessons Learned on the Journey from NSCL Student to Lab Communications Leader
+Please see website for full abstract.
+Please click the link below to join the webinar:
+Join Zoom: <a class="reference external" href="https://msu.zoom.us/j/96657965451?pwd=Isaf23sK5agzaao0Kwaei7AaWHkc4W.1">https://msu.zoom.us/j/96657965451?pwd=Isaf23sK5agzaao0Kwaei7AaWHkc4W.1</a>
+Meeting ID: 966 5796 5451
+Passcode: 479842</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="id3">
+<h1>Seminars this week<a class="headerlink" href="#id3" title="Link to this heading">#</a></h1>
+<section id="friday-september-19-2025">
+<h2>FRIDAY, September 19, 2025<a class="headerlink" href="#friday-september-19-2025" title="Link to this heading">#</a></h2>
+<p>QuIC Seminar, 12:30pm, -1:30pm, 1300 BPS, In Person<br />
+Speaker: Jeremiah Rowland, Michigan State University
+Title: Measurement Reduction Techniques for Measuring Hamiltonians
+Full Scheule is at: <a class="reference external" href="https://sites.google.com/msu.edu/quic-seminar/">https://sites.google.com/msu.edu/quic-seminar/</a>
+For more information, reach out to Ryan LaRose</p>
 <p><strong>Reminder: email me your extra credit seminar write-ups</strong></p>
 </section>
 </section>
@@ -456,37 +507,8 @@ document.write(`
 </section>
 </section>
 <hr class="docutils" />
-<section id="clicker-question-6-5">
-<h1>Clicker Question 6-5<a class="headerlink" href="#clicker-question-6-5" title="Link to this heading">#</a></h1>
-<p>For the system of <strong>Quadratic Drag in 1D</strong>, we found a solution for the velocity as a function of time, with <span class="math notranslate nohighlight">\(v = 0\)</span> at <span class="math notranslate nohighlight">\(t = 0\)</span>.</p>
-<div class="math notranslate nohighlight">
-\[v(t) = v_{term}\tanh(gt/v_{term})\]</div>
-<p>where <span class="math notranslate nohighlight">\(v_{term} = \sqrt{mg/c}\)</span>. What happens when <span class="math notranslate nohighlight">\(t \rightarrow \infty\)</span>?</p>
-<ol class="arabic simple">
-<li><p>The object stops moving.</p></li>
-<li><p>The object travels at a constant velocity.</p></li>
-<li><p>The object travels at an increasing velocity.</p></li>
-<li><p>The object travels at a decreasing velocity.</p></li>
-<li><p>I’m not sure.</p></li>
-</ol>
-</section>
-<hr class="docutils" />
-<section id="clicker-question-6-6">
-<h1>Clicker Question 6-6<a class="headerlink" href="#clicker-question-6-6" title="Link to this heading">#</a></h1>
-<p>For the gravitational interaction, I want to compute the force acting on body B, located at <span class="math notranslate nohighlight">\(\vec{r}_B\)</span>, by body A, located at <span class="math notranslate nohighlight">\(\vec{r}_A\)</span>.</p>
-<p>The gravitational force is given by:</p>
-<div class="math notranslate nohighlight">
-\[\vec{F} = -G\dfrac{m_1 m_2}{r^2}\hat{r}\]</div>
-<p>What is the appropriate form of <span class="math notranslate nohighlight">\(\vec{r}\)</span>?</p>
-<ol class="arabic simple">
-<li><p><span class="math notranslate nohighlight">\(\vec{r} = \vec{r}_A - \vec{r}_B\)</span></p></li>
-<li><p><span class="math notranslate nohighlight">\(\vec{r} = \vec{r}_B - \vec{r}_A\)</span></p></li>
-<li><p>Either is ok</p></li>
-</ol>
-</section>
-<hr class="docutils" />
-<section id="clicker-question-6-7">
-<h1>Clicker Question 6-7<a class="headerlink" href="#clicker-question-6-7" title="Link to this heading">#</a></h1>
+<section id="clicker-question-10-1">
+<h1>Clicker Question 10-1<a class="headerlink" href="#clicker-question-10-1" title="Link to this heading">#</a></h1>
 <p>We found that the equation of motion for the spring-mass system was:</p>
 <div class="math notranslate nohighlight">
 \[\ddot{x} = -\dfrac{k}{m}x = -\omega^2 x\]</div>
@@ -498,6 +520,60 @@ document.write(`
 <p>How many of them are correct?
 (1) Only one (2) Two (3) Three
 (4) Four (5) All of them</p>
+</section>
+<hr class="docutils" />
+<section id="clicker-question-10-2">
+<h1>Clicker Question 10-2<a class="headerlink" href="#clicker-question-10-2" title="Link to this heading">#</a></h1>
+<p>To convert the second order ODE for a spring mass system,</p>
+<div class="math notranslate nohighlight">
+\[\ddot{x} = -\dfrac{k}{m}x = -\omega^2 x\]</div>
+<p>to two first order ODEs, we first introduce an equation for the velocity:</p>
+<div class="math notranslate nohighlight">
+\[v = \dot{x}.\]</div>
+<p>This is a first order ODE, and the first one we need. What is the other first order ODE?</p>
+</section>
+<hr class="docutils" />
+<section id="id4">
+<h1>Clicker Question 10-2<a class="headerlink" href="#id4" title="Link to this heading">#</a></h1>
+<p>For spring-mass system (<span class="math notranslate nohighlight">\(\ddot{x} = -\omega^2 x\)</span>), and using the first order ODE the defines velocity <span class="math notranslate nohighlight">\(v = \dot{x}\)</span>, which other first order ODE can be used with the velocity equation to represent the spring mass system?</p>
+<ol class="arabic simple">
+<li><p><span class="math notranslate nohighlight">\(\dot{x} = -\omega^2 x\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\dot{v} = -\omega^2 x\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\ddot{x} = a\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\dot{v} = a\)</span></p></li>
+<li><p>Something else</p></li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="clicker-question-10-3">
+<h1>Clicker Question 10-3<a class="headerlink" href="#clicker-question-10-3" title="Link to this heading">#</a></h1>
+<p>We derived the Euler step for constant acceleration:</p>
+<div class="math notranslate nohighlight">
+\[v[i+1]=v[i]+a*\Delta t\]</div>
+<div class="math notranslate nohighlight">
+\[x[i+1]=x[i]+v[i]*\Delta t\]</div>
+<p>We can implement in Python for arrays <code class="docutils literal notranslate"><span class="pre">x</span></code> and <code class="docutils literal notranslate"><span class="pre">v</span></code> with:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">v</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="n">v</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">+</span><span class="n">a</span><span class="o">*</span><span class="n">deltat</span>        <span class="c1"># Constant Acceleration</span>
+<span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">+</span><span class="n">v</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">*</span><span class="n">deltat</span>     <span class="c1"># Euler Step</span>
+</pre></div>
+</div>
+<p>How can we implement a non-constant acceleration?</p>
+</section>
+<hr class="docutils" />
+<section id="id5">
+<h1>Clicker Question 10-3<a class="headerlink" href="#id5" title="Link to this heading">#</a></h1>
+<p>How can we implement a non-constant acceleration?</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">v</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="n">v</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">+</span><span class="n">a</span><span class="o">*</span><span class="n">deltat</span>        <span class="c1"># Constant Acceleration</span>
+<span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">+</span><span class="n">v</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">*</span><span class="n">deltat</span>     <span class="c1"># Euler Step</span>
+</pre></div>
+</div>
+<ol class="arabic simple">
+<li><p>Add in <code class="docutils literal notranslate"><span class="pre">a[i]</span></code> to the first equation</p></li>
+<li><p>Pre-compute the array <code class="docutils literal notranslate"><span class="pre">a</span></code> outside the loop</p></li>
+<li><p>Compute <code class="docutils literal notranslate"><span class="pre">a[i]</span></code> in the loop</p></li>
+<li><p>Change <code class="docutils literal notranslate"><span class="pre">v[i]</span></code> to <code class="docutils literal notranslate"><span class="pre">v[i+1]</span></code></p></li>
+<li><p>More than one of these</p></li>
+</ol>
 </section>
 
     <script type="text/x-thebe-config">
@@ -547,8 +623,17 @@ document.write(`
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Day 10 - Integrating EOMs Numerically</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#announcements">Announcements</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#seminars-this-week">Seminars this week</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#announcements">Announcements</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#seminars-this-week">Seminars this week</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#wednesday-september-17-2025">WEDNESDAY, September 17, 2025</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Seminars this week</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">WEDNESDAY, September 17, 2025</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Seminars this week</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#friday-september-19-2025">FRIDAY, September 19, 2025</a></li>
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#goals-for-this-week">Goals for this week</a></li>
@@ -557,9 +642,11 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#we-need-approximate-methods-to-produce-trajectories">We need approximate methods to produce trajectories</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-6-5">Clicker Question 6-5</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-6-6">Clicker Question 6-6</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-6-7">Clicker Question 6-7</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-10-1">Clicker Question 10-1</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-10-2">Clicker Question 10-2</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Clicker Question 10-2</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-10-3">Clicker Question 10-3</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Clicker Question 10-3</a></li>
 </ul>
 
   </nav></div>

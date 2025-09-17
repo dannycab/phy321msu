@@ -19,21 +19,55 @@ url: https://dannycaballero.info/phy321msu/slides/day-10-integrating-eoms-numeri
 
 # Announcements
 
-* **PERMANENT CHANGE:** OFFICE HOURS
-    * DC Office hours 10:00-12:00 on Fridays (No Monday office hours)
-* **CHANGES THIS WEEK** (DC has a conflict):
-    * Office Hrs on Zoom today 16:00-17:00 <https://msu.zoom.us/j/92295821308>
-    * 15:00-16:00 on Friday -> 14:00-15:00 on Friday
-
+* HW 4 is posted; starting project work
+* Midterm 1 is coming up (Assigned 29 Sep; Due 10 Oct)
+- **REMINDER:** Office hours, for now (Mihir-MN; Danny-DC):
+  - Tuesday 6-8pm (MN, Zoom)
+  - Thursday 6-8pm (MN, Zoom)
+  - Friday 2-4pm (DC, 1248 BPS)
+- Zoom Link: <https://msu.zoom.us/j/96882248075> 
+    - password: `phy321msu`
+- **Friday's Class:** Homework 4 Exercise 3 + Q&A
 ---
+ 
+# Seminars this week
 
-## Seminars this week
+## WEDNESDAY, September 17, 2025    
+                                 
+Astronomy Seminar, 1:30 pm, 1400 BPS, In Person and Zoom, Host~ 
+Speaker: Matthew Murphy, Michigan State University
+Title:
+Zoom Link: https://msu.zoom.us/j/887295421?pwd=N1NFb0tVU29JL2FFSkk0cStpanR3UT09
+Meeting ID: 887-295-421
+Passcode: 002454
+ 
+---
+ 
+# Seminars this week
 
-**Astronomy Seminar**, Wednesday Feb 5th at 1:30pm in 1400 BPS
-* 	Lia Corrales, Univ. of Michigan, *The cosmic journey of the elements, from dust to life*
+## WEDNESDAY, September 17, 2025 
 
-**Physics & Astronomy Colloquium**, Thursday Feb 6th at 3:30pm in 1415 BPS
-* Andreas Jung, Purdue University, *Entangled Titans:  unraveling the mysteries of Quantum Mechanics with top quarks*
+FRIB Nuclear Science Seminar, 3:30pm., FRIB 1300 Auditorium and online via Zoom 
+Speaker: Katie Yurkewicz of Argonne National Laboratory (**MSU ALUM**)
+Title: From Nuclei to Narratives: Lessons Learned on the Journey from NSCL Student to Lab Communications Leader
+Please see website for full abstract.
+Please click the link below to join the webinar:
+Join Zoom: https://msu.zoom.us/j/96657965451?pwd=Isaf23sK5agzaao0Kwaei7AaWHkc4W.1
+Meeting ID: 966 5796 5451
+Passcode: 479842
+ 
+ 
+---
+ 
+# Seminars this week
+
+## FRIDAY, September 19, 2025 
+ 
+QuIC Seminar, 12:30pm, -1:30pm, 1300 BPS, In Person  
+Speaker: Jeremiah Rowland, Michigan State University
+Title: Measurement Reduction Techniques for Measuring Hamiltonians
+Full Scheule is at: https://sites.google.com/msu.edu/quic-seminar/
+For more information, reach out to Ryan LaRose
 
 **Reminder: email me your extra credit seminar write-ups**
 
@@ -63,40 +97,7 @@ url: https://dannycaballero.info/phy321msu/slides/day-10-integrating-eoms-numeri
 ---
 
 
-
-# Clicker Question 6-5
-
-For the system of **Quadratic Drag in 1D**, we found a solution for the velocity as a function of time, with $v = 0$ at $t = 0$.
-
-$$v(t) = v_{term}\tanh(gt/v_{term})$$ 
-
-where $v_{term} = \sqrt{mg/c}$. What happens when $t \rightarrow \infty$?
-
-1. The object stops moving.
-2. The object travels at a constant velocity.
-3. The object travels at an increasing velocity.
-4. The object travels at a decreasing velocity.
-5. I'm not sure.
-
----
-
-# Clicker Question 6-6
-
-For the gravitational interaction, I want to compute the force acting on body B, located at $\vec{r}_B$, by body A, located at $\vec{r}_A$.
-
-The gravitational force is given by:
-
-$$\vec{F} = -G\dfrac{m_1 m_2}{r^2}\hat{r}$$
-
-What is the appropriate form of $\vec{r}$?
-
-1. $\vec{r} = \vec{r}_A - \vec{r}_B$
-2. $\vec{r} = \vec{r}_B - \vec{r}_A$
-3. Either is ok
-
---- 
-
-# Clicker Question 6-7
+# Clicker Question 10-1
 
 We found that the equation of motion for the spring-mass system was:
 
@@ -111,6 +112,63 @@ How many of them are correct?
 (1) Only one (2) Two (3) Three
 (4) Four (5) All of them
 
+---
 
+# Clicker Question 10-2
 
+To convert the second order ODE for a spring mass system,
 
+$$\ddot{x} = -\dfrac{k}{m}x = -\omega^2 x$$
+
+to two first order ODEs, we first introduce an equation for the velocity:
+
+$$v = \dot{x}.$$ 
+
+This is a first order ODE, and the first one we need. What is the other first order ODE?
+
+---
+
+# Clicker Question 10-2
+
+For spring-mass system ($\ddot{x} = -\omega^2 x$), and using the first order ODE the defines velocity $v = \dot{x}$, which other first order ODE can be used with the velocity equation to represent the spring mass system?
+
+1. $\dot{x} = -\omega^2 x$
+2. $\dot{v} = -\omega^2 x$
+3. $\ddot{x} = a$
+4. $\dot{v} = a$
+5. Something else
+
+---
+
+# Clicker Question 10-3
+
+We derived the Euler step for constant acceleration:
+
+$$v[i+1]=v[i]+a*\Delta t$$
+$$x[i+1]=x[i]+v[i]*\Delta t$$
+
+We can implement in Python for arrays `x` and `v` with: 
+
+```python
+v[i+1]=v[i]+a*deltat        # Constant Acceleration
+x[i+1]=x[i]+v[i]*deltat     # Euler Step
+```
+
+How can we implement a non-constant acceleration?
+
+---
+
+# Clicker Question 10-3
+
+How can we implement a non-constant acceleration?
+
+```python
+v[i+1]=v[i]+a*deltat        # Constant Acceleration
+x[i+1]=x[i]+v[i]*deltat     # Euler Step
+```
+
+1. Add in `a[i]` to the first equation
+2. Pre-compute the array `a` outside the loop 
+3. Compute `a[i]` in the loop
+4. Change `v[i]` to `v[i+1]`
+5. More than one of these
