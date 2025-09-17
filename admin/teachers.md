@@ -10,7 +10,7 @@
 >
 > Monday and Wednesday's class will be lecture-based; Friday's classes will be activity-based workshops. *We will work the more challenging exercises together in class on Friday.*
 > 
-> You are encouraged to attend in person, but if you are unable to do so, you can join the lecture via this [Zoom Link](https://dannycab.github.io/meet). **Classes will not be recorded.**
+
 
 ## Professor
 

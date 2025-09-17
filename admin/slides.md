@@ -4,6 +4,23 @@ Slides for PHY 321 appear in reverse chronological order, with the most recent s
 
 ---
 
+## Day 10 - Modeling Drag - 17 Sep 2025
+
+[![Day 10](../slides/day-10-integrating-eoms-numerically.png)](../slides/day-10-integrating-eoms-numerically.pdf)
+
+:::info
+
+### 📂 Download Slides
+[HTML](../slides/day-10-integrating-eoms-numerically.md) | [PDF](../slides/day-10-integrating-eoms-numerically.pdf)
+
+### 💻 Programming Resources
+* [Euler Integration](../resources/euler_integration.ipynb)
+* [Numerical Integrators](../resources/integrators.ipynb)
+
+:::
+
+---
+
 ## Day 09 - Modeling Drag - 15 Sep 2025
 
 [![Day 09](../slides/day-09-modeling-drag.png)](../slides/day-09-modeling-drag.pdf)

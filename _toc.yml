@@ -21,6 +21,11 @@ parts:
       - file: assignments/hw2.ipynb
       - file: assignments/hw3.ipynb
       - file: assignments/hw4.ipynb
+  - caption: Programming Resources
+    chapters: 
+      - file: resources/euler_integration
+      - file: resources/integrators
+      - file: resources/phase_diagrams
   - caption: Weekly Course Materials
     chapters:
       - file: lecture-notes/01_notes  

@@ -2,7 +2,6 @@
 
 > **Topics are subject to change based on course pace and student needs.**
 
-**Zoom:** [https://dannycab.github.io/meet](https://dannycab.github.io/meet)  
 _All assignments are turned in using Gradescope as a single PDF._
 
 ---
@@ -42,7 +41,7 @@ _All assignments are turned in using Gradescope as a single PDF._
 | **Week** | **Day**   | **Topic**                                                     | **Readings to Prepare** | **Important Events**                                                |
 |:--------:|:---------:|:-------------------------------------------------------------:|:-----------------------|:-------------------------------------------------------------------|
 | CW38     | 15 Sep ([Slides](../slides/day-09-modeling-drag.pdf))    | Air Resistance; Central Forces                                | 📓 [04 - Why does fluid drag complicate things?](../lecture-notes/04_notes.ipynb)<br>📚 JRT 2.1-2.4 | 📝 [Homework 4 Assigned (Due 26 Sep)](../assignments/hw4.ipynb)      |
-|          | 17 Sep    | Euler-Cromer Integration                                     | 📓 [02 - Computing is a Necessary Tool for Science - Euler Discretization](../lecture-notes/02_notes.ipynb#euler-discretization)<br>📚 Newman, *Computational Physics* [Ch 08 - Ordinary Differential Equations](../docs/textbook-chapters/Newman_Ch8_ODEs.pdf) |                                                                   |
+|          | 17 Sep    | Euler-Cromer Integration ([Slides](../slides/day-10-integrating-eoms-numerically.pdf))<br> 💻 Programming Resources<br> ([Euler Integration](../resources/euler_integration.ipynb))<br>([Numerical Integrators](../resources/integrators.ipynb))                                   | 📓 [02 - Computing is a Necessary Tool for Science - Euler Discretization](../lecture-notes/02_notes.ipynb#euler-discretization)<br>📚 Newman, *Computational Physics* [Ch 08 - Ordinary Differential Equations](../docs/textbook-chapters/Newman_Ch8_ODEs.pdf) |                                                                   |
 |          | 19 Sep    | Workshop day                                                 |                        | 📥 **Homework 3 Due**                                                |
 
 ---
