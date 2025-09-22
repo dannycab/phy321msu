@@ -4,7 +4,20 @@ Slides for PHY 321 appear in reverse chronological order, with the most recent s
 
 ---
 
-## Day 11 - Modeling Drag - 17 Sep 2025
+## Day 12 - Modeling Drag - 22 Sep 2025
+
+[![Day 12](../slides/day-12-conservation-of-energy.png)](../slides/day-12-conservation-of-energy.pdf)
+
+:::info
+
+### 📂 Download Slides
+[HTML](../slides/day-12-conservation-of-energy.md) | [PDF](../slides/day-12-conservation-of-energy.pdf)
+
+:::
+
+---
+
+## Day 11 - Help Session - 17 Sep 2025
 
 [![Day 11](../slides/day-11-homework-session.png)](../slides/day-11-homework-session.pdf)
 
@@ -12,10 +25,6 @@ Slides for PHY 321 appear in reverse chronological order, with the most recent s
 
 ### 📂 Download Slides
 [HTML](../slides/day-11-homework-session.md) | [PDF](../slides/day-11-homework-session.pdf)
-
-### 💻 Programming Resources
-* [Euler Integration](../resources/euler_integration.ipynb)
-* [Numerical Integrators](../resources/integrators.ipynb)
 
 :::
 
