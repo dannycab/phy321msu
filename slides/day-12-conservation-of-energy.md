@@ -4,7 +4,7 @@ theme: graph_paper
 paginate: true
 
 title: Day 12 - Conservation of Energy
-description: Slides for PHY 321 Spring 2025, Day 12: Conservation of Energy
+description: Slides for PHY 321 Fall 2025, Day 12: Conservation of Energy
 author: Prof. Danny Caballero <caball14@msu.edu>
 keywords: classical mechanics, models, modeling, differential equations, motion
 url: https://dannycaballero.info/phy321msu/slides/day-12-conservation-of-energy.html
@@ -20,9 +20,15 @@ $$\Delta E_{system} = W + Q$$
 
 # Announcements
 
-* HW 4 is due next Monday, Feb 17th NOT on Friday the 14th
-* There are no office hours on Feb 13th
-* Midterm 1 will be available on Monday as well.
+* HW 4 is due Friday
+* Midterm 1 will be available next Monday
+    * Four exercises (3 physics; 1 project work)
+    * You may work together; and ask any questions
+    * DC will not work exercises from Midterm
+## Move Mihir's office hours? 
+1. Yes
+2. No
+3. Maybe?
 
 ---
 
@@ -31,23 +37,94 @@ $$\Delta E_{system} = W + Q$$
 * The take-home midterms will be open for almost two weeks; you can often start some exercises early as they cover older material.
 * They are meant to be challenging, but we will provide you with the resources and support you need to complete them.
 * There is no homework due during the period in which the midterm is assigned.
-* In contrast to homework assignments, you must turn in your own solutions to the midterms.
+* In contrast to homework assignments, DC will not work any exercises directly
 
-You may work closely together with me, Elisha, and your classmates, but you must write up your own solutions.
+You may work closely together with me, Mihir, and your classmates, but you and your partner must write up your own solutions.
 
 ---
 
 # Seminars this week
 
-## WEDNESDAY, February 12, 2025
-* Astronomy Seminar, 1:30 pm, 1400 BPS, Rafael Luque, Univ. of Chicago, Exoplanets
-* FRIB Nuclear Science Seminar, 3:30pm., FRIB 1300 Auditorium, Professor Veronica Dexheimer, Kent State University, An overview of the MUSES cyberinfrastructure and what it can do for you
-
-## FRIDAY,  February 14, 2025 
+## MONDAY, September 22, 2025             
+  
+Condensed Matter Seminar 4:10 pm,1400 BPS, In Person and Zoom, Host ~ Philip Crowley
+Speaker: Dean Lee, Michigan State University
+Title: Algorithms for nuclear many-body systems
+Zoom Link: https://msu.zoom.us/j/93613644939
+Meeting ID: 936 1364 4939
+Password: CMP
  
-* IReNA Online Seminar, 2:00 pm, FRIB 2025 Nuclear Conference Room,Kelsey Lund, University of California, Berkeley,  How The Gentle Winds Beckon: Nucleosynthesis in Neutron Star Merger Remnant Winds
+---
+
+# Seminars this week 
+ 
+## WEDNESDAY, September 24, 2025    
+ 
+                                    
+FRIB Nuclear Science Seminar, 11:00am., online via Zoom,  (Zoom Only)
+Speaker: Hongwei Zhao of IMPCAS
+Title: High intensity heavy-ion accelerator facility and key technology R&D
+Please see website for full abstract.
+Please click the link below to join the webinar:
+Join Zoom: https://msu.zoom.us/j/96657965451?pwd=Isaf23sK5agzaao0Kwaei7AaWHkc4W.1
+Meeting ID: 966 5796 5451
+Passcode: 479842
 
 ---
+
+# Seminars this week 
+ 
+## WEDNESDAY, September 24, 2025   
+ 
+Astronomy Seminar, 1:30 pm, 1400 BPS, In Person and Zoom, Host~ 
+Speaker: Kosuke Namekata, NAOJ
+Title:
+Zoom Link: https://msu.zoom.us/j/887295421?pwd=N1NFb0tVU29JL2FFSkk0cStpanR3UT09
+Meeting ID: 887-295-421
+Passcode: 002454
+
+---
+
+# Seminars this week 
+ 
+## THURSDAY, September 25, 2025 (Promotion Talk!)
+ 
+Colloquium, 3:30 pm, 1415 BPS, in person and zoom.  Host ~  
+Refreshments and social half-hour in BPS 1400 starting at 3 pm
+Speaker: Wolfgang Kerzendorf, MSU - (PTRC)
+Title: Calibrating Stellar Explosions as Probes of the Evolving Universe 
+Background: 
+For more information and to schedule time with the speaker, see the colloquium calendar at https://pa.msu.edu/news-events-seminars/colloquium-schedule.aspx
+Zoom Link: https://msu.zoom.us/j/94951062663
+Password: 2002  Or complete link:  https://msu.zoom.us/j/94951062663?pwd=c48uM25P9UsRVuR74rkOioOWgpoxgC.1
+ 
+---
+
+# Seminars this week 
+ 
+## FRIDAY, September 26, 2025 
+ 
+QuIC Seminar, 12:30pm, -1:30pm, 1300 BPS, In Person  
+Speaker: Alexei Bazavov, MSU
+Title: Efficient State Preparation for the Schwinger Model
+Full Scheule is at: https://sites.google.com/msu.edu/quic-seminar/
+For more information, reach out to Ryan LaRose
+ 
+---
+
+# Seminars this week 
+ 
+## FRIDAY, September 26, 2025 
+
+IReNA Online Seminar, 2:00 pm, In Person and Zoom, FRIB 2025 Nuclear Conference Room, Light refreshments will be served at 1:50pm. 
+Hosted by: Steffen Turkat (TU Dresden, Germany)
+Speaker:  Dominik Koll, HZDR, Germany
+Title: The search for freshly synthesized radionuclides from stellar explosions on Earth
+Zoom Link: https://msu.zoom.us/j/827950260
+Password: JINA
+
+---
+
 
 # This Week's Goals
 

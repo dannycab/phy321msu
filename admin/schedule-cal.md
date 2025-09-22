@@ -50,7 +50,7 @@ _All assignments are turned in using Gradescope as a single PDF._
 
 | **Week** | **Day**   | **Topic**                                                     | **Readings to Prepare** | **Important Events**                                                |
 |:--------:|:---------:|:-------------------------------------------------------------:|:-----------------------|:-------------------------------------------------------------------|
-| CW39     | 22 Sep    | Work Energy Theorem                                           | 📓 [05 - Conservation Laws Govern and Constrain our Physics](../lecture-notes/05_notes.ipynb)<br>📚 JRT 4.1-4.3 |                                                               |
+| CW39     | 22 Sep ([Slides](../slides/day-12-conservation-of-energy.pdf))    | Work Energy Theorem                                           | 📓 [05 - Conservation Laws Govern and Constrain our Physics](../lecture-notes/05_notes.ipynb)<br>📚 JRT 4.1-4.3 |                                                               |
 |          | 24 Sep    | Conservative Forces and Potential                             | 📚 JRT 4.1-4.4, 4.6       |                                                               |
 |          | 26 Sep    | Workshop day                                                  |                        | 📥 **Homework 4 Due**                                               |
 
