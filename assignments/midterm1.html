@@ -62,6 +62,8 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'assignments/midterm1';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Euler Integration" href="../resources/euler_integration.html" />
+    <link rel="prev" title="Homework 4 (Due 26 Sep)" href="hw4.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -123,8 +125,6 @@
     <div class="bd-container__inner bd-page-width">
       
       
-      
-        
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -199,11 +199,12 @@
 <li class="toctree-l1"><a class="reference internal" href="../admin/finding-research.html">Finding Research Opportunities</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Assignments</span></p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="hw1.html">Homework 1 (Due 5 Sep)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="hw2.html">Homework 2 (Due 12 Sep)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="hw3.html">Homework 3 (Due 19 Sep)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="hw4.html">Homework 4 (Due 26 Sep)</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Midterm 1 (Due 10 Oct)</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Programming Resources</span></p>
 <ul class="nav bd-sidenav">
@@ -374,10 +375,16 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-1-planning-your-project-25-points">Exercise 1, Planning your project (25 points)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-2-spin-dependent-forces-x-points">Exercise 2, spin dependent forces (x points)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-3-particle-in-a-one-dimensional-potential-60-points">Exercise 3, Particle in a one-dimensional potential (60 points)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-4-model-your-own-system-50-points">Exercise 4, model your own system (50 points)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-1-planning-your-project-10-points">Exercise 1, Planning your project (10 points)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-2-spin-dependent-forces-20-points">Exercise 2, Spin dependent forces (20 points)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-magnus-effect">The Magnus Effect</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-magnus-effect-in-sports">The Magnus Effect in Sports</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mathematical-model-of-the-magnus-effect">Mathematical Model of the Magnus Effect</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#extra-credit-20-pts">Extra Credit (20 pts)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-3-particle-in-a-one-dimensional-potential-40-points">Exercise 3, Particle in a one-dimensional potential (40 points)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-4-model-your-own-system-30-points">Exercise 4, Model your own system (30 points)</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#extra-credit-5pts-integrating-classwork-with-research">Extra Credit (5pts), Integrating Classwork With Research</a></li>
 </ul>
             </nav>
@@ -415,6 +422,9 @@ doconce format html Firstmidterm2022.do.txt --no_mako -->
 </ul>
 <p><strong>What is informal documentation?</strong></p>
 <p>A summary of the use of AI and the kinds of questions asked, and what the AI replied with. Detailed prompts and replies are not needed but the extent to which AI was used to create products in the midterm is important to document. Of course, this is a minimal standard. You can include more detailed documentation such as screenshots of your interactions. <strong>The benefit of including screenshots, especially for project work, is that instructors can help you use AI tools more effectively.</strong></p>
+<blockquote>
+<div><p>Midterms in this class are also a learning opportunity. There are different ways to arrive at the solutions and you might have to learn something new to develop that solution. Using your resources and asking for help from instructors is very much encouraged, especially early on for the more open-ended exercises.</p>
+</div></blockquote>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
@@ -427,44 +437,94 @@ doconce format html Firstmidterm2022.do.txt --no_mako -->
 </div>
 </div>
 </div>
-<section id="exercise-1-planning-your-project-25-points">
-<h2>Exercise 1, Planning your project (25 points)<a class="headerlink" href="#exercise-1-planning-your-project-25-points" title="Link to this heading">#</a></h2>
+<section id="exercise-1-planning-your-project-10-points">
+<h2>Exercise 1, Planning your project (10 points)<a class="headerlink" href="#exercise-1-planning-your-project-10-points" title="Link to this heading">#</a></h2>
 <p><strong>SUBMIT THIS ON D2L only</strong></p>
 <p>On homework 4, we asked you to review the <a class="reference external" href="https://uio-ccse.github.io/computational-essay-showroom/">University of Oslo’s computational essay showroom</a>. We asked you to find a computational essay that you found interesting and to write a short paragraph about why you found it interesting. In this part of the midterm, we ask you to plan your own computational essay.</p>
 <p>We hear from students that often the hardest part of developing a computational essay is often finding a question worth investigating. So we are trying to help you with that. You are not expected to write the computational essay for this midterm. Instead, you are expected to plan it.</p>
 <p>For your final project, you will develop a computational essay. Your answers to this question do not commit you to completing this project on the idea you present here. You can change your mind later. This is a good exercise to get you thinking about what you might want to do, and you might find that you want to work on this plan for your final project.</p>
-<p>For each of the questions below, you should write a paragraph or two (minimum 250 words, maximum 500 words) to answer the question. You may include equations, code, or figures in any of your answers.</p>
+<p>For each of the questions below, you should write a paragraph or two (minimum 150 words, maximum 250 words) to answer the question. You may include equations, code, or figures in any of your answers.</p>
 <ol class="arabic simple">
-<li><p>(5pt) Who is the team and how are you going to communicate regularly? What is the question(s) you want to investigate? What background information do you need to understand the question(s)? Where can you find that information?</p></li>
-<li><p>(5pt) What is the motivation for the question(s)? Why is it interesting to you? Why is it interesting to others?</p></li>
-<li><p>(5pt) What is the computational aspect of the question(s)? What will you calculate? What will you simulate? What will you visualize?</p></li>
-<li><p>(5pt) Outline the structure of the set up and the analysis that you think that you need in order to answer the question(s) you have. What are the key steps you would need to take? What are the key challenges you anticipate?</p></li>
-<li><p>(5pt) How will you know if you have answered the question(s)? What are the key results you would be looking for?</p></li>
+<li><p>(2 pts) Who is the team and how are you going to communicate regularly? What is the question(s) you want to investigate? What background information do you need to understand the question(s)? Where can you find that information?</p></li>
+<li><p>(2 pts) What is the motivation for the question(s)? Why is it interesting to you? Why is it interesting to others?</p></li>
+<li><p>(2 pts) What is the computational aspect of the question(s)? What will you calculate? What will you simulate? What will you visualize?</p></li>
+<li><p>(2 pts) Outline the structure of the set up and the analysis that you think that you need in order to answer the question(s) you have. What are the key steps you would need to take? What are the key challenges you anticipate?</p></li>
+<li><p>(2 pts) How will you know if you have answered the question(s)? What are the key results you would be looking for?</p></li>
 </ol>
+<p><strong>If you prefer, you can simply write up a single document that answers all these questions in a style you prefer. That document should be roughly 500-1000 words long and may include equations, code, or figures.</strong></p>
 </section>
-<section id="exercise-2-spin-dependent-forces-x-points">
-<h2>Exercise 2, spin dependent forces (x points)<a class="headerlink" href="#exercise-2-spin-dependent-forces-x-points" title="Link to this heading">#</a></h2>
-<p>We’ve modeled objects falling, bouncing, and moving under different forms of fluid resistance. One key feature we have failed to account for are the forces that result from a lift force that occurs for spinning objects. This is the <a class="reference external" href="https://en.wikipedia.org/wiki/Magnus_effect">Magnus Effect</a> and it is a result of a broken symmetry in the fluid flow due to the spinning of the object. Fluid in the direction of the spin move differently than those that move opposite the direction of flow. The figures below illustrate the effect:</p>
+<section id="exercise-2-spin-dependent-forces-20-points">
+<h2>Exercise 2, Spin dependent forces (20 points)<a class="headerlink" href="#exercise-2-spin-dependent-forces-20-points" title="Link to this heading">#</a></h2>
+<p>We’ve modeled objects falling, bouncing, and moving under different forms of fluid resistance. One key feature we have failed to account for are the forces that result from the lift force that occurs for objects spinning in the presence of fluid flow.</p>
+<section id="the-magnus-effect">
+<h3>The Magnus Effect<a class="headerlink" href="#the-magnus-effect" title="Link to this heading">#</a></h3>
+<p>This is the <a class="reference external" href="https://en.wikipedia.org/wiki/Magnus_effect">Magnus Effect</a> and it is a result of a broken symmetry in the fluid flow due to the spinning of the object. Fluid in the direction of the spin moves differently than the fluid that moves opposite the direction of flow. The figures below illustrate the effect:</p>
 <p><img alt="Magnus Effect illustration showing the slower fluid below the spinning cylinder" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Sketch_of_Magnus_effect_with_streamlines_and_turbulent_wake.svg/960px-Sketch_of_Magnus_effect_with_streamlines_and_turbulent_wake.svg.png" /></p>
-<p><strong>ABOVE:</strong>  A back-spinning cylinder (<span class="math notranslate nohighlight">\(\mathbf{L}\)</span> into of the page, fluid flow left to right) produces a <a class="reference external" href="https://en.wikipedia.org/wiki/K%C3%A1rm%C3%A1n_vortex_street">Von Kármán vortex street</a> that is directed more downward. This is a signature of an upward lift.</p>
+<p><strong>ABOVE:</strong>  A back-spinning cylinder (<span class="math notranslate nohighlight">\(\mathbf{L}\)</span> into of the page, fluid flow left to right) produces a <a class="reference external" href="https://en.wikipedia.org/wiki/K%C3%A1rm%C3%A1n_vortex_street">Von Kármán vortex street</a> that is directed downward. This is a signature of an upward lift.</p>
 <p><img alt="Magnus Effect illustration showing the slower fluid below the spinning cylinder" src="https://upload.wikimedia.org/wikipedia/commons/f/f0/Magnus-anim-canette.gif" /></p>
 <p><strong>ABOVE:</strong> A top-spinning cylinder (<span class="math notranslate nohighlight">\(\mathbf{L}\)</span> into the page, fluid flow right to left) will drive the fluid upward, the fluid on the bottom is accelerated in the direction of flow as it moves with the rotation. The causes a reaction force on the cylinder downward.</p>
-<p>This effect is very important in all sports where a ball is used. The effect is used to expert effect in tennis, volleyball, soccer, baseball, table tennis, golf, pickleball, jai lai, and others. Once place where the story is more complicated is bowling; the interaction with the spinning and the surface of the alley is a very different interaction. Here, <a class="reference external" href="https://en.wikipedia.org/wiki/Lubrication_theory">lubrication theory</a> helps, as the fluid underneath (The lane oil) plays a hge roll. In fac,t there are many different <a class="reference external" href="https://www.pba.com/player-resources/oil-patterns">oil lane patterns</a> that expert bowlers learn.</p>
-<p>For this problem, you will add the spin dependent interaction to some model of a ball moving through air. The mathematical model of the of the force involves the [vector product], so you will need to carefully set up your coordinate system. The mathematical model for a spinning sphere is given by:</p>
+</section>
+<section id="the-magnus-effect-in-sports">
+<h3>The Magnus Effect in Sports<a class="headerlink" href="#the-magnus-effect-in-sports" title="Link to this heading">#</a></h3>
+<p>The Magnus Effect is important in nearly all sports where a ball is used. It produces trajectories that can curve in complex ways. This phenomena can be used to expert effect in tennis, volleyball, soccer, baseball, table tennis, golf, pickleball, jai lai, and so on.</p>
+<p>Once place where the role of fluids is more complicated is bowling; the interaction with the spinning ball and the surface of the alley is a very different interaction. Here, <a class="reference external" href="https://en.wikipedia.org/wiki/Lubrication_theory">lubrication theory</a> helps, as the fluid underneath (the lane oil) plays a huge roll. In fact, there are many different <a class="reference external" href="https://www.pba.com/player-resources/oil-patterns">oil lane patterns</a> that expert bowlers learn to play on.</p>
+</section>
+<section id="mathematical-model-of-the-magnus-effect">
+<h3>Mathematical Model of the Magnus Effect<a class="headerlink" href="#mathematical-model-of-the-magnus-effect" title="Link to this heading">#</a></h3>
+<p>For this problem, you will add the spin dependent interaction to some model of a ball moving through air. The mathematical model of the of the force involves the <a class="reference external" href="https://en.wikipedia.org/wiki/Cross_product">cross (vector) product</a>, so you will need to carefully set up your coordinate system.</p>
+<p>The mathematical model of the Magnus Force for a spinning sphere is given by:</p>
 <div class="math notranslate nohighlight">
 \[\mathbf{F}_{magnus} = S(v) \boldsymbol\omega \times \mathbf{v}.\]</div>
-<p>Here, <span class="math notranslate nohighlight">\(S(v)\)</span> is a function of speed, but for our purposes we will treat as constant for all speeds. The other two terms are the velocity <span class="math notranslate nohighlight">\(\mathbf{v}\)</span> of the ball and the angular velocity <span class="math notranslate nohighlight">\(\boldsymbol\omega\)</span> of the ball as it spins. Typically, the spin-drag interaction will cause the spinning of the ball to slow, this is what <span class="math notranslate nohighlight">\(S(v)\)</span> can capture. For extra credit, you can add that (see below).</p>
+<ul class="simple">
+<li><p>Here, <span class="math notranslate nohighlight">\(S(v)\)</span> is a function of speed, but for our purposes <strong>we will treat as constant for all speeds</strong>.</p></li>
+<li><p>The other two terms are the velocity <span class="math notranslate nohighlight">\(\mathbf{v}\)</span> of the ball and the angular velocity <span class="math notranslate nohighlight">\(\boldsymbol\omega\)</span> of the ball as it spins.</p></li>
+</ul>
+<blockquote>
+<div><p>Typically, the spin-drag interaction will cause the spinning of the ball to slow, this is what <span class="math notranslate nohighlight">\(S(v)\)</span> can capture. For extra credit, you can add that (see below).</p>
+</div></blockquote>
 <ol class="arabic simple">
-<li><p>Set up the situation that you intend to model; explain it and indicate the coordinate system. Find all the necessary constants and properties that you need. Make sure things have the correct SI units. Make a table of these values, so we can follow your work. This will also help with your computational model.</p></li>
-<li><p>For a model that includes that gravitational interaction, the turbulent drag model, and the spin dependent interaction, write out the differential equation that includes each aspect. You should write this as both a vector differential equation, make sure you are careful about the signs and directions, and a set of scalar ODEs that have the correct signs, these are needed for the next part. These scalar ODEs are second order, how else do we characterize them? Do you notice something about how many ODEs you must have to model this system compared to what we’ve done with 1D and 2D drag models?</p></li>
-<li><p>The ODEs that you developed in part 2, which are second order, need to be made into sets of first order ODEs. Remember that you are going to need to develop twice as many first order equations as you have second order in part 2. Write them both as analytical equations and discrete equations that you would use in a computational model, that is,, how does each time step get computed in a Euler-Cromer set up?</p></li>
-<li><p>Using prior codes that have been posted (e.g.,<a class="reference internal" href="../resources/euler_integration.html"><span class="std std-doc">Euler integration resource</span></a> and <a class="reference internal" href="../resources/integrators.html"><span class="std std-doc">Integration Methods</span></a>, or homework solutions on D2L), or written from scratch, write a computational model that integrates these equations of motion to model a trajectory. Again, choose appropriate initial conditions for your model and attempt to be as close to realistic choices as possible. Show the trajectory in 3 dimensions and make plots of the velocities and the magnitudes of the different forces acting on the ball.</p></li>
-<li><p>What do you notice in your graphs about the motion of your ball? How accurate is your work? How are you judging that? From the graphs you’ve made, is anything surprising or explanatory for the “goodness” or “badness” of your model? What might improve it?</p></li>
-<li><p><strong>EXTRA CREDIT:</strong> The spin dependent interaction is “coupled” to the drag force both through the cross product of the angular velocity and the linear velocity, and the tunable parameter <span class="math notranslate nohighlight">\(S(v)\)</span>. We’ve treated it as constant so far. How should it be treated? Should <span class="math notranslate nohighlight">\(S\)</span> go up or down as the speed goes up or down? Is it monotonic (i.e., always increasing or always decreasing)? Research a simplified model of this coupling constant <span class="math notranslate nohighlight">\(S(v)\)</span> and describe what you find. Implement this approach for the same trajectory you computed in part 4. How do they compare?</p></li>
+<li><p>(4 pts) Set up the situation that you intend to model; explain it and indicate the coordinate system.</p>
+<ul class="simple">
+<li><p>Find all the necessary constants and properties that you need.</p></li>
+<li><p>Make sure things have the correct SI units.</p></li>
+<li><p>Make a table of these values, so we can follow your work. This will also help with your computational model.</p></li>
+</ul>
+</li>
+<li><p>(4 pts) For a model that includes that gravitational interaction, the turbulent drag model, and the spin dependent interaction, write out the differential equation that includes each aspect.</p>
+<ul class="simple">
+<li><p>You should write this as both a vector differential equation, make sure you are careful about the signs and directions, and a set of scalar ODEs that have the correct signs, these are needed for the next part.</p></li>
+<li><p>These scalar ODEs are second order, how else do we characterize them?</p></li>
+<li><p>Do you notice something about how many ODEs you must have to model this system compared to what we’ve done with 1D and 2D drag models?</p></li>
+</ul>
+</li>
+<li><p>(4 pts) The ODEs that you developed in part 2, which are second order, need to be made into sets of first order ODEs. Remember that you are going to need to develop twice as many first order equations as you have second order in part 2.</p>
+<ul class="simple">
+<li><p>Write them both as analytical equations and discrete equations that you would use in a computational model, that is, how does each time step get computed in a Euler-Cromer set up?</p></li>
+</ul>
+</li>
+<li><p>(4 pts) Using prior codes that have been posted (e.g., <a class="reference internal" href="../resources/euler_integration.html"><span class="std std-doc">Euler integration resource</span></a> and <a class="reference internal" href="../resources/integrators.html"><span class="std std-doc">Integration Methods</span></a>, or homework solutions on D2L), or written from scratch, write a computational model that integrates these equations of motion to model a trajectory.</p>
+<ul class="simple">
+<li><p>Choose appropriate initial conditions for your model and attempt to be as close to realistic choices as possible.</p></li>
+<li><p>Show the trajectory in 3 dimensions and make plots of the velocities and the magnitudes of the different forces acting on the ball.</p></li>
+</ul>
+</li>
+<li><p>(4 pts) What do you notice in your graphs about the motion of your ball?</p>
+<ul class="simple">
+<li><p>How accurate is your work? How are you judging that?</p></li>
+<li><p>From the graphs you’ve made, is anything surprising or explanatory for the “goodness” or “badness” of your model? What might improve it?</p></li>
+</ul>
+</li>
 </ol>
 </section>
-<section id="exercise-3-particle-in-a-one-dimensional-potential-60-points">
-<h2>Exercise 3, Particle in a one-dimensional potential (60 points)<a class="headerlink" href="#exercise-3-particle-in-a-one-dimensional-potential-60-points" title="Link to this heading">#</a></h2>
+<section id="extra-credit-20-pts">
+<h3>Extra Credit (20 pts)<a class="headerlink" href="#extra-credit-20-pts" title="Link to this heading">#</a></h3>
+<ol class="arabic simple" start="6">
+<li><p>The spin dependent interaction is “coupled” to the drag force both through the cross product of the angular velocity and the linear velocity, and the tunable parameter <span class="math notranslate nohighlight">\(S(v)\)</span>. We’ve treated it as constant so far. How should it be treated? Should <span class="math notranslate nohighlight">\(S\)</span> go up or down as the speed goes up or down? Is it monotonic (i.e., always increasing or always decreasing)? Research a simplified model of this coupling constant <span class="math notranslate nohighlight">\(S(v)\)</span> and describe what you find. Implement this approach for the same trajectory you computed in part 4. How do they compare?</p></li>
+</ol>
+</section>
+</section>
+<section id="exercise-3-particle-in-a-one-dimensional-potential-40-points">
+<h2>Exercise 3, Particle in a one-dimensional potential (40 points)<a class="headerlink" href="#exercise-3-particle-in-a-one-dimensional-potential-40-points" title="Link to this heading">#</a></h2>
 <p>We consider a particle (for example an atom) of mass <span class="math notranslate nohighlight">\(m\)</span> moving in a one-dimensional potential,</p>
 <div class="math notranslate nohighlight">
 \[
@@ -472,33 +532,33 @@ V(x)=\frac{V_0}{d^4}\left(x^4-2x^2d^2+d^4\right).
 \]</div>
 <p>We will assume all other forces on the particle are small in comparison, and neglect them in our model.  The parameters <span class="math notranslate nohighlight">\(V_0\)</span> and <span class="math notranslate nohighlight">\(d\)</span> are known constants.</p>
 <ol class="arabic simple">
-<li><p>(5pt) Sketch or plot the potential and find the equilibrium points (stable and unstable) by requiring that the first derivative of the potential is zero. Make an energy diagram (see for example Malthe-Sørenssen chapter 11.3) and mark the equilibrium points on the diagram and characterize their stability. The position of the particle is <span class="math notranslate nohighlight">\(x\)</span>.</p></li>
+<li><p>(3 pts) Sketch or plot the potential and find the equilibrium points (stable and unstable) by requiring that the first derivative of the potential is zero. Make an energy diagram (see for example Malthe-Sørenssen chapter 11.3) and mark the equilibrium points on the diagram and characterize their stability. The position of the particle is <span class="math notranslate nohighlight">\(x\)</span>.</p></li>
 </ol>
 <ol class="arabic simple" start="2">
-<li><p>(5pt) Choose two different energies that give two distinct types of motions, draw them on the energy diagram, and describe the motion in each case.</p></li>
+<li><p>(2 pts) Choose two different energies that give two distinct types of motions, draw them on the energy diagram, and describe the motion in each case.</p></li>
 </ol>
 <ol class="arabic simple" start="3">
-<li><p>(5pt) If the particle  starts at rest at <span class="math notranslate nohighlight">\(x=2d\)</span>, what is the velocity of the particle at the point <span class="math notranslate nohighlight">\(x=d\)</span>?</p></li>
+<li><p>(5 pts) If the particle  starts at rest at <span class="math notranslate nohighlight">\(x=2d\)</span>, what is the velocity of the particle at the point <span class="math notranslate nohighlight">\(x=d\)</span>?</p></li>
 </ol>
 <ol class="arabic simple" start="4">
-<li><p>(5pt) If the particle  starts at <span class="math notranslate nohighlight">\(x=d\)</span> with velocity <span class="math notranslate nohighlight">\(v_0\)</span>, how large must <span class="math notranslate nohighlight">\(v_0\)</span> be for the  particle to reach the point <span class="math notranslate nohighlight">\(x=−d\)</span>?</p></li>
+<li><p>(5 pts) If the particle  starts at <span class="math notranslate nohighlight">\(x=d\)</span> with velocity <span class="math notranslate nohighlight">\(v_0\)</span>, how large must <span class="math notranslate nohighlight">\(v_0\)</span> be for the  particle to reach the point <span class="math notranslate nohighlight">\(x=−d\)</span>?</p></li>
 </ol>
 <ol class="arabic simple" start="5">
-<li><p>(5pt) Use the above potential to find the net force acting on the particle.  Find the acceleration acting on the particle. Is this net force conservative? Calculate the <strong>curl</strong> of the force  <span class="math notranslate nohighlight">\(\boldsymbol{\nabla}\times \boldsymbol{F}\)</span> in order to validate your conclusion.</p></li>
-<li><p>(5pt) Are linear momentum and angular momentum conserved? You need to show this by calculating these quantities.</p></li>
+<li><p>(5 pts) Use the above potential to find the net force acting on the particle.  Find the acceleration acting on the particle. Is this net force conservative? Calculate the <strong>curl</strong> of the force  <span class="math notranslate nohighlight">\(\boldsymbol{\nabla}\times \boldsymbol{F}\)</span> in order to validate your conclusion.</p></li>
+<li><p>(5 pts) Are linear momentum and angular momentum conserved? You need to show this by calculating these quantities.</p></li>
 </ol>
 <ol class="arabic simple" start="7">
-<li><p>(10pt) Write a numerical algorithm to find the position and velocity of the particle at a time <span class="math notranslate nohighlight">\(t+\Delta t\)</span> given the position and velocity at a time <span class="math notranslate nohighlight">\(t\)</span>. Here you can use either the standard forward Euler, or the Euler-Cromer or the Velocity Verlet algorithms.   You need to justify your choice here (hint: consider energy conservation).</p></li>
+<li><p>(5 pts) Write a numerical algorithm to find the position and velocity of the particle at a time <span class="math notranslate nohighlight">\(t+\Delta t\)</span> given the position and velocity at a time <span class="math notranslate nohighlight">\(t\)</span>. Here you can use either the standard forward Euler, or the Euler-Cromer or the Velocity Verlet algorithms.   You need to justify your choice here (hint: consider energy conservation). <strong>You might find this <a class="reference internal" href="../resources/integrators.html"><span class="std std-doc">numerical integration resource</span></a> helpful.</strong></p></li>
 </ol>
 <ol class="arabic simple" start="8">
-<li><p>(10pt) Use now your program to find the position of the particle as function of time from <span class="math notranslate nohighlight">\(t=0\)</span> to <span class="math notranslate nohighlight">\(t=30\)</span> s using a mass  <span class="math notranslate nohighlight">\(m=1.0\)</span> kg, the parameter <span class="math notranslate nohighlight">\(V_0=1\)</span> J and <span class="math notranslate nohighlight">\(d=0.1\)</span> m. Make a plot of three distinct positions with initial conditions <span class="math notranslate nohighlight">\(x_0=d\)</span> and <span class="math notranslate nohighlight">\(v_0=0.5\)</span> m/s, <span class="math notranslate nohighlight">\(x_0=d\)</span> and <span class="math notranslate nohighlight">\(v_0=1.5\)</span> m/s, and <span class="math notranslate nohighlight">\(x_0=d\)</span> and <span class="math notranslate nohighlight">\(v_0=2.5\)</span> m/s. Plot the velocity.  Perform these analyses with and without the term <span class="math notranslate nohighlight">\(x^4\)</span> in the potential. Do you see a difference? What do you notice?</p></li>
+<li><p>(5 pts) Use now your program to find the position of the particle as function of time from <span class="math notranslate nohighlight">\(t=0\)</span> to <span class="math notranslate nohighlight">\(t=30\)</span> s using a mass  <span class="math notranslate nohighlight">\(m=1.0\)</span> kg, the parameter <span class="math notranslate nohighlight">\(V_0=1\)</span> J and <span class="math notranslate nohighlight">\(d=0.1\)</span> m. Make a plot of three distinct positions with initial conditions <span class="math notranslate nohighlight">\(x_0=d\)</span> and <span class="math notranslate nohighlight">\(v_0=0.5\)</span> m/s, <span class="math notranslate nohighlight">\(x_0=d\)</span> and <span class="math notranslate nohighlight">\(v_0=1.5\)</span> m/s, and <span class="math notranslate nohighlight">\(x_0=d\)</span> and <span class="math notranslate nohighlight">\(v_0=2.5\)</span> m/s. Plot the velocity.  Perform these analyses with and without the term <span class="math notranslate nohighlight">\(x^4\)</span> in the potential. Do you see a difference? What do you notice?</p></li>
 </ol>
 <ol class="arabic simple" start="9">
-<li><p>(10pt) Describe the behavior of the particle for the three initial conditions  and sketch the motion in an energy diagram. Is energy conserved in your simulations?</p></li>
+<li><p>(5 pts) Describe the behavior of the particle for the three initial conditions  and sketch the motion in an energy diagram. Is energy conserved in your simulations?</p></li>
 </ol>
 </section>
-<section id="exercise-4-model-your-own-system-50-points">
-<h2>Exercise 4, model your own system (50 points)<a class="headerlink" href="#exercise-4-model-your-own-system-50-points" title="Link to this heading">#</a></h2>
+<section id="exercise-4-model-your-own-system-30-points">
+<h2>Exercise 4, Model your own system (30 points)<a class="headerlink" href="#exercise-4-model-your-own-system-30-points" title="Link to this heading">#</a></h2>
 <p>In this problem, you will choose a one dimensional system of your own. You may choose a known potential, or you may invent your own. Your potential must:</p>
 <ol class="arabic simple">
 <li><p>Have at least one stable equilibrium point.</p></li>
@@ -509,16 +569,16 @@ V(x)=\frac{V_0}{d^4}\left(x^4-2x^2d^2+d^4\right).
 </ol>
 <p>For this problem, you will need to perform the following tasks:</p>
 <ol class="arabic simple">
-<li><p>(5pts) Write down the potential and start to demonstrate that it meets the above criteria. <strong>Make sure it is conservative and that the force is nonlinear before proceeding.</strong></p></li>
-<li><p>(5pts) Sketch or plot the potential and find the equilibrium points. You need to show you can compute the equilibrium points and characterize their stability. For some choices of potential, you may need to use a numerical method to find the equilibrium points and conceptual arguments to determine their stability.</p></li>
-<li><p>(10pts) Pick a total energy that gives rise to oscillatory motion. Show this by sketching or plotting the energy diagram and describing the motion. Are there any other kinds of motion that can occur for other choices of total energy?</p></li>
-<li><p>(20pts) Write a numerical algorithm to find the position and velocity of the particle (it’s trajectories) for the choice of total energy where the motion is oscillatory. Here you must use two methods: (1) the standard forward Euler, and either (2) the Euler-Cromer or the <a class="reference external" href="https://en.wikipedia.org/wiki/Verlet_integration">Velocity Verlet</a> algorithms. You will need to pick the time step <span class="math notranslate nohighlight">\(\Delta t\)</span> and the total time <span class="math notranslate nohighlight">\(t_{\rm max}\)</span> for your simulation. Compare the results of the two algorithms. Which one is better? Justify your answer. <strong>You might find this <a class="reference internal" href="../resources/integrators.html"><span class="std std-doc">numerical integration resource</span></a> helpful.</strong></p></li>
-<li><p>(10pts) Use your program to plot the energy of the particle (T), the potential energy (V), and the total energy (E) as a function of time. Discuss the behavior of the energy between each choice of algorithm. Is energy conserved in your simulations?</p></li>
+<li><p>(5 pts) Write down the potential and start to demonstrate that it meets the above criteria. <strong>Make sure it is conservative and that the force is nonlinear before proceeding.</strong></p></li>
+<li><p>(5 pts) Sketch or plot the potential and find the equilibrium points. You need to show you can compute the equilibrium points and characterize their stability. For some choices of potential, you may need to use a numerical method to find the equilibrium points and conceptual arguments to determine their stability.</p></li>
+<li><p>(5 pts) Pick a total energy that gives rise to oscillatory motion. Show this by sketching or plotting the energy diagram and describing the motion. Are there any other kinds of motion that can occur for other choices of total energy?</p></li>
+<li><p>(10 pts) Write a numerical algorithm to find the position and velocity of the particle (it’s trajectories) for the choice of total energy where the motion is oscillatory. Here you must use two methods: (1) the standard forward Euler, and either (2) the Euler-Cromer or the <a class="reference external" href="https://en.wikipedia.org/wiki/Verlet_integration">Velocity Verlet</a> algorithms. You will need to pick the time step <span class="math notranslate nohighlight">\(\Delta t\)</span> and the total time <span class="math notranslate nohighlight">\(t_{\rm max}\)</span> for your simulation. Compare the results of the two algorithms. Which one is better? Justify your answer. <strong>You might find this <a class="reference internal" href="../resources/integrators.html"><span class="std std-doc">numerical integration resource</span></a> helpful.</strong></p></li>
+<li><p>(5 pts) Use your program to plot the energy of the particle (T), the potential energy (V), and the total energy (E) as a function of time. Discuss the behavior of the energy between each choice of algorithm. Is energy conserved in your simulations?</p></li>
 </ol>
 </section>
 <section id="extra-credit-5pts-integrating-classwork-with-research">
 <h2>Extra Credit (5pts), Integrating Classwork With Research<a class="headerlink" href="#extra-credit-5pts-integrating-classwork-with-research" title="Link to this heading">#</a></h2>
-<p>This opportunity will allow you to earn up to 5 extra credit points on a Homework per week. These points can push you above 100% or help make up for missed exercises.
+<p>This opportunity will allow you to earn up to 5 extra credit points on this midterm. These points can push you above 100% or help make up for missed exercises.
 In order to earn all points you must:</p>
 <ol class="arabic simple">
 <li><p>Attend an MSU research talk (recommended research oriented Clubs is  provided below)</p></li>
@@ -532,7 +592,7 @@ Talks given by researchers through the following clubs:</p>
 <li><p>Astronomy Club​: Meets Monday Nights (alternates with SPS)</p></li>
 <li><p>Any <a class="reference external" href="https://pa.msu.edu/news-events-seminars/index.aspx">physics and astronomy seminar</a> of interest to you</p></li>
 </ul>
-<p>If you have any questions please consult Danny.</p>
+<p>Other professional opporunties are acceptable as well. If you have any questions please consult Danny.</p>
 </section>
 </section>
 
@@ -566,6 +626,24 @@ Talks given by researchers through the following clubs:</p>
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="hw4.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Homework 4 (Due 26 Sep)</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../resources/euler_integration.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Euler Integration</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               
@@ -582,10 +660,16 @@ Talks given by researchers through the following clubs:</p>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-1-planning-your-project-25-points">Exercise 1, Planning your project (25 points)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-2-spin-dependent-forces-x-points">Exercise 2, spin dependent forces (x points)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-3-particle-in-a-one-dimensional-potential-60-points">Exercise 3, Particle in a one-dimensional potential (60 points)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-4-model-your-own-system-50-points">Exercise 4, model your own system (50 points)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-1-planning-your-project-10-points">Exercise 1, Planning your project (10 points)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-2-spin-dependent-forces-20-points">Exercise 2, Spin dependent forces (20 points)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-magnus-effect">The Magnus Effect</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-magnus-effect-in-sports">The Magnus Effect in Sports</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mathematical-model-of-the-magnus-effect">Mathematical Model of the Magnus Effect</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#extra-credit-20-pts">Extra Credit (20 pts)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-3-particle-in-a-one-dimensional-potential-40-points">Exercise 3, Particle in a one-dimensional potential (40 points)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-4-model-your-own-system-30-points">Exercise 4, Model your own system (30 points)</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#extra-credit-5pts-integrating-classwork-with-research">Extra Credit (5pts), Integrating Classwork With Research</a></li>
 </ul>
   </nav></div>

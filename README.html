@@ -202,6 +202,7 @@
 <li class="toctree-l1"><a class="reference internal" href="assignments/hw2.html">Homework 2 (Due 12 Sep)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="assignments/hw3.html">Homework 3 (Due 19 Sep)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="assignments/hw4.html">Homework 4 (Due 26 Sep)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="assignments/midterm1.html">Midterm 1 (Due 10 Oct)</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Programming Resources</span></p>
 <ul class="nav bd-sidenav">
@@ -380,7 +381,7 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#building-the-book">🔧 Building the Book</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#using-the-build-script">Using the Build Script</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#using-the-unified-build-tool">Using the Unified Build Tool</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#manual-building">Manual Building</a></li>
 </ul>
 </li>
@@ -416,12 +417,6 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#authors">👨‍🏫 Authors</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#acknowledgments">🙏 Acknowledgments</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#repository-structure-order-of-materials">Repository Structure &amp; Order of Materials</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#environment-setup">Environment Setup</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#using-docker-recommended">Using Docker (Recommended)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#manual-setup">Manual Setup</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#building-the-jupyter-book-slides">Building the Jupyter Book &amp; Slides</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Contributing</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">License</a></li>
 </ul>
@@ -492,22 +487,27 @@ python<span class="w"> </span>-m<span class="w"> </span>ipykernel<span class="w"
 </section>
 <section id="building-the-book">
 <h2>🔧 Building the Book<a class="headerlink" href="#building-the-book" title="Link to this heading">#</a></h2>
-<section id="using-the-build-script">
-<h3>Using the Build Script<a class="headerlink" href="#using-the-build-script" title="Link to this heading">#</a></h3>
-<p>The easiest way to build the book is using the provided build script:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Build HTML version (default)</span>
-python<span class="w"> </span>build.py
+<section id="using-the-unified-build-tool">
+<h3>Using the Unified Build Tool<a class="headerlink" href="#using-the-unified-build-tool" title="Link to this heading">#</a></h3>
+<p>The easiest way to build the book is using the unified build tool (<code class="docutils literal notranslate"><span class="pre">ubt.py</span></code>):</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Quick commands for common tasks</span>
+python<span class="w"> </span>ubt.py<span class="w"> </span>task<span class="w"> </span>update<span class="w">     </span><span class="c1"># Build HTML incrementally  </span>
+python<span class="w"> </span>ubt.py<span class="w"> </span>task<span class="w"> </span>rebuild<span class="w">    </span><span class="c1"># Update kernels and full rebuild</span>
+python<span class="w"> </span>ubt.py<span class="w"> </span>task<span class="w"> </span>pdf<span class="w">        </span><span class="c1"># Build PDF version</span>
+python<span class="w"> </span>ubt.py<span class="w"> </span>task<span class="w"> </span>viewhtml<span class="w">   </span><span class="c1"># Open HTML in browser</span>
+python<span class="w"> </span>ubt.py<span class="w"> </span>task<span class="w"> </span>viewpdf<span class="w">    </span><span class="c1"># Open PDF in viewer</span>
+python<span class="w"> </span>ubt.py<span class="w"> </span>task<span class="w"> </span>all<span class="w">        </span><span class="c1"># Full build pipeline</span>
 
-<span class="c1"># Available commands:</span>
-python<span class="w"> </span>build.py<span class="w"> </span>update<span class="w">     </span><span class="c1"># Build HTML</span>
-python<span class="w"> </span>build.py<span class="w"> </span>rebuild<span class="w">    </span><span class="c1"># Update kernels and rebuild</span>
-python<span class="w"> </span>build.py<span class="w"> </span>pdf<span class="w">        </span><span class="c1"># Build PDF version</span>
-python<span class="w"> </span>build.py<span class="w"> </span>web<span class="w">        </span><span class="c1"># Deploy to GitHub Pages</span>
-python<span class="w"> </span>build.py<span class="w"> </span>viewhtml<span class="w">   </span><span class="c1"># Open HTML in browser</span>
-python<span class="w"> </span>build.py<span class="w"> </span>viewpdf<span class="w">    </span><span class="c1"># Open PDF in viewer</span>
-python<span class="w"> </span>build.py<span class="w"> </span>all<span class="w">        </span><span class="c1"># Full build pipeline</span>
+<span class="c1"># More control with direct commands</span>
+python<span class="w"> </span>ubt.py<span class="w"> </span>book<span class="w">            </span><span class="c1"># Build HTML version</span>
+python<span class="w"> </span>ubt.py<span class="w"> </span>book<span class="w"> </span>--builder<span class="w"> </span>pdflatex<span class="w">  </span><span class="c1"># Build PDF</span>
+python<span class="w"> </span>ubt.py<span class="w"> </span>book<span class="w"> </span>--view<span class="w">     </span><span class="c1"># Build and open in browser</span>
+python<span class="w"> </span>ubt.py<span class="w"> </span>slides<span class="w"> </span>slides/day-01.md<span class="w">  </span><span class="c1"># Build specific slide</span>
 </pre></div>
 </div>
+<blockquote>
+<div><p>📖 <strong>See <a class="reference internal" href="USAGE.html"><span class="std std-doc">USAGE.md</span></a> for complete command reference and examples</strong></p>
+</div></blockquote>
 </section>
 <section id="manual-building">
 <h3>Manual Building<a class="headerlink" href="#manual-building" title="Link to this heading">#</a></h3>
@@ -530,7 +530,7 @@ jupyter-book<span class="w"> </span>build<span class="w"> </span>.<span class="w
 ├── 📖 intro.md                    # Main landing page
 ├── 📋 _toc.yml                    # Table of contents
 ├── ⚙️ _config.yml                 # Jupyter Book configuration
-├── 🔧 build.py                   # Build automation script
+├── 🔧 ubt.py                     # Unified build tool (replaces build.py)
 ├── 📝 requirements.txt           # Python dependencies
 ├── 📚 lecture-notes/              # Combined weekly materials
 │   ├── 01_notes.ipynb
@@ -556,16 +556,16 @@ jupyter-book<span class="w"> </span>build<span class="w"> </span>.<span class="w
 <ol class="arabic simple">
 <li><p><strong>Weekly materials</strong>: Add new notebook files to the <code class="docutils literal notranslate"><span class="pre">lecture-notes/</span></code> directory</p></li>
 <li><p><strong>Update TOC</strong>: Edit <code class="docutils literal notranslate"><span class="pre">_toc.yml</span></code> to include new files</p></li>
-<li><p><strong>Build and test</strong>: Run <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">build.py</span> <span class="pre">rebuild</span></code> to ensure everything works</p></li>
+<li><p><strong>Build and test</strong>: Run <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">ubt.py</span> <span class="pre">task</span> <span class="pre">rebuild</span></code> to ensure everything works</p></li>
 </ol>
 </section>
 <section id="combining-week-files">
 <h3>Combining Week Files<a class="headerlink" href="#combining-week-files" title="Link to this heading">#</a></h3>
 <p>The project includes scripts to combine separate start and notes files:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Combine individual week files</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Combine individual week files (if needed)</span>
 python<span class="w"> </span>combine_all_weeks.py
 
-<span class="c1"># Update notebook kernels</span>
+<span class="c1"># Update notebook kernels (done automatically by ubt.py)</span>
 python<span class="w"> </span>update_kernels.py
 </pre></div>
 </div>
@@ -659,12 +659,14 @@ python<span class="w"> </span>update_kernels.py
 <p><strong>Build Failures:</strong></p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Clean and rebuild</span>
 rm<span class="w"> </span>-rf<span class="w"> </span>_build/
-python<span class="w"> </span>build.py<span class="w"> </span>rebuild
+python<span class="w"> </span>ubt.py<span class="w"> </span>task<span class="w"> </span>rebuild
 </pre></div>
 </div>
 <p><strong>Kernel Issues:</strong></p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Update all notebook kernels</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Update all notebook kernels (or use rebuild which does this automatically)</span>
 python<span class="w"> </span>update_kernels.py
+<span class="c1"># Or use the unified tool:</span>
+python<span class="w"> </span>ubt.py<span class="w"> </span>task<span class="w"> </span>rebuild
 </pre></div>
 </div>
 <p><strong>Missing Dependencies:</strong></p>
@@ -773,48 +775,6 @@ pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </s
 <p>The order and structure are defined in <code class="docutils literal notranslate"><span class="pre">_toc.yml</span></code> and are reflected in the Jupyter Book build.</p>
 </section>
 <hr class="docutils" />
-<section id="environment-setup">
-<h2>Environment Setup<a class="headerlink" href="#environment-setup" title="Link to this heading">#</a></h2>
-<section id="using-docker-recommended">
-<h3>Using Docker (Recommended)<a class="headerlink" href="#using-docker-recommended" title="Link to this heading">#</a></h3>
-<p>A <code class="docutils literal notranslate"><span class="pre">Dockerfile</span></code> is provided for a fully reproducible environment. This includes all system and Python dependencies needed for the course.</p>
-<p><strong>To build and run the Docker environment:</strong></p>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>docker<span class="w"> </span>build<span class="w"> </span>-t<span class="w"> </span>phy321<span class="w"> </span>.
-docker<span class="w"> </span>run<span class="w"> </span>-it<span class="w"> </span>--rm<span class="w"> </span>-p<span class="w"> </span><span class="m">8888</span>:8888<span class="w"> </span>-v<span class="w"> </span><span class="k">$(</span><span class="nb">pwd</span><span class="k">)</span>:/mnt/jbook<span class="w"> </span>phy321
-</pre></div>
-</div>
-<p>This will launch a Jupyter environment with all required packages (see <code class="docutils literal notranslate"><span class="pre">Dockerfile</span></code> for details).</p>
-</section>
-<section id="manual-setup">
-<h3>Manual Setup<a class="headerlink" href="#manual-setup" title="Link to this heading">#</a></h3>
-<p>Alternatively, you can install dependencies directly:</p>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
-</pre></div>
-</div>
-</section>
-</section>
-<hr class="docutils" />
-<section id="building-the-jupyter-book-slides">
-<h2>Building the Jupyter Book &amp; Slides<a class="headerlink" href="#building-the-jupyter-book-slides" title="Link to this heading">#</a></h2>
-<ul>
-<li><p>To build all slides:</p>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>./build-all-slides.sh
-</pre></div>
-</div>
-</li>
-<li><p>To build a specific slide:</p>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>./build-slide.sh<span class="w"> </span>slides/day-01-introduction.md
-</pre></div>
-</div>
-</li>
-<li><p>To build the full Jupyter Book:</p>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>jupyter-book<span class="w"> </span>build<span class="w"> </span>.
-</pre></div>
-</div>
-</li>
-</ul>
-</section>
-<hr class="docutils" />
 <section id="id1">
 <h2>Contributing<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
 <p>Contributions, corrections, and suggestions are welcome! Please open an issue or submit a pull request.</p>
@@ -882,7 +842,7 @@ docker<span class="w"> </span>run<span class="w"> </span>-it<span class="w"> </s
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#building-the-book">🔧 Building the Book</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#using-the-build-script">Using the Build Script</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#using-the-unified-build-tool">Using the Unified Build Tool</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#manual-building">Manual Building</a></li>
 </ul>
 </li>
@@ -918,12 +878,6 @@ docker<span class="w"> </span>run<span class="w"> </span>-it<span class="w"> </s
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#authors">👨‍🏫 Authors</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#acknowledgments">🙏 Acknowledgments</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#repository-structure-order-of-materials">Repository Structure &amp; Order of Materials</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#environment-setup">Environment Setup</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#using-docker-recommended">Using Docker (Recommended)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#manual-setup">Manual Setup</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#building-the-jupyter-book-slides">Building the Jupyter Book &amp; Slides</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Contributing</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">License</a></li>
 </ul>

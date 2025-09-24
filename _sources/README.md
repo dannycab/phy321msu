@@ -50,23 +50,27 @@ cd phy321msu
 
 ## 🔧 Building the Book
 
-### Using the Build Script
+### Using the Unified Build Tool
 
-The easiest way to build the book is using the provided build script:
+The easiest way to build the book is using the unified build tool (`ubt.py`):
 
 ```bash
-# Build HTML version (default)
-python build.py
+# Quick commands for common tasks
+python ubt.py task update     # Build HTML incrementally  
+python ubt.py task rebuild    # Update kernels and full rebuild
+python ubt.py task pdf        # Build PDF version
+python ubt.py task viewhtml   # Open HTML in browser
+python ubt.py task viewpdf    # Open PDF in viewer
+python ubt.py task all        # Full build pipeline
 
-# Available commands:
-python build.py update     # Build HTML
-python build.py rebuild    # Update kernels and rebuild
-python build.py pdf        # Build PDF version
-python build.py web        # Deploy to GitHub Pages
-python build.py viewhtml   # Open HTML in browser
-python build.py viewpdf    # Open PDF in viewer
-python build.py all        # Full build pipeline
+# More control with direct commands
+python ubt.py book            # Build HTML version
+python ubt.py book --builder pdflatex  # Build PDF
+python ubt.py book --view     # Build and open in browser
+python ubt.py slides slides/day-01.md  # Build specific slide
 ```
+
+> 📖 **See [USAGE.md](USAGE.md) for complete command reference and examples**
 
 ### Manual Building
 
@@ -90,7 +94,7 @@ phy321msu/
 ├── 📖 intro.md                    # Main landing page
 ├── 📋 _toc.yml                    # Table of contents
 ├── ⚙️ _config.yml                 # Jupyter Book configuration
-├── 🔧 build.py                   # Build automation script
+├── 🔧 ubt.py                     # Unified build tool (replaces build.py)
 ├── 📝 requirements.txt           # Python dependencies
 ├── 📚 lecture-notes/              # Combined weekly materials
 │   ├── 01_notes.ipynb
@@ -114,17 +118,17 @@ phy321msu/
 
 1. **Weekly materials**: Add new notebook files to the `lecture-notes/` directory
 2. **Update TOC**: Edit `_toc.yml` to include new files
-3. **Build and test**: Run `python build.py rebuild` to ensure everything works
+3. **Build and test**: Run `python ubt.py task rebuild` to ensure everything works
 
 ### Combining Week Files
 
 The project includes scripts to combine separate start and notes files:
 
 ```bash
-# Combine individual week files
+# Combine individual week files (if needed)
 python combine_all_weeks.py
 
-# Update notebook kernels
+# Update notebook kernels (done automatically by ubt.py)
 python update_kernels.py
 ```
 
@@ -199,13 +203,15 @@ Each week typically contains:
 ```bash
 # Clean and rebuild
 rm -rf _build/
-python build.py rebuild
+python ubt.py task rebuild
 ```
 
 **Kernel Issues:**
 ```bash
-# Update all notebook kernels
+# Update all notebook kernels (or use rebuild which does this automatically)
 python update_kernels.py
+# Or use the unified tool:
+python ubt.py task rebuild
 ```
 
 **Missing Dependencies:**
@@ -281,45 +287,6 @@ The course is organized in the following order, matching the learning progressio
    - Custom CSS and themes for slides and notes (`themes/`)
 
 The order and structure are defined in `_toc.yml` and are reflected in the Jupyter Book build.
-
----
-
-## Environment Setup
-
-### Using Docker (Recommended)
-
-A `Dockerfile` is provided for a fully reproducible environment. This includes all system and Python dependencies needed for the course.
-
-**To build and run the Docker environment:**
-```sh
-docker build -t phy321 .
-docker run -it --rm -p 8888:8888 -v $(pwd):/mnt/jbook phy321
-```
-This will launch a Jupyter environment with all required packages (see `Dockerfile` for details).
-
-### Manual Setup
-
-Alternatively, you can install dependencies directly:
-```sh
-pip install -r requirements.txt
-```
-
----
-
-## Building the Jupyter Book & Slides
-
-- To build all slides:
-  ```sh
-  ./build-all-slides.sh
-  ```
-- To build a specific slide:
-  ```sh
-  ./build-slide.sh slides/day-01-introduction.md
-  ```
-- To build the full Jupyter Book:
-  ```sh
-  jupyter-book build .
-  ```
 
 ---
 
