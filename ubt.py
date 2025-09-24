@@ -540,9 +540,22 @@ def main():
     
     # Load configuration
     config = DEFAULT_CONFIG.copy()
-    if args.config:
+    
+    # Auto-detect config file if not specified
+    config_file = args.config
+    if not config_file:
+        # Look for common config file names in current directory
+        for candidate in ['build_config.yml', 'build_config.yaml', 'ubt_config.yml', 'ubt_config.yaml', 'config.yml', 'config.yaml']:
+            if os.path.exists(candidate):
+                config_file = candidate
+                if args.verbose:
+                    print(f"🔧 Auto-detected config file: {config_file}")
+                break
+    
+    # Load the config file if found
+    if config_file:
         try:
-            user_config = load_config(args.config)
+            user_config = load_config(config_file)
             config = merge_configs(config, user_config)
         except BuildError as e:
             print(f"❌ {e}")
@@ -552,15 +565,21 @@ def main():
     try:
         if args.command == "book":
             builder = JupyterBookBuilder(config.get("book", {}), args.verbose)
+            
+            # Use config values if args are defaults
+            source_dir = args.source_dir if args.source_dir != "." else None
+            output_dir = args.output_dir if args.output_dir else None
+            
             success = builder.build(
-                source_dir=args.source_dir,
-                output_dir=args.output_dir,
+                source_dir=source_dir,
+                output_dir=output_dir,
                 update=args.update,
                 warnings_as_errors=args.warnings_as_errors,
                 builder=args.builder
             )
             if success and args.view:
-                builder.view(args.source_dir, args.output_dir)
+                view_source = source_dir or config.get("book", {}).get("source_dir", ".")
+                builder.view(view_source, output_dir)
                 
         elif args.command == "slides":
             builder = MarpSlidesBuilder(config.get("slides", {}), args.verbose)
@@ -574,7 +593,12 @@ def main():
             
         elif args.command == "task":
             task_config = config.get("tasks", {})
-            task_config["book_dir"] = args.book_dir
+            
+            # Use config values if args are defaults
+            book_dir = args.book_dir if args.book_dir != "." else None
+            if book_dir:
+                task_config["book_dir"] = book_dir
+            
             runner = TaskRunner(task_config, args.verbose)
             success = runner.build(args.task_name)
             
