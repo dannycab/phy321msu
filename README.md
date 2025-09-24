@@ -290,51 +290,6 @@ The order and structure are defined in `_toc.yml` and are reflected in the Jupyt
 
 ---
 
-## Environment Setup
-
-### Using Docker (Recommended)
-
-A `Dockerfile` is provided for a fully reproducible environment. This includes all system and Python dependencies needed for the course.
-
-**To build and run the Docker environment:**
-```sh
-docker build -t phy321 .
-docker run -it --rm -p 8888:8888 -v $(pwd):/mnt/jbook phy321
-```
-This will launch a Jupyter environment with all required packages (see `Dockerfile` for details).
-
-### Manual Setup
-
-Alternatively, you can install dependencies directly:
-```sh
-pip install -r requirements.txt
-```
-
----
-
-## Building the Jupyter Book & Slides
-
-- **Build everything with unified tool:**
-  ```bash
-  python ubt.py task all
-  ```
-- **Build all slides:**
-  ```bash
-  ./build-all-slides.sh
-  ```
-- **Build a specific slide:**
-  ```bash
-  python ubt.py slides slides/day-01-introduction.md
-  ```
-- **Build the Jupyter Book only:**
-  ```bash
-  python ubt.py book
-  ```
-
-> 📖 **For detailed usage and all options, see [USAGE.md](USAGE.md)**
-
----
-
 ## Contributing
 
 Contributions, corrections, and suggestions are welcome! Please open an issue or submit a pull request.
