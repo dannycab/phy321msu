@@ -1,0 +1,23 @@
+# Unified Build Tool Configuration
+
+# Book building settings
+book:
+  source_dir: "."
+  build_dir: "_build/html"
+  output_dir: null
+  warnings_as_errors: false
+  verbose: false
+
+# Marp slides settings  
+slides:
+  theme_path: "./themes/"
+  theme: "graph_paper.css"
+  output_dir: null
+  formats: ["html", "pdf", "png"]
+
+# Task runner settings
+tasks:
+  book_dir: "."
+  build_dir: "_build/html"
+  tex_dir: "_build/latex"
+  pdf_file: "book.pdf"
