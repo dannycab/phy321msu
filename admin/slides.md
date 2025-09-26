@@ -4,6 +4,19 @@ Slides for PHY 321 appear in reverse chronological order, with the most recent s
 
 ---
 
+## Day 14 - Help Session - 26 Sep 2025
+
+[![Day 12](../slides/day-14-homework-session.png)](../slides/day-14-homework-session.pdf)
+
+:::info
+
+### 📂 Download Slides
+[HTML](../slides/day-14-homework-session.md) | [PDF](../slides/day-14-homework-session.pdf)
+
+:::
+
+---
+
 ## Day 13 - Conservative Forces - 24 Sep 2025
 
 [![Day 12](../slides/day-13-conservative-forces.png)](../slides/day-13-conservative-forces.pdf)
