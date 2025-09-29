@@ -1,0 +1,650 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Midterm 1 (Due 28 Feb) &#8212; Classical Mechanics</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"tex2jax": {"inlineMath": [["$", "$"]]}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'midterms/midterm1';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Homework 5 (Due 14 Mar)" href="../homeworks/hw5.html" />
+    <link rel="prev" title="Homework 4 (Due 17 Feb)" href="../homeworks/hw4.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/spartan-helmet.png" class="logo__image only-light" alt="Classical Mechanics - Home"/>
+    <script>document.write(`<img src="../_static/spartan-helmet.png" class="logo__image only-dark" alt="Classical Mechanics - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    PHY 321: Classical Mechanics 1, Michigan State University, Spring 2025
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">About the course</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../admin/getting-started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin/teachers.html">Teachers and Grading</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin/textbooks.html">Textbooks</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Calendar &amp; Lecture Materials</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../admin/schedule-cal.html">Course Calendar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin/links.html">Course Material and Links</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin/slides.html">Slides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin/handwritten-notes.html">Handwritten Notes</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Weekly Course Materials</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week1/01_start.html">Week 1 - Overture: What is Classical Physics?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week1/01_notes.html">Week 1 - Notes: Introduction to Classical Mechanics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week2/02_start.html">Week 2 - Computing as a tool for science</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week2/02_notes.html">Week 2 - Notes: Mathematical Preliminaries</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week3/03_start.html">Week 3 - What is Mathematical Modeling?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week3/03_notes.html">Week 3 - Notes: Making Classical Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week4/04_start.html">Week 4 - Why does fluid drag complicate things?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week4/04_notes.html">Week 4 - Notes: Equations of Motion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week5/05_start.html">Week 5 - Conservation Laws</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week5/05_notes.html">Week 5 - Notes: Conservation of Energy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week6/06_start.html">Week 6 - Stability and Equilibria</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week6/06_notes.html">Week 6 - Notes: Stability and Energy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week6/06_notes_2.html">Week 6 - Notes: Linear and Angular Momentum</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week7/07_start.html">Week 7 - Nonlinear Dynamics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week7/07_notes.html">Week 7 - Notes: Critical Points; Phase Space; Trajectories</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week8/08_start.html">Week 8 - Oscillations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week8/08_notes.html">Week 8 - Notes: Oscillators and Modeling Oscillations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week9/09_start.html">Week 9 - Driven Oscillators and Resonance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week9/09_notes.html">Week 9 - Notes: Driven Oscillations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week10/10_start.html">Week 10 - Chaotic Dynamics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week10/10_notes.html">Week 10 - Activity: Modeling Chaotic Systems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week11/11_start.html">Week 11 - Calculus of Variations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week11/11_notes.html">Week 11 - Notes: The Euler-Lagrange Equation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week12/12_start.html">Week 12 - The Principle of Least Action</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week12/12_notes.html">Week 12 - Notes: Introduction to Lagrangian Mechanics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week13/13_start.html">Week 13 - Lagrangian Mechanics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week13/13_notes.html">Week 13 - Notes: Examples of Lagrangian Mechanics</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Assignments</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw1.html">Homework 1 (Due 24 Jan)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw2.html">Homework 2 (Due 31 Jan)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw3.html">Homework 3 (Due 07 Feb)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw4.html">Homework 4 (Due 17 Feb)</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Midterm 1 (Due 28 Feb)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw5.html">Homework 5 (Due 14 Mar)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw6.html">Homework 6 (Due 21 Mar)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw7.html">Homework 7 (Due 28 Mar)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="midterm2.html">Midterm 2 (Due 11 Apr)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw8.html">Homework 8 (Due 18 Apr)</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Solutions</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../solutions/solutionhw1.html">Solution Homework 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../solutions/solutionhw2.html">Solution Homework 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../solutions/solutionhw3.html">Solution Homework 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../solutions/solutionhw4.html">Solution Homework 4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../solutions/solutionmidterm1.html">Midterm 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../solutions/solutionhw5.html">Solution Homework 5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../solutions/solutionhw6.html">Solution Homework 6</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../solutions/solutionhw7.html">Solution Homework 7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../solutions/solutionmidterm2.html">Midterm 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../solutions/solutionhw8.html">Solution Homework 8</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Resources</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../resources/course-commitments.html">Course Commitments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/iclicker-setup.html">i-Clicker Setup Instructions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/generative-ai.html">Generative Artificial Intelligence</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/gradescope-submissions.html">Submitting Assignments on Gradescope</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/finding-research.html">Finding Research Opportunities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/integrators.html">Numerical Integrators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/phase_diagrams.html">Plotting Phase Diagrams</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/chaotic_dynamics.html">Modeling Chaotic Systems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/computational-essay-rubric.html">Rubric for Computational Essay Final Project</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Honors Projects</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../honors-projects/ChaoticPendulum.html">Chaos in the driven nonlinear pendulum</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../honors-projects/NeuralNetworks.html">From Ordinary Differential equations to Neural Networks, solving mechanics problems in a new way</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../honors-projects/SolarSystem.html">Building a model for the solar system using ordinary differential equations</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/midterms/midterm1.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Midterm 1 (Due 28 Feb)</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#part-1-particle-in-a-one-dimensional-potential-60-points">Part 1, Particle in a one-dimensional  potential (60 points)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#part-2-model-your-own-system-50-points">Part 2, model your own system (50 points)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#part-3-planning-your-project-25-points">Part 3, Planning your project (25 points)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#each-student-should-complete-this-part-individually">Each student should complete this part individually.</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <!-- HTML file automatically generated from DocOnce source (https://github.com/doconce/doconce/)
+doconce format html Firstmidterm2022.do.txt --no_mako -->
+<!-- dom:TITLE: PHY321: Classical Mechanics 1 --><section id="midterm-1-due-28-feb">
+<h1>Midterm 1 (Due 28 Feb)<a class="headerlink" href="#midterm-1-due-28-feb" title="Link to this heading">#</a></h1>
+<p><strong>Spring 2025</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">math</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="o">%</span><span class="k">matplotlib</span> inline
+<span class="n">plt</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;seaborn-v0_8-colorblind&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<section id="part-1-particle-in-a-one-dimensional-potential-60-points">
+<h2>Part 1, Particle in a one-dimensional  potential (60 points)<a class="headerlink" href="#part-1-particle-in-a-one-dimensional-potential-60-points" title="Link to this heading">#</a></h2>
+<p>We consider a particle (for example an atom) of mass <span class="math notranslate nohighlight">\(m\)</span> moving in a one-dimensional potential,</p>
+<div class="math notranslate nohighlight">
+\[
+V(x)=\frac{V_0}{d^4}\left(x^4-2x^2d^2+d^4\right).
+\]</div>
+<p>We will assume all other forces on the particle are small in comparison, and neglect them in our model.  The parameters <span class="math notranslate nohighlight">\(V_0\)</span> and <span class="math notranslate nohighlight">\(d\)</span> are known constants.</p>
+<ol class="arabic simple">
+<li><p>(5pt) Sketch or plot the potential and find the equilibrium points (stable and unstable) by requiring that the first derivative of the potential is zero. Make an energy diagram (see for example Malthe-Sørenssen chapter 11.3) and mark the equilibrium points on the diagram and characterize their stability. The position of the particle is <span class="math notranslate nohighlight">\(x\)</span>.</p></li>
+</ol>
+<ol class="arabic simple" start="2">
+<li><p>(5pt) Choose two different energies that give two distinct types of motions, draw them on the energy diagram, and describe the motion in each case.</p></li>
+</ol>
+<ol class="arabic simple" start="3">
+<li><p>(5pt) If the particle  starts at rest at <span class="math notranslate nohighlight">\(x=2d\)</span>, what is the velocity of the particle at the point <span class="math notranslate nohighlight">\(x=d\)</span>?</p></li>
+</ol>
+<ol class="arabic simple" start="4">
+<li><p>(5pt) If the particle  starts at <span class="math notranslate nohighlight">\(x=d\)</span> with velocity <span class="math notranslate nohighlight">\(v_0\)</span>, how large must <span class="math notranslate nohighlight">\(v_0\)</span> be for the  particle to reach the point <span class="math notranslate nohighlight">\(x=−d\)</span>?</p></li>
+</ol>
+<ol class="arabic simple" start="5">
+<li><p>(5pt) Use the above potential to find the net force acting on the particle.  Find the acceleration acting on the particle. Is this net force conservative? Calculate the <strong>curl</strong> of the force  <span class="math notranslate nohighlight">\(\boldsymbol{\nabla}\times \boldsymbol{F}\)</span> in order to validate your conclusion.</p></li>
+<li><p>(5pt) Are linear momentum and angular momentum conserved? You need to show this by calculating these quantities.</p></li>
+</ol>
+<ol class="arabic simple" start="7">
+<li><p>(10pt) Write a numerical algorithm to find the position and velocity of the particle at a time <span class="math notranslate nohighlight">\(t+\Delta t\)</span> given the position and velocity at a time <span class="math notranslate nohighlight">\(t\)</span>. Here you can use either the standard forward Euler, or the Euler-Cromer or the Velocity Verlet algorithms.   You need to justify your choice here (hint: consider energy conservation).</p></li>
+</ol>
+<ol class="arabic simple" start="8">
+<li><p>(10pt) Use now your program to find the position of the particle as function of time from <span class="math notranslate nohighlight">\(t=0\)</span> to <span class="math notranslate nohighlight">\(t=30\)</span> s using a mass  <span class="math notranslate nohighlight">\(m=1.0\)</span> kg, the parameter <span class="math notranslate nohighlight">\(V_0=1\)</span> J and <span class="math notranslate nohighlight">\(d=0.1\)</span> m. Make a plot of three distinct positions with initial conditions <span class="math notranslate nohighlight">\(x_0=d\)</span> and <span class="math notranslate nohighlight">\(v_0=0.5\)</span> m/s, <span class="math notranslate nohighlight">\(x_0=d\)</span> and <span class="math notranslate nohighlight">\(v_0=1.5\)</span> m/s, and <span class="math notranslate nohighlight">\(x_0=d\)</span> and <span class="math notranslate nohighlight">\(v_0=2.5\)</span> m/s. Plot the velocity.  Perform these analyses with and without the term <span class="math notranslate nohighlight">\(x^4\)</span> in the potential. Do you see a difference? What do you notice?</p></li>
+</ol>
+<ol class="arabic simple" start="9">
+<li><p>(10pt) Describe the behavior of the particle for the three initial conditions  and sketch the motion in an energy diagram. Is energy conserved in your simulations?</p></li>
+</ol>
+</section>
+<section id="part-2-model-your-own-system-50-points">
+<h2>Part 2, model your own system (50 points)<a class="headerlink" href="#part-2-model-your-own-system-50-points" title="Link to this heading">#</a></h2>
+<p>In this problem, you will choose a one dimensional system of your own. You may choose a known potential, or you may invent your own. Your potential must:</p>
+<ol class="arabic simple">
+<li><p>Have at least one stable equilibrium point.</p></li>
+<li><p>Have at least one unstable equilibrium point, or some other interesting feature (e.g., asymptotic behavior).</p></li>
+<li><p>For some choice of total energy, it should have oscillatory motion (i.e., classical turning points).</p></li>
+<li><p>Produce a non-linear and conservative force.</p></li>
+<li><p>Be continuous and differentiable over the range of interest.</p></li>
+</ol>
+<p>For this problem, you will need to perform the following tasks:</p>
+<ol class="arabic simple">
+<li><p>(5pts) Write down the potential and start to demonstrate that it meets the above criteria. <strong>Make sure it is conservative and that the force is nonlinear before proceeding.</strong></p></li>
+<li><p>(5pts) Sketch or plot the potential and find the equilibrium points. You need to show you can compute the equilibrium points and characterize their stability. For some choices of potential, you may need to use a numerical method to find the equilibrium points and conceptual arguments to determine their stability.</p></li>
+<li><p>(10pts) Pick a total energy that gives rise to oscillatory motion. Show this by sketching or plotting the energy diagram and describing the motion. Are there any other kinds of motion that can occur for other choices of total energy?</p></li>
+<li><p>(20pts) Write a numerical algorithm to find the position and velocity of the particle (it’s trajectories) for the choice of total energy where the motion is oscillatory. Here you must use two methods: (1) the standard forward Euler, and either (2) the Euler-Cromer or the <a class="reference external" href="https://en.wikipedia.org/wiki/Verlet_integration">Velocity Verlet</a> algorithms. You will need to pick the time step <span class="math notranslate nohighlight">\(\Delta t\)</span> and the total time <span class="math notranslate nohighlight">\(t_{\rm max}\)</span> for your simulation. Compare the results of the two algorithms. Which one is better? Justify your answer. <strong>You might find this <a class="reference internal" href="../resources/integrators.html"><span class="std std-doc">numerical integration resource</span></a> helpful.</strong></p></li>
+<li><p>(10pts) Use your program to plot the energy of the particle (T), the potential energy (V), and the total energy (E) as a function of time. Discuss the behavior of the energy between each choice of algorithm. Is energy conserved in your simulations?</p></li>
+</ol>
+</section>
+<section id="part-3-planning-your-project-25-points">
+<h2>Part 3, Planning your project (25 points)<a class="headerlink" href="#part-3-planning-your-project-25-points" title="Link to this heading">#</a></h2>
+<section id="each-student-should-complete-this-part-individually">
+<h3>Each student should complete this part individually.<a class="headerlink" href="#each-student-should-complete-this-part-individually" title="Link to this heading">#</a></h3>
+<p><strong>Why?</strong></p>
+<p><em>This question assesses a core part of the learning goals for our course. Even if you are working on a team for this final project, you should be able to articulate your own ideas and plans. This is an important skill for working on a team and for developing your own ideas.</em></p>
+<p>On homework 4, we asked you to review the <a class="reference external" href="https://uio-ccse.github.io/computational-essay-showroom/">University of Oslo’s computational essay showroom</a>. We asked you to find a computational essay that you found interesting and to write a short paragraph about why you found it interesting. In this part of the midterm, we ask you to plan your own computational essay.</p>
+<p>We hear from students that often the hardest part of developing a computational essay is often finding a question worth investigating. So we are trying to help you with that. You are not expected to write the computational essay for this midterm. Instead, you are expected to plan it.</p>
+<p>For your final project, you will develop a computational essay. Your answers to this question do not commit you to completing this project on the idea you present here. You can change your mind later. This is a good exercise to get you thinking about what you might want to do, and you might find that you want to work on this plan for your final project.</p>
+<p>For each of the questions below, you should write a paragraph or two (minimum 250 words, maximum 500 words) to answer the question. You may include equations, code, or figures in any of your answers.</p>
+<ol class="arabic simple">
+<li><p>(5pt) What is the question(s) you want to investigate? What background information do you need to understand the question(s)? Where can you find that information?</p></li>
+<li><p>(5pt) What is the motivation for the question(s)? Why is it interesting to you? Why is it interesting to others?</p></li>
+<li><p>(5pt) What is the computational aspect of the question(s)? What will you calculate? What will you simulate? What will you visualize?</p></li>
+<li><p>(5pt) Outline the structure of the set up and the analysis that you think that you need in order to answer the question(s) you have. What are the key steps you would need to take? What are the key challenges you anticipate?</p></li>
+<li><p>(5pt) How will you know if you have answered the question(s)? What are the key results you would be looking for?</p></li>
+</ol>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "jbook"
+        },
+        kernelOptions: {
+            name: "jbook",
+            path: "./midterms"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'jbook'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../homeworks/hw4.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Homework 4 (Due 17 Feb)</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../homeworks/hw5.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Homework 5 (Due 14 Mar)</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#part-1-particle-in-a-one-dimensional-potential-60-points">Part 1, Particle in a one-dimensional  potential (60 points)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#part-2-model-your-own-system-50-points">Part 2, model your own system (50 points)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#part-3-planning-your-project-25-points">Part 3, Planning your project (25 points)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#each-student-should-complete-this-part-individually">Each student should complete this part individually.</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Danny Caballero, Morten Hjorth-Jensen, Rachel Henderson
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

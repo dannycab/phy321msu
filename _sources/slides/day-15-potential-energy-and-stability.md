@@ -35,45 +35,105 @@ $V(\phi) = -5|\phi|^2 + |\phi|^4$
 
 # Announcements
 
-- HW 4 is due today
-- Midterm 1 is available today (Due Feb 24th)
+* Midterm 1 is available today (Due Oct 10th)
+* You may work in larger groups, but solutions are submitted like homework
+* No office hours on Friday (DC traveling)
+
 
 ---
 
 # Seminars this week
 
-## MONDAY, February 17, 2025             
+## MONDAY, September 29, 2025                   
+ 
+ 
+Condensed Matter Seminar 4:10 pm,1400 BPS, In Person and Zoom, Host ~Mark Dykman
+Speaker: Peter Littlewood, University of Chicago
+Title: Non-Reciprocal Phase Transitions
+Zoom Link: https://msu.zoom.us/j/93613644939
+Meeting ID: 936 1364 4939
+Password: CMP
+ 
+---
 
-* QuIC Seminar, 12:30 pm, 1400 BPS, Dr. Michael Hilke, *The history of quantum computing*
-* High Energy Physics Seminar, 1:30pm, BPS 1400 BPS, Joshua Isaacson, *Event Generation for Next-Gen HEP Experiments*
-* Condensed Matter Seminar 4:10 pm, 1400 BPS, Lisa Lapidus, *The Physics of Biomolecular Condensation*
+# Seminars this week 
+ 
+ 
+## TUESDAY, September 30, 2025
+ 
+Theory Seminar, 11:00am., FRIB 1200 lab in person and online via Zoom
+Speaker: Debora Mroczek, University of Illinois
+Title: Revealing new phases of matter in neutron stars
+Please click the link below to join the webinar:
+Zoom Link: 964 7281 4717
+ Meeting ID: 48824
+ 
+---
+
+# Seminars this week 
+ 
+ 
+## TUESDAY, September 30, 2025 
+ 
+High Energy Physics Seminar, 1:30 pm, 1400 BPS, Host~ Joshua Isaacson
+Speaker: Tony Menzo, Joint affiliation - FNAL/Univ. of Alabama
+Title: The journey towards differentiable hadronization models
+Zoom:
+Passcode:
+ (Joining the Zoom meeting requires a password. Please contact one of the organizers, if you haven't received it.)             
+Organized by: Joey Huston, Sophie Berkman and Brenda Wenzlick
+ 
+ 
+---
+
+# Seminars this week 
+ 
+## WEDNESDAY, October 1, 2025    
+ 
+                                    
+Astronomy Seminar, 1:30 pm, 1400 BPS, In Person and Zoom, Host~ 
+Speaker: Madison Brady, MSU
+Title:
+Zoom Link: https://msu.zoom.us/j/93334479606?pwd=OtIXPWhRPBfzYu53sl3trSJlaBYI7C.1
+Meeting ID:  933 3447 9606
+Passcode: 825824
+ 
+---
+
+# Seminars this week 
+ 
+## THURSDAY, October 2, 2025
+ 
+Colloquium, 3:30 pm, 1415 BPS, in person and zoom.  Host ~ Witold Nazarewics 
+Refreshments and social half-hour in BPS 1400 starting at 3 pm
+Speaker: David Dean, Thomas Jefferson National Accelerator Facility
+Title: From the quarks to the cosmos 
+Background: 
+For more information and to schedule time with the speaker, see the colloquium calendar at https://pa.msu.edu/news-events-seminars/colloquium-schedule.aspx
+Zoom Link: https://msu.zoom.us/j/94951062663
+Password: 2002 
+ 
+---
+
+# Seminars this week  
+ 
+## FRIDAY, October 3, 2025 
+ 
+Special Seminar, 10:00am, In Person Only, FRIB 1300 Auditorium
+Speaker: Sudip Bhattacharyya - Tata Institute of Fundamental Research & Massachusetts Institute of Technology
+Title: Thermonuclear X-ray bursts: probing neutron stars and a double-photospheric-radius-expansion
+Sign up to meet with Dr. Bhattacharyya (enter your name and meeting location): https://docs.google.com/spreadsheets/d/1tlw765Lf8mNOeCUJp8cWfSOvQfiF4vJDOuhKKVPXH1M/edit?usp=sharing
 
 ---
 
-# Seminars this week
-
-## TUESDAY, February 18, 2025
-
-* Theory Seminar, 11:00am., FRIB 1200 lab, Ibrahim Abdurahman, *Investigating Fission Dynamics within Time-Dependent Density Functional Theory Extended to Superfluid Systems*
-
----
-
-# Seminars this week
-
-## WEDNESDAY, February 19, 2025    
-
-* Astronomy Seminar, 1:30 pm, 1400 BPS, Aaron Bello-Arufa, *The atmospheres of small exoplanets with JWST*
-* **PER Seminar**, 3:00 pm., BPS 1400, Anthony Escuardo, *OPTYCS: A Community of Practice Supporting Teaching and Scholarship at Two-Year College*
-* FRIB Nuclear Science Seminar, 3:30pm., FRIB 1300 Auditorium, Elise Novitski, *A new approach to measuring neutrino mass*
-
----
-
-# Seminars this week
-
-## THURSDAY, February 20, 2025
-
-* High Energy Physics Seminar, 1:30pm, BPS 1400 BPS, Ben Assi, *Precision QCD and EFT for Next-Generation Collider Studies*
-* Physics and Astronomy sColloquium, 3:30 pm, 1415 BPS, Eric Hudson, *Laser spectroscopy of a nucleus*
+# Seminars this week 
+## FRIDAY, October 3, 2025 
+ 
+QuIC Seminar, 12:30pm, -1:30pm, 1300 BPS, Zoom only 
+Speaker: Balint Pato, Duke University
+Title: Compass codes in quantum error correction
+Full Scheule is at: https://sites.google.com/msu.edu/quic-seminar/
+For more information, reach out to Ryan LaRose
 
  ---
 
@@ -83,6 +143,97 @@ $V(\phi) = -5|\phi|^2 + |\phi|^4$
 - Determine the equilibrium points of a system using potential energy
 - Analyze the stability of equilibrium points
 - Define and begin to apply conservation of linear and angular momentum
+
+---
+
+# Reminder: The Gradient Operator $\nabla$
+
+$\nabla$ is a vector operator. In Cartesian coordinates:
+$$\nabla = \hat{x}\dfrac{\partial}{\partial x}+\hat{y}\dfrac{\partial}{\partial y}+\hat{z}\dfrac{\partial}{\partial z} = \left\langle \dfrac{\partial}{\partial x}, \dfrac{\partial}{\partial y}, \dfrac{\partial}{\partial z} \right\rangle$$
+
+Acting on a scalar function $f(x,y,z)$ produces a vector:
+
+$$\nabla f(x,y,z) = \hat{x}\dfrac{\partial f}{\partial x}+\hat{y}\dfrac{\partial f}{\partial y}+\hat{z}\dfrac{\partial f}{\partial z} = \left\langle \dfrac{\partial f}{\partial x}, \dfrac{\partial f}{\partial y}, \dfrac{\partial f}{\partial z} \right\rangle$$
+
+---
+
+# Reminder: The Gradient Operator $\nabla$
+
+$\nabla$ can act on vector field (function), $\mathbf{F}(x,y,z)$ with both dot and cross products.
+
+## Divergence (Scalar Product)
+
+$$\nabla \cdot \mathbf{F}(x,y,z) = \left\langle \dfrac{\partial}{\partial x}, \dfrac{\partial}{\partial y}, \dfrac{\partial}{\partial z} \right\rangle \cdot \langle F_x, F_y, F_z \rangle$$
+$$\nabla \cdot \mathbf{F}(x,y,z) = \dfrac{\partial F_x}{\partial x} + \dfrac{\partial F_y}{\partial y} + \dfrac{\partial F_z}{\partial z}$$
+
+*How does the vector field change in the direction of the vector?*
+
+---
+
+# Clicker Question 15-1a
+
+Which of the following fields have no divergence?
+
+<div style="display: flex; align-items: center; gap: 20px; max-width: 800px; margin: 0 auto; white-space: nowrap; height: 400px;">
+  A. <img src="../images/notes/week5/cq_left_field.png" alt="A" width="400">
+  B. <img src="../images/notes/week5/cq_right_field.png" alt="B" width="400">
+</div>
+
+1. A
+2. B
+3. Both A and B
+4. Neither A nor B
+
+---
+
+# Reminder: The Gradient Operator $\nabla$
+
+$\nabla$ can act on vector field (function), $\mathbf{F}(x,y,z)$ with both dot and cross products.
+
+## Curl (Vector Product)
+
+$$
+\nabla \times \mathbf{F}(x,y,z) =
+\begin{vmatrix}
+\hat{x} & \hat{y} & \hat{z} \\
+\dfrac{\partial}{\partial x} & \dfrac{\partial}{\partial y} & \dfrac{\partial}{\partial z} \\
+F_x & F_y & F_z
+\end{vmatrix} 
+$$
+
+$$\nabla \times \mathbf{F}(x,y,z) = \left\langle \dfrac{\partial F_z}{\partial y} - \dfrac{\partial F_y}{\partial z},\ \dfrac{\partial F_x}{\partial z} - \dfrac{\partial F_z}{\partial x},\ \dfrac{\partial F_y}{\partial x} - \dfrac{\partial F_x}{\partial y} \right\rangle$$
+
+*How does the vector field change in the direction perpendicular to the vector?*
+
+
+---
+
+
+# Clicker Question 15-1b
+
+Which of the following fields have no curl?
+
+<div style="display: flex; align-items: center; gap: 20px; max-width: 800px; margin: 0 auto; white-space: nowrap; height: 400px;">
+  A. <img src="../images/notes/week5/cq_left_field.png" alt="A" width="400">
+  B. <img src="../images/notes/week5/cq_right_field.png" alt="B" width="400">
+</div>
+
+1. A
+2. B
+3. Both A and B
+4. Neither A nor B
+
+---
+
+# Clicker Question 15-1c
+
+Consider a vector field with zero curl: $\nabla \times \vec{F} = 0$. Which of the following statements is true?
+
+1. The field is conservative
+2. $\int \nabla \times \vec{F} \cdot d\vec{A} = 0$
+3. $\oint \vec{F} \cdot d\vec{r} \neq 0$
+4. $\vec{F}$ is the gradient of some scalar function, e.g., $\vec{F} = - \nabla U$
+5. Some combination of the above
 
 ---
 
@@ -102,7 +253,7 @@ $$\vec{F} = - \nabla U$$
 
 ---
 
-# Clicker Question 15-1
+# Clicker Question 15-2
 
 Here's the graph of the potential energy function $U(x)$ for a pendulum.
 
@@ -117,7 +268,7 @@ What can you say about the equilibrium points? There is/are:
 
 ---
 
-# Clicker Question 15-2
+# Clicker Question 15-3
 
 Here's a potential energy function $U(x)$ for a pendulum:
 
@@ -135,7 +286,7 @@ $$\frac{d^2U(\phi^*)}{d\phi^2}>0? \qquad \frac{d^2U(\phi^*)}{d\phi^2}<0?$$
 
 ---
 
-## Clicker Question 15-3
+## Clicker Question 15-4
 
 A double-well potential energy function $U(x)$ is given by
 
@@ -152,7 +303,7 @@ How many equilibrium points does this system have?
 
 ---
 
-# Clicker Question 15-4
+# Clicker Question 15-5
 
 A double-well potential energy function $U(x)$ is given by
 
@@ -171,7 +322,7 @@ $$\frac{d^2U(x^*)}{dx^2}>0? \qquad \frac{d^2U(x^*)}{dx^2}<0?$$
 
 ---
 
-# Clicker Question 15-5
+# Clicker Question 15-6
 
 Here's a graph of the potential energy function $U(x)$ for a double-well potential.
 
