@@ -4,6 +4,19 @@ Slides for PHY 321 appear in reverse chronological order, with the most recent s
 
 ---
 
+## Day 16 - Conservation of Momentum - 01 Oct 2025
+
+[![Day 16](../slides/day-16-conservation-of-momentum.png)](../slides/day-16-conservation-of-momentum.pdf)
+
+:::info
+
+### 📂 Download Slides
+[HTML](../slides/day-16-conservation-of-momentum.md) | [PDF](../slides/day-16-conservation-of-momentum.pdf)
+
+:::
+
+---
+
 ## Day 15 - Potential Energy and Stability - 29 Sep 2025
 
 [![Day 15](../slides/day-15-potential-energy-and-stability.png)](../slides/day-15-potential-energy-and-stability.pdf)

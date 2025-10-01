@@ -4,7 +4,7 @@ theme: graph_paper
 paginate: true
 
 title: Day 16 - Conservation of Linear and Angular Momentum
-description: Slides for PHY 321 Spring 2025, Day 16: Conservation of Linear and Angular Momentum
+description: Slides for PHY 321 Fall 2025, Day 16: Conservation of Linear and Angular Momentum
 author: Prof. Danny Caballero <caball14@msu.edu>
 keywords: classical mechanics, models, modeling, differential equations, energy, stability
 url: https://dannycaballero.info/phy321msu/slides/day-16-conservation-of-momentum.html
@@ -19,30 +19,60 @@ url: https://dannycaballero.info/phy321msu/slides/day-16-conservation-of-momentu
 
 # Announcements
 
-- Midterm 1 is due Feb 28th
-- Office hours this week:
-  - Today, 4:00-5:00 pm
-  - Thursday, 5:00-6:00 pm
-  - Friday, 10:00am-12:00pm and 3:00-4:00pm
+* Midterm 1 is due Oct 10th
+* **Friday's class:** Midterm 1 Work Time $\longleftarrow$ Take advantage of it!
+* There will be no office hours on Oct 3rd (DC traveling)
 
 ---
 
-# Seminars this week
+# Seminars this week 
+ 
+## WEDNESDAY, October 1, 2025    
+ 
+                                    
+Astronomy Seminar, 1:30 pm, 1400 BPS, In Person and Zoom, Host~ 
+Speaker: Madison Brady, MSU
+Title:
+Zoom Link: https://msu.zoom.us/j/93334479606?pwd=OtIXPWhRPBfzYu53sl3trSJlaBYI7C.1
+Meeting ID:  933 3447 9606
+Passcode: 825824
+ 
+---
 
-## WEDNESDAY, February 19, 2025    
+# Seminars this week 
+ 
+## THURSDAY, October 2, 2025
+ 
+Colloquium, 3:30 pm, 1415 BPS, in person and zoom.  Host ~ Witold Nazarewics 
+Refreshments and social half-hour in BPS 1400 starting at 3 pm
+Speaker: David Dean, Thomas Jefferson National Accelerator Facility
+Title: From the quarks to the cosmos 
+Background: 
+For more information and to schedule time with the speaker, see the colloquium calendar at https://pa.msu.edu/news-events-seminars/colloquium-schedule.aspx
+Zoom Link: https://msu.zoom.us/j/94951062663
+Password: 2002 
+ 
+---
 
-* Astronomy Seminar, 1:30 pm, 1400 BPS, Aaron Bello-Arufa, *The atmospheres of small exoplanets with JWST*
-* **PER Seminar**, 3:00 pm., BPS 1400, Anthony Escuardo, *OPTYCS: A Community of Practice Supporting Teaching and Scholarship at Two-Year College*
-* FRIB Nuclear Science Seminar, 3:30pm., FRIB 1300 Auditorium, Elise Novitski, *A new approach to measuring neutrino mass*
+# Seminars this week  
+ 
+## FRIDAY, October 3, 2025 
+ 
+Special Seminar, 10:00am, In Person Only, FRIB 1300 Auditorium
+Speaker: Sudip Bhattacharyya - Tata Institute of Fundamental Research & Massachusetts Institute of Technology
+Title: Thermonuclear X-ray bursts: probing neutron stars and a double-photospheric-radius-expansion
+Sign up to meet with Dr. Bhattacharyya (enter your name and meeting location): https://docs.google.com/spreadsheets/d/1tlw765Lf8mNOeCUJp8cWfSOvQfiF4vJDOuhKKVPXH1M/edit?usp=sharing
 
 ---
 
-# Seminars this week
-
-## THURSDAY, February 20, 2025
-
-* High Energy Physics Seminar, 1:30pm, BPS 1400 BPS, Ben Assi, *Precision QCD and EFT for Next-Generation Collider Studies*
-* Physics and Astronomy sColloquium, 3:30 pm, 1415 BPS, Eric Hudson, *Laser spectroscopy of a nucleus*
+# Seminars this week 
+## FRIDAY, October 3, 2025 
+ 
+QuIC Seminar, 12:30pm, -1:30pm, 1300 BPS, Zoom only 
+Speaker: Balint Pato, Duke University
+Title: Compass codes in quantum error correction
+Full Scheule is at: https://sites.google.com/msu.edu/quic-seminar/
+For more information, reach out to Ryan LaRose
 
  ---
 
