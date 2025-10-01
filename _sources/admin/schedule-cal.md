@@ -61,7 +61,7 @@ _All assignments are turned in using Gradescope as a single PDF._
 | **Week** | **Day**   | **Topic**                             | **Readings to Prepare**           | **Important Events**                                                |
 |:--------:|:---------:|:-------------------------------------:|:----------------------------------|:-------------------------------------------------------------------|
 | CW40     | 29 Sep ([Slides](../slides/day-15-potential-energy-and-stability.pdf))   | Examples and Stability Analysis       | 📓 [06 - Nature Often Seeks Stability](../lecture-notes/06_notes.ipynb)<br>📚 JRT 4.1-4.4, 4.6; MLB 6.6-6.8 | 📝 [Midterm Project 1 Assigned (Due 10 Oct)](../assignments/midterm1.ipynb) |
-|          | 1 Oct     | Conservation of Momentum and Angular Momentum | 📓 [05 - Conservation Laws Govern and Constrain our Physics](../lecture-notes/05_notes.ipynb#conservation-of-momentum-and-angular-momentum)<br>📚 JRT 3.1, 3.3-3.4 | |
+|          | 1 Oct ([Slides](../slides/day-16-conservation-of-momentum.pdf))    | Conservation of Momentum and Angular Momentum | 📓 [05 - Conservation Laws Govern and Constrain our Physics](../lecture-notes/05_notes.ipynb#conservation-of-momentum-and-angular-momentum)<br>📚 JRT 3.1, 3.3-3.4 | |
 |          | 3 Oct     | Workshop day                          |                                  |                                                                   |
 
 ---
