@@ -4,6 +4,19 @@ Slides for PHY 321 appear in reverse chronological order, with the most recent s
 
 ---
 
+## Day 17 - Help Session - 03 Oct 2025
+
+[![Day 17](../slides/day-17-homework-session.png)](../slides/day-17-homework-session.pdf)
+
+:::info
+
+### 📂 Download Slides
+[HTML](../slides/day-17-homework-session.md) | [PDF](../slides/day-17-homework-session.pdf)
+
+:::
+
+---
+
 ## Day 16 - Conservation of Momentum - 01 Oct 2025
 
 [![Day 16](../slides/day-16-conservation-of-momentum.png)](../slides/day-16-conservation-of-momentum.pdf)
