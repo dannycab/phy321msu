@@ -4,6 +4,19 @@ Slides for PHY 321 appear in reverse chronological order, with the most recent s
 
 ---
 
+## Day 18 - Help Session - 06 Oct 2025
+
+[![Day 18](../slides/day-18-introduction-to-nonlinear-dynamics.png)](../slides/day-18-introduction-to-nonlinear-dynamics.pdf)
+
+:::info
+
+### 📂 Download Slides
+[HTML](../slides/day-18-introduction-to-nonlinear-dynamics.md) | [PDF](../slides/day-18-introduction-to-nonlinear-dynamics.pdf)
+
+:::
+
+---
+
 ## Day 17 - Help Session - 03 Oct 2025
 
 [![Day 17](../slides/day-17-homework-session.png)](../slides/day-17-homework-session.pdf)

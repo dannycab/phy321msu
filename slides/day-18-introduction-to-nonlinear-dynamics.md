@@ -4,7 +4,7 @@ theme: graph_paper
 paginate: true
 
 title: Day 18 - Introduction to Nonlinear Dynamics
-description: Slides for PHY 321 Spring 2025, Day 18: Introduction to Nonlinear Dynamics
+description: Slides for PHY 321 Fall 2025, Day 18: Introduction to Nonlinear Dynamics
 author: Prof. Danny Caballero <caball18@msu.edu>
 keywords: classical mechanics, models, modeling, differential equations, motion
 url: https://dannycaballero.info/phy321msu/slides/day-18-introduction-to-nonlinear-dynamics.html
@@ -25,39 +25,90 @@ $$\dot{z} = b + z(x - c)$$
 
 # Announcements
 
-* Midterm 1 is due Feb 28th
-* Homework 5 is now posted; due Mar 14th
-
----
-
-# 6pm Today (SPS/Astro Club)
-
-![width:800px](../images/notes/week6/resisting.png)
+* Midterm 1 is due Oct 10th
 
 ---
 
 # Seminars this week
 
-## MONDAY, February 24, 2025  
-* High Energy Physics Seminar, 2:00-3:00pm, 1400 BPS, **Ben Assi**, University of Cincinnati, *Precision QCD and EFT for Next-Generation collider Studies*
-* Condensed Matter Seminar 4:10 pm, 1400 BPS, **Ben Pingault**, Argonne National Lab, *Interfacing spins with mechanical vibrations*
-
-## WEDNESDAY, February 26, 2025    
-
-* Astronomy Seminar, 1:30 pm, 1400 BPS, **Lieke von Son**, CCA, Flatiron Institution, *Beyond the first waves: where we stand in understanding binary neutron star and black hole formation channels*
+## MONDAY, October 6, 2025             
+ 
+ 
+Condensed Matter Seminar 4:10 pm,1400 BPS, In Person and Zoom, Host ~ Tyler Cocker
+Speaker: Edoardo Baldini, University Texas - Austin
+Title: Nonlinear Coupled Magnonics
+Zoom Link: https://msu.zoom.us/j/93613644939
+Meeting ID: 936 1364 4939
+Password: CMP
  
 ---
+ 
 # Seminars this week
 
-
-## THURSDAY, February 27, 2025
+## WEDNESDAY, October 8, 2025    
  
-* High Energy Physics Seminar, 2:00 – 3:00 pm, 1400 BPS, **Matthew Lim**, University of Sussex
-Title, *Precision at Scale: Towards Automated NNLO Event Generation*
+FRIB Nuclear Science Seminar, 11:00am., FRIB room 1300 and online via Zoom.
+Speaker: Dr. Yuhu Zhai of Princeton Plasma Physics Laboratory 
+Title: Innovation in superconducting magnet technologies: R&D Gaps and opportunities to mature HTS for fusion and other applications
+Join Zoom: https://msu.zoom.us/j/96657965451?pwd=Isaf23sK5agzaao0Kwaei7AaWHkc4W.1
+Meeting ID: 966 5796 5451
+Passcode: 479842
+ 
+---
+ 
+# Seminars this week
 
-## FRIDAY,  February 28, 2025 
+## WEDNESDAY, October 8, 2025  
+                                   
+Astronomy Seminar, 1:30 pm, 1400 BPS, In Person and Zoom, Host~ 
+Speaker: Kyle Kremer, UC San Diego
+Title: Globular Clusters: Astronomical factories of gravitational-wave and
+electromagnetic transients
+Zoom Link: https://msu.zoom.us/j/94228252584?pwd=zNJdjCNAabNkppOcg5FlAv01ihzLwl.1
+Meeting ID: 942 2825 2584
+Passcode: 541987
+ 
+ 
+---
+ 
+# Seminars this week
 
-* FRIB IReNA Online Seminar, 2:30pm., **Soham Chakraborty**, TRIUMF, *TACTIC: a detector for unclear astrophysics*, Zoom ONLY: <https://msu.zoom.us/j/827950260> Passcode: JINA
+## THURSDAY, October 9, 2025
+ 
+Colloquium, 3:30 pm, 1415 BPS, in person and zoom.  Host ~ Xing Wu
+Refreshments and social half-hour in BPS 1400 starting at 3 pm
+Speaker: Benjamin Jones, University of Texas at Arlington
+Title: Single Barium Ion Identification Technologies for Background-Free Neutrinoless DoubleBeta Decay searches -
+Zoom Link: https://msu.zoom.us/j/94951062663
+Password: 2002  Or complete link:  https://msu.zoom.us/j/94951062663?pwd=c48uM25P9UsRVuR74rkOioOWgpoxgC.1
+ 
+---
+ 
+# Seminars this week
+
+## FRIDAY, October 10, 2025 
+ 
+QuIC Seminar, 12:30pm, -1:30pm, 1300 BPS, Zoom only 
+Speaker: Daniel Nino, Xanadu
+Title: Quantum Computational Chemistry (With Pennylane)
+Full Scheule is at: https://sites.google.com/msu.edu/quic-seminar/
+For more information, reach out to Ryan LaRose
+ 
+
+---
+ 
+# Seminars this week
+
+## FRIDAY, October 10, 2025 
+
+FRIB IReNA Online Seminar, 2:00pm., Eastern Time.
+Hosted By: Hosted by: Borbala Cseh (Konkoly Observatory)
+Speaker: Artemis Spyrou, MSU
+Title: Neutron-capture reaction constraints for astrophysical processes Please see website for full abstract.
+Please click the link below to join the webinar:
+Join Zoom: https://msu.zoom.us/j/827950260
+Meeting ID:
+Passcode: JINA
 
 ---
 
@@ -89,7 +140,7 @@ $$\vec{F}_{cons} = -\nabla U$$
 
 ---
 
-# Reminders: Critical Points
+# Reminders: Equilibrium (aka Critical or Fixed) Points
 
 We found equilibrium points by setting the derivative of the potential energy to zero:
 
