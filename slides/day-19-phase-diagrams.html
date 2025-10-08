@@ -577,13 +577,13 @@ Passcode: JINA</p>
 <h1>Firefly Synchronization<a class="headerlink" href="#firefly-synchronization" title="Link to this heading">#</a></h1>
 <p>Ermentrout and Rinzel (1984) developed a model for firefly flashing.</p>
 <ul class="simple">
-<li><p>The basic model suggests that a firefly will flash regularly without stimulus (<span class="math notranslate nohighlight">\(\dot{\theta} = \omega\)</span>).</p></li>
-<li><p>With a flashing stimulus that flashes at its own rate (<span class="math notranslate nohighlight">\(\dot{\Theta} = \Omega\)</span>), the firefly will attempt to synchronize with the stimulus.</p></li>
+<li><p>The basic model suggests that a firefly will flash regularly without stimulus (<span class="math notranslate nohighlight">\(\dot{\theta} = \omega_f\)</span>).</p></li>
+<li><p>With a flashing stimulus that flashes at its own rate (<span class="math notranslate nohighlight">\(\dot{\Theta} = \Omega_s\)</span>), the firefly will attempt to synchronize with the stimulus.</p></li>
 </ul>
 <p>That model is given by</p>
 <div class="math notranslate nohighlight">
-\[\dot{\theta} = A\sin(\Theta - \theta)\]</div>
-<p>where the difference in the phases (<span class="math notranslate nohighlight">\(\theta\)</span>, firefly; <span class="math notranslate nohighlight">\(\Theta\)</span>, stimulus) is critical to the model as is the ability of the firefly to synchronize is given by <span class="math notranslate nohighlight">\(A\)</span>.</p>
+\[\dot{\phi} = \dot{\theta}-\dot{\Theta} = (\omega_f - \Omega_s) - A\sin(\Theta - \theta)\]</div>
+<p>where the <span class="math notranslate nohighlight">\(\phi\)</span> is the difference in the phases (<span class="math notranslate nohighlight">\(\theta\)</span>, firefly; <span class="math notranslate nohighlight">\(\Theta\)</span>, stimulus) is critical to the model as is the ability of the firefly to synchronize is given by <span class="math notranslate nohighlight">\(A\)</span>.</p>
 </section>
 <hr class="docutils" />
 <section id="id7">
@@ -593,7 +593,7 @@ Passcode: JINA</p>
 \[\tau = At\]</div>
 <p>and a dimensionless phase difference,</p>
 <div class="math notranslate nohighlight">
-\[\mu = \frac{\Theta - \theta}{A}\]</div>
+\[\mu = \frac{\omega_f - \Omega_s}{A}\]</div>
 <p>Which gives the dimensionless equation for the phase difference <span class="math notranslate nohighlight">\(\phi = \Theta - \theta\)</span>:,</p>
 <div class="math notranslate nohighlight">
 \[\dfrac{d\phi}{d\tau} = \mu - \sin(\phi)\]</div>

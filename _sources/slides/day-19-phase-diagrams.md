@@ -128,15 +128,15 @@ $$\dot{x} < 0 \text{ means flow to the left}$$
 
 Ermentrout and Rinzel (1984) developed a model for firefly flashing. 
 
-* The basic model suggests that a firefly will flash regularly without stimulus ($\dot{\theta} = \omega$). 
+* The basic model suggests that a firefly will flash regularly without stimulus ($\dot{\theta} = \omega_f$). 
 
-* With a flashing stimulus that flashes at its own rate ($\dot{\Theta} = \Omega$), the firefly will attempt to synchronize with the stimulus. 
+* With a flashing stimulus that flashes at its own rate ($\dot{\Theta} = \Omega_s$), the firefly will attempt to synchronize with the stimulus. 
 
-That model is given by
+That model is given by 
 
-$$\dot{\theta} = A\sin(\Theta - \theta)$$
+$$\dot{\phi} = \dot{\theta}-\dot{\Theta} = (\omega_f - \Omega_s) - A\sin(\Theta - \theta)$$
 
-where the difference in the phases ($\theta$, firefly; $\Theta$, stimulus) is critical to the model as is the ability of the firefly to synchronize is given by $A$.
+where the $\phi$ is the difference in the phases ($\theta$, firefly; $\Theta$, stimulus) is critical to the model as is the ability of the firefly to synchronize is given by $A$.
 
 ---
 
@@ -148,7 +148,7 @@ $$\tau = At$$
 
 and a dimensionless phase difference,
 
-$$\mu = \frac{\Theta - \theta}{A}$$
+$$\mu = \frac{\omega_f - \Omega_s}{A}$$
 
 Which gives the dimensionless equation for the phase difference $\phi = \Theta - \theta$:,
 
