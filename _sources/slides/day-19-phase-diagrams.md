@@ -22,30 +22,70 @@ url: https://dannycaballero.info/phy321msu/slides/day-19-phase-diagrams.html
 
 # Announcements
 
-* Midterm 1 is due Feb 28th
-* Homework 5 due Mar 14th
-* Office hours today at 4pm
+* **Midterm 1 is due Oct 10th** (Can turn in like HW; Oct 12th at midnight)
+* **Friday's Class:** Midterm 1 Help
+* **Office Hours:** Friday 2-4pm
+    * Mihir will also be there 3-4pm to help
+    * DC has to run out 30 minutes early
+* **Questions over the weekend?** 
+    * I'll check email regularly this weekend. 
+    * Send me your work with your questions, please.  *You will get a more rapid reply with help.*
 
 ---
-
+ 
 # Seminars this week
 
-## WEDNESDAY, February 26, 2025    
-
-* Astronomy Seminar, 1:30 pm, 1400 BPS, **Lieke von Son**, CCA, Flatiron Institution, *Beyond the first waves: where we stand in understanding binary neutron star and black hole formation channels*
-
-## THURSDAY, February 27, 2025
+## WEDNESDAY, October 8, 2025  
+                                   
+Astronomy Seminar, 1:30 pm, 1400 BPS, In Person and Zoom, Host~ 
+Speaker: Kyle Kremer, UC San Diego
+Title: Globular Clusters: Astronomical factories of gravitational-wave and
+electromagnetic transients
+Zoom Link: https://msu.zoom.us/j/94228252584?pwd=zNJdjCNAabNkppOcg5FlAv01ihzLwl.1
+Meeting ID: 942 2825 2584
+Passcode: 541987
  
-* High Energy Physics Seminar, 2:00 – 3:00 pm, 1400 BPS, **Matthew Lim**, University of Sussex
-Title, *Precision at Scale: Towards Automated NNLO Event Generation*
  
 ---
+ 
 # Seminars this week
 
+## THURSDAY, October 9, 2025
+ 
+Colloquium, 3:30 pm, 1415 BPS, in person and zoom.  Host ~ Xing Wu
+Refreshments and social half-hour in BPS 1400 starting at 3 pm
+Speaker: Benjamin Jones, University of Texas at Arlington
+Title: Single Barium Ion Identification Technologies for Background-Free Neutrinoless DoubleBeta Decay searches -
+Zoom Link: https://msu.zoom.us/j/94951062663
+Password: 2002  Or complete link:  https://msu.zoom.us/j/94951062663?pwd=c48uM25P9UsRVuR74rkOioOWgpoxgC.1
+ 
+---
+ 
+# Seminars this week
 
-## FRIDAY,  February 28, 2025 
+## FRIDAY, October 10, 2025 
+ 
+QuIC Seminar, 12:30pm, -1:30pm, 1300 BPS, Zoom only 
+Speaker: Daniel Nino, Xanadu
+Title: Quantum Computational Chemistry (With Pennylane)
+Full Scheule is at: https://sites.google.com/msu.edu/quic-seminar/
+For more information, reach out to Ryan LaRose
+ 
 
-* FRIB IReNA Online Seminar, 2:30pm., **Soham Chakraborty**, TRIUMF, *TACTIC: a detector for unclear astrophysics*, Zoom ONLY: <https://msu.zoom.us/j/827950260> Passcode: JINA
+---
+ 
+# Seminars this week
+
+## FRIDAY, October 10, 2025 
+
+FRIB IReNA Online Seminar, 2:00pm., Eastern Time.
+Hosted By: Hosted by: Borbala Cseh (Konkoly Observatory)
+Speaker: Artemis Spyrou, MSU
+Title: Neutron-capture reaction constraints for astrophysical processes Please see website for full abstract.
+Please click the link below to join the webinar:
+Join Zoom: https://msu.zoom.us/j/827950260
+Meeting ID:
+Passcode: JINA
 
 ---
 
