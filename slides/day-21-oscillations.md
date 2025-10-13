@@ -4,7 +4,7 @@ theme: graph_paper
 paginate: true
 
 title: Day 21 - Oscillations
-description: Slides for PHY 321 Spring 2025, Day 21: Oscillations
+description: Slides for PHY 321 Fall 2025, Day 21: Oscillations
 author: Prof. Danny Caballero <caball20@msu.edu>
 keywords: classical mechanics, models, modeling, differential equations, oscillations
 url: https://dannycaballero.info/phy321msu/slides/day-21-oscillations.html
@@ -22,56 +22,98 @@ An example of [spatiotemporal patterns](https://en.wikipedia.org/wiki/Spatiotemp
 
 # Announcements
 
-* Homework 3 and Midterm 1 are being graded
+* Midterm 1 is being graded
+    * With apologies: *What grades are you unable to see right now?*
 * Midterm 1 solutions are posted
 * Homework 5 is due on Friday
-* Homework 6 will be posted soon
 
 ---
 
 # Seminars this week
 
-## MONDAY, March 10, 2025
-* **Condensed Matter Seminar** 4:10 pm,1400 BPS,  Dominique Laroche, University of Florida, *Tunable contributions from charge-rectification and momentum transfer to 1D Coulomb drag*
+MONDAY, October 13, 2025             
 
-## TUESDAY, March 11, 2025
- 
-* **Theory Seminar**, 11:00am., FRIB 1200 lab, Gregory Potel, University of Seville, Spain, *Some recent trends in nuclear reaction theory for basic science and applications*
- 
-* **High Energy Physics Seminar**, 1:00 pm, 1400 BPS, Elena Pinetti, Flatiron Institute at the Simons Foundation in NYC, *Hunting axions with the James Webb Space Telescope*
- 
----
- 
-# Seminars this week
+Condensed Matter Seminar 4:10 pm, 1400 BPS, In Person and Zoom, Host ~ Johannes Pollanen
 
-## WEDNESDAY, March 12, 2025    
- 
-* **High Energy Physics Seminar**, 10:00 am, BPS 1400 BPS, Shruti Paranjape, Brown University, *Modern Methods to Understand Scattering Amplitudes*
-* **Astronomy Seminar**, 1:30 pm, 1400 BPS, Jack Schulte & Sierra Casten, MSU, *TBD*
-* ***PER Seminar**, 3:00 pm., BPS 1400, Camille Coffie, Lecturer, Department of Physics, Spelman College, *Examining how pejorative stereotypes about students shape their experiences in physics graduate programs**
-* **FRIB Nuclear Science Seminar**, 3:30pm., FRIB 1300 Auditorium, Professor Caryn Palatchi of University of Indiana, Bloomington, *Precision Parity Violating Electron Scattering Experiments*
+Speaker: Alex Ruichao Ma, Purdue University
+Title: Controlling and probing quantum correlations in superconducting circuits
 
+Zoom Link: https://msu.zoom.us/j/93613644939
+Meeting ID: 936 1364 4939
+Password: CMP
+ 
 ---
 
 # Seminars this week
-## THURSDAY, March 13, 2025
+
+## TUESDAY, October 14, 2025
  
-* **Colloquium**, 3:30 pm, 1415 BPS, Dong Lai, Cornell University,*Hot Jupiters and Super-Earths:  Spin-Orbit Dynamics in Exoplanetary Systems* 
-**Refreshments and social half-hour in BPS 1400 starting at 3 pm**
+Theory Seminar, 11:00am., FRIB 1200 lab in person and online via Zoom
 
-## FRIDAY, March 14, 2025
+Speaker: Nadezda Smirnova, CNRS
+Title: Isospin Symmetry Breaking and Nuclear Beta Decay
 
-* **FRIB IReNA Online Seminar**, 2:00pm., online via Zoom, Evan Kirby, University of Notre Dame, *Primordial r-process dispersions in globular clusters*
-<https://msu.zoom.us/j/827950260>
-Password: JINA
+Zoom Link: 964 7281 4717
+Meeting ID: 48824
+
+---
+
+# Seminars this week
+
+## TUESDAY, October 14, 2025
+
+Astronomical Horizons, 7;30pm, Abrams Planetarium (no charge to enter) In Person Only.
+Speaker:  Michael Velbel, Professor Emeritus, Earth and Environmental Science
+Title: “Leopard spots and poppy seeds and samples: The Search for Evidence of Ancient Life on Mars Continues”.
+
+---
+
+# Seminars this week 
+ 
+##  WEDNESDAY, October 15, 2025    
+ 
+Astronomy Seminar, 1:30 pm, 1400 BPS, In Person and Zoom, Host ~ Adina Feinstein
+
+Speaker: Brett Morris, Space Telescope Science Institute
+
+Colloquium Speaker will lead a Software workshop today in this time slot.  
+ 
+---
+
+# Seminars this week
+ 
+ 
+## THURSDAY, October 16, 2025
+ 
+Colloquium, 3:30 pm, 1415 BPS, in person and zoom.  Host ~  Adina Feinstein
+
+Refreshments and social half-hour in BPS 1400 starting at 3 pm
+
+Speaker: Brett Morris, Space Telescope Science Institute
+Title: The Stars Behind The Planets 
+
+Zoom Link: https://msu.zoom.us/j/94951062663
+Password: 2002  Or complete link:  https://msu.zoom.us/j/94951062663?pwd=c48uM25P9UsRVuR74rkOioOWgpoxgC.1
+ 
+---
+
+# Seminars this Week
+
+## FRIDAY, October 17, 2025 
+ 
+QuIC Seminar, 12:30pm, -1:30pm, 1300 BPS, In Person  
+
+Speaker: Chris Baldwin,  MSU
+Title: TBA
 
 ---
 
 # Clicker Question 21-1
 
-*My 14 year old asked me to ask you this question.*
+*My 14 year old asked me to ask you this question.**
+She has her second physics test tomorrow. 🙏🏽🙏🏽🙏🏽
 
-Just a vibe check. How are the vibes after spring break?
+Just a vibe check. How are the vibes?
 
 1. The vibes are immaculate.
 2. The vibes are good.

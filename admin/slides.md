@@ -4,6 +4,19 @@ Slides for PHY 321 appear in reverse chronological order, with the most recent s
 
 ---
 
+## Day 21 - Oscillations - 13 Oct 2025
+
+[![Day 21](../slides/day-21-oscillations.png)](../slides/day-21-oscillations.pdf)
+
+:::info
+
+### 📂 Download Slides
+[HTML](../slides/day-21-oscillations.md) | [PDF](../slides/day-21-oscillations.pdf)
+
+:::
+
+---
+
 ## Day 20 - Help Session - 10 Oct 2025
 
 [![Day 20](../slides/day-20-homework-session.png)](../slides/day-20-homework-session.pdf)
