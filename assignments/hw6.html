@@ -1,0 +1,756 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Homework 6 (Due 24 Oct) &#8212; Classical Mechanics</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"tex2jax": {"inlineMath": [["$", "$"]]}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'assignments/hw6';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Euler Integration" href="../resources/euler_integration.html" />
+    <link rel="prev" title="Homework 5 (Due 17 Oct)" href="hw5.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/spartan-helmet.png" class="logo__image only-light" alt="Classical Mechanics - Home"/>
+    <script>document.write(`<img src="../_static/spartan-helmet.png" class="logo__image only-dark" alt="Classical Mechanics - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    PHY 321: Classical Mechanics 1, Michigan State University, Fall 2025
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">About the course</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../admin/getting-started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin/teachers.html">Teachers and Grading</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin/grading.html">Grading and Dates</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="../admin/textbooks.html">Textbooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin/schedule-cal.html">Course Calendar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin/slides.html">Slides</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Resources</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../admin/course-commitments.html">Course Commitments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin/iclicker-setup.html">i-Clicker Setup Instructions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin/gradescope-submissions.html">Submitting Assignments on Gradescope</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin/finding-research.html">Finding Research Opportunities</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Assignments</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="hw1.html">Homework 1 (Due 5 Sep)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hw2.html">Homework 2 (Due 12 Sep)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hw3.html">Homework 3 (Due 19 Sep)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hw4.html">Homework 4 (Due 26 Sep)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="midterm1.html">Midterm 1 (Due 10 Oct)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hw5.html">Homework 5 (Due 17 Oct)</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Homework 6 (Due 24 Oct)</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Programming Resources</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../resources/euler_integration.html">Euler Integration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/integrators.html">Numerical Integrators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/phase_diagrams.html">Plotting Phase Diagrams</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Weekly Course Materials</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/01_notes.html">01 - Overture: What is Classical Physics?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/02_notes.html">02 - Computing is a Necessary Tool for Science</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/03_notes.html">03 - What is Mathematical Modeling?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/04_notes.html">04 - Why does fluid drag complicate things?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/05_notes.html">05 - Conservation Laws Govern and Constrain our Physics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/06_notes.html">06 - Nature Often Seeks Stability</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/07_notes.html">07 - Introducing Nonlinear Dynamics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/08_notes.html">08 - Oscillations, Cycles, and Nature’s Recurrences</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/09_notes.html">09 - Driving Oscillators and Resonance Phenomenon</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/10_notes.html">10 - Investigating Systems that Exhibit Chaotic Dynamics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/11_notes.html">11 - Reformulating Classical Mechanics using the Calculus of Variations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/12_notes.html">12 - The Core Principle of Classical Mechanics? The Principle of Least Action</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/13_notes.html">13 - Applying the Lagrangian Formulation</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/assignments/hw6.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Homework 6 (Due 24 Oct)</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction-to-homework-6">Introduction to Homework 6</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#practicalities-about-homeworks-and-projects">Practicalities about  homeworks and projects</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-1-10pt-planning-your-final-project">Exercise 1 (10pt), Planning your Final Project</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#schedule-for-final-project">Schedule for Final Project</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#your-proposal">Your Proposal</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#your-writing">Your writing</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-2-10pt-morse-potential-as-an-sho">Exercise 2 (10pt) Morse Potential as an SHO</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-3-10pt-time-averaging-and-the-sho">Exercise 3 (10pt), Time Averaging and the SHO</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-4-10pt-toy-potential">Exercise 4 (10pt), Toy Potential</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-5-10pt-defining-periodicity">Exercise 5 (10pt), Defining Periodicity</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-6-50-pt-find-your-own-1d-oscillator">Exercise 6 (50 pt), Find your own 1D Oscillator</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#examples-of-1d-potentials">Examples of 1D potentials</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#extra-credit-integrating-classwork-with-research">Extra Credit - Integrating Classwork With Research</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <!-- HTML file automatically generated from DocOnce source (https://github.com/doconce/doconce/)
+doconce format html hw5.do.txt --no_mako -->
+<!-- dom:TITLE: PHY321: Classical Mechanics 1 --><section id="homework-6-due-24-oct">
+<h1>Homework 6 (Due 24 Oct)<a class="headerlink" href="#homework-6-due-24-oct" title="Link to this heading">#</a></h1>
+<p><strong>Due at midnight</strong><br/>
+Total points: <strong>100</strong></p>
+<p><strong>Practicalities about  homeworks and projects</strong></p>
+<ol class="arabic simple">
+<li><p>You can work in pairs or by yourself. If you work as a pair you can hand in one answer only if you wish. <strong>Remember to write your name(s)</strong>! You may collaborate with others (optimal group size 3-4).</p></li>
+<li><p>Homeworks are available approximately ten days before the deadline. You should anticipate this work.</p></li>
+<li><p>How do I(we)  hand in?  You can hand in the paper and pencil exercises as a <strong>single scanned PDF document</strong>. For this homework this applies to exercises 1-5. Your jupyter notebook file should be converted to a <strong>PDF</strong> file, attached to the same PDF file as for the pencil and paper exercises. All files should be uploaded to Gradescope.</p></li>
+<li><p>For any exercise marked <strong>Complete Individually</strong>, you must do so as these are reflective exercises for you.</p></li>
+</ol>
+<p><strong><a class="reference internal" href="#../resources/gradescope-submissions.md"><span class="xref myst">Instructions for submitting to Gradescope</span></a>.</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">math</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="o">%</span><span class="k">matplotlib</span> inline
+<span class="n">plt</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;seaborn-v0_8-colorblind&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<section id="introduction-to-homework-6">
+<h2>Introduction to Homework 6<a class="headerlink" href="#introduction-to-homework-6" title="Link to this heading">#</a></h2>
+<p>This week’s exercises focus on oscillators and how to approximate the solution to the equations of motion using the SHO. The relevant reading background is:</p>
+<ol class="arabic simple">
+<li><p>chapter 5 of Taylor</p></li>
+<li><p>chapter 6.6-6.8 of Boas</p></li>
+<li><p>chapters 2.0-2.3 and 5.0-5.2 of Strogatz</p></li>
+</ol>
+<p>In both textbooks there are many nice worked out examples.</p>
+<section id="practicalities-about-homeworks-and-projects">
+<h3>Practicalities about  homeworks and projects<a class="headerlink" href="#practicalities-about-homeworks-and-projects" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>You can work in groups (optimal groups are often 2-3 people) or by yourself. If you work as a group you can hand in one answer only if you wish. <strong>Remember to write your name(s)</strong>!</p></li>
+<li><p>Homeworks are available ten days  before the deadline.</p></li>
+<li><p>How do I(we)  hand in?  You can hand in the paper and pencil exercises as a <strong>single scanned PDF document</strong>. For this homework this applies to exercises 1-5. Your jupyter notebook file should be converted to a <strong>PDF</strong> file, attached to the same PDF file as for the pencil and paper exercises. All files should be uploaded to Gradescope.</p></li>
+</ol>
+<p><strong><a class="reference internal" href="#../resources/gradescope-submissions.md"><span class="xref myst">Instructions for submitting to Gradescope</span></a>.</strong></p>
+</section>
+</section>
+<section id="exercise-1-10pt-planning-your-final-project">
+<h2>Exercise 1 (10pt), Planning your Final Project<a class="headerlink" href="#exercise-1-10pt-planning-your-final-project" title="Link to this heading">#</a></h2>
+<p><strong>Submit Exercise 1 with Project Partners on D2L also</strong></p>
+<p>The point of this exercise is to get you thinking about what you want to do for a final project and how you will accomplish it. Research and project planning are important skills to develop and it takes time to do so. We are trying to scaffold that development and give you the opportunity to practice these skills. So, you will be responsible for developing a plan for your final project, and the timeline under which you will accomplish it. Our job is to provide feedback and guidance on your plan, and to offer support in the development and construction of your final project.</p>
+<p><strong>Remember there is no right or wrong way to do this, it is about developing a plan that works for you.</strong></p>
+<p>Your final project is your chance to bring all the tools we have developed to bear on a question that interests you. You have reviewed the information on computational essays before, but here it is again in case it’s useful for this exercise:</p>
+<ol class="arabic simple">
+<li><p>Wolfram’s <a class="reference external" href="https://writings.stephenwolfram.com/2017/11/what-is-a-computational-essay">What is a Computational Essay?</a></p></li>
+<li><p>Tor and my short paper: <a class="reference external" href="https://arxiv.org/abs/1909.12697">Computational Essays: An Avenue for Scientific Creativity in Physics</a></p></li>
+<li><p>Wolfram’s <a class="reference external" href="https://www.wolframcloud.com/obj/Expositions/Published/ComputationalEssayGuidelines">Steps to Writing a Computational Essay</a></p></li>
+<li><p><a class="reference external" href="https://uio-ccse.github.io/computational-essay-showroom">University of Oslo’s Computational Essay Showroom</a></p></li>
+</ol>
+<p><strong>Your final project will consist of a presentation of your project to the class, attendance at each project presentation day and a review of your classmates’ project presentations, and your computational essay.</strong></p>
+<p><em>Final details and rubric for this presentation will be available before 24 November.</em></p>
+<p>For your final project, you may work alone, in pairs, or in groups of up to three people. The expectation for your work will be higher if you have more people in your group; your explorations will need to be more comprehensive and detailed, and your essay will be expected to be longer and more polished if you have more people in your group. You can also develop more interesting ways of presenting your work that demonstrate the creativity and depth of your explorations if you have more people in your group. If you have any questions, just ask.</p>
+<p>For this exercise, we want you to get started on planning your final project by sending us a brief proposal with a timeline. To help you, we have provided a schedule where you can see the checkpoints for your project, and when we will have a comprehensive work week. You should take advantage of the work week to make significant progress on your project; especially if there are technical aspects you are unsure about.</p>
+<section id="schedule-for-final-project">
+<h3>Schedule for Final Project<a class="headerlink" href="#schedule-for-final-project" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>31 October - HW 7 will have a request for your 1st project update.</p></li>
+<li><p>14 November - Midterm Project 2 will have a request for your 2nd project update.</p></li>
+<li><p>21 November - HW 8 will have a request for your 3rd project update.</p></li>
+<li><p>24 and 26 November - Project work week in-class.</p></li>
+<li><p>01, 03, and 05 December - Final Project Presentations (Attendance required)</p></li>
+<li><p>08 December - Computational Essay due.</p></li>
+</ul>
+</section>
+<section id="your-proposal">
+<h3>Your Proposal<a class="headerlink" href="#your-proposal" title="Link to this heading">#</a></h3>
+<p>Your proposal should be a one to two page, single spaced, document that outlines the following:</p>
+<ol class="arabic simple">
+<li><p>The question you are interested in exploring. The motivation and interest to you and your group mates should be made clear. That is, motivate the question, why is it interesting?</p></li>
+<li><p>References that provide background for this work. This should include the sites, resources, and references you have consulted to get started.</p></li>
+<li><p>The approach you think you need to take to answer this question. Include the concepts and tools you plan to use to explore the question. That is, what have we developed in class that you will use to explore the question?</p></li>
+<li><p>The timeline for your project. This should include the checkpoints in the schedule above, and any additional milestones you think are important. Consider making a <a class="reference external" href="https://en.wikipedia.org/wiki/Gantt_chart">Gantt chart</a> to help you plan your project. This is a useful tool for planning and tracking your progress. It’s almost expected for proposals in science and engineering. Here, We suggest you take advantage of the work week to make significant progress on or to polish your project.</p></li>
+</ol>
+</section>
+<section id="your-writing">
+<h3>Your writing<a class="headerlink" href="#your-writing" title="Link to this heading">#</a></h3>
+<p>You should consider this a formal proposal. It should be well written, clear, and concise. You should also consider the audience for this proposal. You should write this proposal for someone who is not in this class, but does know physics. Think about writing this to another student, a graduate student, or a professor. Someone that has a good understanding of physics, but not necessarily the details of your physics. You need to explain the motivation, the physics background, the approach, and the timeline in a way that is compelling and clear.</p>
+<p>Your proposal need not be long, but it should be complete. Here are some additional resources for you to develop a good proposal:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5037942/">NIH, How to write a research proposal?</a></p></li>
+<li><p><a class="reference external" href="https://www.sheffield.ac.uk/study-skills/research/methods/proposal">University of Sheffield, How to write a research proposal</a></p></li>
+</ul>
+<p><em>Reference pages do not count towards the length, so if you have a lot of references, that’s fine. But the main text should be one to two pages. This is how it works with most proposals in science and engineering.</em></p>
+<p><strong>Submit Exercise 1 with Project Partners on D2L also</strong></p>
+</section>
+</section>
+<section id="exercise-2-10pt-morse-potential-as-an-sho">
+<h2>Exercise 2 (10pt) Morse Potential as an SHO<a class="headerlink" href="#exercise-2-10pt-morse-potential-as-an-sho" title="Link to this heading">#</a></h2>
+<p>If the potential has a local minimum, we can often find SHO approximation for that potential near the local minimum.</p>
+<p>The <a class="reference external" href="https://en.wikipedia.org/wiki/Morse_potential">Morse potential</a> is a convenient model for the potential energy of a diatomic molecule. The potential is a radial one and thus one-dimensional. It is given by,</p>
+<div class="math notranslate nohighlight">
+\[U(r) = A\left[ \left(e^{(R-r)/S}-1\right)^2-1\right]\]</div>
+<p>where the distance between the centers of the two atoms is <span class="math notranslate nohighlight">\(r\)</span>, and the constants <span class="math notranslate nohighlight">\(A\)</span>, <span class="math notranslate nohighlight">\(R\)</span>, and <span class="math notranslate nohighlight">\(S\)</span> are all positive. Here <span class="math notranslate nohighlight">\(S&lt;&lt;R\)</span>.</p>
+<ul class="simple">
+<li><p>2a (2pt) Sketch (or plot) the potential as a function of <span class="math notranslate nohighlight">\(r\)</span>.</p></li>
+<li><p>2b (3pt) Find the equilibrium position of the potential, i.e. the position where the potential is at a minimum. We will call this <span class="math notranslate nohighlight">\(r_e\)</span>.</p></li>
+<li><p>2c (3pt) Rewrite the potential in terms of the displacement from equilibrium, <span class="math notranslate nohighlight">\(r = r_e + x\)</span>. Expand the potential to second order in <span class="math notranslate nohighlight">\(x\)</span>.</p></li>
+<li><p>2d (2pt) Find the effective spring constant, <span class="math notranslate nohighlight">\(k\)</span>, for the potential near the minimum. What is the frequency of small oscillations about the minimum?</p></li>
+</ul>
+</section>
+<section id="exercise-3-10pt-time-averaging-and-the-sho">
+<h2>Exercise 3 (10pt), Time Averaging and the SHO<a class="headerlink" href="#exercise-3-10pt-time-averaging-and-the-sho" title="Link to this heading">#</a></h2>
+<p>Time Averaging is a common tool to use with periodic systems. It also us to discuss what happens to different properties of the system over one period.</p>
+<p>An SHO has a period <span class="math notranslate nohighlight">\(\tau\)</span>. We can find the time average of a variable <span class="math notranslate nohighlight">\(f(t)\)</span> over one period, <span class="math notranslate nohighlight">\(\langle f \rangle\)</span>, by averaging over the period,</p>
+<div class="math notranslate nohighlight">
+\[\langle f \rangle = \frac{1}{\tau}\int_0^\tau f(t)dt\]</div>
+<ul class="simple">
+<li><p>3a (2pt) Show that the time average of the position of the SHO is zero.</p></li>
+<li><p>3b (2pt) Show that the time average of the velocity of the SHO is zero.</p></li>
+<li><p>3c (6pt) Show that the time average of the kinetic energy of the SHO is equal to the time average of the potential energy (and importantly, non-zero).  If the total energy is <span class="math notranslate nohighlight">\(E\)</span>, these time averages are equal to <span class="math notranslate nohighlight">\(E/2\)</span>. You might need to show that the very useful trigonometric identity,</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[\langle \sin^2(\omega t-\delta)\rangle = \langle \cos^2(\omega t-\delta)\rangle = \frac{1}{2}\]</div>
+</section>
+<section id="exercise-4-10pt-toy-potential">
+<h2>Exercise 4 (10pt), Toy Potential<a class="headerlink" href="#exercise-4-10pt-toy-potential" title="Link to this heading">#</a></h2>
+<p>Consider a toy potential of the form,</p>
+<div class="math notranslate nohighlight">
+\[U(r) = U_0\left(\dfrac{r}{R}+\lambda^2\frac{R}{r}\right)\]</div>
+<p>where <span class="math notranslate nohighlight">\(U_0\)</span>, <span class="math notranslate nohighlight">\(R\)</span>, and <span class="math notranslate nohighlight">\(\lambda\)</span> are all positive constants and the domain of the potential is <span class="math notranslate nohighlight">\(0&lt;r&lt;\infty\)</span>.</p>
+<ul class="simple">
+<li><p>4a (2pt) Sketch (or plot) the potential as a function of <span class="math notranslate nohighlight">\(r\)</span>.</p></li>
+<li><p>4b (3pt) Find the equilibrium position of the potential, i.e. the position where the potential is at a minimum. We will call this <span class="math notranslate nohighlight">\(r_e\)</span>.</p></li>
+<li><p>4c (5pt) Rewrite the potential in terms of the displacement from equilibrium, <span class="math notranslate nohighlight">\(r = r_e + x\)</span>. Expand the potential to second order in <span class="math notranslate nohighlight">\(x\)</span>. What is the effective spring constant, <span class="math notranslate nohighlight">\(k\)</span>, for the potential near the minimum? What is the frequency of small oscillations about the minimum?</p></li>
+</ul>
+</section>
+<section id="exercise-5-10pt-defining-periodicity">
+<h2>Exercise 5 (10pt), Defining Periodicity<a class="headerlink" href="#exercise-5-10pt-defining-periodicity" title="Link to this heading">#</a></h2>
+<p>A common issue with oscillators is determining their periodicity. For the SHO, we can show that the period is <span class="math notranslate nohighlight">\(2\pi/\omega_0\)</span> where <span class="math notranslate nohighlight">\(\omega_0\)</span> is the natural frequency of the SHO. How might we define a periodicity more generally? Let’s start with the damped harmonic oscillator. Consider a weakly damped oscillator (<span class="math notranslate nohighlight">\(\beta &lt; \omega_0\)</span>). The motion of the oscillator is given by,</p>
+<div class="math notranslate nohighlight">
+\[x(t) = A e^{-\beta t}\cos(\omega_1 t - \delta)\]</div>
+<p>where <span class="math notranslate nohighlight">\(A\)</span> is the amplitude, <span class="math notranslate nohighlight">\(\beta\)</span> is the damping constant, <span class="math notranslate nohighlight">\(\omega_1 = \sqrt{\omega_0^2 - \beta^2}\)</span>  and <span class="math notranslate nohighlight">\(\delta\)</span> is the phase.</p>
+<p>The motion decays with time, but we can still define a periodicity, <span class="math notranslate nohighlight">\(\tau_1\)</span>, which is the time between peaks in the motion.</p>
+<ul class="simple">
+<li><p>5a (4pt) Sketch (or plot) the motion of the oscillator as a function of time. Show that you can find <span class="math notranslate nohighlight">\(\tau_1 = 2\pi/\omega_1\)</span> from looking at successive maxima.</p></li>
+<li><p>5b (3pt) Show that an equivalent definition of <span class="math notranslate nohighlight">\(\tau_1\)</span> is twice the time between zero crossings of the motion.</p></li>
+<li><p>5c (3pt) If the damping <span class="math notranslate nohighlight">\(\beta\)</span> is half the natural frequency (<span class="math notranslate nohighlight">\(\omega_0\)</span>), how does the amplitude of the motion decay in one period?</p></li>
+</ul>
+</section>
+<section id="exercise-6-50-pt-find-your-own-1d-oscillator">
+<h2>Exercise 6 (50 pt), Find your own 1D Oscillator<a class="headerlink" href="#exercise-6-50-pt-find-your-own-1d-oscillator" title="Link to this heading">#</a></h2>
+<p>We have built all the tools to study 1D unforced oscillators. Now you get to pick your own potential and study it. You can pick any 1D potential you like, but it should have a local minimum. Make sure it is not a driven oscillator (i.e., no explicit time dependence in the equations of motion). To earn full credit for this exercise, you must:</p>
+<ul class="simple">
+<li><p>6a (5pt) Present the potential and describe its origin, why it is interesting, where it comes from, etc. Educate us about it.</p></li>
+<li><p>6b (5pt) Sketch (or plot) the potential as a function of it’s argument (and chosen variables) and find the equilibrium position of the potential, i.e. the position where the potential is at a minimum.</p></li>
+<li><p>6c (10pt) Rewrite the potential in terms of the displacement from equilibrium. Expand the potential to second order to find the effective spring constant, <span class="math notranslate nohighlight">\(k\)</span>, for the potential near the minimum. What is the frequency of small oscillations about the minimum?</p></li>
+<li><p>6d (10pt) Construct the equations of motion for the potential and solve them numerically. Choose initial conditions and parameters that give oscillatory motion. Note it doesn’t have to be SHO (In fact, it probably won’t be). Plot the position as a function of time. Make sure we can see the oscillations.</p></li>
+<li><p>6e (10pt) Plot the phase diagram of the trajectory (you don’t have to produce a phase diagram, but just plot the trajectory in phase space). What does the phase diagram tell you about the motion?</p></li>
+<li><p>6f (10pt) Find the period of your motion. Here you might have to make some definitions of what periodicity means for your potential.</p></li>
+</ul>
+<p><strong>Note: this might seem similar to your midterm, but notice we expect you to do some research on the potential in 6a, and we are going into more depth with questions 6e and 6f. This is also a scaffold for your final project in terms of practicing aspects that should appear.</strong></p>
+<section id="examples-of-1d-potentials">
+<h3>Examples of 1D potentials<a class="headerlink" href="#examples-of-1d-potentials" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p><strong>Simple Pendulum (Nonlinear Small Angle Approximation)</strong>:</p>
+<ul class="simple">
+<li><p>Potential: <span class="math notranslate nohighlight">\( V(\theta) = mgh(1 - \cos(\theta)) \)</span>, where <span class="math notranslate nohighlight">\(m\)</span> is the mass, <span class="math notranslate nohighlight">\(g\)</span> is the acceleration due to gravity, <span class="math notranslate nohighlight">\(h\)</span> is the length of the pendulum, and <span class="math notranslate nohighlight">\(\theta\)</span> is the angular displacement.</p></li>
+</ul>
+</li>
+<li><p><strong>Nonlinear Spring (Hardening or Softening)</strong>:</p>
+<ul class="simple">
+<li><p>Potential: <span class="math notranslate nohighlight">\( V(x) = \frac{k}{2} x^2 + \frac{\beta}{3} x^3 \)</span>, where <span class="math notranslate nohighlight">\(k\)</span> and <span class="math notranslate nohighlight">\(\beta\)</span> are constants. Depending on the sign of <span class="math notranslate nohighlight">\(\beta\)</span>, the spring can exhibit hardening (<span class="math notranslate nohighlight">\(\beta &gt; 0\)</span>) or softening (<span class="math notranslate nohighlight">\(\beta &lt; 0\)</span>) nonlinearity.</p></li>
+</ul>
+</li>
+<li><p><strong>Lennard-Jones Potential Oscillator</strong> (for a diatomic molecule model):</p>
+<ul class="simple">
+<li><p>Potential: <span class="math notranslate nohighlight">\( V(r) = 4\epsilon \left[ \left(\frac{\sigma}{r}\right)^{12} - \left(\frac{\sigma}{r}\right)^6 \right] \)</span>, where <span class="math notranslate nohighlight">\(\epsilon\)</span> is the depth of the potential well, <span class="math notranslate nohighlight">\(\sigma\)</span> is the finite distance at which the inter-particle potential is zero, and <span class="math notranslate nohighlight">\(r\)</span> is the distance between particles.</p></li>
+</ul>
+</li>
+<li><p><strong>Morse Potential (for molecular vibrations)</strong>:</p>
+<ul class="simple">
+<li><p>Potential: <span class="math notranslate nohighlight">\( V(x) = D_e \left(1 - e^{-a(x - x_0)}\right)^2 \)</span>, where <span class="math notranslate nohighlight">\(D_e\)</span> is the depth of the potential well, <span class="math notranslate nohighlight">\(a\)</span> is a constant related to the width of the well, <span class="math notranslate nohighlight">\(x\)</span> is the displacement from equilibrium, and <span class="math notranslate nohighlight">\(x_0\)</span> is the equilibrium bond length. This potential models the energy of a diatomic molecule as a function of the distance between atoms, showing oscillatory behavior that represents molecular vibrations.</p></li>
+</ul>
+</li>
+<li><p><strong>Double Well Potential</strong>:</p>
+<ul class="simple">
+<li><p>Potential: <span class="math notranslate nohighlight">\( V(x) = -\frac{\mu}{2} x^2 + \frac{\lambda}{4} x^4 \)</span>, where <span class="math notranslate nohighlight">\(\mu\)</span> and <span class="math notranslate nohighlight">\(\lambda\)</span> are positive constants. This system exhibits bistability with two stable equilibria, leading to interesting nonlinear dynamics and potential oscillations between the wells under certain conditions.</p></li>
+</ul>
+</li>
+</ol>
+</section>
+</section>
+<section id="extra-credit-integrating-classwork-with-research">
+<h2>Extra Credit - Integrating Classwork With Research<a class="headerlink" href="#extra-credit-integrating-classwork-with-research" title="Link to this heading">#</a></h2>
+<p>This opportunity will allow you to earn up to 5 extra credit points on a Homework per week. These points can push you above 100% or help make up for missed exercises.
+In order to earn all points you must:</p>
+<ol class="arabic simple">
+<li><p>Attend an MSU research talk (recommended research oriented Clubs is  provided below)</p></li>
+<li><p>Summarize the talk using at least 150 words</p></li>
+<li><p>Turn in the summary along with your Homework.</p></li>
+</ol>
+<p>Approved talks:
+Talks given by researchers through the following clubs:</p>
+<ul class="simple">
+<li><p>Research and Idea Sharing Enterprise (RAISE)​: Meets Wednesday Nights Society for Physics Students (SPS)​: Meets Monday Nights</p></li>
+<li><p>Astronomy Club​: Meets Monday Nights</p></li>
+<li><p>Facility For Rare Isotope Beam (FRIB) Seminars: ​Occur multiple times a week</p></li>
+</ul>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./assignments"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="hw5.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Homework 5 (Due 17 Oct)</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../resources/euler_integration.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Euler Integration</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction-to-homework-6">Introduction to Homework 6</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#practicalities-about-homeworks-and-projects">Practicalities about  homeworks and projects</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-1-10pt-planning-your-final-project">Exercise 1 (10pt), Planning your Final Project</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#schedule-for-final-project">Schedule for Final Project</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#your-proposal">Your Proposal</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#your-writing">Your writing</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-2-10pt-morse-potential-as-an-sho">Exercise 2 (10pt) Morse Potential as an SHO</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-3-10pt-time-averaging-and-the-sho">Exercise 3 (10pt), Time Averaging and the SHO</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-4-10pt-toy-potential">Exercise 4 (10pt), Toy Potential</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-5-10pt-defining-periodicity">Exercise 5 (10pt), Defining Periodicity</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-6-50-pt-find-your-own-1d-oscillator">Exercise 6 (50 pt), Find your own 1D Oscillator</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#examples-of-1d-potentials">Examples of 1D potentials</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#extra-credit-integrating-classwork-with-research">Extra Credit - Integrating Classwork With Research</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Danny Caballero, Morten Hjorth-Jensen, Rachel Henderson, Alia Valentine
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+  <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" />
+</a>
+<br />
+This work is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
