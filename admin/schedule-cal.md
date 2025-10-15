@@ -81,7 +81,7 @@ _All assignments are turned in using Gradescope as a single PDF._
 | **Week** | **Day**   | **Topic**                     | **Readings to Prepare** | **Important Events** |
 |:--------:|:---------:|:-----------------------------:|:-----------------------|:--------------------|
 | CW42     | 13 Oct ([Slides](../slides/day-21-oscillations.pdf))   | Oscillations; Damping         | 📓 [08 - Oscillations, Cycles, and Nature’s Recurrences](../lecture-notes/08_notes.ipynb)<br>📚 JRT 5.1-5.2, 5.4; MLB 7.1-7.2; 8.5 | 📝 [Homework 6 Assigned (Due 24 Oct)](../assignments/hw6.ipynb)                |
-|          | 15 Oct    | Oscillations; Damping         |                        |                    |
+|          | 15 Oct ([Slides](../slides/day-22-damped-oscillations.pdf))    | Oscillations; Damping         |                        |                    |
 |          | 17 Oct    | Workshop day                  |                        | 📥 **Homework 5 Due**     |
 
 ---

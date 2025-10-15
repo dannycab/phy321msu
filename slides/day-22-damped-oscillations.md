@@ -4,7 +4,7 @@ theme: graph_paper
 paginate: true
 
 title: Day 22 - Damped Oscillations
-description: Slides for PHY 321 Spring 2025, Day 21: Oscillations
+description: Slides for PHY 321 Fall 2025, Day 21: Oscillations
 author: Prof. Danny Caballero <caball20@msu.edu>
 keywords: classical mechanics, models, modeling, differential equations, oscillations
 url: https://dannycaballero.info/phy321msu/slides/day-22-damped-oscillations.html
@@ -22,36 +22,70 @@ They must be tuned to the weight of the car and the type of driving.
 
 # Announcements
 
-* Homework 3 and Midterm 1 are being graded
+* Homework 4 is graded 
+* Midterm 1 is being graded
 * Homework 5 is due on Friday
 * Homework 6 is posted
+* **Friday's Class:** We will discuss HW 4; Exercise 4 + Q&A
 
 ---
+
+# Seminars this week 
  
+##  WEDNESDAY, October 15, 2025    
+ 
+Astronomy Seminar, 1:30 pm, 1400 BPS, In Person and Zoom, Host ~ Adina Feinstein
+
+Speaker: Brett Morris, Space Telescope Science Institute
+
+Colloquium Speaker will lead a Software workshop today in this time slot.  
+ 
+---
+
 # Seminars this week
-
-## WEDNESDAY, March 12, 2025    
  
-* **High Energy Physics Seminar**, 10:00 am, BPS 1400 BPS, Shruti Paranjape, Brown University, *Modern Methods to Understand Scattering Amplitudes*
-* **Astronomy Seminar**, 1:30 pm, 1400 BPS, Jack Schulte & Sierra Casten, MSU, *TBD*
-* ***PER Seminar**, 3:00 pm., BPS 1400, Camille Coffie, Lecturer, Department of Physics, Spelman College, *Examining how pejorative stereotypes about students shape their experiences in physics graduate programs**
-* **FRIB Nuclear Science Seminar**, 3:30pm., FRIB 1300 Auditorium, Professor Caryn Palatchi of University of Indiana, Bloomington, *Precision Parity Violating Electron Scattering Experiments*
+ 
+## THURSDAY, October 16, 2025
+ 
+Colloquium, 3:30 pm, 1415 BPS, in person and zoom.  Host ~  Adina Feinstein
+
+Refreshments and social half-hour in BPS 1400 starting at 3 pm
+
+Speaker: Brett Morris, Space Telescope Science Institute
+Title: The Stars Behind The Planets 
+
+Zoom Link: https://msu.zoom.us/j/94951062663
+Password: 2002  Or complete link:  https://msu.zoom.us/j/94951062663?pwd=c48uM25P9UsRVuR74rkOioOWgpoxgC.1
+ 
+---
+
+# Seminars this Week
+
+## FRIDAY, October 17, 2025 
+ 
+QuIC Seminar, 12:30pm, -1:30pm, 1300 BPS, In Person  
+
+Speaker: Chris Baldwin,  MSU
+Title: TBA
 
 ---
 
-# Seminars this week
-## THURSDAY, March 13, 2025
- 
-* **Colloquium**, 3:30 pm, 1415 BPS, Dong Lai, Cornell University,*Hot Jupiters and Super-Earths:  Spin-Orbit Dynamics in Exoplanetary Systems* 
-**Refreshments and social half-hour in BPS 1400 starting at 3 pm**
+# Clicker Question 22-1
 
-## FRIDAY, March 14, 2025
+My kid's physics test was delayed until tomorrow.
 
-* **FRIB IReNA Online Seminar**, 2:00pm., online via Zoom, Evan Kirby, University of Notre Dame, *Primordial r-process dispersions in globular clusters*
-<https://msu.zoom.us/j/827950260>
-Password: JINA
+How did your midterm go?
+
+1. It was challenging, but I was able to complete the exercises.
+2. It was difficult, and I didn't finish all the exercises.
+3. It was interesting, I learned some new physics and modeling.
+4. It was terrible; I don't think I was supported well to complete it.
+5. More than one of these?
+
+**Comments to share? Please do.**
 
 ---
+
 
 # Reminders
 
@@ -66,7 +100,7 @@ $$x(t) = A\cos(\omega_0 t) + B\sin(\omega_0 t)$$
 
 We seek complex solutions of the form:
 
-$$x(t) = Ae^{i\omega_0 t + \delta}$$
+$$x(t) = Ae^{(i\omega_0 t + \delta)}$$
 
 ---
 
@@ -121,7 +155,7 @@ $$z - \bar{z} = (x + iy) - (x - iy) = 2iy = 2iIm(z)$$
 
 A complex number $z$ is plotted in the complex plane such that $z$ lies in the second quadrant.
 
-![bg right width:600px](../images/notes/week9/plane.png)
+![bg right width:600px](../images/notes/week9/plane2.png)
 
 Where does the complex conjugate $z^*$ lie?
 1. In the first quadrant.
@@ -129,7 +163,6 @@ Where does the complex conjugate $z^*$ lie?
 3. In the third quadrant.
 4. In the fourth quadrant.
 
-**Ignore the marked point in the figure.**
 
 ---
 
@@ -137,7 +170,7 @@ Where does the complex conjugate $z^*$ lie?
 
 We constructed a solution of the form:
 
-$$Ae^{i\omega t-\delta}$$
+$$Ae^{i(\omega t-\delta)}$$
 
 We can plot it in the complex plane and see the real and imaginary parts, and how they change in time.
 
