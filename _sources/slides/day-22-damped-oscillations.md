@@ -29,30 +29,6 @@ They must be tuned to the weight of the car and the type of driving.
 * **Friday's Class:** We will discuss HW 4; Exercise 4 + Q&A
 
 ---
- 
-# Seminars this week
-
-## TUESDAY, October 14, 2025
- 
-Theory Seminar, 11:00am., FRIB 1200 lab in person and online via Zoom
-
-Speaker: Nadezda Smirnova, CNRS
-Title: Isospin Symmetry Breaking and Nuclear Beta Decay
-
-Zoom Link: 964 7281 4717
-Meeting ID: 48824
-
----
-
-# Seminars this week
-
-## TUESDAY, October 14, 2025
-
-Astronomical Horizons, 7;30pm, Abrams Planetarium (no charge to enter) In Person Only.
-Speaker:  Michael Velbel, Professor Emeritus, Earth and Environmental Science
-Title: “Leopard spots and poppy seeds and samples: The Search for Evidence of Ancient Life on Mars Continues”.
-
----
 
 # Seminars this week 
  

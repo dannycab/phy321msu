@@ -16,30 +16,33 @@
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
     document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-
-  
-  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
-    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
   
+  <!-- So that users can add custom icons -->
+  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
-  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
     <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
     <script src="../_static/doctools.js?v=9a2dae69"></script>
@@ -52,7 +55,7 @@
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script src="../_static/design-tabs.js?v=36754332"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
@@ -66,6 +69,7 @@
     <link rel="prev" title="07 - Introducing Nonlinear Dynamics" href="07_notes.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
   </head>
   
   
@@ -81,19 +85,8 @@
     <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
   
-  <input type="checkbox"
-          class="sidebar-toggle"
-          id="pst-primary-sidebar-checkbox"/>
-  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
-  
-  <input type="checkbox"
-          class="sidebar-toggle"
-          id="pst-secondary-sidebar-checkbox"/>
-  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
-  
-  <div class="search-button__wrapper">
-    <div class="search-button__overlay"></div>
-    <div class="search-button__search-container">
+  <dialog id="pst-search-dialog">
+    
 <form class="bd-search d-flex align-items-center"
       action="../search.html"
       method="get">
@@ -101,7 +94,6 @@
   <input type="search"
          class="form-control"
          name="q"
-         id="search-input"
          placeholder="Search this book..."
          aria-label="Search this book..."
          autocomplete="off"
@@ -109,8 +101,8 @@
          autocapitalize="off"
          spellcheck="false"/>
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form></div>
-  </div>
+</form>
+  </dialog>
 
   <div class="pst-async-banner-revealer d-none">
   <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
@@ -126,7 +118,8 @@
       
       
       
-      <div class="bd-sidebar-primary bd-sidebar">
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -156,21 +149,17 @@
     
     
     <img src="../_static/spartan-helmet.png" class="logo__image only-light" alt="Classical Mechanics - Home"/>
-    <script>document.write(`<img src="../_static/spartan-helmet.png" class="logo__image only-dark" alt="Classical Mechanics - Home"/>`);</script>
+    <img src="../_static/spartan-helmet.png" class="logo__image only-dark pst-js-only" alt="Classical Mechanics - Home"/>
   
   
 </a></div>
         <div class="sidebar-primary-item">
 
- <script>
- document.write(`
-   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
-    <span class="search-button__default-text">Search</span>
-    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
-   </button>
- `);
- </script></div>
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
@@ -206,6 +195,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../assignments/hw4.html">Homework 4 (Due 26 Sep)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../assignments/midterm1.html">Midterm 1 (Due 10 Oct)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../assignments/hw5.html">Homework 5 (Due 17 Oct)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../assignments/hw6.html">Homework 6 (Due 24 Oct)</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Programming Resources</span></p>
 <ul class="nav bd-sidenav">
@@ -236,9 +226,14 @@
   
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
   </div>
-  
-  <div id="rtd-footer-container"></div>
 
 
       </div>
@@ -335,24 +330,16 @@
 
 
 
-<script>
-document.write(`
-  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
-    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
-    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
-  </button>
-`);
-</script>
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
 
 
-<script>
-document.write(`
-  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
-  </button>
-`);
-</script>
+</button>
 <button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
 </button>
@@ -517,7 +504,107 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/ea1d50654be6b3775f9a650ea78a841dde4e9164c83c527ac58d33a17c91fe55.png" src="../_images/ea1d50654be6b3775f9a650ea78a841dde4e9164c83c527ac58d33a17c91fe55.png" />
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ImportError</span><span class="g g-Whitespace">                               </span>Traceback (most recent call last)
+<span class="n">File</span> <span class="o">~/</span><span class="n">anaconda3</span><span class="o">/</span><span class="n">envs</span><span class="o">/</span><span class="n">cmse201</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="mf">.12</span><span class="o">/</span><span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="o">/</span><span class="n">numpy</span><span class="o">/</span><span class="n">_core</span><span class="o">/</span><span class="fm">__init__</span><span class="o">.</span><span class="n">py</span><span class="p">:</span><span class="mi">23</span>
+<span class="g g-Whitespace">     </span><span class="mi">22</span> <span class="k">try</span><span class="p">:</span>
+<span class="ne">---&gt; </span><span class="mi">23</span>     <span class="kn">from</span><span class="w"> </span><span class="nn">.</span><span class="w"> </span><span class="kn">import</span> <span class="n">multiarray</span>
+<span class="g g-Whitespace">     </span><span class="mi">24</span> <span class="k">except</span> <span class="ne">ImportError</span> <span class="k">as</span> <span class="n">exc</span><span class="p">:</span>
+
+<span class="n">File</span> <span class="o">~/</span><span class="n">anaconda3</span><span class="o">/</span><span class="n">envs</span><span class="o">/</span><span class="n">cmse201</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="mf">.12</span><span class="o">/</span><span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="o">/</span><span class="n">numpy</span><span class="o">/</span><span class="n">_core</span><span class="o">/</span><span class="n">multiarray</span><span class="o">.</span><span class="n">py</span><span class="p">:</span><span class="mi">10</span>
+<span class="g g-Whitespace">      </span><span class="mi">9</span> <span class="kn">import</span><span class="w"> </span><span class="nn">functools</span>
+<span class="ne">---&gt; </span><span class="mi">10</span> <span class="kn">from</span><span class="w"> </span><span class="nn">.</span><span class="w"> </span><span class="kn">import</span> <span class="n">overrides</span>
+<span class="g g-Whitespace">     </span><span class="mi">11</span> <span class="kn">from</span><span class="w"> </span><span class="nn">.</span><span class="w"> </span><span class="kn">import</span> <span class="n">_multiarray_umath</span>
+
+<span class="n">File</span> <span class="o">~/</span><span class="n">anaconda3</span><span class="o">/</span><span class="n">envs</span><span class="o">/</span><span class="n">cmse201</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="mf">.12</span><span class="o">/</span><span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="o">/</span><span class="n">numpy</span><span class="o">/</span><span class="n">_core</span><span class="o">/</span><span class="n">overrides</span><span class="o">.</span><span class="n">py</span><span class="p">:</span><span class="mi">8</span>
+<span class="g g-Whitespace">      </span><span class="mi">7</span> <span class="kn">from</span><span class="w"> </span><span class="nn">.._utils._inspect</span><span class="w"> </span><span class="kn">import</span> <span class="n">getargspec</span>
+<span class="ne">----&gt; </span><span class="mi">8</span> <span class="kn">from</span><span class="w"> </span><span class="nn">numpy._core._multiarray_umath</span><span class="w"> </span><span class="kn">import</span> <span class="p">(</span>
+<span class="g g-Whitespace">      </span><span class="mi">9</span>     <span class="n">add_docstring</span><span class="p">,</span>  <span class="n">_get_implementing_args</span><span class="p">,</span> <span class="n">_ArrayFunctionDispatcher</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">12</span> <span class="n">ARRAY_FUNCTIONS</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
+
+<span class="ne">ImportError</span>: dlopen(/Users/caballero/anaconda3/envs/cmse201/lib/python3.12/site-packages/numpy/_core/_multiarray_umath.cpython-312-darwin.so, 0x0002): Library not loaded: @rpath/libgfortran.5.dylib
+  <span class="n">Referenced</span> <span class="n">from</span><span class="p">:</span> <span class="o">&lt;</span><span class="mi">0</span><span class="n">B9C315B</span><span class="o">-</span><span class="n">A1DD</span><span class="o">-</span><span class="mi">3527</span><span class="o">-</span><span class="mi">88</span><span class="n">DB</span><span class="o">-</span><span class="mi">4</span><span class="n">B90531D343F</span><span class="o">&gt;</span> <span class="o">/</span><span class="n">Users</span><span class="o">/</span><span class="n">caballero</span><span class="o">/</span><span class="n">anaconda3</span><span class="o">/</span><span class="n">envs</span><span class="o">/</span><span class="n">cmse201</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libopenblas</span><span class="mf">.0</span><span class="o">.</span><span class="n">dylib</span>
+  <span class="n">Reason</span><span class="p">:</span> <span class="n">tried</span><span class="p">:</span> <span class="s1">&#39;/Users/caballero/anaconda3/envs/cmse201/lib/libgfortran.5.dylib&#39;</span> <span class="p">(</span><span class="n">duplicate</span> <span class="n">LC_RPATH</span> <span class="s1">&#39;@loader_path&#39;</span><span class="p">),</span> <span class="s1">&#39;/Users/caballero/anaconda3/envs/cmse201/lib/libgfortran.5.dylib&#39;</span> <span class="p">(</span><span class="n">duplicate</span> <span class="n">LC_RPATH</span> <span class="s1">&#39;@loader_path&#39;</span><span class="p">),</span> <span class="s1">&#39;/Users/caballero/anaconda3/envs/cmse201/lib/python3.12/site-packages/numpy/_core/../../../../libgfortran.5.dylib&#39;</span> <span class="p">(</span><span class="n">duplicate</span> <span class="n">LC_RPATH</span> <span class="s1">&#39;@loader_path&#39;</span><span class="p">),</span> <span class="s1">&#39;/Users/caballero/anaconda3/envs/cmse201/lib/python3.12/site-packages/numpy/_core/../../../../libgfortran.5.dylib&#39;</span> <span class="p">(</span><span class="n">duplicate</span> <span class="n">LC_RPATH</span> <span class="s1">&#39;@loader_path&#39;</span><span class="p">),</span> <span class="s1">&#39;/Users/caballero/anaconda3/envs/cmse201/bin/../lib/libgfortran.5.dylib&#39;</span> <span class="p">(</span><span class="n">duplicate</span> <span class="n">LC_RPATH</span> <span class="s1">&#39;@loader_path&#39;</span><span class="p">),</span> <span class="s1">&#39;/Users/caballero/anaconda3/envs/cmse201/bin/../lib/libgfortran.5.dylib&#39;</span> <span class="p">(</span><span class="n">duplicate</span> <span class="n">LC_RPATH</span> <span class="s1">&#39;@loader_path&#39;</span><span class="p">),</span> <span class="s1">&#39;/usr/local/lib/libgfortran.5.dylib&#39;</span> <span class="p">(</span><span class="n">no</span> <span class="n">such</span> <span class="n">file</span><span class="p">),</span> <span class="s1">&#39;/usr/lib/libgfortran.5.dylib&#39;</span> <span class="p">(</span><span class="n">no</span> <span class="n">such</span> <span class="n">file</span><span class="p">,</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">dyld</span> <span class="n">cache</span><span class="p">)</span>
+
+<span class="n">During</span> <span class="n">handling</span> <span class="n">of</span> <span class="n">the</span> <span class="n">above</span> <span class="n">exception</span><span class="p">,</span> <span class="n">another</span> <span class="n">exception</span> <span class="n">occurred</span><span class="p">:</span>
+
+<span class="ne">ImportError</span><span class="g g-Whitespace">                               </span>Traceback (most recent call last)
+<span class="n">File</span> <span class="o">~/</span><span class="n">anaconda3</span><span class="o">/</span><span class="n">envs</span><span class="o">/</span><span class="n">cmse201</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="mf">.12</span><span class="o">/</span><span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="o">/</span><span class="n">numpy</span><span class="o">/</span><span class="fm">__init__</span><span class="o">.</span><span class="n">py</span><span class="p">:</span><span class="mi">114</span>
+<span class="g g-Whitespace">    </span><span class="mi">113</span> <span class="k">try</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">114</span>     <span class="kn">from</span><span class="w"> </span><span class="nn">numpy.__config__</span><span class="w"> </span><span class="kn">import</span> <span class="n">show</span> <span class="k">as</span> <span class="n">show_config</span>
+<span class="g g-Whitespace">    </span><span class="mi">115</span> <span class="k">except</span> <span class="ne">ImportError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+
+<span class="n">File</span> <span class="o">~/</span><span class="n">anaconda3</span><span class="o">/</span><span class="n">envs</span><span class="o">/</span><span class="n">cmse201</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="mf">.12</span><span class="o">/</span><span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="o">/</span><span class="n">numpy</span><span class="o">/</span><span class="n">__config__</span><span class="o">.</span><span class="n">py</span><span class="p">:</span><span class="mi">4</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="kn">from</span><span class="w"> </span><span class="nn">enum</span><span class="w"> </span><span class="kn">import</span> <span class="n">Enum</span>
+<span class="ne">----&gt; </span><span class="mi">4</span> <span class="kn">from</span><span class="w"> </span><span class="nn">numpy._core._multiarray_umath</span><span class="w"> </span><span class="kn">import</span> <span class="p">(</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span>     <span class="n">__cpu_features__</span><span class="p">,</span>
+<span class="g g-Whitespace">      </span><span class="mi">6</span>     <span class="n">__cpu_baseline__</span><span class="p">,</span>
+<span class="g g-Whitespace">      </span><span class="mi">7</span>     <span class="n">__cpu_dispatch__</span><span class="p">,</span>
+<span class="g g-Whitespace">      </span><span class="mi">8</span> <span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">10</span> <span class="n">__all__</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;show&quot;</span><span class="p">]</span>
+
+<span class="n">File</span> <span class="o">~/</span><span class="n">anaconda3</span><span class="o">/</span><span class="n">envs</span><span class="o">/</span><span class="n">cmse201</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="mf">.12</span><span class="o">/</span><span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="o">/</span><span class="n">numpy</span><span class="o">/</span><span class="n">_core</span><span class="o">/</span><span class="fm">__init__</span><span class="o">.</span><span class="n">py</span><span class="p">:</span><span class="mi">49</span>
+<span class="g g-Whitespace">     </span><span class="mi">26</span>     <span class="n">msg</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="g g-Whitespace">     </span><span class="mi">27</span><span class="s2"> </span>
+<span class="g g-Whitespace">     </span><span class="mi">28</span><span class="s2"> IMPORTANT: PLEASE READ THIS FOR ADVICE ON HOW TO SOLVE THIS ISSUE!</span>
+<span class="s2">   (...)</span>
+<span class="g g-Whitespace">     </span><span class="mi">47</span><span class="s2"> &quot;&quot;&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">version_info</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">sys</span><span class="o">.</span><span class="n">version_info</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">sys</span><span class="o">.</span><span class="n">executable</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">48</span>         <span class="n">__version__</span><span class="p">,</span> <span class="n">exc</span><span class="p">)</span>
+<span class="ne">---&gt; </span><span class="mi">49</span>     <span class="k">raise</span> <span class="ne">ImportError</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">50</span> <span class="k">finally</span><span class="p">:</span>
+
+<span class="ne">ImportError</span>: 
+
+<span class="ne">IMPORTANT</span>: PLEASE READ THIS FOR ADVICE ON HOW TO SOLVE THIS ISSUE!
+
+<span class="n">Importing</span> <span class="n">the</span> <span class="n">numpy</span> <span class="n">C</span><span class="o">-</span><span class="n">extensions</span> <span class="n">failed</span><span class="o">.</span> <span class="n">This</span> <span class="n">error</span> <span class="n">can</span> <span class="n">happen</span> <span class="k">for</span>
+<span class="n">many</span> <span class="n">reasons</span><span class="p">,</span> <span class="n">often</span> <span class="n">due</span> <span class="n">to</span> <span class="n">issues</span> <span class="k">with</span> <span class="n">your</span> <span class="n">setup</span> <span class="ow">or</span> <span class="n">how</span> <span class="n">NumPy</span> <span class="n">was</span>
+<span class="n">installed</span><span class="o">.</span>
+
+<span class="n">We</span> <span class="n">have</span> <span class="n">compiled</span> <span class="n">some</span> <span class="n">common</span> <span class="n">reasons</span> <span class="ow">and</span> <span class="n">troubleshooting</span> <span class="n">tips</span> <span class="n">at</span><span class="p">:</span>
+
+    <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">numpy</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">devdocs</span><span class="o">/</span><span class="n">user</span><span class="o">/</span><span class="n">troubleshooting</span><span class="o">-</span><span class="n">importerror</span><span class="o">.</span><span class="n">html</span>
+
+<span class="n">Please</span> <span class="n">note</span> <span class="ow">and</span> <span class="n">check</span> <span class="n">the</span> <span class="n">following</span><span class="p">:</span>
+
+  <span class="o">*</span> <span class="n">The</span> <span class="n">Python</span> <span class="n">version</span> <span class="ow">is</span><span class="p">:</span> <span class="n">Python3</span><span class="mf">.12</span> <span class="kn">from</span><span class="w"> </span><span class="s2">&quot;/Users/caballero/anaconda3/envs/cmse201/bin/python&quot;</span>
+  <span class="o">*</span> <span class="n">The</span> <span class="n">NumPy</span> <span class="n">version</span> <span class="ow">is</span><span class="p">:</span> <span class="s2">&quot;2.1.0&quot;</span>
+
+<span class="ow">and</span> <span class="n">make</span> <span class="n">sure</span> <span class="n">that</span> <span class="n">they</span> <span class="n">are</span> <span class="n">the</span> <span class="n">versions</span> <span class="n">you</span> <span class="n">expect</span><span class="o">.</span>
+<span class="n">Please</span> <span class="n">carefully</span> <span class="n">study</span> <span class="n">the</span> <span class="n">documentation</span> <span class="n">linked</span> <span class="n">above</span> <span class="k">for</span> <span class="n">further</span> <span class="n">help</span><span class="o">.</span>
+
+<span class="n">Original</span> <span class="n">error</span> <span class="n">was</span><span class="p">:</span> <span class="n">dlopen</span><span class="p">(</span><span class="o">/</span><span class="n">Users</span><span class="o">/</span><span class="n">caballero</span><span class="o">/</span><span class="n">anaconda3</span><span class="o">/</span><span class="n">envs</span><span class="o">/</span><span class="n">cmse201</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="mf">.12</span><span class="o">/</span><span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="o">/</span><span class="n">numpy</span><span class="o">/</span><span class="n">_core</span><span class="o">/</span><span class="n">_multiarray_umath</span><span class="o">.</span><span class="n">cpython</span><span class="o">-</span><span class="mi">312</span><span class="o">-</span><span class="n">darwin</span><span class="o">.</span><span class="n">so</span><span class="p">,</span> <span class="mh">0x0002</span><span class="p">):</span> <span class="n">Library</span> <span class="ow">not</span> <span class="n">loaded</span><span class="p">:</span> <span class="nd">@rpath</span><span class="o">/</span><span class="n">libgfortran</span><span class="mf">.5</span><span class="o">.</span><span class="n">dylib</span>
+  <span class="n">Referenced</span> <span class="n">from</span><span class="p">:</span> <span class="o">&lt;</span><span class="mi">0</span><span class="n">B9C315B</span><span class="o">-</span><span class="n">A1DD</span><span class="o">-</span><span class="mi">3527</span><span class="o">-</span><span class="mi">88</span><span class="n">DB</span><span class="o">-</span><span class="mi">4</span><span class="n">B90531D343F</span><span class="o">&gt;</span> <span class="o">/</span><span class="n">Users</span><span class="o">/</span><span class="n">caballero</span><span class="o">/</span><span class="n">anaconda3</span><span class="o">/</span><span class="n">envs</span><span class="o">/</span><span class="n">cmse201</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libopenblas</span><span class="mf">.0</span><span class="o">.</span><span class="n">dylib</span>
+  <span class="n">Reason</span><span class="p">:</span> <span class="n">tried</span><span class="p">:</span> <span class="s1">&#39;/Users/caballero/anaconda3/envs/cmse201/lib/libgfortran.5.dylib&#39;</span> <span class="p">(</span><span class="n">duplicate</span> <span class="n">LC_RPATH</span> <span class="s1">&#39;@loader_path&#39;</span><span class="p">),</span> <span class="s1">&#39;/Users/caballero/anaconda3/envs/cmse201/lib/libgfortran.5.dylib&#39;</span> <span class="p">(</span><span class="n">duplicate</span> <span class="n">LC_RPATH</span> <span class="s1">&#39;@loader_path&#39;</span><span class="p">),</span> <span class="s1">&#39;/Users/caballero/anaconda3/envs/cmse201/lib/python3.12/site-packages/numpy/_core/../../../../libgfortran.5.dylib&#39;</span> <span class="p">(</span><span class="n">duplicate</span> <span class="n">LC_RPATH</span> <span class="s1">&#39;@loader_path&#39;</span><span class="p">),</span> <span class="s1">&#39;/Users/caballero/anaconda3/envs/cmse201/lib/python3.12/site-packages/numpy/_core/../../../../libgfortran.5.dylib&#39;</span> <span class="p">(</span><span class="n">duplicate</span> <span class="n">LC_RPATH</span> <span class="s1">&#39;@loader_path&#39;</span><span class="p">),</span> <span class="s1">&#39;/Users/caballero/anaconda3/envs/cmse201/bin/../lib/libgfortran.5.dylib&#39;</span> <span class="p">(</span><span class="n">duplicate</span> <span class="n">LC_RPATH</span> <span class="s1">&#39;@loader_path&#39;</span><span class="p">),</span> <span class="s1">&#39;/Users/caballero/anaconda3/envs/cmse201/bin/../lib/libgfortran.5.dylib&#39;</span> <span class="p">(</span><span class="n">duplicate</span> <span class="n">LC_RPATH</span> <span class="s1">&#39;@loader_path&#39;</span><span class="p">),</span> <span class="s1">&#39;/usr/local/lib/libgfortran.5.dylib&#39;</span> <span class="p">(</span><span class="n">no</span> <span class="n">such</span> <span class="n">file</span><span class="p">),</span> <span class="s1">&#39;/usr/lib/libgfortran.5.dylib&#39;</span> <span class="p">(</span><span class="n">no</span> <span class="n">such</span> <span class="n">file</span><span class="p">,</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">dyld</span> <span class="n">cache</span><span class="p">)</span>
+
+
+<span class="n">The</span> <span class="n">above</span> <span class="n">exception</span> <span class="n">was</span> <span class="n">the</span> <span class="n">direct</span> <span class="n">cause</span> <span class="n">of</span> <span class="n">the</span> <span class="n">following</span> <span class="n">exception</span><span class="p">:</span>
+
+<span class="ne">ImportError</span><span class="g g-Whitespace">                               </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="n">plt</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;seaborn-v0_8-colorblind&#39;</span><span class="p">)</span>
+
+<span class="n">File</span> <span class="o">~/</span><span class="n">anaconda3</span><span class="o">/</span><span class="n">envs</span><span class="o">/</span><span class="n">cmse201</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="mf">.12</span><span class="o">/</span><span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="o">/</span><span class="n">numpy</span><span class="o">/</span><span class="fm">__init__</span><span class="o">.</span><span class="n">py</span><span class="p">:</span><span class="mi">119</span>
+<span class="g g-Whitespace">    </span><span class="mi">115</span> <span class="k">except</span> <span class="ne">ImportError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">116</span>     <span class="n">msg</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;Error importing numpy: you should not try to import numpy from</span>
+<span class="g g-Whitespace">    </span><span class="mi">117</span><span class="s2">     its source directory; please exit the numpy source tree, and relaunch</span>
+<span class="g g-Whitespace">    </span><span class="mi">118</span><span class="s2">     your python interpreter from there.&quot;&quot;&quot;</span>
+<span class="ne">--&gt; </span><span class="mi">119</span>     <span class="k">raise</span> <span class="ne">ImportError</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span> <span class="kn">from</span><span class="w"> </span><span class="nn">e</span>
+<span class="g g-Whitespace">    </span><span class="mi">121</span> <span class="kn">from</span><span class="w"> </span><span class="nn">.</span><span class="w"> </span><span class="kn">import</span> <span class="n">_core</span>
+<span class="g g-Whitespace">    </span><span class="mi">122</span> <span class="kn">from</span><span class="w"> </span><span class="nn">._core</span><span class="w"> </span><span class="kn">import</span> <span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">123</span>     <span class="n">False_</span><span class="p">,</span> <span class="n">ScalarType</span><span class="p">,</span> <span class="n">True_</span><span class="p">,</span> <span class="n">_get_promotion_state</span><span class="p">,</span> <span class="n">_no_nep50_warning</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">124</span>     <span class="n">_set_promotion_state</span><span class="p">,</span> <span class="nb">abs</span><span class="p">,</span> <span class="n">absolute</span><span class="p">,</span> <span class="n">acos</span><span class="p">,</span> <span class="n">acosh</span><span class="p">,</span> <span class="n">add</span><span class="p">,</span> <span class="nb">all</span><span class="p">,</span> <span class="n">allclose</span><span class="p">,</span>
+   <span class="p">(</span><span class="o">...</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">169</span>     <span class="n">vstack</span><span class="p">,</span> <span class="n">where</span><span class="p">,</span> <span class="n">zeros</span><span class="p">,</span> <span class="n">zeros_like</span>
+<span class="g g-Whitespace">    </span><span class="mi">170</span> <span class="p">)</span>
+
+<span class="ne">ImportError</span>: Error importing numpy: you should not try to import numpy from
+        <span class="n">its</span> <span class="n">source</span> <span class="n">directory</span><span class="p">;</span> <span class="n">please</span> <span class="n">exit</span> <span class="n">the</span> <span class="n">numpy</span> <span class="n">source</span> <span class="n">tree</span><span class="p">,</span> <span class="ow">and</span> <span class="n">relaunch</span>
+        <span class="n">your</span> <span class="n">python</span> <span class="n">interpreter</span> <span class="kn">from</span><span class="w"> </span><span class="nn">there.</span>
+</pre></div>
+</div>
 </div>
 </div>
 <section id="why-do-we-often-see-oscillations-in-physics">
@@ -711,9 +798,107 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/bdad6b3e42c5869513fb0f08f4c0bed2515fcf28015cc5b6f71949002eb00187.png" src="../_images/bdad6b3e42c5869513fb0f08f4c0bed2515fcf28015cc5b6f71949002eb00187.png" />
-<img alt="../_images/0090758c983fa925852379aff25b25375dacb057a8f022ee373cabd58193f083.png" src="../_images/0090758c983fa925852379aff25b25375dacb057a8f022ee373cabd58193f083.png" />
-<img alt="../_images/50a2a7b4445aa6d2f983850de6111139daa4512a3992afca014ac6acd615cb66.png" src="../_images/50a2a7b4445aa6d2f983850de6111139daa4512a3992afca014ac6acd615cb66.png" />
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ImportError</span><span class="g g-Whitespace">                               </span>Traceback (most recent call last)
+<span class="n">File</span> <span class="o">~/</span><span class="n">anaconda3</span><span class="o">/</span><span class="n">envs</span><span class="o">/</span><span class="n">cmse201</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="mf">.12</span><span class="o">/</span><span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="o">/</span><span class="n">numpy</span><span class="o">/</span><span class="n">_core</span><span class="o">/</span><span class="fm">__init__</span><span class="o">.</span><span class="n">py</span><span class="p">:</span><span class="mi">23</span>
+<span class="g g-Whitespace">     </span><span class="mi">22</span> <span class="k">try</span><span class="p">:</span>
+<span class="ne">---&gt; </span><span class="mi">23</span>     <span class="kn">from</span><span class="w"> </span><span class="nn">.</span><span class="w"> </span><span class="kn">import</span> <span class="n">multiarray</span>
+<span class="g g-Whitespace">     </span><span class="mi">24</span> <span class="k">except</span> <span class="ne">ImportError</span> <span class="k">as</span> <span class="n">exc</span><span class="p">:</span>
+
+<span class="n">File</span> <span class="o">~/</span><span class="n">anaconda3</span><span class="o">/</span><span class="n">envs</span><span class="o">/</span><span class="n">cmse201</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="mf">.12</span><span class="o">/</span><span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="o">/</span><span class="n">numpy</span><span class="o">/</span><span class="n">_core</span><span class="o">/</span><span class="n">multiarray</span><span class="o">.</span><span class="n">py</span><span class="p">:</span><span class="mi">10</span>
+<span class="g g-Whitespace">      </span><span class="mi">9</span> <span class="kn">import</span><span class="w"> </span><span class="nn">functools</span>
+<span class="ne">---&gt; </span><span class="mi">10</span> <span class="kn">from</span><span class="w"> </span><span class="nn">.</span><span class="w"> </span><span class="kn">import</span> <span class="n">overrides</span>
+<span class="g g-Whitespace">     </span><span class="mi">11</span> <span class="kn">from</span><span class="w"> </span><span class="nn">.</span><span class="w"> </span><span class="kn">import</span> <span class="n">_multiarray_umath</span>
+
+<span class="n">File</span> <span class="o">~/</span><span class="n">anaconda3</span><span class="o">/</span><span class="n">envs</span><span class="o">/</span><span class="n">cmse201</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="mf">.12</span><span class="o">/</span><span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="o">/</span><span class="n">numpy</span><span class="o">/</span><span class="n">_core</span><span class="o">/</span><span class="n">overrides</span><span class="o">.</span><span class="n">py</span><span class="p">:</span><span class="mi">8</span>
+<span class="g g-Whitespace">      </span><span class="mi">7</span> <span class="kn">from</span><span class="w"> </span><span class="nn">.._utils._inspect</span><span class="w"> </span><span class="kn">import</span> <span class="n">getargspec</span>
+<span class="ne">----&gt; </span><span class="mi">8</span> <span class="kn">from</span><span class="w"> </span><span class="nn">numpy._core._multiarray_umath</span><span class="w"> </span><span class="kn">import</span> <span class="p">(</span>
+<span class="g g-Whitespace">      </span><span class="mi">9</span>     <span class="n">add_docstring</span><span class="p">,</span>  <span class="n">_get_implementing_args</span><span class="p">,</span> <span class="n">_ArrayFunctionDispatcher</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">12</span> <span class="n">ARRAY_FUNCTIONS</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
+
+<span class="ne">ImportError</span>: dlopen(/Users/caballero/anaconda3/envs/cmse201/lib/python3.12/site-packages/numpy/_core/_multiarray_umath.cpython-312-darwin.so, 0x0002): Library not loaded: @rpath/libgfortran.5.dylib
+  <span class="n">Referenced</span> <span class="n">from</span><span class="p">:</span> <span class="o">&lt;</span><span class="mi">0</span><span class="n">B9C315B</span><span class="o">-</span><span class="n">A1DD</span><span class="o">-</span><span class="mi">3527</span><span class="o">-</span><span class="mi">88</span><span class="n">DB</span><span class="o">-</span><span class="mi">4</span><span class="n">B90531D343F</span><span class="o">&gt;</span> <span class="o">/</span><span class="n">Users</span><span class="o">/</span><span class="n">caballero</span><span class="o">/</span><span class="n">anaconda3</span><span class="o">/</span><span class="n">envs</span><span class="o">/</span><span class="n">cmse201</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libopenblas</span><span class="mf">.0</span><span class="o">.</span><span class="n">dylib</span>
+  <span class="n">Reason</span><span class="p">:</span> <span class="n">tried</span><span class="p">:</span> <span class="s1">&#39;/Users/caballero/anaconda3/envs/cmse201/lib/libgfortran.5.dylib&#39;</span> <span class="p">(</span><span class="n">duplicate</span> <span class="n">LC_RPATH</span> <span class="s1">&#39;@loader_path&#39;</span><span class="p">),</span> <span class="s1">&#39;/Users/caballero/anaconda3/envs/cmse201/lib/libgfortran.5.dylib&#39;</span> <span class="p">(</span><span class="n">duplicate</span> <span class="n">LC_RPATH</span> <span class="s1">&#39;@loader_path&#39;</span><span class="p">),</span> <span class="s1">&#39;/Users/caballero/anaconda3/envs/cmse201/lib/python3.12/site-packages/numpy/_core/../../../../libgfortran.5.dylib&#39;</span> <span class="p">(</span><span class="n">duplicate</span> <span class="n">LC_RPATH</span> <span class="s1">&#39;@loader_path&#39;</span><span class="p">),</span> <span class="s1">&#39;/Users/caballero/anaconda3/envs/cmse201/lib/python3.12/site-packages/numpy/_core/../../../../libgfortran.5.dylib&#39;</span> <span class="p">(</span><span class="n">duplicate</span> <span class="n">LC_RPATH</span> <span class="s1">&#39;@loader_path&#39;</span><span class="p">),</span> <span class="s1">&#39;/Users/caballero/anaconda3/envs/cmse201/bin/../lib/libgfortran.5.dylib&#39;</span> <span class="p">(</span><span class="n">duplicate</span> <span class="n">LC_RPATH</span> <span class="s1">&#39;@loader_path&#39;</span><span class="p">),</span> <span class="s1">&#39;/Users/caballero/anaconda3/envs/cmse201/bin/../lib/libgfortran.5.dylib&#39;</span> <span class="p">(</span><span class="n">duplicate</span> <span class="n">LC_RPATH</span> <span class="s1">&#39;@loader_path&#39;</span><span class="p">),</span> <span class="s1">&#39;/usr/local/lib/libgfortran.5.dylib&#39;</span> <span class="p">(</span><span class="n">no</span> <span class="n">such</span> <span class="n">file</span><span class="p">),</span> <span class="s1">&#39;/usr/lib/libgfortran.5.dylib&#39;</span> <span class="p">(</span><span class="n">no</span> <span class="n">such</span> <span class="n">file</span><span class="p">,</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">dyld</span> <span class="n">cache</span><span class="p">)</span>
+
+<span class="n">During</span> <span class="n">handling</span> <span class="n">of</span> <span class="n">the</span> <span class="n">above</span> <span class="n">exception</span><span class="p">,</span> <span class="n">another</span> <span class="n">exception</span> <span class="n">occurred</span><span class="p">:</span>
+
+<span class="ne">ImportError</span><span class="g g-Whitespace">                               </span>Traceback (most recent call last)
+<span class="n">File</span> <span class="o">~/</span><span class="n">anaconda3</span><span class="o">/</span><span class="n">envs</span><span class="o">/</span><span class="n">cmse201</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="mf">.12</span><span class="o">/</span><span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="o">/</span><span class="n">numpy</span><span class="o">/</span><span class="fm">__init__</span><span class="o">.</span><span class="n">py</span><span class="p">:</span><span class="mi">114</span>
+<span class="g g-Whitespace">    </span><span class="mi">113</span> <span class="k">try</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">114</span>     <span class="kn">from</span><span class="w"> </span><span class="nn">numpy.__config__</span><span class="w"> </span><span class="kn">import</span> <span class="n">show</span> <span class="k">as</span> <span class="n">show_config</span>
+<span class="g g-Whitespace">    </span><span class="mi">115</span> <span class="k">except</span> <span class="ne">ImportError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+
+<span class="n">File</span> <span class="o">~/</span><span class="n">anaconda3</span><span class="o">/</span><span class="n">envs</span><span class="o">/</span><span class="n">cmse201</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="mf">.12</span><span class="o">/</span><span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="o">/</span><span class="n">numpy</span><span class="o">/</span><span class="n">__config__</span><span class="o">.</span><span class="n">py</span><span class="p">:</span><span class="mi">4</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="kn">from</span><span class="w"> </span><span class="nn">enum</span><span class="w"> </span><span class="kn">import</span> <span class="n">Enum</span>
+<span class="ne">----&gt; </span><span class="mi">4</span> <span class="kn">from</span><span class="w"> </span><span class="nn">numpy._core._multiarray_umath</span><span class="w"> </span><span class="kn">import</span> <span class="p">(</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span>     <span class="n">__cpu_features__</span><span class="p">,</span>
+<span class="g g-Whitespace">      </span><span class="mi">6</span>     <span class="n">__cpu_baseline__</span><span class="p">,</span>
+<span class="g g-Whitespace">      </span><span class="mi">7</span>     <span class="n">__cpu_dispatch__</span><span class="p">,</span>
+<span class="g g-Whitespace">      </span><span class="mi">8</span> <span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">10</span> <span class="n">__all__</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;show&quot;</span><span class="p">]</span>
+
+<span class="n">File</span> <span class="o">~/</span><span class="n">anaconda3</span><span class="o">/</span><span class="n">envs</span><span class="o">/</span><span class="n">cmse201</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="mf">.12</span><span class="o">/</span><span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="o">/</span><span class="n">numpy</span><span class="o">/</span><span class="n">_core</span><span class="o">/</span><span class="fm">__init__</span><span class="o">.</span><span class="n">py</span><span class="p">:</span><span class="mi">49</span>
+<span class="g g-Whitespace">     </span><span class="mi">26</span>     <span class="n">msg</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="g g-Whitespace">     </span><span class="mi">27</span><span class="s2"> </span>
+<span class="g g-Whitespace">     </span><span class="mi">28</span><span class="s2"> IMPORTANT: PLEASE READ THIS FOR ADVICE ON HOW TO SOLVE THIS ISSUE!</span>
+<span class="s2">   (...)</span>
+<span class="g g-Whitespace">     </span><span class="mi">47</span><span class="s2"> &quot;&quot;&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">version_info</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">sys</span><span class="o">.</span><span class="n">version_info</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">sys</span><span class="o">.</span><span class="n">executable</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">48</span>         <span class="n">__version__</span><span class="p">,</span> <span class="n">exc</span><span class="p">)</span>
+<span class="ne">---&gt; </span><span class="mi">49</span>     <span class="k">raise</span> <span class="ne">ImportError</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">50</span> <span class="k">finally</span><span class="p">:</span>
+
+<span class="ne">ImportError</span>: 
+
+<span class="ne">IMPORTANT</span>: PLEASE READ THIS FOR ADVICE ON HOW TO SOLVE THIS ISSUE!
+
+<span class="n">Importing</span> <span class="n">the</span> <span class="n">numpy</span> <span class="n">C</span><span class="o">-</span><span class="n">extensions</span> <span class="n">failed</span><span class="o">.</span> <span class="n">This</span> <span class="n">error</span> <span class="n">can</span> <span class="n">happen</span> <span class="k">for</span>
+<span class="n">many</span> <span class="n">reasons</span><span class="p">,</span> <span class="n">often</span> <span class="n">due</span> <span class="n">to</span> <span class="n">issues</span> <span class="k">with</span> <span class="n">your</span> <span class="n">setup</span> <span class="ow">or</span> <span class="n">how</span> <span class="n">NumPy</span> <span class="n">was</span>
+<span class="n">installed</span><span class="o">.</span>
+
+<span class="n">We</span> <span class="n">have</span> <span class="n">compiled</span> <span class="n">some</span> <span class="n">common</span> <span class="n">reasons</span> <span class="ow">and</span> <span class="n">troubleshooting</span> <span class="n">tips</span> <span class="n">at</span><span class="p">:</span>
+
+    <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">numpy</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">devdocs</span><span class="o">/</span><span class="n">user</span><span class="o">/</span><span class="n">troubleshooting</span><span class="o">-</span><span class="n">importerror</span><span class="o">.</span><span class="n">html</span>
+
+<span class="n">Please</span> <span class="n">note</span> <span class="ow">and</span> <span class="n">check</span> <span class="n">the</span> <span class="n">following</span><span class="p">:</span>
+
+  <span class="o">*</span> <span class="n">The</span> <span class="n">Python</span> <span class="n">version</span> <span class="ow">is</span><span class="p">:</span> <span class="n">Python3</span><span class="mf">.12</span> <span class="kn">from</span><span class="w"> </span><span class="s2">&quot;/Users/caballero/anaconda3/envs/cmse201/bin/python&quot;</span>
+  <span class="o">*</span> <span class="n">The</span> <span class="n">NumPy</span> <span class="n">version</span> <span class="ow">is</span><span class="p">:</span> <span class="s2">&quot;2.1.0&quot;</span>
+
+<span class="ow">and</span> <span class="n">make</span> <span class="n">sure</span> <span class="n">that</span> <span class="n">they</span> <span class="n">are</span> <span class="n">the</span> <span class="n">versions</span> <span class="n">you</span> <span class="n">expect</span><span class="o">.</span>
+<span class="n">Please</span> <span class="n">carefully</span> <span class="n">study</span> <span class="n">the</span> <span class="n">documentation</span> <span class="n">linked</span> <span class="n">above</span> <span class="k">for</span> <span class="n">further</span> <span class="n">help</span><span class="o">.</span>
+
+<span class="n">Original</span> <span class="n">error</span> <span class="n">was</span><span class="p">:</span> <span class="n">dlopen</span><span class="p">(</span><span class="o">/</span><span class="n">Users</span><span class="o">/</span><span class="n">caballero</span><span class="o">/</span><span class="n">anaconda3</span><span class="o">/</span><span class="n">envs</span><span class="o">/</span><span class="n">cmse201</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="mf">.12</span><span class="o">/</span><span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="o">/</span><span class="n">numpy</span><span class="o">/</span><span class="n">_core</span><span class="o">/</span><span class="n">_multiarray_umath</span><span class="o">.</span><span class="n">cpython</span><span class="o">-</span><span class="mi">312</span><span class="o">-</span><span class="n">darwin</span><span class="o">.</span><span class="n">so</span><span class="p">,</span> <span class="mh">0x0002</span><span class="p">):</span> <span class="n">Library</span> <span class="ow">not</span> <span class="n">loaded</span><span class="p">:</span> <span class="nd">@rpath</span><span class="o">/</span><span class="n">libgfortran</span><span class="mf">.5</span><span class="o">.</span><span class="n">dylib</span>
+  <span class="n">Referenced</span> <span class="n">from</span><span class="p">:</span> <span class="o">&lt;</span><span class="mi">0</span><span class="n">B9C315B</span><span class="o">-</span><span class="n">A1DD</span><span class="o">-</span><span class="mi">3527</span><span class="o">-</span><span class="mi">88</span><span class="n">DB</span><span class="o">-</span><span class="mi">4</span><span class="n">B90531D343F</span><span class="o">&gt;</span> <span class="o">/</span><span class="n">Users</span><span class="o">/</span><span class="n">caballero</span><span class="o">/</span><span class="n">anaconda3</span><span class="o">/</span><span class="n">envs</span><span class="o">/</span><span class="n">cmse201</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libopenblas</span><span class="mf">.0</span><span class="o">.</span><span class="n">dylib</span>
+  <span class="n">Reason</span><span class="p">:</span> <span class="n">tried</span><span class="p">:</span> <span class="s1">&#39;/Users/caballero/anaconda3/envs/cmse201/lib/libgfortran.5.dylib&#39;</span> <span class="p">(</span><span class="n">duplicate</span> <span class="n">LC_RPATH</span> <span class="s1">&#39;@loader_path&#39;</span><span class="p">),</span> <span class="s1">&#39;/Users/caballero/anaconda3/envs/cmse201/lib/libgfortran.5.dylib&#39;</span> <span class="p">(</span><span class="n">duplicate</span> <span class="n">LC_RPATH</span> <span class="s1">&#39;@loader_path&#39;</span><span class="p">),</span> <span class="s1">&#39;/Users/caballero/anaconda3/envs/cmse201/lib/python3.12/site-packages/numpy/_core/../../../../libgfortran.5.dylib&#39;</span> <span class="p">(</span><span class="n">duplicate</span> <span class="n">LC_RPATH</span> <span class="s1">&#39;@loader_path&#39;</span><span class="p">),</span> <span class="s1">&#39;/Users/caballero/anaconda3/envs/cmse201/lib/python3.12/site-packages/numpy/_core/../../../../libgfortran.5.dylib&#39;</span> <span class="p">(</span><span class="n">duplicate</span> <span class="n">LC_RPATH</span> <span class="s1">&#39;@loader_path&#39;</span><span class="p">),</span> <span class="s1">&#39;/Users/caballero/anaconda3/envs/cmse201/bin/../lib/libgfortran.5.dylib&#39;</span> <span class="p">(</span><span class="n">duplicate</span> <span class="n">LC_RPATH</span> <span class="s1">&#39;@loader_path&#39;</span><span class="p">),</span> <span class="s1">&#39;/Users/caballero/anaconda3/envs/cmse201/bin/../lib/libgfortran.5.dylib&#39;</span> <span class="p">(</span><span class="n">duplicate</span> <span class="n">LC_RPATH</span> <span class="s1">&#39;@loader_path&#39;</span><span class="p">),</span> <span class="s1">&#39;/usr/local/lib/libgfortran.5.dylib&#39;</span> <span class="p">(</span><span class="n">no</span> <span class="n">such</span> <span class="n">file</span><span class="p">),</span> <span class="s1">&#39;/usr/lib/libgfortran.5.dylib&#39;</span> <span class="p">(</span><span class="n">no</span> <span class="n">such</span> <span class="n">file</span><span class="p">,</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">dyld</span> <span class="n">cache</span><span class="p">)</span>
+
+
+<span class="n">The</span> <span class="n">above</span> <span class="n">exception</span> <span class="n">was</span> <span class="n">the</span> <span class="n">direct</span> <span class="n">cause</span> <span class="n">of</span> <span class="n">the</span> <span class="n">following</span> <span class="n">exception</span><span class="p">:</span>
+
+<span class="ne">ImportError</span><span class="g g-Whitespace">                               </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="kn">from</span><span class="w"> </span><span class="nn">matplotlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">cm</span>
+
+<span class="n">File</span> <span class="o">~/</span><span class="n">anaconda3</span><span class="o">/</span><span class="n">envs</span><span class="o">/</span><span class="n">cmse201</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="mf">.12</span><span class="o">/</span><span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="o">/</span><span class="n">numpy</span><span class="o">/</span><span class="fm">__init__</span><span class="o">.</span><span class="n">py</span><span class="p">:</span><span class="mi">119</span>
+<span class="g g-Whitespace">    </span><span class="mi">115</span> <span class="k">except</span> <span class="ne">ImportError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">116</span>     <span class="n">msg</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;Error importing numpy: you should not try to import numpy from</span>
+<span class="g g-Whitespace">    </span><span class="mi">117</span><span class="s2">     its source directory; please exit the numpy source tree, and relaunch</span>
+<span class="g g-Whitespace">    </span><span class="mi">118</span><span class="s2">     your python interpreter from there.&quot;&quot;&quot;</span>
+<span class="ne">--&gt; </span><span class="mi">119</span>     <span class="k">raise</span> <span class="ne">ImportError</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span> <span class="kn">from</span><span class="w"> </span><span class="nn">e</span>
+<span class="g g-Whitespace">    </span><span class="mi">121</span> <span class="kn">from</span><span class="w"> </span><span class="nn">.</span><span class="w"> </span><span class="kn">import</span> <span class="n">_core</span>
+<span class="g g-Whitespace">    </span><span class="mi">122</span> <span class="kn">from</span><span class="w"> </span><span class="nn">._core</span><span class="w"> </span><span class="kn">import</span> <span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">123</span>     <span class="n">False_</span><span class="p">,</span> <span class="n">ScalarType</span><span class="p">,</span> <span class="n">True_</span><span class="p">,</span> <span class="n">_get_promotion_state</span><span class="p">,</span> <span class="n">_no_nep50_warning</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">124</span>     <span class="n">_set_promotion_state</span><span class="p">,</span> <span class="nb">abs</span><span class="p">,</span> <span class="n">absolute</span><span class="p">,</span> <span class="n">acos</span><span class="p">,</span> <span class="n">acosh</span><span class="p">,</span> <span class="n">add</span><span class="p">,</span> <span class="nb">all</span><span class="p">,</span> <span class="n">allclose</span><span class="p">,</span>
+   <span class="p">(</span><span class="o">...</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">169</span>     <span class="n">vstack</span><span class="p">,</span> <span class="n">where</span><span class="p">,</span> <span class="n">zeros</span><span class="p">,</span> <span class="n">zeros_like</span>
+<span class="g g-Whitespace">    </span><span class="mi">170</span> <span class="p">)</span>
+
+<span class="ne">ImportError</span>: Error importing numpy: you should not try to import numpy from
+        <span class="n">its</span> <span class="n">source</span> <span class="n">directory</span><span class="p">;</span> <span class="n">please</span> <span class="n">exit</span> <span class="n">the</span> <span class="n">numpy</span> <span class="n">source</span> <span class="n">tree</span><span class="p">,</span> <span class="ow">and</span> <span class="n">relaunch</span>
+        <span class="n">your</span> <span class="n">python</span> <span class="n">interpreter</span> <span class="kn">from</span><span class="w"> </span><span class="nn">there.</span>
+</pre></div>
+</div>
 </div>
 </div>
 </section>
@@ -847,7 +1032,107 @@ $<span class="math notranslate nohighlight">\(F_{damping} = -b\dot{x}\)</span>$<
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/e3919b526bb3ad673217c0b0b7d2ebb16cfccfb571d888c09a76171ab81e9ca8.png" src="../_images/e3919b526bb3ad673217c0b0b7d2ebb16cfccfb571d888c09a76171ab81e9ca8.png" />
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ImportError</span><span class="g g-Whitespace">                               </span>Traceback (most recent call last)
+<span class="n">File</span> <span class="o">~/</span><span class="n">anaconda3</span><span class="o">/</span><span class="n">envs</span><span class="o">/</span><span class="n">cmse201</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="mf">.12</span><span class="o">/</span><span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="o">/</span><span class="n">numpy</span><span class="o">/</span><span class="n">_core</span><span class="o">/</span><span class="fm">__init__</span><span class="o">.</span><span class="n">py</span><span class="p">:</span><span class="mi">23</span>
+<span class="g g-Whitespace">     </span><span class="mi">22</span> <span class="k">try</span><span class="p">:</span>
+<span class="ne">---&gt; </span><span class="mi">23</span>     <span class="kn">from</span><span class="w"> </span><span class="nn">.</span><span class="w"> </span><span class="kn">import</span> <span class="n">multiarray</span>
+<span class="g g-Whitespace">     </span><span class="mi">24</span> <span class="k">except</span> <span class="ne">ImportError</span> <span class="k">as</span> <span class="n">exc</span><span class="p">:</span>
+
+<span class="n">File</span> <span class="o">~/</span><span class="n">anaconda3</span><span class="o">/</span><span class="n">envs</span><span class="o">/</span><span class="n">cmse201</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="mf">.12</span><span class="o">/</span><span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="o">/</span><span class="n">numpy</span><span class="o">/</span><span class="n">_core</span><span class="o">/</span><span class="n">multiarray</span><span class="o">.</span><span class="n">py</span><span class="p">:</span><span class="mi">10</span>
+<span class="g g-Whitespace">      </span><span class="mi">9</span> <span class="kn">import</span><span class="w"> </span><span class="nn">functools</span>
+<span class="ne">---&gt; </span><span class="mi">10</span> <span class="kn">from</span><span class="w"> </span><span class="nn">.</span><span class="w"> </span><span class="kn">import</span> <span class="n">overrides</span>
+<span class="g g-Whitespace">     </span><span class="mi">11</span> <span class="kn">from</span><span class="w"> </span><span class="nn">.</span><span class="w"> </span><span class="kn">import</span> <span class="n">_multiarray_umath</span>
+
+<span class="n">File</span> <span class="o">~/</span><span class="n">anaconda3</span><span class="o">/</span><span class="n">envs</span><span class="o">/</span><span class="n">cmse201</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="mf">.12</span><span class="o">/</span><span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="o">/</span><span class="n">numpy</span><span class="o">/</span><span class="n">_core</span><span class="o">/</span><span class="n">overrides</span><span class="o">.</span><span class="n">py</span><span class="p">:</span><span class="mi">8</span>
+<span class="g g-Whitespace">      </span><span class="mi">7</span> <span class="kn">from</span><span class="w"> </span><span class="nn">.._utils._inspect</span><span class="w"> </span><span class="kn">import</span> <span class="n">getargspec</span>
+<span class="ne">----&gt; </span><span class="mi">8</span> <span class="kn">from</span><span class="w"> </span><span class="nn">numpy._core._multiarray_umath</span><span class="w"> </span><span class="kn">import</span> <span class="p">(</span>
+<span class="g g-Whitespace">      </span><span class="mi">9</span>     <span class="n">add_docstring</span><span class="p">,</span>  <span class="n">_get_implementing_args</span><span class="p">,</span> <span class="n">_ArrayFunctionDispatcher</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">12</span> <span class="n">ARRAY_FUNCTIONS</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
+
+<span class="ne">ImportError</span>: dlopen(/Users/caballero/anaconda3/envs/cmse201/lib/python3.12/site-packages/numpy/_core/_multiarray_umath.cpython-312-darwin.so, 0x0002): Library not loaded: @rpath/libgfortran.5.dylib
+  <span class="n">Referenced</span> <span class="n">from</span><span class="p">:</span> <span class="o">&lt;</span><span class="mi">0</span><span class="n">B9C315B</span><span class="o">-</span><span class="n">A1DD</span><span class="o">-</span><span class="mi">3527</span><span class="o">-</span><span class="mi">88</span><span class="n">DB</span><span class="o">-</span><span class="mi">4</span><span class="n">B90531D343F</span><span class="o">&gt;</span> <span class="o">/</span><span class="n">Users</span><span class="o">/</span><span class="n">caballero</span><span class="o">/</span><span class="n">anaconda3</span><span class="o">/</span><span class="n">envs</span><span class="o">/</span><span class="n">cmse201</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libopenblas</span><span class="mf">.0</span><span class="o">.</span><span class="n">dylib</span>
+  <span class="n">Reason</span><span class="p">:</span> <span class="n">tried</span><span class="p">:</span> <span class="s1">&#39;/Users/caballero/anaconda3/envs/cmse201/lib/libgfortran.5.dylib&#39;</span> <span class="p">(</span><span class="n">duplicate</span> <span class="n">LC_RPATH</span> <span class="s1">&#39;@loader_path&#39;</span><span class="p">),</span> <span class="s1">&#39;/Users/caballero/anaconda3/envs/cmse201/lib/libgfortran.5.dylib&#39;</span> <span class="p">(</span><span class="n">duplicate</span> <span class="n">LC_RPATH</span> <span class="s1">&#39;@loader_path&#39;</span><span class="p">),</span> <span class="s1">&#39;/Users/caballero/anaconda3/envs/cmse201/lib/python3.12/site-packages/numpy/_core/../../../../libgfortran.5.dylib&#39;</span> <span class="p">(</span><span class="n">duplicate</span> <span class="n">LC_RPATH</span> <span class="s1">&#39;@loader_path&#39;</span><span class="p">),</span> <span class="s1">&#39;/Users/caballero/anaconda3/envs/cmse201/lib/python3.12/site-packages/numpy/_core/../../../../libgfortran.5.dylib&#39;</span> <span class="p">(</span><span class="n">duplicate</span> <span class="n">LC_RPATH</span> <span class="s1">&#39;@loader_path&#39;</span><span class="p">),</span> <span class="s1">&#39;/Users/caballero/anaconda3/envs/cmse201/bin/../lib/libgfortran.5.dylib&#39;</span> <span class="p">(</span><span class="n">duplicate</span> <span class="n">LC_RPATH</span> <span class="s1">&#39;@loader_path&#39;</span><span class="p">),</span> <span class="s1">&#39;/Users/caballero/anaconda3/envs/cmse201/bin/../lib/libgfortran.5.dylib&#39;</span> <span class="p">(</span><span class="n">duplicate</span> <span class="n">LC_RPATH</span> <span class="s1">&#39;@loader_path&#39;</span><span class="p">),</span> <span class="s1">&#39;/usr/local/lib/libgfortran.5.dylib&#39;</span> <span class="p">(</span><span class="n">no</span> <span class="n">such</span> <span class="n">file</span><span class="p">),</span> <span class="s1">&#39;/usr/lib/libgfortran.5.dylib&#39;</span> <span class="p">(</span><span class="n">no</span> <span class="n">such</span> <span class="n">file</span><span class="p">,</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">dyld</span> <span class="n">cache</span><span class="p">)</span>
+
+<span class="n">During</span> <span class="n">handling</span> <span class="n">of</span> <span class="n">the</span> <span class="n">above</span> <span class="n">exception</span><span class="p">,</span> <span class="n">another</span> <span class="n">exception</span> <span class="n">occurred</span><span class="p">:</span>
+
+<span class="ne">ImportError</span><span class="g g-Whitespace">                               </span>Traceback (most recent call last)
+<span class="n">File</span> <span class="o">~/</span><span class="n">anaconda3</span><span class="o">/</span><span class="n">envs</span><span class="o">/</span><span class="n">cmse201</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="mf">.12</span><span class="o">/</span><span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="o">/</span><span class="n">numpy</span><span class="o">/</span><span class="fm">__init__</span><span class="o">.</span><span class="n">py</span><span class="p">:</span><span class="mi">114</span>
+<span class="g g-Whitespace">    </span><span class="mi">113</span> <span class="k">try</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">114</span>     <span class="kn">from</span><span class="w"> </span><span class="nn">numpy.__config__</span><span class="w"> </span><span class="kn">import</span> <span class="n">show</span> <span class="k">as</span> <span class="n">show_config</span>
+<span class="g g-Whitespace">    </span><span class="mi">115</span> <span class="k">except</span> <span class="ne">ImportError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+
+<span class="n">File</span> <span class="o">~/</span><span class="n">anaconda3</span><span class="o">/</span><span class="n">envs</span><span class="o">/</span><span class="n">cmse201</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="mf">.12</span><span class="o">/</span><span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="o">/</span><span class="n">numpy</span><span class="o">/</span><span class="n">__config__</span><span class="o">.</span><span class="n">py</span><span class="p">:</span><span class="mi">4</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="kn">from</span><span class="w"> </span><span class="nn">enum</span><span class="w"> </span><span class="kn">import</span> <span class="n">Enum</span>
+<span class="ne">----&gt; </span><span class="mi">4</span> <span class="kn">from</span><span class="w"> </span><span class="nn">numpy._core._multiarray_umath</span><span class="w"> </span><span class="kn">import</span> <span class="p">(</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span>     <span class="n">__cpu_features__</span><span class="p">,</span>
+<span class="g g-Whitespace">      </span><span class="mi">6</span>     <span class="n">__cpu_baseline__</span><span class="p">,</span>
+<span class="g g-Whitespace">      </span><span class="mi">7</span>     <span class="n">__cpu_dispatch__</span><span class="p">,</span>
+<span class="g g-Whitespace">      </span><span class="mi">8</span> <span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">10</span> <span class="n">__all__</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;show&quot;</span><span class="p">]</span>
+
+<span class="n">File</span> <span class="o">~/</span><span class="n">anaconda3</span><span class="o">/</span><span class="n">envs</span><span class="o">/</span><span class="n">cmse201</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="mf">.12</span><span class="o">/</span><span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="o">/</span><span class="n">numpy</span><span class="o">/</span><span class="n">_core</span><span class="o">/</span><span class="fm">__init__</span><span class="o">.</span><span class="n">py</span><span class="p">:</span><span class="mi">49</span>
+<span class="g g-Whitespace">     </span><span class="mi">26</span>     <span class="n">msg</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="g g-Whitespace">     </span><span class="mi">27</span><span class="s2"> </span>
+<span class="g g-Whitespace">     </span><span class="mi">28</span><span class="s2"> IMPORTANT: PLEASE READ THIS FOR ADVICE ON HOW TO SOLVE THIS ISSUE!</span>
+<span class="s2">   (...)</span>
+<span class="g g-Whitespace">     </span><span class="mi">47</span><span class="s2"> &quot;&quot;&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">version_info</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">sys</span><span class="o">.</span><span class="n">version_info</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">sys</span><span class="o">.</span><span class="n">executable</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">48</span>         <span class="n">__version__</span><span class="p">,</span> <span class="n">exc</span><span class="p">)</span>
+<span class="ne">---&gt; </span><span class="mi">49</span>     <span class="k">raise</span> <span class="ne">ImportError</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">50</span> <span class="k">finally</span><span class="p">:</span>
+
+<span class="ne">ImportError</span>: 
+
+<span class="ne">IMPORTANT</span>: PLEASE READ THIS FOR ADVICE ON HOW TO SOLVE THIS ISSUE!
+
+<span class="n">Importing</span> <span class="n">the</span> <span class="n">numpy</span> <span class="n">C</span><span class="o">-</span><span class="n">extensions</span> <span class="n">failed</span><span class="o">.</span> <span class="n">This</span> <span class="n">error</span> <span class="n">can</span> <span class="n">happen</span> <span class="k">for</span>
+<span class="n">many</span> <span class="n">reasons</span><span class="p">,</span> <span class="n">often</span> <span class="n">due</span> <span class="n">to</span> <span class="n">issues</span> <span class="k">with</span> <span class="n">your</span> <span class="n">setup</span> <span class="ow">or</span> <span class="n">how</span> <span class="n">NumPy</span> <span class="n">was</span>
+<span class="n">installed</span><span class="o">.</span>
+
+<span class="n">We</span> <span class="n">have</span> <span class="n">compiled</span> <span class="n">some</span> <span class="n">common</span> <span class="n">reasons</span> <span class="ow">and</span> <span class="n">troubleshooting</span> <span class="n">tips</span> <span class="n">at</span><span class="p">:</span>
+
+    <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">numpy</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">devdocs</span><span class="o">/</span><span class="n">user</span><span class="o">/</span><span class="n">troubleshooting</span><span class="o">-</span><span class="n">importerror</span><span class="o">.</span><span class="n">html</span>
+
+<span class="n">Please</span> <span class="n">note</span> <span class="ow">and</span> <span class="n">check</span> <span class="n">the</span> <span class="n">following</span><span class="p">:</span>
+
+  <span class="o">*</span> <span class="n">The</span> <span class="n">Python</span> <span class="n">version</span> <span class="ow">is</span><span class="p">:</span> <span class="n">Python3</span><span class="mf">.12</span> <span class="kn">from</span><span class="w"> </span><span class="s2">&quot;/Users/caballero/anaconda3/envs/cmse201/bin/python&quot;</span>
+  <span class="o">*</span> <span class="n">The</span> <span class="n">NumPy</span> <span class="n">version</span> <span class="ow">is</span><span class="p">:</span> <span class="s2">&quot;2.1.0&quot;</span>
+
+<span class="ow">and</span> <span class="n">make</span> <span class="n">sure</span> <span class="n">that</span> <span class="n">they</span> <span class="n">are</span> <span class="n">the</span> <span class="n">versions</span> <span class="n">you</span> <span class="n">expect</span><span class="o">.</span>
+<span class="n">Please</span> <span class="n">carefully</span> <span class="n">study</span> <span class="n">the</span> <span class="n">documentation</span> <span class="n">linked</span> <span class="n">above</span> <span class="k">for</span> <span class="n">further</span> <span class="n">help</span><span class="o">.</span>
+
+<span class="n">Original</span> <span class="n">error</span> <span class="n">was</span><span class="p">:</span> <span class="n">dlopen</span><span class="p">(</span><span class="o">/</span><span class="n">Users</span><span class="o">/</span><span class="n">caballero</span><span class="o">/</span><span class="n">anaconda3</span><span class="o">/</span><span class="n">envs</span><span class="o">/</span><span class="n">cmse201</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="mf">.12</span><span class="o">/</span><span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="o">/</span><span class="n">numpy</span><span class="o">/</span><span class="n">_core</span><span class="o">/</span><span class="n">_multiarray_umath</span><span class="o">.</span><span class="n">cpython</span><span class="o">-</span><span class="mi">312</span><span class="o">-</span><span class="n">darwin</span><span class="o">.</span><span class="n">so</span><span class="p">,</span> <span class="mh">0x0002</span><span class="p">):</span> <span class="n">Library</span> <span class="ow">not</span> <span class="n">loaded</span><span class="p">:</span> <span class="nd">@rpath</span><span class="o">/</span><span class="n">libgfortran</span><span class="mf">.5</span><span class="o">.</span><span class="n">dylib</span>
+  <span class="n">Referenced</span> <span class="n">from</span><span class="p">:</span> <span class="o">&lt;</span><span class="mi">0</span><span class="n">B9C315B</span><span class="o">-</span><span class="n">A1DD</span><span class="o">-</span><span class="mi">3527</span><span class="o">-</span><span class="mi">88</span><span class="n">DB</span><span class="o">-</span><span class="mi">4</span><span class="n">B90531D343F</span><span class="o">&gt;</span> <span class="o">/</span><span class="n">Users</span><span class="o">/</span><span class="n">caballero</span><span class="o">/</span><span class="n">anaconda3</span><span class="o">/</span><span class="n">envs</span><span class="o">/</span><span class="n">cmse201</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libopenblas</span><span class="mf">.0</span><span class="o">.</span><span class="n">dylib</span>
+  <span class="n">Reason</span><span class="p">:</span> <span class="n">tried</span><span class="p">:</span> <span class="s1">&#39;/Users/caballero/anaconda3/envs/cmse201/lib/libgfortran.5.dylib&#39;</span> <span class="p">(</span><span class="n">duplicate</span> <span class="n">LC_RPATH</span> <span class="s1">&#39;@loader_path&#39;</span><span class="p">),</span> <span class="s1">&#39;/Users/caballero/anaconda3/envs/cmse201/lib/libgfortran.5.dylib&#39;</span> <span class="p">(</span><span class="n">duplicate</span> <span class="n">LC_RPATH</span> <span class="s1">&#39;@loader_path&#39;</span><span class="p">),</span> <span class="s1">&#39;/Users/caballero/anaconda3/envs/cmse201/lib/python3.12/site-packages/numpy/_core/../../../../libgfortran.5.dylib&#39;</span> <span class="p">(</span><span class="n">duplicate</span> <span class="n">LC_RPATH</span> <span class="s1">&#39;@loader_path&#39;</span><span class="p">),</span> <span class="s1">&#39;/Users/caballero/anaconda3/envs/cmse201/lib/python3.12/site-packages/numpy/_core/../../../../libgfortran.5.dylib&#39;</span> <span class="p">(</span><span class="n">duplicate</span> <span class="n">LC_RPATH</span> <span class="s1">&#39;@loader_path&#39;</span><span class="p">),</span> <span class="s1">&#39;/Users/caballero/anaconda3/envs/cmse201/bin/../lib/libgfortran.5.dylib&#39;</span> <span class="p">(</span><span class="n">duplicate</span> <span class="n">LC_RPATH</span> <span class="s1">&#39;@loader_path&#39;</span><span class="p">),</span> <span class="s1">&#39;/Users/caballero/anaconda3/envs/cmse201/bin/../lib/libgfortran.5.dylib&#39;</span> <span class="p">(</span><span class="n">duplicate</span> <span class="n">LC_RPATH</span> <span class="s1">&#39;@loader_path&#39;</span><span class="p">),</span> <span class="s1">&#39;/usr/local/lib/libgfortran.5.dylib&#39;</span> <span class="p">(</span><span class="n">no</span> <span class="n">such</span> <span class="n">file</span><span class="p">),</span> <span class="s1">&#39;/usr/lib/libgfortran.5.dylib&#39;</span> <span class="p">(</span><span class="n">no</span> <span class="n">such</span> <span class="n">file</span><span class="p">,</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">dyld</span> <span class="n">cache</span><span class="p">)</span>
+
+
+<span class="n">The</span> <span class="n">above</span> <span class="n">exception</span> <span class="n">was</span> <span class="n">the</span> <span class="n">direct</span> <span class="n">cause</span> <span class="n">of</span> <span class="n">the</span> <span class="n">following</span> <span class="n">exception</span><span class="p">:</span>
+
+<span class="ne">ImportError</span><span class="g g-Whitespace">                               </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">3</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="n">plt</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;seaborn-v0_8-colorblind&#39;</span><span class="p">)</span>
+
+<span class="n">File</span> <span class="o">~/</span><span class="n">anaconda3</span><span class="o">/</span><span class="n">envs</span><span class="o">/</span><span class="n">cmse201</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="mf">.12</span><span class="o">/</span><span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="o">/</span><span class="n">numpy</span><span class="o">/</span><span class="fm">__init__</span><span class="o">.</span><span class="n">py</span><span class="p">:</span><span class="mi">119</span>
+<span class="g g-Whitespace">    </span><span class="mi">115</span> <span class="k">except</span> <span class="ne">ImportError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">116</span>     <span class="n">msg</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;Error importing numpy: you should not try to import numpy from</span>
+<span class="g g-Whitespace">    </span><span class="mi">117</span><span class="s2">     its source directory; please exit the numpy source tree, and relaunch</span>
+<span class="g g-Whitespace">    </span><span class="mi">118</span><span class="s2">     your python interpreter from there.&quot;&quot;&quot;</span>
+<span class="ne">--&gt; </span><span class="mi">119</span>     <span class="k">raise</span> <span class="ne">ImportError</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span> <span class="kn">from</span><span class="w"> </span><span class="nn">e</span>
+<span class="g g-Whitespace">    </span><span class="mi">121</span> <span class="kn">from</span><span class="w"> </span><span class="nn">.</span><span class="w"> </span><span class="kn">import</span> <span class="n">_core</span>
+<span class="g g-Whitespace">    </span><span class="mi">122</span> <span class="kn">from</span><span class="w"> </span><span class="nn">._core</span><span class="w"> </span><span class="kn">import</span> <span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">123</span>     <span class="n">False_</span><span class="p">,</span> <span class="n">ScalarType</span><span class="p">,</span> <span class="n">True_</span><span class="p">,</span> <span class="n">_get_promotion_state</span><span class="p">,</span> <span class="n">_no_nep50_warning</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">124</span>     <span class="n">_set_promotion_state</span><span class="p">,</span> <span class="nb">abs</span><span class="p">,</span> <span class="n">absolute</span><span class="p">,</span> <span class="n">acos</span><span class="p">,</span> <span class="n">acosh</span><span class="p">,</span> <span class="n">add</span><span class="p">,</span> <span class="nb">all</span><span class="p">,</span> <span class="n">allclose</span><span class="p">,</span>
+   <span class="p">(</span><span class="o">...</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">169</span>     <span class="n">vstack</span><span class="p">,</span> <span class="n">where</span><span class="p">,</span> <span class="n">zeros</span><span class="p">,</span> <span class="n">zeros_like</span>
+<span class="g g-Whitespace">    </span><span class="mi">170</span> <span class="p">)</span>
+
+<span class="ne">ImportError</span>: Error importing numpy: you should not try to import numpy from
+        <span class="n">its</span> <span class="n">source</span> <span class="n">directory</span><span class="p">;</span> <span class="n">please</span> <span class="n">exit</span> <span class="n">the</span> <span class="n">numpy</span> <span class="n">source</span> <span class="n">tree</span><span class="p">,</span> <span class="ow">and</span> <span class="n">relaunch</span>
+        <span class="n">your</span> <span class="n">python</span> <span class="n">interpreter</span> <span class="kn">from</span><span class="w"> </span><span class="nn">there.</span>
+</pre></div>
+</div>
 </div>
 </div>
 </section>
@@ -888,7 +1173,107 @@ $<span class="math notranslate nohighlight">\(F_{damping} = -b\dot{x}\)</span>$<
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/893097c804709283237d7fb102dd52b93961b76a792a142c24189688e371b096.png" src="../_images/893097c804709283237d7fb102dd52b93961b76a792a142c24189688e371b096.png" />
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ImportError</span><span class="g g-Whitespace">                               </span>Traceback (most recent call last)
+<span class="n">File</span> <span class="o">~/</span><span class="n">anaconda3</span><span class="o">/</span><span class="n">envs</span><span class="o">/</span><span class="n">cmse201</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="mf">.12</span><span class="o">/</span><span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="o">/</span><span class="n">numpy</span><span class="o">/</span><span class="n">_core</span><span class="o">/</span><span class="fm">__init__</span><span class="o">.</span><span class="n">py</span><span class="p">:</span><span class="mi">23</span>
+<span class="g g-Whitespace">     </span><span class="mi">22</span> <span class="k">try</span><span class="p">:</span>
+<span class="ne">---&gt; </span><span class="mi">23</span>     <span class="kn">from</span><span class="w"> </span><span class="nn">.</span><span class="w"> </span><span class="kn">import</span> <span class="n">multiarray</span>
+<span class="g g-Whitespace">     </span><span class="mi">24</span> <span class="k">except</span> <span class="ne">ImportError</span> <span class="k">as</span> <span class="n">exc</span><span class="p">:</span>
+
+<span class="n">File</span> <span class="o">~/</span><span class="n">anaconda3</span><span class="o">/</span><span class="n">envs</span><span class="o">/</span><span class="n">cmse201</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="mf">.12</span><span class="o">/</span><span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="o">/</span><span class="n">numpy</span><span class="o">/</span><span class="n">_core</span><span class="o">/</span><span class="n">multiarray</span><span class="o">.</span><span class="n">py</span><span class="p">:</span><span class="mi">10</span>
+<span class="g g-Whitespace">      </span><span class="mi">9</span> <span class="kn">import</span><span class="w"> </span><span class="nn">functools</span>
+<span class="ne">---&gt; </span><span class="mi">10</span> <span class="kn">from</span><span class="w"> </span><span class="nn">.</span><span class="w"> </span><span class="kn">import</span> <span class="n">overrides</span>
+<span class="g g-Whitespace">     </span><span class="mi">11</span> <span class="kn">from</span><span class="w"> </span><span class="nn">.</span><span class="w"> </span><span class="kn">import</span> <span class="n">_multiarray_umath</span>
+
+<span class="n">File</span> <span class="o">~/</span><span class="n">anaconda3</span><span class="o">/</span><span class="n">envs</span><span class="o">/</span><span class="n">cmse201</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="mf">.12</span><span class="o">/</span><span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="o">/</span><span class="n">numpy</span><span class="o">/</span><span class="n">_core</span><span class="o">/</span><span class="n">overrides</span><span class="o">.</span><span class="n">py</span><span class="p">:</span><span class="mi">8</span>
+<span class="g g-Whitespace">      </span><span class="mi">7</span> <span class="kn">from</span><span class="w"> </span><span class="nn">.._utils._inspect</span><span class="w"> </span><span class="kn">import</span> <span class="n">getargspec</span>
+<span class="ne">----&gt; </span><span class="mi">8</span> <span class="kn">from</span><span class="w"> </span><span class="nn">numpy._core._multiarray_umath</span><span class="w"> </span><span class="kn">import</span> <span class="p">(</span>
+<span class="g g-Whitespace">      </span><span class="mi">9</span>     <span class="n">add_docstring</span><span class="p">,</span>  <span class="n">_get_implementing_args</span><span class="p">,</span> <span class="n">_ArrayFunctionDispatcher</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">12</span> <span class="n">ARRAY_FUNCTIONS</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
+
+<span class="ne">ImportError</span>: dlopen(/Users/caballero/anaconda3/envs/cmse201/lib/python3.12/site-packages/numpy/_core/_multiarray_umath.cpython-312-darwin.so, 0x0002): Library not loaded: @rpath/libgfortran.5.dylib
+  <span class="n">Referenced</span> <span class="n">from</span><span class="p">:</span> <span class="o">&lt;</span><span class="mi">0</span><span class="n">B9C315B</span><span class="o">-</span><span class="n">A1DD</span><span class="o">-</span><span class="mi">3527</span><span class="o">-</span><span class="mi">88</span><span class="n">DB</span><span class="o">-</span><span class="mi">4</span><span class="n">B90531D343F</span><span class="o">&gt;</span> <span class="o">/</span><span class="n">Users</span><span class="o">/</span><span class="n">caballero</span><span class="o">/</span><span class="n">anaconda3</span><span class="o">/</span><span class="n">envs</span><span class="o">/</span><span class="n">cmse201</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libopenblas</span><span class="mf">.0</span><span class="o">.</span><span class="n">dylib</span>
+  <span class="n">Reason</span><span class="p">:</span> <span class="n">tried</span><span class="p">:</span> <span class="s1">&#39;/Users/caballero/anaconda3/envs/cmse201/lib/libgfortran.5.dylib&#39;</span> <span class="p">(</span><span class="n">duplicate</span> <span class="n">LC_RPATH</span> <span class="s1">&#39;@loader_path&#39;</span><span class="p">),</span> <span class="s1">&#39;/Users/caballero/anaconda3/envs/cmse201/lib/libgfortran.5.dylib&#39;</span> <span class="p">(</span><span class="n">duplicate</span> <span class="n">LC_RPATH</span> <span class="s1">&#39;@loader_path&#39;</span><span class="p">),</span> <span class="s1">&#39;/Users/caballero/anaconda3/envs/cmse201/lib/python3.12/site-packages/numpy/_core/../../../../libgfortran.5.dylib&#39;</span> <span class="p">(</span><span class="n">duplicate</span> <span class="n">LC_RPATH</span> <span class="s1">&#39;@loader_path&#39;</span><span class="p">),</span> <span class="s1">&#39;/Users/caballero/anaconda3/envs/cmse201/lib/python3.12/site-packages/numpy/_core/../../../../libgfortran.5.dylib&#39;</span> <span class="p">(</span><span class="n">duplicate</span> <span class="n">LC_RPATH</span> <span class="s1">&#39;@loader_path&#39;</span><span class="p">),</span> <span class="s1">&#39;/Users/caballero/anaconda3/envs/cmse201/bin/../lib/libgfortran.5.dylib&#39;</span> <span class="p">(</span><span class="n">duplicate</span> <span class="n">LC_RPATH</span> <span class="s1">&#39;@loader_path&#39;</span><span class="p">),</span> <span class="s1">&#39;/Users/caballero/anaconda3/envs/cmse201/bin/../lib/libgfortran.5.dylib&#39;</span> <span class="p">(</span><span class="n">duplicate</span> <span class="n">LC_RPATH</span> <span class="s1">&#39;@loader_path&#39;</span><span class="p">),</span> <span class="s1">&#39;/usr/local/lib/libgfortran.5.dylib&#39;</span> <span class="p">(</span><span class="n">no</span> <span class="n">such</span> <span class="n">file</span><span class="p">),</span> <span class="s1">&#39;/usr/lib/libgfortran.5.dylib&#39;</span> <span class="p">(</span><span class="n">no</span> <span class="n">such</span> <span class="n">file</span><span class="p">,</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">dyld</span> <span class="n">cache</span><span class="p">)</span>
+
+<span class="n">During</span> <span class="n">handling</span> <span class="n">of</span> <span class="n">the</span> <span class="n">above</span> <span class="n">exception</span><span class="p">,</span> <span class="n">another</span> <span class="n">exception</span> <span class="n">occurred</span><span class="p">:</span>
+
+<span class="ne">ImportError</span><span class="g g-Whitespace">                               </span>Traceback (most recent call last)
+<span class="n">File</span> <span class="o">~/</span><span class="n">anaconda3</span><span class="o">/</span><span class="n">envs</span><span class="o">/</span><span class="n">cmse201</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="mf">.12</span><span class="o">/</span><span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="o">/</span><span class="n">numpy</span><span class="o">/</span><span class="fm">__init__</span><span class="o">.</span><span class="n">py</span><span class="p">:</span><span class="mi">114</span>
+<span class="g g-Whitespace">    </span><span class="mi">113</span> <span class="k">try</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">114</span>     <span class="kn">from</span><span class="w"> </span><span class="nn">numpy.__config__</span><span class="w"> </span><span class="kn">import</span> <span class="n">show</span> <span class="k">as</span> <span class="n">show_config</span>
+<span class="g g-Whitespace">    </span><span class="mi">115</span> <span class="k">except</span> <span class="ne">ImportError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+
+<span class="n">File</span> <span class="o">~/</span><span class="n">anaconda3</span><span class="o">/</span><span class="n">envs</span><span class="o">/</span><span class="n">cmse201</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="mf">.12</span><span class="o">/</span><span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="o">/</span><span class="n">numpy</span><span class="o">/</span><span class="n">__config__</span><span class="o">.</span><span class="n">py</span><span class="p">:</span><span class="mi">4</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="kn">from</span><span class="w"> </span><span class="nn">enum</span><span class="w"> </span><span class="kn">import</span> <span class="n">Enum</span>
+<span class="ne">----&gt; </span><span class="mi">4</span> <span class="kn">from</span><span class="w"> </span><span class="nn">numpy._core._multiarray_umath</span><span class="w"> </span><span class="kn">import</span> <span class="p">(</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span>     <span class="n">__cpu_features__</span><span class="p">,</span>
+<span class="g g-Whitespace">      </span><span class="mi">6</span>     <span class="n">__cpu_baseline__</span><span class="p">,</span>
+<span class="g g-Whitespace">      </span><span class="mi">7</span>     <span class="n">__cpu_dispatch__</span><span class="p">,</span>
+<span class="g g-Whitespace">      </span><span class="mi">8</span> <span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">10</span> <span class="n">__all__</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;show&quot;</span><span class="p">]</span>
+
+<span class="n">File</span> <span class="o">~/</span><span class="n">anaconda3</span><span class="o">/</span><span class="n">envs</span><span class="o">/</span><span class="n">cmse201</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="mf">.12</span><span class="o">/</span><span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="o">/</span><span class="n">numpy</span><span class="o">/</span><span class="n">_core</span><span class="o">/</span><span class="fm">__init__</span><span class="o">.</span><span class="n">py</span><span class="p">:</span><span class="mi">49</span>
+<span class="g g-Whitespace">     </span><span class="mi">26</span>     <span class="n">msg</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="g g-Whitespace">     </span><span class="mi">27</span><span class="s2"> </span>
+<span class="g g-Whitespace">     </span><span class="mi">28</span><span class="s2"> IMPORTANT: PLEASE READ THIS FOR ADVICE ON HOW TO SOLVE THIS ISSUE!</span>
+<span class="s2">   (...)</span>
+<span class="g g-Whitespace">     </span><span class="mi">47</span><span class="s2"> &quot;&quot;&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">version_info</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">sys</span><span class="o">.</span><span class="n">version_info</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">sys</span><span class="o">.</span><span class="n">executable</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">48</span>         <span class="n">__version__</span><span class="p">,</span> <span class="n">exc</span><span class="p">)</span>
+<span class="ne">---&gt; </span><span class="mi">49</span>     <span class="k">raise</span> <span class="ne">ImportError</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">50</span> <span class="k">finally</span><span class="p">:</span>
+
+<span class="ne">ImportError</span>: 
+
+<span class="ne">IMPORTANT</span>: PLEASE READ THIS FOR ADVICE ON HOW TO SOLVE THIS ISSUE!
+
+<span class="n">Importing</span> <span class="n">the</span> <span class="n">numpy</span> <span class="n">C</span><span class="o">-</span><span class="n">extensions</span> <span class="n">failed</span><span class="o">.</span> <span class="n">This</span> <span class="n">error</span> <span class="n">can</span> <span class="n">happen</span> <span class="k">for</span>
+<span class="n">many</span> <span class="n">reasons</span><span class="p">,</span> <span class="n">often</span> <span class="n">due</span> <span class="n">to</span> <span class="n">issues</span> <span class="k">with</span> <span class="n">your</span> <span class="n">setup</span> <span class="ow">or</span> <span class="n">how</span> <span class="n">NumPy</span> <span class="n">was</span>
+<span class="n">installed</span><span class="o">.</span>
+
+<span class="n">We</span> <span class="n">have</span> <span class="n">compiled</span> <span class="n">some</span> <span class="n">common</span> <span class="n">reasons</span> <span class="ow">and</span> <span class="n">troubleshooting</span> <span class="n">tips</span> <span class="n">at</span><span class="p">:</span>
+
+    <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">numpy</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">devdocs</span><span class="o">/</span><span class="n">user</span><span class="o">/</span><span class="n">troubleshooting</span><span class="o">-</span><span class="n">importerror</span><span class="o">.</span><span class="n">html</span>
+
+<span class="n">Please</span> <span class="n">note</span> <span class="ow">and</span> <span class="n">check</span> <span class="n">the</span> <span class="n">following</span><span class="p">:</span>
+
+  <span class="o">*</span> <span class="n">The</span> <span class="n">Python</span> <span class="n">version</span> <span class="ow">is</span><span class="p">:</span> <span class="n">Python3</span><span class="mf">.12</span> <span class="kn">from</span><span class="w"> </span><span class="s2">&quot;/Users/caballero/anaconda3/envs/cmse201/bin/python&quot;</span>
+  <span class="o">*</span> <span class="n">The</span> <span class="n">NumPy</span> <span class="n">version</span> <span class="ow">is</span><span class="p">:</span> <span class="s2">&quot;2.1.0&quot;</span>
+
+<span class="ow">and</span> <span class="n">make</span> <span class="n">sure</span> <span class="n">that</span> <span class="n">they</span> <span class="n">are</span> <span class="n">the</span> <span class="n">versions</span> <span class="n">you</span> <span class="n">expect</span><span class="o">.</span>
+<span class="n">Please</span> <span class="n">carefully</span> <span class="n">study</span> <span class="n">the</span> <span class="n">documentation</span> <span class="n">linked</span> <span class="n">above</span> <span class="k">for</span> <span class="n">further</span> <span class="n">help</span><span class="o">.</span>
+
+<span class="n">Original</span> <span class="n">error</span> <span class="n">was</span><span class="p">:</span> <span class="n">dlopen</span><span class="p">(</span><span class="o">/</span><span class="n">Users</span><span class="o">/</span><span class="n">caballero</span><span class="o">/</span><span class="n">anaconda3</span><span class="o">/</span><span class="n">envs</span><span class="o">/</span><span class="n">cmse201</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="mf">.12</span><span class="o">/</span><span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="o">/</span><span class="n">numpy</span><span class="o">/</span><span class="n">_core</span><span class="o">/</span><span class="n">_multiarray_umath</span><span class="o">.</span><span class="n">cpython</span><span class="o">-</span><span class="mi">312</span><span class="o">-</span><span class="n">darwin</span><span class="o">.</span><span class="n">so</span><span class="p">,</span> <span class="mh">0x0002</span><span class="p">):</span> <span class="n">Library</span> <span class="ow">not</span> <span class="n">loaded</span><span class="p">:</span> <span class="nd">@rpath</span><span class="o">/</span><span class="n">libgfortran</span><span class="mf">.5</span><span class="o">.</span><span class="n">dylib</span>
+  <span class="n">Referenced</span> <span class="n">from</span><span class="p">:</span> <span class="o">&lt;</span><span class="mi">0</span><span class="n">B9C315B</span><span class="o">-</span><span class="n">A1DD</span><span class="o">-</span><span class="mi">3527</span><span class="o">-</span><span class="mi">88</span><span class="n">DB</span><span class="o">-</span><span class="mi">4</span><span class="n">B90531D343F</span><span class="o">&gt;</span> <span class="o">/</span><span class="n">Users</span><span class="o">/</span><span class="n">caballero</span><span class="o">/</span><span class="n">anaconda3</span><span class="o">/</span><span class="n">envs</span><span class="o">/</span><span class="n">cmse201</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libopenblas</span><span class="mf">.0</span><span class="o">.</span><span class="n">dylib</span>
+  <span class="n">Reason</span><span class="p">:</span> <span class="n">tried</span><span class="p">:</span> <span class="s1">&#39;/Users/caballero/anaconda3/envs/cmse201/lib/libgfortran.5.dylib&#39;</span> <span class="p">(</span><span class="n">duplicate</span> <span class="n">LC_RPATH</span> <span class="s1">&#39;@loader_path&#39;</span><span class="p">),</span> <span class="s1">&#39;/Users/caballero/anaconda3/envs/cmse201/lib/libgfortran.5.dylib&#39;</span> <span class="p">(</span><span class="n">duplicate</span> <span class="n">LC_RPATH</span> <span class="s1">&#39;@loader_path&#39;</span><span class="p">),</span> <span class="s1">&#39;/Users/caballero/anaconda3/envs/cmse201/lib/python3.12/site-packages/numpy/_core/../../../../libgfortran.5.dylib&#39;</span> <span class="p">(</span><span class="n">duplicate</span> <span class="n">LC_RPATH</span> <span class="s1">&#39;@loader_path&#39;</span><span class="p">),</span> <span class="s1">&#39;/Users/caballero/anaconda3/envs/cmse201/lib/python3.12/site-packages/numpy/_core/../../../../libgfortran.5.dylib&#39;</span> <span class="p">(</span><span class="n">duplicate</span> <span class="n">LC_RPATH</span> <span class="s1">&#39;@loader_path&#39;</span><span class="p">),</span> <span class="s1">&#39;/Users/caballero/anaconda3/envs/cmse201/bin/../lib/libgfortran.5.dylib&#39;</span> <span class="p">(</span><span class="n">duplicate</span> <span class="n">LC_RPATH</span> <span class="s1">&#39;@loader_path&#39;</span><span class="p">),</span> <span class="s1">&#39;/Users/caballero/anaconda3/envs/cmse201/bin/../lib/libgfortran.5.dylib&#39;</span> <span class="p">(</span><span class="n">duplicate</span> <span class="n">LC_RPATH</span> <span class="s1">&#39;@loader_path&#39;</span><span class="p">),</span> <span class="s1">&#39;/usr/local/lib/libgfortran.5.dylib&#39;</span> <span class="p">(</span><span class="n">no</span> <span class="n">such</span> <span class="n">file</span><span class="p">),</span> <span class="s1">&#39;/usr/lib/libgfortran.5.dylib&#39;</span> <span class="p">(</span><span class="n">no</span> <span class="n">such</span> <span class="n">file</span><span class="p">,</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">dyld</span> <span class="n">cache</span><span class="p">)</span>
+
+
+<span class="n">The</span> <span class="n">above</span> <span class="n">exception</span> <span class="n">was</span> <span class="n">the</span> <span class="n">direct</span> <span class="n">cause</span> <span class="n">of</span> <span class="n">the</span> <span class="n">following</span> <span class="n">exception</span><span class="p">:</span>
+
+<span class="ne">ImportError</span><span class="g g-Whitespace">                               </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">4</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="n">plt</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;seaborn-v0_8-colorblind&#39;</span><span class="p">)</span>
+
+<span class="n">File</span> <span class="o">~/</span><span class="n">anaconda3</span><span class="o">/</span><span class="n">envs</span><span class="o">/</span><span class="n">cmse201</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="mf">.12</span><span class="o">/</span><span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="o">/</span><span class="n">numpy</span><span class="o">/</span><span class="fm">__init__</span><span class="o">.</span><span class="n">py</span><span class="p">:</span><span class="mi">119</span>
+<span class="g g-Whitespace">    </span><span class="mi">115</span> <span class="k">except</span> <span class="ne">ImportError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">116</span>     <span class="n">msg</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;Error importing numpy: you should not try to import numpy from</span>
+<span class="g g-Whitespace">    </span><span class="mi">117</span><span class="s2">     its source directory; please exit the numpy source tree, and relaunch</span>
+<span class="g g-Whitespace">    </span><span class="mi">118</span><span class="s2">     your python interpreter from there.&quot;&quot;&quot;</span>
+<span class="ne">--&gt; </span><span class="mi">119</span>     <span class="k">raise</span> <span class="ne">ImportError</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span> <span class="kn">from</span><span class="w"> </span><span class="nn">e</span>
+<span class="g g-Whitespace">    </span><span class="mi">121</span> <span class="kn">from</span><span class="w"> </span><span class="nn">.</span><span class="w"> </span><span class="kn">import</span> <span class="n">_core</span>
+<span class="g g-Whitespace">    </span><span class="mi">122</span> <span class="kn">from</span><span class="w"> </span><span class="nn">._core</span><span class="w"> </span><span class="kn">import</span> <span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">123</span>     <span class="n">False_</span><span class="p">,</span> <span class="n">ScalarType</span><span class="p">,</span> <span class="n">True_</span><span class="p">,</span> <span class="n">_get_promotion_state</span><span class="p">,</span> <span class="n">_no_nep50_warning</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">124</span>     <span class="n">_set_promotion_state</span><span class="p">,</span> <span class="nb">abs</span><span class="p">,</span> <span class="n">absolute</span><span class="p">,</span> <span class="n">acos</span><span class="p">,</span> <span class="n">acosh</span><span class="p">,</span> <span class="n">add</span><span class="p">,</span> <span class="nb">all</span><span class="p">,</span> <span class="n">allclose</span><span class="p">,</span>
+   <span class="p">(</span><span class="o">...</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">169</span>     <span class="n">vstack</span><span class="p">,</span> <span class="n">where</span><span class="p">,</span> <span class="n">zeros</span><span class="p">,</span> <span class="n">zeros_like</span>
+<span class="g g-Whitespace">    </span><span class="mi">170</span> <span class="p">)</span>
+
+<span class="ne">ImportError</span>: Error importing numpy: you should not try to import numpy from
+        <span class="n">its</span> <span class="n">source</span> <span class="n">directory</span><span class="p">;</span> <span class="n">please</span> <span class="n">exit</span> <span class="n">the</span> <span class="n">numpy</span> <span class="n">source</span> <span class="n">tree</span><span class="p">,</span> <span class="ow">and</span> <span class="n">relaunch</span>
+        <span class="n">your</span> <span class="n">python</span> <span class="n">interpreter</span> <span class="kn">from</span><span class="w"> </span><span class="nn">there.</span>
+</pre></div>
+</div>
 </div>
 </div>
 </section>
@@ -933,7 +1318,107 @@ $<span class="math notranslate nohighlight">\(x(t) = t e^{-\beta t}\)</span>$</p
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/eec7611d409c4f90afb1ab4b191df87a023063c83a37a15a6867258272f9d1a6.png" src="../_images/eec7611d409c4f90afb1ab4b191df87a023063c83a37a15a6867258272f9d1a6.png" />
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ImportError</span><span class="g g-Whitespace">                               </span>Traceback (most recent call last)
+<span class="n">File</span> <span class="o">~/</span><span class="n">anaconda3</span><span class="o">/</span><span class="n">envs</span><span class="o">/</span><span class="n">cmse201</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="mf">.12</span><span class="o">/</span><span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="o">/</span><span class="n">numpy</span><span class="o">/</span><span class="n">_core</span><span class="o">/</span><span class="fm">__init__</span><span class="o">.</span><span class="n">py</span><span class="p">:</span><span class="mi">23</span>
+<span class="g g-Whitespace">     </span><span class="mi">22</span> <span class="k">try</span><span class="p">:</span>
+<span class="ne">---&gt; </span><span class="mi">23</span>     <span class="kn">from</span><span class="w"> </span><span class="nn">.</span><span class="w"> </span><span class="kn">import</span> <span class="n">multiarray</span>
+<span class="g g-Whitespace">     </span><span class="mi">24</span> <span class="k">except</span> <span class="ne">ImportError</span> <span class="k">as</span> <span class="n">exc</span><span class="p">:</span>
+
+<span class="n">File</span> <span class="o">~/</span><span class="n">anaconda3</span><span class="o">/</span><span class="n">envs</span><span class="o">/</span><span class="n">cmse201</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="mf">.12</span><span class="o">/</span><span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="o">/</span><span class="n">numpy</span><span class="o">/</span><span class="n">_core</span><span class="o">/</span><span class="n">multiarray</span><span class="o">.</span><span class="n">py</span><span class="p">:</span><span class="mi">10</span>
+<span class="g g-Whitespace">      </span><span class="mi">9</span> <span class="kn">import</span><span class="w"> </span><span class="nn">functools</span>
+<span class="ne">---&gt; </span><span class="mi">10</span> <span class="kn">from</span><span class="w"> </span><span class="nn">.</span><span class="w"> </span><span class="kn">import</span> <span class="n">overrides</span>
+<span class="g g-Whitespace">     </span><span class="mi">11</span> <span class="kn">from</span><span class="w"> </span><span class="nn">.</span><span class="w"> </span><span class="kn">import</span> <span class="n">_multiarray_umath</span>
+
+<span class="n">File</span> <span class="o">~/</span><span class="n">anaconda3</span><span class="o">/</span><span class="n">envs</span><span class="o">/</span><span class="n">cmse201</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="mf">.12</span><span class="o">/</span><span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="o">/</span><span class="n">numpy</span><span class="o">/</span><span class="n">_core</span><span class="o">/</span><span class="n">overrides</span><span class="o">.</span><span class="n">py</span><span class="p">:</span><span class="mi">8</span>
+<span class="g g-Whitespace">      </span><span class="mi">7</span> <span class="kn">from</span><span class="w"> </span><span class="nn">.._utils._inspect</span><span class="w"> </span><span class="kn">import</span> <span class="n">getargspec</span>
+<span class="ne">----&gt; </span><span class="mi">8</span> <span class="kn">from</span><span class="w"> </span><span class="nn">numpy._core._multiarray_umath</span><span class="w"> </span><span class="kn">import</span> <span class="p">(</span>
+<span class="g g-Whitespace">      </span><span class="mi">9</span>     <span class="n">add_docstring</span><span class="p">,</span>  <span class="n">_get_implementing_args</span><span class="p">,</span> <span class="n">_ArrayFunctionDispatcher</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">12</span> <span class="n">ARRAY_FUNCTIONS</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
+
+<span class="ne">ImportError</span>: dlopen(/Users/caballero/anaconda3/envs/cmse201/lib/python3.12/site-packages/numpy/_core/_multiarray_umath.cpython-312-darwin.so, 0x0002): Library not loaded: @rpath/libgfortran.5.dylib
+  <span class="n">Referenced</span> <span class="n">from</span><span class="p">:</span> <span class="o">&lt;</span><span class="mi">0</span><span class="n">B9C315B</span><span class="o">-</span><span class="n">A1DD</span><span class="o">-</span><span class="mi">3527</span><span class="o">-</span><span class="mi">88</span><span class="n">DB</span><span class="o">-</span><span class="mi">4</span><span class="n">B90531D343F</span><span class="o">&gt;</span> <span class="o">/</span><span class="n">Users</span><span class="o">/</span><span class="n">caballero</span><span class="o">/</span><span class="n">anaconda3</span><span class="o">/</span><span class="n">envs</span><span class="o">/</span><span class="n">cmse201</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libopenblas</span><span class="mf">.0</span><span class="o">.</span><span class="n">dylib</span>
+  <span class="n">Reason</span><span class="p">:</span> <span class="n">tried</span><span class="p">:</span> <span class="s1">&#39;/Users/caballero/anaconda3/envs/cmse201/lib/libgfortran.5.dylib&#39;</span> <span class="p">(</span><span class="n">duplicate</span> <span class="n">LC_RPATH</span> <span class="s1">&#39;@loader_path&#39;</span><span class="p">),</span> <span class="s1">&#39;/Users/caballero/anaconda3/envs/cmse201/lib/libgfortran.5.dylib&#39;</span> <span class="p">(</span><span class="n">duplicate</span> <span class="n">LC_RPATH</span> <span class="s1">&#39;@loader_path&#39;</span><span class="p">),</span> <span class="s1">&#39;/Users/caballero/anaconda3/envs/cmse201/lib/python3.12/site-packages/numpy/_core/../../../../libgfortran.5.dylib&#39;</span> <span class="p">(</span><span class="n">duplicate</span> <span class="n">LC_RPATH</span> <span class="s1">&#39;@loader_path&#39;</span><span class="p">),</span> <span class="s1">&#39;/Users/caballero/anaconda3/envs/cmse201/lib/python3.12/site-packages/numpy/_core/../../../../libgfortran.5.dylib&#39;</span> <span class="p">(</span><span class="n">duplicate</span> <span class="n">LC_RPATH</span> <span class="s1">&#39;@loader_path&#39;</span><span class="p">),</span> <span class="s1">&#39;/Users/caballero/anaconda3/envs/cmse201/bin/../lib/libgfortran.5.dylib&#39;</span> <span class="p">(</span><span class="n">duplicate</span> <span class="n">LC_RPATH</span> <span class="s1">&#39;@loader_path&#39;</span><span class="p">),</span> <span class="s1">&#39;/Users/caballero/anaconda3/envs/cmse201/bin/../lib/libgfortran.5.dylib&#39;</span> <span class="p">(</span><span class="n">duplicate</span> <span class="n">LC_RPATH</span> <span class="s1">&#39;@loader_path&#39;</span><span class="p">),</span> <span class="s1">&#39;/usr/local/lib/libgfortran.5.dylib&#39;</span> <span class="p">(</span><span class="n">no</span> <span class="n">such</span> <span class="n">file</span><span class="p">),</span> <span class="s1">&#39;/usr/lib/libgfortran.5.dylib&#39;</span> <span class="p">(</span><span class="n">no</span> <span class="n">such</span> <span class="n">file</span><span class="p">,</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">dyld</span> <span class="n">cache</span><span class="p">)</span>
+
+<span class="n">During</span> <span class="n">handling</span> <span class="n">of</span> <span class="n">the</span> <span class="n">above</span> <span class="n">exception</span><span class="p">,</span> <span class="n">another</span> <span class="n">exception</span> <span class="n">occurred</span><span class="p">:</span>
+
+<span class="ne">ImportError</span><span class="g g-Whitespace">                               </span>Traceback (most recent call last)
+<span class="n">File</span> <span class="o">~/</span><span class="n">anaconda3</span><span class="o">/</span><span class="n">envs</span><span class="o">/</span><span class="n">cmse201</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="mf">.12</span><span class="o">/</span><span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="o">/</span><span class="n">numpy</span><span class="o">/</span><span class="fm">__init__</span><span class="o">.</span><span class="n">py</span><span class="p">:</span><span class="mi">114</span>
+<span class="g g-Whitespace">    </span><span class="mi">113</span> <span class="k">try</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">114</span>     <span class="kn">from</span><span class="w"> </span><span class="nn">numpy.__config__</span><span class="w"> </span><span class="kn">import</span> <span class="n">show</span> <span class="k">as</span> <span class="n">show_config</span>
+<span class="g g-Whitespace">    </span><span class="mi">115</span> <span class="k">except</span> <span class="ne">ImportError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+
+<span class="n">File</span> <span class="o">~/</span><span class="n">anaconda3</span><span class="o">/</span><span class="n">envs</span><span class="o">/</span><span class="n">cmse201</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="mf">.12</span><span class="o">/</span><span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="o">/</span><span class="n">numpy</span><span class="o">/</span><span class="n">__config__</span><span class="o">.</span><span class="n">py</span><span class="p">:</span><span class="mi">4</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="kn">from</span><span class="w"> </span><span class="nn">enum</span><span class="w"> </span><span class="kn">import</span> <span class="n">Enum</span>
+<span class="ne">----&gt; </span><span class="mi">4</span> <span class="kn">from</span><span class="w"> </span><span class="nn">numpy._core._multiarray_umath</span><span class="w"> </span><span class="kn">import</span> <span class="p">(</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span>     <span class="n">__cpu_features__</span><span class="p">,</span>
+<span class="g g-Whitespace">      </span><span class="mi">6</span>     <span class="n">__cpu_baseline__</span><span class="p">,</span>
+<span class="g g-Whitespace">      </span><span class="mi">7</span>     <span class="n">__cpu_dispatch__</span><span class="p">,</span>
+<span class="g g-Whitespace">      </span><span class="mi">8</span> <span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">10</span> <span class="n">__all__</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;show&quot;</span><span class="p">]</span>
+
+<span class="n">File</span> <span class="o">~/</span><span class="n">anaconda3</span><span class="o">/</span><span class="n">envs</span><span class="o">/</span><span class="n">cmse201</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="mf">.12</span><span class="o">/</span><span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="o">/</span><span class="n">numpy</span><span class="o">/</span><span class="n">_core</span><span class="o">/</span><span class="fm">__init__</span><span class="o">.</span><span class="n">py</span><span class="p">:</span><span class="mi">49</span>
+<span class="g g-Whitespace">     </span><span class="mi">26</span>     <span class="n">msg</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="g g-Whitespace">     </span><span class="mi">27</span><span class="s2"> </span>
+<span class="g g-Whitespace">     </span><span class="mi">28</span><span class="s2"> IMPORTANT: PLEASE READ THIS FOR ADVICE ON HOW TO SOLVE THIS ISSUE!</span>
+<span class="s2">   (...)</span>
+<span class="g g-Whitespace">     </span><span class="mi">47</span><span class="s2"> &quot;&quot;&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">version_info</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">sys</span><span class="o">.</span><span class="n">version_info</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">sys</span><span class="o">.</span><span class="n">executable</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">48</span>         <span class="n">__version__</span><span class="p">,</span> <span class="n">exc</span><span class="p">)</span>
+<span class="ne">---&gt; </span><span class="mi">49</span>     <span class="k">raise</span> <span class="ne">ImportError</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">50</span> <span class="k">finally</span><span class="p">:</span>
+
+<span class="ne">ImportError</span>: 
+
+<span class="ne">IMPORTANT</span>: PLEASE READ THIS FOR ADVICE ON HOW TO SOLVE THIS ISSUE!
+
+<span class="n">Importing</span> <span class="n">the</span> <span class="n">numpy</span> <span class="n">C</span><span class="o">-</span><span class="n">extensions</span> <span class="n">failed</span><span class="o">.</span> <span class="n">This</span> <span class="n">error</span> <span class="n">can</span> <span class="n">happen</span> <span class="k">for</span>
+<span class="n">many</span> <span class="n">reasons</span><span class="p">,</span> <span class="n">often</span> <span class="n">due</span> <span class="n">to</span> <span class="n">issues</span> <span class="k">with</span> <span class="n">your</span> <span class="n">setup</span> <span class="ow">or</span> <span class="n">how</span> <span class="n">NumPy</span> <span class="n">was</span>
+<span class="n">installed</span><span class="o">.</span>
+
+<span class="n">We</span> <span class="n">have</span> <span class="n">compiled</span> <span class="n">some</span> <span class="n">common</span> <span class="n">reasons</span> <span class="ow">and</span> <span class="n">troubleshooting</span> <span class="n">tips</span> <span class="n">at</span><span class="p">:</span>
+
+    <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">numpy</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">devdocs</span><span class="o">/</span><span class="n">user</span><span class="o">/</span><span class="n">troubleshooting</span><span class="o">-</span><span class="n">importerror</span><span class="o">.</span><span class="n">html</span>
+
+<span class="n">Please</span> <span class="n">note</span> <span class="ow">and</span> <span class="n">check</span> <span class="n">the</span> <span class="n">following</span><span class="p">:</span>
+
+  <span class="o">*</span> <span class="n">The</span> <span class="n">Python</span> <span class="n">version</span> <span class="ow">is</span><span class="p">:</span> <span class="n">Python3</span><span class="mf">.12</span> <span class="kn">from</span><span class="w"> </span><span class="s2">&quot;/Users/caballero/anaconda3/envs/cmse201/bin/python&quot;</span>
+  <span class="o">*</span> <span class="n">The</span> <span class="n">NumPy</span> <span class="n">version</span> <span class="ow">is</span><span class="p">:</span> <span class="s2">&quot;2.1.0&quot;</span>
+
+<span class="ow">and</span> <span class="n">make</span> <span class="n">sure</span> <span class="n">that</span> <span class="n">they</span> <span class="n">are</span> <span class="n">the</span> <span class="n">versions</span> <span class="n">you</span> <span class="n">expect</span><span class="o">.</span>
+<span class="n">Please</span> <span class="n">carefully</span> <span class="n">study</span> <span class="n">the</span> <span class="n">documentation</span> <span class="n">linked</span> <span class="n">above</span> <span class="k">for</span> <span class="n">further</span> <span class="n">help</span><span class="o">.</span>
+
+<span class="n">Original</span> <span class="n">error</span> <span class="n">was</span><span class="p">:</span> <span class="n">dlopen</span><span class="p">(</span><span class="o">/</span><span class="n">Users</span><span class="o">/</span><span class="n">caballero</span><span class="o">/</span><span class="n">anaconda3</span><span class="o">/</span><span class="n">envs</span><span class="o">/</span><span class="n">cmse201</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="mf">.12</span><span class="o">/</span><span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="o">/</span><span class="n">numpy</span><span class="o">/</span><span class="n">_core</span><span class="o">/</span><span class="n">_multiarray_umath</span><span class="o">.</span><span class="n">cpython</span><span class="o">-</span><span class="mi">312</span><span class="o">-</span><span class="n">darwin</span><span class="o">.</span><span class="n">so</span><span class="p">,</span> <span class="mh">0x0002</span><span class="p">):</span> <span class="n">Library</span> <span class="ow">not</span> <span class="n">loaded</span><span class="p">:</span> <span class="nd">@rpath</span><span class="o">/</span><span class="n">libgfortran</span><span class="mf">.5</span><span class="o">.</span><span class="n">dylib</span>
+  <span class="n">Referenced</span> <span class="n">from</span><span class="p">:</span> <span class="o">&lt;</span><span class="mi">0</span><span class="n">B9C315B</span><span class="o">-</span><span class="n">A1DD</span><span class="o">-</span><span class="mi">3527</span><span class="o">-</span><span class="mi">88</span><span class="n">DB</span><span class="o">-</span><span class="mi">4</span><span class="n">B90531D343F</span><span class="o">&gt;</span> <span class="o">/</span><span class="n">Users</span><span class="o">/</span><span class="n">caballero</span><span class="o">/</span><span class="n">anaconda3</span><span class="o">/</span><span class="n">envs</span><span class="o">/</span><span class="n">cmse201</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">libopenblas</span><span class="mf">.0</span><span class="o">.</span><span class="n">dylib</span>
+  <span class="n">Reason</span><span class="p">:</span> <span class="n">tried</span><span class="p">:</span> <span class="s1">&#39;/Users/caballero/anaconda3/envs/cmse201/lib/libgfortran.5.dylib&#39;</span> <span class="p">(</span><span class="n">duplicate</span> <span class="n">LC_RPATH</span> <span class="s1">&#39;@loader_path&#39;</span><span class="p">),</span> <span class="s1">&#39;/Users/caballero/anaconda3/envs/cmse201/lib/libgfortran.5.dylib&#39;</span> <span class="p">(</span><span class="n">duplicate</span> <span class="n">LC_RPATH</span> <span class="s1">&#39;@loader_path&#39;</span><span class="p">),</span> <span class="s1">&#39;/Users/caballero/anaconda3/envs/cmse201/lib/python3.12/site-packages/numpy/_core/../../../../libgfortran.5.dylib&#39;</span> <span class="p">(</span><span class="n">duplicate</span> <span class="n">LC_RPATH</span> <span class="s1">&#39;@loader_path&#39;</span><span class="p">),</span> <span class="s1">&#39;/Users/caballero/anaconda3/envs/cmse201/lib/python3.12/site-packages/numpy/_core/../../../../libgfortran.5.dylib&#39;</span> <span class="p">(</span><span class="n">duplicate</span> <span class="n">LC_RPATH</span> <span class="s1">&#39;@loader_path&#39;</span><span class="p">),</span> <span class="s1">&#39;/Users/caballero/anaconda3/envs/cmse201/bin/../lib/libgfortran.5.dylib&#39;</span> <span class="p">(</span><span class="n">duplicate</span> <span class="n">LC_RPATH</span> <span class="s1">&#39;@loader_path&#39;</span><span class="p">),</span> <span class="s1">&#39;/Users/caballero/anaconda3/envs/cmse201/bin/../lib/libgfortran.5.dylib&#39;</span> <span class="p">(</span><span class="n">duplicate</span> <span class="n">LC_RPATH</span> <span class="s1">&#39;@loader_path&#39;</span><span class="p">),</span> <span class="s1">&#39;/usr/local/lib/libgfortran.5.dylib&#39;</span> <span class="p">(</span><span class="n">no</span> <span class="n">such</span> <span class="n">file</span><span class="p">),</span> <span class="s1">&#39;/usr/lib/libgfortran.5.dylib&#39;</span> <span class="p">(</span><span class="n">no</span> <span class="n">such</span> <span class="n">file</span><span class="p">,</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">dyld</span> <span class="n">cache</span><span class="p">)</span>
+
+
+<span class="n">The</span> <span class="n">above</span> <span class="n">exception</span> <span class="n">was</span> <span class="n">the</span> <span class="n">direct</span> <span class="n">cause</span> <span class="n">of</span> <span class="n">the</span> <span class="n">following</span> <span class="n">exception</span><span class="p">:</span>
+
+<span class="ne">ImportError</span><span class="g g-Whitespace">                               </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">5</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="n">plt</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;seaborn-v0_8-colorblind&#39;</span><span class="p">)</span>
+
+<span class="n">File</span> <span class="o">~/</span><span class="n">anaconda3</span><span class="o">/</span><span class="n">envs</span><span class="o">/</span><span class="n">cmse201</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="mf">.12</span><span class="o">/</span><span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="o">/</span><span class="n">numpy</span><span class="o">/</span><span class="fm">__init__</span><span class="o">.</span><span class="n">py</span><span class="p">:</span><span class="mi">119</span>
+<span class="g g-Whitespace">    </span><span class="mi">115</span> <span class="k">except</span> <span class="ne">ImportError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">116</span>     <span class="n">msg</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;Error importing numpy: you should not try to import numpy from</span>
+<span class="g g-Whitespace">    </span><span class="mi">117</span><span class="s2">     its source directory; please exit the numpy source tree, and relaunch</span>
+<span class="g g-Whitespace">    </span><span class="mi">118</span><span class="s2">     your python interpreter from there.&quot;&quot;&quot;</span>
+<span class="ne">--&gt; </span><span class="mi">119</span>     <span class="k">raise</span> <span class="ne">ImportError</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span> <span class="kn">from</span><span class="w"> </span><span class="nn">e</span>
+<span class="g g-Whitespace">    </span><span class="mi">121</span> <span class="kn">from</span><span class="w"> </span><span class="nn">.</span><span class="w"> </span><span class="kn">import</span> <span class="n">_core</span>
+<span class="g g-Whitespace">    </span><span class="mi">122</span> <span class="kn">from</span><span class="w"> </span><span class="nn">._core</span><span class="w"> </span><span class="kn">import</span> <span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">123</span>     <span class="n">False_</span><span class="p">,</span> <span class="n">ScalarType</span><span class="p">,</span> <span class="n">True_</span><span class="p">,</span> <span class="n">_get_promotion_state</span><span class="p">,</span> <span class="n">_no_nep50_warning</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">124</span>     <span class="n">_set_promotion_state</span><span class="p">,</span> <span class="nb">abs</span><span class="p">,</span> <span class="n">absolute</span><span class="p">,</span> <span class="n">acos</span><span class="p">,</span> <span class="n">acosh</span><span class="p">,</span> <span class="n">add</span><span class="p">,</span> <span class="nb">all</span><span class="p">,</span> <span class="n">allclose</span><span class="p">,</span>
+   <span class="p">(</span><span class="o">...</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">169</span>     <span class="n">vstack</span><span class="p">,</span> <span class="n">where</span><span class="p">,</span> <span class="n">zeros</span><span class="p">,</span> <span class="n">zeros_like</span>
+<span class="g g-Whitespace">    </span><span class="mi">170</span> <span class="p">)</span>
+
+<span class="ne">ImportError</span>: Error importing numpy: you should not try to import numpy from
+        <span class="n">its</span> <span class="n">source</span> <span class="n">directory</span><span class="p">;</span> <span class="n">please</span> <span class="n">exit</span> <span class="n">the</span> <span class="n">numpy</span> <span class="n">source</span> <span class="n">tree</span><span class="p">,</span> <span class="ow">and</span> <span class="n">relaunch</span>
+        <span class="n">your</span> <span class="n">python</span> <span class="n">interpreter</span> <span class="kn">from</span><span class="w"> </span><span class="nn">there.</span>
+</pre></div>
+</div>
 </div>
 </div>
 </section>
@@ -996,7 +1481,8 @@ $<span class="math notranslate nohighlight">\(x(t) = t e^{-\beta t}\)</span>$</p
             
             
               
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
 
   <div class="sidebar-secondary-item">
@@ -1084,8 +1570,8 @@ This work is licensed under a <a rel="license" href="https://creativecommons.org
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
 
   <footer class="bd-footer">
   </footer>

@@ -4,6 +4,19 @@ Slides for PHY 321 appear in reverse chronological order, with the most recent s
 
 ---
 
+## Day 23 - Help Session - 17 Oct 2025
+
+[![Day 23](../slides/day-23-homework-session.png)](../slides/day-23-homework-session.pdf)
+
+:::info
+
+### 📂 Download Slides
+[HTML](../slides/day-23-homework-session.md) | [PDF](../slides/day-23-homework-session.pdf)
+
+:::
+
+---
+
 ## Day 22 - Damped Oscillations - 15 Oct 2025
 
 [![Day 22](../slides/day-22-damped-oscillations.png)](../slides/day-22-damped-oscillations.pdf)
