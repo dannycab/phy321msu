@@ -22,29 +22,76 @@ Source: [Wikipedia](https://upload.wikimedia.org/wikipedia/commons/2/25/Driven-p
 
 # Announcements
 
-* Midterm 1 is still being graded
-* Homework 6 is due next Friday
+* Midterm 1 is still being graded (sorry, bit off more than I can chew)
+* Homework 6 is due Friday
 * Homework 7 is posted, due next Friday
     * Final project check-in #1
-* Danny will be out this Wednesday
-    * Class will be on zoom <https://msu.zoom.us/j/92295821308>
-    * passcode: phy321
-    * No office hours Wednesday
+* **Friday's Class**: We will complete HW 6 Exercises 2 and 4 together.
 
 ---
 
 # Seminars this week
 
-**Most of MSU folks are at APS Global Physics Summit**
-
-## WEDNESDAY, March 19, 2025    
+## TUESDAY, October 21, 2025
  
-* Astronomy Seminar, 1:30 pm, 1400 BPS, Alex Rodriguez, University of Michigan, *Galaxy clusters, cosmology, and velocity dispersion*
-* FRIB Nuclear Science Seminar, 3:30pm., FRIB 1300 Auditorium,  Dr. Pierre Morfouace of CEA-DAM, *Mapping the new asymmetric fission island with the R3B/SOFIA setup*
-
-## THURSDAY, March 20, 2025
  
-Colloquium, 3:30 pm, 1415 BPS, Guillaume Pignol, University of Grenoble, *Ultracold neutrons:  a precision tool in fundamental physics*
+Theory Seminar, 11:00am., FRIB 1200 lab, In person and online via Zoom
+Speaker: Antonio Bjelcic, LLNL
+Title: Small and Large Amplitude Collective Dynamics within Nuclear Density Functional Theory
+Zoom Link: 964 7281 4717
+Meeting ID: 48824
+
+---
+
+# Seminars this week
+
+## WEDNESDAY, October 22, 2025
+ 
+ 
+FRIB Nuclear Science Seminar, 3:30pm., FRIB 1300 Auditorium and online via Zoom 
+Speaker: Dr. Nan Liu of Boston University 
+Title: Presolar Grains as Probes of Type II Supernova Nucleosynthesis
+Please click the link below to join the webinar:
+Join Zoom Meeting: https://msu.zoom.us/j/93944167137?pwd=jzvwvbL8YqDnJNpzDPat8IHcrFdtC5.1
+Meeting ID: 939 4416 7137
+Passcode: 239049
+ 
+---
+
+# Seminars this week
+
+##  THURSDAY, October 23, 2025
+ 
+Colloquium, 3:30 pm, 1415 BPS, in person and zoom.  Host ~ 
+Refreshments and social half-hour in BPS 1400 starting at 3 pm
+Speaker: Darryl Seligman, MSU
+Title: Divergent Small Bodies:  Interstellar Interlopers and Dark Comets 
+Zoom Link: https://msu.zoom.us/j/94951062663
+Password: 2002  Or complete link:  https://msu.zoom.us/j/94951062663?pwd=c48uM25P9UsRVuR74rkOioOWgpoxgC.1
+ 
+---
+
+# Seminars this week
+
+## FRIDAY, October 24, 2025 
+ 
+QuIC Seminar, 12:30pm, -1:30pm, 1300 BPS, Virtual only today
+Speaker: James Whitefield, Dartmouth
+Title: TBA
+Full Schedule is at: https://sites.google.com/msu.edu/quic-seminar/
+
+---
+
+# Seminars this week
+
+## FRIDAY, October 24, 2025 
+
+IReNA Online Seminar, 2:00 pm, In Person and Zoom, FRIB 2025 Nuclear Conference Room, Light refreshments will be served at 1:50pm. 
+Hosted by: Hosted by: Linda Lombardo (INAF Trieste)
+Speaker: Marta Molero, TU Darmstadt
+Title: Chemical evolution of neutron-capture elements: a multi-objective approach
+Zoom Link: https://msu.zoom.us/j/827950260
+Password: JINA
 
 ---
 
@@ -112,13 +159,12 @@ $$x(t) = (C_1 + C_2 t) e^{-\beta t}$$
 
 # Clicker Question 24-1
 
-Next week, we can choose what to do in class. What would you like to do?
+How are you doing?
 
-1. Fourier Series for solving ODEs (currently scheduled)
-2. Pathways to Chaos (build off oscillations)
-3. Collisions and Conservation Laws (momentum and angular momentum)
-4. Calculus of Variations (spend more time on this?)
-5. Other ideas?
+1. Semester is going well; I'm locked in.
+2. Semester is going alright; Tough but I'm working on it.
+3. Semester is not going great TBH; I need to make some changes.
+4. Danny, this semester is some BS.
 
 ---
 

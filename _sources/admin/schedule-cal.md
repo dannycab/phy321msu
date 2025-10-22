@@ -91,7 +91,7 @@ _All assignments are turned in using Gradescope as a single PDF._
 | **Week** | **Day**   | **Topic**                     | **Readings to Prepare** | **Important Events** |
 |:--------:|:---------:|:-----------------------------:|:-----------------------|:--------------------|
 | CW43     | 20 Oct    | **No Class - Fall Break**     |                        | 📝 [Homework 7 Assigned (Due 31 Oct)](../assignments/hw7.ipynb)                 |
-|          | 22 Oct    | Driven Oscillations; Resonance| 📓 [09 - Driving Oscillators and Resonance Phenomenon](../lecture-notes/09_notes.ipynb)<br>📚 JRT 5.5-5.6; MLB 8.6   |                    |
+|          | 22 Oct ([Slides](../slides/day-24-driven-oscillations.pdf))   | Driven Oscillations; Resonance| 📓 [09 - Driving Oscillators and Resonance Phenomenon](../lecture-notes/09_notes.ipynb)<br>📚 JRT 5.5-5.6; MLB 8.6   |                    |
 |          | 24 Oct    | Driven Oscillations; Resonance|                        | 📥 **Homework 6 Due**  |
 
 ---
