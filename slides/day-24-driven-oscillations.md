@@ -4,7 +4,7 @@ theme: graph_paper
 paginate: true
 
 title: Day 24 - Driven Oscillations
-description: Slides for PHY 321 Spring 2025, Day 24: Driven Oscillations
+description: Slides for PHY 321 Fall 2025, Day 24: Driven Oscillations
 author: Prof. Danny Caballero <caball14@msu.edu>
 keywords: classical mechanics, differential equations, motion, oscillations, driven oscillations
 url: https://dannycaballero.info/phy321msu/slides/day-24-homework-session.html
