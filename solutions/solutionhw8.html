@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Homework 8 (Due 12 Apr) &#8212; Classical Mechanics</title>
+    <title>Solution Homework 8 &#8212; Classical Mechanics</title>
   
   
   
@@ -16,33 +16,30 @@
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
     document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
-  <!--
-    this give us a css class that will be invisible only if js is disabled
-  -->
-  <noscript>
-    <style>
-      .pst-js-only { display: none !important; }
-
-    </style>
-  </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
-    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
   
-  <!-- So that users can add custom icons -->
-  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
     <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
     <script src="../_static/doctools.js?v=9a2dae69"></script>
@@ -60,14 +57,15 @@
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script>window.MathJax = {"tex2jax": {"inlineMath": [["$", "$"]]}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'solutions/solutionhw8';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Course Commitments" href="../resources/course-commitments.html" />
+    <link rel="prev" title="Midterm 2" href="solutionmidterm2.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-  <meta name="docsearch:version" content="" />
   </head>
   
   
@@ -83,8 +81,19 @@
     <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
   
-  <dialog id="pst-search-dialog">
-    
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
 <form class="bd-search d-flex align-items-center"
       action="../search.html"
       method="get">
@@ -92,6 +101,7 @@
   <input type="search"
          class="form-control"
          name="q"
+         id="search-input"
          placeholder="Search this book..."
          aria-label="Search this book..."
          autocomplete="off"
@@ -99,8 +109,8 @@
          autocapitalize="off"
          spellcheck="false"/>
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form>
-  </dialog>
+</form></div>
+  </div>
 
   <div class="pst-async-banner-revealer d-none">
   <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
@@ -116,10 +126,7 @@
       
       
       
-        
-      
-      <dialog id="pst-primary-sidebar-modal"></dialog>
-      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+      <div class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -149,17 +156,21 @@
     
     
     <img src="../_static/spartan-helmet.png" class="logo__image only-light" alt="Classical Mechanics - Home"/>
-    <img src="../_static/spartan-helmet.png" class="logo__image only-dark pst-js-only" alt="Classical Mechanics - Home"/>
+    <script>document.write(`<img src="../_static/spartan-helmet.png" class="logo__image only-dark" alt="Classical Mechanics - Home"/>`);</script>
   
   
 </a></div>
         <div class="sidebar-primary-item">
 
-<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
- <i class="fa-solid fa-magnifying-glass"></i>
- <span class="search-button__default-text">Search</span>
- <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
-</button></div>
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
@@ -172,20 +183,84 @@
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">About the course</span></p>
 <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../admin/getting-started.html">Getting Started</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../admin/teachers.html">Teachers and Grading</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../admin/resources.html">Additional Resources</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../admin/textbooks.html">Textbooks</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Calendar &amp; Lecture Materials</span></p>
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../admin/schedule-cal.html">Course Calendar</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../admin/links.html">Course Material and Links</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin/slides.html">Slides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin/handwritten-notes.html">Handwritten Notes</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Weekly Course Materials</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week1/01_start.html">Week 1- Overture: What is Classical Physics?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week1/01_start.html">Week 1 - Overture: What is Classical Physics?</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week1/01_notes.html">Week 1 - Notes: Introduction to Classical Mechanics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week2/02_start.html">Week 2 - Computing as a tool for science</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week2/02_notes.html">Week 2 - Notes: Mathematical Preliminaries</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week3/03_start.html">Week 3 - What is Mathematical Modeling?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week3/03_notes.html">Week 3 - Notes: Making Classical Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week4/04_start.html">Week 4 - Why does fluid drag complicate things?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week4/04_notes.html">Week 4 - Notes: Equations of Motion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week5/05_start.html">Week 5 - Conservation Laws</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week5/05_notes.html">Week 5 - Notes: Conservation of Energy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week6/06_start.html">Week 6 - Stability and Equilibria</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week6/06_notes.html">Week 6 - Notes: Stability and Energy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week6/06_notes_2.html">Week 6 - Notes: Linear and Angular Momentum</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week7/07_start.html">Week 7 - Nonlinear Dynamics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week7/07_notes.html">Week 7 - Notes: Critical Points; Phase Space; Trajectories</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week8/08_start.html">Week 8 - Oscillations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week8/08_notes.html">Week 8 - Notes: Oscillators and Modeling Oscillations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week9/09_start.html">Week 9 - Driven Oscillators and Resonance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week9/09_notes.html">Week 9 - Notes: Driven Oscillations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week10/10_start.html">Week 10 - Chaotic Dynamics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week10/10_notes.html">Week 10 - Activity: Modeling Chaotic Systems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week11/11_start.html">Week 11 - Calculus of Variations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week11/11_notes.html">Week 11 - Notes: The Euler-Lagrange Equation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week12/12_start.html">Week 12 - The Principle of Least Action</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week12/12_notes.html">Week 12 - Notes: Introduction to Lagrangian Mechanics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week13/13_start.html">Week 13 - Lagrangian Mechanics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week13/13_notes.html">Week 13 - Notes: Examples of Lagrangian Mechanics</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Assignments</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw1.html">Homework 1 (Due 19 Jan)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw1.html">Homework 1 (Due 24 Jan)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw2.html">Homework 2 (Due 31 Jan)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw3.html">Homework 3 (Due 07 Feb)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw4.html">Homework 4 (Due 17 Feb)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../midterms/midterm1.html">Midterm 1 (Due 28 Feb)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw5.html">Homework 5 (Due 14 Mar)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw6.html">Homework 6 (Due 21 Mar)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw7.html">Homework 7 (Due 28 Mar)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../midterms/midterm2.html">Midterm 2 (Due 11 Apr)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw8.html">Homework 8 (Due 18 Apr)</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Solutions</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="solutionhw1.html">Solution Homework 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="solutionhw2.html">Solution Homework 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="solutionhw3.html">Solution Homework 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="solutionhw4.html">Solution Homework 4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="solutionmidterm1.html">Midterm 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="solutionhw5.html">Solution Homework 5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="solutionhw6.html">Solution Homework 6</a></li>
+<li class="toctree-l1"><a class="reference internal" href="solutionhw7.html">Solution Homework 7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="solutionmidterm2.html">Midterm 2</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Solution Homework 8</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Resources</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../resources/course-commitments.html">Course Commitments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/iclicker-setup.html">i-Clicker Setup Instructions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/generative-ai.html">Generative Artificial Intelligence</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/gradescope-submissions.html">Submitting Assignments on Gradescope</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/finding-research.html">Finding Research Opportunities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/integrators.html">Numerical Integrators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/phase_diagrams.html">Plotting Phase Diagrams</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/chaotic_dynamics.html">Modeling Chaotic Systems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/computational-essay-rubric.html">Rubric for Computational Essay Final Project</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Honors Projects</span></p>
 <ul class="nav bd-sidenav">
@@ -200,14 +275,9 @@
   
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
-      <div class="sidebar-primary-item">
-<div id="ethical-ad-placement"
-      class="flat"
-      data-ea-publisher="readthedocs"
-      data-ea-type="readthedocs-sidebar"
-      data-ea-manual="true">
-</div></div>
   </div>
+  
+  <div id="rtd-footer-container"></div>
 
 
       </div>
@@ -238,37 +308,6 @@
         <div class="header-article-item">
 
 <div class="article-header-buttons">
-
-
-
-
-
-<div class="dropdown dropdown-launch-buttons">
-  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
-    <i class="fas fa-rocket"></i>
-  </button>
-  <ul class="dropdown-menu">
-      
-      
-      
-      <li><a href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/main?urlpath=tree/solutions/solutionhw8.ipynb" target="_blank"
-   class="btn btn-sm dropdown-item"
-   title="Launch on Binder"
-   data-bs-placement="left" data-bs-toggle="tooltip"
->
-  
-
-<span class="btn__icon-container">
-  
-    <img alt="Binder logo" src="../_static/images/logo_binder.svg">
-  </span>
-<span class="btn__text-container">Binder</span>
-</a>
-</li>
-      
-  </ul>
-</div>
-
 
 
 
@@ -335,16 +374,24 @@
 
 
 
-<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
-  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
-  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
-  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
-</button>
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
 
 
-<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
-</button>
+  </button>
+`);
+</script>
 <button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
 </button>
@@ -358,7 +405,7 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Homework 8 (Due 12 Apr)</h1>
+    <h1>Solution Homework 8</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -369,12 +416,11 @@
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-1-10pt-paths-along-a-curved-surface">Exercise 1 (10pt) Paths along a curved surface</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-2-15pt-snell-s-law">Exercise 2 (15pt) Snell’s Law</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-3-15pt-lagrangian-examples">Exercise 3 (15pt) Lagrangian Examples</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-4-25pt-changing-coordinates">Exercise 4 (25pt) Changing Coordinates</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-5-35-pt-motion-inside-a-paraboloid">Exercise 5 (35 pt) Motion inside a paraboloid</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-2-15pt-snell-s-law">Exercise 2 (15pt) Snell’s Law</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-3-15pt-lagrangian-examples">Exercise 3 (15pt) Lagrangian Examples</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-4-25pt-changing-coordinates">Exercise 4 (25pt) Changing Coordinates</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-5-35-pt-motion-inside-a-paraboloid">Exercise 5 (35 pt) Motion inside a paraboloid</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-6-20pt-project-check-in-3">Exercise 6 (20pt), Project Check-in 3</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#extra-credit-integrating-classwork-with-research">Extra Credit - Integrating Classwork With Research</a></li>
 </ul>
             </nav>
@@ -389,9 +435,9 @@
                   
   <!-- HTML file automatically generated from DocOnce source (https://github.com/doconce/doconce/)
 doconce format html hw5.do.txt --no_mako -->
-<!-- dom:TITLE: PHY321: Classical Mechanics 1 --><section class="tex2jax_ignore mathjax_ignore" id="homework-8-due-12-apr">
-<h1>Homework 8 (Due 12 Apr)<a class="headerlink" href="#homework-8-due-12-apr" title="Link to this heading">#</a></h1>
-<p><strong>Solution Homework 8, Spring 2024</strong></p>
+<!-- dom:TITLE: PHY321: Classical Mechanics 1 --><section id="solution-homework-8">
+<h1>Solution Homework 8<a class="headerlink" href="#solution-homework-8" title="Link to this heading">#</a></h1>
+<p><strong>Spring 2025</strong></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
@@ -400,20 +446,6 @@ doconce format html hw5.do.txt --no_mako -->
 <span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
 <span class="o">%</span><span class="k">matplotlib</span> inline
 <span class="n">plt</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;seaborn-v0_8-colorblind&#39;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">4</span>
-<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="kn">from</span><span class="w"> </span><span class="nn">math</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
-<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
-<span class="ne">----&gt; </span><span class="mi">4</span> <span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
-<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="n">get_ipython</span><span class="p">()</span><span class="o">.</span><span class="n">run_line_magic</span><span class="p">(</span><span class="s1">&#39;matplotlib&#39;</span><span class="p">,</span> <span class="s1">&#39;inline&#39;</span><span class="p">)</span>
-<span class="g g-Whitespace">      </span><span class="mi">6</span> <span class="n">plt</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;seaborn-v0_8-colorblind&#39;</span><span class="p">)</span>
-
-<span class="ne">ModuleNotFoundError</span>: No module named &#39;pandas&#39;
 </pre></div>
 </div>
 </div>
@@ -532,8 +564,9 @@ doconce format html hw5.do.txt --no_mako -->
 <div class="math notranslate nohighlight">
 \[n_1 \sin\theta_1 = n_2 \sin\theta_2.\]</div>
 </div>
+</section>
 <section id="exercise-3-15pt-lagrangian-examples">
-<h3>Exercise 3 (15pt) Lagrangian Examples<a class="headerlink" href="#exercise-3-15pt-lagrangian-examples" title="Link to this heading">#</a></h3>
+<h2>Exercise 3 (15pt) Lagrangian Examples<a class="headerlink" href="#exercise-3-15pt-lagrangian-examples" title="Link to this heading">#</a></h2>
 <p>Constructing the Lagrangian for a system can be a bit tricky. In this exercise you will be asked to construct the Lagrangian for a few systems and quickly find equations of motion to illustrate the process.</p>
 <ol class="arabic simple">
 <li><p>(2 pt) Construct the Lagrangian in 3D for a projectile subject to no air resistance in a uniform gravitational field. The coordinates are <span class="math notranslate nohighlight">\((x, y, z)\)</span> in the Cartesian coordinate system. Find the 3 equations of motion.</p></li>
@@ -634,7 +667,7 @@ doconce format html hw5.do.txt --no_mako -->
 </div>
 </section>
 <section id="exercise-4-25pt-changing-coordinates">
-<h3>Exercise 4 (25pt) Changing Coordinates<a class="headerlink" href="#exercise-4-25pt-changing-coordinates" title="Link to this heading">#</a></h3>
+<h2>Exercise 4 (25pt) Changing Coordinates<a class="headerlink" href="#exercise-4-25pt-changing-coordinates" title="Link to this heading">#</a></h2>
 <p>Consider two particles with masses <span class="math notranslate nohighlight">\(m_1=m_2=m\)</span> connected by a spring with spring constant <span class="math notranslate nohighlight">\(k\)</span>. They sit on a frictionless surface but are constrained to the <span class="math notranslate nohighlight">\(x\)</span>-axis. The location of the first particle is <span class="math notranslate nohighlight">\(x_1\)</span> and the location of the second particle is <span class="math notranslate nohighlight">\(x_2\)</span>. The spring is at equilibrium when the particles are a distance <span class="math notranslate nohighlight">\(L\)</span> apart. Assume the spring is massless and that the left mass never changes position with the right mass (i.e., the spring is always horizontal).</p>
 <ol class="arabic simple">
 <li><p>(3 pt) Write down the kinetic and potential energy for this system in terms of <span class="math notranslate nohighlight">\(x_1\)</span> and <span class="math notranslate nohighlight">\(x_2\)</span> and their associated velocities.</p></li>
@@ -761,7 +794,7 @@ doconce format html hw5.do.txt --no_mako -->
 <p>In this problem we are changing the coordinates to explore a different aspect of the problem (and to make the math easier). This is a common technique that will not always be obvious. But practice will help us identify when it is useful.</p>
 </section>
 <section id="exercise-5-35-pt-motion-inside-a-paraboloid">
-<h3>Exercise 5 (35 pt) Motion inside a paraboloid<a class="headerlink" href="#exercise-5-35-pt-motion-inside-a-paraboloid" title="Link to this heading">#</a></h3>
+<h2>Exercise 5 (35 pt) Motion inside a paraboloid<a class="headerlink" href="#exercise-5-35-pt-motion-inside-a-paraboloid" title="Link to this heading">#</a></h2>
 <p>Let’s figure out the motion of a particle stuck inside a paraboloid. The potential energy of the bead is given by <span class="math notranslate nohighlight">\(U = mgz\)</span>, where <span class="math notranslate nohighlight">\(m\)</span> is the mass of the bead, <span class="math notranslate nohighlight">\(g\)</span> is the acceleration due to gravity. The coordinates are <span class="math notranslate nohighlight">\((x, y, z)\)</span> in the Cartesian coordinate system.</p>
 <ol class="arabic simple">
 <li><p>(5 pt) Write down the Lagrangian for the system in terms of <span class="math notranslate nohighlight">\(x\)</span>, <span class="math notranslate nohighlight">\(y\)</span>, and <span class="math notranslate nohighlight">\(z\)</span> and their associated velocities <span class="math notranslate nohighlight">\(\mathcal{L}(x, y, z, \dot{x}, \dot{y}, \dot{z})\)</span>. Find the 3 equations of motion.</p></li>
@@ -920,10 +953,19 @@ doconce format html hw5.do.txt --no_mako -->
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Text(0.5, 0, &#39;Z&#39;)
 </pre></div>
 </div>
-<img alt="../_images/7570da9f3593c0de92f2b77b77d659f6a35fedcf3acfd5e776b8afaa5e8604d9.png" src="../_images/7570da9f3593c0de92f2b77b77d659f6a35fedcf3acfd5e776b8afaa5e8604d9.png" />
+<img alt="../_images/924970a8840d17d795001fd6720c63437828f2fe3689769305c861c137748f62.png" src="../_images/924970a8840d17d795001fd6720c63437828f2fe3689769305c861c137748f62.png" />
 </div>
 </div>
 </section>
+<section id="exercise-6-20pt-project-check-in-3">
+<h2>Exercise 6 (20pt), Project Check-in 3<a class="headerlink" href="#exercise-6-20pt-project-check-in-3" title="Link to this heading">#</a></h2>
+<p>This is the last of three check-ins for your final project. This week, you should be preparing to finish your computational essay. Following the posted <a class="reference internal" href="#../../resources/project_rubric.md"><span class="xref myst">rubric</span></a> for the computational essay, you should reflect on your progress and update your project. This is a chance to evaluate where you are in the process of completing your computational essay.</p>
+<ul class="simple">
+<li><p>5a (5 pts). Review your project in the context of the rubric. What have you been able to accomplish so far? What were you unable to do in the time you had? Be honest in your evaluation of your progress. What do you have left to do? (at least 250 words)</p></li>
+<li><p>5b (5 pts). What problems did you encounter in doing you work? What questions came up and how did you resolve them? Are there any unresolved questions? (at least 250 words)</p></li>
+<li><p>5c (5 pts). Provide an artifact from your project. This could be a plot, a code snippet, a data set, or a figure. Explain what this artifact is and how it fits into your project. (at least 100-200 words)</p></li>
+<li><p>5d (5 pts). Update your project timeline and milestones. How will you adjust your timeline to account for the work you have done and the work you have left to do? How will you meet the expectations from the rubric? (at least 100-200 words)</p></li>
+</ul>
 </section>
 <section id="extra-credit-integrating-classwork-with-research">
 <h2>Extra Credit - Integrating Classwork With Research<a class="headerlink" href="#extra-credit-integrating-classwork-with-research" title="Link to this heading">#</a></h2>
@@ -953,16 +995,16 @@ Talks given by researchers through the following clubs:</p>
         },
         codeMirrorConfig: {
             theme: "abcdef",
-            mode: "teaching"
+            mode: "jbook"
         },
         kernelOptions: {
-            name: "teaching",
+            name: "jbook",
             path: "./solutions"
         },
         predefinedOutput: true
     }
     </script>
-    <script>kernelName = 'teaching'</script>
+    <script>kernelName = 'jbook'</script>
 
                 </article>
               
@@ -974,6 +1016,24 @@ Talks given by researchers through the following clubs:</p>
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="solutionmidterm2.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Midterm 2</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../resources/course-commitments.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Course Commitments</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               
@@ -981,8 +1041,7 @@ Talks given by researchers through the following clubs:</p>
             
             
               
-                <dialog id="pst-secondary-sidebar-modal"></dialog>
-                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
 
   <div class="sidebar-secondary-item">
@@ -992,12 +1051,11 @@ Talks given by researchers through the following clubs:</p>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-1-10pt-paths-along-a-curved-surface">Exercise 1 (10pt) Paths along a curved surface</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-2-15pt-snell-s-law">Exercise 2 (15pt) Snell’s Law</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-3-15pt-lagrangian-examples">Exercise 3 (15pt) Lagrangian Examples</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-4-25pt-changing-coordinates">Exercise 4 (25pt) Changing Coordinates</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-5-35-pt-motion-inside-a-paraboloid">Exercise 5 (35 pt) Motion inside a paraboloid</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-2-15pt-snell-s-law">Exercise 2 (15pt) Snell’s Law</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-3-15pt-lagrangian-examples">Exercise 3 (15pt) Lagrangian Examples</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-4-25pt-changing-coordinates">Exercise 4 (25pt) Changing Coordinates</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-5-35-pt-motion-inside-a-paraboloid">Exercise 5 (35 pt) Motion inside a paraboloid</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-6-20pt-project-check-in-3">Exercise 6 (20pt), Project Check-in 3</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#extra-credit-integrating-classwork-with-research">Extra Credit - Integrating Classwork With Research</a></li>
 </ul>
   </nav></div>
@@ -1013,7 +1071,7 @@ Talks given by researchers through the following clubs:</p>
   <div class="footer-item">
     
 <p class="component-author">
-By Danny Caballero, Morten Hjorth-Jensen
+By Danny Caballero, Morten Hjorth-Jensen, Rachel Henderson
 </p>
 
   </div>
@@ -1047,8 +1105,8 @@ By Danny Caballero, Morten Hjorth-Jensen
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
-<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
 
   <footer class="bd-footer">
   </footer>
