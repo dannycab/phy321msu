@@ -4,9 +4,22 @@ Slides for PHY 321 appear in reverse chronological order, with the most recent s
 
 ---
 
+## Day 25 - Driven Oscillations - 24 Oct 2025
+
+[![Day 25](../slides/day-25-resonance.png)](../slides/day-25-resonance.pdf)
+
+:::info
+
+### 📂 Download Slides
+[HTML](../slides/day-25-resonance.md) | [PDF](../slides/day-25-resonance.pdf)
+
+:::
+
+---
+
 ## Day 24 - Driven Oscillations - 22 Oct 2025
 
-[![Day 23](../slides/day-24-driven-oscillations.png)](../slides/day-24-driven-oscillations.pdf)
+[![Day 24](../slides/day-24-driven-oscillations.png)](../slides/day-24-driven-oscillations.pdf)
 
 :::info
 
