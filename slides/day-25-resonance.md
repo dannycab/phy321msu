@@ -3,43 +3,18 @@ marp: true
 theme: graph_paper
 paginate: true
 
-title: Day 25 - Resonance
-description: Slides for PHY 321 Spring 2025, Day 25: Resonance
+title: Day 25 - Resonance + Homework Session
+description: Slides for PHY 321 Fall 2025, Day 25: Resonance
 author: Prof. Danny Caballero <caball14@msu.edu>
 keywords: classical mechanics, differential equations, motion, oscillations, resonance
 url: https://dannycaballero.info/phy321msu/slides/day-25-resonance.html
 ---
 
-# Day 25 - Resonance
+# Day 25 - Resonance + Homework Session
 
-![width:900px](../images/notes/week9/tuning-fork.png)
-
----
-
-# Announcements
-
-* Midterm 1 is still being graded
-* Homework 6 is due Friday
-* Homework 7 is posted, due next Friday
-* No office hours today
+![width:800px](../images/notes/week9/tuning-fork.png)
 
 ---
-
-# Seminars this week
-
-**Most of MSU folks are at APS Global Physics Summit**
-
-## WEDNESDAY, March 19, 2025    
- 
-* Astronomy Seminar, 1:30 pm, 1400 BPS, Alex Rodriguez, University of Michigan, *Galaxy clusters, cosmology, and velocity dispersion*
-* FRIB Nuclear Science Seminar, 3:30pm., FRIB 1300 Auditorium,  Dr. Pierre Morfouace of CEA-DAM, *Mapping the new asymmetric fission island with the R3B/SOFIA setup*
-
-## THURSDAY, March 20, 2025
- 
-Colloquium, 3:30 pm, 1415 BPS, Guillaume Pignol, University of Grenoble, *Ultracold neutrons:  a precision tool in fundamental physics*
-
----
-
 
 # Reminders
 
@@ -252,3 +227,50 @@ $$2(\omega_0^2 - \omega^2)(-2\omega) + 8 \beta^2 \omega = 0$$
 $$4\omega(\omega^2 - \omega_0^2 + 2 \beta^2) = 0$$
 
 $$\omega = 0 \qquad \omega = \sqrt{\omega_0^2 - 2 \beta^2}$$
+
+---
+
+# HW6 Exercise 2 Morse Potential as an SHO
+
+If the potential has a local minimum, we can often find SHO approximation for that potential near the local minimum. 
+
+The [Morse potential](https://en.wikipedia.org/wiki/Morse_potential) is a convenient model for the potential energy of a diatomic molecule. The potential is a radial one and thus one-dimensional. It is given by,
+
+$$U(r) = A\left[ \left(e^{(R-r)/S}-1\right)^2-1\right]$$
+
+where the distance between the centers of the two atoms is $r$, and the constants $A$, $R$, and $S$ are all positive. Here $S<<R$.
+
+* 2a (2pt) Sketch (or plot) the potential as a function of $r$.
+
+---
+
+# HW6 Exercise 2 Morse Potential as an SHO
+
+
+$$U(r) = A\left[ \left(e^{(R-r)/S}-1\right)^2-1\right]$$
+
+
+* 2b (3pt) Find the equilibrium position of the potential, i.e. the position where the potential is at a minimum. We will call this $r_e$.
+* 2c (3pt) Rewrite the potential in terms of the displacement from equilibrium, $r = r_e + x$. Expand the potential to second order in $x$.
+* 2d (2pt) Find the effective spring constant, $k$, for the potential near the minimum. What is the frequency of small oscillations about the minimum?
+
+---
+
+# HW6 Exercise 4, Toy Potential
+
+Consider a toy potential of the form,
+
+$$U(r) = U_0\left(\dfrac{r}{R}+\lambda^2\frac{R}{r}\right)$$
+
+where $U_0$, $R$, and $\lambda$ are all positive constants and the domain of the potential is $0<r<\infty$. 
+
+* 4a (2pt) Sketch (or plot) the potential as a function of $r$.
+
+---
+
+# HW6 Exercise 4, Toy Potential
+
+$$U(r) = U_0\left(\dfrac{r}{R}+\lambda^2\frac{R}{r}\right)$$
+
+* 4b (3pt) Find the equilibrium position of the potential, i.e. the position where the potential is at a minimum. We will call this $r_e$.
+* 4c (5pt) Rewrite the potential in terms of the displacement from equilibrium, $r = r_e + x$. Expand the potential to second order in $x$. What is the effective spring constant, $k$, for the potential near the minimum? What is the frequency of small oscillations about the minimum?
