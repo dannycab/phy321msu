@@ -4,6 +4,19 @@ Slides for PHY 321 appear in reverse chronological order, with the most recent s
 
 ---
 
+## Day 26 - Introduction to Chaos - 27 Oct 2025
+
+[![Day 26](../slides/day-26-introduction-to-chaos.png)](../slides/day-26-introduction-to-chaos.pdf)
+
+:::info
+
+### 📂 Download Slides
+[HTML](../slides/day-26-introduction-to-chaos.md) | [PDF](../slides/day-26-introduction-to-chaos.pdf)
+
+:::
+
+---
+
 ## Day 25 - Driven Oscillations - 24 Oct 2025
 
 [![Day 25](../slides/day-25-resonance.png)](../slides/day-25-resonance.pdf)

@@ -30,6 +30,7 @@ parts:
       - file: resources/euler_integration
       - file: resources/integrators
       - file: resources/phase_diagrams
+      - file: resources/chaotic_dynamics
   - caption: Weekly Course Materials
     chapters:
       - file: lecture-notes/01_notes  

@@ -4,13 +4,13 @@ theme: graph_paper
 paginate: true
 
 title: Day 27 - Introduction to Chaos
-description: Slides for PHY 321 Spring 2025, Day 27: Introduction to Chaos
+description: Slides for PHY 321 Fall 2025, Day 26: Introduction to Chaos
 author: Prof. Danny Caballero <caball14@msu.edu>
 keywords: classical mechanics, differential equations, motion, oscillations, rduffing, lorenz, strange attractors
 url: https://dannycaballero.info/phy321msu/slides/day-27-introduction-to-chaos.html
 ---
 
-# Day 27 - Introduction to Chaos
+# Day 26 - Introduction to Chaos
 
 ![bg right width:600px](../images/notes/week10/sprott.png)
 
@@ -28,43 +28,18 @@ $$a = 2.07 \quad b = 1.79$$
 
 # Announcements
 
-* Midterm 1 (problems 2 and 3) is graded
-    * Problem 1 is still being graded
+* Midterm 1 is graded
+    * Feedback delivered for project
 * Homework 7 is due Friday
     * No homework next week
-* Midterm 2 will be assigned next Monday (due 18 April)
+* Midterm 2 will be assigned next Monday (due 14 November)
     * Second project check-in 
 
 ---
 
 # Seminars This Week
 
-## MONDAY, March 24, 2025             
- 
-* **Condensed Matter Seminar** 4:10 pm, 1400 BPS, **Andrew Kirkpatrick, MSU**, *Fabrication of orientated NV centres in diamond by ultrafast laser fabrication* AND **Ankang Liu, MSU** *Effect of hole-strain coupling on the eigenmodes of semiconductor-based nanomechanical systems*
 
----
-
-# Seminars This Week
- 
-## WEDNESDAY, March 26, 2025    
-                                    
-* **Astronomy Seminar**, 1:30 pm, 1400 BPS, **Bryan Terrazas, Oberlin College**, *Galaxy evolution and feedback modeling*
-* FRIB Nuclear Science Seminar, 3:30pm., FRIB 1300 Auditorium, **Dr. Jacklyn Gates of Lawrence Berkeley National Laboratory**, *Toward Pursuing New Superheavy Elements*
-
----
-
-# Seminars This Week
-
-## THURSDAY, March 27, 2025
- 
-* **Special FRIB/MSU Nuclear Science Seminar with
-Colloquium**, 3:30 pm, 1415 BPS, **Mandie Gehring, LANL**, *Measuring Intense X-ray Spectra and an Overview of Space Research at Los Alamos National Laboratory*
- 
- 
-## FRIDAY, March 28, 2025 
- 
-* **IReNA Online Seminar**, 2:00 pm, In Person and Zoom, FRIB 2025 Nuclear Conference Room, **Jordi José, Technical University of Catalonia, UPC (Barcelona, Spain)**, *Classical novae at the crossroads of nuclear physics, astrophysics and cosmochemistry*
 
 ---
 

@@ -100,7 +100,7 @@ _All assignments are turned in using Gradescope as a single PDF._
 
 | **Week** | **Day**   | **Topic**          | **Readings to Prepare**  | **Important Events**                                                |
 |:--------:|:---------:|:------------------:|:------------------------|:-------------------------------------------------------------------|
-| CW44     | 27 Oct    | Introduction to Chaos | 📓 [10 - Investigating Systems that Exhibit Chaotic Dynamics](../lecture-notes/10_notes.ipynb)        |      |
+| CW44     | 27 Oct ([Slides](../slides/day-26-introduction-to-chaos.pdf))    | Introduction to Chaos | 📓 [10 - Investigating Systems that Exhibit Chaotic Dynamics](../lecture-notes/10_notes.ipynb)        |      |
 |          | 29 Oct    | Hallmarks of Classical Chaos Series |                    |                                                                   |
 |          | 31 Oct    | Workshop day        |                        | 📥 **Homework 7 Due** |
 
