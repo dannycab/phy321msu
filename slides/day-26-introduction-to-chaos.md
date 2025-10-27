@@ -39,10 +39,85 @@ $$a = 2.07 \quad b = 1.79$$
 
 # Seminars This Week
 
+## MONDAY, October 27, 2025             
 
+ 
+Condensed Matter Seminar 4:10 pm,1400 BPS, In Person and Zoom, Host ~ Tyler Cocker
+Speaker: Elad Harel, MSU                                                                       
+Title: Optical Pulse Trains-From Tracking Viruses to Directing Material Synthesis
+Zoom Link: https://msu.zoom.us/j/93613644939
+Meeting ID: 936 1364 4939
+Password: CMP
+ 
+---
+
+# Seminars This Week
+
+## TUESDAY, October 28, 2025
+ 
+ 
+Theory Seminar, 11:00am., FRIB 1200 lab, In person and online via Zoom
+Speaker: Antonio Bjelcic, LLNL
+Title: Small and Large Amplitude Collective Dynamics within Nuclear Density Functional Theory
+Zoom Link: 964 7281 4717
+Meeting ID: 48824
 
 ---
 
+# Seminars This Week
+
+## TUESDAY, October 28, 2025 
+ 
+High Energy Physics Seminar, 1:30 pm, 1400 BPS, Host~   Joey Huston 
+Speaker: Tanishq Sharma, MSU
+Title: "Towards next-gen parton distribution and fragmentation functions"
+Zoom:
+Passcode:
+ (Joining the Zoom meeting requires a password. Please contact one of the organizers, if you haven't received it.)             
+Organized by: Joey Huston, Sophie Berkman and Brenda Wenzlick
+ 
+---
+
+# Seminars This Week
+
+## WEDNESDAY, October 29, 2025    
+ 
+                                     
+Astronomy Seminar, 1:30 pm, 1400 BPS, In Person and Zoom, Host~ 
+Speaker: Michael Radic, University of Chicago 
+Title: 
+Zoom Link: https://msu.zoom.us/j/93334479606?pwd=OtIXPWhRPBfzYu53sl3trSJlaBYI7C.1
+Meeting ID: 933 3447 9606
+Passcode: 825824
+ 
+---
+
+# Seminars This Week
+
+## WEDNESDAY, October 29, 2025  
+
+**PER (Physics Education Research Seminar)**, 3:00 pm., BPS 1400 in person and zoom
+Speaker: Eric Burkholder, Assistant Professor at Auburn University
+Title:  Could we make physics more accessible by teaching real physics? 
+Zoom Link: https://msu.zoom.us/j/96470703707
+Meeting ID: 964 7070 3707
+Passcode: PERSeminar
+ 
+---
+
+# Seminars This Week
+
+## WEDNESDAY, October 29, 2025  
+ 
+FRIB Nuclear Science Seminar, 3:30pm., FRIB 1300 Auditorium and online via Zoom 
+Speaker: Professor Dien Nguyen of the University of Tennessee, Knoxville 
+Title: The Pairing Mechanism of Short Range Correlations and the impact of Nuclear Structure
+Please click the link below to join the webinar:
+Join Zoom Meeting: https://msu.zoom.us/j/93944167137?pwd=jzvwvbL8YqDnJNpzDPat8IHcrFdtC5.1
+Meeting ID: 939 4416 7137
+Passcode: 239049
+ 
+---
 
 # What is Chaos?
 
