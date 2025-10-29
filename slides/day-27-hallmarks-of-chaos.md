@@ -27,6 +27,7 @@ url: https://dannycaballero.info/phy321msu/slides/day-28-hallmarks-of-chaos.html
     * No homework next week
 * Midterm 2 will be assigned next Monday (due 14 November)
     * Second project check-in
+* **Friday's Class:** We will work HW 7 Exercises 2 & 3 together
 
 ---
 
