@@ -3,7 +3,7 @@ marp: true
 theme: graph_paper
 paginate: true
 
-title: Day 27 - Introduction to Chaos
+title: Day 26 - Introduction to Chaos
 description: Slides for PHY 321 Fall 2025, Day 26: Introduction to Chaos
 author: Prof. Danny Caballero <caball14@msu.edu>
 keywords: classical mechanics, differential equations, motion, oscillations, rduffing, lorenz, strange attractors
