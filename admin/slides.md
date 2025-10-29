@@ -4,6 +4,19 @@ Slides for PHY 321 appear in reverse chronological order, with the most recent s
 
 ---
 
+## Day 27 - Hallmarks of Chaos - 29 Oct 2025
+
+[![Day 26](../slides/day-27-hallmarks-of-chaos.png)](../slides/day-27-hallmarks-of-chaos.pdf)
+
+:::info
+
+### 📂 Download Slides
+[HTML](../slides/day-27-hallmarks-of-chaos.md) | [PDF](../slides/day-27-hallmarks-of-chaos.pdf)
+
+:::
+
+---
+
 ## Day 26 - Introduction to Chaos - 27 Oct 2025
 
 [![Day 26](../slides/day-26-introduction-to-chaos.png)](../slides/day-26-introduction-to-chaos.pdf)
