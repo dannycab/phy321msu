@@ -3,14 +3,14 @@ marp: true
 theme: graph_paper
 paginate: true
 
-title: Day 29 - Homework Session
-description: Slides for PHY 321 Spring 2025, Day 29: Homework Session
+title: Day 28 - Homework Session
+description: Slides for PHY 321 Fall al 2025, Day 29: Homework Session
 author: Prof. Danny Caballero <caball14@msu.edu>
 keywords: classical mechanics, differential equations, motion, oscillations, resonance
-url: https://dannycaballero.info/phy321msu/slides/day-29-homework-session.html
+url: https://dannycaballero.info/phy321msu/slides/day-28-homework-session.html
 ---
 
-# Day 29 - Homework Session
+# Day 28 - Homework Session
 
 ![bg right width:600px](../images/notes/week10/trojan_horse_maths.jpeg)
 
