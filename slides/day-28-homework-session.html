@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Day 29 - Homework Session &#8212; Classical Mechanics</title>
+    <title>Day 28 - Homework Session &#8212; Classical Mechanics</title>
   
   
   
@@ -52,11 +52,13 @@
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script src="../_static/design-tabs.js?v=36754332"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"tex2jax": {"inlineMath": [["$", "$"]]}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'slides/day-28-homework-session';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -368,7 +370,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Day 29 - Homework Session</h1>
+    <h1>Day 28 - Homework Session</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -378,10 +380,12 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Day 29 - Homework Session</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Day 28 - Homework Session</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#announcements">Announcements</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#computing-x-dei-seminar-today">Computing x DEI seminar today</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#today-at-3pm">Today at 3pm</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-2-where-does-the-energy-go">Exercise 2 Where does the energy go?</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Exercise 2 Where does the energy go?</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-3-unpacking-the-critically-damped-solution">Exercise 3, Unpacking the critically damped solution</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Exercise 3, Unpacking the critically damped solution</a></li>
 </ul>
 </li>
 </ul>
@@ -396,28 +400,76 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="day-29-homework-session">
-<h1>Day 29 - Homework Session<a class="headerlink" href="#day-29-homework-session" title="Link to this heading">#</a></h1>
-<p><img alt="bg right width:600px" src="../_images/quack.png" /></p>
+  <section id="day-28-homework-session">
+<h1>Day 28 - Homework Session<a class="headerlink" href="#day-28-homework-session" title="Link to this heading">#</a></h1>
+<p><img alt="bg right width:600px" src="../_images/trojan_horse_maths.jpeg" /></p>
 </section>
 <hr class="docutils" />
 <section id="announcements">
 <h1>Announcements<a class="headerlink" href="#announcements" title="Link to this heading">#</a></h1>
 <ul class="simple">
-<li><p>Midterm 1 graded</p></li>
-<li><p>Homework 7 is due Friday</p></li>
+<li><p>Homework 7 is due Sunday</p></li>
 <li><p>Midterm 2 will be posted Monday</p></li>
-<li><p>No office hours today</p></li>
+<li><p>Instructions for final project will be posted next week</p>
+<ul>
+<li><p>We have one midterm and one homework assignment left!</p></li>
+</ul>
+</li>
+<li><p>DC’s group is looking for a research assistant</p>
+<ul>
+<li><p>Our group pays ASMSU recommended living wage: $21/hr</p></li>
+<li><p>Current project has 50+ hours worth of work</p></li>
+<li><p>Max employment: 10 hrs/week</p></li>
+</ul>
+</li>
 </ul>
 </section>
 <hr class="docutils" />
-<section id="computing-x-dei-seminar-today">
-<h1>Computing x DEI seminar today<a class="headerlink" href="#computing-x-dei-seminar-today" title="Link to this heading">#</a></h1>
-<section id="today-at-3pm">
-<h2>Today at 3pm<a class="headerlink" href="#today-at-3pm" title="Link to this heading">#</a></h2>
-<p>EGR 1502 (CMSE conference room)</p>
-<p><img alt="bg left width:600px" src="../_images/dei_talk.png" /></p>
-<p><strong>No office hours today</strong></p>
+<section id="exercise-2-where-does-the-energy-go">
+<h1>Exercise 2 Where does the energy go?<a class="headerlink" href="#exercise-2-where-does-the-energy-go" title="Link to this heading">#</a></h1>
+<p>The damped harmonic oscillator is described by the equation of motion is:</p>
+<div class="math notranslate nohighlight">
+\[m\ddot{x} + b\dot{x} + kx = 0\]</div>
+<p>where <span class="math notranslate nohighlight">\(m\)</span> is the mass, <span class="math notranslate nohighlight">\(b\)</span> is the damping coefficient, and <span class="math notranslate nohighlight">\(k\)</span> is the spring constant.</p>
+<p>The damping term (<span class="math notranslate nohighlight">\(F_{damp} = - b\dot{x}\)</span>) models the dissipative forces acting on the oscillator. The total energy for the oscillator is given by the sum of the kinetic and potential energies,</p>
+<div class="math notranslate nohighlight">
+\[E = \frac{1}{2}m\dot{x}^2 + \frac{1}{2}kx^2.\]</div>
+<ul class="simple">
+<li><p>2a What is the energy per unit time dissipated by the damping force?</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="id1">
+<h1>Exercise 2 Where does the energy go?<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
+<div class="math notranslate nohighlight">
+\[m\ddot{x} + b\dot{x} + kx = 0\]</div>
+<div class="math notranslate nohighlight">
+\[E = \frac{1}{2}m\dot{x}^2 + \frac{1}{2}kx^2\]</div>
+<ul class="simple">
+<li><p>2b Take the time derivative of the total energy and show that it is equal (in magnitude) to the energy dissipated by the damping force.</p></li>
+<li><p>2c What is the sign relationship between the energy dissipated by the damping force and the time derivative of the total energy?</p></li>
+</ul>
+<hr class="docutils" />
+<section id="exercise-3-unpacking-the-critically-damped-solution">
+<h2>Exercise 3, Unpacking the critically damped solution<a class="headerlink" href="#exercise-3-unpacking-the-critically-damped-solution" title="Link to this heading">#</a></h2>
+<p>The solution for critical damping (<span class="math notranslate nohighlight">\(\beta = \omega_0\)</span>) is given by,</p>
+<div class="math notranslate nohighlight">
+\[x(t) = x_1(t) + x_2(t) = Ae^{-\beta t} + Bte^{-\beta t},\]</div>
+<p>where <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span> are constants.</p>
+<p>Notice the second solution <span class="math notranslate nohighlight">\(x_2(t) = Bte^{-\omega_0t}\)</span> has an additional linear term <span class="math notranslate nohighlight">\(t\)</span>. We glossed over this solution in class, but it is important to understand why this term is present because it tells us about solving differential equations with pathologically difficult-to-see solutions.</p>
+</section>
+<hr class="docutils" />
+<section id="id2">
+<h2>Exercise 3, Unpacking the critically damped solution<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<p>Start with the under damped solutions,</p>
+<div class="math notranslate nohighlight">
+\[y_1(t) = e^{-\beta t}\cos(\omega_1 t) \quad \text{and} \quad y_2(t) = e^{-\beta t}\sin(\omega_1 t),\]</div>
+<p>where we have used the notation <span class="math notranslate nohighlight">\(\omega_1 = \sqrt{\omega_0^2 - \beta^2}\)</span>.</p>
+<ul class="simple">
+<li><p>3a (3pt). Show that you can recover the first solution <span class="math notranslate nohighlight">\(x_1(t)\)</span> by taking the limit of <span class="math notranslate nohighlight">\(\beta \rightarrow \omega_0\)</span> of <span class="math notranslate nohighlight">\(y_1(t)\)</span>.</p></li>
+<li><p>3b (3pt). Show that you cannot recover the second solution <span class="math notranslate nohighlight">\(x_2(t)\)</span> by taking the limit of <span class="math notranslate nohighlight">\(\beta \rightarrow \omega_0\)</span> of <span class="math notranslate nohighlight">\(y_2(t)\)</span> directly. What do you get?</p></li>
+<li><p>3c (4pt). If <span class="math notranslate nohighlight">\(\beta \neq \omega_0\)</span>, you can divide <span class="math notranslate nohighlight">\(y_2(t)\)</span> by <span class="math notranslate nohighlight">\(\omega_1\)</span>. Now show that in the limit <span class="math notranslate nohighlight">\(\beta \rightarrow \omega_0\)</span> of <span class="math notranslate nohighlight">\(y_2(t)/\omega_1\)</span>, we recover the form of <span class="math notranslate nohighlight">\(x_2(t)\)</span>.</p></li>
+</ul>
 </section>
 </section>
 
@@ -467,10 +519,12 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Day 29 - Homework Session</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Day 28 - Homework Session</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#announcements">Announcements</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#computing-x-dei-seminar-today">Computing x DEI seminar today</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#today-at-3pm">Today at 3pm</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-2-where-does-the-energy-go">Exercise 2 Where does the energy go?</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Exercise 2 Where does the energy go?</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-3-unpacking-the-critically-damped-solution">Exercise 3, Unpacking the critically damped solution</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Exercise 3, Unpacking the critically damped solution</a></li>
 </ul>
 </li>
 </ul>

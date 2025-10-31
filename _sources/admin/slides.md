@@ -4,9 +4,23 @@ Slides for PHY 321 appear in reverse chronological order, with the most recent s
 
 ---
 
+
+## Day 28 - Homework Session - 31 Oct 2025
+
+[![Day 28](../slides/day-28-homework-session.png)](../slides/day-28-homework-session.pdf)
+
+:::info
+
+### 📂 Download Slides
+[HTML](../slides/day-28-homework-session.md) | [PDF](../slides/day-28-homework-session.pdf)
+
+:::
+
+---
+
 ## Day 27 - Hallmarks of Chaos - 29 Oct 2025
 
-[![Day 26](../slides/day-27-hallmarks-of-chaos.png)](../slides/day-27-hallmarks-of-chaos.pdf)
+[![Day 27](../slides/day-27-hallmarks-of-chaos.png)](../slides/day-27-hallmarks-of-chaos.pdf)
 
 :::info
 
