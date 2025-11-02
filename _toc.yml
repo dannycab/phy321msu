@@ -25,6 +25,7 @@ parts:
       - file: assignments/hw5.ipynb
       - file: assignments/hw6.ipynb
       - file: assignments/hw7.ipynb
+      - file: assignments/midterm2.ipynb
   - caption: Programming Resources
     chapters: 
       - file: resources/euler_integration
