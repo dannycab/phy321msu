@@ -4,6 +4,19 @@ Slides for PHY 321 appear in reverse chronological order, with the most recent s
 
 ---
 
+## Day 29 - Calculus of Variations - 3 Nov 2025
+
+[![Day 29](../slides/day-29-calculus-of-variations.png)](../slides/day-29-calculus-of-variations.pdf)
+
+:::info
+
+### 📂 Download Slides
+[HTML](../slides/day-29-calculus-of-variations.md) | [PDF](../slides/day-29-calculus-of-variations.pdf)
+
+:::
+
+---
+
 
 ## Day 28 - Homework Session - 31 Oct 2025
 
