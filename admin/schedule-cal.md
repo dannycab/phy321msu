@@ -110,7 +110,7 @@ _All assignments are turned in using Gradescope as a single PDF._
 
 | **Week** | **Day**   | **Topic**                                           | **Readings to Prepare**      | **Important Events**                                                |
 |:--------:|:---------:|:---------------------------------------------------:|:----------------------------|:-------------------------------------------------------------------|
-| CW45     | 03 Nov    | Calculus of Variations; Euler-Lagrange Equation     | 📓 [11 - Reformulating Classical Mechanics using the Calculus of Variations](../lecture-notes/11_notes.ipynb)<br>📚 JRT 6.1-6.3; MLB 9.1-9.4    | 📝 Midterm Project 2 Assigned (Due 14 Nov)  |
+| CW45     | 03 Nov ([Slides](../slides/day-29-calculus-of-variations.pdf))   | Calculus of Variations; Euler-Lagrange Equation     | 📓 [11 - Reformulating Classical Mechanics using the Calculus of Variations](../lecture-notes/11_notes.ipynb)<br>📚 JRT 6.1-6.3; MLB 9.1-9.4    | 📝 Midterm Project 2 Assigned (Due 14 Nov)  |
 |          | 05 Nov    | Euler-Lagrange Equation Examples                    |                             |                                                                   |
 |          | 07 Nov    | Workshop day                                        |                             |                                                                   |
 
