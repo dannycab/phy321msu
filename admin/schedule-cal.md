@@ -102,7 +102,7 @@ _All assignments are turned in using Gradescope as a single PDF._
 |:--------:|:---------:|:------------------:|:------------------------|:-------------------------------------------------------------------|
 | CW44     | 27 Oct ([Slides](../slides/day-26-introduction-to-chaos.pdf))    | Introduction to Chaos | 📓 [10 - Investigating Systems that Exhibit Chaotic Dynamics](../lecture-notes/10_notes.ipynb)        |      |
 |          | 29 Oct ([Slides](../slides/day-27-hallmarks-of-chaos.pdf))   | Hallmarks of Classical Chaos Series |                    |                                                                   |
-|          | 31 Oct ([Slides](../slides/day-28-homework-session.pdf)))   | Workshop day        |                        | 📥 **Homework 7 Due** |
+|          | 31 Oct ([Slides](../slides/day-28-homework-session.pdf))   | Workshop day        |                        | 📥 **Homework 7 Due** |
 
 ---
 
@@ -111,7 +111,7 @@ _All assignments are turned in using Gradescope as a single PDF._
 | **Week** | **Day**   | **Topic**                                           | **Readings to Prepare**      | **Important Events**                                                |
 |:--------:|:---------:|:---------------------------------------------------:|:----------------------------|:-------------------------------------------------------------------|
 | CW45     | 03 Nov ([Slides](../slides/day-29-calculus-of-variations.pdf))   | Calculus of Variations; Euler-Lagrange Equation     | 📓 [11 - Reformulating Classical Mechanics using the Calculus of Variations](../lecture-notes/11_notes.ipynb)<br>📚 JRT 6.1-6.3; MLB 9.1-9.4    | 📝 Midterm Project 2 Assigned (Due 14 Nov)  |
-|          | 05 Nov    | Euler-Lagrange Equation Examples                    |                             |                                                                   |
+|          | 05 Nov  ([Slides](../slides/day-30-euler-lagrange-equation.pdf))   | Euler-Lagrange Equation Examples                    |                             |                                                                   |
 |          | 07 Nov    | Workshop day                                        |                             |                                                                   |
 
 ---

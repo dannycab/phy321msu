@@ -3,31 +3,91 @@ marp: true
 theme: graph_paper
 paginate: true
 
-title: Day 31 - Euler-Lagrange Equation
-description: Slides for PHY 321 Spring 2025, Day 31: Euler-Lagrange Equation
+title: Day 30 - Euler-Lagrange Equation
+description: Slides for PHY 321 Fall 2025, Day 30: Euler-Lagrange Equation
 author: Prof. Danny Caballero <caball14@msu.edu>
 keywords: classical mechanics, differential equations, Euler-Lagrange Equation, action principle, Lagrangian mechanics
-url: https://dannycaballero.info/phy321msu/slides/day-31-calculus-of-variations.html
+url: https://dannycaballero.info/phy321msu/slides/day-30-calculus-of-variations.html
 ---
 
-# Day 31 - Euler-Lagrange Equation
+# Day 30 - Euler-Lagrange Equation
 
 ![width:1000px](./images/day-01/Slide1.png)
 
 
 ---
 
-# Seminars this Week
-## WEDNESDAY, April 2, 2025    
+# Seminars this Week 
  
-                                     
-* **Astronomy Seminar**, 1:30 pm, 1400 BPS, *Andy Tzandikas, Univ. of Washington*, Title: Searching for the Rarest Stellar Occultations
+## WEDNESDAY, November 5, 2025
  
-* **PER Seminar**, 3:00 pm., BPS 1400, *Abigail Daane, Professor of Physics, South Seattle College*, Title: The obstacles, stumbles, and growth in examining the “decolonization” of physics education
+                                    
+Astronomy Seminar, 1:30 pm, 1400 BPS, In Person and Zoom, Host~ 
+Speaker: Nick Konidaris, Carnegie Observatories
+Title: The Sephira Project: Astronomical Imaging with Third-Order Intensity Correlations
+
+---
+
+# Seminars this Week 
  
-## THURSDAY, April 3, 2025
+## WEDNESDAY, November 5, 2025
  
-* **Colloquium**, 3:30 pm, 1415 BPS, *Alex Sushkov, Boston University*, Title: Nuclear magnetic resonance at the quantum sensitivity limit
+FRIB Nuclear Science Seminar, 3:30pm., FRIB 1300 Auditorium and online via Zoom 
+Speaker: Assistant Professor Xing Wu of The Facility for Rare Isotope Beams (FRIB)                                                      
+Title: Towards Quantum Control and Sensing of 227ThO Molecules and Other Radioactive Molecules for Nuclear Schiff Moment Search
+Please click the link below to join the webinar:
+Join Zoom Meeting: https://msu.zoom.us/j/91861947571?pwd=IlUS6RkYdHibaosm4aznsYsctbaMrU.1
+Meeting ID: 939 4416 7137
+Passcode: 026775
+ 
+---
+
+# Seminars this Week 
+ 
+ 
+ 
+## THURSDAY, November 6, 2025
+ 
+Colloquium, 3:30 pm, 1415 BPS, in person and zoom.  Host ~ Jay Strader/Laura Chomiuk
+Refreshments and social half-hour in BPS 1400 starting at 3 pm
+Speaker: Nick Konidaris, Carnegie Observations
+Title: SDSS Local Volume Mapper instrument and Early Science Results
+ 
+---
+
+# Seminars this Week 
+ 
+## FRIDAY, November 7, 2025     
+                                                 
+                          
+IReNA Online Seminar, 9:00am, In Person and Zoom, FRIB 2025 Nuclear Conference Room, Light refreshments will be served at 1:50pm. 
+Hosted by: Sota Kimura (University of Tsukuba)
+Speaker Tomoshi Takeda, Hiroshima University, Japan
+Title: A New Approach to X-ray Astronomy: Development and Observational Results of the CubeSat Observatory NinjaSat
+
+---
+
+# Seminars this Week 
+ 
+## FRIDAY, November 7, 2025  
+ 
+Special HEP Seminar
+High Energy Physics Seminar, 1:00 pm, 1400 BPS, Host~ Joey Huston 
+Speaker: Eric Bachmann, Technische Universität Dresden
+Title: Evidence for longitudinal polarization in same-sign WW scattering with the ATLAS detector            
+Organized by: Joey Huston, Sophie Berkman and Brenda Wenzlick
+
+---
+
+# Seminars this Week 
+ 
+## FRIDAY, November 7, 2025 
+ 
+QuIC Seminar, 12:30pm, -1:30pm, 1300 BPS, Virtual only today  
+Speaker: Philip Crowley, MSU
+Title:  Quantum dynamics for quantum sensing
+Full Scheule is at: https://sites.google.com/msu.edu/quic-seminar/
+For more information, reach out to Ryan LaRose
 
 ---
 
@@ -58,7 +118,7 @@ $$\int_{s_1}^{s_2} \eta(x) \left[\dfrac{\partial f}{\partial y} - \dfrac{d}{dx}\
 ---
 
 
-# Clicker Question 31-1
+# Clicker Question 30-1
 
 We completed this derivation with the following mathematical statement:
 
@@ -74,7 +134,7 @@ where $\eta(x)$ is an arbitrary function. What does this imply about the term in
 
 ---
 
-# Clicker Question 31-2
+# Clicker Question 30-2
 
 Returning to the line problem,
 
@@ -90,7 +150,7 @@ $$\dfrac{d}{dx}\left[?\right] = 0$$
 
 ---
 
-# Clicker Question 31-3
+# Clicker Question 30-3
 
 With,
 
@@ -105,7 +165,7 @@ where $c$ is a constant, the solution expresses a straight line.
 
 ---
 
-# Clicker Question 31-4
+# Clicker Question 30-4
 
 We derived the time that it takes to run from a point on the shore to a point in the water, $T$:
 
@@ -120,7 +180,7 @@ To find the minimal time, what derivative should we take?
 
 ---
 
-# Clicker Question 31-5
+# Clicker Question 30-5
 
 For the brachistochrone problem, the ball moves purely under the influence of gravity. Consider that the ball has moved a vertical distance $\Delta y$ from rest. What is the speed of the ball at this point?
 

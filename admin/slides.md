@@ -4,6 +4,20 @@ Slides for PHY 321 appear in reverse chronological order, with the most recent s
 
 ---
 
+## Day 30 - Euler-Lagrange Equations - 5 Nov 2025
+
+[![Day 30](../slides/day-30-euler-lagrange-equation.png)](../slides/day-30-euler-lagrange-equation.pdf)
+
+:::info
+
+### 📂 Download Slides
+[HTML](../slides/day-30-euler-lagrange-equation.md) | [PDF](../slides/day-30-euler-lagrange-equation.pdf)
+
+:::
+
+---
+
+
 ## Day 29 - Calculus of Variations - 3 Nov 2025
 
 [![Day 29](../slides/day-29-calculus-of-variations.png)](../slides/day-29-calculus-of-variations.pdf)
