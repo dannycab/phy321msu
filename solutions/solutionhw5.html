@@ -1,74 +1,69 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" data-content_root="" >
+<html lang="en" data-content_root="../" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Homework 5 (Due 08 Mar) &#8212; Classical Mechanics</title>
+    <title>Solution Homework 5 &#8212; Classical Mechanics</title>
   
   
   
   <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
-  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
-    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="../_static/doctools.js"></script>
-    <script src="../_static/clipboard.min.js"></script>
-    <script src="../_static/copybutton.js"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../_static/design-tabs.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
-    <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script src="../_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"tex2jax": {"inlineMath": [["$", "$"]]}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'solutions/solutionhw5';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Homework 6 (Due 15 Mar)" href="solutionhw6.html" />
-    <link rel="prev" title="Midterm 1 (Due 23 Feb)" href="solutionmidterm1.html" />
+    <link rel="next" title="Solution Homework 6" href="solutionhw6.html" />
+    <link rel="prev" title="Midterm 1" href="solutionmidterm1.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -78,28 +73,23 @@ const thebe_selector_output = ".output, .cell_output"
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
   
   <div id="pst-scroll-pixel-helper"></div>
-
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
-    <i class="fa-solid fa-arrow-up"></i>
-    Back to top
-  </button>
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__primary"
-          id="__primary"/>
-  <label class="overlay overlay-primary" for="__primary"></label>
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__secondary"
-          id="__secondary"/>
-  <label class="overlay overlay-secondary" for="__secondary"></label>
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
   
   <div class="search-button__wrapper">
     <div class="search-button__overlay"></div>
@@ -121,12 +111,20 @@ const thebe_selector_output = ".output, .cell_output"
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
   
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
+      
+      
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -142,6 +140,8 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
 
+  
+    
   
 
 <a class="navbar-brand logo" href="../intro.html">
@@ -160,69 +160,107 @@ const thebe_selector_output = ".output, .cell_output"
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="../intro.html">
-                    PHY 321: Classical Mechanics 1, Michigan State University, Spring 2024
+                    PHY 321: Classical Mechanics 1, Michigan State University, Spring 2025
                 </a>
             </li>
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">About the course</span></p>
 <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../admin/getting-started.html">Getting Started</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../admin/teachers.html">Teachers and Grading</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../admin/resources.html">Additional Resources</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../admin/textbooks.html">Textbooks</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../admin/schedule-cal.html">Calendar</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Calendar &amp; Lecture Materials</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../admin/schedule-cal.html">Course Calendar</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../admin/links.html">Course Material and Links</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin/slides.html">Slides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin/handwritten-notes.html">Handwritten Notes</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Introductory Material</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Weekly Course Materials</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter1.html">1. What is Classical Physics?</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter2-overview.html">What is Mathematical Modeling?</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter2.html">2. Classical Mechanics, Mathematics and Numerical background</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter3.html">3. Simple Motion problems and Reminder on Newton’s Laws</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter4.html">4. Work, Energy, Momentum and Conservation laws</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week1/01_start.html">Week 1 - Overture: What is Classical Physics?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week1/01_notes.html">Week 1 - Notes: Introduction to Classical Mechanics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week2/02_start.html">Week 2 - Computing as a tool for science</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week2/02_notes.html">Week 2 - Notes: Mathematical Preliminaries</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week3/03_start.html">Week 3 - What is Mathematical Modeling?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week3/03_notes.html">Week 3 - Notes: Making Classical Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week4/04_start.html">Week 4 - Why does fluid drag complicate things?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week4/04_notes.html">Week 4 - Notes: Equations of Motion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week5/05_start.html">Week 5 - Conservation Laws</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week5/05_notes.html">Week 5 - Notes: Conservation of Energy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week6/06_start.html">Week 6 - Stability and Equilibria</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week6/06_notes.html">Week 6 - Notes: Stability and Energy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week6/06_notes_2.html">Week 6 - Notes: Linear and Angular Momentum</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week7/07_start.html">Week 7 - Nonlinear Dynamics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week7/07_notes.html">Week 7 - Notes: Critical Points; Phase Space; Trajectories</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week8/08_start.html">Week 8 - Oscillations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week8/08_notes.html">Week 8 - Notes: Oscillators and Modeling Oscillations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week9/09_start.html">Week 9 - Driven Oscillators and Resonance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week9/09_notes.html">Week 9 - Notes: Driven Oscillations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week10/10_start.html">Week 10 - Chaotic Dynamics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week10/10_notes.html">Week 10 - Activity: Modeling Chaotic Systems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week11/11_start.html">Week 11 - Calculus of Variations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week11/11_notes.html">Week 11 - Notes: The Euler-Lagrange Equation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week12/12_start.html">Week 12 - The Principle of Least Action</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week12/12_notes.html">Week 12 - Notes: Introduction to Lagrangian Mechanics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week13/13_start.html">Week 13 - Lagrangian Mechanics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week13/13_notes.html">Week 13 - Notes: Examples of Lagrangian Mechanics</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Advanced Topics</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Assignments</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter5.html">5. Harmonic Oscillations</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter6.html">6. Two-body problems, from the Gravitational Force to Two-body Scattering</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter7.html">7. Non-inertial Frames, Translation and Rotating Coordinate Systems</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter8.html">8. Variational Calculus and Lagrangian Formalism</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">In-class handouts, activities, and other materials</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../in-class/cw1-python-test.html">CW1 - Python Test</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../in-class/cw6-phase_space.html">CW6 - Phase Portraits</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../in-class/cw11-plot-fourier.html">CW11 - Plot Fourier Expansion</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Weekly assignments, midterms and final projects with solutions</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw1.html">Homework 1 (Due 19 Jan)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw2.html">Homework 2 (Due 26 Jan)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw3.html">Homework 3 (Due 02 Feb)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw4.html">Homework 4 (Due 09 Feb)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../midterms/midterm1.html">Midterm 1 (Due 23 Feb)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw5.html">Homework 5 (Due 08 Mar)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw6.html">Homework 6 (Due 15 Mar)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw7.html">Homework 7 (Due 22 Mar)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../midterms/midterm2.html">Midterm 2 (Due 5 Apr)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw8.html">Homework 8 (Due 12 Apr)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw9.html">Homework 9 (Due 19 Apr)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw1.html">Homework 1 (Due 24 Jan)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw2.html">Homework 2 (Due 31 Jan)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw3.html">Homework 3 (Due 07 Feb)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw4.html">Homework 4 (Due 17 Feb)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../midterms/midterm1.html">Midterm 1 (Due 28 Feb)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw5.html">Homework 5 (Due 14 Mar)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw6.html">Homework 6 (Due 21 Mar)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw7.html">Homework 7 (Due 28 Mar)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../midterms/midterm2.html">Midterm 2 (Due 11 Apr)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw8.html">Homework 8 (Due 18 Apr)</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Solutions</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="solutionhw1.html">Homework 1 (Due 19 Jan)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="solutionhw2.html">Homework 2 (Due 26 Jan)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="solutionhw3.html">Homework 3 (Due 03 Feb)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="solutionhw4.html">Homework 4 (Due 09 Feb)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="solutionmidterm1.html">Midterm 1 (Due 23 Feb)</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Homework 5 (Due 08 Mar)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="solutionhw6.html">Homework 6 (Due 15 Mar)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="solutionhw7.html">Homework 7 (Due 22 Mar)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="solutionhw1.html">Solution Homework 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="solutionhw2.html">Solution Homework 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="solutionhw3.html">Solution Homework 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="solutionhw4.html">Solution Homework 4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="solutionmidterm1.html">Midterm 1</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Solution Homework 5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="solutionhw6.html">Solution Homework 6</a></li>
+<li class="toctree-l1"><a class="reference internal" href="solutionhw7.html">Solution Homework 7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="solutionmidterm2.html">Midterm 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="solutionhw8.html">Solution Homework 8</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Resources</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../resources/course-commitments.html">Course Commitments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/iclicker-setup.html">i-Clicker Setup Instructions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/generative-ai.html">Generative Artificial Intelligence</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/gradescope-submissions.html">Submitting Assignments on Gradescope</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/finding-research.html">Finding Research Opportunities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/integrators.html">Numerical Integrators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/phase_diagrams.html">Plotting Phase Diagrams</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/chaotic_dynamics.html">Modeling Chaotic Systems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/computational-essay-rubric.html">Rubric for Computational Essay Final Project</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Honors Projects</span></p>
 <ul class="nav bd-sidenav">
@@ -244,7 +282,7 @@ const thebe_selector_output = ".output, .cell_output"
 
       </div>
       
-      <main id="main-content" class="bd-main">
+      <main id="main-content" class="bd-main" role="main">
         
         
 
@@ -253,14 +291,14 @@ const thebe_selector_output = ".output, .cell_output"
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article">
+              <div class="bd-header-article d-print-none">
 <div class="header-article-items header-article__inner">
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</label></div>
+</button></div>
       
     </div>
   
@@ -270,37 +308,6 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="header-article-item">
 
 <div class="article-header-buttons">
-
-
-
-
-
-<div class="dropdown dropdown-launch-buttons">
-  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
-    <i class="fas fa-rocket"></i>
-  </button>
-  <ul class="dropdown-menu">
-      
-      
-      
-      <li><a href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/main?urlpath=tree/solutions/solutionhw5.ipynb" target="_blank"
-   class="btn btn-sm dropdown-item"
-   title="Launch onBinder"
-   data-bs-placement="left" data-bs-toggle="tooltip"
->
-  
-
-<span class="btn__icon-container">
-  
-    <img src="../_static/images/logo_binder.svg">
-  </span>
-<span class="btn__text-container">Binder</span>
-</a>
-</li>
-      
-  </ul>
-</div>
-
 
 
 
@@ -369,10 +376,10 @@ const thebe_selector_output = ".output, .cell_output"
 
 <script>
 document.write(`
-  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
   </button>
 `);
 </script>
@@ -380,14 +387,14 @@ document.write(`
 
 <script>
 document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
-</label>
+</button>
 </div></div>
       
     </div>
@@ -398,7 +405,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Homework 5 (Due 08 Mar)</h1>
+    <h1>Solution Homework 5</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -424,19 +431,19 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
   <!-- HTML file automatically generated from DocOnce source (https://github.com/doconce/doconce/)
 doconce format html hw5.do.txt --no_mako -->
-<!-- dom:TITLE: PHY321: Classical Mechanics 1 --><section class="tex2jax_ignore mathjax_ignore" id="homework-5-due-08-mar">
-<h1>Homework 5 (Due 08 Mar)<a class="headerlink" href="#homework-5-due-08-mar" title="Permalink to this heading">#</a></h1>
-<p><strong>Solution Homework 5, Spring 2024</strong></p>
+<!-- dom:TITLE: PHY321: Classical Mechanics 1 --><section id="solution-homework-5">
+<h1>Solution Homework 5<a class="headerlink" href="#solution-homework-5" title="Link to this heading">#</a></h1>
+<p><strong>Spring 2025</strong></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="o">*</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">math</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
 <span class="o">%</span><span class="k">matplotlib</span> inline
 <span class="n">plt</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;seaborn-v0_8-colorblind&#39;</span><span class="p">)</span>
 </pre></div>
@@ -444,7 +451,7 @@ doconce format html hw5.do.txt --no_mako -->
 </div>
 </div>
 <section id="exercise-1-10-pt-sho-and-conservation-of-energy">
-<h2>Exercise 1 (10 pt), SHO and Conservation of Energy<a class="headerlink" href="#exercise-1-10-pt-sho-and-conservation-of-energy" title="Permalink to this heading">#</a></h2>
+<h2>Exercise 1 (10 pt), SHO and Conservation of Energy<a class="headerlink" href="#exercise-1-10-pt-sho-and-conservation-of-energy" title="Link to this heading">#</a></h2>
 <p>Consider the standard harmonic oscillator with a mass <span class="math notranslate nohighlight">\(m\)</span> attached to a horizontal spring with spring constant <span class="math notranslate nohighlight">\(k\)</span>. It is constrained to move in the <span class="math notranslate nohighlight">\(x\)</span> direction only and there is no friction present. With the equilibrium position as <span class="math notranslate nohighlight">\(x=0\)</span>, then the potential energy is <span class="math notranslate nohighlight">\(U(x)=\frac{1}{2}kx^2\)</span>.</p>
 <p>We give the oscillator a little kick at <span class="math notranslate nohighlight">\(t=0\)</span> and let it go. It reaches a maximum distance of <span class="math notranslate nohighlight">\(A\)</span> from the equilibrium position.</p>
 <ul class="simple">
@@ -507,18 +514,18 @@ doconce format html hw5.do.txt --no_mako -->
 </div>
 </section>
 <section id="exercise-2-10pt-kid-s-toy-and-stable-equilibrium">
-<h2>Exercise 2 (10pt), Kid’s toy and stable equilibrium<a class="headerlink" href="#exercise-2-10pt-kid-s-toy-and-stable-equilibrium" title="Permalink to this heading">#</a></h2>
+<h2>Exercise 2 (10pt), Kid’s toy and stable equilibrium<a class="headerlink" href="#exercise-2-10pt-kid-s-toy-and-stable-equilibrium" title="Link to this heading">#</a></h2>
 <p>A toy is made from a cylinder mounted on a hemisphere as shown in the figure below. The hemisphere has a radius of <span class="math notranslate nohighlight">\(R\)</span> and the center of mass of the whole toy is <span class="math notranslate nohighlight">\(h\)</span> above the ground.</p>
 <p><img alt="toy" src="../_images/5.2-kid_toy.png" /></p>
 <ul class="simple">
-<li><p>2a (2pt) Find the height of the center of mass of the toy as a function of the angle <span class="math notranslate nohighlight">\(\theta\)</span>.</p></li>
+<li><p>2a (2pt) Find the height of the center of mass of the toy as a function of the angle <span class="math notranslate nohighlight">\(\theta\)</span>, measured from the vertical.</p></li>
 </ul>
 <div class="tip admonition">
 <p class="admonition-title">Solution</p>
 <p>With the toy tipped at an angle <span class="math notranslate nohighlight">\(\theta\)</span> with respect to the vertical, the center of mass is a height <span class="math notranslate nohighlight">\((h-R)cos(\theta) + R\)</span> above the ground. You can see this when it’s toppled over, where the center of mass is at a height <span class="math notranslate nohighlight">\(R\)</span> above the ground. This is because it tips around <span class="math notranslate nohighlight">\(O\)</span>, the point where the hemisphere meets the cylinder.</p>
 </div>
 <ul class="simple">
-<li><p>2b (3pt) Use this to find the gravitational potential energy <span class="math notranslate nohighlight">\(U(\theta)\)</span>. Show in a figure how the potential energy varies with <span class="math notranslate nohighlight">\(\theta\)</span>.</p></li>
+<li><p>2b (3pt) Use this to find the gravitational potential energy <span class="math notranslate nohighlight">\(U(\theta)\)</span>. Show in a figure how the potential energy varies with <span class="math notranslate nohighlight">\(\theta\)</span>. Note that <span class="math notranslate nohighlight">\(h/R\)</span> becomes an important parameter. For different choices of <span class="math notranslate nohighlight">\(h/R\)</span> do the equilibrium points change? How?</p></li>
 </ul>
 <div class="tip admonition">
 <p class="admonition-title">Solution</p>
@@ -533,7 +540,7 @@ doconce format html hw5.do.txt --no_mako -->
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">ToyPotential</span><span class="p">(</span><span class="n">theta</span><span class="p">,</span> <span class="n">h</span><span class="p">,</span> <span class="n">R</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">ToyPotential</span><span class="p">(</span><span class="n">theta</span><span class="p">,</span> <span class="n">h</span><span class="p">,</span> <span class="n">R</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">h</span><span class="o">/</span><span class="n">R</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">theta</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span><span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">theta</span><span class="p">)</span>
 
 <span class="n">theta</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
@@ -553,11 +560,11 @@ doconce format html hw5.do.txt --no_mako -->
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/f64669c69f8bdeb05f9ca27c50159db25d73973756d2d6e280151f8502f164e1.png" src="../_images/f64669c69f8bdeb05f9ca27c50159db25d73973756d2d6e280151f8502f164e1.png" />
+<img alt="../_images/ecfca272bc2d2f154ee056a2ef9a3d8c08800c774f23db21c65a5f3ab2925b10.png" src="../_images/ecfca272bc2d2f154ee056a2ef9a3d8c08800c774f23db21c65a5f3ab2925b10.png" />
 </div>
 </div>
 <ul class="simple">
-<li><p>2c (5pt) For which values of <span class="math notranslate nohighlight">\(R\)</span> and <span class="math notranslate nohighlight">\(h\)</span> is the toy in stable equilibrium so that it does not fall over? Why does this make sense to you? Or how would you explain it to a friend?</p></li>
+<li><p>2c (5pt) For which values of <span class="math notranslate nohighlight">\(R\)</span> and <span class="math notranslate nohighlight">\(h\)</span> is the toy in stable equilibrium so that it does not fall over? Does it fit with your graphical analysis? Why does this make sense to you? Or how would you explain it to a friend?</p></li>
 </ul>
 <div class="tip admonition">
 <p class="admonition-title">Solution</p>
@@ -579,12 +586,12 @@ doconce format html hw5.do.txt --no_mako -->
 </div>
 </section>
 <section id="exercise-3-15pt-generic-1d-motion">
-<h2>Exercise 3 (15pt), “Generic” 1D motion<a class="headerlink" href="#exercise-3-15pt-generic-1d-motion" title="Permalink to this heading">#</a></h2>
+<h2>Exercise 3 (15pt), “Generic” 1D motion<a class="headerlink" href="#exercise-3-15pt-generic-1d-motion" title="Link to this heading">#</a></h2>
 <p>We will eventually learn how to solve for equations of motion for generalized coordinates. That work requires us to think about the forces and constraints on a system. Here we will consider a particle moving along a curved path to begin to think about how to describe the motion of a particle in a more general way.</p>
 <p><img alt="curved-path" src="../_images/5.3-curved_path.png" /></p>
-<p>A bead follows the curved path above, you can imagine it is a wire or a track, and the bead is constrained to move along the path. The bead’s position is described by its distance along the path, <span class="math notranslate nohighlight">\(s\)</span> as measured from the origin <span class="math notranslate nohighlight">\(O\)</span>.</p>
+<p>A bead follows the curved path above, you can imagine it is a wire or a track, and the bead is constrained to move along the path. The bead’s position is described by its distance along the path, <span class="math notranslate nohighlight">\(s\)</span> as measured from the origin <span class="math notranslate nohighlight">\(O\)</span>. The <span class="math notranslate nohighlight">\(\hat{s}\)</span> direction is always along the path - that is, it’s always tangent to the wire.</p>
 <ul class="simple">
-<li><p>3a (3pt) Write the velocity <span class="math notranslate nohighlight">\(\mathbf{v}\)</span> in terms of its components (e.g., <span class="math notranslate nohighlight">\(dx/dt\)</span>) and find it’s magnitude (<span class="math notranslate nohighlight">\(v\)</span>).</p></li>
+<li><p>3a (3pt) Let’s start by writing the velocity <span class="math notranslate nohighlight">\(\mathbf{v}\)</span> in terms of its Cartesian components (e.g., <span class="math notranslate nohighlight">\(dx/dt\)</span>) and find it’s magnitude (<span class="math notranslate nohighlight">\(v\)</span>). How does this approach seem given the shape of the wire? Do you think we have chosen a good set of coordinates?</p></li>
 </ul>
 <div class="tip admonition">
 <p class="admonition-title">Solution</p>
@@ -594,15 +601,13 @@ doconce format html hw5.do.txt --no_mako -->
 <p>The speed of the bead is then given by,</p>
 <div class="math notranslate nohighlight">
 \[v = \sqrt{\left(\dfrac{dx}{dt}\right)^2 + \left(\dfrac{dy}{dt}\right)^2}.\]</div>
+<p>This is definitely a standard approach, but not the best. The complication of finding the <span class="math notranslate nohighlight">\(x-y\)</span> components at every location seems a bit insurmountable. It is very challenging.</p>
 </div>
 <ul class="simple">
-<li><p>3b (4pt) Use these results to show that bead’s speed is given by <span class="math notranslate nohighlight">\(v=\dot{s}\)</span>.</p></li>
+<li><p>3b (4pt) Instead, consider the coordinate system <span class="math notranslate nohighlight">\(\langle \hat{s}, \hat{s}_{\perp}\rangle\)</span>. That is the the direction along the path and the direction perpendicular to it (assume we are solving this in a plane for the moment). Use this coordinate system to show that bead’s speed is given by <span class="math notranslate nohighlight">\(v=\dot{s}\)</span>, that is there is no dependence of the speed on the <span class="math notranslate nohighlight">\(\hat{s}_{\perp}\)</span> component of <span class="math notranslate nohighlight">\(\vec{v}\)</span>. How might this be a better choice?</p></li>
 </ul>
 <div class="tip admonition">
 <p class="admonition-title">Solution</p>
-<p>The location of the bead is given by the position vector <span class="math notranslate nohighlight">\(\mathbf{r}(t) = \langle x(t), y(t)\rangle\)</span>. As we move along the path, the velocity of the bead is given by the time derivative of the position vector,</p>
-<div class="math notranslate nohighlight">
-\[\mathbf{v} = \dfrac{d\mathbf{r}}{dt} = \dfrac{d}{dt}\langle x(t), y(t)\rangle = \langle \dfrac{dx}{dt}, \dfrac{dy}{dt}\rangle.\]</div>
 <p>This velocity is always tangent to the path. If we consider a generic vector along the path, <span class="math notranslate nohighlight">\(\mathbf{s} = s(t)\hat{s}\)</span>, then the velocity is given by,</p>
 <div class="math notranslate nohighlight">
 \[\mathbf{v} = \dfrac{d\mathbf{s}}{dt} = \dfrac{d}{dt}(|s(t)|\hat{s}) = \dfrac{d|s|}{dt}\hat{s} + |s|\frac{d\hat{s}}{dt} .\]</div>
@@ -610,9 +615,10 @@ doconce format html hw5.do.txt --no_mako -->
 <div class="math notranslate nohighlight">
 \[\mathbf{v} = \dfrac{d|s|}{dt}\hat{s} = \dot{s}\hat{s}.\]</div>
 <p>This shows that the speed of the bead is given by <span class="math notranslate nohighlight">\(v = \dot{s}\)</span>.</p>
+<p>This approach makes this problem one-dimensional, along the path. This is the introduction of <a class="reference external" href="https://en.wikipedia.org/wiki/Generalized_coordinates">generalized coordinates</a>, which are a core part of <a class="reference external" href="https://en.wikipedia.org/wiki/Lagrangian_mechanics">Lagrangian Dynamics</a>.</p>
 </div>
 <ul class="simple">
-<li><p>3c (4pt) Prove that the tangential component of the net force (<span class="math notranslate nohighlight">\(F_{||}\)</span>, “parallel” to the motion) on the bead is <span class="math notranslate nohighlight">\(m\ddot{s}\)</span>.</p></li>
+<li><p>3c (4pt) Still using this coordinate system, prove that the tangential component of the net force (<span class="math notranslate nohighlight">\(F_{||}\)</span>, “parallel” to the motion) on the bead is <span class="math notranslate nohighlight">\(m\ddot{s}\)</span>.</p></li>
 </ul>
 <div class="tip admonition">
 <p class="admonition-title">Solution</p>
@@ -634,6 +640,13 @@ doconce format html hw5.do.txt --no_mako -->
 <li><p>3d (4pt) Show that the tangential component of the net force due to the wire is <span class="math notranslate nohighlight">\(-\frac{dU}{ds}\)</span>.</p></li>
 </ul>
 <p>This 1D concept extends to multiple dimensions and can help us understand the Lagrangian method of solving for the equations of motion.</p>
+<div class="info admonition">
+<p class="admonition-title">Projection of a gradient</p>
+<p>We can calculate the projection for a generic potential in a particular Cartesian direction.</p>
+<div class="math notranslate nohighlight">
+\[\nabla U(\vec{r}) \cdot \hat{x} = \langle \dfrac{dU(\vec{r})}{dx}, \dfrac{dU(\vec{r})}{dy}, \dfrac{dU(\vec{r})}{dz} \rangle \cdot \langle 1,0,0 \rangle = \dfrac{dU(\vec{r})}{dx}\]</div>
+<p>Ultimately, the projection is the what the potential changes with respect to the projection direction.</p>
+</div>
 <div class="tip admonition">
 <p class="admonition-title">Solution</p>
 <p>If we consider Newton’s second law for the bead, we have,</p>
@@ -648,16 +661,16 @@ doconce format html hw5.do.txt --no_mako -->
 <p>where <span class="math notranslate nohighlight">\(\mathbf{F}_{cons} = -\nabla U\)</span>. This means that the tangential component of the net force is given by,</p>
 <div class="math notranslate nohighlight">
 \[F_{||} = -\nabla U\cdot\hat{s} = -\dfrac{dU}{ds},\]</div>
-<p>where the last step comes from the definition of the gradient and it’s projection.</p>
+<p>where the last step comes from the definition of the gradient and its projection.</p>
 </div>
 </section>
 <section id="exercise-4-15pt-another-1-d-conservative-system-baby-bifurcations">
-<h2>Exercise 4 (15pt), Another 1-D conservative system; baby bifurcations<a class="headerlink" href="#exercise-4-15pt-another-1-d-conservative-system-baby-bifurcations" title="Permalink to this heading">#</a></h2>
+<h2>Exercise 4 (15pt), Another 1-D conservative system; baby bifurcations<a class="headerlink" href="#exercise-4-15pt-another-1-d-conservative-system-baby-bifurcations" title="Link to this heading">#</a></h2>
 <p>The apparatus below is a massless wheel of radius <span class="math notranslate nohighlight">\(R\)</span> that is mounted to a frictionless axle. A small, dense piece of clay with mass <span class="math notranslate nohighlight">\(M\)</span> is glued to edge of the wheel as shown. Another mass <span class="math notranslate nohighlight">\(m\)</span> hangs from a massless string that is wrapped around the wheel. We can assume the string is inextensible and does not slip, and the system is in a uniform gravitational field.</p>
 <p><img alt="apparatus" src="../_images/5.4-apparatus.png" /></p>
 <p>We can show that this complicated system is still one-dimensional (at least in space) and then we can see the effects of parameters like <span class="math notranslate nohighlight">\(m/M\)</span>.</p>
 <ul class="simple">
-<li><p>4a (3pt) In terms of the rotation angle <span class="math notranslate nohighlight">\(\phi\)</span> of the wheel, write down the total potential energy <span class="math notranslate nohighlight">\(U(\phi)\)</span> of the system of both masses. Take note of any constraints that you use to write this as a 1D problem.</p></li>
+<li><p>4a (3pt) In terms of the rotation angle <span class="math notranslate nohighlight">\(\phi\)</span> of the wheel, write down the total potential energy <span class="math notranslate nohighlight">\(U(\phi)\)</span> of the system of both masses. Take note of any constraints that you use to write this as a 1D problem. When working this kind of problem, every object-Earth pair has gravitational potential energy and we must have the same zero of potential energy for every pair.</p></li>
 </ul>
 <div class="tip admonition">
 <p class="admonition-title">Solution</p>
@@ -672,7 +685,7 @@ doconce format html hw5.do.txt --no_mako -->
 \[U(\phi) = -mgR\phi - MgR\cos\phi.\]</div>
 </div>
 <ul class="simple">
-<li><p>4b (2pt) Use this potential energy to find  values of <span class="math notranslate nohighlight">\(m\)</span> and <span class="math notranslate nohighlight">\(M\)</span> for which there are “fixed points”, “critical points”, or what we sometimes call “equilibrium points”. The language we use comes from different fields, but the concept is the same.</p></li>
+<li><p>4b (2pt) Use this potential energy to find  values of <span class="math notranslate nohighlight">\(m\)</span> and <span class="math notranslate nohighlight">\(M\)</span> for which there are “fixed points”, “critical points”, or what we sometimes call “equilibrium points”. The language we use comes from different fields, but the concept is the same. What is the condition for the existence of any critical points?</p></li>
 </ul>
 <div class="tip admonition">
 <p class="admonition-title">Solution</p>
@@ -716,7 +729,7 @@ doconce format html hw5.do.txt --no_mako -->
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">WheelPotential</span><span class="p">(</span><span class="n">phi</span><span class="p">,</span> <span class="n">m</span><span class="p">,</span> <span class="n">M</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">WheelPotential</span><span class="p">(</span><span class="n">phi</span><span class="p">,</span> <span class="n">m</span><span class="p">,</span> <span class="n">M</span><span class="p">):</span>
     <span class="k">return</span> <span class="o">-</span><span class="n">m</span><span class="o">/</span><span class="n">M</span><span class="o">*</span><span class="n">phi</span><span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">phi</span><span class="p">)</span>
 
 <span class="n">phi</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span>
@@ -740,12 +753,12 @@ doconce format html hw5.do.txt --no_mako -->
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/0cccb7207b2da961031a5d86db5a4790e599b795df768ac3d575beaff00433e8.png" src="../_images/0cccb7207b2da961031a5d86db5a4790e599b795df768ac3d575beaff00433e8.png" />
+<img alt="../_images/39111e85fc8d727c921888474385ef61a5f4c0467c5a130be04ac68b5213757c.png" src="../_images/39111e85fc8d727c921888474385ef61a5f4c0467c5a130be04ac68b5213757c.png" />
 </div>
 </div>
 <div class="tip admonition">
 <p class="admonition-title">Solution</p>
-<p>It’s interesting that there’s something weird happening when <span class="math notranslate nohighlight">\(m/M&gt;1\)</span>. Because it looks like the last point is the selected minimum. Let’s plot the potential energy for <span class="math notranslate nohighlight">\(m/M = 1.1\)</span> and <span class="math notranslate nohighlight">\(m/M = 0.9\)</span> but let phi go from -<span class="math notranslate nohighlight">\(pi/2\)</span> to 2<span class="math notranslate nohighlight">\(\pi\)</span>. And now we see what is happening. The potential energy has local minima and local maxima. The curve for <span class="math notranslate nohighlight">\(m/M &lt; 1\)</span> tends to have a local minimum before <span class="math notranslate nohighlight">\(phi=pi/2\)</span> at the top. So there’s a chance for stable oscillations. However, if <span class="math notranslate nohighlight">\(m/M&gt;1\)</span>, then that local minimum disappears and the potential energy has no local minima. This is a sign that the system has no stable points, but it also appears to be a sign there’s no local extrema (i.e., no fixed points at all). This could have come from part 1, but now we see why. This is an example of a system the bifurcates - it goes from having stable points to having no stable points with a parameter change. This is a baby bifurcation.</p>
+<p>It’s interesting that there’s something weird happening when <span class="math notranslate nohighlight">\(m/M&gt;1\)</span>. Because it looks like the last point is the selected minimum. Let’s plot the potential energy for <span class="math notranslate nohighlight">\(m/M = 1.1\)</span> and <span class="math notranslate nohighlight">\(m/M = 0.9\)</span> but let phi go from -<span class="math notranslate nohighlight">\(\pi/2\)</span> to 2<span class="math notranslate nohighlight">\(\pi\)</span>. And now we see what is happening. The potential energy has local minima and local maxima. The curve for <span class="math notranslate nohighlight">\(m/M &lt; 1\)</span> tends to have a local minimum before <span class="math notranslate nohighlight">\(\phi=\pi/2\)</span> at the top. So there’s a chance for stable oscillations. However, if <span class="math notranslate nohighlight">\(m/M&gt;1\)</span>, then that local minimum disappears and the potential energy has no local minima. This is a sign that the system has no stable points, but it also appears to be a sign there’s no local extrema (i.e., no fixed points at all). This could have come from part 1, but now we see why. This is an example of a system the bifurcates - it goes from having stable points to having no stable points with a parameter change. This is a baby bifurcation.</p>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -770,7 +783,7 @@ doconce format html hw5.do.txt --no_mako -->
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/e1425a805aef09cb8bd05aad5c90d611a1fa674386d466bde4a9df68fa57cbdb.png" src="../_images/e1425a805aef09cb8bd05aad5c90d611a1fa674386d466bde4a9df68fa57cbdb.png" />
+<img alt="../_images/75d1b7ec4aa2810741c933f935629ea92efdbf0cb46209bf00284524fb4c28d4.png" src="../_images/75d1b7ec4aa2810741c933f935629ea92efdbf0cb46209bf00284524fb4c28d4.png" />
 </div>
 </div>
 <ul class="simple">
@@ -802,16 +815,16 @@ doconce format html hw5.do.txt --no_mako -->
 </div>
 </section>
 <section id="exercise-5-20-pt-phase-diagrams">
-<h2>Exercise 5 (20 pt), Phase Diagrams<a class="headerlink" href="#exercise-5-20-pt-phase-diagrams" title="Permalink to this heading">#</a></h2>
+<h2>Exercise 5 (20 pt), Phase Diagrams<a class="headerlink" href="#exercise-5-20-pt-phase-diagrams" title="Link to this heading">#</a></h2>
 <p>One of the most useful tools we can learn from classical mechanics is the phase diagram. For us, it is the plot of the position and velocity of a particle in a 1D system, but the concept can be extended to higher dimensions and to other systems. The phase diagram can tell us about the stability of fixed points, the period of oscillations, and the qualitative behavior of the system.</p>
 <p>In this exercise, we will consider a particle in a potential <span class="math notranslate nohighlight">\(U(x)\)</span> and we will plot the phase diagrams using both <code class="docutils literal notranslate"><span class="pre">quiver</span></code> and <code class="docutils literal notranslate"><span class="pre">streamplot</span></code> in <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code>. The purpose of this exercise is to learn how to plot phase diagrams and to interpret the results.</p>
 <p>We start with a little code for plotting the phase diagram of the simple harmonic oscillator. The code is written in a way that you can easily modify it to plot the phase diagram of other systems. The key point is to make sure that the <code class="docutils literal notranslate"><span class="pre">quiver</span></code> or <code class="docutils literal notranslate"><span class="pre">streamplot</span></code> function is called with the correct arguments.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="o">*</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">math</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
 <span class="o">%</span><span class="k">matplotlib</span> inline
 <span class="n">plt</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;seaborn-v0_8-colorblind&#39;</span><span class="p">)</span>
 </pre></div>
@@ -820,7 +833,7 @@ doconce format html hw5.do.txt --no_mako -->
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">SHO</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="n">V</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">SHO</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="n">V</span><span class="p">):</span>
     
     <span class="c1"># For a simple harmonic oscillator, x&#39; = v, and v&#39; = -x.</span>
     <span class="n">dX</span> <span class="o">=</span> <span class="n">V</span>
@@ -828,7 +841,7 @@ doconce format html hw5.do.txt --no_mako -->
     
     <span class="k">return</span> <span class="n">dX</span><span class="p">,</span> <span class="n">dV</span>
 
-<span class="k">def</span> <span class="nf">generate_phase_space</span><span class="p">(</span><span class="n">x_lim</span><span class="p">,</span> <span class="n">v_lim</span><span class="p">,</span> <span class="n">grid_size</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">generate_phase_space</span><span class="p">(</span><span class="n">x_lim</span><span class="p">,</span> <span class="n">v_lim</span><span class="p">,</span> <span class="n">grid_size</span><span class="p">):</span>
 
     <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="n">x_lim</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">x_lim</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">grid_size</span><span class="p">)</span>
     <span class="n">v</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="n">v_lim</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">v_lim</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">grid_size</span><span class="p">)</span>
@@ -867,7 +880,7 @@ doconce format html hw5.do.txt --no_mako -->
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/99ccc408c0d4dc6a82f487e5e9233c6cbad357d3db6b1e2bbf50b7114af7885f.png" src="../_images/99ccc408c0d4dc6a82f487e5e9233c6cbad357d3db6b1e2bbf50b7114af7885f.png" />
+<img alt="../_images/edad94d69d08c34ea6398a121b44c61213837429ca0ce1b94e1bc223a3c504f9.png" src="../_images/edad94d69d08c34ea6398a121b44c61213837429ca0ce1b94e1bc223a3c504f9.png" />
 </div>
 </div>
 <ul class="simple">
@@ -903,14 +916,14 @@ doconce format html hw5.do.txt --no_mako -->
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">PlanePendulum</span><span class="p">(</span><span class="n">theta</span><span class="p">,</span><span class="n">omega</span><span class="p">,</span><span class="n">g</span><span class="p">,</span><span class="n">l</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">PlanePendulum</span><span class="p">(</span><span class="n">theta</span><span class="p">,</span><span class="n">omega</span><span class="p">,</span><span class="n">g</span><span class="p">,</span><span class="n">l</span><span class="p">):</span>
 
     <span class="n">dtheta</span> <span class="o">=</span> <span class="n">omega</span>
     <span class="n">domega</span> <span class="o">=</span> <span class="o">-</span><span class="n">g</span><span class="o">/</span><span class="n">l</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">theta</span><span class="p">)</span>
     
     <span class="k">return</span> <span class="n">dtheta</span><span class="p">,</span> <span class="n">domega</span>
 
-<span class="k">def</span> <span class="nf">generate_phase_space</span><span class="p">(</span><span class="n">x_lim</span><span class="p">,</span> <span class="n">v_lim</span><span class="p">,</span> <span class="n">grid_size</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">generate_phase_space</span><span class="p">(</span><span class="n">x_lim</span><span class="p">,</span> <span class="n">v_lim</span><span class="p">,</span> <span class="n">grid_size</span><span class="p">):</span>
 
     <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="n">x_lim</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">x_lim</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">grid_size</span><span class="p">)</span>
     <span class="n">v</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="n">v_lim</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">v_lim</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">grid_size</span><span class="p">)</span>
@@ -950,7 +963,7 @@ doconce format html hw5.do.txt --no_mako -->
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/7ce5db86ec130f2db838afdbab658fd6c42b21a3b63fa7a9f9b78ef4404f8048.png" src="../_images/7ce5db86ec130f2db838afdbab658fd6c42b21a3b63fa7a9f9b78ef4404f8048.png" />
+<img alt="../_images/9928d984c8e13670ecd0b908e3f6429678eac41531da77cc6941fa5f284b544e.png" src="../_images/9928d984c8e13670ecd0b908e3f6429678eac41531da77cc6941fa5f284b544e.png" />
 </div>
 </div>
 <div class="tip admonition">
@@ -977,13 +990,13 @@ $<span class="math notranslate nohighlight">\(\ddot{x}=-\frac{k}{m}x-\frac{b}{m}
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">DampedSHO</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">v</span><span class="p">,</span><span class="n">beta</span><span class="p">,</span><span class="n">omega0</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">DampedSHO</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">v</span><span class="p">,</span><span class="n">beta</span><span class="p">,</span><span class="n">omega0</span><span class="p">):</span>
 
     <span class="n">dx</span> <span class="o">=</span> <span class="n">v</span>
     <span class="n">dv</span> <span class="o">=</span> <span class="o">-</span><span class="mi">2</span><span class="o">*</span><span class="n">beta</span><span class="o">*</span><span class="n">v</span><span class="o">-</span><span class="n">omega0</span><span class="o">**</span><span class="mi">2</span><span class="o">*</span><span class="n">x</span>
     <span class="k">return</span> <span class="n">dx</span><span class="p">,</span> <span class="n">dv</span>
 
-<span class="k">def</span> <span class="nf">generate_phase_space</span><span class="p">(</span><span class="n">x_lim</span><span class="p">,</span> <span class="n">v_lim</span><span class="p">,</span> <span class="n">grid_size</span><span class="p">,</span><span class="n">beta</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span><span class="n">omega0</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">generate_phase_space</span><span class="p">(</span><span class="n">x_lim</span><span class="p">,</span> <span class="n">v_lim</span><span class="p">,</span> <span class="n">grid_size</span><span class="p">,</span><span class="n">beta</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span><span class="n">omega0</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
 
     <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="n">x_lim</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">x_lim</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">grid_size</span><span class="p">)</span>
     <span class="n">v</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="n">v_lim</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">v_lim</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">grid_size</span><span class="p">)</span>
@@ -1016,9 +1029,9 @@ $<span class="math notranslate nohighlight">\(\ddot{x}=-\frac{k}{m}x-\frac{b}{m}
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/3c816b5a1408f1dffe0d01c423a0b712b11e71a00868d55a58f35dfc4b8cf80f.png" src="../_images/3c816b5a1408f1dffe0d01c423a0b712b11e71a00868d55a58f35dfc4b8cf80f.png" />
-<img alt="../_images/7f0ac700438feed9c8f8600cea313b83eda0a1594d2d796c88dbe053c74ebf6c.png" src="../_images/7f0ac700438feed9c8f8600cea313b83eda0a1594d2d796c88dbe053c74ebf6c.png" />
-<img alt="../_images/29bc25ab26e72f031435b69804d9cbd67efce2ff47315ede0b7498bdb6c4c759.png" src="../_images/29bc25ab26e72f031435b69804d9cbd67efce2ff47315ede0b7498bdb6c4c759.png" />
+<img alt="../_images/124806ef523cebe45def6f56a63dcc6ba7c333439c3b10369365cdada246d056.png" src="../_images/124806ef523cebe45def6f56a63dcc6ba7c333439c3b10369365cdada246d056.png" />
+<img alt="../_images/7259e7e6f67b6b8fa4d757fbea652a9092cde04271a0e1e4cc27febb28d86ef5.png" src="../_images/7259e7e6f67b6b8fa4d757fbea652a9092cde04271a0e1e4cc27febb28d86ef5.png" />
+<img alt="../_images/27b335f307548a9a6e9b8ff40f6349816896f1b5792a4ded5b06e673d05bc871.png" src="../_images/27b335f307548a9a6e9b8ff40f6349816896f1b5792a4ded5b06e673d05bc871.png" />
 </div>
 </div>
 <p>The damped physical pendulum has the equation of motion:
@@ -1040,14 +1053,14 @@ $<span class="math notranslate nohighlight">\(\ddot{\theta}=-\frac{g}{l}\sin\the
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">PlanePendulumDrag</span><span class="p">(</span><span class="n">theta</span><span class="p">,</span><span class="n">omega</span><span class="p">,</span><span class="n">beta</span><span class="p">,</span><span class="n">omega0</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">PlanePendulumDrag</span><span class="p">(</span><span class="n">theta</span><span class="p">,</span><span class="n">omega</span><span class="p">,</span><span class="n">beta</span><span class="p">,</span><span class="n">omega0</span><span class="p">):</span>
 
     <span class="n">dtheta</span> <span class="o">=</span> <span class="n">omega</span>
     <span class="n">domega</span> <span class="o">=</span> <span class="o">-</span><span class="n">omega0</span><span class="o">**</span><span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">theta</span><span class="p">)</span><span class="o">-</span><span class="n">beta</span><span class="o">*</span><span class="n">omega</span>
     
     <span class="k">return</span> <span class="n">dtheta</span><span class="p">,</span> <span class="n">domega</span>
 
-<span class="k">def</span> <span class="nf">generate_phase_space</span><span class="p">(</span><span class="n">x_lim</span><span class="p">,</span> <span class="n">v_lim</span><span class="p">,</span> <span class="n">grid_size</span><span class="p">,</span><span class="n">beta</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span><span class="n">omega0</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">generate_phase_space</span><span class="p">(</span><span class="n">x_lim</span><span class="p">,</span> <span class="n">v_lim</span><span class="p">,</span> <span class="n">grid_size</span><span class="p">,</span><span class="n">beta</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span><span class="n">omega0</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
 
     <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="n">x_lim</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">x_lim</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">grid_size</span><span class="p">)</span>
     <span class="n">v</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="n">v_lim</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">v_lim</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">grid_size</span><span class="p">)</span>
@@ -1079,9 +1092,9 @@ $<span class="math notranslate nohighlight">\(\ddot{\theta}=-\frac{g}{l}\sin\the
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/97820231536aeee7d2b1fd8cebcc2444d6a165a1fcf6294713825b538b2bfe8f.png" src="../_images/97820231536aeee7d2b1fd8cebcc2444d6a165a1fcf6294713825b538b2bfe8f.png" />
-<img alt="../_images/be0cd22b54bd269261586ce79cc4edf3e764787190b80cb3836c8cb3573e4de6.png" src="../_images/be0cd22b54bd269261586ce79cc4edf3e764787190b80cb3836c8cb3573e4de6.png" />
-<img alt="../_images/149554700c6bc9787ba4e2262eae73429cabcfaa4c7079cc845b21ac8ba9d3e4.png" src="../_images/149554700c6bc9787ba4e2262eae73429cabcfaa4c7079cc845b21ac8ba9d3e4.png" />
+<img alt="../_images/ec21dc5735c73a6cc6744db554e03ea8d7c96b0ea1a7a94dd8febf806178a366.png" src="../_images/ec21dc5735c73a6cc6744db554e03ea8d7c96b0ea1a7a94dd8febf806178a366.png" />
+<img alt="../_images/50389352939e9f18c6766116dbf7f0eaba7b09fe155282c83f29f6ce72553412.png" src="../_images/50389352939e9f18c6766116dbf7f0eaba7b09fe155282c83f29f6ce72553412.png" />
+<img alt="../_images/54b48eaf3aaeadf40d1dbc5ab59257978d784a158494ee6ee5cf6576fa1ad6c0.png" src="../_images/54b48eaf3aaeadf40d1dbc5ab59257978d784a158494ee6ee5cf6576fa1ad6c0.png" />
 </div>
 </div>
 <ul class="simple">
@@ -1102,7 +1115,7 @@ $<span class="math notranslate nohighlight">\(\ddot{\theta}=-\frac{g}{l}\sin\the
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">SHO</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="n">V</span><span class="p">,</span><span class="n">k</span><span class="p">,</span><span class="n">m</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">SHO</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="n">V</span><span class="p">,</span><span class="n">k</span><span class="p">,</span><span class="n">m</span><span class="p">):</span>
     
     <span class="c1"># For a simple harmonic oscillator, x&#39; = v, and v&#39; = -x.</span>
     <span class="n">dX</span> <span class="o">=</span> <span class="n">V</span>
@@ -1110,7 +1123,7 @@ $<span class="math notranslate nohighlight">\(\ddot{\theta}=-\frac{g}{l}\sin\the
     
     <span class="k">return</span> <span class="n">dX</span><span class="p">,</span> <span class="n">dV</span>
 
-<span class="k">def</span> <span class="nf">generate_phase_space</span><span class="p">(</span><span class="n">x_lim</span><span class="p">,</span> <span class="n">v_lim</span><span class="p">,</span> <span class="n">grid_size</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">generate_phase_space</span><span class="p">(</span><span class="n">x_lim</span><span class="p">,</span> <span class="n">v_lim</span><span class="p">,</span> <span class="n">grid_size</span><span class="p">):</span>
 
     <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="n">x_lim</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">x_lim</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">grid_size</span><span class="p">)</span>
     <span class="n">v</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="n">v_lim</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">v_lim</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">grid_size</span><span class="p">)</span>
@@ -1151,18 +1164,18 @@ $<span class="math notranslate nohighlight">\(\ddot{\theta}=-\frac{g}{l}\sin\the
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/var/folders/24/ywd96j3x6c76wtl3jkr2b3g80000gn/T/ipykernel_28916/2996982062.py:33: RuntimeWarning: invalid value encountered in sqrt
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_3144/2996982062.py:33: RuntimeWarning: invalid value encountered in sqrt
   v1 = np.sqrt(2*energies[&#39;E&#39;][i]-x**2)
-/var/folders/24/ywd96j3x6c76wtl3jkr2b3g80000gn/T/ipykernel_28916/2996982062.py:34: RuntimeWarning: invalid value encountered in sqrt
+/tmp/ipykernel_3144/2996982062.py:34: RuntimeWarning: invalid value encountered in sqrt
   v2 = -np.sqrt(2*energies[&#39;E&#39;][i]-x**2)
 </pre></div>
 </div>
-<img alt="../_images/620293dc97b2c5a2417f55ba06773fe88dbb4a3351649f6f13244737ac63d0f1.png" src="../_images/620293dc97b2c5a2417f55ba06773fe88dbb4a3351649f6f13244737ac63d0f1.png" />
+<img alt="../_images/87cb91cab6610020e089487303521d166bf44c1ee2aa4881ed9e167cd26f5726.png" src="../_images/87cb91cab6610020e089487303521d166bf44c1ee2aa4881ed9e167cd26f5726.png" />
 </div>
 </div>
 </section>
 <section id="exercise-6-30pt-numerical-integration-techniques-and-oscillations">
-<h2>Exercise 6 (30pt), Numerical integration techniques and oscillations<a class="headerlink" href="#exercise-6-30pt-numerical-integration-techniques-and-oscillations" title="Permalink to this heading">#</a></h2>
+<h2>Exercise 6 (30pt), Numerical integration techniques and oscillations<a class="headerlink" href="#exercise-6-30pt-numerical-integration-techniques-and-oscillations" title="Link to this heading">#</a></h2>
 <p>We’ve discussed the Euler method and made use of it in the prior homeworks. However, the Euler method is not the most accurate method for solving ODEs. It has a real issue with energy conservation, which is a problem for conservative systems. Here we will explore the Euler-Cromer method and the Runge-Kutta methods for the simple harmonic oscillator. You will then apply these same methods to the various oscillators in Exercise 5.</p>
 <p>Below we have written a code to solve the ODE:</p>
 <div class="math notranslate nohighlight">
@@ -1183,7 +1196,7 @@ $<span class="math notranslate nohighlight">\(\ddot{\theta}=-\frac{g}{l}\sin\the
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">euler</span><span class="p">(</span><span class="n">omega</span><span class="p">,</span> <span class="n">x0</span><span class="p">,</span> <span class="n">v0</span><span class="p">,</span> <span class="n">t0</span><span class="p">,</span> <span class="n">tf</span><span class="p">,</span> <span class="n">dt</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">euler</span><span class="p">(</span><span class="n">omega</span><span class="p">,</span> <span class="n">x0</span><span class="p">,</span> <span class="n">v0</span><span class="p">,</span> <span class="n">t0</span><span class="p">,</span> <span class="n">tf</span><span class="p">,</span> <span class="n">dt</span><span class="p">):</span>
     <span class="n">t</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">t0</span><span class="p">,</span> <span class="n">tf</span><span class="p">,</span> <span class="n">dt</span><span class="p">)</span>
     <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">t</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
     <span class="n">v</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">t</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
@@ -1195,7 +1208,7 @@ $<span class="math notranslate nohighlight">\(\ddot{\theta}=-\frac{g}{l}\sin\the
 
     <span class="k">return</span> <span class="n">t</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">v</span>
 
-<span class="k">def</span> <span class="nf">euler_cromer</span><span class="p">(</span><span class="n">omega</span><span class="p">,</span> <span class="n">x0</span><span class="p">,</span> <span class="n">v0</span><span class="p">,</span> <span class="n">t0</span><span class="p">,</span> <span class="n">tf</span><span class="p">,</span> <span class="n">dt</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">euler_cromer</span><span class="p">(</span><span class="n">omega</span><span class="p">,</span> <span class="n">x0</span><span class="p">,</span> <span class="n">v0</span><span class="p">,</span> <span class="n">t0</span><span class="p">,</span> <span class="n">tf</span><span class="p">,</span> <span class="n">dt</span><span class="p">):</span>
     <span class="n">t</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">t0</span><span class="p">,</span> <span class="n">tf</span><span class="p">,</span> <span class="n">dt</span><span class="p">)</span>
     <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">t</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
     <span class="n">v</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">t</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
@@ -1297,7 +1310,7 @@ $<span class="math notranslate nohighlight">\(\ddot{\theta}=-\frac{g}{l}\sin\the
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/233cc7938d1eba1be1f363104a4597222e3e4090a590aa2e1797809f1852cdeb.png" src="../_images/233cc7938d1eba1be1f363104a4597222e3e4090a590aa2e1797809f1852cdeb.png" />
+<img alt="../_images/e79d77c5527a17d27cd6f2b393044e77116610a651b63387802b65765d9ce77b.png" src="../_images/e79d77c5527a17d27cd6f2b393044e77116610a651b63387802b65765d9ce77b.png" />
 </div>
 </div>
 <ul class="simple">
@@ -1325,7 +1338,7 @@ $<span class="math notranslate nohighlight">\(\ddot{\theta}=-\frac{g}{l}\sin\the
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">ComputeEnergies</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">v</span><span class="p">,</span> <span class="n">omega</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">ComputeEnergies</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">v</span><span class="p">,</span> <span class="n">omega</span><span class="p">):</span>
     <span class="n">kinetic</span> <span class="o">=</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="n">v</span><span class="o">**</span><span class="mi">2</span>
     <span class="n">potential</span> <span class="o">=</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="n">omega</span><span class="o">**</span><span class="mi">2</span> <span class="o">*</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="c1">## with m = 1</span>
     <span class="k">return</span> <span class="n">kinetic</span><span class="p">,</span> <span class="n">potential</span><span class="p">,</span> <span class="n">kinetic</span> <span class="o">+</span> <span class="n">potential</span>
@@ -1361,7 +1374,7 @@ $<span class="math notranslate nohighlight">\(\ddot{\theta}=-\frac{g}{l}\sin\the
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/a90b1a09870d075dbaeb36b7d02cbf39264abae502d51198e928785e5a4ba471.png" src="../_images/a90b1a09870d075dbaeb36b7d02cbf39264abae502d51198e928785e5a4ba471.png" />
+<img alt="../_images/a9b36001b7b005bd86bc88044ce9b178ae0c9b1f69951c7cc9478a1691d972f9.png" src="../_images/a9b36001b7b005bd86bc88044ce9b178ae0c9b1f69951c7cc9478a1691d972f9.png" />
 </div>
 </div>
 <ul class="simple">
@@ -1419,8 +1432,8 @@ $<span class="math notranslate nohighlight">\(\ddot{\theta}=-\frac{g}{l}\sin\the
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/a653bf8de5383e74841a77f2dc5b0bd72d8b8ae6600cc1a1f15003bcece4f6ff.png" src="../_images/a653bf8de5383e74841a77f2dc5b0bd72d8b8ae6600cc1a1f15003bcece4f6ff.png" />
-<img alt="../_images/5fc130de10e5d744fb106759c8c388e3c5a34e962ba4909d68b5b54714d7a54c.png" src="../_images/5fc130de10e5d744fb106759c8c388e3c5a34e962ba4909d68b5b54714d7a54c.png" />
+<img alt="../_images/b0ad271ff8ee39ac4953686dcd88847c55167a94beca0e37565226c870784d90.png" src="../_images/b0ad271ff8ee39ac4953686dcd88847c55167a94beca0e37565226c870784d90.png" />
+<img alt="../_images/84c7a9f7133d9feb69b94c025b417c15f8f9f987fe9c8f5625d01b18b5c00c82.png" src="../_images/84c7a9f7133d9feb69b94c025b417c15f8f9f987fe9c8f5625d01b18b5c00c82.png" />
 </div>
 </div>
 <div class="tip admonition">
@@ -1460,7 +1473,7 @@ $<span class="math notranslate nohighlight">\(\ddot{\theta}=-\frac{g}{l}\sin\the
 <span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">();</span>
 
 <span class="c1">## split the error arrays into chunks based on the number of cycles</span>
-<span class="k">def</span> <span class="nf">split_errors</span><span class="p">(</span><span class="n">errors</span><span class="p">,</span> <span class="n">cycles</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">split_errors</span><span class="p">(</span><span class="n">errors</span><span class="p">,</span> <span class="n">cycles</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">array_split</span><span class="p">(</span><span class="n">errors</span><span class="p">,</span> <span class="n">cycles</span><span class="p">)</span>
 
 <span class="n">errEulerChunks</span> <span class="o">=</span> <span class="n">split_errors</span><span class="p">(</span><span class="n">errEuler</span><span class="p">,</span> <span class="n">cycles</span><span class="p">)</span>
@@ -1484,13 +1497,13 @@ $<span class="math notranslate nohighlight">\(\ddot{\theta}=-\frac{g}{l}\sin\the
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/Users/caballero/anaconda3/envs/teaching/lib/python3.12/site-packages/numpy/core/fromnumeric.py:59: FutureWarning: &#39;Series.swapaxes&#39; is deprecated and will be removed in a future version. Please use &#39;Series.transpose&#39; instead.
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/home/venv/lib/python3.12/site-packages/numpy/_core/fromnumeric.py:57: FutureWarning: &#39;Series.swapaxes&#39; is deprecated and will be removed in a future version. Please use &#39;Series.transpose&#39; instead.
   return bound(*args, **kwds)
 </pre></div>
 </div>
-<img alt="../_images/526438479a13ffe428f58e2b761b53e7471a0cf60d250bf3e17e26dfcddcc233.png" src="../_images/526438479a13ffe428f58e2b761b53e7471a0cf60d250bf3e17e26dfcddcc233.png" />
-<img alt="../_images/07c6fda8737685493fe807620d259ed2952b8985a62cffddb5fa4193d5069d9d.png" src="../_images/07c6fda8737685493fe807620d259ed2952b8985a62cffddb5fa4193d5069d9d.png" />
-<img alt="../_images/729bdddbf689c622a96c542b7bf6e9d738fdbf5d67334b86a64cd7ce2ddf42ab.png" src="../_images/729bdddbf689c622a96c542b7bf6e9d738fdbf5d67334b86a64cd7ce2ddf42ab.png" />
+<img alt="../_images/0d7a96c20269052ced31ed53808966b6435e8ae6bce435df37908b9c258730c0.png" src="../_images/0d7a96c20269052ced31ed53808966b6435e8ae6bce435df37908b9c258730c0.png" />
+<img alt="../_images/c7ccf1cd5f41b01627a0f92cbb28a53a82000639d4351944d328de57d75d7e42.png" src="../_images/c7ccf1cd5f41b01627a0f92cbb28a53a82000639d4351944d328de57d75d7e42.png" />
+<img alt="../_images/efd56356701a2282cc5333a59acea2bba50456ab9d8edf73a161b575a718f77a.png" src="../_images/efd56356701a2282cc5333a59acea2bba50456ab9d8edf73a161b575a718f77a.png" />
 </div>
 </div>
 <div class="tip admonition">
@@ -1506,8 +1519,8 @@ $<span class="math notranslate nohighlight">\(\ddot{\theta}=-\frac{g}{l}\sin\the
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Total Error for Euler: -33.389594700868294
-Total Error for Euler-Cromer: -0.03396030383026072
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Total Error for Euler: -33.38959470086829
+Total Error for Euler-Cromer: -0.033960303830259275
 </pre></div>
 </div>
 </div>
@@ -1538,7 +1551,7 @@ Total Error for Euler-Cromer: -0.03396030383026072
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">runge_kutta_2</span><span class="p">(</span><span class="n">omega</span><span class="p">,</span> <span class="n">x0</span><span class="p">,</span> <span class="n">v0</span><span class="p">,</span> <span class="n">t0</span><span class="p">,</span> <span class="n">tf</span><span class="p">,</span> <span class="n">dt</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">runge_kutta_2</span><span class="p">(</span><span class="n">omega</span><span class="p">,</span> <span class="n">x0</span><span class="p">,</span> <span class="n">v0</span><span class="p">,</span> <span class="n">t0</span><span class="p">,</span> <span class="n">tf</span><span class="p">,</span> <span class="n">dt</span><span class="p">):</span>
     <span class="n">t</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">t0</span><span class="p">,</span> <span class="n">tf</span><span class="p">,</span> <span class="n">dt</span><span class="p">)</span>
     <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">t</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
     <span class="n">v</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">t</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
@@ -1578,7 +1591,7 @@ Total Error for Euler-Cromer: -0.03396030383026072
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/21aca6576bfb0a30ce029cbe8c33c2ec2a59d5ef66e35606cf26349afe1bfd9f.png" src="../_images/21aca6576bfb0a30ce029cbe8c33c2ec2a59d5ef66e35606cf26349afe1bfd9f.png" />
+<img alt="../_images/1b09d27efd623ec3aa88c5cbf4e4a86d42d476c909705544e8e74038dc45d36b.png" src="../_images/1b09d27efd623ec3aa88c5cbf4e4a86d42d476c909705544e8e74038dc45d36b.png" />
 </div>
 </div>
 <ul class="simple">
@@ -1631,9 +1644,9 @@ Total Error for Euler-Cromer: -0.03396030383026072
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/914e7f90020e422b382660043d6d4e008adf9a6fb78577f8c57acf6ecc39e18f.png" src="../_images/914e7f90020e422b382660043d6d4e008adf9a6fb78577f8c57acf6ecc39e18f.png" />
-<img alt="../_images/f442ec0e17795af58cc56a30ea0e54fcefae7b3c8454962d6190559d5eea053b.png" src="../_images/f442ec0e17795af58cc56a30ea0e54fcefae7b3c8454962d6190559d5eea053b.png" />
-<img alt="../_images/2131c99dd85022904ee87505565c4acd7d3430a07f9a7a9d0dcf991e98e0b751.png" src="../_images/2131c99dd85022904ee87505565c4acd7d3430a07f9a7a9d0dcf991e98e0b751.png" />
+<img alt="../_images/a83949dc4cf84a841ae950fc21a5b9d344197377a8d0c83a1a8690d79863dc7a.png" src="../_images/a83949dc4cf84a841ae950fc21a5b9d344197377a8d0c83a1a8690d79863dc7a.png" />
+<img alt="../_images/8d5ebc5a302ce8b5127e2f7a1004e0c71e5a28e66c8ed7a4079b6a63c30839f8.png" src="../_images/8d5ebc5a302ce8b5127e2f7a1004e0c71e5a28e66c8ed7a4079b6a63c30839f8.png" />
+<img alt="../_images/dfe8c424e8e828fa23a378c5dc93247370ea30af18bc445be7edfdb4e9809d46.png" src="../_images/dfe8c424e8e828fa23a378c5dc93247370ea30af18bc445be7edfdb4e9809d46.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -1645,7 +1658,7 @@ Total Error for Euler-Cromer: -0.03396030383026072
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Total Error for Runge-Kutta 2: 5.338392482129274
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Total Error for Runge-Kutta 2: 5.338392482129276
 Total Error for Euler: 1882.1792866638511
 Total Error for Euler-Cromer: 33.264837282230076
 </pre></div>
@@ -1663,11 +1676,11 @@ Total Error for Euler-Cromer: 33.264837282230076
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.integrate</span> <span class="kn">import</span> <span class="n">solve_ivp</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">scipy.integrate</span><span class="w"> </span><span class="kn">import</span> <span class="n">solve_ivp</span>
 
 <span class="c1">## Define the simple harmonic oscillator for the solve_ivp function</span>
 <span class="c1">## Note it expects a particular data structure to be returned</span>
-<span class="k">def</span> <span class="nf">SHOIVP</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">omega</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">SHOIVP</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">omega</span><span class="p">):</span>
     <span class="n">x</span><span class="p">,</span> <span class="n">v</span> <span class="o">=</span> <span class="n">y</span>
     <span class="n">dydt</span> <span class="o">=</span> <span class="p">[</span><span class="n">v</span><span class="p">,</span> <span class="o">-</span><span class="n">omega</span><span class="o">**</span><span class="mi">2</span> <span class="o">*</span> <span class="n">x</span><span class="p">]</span>
     <span class="k">return</span> <span class="n">dydt</span>
@@ -1701,7 +1714,7 @@ Total Error for Euler-Cromer: 33.264837282230076
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/dddf1c3ab63d3612db523b22916b6c1f870a49ded7c2e8f113b30abe3b9c2527.png" src="../_images/dddf1c3ab63d3612db523b22916b6c1f870a49ded7c2e8f113b30abe3b9c2527.png" />
+<img alt="../_images/76512481c14098b41888454664795212f3e41947f1d3337abf5612d1eca9bf84.png" src="../_images/76512481c14098b41888454664795212f3e41947f1d3337abf5612d1eca9bf84.png" />
 </div>
 </div>
 <ul class="simple">
@@ -1736,12 +1749,12 @@ Total Error for Euler-Cromer: 33.264837282230076
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/9ce66af2f669f05fbd108d69b7304534280e88dc8500131f7002ec8355f664ec.png" src="../_images/9ce66af2f669f05fbd108d69b7304534280e88dc8500131f7002ec8355f664ec.png" />
+<img alt="../_images/863c4f0872a79ba00d3859042350e72e518000bba3533f45d4f8077c0c9a65c8.png" src="../_images/863c4f0872a79ba00d3859042350e72e518000bba3533f45d4f8077c0c9a65c8.png" />
 </div>
 </div>
 </section>
 <section id="extra-credit-integrating-classwork-with-research">
-<h2>Extra Credit - Integrating Classwork With Research<a class="headerlink" href="#extra-credit-integrating-classwork-with-research" title="Permalink to this heading">#</a></h2>
+<h2>Extra Credit - Integrating Classwork With Research<a class="headerlink" href="#extra-credit-integrating-classwork-with-research" title="Link to this heading">#</a></h2>
 <p>This opportunity will allow you to earn up to 5 extra credit points on a Homework per week. These points can push you above 100% or help make up for missed exercises.
 In order to earn all points you must:</p>
 <ol class="arabic simple">
@@ -1768,16 +1781,16 @@ Talks given by researchers through the following clubs:</p>
         },
         codeMirrorConfig: {
             theme: "abcdef",
-            mode: "teaching"
+            mode: "jbook"
         },
         kernelOptions: {
-            name: "teaching",
+            name: "jbook",
             path: "./solutions"
         },
         predefinedOutput: true
     }
     </script>
-    <script>kernelName = 'teaching'</script>
+    <script>kernelName = 'jbook'</script>
 
                 </article>
               
@@ -1786,7 +1799,7 @@ Talks given by researchers through the following clubs:</p>
               
               
               
-                <footer class="prev-next-footer">
+                <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
     <a class="left-prev"
@@ -1795,7 +1808,7 @@ Talks given by researchers through the following clubs:</p>
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Midterm 1 (Due 23 Feb)</p>
+        <p class="prev-next-title">Midterm 1</p>
       </div>
     </a>
     <a class="right-next"
@@ -1803,7 +1816,7 @@ Talks given by researchers through the following clubs:</p>
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Homework 6 (Due 15 Mar)</p>
+        <p class="prev-next-title">Solution Homework 6</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -1815,6 +1828,7 @@ Talks given by researchers through the following clubs:</p>
             
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -1843,7 +1857,7 @@ Talks given by researchers through the following clubs:</p>
   <div class="footer-item">
     
 <p class="component-author">
-By Danny Caballero, Morten Hjorth-Jensen
+By Danny Caballero, Morten Hjorth-Jensen, Rachel Henderson
 </p>
 
   </div>
@@ -1853,7 +1867,7 @@ By Danny Caballero, Morten Hjorth-Jensen
 
   <p class="copyright">
     
-      © Copyright 2022.
+      © Copyright 2023.
       <br/>
     
   </p>
@@ -1877,8 +1891,8 @@ By Danny Caballero, Morten Hjorth-Jensen
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
 
   <footer class="bd-footer">
   </footer>

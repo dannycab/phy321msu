@@ -1,13 +1,12 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" data-content_root="" >
+<html lang="en" data-content_root="../" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>2. Classical Mechanics, Mathematics and Numerical background &#8212; Classical Mechanics</title>
   
@@ -15,53 +14,52 @@
   
   <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
   
-  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
-
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
-  
+  <!-- So that users can add custom icons -->
+  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
-  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
-    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
-    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="../_static/doctools.js"></script>
-    <script src="../_static/clipboard.min.js"></script>
-    <script src="../_static/copybutton.js"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../_static/design-tabs.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
-    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script src="../_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'lecture-notes/chapter2';</script>
@@ -71,6 +69,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="prev" title="What is Mathematical Modeling?" href="chapter2-overview.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
   </head>
   
   
@@ -78,32 +77,16 @@ const thebe_selector_output = ".output, .cell_output"
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
   
   <div id="pst-scroll-pixel-helper"></div>
-
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
-    <i class="fa-solid fa-arrow-up"></i>
-    Back to top
-  </button>
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
   
-  <input type="checkbox"
-          class="sidebar-toggle"
-          name="__primary"
-          id="__primary"/>
-  <label class="overlay overlay-primary" for="__primary"></label>
-  
-  <input type="checkbox"
-          class="sidebar-toggle"
-          name="__secondary"
-          id="__secondary"/>
-  <label class="overlay overlay-secondary" for="__secondary"></label>
-  
-  <div class="search-button__wrapper">
-    <div class="search-button__overlay"></div>
-    <div class="search-button__search-container">
+  <dialog id="pst-search-dialog">
+    
 <form class="bd-search d-flex align-items-center"
       action="../search.html"
       method="get">
@@ -111,7 +94,6 @@ const thebe_selector_output = ".output, .cell_output"
   <input type="search"
          class="form-control"
          name="q"
-         id="search-input"
          placeholder="Search this book..."
          aria-label="Search this book..."
          autocomplete="off"
@@ -119,16 +101,25 @@ const thebe_selector_output = ".output, .cell_output"
          autocapitalize="off"
          spellcheck="false"/>
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form></div>
-  </div>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
   
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
       
-      <div class="bd-sidebar-primary bd-sidebar">
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -143,6 +134,8 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="sidebar-primary-item">
 
   
+    
+  
 
 <a class="navbar-brand logo" href="../intro.html">
   
@@ -156,11 +149,18 @@ const thebe_selector_output = ".output, .cell_output"
     
     
     <img src="../_static/spartan-helmet.png" class="logo__image only-light" alt="Classical Mechanics - Home"/>
-    <script>document.write(`<img src="../_static/spartan-helmet.png" class="logo__image only-dark" alt="Classical Mechanics - Home"/>`);</script>
+    <img src="../_static/spartan-helmet.png" class="logo__image only-dark pst-js-only" alt="Classical Mechanics - Home"/>
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -205,24 +205,12 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../homeworks/hw2.html">Homework 2 (Due 26 Jan)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../homeworks/hw3.html">Homework 3 (Due 02 Feb)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../homeworks/hw4.html">Homework 4 (Due 09 Feb)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../midterms/midterm1.html">Midterm 1 (Due 23 Feb)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../homeworks/hw5.html">Homework 5 (Due 08 Mar)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../homeworks/hw6.html">Homework 6 (Due 15 Mar)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../homeworks/hw7.html">Homework 7 (Due 22 Mar)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../midterms/midterm2.html">Midterm 2 (Due 5 Apr)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../homeworks/hw8.html">Homework 8 (Due 12 Apr)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../homeworks/hw9.html">Homework 9 (Due 19 Apr)</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Solutions</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../solutions/solutionhw1.html">Homework 1 (Due 19 Jan)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../solutions/solutionhw2.html">Homework 2 (Due 26 Jan)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../solutions/solutionhw3.html">Homework 3 (Due 03 Feb)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../solutions/solutionhw4.html">Homework 4 (Due 09 Feb)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../solutions/solutionmidterm1.html">Midterm 1 (Due 23 Feb)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../solutions/solutionhw5.html">Homework 5 (Due 08 Mar)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../solutions/solutionhw6.html">Homework 6 (Due 15 Mar)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../solutions/solutionhw7.html">Homework 7 (Due 22 Mar)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw10.html">OPTIONAL Homework 10 (Due Apr 26)</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Honors Projects</span></p>
 <ul class="nav bd-sidenav">
@@ -237,14 +225,19 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
   </div>
-  
-  <div id="rtd-footer-container"></div>
 
 
       </div>
       
-      <main id="main-content" class="bd-main">
+      <main id="main-content" class="bd-main" role="main">
         
         
 
@@ -253,14 +246,14 @@ const thebe_selector_output = ".output, .cell_output"
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article">
+              <div class="bd-header-article d-print-none">
 <div class="header-article-items header-article__inner">
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</label></div>
+</button></div>
       
     </div>
   
@@ -285,14 +278,14 @@ const thebe_selector_output = ".output, .cell_output"
       
       <li><a href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/main?urlpath=tree/lecture-notes/chapter2.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
-   title="Launch onBinder"
+   title="Launch on Binder"
    data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
 <span class="btn__icon-container">
   
-    <img src="../_static/images/logo_binder.svg">
+    <img alt="Binder logo" src="../_static/images/logo_binder.svg">
   </span>
 <span class="btn__text-container">Binder</span>
 </a>
@@ -367,27 +360,19 @@ const thebe_selector_output = ".output, .cell_output"
 
 
 
-<script>
-document.write(`
-  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
-  </button>
-`);
-</script>
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
 
 
-<script>
-document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
-  </button>
-`);
-</script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
-</label>
+</button>
 </div></div>
       
     </div>
@@ -467,12 +452,12 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="classical-mechanics-mathematics-and-numerical-background">
-<h1>2. Classical Mechanics, Mathematics and Numerical background<a class="headerlink" href="#classical-mechanics-mathematics-and-numerical-background" title="Permalink to this heading">#</a></h1>
+<h1>2. Classical Mechanics, Mathematics and Numerical background<a class="headerlink" href="#classical-mechanics-mathematics-and-numerical-background" title="Link to this heading">#</a></h1>
 <section id="introduction">
-<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">#</a></h2>
+<h2>Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h2>
 <p>Classical mechanics is a topic which has been taught intensively over
 several centuries. It is, with its many variants and ways of
 presenting the educational material, normally the first <strong>real</strong> physics
@@ -502,7 +487,7 @@ solve a much broader class of problems.
 In mechanics this means, since we often rephrase the physical problems in terms of differential equations, that we can in most settings reuse the same program with some minimal changes.</p>
 </section>
 <section id="reminder-on-vectors-and-other-mathematical-quantities">
-<h2>Reminder on vectors and other mathematical quantities<a class="headerlink" href="#reminder-on-vectors-and-other-mathematical-quantities" title="Permalink to this heading">#</a></h2>
+<h2>Reminder on vectors and other mathematical quantities<a class="headerlink" href="#reminder-on-vectors-and-other-mathematical-quantities" title="Link to this heading">#</a></h2>
 <p>Our studies will start with the motion of different types of objects
 such as a falling ball, a runner, a bicycle etc etc. It means that an
 object’s position in space varies with time.
@@ -551,7 +536,7 @@ interested in. Thus</p>
 </ul>
 </section>
 <section id="scalars-vectors-and-matrices">
-<h2>Scalars, Vectors and Matrices<a class="headerlink" href="#scalars-vectors-and-matrices" title="Permalink to this heading">#</a></h2>
+<h2>Scalars, Vectors and Matrices<a class="headerlink" href="#scalars-vectors-and-matrices" title="Link to this heading">#</a></h2>
 <p>A scalar is something with a value that is independent of coordinate
 system. Examples are mass, or the relative time between events. A
 vector has magnitude and direction. Under rotation, the magnitude
@@ -598,7 +583,7 @@ operations in a mathematically more compact way, see below here. We may also fin
 components to represent other coordinate systems that the Cartesian one. A typical example would be going from a Cartesian representation to a spherical basis. We will encounter such cases many times in this course.</p>
 <p>We use lower-case letters for vectors and upper-case letters for matrices. Vectors and matrices are always boldfaced.</p>
 <section id="polar-coordinates">
-<h3>Polar Coordinates<a class="headerlink" href="#polar-coordinates" title="Permalink to this heading">#</a></h3>
+<h3>Polar Coordinates<a class="headerlink" href="#polar-coordinates" title="Link to this heading">#</a></h3>
 <p>As an example, consider a two-dimensional Cartesian system with a vector <span class="math notranslate nohighlight">\(\boldsymbol{r}=(x,y)\)</span>.
 Our vector is then written as</p>
 <div class="math notranslate nohighlight">
@@ -629,7 +614,7 @@ x = \rho \cos{\phi} \hspace{0.5cm}   y = \rho \sin{\phi},
 <p>Below we will show that the norms of this vector in a Cartesian basis and a Polar basis are equal.</p>
 </section>
 <section id="unit-vectors">
-<h3>Unit Vectors<a class="headerlink" href="#unit-vectors" title="Permalink to this heading">#</a></h3>
+<h3>Unit Vectors<a class="headerlink" href="#unit-vectors" title="Link to this heading">#</a></h3>
 <p>Also known as basis vectors, unit vectors point in the direction of
 the coordinate axes, have unit norm, and are orthogonal to one
 another. Sometimes this is referred to as an orthonormal basis,</p>
@@ -675,7 +660,7 @@ x_iy_i=\sum_i x_iy_i=\boldsymbol{x}\cdot\boldsymbol{y}.
 </section>
 </section>
 <section id="vector-operations-scalar-product-or-dot-product">
-<h2>Vector Operations, Scalar Product (or dot product)<a class="headerlink" href="#vector-operations-scalar-product-or-dot-product" title="Permalink to this heading">#</a></h2>
+<h2>Vector Operations, Scalar Product (or dot product)<a class="headerlink" href="#vector-operations-scalar-product-or-dot-product" title="Link to this heading">#</a></h2>
 <p>For two vectors <span class="math notranslate nohighlight">\(\boldsymbol{a}\)</span> and <span class="math notranslate nohighlight">\(\boldsymbol{b}\)</span> we have</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -697,7 +682,7 @@ x_iy_i=\sum_i x_iy_i=\boldsymbol{x}\cdot\boldsymbol{y}.
 <p>The superscript <span class="math notranslate nohighlight">\(T\)</span> represents the transposition operations.</p>
 </section>
 <section id="digression-linear-algebra-notation-for-vectors">
-<h2>Digression, Linear Algebra Notation for Vectors<a class="headerlink" href="#digression-linear-algebra-notation-for-vectors" title="Permalink to this heading">#</a></h2>
+<h2>Digression, Linear Algebra Notation for Vectors<a class="headerlink" href="#digression-linear-algebra-notation-for-vectors" title="Link to this heading">#</a></h2>
 <p>As an example, consider a three-dimensional velocity defined by a vector <span class="math notranslate nohighlight">\(\boldsymbol{v}=(v_x,v_y,v_z)\)</span>. For those of you familiar with linear algebra, we would write this quantity as</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -717,7 +702,7 @@ x_iy_i=\sum_i x_iy_i=\boldsymbol{x}\cdot\boldsymbol{y}.
 <p>Since we will use Python as a programming language throughout this course, the above vector, using the package <strong>numpy</strong> (see discussions below), can be written as</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 <span class="c1"># Define the values of vx, vy and vz</span>
 <span class="n">vx</span> <span class="o">=</span> <span class="mf">0.0</span>
 <span class="n">vy</span> <span class="o">=</span> <span class="mf">1.0</span>
@@ -762,7 +747,7 @@ the norm is conserved since we have <span class="math notranslate nohighlight">\
 transformation to a new basis should not change the norm.</p>
 </section>
 <section id="vector-product-or-cross-product-of-vectors-boldsymbol-a-and-boldsymbol-b">
-<h2>Vector Product (or cross product) of vectors <span class="math notranslate nohighlight">\(\boldsymbol{a}\)</span> and <span class="math notranslate nohighlight">\(\boldsymbol{b}\)</span><a class="headerlink" href="#vector-product-or-cross-product-of-vectors-boldsymbol-a-and-boldsymbol-b" title="Permalink to this heading">#</a></h2>
+<h2>Vector Product (or cross product) of vectors <span class="math notranslate nohighlight">\(\boldsymbol{a}\)</span> and <span class="math notranslate nohighlight">\(\boldsymbol{b}\)</span><a class="headerlink" href="#vector-product-or-cross-product-of-vectors-boldsymbol-a-and-boldsymbol-b" title="Link to this heading">#</a></h2>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \begin{eqnarray*}
@@ -805,7 +790,7 @@ perpendicular to both <span class="math notranslate nohighlight">\(\boldsymbol{a
 |c|=|a||b|\sin{\theta_{ab}}.
 \]</div>
 <section id="pseudo-vectors">
-<h3>Pseudo-vectors<a class="headerlink" href="#pseudo-vectors" title="Permalink to this heading">#</a></h3>
+<h3>Pseudo-vectors<a class="headerlink" href="#pseudo-vectors" title="Link to this heading">#</a></h3>
 <p>Vectors obtained by the cross product of two real vectors are called
 pseudo-vectors because the assignment of their direction can be
 arbitrarily flipped by defining the Levi-Civita symbol to be based on
@@ -824,7 +809,7 @@ is precisely what is observed in weak decays.</p>
 </section>
 </section>
 <section id="differentiation-of-a-vector-with-respect-to-a-scalar">
-<h2>Differentiation of a vector with respect to a scalar<a class="headerlink" href="#differentiation-of-a-vector-with-respect-to-a-scalar" title="Permalink to this heading">#</a></h2>
+<h2>Differentiation of a vector with respect to a scalar<a class="headerlink" href="#differentiation-of-a-vector-with-respect-to-a-scalar" title="Link to this heading">#</a></h2>
 <p>As an  example, consider the
 acceleration <span class="math notranslate nohighlight">\(\boldsymbol{a}\)</span>, which is given by the change in velocity per unit time, <span class="math notranslate nohighlight">\(\boldsymbol{a}=d\boldsymbol{v}/dt\)</span>
 with components</p>
@@ -834,7 +819,7 @@ a_i = (d\boldsymbol{v}/dt)_i=\frac{dv_i}{dt}.
 \]</div>
 <p>Here <span class="math notranslate nohighlight">\(i=x,y,z\)</span> or <span class="math notranslate nohighlight">\(i=1,2,3\)</span> if we are in three dimensions.</p>
 <section id="gradient-operator-nabla">
-<h3>Gradient operator <span class="math notranslate nohighlight">\(\nabla\)</span><a class="headerlink" href="#gradient-operator-nabla" title="Permalink to this heading">#</a></h3>
+<h3>Gradient operator <span class="math notranslate nohighlight">\(\nabla\)</span><a class="headerlink" href="#gradient-operator-nabla" title="Link to this heading">#</a></h3>
 <p>This represents  the derivatives <span class="math notranslate nohighlight">\(\partial/\partial
 x\)</span>, <span class="math notranslate nohighlight">\(\partial/\partial y\)</span> and <span class="math notranslate nohighlight">\(\partial/\partial z\)</span>. An often used shorthand is  <span class="math notranslate nohighlight">\(\partial_x=\partial/\partial_x\)</span>.</p>
 <p>The gradient of a scalar function of position and time
@@ -858,7 +843,7 @@ we have</p>
 <p>Note that the divergence is a scalar.</p>
 </section>
 <section id="the-curl">
-<h3>The curl<a class="headerlink" href="#the-curl" title="Permalink to this heading">#</a></h3>
+<h3>The curl<a class="headerlink" href="#the-curl" title="Link to this heading">#</a></h3>
 <p>The <strong>curl</strong> of a vector is defined as
 <span class="math notranslate nohighlight">\(\nabla\times\boldsymbol{a}\)</span>,</p>
 <div class="math notranslate nohighlight">
@@ -872,7 +857,7 @@ we have</p>
 \]</div>
 </section>
 <section id="the-laplacian">
-<h3>The Laplacian<a class="headerlink" href="#the-laplacian" title="Permalink to this heading">#</a></h3>
+<h3>The Laplacian<a class="headerlink" href="#the-laplacian" title="Link to this heading">#</a></h3>
 <p>The Laplacian is referred to as <span class="math notranslate nohighlight">\(\nabla^2\)</span> and is defined as</p>
 <div class="math notranslate nohighlight">
 \[
@@ -881,7 +866,7 @@ we have</p>
 <p>Question: is the Laplacian a scalar or a vector?</p>
 </section>
 <section id="some-identities">
-<h3>Some identities<a class="headerlink" href="#some-identities" title="Permalink to this heading">#</a></h3>
+<h3>Some identities<a class="headerlink" href="#some-identities" title="Link to this heading">#</a></h3>
 <p>Here we simply state these, but you may wish to prove a few. They are useful for this class and will be essential when you study electromagnetism.</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -896,7 +881,7 @@ we have</p>
 \end{split}\]</div>
 </section>
 <section id="more-useful-relations">
-<h3>More useful relations<a class="headerlink" href="#more-useful-relations" title="Permalink to this heading">#</a></h3>
+<h3>More useful relations<a class="headerlink" href="#more-useful-relations" title="Link to this heading">#</a></h3>
 <p>Using the fact that multiplication of reals is distributive we can show that</p>
 <div class="math notranslate nohighlight">
 \[
@@ -919,7 +904,7 @@ we have</p>
 \]</div>
 </section>
 <section id="gauss-s-theorem">
-<h3>Gauss’s Theorem<a class="headerlink" href="#gauss-s-theorem" title="Permalink to this heading">#</a></h3>
+<h3>Gauss’s Theorem<a class="headerlink" href="#gauss-s-theorem" title="Link to this heading">#</a></h3>
 <p>For an integral over a volume <span class="math notranslate nohighlight">\(V\)</span> confined by a surface <span class="math notranslate nohighlight">\(S\)</span>, Gauss’s theorem gives</p>
 <div class="math notranslate nohighlight">
 \[
@@ -932,7 +917,7 @@ we have</p>
 \]</div>
 </section>
 <section id="and-stokes-s-theorem">
-<h3>and Stokes’s Theorem<a class="headerlink" href="#and-stokes-s-theorem" title="Permalink to this heading">#</a></h3>
+<h3>and Stokes’s Theorem<a class="headerlink" href="#and-stokes-s-theorem" title="Link to this heading">#</a></h3>
 <p>Stoke’s law can be understood by considering a small rectangle,
 <span class="math notranslate nohighlight">\(-\Delta x&lt;x&lt;\Delta x\)</span>, <span class="math notranslate nohighlight">\(-\Delta y&lt;y&lt;\Delta y\)</span>. The path integral
 around the edges is</p>
@@ -952,7 +937,7 @@ around the edges is</p>
 </section>
 </section>
 <section id="basic-matrix-features">
-<h2>Basic Matrix Features<a class="headerlink" href="#basic-matrix-features" title="Permalink to this heading">#</a></h2>
+<h2>Basic Matrix Features<a class="headerlink" href="#basic-matrix-features" title="Link to this heading">#</a></h2>
 <p><strong>Note</strong>: The material on matrices is optional and will not be used much
 (except for illustrations at the very end on garmonic oscillations)
 since most of you have not yet taken a course on linear algebra. The
@@ -990,7 +975,7 @@ material is however included here for the sake of completeness.</p>
 </tbody>
 </table>
 <section id="some-famous-matrices">
-<h3>Some famous Matrices<a class="headerlink" href="#some-famous-matrices" title="Permalink to this heading">#</a></h3>
+<h3>Some famous Matrices<a class="headerlink" href="#some-famous-matrices" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Diagonal if <span class="math notranslate nohighlight">\(a_{ij}=0\)</span> for <span class="math notranslate nohighlight">\(i\ne j\)</span></p></li>
 <li><p>Upper triangular if <span class="math notranslate nohighlight">\(a_{ij}=0\)</span> for <span class="math notranslate nohighlight">\(i &gt; j\)</span></p></li>
@@ -1014,7 +999,7 @@ material is however included here for the sake of completeness.</p>
 </section>
 </section>
 <section id="rotations">
-<h2>Rotations<a class="headerlink" href="#rotations" title="Permalink to this heading">#</a></h2>
+<h2>Rotations<a class="headerlink" href="#rotations" title="Link to this heading">#</a></h2>
 <p>Here, we use rotations as an example of matrices and their operations. One can consider a different orthonormal basis <span class="math notranslate nohighlight">\(\hat{e}'_1\)</span>, <span class="math notranslate nohighlight">\(\hat{e}'_2\)</span> and <span class="math notranslate nohighlight">\(\hat{e}'_3\)</span>. The same vector <span class="math notranslate nohighlight">\(\boldsymbol{r}\)</span> mentioned above can also be expressed in the new basis,</p>
 <!-- Equation labels as ordinary links -->
 <div id="_auto3"></div>
@@ -1088,8 +1073,8 @@ U^{-1}&amp;=&amp;U^{t}.
 \end{eqnarray}
 \]</div>
 <section id="tensors">
-<h3>Tensors<a class="headerlink" href="#tensors" title="Permalink to this heading">#</a></h3>
-<p>A tensor obeying Eq. (<span class="xref myst">8</span>) defines what is known as
+<h3>Tensors<a class="headerlink" href="#tensors" title="Link to this heading">#</a></h3>
+<p>A tensor obeying Eq. (<a class="reference internal" href="#eq:transposedef"><span class="xref myst">8</span></a>) defines what is known as
 a unitary, or orthogonal, transformation.</p>
 <p>The matrix <span class="math notranslate nohighlight">\(U\)</span> can be used to transform any vector to the new basis. Consider a vector</p>
 <div class="math notranslate nohighlight">
@@ -1111,7 +1096,7 @@ the dot product of each side with one of the unit vectors,
 r_i&amp;=&amp;\sum_j \hat{e}_i\cdot\hat{e}'_j~r'_j.
 \end{eqnarray}
 \]</div>
-<p>Using Eq. (<span class="xref myst">7</span>) one can see that the transformation of <span class="math notranslate nohighlight">\(r\)</span> can be also written in terms of <span class="math notranslate nohighlight">\(U\)</span>,</p>
+<p>Using Eq. (<a class="reference internal" href="#eq:inverseU"><span class="xref myst">7</span></a>) one can see that the transformation of <span class="math notranslate nohighlight">\(r\)</span> can be also written in terms of <span class="math notranslate nohighlight">\(U\)</span>,</p>
 <!-- Equation labels as ordinary links -->
 <div id="eq:rotateR"></div>
 <div class="math notranslate nohighlight">
@@ -1122,8 +1107,8 @@ r_i&amp;=&amp;\sum_jU^{-1}_{ij}~r'_j.
 \end{eqnarray}
 \]</div>
 <p>Thus, the matrix that transforms the coordinates of the unit vectors,
-Eq. (<span class="xref myst">7</span>) is the same one that transforms the
-coordinates of a vector, Eq. (<span class="xref myst">9</span>).</p>
+Eq. (<a class="reference internal" href="#eq:inverseU"><span class="xref myst">7</span></a>) is the same one that transforms the
+coordinates of a vector, Eq. (<a class="reference internal" href="#eq:rotateR"><span class="xref myst">9</span></a>).</p>
 <p>As a small exercise, find the rotation matrix <span class="math notranslate nohighlight">\(U\)</span> for finding the
 components in the primed coordinate system given from those in the
 unprimed system, given that the unit vectors in the new system are
@@ -1138,7 +1123,7 @@ found by rotating the coordinate system by and angle <span class="math notransla
 \hat{e}'_3&amp;=&amp;\hat{e}_3.
 \end{eqnarray*}
 \end{split}\]</div>
-<p>By inspecting Eq. (<span class="xref myst">5</span>), we get</p>
+<p>By inspecting Eq. (<a class="reference internal" href="#eq:lambda_angles"><span class="xref myst">5</span></a>), we get</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 U=\left(\begin{array}{ccc}
@@ -1185,7 +1170,7 @@ trace.</p>
 </section>
 </section>
 <section id="numerical-elements">
-<h2>Numerical Elements<a class="headerlink" href="#numerical-elements" title="Permalink to this heading">#</a></h2>
+<h2>Numerical Elements<a class="headerlink" href="#numerical-elements" title="Link to this heading">#</a></h2>
 <p>Numerical algorithms call for approximate discrete models and much of
 the development of methods for continuous models are nowadays being
 replaced by methods for discrete models in science and industry,
@@ -1241,7 +1226,7 @@ particular problem.</p>
 <p><em>However, verification of algorithms and understanding their limitations requires much of the classical knowledge about continuous models.</em></p>
 </section>
 <section id="a-well-known-example-to-illustrate-many-of-the-above-concepts">
-<h2>A well-known example to illustrate many of the above concepts<a class="headerlink" href="#a-well-known-example-to-illustrate-many-of-the-above-concepts" title="Permalink to this heading">#</a></h2>
+<h2>A well-known example to illustrate many of the above concepts<a class="headerlink" href="#a-well-known-example-to-illustrate-many-of-the-above-concepts" title="Link to this heading">#</a></h2>
 <p>Before we venture into a reminder on Python and mechanics relevant applications, let us briefly outline some of the
 abovementioned topics using an example many of you may have seen before in for example CMSE201.
 A simple algorithm for integration is the Trapezoidal rule.
@@ -1261,12 +1246,12 @@ The following code for  the trapezoidal rule allows you  to plot the relative er
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> inline
 
-<span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">log10</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="n">Symbol</span><span class="p">,</span> <span class="n">integrate</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">math</span><span class="w"> </span><span class="kn">import</span> <span class="n">log10</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">sympy</span><span class="w"> </span><span class="kn">import</span> <span class="n">Symbol</span><span class="p">,</span> <span class="n">integrate</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 <span class="c1"># function for the trapezoidal rule</span>
-<span class="k">def</span> <span class="nf">Trapez</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">f</span><span class="p">,</span><span class="n">n</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">Trapez</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">f</span><span class="p">,</span><span class="n">n</span><span class="p">):</span>
    <span class="n">h</span> <span class="o">=</span> <span class="p">(</span><span class="n">b</span><span class="o">-</span><span class="n">a</span><span class="p">)</span><span class="o">/</span><span class="nb">float</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
    <span class="n">s</span> <span class="o">=</span> <span class="mi">0</span>
    <span class="n">x</span> <span class="o">=</span> <span class="n">a</span>
@@ -1276,7 +1261,7 @@ The following code for  the trapezoidal rule allows you  to plot the relative er
    <span class="n">s</span> <span class="o">=</span> <span class="mf">0.5</span><span class="o">*</span><span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="n">a</span><span class="p">)</span><span class="o">+</span><span class="n">f</span><span class="p">(</span><span class="n">b</span><span class="p">))</span> <span class="o">+</span><span class="n">s</span>
    <span class="k">return</span> <span class="n">h</span><span class="o">*</span><span class="n">s</span>
 <span class="c1">#  function to compute pi</span>
-<span class="k">def</span> <span class="nf">function</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">function</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">x</span><span class="o">*</span><span class="n">x</span>
 <span class="c1"># define integration limits</span>
 <span class="n">a</span> <span class="o">=</span> <span class="mf">0.0</span><span class="p">;</span>  <span class="n">b</span> <span class="o">=</span> <span class="mf">1.0</span><span class="p">;</span>
@@ -1303,10 +1288,10 @@ The following code for  the trapezoidal rule allows you  to plot the relative er
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
 <span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">line</span> <span class="mi">5</span>
-<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">log10</span>
-<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="ne">----&gt; </span><span class="mi">5</span> <span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="n">Symbol</span><span class="p">,</span> <span class="n">integrate</span>
-<span class="g g-Whitespace">      </span><span class="mi">6</span> <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="kn">from</span><span class="w"> </span><span class="nn">math</span><span class="w"> </span><span class="kn">import</span> <span class="n">log10</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="ne">----&gt; </span><span class="mi">5</span> <span class="kn">from</span><span class="w"> </span><span class="nn">sympy</span><span class="w"> </span><span class="kn">import</span> <span class="n">Symbol</span><span class="p">,</span> <span class="n">integrate</span>
+<span class="g g-Whitespace">      </span><span class="mi">6</span> <span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 <span class="g g-Whitespace">      </span><span class="mi">7</span> <span class="c1"># function for the trapezoidal rule</span>
 
 <span class="ne">ModuleNotFoundError</span>: No module named &#39;sympy&#39;
@@ -1315,7 +1300,7 @@ The following code for  the trapezoidal rule allows you  to plot the relative er
 </div>
 </div>
 <section id="analyzing-the-above-example">
-<h3>Analyzing the above example<a class="headerlink" href="#analyzing-the-above-example" title="Permalink to this heading">#</a></h3>
+<h3>Analyzing the above example<a class="headerlink" href="#analyzing-the-above-example" title="Link to this heading">#</a></h3>
 <p>This example shows the potential of combining numerical algorithms
 with symbolic calculations, allowing us to</p>
 <ul class="simple">
@@ -1328,7 +1313,7 @@ with symbolic calculations, allowing us to</p>
 </section>
 </section>
 <section id="python-practicalities-software-and-needed-installations">
-<h2>Python practicalities, Software and needed installations<a class="headerlink" href="#python-practicalities-software-and-needed-installations" title="Permalink to this heading">#</a></h2>
+<h2>Python practicalities, Software and needed installations<a class="headerlink" href="#python-practicalities-software-and-needed-installations" title="Link to this heading">#</a></h2>
 <p>We will make extensive use of Python as programming language and its
 myriad of available libraries.  You will find
 Jupyter notebooks invaluable in your work.</p>
@@ -1352,7 +1337,7 @@ you can use <strong>pip</strong> as well and simply install Python as</p>
 </ol>
 <p>etc etc.</p>
 <section id="python-installers">
-<h3>Python installers<a class="headerlink" href="#python-installers" title="Permalink to this heading">#</a></h3>
+<h3>Python installers<a class="headerlink" href="#python-installers" title="Link to this heading">#</a></h3>
 <p>If you don’t want to perform these operations separately and venture
 into the hassle of exploring how to set up dependencies and paths, we
 recommend two widely used distrubutions which set up all relevant
@@ -1377,7 +1362,7 @@ no setup and runs entirely in the cloud. Try it out!</p>
 </section>
 </section>
 <section id="useful-python-libraries">
-<h2>Useful Python libraries<a class="headerlink" href="#useful-python-libraries" title="Permalink to this heading">#</a></h2>
+<h2>Useful Python libraries<a class="headerlink" href="#useful-python-libraries" title="Link to this heading">#</a></h2>
 <p>Here we list several useful Python libraries we strongly recommend (if you use anaconda many of these are already there)</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://www.numpy.org/">NumPy</a> is a highly popular library for large, multi-dimensional arrays and matrices, along with a large collection of high-level mathematical functions to operate on these arrays</p></li>
@@ -1401,7 +1386,7 @@ further processing. For example, convert to latex as</p>
 <p>And to add more versatility, the Python package <a class="reference external" href="http://www.sympy.org/en/index.html">SymPy</a> is a Python library for symbolic mathematics. It aims to become a full-featured computer algebra system (CAS)  and is entirely written in Python.</p>
 </section>
 <section id="numpy-examples-and-important-matrix-and-vector-handling-packages">
-<h2>Numpy examples and Important Matrix and vector handling packages<a class="headerlink" href="#numpy-examples-and-important-matrix-and-vector-handling-packages" title="Permalink to this heading">#</a></h2>
+<h2>Numpy examples and Important Matrix and vector handling packages<a class="headerlink" href="#numpy-examples-and-important-matrix-and-vector-handling-packages" title="Link to this heading">#</a></h2>
 <p>There are several central software libraries for linear algebra and eigenvalue problems. Several of the more
 popular ones have been wrapped into ofter software packages like those from the widely used text <strong>Numerical Recipes</strong>. The original source codes in many of the available packages are often taken from the widely used
 software package LAPACK, which follows two other popular packages
@@ -1414,7 +1399,7 @@ developed in the 1970s, namely EISPACK and LINPACK.  We describe them shortly he
 <p><a class="reference external" href="http://www.numpy.org/">Numpy</a> provides an easy way to handle arrays in Python. The standard way to import this library is as</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 </pre></div>
 </div>
 </div>
@@ -1433,7 +1418,7 @@ developed in the 1970s, namely EISPACK and LINPACK.  We describe them shortly he
 Another alternative is to declare a vector as follows</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 </pre></div>
@@ -1444,7 +1429,7 @@ Another alternative is to declare a vector as follows</p>
 start numbering array elements from <span class="math notranslate nohighlight">\(0\)</span> and on. This means that a vector with <span class="math notranslate nohighlight">\(n\)</span> elements has a sequence of entities <span class="math notranslate nohighlight">\(x_0, x_1, x_2, \dots, x_{n-1}\)</span>. We could also let (recommended) Numpy to compute the logarithms of a specific array as</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">4</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">]))</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 </pre></div>
@@ -1460,8 +1445,8 @@ from Python’s <strong>math</strong> module. The looping is done explicitely by
 logarithms of a vector would be to write</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">log</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">math</span><span class="w"> </span><span class="kn">import</span> <span class="n">log</span>
 <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">4</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">])</span>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">)):</span>
     <span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">log</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
@@ -1474,7 +1459,7 @@ logarithms of a vector would be to write</p>
 The attentive reader will also notice that the output is <span class="math notranslate nohighlight">\([1, 1, 2]\)</span>. Python interprets automagically our numbers as integers (like the <strong>automatic</strong> keyword in C++). To change this we could define our array elements to be double precision numbers as</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">4</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">],</span> <span class="n">dtype</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">float64</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 </pre></div>
@@ -1484,7 +1469,7 @@ The attentive reader will also notice that the output is <span class="math notra
 <p>or simply write them as double precision numbers (Python uses 64 bits as default for floating point type variables), that is</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">4.0</span><span class="p">,</span> <span class="mf">7.0</span><span class="p">,</span> <span class="mf">8.0</span><span class="p">])</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 </pre></div>
@@ -1494,7 +1479,7 @@ The attentive reader will also notice that the output is <span class="math notra
 <p>To check the number of bytes (remember that one byte contains eight bits for double precision variables), you can use simple use the <strong>itemsize</strong> functionality (the array <span class="math notranslate nohighlight">\(x\)</span> is actually an object which inherits the functionalities defined in Numpy) as</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">4.0</span><span class="p">,</span> <span class="mf">7.0</span><span class="p">,</span> <span class="mf">8.0</span><span class="p">])</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">itemsize</span><span class="p">)</span>
 </pre></div>
@@ -1502,13 +1487,13 @@ The attentive reader will also notice that the output is <span class="math notra
 </div>
 </div>
 <section id="matrices-in-python">
-<h3>Matrices in Python<a class="headerlink" href="#matrices-in-python" title="Permalink to this heading">#</a></h3>
+<h3>Matrices in Python<a class="headerlink" href="#matrices-in-python" title="Link to this heading">#</a></h3>
 <p>Having defined vectors, we are now ready to try out matrices. We can
 define a <span class="math notranslate nohighlight">\(3 \times 3 \)</span> real matrix <span class="math notranslate nohighlight">\(\hat{A}\)</span> as (recall that we user
 lowercase letters for vectors and uppercase letters for matrices)</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 <span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span> <span class="p">[</span><span class="mf">4.0</span><span class="p">,</span> <span class="mf">7.0</span><span class="p">,</span> <span class="mf">8.0</span><span class="p">],</span> <span class="p">[</span><span class="mf">3.0</span><span class="p">,</span> <span class="mf">10.0</span><span class="p">,</span> <span class="mf">11.0</span><span class="p">],</span> <span class="p">[</span><span class="mf">4.0</span><span class="p">,</span> <span class="mf">5.0</span><span class="p">,</span> <span class="mf">7.0</span><span class="p">]</span> <span class="p">]))</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
 </pre></div>
@@ -1518,7 +1503,7 @@ lowercase letters for vectors and uppercase letters for matrices)</p>
 <p>If we use the <strong>shape</strong> function we would get <span class="math notranslate nohighlight">\((3, 3)\)</span> as output, that is verifying that our matrix is a <span class="math notranslate nohighlight">\(3\times 3\)</span> matrix. We can slice the matrix and print for example the first column (Python organized matrix elements in a row-major order, see below) as</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 <span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span> <span class="p">[</span><span class="mf">4.0</span><span class="p">,</span> <span class="mf">7.0</span><span class="p">,</span> <span class="mf">8.0</span><span class="p">],</span> <span class="p">[</span><span class="mf">3.0</span><span class="p">,</span> <span class="mf">10.0</span><span class="p">,</span> <span class="mf">11.0</span><span class="p">],</span> <span class="p">[</span><span class="mf">4.0</span><span class="p">,</span> <span class="mf">5.0</span><span class="p">,</span> <span class="mf">7.0</span><span class="p">]</span> <span class="p">]))</span>
 <span class="c1"># print the first column, row-major order and elements start with 0</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">A</span><span class="p">[:,</span><span class="mi">0</span><span class="p">])</span>
@@ -1529,7 +1514,7 @@ lowercase letters for vectors and uppercase letters for matrices)</p>
 <p>We can continue this was by printing out other columns or rows. The example here prints out the second column</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 <span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span> <span class="p">[</span><span class="mf">4.0</span><span class="p">,</span> <span class="mf">7.0</span><span class="p">,</span> <span class="mf">8.0</span><span class="p">],</span> <span class="p">[</span><span class="mf">3.0</span><span class="p">,</span> <span class="mf">10.0</span><span class="p">,</span> <span class="mf">11.0</span><span class="p">],</span> <span class="p">[</span><span class="mf">4.0</span><span class="p">,</span> <span class="mf">5.0</span><span class="p">,</span> <span class="mf">7.0</span><span class="p">]</span> <span class="p">]))</span>
 <span class="c1"># print the first column, row-major order and elements start with 0</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">A</span><span class="p">[</span><span class="mi">1</span><span class="p">,:])</span>
@@ -1540,7 +1525,7 @@ lowercase letters for vectors and uppercase letters for matrices)</p>
 <p>Numpy contains many other functionalities that allow us to slice, subdivide etc etc arrays. We strongly recommend that you look up the <a class="reference external" href="http://www.numpy.org/">Numpy website for more details</a>. Useful functions when defining a matrix are the <strong>np.zeros</strong> function which declares a matrix of a given dimension and sets all elements to zero</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 <span class="n">n</span> <span class="o">=</span> <span class="mi">10</span>
 <span class="c1"># define a matrix of dimension 10 x 10 and set all elements to zero</span>
 <span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span> <span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span> <span class="p">)</span>
@@ -1552,7 +1537,7 @@ lowercase letters for vectors and uppercase letters for matrices)</p>
 <p>or initializing all elements to</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 <span class="n">n</span> <span class="o">=</span> <span class="mi">10</span>
 <span class="c1"># define a matrix of dimension 10 x 10 and set all elements to one</span>
 <span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">(</span> <span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span> <span class="p">)</span>
@@ -1564,7 +1549,7 @@ lowercase letters for vectors and uppercase letters for matrices)</p>
 <p>or as unitarily distributed random numbers (see the material on random number generators in the statistics part)</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 <span class="n">n</span> <span class="o">=</span> <span class="mi">10</span>
 <span class="c1"># define a matrix of dimension 10 x 10 and set all elements to random numbers with x \in [0, 1]</span>
 <span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">rand</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span>
@@ -1575,7 +1560,7 @@ lowercase letters for vectors and uppercase letters for matrices)</p>
 </div>
 </section>
 <section id="meet-the-pandas">
-<h3>Meet the Pandas<a class="headerlink" href="#meet-the-pandas" title="Permalink to this heading">#</a></h3>
+<h3>Meet the Pandas<a class="headerlink" href="#meet-the-pandas" title="Link to this heading">#</a></h3>
 <p>Another useful Python package is
 <a class="reference external" href="https://pandas.pydata.org/">pandas</a>, which is an open source library
 providing high-performance, easy-to-use data structures and data
@@ -1594,8 +1579,8 @@ read way. We will see repeated use of <strong>pandas</strong>, in particular in
 connection with classification of data.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">display</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">IPython.display</span><span class="w"> </span><span class="kn">import</span> <span class="n">display</span>
 <span class="n">data</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;First Name&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;Frodo&quot;</span><span class="p">,</span> <span class="s2">&quot;Bilbo&quot;</span><span class="p">,</span> <span class="s2">&quot;Aragorn II&quot;</span><span class="p">,</span> <span class="s2">&quot;Samwise&quot;</span><span class="p">],</span>
         <span class="s1">&#39;Last Name&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;Baggins&quot;</span><span class="p">,</span> <span class="s2">&quot;Baggins&quot;</span><span class="p">,</span><span class="s2">&quot;Elessar&quot;</span><span class="p">,</span><span class="s2">&quot;Gamgee&quot;</span><span class="p">],</span>
         <span class="s1">&#39;Place of birth&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;Shire&quot;</span><span class="p">,</span> <span class="s2">&quot;Shire&quot;</span><span class="p">,</span> <span class="s2">&quot;Eriador&quot;</span><span class="p">,</span> <span class="s2">&quot;Shire&quot;</span><span class="p">],</span>
@@ -1645,9 +1630,9 @@ Displaying these results, we see that the indices are given by the default numbe
 of dimensionality <span class="math notranslate nohighlight">\(10\times 5\)</span> and compute the mean value and standard deviation of each column. Similarly, we can perform mathematial operations like squaring the matrix elements and many other operations.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">display</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">IPython.display</span><span class="w"> </span><span class="kn">import</span> <span class="n">display</span>
 <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
 <span class="c1"># setting up a 10 x 5 matrix</span>
 <span class="n">rows</span> <span class="o">=</span> <span class="mi">10</span>
@@ -1673,7 +1658,7 @@ of dimensionality <span class="math notranslate nohighlight">\(10\times 5\)</spa
 <span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">info</span><span class="p">())</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">describe</span><span class="p">())</span>
 
-<span class="kn">from</span> <span class="nn">pylab</span> <span class="kn">import</span> <span class="n">plt</span><span class="p">,</span> <span class="n">mpl</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pylab</span><span class="w"> </span><span class="kn">import</span> <span class="n">plt</span><span class="p">,</span> <span class="n">mpl</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;seaborn&#39;</span><span class="p">)</span>
 <span class="n">mpl</span><span class="o">.</span><span class="n">rcParams</span><span class="p">[</span><span class="s1">&#39;font.family&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;serif&#39;</span>
 
@@ -1714,7 +1699,7 @@ higher dimensions than two.</p>
 </section>
 </section>
 <section id="introduction-to-git-and-github-gitlab-and-similar">
-<h2>Introduction to Git and GitHub/GitLab and similar<a class="headerlink" href="#introduction-to-git-and-github-gitlab-and-similar" title="Permalink to this heading">#</a></h2>
+<h2>Introduction to Git and GitHub/GitLab and similar<a class="headerlink" href="#introduction-to-git-and-github-gitlab-and-similar" title="Link to this heading">#</a></h2>
 <p><a class="reference external" href="https://git-scm.com/">Git</a> is a distributed version-control system
 for tracking changes in any set of files, originally designed for
 coordinating work among programmers cooperating on source code during
@@ -1728,7 +1713,7 @@ short intro to
 <a class="reference external" href="https://www.youtube.com/watch/w3jLJU7DT5E?reload=9">GitHub</a>.</p>
 <p>See also the <a class="reference external" href="https://mediaspace.msu.edu/media/t/1_8mgx3cyf">overview video on Git and GitHub</a>.</p>
 <section id="useful-git-and-github-links">
-<h3>Useful Git and GitHub links<a class="headerlink" href="#useful-git-and-github-links" title="Permalink to this heading">#</a></h3>
+<h3>Useful Git and GitHub links<a class="headerlink" href="#useful-git-and-github-links" title="Link to this heading">#</a></h3>
 <p>These are a couple references that we have found useful (git commands, markdown, GitPages):</p>
 <ul class="simple">
 <li><p><a class="github reference external" href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">adam-p/markdown-here</a></p></li>
@@ -1778,7 +1763,7 @@ systems and functions well with Python.  Some of the more popular ones  are</p>
               
               
               
-                <footer class="prev-next-footer">
+                <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
     <a class="left-prev"
@@ -1806,7 +1791,9 @@ systems and functions well with Python.  Some of the more popular ones  are</p>
             
             
               
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -1888,7 +1875,7 @@ By Danny Caballero, Morten Hjorth-Jensen
 
   <p class="copyright">
     
-      © Copyright 2022.
+      © Copyright 2023.
       <br/>
     
   </p>
@@ -1912,8 +1899,8 @@ By Danny Caballero, Morten Hjorth-Jensen
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
+  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
 
   <footer class="bd-footer">
   </footer>

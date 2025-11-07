@@ -1,13 +1,12 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" data-content_root="" >
+<html lang="en" data-content_root="../" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>CW6 - Phase Portraits &#8212; Classical Mechanics</title>
   
@@ -15,53 +14,52 @@
   
   <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
   
-  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
-
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
-  
+  <!-- So that users can add custom icons -->
+  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
-  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
-    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
-    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="../_static/doctools.js"></script>
-    <script src="../_static/clipboard.min.js"></script>
-    <script src="../_static/copybutton.js"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../_static/design-tabs.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
-    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script src="../_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'in-class/cw6-phase_space';</script>
@@ -71,6 +69,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="prev" title="CW1 - Python Test" href="cw1-python-test.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
   </head>
   
   
@@ -78,32 +77,16 @@ const thebe_selector_output = ".output, .cell_output"
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
   
   <div id="pst-scroll-pixel-helper"></div>
-
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
-    <i class="fa-solid fa-arrow-up"></i>
-    Back to top
-  </button>
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
   
-  <input type="checkbox"
-          class="sidebar-toggle"
-          name="__primary"
-          id="__primary"/>
-  <label class="overlay overlay-primary" for="__primary"></label>
-  
-  <input type="checkbox"
-          class="sidebar-toggle"
-          name="__secondary"
-          id="__secondary"/>
-  <label class="overlay overlay-secondary" for="__secondary"></label>
-  
-  <div class="search-button__wrapper">
-    <div class="search-button__overlay"></div>
-    <div class="search-button__search-container">
+  <dialog id="pst-search-dialog">
+    
 <form class="bd-search d-flex align-items-center"
       action="../search.html"
       method="get">
@@ -111,7 +94,6 @@ const thebe_selector_output = ".output, .cell_output"
   <input type="search"
          class="form-control"
          name="q"
-         id="search-input"
          placeholder="Search this book..."
          aria-label="Search this book..."
          autocomplete="off"
@@ -119,16 +101,25 @@ const thebe_selector_output = ".output, .cell_output"
          autocapitalize="off"
          spellcheck="false"/>
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form></div>
-  </div>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
   
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
       
-      <div class="bd-sidebar-primary bd-sidebar">
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -143,6 +134,8 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="sidebar-primary-item">
 
   
+    
+  
 
 <a class="navbar-brand logo" href="../intro.html">
   
@@ -156,11 +149,18 @@ const thebe_selector_output = ".output, .cell_output"
     
     
     <img src="../_static/spartan-helmet.png" class="logo__image only-light" alt="Classical Mechanics - Home"/>
-    <script>document.write(`<img src="../_static/spartan-helmet.png" class="logo__image only-dark" alt="Classical Mechanics - Home"/>`);</script>
+    <img src="../_static/spartan-helmet.png" class="logo__image only-dark pst-js-only" alt="Classical Mechanics - Home"/>
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -205,24 +205,12 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../homeworks/hw2.html">Homework 2 (Due 26 Jan)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../homeworks/hw3.html">Homework 3 (Due 02 Feb)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../homeworks/hw4.html">Homework 4 (Due 09 Feb)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../midterms/midterm1.html">Midterm 1 (Due 23 Feb)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../homeworks/hw5.html">Homework 5 (Due 08 Mar)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../homeworks/hw6.html">Homework 6 (Due 15 Mar)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../homeworks/hw7.html">Homework 7 (Due 22 Mar)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../midterms/midterm2.html">Midterm 2 (Due 5 Apr)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../homeworks/hw8.html">Homework 8 (Due 12 Apr)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../homeworks/hw9.html">Homework 9 (Due 19 Apr)</a></li>
-</ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Solutions</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../solutions/solutionhw1.html">Homework 1 (Due 19 Jan)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../solutions/solutionhw2.html">Homework 2 (Due 26 Jan)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../solutions/solutionhw3.html">Homework 3 (Due 03 Feb)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../solutions/solutionhw4.html">Homework 4 (Due 09 Feb)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../solutions/solutionmidterm1.html">Midterm 1 (Due 23 Feb)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../solutions/solutionhw5.html">Homework 5 (Due 08 Mar)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../solutions/solutionhw6.html">Homework 6 (Due 15 Mar)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../solutions/solutionhw7.html">Homework 7 (Due 22 Mar)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw10.html">OPTIONAL Homework 10 (Due Apr 26)</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Honors Projects</span></p>
 <ul class="nav bd-sidenav">
@@ -237,14 +225,19 @@ const thebe_selector_output = ".output, .cell_output"
   
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
   </div>
-  
-  <div id="rtd-footer-container"></div>
 
 
       </div>
       
-      <main id="main-content" class="bd-main">
+      <main id="main-content" class="bd-main" role="main">
         
         
 
@@ -253,14 +246,14 @@ const thebe_selector_output = ".output, .cell_output"
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article">
+              <div class="bd-header-article d-print-none">
 <div class="header-article-items header-article__inner">
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</label></div>
+</button></div>
       
     </div>
   
@@ -285,14 +278,14 @@ const thebe_selector_output = ".output, .cell_output"
       
       <li><a href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/main?urlpath=tree/in-class/cw6-phase_space.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
-   title="Launch onBinder"
+   title="Launch on Binder"
    data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
 <span class="btn__icon-container">
   
-    <img src="../_static/images/logo_binder.svg">
+    <img alt="Binder logo" src="../_static/images/logo_binder.svg">
   </span>
 <span class="btn__text-container">Binder</span>
 </a>
@@ -367,27 +360,19 @@ const thebe_selector_output = ".output, .cell_output"
 
 
 
-<script>
-document.write(`
-  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
-  </button>
-`);
-</script>
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
 
 
-<script>
-document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
-  </button>
-`);
-</script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
-</label>
+</button>
 </div></div>
       
     </div>
@@ -431,10 +416,10 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="cw6-phase-portraits">
-<h1>CW6 - Phase Portraits<a class="headerlink" href="#cw6-phase-portraits" title="Permalink to this heading">#</a></h1>
+<h1>CW6 - Phase Portraits<a class="headerlink" href="#cw6-phase-portraits" title="Link to this heading">#</a></h1>
 <p>Up to now, most of your work with models in physics are those you can solve analytically in terms of known functions. Think about solving differential equations that produce polynomials or sines and cosines.</p>
 <p>But what happens when the solution to the problem is not obviously tractable in an analytical form. Rather, how can we investigate systems that are new to us?</p>
 <p>In today’s activity you will:</p>
@@ -448,7 +433,7 @@ document.write(`
 <li><p>Explain the insights developed from a phase space plot of the Large Angle Pendulum</p></li>
 </ul>
 <section id="d-system">
-<h2>1D System<a class="headerlink" href="#d-system" title="Permalink to this heading">#</a></h2>
+<h2>1D System<a class="headerlink" href="#d-system" title="Link to this heading">#</a></h2>
 <p>Let’s look at a simple 1d system first, given by the differential equation:</p>
 <div class="math notranslate nohighlight">
 \[
@@ -457,8 +442,8 @@ document.write(`
 <p>Let’s start by looking at what the plot of this differential equation looks like:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mf">0.01</span><span class="p">)</span>
 <span class="n">xdot</span> <span class="o">=</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span> <span class="mi">1</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;$\dot</span><span class="si">{x}</span><span class="s2"> = x^2 - 1$&quot;</span><span class="p">)</span>
@@ -471,7 +456,7 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/efa4c9ee4cf50bd15ff040701c653665f9593ed0510f1a8ae3d90a641cb52c4f.png" src="../_images/efa4c9ee4cf50bd15ff040701c653665f9593ed0510f1a8ae3d90a641cb52c4f.png" />
+<img alt="../_images/94595dec78b8c0d3f9a4c0f55300b4e50a6f1c7296cd748f4f1d9cacf82a6b4e.png" src="../_images/94595dec78b8c0d3f9a4c0f55300b4e50a6f1c7296cd748f4f1d9cacf82a6b4e.png" />
 </div>
 </div>
 <p>Since this is a first order equation we have a nice physical way of thinking about it: at position <span class="math notranslate nohighlight">\(x\)</span>, a particles velocity is <span class="math notranslate nohighlight">\(x^2 -1\)</span>. So when the <span class="math notranslate nohighlight">\(x^2-1\)</span> is positive, the particle’s velocity is positive (or to the right) and vice versa. We can use this knowledge to work out qualitative behavor of our system.</p>
@@ -483,15 +468,15 @@ document.write(`
 <li><p>What trends do you notice? Do trajectories settle down at certain locations or blast off to infinity?</p></li>
 </ol>
 <section id="fixed-points">
-<h3>Fixed Points<a class="headerlink" href="#fixed-points" title="Permalink to this heading">#</a></h3>
+<h3>Fixed Points<a class="headerlink" href="#fixed-points" title="Link to this heading">#</a></h3>
 <p>The <strong>fixed points</strong> of a system are where its derivative vanishes, that is <span class="math notranslate nohighlight">\(\dot{\mathbf{x}} = 0\)</span>. At any fixed point, a system is constant (why?). In the dynamical systems approach, we often care about charactarizing the behavor of systems near fixed points. In 1d, most fixed points are either stable (they attract trajectories) or unstable (they repel trajectories).</p>
 <p><strong>✅ Do this</strong></p>
 <p>Find and characterize the fixed points of <span class="math notranslate nohighlight">\(\dot{x} = x^2-1\)</span> as stable or unstable.</p>
 <p>Another way we can visualize these is with <strong>slope fields</strong>. Here we essentially plot the slopes <span class="math notranslate nohighlight">\(\dot{x}(x)\)</span> over and over again for many values of <span class="math notranslate nohighlight">\(t\)</span>. The actual solution of the differential equation will be a curve that is always tangent to the local slope. Below we’ve plotted this using both <code class="docutils literal notranslate"><span class="pre">plt.quiver</span></code> and <code class="docutils literal notranslate"><span class="pre">plt.streamplot</span></code></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 
 <span class="n">t</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mf">0.8</span><span class="p">)</span>
 <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mf">0.4</span><span class="p">)</span>
@@ -519,13 +504,13 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/053a28ca19d0812cf7537c373bef568b58ea0b22454b0284e8cea722fa8959ac.png" src="../_images/053a28ca19d0812cf7537c373bef568b58ea0b22454b0284e8cea722fa8959ac.png" />
+<img alt="../_images/38272223eaa0fb803224e9a487e6ae577cd5e169bd391ecb7240c8a7084f22b4.png" src="../_images/38272223eaa0fb803224e9a487e6ae577cd5e169bd391ecb7240c8a7084f22b4.png" />
 </div>
 </div>
 </section>
 </section>
 <section id="reminders-about-the-sho">
-<h2>Reminders about the SHO<a class="headerlink" href="#reminders-about-the-sho" title="Permalink to this heading">#</a></h2>
+<h2>Reminders about the SHO<a class="headerlink" href="#reminders-about-the-sho" title="Link to this heading">#</a></h2>
 <p>To get this started, let’s remind ourselves of the phase portrait of the SHO. Recall that we separated the second order ODE into two first order ODEs, one for <span class="math notranslate nohighlight">\(x\)</span> and one for <span class="math notranslate nohighlight">\(v_x\)</span>,</p>
 <div class="math notranslate nohighlight">
 \[\dot{x} = v_x\]</div>
@@ -563,7 +548,7 @@ document.write(`
 </ol>
 </section>
 <section id="phase-portrait-of-the-simple-harmonic-oscillator">
-<h2>Phase Portrait of the Simple Harmonic Oscillator<a class="headerlink" href="#phase-portrait-of-the-simple-harmonic-oscillator" title="Permalink to this heading">#</a></h2>
+<h2>Phase Portrait of the Simple Harmonic Oscillator<a class="headerlink" href="#phase-portrait-of-the-simple-harmonic-oscillator" title="Link to this heading">#</a></h2>
 <p>Below, we have written code that makes a phase portrait from the simple harmonic oscillator. It’s written in terms of three functions that serve three purposes that you might want to modify in your own work:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">SHOPhasePortrait</span></code> is a function that simply returns the relationship between the locations in phase space and how the phase variables change at that location.</p></li>
@@ -580,7 +565,7 @@ document.write(`
 <p>We can then call these functions can plots the results.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">SHOPhasePortrait</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">vx</span><span class="p">,</span> <span class="n">omega</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">SHOPhasePortrait</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">vx</span><span class="p">,</span> <span class="n">omega</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&#39;&#39;&#39;SHOPhasePortrait returns the value of</span>
 <span class="sd">    the change in the phase variables at a given location</span>
 <span class="sd">    in phase space for the SHO model&#39;&#39;&#39;</span>
@@ -589,7 +574,7 @@ document.write(`
     
     <span class="k">return</span> <span class="n">xdot</span><span class="p">,</span> <span class="n">vxdot</span>
 
-<span class="k">def</span> <span class="nf">ComputeSHOPhase</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">VX</span><span class="p">,</span> <span class="n">omega</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">ComputeSHOPhase</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">VX</span><span class="p">,</span> <span class="n">omega</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&#39;&#39;&#39;ComputeSHOPhase returns the changes in </span>
 <span class="sd">    the phase variables across a grid of locations</span>
 <span class="sd">    that are specified&#39;&#39;&#39;</span>
@@ -610,7 +595,7 @@ document.write(`
             
     <span class="k">return</span> <span class="n">xdot</span><span class="p">,</span> <span class="n">vxdot</span>
 
-<span class="k">def</span> <span class="nf">SHOTrajectory</span><span class="p">(</span><span class="n">x0</span><span class="p">,</span> <span class="n">vx0</span><span class="p">,</span> <span class="n">omega</span><span class="p">,</span> <span class="n">N</span><span class="o">=</span><span class="mi">100</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">SHOTrajectory</span><span class="p">(</span><span class="n">x0</span><span class="p">,</span> <span class="n">vx0</span><span class="p">,</span> <span class="n">omega</span><span class="p">,</span> <span class="n">N</span><span class="o">=</span><span class="mi">100</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&#39;&#39;&#39;SHOTrajectory computes the phase space</span>
 <span class="sd">    trjectory using the analytical forms of the</span>
 <span class="sd">    solution. Note this sloppy analytical approach</span>
@@ -636,7 +621,7 @@ document.write(`
 </div>
 </div>
 <section id="putting-the-functions-to-use">
-<h3>Putting the functions to use<a class="headerlink" href="#putting-the-functions-to-use" title="Permalink to this heading">#</a></h3>
+<h3>Putting the functions to use<a class="headerlink" href="#putting-the-functions-to-use" title="Link to this heading">#</a></h3>
 <p>With these two functions, all we are left to do is specify the size of the space and the grid points (that is where exactly we are computing the changes). We use <a class="reference external" href="https://numpy.org/doc/stable/reference/generated/numpy.meshgrid.html">meshgrid</a> to make those arrays a set of Cartesian coordinates and then send that to our functions.</p>
 <p>We then plot the results.</p>
 <div class="cell docutils container">
@@ -685,12 +670,12 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/dfa5c53fa6cb67988b2a706779d2b7b93701026d482f196568f15d20d72f8980.png" src="../_images/dfa5c53fa6cb67988b2a706779d2b7b93701026d482f196568f15d20d72f8980.png" />
+<img alt="../_images/e5b2bc7af58dac2477bd838c3248ac5ca7395ef214794f7f2430cb637b267dbb.png" src="../_images/e5b2bc7af58dac2477bd838c3248ac5ca7395ef214794f7f2430cb637b267dbb.png" />
 </div>
 </div>
 </section>
 <section id="what-can-phase-space-help-us-do">
-<h3>What can phase space help us do?<a class="headerlink" href="#what-can-phase-space-help-us-do" title="Permalink to this heading">#</a></h3>
+<h3>What can phase space help us do?<a class="headerlink" href="#what-can-phase-space-help-us-do" title="Link to this heading">#</a></h3>
 <p><strong>✅ Do this</strong></p>
 <p>Let’s remember a few things about the SHO.</p>
 <ol class="arabic simple">
@@ -708,7 +693,7 @@ document.write(`
 </section>
 </section>
 <section id="the-large-angle-pendulum">
-<h2>The Large Angle Pendulum<a class="headerlink" href="#the-large-angle-pendulum" title="Permalink to this heading">#</a></h2>
+<h2>The Large Angle Pendulum<a class="headerlink" href="#the-large-angle-pendulum" title="Link to this heading">#</a></h2>
 <p>The Large Angle Pendulum is the first of a number of nonlinear differential equations out there. This one is quite special in that the integral that solves for the period of this pendulum has a name! It’s called and <a class="reference external" href="https://en.wikipedia.org/wiki/Elliptic_integral">Elliptical Integral of the First Kind</a>. Elliptical because of the nature of the kernel of the integral, which has an elliptic form (in our case, one over the square root of a quantity squared subtracted from one, yes, seriously, we have a name for that).</p>
 <p>Here’s the pendulum in all it’s glory.</p>
 <p><img alt="Large Angle Pendulum" src="../_images/pendulum_bob.png" /></p>
@@ -721,7 +706,7 @@ document.write(`
 \[\ddot{\theta} = -\dfrac{g}{L}\sin(\theta)\]</div>
 <p>You have a second order differential equation for <span class="math notranslate nohighlight">\(\theta\)</span>.</p>
 <section id="make-a-new-phase-portrait">
-<h3>Make a new phase portrait<a class="headerlink" href="#make-a-new-phase-portrait" title="Permalink to this heading">#</a></h3>
+<h3>Make a new phase portrait<a class="headerlink" href="#make-a-new-phase-portrait" title="Link to this heading">#</a></h3>
 <p><strong>✅ Do this</strong></p>
 <p>With your partners,</p>
 <ol class="arabic simple">
@@ -738,7 +723,7 @@ document.write(`
 </ol>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">LAPPhasePortrait</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">vx</span><span class="p">,</span> <span class="n">omega0</span> <span class="o">=</span> <span class="mi">10</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">LAPPhasePortrait</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">vx</span><span class="p">,</span> <span class="n">omega0</span> <span class="o">=</span> <span class="mi">10</span><span class="p">):</span>
     
     <span class="c1">#################</span>
     <span class="c1">## CHANGE THIS ##</span>
@@ -747,7 +732,7 @@ document.write(`
     
     <span class="k">return</span> <span class="n">xdot</span><span class="p">,</span> <span class="n">vxdot</span>
 
-<span class="k">def</span> <span class="nf">ComputeLAPPhase</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">VX</span><span class="p">,</span> <span class="n">omega0</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">ComputeLAPPhase</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">VX</span><span class="p">,</span> <span class="n">omega0</span><span class="p">):</span>
     
     <span class="n">xdot</span><span class="p">,</span> <span class="n">vxdot</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">VX</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
 
@@ -782,7 +767,7 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/681185224ee96070a25ac33a23d4853718c46e24cef70d4ede9433b8f7d98696.png" src="../_images/681185224ee96070a25ac33a23d4853718c46e24cef70d4ede9433b8f7d98696.png" />
+<img alt="../_images/8d4aae3b96737eaf2918af56d925a80fe8596a560ca1779cddb10f4e3655ac9b.png" src="../_images/8d4aae3b96737eaf2918af56d925a80fe8596a560ca1779cddb10f4e3655ac9b.png" />
 </div>
 </div>
 <p><strong>✅ Do this</strong></p>
@@ -818,7 +803,7 @@ document.write(`
               
               
               
-                <footer class="prev-next-footer">
+                <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
     <a class="left-prev"
@@ -846,7 +831,9 @@ document.write(`
             
             
               
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -892,7 +879,7 @@ By Danny Caballero, Morten Hjorth-Jensen
 
   <p class="copyright">
     
-      © Copyright 2022.
+      © Copyright 2023.
       <br/>
     
   </p>
@@ -916,8 +903,8 @@ By Danny Caballero, Morten Hjorth-Jensen
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
+  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
 
   <footer class="bd-footer">
   </footer>

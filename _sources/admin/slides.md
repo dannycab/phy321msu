@@ -4,6 +4,19 @@ Slides for PHY 321 appear in reverse chronological order, with the most recent s
 
 ---
 
+## Day 31 - Midterm Help Session - 7 Nov 2025
+
+[![Day 31](../slides/day-31-homework-session.png)](../slides/day-31-homework-session.pdf)
+
+:::info
+
+### 📂 Download Slides
+[HTML](../slides/day-31-homework-session.md) | [PDF](../slides/day-31-homework-session.pdf)
+
+:::
+
+---
+
 ## Day 30 - Euler-Lagrange Equations - 5 Nov 2025
 
 [![Day 30](../slides/day-30-euler-lagrange-equation.png)](../slides/day-30-euler-lagrange-equation.pdf)

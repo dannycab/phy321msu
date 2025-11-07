@@ -213,6 +213,16 @@
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Week 7 - Notes: Critical Points; Phase Space; Trajectories</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../week8/08_start.html">Week 8 - Oscillations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../week8/08_notes.html">Week 8 - Notes: Oscillators and Modeling Oscillations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week9/09_start.html">Week 9 - Driven Oscillators and Resonance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week9/09_notes.html">Week 9 - Notes: Driven Oscillations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week10/10_start.html">Week 10 - Chaotic Dynamics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week10/10_notes.html">Week 10 - Activity: Modeling Chaotic Systems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week11/11_start.html">Week 11 - Calculus of Variations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week11/11_notes.html">Week 11 - Notes: The Euler-Lagrange Equation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week12/12_start.html">Week 12 - The Principle of Least Action</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week12/12_notes.html">Week 12 - Notes: Introduction to Lagrangian Mechanics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week13/13_start.html">Week 13 - Lagrangian Mechanics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../week13/13_notes.html">Week 13 - Notes: Examples of Lagrangian Mechanics</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Assignments</span></p>
 <ul class="nav bd-sidenav">
@@ -222,6 +232,10 @@
 <li class="toctree-l1"><a class="reference internal" href="../../homeworks/hw4.html">Homework 4 (Due 17 Feb)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../midterms/midterm1.html">Midterm 1 (Due 28 Feb)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../homeworks/hw5.html">Homework 5 (Due 14 Mar)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../homeworks/hw6.html">Homework 6 (Due 21 Mar)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../homeworks/hw7.html">Homework 7 (Due 28 Mar)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../midterms/midterm2.html">Midterm 2 (Due 11 Apr)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../homeworks/hw8.html">Homework 8 (Due 18 Apr)</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Solutions</span></p>
 <ul class="nav bd-sidenav">
@@ -229,6 +243,12 @@
 <li class="toctree-l1"><a class="reference internal" href="../../solutions/solutionhw2.html">Solution Homework 2</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../solutions/solutionhw3.html">Solution Homework 3</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../solutions/solutionhw4.html">Solution Homework 4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../solutions/solutionmidterm1.html">Midterm 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../solutions/solutionhw5.html">Solution Homework 5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../solutions/solutionhw6.html">Solution Homework 6</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../solutions/solutionhw7.html">Solution Homework 7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../solutions/solutionmidterm2.html">Midterm 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../solutions/solutionhw8.html">Solution Homework 8</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Resources</span></p>
 <ul class="nav bd-sidenav">
@@ -238,6 +258,9 @@
 <li class="toctree-l1"><a class="reference internal" href="../../resources/gradescope-submissions.html">Submitting Assignments on Gradescope</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../resources/finding-research.html">Finding Research Opportunities</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../resources/integrators.html">Numerical Integrators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../resources/phase_diagrams.html">Plotting Phase Diagrams</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../resources/chaotic_dynamics.html">Modeling Chaotic Systems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../resources/computational-essay-rubric.html">Rubric for Computational Essay Final Project</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Honors Projects</span></p>
 <ul class="nav bd-sidenav">
@@ -503,28 +526,28 @@ document.write(`
          <span class="s1">&#39;k&lt;&#39;</span><span class="p">,</span> 
          <span class="n">markersize</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span>
          <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Flow to the left&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">([</span><span class="o">-</span><span class="mi">7</span><span class="o">/</span><span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="o">-</span><span class="mi">3</span><span class="o">/</span><span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="mi">5</span><span class="o">/</span><span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> 
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">([</span><span class="o">-</span><span class="mi">7</span><span class="o">/</span><span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="o">-</span><span class="mi">3</span><span class="o">/</span><span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="o">/</span><span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> 
          <span class="s1">&#39;k&gt;&#39;</span><span class="p">,</span> 
          <span class="n">markersize</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span>
          <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Flow to the right&#39;</span><span class="p">)</span>
 
 <span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="s1">&#39;upper right&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">xlim</span><span class="p">(</span><span class="o">-</span><span class="mi">7</span><span class="o">/</span><span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="mi">7</span><span class="o">/</span><span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">(</span><span class="o">-</span><span class="mf">2.5</span><span class="p">,</span> <span class="mf">2.5</span><span class="p">)</span>
-
-<span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">([</span><span class="o">-</span><span class="mi">7</span><span class="o">/</span><span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="o">-</span><span class="mi">3</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="o">-</span><span class="mi">5</span><span class="o">/</span><span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="o">-</span><span class="mi">3</span><span class="o">/</span><span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="mi">3</span><span class="o">/</span><span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="mi">5</span><span class="o">/</span><span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="mi">3</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="mi">7</span><span class="o">/</span><span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">],</span>
-           <span class="p">[</span><span class="sa">r</span><span class="s1">&#39;$-7\pi/2$&#39;</span><span class="p">,</span> <span class="sa">r</span><span class="s1">&#39;$-3\pi$&#39;</span><span class="p">,</span> <span class="sa">r</span><span class="s1">&#39;$-5\pi/2$&#39;</span><span class="p">,</span> <span class="sa">r</span><span class="s1">&#39;$-2\pi$&#39;</span><span class="p">,</span> <span class="sa">r</span><span class="s1">&#39;$-3\pi/2$&#39;</span><span class="p">,</span> <span class="sa">r</span><span class="s1">&#39;$-\pi$&#39;</span><span class="p">,</span> <span class="sa">r</span><span class="s1">&#39;$-\pi/2$&#39;</span><span class="p">,</span> <span class="sa">r</span><span class="s1">&#39;$0$&#39;</span><span class="p">,</span> <span class="sa">r</span><span class="s1">&#39;$\pi/2$&#39;</span><span class="p">,</span> <span class="sa">r</span><span class="s1">&#39;$\pi$&#39;</span><span class="p">,</span> <span class="sa">r</span><span class="s1">&#39;$3\pi/2$&#39;</span><span class="p">,</span> <span class="sa">r</span><span class="s1">&#39;$2\pi$&#39;</span><span class="p">,</span> <span class="sa">r</span><span class="s1">&#39;$5\pi/2$&#39;</span><span class="p">,</span> <span class="sa">r</span><span class="s1">&#39;$3\pi$&#39;</span><span class="p">,</span> <span class="sa">r</span><span class="s1">&#39;$7\pi/2$&#39;</span><span class="p">])</span>
 
 <span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;$\dot</span><span class="si">{x}</span><span class="s1">$&#39;</span><span class="p">,</span> <span class="n">rotation</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
 <span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
-
+<span class="n">xticks</span> <span class="o">=</span> <span class="p">[</span><span class="o">-</span><span class="mi">4</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="o">-</span><span class="mi">7</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">3</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="o">-</span><span class="mi">5</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="o">-</span><span class="mi">3</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="mi">3</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="mi">5</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="mi">7</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">]</span>
+<span class="n">xticks_labels</span> <span class="o">=</span> <span class="p">[</span><span class="sa">r</span><span class="s1">&#39;$-4\pi$&#39;</span><span class="p">,</span> <span class="sa">r</span><span class="s1">&#39;$-\frac{7\pi}</span><span class="si">{2}</span><span class="s1">$&#39;</span><span class="p">,</span> <span class="sa">r</span><span class="s1">&#39;$-3\pi$&#39;</span><span class="p">,</span> <span class="sa">r</span><span class="s1">&#39;$-\frac{5\pi}</span><span class="si">{2}</span><span class="s1">$&#39;</span><span class="p">,</span> <span class="sa">r</span><span class="s1">&#39;$-2\pi$&#39;</span><span class="p">,</span> <span class="sa">r</span><span class="s1">&#39;$-\frac{3\pi}</span><span class="si">{2}</span><span class="s1">$&#39;</span><span class="p">,</span> <span class="sa">r</span><span class="s1">&#39;$-\pi$&#39;</span><span class="p">,</span> <span class="sa">r</span><span class="s1">&#39;$-\frac{\pi}</span><span class="si">{2}</span><span class="s1">$&#39;</span><span class="p">,</span> <span class="sa">r</span><span class="s1">&#39;$0$&#39;</span><span class="p">,</span> <span class="sa">r</span><span class="s1">&#39;$\frac{\pi}</span><span class="si">{2}</span><span class="s1">$&#39;</span><span class="p">,</span> <span class="sa">r</span><span class="s1">&#39;$\pi$&#39;</span><span class="p">,</span> <span class="sa">r</span><span class="s1">&#39;$\frac{3\pi}</span><span class="si">{2}</span><span class="s1">$&#39;</span><span class="p">,</span> <span class="sa">r</span><span class="s1">&#39;$2\pi$&#39;</span><span class="p">,</span> <span class="sa">r</span><span class="s1">&#39;$\frac{5\pi}</span><span class="si">{2}</span><span class="s1">$&#39;</span><span class="p">,</span> <span class="sa">r</span><span class="s1">&#39;$3\pi$&#39;</span><span class="p">,</span> <span class="sa">r</span><span class="s1">&#39;$\frac{7\pi}</span><span class="si">{2}</span><span class="s1">$&#39;</span><span class="p">,</span> <span class="sa">r</span><span class="s1">&#39;$4\pi$&#39;</span><span class="p">]</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xticks</span><span class="p">(</span><span class="n">xticks</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xticklabels</span><span class="p">(</span><span class="n">xticks_labels</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlim</span><span class="p">(</span><span class="o">-</span><span class="mi">7</span><span class="o">/</span><span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="mi">7</span><span class="o">/</span><span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">(</span><span class="o">-</span><span class="mf">2.5</span><span class="p">,</span> <span class="mf">2.5</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../_images/df1b2010a7da960881584dc764ce59e9055b73ebe228725ffd120748d039cefb.png" src="../../_images/df1b2010a7da960881584dc764ce59e9055b73ebe228725ffd120748d039cefb.png" />
+<img alt="../../_images/074466acf417541602ea11ff8954a938fbb19d54f25f06297cc24fe94fc75754.png" src="../../_images/074466acf417541602ea11ff8954a938fbb19d54f25f06297cc24fe94fc75754.png" />
 </div>
 </div>
 <p>The plot we have made is called a ‘Phase Portrait’. It is a plot of the velocity of the system as a function of the position of the system. The arrows indicate the direction of the flow of the system. The critical points of the system are the points where the flow is zero. These are the points where the system is at rest (i.e., <span class="math notranslate nohighlight">\(\dot{x} = 0\)</span>).</p>
@@ -599,7 +622,7 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../_images/3bcae59337d93e11d34b58523282e34effd3e03c0d8765e0ccd6f4026405162f.png" src="../../_images/3bcae59337d93e11d34b58523282e34effd3e03c0d8765e0ccd6f4026405162f.png" />
+<img alt="../../_images/30ff5dd87d93e348cae3492cff18eb4e39914a3c68d4b047733565deafdcd92f.png" src="../../_images/30ff5dd87d93e348cae3492cff18eb4e39914a3c68d4b047733565deafdcd92f.png" />
 </div>
 </div>
 <section id="id1">
@@ -675,7 +698,7 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../_images/29a77fabb771862c52fbc69d304d48684cc2953fca179f635021b95ac91848eb.png" src="../../_images/29a77fabb771862c52fbc69d304d48684cc2953fca179f635021b95ac91848eb.png" />
+<img alt="../../_images/f440b074883a6790a209dc1384bc286cbdf859c2845a21b88479c865f968d73c.png" src="../../_images/f440b074883a6790a209dc1384bc286cbdf859c2845a21b88479c865f968d73c.png" />
 </div>
 </div>
 </section>
@@ -713,7 +736,7 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../_images/64d3db8118440bced8230037155f6a28a3b09197b7063d314958aeda79b85358.png" src="../../_images/64d3db8118440bced8230037155f6a28a3b09197b7063d314958aeda79b85358.png" />
+<img alt="../../_images/6552bb06c2e5d05e69ffd241121926c6b606455c509666fca4b16c223e4fcc1d.png" src="../../_images/6552bb06c2e5d05e69ffd241121926c6b606455c509666fca4b16c223e4fcc1d.png" />
 </div>
 </div>
 </section>
@@ -766,7 +789,7 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../_images/32a7613ee7ae634c3f0da5152195e1f476181d6018d1cc083ee1bdddf2843677.png" src="../../_images/32a7613ee7ae634c3f0da5152195e1f476181d6018d1cc083ee1bdddf2843677.png" />
+<img alt="../../_images/baee48b739d49c8f3dc00c4ba5252caaf6358dcdbb08e0cd88c042454b1778d4.png" src="../../_images/baee48b739d49c8f3dc00c4ba5252caaf6358dcdbb08e0cd88c042454b1778d4.png" />
 </div>
 </div>
 </section>
@@ -843,7 +866,7 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../_images/98bc16ffb06f2d9c51a6e9ac1fe06f9615d61f61bee880f82462208c6e096c8a.png" src="../../_images/98bc16ffb06f2d9c51a6e9ac1fe06f9615d61f61bee880f82462208c6e096c8a.png" />
+<img alt="../../_images/1005ffebf60c0a3b40fd80f6cdb480a324fffd09aba34d1d503edc115bd419cc.png" src="../../_images/1005ffebf60c0a3b40fd80f6cdb480a324fffd09aba34d1d503edc115bd419cc.png" />
 </div>
 </div>
 </section>
@@ -898,7 +921,7 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../_images/4e1ec4fec555c2a8874dc44703d6f025e2e9d15098109c48583c1d28ac91ba8f.png" src="../../_images/4e1ec4fec555c2a8874dc44703d6f025e2e9d15098109c48583c1d28ac91ba8f.png" />
+<img alt="../../_images/43be898ff5eca74574e8194ac7a1a1b50808c85d04423819a74aaa9e3009159e.png" src="../../_images/43be898ff5eca74574e8194ac7a1a1b50808c85d04423819a74aaa9e3009159e.png" />
 </div>
 </div>
 <p>So we see that for small initial conditions, we recover the SHO. But for most initial conditions, we have oscillations that are not sinusoidal. Moreover, we have a series of high energy trajectories that are not bounded. These are the ones that continue to allow the pendulum to rotate over the top of itself. This is a new type of motion that we did not see in the SHO.</p>
