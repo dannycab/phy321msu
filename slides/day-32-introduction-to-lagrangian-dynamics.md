@@ -3,14 +3,14 @@ marp: true
 theme: graph_paper
 paginate: true
 
-title: Day 33 - Introduction to Lagrangian Dynamics
-description: Slides for PHY 331 Spring 2025, Day 33: Introduction to Lagrangian Dynamics
+title: Day 32 - Introduction to Lagrangian Dynamics
+description: Slides for PHY 331 Fall 2025, Day 32: Introduction to Lagrangian Dynamics
 author: Prof. Danny Caballero <caball14@msu.edu>
 keywords: classical mechanics, differential equations, Lagrangian dynamics, action principle, Lagrangian mechanics
-url: https://dannycaballero.info/phy331msu/slides/day-33-introduction-to-lagrangian-dynamics.html
+url: https://dannycaballero.info/phy331msu/slides/day-32-introduction-to-lagrangian-dynamics.html
 ---
 
-# Day 33 - Introduction to Lagrangian Dynamics
+# Day 32 - Introduction to Lagrangian Dynamics
 
 ![bg right width:600px](../images/notes/week12/newton-scared.jpg)
 
@@ -18,81 +18,25 @@ url: https://dannycaballero.info/phy331msu/slides/day-33-introduction-to-lagrang
 
 # Announcements
 
-* Feedback on Proposals are out; working on updates
-* Any Project Questions? Email me! 
-    * We can set up a meeting if needed.
-* Scarlett is grading HW 5 and 6
-* Friday: No Class (DC out of town)
-    * **Monday**: Finish Euler-Lagrange Equation; Start Lagrangian Mechanics
-    * **Wednesday:** Midterm 2 Help Session
-* Homework 8 is posted 
-* Rubric for Final Project is posted
+## On Monday 
+* Homework 8 will be posted (Last HW; Due Nov 21)
+* Rubric for final project posted
+    * Week 12 - Intro to Lagrangian Dynamics
+    * Week 13 - Examples of Lagrangian Dynamics
+    * Week 14 - Project Prep (Thanksgiving week)
+    * Week 15 - Presentations (Last week of class)
+    * Week 16 - Computational Essay Due (Monday of Finals week)
 
 ---
 
-# Seminars This Week
+# Announcements
 
-## WEDNESDAY, April 9, 2025    
- 
-                                     
-* **Astronomy Seminar**, 1:30 pm, 1400 BPS, *Bertram Bitsch, University College Cork*      
-Title: Planetary Dynamics
- 
-* **FRIB Nuclear Science Seminar**, 3:30pm., FRIB 1300 Auditorium, *Dr. Suzanne Lapi of University of Alabama at Birmingham*, Title: Development of new 
-
----
-
-# Seminars This Week
-
-## THURSDAY, April 10, 2025
- 
-* **Colloquium**, 3:30 pm, 1415 BPS, *Grant Tremblay, Harvard Smithsonian Astrophysical Observatory*, Title: Our fading age of discovery:  Why it's happening, and why we can't give up
- 
-## FRIDAY, April 11, 2025 
- 
-* **IReNA Online Seminar**, 2:00 pm, FRIB 2025 Nuclear Conference Room, *Marco La Cognata, INFN LNS, Italy*, Title: Nuclear reactions for Astrophysics and the opportunity of indirect methods
-
----
-
-# Final Project Rubric
-
-* $P$, **Physics Content (40%)**: 
-    - Clear explanation of the physical problem being addressed.
-    - Appropriate use of computational methods to analyze the problem.
-    - Correctness and accuracy of the results and conclusions drawn from the analysis.
-* $C$, **Computational Implementation (30%)**:
-    - Code is well-organized, readable, and follows best practices (e.g., comments, variable names).
-    - The computational approach is appropriate for the problem and effectively implemented.
-    - Code runs without errors and produces the expected output.
-
----
-
-# Final Project Rubric
-
-* $W$, **Writing and Presentation (20%)**:
-    - The essay is well-structured with a logical flow of ideas.
-    - Visualizations (if any) are clear, relevant, and enhance the understanding of the content.
-    - Proper formatting and adherence to any specified guidelines (e.g., length, citation style).
-* $R$, **Reflection and Discussion (10%)**:
-    - Thoughtful reflection on the computational approach and its limitations.
-    - Discussion of the implications of the results and how they relate to the original problem.
-    - Consideration of potential future work or extensions to the analysis.
-
----
-
-# Final Project Rubric
-
-Each section of the rubric will be scored on a 4.0 scale.
-
-| Criteria                        | Excellent (4.0) | Great (3.5) | Good (3.0) | Fair (2.5) | Poor (2.0) | Missing (0) |
-|---------------------------------|------------------|-------------|------------|------------|------------|-------------|
-
-Your grade will be computed based on the weighted average of the above criteria. Your final score (on a 100 scale) will be calculated as follows:
-
-$$\text{Computational Essay Grade} = \dfrac{\left(0.4P + 0.3C + 0.2W + 0.1R\right)}{4}*100$$
-
-Details? Under 'Resources' <https://dannycaballero.info/phy321msu/resources/computational-essay-rubric.html>
-
+## Next Week
+* Monday and Wednesday: Introduction to Lagrangian Dynamics
+* Friday (11/14): DC will be in classroom at 11:30a 
+    * Hosting speaker @ 12:30p
+    * Classroom open from 11:30a-12:50p
+    * Second Midterm Help Session
 
 ---
 
@@ -135,7 +79,7 @@ where:
 
 ---
 
-# Clicker Question 33-1
+# Clicker Question 32-1
 
 ![bg right width:600px](../images/notes/week12/coordinate-system.png)
 
@@ -149,7 +93,7 @@ The appropriate definition of the $\hat{r}$ vector using Cartesian coordinates (
 
 ---
 
-# Clicker Question 33-2
+# Clicker Question 32-2
 
 ![bg right width:600px](../images/notes/week12/coordinate-system.png)
 
@@ -163,7 +107,7 @@ The appropriate definition of the $\hat{\phi}$ vector using Cartesian coordinate
 
 ---
 
-# Clicker Question 33-3
+# Clicker Question 32-3
 
 We need to take the derivative of $\hat{r}$ with respect to time. Why should we do this in Cartesian coordinates?
 
@@ -247,7 +191,7 @@ $$
 
 ---
 
-# Clicker Question 33-4
+# Clicker Question 32-4
 
 For a 1D SHO, the kinetic and potential energy are given by:
 
@@ -265,7 +209,7 @@ What are the derivatives of the Lagrangian $\mathcal{L} = T - V$ with respect to
 
 ---
 
-# Clicker Question 33-5
+# Clicker Question 32-5
 
 For the plane pendulum, with $\mathcal{L}(x, \dot{x}, y, \dot{y}, t) = \frac{1}{2} m \left( \dot{x}^2 + \dot{y}^2 \right) - mgy$
 
@@ -282,7 +226,7 @@ Does that seem right?
 
 ---
 
-# Clicker Question 33-6
+# Clicker Question 32-6
 
 For the plane pendulum, we changed the Lagrangian from Cartesian coordinates to plane polar coordinates. In Cartesian, we found the Lagrangian depended on $y,\dot{x},\dot{y}$. In polar, it only depended on $\phi$ and $\dot{\phi}$.
 
