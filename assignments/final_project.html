@@ -1,0 +1,890 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Final Project (Due Dec 8) &#8212; Classical Mechanics</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'assignments/final_project';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Euler Integration" href="../resources/euler_integration.html" />
+    <link rel="prev" title="Homework 8 (Due 21 Nov)" href="hw8.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/spartan-helmet.png" class="logo__image only-light" alt="Classical Mechanics - Home"/>
+    <script>document.write(`<img src="../_static/spartan-helmet.png" class="logo__image only-dark" alt="Classical Mechanics - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    PHY 321: Classical Mechanics 1, Michigan State University, Fall 2025
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">About the course</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../admin/getting-started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin/teachers.html">Teachers and Grading</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin/grading.html">Grading and Dates</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="../admin/textbooks.html">Textbooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin/schedule-cal.html">Course Calendar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin/slides.html">Slides</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Resources</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../admin/course-commitments.html">Course Commitments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin/iclicker-setup.html">i-Clicker Setup Instructions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin/gradescope-submissions.html">Submitting Assignments on Gradescope</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin/finding-research.html">Finding Research Opportunities</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Assignments</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="hw1.html">Homework 1 (Due 5 Sep)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hw2.html">Homework 2 (Due 12 Sep)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hw3.html">Homework 3 (Due 19 Sep)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hw4.html">Homework 4 (Due 26 Sep)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="midterm1.html">Midterm 1 (Due 10 Oct)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hw5.html">Homework 5 (Due 17 Oct)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hw6.html">Homework 6 (Due 24 Oct)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hw7.html">Homework 7 (Due 31 Oct)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="midterm2.html">Midterm 2 (Due 14 Nov)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hw8.html">Homework 8 (Due 21 Nov)</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Final Project (Due Dec 8)</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Programming Resources</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../resources/euler_integration.html">Euler Integration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/integrators.html">Numerical Integrators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/phase_diagrams.html">Plotting Phase Diagrams</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/chaotic_dynamics.html">Modeling Chaotic Systems - Activity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/chaotic_dynamics-completed.html">Modeling Chaotic Systems - Completed</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Weekly Course Materials</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/01_notes.html">01 - Overture: What is Classical Physics?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/02_notes.html">02 - Computing is a Necessary Tool for Science</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/03_notes.html">03 - What is Mathematical Modeling?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/04_notes.html">04 - Why does fluid drag complicate things?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/05_notes.html">05 - Conservation Laws Govern and Constrain our Physics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/06_notes.html">06 - Nature Often Seeks Stability</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/07_notes.html">07 - Introducing Nonlinear Dynamics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/08_notes.html">08 - Oscillations, Cycles, and Nature’s Recurrences</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/09_notes.html">09 - Driving Oscillators and Resonance Phenomenon</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/10_notes.html">10 - Investigating Systems that Exhibit Chaotic Dynamics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/11_notes.html">11 - Reformulating Classical Mechanics using the Calculus of Variations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/12_notes.html">12 - The Core Principle of Classical Mechanics? The Principle of Least Action</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/13_notes.html">13 - Applying the Lagrangian Formulation</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/assignments/final_project.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Final Project (Due Dec 8)</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project-components">Project Components</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#computational-essay-60">1. Computational Essay (60%)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#presentation-25">2. Presentation (25%)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#peer-review-15">3. Peer Review (15%)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#computational-essay-rubric-60-of-final-project-grade">🧮 <strong>Computational Essay Rubric (60% of Final Project Grade)</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#computational-essay-rubric-component-definitions-with-examples">🧮 Computational Essay – Rubric Component Definitions with Examples</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#physics-content-40"><strong>1. Physics Content (40%)</strong></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#computational-implementation-30"><strong>2. Computational Implementation (30%)</strong></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#writing-communication-20"><strong>3. Writing &amp; Communication (20%)</strong></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#reflection-discussion-10"><strong>4. Reflection &amp; Discussion (10%)</strong></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#presentation-rubric-25-of-final-project-grade">🎤 <strong>Presentation Rubric (25% of Final Project Grade)</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#presentation-rubric-component-definitions-with-examples">🎤 Presentation – Rubric Component Definitions with Examples</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#clarity-of-research-question-motivation-25"><strong>1. Clarity of Research Question &amp; Motivation (25%)</strong></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#explanation-of-physics-computation-25"><strong>2. Explanation of Physics &amp; Computation (25%)</strong></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#use-of-visuals-25"><strong>3. Use of Visuals (25%)</strong></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#delivery-engagement-25"><strong>4. Delivery &amp; Engagement (25%)</strong></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#timeline-checkpoints">Timeline &amp; Checkpoints</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="final-project-due-dec-8">
+<h1>Final Project (Due Dec 8)<a class="headerlink" href="#final-project-due-dec-8" title="Link to this heading">#</a></h1>
+<p>Your final project synthesizes physics, computation, and scientific communication. It provides an opportunity to explore a physical problem of your choice using computational methods and to present your findings in a clear, engaging manner. And we hope that you will work on something you find genuinely interesting!</p>
+<p>It is worth <strong>30%</strong> of your course grade and has three graded components:</p>
+<ol class="arabic simple">
+<li><p><strong>Computational Essay – 60%</strong></p></li>
+<li><p><strong>In-Class Presentation – 25%</strong></p></li>
+<li><p><strong>Peer Review – 15%</strong></p></li>
+</ol>
+<p>You may work <strong>solo</strong>, in <strong>pairs</strong>, or in <strong>groups of three/four</strong>. Expectations scale with group size. All members receive the same grade unless arranged with the instructor. <strong>Check with Danny on scale if unsure.</strong></p>
+<hr class="docutils" />
+<section id="project-components">
+<h2>Project Components<a class="headerlink" href="#project-components" title="Link to this heading">#</a></h2>
+<section id="computational-essay-60">
+<h3>1. Computational Essay (60%)<a class="headerlink" href="#computational-essay-60" title="Link to this heading">#</a></h3>
+<p>Submit as a Jupyter Notebook. It should:</p>
+<ul class="simple">
+<li><p>Pose a clear, compelling research question about a physical system.</p></li>
+<li><p>Provide background and motivation.</p></li>
+<li><p>Apply appropriate computational modeling, simulation, or analysis.</p></li>
+<li><p>Integrate code, figures, and explanatory narrative.</p></li>
+<li><p>Reflect on limitations, implications, and possible extensions.</p></li>
+</ul>
+<p>Your audience is physics students/instructors unfamiliar with your specific topic. Aim for clarity, organization, and engagement. A person should be able to read and understand your essay without running the code; the code should enhance understanding and the visualizations should be clear and relevant. There are numerous examples available on <a class="reference external" href="https://uio-ccse.github.io/computational-essay-showroom/intro.html">the University of Oslo Computational Essay Repository</a>.</p>
+<p><strong>Due:</strong> Monday, <strong>December 8th</strong>.</p>
+</section>
+<section id="presentation-25">
+<h3>2. Presentation (25%)<a class="headerlink" href="#presentation-25" title="Link to this heading">#</a></h3>
+<p>Presented during the final week: <strong>Dec 1, 3, or 5</strong> (time slots will be assigned randomly).</p>
+<p>Requirements:</p>
+<ul class="simple">
+<li><p>Length: <strong>8-12 minutes</strong> (depending on group size) + 3-5 minutes for Q&amp;A</p></li>
+<li><p>State research question and motivation</p></li>
+<li><p>Summarize physics principles, computational methods, and key findings</p></li>
+<li><p>Use visuals (plots, animations, brief code excerpts); do not present the computational essay verbatim</p></li>
+<li><p>Make slides that present your work clearly and concisely</p></li>
+<li><p>Be accessible and invite discussion</p></li>
+</ul>
+<p>It is expected that each group member presents a portion of the talk. Practice to ensure smooth delivery within the time limit.</p>
+</section>
+<section id="peer-review-15">
+<h3>3. Peer Review (15%)<a class="headerlink" href="#peer-review-15" title="Link to this heading">#</a></h3>
+<p>To support a collaborative and reflective learning environment, you will complete a peer review form for each presentation you attend (at least two per class). These reviews are not about grading your classmates, but about offering thoughtful feedback and engaging with their ideas. Your reviews will be assessed for thoughtfulness and completeness, not for judgment of content.</p>
+<p><strong>They will be shared anonymously with the presenters to help them improve.</strong></p>
+<p>You are required to complete the following form for each presentation you attend. Opens on Dec 1st:</p>
+<p>👉 <a class="reference external" href="https://forms.cloud.microsoft/r/DF9MdrBJhf">https://forms.cloud.microsoft/r/DF9MdrBJhf</a></p>
+<p>The form asks you to reflect on the physics, computation, and communication in each presentation. It includes questions about what you learned, what you found interesting, and what feedback you would offer to the presenters.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="computational-essay-rubric-60-of-final-project-grade">
+<h2>🧮 <strong>Computational Essay Rubric (60% of Final Project Grade)</strong><a class="headerlink" href="#computational-essay-rubric-60-of-final-project-grade" title="Link to this heading">#</a></h2>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Criteria</p></th>
+<th class="head"><p>Weight</p></th>
+<th class="head"><p>4.0</p></th>
+<th class="head"><p>3.5</p></th>
+<th class="head"><p>3.0</p></th>
+<th class="head"><p>2.5</p></th>
+<th class="head"><p>2.0</p></th>
+<th class="head"><p>1.0</p></th>
+<th class="head"><p>0.0</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Physics Content</strong></p></td>
+<td><p>40%</p></td>
+<td><p>Clear, accurate, and complete explanation of the physical system; strong connection between model and physics; insightful conclusions.</p></td>
+<td><p>Mostly clear and accurate; minor gaps in explanation or interpretation.</p></td>
+<td><p>Adequate explanation; some inaccuracies or missing depth.</p></td>
+<td><p>Basic explanation; lacks clarity or depth; some errors.</p></td>
+<td><p>Incomplete or inaccurate explanation; weak connection to physics.</p></td>
+<td><p>Minimal effort; major errors or confusion.</p></td>
+<td><p>Missing or irrelevant.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Computational Implementation</strong></p></td>
+<td><p>30%</p></td>
+<td><p>Code is clean, well-structured, commented; correct and efficient implementation; results reproducible.</p></td>
+<td><p>Mostly clean and functional code; minor inefficiencies or unclear sections.</p></td>
+<td><p>Code runs but has some issues; organization or clarity lacking.</p></td>
+<td><p>Code runs with difficulty; poor structure or unclear logic.</p></td>
+<td><p>Code has major issues or errors; unclear purpose.</p></td>
+<td><p>Code mostly non-functional or copied without understanding.</p></td>
+<td><p>Missing.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Writing &amp; Communication</strong></p></td>
+<td><p>20%</p></td>
+<td><p>Clear, logical structure; excellent use of visuals; writing is polished and engaging.</p></td>
+<td><p>Mostly clear and organized; visuals support content; minor writing issues.</p></td>
+<td><p>Adequate structure; visuals present but not always effective; writing is uneven.</p></td>
+<td><p>Disorganized or hard to follow; visuals unclear or missing; writing needs work.</p></td>
+<td><p>Poorly written or structured; visuals unhelpful or absent.</p></td>
+<td><p>Very difficult to follow; minimal effort.</p></td>
+<td><p>Missing.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Reflection &amp; Discussion</strong></p></td>
+<td><p>10%</p></td>
+<td><p>Deep reflection on limitations, implications, and future work; thoughtful insights.</p></td>
+<td><p>Good reflection with some insight; future work mentioned.</p></td>
+<td><p>Basic reflection; limited insight or depth.</p></td>
+<td><p>Minimal reflection; vague or generic.</p></td>
+<td><p>Very limited or off-topic.</p></td>
+<td><p>Present but superficial.</p></td>
+<td><p>Missing.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr class="docutils" />
+<section id="computational-essay-rubric-component-definitions-with-examples">
+<h3>🧮 Computational Essay – Rubric Component Definitions with Examples<a class="headerlink" href="#computational-essay-rubric-component-definitions-with-examples" title="Link to this heading">#</a></h3>
+<section id="physics-content-40">
+<h4><strong>1. Physics Content (40%)</strong><a class="headerlink" href="#physics-content-40" title="Link to this heading">#</a></h4>
+<p><strong>Definition:</strong><br />
+How well you explain the physical system you’re studying, including relevant theory, assumptions, and how your model connects to real-world physics.</p>
+<ul class="simple">
+<li><p><strong>Strong (3.5-4.0):</strong><br />
+You clearly define the physical system (e.g., a double pendulum), explain the governing equations (e.g., Newton’s laws or energy conservation), and connect your model to real-world behavior. You discuss assumptions (e.g., frictionless pivot, small-angle approximation) and justify them.</p></li>
+<li><p><strong>Middling (2.5-3.0):</strong><br />
+You describe the system and mention some physics concepts, but the explanation is incomplete or contains minor inaccuracies. For example, you simulate a spring-mass system but don’t explain why Hooke’s Law applies or what the parameters mean.</p></li>
+<li><p><strong>Weaker (1.0–2.0):</strong><br />
+The physical system is vaguely described or misunderstood. There’s little to no explanation of the physics, or the explanation is incorrect. For example, you simulate a projectile but don’t mention gravity or forces.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="computational-implementation-30">
+<h4><strong>2. Computational Implementation (30%)</strong><a class="headerlink" href="#computational-implementation-30" title="Link to this heading">#</a></h4>
+<p><strong>Definition:</strong><br />
+How well your code models the system. This includes correctness, clarity, structure, and whether the computational method is appropriate.</p>
+<ul class="simple">
+<li><p><strong>Strong (3.5-4.0):</strong><br />
+Your code is clean, modular, and well-commented. You use appropriate numerical methods (e.g., <code class="docutils literal notranslate"><span class="pre">solve_ivp</span></code> for ODEs), and your results are reproducible. You include error handling or parameter exploration.</p></li>
+<li><p><strong>Middling (2.5-3.0):</strong><br />
+Your code runs and produces reasonable results, but it’s messy or hard to follow. You may use a less appropriate method (e.g., Euler’s method for stiff equations) or lack comments and structure.</p></li>
+<li><p><strong>Weaker (1.0–2.0):</strong><br />
+Your code is copied from class without modification, doesn’t run properly, or doesn’t match your problem. There’s little evidence you understand what the code is doing.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="writing-communication-20">
+<h4><strong>3. Writing &amp; Communication (20%)</strong><a class="headerlink" href="#writing-communication-20" title="Link to this heading">#</a></h4>
+<p><strong>Definition:</strong><br />
+How clearly and effectively you communicate your ideas in the notebook. This includes structure, use of markdown, and visuals.</p>
+<ul class="simple">
+<li><p><strong>Strong (3.5-4.0):</strong><br />
+Your notebook reads like a story: it introduces the problem, explains each step, and uses labeled plots and diagrams to support your points. Markdown cells are used to explain code and results. You cite sources where appropriate.</p></li>
+<li><p><strong>Middling (2.5-3.0):</strong><br />
+Your notebook has some structure and explanations, but it’s inconsistent. Some plots are unlabeled or unexplained. The writing may be unclear in places. Few citations are provided.</p></li>
+<li><p><strong>Weaker (1.0–2.0):</strong><br />
+The notebook is mostly code with little explanation. It’s hard to follow, and visuals (if present) are not labeled or interpreted. No citations are provided.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="reflection-discussion-10">
+<h4><strong>4. Reflection &amp; Discussion (10%)</strong><a class="headerlink" href="#reflection-discussion-10" title="Link to this heading">#</a></h4>
+<p><strong>Definition:</strong><br />
+How well you reflect on your results, discuss limitations, and suggest future directions.</p>
+<ul class="simple">
+<li><p><strong>Strong (3.5-4.0):</strong><br />
+You discuss what your model shows, what it doesn’t capture, and how it could be improved. You might compare your results to real data or suggest next steps.</p></li>
+<li><p><strong>Middling (2.5-3.0):</strong><br />
+You mention some limitations or future work, but the discussion is brief or superficial.</p></li>
+<li><p><strong>Weaker (1.0–2.0):</strong><br />
+You restate your results without reflection. There’s no discussion of limitations or next steps.</p></li>
+</ul>
+</section>
+</section>
+</section>
+<hr class="docutils" />
+<section id="presentation-rubric-25-of-final-project-grade">
+<h2>🎤 <strong>Presentation Rubric (25% of Final Project Grade)</strong><a class="headerlink" href="#presentation-rubric-25-of-final-project-grade" title="Link to this heading">#</a></h2>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Criteria</p></th>
+<th class="head"><p>Weight</p></th>
+<th class="head"><p>4.0</p></th>
+<th class="head"><p>3.5</p></th>
+<th class="head"><p>3.0</p></th>
+<th class="head"><p>2.5</p></th>
+<th class="head"><p>2.0</p></th>
+<th class="head"><p>1.0</p></th>
+<th class="head"><p>0.0</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Clarity of Research Question &amp; Motivation</strong></p></td>
+<td><p>25%</p></td>
+<td><p>Clear, compelling, and well-motivated; audience understands why it matters.</p></td>
+<td><p>Mostly clear and relevant; minor gaps in motivation.</p></td>
+<td><p>Adequate explanation; motivation somewhat vague.</p></td>
+<td><p>Vague or underdeveloped question or motivation.</p></td>
+<td><p>Unclear or confusing.</p></td>
+<td><p>Minimal effort.</p></td>
+<td><p>Missing.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Explanation of Physics &amp; Computation</strong></p></td>
+<td><p>25%</p></td>
+<td><p>Physics and computation clearly explained; audience can follow reasoning.</p></td>
+<td><p>Mostly clear; minor confusion or gaps.</p></td>
+<td><p>Basic explanation; some confusion or missing links.</p></td>
+<td><p>Incomplete or unclear explanation.</p></td>
+<td><p>Major confusion or errors.</p></td>
+<td><p>Minimal explanation.</p></td>
+<td><p>Missing.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Use of Visuals</strong></p></td>
+<td><p>25%</p></td>
+<td><p>Visuals are clear, relevant, and enhance understanding.</p></td>
+<td><p>Mostly effective visuals; minor issues.</p></td>
+<td><p>Visuals present but not always helpful.</p></td>
+<td><p>Visuals unclear or poorly integrated.</p></td>
+<td><p>Visuals confusing or irrelevant.</p></td>
+<td><p>Visuals present but not explained.</p></td>
+<td><p>Missing.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Delivery &amp; Engagement</strong></p></td>
+<td><p>25%</p></td>
+<td><p>Confident, well-paced, engaging; encourages discussion.</p></td>
+<td><p>Mostly clear and engaging; minor pacing issues.</p></td>
+<td><p>Adequate delivery; limited engagement.</p></td>
+<td><p>Uneven or hard to follow.</p></td>
+<td><p>Difficult to understand or disengaged.</p></td>
+<td><p>Minimal effort.</p></td>
+<td><p>Missing.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr class="docutils" />
+<section id="presentation-rubric-component-definitions-with-examples">
+<h3>🎤 Presentation – Rubric Component Definitions with Examples<a class="headerlink" href="#presentation-rubric-component-definitions-with-examples" title="Link to this heading">#</a></h3>
+<section id="clarity-of-research-question-motivation-25">
+<h4><strong>1. Clarity of Research Question &amp; Motivation (25%)</strong><a class="headerlink" href="#clarity-of-research-question-motivation-25" title="Link to this heading">#</a></h4>
+<p><strong>Definition:</strong><br />
+How clearly you state what you’re studying and why it matters.</p>
+<ul class="simple">
+<li><p><strong>Strong (3.5-4.0):</strong><br />
+“We’re modeling the spread of a forest fire using a cellular automaton. We chose this because it connects physics, computation, and environmental science, and we wanted to understand how wind and dryness affect fire behavior.”</p></li>
+<li><p><strong>Middling (2.5-3.0):</strong><br />
+“We’re simulating a forest fire. We thought it would be interesting.” (Some clarity, but lacks depth or motivation.)</p></li>
+<li><p><strong>Weaker (1.0–2.0):</strong><br />
+“We did a simulation. It’s about fire.” (Unclear or unmotivated.)</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="explanation-of-physics-computation-25">
+<h4><strong>2. Explanation of Physics &amp; Computation (25%)</strong><a class="headerlink" href="#explanation-of-physics-computation-25" title="Link to this heading">#</a></h4>
+<p><strong>Definition:</strong><br />
+How well you explain the physics and computational methods used in your project.</p>
+<ul class="simple">
+<li><p><strong>Strong (3.5-4.0):</strong><br />
+You explain the physical principles (e.g., conservation of energy), describe your equations, and walk through your computational method (e.g., how you used numerical integration).</p></li>
+<li><p><strong>Middling (2.5-3.0):</strong><br />
+You mention the physics and code but don’t explain how they connect. For example, “We used Python to simulate the motion” without explaining the equations or method.</p></li>
+<li><p><strong>Weaker (1.0–2.0):</strong><br />
+You show results but don’t explain how you got them. The audience is left guessing what the code or physics is doing.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="use-of-visuals-25">
+<h4><strong>3. Use of Visuals (25%)</strong><a class="headerlink" href="#use-of-visuals-25" title="Link to this heading">#</a></h4>
+<p><strong>Definition:</strong><br />
+How effectively you use visuals (plots, animations, code snippets) to support your explanation.</p>
+<ul class="simple">
+<li><p><strong>Strong (3.5-4.0):</strong><br />
+You use clear, labeled plots and animations that help the audience understand your results. You explain what each visual shows.</p></li>
+<li><p><strong>Middling (2.5-3.0):</strong><br />
+You include visuals, but they’re not well-labeled or explained. Some are helpful, others are confusing.</p></li>
+<li><p><strong>Weaker (1.0–2.0):</strong><br />
+Visuals are missing, unreadable, or not discussed. For example, showing a plot without saying what it means.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="delivery-engagement-25">
+<h4><strong>4. Delivery &amp; Engagement (25%)</strong><a class="headerlink" href="#delivery-engagement-25" title="Link to this heading">#</a></h4>
+<p><strong>Definition:</strong><br />
+How well you communicate your ideas verbally and engage your audience.</p>
+<ul class="simple">
+<li><p><strong>Strong (3.5-4.0):</strong><br />
+You speak clearly and confidently, make eye contact, and guide the audience through your slides. You respond thoughtfully to questions.</p></li>
+<li><p><strong>Middling (2.5-3.0):</strong><br />
+You read from notes or slides, speak too quickly or quietly, or seem unsure. You answer questions briefly.</p></li>
+<li><p><strong>Weaker (1.0–2.0):</strong><br />
+You struggle to explain your work, don’t engage the audience, or don’t respond to questions.</p></li>
+</ul>
+</section>
+</section>
+</section>
+<hr class="docutils" />
+<section id="timeline-checkpoints">
+<h2>Timeline &amp; Checkpoints<a class="headerlink" href="#timeline-checkpoints" title="Link to this heading">#</a></h2>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Date</p></th>
+<th class="head"><p>Milestone</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Oct 31</p></td>
+<td><p>HW 7: First project update</p></td>
+</tr>
+<tr class="row-odd"><td><p>Nov 14</p></td>
+<td><p>Midterm Project 2: Second update</p></td>
+</tr>
+<tr class="row-even"><td><p>Nov 21</p></td>
+<td><p>HW 8: Third update</p></td>
+</tr>
+<tr class="row-odd"><td><p>Nov 24 &amp; 26</p></td>
+<td><p>In-class work week</p></td>
+</tr>
+<tr class="row-even"><td><p>Dec 1, 3, 5</p></td>
+<td><p>Presentations</p></td>
+</tr>
+<tr class="row-odd"><td><p>Dec 8</p></td>
+<td><p>Computational essay due</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./assignments"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="hw8.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Homework 8 (Due 21 Nov)</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../resources/euler_integration.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Euler Integration</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#project-components">Project Components</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#computational-essay-60">1. Computational Essay (60%)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#presentation-25">2. Presentation (25%)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#peer-review-15">3. Peer Review (15%)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#computational-essay-rubric-60-of-final-project-grade">🧮 <strong>Computational Essay Rubric (60% of Final Project Grade)</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#computational-essay-rubric-component-definitions-with-examples">🧮 Computational Essay – Rubric Component Definitions with Examples</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#physics-content-40"><strong>1. Physics Content (40%)</strong></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#computational-implementation-30"><strong>2. Computational Implementation (30%)</strong></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#writing-communication-20"><strong>3. Writing &amp; Communication (20%)</strong></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#reflection-discussion-10"><strong>4. Reflection &amp; Discussion (10%)</strong></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#presentation-rubric-25-of-final-project-grade">🎤 <strong>Presentation Rubric (25% of Final Project Grade)</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#presentation-rubric-component-definitions-with-examples">🎤 Presentation – Rubric Component Definitions with Examples</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#clarity-of-research-question-motivation-25"><strong>1. Clarity of Research Question &amp; Motivation (25%)</strong></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#explanation-of-physics-computation-25"><strong>2. Explanation of Physics &amp; Computation (25%)</strong></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#use-of-visuals-25"><strong>3. Use of Visuals (25%)</strong></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#delivery-engagement-25"><strong>4. Delivery &amp; Engagement (25%)</strong></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#timeline-checkpoints">Timeline &amp; Checkpoints</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Danny Caballero, Morten Hjorth-Jensen, Rachel Henderson, Alia Valentine
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+  <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" />
+</a>
+<br />
+This work is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
