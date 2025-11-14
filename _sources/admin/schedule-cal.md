@@ -122,7 +122,7 @@ _All assignments are turned in using Gradescope as a single PDF._
 |:--------:|:---------:|:-----------------------------------------:|:-----------------------------|:------------------------------------------------------------------------|
 | CW46     | 10 Nov ([Slides](../slides/day-32-introduction-to-lagrangian-dynamics.pdf))   | Introduction to Lagrangian Dynamics       | 📓 [12 - The Core Principle of Classical Mechanics? The Principle of Least Action](../lecture-notes/12_notes.ipynb)<br>📚 JRT 7.1-7.2, 7.5; MLB 9.5    | 📝 [Homework 8 Assigned (Due 21 Nov)](../assignments/hw8.ipynb) |
 |          | 12 Nov ([Slides](../slides/day-33-lagrangian-examples.pdf))    | Lagrangian Dynamics Examples Session      |                             |                                                                        |
-|          | 14 Nov    | Workshop Day                              |                             | 📥 **Midterm Project 2 Due**    |
+|          | 14 Nov ([Slides](../slides/day-34-homework-session.pdf)    | Workshop Day                              |                             | 📥 **Midterm Project 2 Due**    |
 
 ---
 
