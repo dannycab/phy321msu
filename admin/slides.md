@@ -3,6 +3,20 @@
 Slides for PHY 321 appear in reverse chronological order, with the most recent slides at the top. The formats are PDF, HTML, and Markdown. The HTML slides are hosted on my website, and the Markdown slides are the source code for the HTML slides, built with [Marp](https://marp.app/).
 
 ---
+
+## Day 35 - Lagrangian Examples  - 17 Nov 2025
+
+[![Day 35](../slides/day-35-lagrangian-examples.png)](../slides/day-35-lagrangian-examples.pdf)
+
+:::info
+
+### 📂 Download Slides
+[HTML](../slides/day-35-lagrangian-examples.md) | [PDF](../slides/day-35-lagrangian-examples.pdf)
+
+:::
+
+---
+
 ## Day 34 - Help Session  - 14 Nov 2025
 
 [![Day 34](../slides/day-34-homework-session.png)](../slides/day-34-homework-session.pdf)

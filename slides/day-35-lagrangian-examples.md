@@ -13,56 +13,30 @@ url: https://dannycaballero.info/phy321msu/slides/day-35-lagrangian-examples.htm
 
 # Day 35 - Lagrangian Examples
 
-![bg right width:500px](../images/notes/week13/lion-lagrange.jpg)
+![bg right width:500px](../images/notes/week13/lagrange-pooh.jpeg)
 
 ---
 
 # Announcements
 
 * Last "Class" Week
-* Homework 8 due Friday, April 18
+* Homework 8 due Friday, Nov 21st (late after Nov 26th)
 * Next Week: Project Work and Discussion
-* Final Project Due April 28th (no later than 11:59 pm)
+* Last Week: Presentations
+* Final Project Due Dec 8th (no later than 11:59 pm)
 * **No Final Exam**
 
 ---
 
-# Seminars This Week
+# Complete Google Form
 
-## TUESDAY, April 15, 2025
-* **Theory Seminar**, 11:00am., FRIB 1200, **Speaker: Fnu Aaina Thapa,  LLNL**, Title: “Deducing neutron capture on short-lived nuclei”
-* **High Energy Physics Seminar**, 1:00 pm, 1400 BPS, **Speaker: Fei Yao, Brookhaven National Lab**, Title: Extracting Meson Distribution Amplitudes from Nonlocal Euclidean Correlations at Next-to-Next-to-Leading Order 
+## By November 21st
 
----
+Reporting your group members for the final project and a short summary of your project idea for sharing with the class.
 
-## WEDNESDAY, April 16, 2025    
+<https://forms.gle/iPKR9EDAaHW3GirN7>
 
-* **Astronomy Seminar**, 1:30 pm, 1400 BPS, **Undergraduate Thesis Talks will be given the next two weeks**
-* **PER Seminar**, 3:00 pm., BPS 1400, **Speaker: Rebeckah Fussell, Cornell University**, Title: Comparing approaches to using large language models in science education research
-* **FRIB Nuclear Science Seminar**, 3:30pm., FRIB 1300 Auditorium, **Speaker:  Professor Alex Brown (FRIB)**, Title: Nuclear Science Advances at the MSU Cyclotron, NSCL, FRIB, ...
-
----
-
-## THURSDAY, April 17, 2025
- 
-* **Colloquium**, 3:30 pm, 1415 BPS, **Speaker: Jessie Christiansen, Caltech/IPAC**, Title: From Kepler to the Habitable Worlds Observatory:  The Emerging Picture of Planet Populations
-* **Astronomical Horizons Public Lecture Series**, 7:30 pm, Skye Theater, Abrams Planetarium, **Speaker: Marcel Yanez Reyes**, Title: From Event Horizons to Particle Collisions: The Geometry of the Extreme.
-
----
-
-# Stand Up for Higher Education
-
-* Graduate Employee Union
-* Union of Nontenure Track Faculty
-* Union of Tenure System Faculty
-
-**Thursday, April 17th at 3pm**
-
-**Please make time to show up!**
-
-[www.dayofactionforhighered.org](https://www.dayofactionforhighered.org)
-
-![bg right width:500px](../images/notes/week12/standup.png)
+![bg left width:350px](../images/notes/week13/group_form_qr.png)
 
 ---
 
@@ -101,20 +75,6 @@ $$\mathcal{L} = \dfrac{1}{2} m L^2 \dot{\phi}^2 - mgL \cos(\phi)$$
 
 # Clicker Question 35-1
 
-For the plane pendulum, we changed the Lagrangian from Cartesian coordinates to plane polar coordinates. In Cartesian, we found the Lagrangian depended on $y,\dot{x},\dot{y}$. In polar, it only depended on $\phi$ and $\dot{\phi}$.
-
-$$\mathcal{L}(x,y,\dot{y}) \longrightarrow \mathcal{L}(\phi, \dot{\phi})$$
-
-What does that tell you about the dimensions of the system? The system is:
-
-1. in 3D space, so it's 3D.
-2. described by two spatial dimensions ($x,y$), so it's 2D.
-3. described by one spatial dimension ($\phi$), so it's 1D.
-
----
-
-# Clicker Question 35-2
-
 With $\mathcal{L} = \dfrac{1}{2} m L^2 \dot{\phi}^2 - mgL \cos(\phi)$, we can find the equations of motion. 
 
 $$\dfrac{\partial \mathcal{L}}{\partial \phi} - \dfrac{d}{dt} \left( \dfrac{\partial \mathcal{L}}{\partial \dot{\phi}} \right) = 0$$
@@ -129,7 +89,7 @@ Which of the following equations of motion is correct?
 
 ---
 
-# Clicker Question 35-3
+# Clicker Question 35-2
 
 For the Atwood's machine, $M$ is connected to $m$ by a string of length $l$. Each mass has a length of string extended as measured from the center of the pulley ($R$) of $y_1$ and $y_2$, respectively. The string wraps around half the pulley. 
 
@@ -145,7 +105,7 @@ Which of the following represents the equation of constraint for the system?
 
 ---
 
-# Clicker Question 35-4
+# Clicker Question 35-3
 
 With a Lagrangian of the form $\mathcal{L} = \frac{1}{2}(M+m)\dot{y}^2_1 - (M-m)gy_1$, we can find the **generalized forces** and **generalized momenta**.
 
@@ -161,7 +121,7 @@ What are $F_{y_1}$ and $p_{y_1}$ for the Atwood's machine?
 
 ---
 
-# Clicker Question 35-5
+# Clicker Question 35-4
 
 Now, we allow the pulley (mass, $M_p$) to rotate. The Lagrangian is given by:
 $$\mathcal{L} = \frac{1}{2}(M+m)\dot{y}_1^2 + \frac{1}{2}I\dot{\phi}^2 - (M-m)gy_1$$
@@ -176,7 +136,7 @@ Where $I$ is the moment of inertia of the pulley. What is the moment of inertia 
 
 ---
 
-# Clicker Question 35-6
+# Clicker Question 35-5
 
 The rope moves without slipping on the pulley. A rotation of $R d\phi$ corresponds to a displacement of $dy_1$ for the first mass, $M$. What is the **new** equation of constraint for the system?
 
