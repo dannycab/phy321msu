@@ -131,7 +131,7 @@ _All assignments are turned in using Gradescope as a single PDF._
 | **Week** | **Day**   | **Topic**                      | **Readings to Prepare** | **Important Events**                                                       |
 |:--------:|:---------:|:------------------------------:|:-----------------------|:--------------------------------------------------------------------------|
 | CW47     | 17 Nov ([Slides](../slides/day-35-lagrangian-examples.pdf))   | Lagrangian Dynamics Examples   | 📓 [13 - Applying the Lagrangian Formulation](../lecture-notes/13_notes.ipynb)<br>📚 JRT 7.3-7.7, 7.10      | 📝 Final Project Assigned<br>Presentations (01-05 Dec)<br>Computational Essay (08 Dec) |
-|          | 19 Nov    | Lagrangian Dynamics with Constraints |                   |                    |
+|          | 19 Nov ([Slides](../slides/day-36-lagrangian-examples.pdf))   | Lagrangian Dynamics with Constraints |                   |                    |
 |          | 21 Nov    | Workshop day                   |                        | 📥 **Homework 8 Due** |
 
 ---
