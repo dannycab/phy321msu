@@ -4,14 +4,14 @@ theme: graph_paper
 paginate: true
 
 title: Day 36 - Lagrangian Examples
-description: Slides for PHY 321 Spring 2025, Day 36: Lagrangian Examples
+description: Slides for PHY 321 Fall 2025, Day 36: Lagrangian Examples
 author: Prof. Danny Caballero <caball14@msu.edu>
 keywords: classical mechanics, differential equations, Lagrangian, examples
 url: https://dannycaballero.info/phy321msu/slides/day-36-lagrangian-examples.html
 
 ---
 
-# Day 36 - Lagrangian Examples II
+# Day 36 - Lagrangian Examples III
 
 ![bg right width:600px](../images/notes/week13/andy-lagrange.jpeg)
 
@@ -20,45 +20,23 @@ url: https://dannycaballero.info/phy321msu/slides/day-36-lagrangian-examples.htm
 # Announcements
 
 * Last "Class" Week
-* Homework 8 due Friday, April 18
+* Homework 8 due Friday, Nov 21st (late after Nov 26th)
 * Next Week: Project Work and Discussion
-* Final Project Due April 28th (no later than 11:59 pm)
+* Last Week: Presentations
+* Final Project Due Dec 8th (no later than 11:59 pm)
 * **No Final Exam**
 
 ---
 
-# Seminars This Week
+# Complete Google Form
 
-## WEDNESDAY, April 16, 2025    
+## By November 21st
 
-* **Astronomy Seminar**, 1:30 pm, 1400 BPS, **Undergraduate Thesis Talks will be given the next two weeks**
-* **PER Seminar**, 3:00 pm., BPS 1400, **Speaker: Rebeckah Fussell, Cornell University**, Title: Comparing approaches to using large language models in science education research
-* **FRIB Nuclear Science Seminar**, 3:30pm., FRIB 1300 Auditorium, **Speaker:  Professor Alex Brown (FRIB)**, Title: Nuclear Science Advances at the MSU Cyclotron, NSCL, FRIB, ...
+Reporting your group members for the final project and a short summary of your project idea for sharing with the class.
 
----
+<https://forms.gle/iPKR9EDAaHW3GirN7>
 
-# Seminars This Week
-
-## THURSDAY, April 17, 2025
- 
-* **Colloquium**, 3:30 pm, 1415 BPS, **Speaker: Jessie Christiansen, Caltech/IPAC**, Title: From Kepler to the Habitable Worlds Observatory:  The Emerging Picture of Planet Populations
-* **Astronomical Horizons Public Lecture Series**, 7:30 pm, Skye Theater, Abrams Planetarium, **Speaker: Marcel Yanez Reyes**, Title: From Event Horizons to Particle Collisions: The Geometry of the Extreme.
-
----
-
-# Stand Up for Higher Education
-
-* Graduate Employee Union
-* Union of Nontenure Track Faculty
-* Union of Tenure System Faculty
-
-**Thursday, April 17th at 3pm**
-
-**Please make time to show up!**
-
-[www.dayofactionforhighered.org](https://www.dayofactionforhighered.org)
-
-![bg right width:500px](../images/notes/week12/standup.png)
+![bg left width:350px](../images/notes/week13/group_form_qr.png)
 
 ---
 

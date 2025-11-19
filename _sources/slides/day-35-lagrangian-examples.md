@@ -11,7 +11,7 @@ url: https://dannycaballero.info/phy321msu/slides/day-35-lagrangian-examples.htm
 
 ---
 
-# Day 35 - Lagrangian Examples
+# Day 35 - Lagrangian Examples II
 
 ![bg right width:500px](../images/notes/week13/lagrange-pooh.jpeg)
 
