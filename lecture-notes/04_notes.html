@@ -52,7 +52,7 @@
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../_static/design-tabs.js?v=36754332"></script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
@@ -729,13 +729,13 @@ document.write(`
 \[\vec{F}_{net} = \vec{F}_{gravity} = m\vec{a} = m\langle a_x, a_y \rangle\]</div>
 <p>So that the forces in the <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span> directions are:</p>
 <div class="math notranslate nohighlight">
-\[F_x = -G \dfrac{M_{sun} M_{earth}x}{(x+2+y^2)^{3/2}} \qquad F_y = -G \dfrac{M_{sun} M_{earth}y}{(x+2+y^2)^{3/2}}\]</div>
+\[F_x = -G \dfrac{M_{sun} M_{earth}x}{(x^2+y^2)^{3/2}} \qquad F_y = -G \dfrac{M_{sun} M_{earth}y}{(x^2+y^2)^{3/2}}\]</div>
 <p>and thus the acceleration of the Earth in the <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span> directions are:</p>
 <div class="math notranslate nohighlight">
-\[a_x = -G \dfrac{M_{sun} x}{(x+2+y^2)^{3/2}} \qquad a_y = -G \dfrac{M_{sun} y}{(x+2+y^2)^{3/2}}\]</div>
+\[a_x = -G \dfrac{M_{sun} x}{(x^2+y^2)^{3/2}} \qquad a_y = -G \dfrac{M_{sun} y}{(x^2+y^2)^{3/2}}\]</div>
 <p>This gives us a set of coupled differential equations.</p>
 <div class="math notranslate nohighlight">
-\[\ddot{x} = -G \dfrac{M_{sun} x}{(x+2+y^2)^{3/2}} \qquad \ddot{y} = -G \dfrac{M_{sun} y}{(x+2+y^2)^{3/2}}\]</div>
+\[\ddot{x} = -G \dfrac{M_{sun} x}{(x^2+y^2)^{3/2}} \qquad \ddot{y} = -G \dfrac{M_{sun} y}{(x^2+y^2)^{3/2}}\]</div>
 </section>
 <section id="how-do-we-then-get-the-trajectories">
 <h4>How do we then get the trajectories?<a class="headerlink" href="#how-do-we-then-get-the-trajectories" title="Link to this heading">#</a></h4>
