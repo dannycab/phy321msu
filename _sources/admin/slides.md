@@ -4,14 +4,27 @@ Slides for PHY 321 appear in reverse chronological order, with the most recent s
 
 ---
 
-## Day 36 - Lagrangian Examples III  - 17 Nov 2025
+## Day 37 - Help Session  - 21 Nov 2025
+
+[![Day 37](../slides/day-37-homework-session.png)](../slides/day-37-homework-session.pdf)
+
+:::info
+
+### 📂 Download Slides
+[HTML](../slides/day-37-homework-session.md) | [PDF](../slides/day-37-homework-session.pdf)
+
+:::
+
+---
+
+## Day 36 - Lagrangian Examples III  - 19 Nov 2025
 
 [![Day 36](../slides/day-36-lagrangian-examples.png)](../slides/day-36-lagrangian-examples.pdf)
 
 :::info
 
 ### 📂 Download Slides
-[HTML](../slides/day-36-lagrangian-examples.md) | [PDF](../slides/day-35-lagrangian-examples.pdf)
+[HTML](../slides/day-36-lagrangian-examples.md) | [PDF](../slides/day-36-lagrangian-examples.pdf)
 
 :::
 

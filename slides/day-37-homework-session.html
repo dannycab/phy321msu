@@ -52,11 +52,13 @@
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script src="../_static/design-tabs.js?v=36754332"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"tex2jax": {"inlineMath": [["$", "$"]]}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'slides/day-37-homework-session';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -383,6 +385,13 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Day 37 - Homework Session</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#announcements">Announcements</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#complete-google-form">Complete Google Form</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#by-november-21st">By November 21st</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-5-changing-coordinates">Exercise 5 - Changing Coordinates</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Exercise 5 - Changing Coordinates</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Exercise 5 - Changing Coordinates</a></li>
+</ul>
+</li>
 </ul>
 
             </nav>
@@ -397,19 +406,55 @@ document.write(`
                   
   <section id="day-37-homework-session">
 <h1>Day 37 - Homework Session<a class="headerlink" href="#day-37-homework-session" title="Link to this heading">#</a></h1>
-<p><img alt="bg right width:600px" src="../_images/quack.png" /></p>
+<p>Routhian Mechanics</p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Routhian_mechanics">https://en.wikipedia.org/wiki/Routhian_mechanics</a></p>
+<p><img alt="bg right width:400px" src="../_images/yoda.jpeg" /></p>
 </section>
 <hr class="docutils" />
 <section id="announcements">
 <h1>Announcements<a class="headerlink" href="#announcements" title="Link to this heading">#</a></h1>
 <ul class="simple">
-<li><p>Last “Class” Week</p></li>
-<li><p>Homework 5 and 6 graded; HW 7 and Midterm 2 in progress (Monday?)</p></li>
-<li><p>Homework 8 due Friday, April 18</p></li>
+<li><p>Homework 8 due Friday, Nov 21st (late after Nov 26th)</p></li>
 <li><p>Next Week: Project Work and Discussion</p></li>
-<li><p>Final Project Due April 28th (no later than 11:59 pm)</p></li>
+<li><p>Last Week: Presentations</p></li>
+<li><p>Final Project Due Dec 8th (no later than 11:59 pm)</p></li>
 <li><p><strong>No Final Exam</strong></p></li>
 </ul>
+</section>
+<hr class="docutils" />
+<section id="complete-google-form">
+<h1>Complete Google Form<a class="headerlink" href="#complete-google-form" title="Link to this heading">#</a></h1>
+<section id="by-november-21st">
+<h2>By November 21st<a class="headerlink" href="#by-november-21st" title="Link to this heading">#</a></h2>
+<p>Reporting your group members for the final project and a short summary of your project idea for sharing with the class.</p>
+<p><a class="reference external" href="https://forms.gle/iPKR9EDAaHW3GirN7">https://forms.gle/iPKR9EDAaHW3GirN7</a></p>
+<p><img alt="bg left width:350px" src="../_images/group_form_qr.png" /></p>
+</section>
+<hr class="docutils" />
+<section id="exercise-5-changing-coordinates">
+<h2>Exercise 5 - Changing Coordinates<a class="headerlink" href="#exercise-5-changing-coordinates" title="Link to this heading">#</a></h2>
+<p>Consider two particles with masses <span class="math notranslate nohighlight">\(m_1=m_2=m\)</span> connected by a spring with spring constant <span class="math notranslate nohighlight">\(k\)</span>. They sit on a frictionless surface but are constrained to the <span class="math notranslate nohighlight">\(x\)</span>-axis. The location of the first particle is <span class="math notranslate nohighlight">\(x_1\)</span> and the location of the second particle is <span class="math notranslate nohighlight">\(x_2\)</span>. The spring is at equilibrium when the particles are a distance <span class="math notranslate nohighlight">\(L\)</span> apart. Assume the spring is massless and that the left mass never changes position with the right mass (i.e., the spring is always horizontal).</p>
+<ul class="simple">
+<li><p>5a. Write down the kinetic and potential energy for this system in terms of <span class="math notranslate nohighlight">\(x_1\)</span> and <span class="math notranslate nohighlight">\(x_2\)</span> and their associated velocities.</p></li>
+</ul>
+<p><em>In this problem we are changing the coordinates to explore a different aspect of the problem (and to make the math easier). This is a common technique that will not always be obvious. But practice will help us identify when it is useful.</em></p>
+</section>
+<hr class="docutils" />
+<section id="id1">
+<h2>Exercise 5 - Changing Coordinates<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>5b. Write down the Lagrangian for this system in terms of <span class="math notranslate nohighlight">\(x_1\)</span> and <span class="math notranslate nohighlight">\(x_2\)</span> and their associated velocities <span class="math notranslate nohighlight">\(\mathcal{L}(x_1, x_2, \dot{x}_1, \dot{x}_2)\)</span>. Find the 2 equations of motion.</p></li>
+<li><p>5c. Now consider a new coordinate system where the center of mass is at <span class="math notranslate nohighlight">\(x_{cm} = \frac{1}{2}(x_1 + x_2)\)</span> and the relative coordinate is <span class="math notranslate nohighlight">\(x = x_1 - x_2\)</span>. Write down the kinetic and potential energy in terms of <span class="math notranslate nohighlight">\(x_{cm}\)</span> and <span class="math notranslate nohighlight">\(x\)</span> and their associated velocities.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="id2">
+<h2>Exercise 5 - Changing Coordinates<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>5d. Write down the Lagrangian for this system in terms of the center of mass coordinate (<span class="math notranslate nohighlight">\(x_{cm}\)</span>) and the spring’s extension (<span class="math notranslate nohighlight">\(x\)</span>) and the associated velocities <span class="math notranslate nohighlight">\(\mathcal{L}(x_{cm}, x, \dot{x}_{cm}, \dot{x})\)</span>. Find the 2 equations of motion.</p></li>
+<li><p>5e. Find <span class="math notranslate nohighlight">\(x_{cm}(t)\)</span> and <span class="math notranslate nohighlight">\(x(t)\)</span> for the system for some generic initial conditions of your choosing. Describe the motion of the system.</p></li>
+</ul>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -460,6 +505,13 @@ document.write(`
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Day 37 - Homework Session</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#announcements">Announcements</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#complete-google-form">Complete Google Form</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#by-november-21st">By November 21st</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-5-changing-coordinates">Exercise 5 - Changing Coordinates</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Exercise 5 - Changing Coordinates</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Exercise 5 - Changing Coordinates</a></li>
+</ul>
+</li>
 </ul>
 
   </nav></div>

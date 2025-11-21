@@ -52,7 +52,7 @@
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script src="../_static/design-tabs.js?v=36754332"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
@@ -482,10 +482,17 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x110168ec0&gt;
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">2</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># Modeling constant acceleration due to gravity</span>
+<span class="ne">----&gt; </span><span class="mi">2</span> <span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="kn">from</span><span class="w"> </span><span class="nn">matplotlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">style</span>
+
+<span class="ne">ModuleNotFoundError</span>: No module named &#39;numpy&#39;
 </pre></div>
 </div>
-<img alt="../_images/0a23b1d3a3f840ac160aa37e14ea096029956ed7f3e0647dada60c802aa816a9.png" src="../_images/0a23b1d3a3f840ac160aa37e14ea096029956ed7f3e0647dada60c802aa816a9.png" />
 </div>
 </div>
 </section>
@@ -596,11 +603,17 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/var/folders/qv/mnq6bff11kbfx3jwqvl1w12m0000gn/T/ipykernel_90383/2754186503.py:73: UserWarning: This figure includes Axes that are not compatible with tight_layout, so results might be incorrect.
-  plt.tight_layout()
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">line</span> <span class="mi">2</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># Modeling constant acceleration due to gravity with quadratic drag</span>
+<span class="ne">----&gt; </span><span class="mi">2</span> <span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="kn">from</span><span class="w"> </span><span class="nn">matplotlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">style</span>
+
+<span class="ne">ModuleNotFoundError</span>: No module named &#39;numpy&#39;
 </pre></div>
 </div>
-<img alt="../_images/72d55ce1841b32a692e2663d0558539bb7cefaf602ce4c52a47dc30425b493bf.png" src="../_images/72d55ce1841b32a692e2663d0558539bb7cefaf602ce4c52a47dc30425b493bf.png" />
 </div>
 </div>
 </section>

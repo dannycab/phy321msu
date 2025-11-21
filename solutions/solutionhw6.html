@@ -1,0 +1,1024 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Homework 6 (Due 15 Mar) &#8212; Classical Mechanics</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'solutions/solutionhw6';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Homework 7 (Due 22 Mar)" href="solutionhw7.html" />
+    <link rel="prev" title="Homework 5 (Due 08 Mar)" href="solutionhw5.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/spartan-helmet.png" class="logo__image only-light" alt="Classical Mechanics - Home"/>
+    <script>document.write(`<img src="../_static/spartan-helmet.png" class="logo__image only-dark" alt="Classical Mechanics - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    PHY 321: Classical Mechanics 1, Michigan State University, Spring 2024
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">About the course</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../admin/teachers.html">Teachers and Grading</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin/resources.html">Additional Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin/textbooks.html">Textbooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin/schedule-cal.html">Calendar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin/links.html">Course Material and Links</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Introductory Material</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter1.html">1. What is Classical Physics?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter2-overview.html">What is Mathematical Modeling?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter2.html">2. Classical Mechanics, Mathematics and Numerical background</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter3.html">3. Simple Motion problems and Reminder on Newton’s Laws</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter4.html">4. Work, Energy, Momentum and Conservation laws</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Advanced Topics</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter5.html">5. Harmonic Oscillations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter6.html">6. Two-body problems, from the Gravitational Force to Two-body Scattering</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter7.html">7. Non-inertial Frames, Translation and Rotating Coordinate Systems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/chapter8.html">8. Variational Calculus and Lagrangian Formalism</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">In-class handouts, activities, and other materials</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../in-class/cw1-python-test.html">CW1 - Python Test</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../in-class/cw6-phase_space.html">CW6 - Phase Portraits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../in-class/cw11-plot-fourier.html">CW11 - Plot Fourier Expansion</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Weekly assignments, midterms and final projects with solutions</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw1.html">Homework 1 (Due 19 Jan)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw2.html">Homework 2 (Due 26 Jan)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw3.html">Homework 3 (Due 02 Feb)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw4.html">Homework 4 (Due 09 Feb)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../midterms/midterm1.html">Midterm 1 (Due 23 Feb)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw5.html">Homework 5 (Due 08 Mar)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw6.html">Homework 6 (Due 15 Mar)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw7.html">Homework 7 (Due 22 Mar)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../midterms/midterm2.html">Midterm 2 (Due 5 Apr)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw8.html">Homework 8 (Due 12 Apr)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw9.html">Homework 9 (Due 19 Apr)</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Solutions</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="solutionhw1.html">Homework 1 (Due 19 Jan)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="solutionhw2.html">Homework 2 (Due 26 Jan)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="solutionhw3.html">Homework 3 (Due 03 Feb)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="solutionhw4.html">Homework 4 (Due 09 Feb)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="solutionmidterm1.html">Midterm 1 (Due 23 Feb)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="solutionhw5.html">Homework 5 (Due 08 Mar)</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Homework 6 (Due 15 Mar)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="solutionhw7.html">Homework 7 (Due 22 Mar)</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Honors Projects</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../honors-projects/ChaoticPendulum.html">Chaos in the driven nonlinear pendulum</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../honors-projects/NeuralNetworks.html">From Ordinary Differential equations to Neural Networks, solving mechanics problems in a new way</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../honors-projects/SolarSystem.html">Building a model for the solar system using ordinary differential equations</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/main?urlpath=tree/solutions/solutionhw6.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch onBinder"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img src="../_static/images/logo_binder.svg">
+  </span>
+<span class="btn__text-container">Binder</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/solutions/solutionhw6.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Homework 6 (Due 15 Mar)</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-1-10pt-morse-potential-as-an-sho">Exercise 1 (10pt) Morse Potential as an SHO</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-2-10pt-simple-pendulum-as-an-sho">Exercise 2 (10pt), Simple Pendulum as an SHO</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-3-10pt-time-averaging-and-the-sho">Exercise 3 (10pt), Time Averaging and the SHO</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-4-10pt-toy-potential">Exercise 4 (10pt), Toy Potential</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-5-10pt-defining-periodicity">Exercise 5 (10pt), Defining Periodicity</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-6-50-pt-find-your-own-1d-oscillator">Exercise 6 (50 pt), Find your own 1D Oscillator</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#examples-of-1d-potentials">Examples of 1D potentials</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#extra-credit-integrating-classwork-with-research">Extra Credit - Integrating Classwork With Research</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <!-- HTML file automatically generated from DocOnce source (https://github.com/doconce/doconce/)
+doconce format html hw5.do.txt --no_mako -->
+<!-- dom:TITLE: PHY321: Classical Mechanics 1 --><section class="tex2jax_ignore mathjax_ignore" id="homework-6-due-15-mar">
+<h1>Homework 6 (Due 15 Mar)<a class="headerlink" href="#homework-6-due-15-mar" title="Permalink to this heading">#</a></h1>
+<p><strong>Solution Homework 6, Spring 2024</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="o">%</span><span class="k">matplotlib</span> inline
+<span class="n">plt</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;seaborn-v0_8-colorblind&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<section id="exercise-1-10pt-morse-potential-as-an-sho">
+<h2>Exercise 1 (10pt) Morse Potential as an SHO<a class="headerlink" href="#exercise-1-10pt-morse-potential-as-an-sho" title="Permalink to this heading">#</a></h2>
+<p>If the potential has a local minimum, we can often find SHO approximation for that potential near the local minimum.</p>
+<p>The <a class="reference external" href="https://en.wikipedia.org/wiki/Morse_potential">Morse potential</a> is a convenient model for the potential energy of a diatomic molecule. The potential is a radial one and thus one-dimensional. It is given by,</p>
+<div class="math notranslate nohighlight">
+\[U(r) = A\left[ \left(e^{(R-r)/S}-1\right)^2-1\right]\]</div>
+<p>where the distance between the centers of the two atoms is <span class="math notranslate nohighlight">\(r\)</span>, and the constants <span class="math notranslate nohighlight">\(A\)</span>, <span class="math notranslate nohighlight">\(R\)</span>, and <span class="math notranslate nohighlight">\(S\)</span> are all positive. Here <span class="math notranslate nohighlight">\(S&lt;&lt;R\)</span>.</p>
+<ul class="simple">
+<li><p>1a (2pt) Sketch (or plot) the potential as a function of <span class="math notranslate nohighlight">\(r\)</span>.</p></li>
+</ul>
+<div class="hint admonition">
+<p class="admonition-title">SOLUTION</p>
+<p>We can plot the Morse potential, but we need to choose some values for the constants. Let’s choose <span class="math notranslate nohighlight">\(A=1\)</span>, <span class="math notranslate nohighlight">\(R=1\)</span>, and <span class="math notranslate nohighlight">\(S=0.01\)</span>.</p>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">MorsePotential</span><span class="p">(</span><span class="n">r</span><span class="p">,</span> <span class="n">A</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">R</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">S</span><span class="o">=</span><span class="mf">0.01</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">A</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">S</span> <span class="o">*</span> <span class="p">(</span><span class="n">r</span> <span class="o">-</span> <span class="n">R</span><span class="p">)))</span><span class="o">**</span><span class="mi">2</span>
+
+<span class="n">r</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mf">0.01</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">r</span><span class="p">,</span> <span class="n">MorsePotential</span><span class="p">(</span><span class="n">r</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;r&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;V(r)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Morse Potential&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Text(0.5, 1.0, &#39;Morse Potential&#39;)
+</pre></div>
+</div>
+<img alt="../_images/50acd8e7ff326258de045100dab9735af04b183eb62d1d120508d7ed633cd5d2.png" src="../_images/50acd8e7ff326258de045100dab9735af04b183eb62d1d120508d7ed633cd5d2.png" />
+</div>
+</div>
+<ul class="simple">
+<li><p>1b (3pt) Find the equilibrium position of the potential, i.e. the position where the potential is at a minimum. We will call this <span class="math notranslate nohighlight">\(r_e\)</span>.</p></li>
+</ul>
+<div class="hint admonition">
+<p class="admonition-title">SOLUTION</p>
+<p>The equilibrium position is found by taking the derivative of the potential and setting it equal to zero. So we have,</p>
+<div class="math notranslate nohighlight">
+\[\frac{dU}{dr} = 0 = -2A\left(e^{(R-r)/S}-1\right)\left(e^{(R-r)/S}\right)\left(-\frac{1}{S}\right).\]</div>
+<p>We can solve for <span class="math notranslate nohighlight">\(r\)</span> to find the equilibrium position.</p>
+<div class="math notranslate nohighlight">
+\[0 = 2A\left(e^{(R-r)/S}-1\right)\left(e^{(R-r)/S}\right)\left(-\frac{1}{S}\right).\]</div>
+<p>If we are looking for a finite solution, we focus on the first term in the product.</p>
+<div class="math notranslate nohighlight">
+\[0 = \left(e^{(R-r)/S}-1\right),\]</div>
+<div class="math notranslate nohighlight">
+\[1 = e^{(R-r)/S},\]</div>
+<div class="math notranslate nohighlight">
+\[\ln(1) = \frac{R-r}{S},\]</div>
+<div class="math notranslate nohighlight">
+\[0 = \frac{R-r}{S},\]</div>
+<div class="math notranslate nohighlight">
+\[r_e = R.\]</div>
+</div>
+<ul class="simple">
+<li><p>1c (3pt) Rewrite the potential in terms of the displacement from equilibrium, <span class="math notranslate nohighlight">\(r = r_e + x\)</span>. Expand the potential to second order in <span class="math notranslate nohighlight">\(x\)</span>.</p></li>
+</ul>
+<div class="hint admonition">
+<p class="admonition-title">SOLUTION</p>
+<p>We can expand the potential to second order in <span class="math notranslate nohighlight">\(x\)</span> by using the Taylor expansion. First we plugin <span class="math notranslate nohighlight">\(r = r_e + x = R+x\)</span> into the potential.</p>
+<div class="math notranslate nohighlight">
+\[U(r_e+x) = A\left[ \left(e^{(R-(r_e+x))/S}-1\right)^2-1\right],\]</div>
+<div class="math notranslate nohighlight">
+\[U(R+x) = A\left[ \left(e^{(R-R-x)/S}-1\right)^2-1\right],\]</div>
+<div class="math notranslate nohighlight">
+\[U(x) = A\left[ \left(e^{-x/S}-1\right)^2-1\right].\]</div>
+<p>So now we expand the potential to second order in <span class="math notranslate nohighlight">\(x\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[U(x) \approx A\left[ \left(1-\frac{x}{S}+\frac{x^2}{S^2}-1\right)^2-1\right],\]</div>
+<div class="math notranslate nohighlight">
+\[U(x) \approx A\left[ \left(-\frac{x}{S} + \frac{x^2}{S^2}\right)^2-1\right],\]</div>
+<div class="math notranslate nohighlight">
+\[U(x) \approx -A + A\left[ \frac{x^2}{S^2}\right].\]</div>
+</div>
+<ul class="simple">
+<li><p>1d (2pt) Find the effective spring constant, <span class="math notranslate nohighlight">\(k\)</span>, for the potential near the minimum. What is the frequency of small oscillations about the minimum?</p></li>
+</ul>
+<div class="hint admonition">
+<p class="admonition-title">SOLUTION</p>
+<p>We can use the simple harmonic potential to find the effective spring constant. For the SHO,</p>
+<div class="math notranslate nohighlight">
+\[U(x) = \frac{1}{2}kx^2 + U_0,\]</div>
+<p>where <span class="math notranslate nohighlight">\(U_0\)</span> is the potential at the minimum. We can compare this to the expansion of the approximate Morse potential to find the effective spring constant.</p>
+<div class="math notranslate nohighlight">
+\[U(x) \approx -A + A\left[ \frac{x^2}{S^2}\right].\]</div>
+<p>Such that,</p>
+<div class="math notranslate nohighlight">
+\[U_0 = -A \quad \text{and} \quad k = \frac{2A}{S^2}.\]</div>
+<p>For a particle of mass <span class="math notranslate nohighlight">\(m\)</span>, the frequency of small oscillations about the minimum is,</p>
+<div class="math notranslate nohighlight">
+\[\omega = \sqrt{\frac{k}{m}} = \sqrt{\frac{2A}{mS^2}}.\]</div>
+</div>
+</section>
+<section id="exercise-2-10pt-simple-pendulum-as-an-sho">
+<h2>Exercise 2 (10pt), Simple Pendulum as an SHO<a class="headerlink" href="#exercise-2-10pt-simple-pendulum-as-an-sho" title="Permalink to this heading">#</a></h2>
+<p>Consider a pendulum of length <span class="math notranslate nohighlight">\(L\)</span> and mass <span class="math notranslate nohighlight">\(m\)</span>. It can swing back and forth in a plane, under the influence of gravity. The pendulum is designed so that it can swing through a full circle.</p>
+<ul class="simple">
+<li><p>2a (3pt) Draw the free-body diagram for the pendulum, and write the equations of motion.</p></li>
+</ul>
+<div class="hint admonition">
+<p class="admonition-title">SOLUTION</p>
+<p>The free-body diagram for the pendulum is shown below.</p>
+<p><img alt="Free-body diagram for a pendulum" src="../_images/hw6_2a.png" /></p>
+<p>The forces acting on the pendulum are the tension in the string, <span class="math notranslate nohighlight">\(T\)</span>, and the force of gravity, <span class="math notranslate nohighlight">\(mg\)</span>. The angle it makes with the vertical is <span class="math notranslate nohighlight">\(\phi\)</span>. If we decompose the motion along the axis of the pendulum and perpendicular to it (the radial and tangential directions), we can write the equations of motion.</p>
+<p>The radial equation is related the the net force, which is centripetal.</p>
+<div class="math notranslate nohighlight">
+\[\sum F_r = T - mg\cos(\phi) = \dfrac{mv^2}{L},\]</div>
+<p>where <span class="math notranslate nohighlight">\(v = L\frac{d\phi}{dt}\)</span> is the velocity of the pendulum.  The tangential force governs the oscillations of the pendulum.</p>
+<div class="math notranslate nohighlight">
+\[\sum F_t = -mg\sin(\phi) = mL\frac{d^2\phi}{dt^2}.\]</div>
+</div>
+<ul class="simple">
+<li><p>2b (3pt) Find the potential energy of the pendulum as a function of the angle <span class="math notranslate nohighlight">\(\phi\)</span> it makes with the vertical. (Choose the zero of potential energy to be at the bottom of the pendulum’s swing.)</p></li>
+</ul>
+<div class="hint admonition">
+<p class="admonition-title">SOLUTION</p>
+<p>The potential energy of the pendulum is due to gravity. If we measure the angle from vertical, <span class="math notranslate nohighlight">\(\phi\)</span>, then at the bottom <span class="math notranslate nohighlight">\(\phi=0\)</span>, and <span class="math notranslate nohighlight">\(U=0\)</span>. At <span class="math notranslate nohighlight">\(\phi=\pi\)</span>, <span class="math notranslate nohighlight">\(U\)</span> is a maximum. The function that does this is <span class="math notranslate nohighlight">\(\cos(\phi)\)</span>; it helps that it also captures the projected height properly as well. So the potential energy is,</p>
+<div class="math notranslate nohighlight">
+\[U(\phi) = -mgL\cos(\phi).\]</div>
+</div>
+<ul class="simple">
+<li><p>2c (4pt) For small angles, show the potential reduces to an SHO. What is the effective spring constant, <span class="math notranslate nohighlight">\(k\)</span>, for the potential near the minimum? What is the frequency of small oscillations about the minimum?</p></li>
+</ul>
+<div class="hint admonition">
+<p class="admonition-title">SOLUTION</p>
+<p>For small angles, <span class="math notranslate nohighlight">\(\cos(\phi) \approx 1 - \frac{\phi^2}{2}\)</span>, so the potential energy is,</p>
+<div class="math notranslate nohighlight">
+\[U(\phi) \approx -mgL + \frac{1}{2}mgL\phi^2.\]</div>
+<p>This is the potential energy of a simple harmonic oscillator. However, the units of the oscillator length are not quite right; we can multiply by <span class="math notranslate nohighlight">\(L/L\)</span> and regroup the terms:</p>
+<div class="math notranslate nohighlight">
+\[U(\phi) \approx -mgL + \frac{1}{2}m\frac{g}{L}\left(L\phi\right)^2 = U_0 + U_{spring},\]</div>
+<div class="math notranslate nohighlight">
+\[U_{spring} = \frac{1}{2}m\frac{g}{L}\left(L\phi\right)^2 = \frac{1}{2}kx^2, \quad k = \frac{mg}{L}.\]</div>
+<p>For a particle of mass <span class="math notranslate nohighlight">\(m\)</span>, the frequency of small oscillations about the minimum is,</p>
+<div class="math notranslate nohighlight">
+\[\omega = \sqrt{\frac{k}{m}} = \sqrt{\frac{mg}{mL}} = \sqrt{\frac{g}{L}}.\]</div>
+<p>Notice that the oscillatory variable is <span class="math notranslate nohighlight">\(L\phi\)</span>, which is the arc length of the pendulum. This is the effective length of the pendulum for small oscillations.</p>
+</div>
+</section>
+<section id="exercise-3-10pt-time-averaging-and-the-sho">
+<h2>Exercise 3 (10pt), Time Averaging and the SHO<a class="headerlink" href="#exercise-3-10pt-time-averaging-and-the-sho" title="Permalink to this heading">#</a></h2>
+<p>Time Averaging is a common tool to use with periodic systems. It also us to discuss what happens to different properties of the system over one period.</p>
+<p>An SHO has a period <span class="math notranslate nohighlight">\(\tau\)</span>. We can find the time average of a variable <span class="math notranslate nohighlight">\(f(t)\)</span> over one period, <span class="math notranslate nohighlight">\(\langle f \rangle\)</span>, by averaging over the period,</p>
+<div class="math notranslate nohighlight">
+\[\langle f \rangle = \frac{1}{\tau}\int_0^\tau f(t)dt\]</div>
+<ul class="simple">
+<li><p>3a (2pt) Show that the time average of the position of the SHO is zero.</p></li>
+</ul>
+<div class="hint admonition">
+<p class="admonition-title">SOLUTION</p>
+<p>Let’s the take the general case of the SHO. It’s position is given by,</p>
+<div class="math notranslate nohighlight">
+\[x(t) = A\cos(\omega t - \delta),\]</div>
+<p>where <span class="math notranslate nohighlight">\(A\)</span> is the amplitude, <span class="math notranslate nohighlight">\(\omega\)</span> is the angular frequency, and <span class="math notranslate nohighlight">\(\delta\)</span> is the phase. The time average of the position can be constructed from the integral prescription above,</p>
+<div class="math notranslate nohighlight">
+\[\langle x \rangle = \frac{1}{\tau}\int_0^\tau A\cos(\omega t - \delta)dt.\]</div>
+<p>We convert the angular frequency to the period, <span class="math notranslate nohighlight">\(\omega = \frac{2\pi}{\tau}\)</span>, and the integral becomes,</p>
+<div class="math notranslate nohighlight">
+\[\langle x \rangle = \frac{1}{\tau}\int_0^\tau A\cos\left(\frac{2\pi t}{\tau} - \delta\right)dt.\]</div>
+<p>We now integrate the cosine function over one period and evaluate it,</p>
+<div class="math notranslate nohighlight">
+\[\langle x \rangle = \frac{A}{\tau} \frac{\tau}{2\pi} \left[ \sin \left( \frac{2\pi t}{\tau} - \delta \right) \right]_0^\tau,\]</div>
+<div class="math notranslate nohighlight">
+\[\langle x \rangle = \frac{A}{2\pi} \left[ \sin \left( 2\pi - \delta \right) - \sin \left( -\delta \right) \right].\]</div>
+<p>So we are computing the difference of the sine function at two different points, but precisely one period apart (<span class="math notranslate nohighlight">\(2\pi\)</span>). The value of the function is the same at both points. So the time average of the position is zero,</p>
+<div class="math notranslate nohighlight">
+\[\langle x \rangle = \frac{A}{2\pi} \left[ \sin \left( -\delta \right) - \sin \left( -\delta \right) \right],\]</div>
+<div class="math notranslate nohighlight">
+\[\langle x \rangle = 0.\]</div>
+</div>
+<ul class="simple">
+<li><p>3b (2pt) Show that the time average of the velocity of the SHO is zero.</p></li>
+</ul>
+<div class="hint admonition">
+<p class="admonition-title">SOLUTION</p>
+<p>Our solution from above is fairly general. The velocity of this SHO is,</p>
+<div class="math notranslate nohighlight">
+\[v(t) = -A\omega\sin(\omega t - \delta).\]</div>
+<p>We see that we will get an integral with the same form as before,</p>
+<div class="math notranslate nohighlight">
+\[\langle v \rangle = \frac{1}{\tau}\int_0^\tau -A\omega\sin(\omega t - \delta)dt,\]</div>
+<div class="math notranslate nohighlight">
+\[\langle v \rangle = \frac{-A\omega}{\tau}\int_0^\tau \sin\left(\frac{2\pi t}{\tau} - \delta\right)dt.\]</div>
+<p>This integral evaluates no differently from the prior one. We take the difference of the integrated periodic function exactly one period apart. This will result in a zero time average as well.</p>
+<div class="math notranslate nohighlight">
+\[\langle v \rangle = 0.\]</div>
+</div>
+<ul class="simple">
+<li><p>3c (6pt) Show that the time average of the kinetic energy of the SHO is equal to the time average of the potential energy (and importantly, non-zero).  If the total energy is <span class="math notranslate nohighlight">\(E\)</span>, these time averages are equal to <span class="math notranslate nohighlight">\(E/2\)</span>. You might need to show that the very useful trigonometric identity,</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[\langle \sin^2(\omega t-\delta)\rangle = \langle \cos^2(\omega t-\delta)\rangle = \frac{1}{2}\]</div>
+<div class="hint admonition">
+<p class="admonition-title">SOLUTION</p>
+<p>The energies of the SHO are,</p>
+<div class="math notranslate nohighlight">
+\[K(t) = \frac{1}{2}m\left(-A\omega\sin(\omega t - \delta)\right)^2,\]</div>
+<div class="math notranslate nohighlight">
+\[U(t) = \frac{1}{2}k\left(A\cos(\omega t - \delta)\right)^2.\]</div>
+<p>So we know that we will have to compute the time average of the square of the sine and cosine functions. So let’s just do that first,</p>
+<div class="math notranslate nohighlight">
+\[\langle \sin^2(\omega t-\delta)\rangle = \frac{1}{\tau}\int_0^\tau \sin^2\left(\frac{2\pi t}{\tau} - \delta\right)dt.\]</div>
+<p>We can use the trigonometric identity <span class="math notranslate nohighlight">\(\sin^2(x) = \frac{1}{2}(1 - \cos(2x))\)</span> to simplify the integral,</p>
+<div class="math notranslate nohighlight">
+\[\langle \sin^2(\omega t-\delta)\rangle = \frac{1}{\tau}\int_0^\tau \frac{1}{2}\left(1 - \cos\left(\frac{4\pi t}{\tau} - 2\delta\right)\right)dt.\]</div>
+<p>We separate the integral into two parts,</p>
+<div class="math notranslate nohighlight">
+\[\langle \sin^2(\omega t-\delta)\rangle = \frac{1}{2} - \frac{1}{2\tau}\int_0^\tau \cos\left(\frac{4\pi t}{\tau} - 2\delta\right)dt.\]</div>
+<p>As before, we notice the integral of the cosine function over one period evaluates to zero. So are left with,</p>
+<div class="math notranslate nohighlight">
+\[\langle \sin^2(\omega t-\delta)\rangle = \frac{1}{2}.\]</div>
+<p>We can make a similar argument for the cosine function by using the trigonometric identity <span class="math notranslate nohighlight">\(\cos^2(x) = \frac{1}{2}(1 + \cos(2x))\)</span>. This would also give us,</p>
+<div class="math notranslate nohighlight">
+\[\langle \cos^2(\omega t-\delta)\rangle = \frac{1}{2}.\]</div>
+<p>And thus the time average of the kinetic and potential energies are,</p>
+<div class="math notranslate nohighlight">
+\[\langle K \rangle = \frac{1}{2}m\omega^2A^2\langle \sin^2(\omega t-\delta)\rangle = \frac{1}{4}m\omega^2A^2,\]</div>
+<div class="math notranslate nohighlight">
+\[\langle U \rangle = \frac{1}{2}kA^2\langle \cos^2(\omega t-\delta)\rangle = \frac{1}{4}kA^2.\]</div>
+<p>We note that <span class="math notranslate nohighlight">\(k = m\omega^2\)</span>, so the time averages are equal,</p>
+<div class="math notranslate nohighlight">
+\[\langle K \rangle + \langle U \rangle = \frac{1}{4}kA^2 + \frac{1}{4}kA^2 = \frac{1}{2}kA^2.\]</div>
+<p>For an SHO with amplitude <span class="math notranslate nohighlight">\(A\)</span> (as we constructed), the total energy is <span class="math notranslate nohighlight">\(E = \frac{1}{2}kA^2\)</span>, so the time averages are equal to <span class="math notranslate nohighlight">\(E/2\)</span>.</p>
+</div>
+</section>
+<section id="exercise-4-10pt-toy-potential">
+<h2>Exercise 4 (10pt), Toy Potential<a class="headerlink" href="#exercise-4-10pt-toy-potential" title="Permalink to this heading">#</a></h2>
+<p>Consider a toy potential of the form,</p>
+<div class="math notranslate nohighlight">
+\[U(r) = U_0\left(\dfrac{r}{R}+\lambda^2\frac{R}{r}\right)\]</div>
+<p>where <span class="math notranslate nohighlight">\(U_0\)</span>, <span class="math notranslate nohighlight">\(R\)</span>, and <span class="math notranslate nohighlight">\(\lambda\)</span> are all positive constants and the domain of the potential is <span class="math notranslate nohighlight">\(0&lt;r&lt;\infty\)</span>.</p>
+<ul class="simple">
+<li><p>4a (2pt) Sketch (or plot) the potential as a function of <span class="math notranslate nohighlight">\(r\)</span>.</p></li>
+</ul>
+<div class="hint admonition">
+<p class="admonition-title">SOLUTION</p>
+<p>We can plot the toy potential, but we need to choose some values for the constants. Let’s choose <span class="math notranslate nohighlight">\(U_0=1\)</span>, <span class="math notranslate nohighlight">\(R=1\)</span>, and <span class="math notranslate nohighlight">\(\lambda=0.1\)</span>. Thus,</p>
+<div class="math notranslate nohighlight">
+\[U(r) = 1\left(\dfrac{r}{1}+0.1^2\frac{1}{r}\right).\]</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">ToyPotential</span><span class="p">(</span><span class="n">r</span><span class="p">,</span> <span class="n">U0</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">R</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">lambda_</span><span class="o">=</span><span class="mf">0.1</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">U0</span><span class="o">*</span><span class="p">(</span><span class="n">r</span><span class="o">/</span><span class="n">R</span><span class="o">+</span><span class="n">lambda_</span><span class="o">**</span><span class="mi">2</span><span class="o">*</span><span class="n">R</span><span class="o">/</span><span class="n">r</span><span class="p">)</span>
+
+<span class="n">r</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mf">0.01</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span>
+
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">r</span><span class="p">,</span> <span class="n">ToyPotential</span><span class="p">(</span><span class="n">r</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;r&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;U(r)&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Toy Potential&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../_images/061bc6fc52aca993b4fe620315c76a48abc6ae5882fbdf25a2baa3346646347d.png" src="../_images/061bc6fc52aca993b4fe620315c76a48abc6ae5882fbdf25a2baa3346646347d.png" />
+</div>
+</div>
+<ul class="simple">
+<li><p>4b (3pt) Find the equilibrium position of the potential, i.e. the position where the potential is at a minimum. We will call this <span class="math notranslate nohighlight">\(r_e\)</span>.</p></li>
+</ul>
+<div class="hint admonition">
+<p class="admonition-title">SOLUTION</p>
+<p>To find the equilibrium position, we take the derivative of the potential and set it equal to zero. So we have,</p>
+<div class="math notranslate nohighlight">
+\[\frac{dU}{dr} = 0 = U_0\left(\dfrac{1}{R}-\lambda^2\frac{1}{r^2}\right).\]</div>
+<p>We can solve for <span class="math notranslate nohighlight">\(r\)</span> to find the equilibrium position.</p>
+<div class="math notranslate nohighlight">
+\[0 = \dfrac{1}{R}-\lambda^2\frac{1}{r^2},\]</div>
+<div class="math notranslate nohighlight">
+\[\lambda^2\frac{1}{r^2} = \dfrac{1}{R},\]</div>
+<div class="math notranslate nohighlight">
+\[r^2 = \lambda^2R,\]</div>
+<div class="math notranslate nohighlight">
+\[r_e = \pm\lambda R.\]</div>
+<p>We take the positive root, <span class="math notranslate nohighlight">\(r_e = \lambda R\)</span>, as the equilibrium position because the potential is symmetric about the origin.</p>
+</div>
+<ul class="simple">
+<li><p>4c (5pt) Rewrite the potential in terms of the displacement from equilibrium, <span class="math notranslate nohighlight">\(r = r_e + x\)</span>. Expand the potential to second order in <span class="math notranslate nohighlight">\(x\)</span>. What is the effective spring constant, <span class="math notranslate nohighlight">\(k\)</span>, for the potential near the minimum? What is the frequency of small oscillations about the minimum?</p></li>
+</ul>
+<div class="hint admonition">
+<p class="admonition-title">SOLUTION</p>
+<p>We can expand the potential to second order in <span class="math notranslate nohighlight">\(x\)</span> by using the Taylor expansion. First we plugin <span class="math notranslate nohighlight">\(r = r_e + x = \lambda R + x\)</span> into the potential.</p>
+<div class="math notranslate nohighlight">
+\[U(r_e+x) = U_0\left(\dfrac{\lambda R + x}{R}+\lambda^2\frac{R}{\lambda R + x}\right).\]</div>
+<p>We multiple this out to get,</p>
+<div class="math notranslate nohighlight">
+\[U(r_e+x) = U_0\left(\lambda + \dfrac{x}{R}+\lambda^2\frac{R}{\lambda R + x}\right).\]</div>
+<p>We can clean up the last term by taking out an <span class="math notranslate nohighlight">\(\lambda R\)</span> from the denominator and then Taylor expanding the result,</p>
+<div class="math notranslate nohighlight">
+\[U(r_e+x) = U_0\left(\lambda + \dfrac{x}{R}+\frac{\lambda^2R}{\lambda R}\frac{1}{1+\frac{x}{\lambda R}}\right),\]</div>
+<div class="math notranslate nohighlight">
+\[U(r_e+x) = U_0\left(\lambda + \dfrac{x}{R}+\lambda \left(1-\frac{x}{\lambda R}+\frac{x^2}{(\lambda R)^2}-\frac{x^3}{(\lambda R)^3}+\cdots\right)\right).\]</div>
+<p>Keeping only the terms up to second order in <span class="math notranslate nohighlight">\(x\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[U(x) \approx U_0\left(\lambda + \dfrac{x}{R}+\lambda -\frac{x}{R}+\frac{x^2}{(\lambda R)^2}\right),\]</div>
+<div class="math notranslate nohighlight">
+\[U(x) \approx U_0\left(2\lambda + \frac{x^2}{(\lambda R)^2}\right).\]</div>
+<p>Matching to the form of the SHO potential, we find the effective spring constant,</p>
+<div class="math notranslate nohighlight">
+\[k = \frac{2U_0}{\lambda^2 R^2}.\]</div>
+<p>For a particle of mass <span class="math notranslate nohighlight">\(m\)</span>, the frequency of small oscillations about the minimum is,</p>
+<div class="math notranslate nohighlight">
+\[\omega = \sqrt{\frac{k}{m}} = \sqrt{\frac{2U_0}{m\lambda^2 R^2}}.\]</div>
+</div>
+</section>
+<section id="exercise-5-10pt-defining-periodicity">
+<h2>Exercise 5 (10pt), Defining Periodicity<a class="headerlink" href="#exercise-5-10pt-defining-periodicity" title="Permalink to this heading">#</a></h2>
+<p>A common issue with oscillators is determining their periodicity. For the SHO, we can show that the period is <span class="math notranslate nohighlight">\(2\pi/\omega_0\)</span> where <span class="math notranslate nohighlight">\(\omega_0\)</span> is the natural frequency of the SHO. How might we define a periodicity more generally? Let’s start with the damped harmonic oscillator. Consider a weakly damped oscillator (<span class="math notranslate nohighlight">\(\beta &lt; \omega_0\)</span>). The motion of the oscillator is given by,</p>
+<div class="math notranslate nohighlight">
+\[x(t) = A e^{-\beta t}\cos(\omega_1 t - \delta)\]</div>
+<p>where <span class="math notranslate nohighlight">\(A\)</span> is the amplitude, <span class="math notranslate nohighlight">\(\beta\)</span> is the damping constant, <span class="math notranslate nohighlight">\(\omega_1 = \sqrt{\omega_0^2 - \beta^2}\)</span>  and <span class="math notranslate nohighlight">\(\delta\)</span> is the phase.</p>
+<p>The motion decays with time, but we can still define a periodicity, <span class="math notranslate nohighlight">\(\tau_1\)</span>, which is the time between peaks in the motion.</p>
+<ul class="simple">
+<li><p>5a (4pt) Sketch (or plot) the motion of the oscillator as a function of time. Show that you can find <span class="math notranslate nohighlight">\(\tau_1 = 2\pi/\omega_1\)</span> from looking at successive maxima.</p></li>
+</ul>
+<div class="hint admonition">
+<p class="admonition-title">SOLUTION</p>
+<p>We can plot the motion of the oscillator, but we need to choose some values for the constants. Let’s choose <span class="math notranslate nohighlight">\(A=1\)</span>, <span class="math notranslate nohighlight">\(\beta=0.1\)</span>, and <span class="math notranslate nohighlight">\(\omega_0=1\)</span>. Thus,</p>
+<div class="math notranslate nohighlight">
+\[x(t) = e^{-0.1 t}\cos(\sqrt{1-0.01} t - \delta).\]</div>
+<p>We can plot this function and look for the time between successive maxima. We can then compare this to an SHO with a frequency equal to <span class="math notranslate nohighlight">\(\omega_1\)</span>.</p>
+<p>It’s easy to see from the graph that each maximum in the damped oscillator occurs at the peak of the SHO with the same frequency. This is the definition of the period of the damped oscillator, <span class="math notranslate nohighlight">\(\tau_1 = 2\pi/\omega_1\)</span>.</p>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">DampedOscillator</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">A</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">omega</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">gamma</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span> <span class="n">delta</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">A</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">gamma</span> <span class="o">*</span> <span class="n">t</span><span class="p">)</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">omega</span> <span class="o">*</span> <span class="n">t</span> <span class="o">-</span> <span class="n">delta</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">SHO</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">A</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">omega</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">delta</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">A</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">omega</span> <span class="o">*</span> <span class="n">t</span> <span class="o">-</span> <span class="n">delta</span><span class="p">)</span>
+
+<span class="n">t</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span>
+
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">DampedOscillator</span><span class="p">(</span><span class="n">t</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">SHO</span><span class="p">(</span><span class="n">t</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">([</span><span class="s1">&#39;Damped&#39;</span><span class="p">,</span> <span class="s1">&#39;Simple&#39;</span><span class="p">])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;t&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;x(t)&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Text(0, 0.5, &#39;x(t)&#39;)
+</pre></div>
+</div>
+<img alt="../_images/d9b146e5aaf9bb3884930c7d032c5b5edc7da17e332e94f2bb95e94ac5073f75.png" src="../_images/d9b146e5aaf9bb3884930c7d032c5b5edc7da17e332e94f2bb95e94ac5073f75.png" />
+</div>
+</div>
+<ul class="simple">
+<li><p>5b (3pt) Show that an equivalent definition of <span class="math notranslate nohighlight">\(\tau_1\)</span> is twice the time between zero crossings of the motion.</p></li>
+</ul>
+<div class="hint admonition">
+<p class="admonition-title">SOLUTION</p>
+<p>Again, from the graph, we can see that the time between zero crossings is half the time between successive maxima. This is simply another definition of the period of the damped oscillator, <span class="math notranslate nohighlight">\(\tau_1 = 2\pi/\omega_1\)</span>.</p>
+</div>
+<ul class="simple">
+<li><p>5c (3pt) If the damping <span class="math notranslate nohighlight">\(\beta\)</span> is half the natural frequency (<span class="math notranslate nohighlight">\(\omega_0\)</span>), how does the amplitude of the motion decay in one period?</p></li>
+</ul>
+<div class="hint admonition">
+<p class="admonition-title">SOLUTION</p>
+<p>Using the general solution,</p>
+<div class="math notranslate nohighlight">
+\[x(t) = A e^{-\beta t}\cos(\omega_1 t - \delta),\]</div>
+<p>we can see that using the definition of <span class="math notranslate nohighlight">\(\omega_1 = \sqrt{\omega_0^2 - \beta^2}\)</span>, we can write the motion as,</p>
+<div class="math notranslate nohighlight">
+\[x(t) = A e^{-\beta t}\cos(\sqrt{\omega_0^2 - \beta^2} t - \delta).\]</div>
+<p>With <span class="math notranslate nohighlight">\(\beta = \omega_0/2\)</span>, we have,</p>
+<div class="math notranslate nohighlight">
+\[x(t) = A e^{-\omega_0 t/2}\cos\left(\sqrt{\omega_0^2 - \left(\frac{\omega_0}{2}\right)^2} t - \delta\right),\]</div>
+<div class="math notranslate nohighlight">
+\[x(t) = A e^{-\omega_0 t/2}\cos\left(\sqrt{\frac{3\omega_0^2}{4}} t - \delta\right).\]</div>
+<p>From this form, we have found the period of this damped oscillator,</p>
+<div class="math notranslate nohighlight">
+\[\tau_1 = \frac{2\pi}{\sqrt{3\omega_0^2/4}} = \frac{4\pi}{\sqrt{3}\omega_0}.\]</div>
+<p>And thus the amplitude decays thusly,</p>
+<div class="math notranslate nohighlight">
+\[A e^{-\omega_0 \tau_1/2} = A e^{-2\pi/\sqrt{3}}.\]</div>
+</div>
+</section>
+<section id="exercise-6-50-pt-find-your-own-1d-oscillator">
+<h2>Exercise 6 (50 pt), Find your own 1D Oscillator<a class="headerlink" href="#exercise-6-50-pt-find-your-own-1d-oscillator" title="Permalink to this heading">#</a></h2>
+<p>We have built all the tools to study 1D unforced oscillators. Now you get to pick your own potential and study it. You can pick any 1D potential you like, but it should have a local minimum. Make sure it is not a driven oscillator (i.e., no explicit time dependence in the equations of motion). To earn full credit for this exercise, you must:</p>
+<ul class="simple">
+<li><p>6a (5pt) Present the potential and describe its origin, why it is interesting, where it comes from, etc. Educate us about it.</p></li>
+<li><p>6b (5pt) Sketch (or plot) the potential as a function of it’s argument (and chosen variables) and find the equilibrium position of the potential, i.e. the position where the potential is at a minimum.</p></li>
+<li><p>6c (10pt) Rewrite the potential in terms of the displacement from equilibrium. Expand the potential to second order to find the effective spring constant, <span class="math notranslate nohighlight">\(k\)</span>, for the potential near the minimum. What is the frequency of small oscillations about the minimum?</p></li>
+<li><p>6d (10pt) Construct the equations of motion for the potential and solve them numerically. Choose initial conditions and parameters that give oscillatory motion. Note it doesn’t have to be SHO (In fact, it probably won’t be). Plot the position as a function of time. Make sure we can see the oscillations.</p></li>
+<li><p>6e (10pt) Plot the phase diagram of the trajectory (you don’t have to produce a phase diagram, but just plot the trajectory in phase space). What does the phase diagram tell you about the motion?</p></li>
+<li><p>6f (10pt) Find the period of your motion. Here you might have to make some definitions of what periodicity means for your potential.</p></li>
+</ul>
+<section id="examples-of-1d-potentials">
+<h3>Examples of 1D potentials<a class="headerlink" href="#examples-of-1d-potentials" title="Permalink to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p><strong>Simple Pendulum (Nonlinear Small Angle Approximation)</strong>:</p>
+<ul class="simple">
+<li><p>Potential: <span class="math notranslate nohighlight">\( V(\theta) = mgh(1 - \cos(\theta)) \)</span>, where <span class="math notranslate nohighlight">\(m\)</span> is the mass, <span class="math notranslate nohighlight">\(g\)</span> is the acceleration due to gravity, <span class="math notranslate nohighlight">\(h\)</span> is the length of the pendulum, and <span class="math notranslate nohighlight">\(\theta\)</span> is the angular displacement.</p></li>
+</ul>
+</li>
+<li><p><strong>Nonlinear Spring (Hardening or Softening)</strong>:</p>
+<ul class="simple">
+<li><p>Potential: <span class="math notranslate nohighlight">\( V(x) = \frac{k}{2} x^2 + \frac{\beta}{3} x^3 \)</span>, where <span class="math notranslate nohighlight">\(k\)</span> and <span class="math notranslate nohighlight">\(\beta\)</span> are constants. Depending on the sign of <span class="math notranslate nohighlight">\(\beta\)</span>, the spring can exhibit hardening (<span class="math notranslate nohighlight">\(\beta &gt; 0\)</span>) or softening (<span class="math notranslate nohighlight">\(\beta &lt; 0\)</span>) nonlinearity.</p></li>
+</ul>
+</li>
+<li><p><strong>Lennard-Jones Potential Oscillator</strong> (for a diatomic molecule model):</p>
+<ul class="simple">
+<li><p>Potential: <span class="math notranslate nohighlight">\( V(r) = 4\epsilon \left[ \left(\frac{\sigma}{r}\right)^{12} - \left(\frac{\sigma}{r}\right)^6 \right] \)</span>, where <span class="math notranslate nohighlight">\(\epsilon\)</span> is the depth of the potential well, <span class="math notranslate nohighlight">\(\sigma\)</span> is the finite distance at which the inter-particle potential is zero, and <span class="math notranslate nohighlight">\(r\)</span> is the distance between particles.</p></li>
+</ul>
+</li>
+<li><p><strong>Morse Potential (for molecular vibrations)</strong>:</p>
+<ul class="simple">
+<li><p>Potential: <span class="math notranslate nohighlight">\( V(x) = D_e \left(1 - e^{-a(x - x_0)}\right)^2 \)</span>, where <span class="math notranslate nohighlight">\(D_e\)</span> is the depth of the potential well, <span class="math notranslate nohighlight">\(a\)</span> is a constant related to the width of the well, <span class="math notranslate nohighlight">\(x\)</span> is the displacement from equilibrium, and <span class="math notranslate nohighlight">\(x_0\)</span> is the equilibrium bond length. This potential models the energy of a diatomic molecule as a function of the distance between atoms, showing oscillatory behavior that represents molecular vibrations.</p></li>
+</ul>
+</li>
+<li><p><strong>Double Well Potential</strong>:</p>
+<ul class="simple">
+<li><p>Potential: <span class="math notranslate nohighlight">\( V(x) = -\frac{\mu}{2} x^2 + \frac{\lambda}{4} x^4 \)</span>, where <span class="math notranslate nohighlight">\(\mu\)</span> and <span class="math notranslate nohighlight">\(\lambda\)</span> are positive constants. This system exhibits bistability with two stable equilibria, leading to interesting nonlinear dynamics and potential oscillations between the wells under certain conditions.</p></li>
+</ul>
+</li>
+</ol>
+</section>
+</section>
+<section id="extra-credit-integrating-classwork-with-research">
+<h2>Extra Credit - Integrating Classwork With Research<a class="headerlink" href="#extra-credit-integrating-classwork-with-research" title="Permalink to this heading">#</a></h2>
+<p>This opportunity will allow you to earn up to 5 extra credit points on a Homework per week. These points can push you above 100% or help make up for missed exercises.
+In order to earn all points you must:</p>
+<ol class="arabic simple">
+<li><p>Attend an MSU research talk (recommended research oriented Clubs is  provided below)</p></li>
+<li><p>Summarize the talk using at least 150 words</p></li>
+<li><p>Turn in the summary along with your Homework.</p></li>
+</ol>
+<p>Approved talks:
+Talks given by researchers through the following clubs:</p>
+<ul class="simple">
+<li><p>Research and Idea Sharing Enterprise (RAISE)​: Meets Wednesday Nights Society for Physics Students (SPS)​: Meets Monday Nights</p></li>
+<li><p>Astronomy Club​: Meets Monday Nights</p></li>
+<li><p>Facility For Rare Isotope Beam (FRIB) Seminars: ​Occur multiple times a week</p></li>
+</ul>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "teaching"
+        },
+        kernelOptions: {
+            name: "teaching",
+            path: "./solutions"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'teaching'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="solutionhw5.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Homework 5 (Due 08 Mar)</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="solutionhw7.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Homework 7 (Due 22 Mar)</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-1-10pt-morse-potential-as-an-sho">Exercise 1 (10pt) Morse Potential as an SHO</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-2-10pt-simple-pendulum-as-an-sho">Exercise 2 (10pt), Simple Pendulum as an SHO</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-3-10pt-time-averaging-and-the-sho">Exercise 3 (10pt), Time Averaging and the SHO</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-4-10pt-toy-potential">Exercise 4 (10pt), Toy Potential</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-5-10pt-defining-periodicity">Exercise 5 (10pt), Defining Periodicity</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-6-50-pt-find-your-own-1d-oscillator">Exercise 6 (50 pt), Find your own 1D Oscillator</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#examples-of-1d-potentials">Examples of 1D potentials</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#extra-credit-integrating-classwork-with-research">Extra Credit - Integrating Classwork With Research</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Danny Caballero, Morten Hjorth-Jensen
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
