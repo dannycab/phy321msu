@@ -140,7 +140,7 @@ _All assignments are turned in using Gradescope as a single PDF._
 
 | **Week** | **Day**   | **Topic**                      | **Readings to Prepare** | **Important Events**                                                       |
 |:--------:|:---------:|:------------------------------:|:-----------------------|:--------------------------------------------------------------------------|
-| CW48     | 24 Nov    | Final Project Prep             |                        | 📝 Final Project Assigned<br>Presentations (01-05 Dec)<br>Computational Essay (08 Dec) |
+| CW48     | 24 Nov ([Slides](../slides/day-38-project-session.pdf))    | Final Project Prep             |                        | 📝 Final Project Assigned<br>Presentations (01-05 Dec)<br>Computational Essay (08 Dec) |
 |          | 26 Nov    | Final Project Prep             |                        |                    |
 |          | 28 Nov    | **No Class - University Closed** |                      |  |
 
