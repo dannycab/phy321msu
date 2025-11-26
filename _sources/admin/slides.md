@@ -4,6 +4,19 @@ Slides for PHY 321 appear in reverse chronological order, with the most recent s
 
 ---
 
+## Day 39 - Project Work Session  - 26 Nov 2025
+
+[![Day 39](../slides/day-39-project-session.png)](../slides/day-39-project-session.pdf)
+
+:::info
+
+### 📂 Download Slides
+[HTML](../slides/day-39-project-session.md) | [PDF](../slides/day-39-project-session.pdf)
+
+:::
+
+---
+
 ## Day 38 - Project Work Session  - 24 Nov 2025
 
 [![Day 38](../slides/day-38-project-session.png)](../slides/day-38-project-session.pdf)

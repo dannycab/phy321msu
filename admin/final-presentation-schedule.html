@@ -1,0 +1,809 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>PHY 321 Final Project Presentations &#8212; Classical Mechanics</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'admin/final-presentation-schedule';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Euler Integration" href="../resources/euler_integration.html" />
+    <link rel="prev" title="Final Project (Due Dec 8)" href="../assignments/final_project.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/spartan-helmet.png" class="logo__image only-light" alt="Classical Mechanics - Home"/>
+    <script>document.write(`<img src="../_static/spartan-helmet.png" class="logo__image only-dark" alt="Classical Mechanics - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    PHY 321: Classical Mechanics 1, Michigan State University, Fall 2025
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">About the course</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="getting-started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="teachers.html">Teachers and Grading</a></li>
+<li class="toctree-l1"><a class="reference internal" href="grading.html">Grading and Dates</a></li>
+
+<li class="toctree-l1"><a class="reference internal" href="textbooks.html">Textbooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="schedule-cal.html">Course Calendar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="slides.html">Slides</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Resources</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="course-commitments.html">Course Commitments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="iclicker-setup.html">i-Clicker Setup Instructions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gradescope-submissions.html">Submitting Assignments on Gradescope</a></li>
+<li class="toctree-l1"><a class="reference internal" href="finding-research.html">Finding Research Opportunities</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Assignments</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../assignments/hw1.html">Homework 1 (Due 5 Sep)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../assignments/hw2.html">Homework 2 (Due 12 Sep)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../assignments/hw3.html">Homework 3 (Due 19 Sep)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../assignments/hw4.html">Homework 4 (Due 26 Sep)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../assignments/midterm1.html">Midterm 1 (Due 10 Oct)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../assignments/hw5.html">Homework 5 (Due 17 Oct)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../assignments/hw6.html">Homework 6 (Due 24 Oct)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../assignments/hw7.html">Homework 7 (Due 31 Oct)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../assignments/midterm2.html">Midterm 2 (Due 14 Nov)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../assignments/hw8.html">Homework 8 (Due 21 Nov)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../assignments/final_project.html">Final Project (Due Dec 8)</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">PHY 321 Final Project Presentations</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Programming Resources</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../resources/euler_integration.html">Euler Integration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/integrators.html">Numerical Integrators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/phase_diagrams.html">Plotting Phase Diagrams</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/chaotic_dynamics.html">Modeling Chaotic Systems - Activity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/chaotic_dynamics-completed.html">Modeling Chaotic Systems - Completed</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Weekly Course Materials</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/01_notes.html">01 - Overture: What is Classical Physics?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/02_notes.html">02 - Computing is a Necessary Tool for Science</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/03_notes.html">03 - What is Mathematical Modeling?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/04_notes.html">04 - Why does fluid drag complicate things?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/05_notes.html">05 - Conservation Laws Govern and Constrain our Physics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/06_notes.html">06 - Nature Often Seeks Stability</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/07_notes.html">07 - Introducing Nonlinear Dynamics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/08_notes.html">08 - Oscillations, Cycles, and Nature’s Recurrences</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/09_notes.html">09 - Driving Oscillators and Resonance Phenomenon</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/10_notes.html">10 - Investigating Systems that Exhibit Chaotic Dynamics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/11_notes.html">11 - Reformulating Classical Mechanics using the Calculus of Variations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/12_notes.html">12 - The Core Principle of Classical Mechanics? The Principle of Least Action</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/13_notes.html">13 - Applying the Lagrangian Formulation</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/admin/final-presentation-schedule.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>PHY 321 Final Project Presentations</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#scheduling-notes">Scheduling Notes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#monday-december-01-2025">Monday, December 01, 2025</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#project-presentations">Project Presentations</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pm-12-09-pm-9-min">12:00 PM - 12:09 PM (9 min)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pm-12-16-pm-7-min">12:09 PM - 12:16 PM (7 min)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pm-12-27-pm-11-min">12:16 PM - 12:27 PM (11 min)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pm-12-34-pm-7-min">12:27 PM - 12:34 PM (7 min)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pm-12-41-pm-7-min">12:34 PM - 12:41 PM (7 min)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pm-12-48-pm-missing-submission">12:41 PM - 12:48 PM (Missing Submission)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#wednesday-december-03-2025">Wednesday, December 03, 2025</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Project Presentations</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pm-12-07-pm-7-min">12:00 PM - 12:07 PM (7 min)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pm-12-14-pm-7-min">12:07 PM - 12:14 PM (7 min)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pm-12-23-pm-9-min">12:14 PM - 12:23 PM (9 min)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pm-12-32-pm-9-min">12:23 PM - 12:32 PM (9 min)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pm-12-39-pm-7-min">12:32 PM - 12:39 PM (7 min)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pm-12-46-pm-missing-submission">12:39 PM - 12:46 PM (Missing Submission)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#friday-december-05-2025">Friday, December 05, 2025</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Project Presentations</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">12:00 PM - 12:09 PM (9 min)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pm-12-18-pm-9-min">12:09 PM - 12:18 PM (9 min)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pm-12-27-pm-9-min">12:18 PM - 12:27 PM (9 min)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pm-12-34-pm-missing-submission">12:27 PM - 12:34 PM (Missing Submission)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="phy-321-final-project-presentations">
+<h1>PHY 321 Final Project Presentations<a class="headerlink" href="#phy-321-final-project-presentations" title="Link to this heading">#</a></h1>
+<p><strong>Fall 2025</strong></p>
+<section id="scheduling-notes">
+<h2>Scheduling Notes<a class="headerlink" href="#scheduling-notes" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Project presentations are scheduled first and randomly distributed</p>
+<ul>
+<li><p>Missing submissions are placed at the end of each day</p></li>
+</ul>
+</li>
+<li><p>Other students may leave early once project presentations conclude that day</p></li>
+<li><p>Students must review at least two other presentations on days they are not presenting; attendance is required</p>
+<ul>
+<li><p>Feedback will be shared with the presenters before they submit their computational essays</p></li>
+</ul>
+</li>
+<li><p>Each presentation duration is based on group size (1 person: 7 min, 2 people: 9 min, 3 people: 11 min)</p></li>
+</ul>
+</section>
+<section id="monday-december-01-2025">
+<h2>Monday, December 01, 2025<a class="headerlink" href="#monday-december-01-2025" title="Link to this heading">#</a></h2>
+<section id="project-presentations">
+<h3>Project Presentations<a class="headerlink" href="#project-presentations" title="Link to this heading">#</a></h3>
+<section id="pm-12-09-pm-9-min">
+<h4>12:00 PM - 12:09 PM (9 min)<a class="headerlink" href="#pm-12-09-pm-9-min" title="Link to this heading">#</a></h4>
+<p><strong>Group:</strong> Pendulum rotators</p>
+<p><strong>Focus:</strong> Double pendulum and rotation</p>
+<p><strong>Description:</strong> We wanted to have a project that had an application to something in engineering, and we realized that the combining pendulums and rotation would allow us to do this. The goal here is to simulate the behavior of a double pendulum, but we decided to make this a chaotic system. We will do this by having a rotating base for our system and we will study this in the same reference frame (that of an observer). The chaotic system makes it more interesting and allows us to include the effects of different forces, and emphasizes_ the importance of choosing the correct initial conditions. This will help us study the effects of vibrations, wind, earthquakes, etc. on buildings, which will allow us apply our knowledge to the case of tall structures that need to counteract these effects in order to not collapse.</p>
+<p><strong>Team Members:</strong></p>
+<ul class="simple">
+<li><p>Giles Alva (<a class="reference external" href="mailto:alvagile&#37;&#52;&#48;msu&#46;edu">alvagile<span>&#64;</span>msu<span>&#46;</span>edu</a>)</p></li>
+<li><p>Brenner Berlinger (<a class="reference external" href="mailto:berling4&#37;&#52;&#48;msu&#46;edu">berling4<span>&#64;</span>msu<span>&#46;</span>edu</a>)</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="pm-12-16-pm-7-min">
+<h4>12:09 PM - 12:16 PM (7 min)<a class="headerlink" href="#pm-12-16-pm-7-min" title="Link to this heading">#</a></h4>
+<p><strong>Group:</strong> Chaos</p>
+<p><strong>Focus:</strong> The Chaotic Dynamics of the Double Pendulum System</p>
+<p><strong>Description:</strong> The double pendulum is a physical system consisting of a pendulum with another pendulum attached to the end. It is one of the simplest dynamical systems exhibiting deterministic chaos. Several systems in nature exhibit similar chaotic behavior, including weather systems, planetary orbits, and fluid dynamics. The double pendulum serves as an accessible model for understanding chaos in more complex phenomena.
+I formulate the equations of motion of the system using Lagrangian mechanics. The governing differential equations have no closed form analytical solution, which warrants the use of numerical methods. Here, I use the velocity Verlet algorithm for its energy conservation, which is important for systems with complex dynamics. I analyze the chaotic behavior of the system by plotting phase space contours, visualizing trajectories and analyzing Poincaré sections. I also quantify sensitivity to initial conditions using Lyapunov exponents to characterize the chaotic regions of the phase space.</p>
+<p><strong>Team Members:</strong></p>
+<ul class="simple">
+<li><p>Hrishikesh Belagali (<a class="reference external" href="mailto:belagal1&#37;&#52;&#48;msu&#46;edu">belagal1<span>&#64;</span>msu<span>&#46;</span>edu</a>)</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="pm-12-27-pm-11-min">
+<h4>12:16 PM - 12:27 PM (11 min)<a class="headerlink" href="#pm-12-27-pm-11-min" title="Link to this heading">#</a></h4>
+<p><strong>Group:</strong> The Slingshots</p>
+<p><strong>Focus:</strong> Our focus is to launch a ship off of earth, slingshot off the moon, and send it to mars.</p>
+<p><strong>Description:</strong> For our project we are performing the calculations needed to launch a spaceship from Earth’s surface and launch it towards the moon where we will be performing a gravitational slingshot around the Moon and throwing the Ship towards Mars with an increased Velocity than the Initial-V due to our gravitational slingshot.</p>
+<p><strong>Team Members:</strong></p>
+<ul class="simple">
+<li><p>Melody Baker (<a class="reference external" href="mailto:bakerm87&#37;&#52;&#48;msu&#46;edu">bakerm87<span>&#64;</span>msu<span>&#46;</span>edu</a>)</p></li>
+<li><p>Luke Rushing (<a class="reference external" href="mailto:rushin17&#37;&#52;&#48;msu&#46;edu">rushin17<span>&#64;</span>msu<span>&#46;</span>edu</a>)</p></li>
+<li><p>Josh Friedman (<a class="reference external" href="mailto:fried233&#37;&#52;&#48;msu&#46;edu">fried233<span>&#64;</span>msu<span>&#46;</span>edu</a>)</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="pm-12-34-pm-7-min">
+<h4>12:27 PM - 12:34 PM (7 min)<a class="headerlink" href="#pm-12-34-pm-7-min" title="Link to this heading">#</a></h4>
+<p><strong>Group:</strong> Bucky the Beaver</p>
+<p><strong>Focus:</strong> How does drafting reduce drag and increase top speed for racecars?</p>
+<p><strong>Description:</strong> This project focuses on drafting during a straight line area during a race, and how that allows for cars to speed up, and increase their speed above their normal speed during a long race, and how it allows for passing due to the speed boost. This was done by looking at the aerodynamic drag.</p>
+<p><strong>Team Members:</strong></p>
+<ul class="simple">
+<li><p>Ryan Tanzer (<a class="reference external" href="mailto:tanzerry&#37;&#52;&#48;msu&#46;edu">tanzerry<span>&#64;</span>msu<span>&#46;</span>edu</a>)</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="pm-12-41-pm-7-min">
+<h4>12:34 PM - 12:41 PM (7 min)<a class="headerlink" href="#pm-12-41-pm-7-min" title="Link to this heading">#</a></h4>
+<p><strong>Group:</strong> Jai</p>
+<p><strong>Focus:</strong> Elo Rating Systems</p>
+<p><strong>Description:</strong> Describing elo rating systems as a potential with a particle being the “player.” Using the standard equation for elo.</p>
+<p><strong>Team Members:</strong></p>
+<ul class="simple">
+<li><p>Jai Gupta (<a class="reference external" href="mailto:guptaja3&#37;&#52;&#48;msu&#46;edu">guptaja3<span>&#64;</span>msu<span>&#46;</span>edu</a>)</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="pm-12-48-pm-missing-submission">
+<h4>12:41 PM - 12:48 PM (Missing Submission)<a class="headerlink" href="#pm-12-48-pm-missing-submission" title="Link to this heading">#</a></h4>
+<p><strong>Group:</strong> None</p>
+<p><strong>Focus:</strong> TBD</p>
+<p><strong>Description:</strong> Project info not yet submitted</p>
+<p><strong>Team Members:</strong></p>
+<ul class="simple">
+<li><p>Katrina Elakkari (<a class="reference external" href="mailto:elkkari&#37;&#52;&#48;msu&#46;edu">elkkari<span>&#64;</span>msu<span>&#46;</span>edu</a>)</p></li>
+</ul>
+</section>
+</section>
+</section>
+<hr class="docutils" />
+<section id="wednesday-december-03-2025">
+<h2>Wednesday, December 03, 2025<a class="headerlink" href="#wednesday-december-03-2025" title="Link to this heading">#</a></h2>
+<section id="id1">
+<h3>Project Presentations<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
+<section id="pm-12-07-pm-7-min">
+<h4>12:00 PM - 12:07 PM (7 min)<a class="headerlink" href="#pm-12-07-pm-7-min" title="Link to this heading">#</a></h4>
+<p><strong>Group:</strong> Go Green!</p>
+<p><strong>Focus:</strong> Comparing Gravitational Acceleration with Altitude Above Earth’s Surface and Across Planetary Bodies</p>
+<p><strong>Description:</strong> How does the magnitude of gravitational acceleration g(r) vary with altitude above a planet’s surface, and how do those variations compare among Earth, Moon, Mars, and Jupiter? I will implement code that computes and plots g(r) from the surface up to high altitudes, extend the model beneath the surface, add contextual annotations, such as typical orbital heights, and explore effects of planetary oblateness, rotation (centrifugal correction), or high-order gravity harmonics.</p>
+<p><strong>Team Members:</strong></p>
+<ul class="simple">
+<li><p>Donovan Robinson. (<a class="reference external" href="mailto:robi1368&#37;&#52;&#48;msu&#46;edu">robi1368<span>&#64;</span>msu<span>&#46;</span>edu</a>)</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="pm-12-14-pm-7-min">
+<h4>12:07 PM - 12:14 PM (7 min)<a class="headerlink" href="#pm-12-14-pm-7-min" title="Link to this heading">#</a></h4>
+<p><strong>Group:</strong> Lexi Hunter</p>
+<p><strong>Focus:</strong> Defining periodicity in exoplanets</p>
+<p><strong>Description:</strong> Using publicly available data, I downloaded a dataset and transformed it to observe any transit light curves and their subsequent periodicity and radius. This uses computational techniques from the class and what we’ve learned about periodicity and orbits, and taught me more about exoplanets.</p>
+<p><strong>Team Members:</strong></p>
+<ul class="simple">
+<li><p>Alexandria Hunter - (<a class="reference external" href="mailto:hunte210&#37;&#52;&#48;msu&#46;edu">hunte210<span>&#64;</span>msu<span>&#46;</span>edu</a>)</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="pm-12-23-pm-9-min">
+<h4>12:14 PM - 12:23 PM (9 min)<a class="headerlink" href="#pm-12-23-pm-9-min" title="Link to this heading">#</a></h4>
+<p><strong>Group:</strong> Laika-corp</p>
+<p><strong>Focus:</strong> Escape velocity and Drag Forces</p>
+<p><strong>Description:</strong> Modeling and demonstrating all relevant forces acting upon a spherical mass launched from Earth’s surface to the Moon’s surface. Ai resistance, gravity from both bodies, ai density over distance, and velocity reduction.</p>
+<p><strong>Team Members:</strong></p>
+<ul class="simple">
+<li><p>Robin Bafile - (<a class="reference external" href="mailto:Bafileco&#37;&#52;&#48;msu&#46;edu">Bafileco<span>&#64;</span>msu<span>&#46;</span>edu</a>)</p></li>
+<li><p>Jay Sataloff - (<a class="reference external" href="mailto:sataloff&#37;&#52;&#48;msu&#46;edu">sataloff<span>&#64;</span>msu<span>&#46;</span>edu</a>)</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="pm-12-32-pm-9-min">
+<h4>12:23 PM - 12:32 PM (9 min)<a class="headerlink" href="#pm-12-32-pm-9-min" title="Link to this heading">#</a></h4>
+<p><strong>Group:</strong> 2/3 bodies</p>
+<p><strong>Focus:</strong> Three-body problem</p>
+<p><strong>Description:</strong> We are looking at the three-body problem. Multi-body interactions have always been inherently chaotic, with a multitude of outputs with varying initial conditions. The 3-body problem does not have a general solution; however, the use of models can be used to approximate different orbits that we can observe. Through the modeling of a 3-body orbit of planets and stars, we can visualize complex orbital systems with varying initial conditions and their trajectories as they evolve.</p>
+<p><strong>Team Members:</strong></p>
+<ul class="simple">
+<li><p>Wilhelm Hawes (<a class="reference external" href="mailto:haweswil&#37;&#52;&#48;msu&#46;edu">haweswil<span>&#64;</span>msu<span>&#46;</span>edu</a>)</p></li>
+<li><p>Natalie DeRoos (<a class="reference external" href="mailto:deroosn1&#37;&#52;&#48;msu&#46;edu">deroosn1<span>&#64;</span>msu<span>&#46;</span>edu</a>)</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="pm-12-39-pm-7-min">
+<h4>12:32 PM - 12:39 PM (7 min)<a class="headerlink" href="#pm-12-39-pm-7-min" title="Link to this heading">#</a></h4>
+<p><strong>Group:</strong> pp panda</p>
+<p><strong>Focus:</strong> Rock skipping</p>
+<p><strong>Description:</strong> For my final project, I’m studying the physics of rock skipping and trying to model what conditions let a stone skip more times. I’ve been reading research papers, including a helpful JFM paper that explains how forces like lift, drag, attack angle, impact angle, and spin all affect the bounce. I’ve started building a simple Python model of the rock’s flight in air, and I’m now working on adding the water-impact force so the rock can rebound realistically. My goal is to test how launch speed, angle, and stone orientation change the number of skips.</p>
+<p><strong>Team Members:</strong></p>
+<ul class="simple">
+<li><p>Mingyang Wu (<a class="reference external" href="mailto:wumingya&#37;&#52;&#48;msu&#46;edu">wumingya<span>&#64;</span>msu<span>&#46;</span>edu</a>)</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="pm-12-46-pm-missing-submission">
+<h4>12:39 PM - 12:46 PM (Missing Submission)<a class="headerlink" href="#pm-12-46-pm-missing-submission" title="Link to this heading">#</a></h4>
+<p><strong>Group:</strong> None</p>
+<p><strong>Focus:</strong> TBD</p>
+<p><strong>Description:</strong> Project info not yet submitted</p>
+<p><strong>Team Members:</strong></p>
+<ul class="simple">
+<li><p>John Isabel (<a class="reference external" href="mailto:isabeljo&#37;&#52;&#48;msu&#46;edu">isabeljo<span>&#64;</span>msu<span>&#46;</span>edu</a>)</p></li>
+</ul>
+</section>
+</section>
+</section>
+<hr class="docutils" />
+<section id="friday-december-05-2025">
+<h2>Friday, December 05, 2025<a class="headerlink" href="#friday-december-05-2025" title="Link to this heading">#</a></h2>
+<section id="id2">
+<h3>Project Presentations<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
+<section id="id3">
+<h4>12:00 PM - 12:09 PM (9 min)<a class="headerlink" href="#id3" title="Link to this heading">#</a></h4>
+<p><strong>Group:</strong> LeBron James</p>
+<p><strong>Focus:</strong> Microwave oven waves</p>
+<p><strong>Description:</strong> We are finding and modeling the effect the rotation of the little plate has on microwave ovens and how to optimize microwaving for optimal heat distribution.</p>
+<p><strong>Team Members:</strong></p>
+<ul class="simple">
+<li><p>Alex Cross (<a class="reference external" href="mailto:crossal4&#37;&#52;&#48;msu&#46;edu">crossal4<span>&#64;</span>msu<span>&#46;</span>edu</a>)</p></li>
+<li><p>Leslie Lainio (<a class="reference external" href="mailto:lainiole&#37;&#52;&#48;msu&#46;edu">lainiole<span>&#64;</span>msu<span>&#46;</span>edu</a>)</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="pm-12-18-pm-9-min">
+<h4>12:09 PM - 12:18 PM (9 min)<a class="headerlink" href="#pm-12-18-pm-9-min" title="Link to this heading">#</a></h4>
+<p><strong>Group:</strong> Project Paul Trap (PPT)</p>
+<p><strong>Focus:</strong> The focus of our project is computationally modeling the dynamics of charged particle confinement in a linear Paul trap. We are investigating how time-varying electric fields can overcome Earnshaw’s theorem to create stable trapping regions for charged particles.</p>
+<p><strong>Description:</strong> Our project explores how to trap charged particles using oscillating electric fields, overcoming the limitations of static fields described by Earnshaw’s theorem. We’re building a computational model of a linear Paul trap, which is a device used in quantum computing and precision measurement. Using Python, we simulated particle trajectories in time-dependent quadrupole fields, analyze stability conditions, and create visualizations of the confinement process. This work shows how numerical methods can bring theoretical physics concepts to life, showing the difference between electric forces and particle motion.</p>
+<p><strong>Team Members:</strong></p>
+<ul class="simple">
+<li><p>George Singletary (<a class="reference external" href="mailto:singl109&#37;&#52;&#48;msu&#46;edu">singl109<span>&#64;</span>msu<span>&#46;</span>edu</a>)</p></li>
+<li><p>Micheal Cadwell (<a class="reference external" href="mailto:cadwell7&#37;&#52;&#48;msu&#46;edu">cadwell7<span>&#64;</span>msu<span>&#46;</span>edu</a>)</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="pm-12-27-pm-9-min">
+<h4>12:18 PM - 12:27 PM (9 min)<a class="headerlink" href="#pm-12-27-pm-9-min" title="Link to this heading">#</a></h4>
+<p><strong>Group:</strong> Fizzics Gang</p>
+<p><strong>Focus:</strong> Modeling a rocket that uses the moon as a gravitational assistant as a slingshot.</p>
+<p><strong>Description:</strong> For this project, we are modeling a rockets trajectory shooting from Earth and making it to Mars, using the moon as a gravitational slingshot. We will start with basic physics of a point particle and add complex physics to it. The rocket will have thrusters and this project seemed really interesting to us.</p>
+<p><strong>Team Members:</strong></p>
+<ul class="simple">
+<li><p>Kevin Hall (<a class="reference external" href="mailto:hallkev6&#37;&#52;&#48;msu&#46;edu">hallkev6<span>&#64;</span>msu<span>&#46;</span>edu</a>)</p></li>
+<li><p>Tatianna Jefferson (<a class="reference external" href="mailto:jeffe150&#37;&#52;&#48;msu&#46;edu">jeffe150<span>&#64;</span>msu<span>&#46;</span>edu</a>)</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="pm-12-34-pm-missing-submission">
+<h4>12:27 PM - 12:34 PM (Missing Submission)<a class="headerlink" href="#pm-12-34-pm-missing-submission" title="Link to this heading">#</a></h4>
+<p><strong>Group:</strong> None</p>
+<p><strong>Focus:</strong> TBD</p>
+<p><strong>Description:</strong> Project info not yet submitted</p>
+<p><strong>Team Members:</strong></p>
+<ul class="simple">
+<li><p>Alex Moore (<a class="reference external" href="mailto:moore80&#37;&#52;&#48;msu&#46;edu">moore80<span>&#64;</span>msu<span>&#46;</span>edu</a>)</p></li>
+</ul>
+<hr class="docutils" />
+</section>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./admin"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../assignments/final_project.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Final Project (Due Dec 8)</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../resources/euler_integration.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Euler Integration</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#scheduling-notes">Scheduling Notes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#monday-december-01-2025">Monday, December 01, 2025</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#project-presentations">Project Presentations</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pm-12-09-pm-9-min">12:00 PM - 12:09 PM (9 min)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pm-12-16-pm-7-min">12:09 PM - 12:16 PM (7 min)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pm-12-27-pm-11-min">12:16 PM - 12:27 PM (11 min)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pm-12-34-pm-7-min">12:27 PM - 12:34 PM (7 min)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pm-12-41-pm-7-min">12:34 PM - 12:41 PM (7 min)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pm-12-48-pm-missing-submission">12:41 PM - 12:48 PM (Missing Submission)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#wednesday-december-03-2025">Wednesday, December 03, 2025</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Project Presentations</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pm-12-07-pm-7-min">12:00 PM - 12:07 PM (7 min)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pm-12-14-pm-7-min">12:07 PM - 12:14 PM (7 min)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pm-12-23-pm-9-min">12:14 PM - 12:23 PM (9 min)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pm-12-32-pm-9-min">12:23 PM - 12:32 PM (9 min)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pm-12-39-pm-7-min">12:32 PM - 12:39 PM (7 min)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pm-12-46-pm-missing-submission">12:39 PM - 12:46 PM (Missing Submission)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#friday-december-05-2025">Friday, December 05, 2025</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Project Presentations</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">12:00 PM - 12:09 PM (9 min)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pm-12-18-pm-9-min">12:09 PM - 12:18 PM (9 min)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pm-12-27-pm-9-min">12:18 PM - 12:27 PM (9 min)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pm-12-34-pm-missing-submission">12:27 PM - 12:34 PM (Missing Submission)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Danny Caballero, Morten Hjorth-Jensen, Rachel Henderson, Alia Valentine
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+  <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" />
+</a>
+<br />
+This work is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
