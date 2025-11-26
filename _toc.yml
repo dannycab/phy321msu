@@ -28,6 +28,7 @@ parts:
       - file: assignments/midterm2.ipynb
       - file: assignments/hw8.ipynb
       - file: assignments/final_project.md
+      - file: admin/final-presentation-schedule.md
   - caption: Programming Resources
     chapters: 
       - file: resources/euler_integration
