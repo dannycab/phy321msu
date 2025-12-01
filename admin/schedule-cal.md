@@ -150,9 +150,9 @@ _All assignments are turned in using Gradescope as a single PDF._
 
 | **Week** | **Day**   | **Topic**                      | **Readings to Prepare** | **Important Events**                                                |
 |:--------:|:---------:|:------------------------------:|:-----------------------|:-------------------------------------------------------------------|
-| CW49     | 01 Dec    | Final Project Presentations    |                        | 👀 Must review at least 2 presentations daily                        |
-|          | 03 Dec    | Final Project Presentations    |                        | 👀 Must review at least 2 presentations                              |
-|          | 05 Dec    | Final Project Presentations    |                        | 👀 Must review at least 2 presentations                              |
+| CW49     | 01 Dec ([Slides](../slides/day-40-project-presentations.pdf))    | Final Project Presentations    |  *Accepted only during class time*<br><https://forms.cloud.microsoft/r/DF9MdrBJhf>                      | 👀 Must review at least 2 presentations daily                      |
+|          | 03 Dec ([Slides](../slides/day-40-project-presentations.pdf))    | Final Project Presentations    |                        | 👀 Must review at least 2 presentations                              |
+|          | 05 Dec ([Slides](../slides/day-40-project-presentations.pdf))    | Final Project Presentations    |                        | 👀 Must review at least 2 presentations                              |
 
 ---
 
@@ -160,6 +160,6 @@ _All assignments are turned in using Gradescope as a single PDF._
 
 | **Week** | **Day**   | **Topic**                         | **Readings to Prepare** | **Important Events**                                                         |
 |:--------:|:---------:|:---------------------------------:|:-----------------------|:----------------------------------------------------------------------------|
-| CW50     | 08 Dec    | **FINALS WEEK**                   |                        | 🎉 **Final Project Due**                                                        |
+| CW50     | 08 Dec    | **FINALS WEEK**                   |                        | 🎉 **Final Project Due** <br> *Turn in single zip file on D2L*                                                       |
 |          | 10 Dec    | **FINALS WEEK**                   |                        |                                                                             |
 |          | 12 Dec    | **FINALS WEEK**                   |                        |                                                                             |

@@ -181,21 +181,6 @@ I formulate the equations of motion of the system using Lagrangian mechanics. Th
 
 ---
 
-#### 12:39 PM - 12:46 PM (Missing Submission)
-
-**Group:** None
-
-**Focus:** TBD
-
-**Description:** Project info not yet submitted
-
-**Team Members:**
-
-- John Isabel (isabeljo@msu.edu)
-
-
----
-
 ## Friday, December 05, 2025
 
 ### Project Presentations
@@ -230,7 +215,7 @@ I formulate the equations of motion of the system using Lagrangian mechanics. Th
 
 ---
 
-#### 12:18 PM - 12:27 PM (9 min)
+#### 12:18 PM - 12:29 PM (11 min)
 
 **Group:** Fizzics Gang
 
@@ -242,10 +227,11 @@ I formulate the equations of motion of the system using Lagrangian mechanics. Th
 
 - Kevin Hall (hallkev6@msu.edu)
 - Tatianna Jefferson (jeffe150@msu.edu)
+- John Isabel (isabeljo@msu.edu)
 
 ---
 
-#### 12:27 PM - 12:34 PM (Missing Submission)
+#### 12:29 PM - 12:36 PM (Missing Submission)
 
 **Group:** None
 
