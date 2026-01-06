@@ -388,12 +388,10 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#turning-observations-into-models">Turning Observations into Models</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modeling-process">Modeling Process</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-falling-ball-in-1d">Example: Falling Ball in 1D</a><ul class="nav section-nav flex-column">
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#question-what-happens-with-ddot-y-0">Question: What happens with <span class="math notranslate nohighlight">\(\ddot{y} = 0\)</span>?</a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#question-can-we-solve-this-differential-equation">Question can we solve this differential equation?</a></li>
-</ul>
-</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modeling-process">Modeling Process</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-falling-ball-in-1d">Example: Falling Ball in 1D</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#question-what-happens-with-ddot-y-0">Question: What happens with <span class="math notranslate nohighlight">\(\ddot{y} = 0\)</span>?</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#question-can-we-solve-this-differential-equation">Question can we solve this differential equation?</a></li>
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#discrete-formulation-of-newtonian-mechanics">Discrete Formulation of Newtonian Mechanics</a><ul class="nav section-nav flex-column">
@@ -546,7 +544,7 @@ document.write(`
 <p>One of the more challenging aspects of physics is how we work to make models of the observations we have. This a long and challenging process in general, but if we have a general schematic, we can make progress. The hand drawn figure below provides such a schematic.</p>
 <p><img alt="Framework for making models" src="../_images/turning_observations_into_models_diagram.png" /></p>
 <p><a class="reference download internal" download="" href="../_downloads/9a1550c1892236536e478602075fb466/turning_observations_into_models_diagram.svg"><span class="xref download myst">SVG file</span></a></p>
-<p>In the schematic, our observations are the starting point. Using our framework for physics (e.g., Newton’s Laws) and making the appropriate assumptions (in blue), we can develop a model (in red) of the system. By conducting analysis and investgating the evolution of the model, we produce predictions (in green). We can then compare tose predictions to our observations to evaluate how well our model describes the system.</p>
+<p>In the schematic, our observations are the starting point. Using our framework for physics (e.g., Newton’s Laws) and making the appropriate assumptions (in blue), we can develop a model (in red) of the system. By conducting analysis and investigating the evolution of the model, we produce predictions (in green). We can then compare those predictions to our observations to evaluate how well our model describes the system.</p>
 <p>In this class, we mostly focus on the elements circled in purple where we develop models, and use them to predict. The core part of this class is the orange circled elements of modeling and predicting. We will spend a lot of time developing the tools and techniques to make these predictions.</p>
 <section id="modeling-process">
 <h3>Modeling Process<a class="headerlink" href="#modeling-process" title="Link to this heading">#</a></h3>
@@ -561,12 +559,13 @@ document.write(`
 <li><p><strong>Obtain the equations of motion</strong>, and make predictions.</p></li>
 </ul>
 <p>Let’s return to an example you have seen before: the falling ball.</p>
+</section>
 <section id="example-falling-ball-in-1d">
-<h4>Example: Falling Ball in 1D<a class="headerlink" href="#example-falling-ball-in-1d" title="Link to this heading">#</a></h4>
+<h3>Example: Falling Ball in 1D<a class="headerlink" href="#example-falling-ball-in-1d" title="Link to this heading">#</a></h3>
 <p>Consider a ball of mass <span class="math notranslate nohighlight">\(m\)</span> falling with air resistance. Here, we have already done some of the work above. We have identified the phenomenon, and started to indicate the interactions.</p>
 <p><img alt="FBD of a falling ball with air resistance" src="../_images/falling_ball_framework_applied.png" /></p>
 <p><a class="reference download internal" download="" href="../_downloads/065baaf4210c2830df3f362979960a1d/falling_ball_framework_applied.svg"><span class="xref download myst">SVG file</span></a></p>
-<p>In the figure above, we have identified the forces acting on the ball. We have the gravitational force, <span class="math notranslate nohighlight">\(W = mg\)</span>, and the air resistance, <span class="math notranslate nohighlight">\(F_{\text{air}}\)</span>. We have chosen the linear mode for air-resistance, which is a choice of model given the assumption that the ball moves very slowly – <em>this is not a good assumption in this case</em>, but makes the mathematical analysis simpler.</p>
+<p>In the figure above, we have identified the forces acting on the ball. We have the gravitational force, <span class="math notranslate nohighlight">\(W = mg\)</span>, and the air resistance, <span class="math notranslate nohighlight">\(F_{\text{air}}\)</span>. We have chosen the linear model for air-resistance, which is a choice of model given the assumption that the ball moves very slowly – <em>this is not a good assumption in this case</em>, but makes the mathematical analysis simpler. We also selected the gravitational interaction model as a constant force near the surface of the Earth, thus neglecting variations in <span class="math notranslate nohighlight">\(g\)</span> with height or location.</p>
 <p>We have also chosen our coordinate system, with the positive <span class="math notranslate nohighlight">\(y\)</span> direction pointing down.</p>
 <p>We choose a Newtonian framework for our physics because we are familiar with it. And thus, we can develop the EOM:</p>
 <div class="math notranslate nohighlight">
@@ -578,7 +577,7 @@ document.write(`
 <div class="math notranslate nohighlight">
 \[\ddot{y} = g - \dfrac{b}{m}v\]</div>
 <section id="question-what-happens-with-ddot-y-0">
-<h5>Question: What happens with <span class="math notranslate nohighlight">\(\ddot{y} = 0\)</span>?<a class="headerlink" href="#question-what-happens-with-ddot-y-0" title="Link to this heading">#</a></h5>
+<h4>Question: What happens with <span class="math notranslate nohighlight">\(\ddot{y} = 0\)</span>?<a class="headerlink" href="#question-what-happens-with-ddot-y-0" title="Link to this heading">#</a></h4>
 <p>Once the ball has no acceleration, the two forces are balanced. This is the terminal velocity of the ball. We can solve for this by setting <span class="math notranslate nohighlight">\(\ddot{y} = 0\)</span>:</p>
 <div class="math notranslate nohighlight">
 \[0 = g - \dfrac{b}{m}v_{\text{term}}\]</div>
@@ -587,7 +586,7 @@ document.write(`
 <p>This is the terminal velocity of the ball for linear drag. When the ball reaches this speed (and does so asymptotically), the forces are balanced and the ball will fall at a constant speed.</p>
 </section>
 <section id="question-can-we-solve-this-differential-equation">
-<h5>Question can we solve this differential equation?<a class="headerlink" href="#question-can-we-solve-this-differential-equation" title="Link to this heading">#</a></h5>
+<h4>Question can we solve this differential equation?<a class="headerlink" href="#question-can-we-solve-this-differential-equation" title="Link to this heading">#</a></h4>
 <p>The differential equation <span class="math notranslate nohighlight">\(\ddot{y} = g - \dfrac{b}{m}v\)</span> is a second-order differential equation for <span class="math notranslate nohighlight">\(y\)</span>. We can solve this equation analytically by recasting it as a first-order differential equation for <span class="math notranslate nohighlight">\(v\)</span>, which we solve for and then integrate to find <span class="math notranslate nohighlight">\(y(t)\)</span>.</p>
 <div class="math notranslate nohighlight">
 \[\dot{v} = g - \dfrac{b}{m}v\]</div>
@@ -622,9 +621,8 @@ document.write(`
 <div class="math notranslate nohighlight">
 \[y(t) = y_0 + v_0 t + \dfrac{1}{2}gt^2\]</div>
 <p>Why the ‘plus’ sign on the last term? Because we choose positive <span class="math notranslate nohighlight">\(y\)</span> to be down, and the ball is accelerating down.</p>
-<div class="important admonition note">
-<p class="admonition-title">Note</p>
-<p>Kinematic equations</p>
+<div class="important admonition">
+<p class="admonition-title">Kinematic equations</p>
 <p>In this analysis we produced kinematic equations for an object experiencing a constant force in one dimension:</p>
 <div class="math notranslate nohighlight">
 \[v(t) = v_0 + at\]</div>
@@ -633,7 +631,6 @@ document.write(`
 <p>This result is really useful, but is contingent on finding or knowing the anti-derivative of the functions that we are integrating. For the case of a constant force, it is the case that these kinematic equations are always representative.</p>
 <p>But, finding an appropriate anti-derivative is not always possible. What might we do if we weren’t sure that we could find the anti-derivative?</p>
 </div>
-</section>
 </section>
 </section>
 <section id="discrete-formulation-of-newtonian-mechanics">
@@ -649,7 +646,10 @@ document.write(`
 <p>Let’s allow ourselves to consider instead a small time interval of the evolution, <span class="math notranslate nohighlight">\(\Delta t\)</span>. We can then write the velocity equation as:</p>
 <div class="math notranslate nohighlight">
 \[\dfrac{dv}{dt} = \dfrac{\Delta v}{\Delta t}= \dfrac{v(t+\Delta t) - v(t)}{\Delta t} = \dfrac{F}{m}\]</div>
-<p>We can turn this into a discrete equation by multiplying through by <span class="math notranslate nohighlight">\(\Delta t\)</span>: prediction of the velocity at the next time step:</p>
+<p>We can turn this into a discrete equation by multiplying through by <span class="math notranslate nohighlight">\(\Delta t\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[v(t+\Delta t) - v(t) = \dfrac{F}{m}\Delta t\]</div>
+<p>And then use that to make a prediction of the velocity at the next time step:</p>
 <div class="math notranslate nohighlight">
 \[v(t+\Delta t) = v(t) + \dfrac{F}{m} \Delta t\]</div>
 <p>This is the “velocity update” equation, or more generally, the <a class="reference external" href="https://en.wikipedia.org/wiki/Euler_method">Euler step</a> for velocity. Given the information at time <span class="math notranslate nohighlight">\(t\)</span>, <span class="math notranslate nohighlight">\(F(t)\)</span>, <span class="math notranslate nohighlight">\(m\)</span>, and <span class="math notranslate nohighlight">\(v(t)\)</span>, we can predict the velocity at the next time step.</p>
@@ -667,7 +667,7 @@ document.write(`
 <div class="math notranslate nohighlight">
 \[y(t+\Delta t) = y(t) + v_{\textrm{avg}} \Delta t\]</div>
 <p>What is left is to determine what should be the estimate for <span class="math notranslate nohighlight">\(v_{\textrm{avg}}\)</span>.</p>
-<div class="note admonition">
+<div class="tip admonition">
 <p class="admonition-title">Choosing <span class="math notranslate nohighlight">\(v_{\textrm{avg}}\)</span></p>
 <p>The idea that we have to pick a value for <span class="math notranslate nohighlight">\(v_{\textrm{avg}}\)</span> is a key point in numerical methods. It might seem silly or overly subtle and it is certainly the latter. We can select <span class="math notranslate nohighlight">\(v(t)\)</span>, <span class="math notranslate nohighlight">\(v(t+\Delta t)\)</span>, or some average of the two. The choice of <span class="math notranslate nohighlight">\(v_{\textrm{avg}}\)</span> is the key to the accuracy of the method.</p>
 <p>As we will show in a later homework, the best choice is <span class="math notranslate nohighlight">\(v(t+\Delta t)\)</span> as it preserves the energy of the system.</p>
@@ -685,7 +685,7 @@ document.write(`
 \[\vec{v}(t+\Delta t) = \vec{v}(t) + \dfrac{\vec{F}(t)}{m} \Delta t\]</div>
 <div class="math notranslate nohighlight">
 \[\vec{r}(t+\Delta t) = \vec{r}(t) + \vec{v}(t+\Delta t) \Delta t\]</div>
-<div class="important admonition">
+<div class="warning admonition">
 <p class="admonition-title">Erasing Contributions in Physics</p>
 <p>This method is called the Semi-Implicit Euler method or the Euler-Cromer method. It should be called the Euler-Aspel-Cromer method because Euler started it, Aspel improved it, and Cromer formalized it.</p>
 <p>It is not called that because physics and physicists tend to erase the contributions of marginalized groups including young people, women, and folks from non-dominant groups.</p>
@@ -853,12 +853,10 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#turning-observations-into-models">Turning Observations into Models</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modeling-process">Modeling Process</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#example-falling-ball-in-1d">Example: Falling Ball in 1D</a><ul class="nav section-nav flex-column">
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#question-what-happens-with-ddot-y-0">Question: What happens with <span class="math notranslate nohighlight">\(\ddot{y} = 0\)</span>?</a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#question-can-we-solve-this-differential-equation">Question can we solve this differential equation?</a></li>
-</ul>
-</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modeling-process">Modeling Process</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-falling-ball-in-1d">Example: Falling Ball in 1D</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#question-what-happens-with-ddot-y-0">Question: What happens with <span class="math notranslate nohighlight">\(\ddot{y} = 0\)</span>?</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#question-can-we-solve-this-differential-equation">Question can we solve this differential equation?</a></li>
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#discrete-formulation-of-newtonian-mechanics">Discrete Formulation of Newtonian Mechanics</a><ul class="nav section-nav flex-column">
