@@ -4,13 +4,13 @@ parts:
   - caption: About the course
     chapters:
       - file: admin/getting-started.ipynb
-      - file: admin/teachers
+      # - file: admin/teachers
       - file: admin/course-commitments
   - caption: Course logistics
     chapters:
-      - file: admin/schedule-cal
-      - file: admin/slides
-      - file: admin/grading
+      # - file: admin/schedule-cal
+      # - file: admin/slides
+      # - file: admin/grading
       - file: admin/textbooks
   - caption: Weekly Course Materials
     chapters:
