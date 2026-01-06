@@ -4,38 +4,14 @@ parts:
   - caption: About the course
     chapters:
       - file: admin/getting-started.ipynb
-      - file: admin/teachers
-      - file: admin/grading
-      - file: admin/textbooks
-      - file: admin/schedule-cal
-      - file: admin/slides
-  - caption: Resources
-    chapters:
+      # - file: admin/teachers
       - file: admin/course-commitments
-      - file: admin/iclicker-setup
-      - file: admin/gradescope-submissions
-      - file: admin/finding-research
-  - caption: Assignments
+  - caption: Course logistics
     chapters:
-      - file: assignments/hw1.ipynb
-      - file: assignments/hw2.ipynb
-      - file: assignments/hw3.ipynb
-      - file: assignments/hw4.ipynb
-      - file: assignments/midterm1.ipynb
-      - file: assignments/hw5.ipynb
-      - file: assignments/hw6.ipynb
-      - file: assignments/hw7.ipynb
-      - file: assignments/midterm2.ipynb
-      - file: assignments/hw8.ipynb
-      - file: assignments/final_project.md
-      - file: admin/final-presentation-schedule.md
-  - caption: Programming Resources
-    chapters: 
-      - file: resources/euler_integration
-      - file: resources/integrators
-      - file: resources/phase_diagrams
-      - file: resources/chaotic_dynamics
-      - file: resources/chaotic_dynamics-completed
+      # - file: admin/schedule-cal
+      # - file: admin/slides
+      # - file: admin/grading
+      - file: admin/textbooks
   - caption: Weekly Course Materials
     chapters:
       - file: lecture-notes/01_notes  
@@ -51,3 +27,29 @@ parts:
       - file: lecture-notes/11_notes
       - file: lecture-notes/12_notes
       - file: lecture-notes/13_notes
+  - caption: Assignments
+    chapters:
+      - file: assignments/hw1.ipynb
+      # - file: assignments/hw2.ipynb
+      # - file: assignments/hw3.ipynb
+      # - file: assignments/hw4.ipynb
+      # - file: assignments/midterm1.ipynb
+      # - file: assignments/hw5.ipynb
+      # - file: assignments/hw6.ipynb
+      # - file: assignments/hw7.ipynb
+      # - file: assignments/midterm2.ipynb
+      # - file: assignments/hw8.ipynb
+      # - file: assignments/final_project.md
+      # - file: admin/final-presentation-schedule.md
+  - caption: Resources
+    chapters:
+      - file: admin/iclicker-setup
+      - file: admin/gradescope-submissions
+      - file: admin/finding-research
+  - caption: Programming Resources
+    chapters: 
+      - file: resources/euler_integration
+      - file: resources/integrators
+      # - file: resources/phase_diagrams
+      # - file: resources/chaotic_dynamics
+      # - file: resources/chaotic_dynamics-completed

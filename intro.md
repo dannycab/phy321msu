@@ -1,4 +1,8 @@
-# PHY 321: Classical Mechanics 1, Michigan State University, Fall 2025
+# PHY 321: Classical Mechanics 1, Michigan State University, Spring 2026
+
+```{note}
+This book is under active development. Syllabus materials will be updated shortly before the course starts.
+```
 
 This is the Jupyter-Book for the Classical Mechanics course at MSU
 
