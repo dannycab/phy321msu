@@ -1,52 +1,52 @@
-# Teachers and Grading
+# Teachers
 
-## Lecture
+## 📅 Class Meetings
 
-| Meetings           |                       |                    | Location                                                                     |
-| ------------------ | --------------------- | ------------------ | ---------------------------------------------------------------------------- |
-| Monday 12:00-12:50 | Wednesday 12:00-12:50 | Friday 12:00-12:50 | STEM 3202 |
+**Location:** STEM 3202
 
-> **IMPORTANT**
->
-> Monday and Wednesday's class will be lecture-based; Friday's classes will be activity-based workshops. *We will work the more challenging exercises together in class on Friday.*
-> 
+| Monday | Wednesday | Friday |
+| --- | --- | --- |
+| 12:40-13:30 | 12:40-13:30 | 12:40-13:30 |
 
+:::{admonition} Class Structure
+:class: tip
+* **Monday & Wednesday:** Lecture-based instruction
+* **Friday:** Activity-based workshops where we work through challenging exercises together
+:::
 
-## Professor
+---
+
+## 👨‍🏫 Instructor: Danny Caballero (he/they)
 
 ![Danny Caballero](../images/staff/dc.png)
 
-| Instructor                  | Email            | Office                                                                                                |
-| --------------------------- | ---------------- | ----------------------------------------------------------------------------------------------------- |
-| _Danny Caballero (he/they)_ | <caball14@msu.edu> | MWF? [BPS 1310A](http://tinyurl.com/dc-bps-office); TTh? [EGR 1515](http://tinyurl.com/dc-egr-office) |
+* **Email:** [caball14@msu.edu](mailto:caball14@msu.edu)
+* **Office:** MWF [BPS 1310A](http://tinyurl.com/dc-bps-office) | TTh [EGR 1515](http://tinyurl.com/dc-egr-office)
+* **Office Hours:** TBD or [schedule a meeting](https://cal.com/dannycaballero/phy-321)
 
-| Office Hours                                                                               |
-| ------------------------------------------------------------------------------------------ |
-| 2-4pm Fri (1248 BPS) or [schedule me](https://cal.com/dannycaballero/phy-321) |
+Danny leads the course, designs homework and exams, and assigns final grades. He's responsible for course content and welcomes suggestions for improvement. Danny grades your midterms and final projects.
 
-Danny will lead the course, design the homework and exams, and assign final grades. Danny is also responsible for the course content, so if you have any suggestions for how to improve the course, please let him know. Danny will also grade your midterms and final projects.
+---
 
-## Graduate Teaching Assistant
+## 👥 Teaching Team
 
+### Grader: Kang Yu
+* **Email:** [yukang@msu.edu](mailto:yukang@msu.edu)
 
-| Homework Grader  | Email            |
-| ---------------- | ---------------- |
-| _Alex Carrothers_ | <carroth5@msu.edu> |
+Kang grades homework assignments and provides feedback on common struggles. Please contact Danny about any grading concerns.
 
-Alex will be grading your homework assignments. Alex will provide overall feedback on the things that students struggled with on homework sets which will be addressed in class. If you have questions about your homework grade, please contact Alex directly.
+### Learning Assistant: Mihir Naik (he/him)
+* **Email:** [naikmihi@msu.edu](mailto:naikmihi@msu.edu)
+* **Office Hours:** TBD
 
-## Undergraduate Learning Assistants
+Mihir has taken this course and is passionate about helping you learn classical mechanics. He's an incredible resource for homework and course questions. He will hold regular office hours and attend Friday workshops to assist you.
 
+---
 
-| Learning Assistant         | Email             | Office Hours         | Location          |
-| -------------------------- | ----------------- | ------------------- | ----------------- |
-| _Mihir Naik (he/him)_ | <naikmihi@msu.edu>|    6-8pm TuTh           | [Zoom](https://msu.zoom.us/j/96882248075) |
+## 💡 Getting Help
 
-Mihir will be helping you during office hours. He has taken this course previously and has been selected because he is passionate about helping you learn classical mechanics. He is an incredible resource for you. Zoom link: <https://msu.zoom.us/j/96882248075>; you will need a passcode that was given in class and on D2L.
+PHY 321 introduces many new concepts and techniques. It's important to seek help when you need it—we're here to support your learning.
 
-## Getting Help
-
-PHY 321 is a very challenging course. It introduces many new concepts and mathematical techniques that may be unfamiliar to you. It is important that you seek help when you need it. We are here to help support your understanding. There are many resources available to you:
-
-- **Office hours:** You are encouraged to attend office hours to get help with homework, projects, or any other questions you have about the course. You can also [schedule a meeting](https://cal.com/dannycaballero/15min) with Danny.
-- **Your classmates** Physics is a social enterprise. We cannot progress in our understanding of science alone; that simply doesn't happen. We need to work together to make progress. You are encouraged to work together on homework, midterms, and the final.
+**Available resources:**
+- **Office hours:** Attend to ask questions about homework, projects, or course content. [Schedule a 1-on-1 with Danny](https://cal.com/dannycaballero/phy-321) if needed.
+- **Your classmates:** Physics is a social enterprise. We learn together. You're encouraged to collaborate on homework, midterms, and the final project.
