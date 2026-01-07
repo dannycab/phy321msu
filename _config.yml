@@ -31,6 +31,7 @@ sphinx:
       tex2jax:
         inlineMath: [["$","$"]]
     myst_update_mathjax: false
+    html_static_path: ["images"]
 
 
 # sphinx:

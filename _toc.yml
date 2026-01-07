@@ -1,55 +1,61 @@
 format: jb-book
 root: intro
 parts:
-  - caption: About the course
+  - caption: Course Information
     chapters:
-      - file: admin/getting-started.ipynb
-      # - file: admin/teachers
-      - file: admin/course-commitments
-  - caption: Course logistics
+      - file: admin/getting-started
+        sections:
+          - file: admin/course-commitments
+          - file: admin/teachers
+          - file: admin/textbooks
+          - file: admin/grading
+
+
+  - caption: Course Materials
     chapters:
-      # - file: admin/schedule-cal
-      # - file: admin/slides
-      # - file: admin/grading
-      - file: admin/textbooks
-  - caption: Weekly Course Materials
+      - file: lecture-notes/weekly-materials
+        sections:
+          - file: lecture-notes/01_notes  
+          - file: lecture-notes/02_notes
+          - file: lecture-notes/03_notes
+          - file: lecture-notes/04_notes
+          - file: lecture-notes/05_notes
+          - file: lecture-notes/06_notes
+          - file: lecture-notes/07_notes
+          - file: lecture-notes/08_notes
+          - file: lecture-notes/09_notes
+          - file: lecture-notes/10_notes
+          - file: lecture-notes/11_notes
+          - file: lecture-notes/12_notes
+          - file: lecture-notes/13_notes
+      - file: assignments/assignment-overview
+        sections:
+        - file: assignments/hw1.ipynb
+        # - file: assignments/hw2.ipynb
+        # - file: assignments/hw3.ipynb
+        # - file: assignments/hw4.ipynb
+        # - file: assignments/midterm1.ipynb
+        # - file: assignments/hw5.ipynb
+        # - file: assignments/hw6.ipynb
+        # - file: assignments/hw7.ipynb
+        # - file: assignments/midterm2.ipynb
+        # - file: assignments/hw8.ipynb
+        # - file: assignments/final_project.md
+        # - file: admin/final-presentation-schedule.md
+
+  - caption: Logistics & Resources
     chapters:
-      - file: lecture-notes/01_notes  
-      - file: lecture-notes/02_notes
-      - file: lecture-notes/03_notes
-      - file: lecture-notes/04_notes
-      - file: lecture-notes/05_notes
-      - file: lecture-notes/06_notes
-      - file: lecture-notes/07_notes
-      - file: lecture-notes/08_notes
-      - file: lecture-notes/09_notes
-      - file: lecture-notes/10_notes
-      - file: lecture-notes/11_notes
-      - file: lecture-notes/12_notes
-      - file: lecture-notes/13_notes
-  - caption: Assignments
-    chapters:
-      - file: assignments/hw1.ipynb
-      # - file: assignments/hw2.ipynb
-      # - file: assignments/hw3.ipynb
-      # - file: assignments/hw4.ipynb
-      # - file: assignments/midterm1.ipynb
-      # - file: assignments/hw5.ipynb
-      # - file: assignments/hw6.ipynb
-      # - file: assignments/hw7.ipynb
-      # - file: assignments/midterm2.ipynb
-      # - file: assignments/hw8.ipynb
-      # - file: assignments/final_project.md
-      # - file: admin/final-presentation-schedule.md
-  - caption: Resources
-    chapters:
-      - file: admin/iclicker-setup
-      - file: admin/gradescope-submissions
-      - file: admin/finding-research
+      - file: admin/schedule-cal
+        sections:
+          - file: admin/slides
+          - file: admin/gradescope-submissions
+          - file: admin/iclicker-setup
+          - file: admin/finding-research
+
   - caption: Programming Resources
     chapters: 
       - file: resources/euler_integration
       - file: resources/integrators
-      # - file: resources/phase_diagrams
-      # - file: resources/chaotic_dynamics
-      # - file: resources/chaotic_dynamics-completed
+      - file: resources/phase_diagrams
+      - file: resources/chaotic_dynamics
+      - file: resources/chaotic_dynamics-completed
