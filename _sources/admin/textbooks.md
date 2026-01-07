@@ -1,22 +1,52 @@
-# Textbooks
+# Textbooks and Course Materials
 
-## Textbooks and lecture notes
+## Course Materials:
 
-### Recommended textbooks:
+- Posted materials were adapted from https://mhjensen.github.io/Physics321/doc/web/course.html. They are not meant to be a replacement for textbook readings and deeper research. 
+- Examples and exercises in these materials are often inspired by the recommended textbooks below.
+
+## Recommended Textbooks:
 
 We will assign readings from the following textbooks. You do not need to buy them, https://github.com/mhjensen/Physics321/tree/master/doc/Literature, but they are good to have as a reference.
 
-- JRT: [John R. Taylor, Classical Mechanics (Univ. Sci. Books 2005)](https://uscibooks.aip.org/books/classical-mechanics/)
-- AMS: [Anders Malthe-Sørenssen, Elementary Mechanics using Python (Springer 2015)](https://www.springer.com/gp/book/9783319195957)
+### [Classical Mechanics](https://mitpress.mit.edu/9781891389221/classical-mechanics/)
+**John R. Taylor** | Univ. Sci. Books 2005
 
-### Supplementary textbooks:
+```{image} ../images/book-covers/taylor.jpg
+---
+width: 400px
+alt: Classical Mechanics by John R. Taylor
+---
+```
 
-- MLB: [Mary L. Boas, Mathematical Methods in the Physical Sciences (Wiley 2005)](https://www.wiley.com/en-us/Mathematical+Methods+in+the+Physical+Sciences%2C+3rd+Edition-p-9780471198260)
+### [Elementary Mechanics using Python](https://www.springer.com/gp/book/9783319195957)
+**Anders Malthe-Sørenssen** | Springer 2015
 
-### Lectures:
+```{image} ../images/book-covers/malthe.jpg
+---
+width: 400px
+alt: Elementary Mechanics using Python by Anders Malthe-Sørenssen
+---
+```
 
-- Posted lecture notes were adapted from https://mhjensen.github.io/Physics321/doc/web/course.html. They are not meant to be a replacement for textbook readings and deeper research. 
-- Handwritten lecture notes from class will be posted after each lecture. These notes will summarize the main sticking points and processes from each lecture. They will supplement the posted lecture notes and textbook readings.
-- Class lectures will accessible online via Zoom (<https://dannycab.github.io/meet>) should you be ill or traveling, but they will not be recorded. 
-- *Some class lectures might be over zoom if Danny is ill or traveling.*
+## Supplementary textbooks:
 
+### [Nonlinear Dynamics and Chaos](https://www.stevenstrogatz.com/books/nonlinear-dynamics-and-chaos-with-applications-to-physics-biology-chemistry-and-engineering)
+**Stephen Strogatz** | Westview Press 2014
+
+```{image} ../images/book-covers/strogatz.jpeg
+---
+width: 400px
+alt: Nonlinear Dynamics and Chaos by Steven Strogatz
+---
+```
+
+### [Mathematical Methods in the Physical Sciences](https://www.wiley.com/en-us/Mathematical+Methods+in+the+Physical+Sciences%2C+3rd+Edition-p-9780471198260)
+**Mary L. Boas** | Wiley 2005
+
+```{image} ../images/book-covers/boas.jpg
+---
+width: 400px
+alt: Mathematical Methods in the Physical Sciences by Mary L. Boas
+---
+```

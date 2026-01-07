@@ -1,0 +1,726 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Weekly Course Materials &#8212; Classical Mechanics</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"tex2jax": {"inlineMath": [["$", "$"]]}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'lecture-notes/weekly-materials';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="01 - Overture: What is Classical Physics?" href="01_notes.html" />
+    <link rel="prev" title="Grading and Dates" href="../admin/grading.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/spartan-helmet.png" class="logo__image only-light" alt="Classical Mechanics - Home"/>
+    <script>document.write(`<img src="../_static/spartan-helmet.png" class="logo__image only-dark" alt="Classical Mechanics - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    PHY 321: Classical Mechanics 1, Michigan State University, Spring 2026
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Course Information</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../admin/getting-started.html">Getting Started</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../admin/course-commitments.html">Course Commitments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../admin/teachers.html">Teachers and Grading</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../admin/textbooks.html">Textbooks and Course Materials</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../admin/grading.html">Grading and Dates</a></li>
+
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Course Materials</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">Weekly Course Materials</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="01_notes.html">01 - Overture: What is Classical Physics?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="02_notes.html">02 - Computing is a Necessary Tool for Science</a></li>
+<li class="toctree-l2"><a class="reference internal" href="03_notes.html">03 - What is Mathematical Modeling?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="04_notes.html">04 - Why does fluid drag complicate things?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="05_notes.html">05 - Conservation Laws Govern and Constrain our Physics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="06_notes.html">06 - Nature Often Seeks Stability</a></li>
+<li class="toctree-l2"><a class="reference internal" href="07_notes.html">07 - Introducing Nonlinear Dynamics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="08_notes.html">08 - Oscillations, Cycles, and Nature’s Recurrences</a></li>
+<li class="toctree-l2"><a class="reference internal" href="09_notes.html">09 - Driving Oscillators and Resonance Phenomenon</a></li>
+<li class="toctree-l2"><a class="reference internal" href="10_notes.html">10 - Investigating Systems that Exhibit Chaotic Dynamics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="11_notes.html">11 - Reformulating Classical Mechanics using the Calculus of Variations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="12_notes.html">12 - The Core Principle of Classical Mechanics? The Principle of Least Action</a></li>
+<li class="toctree-l2"><a class="reference internal" href="13_notes.html">13 - Applying the Lagrangian Formulation</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../assignments/assignment-overview.html">Assignments Overview</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../assignments/hw1.html">Homework 1 (Due 23 Jan)</a></li>
+
+
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Logistics &amp; Resources</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../admin/schedule-cal.html">Course Calendar</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../admin/slides.html">Slides</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../admin/gradescope-submissions.html">Submitting Assignments on Gradescope</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../admin/iclicker-setup.html">i-Clicker Setup Instructions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../admin/finding-research.html">Finding Research Opportunities</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Programming Resources</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../resources/euler_integration.html">Euler Integration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/integrators.html">Numerical Integrators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/phase_diagrams.html">Plotting Phase Diagrams</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/chaotic_dynamics.html">Modeling Chaotic Systems - Activity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/chaotic_dynamics-completed.html">Modeling Chaotic Systems - Completed</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/lecture-notes/weekly-materials.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Weekly Course Materials</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-this-course-is-really-about">What This Course Is Really About</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-the-course-is-organized">How the Course is Organized</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#part-i-foundations-mathematical-modeling-weeks-13">🎯 Part I: Foundations &amp; Mathematical Modeling (Weeks 1–3)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#part-ii-tools-conservation-laws-weeks-46">⚙️ Part II: Tools &amp; Conservation Laws (Weeks 4–6)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#part-iii-nonlinear-dynamics-oscillations-weeks-710">🌀 Part III: Nonlinear Dynamics &amp; Oscillations (Weeks 7–10)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#part-iv-variational-principles-lagrangian-mechanics-weeks-1113">📐 Part IV: Variational Principles &amp; Lagrangian Mechanics (Weeks 11–13)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#skills-you-ll-develop">Skills You’ll Develop</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#by-week-3">By Week 3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#by-week-6">By Week 6</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#by-week-10">By Week 10</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#by-week-13">By Week 13</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-themes-throughout-the-course">Key Themes Throughout the Course</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modeling-from-observations-to-equations">1. Modeling: From Observations to Equations</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#multiple-solution-methods">2. Multiple Solution Methods</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conservation-laws">3. Conservation Laws</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#nonlinearity-is-ubiquitous">4. Nonlinearity is Ubiquitous</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#computation-is-essential">5. Computation is Essential</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#course-philosophy">Course Philosophy</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-use-these-materials">How to Use These Materials</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#weekly-materials">Weekly Materials</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="weekly-course-materials">
+<h1>Weekly Course Materials<a class="headerlink" href="#weekly-course-materials" title="Link to this heading">#</a></h1>
+<section id="what-this-course-is-really-about">
+<h2>What This Course Is Really About<a class="headerlink" href="#what-this-course-is-really-about" title="Link to this heading">#</a></h2>
+<p>Classical Mechanics is the physics of <strong>large, slow, mechanical systems</strong>—the world we see around us. But more importantly, it’s about learning to <em>think like a physicist</em>: observing nature, building mathematical models, and using those models to predict and explain how systems evolve.</p>
+<p>Throughout this course, you’ll develop a toolkit for understanding motion, forces, and the deep principles that govern how nature changes. You’ll move from solving simple differential equations to analyzing chaotic systems and discovering that the laws of physics themselves can be expressed through variational principles—paths that minimize (or maximize) a particular quantity called the <em>action</em>.</p>
+<p>This is a course about both <strong>computation and understanding</strong>. We’ll solve problems analytically when possible, numerically when necessary, and geometrically when it provides insight.</p>
+</section>
+<hr class="docutils" />
+<section id="how-the-course-is-organized">
+<h2>How the Course is Organized<a class="headerlink" href="#how-the-course-is-organized" title="Link to this heading">#</a></h2>
+<section id="part-i-foundations-mathematical-modeling-weeks-13">
+<h3>🎯 Part I: Foundations &amp; Mathematical Modeling (Weeks 1–3)<a class="headerlink" href="#part-i-foundations-mathematical-modeling-weeks-13" title="Link to this heading">#</a></h3>
+<p><strong>Big Question:</strong> How do we turn observations of nature into equations that let us predict the future?</p>
+<p>You’ll start by learning how physicists build models. We begin with Newton’s Laws—which you’ve likely seen before—but we’ll use them to develop a systematic process: identify interactions, sketch the system, choose coordinates, apply the framework, and derive equations of motion.</p>
+<p><strong>What you’ll learn:</strong></p>
+<ul class="simple">
+<li><p>What it means to “model” a physical system</p></li>
+<li><p>Free body diagrams and Newton’s Second Law in multiple dimensions</p></li>
+<li><p>How to set up differential equations for falling objects, springs, and more</p></li>
+<li><p>The role of computing in solving equations we can’t tackle by hand</p></li>
+</ul>
+<p><strong>Real-world connection:</strong> The process you learn here is used everywhere—from designing bridges to predicting planetary orbits to modeling epidemics.</p>
+</section>
+<section id="part-ii-tools-conservation-laws-weeks-46">
+<h3>⚙️ Part II: Tools &amp; Conservation Laws (Weeks 4–6)<a class="headerlink" href="#part-ii-tools-conservation-laws-weeks-46" title="Link to this heading">#</a></h3>
+<p><strong>Big Question:</strong> What quantities never change, and why?</p>
+<p>Newton’s Second Law gives us differential equations, but solving them requires techniques and insight. You’ll learn how to leverage the <strong>conservation of energy</strong> and <strong>conservation of momentum</strong>—universal principles that apply to every physical system. These principles often let us understand a system’s behavior without solving complicated equations.</p>
+<p><strong>What you’ll learn:</strong></p>
+<ul class="simple">
+<li><p>The Work-Energy Theorem and conservation of energy</p></li>
+<li><p>Linear and angular momentum conservation</p></li>
+<li><p>Why conservative forces allow us to define potential energy</p></li>
+<li><p>How to use conservation principles to solve problems elegantly</p></li>
+</ul>
+<p><strong>Real-world connection:</strong> Collisions, explosions, orbital mechanics—anywhere energy or momentum is conserved.</p>
+</section>
+<section id="part-iii-nonlinear-dynamics-oscillations-weeks-710">
+<h3>🌀 Part III: Nonlinear Dynamics &amp; Oscillations (Weeks 7–10)<a class="headerlink" href="#part-iii-nonlinear-dynamics-oscillations-weeks-710" title="Link to this heading">#</a></h3>
+<p><strong>Big Question:</strong> What happens when we can’t solve the equation analytically?</p>
+<p>Most real systems are <strong>nonlinear</strong>—their behavior can’t be solved with a pencil and paper. Enter <strong>phase space</strong>: a way of visualizing how a system evolves without solving the differential equation. You’ll learn to read phase portraits like maps of a system’s destiny.</p>
+<p>We’ll study oscillators in detail—from simple harmonic motion (which you can solve) to driven oscillators (where resonance can build dramatic amplitudes) to nonlinear systems where chaos lurks. You’ll discover that small changes in initial conditions can lead to wildly different outcomes—a signature of chaos.</p>
+<p><strong>What you’ll learn:</strong></p>
+<ul class="simple">
+<li><p>Phase space analysis and phase portraits</p></li>
+<li><p>Critical points and stability</p></li>
+<li><p>Damping and driving forces</p></li>
+<li><p>Resonance and why it matters (bridges, radios, atoms)</p></li>
+<li><p>Introduction to nonlinear dynamics and chaos</p></li>
+</ul>
+<p><strong>Real-world connection:</strong> The Tacoma Narrows Bridge collapse, tuning a radio, atomic absorption, weather prediction—all involve oscillations and resonance.</p>
+</section>
+<section id="part-iv-variational-principles-lagrangian-mechanics-weeks-1113">
+<h3>📐 Part IV: Variational Principles &amp; Lagrangian Mechanics (Weeks 11–13)<a class="headerlink" href="#part-iv-variational-principles-lagrangian-mechanics-weeks-1113" title="Link to this heading">#</a></h3>
+<p><strong>Big Question:</strong> Is there a deeper principle underlying Newton’s Laws?</p>
+<p>There is. Nature follows paths that <em>extremize</em> a quantity called the <strong>action</strong>. This is the Calculus of Variations—a powerful mathematical framework that lets us derive equations of motion from an optimization principle rather than from forces.</p>
+<p>You’ll solve classic problems (shortest path, Snell’s Law, the Brachistochrone) and discover the <strong>Lagrangian formulation</strong> of mechanics—an elegant reformulation of classical mechanics that connects to quantum mechanics and modern physics.</p>
+<p><strong>What you’ll learn:</strong></p>
+<ul class="simple">
+<li><p>The Calculus of Variations and the Euler-Lagrange equation</p></li>
+<li><p>How to solve optimization problems in physics</p></li>
+<li><p>The Lagrangian and Hamiltonian formulations of mechanics</p></li>
+<li><p>Why these principles underlie all of physics</p></li>
+</ul>
+<p><strong>Real-world connection:</strong> These principles extend to quantum mechanics, field theory, and general relativity. Understanding them here prepares you for advanced physics.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="skills-you-ll-develop">
+<h2>Skills You’ll Develop<a class="headerlink" href="#skills-you-ll-develop" title="Link to this heading">#</a></h2>
+<section id="by-week-3">
+<h3>By Week 3<a class="headerlink" href="#by-week-3" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>✓ Construct equations of motion from physical observations</p></li>
+<li><p>✓ Solve differential equations using separation of variables</p></li>
+<li><p>✓ Use numerical methods (Euler-Cromer) to simulate systems</p></li>
+</ul>
+</section>
+<section id="by-week-6">
+<h3>By Week 6<a class="headerlink" href="#by-week-6" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>✓ Analyze systems using energy and momentum conservation</p></li>
+<li><p>✓ Classify forces as conservative or non-conservative</p></li>
+<li><p>✓ Solve complex dynamics problems without explicit solutions</p></li>
+</ul>
+</section>
+<section id="by-week-10">
+<h3>By Week 10<a class="headerlink" href="#by-week-10" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>✓ Create and interpret phase portraits</p></li>
+<li><p>✓ Classify critical points and determine stability</p></li>
+<li><p>✓ Understand nonlinear behavior and sensitivity to initial conditions</p></li>
+</ul>
+</section>
+<section id="by-week-13">
+<h3>By Week 13<a class="headerlink" href="#by-week-13" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>✓ Apply variational principles to derive equations of motion</p></li>
+<li><p>✓ Solve optimization problems in physics</p></li>
+<li><p>✓ Understand the deep mathematical structure of classical mechanics</p></li>
+</ul>
+</section>
+</section>
+<hr class="docutils" />
+<section id="key-themes-throughout-the-course">
+<h2>Key Themes Throughout the Course<a class="headerlink" href="#key-themes-throughout-the-course" title="Link to this heading">#</a></h2>
+<section id="modeling-from-observations-to-equations">
+<h3>1. Modeling: From Observations to Equations<a class="headerlink" href="#modeling-from-observations-to-equations" title="Link to this heading">#</a></h3>
+<p>Physics is about building mathematical representations of the natural world. Each week, you’ll learn to identify simplifying assumptions, choose appropriate frameworks, and develop equations that capture essential physics.</p>
+</section>
+<section id="multiple-solution-methods">
+<h3>2. Multiple Solution Methods<a class="headerlink" href="#multiple-solution-methods" title="Link to this heading">#</a></h3>
+<p>The same problem can be solved in different ways—analytically, numerically, or geometrically (via phase space). Learning when to use each approach is part of becoming a physicist.</p>
+</section>
+<section id="conservation-laws">
+<h3>3. Conservation Laws<a class="headerlink" href="#conservation-laws" title="Link to this heading">#</a></h3>
+<p>Energy, momentum, and angular momentum are <em>conserved</em>. These principles transcend the specific details of a system and apply universally.</p>
+</section>
+<section id="nonlinearity-is-ubiquitous">
+<h3>4. Nonlinearity is Ubiquitous<a class="headerlink" href="#nonlinearity-is-ubiquitous" title="Link to this heading">#</a></h3>
+<p>Most real systems are nonlinear. Linear equations are the exception, and we solve them first because they’re tractable. But the world is full of nonlinear systems—and you’ll develop tools to understand them.</p>
+</section>
+<section id="computation-is-essential">
+<h3>5. Computation is Essential<a class="headerlink" href="#computation-is-essential" title="Link to this heading">#</a></h3>
+<p>Solving differential equations by hand is possible only for special cases. Computers let us explore systems we can’t solve analytically. You’ll learn to implement numerical methods and interpret the results.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="course-philosophy">
+<h2>Course Philosophy<a class="headerlink" href="#course-philosophy" title="Link to this heading">#</a></h2>
+<div class="note admonition">
+<p class="admonition-title">Physics is a Human Endeavor</p>
+<p>Physics is a global activity conducted by humans across all cultures and throughout history. The examples you’ll study come from many traditions and places—ancient astronomy, Islamic mathematics, Chinese engineering, African and Indigenous astronomy, and modern physics across the world.</p>
+<p>We acknowledge that physics as an institution has often erased the contributions of women, people of color, and early-career researchers. For example, the Euler-Cromer integration method was discovered by a graduate student named Abby Aspel but is rarely credited to her. As you learn these powerful tools and techniques, remember the humans behind them—and commit to building a more inclusive physics community.</p>
+</div>
+<div class="tip admonition">
+<p class="admonition-title">Numerical Methods Are Real Physics</p>
+<p>In this course, you’ll use computers to solve differential equations. Some instructors dismiss numerical solutions as “not real physics”—but this is wrong. Most systems in nature and industry are solved numerically. Learning to implement algorithms, interpret results, and understand sources of error is essential for modern physics.</p>
+<p>The key principle: analytical solutions provide benchmarks to test numerical methods. We’ll solve some problems both ways so you can compare and build confidence.</p>
+</div>
+</section>
+<hr class="docutils" />
+<section id="how-to-use-these-materials">
+<h2>How to Use These Materials<a class="headerlink" href="#how-to-use-these-materials" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>Each week has a dedicated lecture note file</strong> with learning goals, conceptual foundations, worked examples, and applications.</p></li>
+<li><p><strong>Materials are not a substitute for textbooks</strong>—they’re adapted from <a class="reference external" href="https://mhjensen.github.io/Physics321/doc/web/course.html">https://mhjensen.github.io/Physics321/doc/web/course.html</a> and inspired by the recommended textbooks in the course.</p></li>
+<li><p><strong>Come to class prepared.</strong> Read the notes beforehand and try the examples.</p></li>
+<li><p><strong>Combine with homework and projects.</strong> Lectures and notes develop concepts; problem sets and projects develop mastery.</p></li>
+<li><p><strong>Use multiple resources.</strong> Consult recommended textbooks, office hours, and your classmates.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="weekly-materials">
+<h2>Weekly Materials<a class="headerlink" href="#weekly-materials" title="Link to this heading">#</a></h2>
+</section>
+<div class="toctree-wrapper compound">
+</div>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./lecture-notes"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../admin/grading.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Grading and Dates</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="01_notes.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">01 - Overture: What is Classical Physics?</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-this-course-is-really-about">What This Course Is Really About</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-the-course-is-organized">How the Course is Organized</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#part-i-foundations-mathematical-modeling-weeks-13">🎯 Part I: Foundations &amp; Mathematical Modeling (Weeks 1–3)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#part-ii-tools-conservation-laws-weeks-46">⚙️ Part II: Tools &amp; Conservation Laws (Weeks 4–6)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#part-iii-nonlinear-dynamics-oscillations-weeks-710">🌀 Part III: Nonlinear Dynamics &amp; Oscillations (Weeks 7–10)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#part-iv-variational-principles-lagrangian-mechanics-weeks-1113">📐 Part IV: Variational Principles &amp; Lagrangian Mechanics (Weeks 11–13)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#skills-you-ll-develop">Skills You’ll Develop</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#by-week-3">By Week 3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#by-week-6">By Week 6</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#by-week-10">By Week 10</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#by-week-13">By Week 13</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-themes-throughout-the-course">Key Themes Throughout the Course</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modeling-from-observations-to-equations">1. Modeling: From Observations to Equations</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#multiple-solution-methods">2. Multiple Solution Methods</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#conservation-laws">3. Conservation Laws</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#nonlinearity-is-ubiquitous">4. Nonlinearity is Ubiquitous</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#computation-is-essential">5. Computation is Essential</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#course-philosophy">Course Philosophy</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-use-these-materials">How to Use These Materials</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#weekly-materials">Weekly Materials</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Danny Caballero, Morten Hjorth-Jensen, Rachel Henderson, Alia Valentine
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+  <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" />
+</a>
+<br />
+This work is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
