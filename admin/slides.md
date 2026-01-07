@@ -4,7 +4,7 @@ Slides for PHY 321 appear in reverse chronological order, with the most recent s
 
 ---
 
-## Days 40-42 - Project Presentations  - 01 Dec 2025 - 05 Dec 2025
+<!-- ## Days 40-42 - Project Presentations  - 01 Dec 2025 - 05 Dec 2025
 
 [![Day 40](../slides/day-40-project-presentations.png)](../slides/day-40-project-presentations.pdf)
 
@@ -515,9 +515,9 @@ Slides for PHY 321 appear in reverse chronological order, with the most recent s
 
 :::
 
----
+--- -->
 
-## Day 01 - Introduction - 25 Aug 2025
+## Day 01 - Introduction - 12 Jan 2026
 
 [![Day 01](../slides/day-01-introduction.png)](../slides/day-01-introduction.pdf)
 
