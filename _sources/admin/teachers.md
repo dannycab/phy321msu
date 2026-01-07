@@ -1,4 +1,4 @@
-# Teachers and Grading
+# Teachers
 
 ## 📅 Class Meetings
 

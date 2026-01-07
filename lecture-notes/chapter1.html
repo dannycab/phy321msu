@@ -1,0 +1,674 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>1. What is Classical Physics? &#8212; Classical Mechanics</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'lecture-notes/chapter1';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="What is Mathematical Modeling?" href="chapter2-overview.html" />
+    <link rel="prev" title="Course Material and Links" href="../admin/links.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/spartan-helmet.png" class="logo__image only-light" alt="Classical Mechanics - Home"/>
+    <img src="../_static/spartan-helmet.png" class="logo__image only-dark pst-js-only" alt="Classical Mechanics - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    PHY 321: Classical Mechanics 1, Michigan State University, Spring 2024
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">About the course</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../admin/teachers.html">Teachers and Grading</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin/resources.html">Additional Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin/textbooks.html">Textbooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin/schedule-cal.html">Calendar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin/links.html">Course Material and Links</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Introductory Material</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">1. What is Classical Physics?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter2-overview.html">What is Mathematical Modeling?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter2.html">2. Classical Mechanics, Mathematics and Numerical background</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter3.html">3. Simple Motion problems and Reminder on Newton’s Laws</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter4.html">4. Work, Energy, Momentum and Conservation laws</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Advanced Topics</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="chapter5.html">5. Harmonic Oscillations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter6.html">6. Two-body problems, from the Gravitational Force to Two-body Scattering</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter7.html">7. Non-inertial Frames, Translation and Rotating Coordinate Systems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="chapter8.html">8. Variational Calculus and Lagrangian Formalism</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">In-class handouts, activities, and other materials</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../in-class/cw1-python-test.html">CW1 - Python Test</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../in-class/cw6-phase_space.html">CW6 - Phase Portraits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../in-class/cw11-plot-fourier.html">CW11 - Plot Fourier Expansion</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Weekly assignments, midterms and final projects with solutions</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw1.html">Homework 1 (Due 19 Jan)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw2.html">Homework 2 (Due 26 Jan)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw3.html">Homework 3 (Due 02 Feb)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw4.html">Homework 4 (Due 09 Feb)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw5.html">Homework 5 (Due 08 Mar)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw6.html">Homework 6 (Due 15 Mar)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw7.html">Homework 7 (Due 22 Mar)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw8.html">Homework 8 (Due 12 Apr)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw9.html">Homework 9 (Due 19 Apr)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw10.html">OPTIONAL Homework 10 (Due Apr 26)</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Honors Projects</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../honors-projects/ChaoticPendulum.html">Chaos in the driven nonlinear pendulum</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../honors-projects/NeuralNetworks.html">From Ordinary Differential equations to Neural Networks, solving mechanics problems in a new way</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../honors-projects/SolarSystem.html">Building a model for the solar system using ordinary differential equations</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/main?urlpath=tree/lecture-notes/chapter1.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch on Binder"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img alt="Binder logo" src="../_static/images/logo_binder.svg">
+  </span>
+<span class="btn__text-container">Binder</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/lecture-notes/chapter1.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>1. What is Classical Physics?</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#classical-mechanics">Classical Mechanics</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#purpose-of-classical-mechanics">Purpose of Classical Mechanics</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#classical-mechanics-in-this-class">Classical Mechanics in this Class</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#applications-of-classical-mechanics">Applications of Classical Mechanics</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fluid-mechanics-at-lanl">Fluid Mechanics at LANL</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#biologically-inspired-robotics">Biologically-Inspired Robotics</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#are-you-interested-in-research">Are you interested in research?</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="what-is-classical-physics">
+<h1>1. What is Classical Physics?<a class="headerlink" href="#what-is-classical-physics" title="Link to this heading">#</a></h1>
+<p>There are many different fields of physics; they are both distinct and overlapping. If we were to take a view of what kinds of physical systems that we wanted to investigate with different physics, we could organize them based on the system’s size and speed of change:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/Classical_physics">Classical physics</a>: large, slow systems</p></li>
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/Statistical_mechanics">Statistical</a> and <a class="reference external" href="https://en.wikipedia.org/wiki/Quantum_mechanics">quantum mechanics</a>: small, slow systems</p></li>
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/General_relativity">General relativity</a>: large, fast systems</p></li>
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/Quantum_field_theory">Quantum field theory</a>: small, fast systems</p></li>
+</ul>
+<p>These are not hard and fast rules, and, in fact, we often bring physics from different spaces together to solve complex problems. For examples, the fields of <a class="reference external" href="https://en.wikipedia.org/wiki/Climate_model">climate modeling</a>, <a class="reference external" href="https://en.wikipedia.org/wiki/Nonlinear_system">non-linear dynamics</a>, <a class="reference external" href="https://en.wikipedia.org/wiki/Astrophysics">astrophysics</a>, and <a class="reference external" href="https://en.wikipedia.org/wiki/Particle_physics">Particle physics</a> use physical models and tools for each of the fields above. How we organize physics for ourselves depends on how we decide we want to look at it. However the first view where we organize the field by size and speed is a useful way to think about the different kinds of physics that we have developed thus far.</p>
+<p><img alt="Physics by size and speed" src="../_images/640px-Modernphysicsfields.svg.png" /></p>
+<p>Image Source: <a class="reference external" href="https://commons.wikimedia.org/wiki/File:Modernphysicsfields.svg">Wikipedia</a></p>
+<p>Classical Physics is the physics that we developed before discovering relativity and quantum mechanics. It typically covers both mechanical systems and electromagnetic systems. It is also <a class="reference external" href="https://en.wikipedia.org/wiki/History_of_physics">the physics that we read about historically</a>, which has its <a class="reference external" href="https://en.wikipedia.org/wiki/History_of_astronomy">roots in ancient astronomy</a> and has existed across many different cultures.</p>
+<p>You might have heard of the development physics in the <a class="reference external" href="https://en.wikipedia.org/wiki/Science_in_classical_antiquity#Hellenistic_age">Hellensitic age</a> where the Greeks used mathematics to study astronomical objects, or how <a class="reference external" href="https://en.wikipedia.org/wiki/Newton's_laws_of_motion">Newton’s Laws of motion</a> came to be. These are both examples of classical physics. But there are many more including <a class="reference external" href="https://www.science.org/doi/10.1126/science.200.4343.766">astronomical analyses in Sub-Saharan Africa</a> in 300 BCE, massive <a class="reference external" href="https://en.wikipedia.org/wiki/Science_and_technology_of_the_Song_dynasty">scientific expansion in China</a> during the Song dynasty, and studies that pushed the fields of optics, mechanics, and astronomy in the <a class="reference external" href="https://en.wikipedia.org/wiki/Islamic_Golden_Age">Islamic Golden Age</a>. While we do not present it, much to the detriment of our own field, <a class="reference external" href="https://en.wikipedia.org/wiki/Indigenous_astronomy">physics and astronomy were a large part of indigenous cultures</a> across the world including in what become the United States.</p>
+<p><strong>Wherever there were people, there was Classical Physics.</strong></p>
+<section id="classical-mechanics">
+<h2>Classical Mechanics<a class="headerlink" href="#classical-mechanics" title="Link to this heading">#</a></h2>
+<p>When we define <a class="reference external" href="https://en.wikipedia.org/wiki/Classical_mechanics">Classical Mechanics</a>, at least for the purposes of this class, we will define it as the physics of large, slow, mechanical systems.</p>
+<ul class="simple">
+<li><p><strong>Large</strong> - Systems are typically big enough that we can see them with our eyes, or maybe with some reasonably simple optical tools. We’re typically excluding the microscopic world of atoms and molecules.</p></li>
+<li><p><strong>Slow</strong> – Systems for which we can observe their motion and track them “visually”; that is they move much slower than the speed of light. This is a critical assumption that we make in classical mechanics.</p></li>
+<li><p><strong>Mechanical</strong> – Systems where the fields of electromagnetism don’t come into play. We relax this is bit when we think of a particle in a classical E&amp;M field, but the focus is still on modeling the particle and not the field.</p></li>
+</ul>
+<section id="purpose-of-classical-mechanics">
+<h3>Purpose of Classical Mechanics<a class="headerlink" href="#purpose-of-classical-mechanics" title="Link to this heading">#</a></h3>
+<p>Classical mechanics is a physics that allows us to model these large, slow, mechanical systems. It helps us develop an understanding of that process of making models and how we can use models to make predictions. It is a physics that results typically in <a class="reference external" href="https://en.wikipedia.org/wiki/Determinism">deterministic models</a>, where we can predict the future of a system given its current state. This is because the language of Classical Mechanics is <a class="reference external" href="https://en.wikipedia.org/wiki/Differential_equation">differential equations</a>, which describe how a system changes as a result of influences from it’s environment. It is often a <a class="reference external" href="https://en.wikipedia.org/wiki/Vector_(mathematics_and_physics)">vector-based physics</a> as it describes the pushes and pulls on a system in a given direction. However, we can often develop scalar models or systems of scalar equations that describe the motion of a system.</p>
+<p>Ultimately, Classical Mechanics is a physics that allows us to interrogate the behavior of these systems and describe their <a class="reference external" href="https://en.wikipedia.org/wiki/Dynamics_(mechanics)">dynamics</a>. Through Classical Mechanics, we can describe the present state of a system, how it will evolve, and then use that information to make predictions about the future. What we learn from Classical Mechanics can become a set of powerful tools that we can use in many contexts.</p>
+</section>
+<section id="classical-mechanics-in-this-class">
+<h3>Classical Mechanics in this Class<a class="headerlink" href="#classical-mechanics-in-this-class" title="Link to this heading">#</a></h3>
+<p>Classical mechanics is a topic which has been taught intensively over
+several centuries. It is, with its many variants and ways of
+presenting the educational material, normally the first <strong>real</strong> physics
+course many of us meet and it lays the foundation for further physics
+studies. Many of the equations and ways of reasoning about the
+underlying laws of motion and pertinent forces, shape our approaches and understanding
+of the scientific method and discourse, as well as the way we develop our insights
+and deeper understanding about physical systems.</p>
+<p>There is a wealth of
+well-tested (from both a physics point of view and a pedagogical
+standpoint) exercises and problems which can be solved
+analytically. However, many of these problems represent idealized and
+less realistic situations. The large majority of these problems are
+solved by paper and pencil and are traditionally aimed
+at what we normally refer to as continuous models from which we may find an analytical solution. As a consequence,
+when teaching mechanics, it implies that we can seldomly venture beyond an idealized case
+in order to develop our understandings and insights about the
+underlying forces and laws of motion.</p>
+<p>On the other hand, numerical algorithms call for approximate discrete
+models and much of the development of methods for continuous models
+are nowadays being replaced by methods for discrete models in science and
+industry, simply because <strong>much larger classes of problems can be addressed</strong> with discrete models, often by simpler and more
+generic methodologies.</p>
+<p>As we will see below, when properly scaling the equations at hand,
+discrete models open up for more advanced abstractions and the possibility to
+study real life systems, with the added bonus that we can explore and
+deepen our basic understanding of various physical systems</p>
+<p>Analytical solutions are as important as before. In addition, such
+solutions provide us with invaluable benchmarks and tests for our
+discrete models. Such benchmarks, as we will see below, allow us
+to discuss possible sources of errors and their behaviors. And
+finally, since most of our models are based on various algorithms from
+numerical mathematics, we have a unique oppotunity to gain a deeper
+understanding of the mathematical approaches we are using.</p>
+<p>With computing and data science as important elements in essentially
+all aspects of a modern society, we could then try to define Computing as
+<strong>solving scientific problems using all possible tools, including
+symbolic computing, computers and numerical algorithms, and analytical
+paper and pencil solutions</strong>.
+Computing provides us with the tools to develope our own understanding of the scientific method by enhancing algorithmic thinking.</p>
+<p>The way we will teach this course reflects
+this definition of computing. The course contains both classical paper
+and pencil exercises as well as computational projects and exercises. The
+hope is that this will allow you to explore the physics of systems
+governed by the degrees of freedom of classical mechanics at a deeper
+level, and that these insights about the scientific method will help
+you to develop a better understanding of how the underlying forces and
+equations of motion and how they impact a given system. Furthermore, by introducing various numerical methods
+via computational projects and exercises, we aim at developing your competences and skills about these topics.</p>
+<p>These competences will enable you to</p>
+<ul class="simple">
+<li><p>understand how algorithms are used to solve mathematical problems,</p></li>
+<li><p>derive, verify, and implement algorithms,</p></li>
+<li><p>understand what can go wrong with algorithms,</p></li>
+<li><p>use these algorithms to construct reproducible scientific outcomes and to engage in science in ethical ways, and</p></li>
+<li><p>think algorithmically for the purposes of gaining deeper insights about scientific problems.</p></li>
+</ul>
+<p>All these elements are central for maturing and gaining a better understanding of the modern scientific process <em>per se</em>.</p>
+<p>The power of the scientific method lies in identifying a given problem
+as a special case of an abstract class of problems, identifying
+general solution methods for this class of problems, and applying a
+general method to the specific problem (applying means, in the case of
+computing, calculations by pen and paper, symbolic computing, or
+numerical computing by ready-made and/or self-written software). This
+generic view on problems and methods is particularly important for
+understanding how to apply available, generic software to solve a
+particular problem.</p>
+<p><em>However, verification of algorithms and understanding their limitations requires much of the classical knowledge about continuous models.</em></p>
+</section>
+</section>
+<section id="applications-of-classical-mechanics">
+<h2>Applications of Classical Mechanics<a class="headerlink" href="#applications-of-classical-mechanics" title="Link to this heading">#</a></h2>
+<p>While it might appear there’s little room for using Classical Mechanics in research or in industry now, it turns out there’s tons of room. It is still the physics that enables us to understand fluid systems, nonlinear mechanical effects, continuum mechanics, animal locomotion, and many other systems. Below are several examples of how Classical Mechanics is used in research and industry. We encourage to watch these videos as they demonstrate how the physics we will learn in class is really central to continuing to understand nature.</p>
+<section id="fluid-mechanics-at-lanl">
+<h3>Fluid Mechanics at LANL<a class="headerlink" href="#fluid-mechanics-at-lanl" title="Link to this heading">#</a></h3>
+<p><a class="reference external" href="https://www.lanl.gov/org/ddste/aldsc/theoretical/fluid-dynamics-solid-mechanics/index.php">Researchers at Los Alamos National Lab</a> do a variety of research using fluid mechanics models.</p>
+<p><a class="reference external" href="https://inv.tux.pizza/watch?v=myuD81326_o"><img alt="Fluid Mechanics at LANL" src="https://markdown-videos-api.jorgenkh.no/youtube/myuD81326_o?width=720&amp;height=405" /></a></p>
+<ul class="simple">
+<li><p>Non-Commercial Link: <a class="reference external" href="https://inv.tux.pizza/watch?v=myuD81326_o">https://inv.tux.pizza/watch?v=myuD81326_o</a></p></li>
+<li><p>Commercial Link: <a class="reference external" href="https://youtube.com/watch?v=myuD81326_o">https://youtube.com/watch?v=myuD81326_o</a></p></li>
+</ul>
+</section>
+<section id="biologically-inspired-robotics">
+<h3>Biologically-Inspired Robotics<a class="headerlink" href="#biologically-inspired-robotics" title="Link to this heading">#</a></h3>
+<p>A <a class="reference external" href="https://crablab.gatech.edu/">research lab at Georgia Tech</a> uses Classical Mechanics to model the motion of animals and then uses that information to build robots that can move like animals.</p>
+<p><a class="reference external" href="https://inv.tux.pizza/watch?v=Qme07fA3Fj4"><img alt="Biologically-Inspired Robotics" src="https://markdown-videos-api.jorgenkh.no/youtube/Qme07fA3Fj4?width=720&amp;height=405" /></a></p>
+<ul class="simple">
+<li><p>Non-Commercial Link: <a class="reference external" href="https://inv.tux.pizza/watch?v=Qme07fA3Fj4">https://inv.tux.pizza/watch?v=Qme07fA3Fj4</a></p></li>
+<li><p>Commercial Link: <a class="reference external" href="https://youtube.com/watch?v=Qme07fA3Fj4">https://youtube.com/watch?v=Qme07fA3Fj4</a></p></li>
+</ul>
+</section>
+</section>
+<section id="are-you-interested-in-research">
+<h2>Are you interested in research?<a class="headerlink" href="#are-you-interested-in-research" title="Link to this heading">#</a></h2>
+<p>If the idea of doing research appeals to you, MSU is a great place for undergraduate students to do research. We have many <a class="reference external" href="https://pa.msu.edu/research/index.aspx">research groups</a> across the Department of Physics and Astronomy. Getting started with a group early in your undergraduate career is a great way to figure out what about physics you like, and what you think you want to do with physics in the future. If you are a 3rd year student, consider applying for <a class="reference external" href="https://www.nsf.gov/crssprgm/reu/list_result.jsp?unitid=69">research experience for undergraduates (REU) programs</a> at other universities. These are great opportunities to get a taste of what research is like at other universities and to meet other students who are interested in physics. They also pay!</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./lecture-notes"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../admin/links.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Course Material and Links</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="chapter2-overview.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">What is Mathematical Modeling?</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#classical-mechanics">Classical Mechanics</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#purpose-of-classical-mechanics">Purpose of Classical Mechanics</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#classical-mechanics-in-this-class">Classical Mechanics in this Class</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#applications-of-classical-mechanics">Applications of Classical Mechanics</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fluid-mechanics-at-lanl">Fluid Mechanics at LANL</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#biologically-inspired-robotics">Biologically-Inspired Robotics</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#are-you-interested-in-research">Are you interested in research?</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Danny Caballero, Morten Hjorth-Jensen
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

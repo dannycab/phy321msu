@@ -1,12 +1,24 @@
 # PHY 321: Classical Mechanics 1, Michigan State University, Spring 2026
 
-```{note}
-This book is under active development. Syllabus materials will be updated shortly before the course starts.
-```
+[![GitHub Repo](https://img.shields.io/badge/GitHub-Repository-blue?logo=github)](https://github.com/dannycab/phy321msu)
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+[![GitHub Issues](https://img.shields.io/github/issues/dannycab/phy321msu?logo=github)](https://github.com/dannycab/phy321msu/issues)
 
-This is the Jupyter-Book for the Classical Mechanics course at MSU
 
-![Logo](images/logos/jupyter-book.png)
+:::{admonition} Week 1 Reminders
+:class: alert
+
+**Welcome to PHY 321!**
+
+* Read the [Getting Started](./admin/getting-started.ipynb) guide and the rest of the syllabus.
+* Complete these surveys: 
+    * [Class Survey](https://forms.cloud.microsoft/r/7Ar26hXDgm)
+    * [Office Hours Survey](https://crab.fit/phy-321-spring-2026-office-hours-poll-464860)
+* Read these course notes or the [associated book chapters](./admin/schedule-cal.md)
+    * [01 - Overture: What is Classical Physics?](./lecture-notes/01_notes.ipynb)
+    * [02 - Computing is a Necessary Tool for Science](./lecture-notes/02_notes.ipynb)
+* Review [Homework Assignment Instructions](./assignments/assignment-overview.md) and [Homework 1](./assignments/hw1.ipynb)
+:::
 
 ## Learning outcomes
 

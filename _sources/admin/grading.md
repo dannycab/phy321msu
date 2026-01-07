@@ -1,4 +1,4 @@
-# Grading and Dates
+# Grading and Important Dates
 
 
 ## Grading scale
@@ -13,13 +13,13 @@ There are no curves in this course. The grading scale is as follows.
 
 ## Course Activities
 
-| Activity                                                      | Percentage of total score |
-| ------------------------------------------------------------- | ------------------------- |
-| Homeworks, 8 in total and due Fridays the week after          | 15%                       |
-| Individual Reflections, weekly and HW                         | 5%                        |
-| First Midterm Project, _due Friday Oct 10_                    | 25%                       |
-| Second Midterm Project, _due Friday Nov 14_                   | 25%                       |
-| Final Project, _due Monday Dec 08_  (Presentations 01-05 Dec) | 30%                       |
+| Activity                                                       | Percentage of total score |
+| -------------------------------------------------------------- | ------------------------- |
+| Homeworks, 8 in total and due Fridays the week after           | 15%                       |
+| Reflection Activities, weekly and HW                           | 10%                       |
+| First Midterm Project, _due Friday Feb 27_                     | 20%                       |
+| Second Midterm Project, _due Friday Apr 10_                    | 25%                       |
+| Final Project, _due Friday May 1_  (Video Presentation 27 Apr) | 30%                       |
 
 ### Homework (15%)
 
@@ -27,15 +27,39 @@ Homework is exceedingly important for developing an understanding of the course 
 
 #### Coarse Grading Scale 
 
-Because of the large number of students in the course, homework grading will be coarsely grained. Scarlett will provide overall feedback on the things that students struggled with on homework sets; that will be shared in class. The homeworks will be graded on a 3 point scale: 3 points for a complete and correct solution, 2 points for a mostly complete/slightly incorrect solution, 1 point for an incorrect/incomplete solution, and 0 for a blank solution.
+Because of the large number of students in the course, homework grading will be coarsely grained. Kang will provide overall feedback on the things that students struggled with on homework sets; that will be shared in class. The homeworks will be graded on a 3 point scale: 3 points for a complete and correct solution, 2 points for a mostly complete/slightly incorrect solution, 1 point for an incorrect/incomplete solution, and 0 for a blank solution.
 
-This coarse grading scale works for each problem, regardless of their value. For example, if you have a problem worth 5 points and have a mostly complete solution you will earn $5 (\dfrac{2}{3}) = 3.33$ of the possible 5 points for that problem. If you have questions about your homework grade, please contact Scarlett directly.
+This coarse grading scale works for each problem, regardless of their value. For example, if you have a problem worth 5 points and have a mostly complete solution you will earn $5 (\dfrac{2}{3}) = 3.33$ of the possible 5 points for that problem. If you have questions about your homework grade, please use Gradescope's regrade request feature within one week of the homework being returned to you.
 
-### Individual Reflections (5%)
 
-For each homework assignment, you will be asked to individually reflect on your own experience with the assignment. The individual reflection will be due with each homework assignment (e.g. every other Friday at 11:59pm ET) via the D2L Assignments page. Late reflections will not be accepted once solutions are posted - which will be 8:00am ET on Monday. The prompts are designed to encourage you to think critically about your learning process and identify areas for growth. In this reflection, you should address the following questions:
+### Reflection Activities (10%)
 
-#### Prompts for Reflections
+There are three types of reflection activities designed to help you think critically about your learning process and identify areas for growth. These reflections will be due via the D2L Assignments page. 
+
+#### Content Checkins
+
+Before each class week, starting with week 2, you will be asked to reflect on the following questions based on your engagement with the pre-class materials. These reflections will be due on the Sunday of each week at 11:59pm ET via the D2L Assignments page. The questions are below and we expect a few sentences in response to each for full credit.
+
+* What was the most challenging part of the pre-class materials, and how did you address it? This could be related to the content of the pre-class materials, your learning style, etc.
+* What did you learn about your own strengths through engaging with the pre-class materials?
+* What would you do differently if you were to approach the pre-class materials again and why?
+* What questions do you have about the pre-class materials that you would like to discuss in class?
+
+*These will be graded for completeness, with full credit given for a complete submission that addresses all prompts; we will not award credit for minimal or incomplete submissions.*
+
+#### Exercise 0
+
+For each homework assignment, there will be an associated Exercise 0 that is due the same day as the homework (Fridays at 11:59pm ET; late after 11:59pm Sunday) via the D2L Assignments page. 
+
+The purpose of Exercise 0 is to invite you to learn about physics culture, history, and practices and to reflect on your growth as a physicist. Each Exercise 0 will have a different prompt each week, but will be structured similarly with the expectation that you write several paragraphs in response to the prompt. 
+
+Exercise 0 will be graded for completeness, with full credit given for a complete submission that addresses all prompts; we will not award credit for minimal or incomplete submissions.
+
+#### Individual Homework Reflections (5%)
+
+For each homework assignment, you will be asked to individually reflect on your own experience with the assignment. The individual reflection will be due with each homework assignment (e.g. Fridays at 11:59pm ET) via the D2L Assignments page. Late reflections will not be accepted once solutions are posted - which will be 8:00am ET on Monday. The prompts are designed to encourage you to think critically about your learning process and identify areas for growth. In this reflection, you should address the following questions:
+
+##### Prompts for Reflections
 
 If you worked as a group (2-3 people):
 * What was the most challenging part of this assignment, and how did you address it? This could be related to the content of the assignment, your group’s dynamics, etc.
@@ -47,42 +71,45 @@ If you worked individually:
 * What did you learn about your own strengths through engaging with this assignment? 
 * What would you do differently if you were to approach this assignment again and why?
 
-#### Pre-class Reflections
+These will be graded for completeness, with full credit given for a complete submission that addresses all prompts; we will not award credit for minimal or incomplete submissions.
 
-Before each class week, starting with week 2, you will be asked to reflect on the following questions based on your engagement with the pre-class materials. These reflections will be due on the Sunday of each week at 11:59pm ET via the D2L Assignments page. The questions are below and we expect a few sentences in response to each for full credit.
+### Midterm Projects (20/25%)
 
-* What was the most challenging part of the pre-class materials, and how did you address it? This could be related to the content of the pre-class materials, your learning style, etc.
-* What did you learn about your own strengths through engaging with the pre-class materials?
-* What would you do differently if you were to approach the pre-class materials again and why?
-* What questions do you have about the pre-class materials that you would like to discuss in class?
-
-### Midterm Projects (25%)
-
-The midterm projects are an individual effort to showcase your learning. They will cover topics from prior homework, lectures, and readings. The midterm projects will be due via the D2L Assignments page. It is likely that some of the problems might require a little research on your own or might be slightly beyond what we have done in class and in homework. The midterm is meant to be challenging, but it should also be a good place to learn more about the topics covered in the course. You are encouraged to use the textbook, notes, and other resources when solving the midterms and can ask any of the teaching staff for help.
+The midterm projects are an individual effort to showcase your learning. They will cover topics from prior homework, lectures, and readings. The midterm projects will be due via the D2L Assignments page. It is likely that some of the problems might require a little research on your own or might be slightly beyond what we have done in class and in homework. The midterm is meant to be challenging, but it should also be a good place to learn more about the topics covered in the course. You are encouraged to use the textbook, notes, and other resources when solving the midterms and can ask any of the teaching staff for help. Midterm 1 is worth 20% of your final grade and Midterm 2 is worth 25% of your final grade.
 
 ### Final Project (30%)
 
-The final project is designed for you to show your understanding of the various physics and mathematical topics we have covered during the semester. The final project has two parts: (1) an in-class presentation and (2) a computational essay. Presentations will occur the final week of classes (01-05 Dec; time slots will be assigned at random). The computational essay will be due the first day of finals week (08 Dec) via the D2L Assignments page. 
+The final project is designed for you to show your understanding of the various physics and mathematical topics we have covered during the semester. The final project has three parts: (1) an video presentation, (2) a computational essay, and a peer-review of your classmates' work. Presentations will be recorded and distributed to the class for peer-review (likely maximum six presentations for review). The computational essay will be due Friday of finals week (1 May) via the D2L Assignments page. 
 
 For the final exam project, you will choose a physical system to analyze fully. You will prepare a narrative report (as a Jupyter notebook) that shows your work and explains your results. Your presentation will educate us on your system and present your computational essay and findings. We will have project update homework problems starting with the first midterm to ensure you make good progress and to reduce end of semester stress. By the end of the semester, you will hopefully feel confident in your ability to choose a system to study. However, if you are unsure, please reach out to Danny for guidance. 
 
-You can work in pairs (2 people) OR by yourself. A rubric and breakdown of the grading will be available later in the semester. It will include your reviewing of classmates presentations throughout that last week of class.
-
+You can work in groups of up to 3 OR by yourself. A rubric and breakdown of the grading will be available later in the semester. It will include your reviewing of classmates presentations throughout that last week of class.
 
 ## Extra Credit Opportunities
 
 ### Using iClickers during Class
+
 During class, clicker questions will be used in class to gauge your understanding of a topic or concept. I do not penalize you for not knowing the correct answer. I prefer to know what you know in-the-moment. Thus, clickers are pure extra credit: the total number of clicker questions you answer divided by the total number asked this term earns you up to 1% extra credit toward your overall homework grade. You can access the iClicker app on a smartphone, tablet or laptop. To get your iClicker set up, see the instructions on D2L. 
 
-### Attending the Department of Physics & Astronomy Seminars and/or Colloquia
-Attending scientific talks is an important practice that many physicists engage in. This extra credit opportunity will help you develop your scientific knowledge and writing. You can earn up to 5 extra credit points on a homework assignment. To earn these points, you must (1) attend a MSU research talk, (2) summarize the talk using at least 150 words, and (3) turn in your summary along with your homework. You can find the list of talks on the [MSU Physics and Astronomy Seminars and Colloquia website](https://pa.msu.edu/news-events-seminars/index.aspx) and are encouraged to seek out other opportunities through the Society for Physics Students (SPS) or Astronomy Club.  
+### Homework Extra Credit (Attending Events)
 
-### Completing “Challenge Assignments” on D2L
-On D2L you will find a series of professionalization “challenges” posted as Discussion Board topics. These challenges are designed to aid you in developing a set of skills as you continue to advance in your career. None of these challenges are required assignments, but they have the potential to support your professional development. If you do choose to complete one or more challenges, you will have the opportunity to earn 0.5% extra credit points for each completed challenge toward your final grade. The maximum extra credit that can be earned is 2%.
 
-### Midterm Extra Credit
+In this course, you can earn extra credit by attending optional workshops, physics‑related events, professional development activities, or research talks such as seminars and colloquia. These opportunities will be announced throughout the semester, and you are also encouraged to explore events hosted by the Department of Physics & Astronomy, the Society for Physics Students (SPS), or the Astronomy Club. A regularly updated list of departmental seminars and colloquia is available on the <https://pa.msu.edu/news-events-seminars/index.aspx>
 
-For each midterm, there will be similar extra credit opportunities. These will be announced closer to the midterm dates, and they will be worth up to 10 additional points on the midterm.
+You can earn up to 5% extra credit on your homework assignment each week by (1) attending an eligible event during that week and (2) submitting a brief written reflection of about 150–200 words. Your reflection should summarize the event or talk, describe what you learned, and comment on any insights or connections you drew from the experience. Submit your reflection along with your homework to receive the extra credit.
+
+### Midterm Extra Credit (Professional Development)
+
+You can earn extra credit by working with Danny to develop a career or professional development plan. This plan will help you identify your goals, strengths, and areas for growth. You can earn up to 5% extra credit on each midterm grade by completing this plan and meeting with Danny to discuss it.
+
+#### Midterm 1 Extra Credit Plan (5% on Midterm 1)
+* Before Midterm 1: Meet with Danny to discuss your career goals and develop a plan.
+* By Midterm 1: Submit a written plan (about 500 words) outlining your goals, strengths, and areas for growth.
+
+#### Midterm 2 Extra Credit Plan (5% on Midterm 2)
+* Between Midterm 1 and Midterm 2: Meet with Danny to discuss your progress and any adjustments to your plan.
+* By Midterm 2: Submit a revised plan (about 1000 words) outlining your progress and any adjustments to your goals, strengths, and areas for growth.
+* By end of the semester: Complete at least one professional development activity (e.g., attending a workshop, networking event, or informational interview) and write a reflection (about 500 words) on your experience.
 
 # Collaboration Policy
 

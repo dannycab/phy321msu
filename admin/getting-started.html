@@ -52,7 +52,7 @@
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script src="../_static/design-tabs.js?v=36754332"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
@@ -185,9 +185,9 @@
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">Getting Started</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="course-commitments.html">Course Commitments</a></li>
-<li class="toctree-l2"><a class="reference internal" href="teachers.html">Teachers and Grading</a></li>
+<li class="toctree-l2"><a class="reference internal" href="teachers.html">Teachers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="textbooks.html">Textbooks and Course Materials</a></li>
-<li class="toctree-l2"><a class="reference internal" href="grading.html">Grading and Dates</a></li>
+<li class="toctree-l2"><a class="reference internal" href="grading.html">Grading and Important Dates</a></li>
 
 </ul>
 </details></li>
@@ -231,9 +231,6 @@
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../resources/euler_integration.html">Euler Integration</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../resources/integrators.html">Numerical Integrators</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../resources/phase_diagrams.html">Plotting Phase Diagrams</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../resources/chaotic_dynamics.html">Modeling Chaotic Systems - Activity</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../resources/chaotic_dynamics-completed.html">Modeling Chaotic Systems - Completed</a></li>
 </ul>
 
     </div>
@@ -382,16 +379,32 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#before-the-first-class-and-into-the-first-week">Before the first class and into the first week</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preparing-for-class-each-week">Preparing for class each week</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-typical-class-week">A typical class week</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preparing-for-class-each-week">Preparing for class each week</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#content-check-ins">Content Check-ins</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-typical-class-week">A typical class week</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#iclickers">iClickers</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#raisemyhand">🙋 RaiseMyHand</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#homework-assignments">Homework Assignments</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-0">Exercise 0</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#homework-reflections">Homework Reflections</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#midterm-and-final-projects">Midterm and Final Projects</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#midterms">Midterms</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#final-project">Final Project</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#extra-credit-opportunities">Extra Credit Opportunities</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#homework-extra-credit-attending-events">Homework Extra Credit (Attending Events)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#midterm-extra-credit-professional-development">Midterm Extra Credit (Professional Development)</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#midterm-1-extra-credit-plan-5-on-midterm-1">Midterm 1 Extra Credit Plan (5% on Midterm 1)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#midterm-2-extra-credit-plan-5-on-midterm-2">Midterm 2 Extra Credit Plan (5% on Midterm 2)</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -408,21 +421,21 @@ document.write(`
   <section id="getting-started">
 <h1>Getting Started<a class="headerlink" href="#getting-started" title="Link to this heading">#</a></h1>
 <p>PHY 321 is a course that has been organized to encourage your deep learning of classical mechanics, to provide you with opportunities for growth and agency, to initiate a process of lifelong self-education, and to enculturate you into the practices of physics. Because of this, it might seem there’s a lot for you to do. So this document will help you get started with the course.</p>
-<section id="before-the-first-class-and-into-the-first-week">
-<h2>Before the first class and into the first week<a class="headerlink" href="#before-the-first-class-and-into-the-first-week" title="Link to this heading">#</a></h2>
+<div class="tip admonition">
+<p class="admonition-title">Getting Started Checklist</p>
+<h2 class="rubric" id="before-the-first-class-and-into-the-first-week">Before the first class and into the first week</h2>
+<p><strong>Read the administrative documents on the course website or linked in D2L.</strong></p>
+<p>Most importantly:</p>
 <ul class="simple">
-<li><p>Read the administrative documents on the course website or linked in D2L. Most importantly:</p>
-<ul>
 <li><p>make sure you can log into <a class="reference external" href="https://d2l.msu.edu/d2l/login">D2L</a> and that you can find the course page,</p></li>
 <li><p>read about your <a class="reference internal" href="teachers.html"><span class="doc std std-doc">teachers</span></a> and the <a class="reference internal" href="grading.html"><span class="doc std std-doc">grading policy</span></a>,</p></li>
 <li><p>review the <a class="reference internal" href="textbooks.html"><span class="doc std std-doc">textbook information</span></a> and make sure you have <a class="reference external" href="https://github.com/mhjensen/Physics321/tree/master/doc/Literature">access to the books</a>,</p></li>
 <li><p>look over the <a class="reference internal" href="schedule-cal.html"><span class="doc std std-doc">schedule</span></a> and let Danny (<a class="reference external" href="mailto:caball14&#37;&#52;&#48;msu&#46;edu">caball14<span>&#64;</span>msu<span>&#46;</span>edu</a>) know if you have any conflicts.</p></li>
 <li><p>consider your views of using generative AI in your classes, do some research, and be prepared to discuss your thoughts in class. <strong>We will generate a class policy together.</strong></p></li>
-<li><p>complete the <a class="reference external" href="https://forms.office.com/r/LWEDtfkcg9">pre-class survey</a> by the end of the first week of classes.</p></li>
+<li><p>complete the <a class="reference external" href="https://forms.cloud.microsoft/r/7Ar26hXDgm">pre-class survey</a> by the end of the first week of classes.</p></li>
+<li><p>complete the <a class="reference external" href="https://crab.fit/phy-321-spring-2026-office-hours-poll-464860">office hours poll</a> by the end of the first week of classes.</p></li>
 </ul>
-</li>
-</ul>
-</section>
+</div>
 <section id="preparing-for-class-each-week">
 <h2>Preparing for class each week<a class="headerlink" href="#preparing-for-class-each-week" title="Link to this heading">#</a></h2>
 <p>Classical Mechanics is a challenging course, but it is also a subject that is well-established with many examples, resources, and tools. For each class week, we will prepare a set of notes, links, and videos. They will be organized by the week and will be available on the course website, and linked in D2L.</p>
@@ -437,6 +450,13 @@ document.write(`
 </ul>
 </div>
 <p>Look at <a class="reference internal" href="../lecture-notes/01_notes.html"><span class="std std-doc">Week 1</span></a> for an example of what to expect.</p>
+<section id="content-check-ins">
+<h3>Content Check-ins<a class="headerlink" href="#content-check-ins" title="Link to this heading">#</a></h3>
+<p>Each week, there will be a short content check-in on D2l that asks you to provide a brief response to questions about the material you read or watched that week (remember that we expect you to spend at least 90 minutes a week reviewing materials that help you).</p>
+<p>These check-ins are helpful to the teaching staff to understand how well you are grasping the material and to identify areas where you might need additional support. They are also a way for you to reflect on your learning and to help you stay engaged with the material.</p>
+<p>These check-ins will be graded for completion only and factor into your reflection grade. They will be due before Monday’s classes and available on <a class="reference external" href="https://d2l.msu.edu/d2l/login">D2L</a>.</p>
+<p><strong>We will drop the lowest two (2) content check-in scores when calculating your final grade.</strong></p>
+</section>
 </section>
 <section id="a-typical-class-week">
 <h2>A typical class week<a class="headerlink" href="#a-typical-class-week" title="Link to this heading">#</a></h2>
@@ -450,11 +470,6 @@ document.write(`
 <li><p><strong>We strongly encourage you to attend class regularly.</strong></p></li>
 </ul>
 </div>
-<div class="admonition-iclickers admonition">
-<p class="admonition-title">iClickers</p>
-<p>We will use iClickers in class to help us gauge your understanding of the material and to help you engage with the material.</p>
-<p>How to <a class="reference internal" href="#../resources/iclicker-setup"><span class="xref myst">setup iClickers</span></a>.</p>
-</div>
 <p><strong>Friday’s class is a workshop day.</strong> We will work through activities and homework problems together, discuss the material, and work on computational problems.</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
@@ -463,13 +478,24 @@ document.write(`
 <li><p><strong>We strongly encourage you to attend this class in person.</strong> Most students have found this part of the class to be the most helpful for their learning, and we get to learn more about you, which is important for us as instructors.</p></li>
 </ul>
 </div>
+<section id="iclickers">
+<h3>iClickers<a class="headerlink" href="#iclickers" title="Link to this heading">#</a></h3>
+<p>We will use iClickers in class to help us gauge your understanding of the material and to help you engage with the material.</p>
+<p>How to <a class="reference internal" href="#../resources/iclicker-setup"><span class="xref myst">setup iClickers</span></a>.</p>
+</section>
+<section id="raisemyhand">
+<h3>🙋 RaiseMyHand<a class="headerlink" href="#raisemyhand" title="Link to this heading">#</a></h3>
+<p>Danny has developed an anonymous question and comment tool called <a class="reference external" href="https://dannycaballero.info/teaching/tools/raisemyhand/">RaiseMyHand</a>. We’ll use it in class so you can ask questions, share feedback, and flag anything that’s unclear—completely anonymously. If you see a question you also have, you can upvote it so we know what to address first.</p>
+<p>If you run into bugs or have feature ideas, please submit them as <a class="reference external" href="https://github.com/OER-Forge/raisemyhand/issues">GitHub issues</a>. The repository is here: <a class="github reference external" href="https://github.com/OER-Forge/raisemyhand">OER-Forge/raisemyhand</a></p>
+<p><a class="reference external" href="https://github.com/OER-Forge/raisemyhand/issues"><img alt="Report Issues" src="https://img.shields.io/badge/report%20issues-GitHub-blue" /></a>
+<a class="reference external" href="https://github.com/OER-Forge/raisemyhand/issues"><img alt="GitHub Issues" src="https://img.shields.io/github/issues/OER-Forge/raisemyhand" /></a></p>
+</section>
 </section>
 <section id="homework-assignments">
 <h2>Homework Assignments<a class="headerlink" href="#homework-assignments" title="Link to this heading">#</a></h2>
 <p>Our view of homework is that they should be helpful in deepening your learning and that you should be encouraged to work collaboratively on them. These exercises are often challenging, and it’s typical that a single student might not be able to solve them on their own – indeed, the time to solve and write solutions for them is often too long for a single student to complete. Moreover, we believe that collaboration not competition is critical to learning.</p>
-<p>You may work collaboratively on homework assignments, but you must turn in solutions that are your collective work. This means that you should be able to explain the solutions to your peers and that you should be able to reproduce the solutions on your own. Each person must turn in their own assignment, but that assignment can be the same as one other peer.</p>
-<p><strong>That is, you are free to work in pairs.</strong></p>
-<p>Note! Some assignments will ask for personal efforts, usually related to your own interests, researching some topic, or the like. These will be marked and MUST be completed alone.</p>
+<p>You may work collaboratively on homework assignments, but you must turn in solutions that are your collective work. This means that you should be able to explain the solutions to your peers and that you should be able to reproduce the solutions on your own.</p>
+<p><strong>That is, you are free to work in up to groups of 3.</strong></p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <ul class="simple">
@@ -479,31 +505,40 @@ document.write(`
 <li><p>For assignments where you are asked to complete the exercise alone, you must do so (of course, discussion of the exercise with others is perfectly ok).</p></li>
 </ul>
 </div>
+<p>More details on homework assignments can be found on the <a class="reference internal" href="../assignments/assignment-overview.html"><span class="std std-doc">assignments overview page</span></a>.</p>
+<p><strong>We will drop the lowest homework score when calculating your final grade.</strong></p>
+<section id="exercise-0">
+<h3>Exercise 0<a class="headerlink" href="#exercise-0" title="Link to this heading">#</a></h3>
+<p>Each homework assignment will have an individual exercise called Exercise 0. This exercise is meant to introduce you more to physics culture, history, and practices. It is also meant to help you reflect on your learning and growth as a physicist. Here, we take a broader view of what it means to be a physicist and to do physics and what is valued in the physics community.</p>
+<p>Exercise 0 will be graded for completion only and factor into your reflection grade. It is also submitted along with the rest of the homework assignment, but on D2L, it will be a separate submission.</p>
 <div class="admonition-homework-submission admonition">
 <p class="admonition-title">Homework Submission</p>
-<p>You will submit your homework assignments on <a class="reference external" href="https://www.gradescope.com/">Gradescope</a>.</p>
+<p>You will submit Exercise 0 on <a class="reference external" href="https://d2l.msu.edu/d2l/login">D2L</a>.</p>
+<p>You will submit the rest of your homework assignment on <a class="reference external" href="https://www.gradescope.com/">Gradescope</a>.</p>
 <p>How to <a class="reference internal" href="#../resources/gradescope-submissions"><span class="xref myst">submit your homework on Gradescope</span></a>.</p>
 </div>
+</section>
 <section id="homework-reflections">
 <h3>Homework Reflections<a class="headerlink" href="#homework-reflections" title="Link to this heading">#</a></h3>
-<p>In addition to the homework assignments, you will be asked to write a reflection on your learning for each homework assignment. These reflections are meant to help you think about your learning, to help us understand how to best support you, and to help you grow as a learner. They are also helping us to ensure that you and your classmates are working productively on homework assignments.</p>
-<p>These reflections will be graded for completion only and factor into your reflection grade.</p>
+<p>In addition to the homework assignments, you will be asked to write a short reflection on your learning for each homework assignment. These reflections are meant to help you think about your learning, to help us understand how to best support you, and to help you grow as a learner. They are also helping us to ensure that you and your classmates are working productively on homework assignments.</p>
+<p>These reflections will be graded for completion only and factor into your reflection grade. They will be posted on <a class="reference external" href="https://d2l.msu.edu/d2l/login">D2L</a> along with Exercise 0.</p>
+<p><strong>We will drop the lowest reflection score when calculating your final grade.</strong></p>
 </section>
 </section>
 <section id="midterm-and-final-projects">
 <h2>Midterm and Final Projects<a class="headerlink" href="#midterm-and-final-projects" title="Link to this heading">#</a></h2>
-<p>There are no exams in this course, instead, we will have two midterms and a final project. The midterms will be take-home exams that are similar to the homework assignments, but they will cover a broader range of material.</p>
+<p>There are no exams in this course, instead, we will have two midterms and a final project. The midterms will be take-home exams that are similar to the homework assignments, but they will cover a broader range of material. They often require you to synthesize material from multiple weeks, and to apply your knowledge in new ways.</p>
 <section id="midterms">
 <h3>Midterms<a class="headerlink" href="#midterms" title="Link to this heading">#</a></h3>
 <p>The same rules apply to midterms with respect to collaboration; you are welcome to work with your classmates, and the teaching staff to complete the exams.</p>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
+<div class="tip admonition">
+<p class="admonition-title">Midterm Collaboration and Guidelines</p>
+<p>You may work with up to two other classmates on the midterms.</p>
 <ul class="simple">
 <li><p>The take-home midterms will be open for almost two weeks; you can often start some exercises early as they cover older material.</p></li>
 <li><p>They are meant to be challenging, but we will provide you with the resources and support you need to complete them.</p></li>
 <li><p>There is no homework due during the period in which the midterm is assigned.</p></li>
-<li><p>You may again turn in your midterm with up to one other collaborator.</p></li>
-<li><p>For midterm questions that indicate you should complete it alone, you must do so.</p></li>
+<li><p>You may again turn in your midterm with up to two other collaborators.</p></li>
 </ul>
 </div>
 </section>
@@ -512,10 +547,41 @@ document.write(`
 <p>The final project will be a computational project that will be due during the final exam period.</p>
 <p>The project will be a chance for you to explore a topic of interest to you, to deepen your understanding of the material, and to grow your physics and computational skills. Here, we are hoping you synthesize the various concepts and methods we have developed to investigate a physical problem of your interest.</p>
 <p>We will provide you with a list of projects to choose from, but you are welcome to propose your own project. We will provide a few examples of such projects later in the semester. The final project can be completed with a partner or alone.</p>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<p>Note that some project scaffolding exercises will appear on later homework sets; those will be submitted separately and do not need to be completed with your homework partner.</p>
+<div class="tip admonition">
+<p class="admonition-title">Final Project Partners</p>
+<p>You may work with up to two other classmates on the final project.</p>
+<p><strong>You will need to decide on your up to 2 final project partners (if any) by the midterm 2 due date.</strong></p>
+<p>Why?</p>
+<p>Project scaffolding exercises will appear on later homework sets; those will be submitted separately and do not need to be completed with your project partners (who might not be your homework partners).</p>
+<p>We will collect those on D2L in order to provide feedback as you develop your project. D2L and Gradescope have different group management systems, so this separation helps us manage submissions more effectively.</p>
 </div>
+</section>
+</section>
+<section id="extra-credit-opportunities">
+<h2>Extra Credit Opportunities<a class="headerlink" href="#extra-credit-opportunities" title="Link to this heading">#</a></h2>
+<section id="homework-extra-credit-attending-events">
+<h3>Homework Extra Credit (Attending Events)<a class="headerlink" href="#homework-extra-credit-attending-events" title="Link to this heading">#</a></h3>
+<p>In this course, you can earn extra credit by attending optional workshops, participating in physics-related events, or professional development activities. These opportunities will be announced throughout the semester.</p>
+<p>You can earn 5% on your homework assignment each week if you participate in an extra credit opportunity that week and write a short reflection (about 200 words) on your experience.</p>
+</section>
+<section id="midterm-extra-credit-professional-development">
+<h3>Midterm Extra Credit (Professional Development)<a class="headerlink" href="#midterm-extra-credit-professional-development" title="Link to this heading">#</a></h3>
+<p>You can earn extra credit by working with Danny to develop a career or professional development plan. This plan will help you identify your goals, strengths, and areas for growth. You can earn up to 5% extra credit on each midterm grade by completing this plan and meeting with Danny to discuss it.</p>
+<section id="midterm-1-extra-credit-plan-5-on-midterm-1">
+<h4>Midterm 1 Extra Credit Plan (5% on Midterm 1)<a class="headerlink" href="#midterm-1-extra-credit-plan-5-on-midterm-1" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p>Before Midterm 1: Meet with Danny to discuss your career goals and develop a plan.</p></li>
+<li><p>By Midterm 1: Submit a written plan (about 500 words) outlining your goals, strengths, and areas for growth.</p></li>
+</ul>
+</section>
+<section id="midterm-2-extra-credit-plan-5-on-midterm-2">
+<h4>Midterm 2 Extra Credit Plan (5% on Midterm 2)<a class="headerlink" href="#midterm-2-extra-credit-plan-5-on-midterm-2" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p>Between Midterm 1 and Midterm 2: Meet with Danny to discuss your progress and any adjustments to your plan.</p></li>
+<li><p>By Midterm 2: Submit a revised plan (about 1000 words) outlining your progress and any adjustments to your goals, strengths, and areas for growth.</p></li>
+<li><p>By end of the semester: Complete at least one professional development activity (e.g., attending a workshop, networking event, or informational interview) and write a reflection (about 500 words) on your experience.</p></li>
+</ul>
+</section>
 </section>
 </section>
 <div class="toctree-wrapper compound">
@@ -586,16 +652,32 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#before-the-first-class-and-into-the-first-week">Before the first class and into the first week</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preparing-for-class-each-week">Preparing for class each week</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-typical-class-week">A typical class week</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preparing-for-class-each-week">Preparing for class each week</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#content-check-ins">Content Check-ins</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-typical-class-week">A typical class week</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#iclickers">iClickers</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#raisemyhand">🙋 RaiseMyHand</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#homework-assignments">Homework Assignments</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-0">Exercise 0</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#homework-reflections">Homework Reflections</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#midterm-and-final-projects">Midterm and Final Projects</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#midterms">Midterms</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#final-project">Final Project</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#extra-credit-opportunities">Extra Credit Opportunities</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#homework-extra-credit-attending-events">Homework Extra Credit (Attending Events)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#midterm-extra-credit-professional-development">Midterm Extra Credit (Professional Development)</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#midterm-1-extra-credit-plan-5-on-midterm-1">Midterm 1 Extra Credit Plan (5% on Midterm 1)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#midterm-2-extra-credit-plan-5-on-midterm-2">Midterm 2 Extra Credit Plan (5% on Midterm 2)</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
