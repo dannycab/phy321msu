@@ -2,8 +2,14 @@
 
 ## Course Materials:
 
-- Posted materials were adapted from https://mhjensen.github.io/Physics321/doc/web/course.html. They are not meant to be a replacement for textbook readings and deeper research. 
+- [Posted materials](../lecture-notes/weekly-materials.md) were adapted from https://mhjensen.github.io/Physics321/doc/web/course.html. They are not meant to be a replacement for textbook readings and deeper research. 
 - Examples and exercises in these materials are often inspired by the recommended textbooks below.
+
+:::{tip}
+Reading from the course materials is **strongly recommended** before each lecture. This will help you follow along and engage with the content. The examples and approaches we use in class follow these materials closely.
+
+The [calendar](./schedule-cal.md) includes suggested readings for each week.
+:::
 
 ## Recommended Textbooks:
 
