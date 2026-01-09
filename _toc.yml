@@ -28,6 +28,7 @@ parts:
           - file: lecture-notes/11_notes
           - file: lecture-notes/12_notes
           - file: lecture-notes/13_notes
+          - file: lecture-notes/14_notes
       - file: assignments/assignment-overview
         sections:
         - file: assignments/hw1.ipynb
@@ -56,6 +57,6 @@ parts:
     chapters: 
       - file: resources/euler_integration
       - file: resources/integrators
-      # - file: resources/phase_diagrams
-      # - file: resources/chaotic_dynamics
+      - file: resources/phase_diagrams
+      - file: resources/chaotic_dynamics
       # - file: resources/chaotic_dynamics-completed

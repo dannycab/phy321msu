@@ -1,7 +1,10 @@
 {
   "permissions": {
     "allow": [
-      "WebFetch(domain:jupyterbook.org)"
+      "WebFetch(domain:jupyterbook.org)",
+      "Bash(gh label create:*)",
+      "Bash(ls:*)",
+      "Bash(done)"
     ]
   }
 }
