@@ -390,11 +390,7 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#interpreting-your-analysis">Interpreting your Analysis</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#where-are-we-going">Where are we going?</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#veritasium-the-butterfly-effect-and-chaotic-systems-13-minute-video">Veritasium - The Butterfly Effect and Chaotic Systems (13 minute video)</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#university-of-bristol-chaos-theory-and-randomness-8-minute-video">University of Bristol - Chaos Theory and Randomness (8 minute video)</a></li>
-</ul>
-</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#where-are-we-going">Where are we going?</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#stability-and-equilibria">Stability and Equilibria</a><ul class="nav section-nav flex-column">
@@ -421,7 +417,7 @@ document.write(`
   <section id="nature-often-seeks-stability">
 <h1>06 - Nature Often Seeks Stability<a class="headerlink" href="#nature-often-seeks-stability" title="Link to this heading">#</a></h1>
 <p><a class="reference external" href="https://github.com/dannycab/phy321msu/issues"><img alt="Report Issues" src="https://img.shields.io/badge/report%20issues-GitHub-blue" /></a>
-<a class="reference external" href="https://github.com/dannycab/phy321msu/issues"><img alt="GitHub Issues" src="https://img.shields.io/github/issues/dannycab/phy321msu" /></a></p>
+<a class="reference external" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="License: CC BY-NC-SA 4.0" src="https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg" /></a></p>
 <section id="learning-goals">
 <h2>Learning Goals<a class="headerlink" href="#learning-goals" title="Link to this heading">#</a></h2>
 <div class="note admonition">
@@ -451,6 +447,10 @@ document.write(`
 <p>There are many systems that we can transform into a simple harmonic oscillator. And it is not because the world is full of springs and masses. It is because the simple harmonic oscillator is a good model for many systems near their local equilibrium points. In fact, as you will see, it is the leading (non-constant) term in every Taylor expansion of a 1D potential energy function near a local minimum.</p>
 <section id="another-sho-example-a-pendulum">
 <h4>Another SHO Example - A Pendulum<a class="headerlink" href="#another-sho-example-a-pendulum" title="Link to this heading">#</a></h4>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Add figure of pendulum</p>
+</div>
 <p>Consider a pendulum of mass <span class="math notranslate nohighlight">\(m\)</span> and length <span class="math notranslate nohighlight">\(L\)</span> that is displaced from the vertical by an angle <span class="math notranslate nohighlight">\(\theta\)</span>. We can show that the complete equation of motion (without drag) is:</p>
 <div class="math notranslate nohighlight">
 \[mL\ddot{\theta} = - mg\sin \theta,\]</div>
@@ -527,16 +527,16 @@ document.write(`
 <p>This work we are doing to understand equations of motion, stability, and equilibrium points is foundational. Some of the most exciting physics we see today is rooted in understanding how systems move away from equilibrium, and how they respond to external driving. <a class="reference external" href="https://en.wikipedia.org/wiki/Chaos_theory">Chaos theory</a> is a field that has grown out of understanding how systems can be very sensitive to initial conditions, and how they can exhibit complex behavior.</p>
 <p>We will start to use these ideas from this week into next week as we build a set of additional tools like <a class="reference external" href="https://en.wikipedia.org/wiki/Phase_space">phase space diagrams</a> and using asymptotic behavior to investigate and explain the behavior of physical systems.</p>
 <p>To introduce some of those initial ideas here are two videos from different physics perspectives on the topic of chaos.</p>
-<section id="veritasium-the-butterfly-effect-and-chaotic-systems-13-minute-video">
-<h4>Veritasium - The Butterfly Effect and Chaotic Systems (13 minute video)<a class="headerlink" href="#veritasium-the-butterfly-effect-and-chaotic-systems-13-minute-video" title="Link to this heading">#</a></h4>
+<div class="tip admonition">
+<p class="admonition-title">Veritasium - The Butterfly Effect and Chaotic Systems (13 minute video)</p>
 <p>In this video, Derek Muller uses the typical example of the Butterfly Effect to introduce the idea of chaos theory. The philosophical aspects of the butterfly effect are interesting, but not real in any physical sense. Instead, it’s a metaphor for the idea that small changes in initial conditions can lead to large changes in the system. Muller contrasts our understanding of determinism with uncertainty; he introduces the concepts of sensitivity to initial conditions and discusses the idea of an attractor.</p>
-<iframe width="800" height="450" src="https://www.youtube.com/embed/fDek6cYijxI" title="Veritasium - The Butterfly Effect and Chaotic Systems" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</section>
-<section id="university-of-bristol-chaos-theory-and-randomness-8-minute-video">
-<h4>University of Bristol - Chaos Theory and Randomness (8 minute video)<a class="headerlink" href="#university-of-bristol-chaos-theory-and-randomness-8-minute-video" title="Link to this heading">#</a></h4>
+<iframe width="700" height="410" src="https://www.youtube.com/embed/fDek6cYijxI" title="Veritasium - The Butterfly Effect and Chaotic Systems" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<div class="tip admonition">
+<p class="admonition-title">University of Bristol - Chaos Theory and Randomness (8 minute video)</p>
 <p>In this video, two researchers from the University of Bristol (<a class="reference external" href="https://people.maths.bris.ac.uk/~majm/">Jens Marklof</a> and <a class="reference external" href="https://people.maths.bris.ac.uk/~te20281/">Henna Koivusalo</a>) discuss the idea of chaos theory from a more mathematical perspective - reminding us of the differences between randomness and chaos. The overlap between physicists and mathematicians in the study of chaos is significant. One important contribution is <a class="reference external" href="https://en.wikipedia.org/wiki/Dynamical_system">Dynamical systems</a>, which is a mathematical framework that is used to study these behaviors. The researchers who do this work are mathematicians, physicists, engineers, and computer scientists. They do experiments, but they also do a lot of mathematical modeling.</p>
-<iframe width="800" height="450" src="https://www.youtube.com/embed/5fRhasVmcUE" title="University of Bristol - Chaos Theory and Randomness" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</section>
+<iframe width="700" height="410" src="https://www.youtube.com/embed/5fRhasVmcUE" title="University of Bristol - Chaos Theory and Randomness" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 </section>
 </section>
 <section id="stability-and-equilibria">
@@ -783,11 +783,7 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#interpreting-your-analysis">Interpreting your Analysis</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#where-are-we-going">Where are we going?</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#veritasium-the-butterfly-effect-and-chaotic-systems-13-minute-video">Veritasium - The Butterfly Effect and Chaotic Systems (13 minute video)</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#university-of-bristol-chaos-theory-and-randomness-8-minute-video">University of Bristol - Chaos Theory and Randomness (8 minute video)</a></li>
-</ul>
-</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#where-are-we-going">Where are we going?</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#stability-and-equilibria">Stability and Equilibria</a><ul class="nav section-nav flex-column">

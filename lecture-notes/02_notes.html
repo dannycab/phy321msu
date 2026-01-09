@@ -385,7 +385,6 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-goals">Learning Goals</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#most-classical-mechanics-systems-are-nonlinear">Most Classical Mechanics Systems are Nonlinear</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#scientific-computing">Scientific Computing</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#history-of-computing">History of Computing</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-critical-perspective-on-computing">A Critical Perspective on Computing</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-does-any-of-this-have-to-do-with-physics">What does any of this have to do with Physics?</a></li>
 </ul>
@@ -394,13 +393,9 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#euler-discretization">Euler Discretization</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#taking-finite-differences-to-define-kinematic-quantities">Taking finite differences to define kinematic quantities</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#predicting-the-motion">Predicting the motion</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#video-summary-13-minutes">Video Summary (13 minutes)</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#discretizing-newton-s-second-law">Discretizing Newton’s Second Law</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#looking-ahead">Looking Ahead</a></li>
-</ul>
-</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#discretizing-newton-s-second-law">Discretizing Newton’s Second Law</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#additional-preliminaries">Additional Preliminaries</a><ul class="nav section-nav flex-column">
@@ -473,15 +468,15 @@ document.write(`
 <h2>Scientific Computing<a class="headerlink" href="#scientific-computing" title="Link to this heading">#</a></h2>
 <p>We will explore a broad class of problems using plotting and numerical integration as principal tools. These techniques and algorithms, along with the software we use, fall within the broader field of <a class="reference external" href="https://en.wikipedia.org/wiki/Scientific_computing">scientific computing</a>. Scientific computing focuses on developing mathematical models and numerical methods to solve problems in the natural sciences and engineering.</p>
 <p>For historical context, the <a class="reference external" href="https://en.wikipedia.org/wiki/Timeline_of_scientific_computing">Timeline of the Development of Scientific Computing</a> provides an excellent overview. The roots of this field trace back to significant advancements long before modern electronic devices. Much of the foundational mathematics, such as <a class="reference external" href="https://en.wikipedia.org/wiki/Euler_method">Euler’s Method</a> for solving differential equations, was developed in the 18th century by <a class="reference external" href="https://en.wikipedia.org/wiki/Leonhard_Euler">Leonhard Euler</a>. Implementing these algorithms on computers was a natural progression in scientific problem-solving, and was catalyzed by tremendous investments in the military industrial complex after World War II including the notorious <a class="reference external" href="https://en.wikipedia.org/wiki/RAND_Corporation">RAND corporation</a>. Much of this work in scientific computing was driven by the need to solve complex problems in physics and engineering that were otherwise intractable, but there was the added “benefit” of advancing military technology during the Cold War. Silicon Valley and the modern computing industry owe much of their existence to these investments and the <a class="reference external" href="https://en.wikipedia.org/wiki/Red_Scare">hysteria of the Cold War era</a>.</p>
-<section id="history-of-computing">
-<h3>History of Computing<a class="headerlink" href="#history-of-computing" title="Link to this heading">#</a></h3>
+<div class="tip admonition">
+<p class="admonition-title">History of Computing</p>
 <p>The history of scientific computing is deeply intertwined with the evolution of computing itself, a fascinating and complex narrative encompassing technical, social, political, military, and economic perspectives. Contributions to computing originated worldwide, starting with tools like the <a class="reference external" href="https://en.wikipedia.org/wiki/Abacus">abacus</a> in ancient China. Mechanical innovations such as <a class="reference external" href="https://en.wikipedia.org/wiki/Pascal%27s_calculator">Pascal’s adding machine</a> and <a class="reference external" href="https://en.wikipedia.org/wiki/Analytical_Engine">Babbage’s Analytical Engine</a> marked significant milestones leading toward the modern computer.</p>
 <p>To get an introductory overview, the video below from Futurology is a helpful resource, but it is by no means comprehensive or critical.</p>
-<iframe width="800" height="450" src="https://www.youtube.com/embed/-M6lANfzFsM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="700" height="410" src="https://www.youtube.com/embed/-M6lANfzFsM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <ul class="simple">
 <li><p><em>Source: <a class="reference external" href="https://www.youtube.com/watch?v=-M6lANfzFsM">https://www.youtube.com/watch?v=-M6lANfzFsM</a></em></p></li>
 </ul>
-</section>
+</div>
 <section id="a-critical-perspective-on-computing">
 <h3>A Critical Perspective on Computing<a class="headerlink" href="#a-critical-perspective-on-computing" title="Link to this heading">#</a></h3>
 <p>While the history of computing is often celebrated as a story of innovation, it is deeply entangled with systems of power, exploitation, and violence. Computing technologies have not only been tools of scientific progress but also instruments for surveillance, war, and perpetuation of systemic biases.</p>
@@ -574,14 +569,14 @@ document.write(`
 <div class="math notranslate nohighlight">
 \[y_{1} = y_0 + v_0*\Delta t\]</div>
 <p>As we will see below, we can use Newton’s Second Law to develop this idea and this pair of equations into an algorithm that will allow us to predict the velocity and location of any system.</p>
-</section>
-<section id="video-summary-13-minutes">
-<h4>Video Summary (13 minutes)<a class="headerlink" href="#video-summary-13-minutes" title="Link to this heading">#</a></h4>
+<div class="tip admonition">
+<p class="admonition-title">Video Summary (13 minutes)</p>
 <p>There’s many videos covering the topic of Euler’s method. Here’s a video that covers the basics of Euler’s method and how it can be used to solve differential equations. It somewhat follows the notes above, but it’s always good to hear another perspective.</p>
-<iframe width="800" height="450" src="https://www.youtube.com/embed/_0mvWedqW7c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="700" height="410" src="https://www.youtube.com/embed/_0mvWedqW7c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <ul class="simple">
 <li><p><em>Source: <a class="reference external" href="https://youtube.com/watch?v=_0mvWedqW7c">https://youtube.com/watch?v=_0mvWedqW7c</a></em></p></li>
 </ul>
+</div>
 </section>
 </section>
 <section id="discretizing-newton-s-second-law">
@@ -604,14 +599,14 @@ document.write(`
 \[v_{i+1} = v_i + \dfrac{F_i}{m}\Delta t\]</div>
 <p><strong>This is the Euler formulation for predicting the velocity of the object in the next time step – given the velocity at the current time step.</strong></p>
 <p>We pause here and will return to this formulation later, but this discretization is the basis for many numerical methods in classical mechanics, and we can apply it to solve the falling object problem above.</p>
-<section id="looking-ahead">
-<h4>Looking Ahead<a class="headerlink" href="#looking-ahead" title="Link to this heading">#</a></h4>
+<div class="tip admonition">
+<p class="admonition-title">Looking Ahead</p>
 <p>The development of the forward Euler scheme is the basis for many numerical methods in physics, and especially in classical mechanics. The video below is a longer introduction to the Euler Method and how it can be used to solve differential equations. It’s a bit more advanced than the previous video, but it’s a good introduction to the topic. We will revisit this topic a number of times, and you will have a chance to implement these methods in Python. <em>This video will be posted again when we cover numerical methods in more detail.</em></p>
-<iframe width="800" height="450" src="https://www.youtube.com/embed/MstPeOTCVzQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="700" height="410" src="https://www.youtube.com/embed/MstPeOTCVzQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <ul class="simple">
 <li><p><em>Source: <a class="reference external" href="https://www.youtube.com/watch?v=MstPeOTCVzQ">https://www.youtube.com/watch?v=MstPeOTCVzQ</a></em></p></li>
 </ul>
-</section>
+</div>
 </section>
 </section>
 <section id="additional-preliminaries">
@@ -857,7 +852,6 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-goals">Learning Goals</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#most-classical-mechanics-systems-are-nonlinear">Most Classical Mechanics Systems are Nonlinear</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#scientific-computing">Scientific Computing</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#history-of-computing">History of Computing</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#a-critical-perspective-on-computing">A Critical Perspective on Computing</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-does-any-of-this-have-to-do-with-physics">What does any of this have to do with Physics?</a></li>
 </ul>
@@ -866,13 +860,9 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#euler-discretization">Euler Discretization</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#taking-finite-differences-to-define-kinematic-quantities">Taking finite differences to define kinematic quantities</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#predicting-the-motion">Predicting the motion</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#video-summary-13-minutes">Video Summary (13 minutes)</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#discretizing-newton-s-second-law">Discretizing Newton’s Second Law</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#looking-ahead">Looking Ahead</a></li>
-</ul>
-</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#discretizing-newton-s-second-law">Discretizing Newton’s Second Law</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#additional-preliminaries">Additional Preliminaries</a><ul class="nav section-nav flex-column">
