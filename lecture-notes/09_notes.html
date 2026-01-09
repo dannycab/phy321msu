@@ -208,6 +208,7 @@
 <li class="toctree-l2"><a class="reference internal" href="11_notes.html">11 - Reformulating Classical Mechanics using the Calculus of Variations</a></li>
 <li class="toctree-l2"><a class="reference internal" href="12_notes.html">12 - The Core Principle of Classical Mechanics? The Principle of Least Action</a></li>
 <li class="toctree-l2"><a class="reference internal" href="13_notes.html">13 - Applying the Lagrangian Formulation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="14_notes.html">14 - Classical Mechanics Thus Far</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../assignments/assignment-overview.html">Assignments Overview</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -382,8 +383,7 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-goals">Learning Goals</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#collapse-of-the-tacoma-narrows-bridge-9-minute-video">Collapse of the Tacoma Narrows Bridge (9 minute video)</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-goals">Learning Goals</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#quantum-mechanical-resonance">Quantum Mechanical Resonance</a></li>
 </ul>
 </li>
@@ -423,7 +423,7 @@ document.write(`
   <section id="driving-oscillators-and-resonance-phenomenon">
 <h1>09 - Driving Oscillators and Resonance Phenomenon<a class="headerlink" href="#driving-oscillators-and-resonance-phenomenon" title="Link to this heading">#</a></h1>
 <p><a class="reference external" href="https://github.com/dannycab/phy321msu/issues"><img alt="Report Issues" src="https://img.shields.io/badge/report%20issues-GitHub-blue" /></a>
-<a class="reference external" href="https://github.com/dannycab/phy321msu/issues"><img alt="GitHub Issues" src="https://img.shields.io/github/issues/dannycab/phy321msu" /></a></p>
+<a class="reference external" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="License: CC BY-NC-SA 4.0" src="https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg" /></a></p>
 <section id="learning-goals">
 <h2>Learning Goals<a class="headerlink" href="#learning-goals" title="Link to this heading">#</a></h2>
 <div class="note admonition">
@@ -437,12 +437,14 @@ document.write(`
 </div>
 <p>Thus far, we have either worked with energy conserving systems or systems that dissipate energy to the point of stopping their motion. The primary examples have been conservative systems, potential energy oscillators, and systems with damping that extract all the kinetic energy from the system. <a class="reference external" href="https://en.wikipedia.org/wiki/Driven_oscillator">Driven Systems</a> are systems that are driven by external forcing. We use “forcing” because it’s not always a push or a pull. Radio systems use electromagnetic waves to drive the system. Climate systems are driven by thermal forcing.</p>
 <p>Driven oscillators are a specific type of driven system, we expect them to demonstrate recurrent bahevior. Driven ooscillators are quite common. Analog radios use a driven oscillator that is tuned to a specific frequency (99.5 FM is tuned to 99.5 MHz). When you dial the radio you are “tuning” the oscillator to the frequency of the broadcast. This is an illustration of the phenomenon of <a class="reference external" href="https://en.wikipedia.org/wiki/Resonance">resonance</a>. Resonance is a phenomenon where a system is driven at a frequency that matches (or closely matches) its natural frequency. When this happens, the amplitude of the oscillation can grow very large. Resonance is the phenomenon that caused the <a class="reference external" href="https://en.wikipedia.org/wiki/Tacoma_Narrows_Bridge_(1940)">collapse of the Tacoma Narrows Bridge</a> in 1940.</p>
-</section>
-<section id="collapse-of-the-tacoma-narrows-bridge-9-minute-video">
-<h2>Collapse of the Tacoma Narrows Bridge (9 minute video)<a class="headerlink" href="#collapse-of-the-tacoma-narrows-bridge-9-minute-video" title="Link to this heading">#</a></h2>
+<div class="tip admonition">
+<p class="admonition-title">Collapse of the Tacoma Narrows Bridge (9 minute video)</p>
 <p>Resonance is the phenomenon that caused the <a class="reference external" href="https://en.wikipedia.org/wiki/Tacoma_Narrows_Bridge_(1940)">collapse of the Tacoma Narrows Bridge</a> in 1940. The video below describes the collapse and how the bridge was rebuilt to avoid the same problem.</p>
-<iframe width="800" height="450" src="https://www.youtube.com/embed/mXTSnZgrfxM" title="Why the Tacoma Narrows Bridge Collapsed" frameborder="0" allowfullscreen></iframe>
-<p>Source: <a class="reference external" href="https://www.youtube.com/watch?v=mXTSnZgrfxM">https://www.youtube.com/watch?v=mXTSnZgrfxM</a></p>
+<iframe width="700" height="410" src="https://www.youtube.com/embed/mXTSnZgrfxM" title="Why the Tacoma Narrows Bridge Collapsed" frameborder="0" allowfullscreen></iframe>
+<ul class="simple">
+<li><p><em>Source: <a class="reference external" href="https://www.youtube.com/watch?v=mXTSnZgrfxM">https://www.youtube.com/watch?v=mXTSnZgrfxM</a></em></p></li>
+</ul>
+</div>
 <section id="quantum-mechanical-resonance">
 <h3>Quantum Mechanical Resonance<a class="headerlink" href="#quantum-mechanical-resonance" title="Link to this heading">#</a></h3>
 <p>You might have heard about resonance in the context of <a class="reference external" href="https://en.wikipedia.org/wiki/Resonance_(quantum_mechanics)">quantum mechanics</a> or most likely in <a class="reference external" href="https://en.wikipedia.org/wiki/Particle_physics">particle physics</a> or <a class="reference external" href="https://en.wikipedia.org/wiki/Nuclear_physics">nuclear physics</a>. In these cases, typically resonance is a phenomenon where a system is driven at a frequency that matches some natural spacing of energy levels. In quantum mechanics, frequency of light is related to it’s energy by <span class="math notranslate nohighlight">\(E = h \nu\)</span>, where <span class="math notranslate nohighlight">\(h\)</span> is Planck’s constant and <span class="math notranslate nohighlight">\(\nu\)</span> is the frequency of the light.</p>
@@ -484,7 +486,17 @@ $<span class="math notranslate nohighlight">\(m\ddot{x} + b \dot{x} + k x = 0\)<
 <p>Now we will add a driving force <span class="math notranslate nohighlight">\(F(t)\)</span> to the system, so that the equation of motion becomes
 $<span class="math notranslate nohighlight">\(m\ddot{x} +b \dot{x} + k x = F(t)\)</span>$</p>
 <p>We can represent that setup in the picture below. The blue spring with spring constant <span class="math notranslate nohighlight">\(k\)</span> is attached to a red mass <span class="math notranslate nohighlight">\(m\)</span>. There is a dashpot (damping) in green with damping constant <span class="math notranslate nohighlight">\(b=2\beta\)</span>. The driving force <span class="math notranslate nohighlight">\(F(t)\)</span> is shown in black and called “driver”.</p>
-<p><img alt="driven oscillator" src="../_images/driven_oscillator.png" /></p>
+<figure class="align-default" id="id1">
+<a class="reference internal image-reference" href="../_images/driven_oscillator.png"><img alt="Schematic of a driven oscillator with dashpot" src="../_images/driven_oscillator.png" style="width: 600px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 24 </span><span class="caption-text">Schematic of a driven oscillator with dashpot</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Redraw as vector graphic and post SVG</p>
+</div>
 <p>We write that differential equation as:</p>
 <div class="math notranslate nohighlight">
 \[\ddot{x} + 2\beta \dot{x} + \omega_0^2 x = F(t)/m=f(t)\]</div>
@@ -680,7 +692,17 @@ $<span class="math notranslate nohighlight">\(m\ddot{x} +b \dot{x} + k x = F(t)\
 \[A^2 = \dfrac{f_0^2}{\left(\omega_0^2 - \omega^2\right)^2 + 4\beta^2 \omega^2}.\]</div>
 <p>Let’s allow <span class="math notranslate nohighlight">\(\beta\)</span> to be small so that <span class="math notranslate nohighlight">\(4\beta^2 \omega^2\)</span> is small. If we focus on the denominator, we can see that the amplitude will be small when <span class="math notranslate nohighlight">\(\omega\)</span> is far from <span class="math notranslate nohighlight">\(\omega_0\)</span>. But if we choose <span class="math notranslate nohighlight">\(\omega\)</span> to be close to <span class="math notranslate nohighlight">\(\omega_0\)</span>, then the denominator will be small, and the amplitude will be large.</p>
 <p>The second result is a <a class="reference external" href="https://en.wikipedia.org/wiki/Resonance">resonance</a> effect. The system will resonate at a particular frequency, <span class="math notranslate nohighlight">\(\omega_0\)</span>, and the amplitude of the oscillations will be large. Below is a sketch of the response of a driven damped harmonic oscillator to a sinusoidal driving force. The amplitude of the oscillations is plotted as a function of the driving frequency <span class="math notranslate nohighlight">\(\omega\)</span>.</p>
-<p><img alt="Resonance Sketch" src="../_images/resonance.png" /></p>
+<figure class="align-default" id="id2">
+<a class="reference internal image-reference" href="../_images/resonance.png"><img alt="Resonant phenomenon depicted as the driver frequency is swept." src="../_images/resonance.png" style="width: 600px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 25 </span><span class="caption-text">Resonant phenomenon depicted as the driver frequency is swept.t</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Redraw as vector graphic and post SVG</p>
+</div>
 <section id="achieving-resonance">
 <h4>Achieving Resonance<a class="headerlink" href="#achieving-resonance" title="Link to this heading">#</a></h4>
 <p>There’s two ways that we can approach this. Let’s focus on the denominator of the amplitude equation:</p>
@@ -776,8 +798,7 @@ $<span class="math notranslate nohighlight">\(m\ddot{x} +b \dot{x} + k x = F(t)\
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-goals">Learning Goals</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#collapse-of-the-tacoma-narrows-bridge-9-minute-video">Collapse of the Tacoma Narrows Bridge (9 minute video)</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-goals">Learning Goals</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#quantum-mechanical-resonance">Quantum Mechanical Resonance</a></li>
 </ul>
 </li>

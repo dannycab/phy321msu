@@ -208,6 +208,7 @@
 <li class="toctree-l2"><a class="reference internal" href="11_notes.html">11 - Reformulating Classical Mechanics using the Calculus of Variations</a></li>
 <li class="toctree-l2"><a class="reference internal" href="12_notes.html">12 - The Core Principle of Classical Mechanics? The Principle of Least Action</a></li>
 <li class="toctree-l2"><a class="reference internal" href="13_notes.html">13 - Applying the Lagrangian Formulation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="14_notes.html">14 - Classical Mechanics Thus Far</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../assignments/assignment-overview.html">Assignments Overview</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -429,7 +430,7 @@ document.write(`
   <section id="investigating-systems-that-exhibit-chaotic-dynamics">
 <h1>10 - Investigating Systems that Exhibit Chaotic Dynamics<a class="headerlink" href="#investigating-systems-that-exhibit-chaotic-dynamics" title="Link to this heading">#</a></h1>
 <p><a class="reference external" href="https://github.com/dannycab/phy321msu/issues"><img alt="Report Issues" src="https://img.shields.io/badge/report%20issues-GitHub-blue" /></a>
-<a class="reference external" href="https://github.com/dannycab/phy321msu/issues"><img alt="GitHub Issues" src="https://img.shields.io/github/issues/dannycab/phy321msu" /></a></p>
+<a class="reference external" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="License: CC BY-NC-SA 4.0" src="https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg" /></a></p>
 <section id="learning-goals">
 <h2>Learning Goals<a class="headerlink" href="#learning-goals" title="Link to this heading">#</a></h2>
 <div class="note admonition">
@@ -460,11 +461,19 @@ document.write(`
 <section id="strange-attractors">
 <h3>Strange Attractors<a class="headerlink" href="#strange-attractors" title="Link to this heading">#</a></h3>
 <p>We have seen how systems can have fixed points - both stable and unstable - and we have seen periodic behavior. These are common in many dynamical systems. In our study of the harmonic oscillator, we observed that the system can exhibit periodic behavior when undamped or driven, but we also saw how it can settle to a stable fixed point when damped. As we move to study chaotic systems, we begin to see other kinds of behavior. Systems can have <a class="reference external" href="https://en.wikipedia.org/wiki/Limit_cycle">limit cycles</a> - periodic orbits that are stable or unstable. Below we show the limit cycle of the <a class="reference external" href="https://en.wikipedia.org/wiki/Van_der_Pol_oscillator">Van der Pol oscillator</a>,</p>
-<p><img alt="Limit Cycle" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/VanDerPolPhaseSpace.png/640px-VanDerPolPhaseSpace.png" /></p>
-<p>Source: <a class="reference external" href="https://commons.wikimedia.org/wiki/File:VanDerPolPhaseSpace.png">Wikipedia</a></p>
+<figure class="align-default" id="id2">
+<img alt="Illustration of a limit cycle observed in the Van der Pol oscillator." src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/VanDerPolPhaseSpace.png/640px-VanDerPolPhaseSpace.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 26 </span><span class="caption-text">Illustration of a limit cycle observed in the Van der Pol oscillator. <em>Source: <a class="reference external" href="https://commons.wikimedia.org/wiki/File:VanDerPolPhaseSpace.png">Wikipedia</a></em></span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
 <p>One of the most interesting types of <a class="reference external" href="https://en.wikipedia.org/wiki/Attractor">attractors</a> in dynamical systems is the <a class="reference external" href="https://en.wikipedia.org/wiki/Strange_attractor">strange attractor</a>. These are fractal structures in phase space towards which the system evolves over time. Strange attractors are complex and often exhibit self-similarity, meaning they look similar at different scales. The <a class="reference external" href="https://en.wikipedia.org/wiki/Lorenz_system">Lorenz attractor</a> is a famous example of a strange attractor, displaying a butterfly-shaped pattern.</p>
-<p><img alt="Lorenz Attractor" src="https://upload.wikimedia.org/wikipedia/commons/1/13/A_Trajectory_Through_Phase_Space_in_a_Lorenz_Attractor.gif" /></p>
-<p>Source: <a class="reference external" href="https://commons.wikimedia.org/wiki/File:A_Trajectory_Through_Phase_Space_in_a_Lorenz_Attractor.gif">Wikipedia</a></p>
+<figure class="align-default" id="id3">
+<img alt="Illustration of a Lorenz Attractor." src="https://upload.wikimedia.org/wikipedia/commons/1/13/A_Trajectory_Through_Phase_Space_in_a_Lorenz_Attractor.gif" />
+<figcaption>
+<p><span class="caption-number">Fig. 27 </span><span class="caption-text">Illustration of a Lorenz Attractor. <em>Source: [Wikipedia]<a class="reference external" href="https://commons.wikimedia.org/wiki/File:A_Trajectory_Through_Phase_Space_in_a_Lorenz_Attractor.gif">https://commons.wikimedia.org/wiki/File:A_Trajectory_Through_Phase_Space_in_a_Lorenz_Attractor.gif</a>)</em></span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
 </section>
 <section id="long-term-unpredictability">
 <h3>Long-term Unpredictability<a class="headerlink" href="#long-term-unpredictability" title="Link to this heading">#</a></h3>
@@ -766,7 +775,13 @@ document.write(`
 <h3>📝 Plotting the results<a class="headerlink" href="#plotting-the-results" title="Link to this heading">#</a></h3>
 <p>Once you have simulated the Duffing oscillator, you can plot the results to visualize its behavior over time. Your plot should be similar to the one above where you plot at least the position <span class="math notranslate nohighlight">\(x\)</span> over time, and then a phase space plot of <span class="math notranslate nohighlight">\(x\)</span> vs. <span class="math notranslate nohighlight">\(v\)</span>. Make sure that you label your axes and include a title for your plot; add starting and ending points to your plot so you are sure about the direction of the motion.</p>
 <p>This first set of plots should look similar to the one below.</p>
-<p><img alt="Duffing" src="../_images/first_duffing.png" /></p>
+<figure class="align-default" id="id4">
+<a class="reference internal image-reference" href="../_images/first_duffing.png"><img alt="Duffing oscillator time series and phase space diagram" src="../_images/first_duffing.png" style="width: 800px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 28 </span><span class="caption-text">Duffing oscillator time series and phase space diagram</span><a class="headerlink" href="#id4" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## Plot the time series and phase space</span>
@@ -823,8 +838,20 @@ document.write(`
 <h3>📝 Numerically Integrate the Lorenz Attractor<a class="headerlink" href="#numerically-integrate-the-lorenz-attractor" title="Link to this heading">#</a></h3>
 <p>In the cells below, we scaffold some of the code to simulate the Lorenz attractor. You will need to fill in the missing pieces. Once you plot the solution, you should be able to produce time series, and phase space plots of the Lorenz attractor. <strong>Note that the phase space for the Lorenz attractor is 3D (x,y,z), so you will need to use a 3D plotting function or plot projections.</strong></p>
 <p>For the parameters, we will use the canonical values of <span class="math notranslate nohighlight">\(\sigma = 10\)</span>, <span class="math notranslate nohighlight">\(\rho = 28\)</span>, and <span class="math notranslate nohighlight">\(\beta = \frac{8}{3}\)</span>. Choose initial conditions of <span class="math notranslate nohighlight">\(x=1\)</span>, <span class="math notranslate nohighlight">\(y=1\)</span>, and <span class="math notranslate nohighlight">\(z=1\)</span> and simulate for 50 time units. If you do, your solution will look like the one below.</p>
-<p><img alt="Lorenz Time Series" src="../_images/lorenz-1.png" /></p>
-<p><img alt="Lorenz Phase Space" src="../_images/lorenz-2.png" /></p>
+<figure class="align-default" id="id5">
+<a class="reference internal image-reference" href="../_images/lorenz-1.png"><img alt="Lorenz Time Series" src="../_images/lorenz-1.png" style="width: 800px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 29 </span><span class="caption-text">Lorenz Time Series</span><a class="headerlink" href="#id5" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="id6">
+<a class="reference internal image-reference" href="../_images/lorenz-2.png"><img alt="Lorenz Phase Space" src="../_images/lorenz-2.png" style="width: 800px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 30 </span><span class="caption-text">Lorenz Phase Space</span><a class="headerlink" href="#id6" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>

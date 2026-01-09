@@ -62,7 +62,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'lecture-notes/13_notes';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Assignments Overview" href="../assignments/assignment-overview.html" />
+    <link rel="next" title="14 - Classical Mechanics Thus Far" href="14_notes.html" />
     <link rel="prev" title="12 - The Core Principle of Classical Mechanics? The Principle of Least Action" href="12_notes.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -208,6 +208,7 @@
 <li class="toctree-l2"><a class="reference internal" href="11_notes.html">11 - Reformulating Classical Mechanics using the Calculus of Variations</a></li>
 <li class="toctree-l2"><a class="reference internal" href="12_notes.html">12 - The Core Principle of Classical Mechanics? The Principle of Least Action</a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">13 - Applying the Lagrangian Formulation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="14_notes.html">14 - Classical Mechanics Thus Far</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../assignments/assignment-overview.html">Assignments Overview</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -383,7 +384,6 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-goals">Learning Goals</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-standard-model-lagrangian-17-minute-video">The Standard Model Lagrangian (17 minute video)</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#examples-of-lagrangian-mechanics">Examples of Lagrangian Mechanics</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-the-atwood-machine">Example: The Atwood Machine</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#equation-of-constraint">Equation of Constraint</a></li>
@@ -422,7 +422,7 @@ document.write(`
   <section id="applying-the-lagrangian-formulation">
 <h1>13 - Applying the Lagrangian Formulation<a class="headerlink" href="#applying-the-lagrangian-formulation" title="Link to this heading">#</a></h1>
 <p><a class="reference external" href="https://github.com/dannycab/phy321msu/issues"><img alt="Report Issues" src="https://img.shields.io/badge/report%20issues-GitHub-blue" /></a>
-<a class="reference external" href="https://github.com/dannycab/phy321msu/issues"><img alt="GitHub Issues" src="https://img.shields.io/github/issues/dannycab/phy321msu" /></a></p>
+<a class="reference external" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="License: CC BY-NC-SA 4.0" src="https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg" /></a></p>
 <section id="learning-goals">
 <h2>Learning Goals<a class="headerlink" href="#learning-goals" title="Link to this heading">#</a></h2>
 <div class="note admonition">
@@ -453,12 +453,15 @@ document.write(`
 <div class="math notranslate nohighlight">
 \[\dfrac{\partial \mathcal{L}}{\partial \dot{q}_i} = \dfrac{\partial T}{\partial \dot{q}_i} = p_{q_i}\]</div>
 <p>where <span class="math notranslate nohighlight">\(p_{q_i}\)</span> is the generalized momentum conjugate to the coordinate <span class="math notranslate nohighlight">\(q_i\)</span>.</p>
-</section>
-<section id="the-standard-model-lagrangian-17-minute-video">
-<h2>The Standard Model Lagrangian (17 minute video)<a class="headerlink" href="#the-standard-model-lagrangian-17-minute-video" title="Link to this heading">#</a></h2>
+<div class="tip admonition">
+<p class="admonition-title">The Standard Model Lagrangian (17 minute video)</p>
 <p>An understanding of physics formulated through <a class="reference external" href="https://en.wikipedia.org/wiki/Lagrangian_mechanics">Lagrangian Mechanics</a> is a powerful and elegant way to describe the motion of particles and systems. But it can be much more than that. Much of the work of particle physics is done in the context of the <a class="reference external" href="https://en.wikipedia.org/wiki/Standard_Model">Standard Model</a>. The Standard Model is a theory that describes the electromagnetic, weak, and strong nuclear interactions. The Standard Model is a <a class="reference external" href="https://en.wikipedia.org/wiki/Quantum_field_theory">quantum field theory</a>, which is formulated through a Lagrangian.</p>
 <p>The video below provides an introduction to this equation and the Standard Model.</p>
-<iframe width="800" height="450" src="https://www.youtube.com/embed/PHiyQID7SBs" title="Standard Model Lagrangian" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="700" height="410" src="https://www.youtube.com/embed/PHiyQID7SBs" title="Standard Model Lagrangian" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<ul class="simple">
+<li><p><em>Source: <a class="reference external" href="https://www.youtube.com/embed/PHiyQID7SBs">https://www.youtube.com/embed/PHiyQID7SBs</a></em></p></li>
+</ul>
+</div>
 </section>
 <section id="examples-of-lagrangian-mechanics">
 <h2>Examples of Lagrangian Mechanics<a class="headerlink" href="#examples-of-lagrangian-mechanics" title="Link to this heading">#</a></h2>
@@ -466,7 +469,17 @@ document.write(`
 <section id="example-the-atwood-machine">
 <h3>Example: The Atwood Machine<a class="headerlink" href="#example-the-atwood-machine" title="Link to this heading">#</a></h3>
 <p>The <a class="reference external" href="https://en.wikipedia.org/wiki/Atwood_machine">Atwood machine</a> consists of two masses, <span class="math notranslate nohighlight">\(M\)</span> and <span class="math notranslate nohighlight">\(m\)</span>, connected by a massless string that passes over a massless pulley. The system is subject to gravity alone. The figure below shows the system along with a choice of coordinates <span class="math notranslate nohighlight">\(y_1\)</span> and <span class="math notranslate nohighlight">\(y_2\)</span> for the two masses.</p>
-<p><img alt="Atwood Machine" src="../_images/atwood.png" /></p>
+<figure class="align-default" id="id3">
+<a class="reference internal image-reference" href="../_images/atwood.png"><img alt="Atwood Machine" src="../_images/atwood.png" style="width: 800px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 37 </span><span class="caption-text">Atwood Machine</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Redraw as vector graphic and post SVG</p>
+</div>
 <p>These coordinates are measured from the center of the pulley and positive <span class="math notranslate nohighlight">\(y_1\)</span> and <span class="math notranslate nohighlight">\(y_2\)</span> are taken to be upward. Let’s try to use the Lagrangian formalism to find the equations of motion for this system.</p>
 <div class="math notranslate nohighlight">
 \[V = + Mgy_1 + mgy_2\]</div>
@@ -478,7 +491,17 @@ document.write(`
 <div class="math notranslate nohighlight">
 \[y_1 + \pi R + y_2 = l\]</div>
 <p>where <span class="math notranslate nohighlight">\(R\)</span> is the radius of the pulley. That is shown in the figure below.</p>
-<p><img alt="Unraveled String" src="../_images/string-unraveled.png" /></p>
+<figure class="align-default" id="id4">
+<a class="reference internal image-reference" href="../_images/string-unraveled.png"><img alt="Unraveled String" src="../_images/string-unraveled.png" style="width: 800px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 38 </span><span class="caption-text">Unraveled String</span><a class="headerlink" href="#id4" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Redraw as vector graphic and post SVG</p>
+</div>
 <p>The equation above is called an <strong>equation of constraint</strong>. It relates the coordinates <span class="math notranslate nohighlight">\(y_1\)</span> and <span class="math notranslate nohighlight">\(y_2\)</span> to each other. We can use this equation to eliminate one of the coordinates. Let’s eliminate <span class="math notranslate nohighlight">\(y_2\)</span>:</p>
 <div class="math notranslate nohighlight">
 \[l = y_1 + \pi R + y_2 \rightarrow y_1 = (l - \pi R) - y_2\]</div>
@@ -629,7 +652,17 @@ V(\phi) &amp;= (M-m)gy_1 + U_0 \\
 <div class="math notranslate nohighlight">
 \[z = \dfrac{1}{2}c(x^2 + y^2)\]</div>
 <p>where <span class="math notranslate nohighlight">\(c\)</span> is a constant that describes the curvature of the bowl. The figure below shows the system.</p>
-<p><img alt="Bead in a Parabolic Bowl" src="../_images/paraboloid.png" /></p>
+<figure class="align-default" id="id5">
+<a class="reference internal image-reference" href="../_images/paraboloid.png"><img alt="Bead in a Parabolic Bowl" src="../_images/paraboloid.png" style="width: 800px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 39 </span><span class="caption-text">Bead in a Parabolic Bowl</span><a class="headerlink" href="#id5" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Redraw as vector graphic and post SCG</p>
+</div>
 <p>In this case the system is better solved in cylindrical coordinates. The coordinates are <span class="math notranslate nohighlight">\((r, \phi, z)\)</span>, where <span class="math notranslate nohighlight">\(r\)</span> is the distance from the <span class="math notranslate nohighlight">\(z\)</span>-axis, <span class="math notranslate nohighlight">\(\phi\)</span> is the angle around the <span class="math notranslate nohighlight">\(z\)</span>-axis, and <span class="math notranslate nohighlight">\(z\)</span> is the height above the <span class="math notranslate nohighlight">\(xy\)</span>-plane as shown above.</p>
 <p>With <span class="math notranslate nohighlight">\(\langle \rho, \phi, z\rangle\)</span> as the coordinates, equation for the constraint is:</p>
 <div class="math notranslate nohighlight">
@@ -756,11 +789,11 @@ V(\phi) &amp;= (M-m)gy_1 + U_0 \\
       </div>
     </a>
     <a class="right-next"
-       href="../assignments/assignment-overview.html"
+       href="14_notes.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Assignments Overview</p>
+        <p class="prev-next-title">14 - Classical Mechanics Thus Far</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -781,7 +814,6 @@ V(\phi) &amp;= (M-m)gy_1 + U_0 \\
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-goals">Learning Goals</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-standard-model-lagrangian-17-minute-video">The Standard Model Lagrangian (17 minute video)</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#examples-of-lagrangian-mechanics">Examples of Lagrangian Mechanics</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-the-atwood-machine">Example: The Atwood Machine</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#equation-of-constraint">Equation of Constraint</a></li>

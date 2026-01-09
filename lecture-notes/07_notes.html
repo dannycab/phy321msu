@@ -208,6 +208,7 @@
 <li class="toctree-l2"><a class="reference internal" href="11_notes.html">11 - Reformulating Classical Mechanics using the Calculus of Variations</a></li>
 <li class="toctree-l2"><a class="reference internal" href="12_notes.html">12 - The Core Principle of Classical Mechanics? The Principle of Least Action</a></li>
 <li class="toctree-l2"><a class="reference internal" href="13_notes.html">13 - Applying the Lagrangian Formulation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="14_notes.html">14 - Classical Mechanics Thus Far</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../assignments/assignment-overview.html">Assignments Overview</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -383,14 +384,8 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-goals">Learning Goals</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#nonlinear-differential-equations">Nonlinear Differential Equations</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#differential-equations-a-tourist-s-guide-27-min">Differential equations, a tourist’s guide (27 min)</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#phase-portraits">Phase Portraits</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#drawing-phase-portraits-for-nonlinear-systems-26-min">Drawing Phase Portraits for Nonlinear Systems (26 min)</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#nonlinear-differential-equations">Nonlinear Differential Equations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#phase-portraits">Phase Portraits</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#critical-points-phase-space-trajectories">Critical Points; Phase Space; Trajectories</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#developing-a-general-understanding-of-motion">Developing a General Understanding of Motion</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-a-nonlinear-1st-order-ode">Example: A Nonlinear 1st Order ODE</a><ul class="nav section-nav flex-column">
@@ -432,7 +427,7 @@ document.write(`
   <section id="introducing-nonlinear-dynamics">
 <h1>07 - Introducing Nonlinear Dynamics<a class="headerlink" href="#introducing-nonlinear-dynamics" title="Link to this heading">#</a></h1>
 <p><a class="reference external" href="https://github.com/dannycab/phy321msu/issues"><img alt="Report Issues" src="https://img.shields.io/badge/report%20issues-GitHub-blue" /></a>
-<a class="reference external" href="https://github.com/dannycab/phy321msu/issues"><img alt="GitHub Issues" src="https://img.shields.io/github/issues/dannycab/phy321msu" /></a></p>
+<a class="reference external" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="License: CC BY-NC-SA 4.0" src="https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg" /></a></p>
 <section id="learning-goals">
 <h2>Learning Goals<a class="headerlink" href="#learning-goals" title="Link to this heading">#</a></h2>
 <div class="note admonition">
@@ -454,11 +449,13 @@ document.write(`
 <section id="nonlinear-differential-equations">
 <h2>Nonlinear Differential Equations<a class="headerlink" href="#nonlinear-differential-equations" title="Link to this heading">#</a></h2>
 <p>Differential equations are the language of classical mechanics. They describe how the systems we investigate evolve over time. They track the <a class="reference external" href="https://en.wikipedia.org/wiki/State_variable">state variables</a> of the system, which are what define the system. For us, this is often the position components and the velocity components of the system. The video below gives a good overview of what differential equations are and why they are important for our study. It also provides an introduction to the concept of a <a class="reference external" href="https://en.wikipedia.org/wiki/Phase_space">phase space</a>, which is the space defined by all the state variables of the system.</p>
-<section id="differential-equations-a-tourist-s-guide-27-min">
-<h3>Differential equations, a tourist’s guide (27 min)<a class="headerlink" href="#differential-equations-a-tourist-s-guide-27-min" title="Link to this heading">#</a></h3>
-<iframe width="800" height="450" src="https://www.youtube.com/embed/p_di4Zn4wz4" frameborder="0" allowfullscreen></iframe>
-<p>Source: <a class="reference external" href="https://www.youtube.com/watch?v=p_di4Zn4wz4">https://www.youtube.com/watch?v=p_di4Zn4wz4</a></p>
-</section>
+<div class="tip admonition">
+<p class="admonition-title">Differential equations, a tourist’s guide (27 min)</p>
+<iframe width="700" height="410" src="https://www.youtube.com/embed/p_di4Zn4wz4" frameborder="0" allowfullscreen></iframe>
+<ul class="simple">
+<li><p><em>Source: <a class="reference external" href="https://www.youtube.com/watch?v=p_di4Zn4wz4">https://www.youtube.com/watch?v=p_di4Zn4wz4</a></em></p></li>
+</ul>
+</div>
 </section>
 <section id="phase-portraits">
 <h2>Phase Portraits<a class="headerlink" href="#phase-portraits" title="Link to this heading">#</a></h2>
@@ -466,11 +463,13 @@ document.write(`
 <p>We can also use a technique called <a class="reference external" href="https://en.wikipedia.org/wiki/Phase_portrait">phase portraits</a> to understand the behavior of these systems. A phase portrait is a graphical representation of the trajectories of a dynamical system in the phase space. That space is defined by the combination of all the state variables of the system. For example, a simple pendulum has two state variables: the angle and the angular velocity. The phase portrait of the pendulum is a plot of the angular velocity against the angle. Or for the harmonic oscillator, the phase portrait is a plot of the velocity against the position.</p>
 <p><em>Phase portraits are quite useful for second order differential equations (or any two-dimensional system) because we frequently use and interpret 2D graphs.</em> Notice that we focused on “2nd order differential equations” not “linear 2nd order.” That is because, as we will see, <strong>phase portraits are particularly useful for nonlinear 2nd order differential equations.</strong></p>
 <p>We will go into the details of how to construct and develop phase portraits in class. This video from <a class="reference external" href="https://www.me.washington.edu/facultyfinder/steve-brunton">Steve Brunton</a> is a good overview of the process. It’s quite detailed and takes a mathematical perspective, so don’t worry if you don’t understand everything in the video. We have plenty of time to investigate how this works in practice.</p>
-<section id="drawing-phase-portraits-for-nonlinear-systems-26-min">
-<h3>Drawing Phase Portraits for Nonlinear Systems (26 min)<a class="headerlink" href="#drawing-phase-portraits-for-nonlinear-systems-26-min" title="Link to this heading">#</a></h3>
-<iframe width="800" height="450" src="https://www.youtube.com/embed/vBwyD4JJlSs" frameborder="0" allowfullscreen></iframe>
-<p>Source: <a class="reference external" href="https://www.youtube.com/watch?v=vBwyD4JJlSs">https://www.youtube.com/watch?v=vBwyD4JJlSs</a></p>
-</section>
+<div class="tip admonition">
+<p class="admonition-title">Drawing Phase Portraits for Nonlinear Systems (26 min)</p>
+<iframe width="700" height="410" src="https://www.youtube.com/embed/vBwyD4JJlSs" frameborder="0" allowfullscreen></iframe>
+<ul class="simple">
+<li><p><em>Source: <a class="reference external" href="https://www.youtube.com/watch?v=vBwyD4JJlSs">https://www.youtube.com/watch?v=vBwyD4JJlSs</a></em></p></li>
+</ul>
+</div>
 </section>
 <section id="critical-points-phase-space-trajectories">
 <h2>Critical Points; Phase Space; Trajectories<a class="headerlink" href="#critical-points-phase-space-trajectories" title="Link to this heading">#</a></h2>
@@ -1038,14 +1037,8 @@ document.write(`
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-goals">Learning Goals</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#nonlinear-differential-equations">Nonlinear Differential Equations</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#differential-equations-a-tourist-s-guide-27-min">Differential equations, a tourist’s guide (27 min)</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#phase-portraits">Phase Portraits</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#drawing-phase-portraits-for-nonlinear-systems-26-min">Drawing Phase Portraits for Nonlinear Systems (26 min)</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#nonlinear-differential-equations">Nonlinear Differential Equations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#phase-portraits">Phase Portraits</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#critical-points-phase-space-trajectories">Critical Points; Phase Space; Trajectories</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#developing-a-general-understanding-of-motion">Developing a General Understanding of Motion</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-a-nonlinear-1st-order-ode">Example: A Nonlinear 1st Order ODE</a><ul class="nav section-nav flex-column">

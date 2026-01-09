@@ -208,6 +208,7 @@
 <li class="toctree-l2"><a class="reference internal" href="11_notes.html">11 - Reformulating Classical Mechanics using the Calculus of Variations</a></li>
 <li class="toctree-l2"><a class="reference internal" href="12_notes.html">12 - The Core Principle of Classical Mechanics? The Principle of Least Action</a></li>
 <li class="toctree-l2"><a class="reference internal" href="13_notes.html">13 - Applying the Lagrangian Formulation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="14_notes.html">14 - Classical Mechanics Thus Far</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../assignments/assignment-overview.html">Assignments Overview</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -384,10 +385,7 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-goals">Learning Goals</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reminder-of-the-sho">Reminder of the SHO</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#nonlinear-oscillators">Nonlinear oscillators</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#synchronization-21-minute-video">Synchronization (21 minute video)</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#nonlinear-oscillators">Nonlinear oscillators</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modeling-oscillations">Modeling Oscillations</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#why-do-we-often-see-oscillations-in-physics">Why do we often see oscillations in physics?</a></li>
 </ul>
@@ -427,7 +425,7 @@ document.write(`
   <section id="oscillations-cycles-and-nature-s-recurrences">
 <h1>08 - Oscillations, Cycles, and Nature’s Recurrences<a class="headerlink" href="#oscillations-cycles-and-nature-s-recurrences" title="Link to this heading">#</a></h1>
 <p><a class="reference external" href="https://github.com/dannycab/phy321msu/issues"><img alt="Report Issues" src="https://img.shields.io/badge/report%20issues-GitHub-blue" /></a>
-<a class="reference external" href="https://github.com/dannycab/phy321msu/issues"><img alt="GitHub Issues" src="https://img.shields.io/github/issues/dannycab/phy321msu" /></a></p>
+<a class="reference external" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="License: CC BY-NC-SA 4.0" src="https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg" /></a></p>
 <section id="learning-goals">
 <h2>Learning Goals<a class="headerlink" href="#learning-goals" title="Link to this heading">#</a></h2>
 <div class="note admonition">
@@ -485,8 +483,8 @@ document.write(`
 <div class="math notranslate nohighlight">
 \[\ddot{x} - \mu(1-x^2)\dot{x} + x - A \sin(\omega t)\]</div>
 <p>All of the tools we develop to investigate the SHO can be ported to these systems.</p>
-<section id="synchronization-21-minute-video">
-<h3>Synchronization (21 minute video)<a class="headerlink" href="#synchronization-21-minute-video" title="Link to this heading">#</a></h3>
+<div class="tip admonition">
+<p class="admonition-title">Synchronization (21 minute video)</p>
 <p>One of the most interesting aspects of an oscillator is that they can couple to each other. This leads to things like <a class="reference external" href="https://en.wikipedia.org/wiki/Beat_(acoustics)">beats</a>, where two oscillators with slightly different frequencies can create a new frequency that is the difference of the two. This is a common phenomenon in music, where two instruments playing slightly out of tune can create a new frequency that is the difference of the two.</p>
 <p>But even more interesting is the phenomenon of <a class="reference external" href="https://en.wikipedia.org/wiki/Synchronization">synchronization</a>.</p>
 <p>How do fireflies end up blinking together? How do walking people end up moving in step? How does your heart physically push blood through your body?</p>
@@ -494,9 +492,9 @@ document.write(`
 <p>When oscillators couple (or influence each other), we begin to see behavior that is more complex than the sole oscillator. These “coupled oscillators” can demonstrate a wide variety of behaviors, including synchronization. They also form the basis for important technologies like <a class="reference external" href="https://en.wikipedia.org/wiki/Laser">lasers</a> and <a class="reference external" href="https://en.wikipedia.org/wiki/Radio_transmitter">radio transmitters</a>.</p>
 <p>We will begin our study of oscillations with the <a class="reference external" href="https://en.wikipedia.org/wiki/Simple_harmonic_motion">simple harmonic oscillator</a>, then we add a little <a class="reference external" href="https://en.wikipedia.org/wiki/Damping">damping</a> to the system, and then move to more complex systems (e.g., <a class="reference external" href="https://en.wikipedia.org/wiki/Duffing_equation">the Duffing oscillator</a>).</p>
 <p>The video below is a good introduction to the topic of synchronization and worth a watch.</p>
-<iframe width="800" height="450" src="https://www.youtube.com/embed/t-_VPRCtiUg" title="The Surprising Secret of Synchronization" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="700" height="410" src="https://www.youtube.com/embed/t-_VPRCtiUg" title="The Surprising Secret of Synchronization" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <p><em>In this video, you’ll see real-world examples and demonstrations of synchronization, from metronomes to fireflies. Pay attention to how simple coupling between oscillators can lead to surprising collective behavior.</em></p>
-</section>
+</div>
 </section>
 <section id="modeling-oscillations">
 <h2>Modeling Oscillations<a class="headerlink" href="#modeling-oscillations" title="Link to this heading">#</a></h2>
@@ -613,7 +611,16 @@ document.write(`
 <h3>Complex Conjugates<a class="headerlink" href="#complex-conjugates" title="Link to this heading">#</a></h3>
 <p>These values of <span class="math notranslate nohighlight">\(C_1\)</span> and <span class="math notranslate nohighlight">\(C_2\)</span> are the complex conjugates of each other. The complex conjugate of a complex number <span class="math notranslate nohighlight">\(z=a+ib\)</span> is <span class="math notranslate nohighlight">\(z^*=a-ib\)</span>. The complex conjugate of a complex number is the same as the original number, but with the sign of the imaginary part reversed.</p>
 <p>We can draw these in the complex plane where the <span class="math notranslate nohighlight">\(x\)</span>-axis is the real part and the <span class="math notranslate nohighlight">\(y\)</span>-axis is the imaginary part.</p>
-<p><img alt="Complex Conjugates" src="../_images/conjugates_graph.png" /></p>
+<figure class="align-default" id="id1">
+<img alt="Complex Conjugates" src="../_images/conjugates_graph.png" />
+<figcaption>
+<p><span class="caption-number">Fig. 23 </span><span class="caption-text">Complex conjugates</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Redraw as vector graphic and rewrite text.</p>
+</div>
 <p>In the graph we can see that the complex conjugates are a reflection of each other. This is because the imaginary part of the complex conjugate is the negative of the original imaginary part.</p>
 <p>The mathematics is quite useful for us. Consider the produce of two complex conjugates:</p>
 <div class="math notranslate nohighlight">
@@ -1013,10 +1020,7 @@ $<span class="math notranslate nohighlight">\(x(t) = t e^{-\beta t}\)</span>$</p
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-goals">Learning Goals</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reminder-of-the-sho">Reminder of the SHO</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#nonlinear-oscillators">Nonlinear oscillators</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#synchronization-21-minute-video">Synchronization (21 minute video)</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#nonlinear-oscillators">Nonlinear oscillators</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modeling-oscillations">Modeling Oscillations</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#why-do-we-often-see-oscillations-in-physics">Why do we often see oscillations in physics?</a></li>
 </ul>
