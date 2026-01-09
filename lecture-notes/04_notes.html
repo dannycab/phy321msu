@@ -52,7 +52,7 @@
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script src="../_static/design-tabs.js?v=36754332"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
@@ -415,7 +415,7 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#linear-drag-in-two-dimensions">Linear Drag in Two-Dimensions</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Apply Newton’s Second Law</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Apply Newton’s Second Law</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#solve-the-equations">Solve the Equations</a><ul class="nav section-nav flex-column">
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#velocity-in-the-x-direction">Velocity in the <span class="math notranslate nohighlight">\(x\)</span> direction</a></li>
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#velocity-in-the-y-direction">Velocity in the <span class="math notranslate nohighlight">\(y\)</span> direction</a></li>
@@ -425,7 +425,7 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#d-gravitational-bound-system">2D Gravitational Bound System</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Define the Coordinate System</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Define the Coordinate System</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#how-do-we-then-get-the-trajectories">How do we then get the trajectories?</a></li>
 </ul>
 </li>
@@ -468,12 +468,22 @@ document.write(`
 <p>As an object moves through the fluid, the molecules of the fluid collide with the object and exert a force on it. This collision changes the momentum of the object just a little bit. The collision does so in a random way, but the average effect of all those collisions is to exert a force on the object that is proportional to a function of the object’s velocity, <span class="math notranslate nohighlight">\(F(v)\)</span>. In some cases those collisions occur such that they make an impact; other times they might approach the object more slowly and slide over it in familiar frictional interaction. These two behaviors are both fluid drag, but they are different forms.</p>
 <p>The first form (<span class="math notranslate nohighlight">\(F \sim v^2\)</span>) describes the behavior of things like a skydiver falling, a high-speed car, or a baseball thrown through the air. But it can also be valid for the movement of fish in water, or a submarine moving through the ocean.  Through those collisions, the distribution of those forces can cause intra-body forces, which can result in damage or deformation of the object. However, we often model the body as solid and focus on the way this form of air resistance changes the motion.</p>
 <p>This form of air resistance cannot describe the behavior of objects approaching the speed of sound in the fluid. Objects moving a speeds that high can produce <a class="reference external" href="https://en.wikipedia.org/wiki/Shock_wave">shock fronts</a> that forces the fluid to go through abrupt changes in density, pressure, and temperature. Below is a figure of a shock front produced the nose of a jet flying at supersonic speeds.</p>
-<p><img alt="A shock front from a supersonic jet" src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Schlierenfoto_Mach_1-2_Pfeilfl%C3%BCgel_-_NASA.jpg" /></p>
-<p>Source: <a class="reference external" href="https://commons.wikimedia.org/wiki/File:Schlierenfoto_Mach_1-2_Pfeilfl%C3%BCgel_-_NASA.jpg">Wikipedia</a></p>
+<figure class="align-default" id="id5">
+<a class="reference internal image-reference" href="https://upload.wikimedia.org/wikipedia/commons/7/7b/Schlierenfoto_Mach_1-2_Pfeilfl%C3%BCgel_-_NASA.jpg"><img alt="A shock front from a supersonic jet." src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Schlierenfoto_Mach_1-2_Pfeilfl%C3%BCgel_-_NASA.jpg" style="width: 400px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 10 </span><span class="caption-text">A shock front from a supersonic jet. Source: <a class="reference external" href="https://commons.wikimedia.org/wiki/File:Schlierenfoto_Mach_1-2_Pfeilfl%C3%BCgel_-_NASA.jpg">Wikipedia</a></span><a class="headerlink" href="#id5" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
 <p>The second form (<span class="math notranslate nohighlight">\(F \sim v\)</span>) describes the flow of a viscous fluid around a solid object. You might think of this as pulling an object through some viscous oil, honey, or even molasses. The movement of the fluid around the object exerts a force and slows the motion of the object.  In water, this form can explain the motion of some of the smallest creatures on Earth, like the <a class="reference external" href="https://en.wikipedia.org/wiki/Tardigrade">water bear</a>, an amoeba, or a paramecium.</p>
-<p>What is interesting here is that these creatures have had to adapt to this form of fluid drag. <a class="reference external" href="https://en.wikipedia.org/wiki/Edward_M._Purcell">Edward Purcell</a> wrote a paper in 1977 called <a class="reference download internal" download="" href="../_downloads/cfb7cbcef3b825707e67445e284ff58e/purcell_AJP_1977.pdf"><span class="xref download myst">Life at Low Reynolds Number</span></a> that describes the motion of these creatures. He demonstrates that the physics in this regime requires creature to have adapted forms of locomotion that can take advantage of that environment. The figure below is reproduced from Purcell showing the decreasing physical scale and, thus, lower <a class="reference external" href="https://en.wikipedia.org/wiki/Reynolds_number">Reynold’s numbers</a>.</p>
-<p><img alt="Figure 3 from Purcell's 1977 paper showing Reynold's numbers" src="../_images/purcell_fig3.png" /></p>
-<p>Source: <a class="reference external" href="https://pubs.aip.org/aapt/ajp/article/45/1/3/1043148/Life-at-low-Reynolds-number">Purcell’s Life at Low Reynolds Number, Figure 3</a></p>
+<p>What is interesting here is that these creatures have had to adapt to this form of fluid drag. <a class="reference external" href="https://en.wikipedia.org/wiki/Edward_M._Purcell">Edward Purcell</a> wrote a paper in 1977 called <a class="reference download internal" download="" href="../_downloads/cfb7cbcef3b825707e67445e284ff58e/purcell_AJP_1977.pdf"><span class="xref download myst">Life at Low Reynolds Number</span></a><a class="footnote-reference brackets" href="#fairuse" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a> that describes the motion of these creatures. He demonstrates that the physics in this regime requires creature to have adapted forms of locomotion that can take advantage of that environment. The figure below is reproduced from Purcell showing the decreasing physical scale and, thus, lower <a class="reference external" href="https://en.wikipedia.org/wiki/Reynolds_number">Reynold’s numbers</a>.</p>
+<figure class="align-default" id="id6">
+<a class="reference internal image-reference" href="../_images/purcell_fig3.png"><img alt="An illustration of the Reynold's number for different bodies in water." src="../_images/purcell_fig3.png" style="width: 400px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 11 </span><span class="caption-text">An illustration of the Reynold’s number for different bodies in water. Source: <a class="reference external" href="https://pubs.aip.org/aapt/ajp/article/45/1/3/1043148/Life-at-low-Reynolds-number">Purcell’s, <em>Life at Low Reynolds Number</em>, Figure 3</a></span><a class="headerlink" href="#id6" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
 </section>
 <section id="why-do-we-often-neglect-air-resistance">
 <h2>Why do we often neglect air resistance?<a class="headerlink" href="#why-do-we-often-neglect-air-resistance" title="Link to this heading">#</a></h2>
@@ -484,8 +494,8 @@ document.write(`
 <h3>The Reynolds Number<a class="headerlink" href="#the-reynolds-number" title="Link to this heading">#</a></h3>
 <p>The different forms of fluid drag are often described by a dimensionless number called the <a class="reference external" href="https://en.wikipedia.org/wiki/Reynolds_number">Reynolds Number</a>. The Reynolds number is a ratio of the inertial forces to the viscous forces in a fluid.</p>
 <ul class="simple">
-<li><p>What are inertial forces? They are the ones associated with resistance to motion, the mass of the object. The more massive the object in a given setup, the higher the inertial contribution.</p></li>
-<li><p>What are viscous forces? They are the ones associated with the interaction of the fluid with the object. The more viscous the fluid - the harder it for is to flow under the same conditions, the higher the viscous contribution.</p></li>
+<li><p><strong>What are inertial forces?</strong> They are the ones associated with resistance to motion, the mass of the object. The more massive the object in a given setup, the higher the inertial contribution.</p></li>
+<li><p><strong>What are viscous forces?</strong> They are the ones associated with the interaction of the fluid with the object. The more viscous the fluid - the harder it for is to flow under the same conditions, the higher the viscous contribution.</p></li>
 </ul>
 <p>The Reynolds number is defined as:</p>
 <div class="math notranslate nohighlight">
@@ -519,14 +529,12 @@ document.write(`
 <section id="physics-of-life-life-at-low-reynolds-number-15-minute-video">
 <h4>Physics of Life - Life at Low Reynolds Number (15 minute video)<a class="headerlink" href="#physics-of-life-life-at-low-reynolds-number-15-minute-video" title="Link to this heading">#</a></h4>
 <p>This video focuses on the biological aspects of the problem as the physics of low Reynolds numbers is important for understanding the motion of microorganisms.</p>
-<p><em>Embedding of this video is not supported in this notebook. Please click the image or the link below to watch the video on YouTube.</em></p>
-<p><a class="reference external" href="https://youtube.com/watch?v=gZk2bMaqs1E"><img alt="Video unavailable: Physics of Life - Life at Low Reynolds Number" src="https://img.youtube.com/vi/gZk2bMaqs1E/0.jpg" /></a></p>
-<p><a class="reference external" href="https://youtube.com/watch?v=gZk2bMaqs1E">Physics of Life - Life at Low Reynolds Number (YouTube)</a></p>
+<iframe width="800" height="450" src="https://youtube.com/watch?v=gZk2bMaqs1E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <p>Source: <a class="reference external" href="https://youtube.com/watch?v=gZk2bMaqs1E">https://youtube.com/watch?v=gZk2bMaqs1E</a></p>
 </section>
 <section id="g-i-taylor-s-low-reynolds-number-flows-32-minute-video">
 <h4>G.I. Taylor’s Low Reynolds Number Flows (32 minute video)<a class="headerlink" href="#g-i-taylor-s-low-reynolds-number-flows-32-minute-video" title="Link to this heading">#</a></h4>
-<p>This video is a classic from <a class="reference external" href="https://en.wikipedia.org/wiki/Geoffrey_Ingram_Taylor">G.I. Taylor</a> who was a physicist interested in sharing the conceptual beauty of physics with the general public. He was also a pioneer in the field of fluid mechanics. In fact, Taylor’s <a class="reference internal" href="#../../docs/papers/taylor_1922.pdf"><span class="xref myst">groundbreaking paper</span></a> on the stability of fluid flows between two rotating cylinders set off studies into turbulence. The <a class="reference external" href="https://en.wikipedia.org/wiki/Taylor%E2%80%93Couette_flow">Taylor-Couette flow</a> is a critical tool for <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/20365623/">studies of turbulence</a>.</p>
+<p>This video is a classic from <a class="reference external" href="https://en.wikipedia.org/wiki/Geoffrey_Ingram_Taylor">G.I. Taylor</a> who was a physicist interested in sharing the conceptual beauty of physics with the general public. He was also a pioneer in the field of fluid mechanics. In fact, Taylor’s <a class="reference download internal" download="" href="../_downloads/d08391e3edc25e0c2fe0ec52bb791ec4/taylor_1922.pdf"><span class="xref download myst">groundbreaking paper</span></a><a class="footnote-reference brackets" href="#fairuse" id="id2" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a> on the stability of fluid flows between two rotating cylinders set off studies into turbulence. The <a class="reference external" href="https://en.wikipedia.org/wiki/Taylor%E2%80%93Couette_flow">Taylor-Couette flow</a> is a critical tool for <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/20365623/">studies of turbulence</a>.</p>
 <iframe width="800" height="450" src="https://www.youtube.com/embed/8Dst6V4CQME" title="G.I. Taylor's Low Reynolds Number Flows" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <p>Source: <a class="reference external" href="https://youtube.com/watch?v=8Dst6V4CQME">https://youtube.com/watch?v=8Dst6V4CQME</a></p>
 </section>
@@ -561,7 +569,13 @@ document.write(`
 <section id="define-the-coordinate-system">
 <h4>Define the Coordinate System<a class="headerlink" href="#define-the-coordinate-system" title="Link to this heading">#</a></h4>
 <p>To start this analysis, we need to define a coordinate system. Below, we draw the particle at some random time with the vecolicty vector shown. The axes are typical: <span class="math notranslate nohighlight">\(x\)</span> is horizontal and <span class="math notranslate nohighlight">\(y\)</span> is vertical. The drag force is always opposite to the velocity vector, so it will always be in the opposite direction of the velocity vector.</p>
-<p><img alt="Coordinate System" src="../_images/2d-falling-ball.png" /></p>
+<figure class="align-default" id="id7">
+<a class="reference internal image-reference" href="../_images/2d-falling-ball.png"><img alt="Coordinate system choice for the 2D falling ball." src="../_images/2d-falling-ball.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 12 </span><span class="caption-text">Coordinate system choice for the 2D falling ball.</span><a class="headerlink" href="#id7" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
 <p>In this coordinate system, the properties of the particle are:</p>
 <div class="math notranslate nohighlight">
 \[\vec{r} = x \hat{x} + y \hat{y} = \langle x, y \rangle\]</div>
@@ -571,7 +585,13 @@ document.write(`
 \[\vec{a} = a_x \hat{x} + a_y \hat{y} = \langle a_x, a_y \rangle\]</div>
 <p>where <span class="math notranslate nohighlight">\(\hat{x}\)</span> and <span class="math notranslate nohighlight">\(\hat{y}\)</span> are the unit vectors in the <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span> directions, respectively. And the magnitude of the velocity vector is <span class="math notranslate nohighlight">\(|\vec{v}| = \sqrt{v_x^2 + v_y^2}\)</span> as you might imagine.</p>
 <p>The free body diagram at the point in time shown above is shown below. You see the gravitational force pointing directly downward and the drag force pointing in the opposite direction of the velocity vector. We continue to apply our coordinate system to the forces.</p>
-<p><img alt="Free Body Diagram" src="../_images/2d-falling-ball-fbd.png" /></p>
+<figure class="align-default" id="id8">
+<a class="reference internal image-reference" href="../_images/2d-falling-ball-fbd.png"><img alt="Free Body Diagram for the 2D falling ball." src="../_images/2d-falling-ball-fbd.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 13 </span><span class="caption-text">Free Body Diagram for the 2D falling ball.</span><a class="headerlink" href="#id8" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
 </section>
 <section id="apply-newton-s-second-law">
 <h4>Apply Newton’s Second Law<a class="headerlink" href="#apply-newton-s-second-law" title="Link to this heading">#</a></h4>
@@ -618,10 +638,16 @@ document.write(`
 \[\vec{F}_{lin} = -m \gamma \vec{v}\]</div>
 <p>where <span class="math notranslate nohighlight">\(\gamma\)</span> is a proxy for the drag coefficient. The linear drag force is proportional to the velocity vector.</p>
 <p>We have the same set up as before and same FBD.</p>
-<p><img alt="Coordinate System" src="../_images/2d-falling-ball.png" /></p>
+<figure class="align-default" id="id9">
+<a class="reference internal image-reference" href="../_images/2d-falling-ball.png"><img alt="Coordinate System for the 2D falling ball." src="../_images/2d-falling-ball.png" style="width: 300px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 14 </span><span class="caption-text">Coordinate System for the 2D falling ball.</span><a class="headerlink" href="#id9" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
 <p>And thus the same coordinate system. The properties of the particle are the same as above.</p>
-<section id="id1">
-<h4>Apply Newton’s Second Law<a class="headerlink" href="#id1" title="Link to this heading">#</a></h4>
+<section id="id3">
+<h4>Apply Newton’s Second Law<a class="headerlink" href="#id3" title="Link to this heading">#</a></h4>
 <p>We now apply Newton’s Seccond Law to the particle in the chosen coordinate system. The forces acting on the particle are the gravitational force and the drag force.</p>
 <div class="math notranslate nohighlight">
 \[\vec{F}_{net} = \vec{F}_{gravity} + \vec{F}_{lin}\]</div>
@@ -709,9 +735,21 @@ document.write(`
 \[F = \dfrac{G m_1 m_2}{r^2}\]</div>
 <p>where <span class="math notranslate nohighlight">\(G\)</span> is the gravitational constant, <span class="math notranslate nohighlight">\(m_1\)</span> and <span class="math notranslate nohighlight">\(m_2\)</span> are the masses of the objects, and <span class="math notranslate nohighlight">\(r\)</span> is the distance between the objects.</p>
 <p>But we need to be more clear about the forces and the vector relationships. Consider the figure below with the massive object at the origin and the satellite at some distance <span class="math notranslate nohighlight">\(r\)</span> from the origin. What is the vector <span class="math notranslate nohighlight">\(\vec{r}\)</span> that describes the location of the satellite?</p>
-<p><img alt="Gravitational Bound System" src="../_images/grav_01.png" /></p>
+<figure class="align-default" id="id10">
+<a class="reference internal image-reference" href="../_images/grav_01.png"><img alt="Gravitationally bound system with one body at the origin." src="../_images/grav_01.png" style="width: 500px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 15 </span><span class="caption-text">Gravitationally bound system with one body at the origin.</span><a class="headerlink" href="#id10" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
 <p>If we move the sun from the origin a little, we can start to see what <span class="math notranslate nohighlight">\(\vec{r}\)</span> is. The vector <span class="math notranslate nohighlight">\(\vec{r}\)</span> is the vector from the sun to the satellite. See the figure below to see the sketch.</p>
-<p><img alt="Gravitational Bound System" src="../_images/grav_02.png" /></p>
+<figure class="align-default" id="id11">
+<a class="reference internal image-reference" href="../_images/grav_02.png"><img alt="Gravitationally bound system with neither body at the origin." src="../_images/grav_02.png" style="width: 500px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 16 </span><span class="caption-text">Gravitationally bound system with neither body at the origin.</span><a class="headerlink" href="#id11" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
 <p>So if the location of the sun is <span class="math notranslate nohighlight">\(\vec{r}_{sun}\)</span> and the Earth is <span class="math notranslate nohighlight">\(\vec{r}_{earth}\)</span>, then the vector <span class="math notranslate nohighlight">\(\vec{r}\)</span> is:</p>
 <div class="math notranslate nohighlight">
 \[\vec{r} = \vec{r}_{earth} - \vec{r}_{sun}\]</div>
@@ -719,10 +757,16 @@ document.write(`
 <div class="math notranslate nohighlight">
 \[\vec{F}_{grav} = -G \dfrac{M_{sun} M_{earth}}{|\vec{r}|^3} \vec{r}\]</div>
 <p>where <span class="math notranslate nohighlight">\(M_{sun} = 2\times10^{30} \mathrm{kg}\)</span> is the mass of the sun and <span class="math notranslate nohighlight">\(M_{earth} = 6 \times 10^{24} \mathrm{kg}\)</span> is the mass of the earth.</p>
-<section id="id2">
-<h4>Define the Coordinate System<a class="headerlink" href="#id2" title="Link to this heading">#</a></h4>
+<section id="id4">
+<h4>Define the Coordinate System<a class="headerlink" href="#id4" title="Link to this heading">#</a></h4>
 <p>In the figure below, we show the earth at some distance <span class="math notranslate nohighlight">\(r\)</span> from the origin at an angle <span class="math notranslate nohighlight">\(\phi\)</span> from the <span class="math notranslate nohighlight">\(x\)</span>-axis. This distance is about <span class="math notranslate nohighlight">\(1.5 \times 10^{11}\;\mathrm{m}\)</span> or <span class="math notranslate nohighlight">\(1\;\mathrm{A.U.}\)</span> (<a class="reference external" href="https://en.wikipedia.org/wiki/Astronomical_unit">astronomical unit</a>). While not entirely obvious, the scale of these numbers allow us to assume the Sun is at the origin, and doesn’t move. Although this is not a good assumption for the real solar system, the sun orbits the <a class="reference external" href="https://en.wikipedia.org/wiki/Barycenter">barycenter</a> of the solar system, which is about 1 solar radii from the center of the sun.</p>
-<p><img alt="Gravitational Bound System" src="../_images/grav_03.png" /></p>
+<figure class="align-default" id="id12">
+<a class="reference internal image-reference" href="../_images/grav_03.png"><img alt="Vector analysis for a gravitationally bound system with neither body at the origin." src="../_images/grav_03.png" style="width: 500px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 17 </span><span class="caption-text">Vector analysis for a gravitationally bound system with neither body at the origin.</span><a class="headerlink" href="#id12" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
 <p>Let’s use the standard <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span> axes to write the equations of motion. We can apply Newton’s Second Law to the earth in the chosen coordinate system.</p>
 <div class="math notranslate nohighlight">
 \[\vec{F}_{net} = \vec{F}_{gravity} = m\vec{a} = m\langle a_x, a_y \rangle\]</div>
@@ -741,9 +785,9 @@ document.write(`
 <p>We can’t solve these equations without more information. We need to know the initial conditions of the system (the initial position and velocity of the Earth). We can then integrate these equations to get the position of the Earth as a function of time.</p>
 <p>We have three potential ways to solve these EOMs:</p>
 <ol class="arabic simple">
-<li><p>Direct Integration: We can integrate the equations of motion directly. This is possible in some cases where the equations are simple enough; think about the falling ball without air resistance, or the linear 1D drag case.</p></li>
-<li><p>Decouple and Solve: We try to solve the coupled differential equations by decoupling them. This is possible in some cases, but not all. We can frequently decouple the equations by writing them in terms of the velocity, or by making a change of position variables.</p></li>
-<li><p>Numerical Integration: We use numerical methods to predict the motion in small time steps. This is the most common method for solving complex systems.</p></li>
+<li><p><strong>Direct Integration:</strong> We can integrate the equations of motion directly. This is possible in some cases where the equations are simple enough; think about the falling ball without air resistance, or the linear 1D drag case.</p></li>
+<li><p><strong>Decouple and Solve:</strong> We try to solve the coupled differential equations by decoupling them. This is possible in some cases, but not all. We can frequently decouple the equations by writing them in terms of the velocity, or by making a change of position variables.</p></li>
+<li><p><strong>Numerical Integration:</strong> We use numerical methods to predict the motion in small time steps. This is the most common method for solving complex systems.</p></li>
 </ol>
 </section>
 </section>
@@ -753,7 +797,13 @@ document.write(`
 <div class="math notranslate nohighlight">
 \[F = -ks\]</div>
 <p>where <span class="math notranslate nohighlight">\(k\)</span> is the spring constant and <span class="math notranslate nohighlight">\(s\)</span> is the displacement from the equilibrium position, <span class="math notranslate nohighlight">\(x-L_0\)</span>. The quantity <span class="math notranslate nohighlight">\(L_0\)</span> is the relaxed length of the spring. The figure below shows the typical horizontal spring system.</p>
-<p><img alt="SHO" src="../_images/sho_horizontal.png" /></p>
+<figure class="align-default" id="id13">
+<a class="reference internal image-reference" href="../_images/simple_harmonic_oscillator_setup_1D_horizontal.png"><img alt="Free Body Diagram of a Simple Harmonic Oscillator; the arrows label the direction of forces acting on the mass" src="../_images/simple_harmonic_oscillator_setup_1D_horizontal.png" style="width: 400px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 18 </span><span class="caption-text">Free Body Diagram of a Simple Harmonic Oscillator; the arrows label the direction of forces acting on the mass. <a class="reference download internal" download="" href="../_downloads/d3518eadda460710b302264d1f65e728/simple_harmonic_oscillator_setup_1D_horizontal.svg"><span class="xref download myst">SVG File</span></a></span><a class="headerlink" href="#id13" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
 <p>We can typically choose to measure the displacement from the equilibrium position, and write the force instead as:</p>
 <div class="math notranslate nohighlight">
 \[F = m a_x = m \dot{v}_x  = m\ddot{x} = -kx\]</div>
@@ -794,6 +844,14 @@ document.write(`
 \[\ddot{x}(t) = -D \omega^2 \cos(\omega t + \phi) = -\omega^2 x(t)\]</div>
 <p>So we have several forms of the general solution to the simple harmonic oscillator. We can use these solutions to understand the behavior of the system. We can also use these solutions to understand the behavior of more complex systems that can be approximated by the simple harmonic oscillator.</p>
 <p>One critical aspect of these solutions is that they have 2 free parameters, <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span>, or <span class="math notranslate nohighlight">\(D\)</span> and <span class="math notranslate nohighlight">\(\phi\)</span>. These parameters are determined by the initial conditions of the system. <strong>There are N free parameters in the general solution to an Nth order differential equation.</strong></p>
+<hr class="footnotes docutils" />
+<aside class="footnote-list brackets">
+<aside class="footnote brackets" id="fairuse" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></span>
+<span class="backrefs">(<a role="doc-backlink" href="#id1">1</a>,<a role="doc-backlink" href="#id2">2</a>)</span>
+<p>Posted for educational access under <a class="reference external" href="https://en.wikipedia.org/wiki/Fair_use">fair use</a> and will direct to original article when course is archived.</p>
+</aside>
+</aside>
 </section>
 </section>
 </section>
@@ -896,7 +954,7 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#linear-drag-in-two-dimensions">Linear Drag in Two-Dimensions</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Apply Newton’s Second Law</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Apply Newton’s Second Law</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#solve-the-equations">Solve the Equations</a><ul class="nav section-nav flex-column">
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#velocity-in-the-x-direction">Velocity in the <span class="math notranslate nohighlight">\(x\)</span> direction</a></li>
 <li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#velocity-in-the-y-direction">Velocity in the <span class="math notranslate nohighlight">\(y\)</span> direction</a></li>
@@ -906,7 +964,7 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#d-gravitational-bound-system">2D Gravitational Bound System</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Define the Coordinate System</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Define the Coordinate System</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#how-do-we-then-get-the-trajectories">How do we then get the trajectories?</a></li>
 </ul>
 </li>

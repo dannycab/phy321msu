@@ -55,7 +55,7 @@ The purpose of Exercise 0 is to invite you to learn about physics culture, histo
 
 Exercise 0 will be graded for completeness, with full credit given for a complete submission that addresses all prompts; we will not award credit for minimal or incomplete submissions.
 
-#### Individual Homework Reflections (5%)
+#### Individual Homework Reflections
 
 For each homework assignment, you will be asked to individually reflect on your own experience with the assignment. The individual reflection will be due with each homework assignment (e.g. Fridays at 11:59pm ET) via the D2L Assignments page. Late reflections will not be accepted once solutions are posted - which will be 8:00am ET on Monday. The prompts are designed to encourage you to think critically about your learning process and identify areas for growth. In this reflection, you should address the following questions:
 
