@@ -10,9 +10,9 @@ _All assignments are turned in using Gradescope as a single PDF._
 
 | **Week** | **Day**   | **Topic**                                                               | **Readings to Prepare**     | **Important Events**                                            |
 |:--------:|:---------:|:-----------------------------------------------------------------------:|:---------------------------|:---------------------------------------------------------------|
-| CW3      | 12 Jan    | Introduction to the course; reminders about vectors; software setup     | 📓 [01 - Overture: What is Classical Physics?](../lecture-notes/01_notes.ipynb)<br>📚 MLB Ch 3.4 | 📝 [Homework 1 Assigned (Due 23 Jan)](../assignments/hw1.ipynb)   |
-|          | 14 Jan    | Newton's 1st and 2nd Law; Motion in 1 dimension                        | 📚 JRT 1.1-1.4; AMS Ch 1-4    |                                                               |
-|          | 16 Jan   | Getting Started with VS Code; Using AI in this Class                   | 📓 [02 - Computing is a Necessary Tool for Science](../lecture-notes/02_notes.ipynb) |                                                               |
+| CW3      | 12 Jan    | Introduction to the course; reminders about vectors; software setup     | 📓 [01 - Overture: What is Classical Physics?](../lecture-notes/01_notes.ipynb)<br>📚 MLB Ch 3.4<br>📊 [Slides](../slides/day-01-introduction.md) | 📝 [Homework 1 Assigned (Due 23 Jan)](../assignments/hw1.ipynb)   |
+|          | 14 Jan    | Newton's 1st and 2nd Law; Motion in 1 dimension                        | 📚 JRT 1.1-1.4; AMS Ch 1-4<br>📊 [Slides](../slides/day-02-newtons-laws.md)    |                                                               |
+|          | 16 Jan   | [Getting Started with VS Code](../resources/vscode-setup-numerics-activity.ipynb)                  | 📓 [02 - Computing is a Necessary Tool for Science](../lecture-notes/02_notes.ipynb)<br>📊 [Slides](../slides/day-03-computing-setup.md) |                                                               |
 
 ---
 

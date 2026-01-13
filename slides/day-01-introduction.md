@@ -10,8 +10,6 @@ keywords: classical mechanics, newton's laws, differential equations, motion
 url: https://dannycaballero.info/phy321msu/slides/day-01-introduction.html
 ---
 
-
-
 ![bg 100%](./images/day-01/Slide1.png)
 
 ---
@@ -81,3 +79,24 @@ url: https://dannycaballero.info/phy321msu/slides/day-01-introduction.html
 ---
 
 ![bg 100%](./images/day-01/Slide18.png)
+
+---
+
+![bg 100%](./images/day-01/Slide19.png)
+
+---
+
+![bg 100%](./images/day-01/Slide20.png)
+
+---
+
+![bg 100%](./images/day-01/Slide21.png)
+
+---
+
+![bg 100%](./images/day-01/Slide22.png)
+
+---
+
+![bg 100%](./images/day-01/Slide23.png)
+
