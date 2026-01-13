@@ -489,9 +489,9 @@ Slides for PHY 321 appear in reverse chronological order, with the most recent s
 
 :::
 
----
+--- -->
 
-## Day 03 - Computing Setup - 29 Aug 2025
+## Day 03 - Computing Setup - 16 Jan 2026
 
 [![Day 03](../slides/day-03-computing-setup.png)](../slides/day-03-computing-setup.pdf)
 
@@ -502,9 +502,9 @@ Slides for PHY 321 appear in reverse chronological order, with the most recent s
 
 :::
 
----
+--- 
 
-## Day 02 - Newton's Laws - 27 Aug 2025
+## Day 02 - Newton's Laws - 14 Jan 2026
 
 [![Day 02](../slides/day-02-newtons-laws.png)](../slides/day-02-newtons-laws.pdf)
 
@@ -515,7 +515,7 @@ Slides for PHY 321 appear in reverse chronological order, with the most recent s
 
 :::
 
---- -->
+
 
 ## Day 01 - Introduction - 12 Jan 2026
 
