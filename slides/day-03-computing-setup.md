@@ -1,166 +1,375 @@
 ---
 marp: true
-theme: king
+theme: default
 paginate: true
+backgroundColor: #ffffff
 
 title: Day 03 - Computing Setup
-description: Slides for PHY 321 Spring 2025, Day 03: Computing Setup
-author: Prof. Danny Caballero <caball14@msu.edu>
-keywords: classical mechanics, computing, ai, policy
+description: Slides for PHY 321 Spring 2026, Day 03: Getting Started with VS Code
+author: Prof. Brian O'Shea & Mihir Naik
+keywords: vs code, python, jupyter, numerical differentiation
 url: https://dannycaballero.info/phy321msu/slides/day-03-computing-setup.html
+---
+
+<style>
+  :root {
+    --color-spartan-green: #18453B;
+    --color-msu-gold: #C1B000;
+    --color-light-gray: #f5f5f5;
+    --color-dark-text: #1a1a1a;
+    --color-accent-green: #2d5f4f;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    color: var(--color-dark-text);
+  }
+  
+  h1, h2, h3 {
+    color: var(--color-spartan-green);
+    font-weight: 500;
+  }
+  
+  h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0rem;
+  }
+  
+  h2 {
+    font-size: 1.55rem;
+    margin-bottom: 1.0rem;
+    border-bottom: 4px solid var(--color-spartan-green);
+    padding-bottom: 0.5rem;
+  }
+  
+  h3 {
+    font-size: 1.15rem;
+    margin-top: 1rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  section {
+    padding: 2rem;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .equation {
+    background-color: var(--color-light-gray);
+    padding: 1.5rem;
+    border-left: 4px solid var(--color-msu-gold);
+    margin: 1.5rem 0;
+    font-size: 1.3rem;
+    text-align: center;
+    color: var(--color-dark-text);
+  }
+
+  p {
+    font-size: 1.15rem;
+    line-height: 1.4;
+    margin-bottom: 0.5rem;
+  }
+  
+  ul, ol {
+    font-size: 1.15rem;
+    line-height: 1.4;
+    margin-left: 0.5rem;
+  }
+
+  ul ul, ol ol, ul ol, ol ul {
+    margin-left: 0.1rem;
+  }
+  
+  li {
+    margin-bottom: 0rem;
+    line-height: 1.4;
+  }
+  
+  strong {
+    color: var(--color-spartan-green);
+    font-weight: 600;
+  }
+  
+  em {
+    color: var(--color-accent-green);
+  }
+
+  .highlight {
+    background-color: var(--color-light-gray);
+    padding: 1.5rem;
+    border-left: 4px solid var(--color-spartan-green);
+    margin: 1.5rem 0;
+  }
+
+  .activity {
+    background-color: #fff8e1;
+    border: 2px solid var(--color-msu-gold);
+    padding: 1.25rem;
+    border-radius: 6px;
+    margin: 1rem 0;
+  }
+
+  code {
+    background-color: var(--color-light-gray);
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-size: 1.0rem;
+  }
+
+  .footnote {
+    font-size: 0.8rem;
+    color: #999;
+    margin-top: 1.5rem;
+    border-top: 1px solid #ddd;
+    padding-top: 0.75rem;
+  }
+</style>
+
+<!--
+_class: title
+_backgroundColor: #ffffff
+_color: #18453B
+-->
+
+<div style="border-top: 12px solid #18453B; border-bottom: 4px solid #C1B000; padding: 2rem; background-color: #ffffff;">
+
+<h1 style="color: #18453B; font-size: 2.2rem; font-weight: 700; margin-bottom: 1rem;">Day 03 - Getting Started with VS Code</h1>
+
+<div style="background-color: #f5f5f5; border-left: 6px solid #C1B000; padding: 1.5rem; margin: 1.5rem 0;">
+
+$$v_i \approx \frac{x_{i+1} - x_i}{\Delta t}$$
+
+</div>
+
+<p style="color: #1a1a1a; font-size: 1.0rem; margin-bottom: 1rem;">Today we'll set up VS Code for scientific computing and practice numerical differentiation.</p>
+
+<div style="font-size: 0.8rem; color: #999; margin-top: 1.5rem; border-top: 1px solid #ddd; padding-top: 0.75rem;">PHY 321 Classical Mechanics I - Spring 2026</div>
+
+</div>
+
+![bg right:40% width:500px height:auto](https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Finite_difference_method.svg/500px-Finite_difference_method.svg.png)
+
+
+
+<div class="footnote">PHY 321 Classical Mechanics I - Spring 2026</div>
 
 ---
 
-# PHY 321 - Day 03
+# Today's Goals
 
-Skim *The Manifesto for Teaching and Learning in a Time of Generative AI*
+After this session, you should be able to:
 
-![QR Code for Paper](./images/ai_paper.png)
-
-<https://openpraxis.org/articles/10.55982/openpraxis.16.4.777>
-
----
-
-![bg 100%](./images/strawberry-ollama.png)
+- **Set up VS Code** for Python scientific computing
+- **Use Jupyter notebooks** in VS Code
+- **Perform numerical differentiation** using finite difference methods
+- **Compare** numerical results with analytical solutions
 
 ---
 
-# Announcements
+# Step 1: Download VS Code
 
-* Homework 1 is due next Friday
-* Help sessions will start next week
-* No class on Monday (Labor Day)
-* Complete the [student information poll](forms.office.com/r/LWEDtfkcg9) by today, please
+Go to: **https://code.visualstudio.com/download**
 
----
+Choose your operating system:
+- **macOS**: Universal download (Intel + Apple Silicon)
+- **Windows**: User Installer
+- **Linux**: .deb, .rpm, or .tar.gz
 
-# Student Information Poll
-
-![QR Code](./images/sis_link.png)
-
-**Fill out now 😻**
+The download is ~200 MB and takes just a minute or two.
 
 ---
 
-# Office Hours Poll
+# Step 2: Install VS Code
 
-![QR Code](./images/office_hours_poll.png)
+**On macOS:**
+1. Open the downloaded `.zip` file
+2. Drag `Visual Studio Code.app` to **Applications**
+3. Launch from Applications
 
-**Fill out now 😻**
-
----
-
-# Generative AI
-
-*Generative AI* is a type of artificial intelligence that can generate new data from existing data.
-
-* It is an **extractive** technology that has mined a vast data set.
-* It is a **probabilistic** technology that uses statistical models to generate new data.
-* It is **not** a **creative** technology that can generate new ideas, concepts, or products.
-* It is **not** a **truthful** technology that can generate new data that is intrinsically true.
-
-**The "Grow At Any Cost" approach to generative AI is destroying communities, violating federal and international laws, upending climate progress, and consolidating power in the hands of a few.** 
+**On Windows:**
+1. Double-click the `.exe` installer
+2. Follow the wizard (default settings are fine)
+3. VS Code launches automatically
 
 ---
 
-# Generative AI Energy Consumption
+# Step 3: Install Required Extensions
 
-![bg right:20%](./images/a100.png)
+Click the **Extensions** icon (4 squares) on the left sidebar
+- Or press `Ctrl+Shift+X` (Windows/Linux) or `Cmd+Shift+X` (Mac)
 
-* The max power of a single A100 chip is 400W.
-* Assume the compute needed to perform a simple generation task takes roughly 1s.
+Install these two extensions:
+1. **Jupyter** by Microsoft
+2. **Python** by Microsoft
 
-**How much energy would you use to complete a single homework assignment?**
-
-**If every physics/astro undergrad used generative AI for their assignments in a week, how much energy would we use?**
-
-**If everyone on campus uses generative AI in a week, how much energy is used?**
-
+Click **Reload** when prompted.
 
 ---
 
-# Generative AI Water Consumption
+# Step 4: Verify Python
 
-![bg right:20%](./images/a100.png)
+Open VS Code's Terminal: **View → Terminal** (or `` Ctrl+` ``)
 
-It takes about 9 liters of water per kWh (1 kWh = $3.6\times10^6$ J) to evaporate the heat from a GPU server.
+Type:
+```
+python --version
+```
+or
+```
+python3 --version
+```
 
-**How much water is used if everyone on campus uses GenAI in a week?**
+You should see something like `Python 3.10.0` or newer.
 
-**How many homes could be serviced with that much water usage?**
-
----
-
-# And yet,
-
-* Generative AI can be used productively.
-* Generative AI can support accessibility.
-* Generative AI can support creativity.
-* Generative AI can support learning.
-
-The complexity and tension of these issues are why we need to develop a policy together.
-
-**We will all live with the consequences of Generative AI, but y'all will for longer, so this policy must be yours.**
+If not, install Python from: **https://www.python.org/downloads/**
 
 ---
 
+# Download Today's Activity
 
-# Creating a Generative Artificial Intelligence Policy
+Open the notebook for today's activity:
 
-We define **productivity** as the ability to use Generative AI to deepen your understanding of Classical Mechanics.
+**https://dannycaballero.info/phy321msu/resources/vscode-setup-numerics-activity.html**
 
-## Take five minutes to answer the following for yourself:
+Or find it in the course website under **Resources**.
 
-1. What are ways that you think that AI can be used productively in our classroom?
-2. What are ways that you think that AI can be used unproductively in our classroom?
-3. What do you think are acceptable uses of AI in our classroom?
-4. What do you think are unacceptable uses of AI in our classroom?
-5. How should we document the use of AI in our classroom?
-6. Once we define a policy, how should we collectively enforce it?
+Download the `.ipynb` file and open it in VS Code.
 
 ---
 
-# Creating a Generative Artificial Intelligence Policy
+# Libraries We'll Use
 
-We define **productivity** as the ability to use Generative AI to deepen your understanding of Classical Mechanics.
+```python
+import numpy as np          # Numerical computations
+import matplotlib.pyplot as plt  # Plotting
+import pandas as pd         # Data manipulation
+```
 
-## Share your ideas are your table. Develop a consensus on the following:
+Run the first code cell to load these libraries.
 
-1. What do y'all think are acceptable uses of AI in our classroom?
-2. What do y'all think are unacceptable uses of AI in our classroom?
-3. How should we document the use of AI in our classroom?
-4. Once we define a policy, how should we collectively enforce it?
-
-Add your answers to the form at the following link: [https://forms.office.com/r/Bsh6ugKQ9Y](https://forms.office.com/r/Bsh6ugKQ9Y)
-
----
-
-# Getting started with VS Code
-
-- Download VS Code from <https://code.visualstudio.com/>
-- Install it and then let's download a notebook 
-- Open the notebook in VS Code
+If you get an error, you may need to install them:
+```
+pip install numpy matplotlib pandas
+```
 
 ---
 
-# Homework 1 Exercise 3
+# The Physics: Numerical Derivatives
 
-* 3a (2pt) Show (using the fact that multiplication of reals is distributive) that $\boldsymbol{a}\cdot(\boldsymbol{b}+\boldsymbol{c})=\boldsymbol{a}\cdot\boldsymbol{b}+\boldsymbol{a}\cdot\boldsymbol{c}$.
+In experiments, we measure **positions** at different times.
 
----
+To get velocities or accelerations, we **numerically differentiate** our data.
 
-# Homework 1 Exercise 3
+<div class="equation">
 
-* 3b (3pt) Use this result to argue that the small amount of work $dW$ done over a distance $d\mathbf{r}$ only results from $F_{\parallel}$ the force component along the instantaneous velocity $\mathbf{v}$ and not $F_{\perp}$, the component perpendicular to it. What about the full integral of the work $W = \int_P dW$ where $P$ is some path? From which force does the work get done by, $F_{\parallel}$, $F_{\perp}$, both, neither?
+$$v_i \approx \frac{x_{i+1} - x_i}{\Delta t}$$
 
----
+</div>
 
-# Homework 1 Exercise 3
-
-* 3c (2pt) Show that (using product rule for differentiating reals)  $\frac{d}{dt}(\boldsymbol{a}\cdot\boldsymbol{b})=\boldsymbol{a}\cdot\frac{d\boldsymbol{b}}{dt}+\boldsymbol{b}\cdot\frac{d\boldsymbol{a}}{dt}$
+This is the **forward difference** method.
 
 ---
 
-# Homework 1 Exercise 3
+# Finite Difference Methods
 
-* 3d (3pt) Use this to demonstrate that the time rate of change for the kinetic energy, $dK/dt$ for a circular orbiting object is zero. Start from definition of kinetic energy that uses the dot product: $K = 1/2 m \mathbf{v} \cdot \mathbf{v}.$ **It might help to draw a sketch of the velocity, force, and acceleration vectors.** 
+<div class="activity">
+
+**Three common methods:**
+
+- **Forward**: $f'(x_i) \approx \dfrac{f(x_{i+1}) - f(x_i)}{\Delta x}$
+
+- **Backward**: $f'(x_i) \approx \dfrac{f(x_i) - f(x_{i-1})}{\Delta x}$
+
+- **Central**: $f'(x_i) \approx \dfrac{f(x_{i+1}) - f(x_{i-1})}{2\Delta x}$
+
+</div>
+
+Central difference is more accurate but uses both neighboring points.
+
+---
+
+# The Synthetic Data
+
+We've generated position data for a ball tossed with air resistance:
+
+$$\mathbf{F}_{\text{net}} = -m\mathbf{g} - C_D |\mathbf{v}|\mathbf{v}$$
+
+Run the data generation cells in the notebook to create:
+- `t` - time array (seconds)
+- `x` - x-position array (meters)
+- `y` - y-position array (meters)
+
+---
+
+# Your Task
+
+<div class="activity">
+
+**Using only finite difference methods:**
+
+1. Compute and plot the **numerically-derived velocities** ($v_x$, $v_y$)
+2. Compute and plot the **numerically-derived accelerations** ($a_x$, $a_y$)
+3. Compare your numerical derivatives with the "true" values
+4. What do you notice about the accuracy?
+
+</div>
+
+Work through the notebook with your neighbors!
+
+---
+
+# Hints
+
+To compute velocity from position:
+```python
+dt = t[1] - t[0]  # time step
+vx = (x[1:] - x[:-1]) / dt  # forward difference
+```
+
+Note: Your derivative arrays will be **one element shorter** than the original!
+
+To plot against the right time values:
+```python
+plt.plot(t[:-1], vx)  # use t[:-1] not t
+```
+
+---
+
+# Exporting Notebooks to PDF
+
+For homework submissions on Gradescope:
+
+**Option A: VS Code Extension**
+- Install "Jupyter PDF Export" extension
+- Right-click notebook → Export as PDF
+
+**Option B: Command Line**
+```
+jupyter nbconvert --to pdf your_notebook.ipynb
+```
+
+**Option C: Print to PDF**
+- Use `Ctrl+P` / `Cmd+P` → Print
+
+---
+
+# Reminders
+
+- **Homework 1** is due next Friday (late after Sunday)
+- **Help sessions** start next week
+  - Fill out the [help session poll](https://crab.fit/phy-321-spring-2026-office-hours-poll-464860)
+- Complete the [student information survey](https://forms.cloud.microsoft/r/7Ar26hXDgm)
+
+---
+
+# Get Started!
+
+1. Download the notebook from the course website
+2. Open it in VS Code
+3. Work through the cells
+4. Complete the analysis task with your neighbors
+
+**Ask questions as you go!** 

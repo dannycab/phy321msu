@@ -247,7 +247,8 @@ class MarpSlidesBuilder(BaseBuilder):
               theme_path: Optional[str] = None,
               theme: Optional[str] = None,
               output_dir: Optional[str] = None,
-              formats: Optional[List[str]] = None) -> bool:
+              formats: Optional[List[str]] = None,
+              skip_theme: bool = False) -> bool:
         """
         Build Marp slides from markdown file.
         
@@ -257,6 +258,7 @@ class MarpSlidesBuilder(BaseBuilder):
             theme: Theme file name
             output_dir: Output directory for generated files
             formats: List of formats to generate (html, pdf, png)
+            skip_theme: If True, don't apply external theme (use embedded styles)
             
         Returns:
             True if build successful, False otherwise
@@ -286,7 +288,11 @@ class MarpSlidesBuilder(BaseBuilder):
             "png": {"flag": "--image png", "ext": "png"}
         }
         
-        theme_file = os.path.abspath(os.path.join(theme_path, theme))
+        # Only apply theme if not skipping it
+        theme_flag = ""
+        if not skip_theme:
+            theme_file = os.path.abspath(os.path.join(theme_path, theme))
+            theme_flag = f"--theme {theme_file}"
         
         for fmt in formats:
             if fmt not in format_map:
@@ -297,7 +303,7 @@ class MarpSlidesBuilder(BaseBuilder):
             
             cmd = [
                 "marp",
-                f"--theme {theme_file}",
+                theme_flag,  # Will be empty if skip_theme=True
                 "--allow-local-files",
                 format_map[fmt]["flag"],
                 f"-o {os.path.abspath(output_file)}",
@@ -525,6 +531,8 @@ def main():
     slides_parser.add_argument("--theme", help="Theme CSS file name")
     slides_parser.add_argument("-o", "--output-dir", help="Output directory")
     slides_parser.add_argument("--formats", nargs="+", choices=["html", "pdf", "png"], help="Output formats")
+    slides_parser.add_argument("--skip-theme", action="store_true", help="Skip external theme, use embedded styles")
+    slides_parser.add_argument("-v", "--verbose", action="store_true", help="Verbose output")
     
     # Task subcommand
     task_parser = subparsers.add_parser("task", help="Run predefined task")
@@ -588,7 +596,8 @@ def main():
                 theme_path=args.theme_path,
                 theme=args.theme,
                 output_dir=args.output_dir,
-                formats=args.formats
+                formats=args.formats,
+                skip_theme=args.skip_theme
             )
             
         elif args.command == "task":
