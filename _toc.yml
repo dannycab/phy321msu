@@ -57,7 +57,7 @@ parts:
   - caption: Programming Resources
     chapters: 
       - file: resources/vscode-setup-numerics-activity
-      #- file: resources/vscode-setup-numerics-activity-completed
+      - file: resources/vscode-setup-numerics-activity-completed
       - file: resources/euler_integration
       - file: resources/integrators
       - file: resources/phase_diagrams
