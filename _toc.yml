@@ -48,6 +48,7 @@ parts:
     chapters:
       - file: admin/schedule-cal
         sections:
+          - file: admin/reminders
           - file: admin/slides
           - file: admin/gradescope-submissions
           - file: admin/iclicker-setup
