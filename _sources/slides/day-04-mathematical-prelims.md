@@ -166,7 +166,7 @@ _color: #18453B
 * Homework 1 is due this Friday
 * Homework 2 is posted now
 * Help sessions start this week
-    * DC Friday at 2-4pm (1248 BPS)
+    * DC - Fridays at 10:00-12:00 and 16:00-17:00 (1248 BPS)
 * Mihir (ULA) will host additional help hours soon
 
 ---
@@ -227,6 +227,21 @@ Title: Fault tolerant quantum computing I
 **i-Clicker: https://join.iclicker.com/PRJO**
 
 --- 
+
+# Content Check-in Week 2
+
+**I appreciate y'all taking the time to complete it!**
+
+- Lots of reading, Danny! WTF?!?!
+  - Remember 90 minutes a week. Take your time and break it up.
+- The reading is so dense and covers many topics.
+  - Each of you knows well how you learn; Lean on your strengths
+- Talk to each other!
+  - MS Teams is there for this discussion also.
+- More examples, please.
+  - We will do more in class and on workshop days
+
+---
 
 # Clicker Question 4-1
 
