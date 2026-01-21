@@ -391,25 +391,23 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Day 04 - Mathematical Preliminaries</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#raisemyhand">RaiseMyHand</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#announcements">Announcements</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#seminars-this-week-wednesday">Seminars this week (Wednesday)</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#wednesday-september-3-2025">WEDNESDAY, September 3, 2025</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Seminars this week (Wednesday)</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">WEDNESDAY, September 3, 2025</a></li>
-</ul>
-</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#seminars-this-week-wednesday">Seminars this week (Wednesday)</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#goals-for-this-week">Goals for this week</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#be-able-to-answer-the-following-questions">Be able to answer the following questions.</a></li>
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#reminders-from-day-03">Reminders from Day 03</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#projectile-motion">Projectile Motion</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-4-1">Clicker Question 4-1</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#projectile-motion">Projectile Motion</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-4-2">Clicker Question 4-2</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-4-3">Clicker Question 4-3</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-4-4">Clicker Question 4-4</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-4-5">Clicker Question 4-5</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-4-6">Clicker Question 4-6</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#group-discussion-4-1">Group Discussion 4-1</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#group-discussion-4-2">Group Discussion 4-2</a></li>
 </ul>
 
             </nav>
@@ -422,9 +420,148 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="day-04-mathematical-preliminaries">
+  <style>
+  :root {
+    --color-spartan-green: #18453B;
+    --color-msu-gold: #C1B000;
+    --color-light-gray: #f5f5f5;
+    --color-dark-text: #1a1a1a;
+    --color-accent-green: #2d5f4f;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    color: var(--color-dark-text);
+  }
+  
+  h1, h2, h3 {
+    color: var(--color-spartan-green);
+    font-weight: 500;
+  }
+  
+  h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0rem;
+  }
+  
+  h2 {
+    font-size: 1.55rem;
+    margin-bottom: 1.0rem;
+    border-bottom: 4px solid var(--color-spartan-green);
+    padding-bottom: 0.5rem;
+  }
+  
+  h3 {
+    font-size: 1.15rem;
+    margin-top: 1rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  section {
+    padding: 2rem;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .equation {
+    background-color: var(--color-light-gray);
+    padding: 1.5rem;
+    border-left: 4px solid var(--color-msu-gold);
+    margin: 1.5rem 0;
+    font-size: 1.3rem;
+    text-align: center;
+    color: var(--color-dark-text);
+  }
+
+  p {
+    font-size: 1.15rem;
+    line-height: 1.4;
+    margin-bottom: 0.5rem;
+  }
+  
+  ul, ol {
+    font-size: 1.15rem;
+    line-height: 1.4;
+    margin-left: 0.5rem;
+  }
+
+  ul ul, ol ol, ul ol, ol ul {
+    margin-left: 0.1rem;
+  }
+  
+  li {
+    margin-bottom: 0rem;
+    line-height: 1.4;
+  }
+  
+  strong {
+    color: var(--color-spartan-green);
+    font-weight: 600;
+  }
+  
+  em {
+    color: var(--color-accent-green);
+  }
+
+  .highlight {
+    background-color: var(--color-light-gray);
+    padding: 1.5rem;
+    border-left: 4px solid var(--color-spartan-green);
+    margin: 1.5rem 0;
+  }
+
+  .activity {
+    background-color: #fff8e1;
+    border: 2px solid var(--color-msu-gold);
+    padding: 1.25rem;
+    border-radius: 6px;
+    margin: 1rem 0;
+  }
+
+  code {
+    background-color: var(--color-light-gray);
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-size: 1.0rem;
+  }
+
+  .footnote {
+    font-size: 0.8rem;
+    color: #999;
+    margin-top: 1.5rem;
+    border-top: 1px solid #ddd;
+    padding-top: 0.75rem;
+  }
+</style>
+<!--
+_class: title
+_backgroundColor: #ffffff
+_color: #18453B
+-->
+<section id="day-04-mathematical-preliminaries">
 <h1>Day 04 - Mathematical Preliminaries<a class="headerlink" href="#day-04-mathematical-preliminaries" title="Link to this heading">#</a></h1>
-<p><img alt="bg right:60%" src="../_images/vector.jpeg" /></p>
+<p><strong>Questions?</strong> <em>Make sure to upvote questions</em></p>
+<img src="../images/qrcodes/day04-s2026.png" width=300px>
+<p><img alt="bg right:40% width:500px height:auto" src="../_images/vector.jpeg" /></p>
+<div class="footnote">PHY 321 Classical Mechanics I - Spring 2026</div>
+</section>
+<hr class="docutils" />
+<section id="raisemyhand">
+<h1>RaiseMyHand<a class="headerlink" href="#raisemyhand" title="Link to this heading">#</a></h1>
+<p><img alt="bg left:25% width:250px height:auto" src="../_images/open-source.png" /></p>
+<ul class="simple">
+<li><p>Tool should be available for each class period.</p></li>
+<li><p>Answers to your questions are also written up after class</p>
+<ul>
+<li><p>Day 02 - <a class="reference external" href="https://raisemyhand.msucerl.org/student?code=s97Hf7-WS9K7b7ooovdjKxXwih1b_Nnj">https://raisemyhand.msucerl.org/student?code=s97Hf7-WS9K7b7ooovdjKxXwih1b_Nnj</a></p></li>
+</ul>
+</li>
+<li><p>Links to each day posted in MS Teams</p></li>
+</ul>
+<p><em>Would appreciate your feedback and/or ideas for use cases</em></p>
 </section>
 <hr class="docutils" />
 <section id="announcements">
@@ -443,28 +580,6 @@ document.write(`
 <hr class="docutils" />
 <section id="seminars-this-week-wednesday">
 <h1>Seminars this week (Wednesday)<a class="headerlink" href="#seminars-this-week-wednesday" title="Link to this heading">#</a></h1>
-<section id="wednesday-september-3-2025">
-<h2>WEDNESDAY, September 3, 2025<a class="headerlink" href="#wednesday-september-3-2025" title="Link to this heading">#</a></h2>
-<p>Astronomy Seminar, 1:30 pm, 1400 BPS, In Person and Zoom, Host~
-Speaker:   Group Introductions
-Title:
-Zoom Link: <a class="reference external" href="https://msu.zoom.us/j/887295421?pwd=N1NFb0tVU29JL2FFSkk0cStpanR3UT09">https://msu.zoom.us/j/887295421?pwd=N1NFb0tVU29JL2FFSkk0cStpanR3UT09</a>
-Meeting ID: 887-295-421
-Passcode: 002454</p>
-</section>
-</section>
-<hr class="docutils" />
-<section id="id1">
-<h1>Seminars this week (Wednesday)<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
-<section id="id2">
-<h2>WEDNESDAY, September 3, 2025<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
-<p>Nuclear Science Seminar, 3:30Pm., FRIB 1300 lab in person and online via Zoom
-Speaker: Mark Spieker, Florida State University
-Title: Experimental studies of the pygmy dipole resonance
-Zoom Link: <a class="reference external" href="https://msu.zoom.us/j/95277003505?pwd=hTILu1oLqmhTCU7jlVKFTlXXZBmuGb.1">https://msu.zoom.us/j/95277003505?pwd=hTILu1oLqmhTCU7jlVKFTlXXZBmuGb.1</a>
-Meeting ID: 952 7700 3505
-Passcode: 404830</p>
-</section>
 </section>
 <hr class="docutils" />
 <section id="goals-for-this-week">
@@ -487,7 +602,20 @@ Passcode: 404830</p>
 <li><p>Differential equations are mathematical models that describe the motion of particles</p></li>
 <li><p>We can use different methods to solve these differential equations</p></li>
 </ul>
-<p><strong>i-Clicker: <a class="reference external" href="https://join.iclicker.com/QTEC">https://join.iclicker.com/QTEC</a></strong></p>
+<p><strong>i-Clicker: <a class="reference external" href="https://join.iclicker.com/PRJO">https://join.iclicker.com/PRJO</a></strong></p>
+</section>
+<hr class="docutils" />
+<section id="clicker-question-4-1">
+<h1>Clicker Question 4-1<a class="headerlink" href="#clicker-question-4-1" title="Link to this heading">#</a></h1>
+<p><strong>I feel confident in my abilities to use VS Code for my homework</strong></p>
+<ol class="arabic simple">
+<li><p>Strongly Agree</p></li>
+<li><p>Agree</p></li>
+<li><p>We’ll see</p></li>
+<li><p>Disagree</p></li>
+<li><p>Strongly disagree</p></li>
+</ol>
+<p><img alt="bg right:25% width:250px height:auto" src="../_images/day04-s2026.png" /></p>
 </section>
 <hr class="docutils" />
 <section id="projectile-motion">
@@ -501,8 +629,8 @@ Passcode: 404830</p>
 <p><img alt="bg left:60%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/ParabolicWaterTrajectory.jpg/960px-ParabolicWaterTrajectory.jpg" /></p>
 </section>
 <hr class="docutils" />
-<section id="clicker-question-4-1">
-<h1>Clicker Question 4-1<a class="headerlink" href="#clicker-question-4-1" title="Link to this heading">#</a></h1>
+<section id="clicker-question-4-2">
+<h1>Clicker Question 4-2<a class="headerlink" href="#clicker-question-4-2" title="Link to this heading">#</a></h1>
 <p>For this fountain, what is the best guess for the acceleration (<span class="math notranslate nohighlight">\(\mathbf{a} = ??\)</span>) experienced by a fluid particle? <br> <em>Assume <span class="math notranslate nohighlight">\(y\)</span> is positive upward; <span class="math notranslate nohighlight">\(x\)</span> is positive to the right.</em></p>
 <ol class="arabic simple">
 <li><p><span class="math notranslate nohighlight">\(a_x \neq 0, a_y = g\)</span></p></li>
@@ -514,8 +642,21 @@ Passcode: 404830</p>
 <p><img alt="bg left:40%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/ParabolicWaterTrajectory.jpg/960px-ParabolicWaterTrajectory.jpg" /></p>
 </section>
 <hr class="docutils" />
-<section id="clicker-question-4-2">
-<h1>Clicker Question 4-2<a class="headerlink" href="#clicker-question-4-2" title="Link to this heading">#</a></h1>
+<section id="clicker-question-4-3">
+<h1>Clicker Question 4-3<a class="headerlink" href="#clicker-question-4-3" title="Link to this heading">#</a></h1>
+<p><strong>I feel comfortable with a discrete formulation of Newton’s Laws.</strong></p>
+<ol class="arabic simple">
+<li><p>Yes, I got this.</p></li>
+<li><p>I recall some ideas, but let’s check in.</p></li>
+<li><p>I’m not sure.</p></li>
+<li><p>I really don’t know what <em>discrete formulation</em> means here</p></li>
+<li><p>???</p></li>
+</ol>
+<p><img alt="bg right:25% width:250px height:auto" src="../_images/day04-s2026.png" /></p>
+</section>
+<hr class="docutils" />
+<section id="clicker-question-4-4">
+<h1>Clicker Question 4-4<a class="headerlink" href="#clicker-question-4-4" title="Link to this heading">#</a></h1>
 <p>The average velocity for a macroscopic time step <span class="math notranslate nohighlight">\(\Delta t = t_f - t_i\)</span> is given by:</p>
 <div class="math notranslate nohighlight">
 \[\mathbf{v}_{avg} = \dfrac{\Delta \mathbf{r}}{dt}\]</div>
@@ -528,8 +669,20 @@ Passcode: 404830</p>
 </ol>
 </section>
 <hr class="docutils" />
-<section id="clicker-question-4-3">
-<h1>Clicker Question 4-3<a class="headerlink" href="#clicker-question-4-3" title="Link to this heading">#</a></h1>
+<section id="clicker-question-4-5">
+<h1>Clicker Question 4-5<a class="headerlink" href="#clicker-question-4-5" title="Link to this heading">#</a></h1>
+<p><strong>I feel comfortable with vectors, vector decomposition, and trigonometry in Cartesian coordinates.</strong></p>
+<ol class="arabic simple">
+<li><p>Yes, I got this.</p></li>
+<li><p>I recall some ideas, but let’s check in.</p></li>
+<li><p>I’m not sure.</p></li>
+<li><p>I don’t feel too confident with vectors.</p></li>
+</ol>
+<p><img alt="bg right:25% width:250px height:auto" src="../_images/day04-s2026.png" /></p>
+</section>
+<hr class="docutils" />
+<section id="clicker-question-4-6">
+<h1>Clicker Question 4-6<a class="headerlink" href="#clicker-question-4-6" title="Link to this heading">#</a></h1>
 <p>Consider the generic position vector <span class="math notranslate nohighlight">\(\vec{R}\)</span> for a particle in 2D space. Which of the following describes the direction of the vector in plane polar coordinates (<span class="math notranslate nohighlight">\(r\)</span>, <span class="math notranslate nohighlight">\(\phi\)</span>)?</p>
 <ol class="arabic simple">
 <li><p><span class="math notranslate nohighlight">\(\hat{R}\)</span></p></li>
@@ -546,21 +699,21 @@ Passcode: 404830</p>
 <div class="math notranslate nohighlight">
 \[m \ddot{y} = +mg - b \dot{y} - c \dot{y}^2\]</div>
 <p>What are the units of the constants <span class="math notranslate nohighlight">\(b\)</span> and <span class="math notranslate nohighlight">\(c\)</span>?</p>
-<!-- ---
-
-# Group Discussion 4-2
-
-Consider the generic position vector $\vec{R}$ for a particle in 2D space. Find the velocity vector $\vec{V}$ for the particle in Cartesian coordinates ($x$, $y$).
-
-## What happens in plane polar coordinates? 
-
-$$\vec{R} = r \hat{r} + \phi \hat{\phi}$$
-
-Note: 
-
-$$\hat{r} = \cos(\phi) \hat{x} + \sin(\phi) \hat{y}$$
-
-$$\hat{\phi} = -\sin(\phi) \hat{x} + \cos(\phi) \hat{y}$$ -->
+<p><img alt="bg right:35% width:350px height:auto" src="../_images/day04-s2026.png" /></p>
+</section>
+<hr class="docutils" />
+<section id="group-discussion-4-2">
+<h1>Group Discussion 4-2<a class="headerlink" href="#group-discussion-4-2" title="Link to this heading">#</a></h1>
+<p>Consider the generic position vector <span class="math notranslate nohighlight">\(\vec{R}\)</span> for a particle in 2D space. Find the velocity vector <span class="math notranslate nohighlight">\(\vec{V}\)</span> for the particle in Cartesian coordinates (<span class="math notranslate nohighlight">\(x\)</span>, <span class="math notranslate nohighlight">\(y\)</span>).</p>
+<p><img alt="bg right:35% width:350px height:auto" src="../_images/day04-s2026.png" /></p>
+<p><strong>What happens in plane polar coordinates?</strong></p>
+<div class="math notranslate nohighlight">
+\[\vec{R} = r \hat{r} + \phi \hat{\phi}\]</div>
+<p>Note:</p>
+<div class="math notranslate nohighlight">
+\[\hat{r} = \cos(\phi) \hat{x} + \sin(\phi) \hat{y}\]</div>
+<div class="math notranslate nohighlight">
+\[\hat{\phi} = -\sin(\phi) \hat{x} + \cos(\phi) \hat{y}\]</div>
 </section>
 
     <script type="text/x-thebe-config">
@@ -610,25 +763,23 @@ $$\hat{\phi} = -\sin(\phi) \hat{x} + \cos(\phi) \hat{y}$$ -->
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Day 04 - Mathematical Preliminaries</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#raisemyhand">RaiseMyHand</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#announcements">Announcements</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#seminars-this-week-wednesday">Seminars this week (Wednesday)</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#wednesday-september-3-2025">WEDNESDAY, September 3, 2025</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Seminars this week (Wednesday)</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">WEDNESDAY, September 3, 2025</a></li>
-</ul>
-</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#seminars-this-week-wednesday">Seminars this week (Wednesday)</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#goals-for-this-week">Goals for this week</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#be-able-to-answer-the-following-questions">Be able to answer the following questions.</a></li>
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#reminders-from-day-03">Reminders from Day 03</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#projectile-motion">Projectile Motion</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-4-1">Clicker Question 4-1</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#projectile-motion">Projectile Motion</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-4-2">Clicker Question 4-2</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-4-3">Clicker Question 4-3</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-4-4">Clicker Question 4-4</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-4-5">Clicker Question 4-5</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-4-6">Clicker Question 4-6</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#group-discussion-4-1">Group Discussion 4-1</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#group-discussion-4-2">Group Discussion 4-2</a></li>
 </ul>
 
   </nav></div>

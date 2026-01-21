@@ -10,9 +10,154 @@ keywords: classical mechanics, models, modeling, differential equations, motion
 url: https://dannycaballero.info/phy321msu/slides/day-04-mathematical-prelims.html
 ---
 
+<style>
+  :root {
+    --color-spartan-green: #18453B;
+    --color-msu-gold: #C1B000;
+    --color-light-gray: #f5f5f5;
+    --color-dark-text: #1a1a1a;
+    --color-accent-green: #2d5f4f;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    color: var(--color-dark-text);
+  }
+  
+  h1, h2, h3 {
+    color: var(--color-spartan-green);
+    font-weight: 500;
+  }
+  
+  h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0rem;
+  }
+  
+  h2 {
+    font-size: 1.55rem;
+    margin-bottom: 1.0rem;
+    border-bottom: 4px solid var(--color-spartan-green);
+    padding-bottom: 0.5rem;
+  }
+  
+  h3 {
+    font-size: 1.15rem;
+    margin-top: 1rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  section {
+    padding: 2rem;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .equation {
+    background-color: var(--color-light-gray);
+    padding: 1.5rem;
+    border-left: 4px solid var(--color-msu-gold);
+    margin: 1.5rem 0;
+    font-size: 1.3rem;
+    text-align: center;
+    color: var(--color-dark-text);
+  }
+
+  p {
+    font-size: 1.15rem;
+    line-height: 1.4;
+    margin-bottom: 0.5rem;
+  }
+  
+  ul, ol {
+    font-size: 1.15rem;
+    line-height: 1.4;
+    margin-left: 0.5rem;
+  }
+
+  ul ul, ol ol, ul ol, ol ul {
+    margin-left: 0.1rem;
+  }
+  
+  li {
+    margin-bottom: 0rem;
+    line-height: 1.4;
+  }
+  
+  strong {
+    color: var(--color-spartan-green);
+    font-weight: 600;
+  }
+  
+  em {
+    color: var(--color-accent-green);
+  }
+
+  .highlight {
+    background-color: var(--color-light-gray);
+    padding: 1.5rem;
+    border-left: 4px solid var(--color-spartan-green);
+    margin: 1.5rem 0;
+  }
+
+  .activity {
+    background-color: #fff8e1;
+    border: 2px solid var(--color-msu-gold);
+    padding: 1.25rem;
+    border-radius: 6px;
+    margin: 1rem 0;
+  }
+
+  code {
+    background-color: var(--color-light-gray);
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-size: 1.0rem;
+  }
+
+  .footnote {
+    font-size: 0.8rem;
+    color: #999;
+    margin-top: 1.5rem;
+    border-top: 1px solid #ddd;
+    padding-top: 0.75rem;
+  }
+</style>
+
+<!--
+_class: title
+_backgroundColor: #ffffff
+_color: #18453B
+-->
+
+
 # Day 04 - Mathematical Preliminaries
 
-![bg right:60%](./images/vector.jpeg)
+**Questions?** *Make sure to upvote questions*
+
+<img src="../images/qrcodes/day04-s2026.png" width=300px>
+
+![bg right:40% width:500px height:auto](./images/vector.jpeg)
+
+
+
+<div class="footnote">PHY 321 Classical Mechanics I - Spring 2026</div>
+
+---
+
+# RaiseMyHand
+
+![bg left:25% width:250px height:auto](../images/logos/open-source.png)
+
+- Tool should be available for each class period. 
+- Answers to your questions are also written up after class
+  - Day 02 - <https://raisemyhand.msucerl.org/student?code=s97Hf7-WS9K7b7ooovdjKxXwih1b_Nnj>
+- Links to each day posted in MS Teams
+
+*Would appreciate your feedback and/or ideas for use cases*
 
 ---
 
@@ -29,28 +174,6 @@ url: https://dannycaballero.info/phy321msu/slides/day-04-mathematical-prelims.ht
 # Seminars this week (Wednesday)
 
 
-## WEDNESDAY, September 3, 2025
- 
-Astronomy Seminar, 1:30 pm, 1400 BPS, In Person and Zoom, Host~
-Speaker:   Group Introductions
-Title:
-Zoom Link: https://msu.zoom.us/j/887295421?pwd=N1NFb0tVU29JL2FFSkk0cStpanR3UT09
-Meeting ID: 887-295-421
-Passcode: 002454
-
----
-
-# Seminars this week (Wednesday)
-
-
-## WEDNESDAY, September 3, 2025
-
-Nuclear Science Seminar, 3:30Pm., FRIB 1300 lab in person and online via Zoom
-Speaker: Mark Spieker, Florida State University
-Title: Experimental studies of the pygmy dipole resonance
-Zoom Link: https://msu.zoom.us/j/95277003505?pwd=hTILu1oLqmhTCU7jlVKFTlXXZBmuGb.1
-Meeting ID: 952 7700 3505
-Passcode: 404830
 
 ---
 
@@ -71,9 +194,23 @@ Passcode: 404830
 * Differential equations are mathematical models that describe the motion of particles
 * We can use different methods to solve these differential equations
 
-**i-Clicker: https://join.iclicker.com/QTEC**
+**i-Clicker: https://join.iclicker.com/PRJO**
 
 --- 
+
+# Clicker Question 4-1
+
+**I feel confident in my abilities to use VS Code for my homework**
+
+1. Strongly Agree
+2. Agree
+3. We'll see
+4. Disagree
+5. Strongly disagree
+
+![bg right:25% width:250px height:auto](../images/qrcodes/day04-s2026.png)
+
+---
 
 # Projectile Motion
 
@@ -87,7 +224,7 @@ $$y_f = y_i + v_{y,i}t + \dfrac{1}{2}a_y t^2$$
 
 ---
 
-# Clicker Question 4-1
+# Clicker Question 4-2
 
 For this fountain, what is the best guess for the acceleration ($\mathbf{a} = ??$) experienced by a fluid particle? <br> *Assume $y$ is positive upward; $x$ is positive to the right.*
 
@@ -102,7 +239,21 @@ For this fountain, what is the best guess for the acceleration ($\mathbf{a} = ??
 
 ---
 
-# Clicker Question 4-2
+# Clicker Question 4-3
+
+**I feel comfortable with a discrete formulation of Newton's Laws.**
+
+1. Yes, I got this.
+2. I recall some ideas, but let's check in.
+3. I'm not sure.
+4. I really don't know what *discrete formulation* means here
+5. ???
+
+![bg right:25% width:250px height:auto](../images/qrcodes/day04-s2026.png)
+
+---
+
+# Clicker Question 4-4
 
 The average velocity for a macroscopic time step $\Delta t = t_f - t_i$ is given by:
 
@@ -118,7 +269,20 @@ where $\Delta \mathbf{r} = \mathbf{r}_f - \mathbf{r}_i$. At what time do we esti
 
 ---
 
-# Clicker Question 4-3
+# Clicker Question 4-5
+
+**I feel comfortable with vectors, vector decomposition, and trigonometry in Cartesian coordinates.**
+
+1. Yes, I got this.
+2. I recall some ideas, but let's check in.
+3. I'm not sure.
+4. I don't feel too confident with vectors.
+
+![bg right:25% width:250px height:auto](../images/qrcodes/day04-s2026.png)
+
+---
+
+# Clicker Question 4-6
 
 Consider the generic position vector $\vec{R}$ for a particle in 2D space. Which of the following describes the direction of the vector in plane polar coordinates ($r$, $\phi$)?
 
@@ -138,13 +302,17 @@ $$m \ddot{y} = +mg - b \dot{y} - c \dot{y}^2$$
 
 What are the units of the constants $b$ and $c$?
 
-<!-- ---
+![bg right:35% width:350px height:auto](../images/qrcodes/day04-s2026.png)
+
+---
 
 # Group Discussion 4-2
 
 Consider the generic position vector $\vec{R}$ for a particle in 2D space. Find the velocity vector $\vec{V}$ for the particle in Cartesian coordinates ($x$, $y$).
 
-## What happens in plane polar coordinates? 
+![bg right:35% width:350px height:auto](../images/qrcodes/day04-s2026.png)
+
+**What happens in plane polar coordinates?** 
 
 $$\vec{R} = r \hat{r} + \phi \hat{\phi}$$
 
@@ -152,5 +320,5 @@ Note:
 
 $$\hat{r} = \cos(\phi) \hat{x} + \sin(\phi) \hat{y}$$
 
-$$\hat{\phi} = -\sin(\phi) \hat{x} + \cos(\phi) \hat{y}$$ -->
+$$\hat{\phi} = -\sin(\phi) \hat{x} + \cos(\phi) \hat{y}$$
 

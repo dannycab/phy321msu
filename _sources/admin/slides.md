@@ -476,9 +476,9 @@ Slides for PHY 321 appear in reverse chronological order, with the most recent s
 
 :::
 
----
+--- -->
 
-## Day 04 - Mathematical Prelims - 03 Sep 2025
+## Day 04 - Mathematical Prelims - 21 Jan 2026
 
 [![Day 04](../slides/day-04-mathematical-prelims.png)](../slides/day-04-mathematical-prelims.pdf)
 
@@ -489,7 +489,7 @@ Slides for PHY 321 appear in reverse chronological order, with the most recent s
 
 :::
 
---- -->
+---
 
 ## Day 03 - Computing Setup - 16 Jan 2026
 
