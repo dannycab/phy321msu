@@ -228,6 +228,21 @@ Title: Fault tolerant quantum computing I
 
 --- 
 
+# Content Check-in Week 2
+
+**I appreciate y'all taking the time to complete it!**
+
+- Lots of reading, Danny! WTF?!?!
+  - Remember 90 minutes a week. Take your time and break it up.
+- The reading is so dense and covers many topics.
+  - Each of you knows well how you learn; Lean on your strengths
+- Talk to each other!
+  - MS Teams is there for this discussion also.
+- More examples, please.
+  - We will do more in class and on workshop days
+
+---
+
 # Clicker Question 4-1
 
 **I feel confident in my abilities to use VS Code for my homework**
