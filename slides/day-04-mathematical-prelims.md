@@ -166,7 +166,7 @@ _color: #18453B
 * Homework 1 is due this Friday
 * Homework 2 is posted now
 * Help sessions start this week
-    * DC Friday at 2-4pm (1248 BPS)
+    * DC - Fridays at 10:00-12:00 and 16:00-17:00 (1248 BPS)
 * Mihir (ULA) will host additional help hours soon
 
 ---
