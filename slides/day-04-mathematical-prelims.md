@@ -171,8 +171,38 @@ _color: #18453B
 
 ---
 
-# Seminars this week (Wednesday)
+# Seminars this week 
 
+## WEDNESDAY, January 21, 2026    
+ 
+Astronomy Seminar, 1:30 p.m., BPS 1400 & Zoom 
+Speaker: Yuan Li, UMass - Amherst
+Title: TBA
+Zoom Link: https://msu.zoom.us/j/93334479606?pwd=OtIXPWhRPBfzYu53sl3trSJlaBYI7C.1
+Passcode:  825824
+ 
+---
+ 
+# Seminars this week 
+
+## THURSDAY, January 22, 2026    
+ 
+Colloquium, Seminar, 3:30 p.m., BPS 1415 & Zoom
+Refreshments at 3:00 BPS in BPS 1400
+Speaker:  Richard Lenski, MSU
+Title: Dynamics and Repeatability of Evolution in a Long-Term Experiment with Bacteria 
+Zoom Link: https://msu.zoom.us/j/94951062663
+Password: 2002
+ 
+---
+
+# Seminars this week 
+
+## FRIDAY, January 23, 2026    
+ 
+QuIC, Seminar, 12:40 p.m., BPS 1300 & Zoom 
+Speaker: Ben DalFavero, MSU
+Title: Fault tolerant quantum computing I
 
 
 ---
