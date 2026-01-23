@@ -463,9 +463,9 @@ Slides for PHY 321 appear in reverse chronological order, with the most recent s
 
 :::
 
----
+--- --->
 
-## Day 05 - Help Session - 05 Sep 2025
+## Day 05 - Workshop Day - 23 Jan 2026
 
 [![Day 05](../slides/day-05-help-session.png)](../slides/day-05-help-session.pdf)
 
@@ -476,7 +476,7 @@ Slides for PHY 321 appear in reverse chronological order, with the most recent s
 
 :::
 
---- -->
+--- 
 
 ## Day 04 - Mathematical Prelims - 21 Jan 2026
 
