@@ -22,7 +22,7 @@ _All assignments are turned in using Gradescope as a single PDF._
 |:--------:|:---------:|:-----------------------------------------------:|:----------------------------------|:-------------------------------------------------------------------|
 | CW4      | 19 Jan    | **Martin Luther King Jr. Day (No Class)**       |                                  | 📝 [Homework 2 Assigned (Due 30 Jan)](../assignments/hw2.ipynb)     |
 |          | 21 Jan     | Newton's Laws; Motion in 2 and 3 dimensions     | 📚 JRT 1.4-1.6; AMS Ch 4.2 and 5<br>📊 [Slides](../slides/day-04-mathematical-prelims.pdf)    |                                                                   |
-|          | 23 Jan     | Workshop day                                    |                                  | 📥 **Homework 1 Due**<br>**(Late after Sunday 11:59pm)**                                                |
+|          | 23 Jan     | Workshop day                                |   📊 [Slides](../slides/day-05-help-session.pdf)                                  | 📥 **Homework 1 Due**<br>**(Late after Sunday 11:59pm)**                                                |
 
 ---
 
