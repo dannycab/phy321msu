@@ -33,7 +33,7 @@ parts:
         sections:
         - file: assignments/hw1.ipynb
         - file: assignments/hw2.ipynb
-        # - file: assignments/hw3.ipynb
+        - file: assignments/hw3.ipynb
         # - file: assignments/hw4.ipynb
         # - file: assignments/midterm1.ipynb
         # - file: assignments/hw5.ipynb
