@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Homework 3 (Due 19 Sep) &#8212; Classical Mechanics</title>
+    <title>Homework 3 (Due 06 Feb) &#8212; Classical Mechanics</title>
   
   
   
@@ -16,33 +16,30 @@
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
     document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
-  <!--
-    this give us a css class that will be invisible only if js is disabled
-  -->
-  <noscript>
-    <style>
-      .pst-js-only { display: none !important; }
-
-    </style>
-  </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
-    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
   
-  <!-- So that users can add custom icons -->
-  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
     <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
     <script src="../_static/doctools.js?v=9a2dae69"></script>
@@ -55,7 +52,7 @@
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../_static/design-tabs.js?v=36754332"></script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
@@ -65,9 +62,10 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'assignments/hw3';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Course Calendar" href="../admin/schedule-cal.html" />
+    <link rel="prev" title="Homework 2 (Due 30 Jan)" href="hw2.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-  <meta name="docsearch:version" content="" />
   </head>
   
   
@@ -83,8 +81,19 @@
     <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
   
-  <dialog id="pst-search-dialog">
-    
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
 <form class="bd-search d-flex align-items-center"
       action="../search.html"
       method="get">
@@ -92,6 +101,7 @@
   <input type="search"
          class="form-control"
          name="q"
+         id="search-input"
          placeholder="Search this book..."
          aria-label="Search this book..."
          autocomplete="off"
@@ -99,8 +109,8 @@
          autocapitalize="off"
          spellcheck="false"/>
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form>
-  </dialog>
+</form></div>
+  </div>
 
   <div class="pst-async-banner-revealer d-none">
   <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
@@ -116,10 +126,7 @@
       
       
       
-        
-      
-      <dialog id="pst-primary-sidebar-modal"></dialog>
-      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+      <div class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -149,17 +156,21 @@
     
     
     <img src="../_static/spartan-helmet.png" class="logo__image only-light" alt="Classical Mechanics - Home"/>
-    <img src="../_static/spartan-helmet.png" class="logo__image only-dark pst-js-only" alt="Classical Mechanics - Home"/>
+    <script>document.write(`<img src="../_static/spartan-helmet.png" class="logo__image only-dark" alt="Classical Mechanics - Home"/>`);</script>
   
   
 </a></div>
         <div class="sidebar-primary-item">
 
-<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
- <i class="fa-solid fa-magnifying-glass"></i>
- <span class="search-button__default-text">Search</span>
- <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
-</button></div>
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
@@ -182,7 +193,7 @@
 </details></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Course Materials</span></p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="../lecture-notes/weekly-materials.html">Weekly Course Materials</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../lecture-notes/01_notes.html">01 - Overture: What is Classical Physics?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../lecture-notes/02_notes.html">02 - Computing is a Necessary Tool for Science</a></li>
@@ -200,12 +211,16 @@
 <li class="toctree-l2"><a class="reference internal" href="../lecture-notes/14_notes.html">14 - Classical Mechanics Thus Far</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="assignment-overview.html">Assignments Overview</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="assignment-overview.html">Assignments Overview</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="hw1.html">Homework 1 (Due 23 Jan)</a></li>
 
 
 
 <li class="toctree-l2"><a class="reference internal" href="hw2.html">Homework 2 (Due 30 Jan)</a></li>
+
+
+
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Homework 3 (Due 06 Feb)</a></li>
 
 
 
@@ -239,14 +254,9 @@
   
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
-      <div class="sidebar-primary-item">
-<div id="ethical-ad-placement"
-      class="flat"
-      data-ea-publisher="readthedocs"
-      data-ea-type="readthedocs-sidebar"
-      data-ea-manual="true">
-</div></div>
   </div>
+  
+  <div id="rtd-footer-container"></div>
 
 
       </div>
@@ -343,16 +353,24 @@
 
 
 
-<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
-  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
-  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
-  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
-</button>
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
 
 
-<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
-</button>
+  </button>
+`);
+</script>
 <button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
 </button>
@@ -366,7 +384,7 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Homework 3 (Due 19 Sep)</h1>
+    <h1>Homework 3 (Due 06 Feb)</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -376,18 +394,23 @@
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction-to-homework-3">Introduction to homework 3</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-1-10-pt-physics-and-capital">Exercise 1 (10 pt), Physics and Capital</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-2-20-pt-electron-moving-into-an-electric-field">Exercise 2 (20 pt), Electron moving into an electric field</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-3-10-pt-drag-force">Exercise 3 (10 pt), Drag force</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-4-10-pt-falling-object">Exercise 4 (10 pt), Falling object</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-5-10-pt-and-now-a-theoretical-exercise">Exercise 5 (10 pt), and now a theoretical exercise</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-6-10-pt-back-to-a-falling-ball-and-preparing-for-the-numerical-exercise">Exercise 6 (10 pt), back to a falling ball and preparing for the numerical exercise</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-7-40pt-numerical-elements-solving-exercise-6-numerically">Exercise 7 (40pt), Numerical elements, solving exercise 6 numerically</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#integrating-classwork-with-research">Integrating Classwork With Research</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Homework 3 (Due 06 Feb)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#individual-exercise-submit-on-d2l-only">Individual Exercise (Submit on D2L only)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-0-10-pt-physics-and-capital">Exercise 0 (10 pt), Physics and Capital</a></li>
 </ul>
 </li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#pencil-and-paper-exercises-submit-on-gradescope-only">Pencil and Paper Exercises (Submit on Gradescope only)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-1-20-pt-electron-moving-into-an-electric-field">Exercise 1 (20 pt), Electron moving into an electric field</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-2-10-pt-drag-force">Exercise 2 (10 pt), Drag force</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-3-10-pt-falling-object">Exercise 3 (10 pt), Falling object</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-4-10-pt-and-now-a-theoretical-exercise">Exercise 4 (10 pt), and now a theoretical exercise</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-5-10-pt-back-to-a-falling-ball-and-preparing-for-the-numerical-exercise">Exercise 5 (10 pt), back to a falling ball and preparing for the numerical exercise</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-6-30pt-numerical-elements-solving-exercise-5-numerically">Exercise 6 (30pt), Numerical elements, solving exercise 5 numerically</a></li>
 </ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#extra-credit-integrating-research">Extra Credit — Integrating Research</a></li>
+</ul>
+
             </nav>
         </div>
     </div>
@@ -400,62 +423,40 @@
                   
   <!-- HTML file automatically generated from DocOnce source (https://github.com/doconce/doconce/)
 doconce format html hw3.do.txt --no_mako -->
-<!-- dom:TITLE: PHY321: Classical Mechanics 1 --><section id="homework-3-due-19-sep">
-<h1>Homework 3 (Due 19 Sep)<a class="headerlink" href="#homework-3-due-19-sep" title="Link to this heading">#</a></h1>
-<p><strong>Due at midnight</strong><br/>
-Total points: <strong>100</strong></p>
-<section id="introduction-to-homework-3">
-<h2>Introduction to homework 3<a class="headerlink" href="#introduction-to-homework-3" title="Link to this heading">#</a></h2>
-<p>This week’s sets of classical pen and paper and computational
-exercises deal with the motion of different objects under the
-influence of various forces. The relevant reading background is</p>
+<!-- dom:TITLE: PHY321: Classical Mechanics 1 --><section id="homework-3-due-06-feb">
+<h1>Homework 3 (Due 06 Feb)<a class="headerlink" href="#homework-3-due-06-feb" title="Link to this heading">#</a></h1>
+<div class="alert admonition">
+<p class="admonition-title">Grading Breakdown</p>
+<ul class="simple">
+<li><p>Individual Exercise (10 points) - Ex 0</p></li>
+<li><p>Pencil and Paper Exercises (60 points) - Ex 1-5</p></li>
+<li><p>Numerical Exercise (30 points) - Ex 6</p></li>
+</ul>
+</div>
+<div class="tip admonition">
+<p class="admonition-title">Practicalities about homeworks</p>
 <ol class="arabic simple">
-<li><p>chapter 2 of Taylor (there are many good examples there) and</p></li>
-<li><p>chapters 5-7 of Malthe-Sørenssen.</p></li>
-</ol>
-<p>In both textbooks there are many nice worked out
-examples. Malthe-Sørenssen’s text contains also several coding
-examples you may find useful.</p>
-<p>There are several pedagogical aims we have in mind with these exercises:</p>
-<ol class="arabic simple">
-<li><p>Get practice in setting up and analyzing a physical problem, finding the forces and the relevant equations to solve;</p></li>
-<li><p>Analyze the results and ask yourself whether they make sense or not;</p></li>
-<li><p>Finding analytical solutions to problems if possible and compare these with numerical results. This teaches us also how to understand errors in numerical calculations;</p></li>
-<li><p>Being able to solve (in mechanics these are the most common types of equations) numerically ordinary differential equations and compare the solutions where possible with analytical solutions;</p></li>
-<li><p>Getting used to studying physical problems using all possible tools, from paper and pencil to numerical solutions;</p></li>
-<li><p>Then analyze the results and ask yourself whether they make sense or not.</p></li>
-</ol>
-<p>The above steps outline important elements of our understanding of the
-scientific method. Furthermore, there are also explicit coding skills
-we aim at such as setting up arrays, solving differential equations
-numerically and plotting your results.  Coding practice is also an
-important aspect. The more we practice the better we get (hopefully).
-From a numerical mathematics point of view, we will solve the differential
-equations using Euler’s method (forward Euler).</p>
-<p>The code we will develop can be reused as a basis for coming homeworks. We can
-also extend the numerical solver we write here to include other methods (later) like
-the modified Euler method (Euler-Cromer, midpoint Euler) and more
-advanced methods like the family of Runge-Kutta methods and the Velocity-Verlet method.</p>
-<p>At the end of this course, we will thus have developed a larger code
-(or set of codes) which will allow us to study different numerical
-methods (integration and differential equations) as well as being able
-to study different physical systems. Combined with analytical skills,
-the hope is that this can allow us to explore interesting and
-realistic physics problems. By doing so, the hope is that can lead to
-deeper insights about the laws of motion which govern a system.</p>
-<p>And hopefully you can reuse many of the above solvers in other courses (our ideal).</p>
-<p><strong>Practicalities about  homeworks and projects</strong></p>
-<ol class="arabic simple">
-<li><p>You can work in pairs or by yourself. If you work as a pair you can hand in one answer only if you wish. <strong>Remember to write your name(s)</strong>! You may collaborate with others (optimal group size 3-4).</p></li>
+<li><p>Individual exercises. You must work alone on these exercises and hand in your own answers. This should be submitted on D2L only (Homework 3 Exercise 0). Individual exercises are marked with “Individual Exercise” in the title and are counted separately from the rest of the homework.</p></li>
+<li><p>For pencil and paper, or numerical exercises, you may work in groups of up to 3. If you work as a pair/group you may hand in one answer only if you wish. <strong>Remember to write your name(s)</strong>! These exercises are marked with “Pencil and Paper Exercises” or “Numerical Exercise” in the title, and are counted together for the homework grade.</p></li>
+<li><p>Beyond the group you work on homework with, you may collaborate with others to discuss concepts and approaches, but you must write up your own answers (alone or as a group of 3).</p></li>
 <li><p>Homeworks are available approximately ten days before the deadline. You should anticipate this work.</p></li>
-<li><p>How do I(we)  hand in?  You can hand in the paper and pencil exercises as a <strong>single scanned PDF document</strong>. For this homework this applies to exercises 1-5. Your jupyter notebook file should be converted to a <strong>PDF</strong> file, attached to the same PDF file as for the pencil and paper exercises. All files should be uploaded to Gradescope.</p></li>
-<li><p>For any exercise marked <strong>Complete Individually</strong>, you must do so as these are reflective exercises for you.</p></li>
+<li><p>How do I(we) hand in?  You can hand in the paper and pencil exercises as a <strong>single scanned PDF document</strong>. For this homework this applies to exercises 1-5. Your jupyter notebook file should be converted to a <strong>PDF</strong> file, attached to the same PDF file as for the pencil and paper exercises. All files should be uploaded to Gradescope.</p></li>
+<li><p><strong>Make sure your work is legible</strong>. If we cannot read it, we cannot grade it.</p></li>
 </ol>
 <p><strong><a class="reference internal" href="#../resources/gradescope-submissions.md"><span class="xref myst">Instructions for submitting to Gradescope</span></a>.</strong></p>
+</div>
 </section>
-<section id="exercise-1-10-pt-physics-and-capital">
-<h2>Exercise 1 (10 pt), Physics and Capital<a class="headerlink" href="#exercise-1-10-pt-physics-and-capital" title="Link to this heading">#</a></h2>
-<p><strong>Complete Individually</strong></p>
+<section id="individual-exercise-submit-on-d2l-only">
+<h1>Individual Exercise (Submit on D2L only)<a class="headerlink" href="#individual-exercise-submit-on-d2l-only" title="Link to this heading">#</a></h1>
+<section id="exercise-0-10-pt-physics-and-capital">
+<h2>Exercise 0 (10 pt), Physics and Capital<a class="headerlink" href="#exercise-0-10-pt-physics-and-capital" title="Link to this heading">#</a></h2>
+<figure class="align-default" id="id1">
+<a class="reference internal image-reference" href="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Stagg_Field_reactor.jpg/960px-Stagg_Field_reactor.jpg"><img alt="Artist rendition of the first nuclear reactor was erected in 1942 in the West Stands section of Stagg Field at the University of Chicago. On December 2, 1942 a group of scientists achieved the first self-sustaining chain reaction and thereby initiated the controlled release of nuclear energy. The reactor consisted of uranium and uranium oxide lumps spaced in a cubic lattice embedded in graphite. In 1943 it was dismantled and reassembled at the Palos Park unit of the Argonne National Laboratory." src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Stagg_Field_reactor.jpg/960px-Stagg_Field_reactor.jpg" style="width: 600px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 41 </span><span class="caption-text">Artist rendition of the first nuclear reactor. Erected in 1942 at the University of Chicago’s Stagg Field. <a class="reference external" href="https://en.wikipedia.org/wiki/Chicago_Pile-1">Source: Wikimedia Commons</a></span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
 <p>There’s a substantive argument to be made that physics as an enterprise has driven capital investment and the development of technologies that we enjoy. There’s also an argument that can be made that the defense and weapons industry invested heavily in physics research, especially during the Cold War, which lead to the development consumer products as corporate actors looked for places to make additional profits. There’s still another argument that the exploitation of people and resources in nations and lands that are less developed than the US and Western Europe provided the necessary materials and capital to develop Big Science.</p>
 <p>Certainly the story of physics and the development of our politics and economy is more complex than these isolated arguments. But, the stories that are platformed matter to physics, to science, and to our society.</p>
 <p>Some in physics like <a class="reference external" href="https://en.wikipedia.org/wiki/Michio_Kaku">Michio Kaku</a> have adopted ways of thinking and writing that speak about the future of physics, technology, and the world. Their prognostications are often more fantasy than reality. Seriously, read any of their books. Increasingly, with the rise of <a class="reference external" href="https://www.rollingstone.com/culture/culture-commentary/billionaires-psychology-tech-politics-1235358129/">billionaire technologist who explore even more fanciful futures that are inaccessible to most</a>, we should take a moment to read and deconstruct how physics is being used to make these arguments seem plausible (they are not).</p>
@@ -467,11 +468,10 @@ deeper insights about the laws of motion which govern a system.</p>
 <p>You don’t have to disagree or agree with the views presented in the interview; it is important for you to learn about how others speak about our discipline, so you can decide how you will do so.</p>
 <p>And if you have questions, just ask.</p>
 </div>
-<p><strong>Complete Individually</strong></p>
 <p>Now answer the follow questions:</p>
 <ul class="simple">
-<li><p>1a (3pt) In 250 words, summarize the interview with Kaku, what you learned from it, and what you have more questions about.</p></li>
-<li><p>1b (3pt) In 250 words, react to this section of the interview. Use your own understanding of wealth and where you understanding of it in comes from. In doing so, critique Kaku’s statement. <em>Note that Kaku’s definition is not so much different from your own in that his simply comes from his own experience and views about the world; not from the scholarly study of economics and history.</em></p></li>
+<li><p>0a (3pt) In 250 words, summarize the interview with Kaku, what you learned from it, and what you have more questions about.</p></li>
+<li><p>0b (3pt) In 250 words, react to this section of the interview. Use your own understanding of wealth and where you understanding of it in comes from. In doing so, critique Kaku’s statement. <em>Note that Kaku’s definition is not so much different from your own in that his simply comes from his own experience and views about the world; not from the scholarly study of economics and history.</em></p></li>
 </ul>
 <blockquote>
 <div><p>To understand economics, you must understand where wealth comes from. If you talk to an economist, the economist might say, “Wealth comes from printing money.” A politician might say, “Wealth comes from taxes.” I think they’re all wrong – the wealth of society comes from physics.</p>
@@ -481,12 +481,16 @@ deeper insights about the laws of motion which govern a system.</p>
 <div><p>For example, Kaku states, “<em>[t]he Chinese system works because they’ve mastered one art: copying.</em>”<br><br>This is both a sweeping and a false statement that is easily refuted by observing the substantial investments in green energy technologies and developments of high-speed train systems throughout China. China leads the world in both of these areas; both from an engineering standpoint and an implementation perspective.<br><br>Further research would find how the Chinese government has invested in STEM schooling, STEM research, and university-corporate partnerships over decades to build both the human capital and infrastructure to lay the groundwork for these advancements.</p>
 </div></blockquote>
 <ul class="simple">
-<li><p>1c (4pt) In 250 words, find another seemingly false or sweeping statement that Kaku makes about physics and capitalism. Do a web search on these ideas and identify more true or more nuanced explanations. <strong>Please include links or citations to what you found.</strong></p></li>
+<li><p>0c (4pt) In 250 words, find another seemingly false or sweeping statement that Kaku makes about physics and capitalism. Do a web search on these ideas and identify more true or more nuanced explanations. <strong>Please include links or citations to what you found.</strong></p></li>
 </ul>
-<p><strong>Any genuine and complete response will receive full credit.</strong></p>
+<p><em>Any genuine and complete response will receive full credit.</em></p>
+<p><strong>Submit your answers on D2L through the assignment titled “HW3 Exercise 0”.</strong></p>
 </section>
-<section id="exercise-2-20-pt-electron-moving-into-an-electric-field">
-<h2>Exercise 2 (20 pt), Electron moving into an electric field<a class="headerlink" href="#exercise-2-20-pt-electron-moving-into-an-electric-field" title="Link to this heading">#</a></h2>
+</section>
+<section id="pencil-and-paper-exercises-submit-on-gradescope-only">
+<h1>Pencil and Paper Exercises (Submit on Gradescope only)<a class="headerlink" href="#pencil-and-paper-exercises-submit-on-gradescope-only" title="Link to this heading">#</a></h1>
+<section id="exercise-1-20-pt-electron-moving-into-an-electric-field">
+<h2>Exercise 1 (20 pt), Electron moving into an electric field<a class="headerlink" href="#exercise-1-20-pt-electron-moving-into-an-electric-field" title="Link to this heading">#</a></h2>
 <p>An electron is sent through a varying electrical
 field. Initially, the electron is moving in the <span class="math notranslate nohighlight">\(x\)</span>-direction with a velocity
 <span class="math notranslate nohighlight">\(v_x = 100\)</span> m/s. The electron enters the field when it passes the origin. The field
@@ -496,44 +500,44 @@ varies with time, causing an acceleration of the electron that varies in time</p
 \boldsymbol{a}(t)=\left(−20 \mathrm{m/s}^2 −10\mathrm{m/s}^3t\right) \boldsymbol{e}_y
 \]</div>
 <ul class="simple">
-<li><p>2a (4pt) Find the velocity as a function of time for the electron.</p></li>
-<li><p>2b (4pt)  Find the position as a function of time for the electron.</p></li>
+<li><p>1a (4pt) Find the velocity as a function of time for the electron.</p></li>
+<li><p>1b (4pt)  Find the position as a function of time for the electron.</p></li>
 </ul>
 <p>The field is only acting inside a box of length <span class="math notranslate nohighlight">\(L = 2m\)</span>.</p>
 <ul class="simple">
-<li><p>2c (4pt)  For how long time is the electron inside the field?</p></li>
-<li><p>2d (4pt)  What is the displacement in the <span class="math notranslate nohighlight">\(y\)</span>-direction when the electron leaves the box. (We call this the deflection of the electron).</p></li>
-<li><p>2e (4pt)  Find the angle the velocity vector forms with the horizontal axis as the electron leaves the box.</p></li>
+<li><p>1c (4pt)  For how long time is the electron inside the field?</p></li>
+<li><p>1d (4pt)  What is the displacement in the <span class="math notranslate nohighlight">\(y\)</span>-direction when the electron leaves the box. (We call this the deflection of the electron).</p></li>
+<li><p>1e (4pt)  Find the angle the velocity vector forms with the horizontal axis as the electron leaves the box.</p></li>
 </ul>
 </section>
-<section id="exercise-3-10-pt-drag-force">
-<h2>Exercise 3 (10 pt), Drag force<a class="headerlink" href="#exercise-3-10-pt-drag-force" title="Link to this heading">#</a></h2>
+<section id="exercise-2-10-pt-drag-force">
+<h2>Exercise 2 (10 pt), Drag force<a class="headerlink" href="#exercise-2-10-pt-drag-force" title="Link to this heading">#</a></h2>
 <p>We can observe that the models for linear and quadratic drag forces are given by:</p>
 <div class="math notranslate nohighlight">
 \[f_{lin} = 3\pi \eta D v \qquad f_{quad} = \kappa \rho A v^2\]</div>
 <p>where <span class="math notranslate nohighlight">\(D\)</span> is the “length scale” of the object (e.g., the diameter of the sphere), <span class="math notranslate nohighlight">\(\eta\)</span> is the viscosity of the fluid, <span class="math notranslate nohighlight">\(\rho\)</span> is the density of the fluid, <span class="math notranslate nohighlight">\(A\)</span> is the cross-sectional area of the object, and <span class="math notranslate nohighlight">\(\kappa\)</span> is a constant of order unity (larger for flat and blunt bodies; smaller for streamlined bodies).</p>
 <ul class="simple">
-<li><p>3a (5pt) The Reynolds number is defined as <span class="math notranslate nohighlight">\(Re = \rho v D / \eta\)</span>. What is the physical meaning of this number? For a spherical object, show that the ratio of the quadratic drag force to the linear drag force is given by <span class="math notranslate nohighlight">\(f_{quad}/f_{lin} = Re/48\)</span>. Use this to explain the physical meaning of the Reynolds number. <strong>Note: you may assume that <span class="math notranslate nohighlight">\(\kappa = 0.25\)</span> for a sphere.</strong></p></li>
-<li><p>3b (2pt) Explain a situation where there would be a low Reynolds number. What about a high Reynolds number? Estimate the Reynolds number for a falling rain drop, a parachutist, a car, and a plane.</p></li>
+<li><p>2a (5pt) The Reynolds number is defined as <span class="math notranslate nohighlight">\(Re = \rho v D / \eta\)</span>. What is the physical meaning of this number? For a spherical object, show that the ratio of the quadratic drag force to the linear drag force is given by <span class="math notranslate nohighlight">\(f_{quad}/f_{lin} = Re/48\)</span>. Use this to explain the physical meaning of the Reynolds number. <strong>Note: you may assume that <span class="math notranslate nohighlight">\(\kappa = 0.25\)</span> for a sphere.</strong></p></li>
+<li><p>2b (2pt) Explain a situation where there would be a low Reynolds number. What about a high Reynolds number? Estimate the Reynolds number for a falling rain drop, a parachutist, a car, and a plane.</p></li>
 </ul>
 <p><strong>Complete Individually</strong></p>
 <ul class="simple">
-<li><p>3c (3pt) Find another <a class="reference external" href="https://en.wikipedia.org/wiki/Dimensionless_numbers_in_fluid_mechanics">dimensionless number from fluid mechanics</a> and explain its physical meaning. Make sure you consider high and low values of the number you find.</p></li>
+<li><p>2c (3pt) Find another <a class="reference external" href="https://en.wikipedia.org/wiki/Dimensionless_numbers_in_fluid_mechanics">dimensionless number from fluid mechanics</a> and explain its physical meaning. Make sure you consider high and low values of the number you find.</p></li>
 </ul>
 </section>
-<section id="exercise-4-10-pt-falling-object">
-<h2>Exercise 4 (10 pt), Falling object<a class="headerlink" href="#exercise-4-10-pt-falling-object" title="Link to this heading">#</a></h2>
+<section id="exercise-3-10-pt-falling-object">
+<h2>Exercise 3 (10 pt), Falling object<a class="headerlink" href="#exercise-3-10-pt-falling-object" title="Link to this heading">#</a></h2>
 <p>We have shown that an object that is dropped from rest and experiences linear drag force will reach a terminal velocity and do so exponentially:</p>
 <div class="math notranslate nohighlight">
 \[v_y(t) = v_{ter}(1-e^{-t/\tau}).\]</div>
 <ul class="simple">
-<li><p>4a (3pt) At first, the object will be moving slowly. Show that we can approximate this expression in that interval. We should find that <span class="math notranslate nohighlight">\(v_y = gt\)</span> – the standard result for free fall in vacuum. Demonstrate this.</p></li>
-<li><p>4b (3pt) What is the next term, <span class="math notranslate nohighlight">\(O(t^2)\)</span>, in the expansion? What is the physical meaning of this term?</p></li>
-<li><p>4c (4pt) The position of the object is given by: <span class="math notranslate nohighlight">\(y(t) = v_{ter}t + (v_{y0}-v_{ter})\tau(1-e^{-t/\tau})\)</span>. Show that this reduces to the standard result <span class="math notranslate nohighlight">\(y = \frac{1}{2}gt^2\)</span> when <span class="math notranslate nohighlight">\(v_{y0} = 0\)</span>. What is the small parameter in your expansions in all cases?</p></li>
+<li><p>3a (3pt) At first, the object will be moving slowly. Show that we can approximate this expression in that interval. We should find that <span class="math notranslate nohighlight">\(v_y = gt\)</span> – the standard result for free fall in vacuum. Demonstrate this.</p></li>
+<li><p>3b (3pt) What is the next term, <span class="math notranslate nohighlight">\(O(t^2)\)</span>, in the expansion? What is the physical meaning of this term?</p></li>
+<li><p>3c (4pt) The position of the object is given by: <span class="math notranslate nohighlight">\(y(t) = v_{ter}t + (v_{y0}-v_{ter})\tau(1-e^{-t/\tau})\)</span>. Show that this reduces to the standard result <span class="math notranslate nohighlight">\(y = \frac{1}{2}gt^2\)</span> when <span class="math notranslate nohighlight">\(v_{y0} = 0\)</span>. What is the small parameter in your expansions in all cases?</p></li>
 </ul>
 </section>
-<section id="exercise-5-10-pt-and-now-a-theoretical-exercise">
-<h2>Exercise 5 (10 pt), and now a theoretical exercise<a class="headerlink" href="#exercise-5-10-pt-and-now-a-theoretical-exercise" title="Link to this heading">#</a></h2>
+<section id="exercise-4-10-pt-and-now-a-theoretical-exercise">
+<h2>Exercise 4 (10 pt), and now a theoretical exercise<a class="headerlink" href="#exercise-4-10-pt-and-now-a-theoretical-exercise" title="Link to this heading">#</a></h2>
 <p>Finding and exploring equations of motion is the central enterprise of classical mechanics. You will encounter (and derive) many equations you have not seen before, and you will need to explain them. Consider a hypothetical one-dimensional system where a mass <span class="math notranslate nohighlight">\(m\)</span> has a speed of <span class="math notranslate nohighlight">\(v_0\)</span> and coasts along the x-axis. The surrounding medium produces a drag force that is modeled using:</p>
 <div class="math notranslate nohighlight">
 \[F(v) = -c v^{3/2}.\]</div>
@@ -548,14 +552,14 @@ varies with time, causing an acceleration of the electron that varies in time</p
 <div class="math notranslate nohighlight">
 \[t = m \int_{v_0}^v \dfrac{dv'}{F(v')}\]</div>
 <ul class="simple">
-<li><p>5a (4pt) For the given force above, write the equation of motion in a form: <span class="math notranslate nohighlight">\(\dfrac{m dv}{F(v)} = dt\)</span>. Integrate both sides to find an expression for the velocity <span class="math notranslate nohighlight">\(v\)</span> as a function of <span class="math notranslate nohighlight">\(t\)</span> (<span class="math notranslate nohighlight">\(v(t)\)</span> not <span class="math notranslate nohighlight">\(t(v)\)</span>).</p></li>
-<li><p>5b (2pt) Check your answer by looking at the limits of its behavior. Does it agree with your intuition?</p></li>
-<li><p>5c (2pt) Sketch the expression and explain what the motion of the object looks like by interpreting this expression and your sketch.</p></li>
-<li><p>5d (2pt) Will the object ever come to rest?</p></li>
+<li><p>4a (4pt) For the given force above, write the equation of motion in a form: <span class="math notranslate nohighlight">\(\dfrac{m dv}{F(v)} = dt\)</span>. Integrate both sides to find an expression for the velocity <span class="math notranslate nohighlight">\(v\)</span> as a function of <span class="math notranslate nohighlight">\(t\)</span> (<span class="math notranslate nohighlight">\(v(t)\)</span> not <span class="math notranslate nohighlight">\(t(v)\)</span>).</p></li>
+<li><p>4b (2pt) Check your answer by looking at the limits of its behavior. Does it agree with your intuition?</p></li>
+<li><p>4c (2pt) Sketch the expression and explain what the motion of the object looks like by interpreting this expression and your sketch.</p></li>
+<li><p>4d (2pt) Will the object ever come to rest?</p></li>
 </ul>
 </section>
-<section id="exercise-6-10-pt-back-to-a-falling-ball-and-preparing-for-the-numerical-exercise">
-<h2>Exercise 6 (10 pt), back to a falling ball and preparing for the numerical exercise<a class="headerlink" href="#exercise-6-10-pt-back-to-a-falling-ball-and-preparing-for-the-numerical-exercise" title="Link to this heading">#</a></h2>
+<section id="exercise-5-10-pt-back-to-a-falling-ball-and-preparing-for-the-numerical-exercise">
+<h2>Exercise 5 (10 pt), back to a falling ball and preparing for the numerical exercise<a class="headerlink" href="#exercise-5-10-pt-back-to-a-falling-ball-and-preparing-for-the-numerical-exercise" title="Link to this heading">#</a></h2>
 <p><strong>Useful material: Malthe-Sørenssen chapter 7.5 and Taylor chapter 2.4.</strong></p>
 <p>In this example we study the motion of an object subject to a constant force and a velocity dependent
 force. We will reuse the code we develop here in homework 4 for a position-dependent force.</p>
@@ -583,14 +587,14 @@ The position is measured with respect to a coordinate system with origin at the 
 <p>The analytical expressions for velocity and position as functions of
 time will be used to compare with the numerical results in exercise 7.</p>
 <ul class="simple">
-<li><p>6a (3pt) Identify the forces acting on the ball and set up a diagram with the forces acting on the ball. Find the equation of motion for the falling ball. <strong>Do not limit to 1D yet!</strong></p></li>
-<li><p>6b (4pt) Assume now that the object is falling only in the <span class="math notranslate nohighlight">\(y\)</span>-direction (negative direction). Integrate the equation of motion from an initial time <span class="math notranslate nohighlight">\(t_0\)</span> to a final time <span class="math notranslate nohighlight">\(t\)</span> and find the velocity. Assume it is dropped from rest to simplify the mathematics.  In Taylor equations (2.52) to (2.58) you will find a very good discussion of this.</p></li>
-<li><p>6c (3pt) Find thereafter the position as function of time starting with an initial time <span class="math notranslate nohighlight">\(t_0\)</span>. Find the time it takes to hit the floor.  Here you will find it convenient to set the initial velocity in the <span class="math notranslate nohighlight">\(y\)</span>-direction to zero. Taylor equations (2.52)-(2.58) should contain all relevant information for solving this part as well.</p></li>
+<li><p>5a (3pt) Identify the forces acting on the ball and set up a diagram with the forces acting on the ball. Find the equation of motion for the falling ball. <strong>Do not limit to 1D yet!</strong></p></li>
+<li><p>5b (4pt) Assume now that the object is falling only in the <span class="math notranslate nohighlight">\(y\)</span>-direction (negative direction). Integrate the equation of motion from an initial time <span class="math notranslate nohighlight">\(t_0\)</span> to a final time <span class="math notranslate nohighlight">\(t\)</span> and find the velocity. Assume it is dropped from rest to simplify the mathematics.  In Taylor equations (2.52) to (2.58) you will find a very good discussion of this.</p></li>
+<li><p>5c (3pt) Find thereafter the position as function of time starting with an initial time <span class="math notranslate nohighlight">\(t_0\)</span>. Find the time it takes to hit the floor.  Here you will find it convenient to set the initial velocity in the <span class="math notranslate nohighlight">\(y\)</span>-direction to zero. Taylor equations (2.52)-(2.58) should contain all relevant information for solving this part as well.</p></li>
 </ul>
 <p>We will use the above analytical results in our numerical calculations in exercise 7. The analytical solution in the <span class="math notranslate nohighlight">\(y\)</span>-direction only will serve as a test for our numerical solution. <strong>We don’t often know the solutions to our problems exactly, so we have to check them against things we do know.</strong></p>
 </section>
-<section id="exercise-7-40pt-numerical-elements-solving-exercise-6-numerically">
-<h2>Exercise 7 (40pt), Numerical elements, solving exercise 6 numerically<a class="headerlink" href="#exercise-7-40pt-numerical-elements-solving-exercise-6-numerically" title="Link to this heading">#</a></h2>
+<section id="exercise-6-30pt-numerical-elements-solving-exercise-5-numerically">
+<h2>Exercise 6 (30pt), Numerical elements, solving exercise 5 numerically<a class="headerlink" href="#exercise-6-30pt-numerical-elements-solving-exercise-5-numerically" title="Link to this heading">#</a></h2>
 <p>Last week we:</p>
 <ol class="arabic simple">
 <li><p>Gained more practice with plotting in Python</p></li>
@@ -628,11 +632,11 @@ two neighboring values in time (time steps) that we analyze within
 some range. It can be determined by dividing the interval we are
 analyzing, which in our case is time <span class="math notranslate nohighlight">\(t_{\mathrm{final}}-t_0\)</span>, by the number of steps we
 are taking <span class="math notranslate nohighlight">\((N)\)</span>. This gives us a step size <span class="math notranslate nohighlight">\(\Delta t = \dfrac{t_{\mathrm{final}}-t_0}{N}\)</span>.</p>
-<p>With these preliminaries we are now ready to plot our results from exercise 6.</p>
+<p>With these preliminaries we are now ready to plot our results from exercise 5.</p>
 <ul class="simple">
-<li><p>7a (10pt) Set up arrays for time, velocity, acceleration and positions for the results from exercise 6. Define an initial and final time. Choose the final time to be the time when the ball hits the ground for the first time. Make a plot of the position and velocity as functions of time.  Here you could set the initial velocity in the <span class="math notranslate nohighlight">\(y\)</span>-direction to zero and use the result from exercise 6. Else you need to try different initial times using the result from exercise 6 as a starting guess.  It is not critical if you don’t reach the ground when the initial velocity in the <span class="math notranslate nohighlight">\(y\)</span>-direction is not zero.</p></li>
+<li><p>6a (10pt) Set up arrays for time, velocity, acceleration and positions for the results from exercise 5. Define an initial and final time. Choose the final time to be the time when the ball hits the ground for the first time. Make a plot of the position and velocity as functions of time.  Here you could set the initial velocity in the <span class="math notranslate nohighlight">\(y\)</span>-direction to zero and use the result from exercise 5. Else you need to try different initial times using the result from exercise 5 as a starting guess.  It is not critical if you don’t reach the ground when the initial velocity in the <span class="math notranslate nohighlight">\(y\)</span>-direction is not zero.</p></li>
 </ul>
-<p>We move now to the numerical solution of the differential equations as discussed in the <a class="reference external" href="https://mhjensen.github.io/Physics321/doc/pub/motion/html/motion.html">lecture notes</a> or Malthe-Sørenssen chapter 7.5.
+<p>We move now to the numerical solution of the differential equations as discussed in the <a class="reference internal" href="../lecture-notes/03_notes.html#discrete-formulation-of-newtonian-mechanics"><span class="std std-ref">lecture notes</span></a> or Malthe-Sørenssen chapter 7.5.
 Let us remind ourselves about  Euler’s Method.</p>
 <p>Suppose we know <span class="math notranslate nohighlight">\(f(t)\)</span> and its derivative <span class="math notranslate nohighlight">\(f'(t)\)</span>. To find <span class="math notranslate nohighlight">\(f(t+\Delta t)\)</span> at the next step, <span class="math notranslate nohighlight">\(t+\Delta t\)</span>,
 we can consider the Taylor expansion:</p>
@@ -652,28 +656,35 @@ use. In our case the step size is <span class="math notranslate nohighlight">\(\
 <li><p>Repeat steps 2-4 for all time steps within a loop.</p></li>
 </ol>
 <ul class="simple">
-<li><p>7b (10 pt) Write a code which implements Euler’s method and compute numerically and plot the position and velocity as functions of time for various values of <span class="math notranslate nohighlight">\(\Delta t\)</span>. Comment your results.</p></li>
-<li><p>7c (10pt) Compare your numerically obtained positions and velocities with the analytical results from exercise 5. In order to do this, you need to take out the motion in the <span class="math notranslate nohighlight">\(x\)</span>-direction. Comment again your results.</p></li>
+<li><p>6b (10 pt) Write a code which implements Euler’s method and compute numerically and plot the position and velocity as functions of time for various values of <span class="math notranslate nohighlight">\(\Delta t\)</span>. Comment your results.</p></li>
+<li><p>6c (10pt) Compare your numerically obtained positions and velocities with the analytical results from exercise 5. In order to do this, you need to take out the motion in the <span class="math notranslate nohighlight">\(x\)</span>-direction. Comment again your results.</p></li>
 </ul>
-<section id="integrating-classwork-with-research">
-<h3>Integrating Classwork With Research<a class="headerlink" href="#integrating-classwork-with-research" title="Link to this heading">#</a></h3>
-<p>This opportunity will allow you to earn up to 5 extra credit points on a Homework per week. These points can push you above 100% or help make up for missed exercises.
-In order to earn all points you must:</p>
+</section>
+</section>
+<section id="extra-credit-integrating-research">
+<h1>Extra Credit — Integrating Research<a class="headerlink" href="#extra-credit-integrating-research" title="Link to this heading">#</a></h1>
+<div class="alert admonition">
+<p class="admonition-title">Earning and Submitting Your Summary</p>
+<p>Earn up to 5 extra credit points per homework by engaging with MSU research activities. These points can boost your grade above 100% or help offset missed exercises.</p>
+<p><strong>Send via email to Danny <a class="reference external" href="mailto:caball14&#37;&#52;&#48;msu&#46;edu">caball14<span>&#64;</span>msu<span>&#46;</span>edu</a></strong></p>
+</div>
+<p>Earn up to 5 extra credit points per homework by engaging with MSU research activities. These points can boost your grade above 100% or help offset missed exercises.</p>
+<p>To receive full credit:</p>
 <ol class="arabic simple">
-<li><p>Attend an MSU research talk (recommended research oriented Clubs is  provided below)</p></li>
-<li><p>Summarize the talk using at least 150 words</p></li>
-<li><p>Turn in the summary along with your Homework (Email to <a class="reference external" href="mailto:caball14&#37;&#52;&#48;msu&#46;edu">caball14<span>&#64;</span>msu<span>&#46;</span>edu</a>).</p></li>
+<li><p><strong>Attend</strong> an MSU research talk (see approved clubs and seminars below).</p></li>
+<li><p><strong>Write</strong> a summary of the talk (at least 150 words).</p></li>
+<li><p><strong>Submit</strong> your summary with your homework (email to <a class="reference external" href="mailto:caball14&#37;&#52;&#48;msu&#46;edu">caball14<span>&#64;</span>msu<span>&#46;</span>edu</a>).</p></li>
 </ol>
-<p>Approved talks:
-Talks given by researchers through the following clubs:</p>
+<p><strong>Approved talks include:</strong></p>
 <ul class="simple">
-<li><p>Society for Physics Students (SPS)​: Meets Monday Nights (alternates with Astronomy Club)</p></li>
-<li><p>Astronomy Club​: Meets Monday Nights (alternates with SPS)</p></li>
-<li><p>Any <a class="reference external" href="https://pa.msu.edu/news-events-seminars/index.aspx">physics and astronomy seminar</a> of interest to you</p></li>
+<li><p>Society for Physics Students (SPS): Meets Monday nights (alternates with Astronomy Club)</p></li>
+<li><p>Astronomy Club: Meets Monday nights (alternates with SPS)</p></li>
+<li><p>Any <a class="reference external" href="https://pa.msu.edu/news-events-seminars/index.aspx">physics and astronomy seminar</a> of interest</p></li>
+<li><p>Any MSU research seminar/workshop relevant to physics (get approval if unsure)</p></li>
+<li><p>Any other physics-related event approved in advance</p></li>
 </ul>
-<p>If you have any questions please consult Danny.</p>
-</section>
-</section>
+<p>If you have questions, please contact Danny.</p>
+<p><strong>Note:</strong> You can earn 5% extra credit on each homework by attending a seminar, workshop, or other physics-related event and submitting a short reflection (about 150 words) on your experience.</p>
 </section>
 
     <script type="text/x-thebe-config">
@@ -706,6 +717,24 @@ Talks given by researchers through the following clubs:</p>
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="hw2.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Homework 2 (Due 30 Jan)</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../admin/schedule-cal.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Course Calendar</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               
@@ -713,8 +742,7 @@ Talks given by researchers through the following clubs:</p>
             
             
               
-                <dialog id="pst-secondary-sidebar-modal"></dialog>
-                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
 
   <div class="sidebar-secondary-item">
@@ -723,18 +751,23 @@ Talks given by researchers through the following clubs:</p>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction-to-homework-3">Introduction to homework 3</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-1-10-pt-physics-and-capital">Exercise 1 (10 pt), Physics and Capital</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-2-20-pt-electron-moving-into-an-electric-field">Exercise 2 (20 pt), Electron moving into an electric field</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-3-10-pt-drag-force">Exercise 3 (10 pt), Drag force</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-4-10-pt-falling-object">Exercise 4 (10 pt), Falling object</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-5-10-pt-and-now-a-theoretical-exercise">Exercise 5 (10 pt), and now a theoretical exercise</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-6-10-pt-back-to-a-falling-ball-and-preparing-for-the-numerical-exercise">Exercise 6 (10 pt), back to a falling ball and preparing for the numerical exercise</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-7-40pt-numerical-elements-solving-exercise-6-numerically">Exercise 7 (40pt), Numerical elements, solving exercise 6 numerically</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#integrating-classwork-with-research">Integrating Classwork With Research</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Homework 3 (Due 06 Feb)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#individual-exercise-submit-on-d2l-only">Individual Exercise (Submit on D2L only)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-0-10-pt-physics-and-capital">Exercise 0 (10 pt), Physics and Capital</a></li>
 </ul>
 </li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#pencil-and-paper-exercises-submit-on-gradescope-only">Pencil and Paper Exercises (Submit on Gradescope only)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-1-20-pt-electron-moving-into-an-electric-field">Exercise 1 (20 pt), Electron moving into an electric field</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-2-10-pt-drag-force">Exercise 2 (10 pt), Drag force</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-3-10-pt-falling-object">Exercise 3 (10 pt), Falling object</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-4-10-pt-and-now-a-theoretical-exercise">Exercise 4 (10 pt), and now a theoretical exercise</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-5-10-pt-back-to-a-falling-ball-and-preparing-for-the-numerical-exercise">Exercise 5 (10 pt), back to a falling ball and preparing for the numerical exercise</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-6-30pt-numerical-elements-solving-exercise-5-numerically">Exercise 6 (30pt), Numerical elements, solving exercise 5 numerically</a></li>
 </ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#extra-credit-integrating-research">Extra Credit — Integrating Research</a></li>
+</ul>
+
   </nav></div>
 
 </div></div>
@@ -782,8 +815,8 @@ This work is licensed under a <a rel="license" href="https://creativecommons.org
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
-<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
 
   <footer class="bd-footer">
   </footer>
