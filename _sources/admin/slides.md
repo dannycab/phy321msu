@@ -450,7 +450,7 @@ Slides for PHY 321 appear in reverse chronological order, with the most recent s
 
 :::
 
----
+--- --->
 
 ## Day 06 - Making Classical Models - 08 Sep 2025
 
@@ -463,7 +463,7 @@ Slides for PHY 321 appear in reverse chronological order, with the most recent s
 
 :::
 
---- --->
+---
 
 ## Day 05 - Workshop Day - 23 Jan 2026
 

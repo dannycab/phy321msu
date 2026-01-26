@@ -16,30 +16,33 @@
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
     document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-
-  
-  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
-    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
   
+  <!-- So that users can add custom icons -->
+  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
-  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
     <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
     <script src="../_static/doctools.js?v=9a2dae69"></script>
@@ -52,7 +55,7 @@
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script src="../_static/design-tabs.js?v=36754332"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
@@ -64,6 +67,7 @@
     <link rel="search" title="Search" href="../search.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
   </head>
   
   
@@ -79,19 +83,8 @@
     <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
   
-  <input type="checkbox"
-          class="sidebar-toggle"
-          id="pst-primary-sidebar-checkbox"/>
-  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
-  
-  <input type="checkbox"
-          class="sidebar-toggle"
-          id="pst-secondary-sidebar-checkbox"/>
-  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
-  
-  <div class="search-button__wrapper">
-    <div class="search-button__overlay"></div>
-    <div class="search-button__search-container">
+  <dialog id="pst-search-dialog">
+    
 <form class="bd-search d-flex align-items-center"
       action="../search.html"
       method="get">
@@ -99,7 +92,6 @@
   <input type="search"
          class="form-control"
          name="q"
-         id="search-input"
          placeholder="Search this book..."
          aria-label="Search this book..."
          autocomplete="off"
@@ -107,8 +99,8 @@
          autocapitalize="off"
          spellcheck="false"/>
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form></div>
-  </div>
+</form>
+  </dialog>
 
   <div class="pst-async-banner-revealer d-none">
   <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
@@ -126,7 +118,8 @@
       
         
       
-      <div class="bd-sidebar-primary bd-sidebar">
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -156,21 +149,17 @@
     
     
     <img src="../_static/spartan-helmet.png" class="logo__image only-light" alt="Classical Mechanics - Home"/>
-    <script>document.write(`<img src="../_static/spartan-helmet.png" class="logo__image only-dark" alt="Classical Mechanics - Home"/>`);</script>
+    <img src="../_static/spartan-helmet.png" class="logo__image only-dark pst-js-only" alt="Classical Mechanics - Home"/>
   
   
 </a></div>
         <div class="sidebar-primary-item">
 
- <script>
- document.write(`
-   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
-    <span class="search-button__default-text">Search</span>
-    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
-   </button>
- `);
- </script></div>
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
@@ -254,9 +243,14 @@
   
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
   </div>
-  
-  <div id="rtd-footer-container"></div>
 
 
       </div>
@@ -353,24 +347,16 @@
 
 
 
-<script>
-document.write(`
-  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
-    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
-    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
-  </button>
-`);
-</script>
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
 
 
-<script>
-document.write(`
-  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
-  </button>
-`);
-</script>
+</button>
 <button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
 </button>
@@ -395,34 +381,13 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Day 06 - Making Classical Models</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#plane-polar-coordinates-warm-up-5-minutes">Plane Polar Coordinates Warm-Up (5 minutes)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#plane-polar-coordinates-warm-up">Plane Polar Coordinates Warm-Up</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#announcements">Announcements</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#seminars-this-week">Seminars this week</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tuesday-september-9-2025">TUESDAY, September 9, 2025</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Seminars this week</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#wednesday-september-10-2025">WEDNESDAY, September 10, 2025</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Seminars this week</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">WEDNESDAY, September 10, 2025</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Seminars this week</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#thursday-september-11-2025">THURSDAY, September 11, 2025</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Seminars this week</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#friday-september-12-2025">FRIDAY, September 12, 2025</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Seminars this week</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">FRIDAY, September 12, 2025</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#ai-policy-proposals">AI Policy Proposals</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#updated-ai-policy">Updated AI Policy</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#seminars-this-week">Seminars this week</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Seminars this week</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Seminars this week</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Seminars this week</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Seminars this week</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#goals-for-week-3">Goals for Week 3</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#modeling-video">Modeling Video</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-your-experience-with-modeling">What is your experience with modeling?</a><ul class="visible nav section-nav flex-column">
@@ -456,13 +421,135 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="day-06-making-classical-models">
+  <style>
+  :root {
+    --color-spartan-green: #18453B;
+    --color-msu-gold: #C1B000;
+    --color-light-gray: #f5f5f5;
+    --color-dark-text: #1a1a1a;
+    --color-accent-green: #2d5f4f;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    color: var(--color-dark-text);
+  }
+  
+  h1, h2, h3 {
+    color: var(--color-spartan-green);
+    font-weight: 500;
+  }
+  
+  h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0rem;
+  }
+  
+  h2 {
+    font-size: 1.55rem;
+    margin-bottom: 1.0rem;
+    border-bottom: 4px solid var(--color-spartan-green);
+    padding-bottom: 0.5rem;
+  }
+  
+  h3 {
+    font-size: 1.15rem;
+    margin-top: 1rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  section {
+    padding: 2rem;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .equation {
+    background-color: var(--color-light-gray);
+    padding: 1.5rem;
+    border-left: 4px solid var(--color-msu-gold);
+    margin: 1.5rem 0;
+    font-size: 1.3rem;
+    text-align: center;
+    color: var(--color-dark-text);
+  }
+
+  p {
+    font-size: 1.15rem;
+    line-height: 1.4;
+    margin-bottom: 0.5rem;
+  }
+  
+  ul, ol {
+    font-size: 1.15rem;
+    line-height: 1.4;
+    margin-left: 0.5rem;
+  }
+
+  ul ul, ol ol, ul ol, ol ul {
+    margin-left: 0.1rem;
+  }
+  
+  li {
+    margin-bottom: 0rem;
+    line-height: 1.4;
+  }
+  
+  strong {
+    color: var(--color-spartan-green);
+    font-weight: 600;
+  }
+  
+  em {
+    color: var(--color-accent-green);
+  }
+
+  .highlight {
+    background-color: var(--color-light-gray);
+    padding: 1.5rem;
+    border-left: 4px solid var(--color-spartan-green);
+    margin: 1.5rem 0;
+  }
+
+  .activity {
+    background-color: #fff8e1;
+    border: 2px solid var(--color-msu-gold);
+    padding: 1.25rem;
+    border-radius: 6px;
+    margin: 1rem 0;
+  }
+
+  code {
+    background-color: var(--color-light-gray);
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-size: 1.0rem;
+  }
+
+  .footnote {
+    font-size: 0.8rem;
+    color: #999;
+    margin-top: 1.5rem;
+    border-top: 1px solid #ddd;
+    padding-top: 0.75rem;
+  }
+</style>
+<!--
+_class: title
+_backgroundColor: #ffffff
+_color: #18453B
+-->
+<section id="day-06-making-classical-models">
 <h1>Day 06 - Making Classical Models<a class="headerlink" href="#day-06-making-classical-models" title="Link to this heading">#</a></h1>
-<p><img alt="bg right:60%" src="../_images/von_karman.png" /></p>
+<p><img alt="blah width:400px" src="../_images/day06-s2026.png" /></p>
+<p><img alt="bg right:50% width:600px height:auto" src="../_images/von_karman.png" /></p>
 </section>
 <hr class="docutils" />
-<section id="plane-polar-coordinates-warm-up-5-minutes">
-<h1>Plane Polar Coordinates Warm-Up (5 minutes)<a class="headerlink" href="#plane-polar-coordinates-warm-up-5-minutes" title="Link to this heading">#</a></h1>
+<section id="plane-polar-coordinates-warm-up">
+<h1>Plane Polar Coordinates Warm-Up<a class="headerlink" href="#plane-polar-coordinates-warm-up" title="Link to this heading">#</a></h1>
 <p>We introduced plane polar coordinates (<span class="math notranslate nohighlight">\(r,\phi\)</span>). For any position vector, <span class="math notranslate nohighlight">\(\vec{R}\)</span>, we can write:</p>
 <div class="math notranslate nohighlight">
 \[\vec{R} = \left|\vec{R}\right|\hat{r} = r\hat{r}\]</div>
@@ -476,16 +563,14 @@ document.write(`
 <section id="announcements">
 <h1>Announcements<a class="headerlink" href="#announcements" title="Link to this heading">#</a></h1>
 <ul class="simple">
-<li><p>Homework 2 is due Friday</p></li>
+<li><p>Homework 2 is due Friday (late Sunday)</p></li>
 <li><p>Homework 3 is now posted</p></li>
 <li><p>Office hours, for now (Mihir-MN; Danny-DC):</p>
 <ul>
-<li><p>Tuesday 6-8pm (MN, Zoom)</p></li>
-<li><p>Thursday 6-8pm (MN, Zoom)</p></li>
-<li><p>Friday 2-4pm (DC, 1248 BPS)</p></li>
+<li><p>Friday 10-12pm (DC, 1248 BPS)</p></li>
 </ul>
 </li>
-<li><p>Zoom Link: <a class="reference external" href="https://msu.zoom.us/j/96882248075">https://msu.zoom.us/j/96882248075</a></p>
+<li><p>Zoom Link for class: <a class="reference external" href="https://msu.zoom.us/j/99550311023">https://msu.zoom.us/j/99550311023</a></p>
 <ul>
 <li><p>password: <code class="docutils literal notranslate"><span class="pre">phy321msu</span></code></p></li>
 </ul>
@@ -495,98 +580,53 @@ document.write(`
 <hr class="docutils" />
 <section id="seminars-this-week">
 <h1>Seminars this week<a class="headerlink" href="#seminars-this-week" title="Link to this heading">#</a></h1>
-<section id="tuesday-september-9-2025">
-<h2>TUESDAY, September 9, 2025<a class="headerlink" href="#tuesday-september-9-2025" title="Link to this heading">#</a></h2>
-<p>High Energy Physics Seminar, 1:30 pm, 1400 BPS, Host ~ Joey Huston
-Speaker: Joshua Isaacson, MSU
-Title: Single pion-production and pion propagation in Achilles<br />
-Organized by: Joey Huston, Sophie Berkman and Brenda Wenzlick</p>
-</section>
+<p><strong>WEDNESDAY, January 28, 2026</strong></p>
+<p>Astronomy Seminar, 1:30pm, BPS 1400 &amp; Zoom
+Speaker: Rebecca Kyer &amp; Emily Elizondo, MSU
+Title: TBA
+Zoom Link: <a class="reference external" href="https://msu.zoom.us/j/93334479606?pwd=OtIXPWhRPBfzYu53sl3trSJlaBYI7C.1">https://msu.zoom.us/j/93334479606?pwd=OtIXPWhRPBfzYu53sl3trSJlaBYI7C.1</a>
+Passcode:  825824</p>
 </section>
 <hr class="docutils" />
 <section id="id1">
 <h1>Seminars this week<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
-<section id="wednesday-september-10-2025">
-<h2>WEDNESDAY, September 10, 2025<a class="headerlink" href="#wednesday-september-10-2025" title="Link to this heading">#</a></h2>
-<p>Astronomy Seminar, 1:30 pm, 1400 BPS, In Person and Zoom, Host~
-Speaker: Rachael Roettenbacher,  University of Michigan
-Title: Imaging Spotted Stars for an Improved Understanding of Stars and Exoplanets
-Zoom Link: <a class="reference external" href="https://msu.zoom.us/j/887295421?pwd=N1NFb0tVU29JL2FFSkk0cStpanR3UT09">https://msu.zoom.us/j/887295421?pwd=N1NFb0tVU29JL2FFSkk0cStpanR3UT09</a>
-Meeting ID: 887-295-421
-Passcode: 002454</p>
-</section>
+<p><strong>WEDNESDAY, January 28, 2026</strong></p>
+<p>Physics Education Research Seminar, 3:00pm, BPS 1400 &amp; Zoom
+Speaker: Jennifer Doherty, MSU
+Title:  Principle-based reasoning: A strategy for developing expertise in Physiology
+Zoom Link: <a class="reference external" href="https://msu.zoom.us/j/96470703707">https://msu.zoom.us/j/96470703707</a>
+Passcode: PERSeminar</p>
 </section>
 <hr class="docutils" />
 <section id="id2">
 <h1>Seminars this week<a class="headerlink" href="#id2" title="Link to this heading">#</a></h1>
-<section id="id3">
-<h2>WEDNESDAY, September 10, 2025<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
-<p>FRIB Nuclear Science Seminar, 3:30pm., FRIB 1300 Auditorium and online via Zoom
-Speaker: Suzanne Lapi of the University of Alabama at Birmingham
-Title: Development of new isotopes for theranostic applications
-Please see website for full abstract.
-Please click the link below to join the webinar:
-Join Zoom: <a class="reference external" href="https://msu.zoom.us/j/96485010083?pwd=O0rXwspn80aYGEI06QEZag6Ao4siq7.1">https://msu.zoom.us/j/96485010083?pwd=O0rXwspn80aYGEI06QEZag6Ao4siq7.1</a>
-Meeting ID: 964 8501 0083
-Passcode: 261744</p>
+<p><strong>WEDNESDAY, January 28, 2026</strong></p>
+<p>FRIB Nuclear Science Seminar, 3:30pm, Zoom Only
+Speaker: Gwen Grinyer, University of Regina
+Title: Precision Spectroscopy of Rare Isotopes
+Zoom Link: <a class="reference external" href="https://msu.zoom.us/j/91051885898?pwd=S423bks5tzaeOwNb1tLaUaHDUScm5A.1">https://msu.zoom.us/j/91051885898?pwd=S423bks5tzaeOwNb1tLaUaHDUScm5A.1</a>
+Passcode: 949110</p>
 </section>
+<hr class="docutils" />
+<section id="id3">
+<h1>Seminars this week<a class="headerlink" href="#id3" title="Link to this heading">#</a></h1>
+<p><strong>FRIDAY, January 30, 2026</strong></p>
+<p>QuIC, Seminar, 12:40 p.m., BPS 1300 &amp; Zoom
+Speaker: Ben DalFavero, MSU
+Title: Fault tolerant quantum computing II
+*For the full schedule, please see: <a class="reference external" href="https://sites.google.com/msu.edu/quic-seminar/">https://sites.google.com/msu.edu/quic-seminar/</a> or for more information, please reach out to Ryan LaRosa directly</p>
 </section>
 <hr class="docutils" />
 <section id="id4">
 <h1>Seminars this week<a class="headerlink" href="#id4" title="Link to this heading">#</a></h1>
-<section id="thursday-september-11-2025">
-<h2>THURSDAY, September 11, 2025<a class="headerlink" href="#thursday-september-11-2025" title="Link to this heading">#</a></h2>
-<p>Colloquium, 3:30 pm, 1415 BPS, in person and zoom.  Host ~
-Refreshments and social half-hour in BPS 1400 starting at 3 pm
-Speaker: Laura Chomiuk,  MSU
-Title:  Fall 2025 Physics and Astronomy Kickoff
-Background:
-For more information and to schedule time with the speaker, see the colloquium calendar at <a class="reference external" href="https://pa.msu.edu/news-events-seminars/colloquium-schedule.aspx">https://pa.msu.edu/news-events-seminars/colloquium-schedule.aspx</a>
-Zoom Link: <a class="reference external" href="https://msu.zoom.us/j/94951062663">https://msu.zoom.us/j/94951062663</a>
-Password: 2002  Or complete link:  <a class="reference external" href="https://msu.zoom.us/j/94951062663?pwd=c48uM25P9UsRVuR74rkOioOWgpoxgC.1">https://msu.zoom.us/j/94951062663?pwd=c48uM25P9UsRVuR74rkOioOWgpoxgC.1</a></p>
-</section>
-</section>
-<hr class="docutils" />
-<section id="id5">
-<h1>Seminars this week<a class="headerlink" href="#id5" title="Link to this heading">#</a></h1>
-<section id="friday-september-12-2025">
-<h2>FRIDAY, September 12, 2025<a class="headerlink" href="#friday-september-12-2025" title="Link to this heading">#</a></h2>
-<p>QuIC Seminar, 12:30pm, -1:30pm, 1300 BPS, In Person<br />
-Speaker: Jean Paul Sadia, MSU
-Title: Introduction to Quantum Information and Computation
-Full Scheule is at: <a class="reference external" href="https://sites.google.com/msu.edu/quic-seminar/">https://sites.google.com/msu.edu/quic-seminar/</a>
-For more information, reach out to Ryan LaRose</p>
-</section>
-</section>
-<hr class="docutils" />
-<section id="id6">
-<h1>Seminars this week<a class="headerlink" href="#id6" title="Link to this heading">#</a></h1>
-<section id="id7">
-<h2>FRIDAY, September 12, 2025<a class="headerlink" href="#id7" title="Link to this heading">#</a></h2>
-<p>IReNA Online Seminar, 2:00 pm, via Zoom.
-Hosted by: Artemis Tsantiri (University of Regina, Canada)
-Speaker:  Lorenzo Roberti, INFN-LNS, Italy/Konkoly, Observatory Hungary
-Title: Carbon-Oxygen Shell Mergers in Massive Stars
+<p><strong>FRIDAY, January 30, 2026</strong></p>
+<p>IReNA Online Seminar, 2:00 pm, Zoom
+Light refreshments at 1:50pm in 2025 Nuclear Conference Room - FRIB
+Hosted by: Aldana Grichener (University of Arizona &amp; Observatory)
+Speaker: Mengke Li, University of California, Berkeley
+Title: Implications of a Weakening N = 126 Shell Closure Away from Stability for r-Process Astrophysical Conditions
 Zoom Link: <a class="reference external" href="https://msu.zoom.us/j/827950260">https://msu.zoom.us/j/827950260</a>
-Password: JINA</p>
-</section>
-</section>
-<hr class="docutils" />
-<section id="ai-policy-proposals">
-<h1>AI Policy Proposals<a class="headerlink" href="#ai-policy-proposals" title="Link to this heading">#</a></h1>
-<ul class="simple">
-<li><p><strong>Proposal 1:</strong> We adopt a policy that does not allow AI use at all.</p></li>
-<li><p><strong>Proposal 2:</strong> We adopt a policy that allows AI use for brainstorming, help, and editing.</p></li>
-<li><p><strong>Proposal 3:</strong> We adopt a policy that allows AI for use in nearly any way.</p></li>
-<li><p><strong>Proposal 4:</strong> We adopt a policy that allows AI for use in any way with no documentation required.</p></li>
-</ul>
-</section>
-<hr class="docutils" />
-<section id="updated-ai-policy">
-<h1>Updated AI Policy<a class="headerlink" href="#updated-ai-policy" title="Link to this heading">#</a></h1>
-<p>We have only 12 votes! Vote now, please.</p>
-<p><a class="reference external" href="https://forms.cloud.microsoft/r/0GT4umz7qY">https://forms.cloud.microsoft/r/0GT4umz7qY</a></p>
-<p><img alt="QR Code" src="../_images/ai-form.png" /></p>
+Password: CENAM</p>
 </section>
 <hr class="docutils" />
 <section id="goals-for-week-3">
@@ -627,7 +667,7 @@ Password: JINA</p>
 <li><p>This instability can lead to the formation of vortices.</p></li>
 <li><p>This “shedding” of vortices can lead to vibrations and noise.</p></li>
 </ul>
-<p><img alt="bg right:60%" src="../_images/von_karman.png" /></p>
+<p><img alt="bg right:40% width:500px height:auto" src="../_images/von_karman.png" /></p>
 </section>
 <hr class="docutils" />
 <section id="model-of-vortex-shedding-behind-a-cylinder">
@@ -662,7 +702,7 @@ Password: JINA</p>
 <li><p><span class="math notranslate nohighlight">\(\sim x^4\)</span></p></li>
 <li><p><span class="math notranslate nohighlight">\(\sim x^5\)</span></p></li>
 </ol>
-<p><img alt="bg right w:80%" src="../_images/sho_horizontal.png" /></p>
+<p><img alt="bg right:40% width:400px height:auto" src="../_images/simple_harmonic_oscillator_setup_1D_horizontal.png" /></p>
 </section>
 <hr class="docutils" />
 <section id="clicker-question-6-2">
@@ -758,7 +798,8 @@ $<span class="math notranslate nohighlight">\(v(t) = v_{term}\left(1-e^{-\dfrac{
             
             
               
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
 
   <div class="sidebar-secondary-item">
@@ -768,34 +809,13 @@ $<span class="math notranslate nohighlight">\(v(t) = v_{term}\left(1-e^{-\dfrac{
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Day 06 - Making Classical Models</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#plane-polar-coordinates-warm-up-5-minutes">Plane Polar Coordinates Warm-Up (5 minutes)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#plane-polar-coordinates-warm-up">Plane Polar Coordinates Warm-Up</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#announcements">Announcements</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#seminars-this-week">Seminars this week</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tuesday-september-9-2025">TUESDAY, September 9, 2025</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Seminars this week</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#wednesday-september-10-2025">WEDNESDAY, September 10, 2025</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Seminars this week</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">WEDNESDAY, September 10, 2025</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Seminars this week</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#thursday-september-11-2025">THURSDAY, September 11, 2025</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Seminars this week</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#friday-september-12-2025">FRIDAY, September 12, 2025</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Seminars this week</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">FRIDAY, September 12, 2025</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#ai-policy-proposals">AI Policy Proposals</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#updated-ai-policy">Updated AI Policy</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#seminars-this-week">Seminars this week</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Seminars this week</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Seminars this week</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Seminars this week</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Seminars this week</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#goals-for-week-3">Goals for Week 3</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#modeling-video">Modeling Video</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-your-experience-with-modeling">What is your experience with modeling?</a><ul class="visible nav section-nav flex-column">
@@ -866,8 +886,8 @@ This work is licensed under a <a rel="license" href="https://creativecommons.org
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
 
   <footer class="bd-footer">
   </footer>
