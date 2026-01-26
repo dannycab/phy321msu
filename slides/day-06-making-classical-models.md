@@ -165,7 +165,9 @@ $\frac{d}{d\phi} \cos \phi = -\sin \phi \qquad \frac{d}{d\phi} \sin \phi = \cos 
 - Homework 2 is due Friday (late Sunday)
 - Homework 3 is now posted
 - Office hours, for now (Mihir-MN; Danny-DC):
+  - Thursday 3-5pm (MN, 1248 BPS)
   - Friday 10-12pm (DC, 1248 BPS)
+  - Friday 3-5pm (MN, Zoom only)
 - Zoom Link for class: <https://msu.zoom.us/j/99550311023> 
     - password: `phy321msu`
 
