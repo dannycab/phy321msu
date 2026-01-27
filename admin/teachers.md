@@ -2,7 +2,7 @@
 
 ## 📅 Class Meetings
 
-**Location:** STEM 3202
+**Location:** STEM 1202
 
 | Monday | Wednesday | Friday |
 | --- | --- | --- |
@@ -11,6 +11,7 @@
 :::{admonition} Class Structure
 :class: tip
 * **Monday & Wednesday:** Lecture-based instruction
+    * Zoom link for class: <https://msu.zoom.us/j/99550311023> (`phy321msu`)
 * **Friday:** Activity-based workshops where we work through challenging exercises together
 :::
 
@@ -22,7 +23,9 @@
 
 * **Email:** [caball14@msu.edu](mailto:caball14@msu.edu)
 * **Office:** MWF [BPS 1310A](http://tinyurl.com/dc-bps-office) | TTh [EGR 1515](http://tinyurl.com/dc-egr-office)
-* **Office Hours:** TBD or [schedule a meeting](https://cal.com/dannycaballero/phy-321)
+* **Office Hours:** 
+  * Fridays 10am-12pm (BPS 1248) or 
+  * [Schedule a meeting](https://cal.com/dannycaballero/phy-321)
 
 Danny leads the course, designs homework and exams, and assigns final grades. He's responsible for course content and welcomes suggestions for improvement. Danny grades your midterms and final projects.
 
@@ -37,7 +40,9 @@ Kang grades homework assignments and provides feedback on common struggles. Plea
 
 ### Learning Assistant: Mihir Naik (he/him)
 * **Email:** [naikmihi@msu.edu](mailto:naikmihi@msu.edu)
-* **Office Hours:** TBD
+* **Office Hours:** 
+  * Thursdays 3-5pm (BPS 1248)
+  * Fridays 3-5pm (Zoom only, <https://msu.zoom.us/j/99550311023> `phy321msu`))
 
 Mihir has taken this course and is passionate about helping you learn classical mechanics. He's an incredible resource for homework and course questions. He will hold regular office hours and attend Friday workshops to assist you.
 

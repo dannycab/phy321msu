@@ -9,6 +9,7 @@ parts:
           - file: admin/teachers
           - file: admin/textbooks
           - file: admin/grading
+          
 
 
   - caption: Course Materials
@@ -53,6 +54,7 @@ parts:
           - file: admin/gradescope-submissions
           - file: admin/iclicker-setup
           - file: admin/finding-research
+          - file: admin/exercise0
 
   - caption: Programming Resources
     chapters: 
