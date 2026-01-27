@@ -1,0 +1,613 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Exercise 0 &#8212; Classical Mechanics</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'admin/exercise0';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Getting Started with VS Code for Scientific Computing" href="../resources/vscode-setup-numerics-activity.html" />
+    <link rel="prev" title="Finding Research Opportunities" href="finding-research.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/spartan-helmet.png" class="logo__image only-light" alt="Classical Mechanics - Home"/>
+    <script>document.write(`<img src="../_static/spartan-helmet.png" class="logo__image only-dark" alt="Classical Mechanics - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    PHY 321: Classical Mechanics 1, Michigan State University, Spring 2026
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Course Information</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="getting-started.html">Getting Started</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="course-commitments.html">Course Commitments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="teachers.html">Teachers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="textbooks.html">Textbooks and Course Materials</a></li>
+<li class="toctree-l2"><a class="reference internal" href="grading.html">Grading and Important Dates</a></li>
+
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Course Materials</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../lecture-notes/weekly-materials.html">Weekly Course Materials</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../lecture-notes/01_notes.html">01 - Overture: What is Classical Physics?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lecture-notes/02_notes.html">02 - Computing is a Necessary Tool for Science</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lecture-notes/03_notes.html">03 - What is Mathematical Modeling?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lecture-notes/04_notes.html">04 - Why does fluid drag complicate things?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lecture-notes/05_notes.html">05 - Conservation Laws Govern and Constrain our Physics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lecture-notes/06_notes.html">06 - Nature Often Seeks Stability</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lecture-notes/07_notes.html">07 - Introducing Nonlinear Dynamics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lecture-notes/08_notes.html">08 - Oscillations, Cycles, and Nature’s Recurrences</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lecture-notes/09_notes.html">09 - Driving Oscillators and Resonance Phenomenon</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lecture-notes/10_notes.html">10 - Investigating Systems that Exhibit Chaotic Dynamics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lecture-notes/11_notes.html">11 - Reformulating Classical Mechanics using the Calculus of Variations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lecture-notes/12_notes.html">12 - The Core Principle of Classical Mechanics? The Principle of Least Action</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lecture-notes/13_notes.html">13 - Applying the Lagrangian Formulation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lecture-notes/14_notes.html">14 - Classical Mechanics Thus Far</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../assignments/assignment-overview.html">Assignments Overview</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../assignments/hw1.html">Homework 1 (Due 23 Jan)</a></li>
+
+
+
+<li class="toctree-l2"><a class="reference internal" href="../assignments/hw2.html">Homework 2 (Due 30 Jan)</a></li>
+
+
+
+<li class="toctree-l2"><a class="reference internal" href="../assignments/hw3.html">Homework 3 (Due 06 Feb)</a></li>
+
+
+
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Logistics &amp; Resources</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="schedule-cal.html">Course Calendar</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="reminders.html">Reminders</a></li>
+<li class="toctree-l2"><a class="reference internal" href="slides.html">Slides</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gradescope-submissions.html">Submitting Assignments on Gradescope</a></li>
+<li class="toctree-l2"><a class="reference internal" href="iclicker-setup.html">i-Clicker Setup Instructions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="finding-research.html">Finding Research Opportunities</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Exercise 0</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Programming Resources</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../resources/vscode-setup-numerics-activity.html">Getting Started with VS Code for Scientific Computing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/vscode-setup-numerics-activity-completed.html">Getting Started with VS Code for Scientific Computing (Completed)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/euler_integration.html">Euler Integration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/integrators.html">Numerical Integrators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/phase_diagrams.html">Plotting Phase Diagrams</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/chaotic_dynamics.html">Modeling Chaotic Systems - Activity</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/admin/exercise0.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Exercise 0</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hw-1-physics-as-work-whose-labor-builds-foundations">HW 1: Physics as Work: Whose Labor Builds “Foundations”?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hw2-how-do-we-talk-about-scientific-efforts">HW2: How do we talk about scientific efforts?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hw3-physics-and-capital">HW3: Physics and Capital</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="exercise-0">
+<h1>Exercise 0<a class="headerlink" href="#exercise-0" title="Link to this heading">#</a></h1>
+<section id="hw-1-physics-as-work-whose-labor-builds-foundations">
+<h2>HW 1: Physics as Work: Whose Labor Builds “Foundations”?<a class="headerlink" href="#hw-1-physics-as-work-whose-labor-builds-foundations" title="Link to this heading">#</a></h2>
+<p>You have just begun a course that often presents physics as a set of timeless laws discovered by a small number of brilliant individuals. In fact, much of the collective history of physics has been framed this way, often omitting the contributions of many people whose labor made those discoveries possible. It’s an unfortunate but common narrative that can shape how we think about who does physics and how it is done. All scientific work, including physics, happens within workplaces, institutions, and economies. Physics is no more apolitical than any other human endeavor. We define politics broadly here to include questions of power, labor, resources, and social context.</p>
+<p><strong>To be clear, politics are not distractions from “real” physics; they are part of how physics is made and understood.</strong></p>
+<div class="info admonition">
+<p class="admonition-title">Physics is the Work of Many</p>
+<p><img alt=" The Rubin Observatory Operations team successfully completed its US Department of Energy (DOE) and National Science Foundation (NSF) Joint Operations Review for 2020." src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Joint_Ops_Review_Group_Photo_%28rubin-rubin-ops-group%29.jpg/960px-Joint_Ops_Review_Group_Photo_%28rubin-rubin-ops-group%29.jpg" />
+<em>Image credit: Wikimedia Commons, Public Domain</em></p>
+<p>The photo above shows part of the team that operates the <a class="reference external" href="https://en.wikipedia.org/wiki/Vera_C._Rubin_Observatory">Vera C. Rubin Observatory</a> in Chile. The observatory is named after <a class="reference external" href="https://en.wikipedia.org/wiki/Vera_Rubin">Vera Rubin</a>, whose pioneering work on galaxy rotation curves provided some of the first evidence for dark matter. But as you can see, many people are involved in making the observatory work, from scientists to engineers to technicians to support staff. Their collective labor is essential for the observatory to function and for the scientific discoveries it will enable.</p>
+</div>
+<ul class="simple">
+<li><p>0a: In ~150 words, reflect on an example of “foundational work” in physics you already knew before this course (e.g., Newton, Galileo, Kepler, Maxwell). Describe where you first learned the story and how it framed the scientist — as lone genius, heroic figure, careful observer, etc. then discuss how that framing shaped your impressions of physics as a field of study.</p></li>
+<li><p>0b: In ~150 words, identify the forms of hidden, collective, or material labor that such stories often omit (instrument makers, calculators, students, artisans, workers who built observatories, printers who circulated texts, etc.). Connect this to your first impressions of the field as you enter PHY321. How does recognizing this labor change your understanding of how physics is done?</p></li>
+<li><p>0c: In ~150 words, propose a way physics education could better represent the collective and material labor that makes scientific discovery possible. What would that change about how you imagine yourself participating in physics? How might it change how others see the field?</p></li>
+</ul>
+</section>
+<section id="hw2-how-do-we-talk-about-scientific-efforts">
+<h2>HW2: How do we talk about scientific efforts?<a class="headerlink" href="#hw2-how-do-we-talk-about-scientific-efforts" title="Link to this heading">#</a></h2>
+<p><img alt="Conner's book A People’s History of Science" src="../_images/conner_peoples_history.jpg" />
+<img alt="Conner's book The Tragedy of American Science: From Truman to Trump" src="../_images/conner_tragedy.jpg" /></p>
+<p>Learning about how science has been done and the stories that we tell ourselves about it are important.</p>
+<div class="important admonition">
+<p class="admonition-title">The stories we tell ourselves</p>
+<p>You are likely familiar with the statement <a class="reference external" href="https://en.wikipedia.org/wiki/Standing_on_the_shoulders_of_giants">“Standing on the Shoulders of Giants”</a> – a quote that has been attributed to a number of different people including Newton and Pascal. It’s so famous, that Stephen Hawking has written a <a class="reference external" href="https://en.wikipedia.org/wiki/On_the_Shoulders_of_Giants_(book)">book with the title</a>, Google Scholar <a class="reference external" href="https://scholar.google.com/">uses the phrase as its tagline</a>, and the band Oasis even has <a class="reference external" href="https://en.wikipedia.org/wiki/Standing_on_the_Shoulder_of_Giants">an album with the name</a>.</p>
+<p><strong>However, have you ever considered that phrase critically?</strong></p>
+<p>Have you considered how that statement frames science as the accomplishments of single individuals or brilliant thinkers? Or how that “Shoulders of Giants” framing erases the many contributions of everyday people and even learned contributors to science?</p>
+<p>This framing suggests a specific way that science came about: through the heroic efforts of singular individuals. This framing doesn’t acknowledge the contributions of many people including those who could not/cannot read or write, those who were not part of privileged classes, or dominant cultures, and even scientists who were fortunate to become known in their own right.</p>
+</div>
+<p>For this exercise, we ask that you read this <a class="reference download internal" download="" href="../_downloads/35d021956947304937cd9460ca9ade5d/clifford-interview.pdf"><span class="xref download myst">interview with Dr. Clifford D. Conner</span></a>, author of <em><a class="reference external" href="https://www.zinnedproject.org/materials/a-peoples-history-of-science">A People’s History of Science</a></em> and <em><a class="reference external" href="https://www.haymarketbooks.org/books/1467-the-tragedy-of-american-science">The Tragedy of American Science: From Truman to Trump</a></em>, and then respond to the questions below.</p>
+<p>📂 <strong>Source for interview:</strong> <a class="reference external" href="https://selections.rockefeller.edu/wp-content/uploads/2012/07/ns-03-2006.pdf">https://selections.rockefeller.edu/wp-content/uploads/2012/07/ns-03-2006.pdf</a></p>
+<div class="info admonition">
+<p class="admonition-title">Why are we reading this?</p>
+<p>This interview and its contents might challenge your vision of science and the world. That is ok, you don’t have to agree with Dr. Conner’s views, but it is important for you to learn about these other perspectives.</p>
+<p>It is also ok if the history raised or the words used are unfamiliar to you; learning this history and the unfamiliar words is part of learning about science.</p>
+<p>And if you have questions, just ask.</p>
+</div>
+<ul class="simple">
+<li><p>0a: In ~150 words, summarize the interview, what you learned from it, and what you have more questions about.</p></li>
+<li><p>0b: In ~150 words, how does Conner frame the development of science? What evidence does Conner use to do this?</p></li>
+<li><p>0c: In ~150 words, what do you think about Conner’s framing of the development of science? How does it align or conflict with your current (or prior) understanding of the development of science?</p></li>
+</ul>
+</section>
+<section id="hw3-physics-and-capital">
+<h2>HW3: Physics and Capital<a class="headerlink" href="#hw3-physics-and-capital" title="Link to this heading">#</a></h2>
+<figure class="align-default" id="id1">
+<a class="reference internal image-reference" href="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Stagg_Field_reactor.jpg/960px-Stagg_Field_reactor.jpg"><img alt="Artist rendition of the first nuclear reactor was erected in 1942 in the West Stands section of Stagg Field at the University of Chicago. On December 2, 1942 a group of scientists achieved the first self-sustaining chain reaction and thereby initiated the controlled release of nuclear energy. The reactor consisted of uranium and uranium oxide lumps spaced in a cubic lattice embedded in graphite. In 1943 it was dismantled and reassembled at the Palos Park unit of the Argonne National Laboratory." src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Stagg_Field_reactor.jpg/960px-Stagg_Field_reactor.jpg" style="width: 600px;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 42 </span><span class="caption-text">Artist rendition of the first nuclear reactor. Erected in 1942 at the University of Chicago’s Stagg Field. <a class="reference external" href="https://en.wikipedia.org/wiki/Chicago_Pile-1">Source: Wikimedia Commons</a></span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>There’s a substantive argument to be made that physics as an enterprise has driven capital investment and the development of technologies that we enjoy. There’s also an argument that can be made that the defense and weapons industry invested heavily in physics research, especially during the Cold War, which lead to the development consumer products as corporate actors looked for places to make additional profits. There’s still another argument that the exploitation of people and resources in nations and lands that are less developed than the US and Western Europe provided the necessary materials and capital to develop Big Science.</p>
+<p>Certainly the story of physics and the development of our politics and economy is more complex than these isolated arguments. But, the stories that are platformed matter to physics, to science, and to our society.</p>
+<p>Some in physics like <a class="reference external" href="https://en.wikipedia.org/wiki/Michio_Kaku">Michio Kaku</a> have adopted ways of thinking and writing that speak about the future of physics, technology, and the world. Their prognostications are often more fantasy than reality. Seriously, read any of their books. Increasingly, with the rise of <a class="reference external" href="https://www.rollingstone.com/culture/culture-commentary/billionaires-psychology-tech-politics-1235358129/">billionaire technologist who explore even more fanciful futures that are inaccessible to most</a>, we should take a moment to read and deconstruct how physics is being used to make these arguments seem plausible (they are not).</p>
+<p>Read this 2022 interview from the <a class="reference external" href="https://en.wikipedia.org/wiki/World_Economic_Forum">World Economic Forum</a> with Michio Kaku on how Physics could create the “Perfect Capitalism”: <a class="reference external" href="https://www.weforum.org/stories/2022/01/michio-kaku-says-physics-will-create-a-perfect-capitalism/">https://www.weforum.org/stories/2022/01/michio-kaku-says-physics-will-create-a-perfect-capitalism/</a></p>
+<div class="info admonition">
+<p class="admonition-title">Why are we reading this?</p>
+<p>This interview and its contents are important for us to understand. Many members of society including policy-makers hear scientists like Kaku and assume they are speaking with authority and clarity - like they do more frequently in research physics. However, we must distinguish between established science and ideas for the future.</p>
+<p>Moreover, we need to understand the relationship between physics, politics, and the economy, especially when certain voices are elevated and heard above others. The arc of scientific research has often been bent towards the interests of the powerful and the vocal. For example, take the <a class="reference external" href="https://www.theguardian.com/us-news/2025/feb/11/doge-education-department-cuts-trump">recent gutting of federal science and science education</a> by billionaire technologist <a class="reference external" href="https://en.wikipedia.org/wiki/Elon_Musk">Elon Musk</a> and the <a class="reference external" href="https://en.wikipedia.org/wiki/Department_of_Government_Efficiency">DOGE commission</a>, which has sent American science back at least a decade.</p>
+<p>You don’t have to disagree or agree with the views presented in the interview; it is important for you to learn about how others speak about our discipline, so you can decide how you will do so.</p>
+<p>And if you have questions, just ask.</p>
+</div>
+<p>Now answer the follow questions:</p>
+<ul class="simple">
+<li><p>0a: In ~150 words, summarize the interview with Kaku, what you learned from it, and what you have more questions about.</p></li>
+<li><p>0b: In ~150 words, react to this section of the interview. Use your own understanding of wealth and where you understanding of it in comes from. In doing so, critique Kaku’s statement. <em>Note that Kaku’s definition is not so much different from your own in that his simply comes from his own experience and views about the world; not from the scholarly study of economics and history.</em></p></li>
+</ul>
+<blockquote>
+<div><p>To understand economics, you must understand where wealth comes from. If you talk to an economist, the economist might say, “Wealth comes from printing money.” A politician might say, “Wealth comes from taxes.” I think they’re all wrong – the wealth of society comes from physics.</p>
+</div></blockquote>
+<p>Physicists like Kaku often speak in the absolute, especially in mass media. They also frequently speak about things that are far more complex and nuanced than their understanding of it is. Physics is model-driven and so these physicists often apply <a class="reference external" href="https://en.wikipedia.org/wiki/Reductionism#In_science">reductionist</a> arguments to complex ideas.</p>
+<blockquote>
+<div><p>For example, Kaku states, “<em>[t]he Chinese system works because they’ve mastered one art: copying.</em>”<br><br>This is both a sweeping and a false statement that is easily refuted by observing the substantial investments in green energy technologies and developments of high-speed train systems throughout China. China leads the world in both of these areas; both from an engineering standpoint and an implementation perspective.<br><br>Further research would find how the Chinese government has invested in STEM schooling, STEM research, and university-corporate partnerships over decades to build both the human capital and infrastructure to lay the groundwork for these advancements.</p>
+</div></blockquote>
+<ul class="simple">
+<li><p>0c: In ~150 words, find another seemingly false or sweeping statement that Kaku makes about physics and capitalism. Do a web search on these ideas and identify more true or more nuanced explanations. <strong>Please include links or citations to what you found.</strong></p></li>
+</ul>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./admin"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="finding-research.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Finding Research Opportunities</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../resources/vscode-setup-numerics-activity.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Getting Started with VS Code for Scientific Computing</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hw-1-physics-as-work-whose-labor-builds-foundations">HW 1: Physics as Work: Whose Labor Builds “Foundations”?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hw2-how-do-we-talk-about-scientific-efforts">HW2: How do we talk about scientific efforts?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hw3-physics-and-capital">HW3: Physics and Capital</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Danny Caballero, Morten Hjorth-Jensen, Rachel Henderson, Alia Valentine
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+  <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" />
+</a>
+<br />
+This work is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
