@@ -437,9 +437,9 @@ Slides for PHY 321 appear in reverse chronological order, with the most recent s
 
 :::
 
----
+--- --->
 
-## Day 07 - Drag Forces - 10 Sep 2025
+## Day 07 - Drag Forces - 28 Jan 2026
 
 [![Day 07](../slides/day-07-drag-forces.png)](../slides/day-07-drag-forces.pdf)
 
@@ -450,9 +450,9 @@ Slides for PHY 321 appear in reverse chronological order, with the most recent s
 
 :::
 
---- --->
+---
 
-## Day 06 - Making Classical Models - 08 Sep 2025
+## Day 06 - Making Classical Models - 26 Jan 2026
 
 [![Day 06](../slides/day-06-making-classical-models.png)](../slides/day-06-making-classical-models.pdf)
 
