@@ -424,9 +424,9 @@ Slides for PHY 321 appear in reverse chronological order, with the most recent s
 
 :::
 
----
+--- --->
 
-## Day 08 - Help Session - 12 Sep 2025
+## Day 08 - Help Session - 30 Jan 2026
 
 [![Day 08](../slides/day-08-help-session.png)](../slides/day-08-help-session.pdf)
 
@@ -437,7 +437,7 @@ Slides for PHY 321 appear in reverse chronological order, with the most recent s
 
 :::
 
---- --->
+--- 
 
 ## Day 07 - Drag Forces - 28 Jan 2026
 

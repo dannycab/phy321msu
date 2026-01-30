@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Day 08 - Help Session &#8212; Classical Mechanics</title>
+    <title>Day 08 - Workshop Day &#8212; Classical Mechanics</title>
   
   
   
@@ -389,7 +389,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Day 08 - Help Session</h1>
+    <h1>Day 08 - Workshop Day</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -399,13 +399,16 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Day 08 - Help Session</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Day 08 - Workshop Day</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#announcements">Announcements</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-3-10-pt-drag-force">Exercise 3 (10 pt), Drag force</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#at-your-table-chat-for-3-minutes">At your table, chat for 3 minutes.</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hw-2-exercise-5-ball-thrown-along-a-sloped-ramp">HW 2; Exercise 5, ball thrown along a sloped ramp</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">HW 2; Exercise 5, ball thrown along a sloped ramp</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">HW 2; Exercise 5, ball thrown along a sloped ramp</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#hw-3-exercise-3-drag-force">HW 3; Exercise 3, Drag force</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#parts-3a-and-3b">Parts 3a and 3b</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-5">Exercise 5</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Exercise 5</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#parts-5a-and-5b">Parts 5a and 5b</a></li>
 </ul>
 
             </nav>
@@ -418,25 +421,192 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="day-08-help-session">
-<h1>Day 08 - Help Session<a class="headerlink" href="#day-08-help-session" title="Link to this heading">#</a></h1>
-<p><img alt="bg right width:600px" src="../_images/quack.png" /></p>
+  <style>
+  :root {
+    --color-spartan-green: #18453B;
+    --color-msu-gold: #C1B000;
+    --color-light-gray: #f5f5f5;
+    --color-dark-text: #1a1a1a;
+    --color-accent-green: #2d5f4f;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    color: var(--color-dark-text);
+  }
+  
+  h1, h2, h3 {
+    color: var(--color-spartan-green);
+    font-weight: 500;
+  }
+  
+  h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0rem;
+  }
+  
+  h2 {
+    font-size: 1.55rem;
+    margin-bottom: 1.0rem;
+    border-bottom: 4px solid var(--color-spartan-green);
+    padding-bottom: 0.5rem;
+  }
+  
+  h3 {
+    font-size: 1.15rem;
+    margin-top: 1rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  section {
+    padding: 2rem;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .equation {
+    background-color: var(--color-light-gray);
+    padding: 1.5rem;
+    border-left: 4px solid var(--color-msu-gold);
+    margin: 1.5rem 0;
+    font-size: 1.3rem;
+    text-align: center;
+    color: var(--color-dark-text);
+  }
+
+  p {
+    font-size: 1.15rem;
+    line-height: 1.4;
+    margin-bottom: 0.5rem;
+  }
+  
+  ul, ol {
+    font-size: 1.15rem;
+    line-height: 1.4;
+    margin-left: 0.5rem;
+  }
+
+  ul ul, ol ol, ul ol, ol ul {
+    margin-left: 0.1rem;
+  }
+  
+  li {
+    margin-bottom: 0rem;
+    line-height: 1.4;
+  }
+  
+  strong {
+    color: var(--color-spartan-green);
+    font-weight: 600;
+  }
+  
+  em {
+    color: var(--color-accent-green);
+  }
+
+  .highlight {
+    background-color: var(--color-light-gray);
+    padding: 1.5rem;
+    border-left: 4px solid var(--color-spartan-green);
+    margin: 1.5rem 0;
+  }
+
+  .activity {
+    background-color: #fff8e1;
+    border: 2px solid var(--color-msu-gold);
+    padding: 1.25rem;
+    border-radius: 6px;
+    margin: 1rem 0;
+  }
+
+  code {
+    background-color: var(--color-light-gray);
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-size: 1.0rem;
+  }
+
+  .footnote {
+    font-size: 0.8rem;
+    color: #999;
+    margin-top: 1.5rem;
+    border-top: 1px solid #ddd;
+    padding-top: 0.75rem;
+  }
+</style>
+<!--
+_class: title
+_backgroundColor: #ffffff
+_color: #18453B
+-->
+<section id="day-08-workshop-day">
+<h1>Day 08 - Workshop Day<a class="headerlink" href="#day-08-workshop-day" title="Link to this heading">#</a></h1>
+<p>Fridays are reserved for your questions, homework issues, and general support</p>
+<p><img alt="bg right:60% width:600px height:auto" src="../_images/units-meme.jpeg" /></p>
+<div class="footnote">PHY 321 Classical Mechanics I - Spring 2026</div>
 </section>
 <hr class="docutils" />
 <section id="announcements">
 <h1>Announcements<a class="headerlink" href="#announcements" title="Link to this heading">#</a></h1>
 <ul class="simple">
-<li><p>Reminder: email me your extra credit seminar writeups.</p></li>
-<li><p><strong>DC Office Hours today from 14:00-16:00</strong></p>
+<li><p>Homework 2 is due today (there is no penalty for late submission)</p></li>
+<li><p>Homework 3 is posted (due next Friday; late after Sunday)</p></li>
+<li><p>Afternoon help session (with Mihir, 3-5pm) on Zoom:</p>
 <ul>
-<li><p>And on zoom: <a class="reference external" href="https://dannycab.github.io/meet">https://dannycab.github.io/meet</a></p></li>
+<li><p>Zoom Link: <a class="reference external" href="https://msu.zoom.us/j/99550311023">https://msu.zoom.us/j/99550311023</a></p></li>
+<li><p>password: <code class="docutils literal notranslate"><span class="pre">phy321msu</span></code></p></li>
+</ul>
+</li>
+<li><p><strong>First midterm is coming up</strong> (assigned 16 Feb)</p>
+<ul>
+<li><p>One exercise will ask you to get started on your final project planning.</p></li>
+<li><p><em>Who are you gonna work with? What are you interested in studying?</em> Start thinking about this!</p></li>
 </ul>
 </li>
 </ul>
 </section>
 <hr class="docutils" />
-<section id="exercise-3-10-pt-drag-force">
-<h1>Exercise 3 (10 pt), Drag force<a class="headerlink" href="#exercise-3-10-pt-drag-force" title="Link to this heading">#</a></h1>
+<section id="at-your-table-chat-for-3-minutes">
+<h1>At your table, chat for 3 minutes.<a class="headerlink" href="#at-your-table-chat-for-3-minutes" title="Link to this heading">#</a></h1>
+<p><strong>What questions do you have?</strong></p>
+<p>⬆️ <strong>Make sure you upvote other’s questions.</strong></p>
+<p><img alt="bg right:50% width:500px height:auto" src="../_images/day08-s2026.png" /></p>
+<hr class="docutils" />
+<section id="hw-2-exercise-5-ball-thrown-along-a-sloped-ramp">
+<h2>HW 2; Exercise 5, ball thrown along a sloped ramp<a class="headerlink" href="#hw-2-exercise-5-ball-thrown-along-a-sloped-ramp" title="Link to this heading">#</a></h2>
+<p>A ball is thrown with initial speed <span class="math notranslate nohighlight">\(v_0\)</span> up an inclined plane. The plane is inclined at an angle <span class="math notranslate nohighlight">\(\phi\)</span> above the horizontal, and the ball’s initial velocity is at an angle <span class="math notranslate nohighlight">\(\theta\)</span> above the plane. Choose axes with <span class="math notranslate nohighlight">\(x\)</span> measured up the slope, <span class="math notranslate nohighlight">\(y\)</span> normal to the slope, and <span class="math notranslate nohighlight">\(z\)</span> across it.</p>
+<ul class="simple">
+<li><p>5a: Write down Newton’s second law using these axes and find the ball’s position as a function of time. <strong>Make sure to include the FBD and any assumptions you make.</strong></p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="id1">
+<h2>HW 2; Exercise 5, ball thrown along a sloped ramp<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
+<p>A ball is thrown with initial speed <span class="math notranslate nohighlight">\(v_0\)</span> up an inclined plane. The plane is inclined at an angle <span class="math notranslate nohighlight">\(\phi\)</span> above the horizontal, and the ball’s initial velocity is at an angle <span class="math notranslate nohighlight">\(\theta\)</span> above the plane. Choose axes with <span class="math notranslate nohighlight">\(x\)</span> measured up the slope, <span class="math notranslate nohighlight">\(y\)</span> normal to the slope, and <span class="math notranslate nohighlight">\(z\)</span> across it.</p>
+<ul class="simple">
+<li><p>5b: Show that the ball lands a distance</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[R=2v_0^2\dfrac{\sin\theta\cos\left(\theta + \phi\right)}{g \cos^2 \phi}\]</div>
+<p>from its launch point. <strong>This is measured up the ramp (i.e., along it).</strong></p>
+</section>
+<hr class="docutils" />
+<section id="id2">
+<h2>HW 2; Exercise 5, ball thrown along a sloped ramp<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<p>A ball is thrown with initial speed <span class="math notranslate nohighlight">\(v_0\)</span> up an inclined plane. The plane is inclined at an angle <span class="math notranslate nohighlight">\(\phi\)</span> above the horizontal, and the ball’s initial velocity is at an angle <span class="math notranslate nohighlight">\(\theta\)</span> above the plane. Choose axes with <span class="math notranslate nohighlight">\(x\)</span> measured up the slope, <span class="math notranslate nohighlight">\(y\)</span> normal to the slope, and <span class="math notranslate nohighlight">\(z\)</span> across it.</p>
+<ul class="simple">
+<li><p>5c: Show that for given <span class="math notranslate nohighlight">\(v_0\)</span> and <span class="math notranslate nohighlight">\(\phi\)</span>, the maximum range up the inclined plane is:</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[R_{\text{max}}=\dfrac{v_0^2}{g(1+\sin\phi)}\]</div>
+</section>
+</section>
+<hr class="docutils" />
+<section id="hw-3-exercise-3-drag-force">
+<h1>HW 3; Exercise 3, Drag force<a class="headerlink" href="#hw-3-exercise-3-drag-force" title="Link to this heading">#</a></h1>
 <p>We can observe that the models for linear and quadratic drag forces are given by:</p>
 <div class="math notranslate nohighlight">
 \[f_{lin} = 3\pi \eta D v \qquad f_{quad} = \kappa \rho A v^2\]</div>
@@ -448,35 +618,6 @@ document.write(`
 <ul class="simple">
 <li><p>The Reynolds number is defined as <span class="math notranslate nohighlight">\(Re = \rho v D / \eta\)</span>. What is the physical meaning of this number? For a spherical object, show that the ratio of the quadratic drag force to the linear drag force is given by <span class="math notranslate nohighlight">\(f_{quad}/f_{lin} = Re/48\)</span>. Use this to explain the physical meaning of the Reynolds number. <strong>Note: you may assume that <span class="math notranslate nohighlight">\(\kappa = 0.25\)</span> for a sphere.</strong></p></li>
 <li><p>Explain a situation where there would be a low Reynolds number. What about a high Reynolds number? Estimate the Reynolds number for a falling rain drop, a parachutist, a car, and a plane.</p></li>
-</ul>
-</section>
-<hr class="docutils" />
-<section id="exercise-5">
-<h1>Exercise 5<a class="headerlink" href="#exercise-5" title="Link to this heading">#</a></h1>
-<p>Finding and exploring equations of motion is the central enterprise of classical mechanics. You will encounter (and derive) many equations you have not seen before, and you will need to explain them. Consider a hypothetical one-dimensional system where a mass <span class="math notranslate nohighlight">\(m\)</span> has a speed of <span class="math notranslate nohighlight">\(v_0\)</span> and coasts along the x-axis. The surrounding medium produces a drag force that is modeled using:</p>
-<div class="math notranslate nohighlight">
-\[F(v) = -c v^{3/2}.\]</div>
-<p>When the force is a pure function of velocity, using the technique called separation of variables on Newton’s 2nd Law, we can find the velocity as a function of time.</p>
-</section>
-<hr class="docutils" />
-<section id="id1">
-<h1>Exercise 5<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
-<p>We can separate variables and write:</p>
-<div class="math notranslate nohighlight">
-\[F(v) = m a = m \dfrac{dv}{dt}\]</div>
-<p>Divide both sides by <span class="math notranslate nohighlight">\(F(v)\)</span> and multiply both sides by <span class="math notranslate nohighlight">\(dt\)</span>:</p>
-<div class="math notranslate nohighlight">
-\[dt = \dfrac{m}{F(v)}dv\]</div>
-<p>And then, given starting (initial) conditions, we integrate both sides to find an expression for <span class="math notranslate nohighlight">\(t\)</span> as a function of <span class="math notranslate nohighlight">\(v\)</span>.</p>
-<div class="math notranslate nohighlight">
-\[t = m \int_{v_0}^v \dfrac{dv'}{F(v')}\]</div>
-</section>
-<hr class="docutils" />
-<section id="parts-5a-and-5b">
-<h1>Parts 5a and 5b<a class="headerlink" href="#parts-5a-and-5b" title="Link to this heading">#</a></h1>
-<ul class="simple">
-<li><p>For the given force above, write the equation of motion in a form: <span class="math notranslate nohighlight">\(\dfrac{m dv}{F(v)} = dt\)</span>. Integrate both sides to find an expression for the velocity <span class="math notranslate nohighlight">\(v\)</span> as a function of <span class="math notranslate nohighlight">\(t\)</span> (<span class="math notranslate nohighlight">\(v(t)\)</span> not <span class="math notranslate nohighlight">\(t(v)\)</span>).</p></li>
-<li><p>Check your answer by looking at the limits of its behavior. Does it agree with your intuition?</p></li>
 </ul>
 </section>
 
@@ -526,13 +667,16 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Day 08 - Help Session</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Day 08 - Workshop Day</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#announcements">Announcements</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-3-10-pt-drag-force">Exercise 3 (10 pt), Drag force</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#at-your-table-chat-for-3-minutes">At your table, chat for 3 minutes.</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hw-2-exercise-5-ball-thrown-along-a-sloped-ramp">HW 2; Exercise 5, ball thrown along a sloped ramp</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">HW 2; Exercise 5, ball thrown along a sloped ramp</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">HW 2; Exercise 5, ball thrown along a sloped ramp</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#hw-3-exercise-3-drag-force">HW 3; Exercise 3, Drag force</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#parts-3a-and-3b">Parts 3a and 3b</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-5">Exercise 5</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Exercise 5</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#parts-5a-and-5b">Parts 5a and 5b</a></li>
 </ul>
 
   </nav></div>
