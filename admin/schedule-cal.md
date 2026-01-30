@@ -30,9 +30,9 @@ _All assignments are turned in using Gradescope as a single PDF._
 
 | **Week** | **Day**   | **Topic**                                       | **Readings to Prepare** | **Important Events**                                                |
 |:--------:|:---------:|:-----------------------------------------------:|:-----------------------|:-------------------------------------------------------------------|
-| CW5      | 26 Jan    | Modeling and equations of motion                | 📓 [03 - What is Mathematical Modeling?](../lecture-notes/03_notes.ipynb)<br>📚 JRT 1.4-1.6 | 📝 [Homework 3 Assigned (Due 6 Feb)](../assignments/hw3.ipynb)      |
-|          | 28 Jan   | Air Resistance                                  |                        |                                                                   |
-|          | 30 Jan    | Workshop day                                    |                        | 📥 **Homework 2 Due**<br>**(Late after Sunday 11:59pm)**                                                |
+| CW5      | 26 Jan    | Modeling and equations of motion                | 📓 [03 - What is Mathematical Modeling?](../lecture-notes/03_notes.ipynb)<br>📚 JRT 1.4-1.6<br> 📊 [Slides](../slides/day-06-making-classical-models.pdf) | 📝 [Homework 3 Assigned (Due 6 Feb)](../assignments/hw3.ipynb)      |
+|          | 28 Jan   | Air Resistance                                  |                        |   📊 [Slides](../slides/day-07-drag-forces.pdf)                                                                |
+|          | 30 Jan    | Workshop day                                    |     📊 [Slides](../slides/day-08-help-session.pdf)                   | 📥 **Homework 2 Due**<br>**(Late after Sunday 11:59pm)**                                                |
 
 ---
 
