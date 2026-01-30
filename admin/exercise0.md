@@ -97,3 +97,27 @@ Physicists like Kaku often speak in the absolute, especially in mass media. They
 
 * 0c: In ~150 words, find another seemingly false or sweeping statement that Kaku makes about physics and capitalism. Do a web search on these ideas and identify more true or more nuanced explanations. **Please include links or citations to what you found.**
 
+## HW4: Open Science: Reproducibility and Accessibility
+
+Science is a collective endeavor. Historically however, much of scientific knowledge has been represented as the work of individual geniuses. Moreover, access to scientific knowledge has often been restricted to privileged groups through paywalls, expensive textbooks, and exclusive institutions. This has led to significant barriers for many people who wish to engage with and contribute to scientific knowledge.
+
+![Open Science Framework](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/UNESCO-Open_science-pillars-en.png/500px-UNESCO-Open_science-pillars-en.png)
+
+[Open Science](https://en.wikipedia.org/wiki/Open_science) is a movement that aims to make scientific research, data, and dissemination accessible to all levels of society. This includes practices such as publishing in open-access journals, sharing data and code openly, and engaging with the public through outreach and education.
+
+:::{admonition} Why are we reading this?
+:class: info
+Understanding the principles and practices of Open Science is crucial for fostering a more inclusive and collaborative scientific community. By embracing Open Science, we can help to democratize access to scientific knowledge, allowing a broader range of voices and perspectives to contribute to the advancement of science.
+
+Additionally, Open Science practices can enhance the reproducibility and transparency of scientific research, which are essential for building trust in scientific findings. 
+
+Learning about the principles of Open Science will also prepare you to be an active participant in the scientific community, whether as a researcher, educator, or informed citizen.
+:::
+
+> For this exercise, you should read/skim the Wikipedia article on [Open Science](https://en.wikipedia.org/wiki/Open_science) and the [UNESCO Recommendation on Open Science](../docs/papers/UNESCO-open-science.pdf).
+>
+> If you have little time, focus on the [Principles of Open Science](https://en.wikipedia.org/wiki/Open_science#Principles) and the [Advantages and Disadvantages of Open Science](https://en.wikipedia.org/wiki/Open_science#Advantages_and_disadvantages) on the Wikipedia page, and [Section IV. Areas of Action](../docs/papers/UNESCO-open-science.pdf) of the UNESCO report.
+
+1. In ~150 words, summarize what Open Science is and why it is important.
+2. In ~150 words, discuss how Open Science practices can help to democratize access to scientific knowledge and foster a more inclusive scientific community.
+3. In ~150 words, reflect on how you can incorporate Open Science principles into your own work as a student and future scientist. What are some specific actions you can take to promote Open Science in your academic and professional endeavors?
