@@ -2,6 +2,26 @@
 
 Here, we collect the reminders for each week in reverse order in case you missed anything.
 
+## Week 4
+
+:::{admonition} Week 4 Reminders
+:class: alert
+* Read these course notes or the [associated book chapters](./admin/schedule-cal.md)
+    * [04 - Why does fluid drag complicate things?](./lecture-notes/04_notes.ipynb)
+* [Homework 3](./assignments/hw3.ipynb) is due Friday; late on Sunday.
+* [Homework 4](./assignments/hw4.ipynb) has been posted (due 13 Feb)
+* **Questions?** Join the [course Microsoft Team](https://teams.microsoft.com/l/team/19%3AIr0eKL1QHnlQB1RsC6tL17haYAABE9rDsDoTGBZdlXU1%40thread.tacv2/conversations?groupId=e971ed12-c07e-4696-993b-86e11e55c523&tenantId=22177130-642f-41d9-9211-74237ad5687d) for announcements and discussions.
+* Add the [i-Clicker course](https://join.iclicker.com/PRJO)
+:::{admonition} Office Hours and Zoom Info
+:class: note
+* Office hours this week (Mihir-MN; Danny-DC):
+    * Thursday 3-5pm (MN, 1248 BPS)
+    * Friday 10-12pm (DC, 1248 BPS)
+    * Friday 3-5pm (MN, Zoom only <https://msu.zoom.us/j/99550311023> `phy321msu`)
+* If you are ill, you can join class on zoom: <https://msu.zoom.us/j/99550311023> (password: `phy321msu`)
+:::
+:::
+
 ## Week 3
 
 :::{admonition} Week 3 Reminders
