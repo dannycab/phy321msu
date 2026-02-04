@@ -394,9 +394,9 @@ Slides for PHY 321 appear in reverse chronological order, with the most recent s
 
 :::
 
----
+--- --->
 
-## Day 10 - Modeling Drag - 17 Sep 2025
+## Day 10 - Modeling Drag - 04 Feb 2026
 
 [![Day 10](../slides/day-10-integrating-eoms-numerically.png)](../slides/day-10-integrating-eoms-numerically.pdf)
 
@@ -411,7 +411,7 @@ Slides for PHY 321 appear in reverse chronological order, with the most recent s
 
 :::
 
---- --->
+---
 
 ## Day 09 - Modeling Drag - 02 Feb 2026
 
