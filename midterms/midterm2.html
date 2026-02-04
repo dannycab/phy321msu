@@ -1,0 +1,717 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Midterm 2 (Due 11 Apr) &#8212; Classical Mechanics</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"tex2jax": {"inlineMath": [["$", "$"]]}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'midterms/midterm2';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Homework 8 (Due 18 Apr)" href="../homeworks/hw8.html" />
+    <link rel="prev" title="Homework 7 (Due 28 Mar)" href="../homeworks/hw7.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/spartan-helmet.png" class="logo__image only-light" alt="Classical Mechanics - Home"/>
+    <img src="../_static/spartan-helmet.png" class="logo__image only-dark pst-js-only" alt="Classical Mechanics - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    PHY 321: Classical Mechanics 1, Michigan State University, Spring 2025
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">About the course</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../admin/getting-started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin/teachers.html">Teachers and Grading</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin/textbooks.html">Textbooks</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Calendar &amp; Lecture Materials</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../admin/schedule-cal.html">Course Calendar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin/links.html">Course Material and Links</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin/slides.html">Slides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin/handwritten-notes.html">Handwritten Notes</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Weekly Course Materials</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week1/01_start.html">Week 1 - Overture: What is Classical Physics?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week1/01_notes.html">Week 1 - Notes: Introduction to Classical Mechanics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week2/02_start.html">Week 2 - Computing as a tool for science</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week2/02_notes.html">Week 2 - Notes: Mathematical Preliminaries</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week3/03_start.html">Week 3 - What is Mathematical Modeling?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week3/03_notes.html">Week 3 - Notes: Making Classical Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week4/04_start.html">Week 4 - Why does fluid drag complicate things?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week4/04_notes.html">Week 4 - Notes: Equations of Motion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week5/05_start.html">Week 5 - Conservation Laws</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week5/05_notes.html">Week 5 - Notes: Conservation of Energy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week6/06_start.html">Week 6 - Stability and Equilibria</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week6/06_notes.html">Week 6 - Notes: Stability and Energy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week6/06_notes_2.html">Week 6 - Notes: Linear and Angular Momentum</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week7/07_start.html">Week 7 - Nonlinear Dynamics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week7/07_notes.html">Week 7 - Notes: Critical Points; Phase Space; Trajectories</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week8/08_start.html">Week 8 - Oscillations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week8/08_notes.html">Week 8 - Notes: Oscillators and Modeling Oscillations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week9/09_start.html">Week 9 - Driven Oscillators and Resonance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week9/09_notes.html">Week 9 - Notes: Driven Oscillations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week10/10_start.html">Week 10 - Chaotic Dynamics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week10/10_notes.html">Week 10 - Activity: Modeling Chaotic Systems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week11/11_start.html">Week 11 - Calculus of Variations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week11/11_notes.html">Week 11 - Notes: The Euler-Lagrange Equation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week12/12_start.html">Week 12 - The Principle of Least Action</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lecture-notes/week12/12_notes.html">Week 12 - Notes: Introduction to Lagrangian Mechanics</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Assignments</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw1.html">Homework 1 (Due 24 Jan)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw2.html">Homework 2 (Due 31 Jan)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw3.html">Homework 3 (Due 07 Feb)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw4.html">Homework 4 (Due 17 Feb)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="midterm1.html">Midterm 1 (Due 28 Feb)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw5.html">Homework 5 (Due 14 Mar)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw6.html">Homework 6 (Due 21 Mar)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw7.html">Homework 7 (Due 28 Mar)</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Midterm 2 (Due 11 Apr)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../homeworks/hw8.html">Homework 8 (Due 18 Apr)</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Solutions</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../solutions/solutionhw1.html">Solution Homework 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../solutions/solutionhw2.html">Solution Homework 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../solutions/solutionhw3.html">Solution Homework 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../solutions/solutionhw4.html">Solution Homework 4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../solutions/solutionmidterm1.html">Midterm 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../solutions/solutionhw5.html">Solution Homework 5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../solutions/solutionhw6.html">Solution Homework 6</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../solutions/solutionhw7.html">Solution Homework 7</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Resources</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../resources/course-commitments.html">Course Commitments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/iclicker-setup.html">i-Clicker Setup Instructions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/generative-ai.html">Generative Artificial Intelligence</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/gradescope-submissions.html">Submitting Assignments on Gradescope</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/finding-research.html">Finding Research Opportunities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/integrators.html">Numerical Integrators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/phase_diagrams.html">Plotting Phase Diagrams</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/chaotic_dynamics.html">Modeling Chaotic Systems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/computational-essay-rubric.html">Rubric for Computational Essay Final Project</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Honors Projects</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../honors-projects/ChaoticPendulum.html">Chaos in the driven nonlinear pendulum</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../honors-projects/NeuralNetworks.html">From Ordinary Differential equations to Neural Networks, solving mechanics problems in a new way</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../honors-projects/SolarSystem.html">Building a model for the solar system using ordinary differential equations</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/midterms/midterm2.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Midterm 2 (Due 11 Apr)</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#part-1-the-duffing-oscillator-60pt">Part 1, The Duffing Oscillator (60pt)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#undamped-and-undriven-case-20-points">Undamped and undriven case (20 points)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#damped-and-undriven-case-20-points">Damped and undriven case (20 points)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#driven-and-damped-case-20-points">Driven and damped case (20 points)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#extra-credit-up-to-30-points">Extra credit (up to 30 points)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#part-2-strange-attractor-40pt">Part 2, Strange Attractor (40pt)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#numerical-integrate-the-chen-system-20-points">Numerical Integrate the Chen System (20 points)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comparing-trajectories-20-points">Comparing Trajectories (20 points)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#extra-credit">Extra Credit</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#part-3-project-check-in-2-20pt">Part 3, Project Check-in 2 (20pt)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#extra-credit-integrating-classwork-with-research">Extra Credit - Integrating Classwork With Research</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <!-- HTML file automatically generated from DocOnce source (https://github.com/doconce/doconce/)
+doconce format html Firstmidterm2022.do.txt --no_mako -->
+<!-- dom:TITLE: PHY321: Classical Mechanics 1 --><section id="midterm-2-due-11-apr">
+<h1>Midterm 2 (Due 11 Apr)<a class="headerlink" href="#midterm-2-due-11-apr" title="Link to this heading">#</a></h1>
+<p><strong>Spring 2025</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">math</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="o">%</span><span class="k">matplotlib</span> inline
+<span class="n">plt</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;seaborn-v0_8-colorblind&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<section id="part-1-the-duffing-oscillator-60pt">
+<h2>Part 1, The Duffing Oscillator (60pt)<a class="headerlink" href="#part-1-the-duffing-oscillator-60pt" title="Link to this heading">#</a></h2>
+<p>Consider the following equation of motion for a damped and driven oscillator that is not necessarily linear. This is the <a class="reference external" href="https://en.wikipedia.org/wiki/Duffing_equation">Duffing equation</a>, which describes a damped driven simple harmonic oscillator with a cubic non-linearity. It’s equation of motion is given by:</p>
+<div class="math notranslate nohighlight">
+\[\ddot{x} + \delta \dot{x} + \alpha x + \beta x^3 = \gamma \cos(\omega t).\]</div>
+<p>where <span class="math notranslate nohighlight">\(\alpha\)</span>, <span class="math notranslate nohighlight">\(\beta\)</span>, <span class="math notranslate nohighlight">\(\delta\)</span>, <span class="math notranslate nohighlight">\(\gamma\)</span>, and <span class="math notranslate nohighlight">\(\omega\)</span> are constants.</p>
+<p>Below is a figure showing the <a class="reference external" href="https://en.wikipedia.org/wiki/Attractor#Strange_attractor">strange attractor</a> of the Duffing Oscillator over four periods. It is locally chaotic, but globally it is stable. This is a common feature of non-linear systems.</p>
+<p><img alt="Strange attractor" src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Duffing_oscillator_strange_attractor_with_color.gif" /></p>
+<p>We focus on this one dimensional case, but we will analyze it in parts to put together a full picture of the dynamics of the system. If you are looking for useful parameter choices and initial conditions, we suggest using those listed on <a class="reference external" href="https://en.wikipedia.org/wiki/Duffing_equation">the Wikipedia page</a>.</p>
+<p>Recall that the potential for this system can give rise to different kinds of behavior depending on the parameters. The figure below shows the potential for different choices of <span class="math notranslate nohighlight">\(\alpha\)</span> and <span class="math notranslate nohighlight">\(\beta\)</span>. Make sure you choose your parameters to match the potential you want to study - pick a stable well for solving for trajectories.</p>
+<p><img alt="Duffing potential" src="../_images/duffing_potential.png" /></p>
+<section id="undamped-and-undriven-case-20-points">
+<h3>Undamped and undriven case (20 points)<a class="headerlink" href="#undamped-and-undriven-case-20-points" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>(5 pt) Consider the undriven and undamped case, <span class="math notranslate nohighlight">\(\delta = \gamma = 0\)</span>. What potential would give rise to this kind of equation of motion? Demonstrate that potential gives the expected equation of motion.</p></li>
+</ol>
+<ol class="arabic simple" start="2">
+<li><p>(5 pt) Find the equilibrium points of the system for the undriven and undamped case. What are the conditions for stable and unstable equilibrium points? Plot the potential for some choices of <span class="math notranslate nohighlight">\(\alpha\)</span> and <span class="math notranslate nohighlight">\(\beta\)</span> to illustrate your findings.</p></li>
+</ol>
+<ol class="arabic simple" start="3">
+<li><p>(5 pt) Plot the phase space for the undriven and undamped case. What are the trajectories of the system? What is the behavior of the system? Does it match your expectations from the potential? <em>The figure above only starts this discussion.</em></p></li>
+</ol>
+<ol class="arabic simple" start="4">
+<li><p>(5 pt) <strong>Here you are likely to need a numerical solver.</strong>  Solve the equation of motion for the undriven and undamped case for a reasonable choice of <span class="math notranslate nohighlight">\(\alpha\)</span> and <span class="math notranslate nohighlight">\(\beta\)</span> and initial conditions. Plot the position as a function of time. What is the behavior of the system? Does it match your expectations from the potential and the phase portrait?</p></li>
+</ol>
+</section>
+<section id="damped-and-undriven-case-20-points">
+<h3>Damped and undriven case (20 points)<a class="headerlink" href="#damped-and-undriven-case-20-points" title="Link to this heading">#</a></h3>
+<ol class="arabic simple" start="5">
+<li><p>(5 pt) Now consider the damped and undriven case, <span class="math notranslate nohighlight">\(\gamma = 0\)</span>. What is the equation of motion in this case? Can you develop this equation of motion fully from a potential (like we did above)? If so, what is the potential? If not, why not?</p></li>
+</ol>
+<ol class="arabic simple" start="6">
+<li><p>(5 pt) Plot the phase space for the damped and undriven case. What kinds of trajectories are there?</p></li>
+</ol>
+<ol class="arabic simple" start="7">
+<li><p>(10 pt) <strong>Here you are likely to need a numerical solver.</strong>  Solve the equation of motion for the damped and undriven case for a reasonable choice of <span class="math notranslate nohighlight">\(\alpha\)</span>, <span class="math notranslate nohighlight">\(\beta\)</span>, <span class="math notranslate nohighlight">\(\delta\)</span>, and initial conditions. Plot the position as a function of time. What is the behavior of the system? Does it match your expectations from the phase portrait?</p></li>
+</ol>
+</section>
+<section id="driven-and-damped-case-20-points">
+<h3>Driven and damped case (20 points)<a class="headerlink" href="#driven-and-damped-case-20-points" title="Link to this heading">#</a></h3>
+<ol class="arabic simple" start="8">
+<li><p>(5 pt) Now consider the damped and driven case, <span class="math notranslate nohighlight">\(\gamma \neq 0\)</span>. What is the equation of motion in this case? Can you develop this equation of motion fully from a potential (like we did above)? If so, what is the potential? If not, why not?</p></li>
+</ol>
+<ol class="arabic simple" start="9">
+<li><p>(5 pt) Is it possible to plot the phase space for the driven and damped case? Why or why not? What solutions are available to you to understand the behavior of the system in phase space? <em>Here we are not looking for you to solve the problem, but to conduct research into how people make sense of the behavior of driven and damped systems.</em></p></li>
+</ol>
+<ol class="arabic simple" start="10">
+<li><p>(10 pt) <strong>Here you are likely to need a numerical solver.</strong>  Solve the equation of motion for the driven and damped case for a reasonable choice of <span class="math notranslate nohighlight">\(\alpha\)</span>, <span class="math notranslate nohighlight">\(\beta\)</span>, <span class="math notranslate nohighlight">\(\delta\)</span>, <span class="math notranslate nohighlight">\(\gamma\)</span>, <span class="math notranslate nohighlight">\(\omega\)</span>, and initial conditions. Plot the position as a function of time. What is the behavior of the system?</p></li>
+</ol>
+</section>
+<section id="extra-credit-up-to-30-points">
+<h3>Extra credit (up to 30 points)<a class="headerlink" href="#extra-credit-up-to-30-points" title="Link to this heading">#</a></h3>
+<ol class="arabic simple" start="11">
+<li><p>(10 pts) The Duffing oscillator can be either a soft or hard spring by changing the sign of the <span class="math notranslate nohighlight">\(\alpha\)</span> term. What happens to the behavior of the system when you change the sign of <span class="math notranslate nohighlight">\(\alpha\)</span>? Can you explain this behavior in terms of the potential?</p></li>
+</ol>
+<ol class="arabic simple" start="12">
+<li><p>(20 pts) A critical tool for understanding the behavior of the Duffing oscillator is the <a class="reference external" href="https://en.wikipedia.org/wiki/Poincar%C3%A9_map">Poincaré section</a>. Can you implement a Poincaré section for the driven and damped case? What does it tell you about the behavior of the system?</p></li>
+</ol>
+</section>
+</section>
+<section id="part-2-strange-attractor-40pt">
+<h2>Part 2, Strange Attractor (40pt)<a class="headerlink" href="#part-2-strange-attractor-40pt" title="Link to this heading">#</a></h2>
+<p>We learned about <a class="reference external" href="https://en.wikipedia.org/wiki/Attractor#Strange_attractor">Strange Attractors</a> when modeling the <a class="reference external" href="https://en.wikipedia.org/wiki/Lorenz_system">Lorenz system</a> in class. In this part of the exam, we will explore the <a class="reference external" href="https://www.dynamicmath.xyz/calculus/velfields/Chen/">Chen system</a>, which is another example of a system that exhibits chaotic behavior and has a strange attractor. The Chen system is given by the following set of ordinary differential equations:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{align}
+\dot{x} &amp;= \alpha x-yz,\\
+\dot{y} &amp;= \beta y + xz,\\
+\dot{z} &amp;= \delta z + xy/3,\\
+\end{align}\end{split}\]</div>
+<p>where <span class="math notranslate nohighlight">\(\alpha\)</span>, <span class="math notranslate nohighlight">\(\beta\)</span>, and <span class="math notranslate nohighlight">\(\delta\)</span> are constants that determine the behavior of the system. For this problem, we will use the following values:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Parameter</p></th>
+<th class="head"><p>Value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(\alpha\)</span></p></td>
+<td><p>5.0</p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(\beta\)</span></p></td>
+<td><p>-10.0</p></td>
+</tr>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(\delta\)</span></p></td>
+<td><p>-0.38</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<section id="numerical-integrate-the-chen-system-20-points">
+<h3>Numerical Integrate the Chen System (20 points)<a class="headerlink" href="#numerical-integrate-the-chen-system-20-points" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>(10 pts) For this choice of parameters, numerically integrate (using <code class="docutils literal notranslate"><span class="pre">solve_ivp</span></code> or a similar integrator) the Chen system over a reasonable time interval (e.g., 100 time units). <strong>Recall that for <code class="docutils literal notranslate"><span class="pre">solve_ivp</span></code>, you need to specify the time span and initial conditions.</strong> For the initial conditions, you can choose <span class="math notranslate nohighlight">\(x(0) = y(0) = z(0) = 1.0\)</span>. Integrate for at least 100 time units. This will give you a starting point to observe the chaotic behavior of the system.</p></li>
+<li><p>(10 pts) Plot the system in 3D <strong>and</strong> in 3 subplots showing the projection of the trajectory in the <span class="math notranslate nohighlight">\(x-y\)</span>, <span class="math notranslate nohighlight">\(x-z\)</span>, and <span class="math notranslate nohighlight">\(y-z\)</span> planes.</p></li>
+</ol>
+</section>
+<section id="comparing-trajectories-20-points">
+<h3>Comparing Trajectories (20 points)<a class="headerlink" href="#comparing-trajectories-20-points" title="Link to this heading">#</a></h3>
+<ol class="arabic simple" start="3">
+<li><p>(10 pts) For two nearby points in phase space, numerically integrate the Chen system for 100 time units. Use the same initial conditions as before, but slightly perturb one of the points (e.g., <span class="math notranslate nohighlight">\(x(0) = 1.0\)</span>, <span class="math notranslate nohighlight">\(y(0) = 1.0\)</span>, <span class="math notranslate nohighlight">\(z(0) = 1.0\)</span> for the first point and <span class="math notranslate nohighlight">\(x(0) = 1.01\)</span>, <span class="math notranslate nohighlight">\(y(0) = 1.0\)</span>, <span class="math notranslate nohighlight">\(z(0) = 1.0\)</span> for the second point). Plot both trajectories in 3D to observe how they diverge over time. How can you tell that the system is chaotic from this behavior? What features of the trajectories indicate chaotic behavior?</p></li>
+<li><p>(10 pts) The Chen system has two attractors that we can observe. Which attractor we end up on depends on the initial conditions. To illustrate this, numerically integrate the Chen system for 100 time units with two different sets of initial conditions. For example, you can use <span class="math notranslate nohighlight">\(x(0) = y(0) = z(0) = 1.0\)</span> for the first trajectory and <span class="math notranslate nohighlight">\(x(0) = y(0) = z(0) = -1.0\)</span> for the second trajectory. Plot both trajectories in 3D and in 3 projections (<span class="math notranslate nohighlight">\(x-y\)</span>, <span class="math notranslate nohighlight">\(x-z\)</span>, and <span class="math notranslate nohighlight">\(y-z\)</span>) to observe the different attractors that the system can exhibit. How can you tell that the system is chaotic from this behavior? What features of the trajectories indicate chaotic behavior?</p></li>
+</ol>
+</section>
+<section id="extra-credit">
+<h3>Extra Credit<a class="headerlink" href="#extra-credit" title="Link to this heading">#</a></h3>
+<ol class="arabic simple" start="5">
+<li><p>(20 pts) For the Chen system integrate a bundle of trajectories (<span class="math notranslate nohighlight">\(N&gt;100\)</span>) with slightly different initial conditions. Make sure that your conditions are such that you cover both attractors. Plot the starting and ending points of the trajectories in 3D and in 3 projections (<span class="math notranslate nohighlight">\(x-y\)</span>, <span class="math notranslate nohighlight">\(x-z\)</span>, and <span class="math notranslate nohighlight">\(y-z\)</span>). How can you tell that the system is chaotic from this behavior? What features of the trajectories indicate chaotic behavior?</p></li>
+</ol>
+</section>
+</section>
+<section id="part-3-project-check-in-2-20pt">
+<h2>Part 3, Project Check-in 2 (20pt)<a class="headerlink" href="#part-3-project-check-in-2-20pt" title="Link to this heading">#</a></h2>
+<p>This is the second of three check-ins for your final project. Last week, you submitted your first “annual” report. This week, you will submit another report on your progress. This is a chance for you to reflect on your project and to make sure you are on track for the final project.</p>
+<p>A second report typically has more details than the first because you have made more progress on your project. You should reflect on the work you have done so far, any challenges you have faced, and any changes you need to make to your project plan. This is also a chance for you to ask for feedback. Notice that the questions remain roughly the same as the first report (this is true in science also).</p>
+<ul class="simple">
+<li><p>3a (5 pts). Review your project status. What have you been able to accomplish so far? What were you unable to do in the time you had? Be honest in your evaluation of your progress. You will not be penalized for not reaching your milestones. What does that mean you need to prioritize in the coming weeks? (at least 250 words)</p></li>
+<li><p>3b (5 pts). What problems have you encountered in doing you research? What questions came up and how did you resolve them? Are there any unresolved questions? (at least 250 words)</p></li>
+<li><p>3c (5 pts). Provide an <strong>updated</strong> artifact from your project. This could be a plot, a code snippet, a data set, or a figure. Explain what this artifact is and how it fits into your project. (at least 100-200 words)</p></li>
+<li><p>3d (5 pts). Update your project timeline and milestones. How will you adjust your timeline to account for the work you have done and the work you have left to do? (at least 100-200 words)</p></li>
+</ul>
+</section>
+<section id="extra-credit-integrating-classwork-with-research">
+<h2>Extra Credit - Integrating Classwork With Research<a class="headerlink" href="#extra-credit-integrating-classwork-with-research" title="Link to this heading">#</a></h2>
+<p>This opportunity will allow you to earn up to 5 extra credit points on a Homework per week. These points can push you above 100% or help make up for missed exercises.
+In order to earn all points you must:</p>
+<ol class="arabic simple">
+<li><p>Attend an MSU research talk (recommended research oriented Clubs is  provided below)</p></li>
+<li><p>Summarize the talk using at least 150 words</p></li>
+<li><p>Turn in the summary along with your Homework.</p></li>
+</ol>
+<p>Approved talks:
+Talks given by researchers through the following clubs:</p>
+<ul class="simple">
+<li><p>Research and Idea Sharing Enterprise (RAISE)​: Meets Wednesday Nights Society for Physics Students (SPS)​: Meets Monday Nights</p></li>
+<li><p>Astronomy Club​: Meets Monday Nights</p></li>
+<li><p>Facility For Rare Isotope Beam (FRIB) Seminars: ​Occur multiple times a week</p></li>
+</ul>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "jbook"
+        },
+        kernelOptions: {
+            name: "jbook",
+            path: "./midterms"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'jbook'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../homeworks/hw7.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Homework 7 (Due 28 Mar)</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../homeworks/hw8.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Homework 8 (Due 18 Apr)</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#part-1-the-duffing-oscillator-60pt">Part 1, The Duffing Oscillator (60pt)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#undamped-and-undriven-case-20-points">Undamped and undriven case (20 points)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#damped-and-undriven-case-20-points">Damped and undriven case (20 points)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#driven-and-damped-case-20-points">Driven and damped case (20 points)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#extra-credit-up-to-30-points">Extra credit (up to 30 points)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#part-2-strange-attractor-40pt">Part 2, Strange Attractor (40pt)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#numerical-integrate-the-chen-system-20-points">Numerical Integrate the Chen System (20 points)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comparing-trajectories-20-points">Comparing Trajectories (20 points)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#extra-credit">Extra Credit</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#part-3-project-check-in-2-20pt">Part 3, Project Check-in 2 (20pt)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#extra-credit-integrating-classwork-with-research">Extra Credit - Integrating Classwork With Research</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Danny Caballero, Morten Hjorth-Jensen, Rachel Henderson
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

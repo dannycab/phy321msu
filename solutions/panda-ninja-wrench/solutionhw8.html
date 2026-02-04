@@ -1,0 +1,1079 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Homework 8 &#8212; Classical Mechanics</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"tex2jax": {"inlineMath": [["$", "$"]]}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'solutions/panda-ninja-wrench/solutionhw8';</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/spartan-helmet.png" class="logo__image only-light" alt="Classical Mechanics - Home"/>
+    <img src="../../_static/spartan-helmet.png" class="logo__image only-dark pst-js-only" alt="Classical Mechanics - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../intro.html">
+                    PHY 321: Classical Mechanics 1, Michigan State University, Spring 2025
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">About the course</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../admin/getting-started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../admin/teachers.html">Teachers and Grading</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../admin/textbooks.html">Textbooks</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Calendar &amp; Lecture Materials</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../admin/schedule-cal.html">Course Calendar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../admin/links.html">Course Material and Links</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../admin/slides.html">Slides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../admin/handwritten-notes.html">Handwritten Notes</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Weekly Course Materials</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../lecture-notes/week1/01_start.html">Week 1 - Overture: What is Classical Physics?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lecture-notes/week1/01_notes.html">Week 1 - Notes: Introduction to Classical Mechanics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lecture-notes/week2/02_start.html">Week 2 - Computing as a tool for science</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lecture-notes/week2/02_notes.html">Week 2 - Notes: Mathematical Preliminaries</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lecture-notes/week3/03_start.html">Week 3 - What is Mathematical Modeling?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lecture-notes/week3/03_notes.html">Week 3 - Notes: Making Classical Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lecture-notes/week4/04_start.html">Week 4 - Why does fluid drag complicate things?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lecture-notes/week4/04_notes.html">Week 4 - Notes: Equations of Motion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lecture-notes/week5/05_start.html">Week 5 - Conservation Laws</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lecture-notes/week5/05_notes.html">Week 5 - Notes: Conservation of Energy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lecture-notes/week6/06_start.html">Week 6 - Stability and Equilibria</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lecture-notes/week6/06_notes.html">Week 6 - Notes: Stability and Energy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lecture-notes/week6/06_notes_2.html">Week 6 - Notes: Linear and Angular Momentum</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lecture-notes/week7/07_start.html">Week 7 - Nonlinear Dynamics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lecture-notes/week7/07_notes.html">Week 7 - Notes: Critical Points; Phase Space; Trajectories</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lecture-notes/week8/08_start.html">Week 8 - Oscillations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lecture-notes/week8/08_notes.html">Week 8 - Notes: Oscillators and Modeling Oscillations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lecture-notes/week9/09_start.html">Week 9 - Driven Oscillators and Resonance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lecture-notes/week9/09_notes.html">Week 9 - Notes: Driven Oscillations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lecture-notes/week10/10_start.html">Week 10 - Chaotic Dynamics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lecture-notes/week10/10_notes.html">Week 10 - Activity: Modeling Chaotic Systems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lecture-notes/week11/11_start.html">Week 11 - Calculus of Variations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lecture-notes/week11/11_notes.html">Week 11 - Notes: The Euler-Lagrange Equation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lecture-notes/week12/12_start.html">Week 12 - The Principle of Least Action</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lecture-notes/week12/12_notes.html">Week 12 - Notes: Introduction to Lagrangian Mechanics</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Assignments</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../homeworks/hw1.html">Homework 1 (Due 24 Jan)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../homeworks/hw2.html">Homework 2 (Due 31 Jan)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../homeworks/hw3.html">Homework 3 (Due 07 Feb)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../homeworks/hw4.html">Homework 4 (Due 17 Feb)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../midterms/midterm1.html">Midterm 1 (Due 28 Feb)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../homeworks/hw5.html">Homework 5 (Due 14 Mar)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../homeworks/hw6.html">Homework 6 (Due 21 Mar)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../homeworks/hw7.html">Homework 7 (Due 28 Mar)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../midterms/midterm2.html">Midterm 2 (Due 11 Apr)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../homeworks/hw8.html">Homework 8 (Due 18 Apr)</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Solutions</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../solutionhw1.html">Solution Homework 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../solutionhw2.html">Solution Homework 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../solutionhw3.html">Solution Homework 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../solutionhw4.html">Solution Homework 4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../solutionmidterm1.html">Midterm 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../solutionhw5.html">Solution Homework 5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../solutionhw6.html">Solution Homework 6</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../solutionhw7.html">Solution Homework 7</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Resources</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../resources/course-commitments.html">Course Commitments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../resources/iclicker-setup.html">i-Clicker Setup Instructions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../resources/generative-ai.html">Generative Artificial Intelligence</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../resources/gradescope-submissions.html">Submitting Assignments on Gradescope</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../resources/finding-research.html">Finding Research Opportunities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../resources/integrators.html">Numerical Integrators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../resources/phase_diagrams.html">Plotting Phase Diagrams</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../resources/chaotic_dynamics.html">Modeling Chaotic Systems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../resources/computational-essay-rubric.html">Rubric for Computational Essay Final Project</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Honors Projects</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../honors-projects/ChaoticPendulum.html">Chaos in the driven nonlinear pendulum</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../honors-projects/NeuralNetworks.html">From Ordinary Differential equations to Neural Networks, solving mechanics problems in a new way</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../honors-projects/SolarSystem.html">Building a model for the solar system using ordinary differential equations</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/solutions/panda-ninja-wrench/solutionhw8.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Homework 8</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-1-10pt-paths-along-a-curved-surface">Exercise 1 (10pt) Paths along a curved surface</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-2-15pt-snell-s-law">Exercise 2 (15pt) Snell’s Law</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-3-15pt-lagrangian-examples">Exercise 3 (15pt) Lagrangian Examples</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-4-25pt-changing-coordinates">Exercise 4 (25pt) Changing Coordinates</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-5-35-pt-motion-inside-a-paraboloid">Exercise 5 (35 pt) Motion inside a paraboloid</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-6-20pt-project-check-in-3">Exercise 6 (20pt), Project Check-in 3</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#extra-credit-integrating-classwork-with-research">Extra Credit - Integrating Classwork With Research</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <!-- HTML file automatically generated from DocOnce source (https://github.com/doconce/doconce/)
+doconce format html hw5.do.txt --no_mako -->
+<!-- dom:TITLE: PHY321: Classical Mechanics 1 --><section id="homework-8">
+<h1>Homework 8<a class="headerlink" href="#homework-8" title="Link to this heading">#</a></h1>
+<p><strong>Spring 2025</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">math</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="o">%</span><span class="k">matplotlib</span> inline
+<span class="n">plt</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;seaborn-v0_8-colorblind&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<section id="exercise-1-10pt-paths-along-a-curved-surface">
+<h2>Exercise 1 (10pt) Paths along a curved surface<a class="headerlink" href="#exercise-1-10pt-paths-along-a-curved-surface" title="Link to this heading">#</a></h2>
+<p>We have shown by minimizing the path length on a 2D flat surface that we have generated a linear equation, which illustrates the shortest distance between two points is a straight line. On a curved surface, the shortest distance will be a curve of some kind. In the exercise you will be asked to show that the shortest distance between two points on a sphere and a cylinder, both of fixed radii.</p>
+<p>A step in spherical coordinates is given by:</p>
+<div class="math notranslate nohighlight">
+\[d\vec{s} = dr \hat{r} + r d\theta \hat{\theta} + r \sin\theta d\phi \hat{\phi}.\]</div>
+<p>A step in cylindrical coordinates is given by:</p>
+<div class="math notranslate nohighlight">
+\[d\vec{s} = d\rho \hat{\rho} + \rho d\phi \hat{\phi} + dz \hat{z}.\]</div>
+<ol class="arabic simple">
+<li><p>(5 pt) Demonstrate the integral for the shortest distance between two points on a sphere of radius <span class="math notranslate nohighlight">\(R\)</span> is given by:</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[L = R \int_{\theta_1}^{\theta_2} \sqrt{1 + \left(\sin^2\theta\right) \left(\frac{d\phi}{d\theta}\right)^2} d\theta\]</div>
+<p>where <span class="math notranslate nohighlight">\(\theta\)</span> is the polar angle and <span class="math notranslate nohighlight">\(\phi\)</span> is the azimuthal angle. Note that you want to travel from (<span class="math notranslate nohighlight">\(\theta_1, \phi_1\)</span>) to (<span class="math notranslate nohighlight">\(\theta_2, \phi_2\)</span>) at fixed <span class="math notranslate nohighlight">\(R\)</span>.</p>
+<div class="tip admonition">
+<p class="admonition-title">Solution</p>
+<p>We start with the distance element <span class="math notranslate nohighlight">\(ds\)</span> in spherical coordinates and note that we are fixed at <span class="math notranslate nohighlight">\(R\)</span>: This means that <span class="math notranslate nohighlight">\(dr = 0\)</span>. We can then write the distance element as:</p>
+<div class="math notranslate nohighlight">
+\[d\vec{s} = R d\theta \hat{\theta} + R \sin\theta d\phi \hat{\phi}.\]</div>
+<p>The length of that step is:</p>
+<div class="math notranslate nohighlight">
+\[dl^2 = R^2 d\theta^2 + R^2 \sin^2\theta d\phi^2\]</div>
+<p>because the directions are orthogonal; just like in Cartesian coordinates.</p>
+<p>We can reduce simplify this by dividing reverse distributing the <span class="math notranslate nohighlight">\(R^2\)</span> and <span class="math notranslate nohighlight">\(d\theta^2\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[dl^2 = R^2 \left(1 + \sin^2\theta \left(\frac{d\phi}{d\theta}\right)^2\right) d\theta^2.\]</div>
+<p>Taking the square root of this gives us the length of the step:</p>
+<div class="math notranslate nohighlight">
+\[dl = R \sqrt{1 + \sin^2\theta \left(\frac{d\phi}{d\theta}\right)^2} d\theta.\]</div>
+<p>The total length of the path is then the integral of this over the path:</p>
+<div class="math notranslate nohighlight">
+\[L = R \int_{\theta_1}^{\theta_2} \sqrt{1 + \sin^2\theta \left(\frac{d\phi}{d\theta}\right)^2} d\theta.\]</div>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>(5 pt) Construct the integral for the shortest distance between two points on a cylinder of radius <span class="math notranslate nohighlight">\(R\)</span> and height <span class="math notranslate nohighlight">\(h\)</span>. The coordinates are <span class="math notranslate nohighlight">\((R, \phi_1, z_1)\)</span> and <span class="math notranslate nohighlight">\((R, \phi_2, z_2)\)</span> in the cylindrical coordinate system, where <span class="math notranslate nohighlight">\(\rho\)</span> is the radial difference, <span class="math notranslate nohighlight">\(\phi\)</span> is the azimuthal angle, and <span class="math notranslate nohighlight">\(z\)</span> is the height.</p></li>
+</ol>
+<div class="tip admonition">
+<p class="admonition-title">Solution</p>
+<p>This solution is very similar to the one above. Now the distance element is:</p>
+<div class="math notranslate nohighlight">
+\[d\vec{s} = R d\phi \hat{\phi} + dz \hat{z},\]</div>
+<p>where we have already set <span class="math notranslate nohighlight">\(d\rho = 0\)</span> because we are fixed at <span class="math notranslate nohighlight">\(R\)</span>. The length of this step is:</p>
+<div class="math notranslate nohighlight">
+\[dl^2 = R^2 d\phi^2 + dz^2.\]</div>
+<p>We choose to solve this in terms of an integral over <span class="math notranslate nohighlight">\(\phi\)</span> (you could also choose <span class="math notranslate nohighlight">\(z\)</span>). We reverse distribute the <span class="math notranslate nohighlight">\(R^2\)</span> and <span class="math notranslate nohighlight">\(d\phi^2\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[dl^2 = R^2 \left(1 + \left(\frac{dz}{d\phi}\right)^2\right) d\phi^2.\]</div>
+<p>So that the length of the step is:</p>
+<div class="math notranslate nohighlight">
+\[dl = R \sqrt{1 + \left(\frac{dz}{d\phi}\right)^2} d\phi.\]</div>
+<p>And thus the integral for the total length of the path is:</p>
+<div class="math notranslate nohighlight">
+\[L = R \int_{\phi_1}^{\phi_2} \sqrt{1 + \left(\frac{dz}{d\phi}\right)^2} d\phi.\]</div>
+<p><em>If we had chosen to solve this in terms of <span class="math notranslate nohighlight">\(z\)</span> instead, we would have reverse distributed the <span class="math notranslate nohighlight">\(dz^2\)</span>:</em></p>
+<div class="math notranslate nohighlight">
+\[dl^2 = R^2 d\phi^2 + dz^2 = \left(1+R^2\left(\frac{d\phi}{dz}\right)^2\right)dz.\]</div>
+<p>Thus the length of the step would have been:</p>
+<div class="math notranslate nohighlight">
+\[dl = \sqrt{1 + R^2\left(\frac{d\phi}{dz}\right)^2} dz.\]</div>
+<p>And the integral for the total length of the path would have been:</p>
+<div class="math notranslate nohighlight">
+\[L = \int_{z_1}^{z_2} \sqrt{1 + R^2\left(\frac{d\phi}{dz}\right)^2} dz.\]</div>
+</div>
+</section>
+<section id="exercise-2-15pt-snell-s-law">
+<h2>Exercise 2 (15pt) Snell’s Law<a class="headerlink" href="#exercise-2-15pt-snell-s-law" title="Link to this heading">#</a></h2>
+<p>We can develop Snell’s Law by minimizing the time it takes for light to travel between two points in different media. We note that the speed of light in a media is given by <span class="math notranslate nohighlight">\(v = c/n\)</span>, where <span class="math notranslate nohighlight">\(c\)</span> is the speed of light in a vacuum and <span class="math notranslate nohighlight">\(n\)</span> is the refractive index of the media. The time it takes for light to travel between two points is given by <span class="math notranslate nohighlight">\(t = L/v\)</span>, where <span class="math notranslate nohighlight">\(L\)</span> is the distance between the two points.</p>
+<p>Let a light ray travel in a medium with refractive index <span class="math notranslate nohighlight">\(n_1\)</span> into another medium with refractive index <span class="math notranslate nohighlight">\(n_2\)</span>.</p>
+<ol class="arabic simple">
+<li><p>(5 pt) Sketch the problem and indicate the relevant angles and distances in your figure. Recall that the angle of incidence is <span class="math notranslate nohighlight">\(\theta_1\)</span> and the angle of refraction is <span class="math notranslate nohighlight">\(\theta_2\)</span>. It is ok to use a 2D sketch.</p></li>
+</ol>
+<p><img alt="Snell's Law" src="../../_images/hw8_2.1.png" /></p>
+<ol class="arabic simple" start="2">
+<li><p>(5 pt) Set up the “integral” for the time it takes for light to travel between two points in different media. Use the fact that the speed of light in a media is given by <span class="math notranslate nohighlight">\(v = c/n\)</span>. Your answer needs to include the angles <span class="math notranslate nohighlight">\(\theta_1\)</span> and <span class="math notranslate nohighlight">\(\theta_2\)</span> and the refractive indices <span class="math notranslate nohighlight">\(n_1\)</span> and <span class="math notranslate nohighlight">\(n_2\)</span>.</p></li>
+</ol>
+<div class="tip admonition">
+<p class="admonition-title">Solution</p>
+<p>From the picture above, we can see that the distance that light travels in the first media is given by:</p>
+<div class="math notranslate nohighlight">
+\[l_1 = \sqrt{x^2 + d_1^2},\]</div>
+<p>and in the second media:</p>
+<div class="math notranslate nohighlight">
+\[l_2 = \sqrt{(L-x)^2 + d_2^2}.\]</div>
+<p>So we can write the total time it takes for light to travel between the two points as:</p>
+<div class="math notranslate nohighlight">
+\[T = \frac{\sqrt{x^2 + d_1^2}}{c/n_1} + \frac{\sqrt{(L-x)^2 + d_2^2}}{c/n_2},\]</div>
+<p>where the the speed of light in a media is given by <span class="math notranslate nohighlight">\(v = c/n\)</span>. This is the “integral” we are looking for. Note that it depends on the location where the light enters the second media, <span class="math notranslate nohighlight">\(x\)</span>. This is the variable we want to minimize with respect to.</p>
+<div class="math notranslate nohighlight">
+\[T(x) = \frac{n_1}{c} \sqrt{x^2 + d_1^2} + \frac{n_2}{c} \sqrt{(L-x)^2 + d_2^2}.\]</div>
+</div>
+<ol class="arabic simple" start="3">
+<li><p>(5 pt) Minimize the time it takes for light to travel between two points in different media to derive Snell’s Law.</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[n_1 \sin\theta_1 = n_2 \sin\theta_2\]</div>
+<div class="tip admonition">
+<p class="admonition-title">Solution</p>
+<p>To find the minimum of this “integral”, we take it’s derivative and set it equal to zero:</p>
+<div class="math notranslate nohighlight">
+\[\frac{dT}{dx} = 0.\]</div>
+<p>Taking the derivative of <span class="math notranslate nohighlight">\(T(x)\)</span> gives us:</p>
+<div class="math notranslate nohighlight">
+\[\frac{dT}{dx} = \frac{n_1}{c} \frac{x}{\sqrt{x^2 + d_1^2}} - \frac{n_2}{c} \frac{L-x}{\sqrt{(L-x)^2 + d_2^2}} = 0.\]</div>
+<p>Interestingly, the angles that we defined in the picture in part 1 are the same as the ratios in the equation above.</p>
+<div class="math notranslate nohighlight">
+\[\sin(\theta_1) = \frac{x}{\sqrt{x^2 + d_1^2}}, \quad \sin(\theta_2) = \frac{L-x}{\sqrt{(L-x)^2 + d_2^2}}.\]</div>
+<p>So we can rewrite the equation above as:</p>
+<div class="math notranslate nohighlight">
+\[\frac{n_1}{c} \sin(\theta_1) - \frac{n_2}{c} \sin(\theta_2) = 0,\]</div>
+<p>or, equivalently:</p>
+<div class="math notranslate nohighlight">
+\[n_1 \sin\theta_1 = n_2 \sin\theta_2.\]</div>
+</div>
+</section>
+<section id="exercise-3-15pt-lagrangian-examples">
+<h2>Exercise 3 (15pt) Lagrangian Examples<a class="headerlink" href="#exercise-3-15pt-lagrangian-examples" title="Link to this heading">#</a></h2>
+<p>Constructing the Lagrangian for a system can be a bit tricky. In this exercise you will be asked to construct the Lagrangian for a few systems and quickly find equations of motion to illustrate the process.</p>
+<ol class="arabic simple">
+<li><p>(2 pt) Construct the Lagrangian in 3D for a projectile subject to no air resistance in a uniform gravitational field. The coordinates are <span class="math notranslate nohighlight">\((x, y, z)\)</span> in the Cartesian coordinate system. Find the 3 equations of motion.</p></li>
+</ol>
+<div class="tip admonition">
+<p class="admonition-title">Solution</p>
+<p>Here the kinetic energy is given by:</p>
+<div class="math notranslate nohighlight">
+\[T = \frac{1}{2}m(\dot{x}^2 + \dot{y}^2 + \dot{z}^2),\]</div>
+<p>and the potential energy is given by:</p>
+<div class="math notranslate nohighlight">
+\[U = mgz.\]</div>
+<p>So the Lagrangian is:</p>
+<div class="math notranslate nohighlight">
+\[L = T - U = \frac{1}{2}m(\dot{x}^2 + \dot{y}^2 + \dot{z}^2) - mgz.\]</div>
+<p>There’s three equations of motion, one for each coordinate:</p>
+<div class="math notranslate nohighlight">
+\[\frac{d}{dt}\left(\frac{\partial L}{\partial \dot{x}}\right) = \frac{\partial L}{\partial x}, \quad \frac{d}{dt}\left(\frac{\partial L}{\partial \dot{y}}\right) = \frac{\partial L}{\partial y}, \quad \frac{d}{dt}\left(\frac{\partial L}{\partial \dot{z}}\right) = \frac{\partial L}{\partial z}.\]</div>
+<p>Applying these equations gives:</p>
+<div class="math notranslate nohighlight">
+\[m\ddot{x} = 0, \quad m\ddot{y} = 0, \quad m\ddot{z} = -mg.\]</div>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>(2 pt) Construct the Lagrangian for a one-dimensional simple harmonic oscillator (<span class="math notranslate nohighlight">\(F=-kx\)</span>). The coordinate is <span class="math notranslate nohighlight">\(x\)</span> in the Cartesian coordinate system. Find the equation of motion.</p></li>
+</ol>
+<div class="tip admonition">
+<p class="admonition-title">Solution</p>
+<p>The kinetic energy is given by:</p>
+<div class="math notranslate nohighlight">
+\[T = \frac{1}{2}m\dot{x}^2,\]</div>
+<p>and the potential energy is given by:</p>
+<div class="math notranslate nohighlight">
+\[U = \frac{1}{2}kx^2.\]</div>
+<p>So the Lagrangian is:</p>
+<div class="math notranslate nohighlight">
+\[L = T - U = \frac{1}{2}m\dot{x}^2 - \frac{1}{2}kx^2.\]</div>
+<p>The equation of motion is:</p>
+<div class="math notranslate nohighlight">
+\[\frac{d}{dt}\left(\frac{\partial L}{\partial \dot{x}}\right) = \frac{\partial L}{\partial x}.\]</div>
+<p>Applying this equation gives:</p>
+<div class="math notranslate nohighlight">
+\[m\ddot{x} = -kx.\]</div>
+</div>
+<ol class="arabic simple" start="3">
+<li><p>(3 pt) A mass moves in a potential well <span class="math notranslate nohighlight">\(U(x,y) = \frac{1}{2}k(x^2 + y^2)\)</span>. Construct the Lagrangian in 2D. The coordinates are <span class="math notranslate nohighlight">\((x, y)\)</span> in the Cartesian coordinate system. Find the 2 equations of motion.</p></li>
+</ol>
+<div class="tip admonition">
+<p class="admonition-title">Solution</p>
+<p>The kinetic energy is given by:</p>
+<div class="math notranslate nohighlight">
+\[T = \frac{1}{2}m(\dot{x}^2 + \dot{y}^2),\]</div>
+<p>and the potential energy is given by:</p>
+<div class="math notranslate nohighlight">
+\[U = \frac{1}{2}k(x^2 + y^2).\]</div>
+<p>So the Lagrangian is:</p>
+<div class="math notranslate nohighlight">
+\[L = T - U = \frac{1}{2}m(\dot{x}^2 + \dot{y}^2) - \frac{1}{2}k(x^2 + y^2).\]</div>
+<p>There’s two equations of motion, one for each coordinate:</p>
+<div class="math notranslate nohighlight">
+\[\frac{d}{dt}\left(\frac{\partial L}{\partial \dot{x}}\right) = \frac{\partial L}{\partial x}, \quad \frac{d}{dt}\left(\frac{\partial L}{\partial \dot{y}}\right) = \frac{\partial L}{\partial y}.\]</div>
+<p>Applying these equations gives:</p>
+<div class="math notranslate nohighlight">
+\[m\ddot{x} = -kx, \quad m\ddot{y} = -ky.\]</div>
+<p>This describes a 2D harmonic well.</p>
+</div>
+<p>It’s common to use coordinates that are convenient for the problem. In these cases, you will need to write down the kinetic and potential energy in terms of the coordinates you choose. The single particle kinetic energy in these coordinates are commonly used.</p>
+<ol class="arabic simple" start="4">
+<li><p>(4 pt) Write or derive the velocity vector in spherical coordinates. The coordinates are <span class="math notranslate nohighlight">\((r, \theta, \phi)\)</span> in the spherical coordinate system. Show the kinetic energy is given by <span class="math notranslate nohighlight">\(T = \frac{1}{2}m(\dot{r}^2 + r^2\dot{\theta}^2 + r^2\sin^2\theta\dot{\phi}^2)\)</span>.</p></li>
+</ol>
+<div class="tip admonition">
+<p class="admonition-title">Solution</p>
+<p>The velocity vector in spherical coordinates is:</p>
+<div class="math notranslate nohighlight">
+\[\vec{v} = \dot{r}\hat{r} + r\dot{\theta}\hat{\theta} + r\sin\theta\dot{\phi}\hat{\phi}.\]</div>
+<p>The square of this velocity is:</p>
+<div class="math notranslate nohighlight">
+\[v^2 = \dot{r}^2 + r^2\dot{\theta}^2 + r^2\sin^2\theta\dot{\phi}^2.,\]</div>
+<p>because the directions are orthogonal; just like in Cartesian coordinates.</p>
+<p>Thus, the kinetic energy is:</p>
+<div class="math notranslate nohighlight">
+\[T = \frac{1}{2}m(\dot{r}^2 + r^2\dot{\theta}^2 + r^2\sin^2\theta\dot{\phi}^2).\]</div>
+</div>
+<ol class="arabic simple" start="5">
+<li><p>(4 pt) Write or derive the velocity vector in cylindrical coordinates. The coordinates are <span class="math notranslate nohighlight">\((\rho, \phi, z)\)</span> in the cylindrical coordinate system. Show the kinetic energy is given by <span class="math notranslate nohighlight">\(T = \frac{1}{2}m(\dot{\rho}^2 + \rho^2\dot{\phi}^2 + \dot{z}^2)\)</span>.</p></li>
+</ol>
+<div class="tip admonition">
+<p class="admonition-title">Solution</p>
+<p>The velocity vector in cylindrical coordinates is:</p>
+<div class="math notranslate nohighlight">
+\[\vec{v} = \dot{\rho}\hat{\rho} + \rho\dot{\phi}\hat{\phi} + \dot{z}\hat{z}.\]</div>
+<p>The square of this velocity is:</p>
+<div class="math notranslate nohighlight">
+\[v^2 = \dot{\rho}^2 + \rho^2\dot{\phi}^2 + \dot{z}^2,\]</div>
+<p>again because the directions are orthogonal.</p>
+<p>Thus, the kinetic energy is:</p>
+<div class="math notranslate nohighlight">
+\[T = \frac{1}{2}m(\dot{\rho}^2 + \rho^2\dot{\phi}^2 + \dot{z}^2).\]</div>
+</div>
+</section>
+<section id="exercise-4-25pt-changing-coordinates">
+<h2>Exercise 4 (25pt) Changing Coordinates<a class="headerlink" href="#exercise-4-25pt-changing-coordinates" title="Link to this heading">#</a></h2>
+<p>Consider two particles with masses <span class="math notranslate nohighlight">\(m_1=m_2=m\)</span> connected by a spring with spring constant <span class="math notranslate nohighlight">\(k\)</span>. They sit on a frictionless surface but are constrained to the <span class="math notranslate nohighlight">\(x\)</span>-axis. The location of the first particle is <span class="math notranslate nohighlight">\(x_1\)</span> and the location of the second particle is <span class="math notranslate nohighlight">\(x_2\)</span>. The spring is at equilibrium when the particles are a distance <span class="math notranslate nohighlight">\(L\)</span> apart. Assume the spring is massless and that the left mass never changes position with the right mass (i.e., the spring is always horizontal).</p>
+<ol class="arabic simple">
+<li><p>(3 pt) Write down the kinetic and potential energy for this system in terms of <span class="math notranslate nohighlight">\(x_1\)</span> and <span class="math notranslate nohighlight">\(x_2\)</span> and their associated velocities.</p></li>
+</ol>
+<div class="tip admonition">
+<p class="admonition-title">Solution</p>
+<p>There are two objects, so that the kinetic energy is given by:</p>
+<div class="math notranslate nohighlight">
+\[T = \frac{1}{2}m\dot{x}_1^2 + \frac{1}{2}m\dot{x}_2^2.\]</div>
+<p>Here we know that the relaxed length of the spring is <span class="math notranslate nohighlight">\(L\)</span>. When the spring is stretched or compressed, it is stretched or compressed by <span class="math notranslate nohighlight">\(x_1 - x_2 - L\)</span>. So the potential energy is:</p>
+<div class="math notranslate nohighlight">
+\[U = \frac{1}{2}k(x_1 - x_2 - L)^2.\]</div>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>(4 pt) Write down the Lagrangian for this system in terms of <span class="math notranslate nohighlight">\(x_1\)</span> and <span class="math notranslate nohighlight">\(x_2\)</span> and their associated velocities <span class="math notranslate nohighlight">\(\mathcal{L}(x_1, x_2, \dot{x}_1, \dot{x}_2)\)</span>. Find the 2 equations of motion.</p></li>
+</ol>
+<div class="tip admonition">
+<p class="admonition-title">Solution</p>
+<p>The Lagrangian is:</p>
+<div class="math notranslate nohighlight">
+\[L = T - U = \frac{1}{2}m\dot{x}_1^2 + \frac{1}{2}m\dot{x}_2^2 - \frac{1}{2}k(x_1 - x_2 - L)^2.\]</div>
+<p>There are two equations of motion, one for each coordinate:</p>
+<div class="math notranslate nohighlight">
+\[\frac{d}{dt}\left(\frac{\partial L}{\partial \dot{x}_1}\right) = \frac{\partial L}{\partial x_1}, \quad \frac{d}{dt}\left(\frac{\partial L}{\partial \dot{x}_2}\right) = \frac{\partial L}{\partial x_2}.\]</div>
+<p>We take <span class="math notranslate nohighlight">\(x_1\)</span> first:</p>
+<div class="math notranslate nohighlight">
+\[\frac{d}{dt}\left(\frac{\partial L}{\partial \dot{x}_1}\right) = \frac{d}{dt}(m\dot{x}_1) = m\ddot{x}_1,\]</div>
+<p>and</p>
+<div class="math notranslate nohighlight">
+\[\frac{\partial L}{\partial x_1} = -k(x_1 - x_2 - L).\]</div>
+<p>So the equation of motion for <span class="math notranslate nohighlight">\(x_1\)</span> is:</p>
+<div class="math notranslate nohighlight">
+\[m\ddot{x}_1 = -k(x_1 - x_2 - L).\]</div>
+<p>Now we take <span class="math notranslate nohighlight">\(x_2\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\frac{d}{dt}\left(\frac{\partial L}{\partial \dot{x}_2}\right) = \frac{d}{dt}(m\dot{x}_2) = m\ddot{x}_2,\]</div>
+<p>and</p>
+<div class="math notranslate nohighlight">
+\[\frac{\partial L}{\partial x_2} = k(x_1 - x_2 - L).\]</div>
+<p>So the equation of motion for <span class="math notranslate nohighlight">\(x_2\)</span> is:</p>
+<div class="math notranslate nohighlight">
+\[m\ddot{x}_2 = k(x_1 - x_2 - L).\]</div>
+<p>We ended up with two coupled equations of motion. This is a common result when we have two objects connected by a spring.</p>
+<div class="math notranslate nohighlight">
+\[\ddot{x}_1 = -\frac{k}{m}(x_1 - x_2 - L), \quad \ddot{x}_2 = \frac{k}{m}(x_1 - x_2 - L).\]</div>
+</div>
+<ol class="arabic simple" start="3">
+<li><p>(5 pt) Now consider a new coordinate system where the center of mass is at <span class="math notranslate nohighlight">\(x_{cm} = \frac{1}{2}(x_1 + x_2)\)</span> and the relative coordinate is <span class="math notranslate nohighlight">\(x = x_1 - x_2\)</span>. Write down the kinetic and potential energy in terms of <span class="math notranslate nohighlight">\(x_{cm}\)</span> and <span class="math notranslate nohighlight">\(x\)</span> and their associated velocities.</p></li>
+</ol>
+<div class="tip admonition">
+<p class="admonition-title">Solution</p>
+<p>In this case, we can rewrite the kinetic energy in terms of the center of mass and relative coordinates:</p>
+<div class="math notranslate nohighlight">
+\[x_1 = x_{cm} + \frac{1}{2}x, \quad x_2 = x_{cm} - \frac{1}{2}x.\]</div>
+<p>Taking the time derivative of these gives us the velocities:</p>
+<div class="math notranslate nohighlight">
+\[\dot{x}_1 = \dot{x}_{cm} + \frac{1}{2}\dot{x}, \quad \dot{x}_2 = \dot{x}_{cm} - \frac{1}{2}\dot{x}.\]</div>
+<p>So now we have a prescription for the kinetic energy in terms of the center of mass and relative coordinates:</p>
+<div class="math notranslate nohighlight">
+\[T = \frac{1}{2}m\dot{x_1}^2 + \frac{1}{2}m\dot{x}_2^2 = \frac{1}{2}m\left(\dot{x}_{cm} + \frac{1}{2}\dot{x}\right)^2 + \frac{1}{2}m\left(\dot{x}_{cm} - \frac{1}{2}\dot{x}\right)^2,\]</div>
+<p>which we expand and then simplify to:</p>
+<div class="math notranslate nohighlight">
+\[T = m\dot{x}_{cm}^2 + \frac{1}{4}m\dot{x}^2.\]</div>
+<p>The potential energy can also be written in terms of the center of mass and relative coordinates:</p>
+<div class="math notranslate nohighlight">
+\[x_1 - x_2 = x,\]</div>
+<p>so that the potential energy is:</p>
+<div class="math notranslate nohighlight">
+\[U = \frac{1}{2}k(x - L)^2.\]</div>
+</div>
+<ol class="arabic simple" start="4">
+<li><p>(8 pt) Write down the Lagrangian for this system in terms of the center of mass coordinate (<span class="math notranslate nohighlight">\(x_{cm}\)</span>) and the spring’s extension (<span class="math notranslate nohighlight">\(x\)</span>) and the associated velocities <span class="math notranslate nohighlight">\(\mathcal{L}(x_{cm}, x, \dot{x}_{cm}, \dot{x})\)</span>. Find the 2 equations of motion.</p></li>
+</ol>
+<div class="tip admonition">
+<p class="admonition-title">Solution</p>
+<p>The Lagrangian is:</p>
+<div class="math notranslate nohighlight">
+\[L = T - U = m\dot{x}_{cm}^2 + \frac{1}{4}m\dot{x}^2 - \frac{1}{2}k(x - L)^2.\]</div>
+<p>There are two equations of motion, one for each coordinate:</p>
+<div class="math notranslate nohighlight">
+\[\frac{d}{dt}\left(\frac{\partial L}{\partial \dot{x}_{cm}}\right) = \frac{\partial L}{\partial x_{cm}}, \quad \frac{d}{dt}\left(\frac{\partial L}{\partial \dot{x}}\right) = \frac{\partial L}{\partial x}.\]</div>
+<p>We take <span class="math notranslate nohighlight">\(x_{cm}\)</span> first:</p>
+<div class="math notranslate nohighlight">
+\[\frac{d}{dt}\left(\frac{\partial L}{\partial \dot{x}_{cm}}\right) = \frac{d}{dt}(m\dot{x}_{cm}) = m\ddot{x}_{cm},\]</div>
+<p>and</p>
+<div class="math notranslate nohighlight">
+\[\frac{\partial L}{\partial x_{cm}} = 0.\]</div>
+<p>So the equation of motion for <span class="math notranslate nohighlight">\(x_{cm}\)</span> is:</p>
+<div class="math notranslate nohighlight">
+\[m\ddot{x}_{cm} = 0.\]</div>
+<p>Now we take <span class="math notranslate nohighlight">\(x\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\frac{d}{dt}\left(\frac{\partial L}{\partial \dot{x}}\right) = \frac{d}{dt}\left(\frac{1}{2}m\dot{x}\right) = \frac{1}{2}m\ddot{x},\]</div>
+<p>and</p>
+<div class="math notranslate nohighlight">
+\[\frac{\partial L}{\partial x} = -k(x - L).\]</div>
+<p>So the equation of motion for <span class="math notranslate nohighlight">\(x\)</span> is:</p>
+<div class="math notranslate nohighlight">
+\[m\ddot{x} = -k(x - L).\]</div>
+<p>Thus, we have decoupled the equations of motion.</p>
+<div class="math notranslate nohighlight">
+\[\ddot{x}_{cm} = 0, \quad m\ddot{x} = -k(x - L).\]</div>
+</div>
+<ol class="arabic simple" start="5">
+<li><p>(5 pt) Find <span class="math notranslate nohighlight">\(x_{cm}(t)\)</span> and <span class="math notranslate nohighlight">\(x(t)\)</span> for the system for some generic initial conditions of your choosing. Describe the motion of the system.</p></li>
+</ol>
+<div class="tip admonition">
+<p class="admonition-title">Solution</p>
+<p>The equation of motion for <span class="math notranslate nohighlight">\(x_{cm}\)</span> is:</p>
+<div class="math notranslate nohighlight">
+\[m\ddot{x}_{cm} = 0.\]</div>
+<p>So this means that the center of mass moves at a constant velocity. We can integrate this to find:</p>
+<div class="math notranslate nohighlight">
+\[\dot{x}_{cm} = v_{cm} = \text{constant} \Rightarrow x_{cm} = v_{cm}t + x_{cm0}.\]</div>
+<p>The equation of motion for <span class="math notranslate nohighlight">\(x\)</span> is:</p>
+<div class="math notranslate nohighlight">
+\[m\ddot{x} = -k(x - L).\]</div>
+<p>This is a simple harmonic oscillator equation. We can write the solution as:</p>
+<div class="math notranslate nohighlight">
+\[x(t) = A\cos(\omega t) + B\sin(\omega t) + x_0,\]</div>
+<p>where <span class="math notranslate nohighlight">\(\omega = \sqrt{k/m}\)</span>.</p>
+<p>So the motion of the system is that the center of mass moves at a constant velocity, while the spring oscillates around the equilibrium position.</p>
+</div>
+<p>In this problem we are changing the coordinates to explore a different aspect of the problem (and to make the math easier). This is a common technique that will not always be obvious. But practice will help us identify when it is useful.</p>
+</section>
+<section id="exercise-5-35-pt-motion-inside-a-paraboloid">
+<h2>Exercise 5 (35 pt) Motion inside a paraboloid<a class="headerlink" href="#exercise-5-35-pt-motion-inside-a-paraboloid" title="Link to this heading">#</a></h2>
+<p>Let’s figure out the motion of a particle stuck inside a paraboloid. The potential energy of the bead is given by <span class="math notranslate nohighlight">\(U = mgz\)</span>, where <span class="math notranslate nohighlight">\(m\)</span> is the mass of the bead, <span class="math notranslate nohighlight">\(g\)</span> is the acceleration due to gravity. The coordinates are <span class="math notranslate nohighlight">\((x, y, z)\)</span> in the Cartesian coordinate system.</p>
+<ol class="arabic simple">
+<li><p>(5 pt) Write down the Lagrangian for the system in terms of <span class="math notranslate nohighlight">\(x\)</span>, <span class="math notranslate nohighlight">\(y\)</span>, and <span class="math notranslate nohighlight">\(z\)</span> and their associated velocities <span class="math notranslate nohighlight">\(\mathcal{L}(x, y, z, \dot{x}, \dot{y}, \dot{z})\)</span>. Find the 3 equations of motion.</p></li>
+</ol>
+<div class="tip admonition">
+<p class="admonition-title">Solution</p>
+<p>We have not introduced any constraints, so the kinetic and potential energies are simply:</p>
+<div class="math notranslate nohighlight">
+\[T = \frac{1}{2}m(\dot{x}^2 + \dot{y}^2 + \dot{z}^2),\]</div>
+<p>and</p>
+<div class="math notranslate nohighlight">
+\[U = mgz.\]</div>
+<p>So the Lagrangian is:</p>
+<div class="math notranslate nohighlight">
+\[L = T - U = \frac{1}{2}m(\dot{x}^2 + \dot{y}^2 + \dot{z}^2) - mgz.\]</div>
+<p>There are three equations of motion, one for each coordinate:</p>
+<div class="math notranslate nohighlight">
+\[\frac{d}{dt}\left(\frac{\partial L}{\partial \dot{x}}\right) = \frac{\partial L}{\partial x}, \quad \frac{d}{dt}\left(\frac{\partial L}{\partial \dot{y}}\right) = \frac{\partial L}{\partial y}, \quad \frac{d}{dt}\left(\frac{\partial L}{\partial \dot{z}}\right) = \frac{\partial L}{\partial z}.\]</div>
+<p>Applying these equations gives:</p>
+<div class="math notranslate nohighlight">
+\[m\ddot{x} = 0, \quad m\ddot{y} = 0, \quad m\ddot{z} = -mg.\]</div>
+<p>This can’t be right…this is for a free particle!</p>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>(15 pt) The bead is constrained by the paraboloid <span class="math notranslate nohighlight">\(z = \frac{1}{2}k(x^2 + y^2)\)</span>. Find the constraint equation and use it to eliminate one of the coordinates from the Lagrangian. Find the 2 equations of motion. Here it can be useful to change to cylindrical coordinates <span class="math notranslate nohighlight">\((\rho, \phi, z)\)</span>. Hint it should be that the Lagrangian is a function of <span class="math notranslate nohighlight">\(\rho\)</span> and <span class="math notranslate nohighlight">\(\phi\)</span> and their associated velocities, <span class="math notranslate nohighlight">\(\mathcal{L}(\rho, \dot{\rho}, \phi, \dot{\phi})\)</span>.</p></li>
+</ol>
+<div class="tip admonition">
+<p class="admonition-title">Solution</p>
+<p>The issue is that we have not introduced the constraint. In cylindrical coordinates, the constraint is:</p>
+<div class="math notranslate nohighlight">
+\[z = \frac{1}{2}k\rho^2.\]</div>
+<p>This seems like a better coordinate system to use, so we will change to cylindrical coordinates. The kinetic energy is:</p>
+<div class="math notranslate nohighlight">
+\[T = \frac{1}{2}m(\dot{\rho}^2 + \rho^2\dot{\phi}^2 + \dot{z}^2),\]</div>
+<p>and the potential energy is:</p>
+<div class="math notranslate nohighlight">
+\[U = mgz.\]</div>
+<p>The constraint equation gives a velocity constraint:</p>
+<div class="math notranslate nohighlight">
+\[\dot{z} = k\rho\dot{\rho}.\]</div>
+<p>So the Lagrangian is:</p>
+<div class="math notranslate nohighlight">
+\[L = T - U = \frac{1}{2}m(\dot{\rho}^2 + \rho^2\dot{\phi}^2 + k^2\rho^2\dot{\rho}^2) - mg\frac{1}{2}k\rho^2.\]</div>
+<p>There are two equations of motion, one for each coordinate:</p>
+<div class="math notranslate nohighlight">
+\[\frac{d}{dt}\left(\frac{\partial L}{\partial \dot{\rho}}\right) = \frac{\partial L}{\partial \rho}, \quad \frac{d}{dt}\left(\frac{\partial L}{\partial \dot{\phi}}\right) = \frac{\partial L}{\partial \phi}.\]</div>
+<p>We take <span class="math notranslate nohighlight">\(\rho\)</span> first:</p>
+<div class="math notranslate nohighlight">
+\[\dfrac{d}{dt}\left(\frac{\partial L}{\partial \dot{\rho}}\right) = \dfrac{d}{dt}(m\dot{\rho} + mk^2\rho^2\dot{\rho}),\]</div>
+<p>which gives:</p>
+<div class="math notranslate nohighlight">
+\[\dfrac{d}{dt}\left(\frac{\partial L}{\partial \dot{\rho}}\right) = m(1+k^2\rho^2)\ddot{\rho} + 2mk\rho\dot{\rho}^2.\]</div>
+<p>The partial derivative with respect to <span class="math notranslate nohighlight">\(\rho\)</span> is:</p>
+<div class="math notranslate nohighlight">
+\[\frac{\partial L}{\partial \rho} = m\rho\dot{\phi}^2 + m\rho k^2\dot{\rho}^2 - mgk\rho.\]</div>
+<p>So the equation of motion for <span class="math notranslate nohighlight">\(\rho\)</span> is:</p>
+<div class="math notranslate nohighlight">
+\[m(1+k^2\rho^2)\ddot{\rho} + 2mk\rho\dot{\rho}^2 = m\rho\dot{\phi}^2 + m\rho k^2\dot{\rho}^2 - mgk\rho.\]</div>
+<p>Now we take <span class="math notranslate nohighlight">\(\phi\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\dfrac{d}{dt}\left(\frac{\partial L}{\partial \dot{\phi}}\right) = \dfrac{d}{dt}(m\rho^2\dot{\phi}),\]</div>
+<p>which gives:</p>
+<div class="math notranslate nohighlight">
+\[\dfrac{d}{dt}\left(\frac{\partial L}{\partial \dot{\phi}}\right) = m\rho^2\ddot{\phi} + 2m\rho\dot{\rho}\dot{\phi}.\]</div>
+<p>The partial derivative with respect to <span class="math notranslate nohighlight">\(\phi\)</span> is:</p>
+<div class="math notranslate nohighlight">
+\[\frac{\partial L}{\partial \phi} = 0.\]</div>
+<p>So the equation of motion for <span class="math notranslate nohighlight">\(\phi\)</span> is:</p>
+<div class="math notranslate nohighlight">
+\[m\rho^2\ddot{\phi} + 2m\rho\dot{\rho}\dot{\phi} = 0.\]</div>
+<p>We end up with two coupled equations and nonlinear equations of motion as long as we solve away from <span class="math notranslate nohighlight">\(\rho=0\)</span>. This is a difficult problem to solve analytically.</p>
+<div class="math notranslate nohighlight">
+\[\ddot{\rho}  = \dfrac{\rho\dot{\phi}^2 - \rho k^2\dot{\rho}^2 - gk\rho}{(1+k^2\rho^2)}, \qquad \ddot{\phi} = - 2\frac{\dot{\rho}\dot{\phi}}{\rho}.\]</div>
+<p>One thing to note is that the second equation is actually a statement of conservation of angular momentum. Angular momentum is conserved in this system.</p>
+<p>We can see that with the generic momentum result:</p>
+<div class="math notranslate nohighlight">
+\[\frac{d}{dt}\left(\frac{\partial L}{\partial \dot{\phi}}\right) = \frac{d}{dt}(m\rho^2\dot{\phi}) = \frac{d}{dt}(L_z) = 0,\]</div>
+<p>where <span class="math notranslate nohighlight">\(L_z\)</span> is the angular momentum in the <span class="math notranslate nohighlight">\(z\)</span>-direction. This is a common result when we have a system with rotational symmetry.</p>
+</div>
+<ol class="arabic simple" start="3">
+<li><p>(15 pt) For an initial condition where the bead is moving relative to the parabolic at some height above the bottom of the paraboloid, numerically solve the equations of motion (i.e., for <span class="math notranslate nohighlight">\(\rho(t)\)</span> and <span class="math notranslate nohighlight">\(\phi(t)\)</span>) and plot the the motion of the bead. Does it stick to the paraboloid?</p></li>
+</ol>
+<p><strong>This solution is based on one developed by Alia and Addy.</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Equations of Motion</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">bead_eom_cyl</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">t</span><span class="p">):</span>
+    <span class="n">rho</span><span class="p">,</span> <span class="n">dot_rho</span><span class="p">,</span> <span class="n">phi</span><span class="p">,</span> <span class="n">dot_phi</span> <span class="o">=</span> <span class="n">y</span> <span class="c1"># Note there&#39;s no phi in the EOM, but we need it for the ICs and solution</span>
+    <span class="n">dd_rho</span> <span class="o">=</span> <span class="p">(</span><span class="n">rho</span> <span class="o">*</span> <span class="n">dot_phi</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span> <span class="n">k</span><span class="o">**</span><span class="mi">2</span> <span class="o">*</span> <span class="n">rho</span> <span class="o">*</span> <span class="n">dot_rho</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span> <span class="n">g</span> <span class="o">*</span> <span class="n">k</span> <span class="o">*</span> <span class="n">rho</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="n">k</span><span class="o">**</span><span class="mi">2</span> <span class="o">*</span> <span class="n">rho</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+    <span class="n">dd_phi</span> <span class="o">=</span> <span class="o">-</span><span class="mi">2</span> <span class="o">*</span> <span class="n">dot_rho</span> <span class="o">*</span> <span class="n">dot_phi</span> <span class="o">/</span> <span class="n">rho</span>
+    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">dot_rho</span><span class="p">,</span> <span class="n">dd_rho</span><span class="p">,</span> <span class="n">dot_phi</span><span class="p">,</span> <span class="n">dd_phi</span><span class="p">])</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">rk2_step</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">t</span><span class="p">,</span> <span class="n">dt</span><span class="p">):</span>
+    <span class="n">k1</span> <span class="o">=</span> <span class="n">bead_eom_cyl</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">t</span><span class="p">)</span>
+    <span class="n">k2</span> <span class="o">=</span> <span class="n">bead_eom_cyl</span><span class="p">(</span><span class="n">y</span> <span class="o">+</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="n">k1</span> <span class="o">*</span> <span class="n">dt</span><span class="p">,</span> <span class="n">t</span> <span class="o">+</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="n">dt</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">y</span> <span class="o">+</span> <span class="n">k2</span> <span class="o">*</span> <span class="n">dt</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Constants and parameters</span>
+<span class="n">k</span> <span class="o">=</span> <span class="mf">1.0</span>  
+<span class="n">m</span> <span class="o">=</span> <span class="mf">1.0</span>  
+<span class="n">g</span> <span class="o">=</span> <span class="mf">9.81</span>
+
+<span class="n">T</span> <span class="o">=</span> <span class="mf">10.0</span>  
+<span class="n">dt</span> <span class="o">=</span> <span class="mf">0.01</span>
+<span class="n">steps</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">T</span> <span class="o">/</span> <span class="n">dt</span><span class="p">)</span>
+<span class="n">t</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">T</span><span class="p">,</span> <span class="n">steps</span><span class="p">)</span>
+
+<span class="c1"># Initial conditions: [rho, dot_rho, phi, dot_phi]</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">steps</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
+<span class="n">y</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">]</span> <span class="c1"># rho=1, dot_rho=0, phi=0, dot_phi=1</span>
+
+<span class="c1"># Run the integration</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">steps</span> <span class="o">-</span> <span class="mi">1</span><span class="p">):</span>
+    <span class="n">y</span><span class="p">[</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">rk2_step</span><span class="p">(</span><span class="n">y</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">t</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">dt</span><span class="p">)</span>
+
+<span class="c1"># Extracting the trajectory</span>
+<span class="n">rho</span> <span class="o">=</span> <span class="n">y</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">]</span>
+<span class="n">phi</span> <span class="o">=</span> <span class="n">y</span><span class="p">[:,</span> <span class="mi">2</span><span class="p">]</span>
+<span class="n">z</span> <span class="o">=</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="n">k</span> <span class="o">*</span> <span class="n">rho</span><span class="o">**</span><span class="mi">2</span>  <span class="c1"># z coordinate from the constraint equation</span>
+
+<span class="c1"># Converting to Cartesian coordinates for plotting</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">rho</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">phi</span><span class="p">)</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">rho</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">phi</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## Adding a transparent paraboloid to the plot</span>
+<span class="c1"># Generating the paraboloid surface</span>
+<span class="n">rho_vals</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">max</span><span class="p">(</span><span class="n">rho</span><span class="p">),</span> <span class="mi">100</span><span class="p">)</span>
+<span class="n">phi_vals</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+<span class="n">Rho</span><span class="p">,</span> <span class="n">Phi</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">meshgrid</span><span class="p">(</span><span class="n">rho_vals</span><span class="p">,</span> <span class="n">phi_vals</span><span class="p">)</span>
+<span class="n">X</span> <span class="o">=</span> <span class="n">Rho</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">Phi</span><span class="p">)</span>
+<span class="n">Y</span> <span class="o">=</span> <span class="n">Rho</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">Phi</span><span class="p">)</span>
+<span class="n">Z</span> <span class="o">=</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="n">k</span> <span class="o">*</span> <span class="n">Rho</span><span class="o">**</span><span class="mi">2</span>
+
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">111</span><span class="p">,</span> <span class="n">projection</span><span class="o">=</span><span class="s1">&#39;3d&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot_surface</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">Y</span><span class="p">,</span> <span class="n">Z</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.2</span><span class="p">)</span>  <span class="c1"># alpha controls transparency</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Bead Trajectory&#39;</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;X&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Y&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_zlabel</span><span class="p">(</span><span class="s1">&#39;Z&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Text(0.5, 0, &#39;Z&#39;)
+</pre></div>
+</div>
+<img alt="../../_images/fa179709348f1a4e43bab7f69bca083381946283273a75de27dd2c58102bd9c1.png" src="../../_images/fa179709348f1a4e43bab7f69bca083381946283273a75de27dd2c58102bd9c1.png" />
+</div>
+</div>
+</section>
+<section id="exercise-6-20pt-project-check-in-3">
+<h2>Exercise 6 (20pt), Project Check-in 3<a class="headerlink" href="#exercise-6-20pt-project-check-in-3" title="Link to this heading">#</a></h2>
+<p>This is the last of three check-ins for your final project. This week, you should be preparing to finish your computational essay. Following the posted <a class="reference internal" href="#../../resources/project_rubric.md"><span class="xref myst">rubric</span></a> for the computational essay, you should reflect on your progress and update your project. This is a chance to evaluate where you are in the process of completing your computational essay.</p>
+<ul class="simple">
+<li><p>5a (5 pts). Review your project in the context of the rubric. What have you been able to accomplish so far? What were you unable to do in the time you had? Be honest in your evaluation of your progress. What do you have left to do? (at least 250 words)</p></li>
+<li><p>5b (5 pts). What problems did you encounter in doing you work? What questions came up and how did you resolve them? Are there any unresolved questions? (at least 250 words)</p></li>
+<li><p>5c (5 pts). Provide an artifact from your project. This could be a plot, a code snippet, a data set, or a figure. Explain what this artifact is and how it fits into your project. (at least 100-200 words)</p></li>
+<li><p>5d (5 pts). Update your project timeline and milestones. How will you adjust your timeline to account for the work you have done and the work you have left to do? How will you meet the expectations from the rubric? (at least 100-200 words)</p></li>
+</ul>
+</section>
+<section id="extra-credit-integrating-classwork-with-research">
+<h2>Extra Credit - Integrating Classwork With Research<a class="headerlink" href="#extra-credit-integrating-classwork-with-research" title="Link to this heading">#</a></h2>
+<p>This opportunity will allow you to earn up to 5 extra credit points on a Homework per week. These points can push you above 100% or help make up for missed exercises.
+In order to earn all points you must:</p>
+<ol class="arabic simple">
+<li><p>Attend an MSU research talk (recommended research oriented Clubs is  provided below)</p></li>
+<li><p>Summarize the talk using at least 150 words</p></li>
+<li><p>Turn in the summary along with your Homework.</p></li>
+</ol>
+<p>Approved talks:
+Talks given by researchers through the following clubs:</p>
+<ul class="simple">
+<li><p>Research and Idea Sharing Enterprise (RAISE)​: Meets Wednesday Nights Society for Physics Students (SPS)​: Meets Monday Nights</p></li>
+<li><p>Astronomy Club​: Meets Monday Nights</p></li>
+<li><p>Facility For Rare Isotope Beam (FRIB) Seminars: ​Occur multiple times a week</p></li>
+</ul>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "jbook"
+        },
+        kernelOptions: {
+            name: "jbook",
+            path: "./solutions/panda-ninja-wrench"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'jbook'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-1-10pt-paths-along-a-curved-surface">Exercise 1 (10pt) Paths along a curved surface</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-2-15pt-snell-s-law">Exercise 2 (15pt) Snell’s Law</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-3-15pt-lagrangian-examples">Exercise 3 (15pt) Lagrangian Examples</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-4-25pt-changing-coordinates">Exercise 4 (25pt) Changing Coordinates</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-5-35-pt-motion-inside-a-paraboloid">Exercise 5 (35 pt) Motion inside a paraboloid</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-6-20pt-project-check-in-3">Exercise 6 (20pt), Project Check-in 3</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#extra-credit-integrating-classwork-with-research">Extra Credit - Integrating Classwork With Research</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Danny Caballero, Morten Hjorth-Jensen, Rachel Henderson
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
