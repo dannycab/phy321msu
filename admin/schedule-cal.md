@@ -50,9 +50,9 @@ _All assignments are turned in using Gradescope as a single PDF._
 
 | **Week** | **Day**   | **Topic**                                                     | **Readings to Prepare** | **Important Events**                                                |
 |:--------:|:---------:|:-------------------------------------------------------------:|:-----------------------|:-------------------------------------------------------------------|
-| CW7      | 9 Feb    | Work Energy Theorem                                           | 📓 [05 - Conservation Laws Govern and Constrain our Physics](../lecture-notes/05_notes.ipynb)<br>📚 JRT 4.1-4.3 |                                                               |
+| CW7      | 9 Feb    | Work Energy Theorem                                           | 📓 [05 - Conservation Laws Govern and Constrain our Physics](../lecture-notes/05_notes.ipynb)<br>📚 JRT 4.1-4.3<br>📊 [Slides](../slides/day-12-conservation-of-energy.pdf) |                                                               |
 |          | 11 Feb     | Conservative Forces and Potential                             | 📚 JRT 4.1-4.4, 4.6       |                                                               |
-|          | 13 Feb   | **No Classes Held**  |                        | 📥 **Homework 4 Due**<br>**(Late after Sunday 11:59pm)**                                               |
+|          | 13 Feb   | **No Classes Held**  |  *MSU will observe the Feb 13th, 2023 tragedy:*<br>[Observance Plans](https://spartanstogether.msu.edu/plans-feb-13-2026)     | 📥 **Homework 4 Due**<br>**(Late after Sunday 11:59pm)**                                               |
 
 ---
 
