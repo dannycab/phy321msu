@@ -368,9 +368,9 @@ Slides for PHY 321 appear in reverse chronological order, with the most recent s
 
 :::
 
----
+--- -->
 
-## Day 12 - Modeling Drag - 22 Sep 2025
+## Day 12 - Modeling Drag - 09 Feb 2026
 
 [![Day 12](../slides/day-12-conservation-of-energy.png)](../slides/day-12-conservation-of-energy.pdf)
 
@@ -383,7 +383,7 @@ Slides for PHY 321 appear in reverse chronological order, with the most recent s
 
 ---
 
-## Day 11 - Help Session - 17 Sep 2025
+## Day 11 - Help Session - 06 Feb 2026
 
 [![Day 11](../slides/day-11-homework-session.png)](../slides/day-11-homework-session.pdf)
 
@@ -394,7 +394,7 @@ Slides for PHY 321 appear in reverse chronological order, with the most recent s
 
 :::
 
---- --->
+--- 
 
 ## Day 10 - Modeling Drag - 04 Feb 2026
 
