@@ -152,6 +152,8 @@ $$\nabla \times \vec{F} = 0$$
     * Observance plans are posted on Spartans Together: <https://spartanstogether.msu.edu/plans-feb-13-2026>
 * **Need help this week?** Make an appointment with Danny: <https://cal.com/dannycaballero/phy-321>
 * We will work Exercise 2 and 3 from Homework 4 in class today
+* **Homework 2 is re-opened for labeling (due this Friday)**
+  * This is the only reprieve for Homework 2. DC will not re-open it again.
 
 ---
 
