@@ -1,0 +1,904 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Homework 9 (Due 19 Apr) &#8212; Classical Mechanics</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"tex2jax": {"inlineMath": [["$", "$"]]}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'solutions/panda-ninja-wrench/solutionhw9';</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/spartan-helmet.png" class="logo__image only-light" alt="Classical Mechanics - Home"/>
+    <img src="../../_static/spartan-helmet.png" class="logo__image only-dark pst-js-only" alt="Classical Mechanics - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../intro.html">
+                    PHY 321: Classical Mechanics 1, Michigan State University, Spring 2025
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">About the course</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../admin/getting-started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../admin/teachers.html">Teachers and Grading</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../admin/textbooks.html">Textbooks</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Calendar &amp; Lecture Materials</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../admin/schedule-cal.html">Course Calendar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../admin/links.html">Course Material and Links</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../admin/slides.html">Slides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../admin/handwritten-notes.html">Handwritten Notes</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Weekly Course Materials</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../lecture-notes/week1/01_start.html">Week 1 - Overture: What is Classical Physics?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lecture-notes/week1/01_notes.html">Week 1 - Notes: Introduction to Classical Mechanics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lecture-notes/week2/02_start.html">Week 2 - Computing as a tool for science</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lecture-notes/week2/02_notes.html">Week 2 - Notes: Mathematical Preliminaries</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lecture-notes/week3/03_start.html">Week 3 - What is Mathematical Modeling?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lecture-notes/week3/03_notes.html">Week 3 - Notes: Making Classical Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lecture-notes/week4/04_start.html">Week 4 - Why does fluid drag complicate things?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lecture-notes/week4/04_notes.html">Week 4 - Notes: Equations of Motion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lecture-notes/week5/05_start.html">Week 5 - Conservation Laws</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lecture-notes/week5/05_notes.html">Week 5 - Notes: Conservation of Energy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lecture-notes/week6/06_start.html">Week 6 - Stability and Equilibria</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lecture-notes/week6/06_notes.html">Week 6 - Notes: Stability and Energy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lecture-notes/week6/06_notes_2.html">Week 6 - Notes: Linear and Angular Momentum</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lecture-notes/week7/07_start.html">Week 7 - Nonlinear Dynamics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lecture-notes/week7/07_notes.html">Week 7 - Notes: Critical Points; Phase Space; Trajectories</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lecture-notes/week8/08_start.html">Week 8 - Oscillations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lecture-notes/week8/08_notes.html">Week 8 - Notes: Oscillators and Modeling Oscillations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lecture-notes/week9/09_start.html">Week 9 - Driven Oscillators and Resonance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lecture-notes/week9/09_notes.html">Week 9 - Notes: Driven Oscillations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lecture-notes/week10/10_start.html">Week 10 - Chaotic Dynamics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lecture-notes/week10/10_notes.html">Week 10 - Activity: Modeling Chaotic Systems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lecture-notes/week11/11_start.html">Week 11 - Calculus of Variations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lecture-notes/week11/11_notes.html">Week 11 - Notes: The Euler-Lagrange Equation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lecture-notes/week12/12_start.html">Week 12 - The Principle of Least Action</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lecture-notes/week12/12_notes.html">Week 12 - Notes: Introduction to Lagrangian Mechanics</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Assignments</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../homeworks/hw1.html">Homework 1 (Due 24 Jan)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../homeworks/hw2.html">Homework 2 (Due 31 Jan)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../homeworks/hw3.html">Homework 3 (Due 07 Feb)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../homeworks/hw4.html">Homework 4 (Due 17 Feb)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../midterms/midterm1.html">Midterm 1 (Due 28 Feb)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../homeworks/hw5.html">Homework 5 (Due 14 Mar)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../homeworks/hw6.html">Homework 6 (Due 21 Mar)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../homeworks/hw7.html">Homework 7 (Due 28 Mar)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../midterms/midterm2.html">Midterm 2 (Due 11 Apr)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../homeworks/hw8.html">Homework 8 (Due 18 Apr)</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Solutions</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../solutionhw1.html">Solution Homework 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../solutionhw2.html">Solution Homework 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../solutionhw3.html">Solution Homework 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../solutionhw4.html">Solution Homework 4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../solutionmidterm1.html">Midterm 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../solutionhw5.html">Solution Homework 5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../solutionhw6.html">Solution Homework 6</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../solutionhw7.html">Solution Homework 7</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Resources</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../resources/course-commitments.html">Course Commitments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../resources/iclicker-setup.html">i-Clicker Setup Instructions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../resources/generative-ai.html">Generative Artificial Intelligence</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../resources/gradescope-submissions.html">Submitting Assignments on Gradescope</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../resources/finding-research.html">Finding Research Opportunities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../resources/integrators.html">Numerical Integrators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../resources/phase_diagrams.html">Plotting Phase Diagrams</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../resources/chaotic_dynamics.html">Modeling Chaotic Systems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../resources/computational-essay-rubric.html">Rubric for Computational Essay Final Project</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Honors Projects</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../honors-projects/ChaoticPendulum.html">Chaos in the driven nonlinear pendulum</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../honors-projects/NeuralNetworks.html">From Ordinary Differential equations to Neural Networks, solving mechanics problems in a new way</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../honors-projects/SolarSystem.html">Building a model for the solar system using ordinary differential equations</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/solutions/panda-ninja-wrench/solutionhw9.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Homework 9 (Due 19 Apr)</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-1-10pt-modifying-lagrangians-for-friction">Exercise 1 (10pt) Modifying Lagrangians for friction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-2-15pt-modeling-a-yo-yo">Exercise 2 (15pt) Modeling a Yo-yo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-3-15pt-constrained-to-a-helix">Exercise 3 (15pt) Constrained to a helix</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-4-25pt-lagrangians-with-rotating-systems">Exercise 4 (25pt) Lagrangians with rotating systems</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-5-35-pt-driven-pendulum">Exercise 5 (35 pt) Driven Pendulum</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#extra-credit-integrating-classwork-with-research">Extra Credit - Integrating Classwork With Research</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <!-- HTML file automatically generated from DocOnce source (https://github.com/doconce/doconce/)
+doconce format html hw5.do.txt --no_mako -->
+<!-- dom:TITLE: PHY321: Classical Mechanics 1 --><section id="homework-9-due-19-apr">
+<h1>Homework 9 (Due 19 Apr)<a class="headerlink" href="#homework-9-due-19-apr" title="Link to this heading">#</a></h1>
+<p><strong>Solution Homework 9, Spring 2024</strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">math</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="o">%</span><span class="k">matplotlib</span> inline
+<span class="n">plt</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;seaborn-v0_8-colorblind&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<section id="exercise-1-10pt-modifying-lagrangians-for-friction">
+<h2>Exercise 1 (10pt) Modifying Lagrangians for friction<a class="headerlink" href="#exercise-1-10pt-modifying-lagrangians-for-friction" title="Link to this heading">#</a></h2>
+<p>We have seen that we have develop the Lagrangian formalism for a potential that depends on location <span class="math notranslate nohighlight">\(U({q}_1, {q}_2, \dots, {q}_N)\)</span> and a kinetic energy term that depends on speeds <span class="math notranslate nohighlight">\(T(\dot{q}_1, \dot{q}_2, \dots, \dot{q}_N)\)</span>. But we’ve said nothing about friction.</p>
+<p>Consider a single particle in one dimension that moves in a potential <span class="math notranslate nohighlight">\(U(x)\)</span> and is subject to a frictional force <span class="math notranslate nohighlight">\(F_{fric}\)</span>.</p>
+<ol class="arabic simple">
+<li><p>(5 pt) Write down the Lagrangian for this system.</p></li>
+</ol>
+<div class="tip admonition">
+<p class="admonition-title">Solution</p>
+<p>For the general case, we know the Lagrangian is given by</p>
+<div class="math notranslate nohighlight">
+\[L(q_1, q_2, \dots, q_N, \dot{q}_1, \dot{q}_2, \dots, \dot{q}_N, t) = T(\dot{q}_1, \dot{q}_2, \dots, \dot{q}_N) - U(q_1, q_2, \dots, q_N).\]</div>
+<p>In this case, we have a single particle in one dimension, so <span class="math notranslate nohighlight">\(N=1\)</span> and <span class="math notranslate nohighlight">\(q_1 = x\)</span>. The kinetic energy is given by <span class="math notranslate nohighlight">\(T = \frac{1}{2}m\dot{x}^2\)</span> and the potential energy is <span class="math notranslate nohighlight">\(U(x)\)</span>. The Lagrangian is then</p>
+<div class="math notranslate nohighlight">
+\[L(x, \dot{x}, t) = \frac{1}{2}m\dot{x}^2 - U(x).\]</div>
+<p>This obviously does not include the frictional force as it cannot be derived from the potential.</p>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>(5 pt) Show that you can write an equation of motion for this system in the form,</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[\frac{\partial L}{\partial x} + F_{fric} = \frac{d}{dt}\left(\frac{\partial L}{\partial \dot{x}}\right).\]</div>
+<div class="tip admonition">
+<p class="admonition-title">Solution</p>
+<p>Let’s start with the standard Lagrangian and demonstrate what equation of motion it produces. Starting with:</p>
+<div class="math notranslate nohighlight">
+\[L(x, \dot{x}, t) = \frac{1}{2}m\dot{x}^2 - U(x),\]</div>
+<p>we can write the Euler-Lagrange equation as</p>
+<div class="math notranslate nohighlight">
+\[\frac{d}{dt}\left(\frac{\partial L}{\partial \dot{x}}\right) - \frac{\partial L}{\partial x} = 0.\]</div>
+<p>Taking the derivatives, we have</p>
+<div class="math notranslate nohighlight">
+\[\frac{d}{dt}\left(\frac{\partial L}{\partial \dot{x}}\right) = \frac{d}{dt}(m\dot{x}) = m\ddot{x},\]</div>
+<p>and</p>
+<div class="math notranslate nohighlight">
+\[\frac{\partial L}{\partial x} = -\frac{dU}{dx} = F_x.\]</div>
+<p>Here <span class="math notranslate nohighlight">\(F_x\)</span> is the force due to the potential. The equation of motion is then</p>
+<div class="math notranslate nohighlight">
+\[m\ddot{x} = F_x.\]</div>
+<p>So we see that the Euler-Lagrange equation gives us Newton’s second law for a one dimension force derived from a one-dimensional potential. Now we can add the frictional force. The frictional force is given by <span class="math notranslate nohighlight">\(F_{fric}\)</span>, so the equation of motion becomes</p>
+<div class="math notranslate nohighlight">
+\[m\ddot{x} = F_x + F_{fric}.\]</div>
+<p>But we can rewrite this using the Euler-Lagrange equation as</p>
+<div class="math notranslate nohighlight">
+\[\frac{d}{dt}\left(\frac{\partial L}{\partial \dot{x}}\right) = \frac{\partial L}{\partial x} + F_{fric}.\]</div>
+</div>
+</section>
+<section id="exercise-2-15pt-modeling-a-yo-yo">
+<h2>Exercise 2 (15pt) Modeling a Yo-yo<a class="headerlink" href="#exercise-2-15pt-modeling-a-yo-yo" title="Link to this heading">#</a></h2>
+<p><img alt="Yo-yo" src="solutions/images/assignments/9.2-yoyo.png" /></p>
+<p>We have a rough model of a yo-yo above, really just a cylinder of mass <span class="math notranslate nohighlight">\(m\)</span> and radius <span class="math notranslate nohighlight">\(R\)</span> that can roll out on the string under the influence of gravity. The string is massless and inextensible. Choose the coordinate <span class="math notranslate nohighlight">\(x\)</span> as shown to be the generalized coordinate.</p>
+<ol class="arabic simple">
+<li><p>(7 pt) Write down the Lagrangian for this system.</p></li>
+</ol>
+<div class="tip admonition">
+<p class="admonition-title">Solution</p>
+<p>The yo-yo and Earth share potential energy related to the height of the yo-yo above the floor. Given the orientation and choice of <span class="math notranslate nohighlight">\(+x\)</span> as down, we will indicate that <span class="math notranslate nohighlight">\(x=0\)</span> is the point where the yo-yo has zero potential energy. Thus, the potential energy is <span class="math notranslate nohighlight">\(U = -mgx\)</span>, as we measure <span class="math notranslate nohighlight">\(x\)</span> as positive down. The kinetic energy is the sum of the translational (movement of the cylinder down) and rotational kinetic energy (rotation of the cylinder).</p>
+<p>The translational kinetic energy is:</p>
+<div class="math notranslate nohighlight">
+\[T_{t} = \frac{1}{2}m\dot{x}^2.\]</div>
+<p>The rotational kinetic energy is:</p>
+<div class="math notranslate nohighlight">
+\[T_{r} = \frac{1}{2}I\omega^2 = \frac{1}{2}\left(\frac{1}{2}mR^2\right)\omega^2.\]</div>
+<p>Putting this all together, the Lagrangian is:</p>
+<div class="math notranslate nohighlight">
+\[L(x, \dot{x}, \omega) = \frac{1}{2}m\dot{x}^2 + \frac{1}{4}mR^2\omega^2 + mgx.\]</div>
+<p>This doesn’t take into account the constraint that the unreeling string is inextensible and that the rotation corresponds to <span class="math notranslate nohighlight">\(x\)</span> motion. We will choose to use the constraint to eliminate <span class="math notranslate nohighlight">\(\omega\)</span> from the Lagrangian because want to have an equation of motion that only depends on <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(\dot{x}\)</span>.</p>
+<p>In this system, the small rotation <span class="math notranslate nohighlight">\(d\phi\)</span> of the cylinder corresponds to a small change in <span class="math notranslate nohighlight">\(x\)</span> of <span class="math notranslate nohighlight">\(dx = Rd\phi\)</span>. So we note that <span class="math notranslate nohighlight">\(x = R\phi\)</span> and <span class="math notranslate nohighlight">\(\dot{x} = R\dot{\phi} = R\omega\)</span>. We can then rewrite the Lagrangian in terms of <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(\dot{x}\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[L(x, \dot{x}) = \frac{1}{2}m\dot{x}^2 + \frac{1}{4}mR^2\left(\frac{\dot{x}}{R}\right)^2 + mgx = \frac{1}{2}m\dot{x}^2 + \frac{1}{4}m\dot{x}^2 + mgx,\]</div>
+<div class="math notranslate nohighlight">
+\[L(x, \dot{x}) = \frac{3}{4}m\dot{x}^2 + mgx.\]</div>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>(8 pt) Show that the cylinder accelerates at a rate <span class="math notranslate nohighlight">\(2g/3\)</span>.</p></li>
+</ol>
+<div class="tip admonition">
+<p class="admonition-title">Solution</p>
+<p>Here we can solve for the equation of motion using the Euler-Lagrange equation. The Euler-Lagrange equation is</p>
+<div class="math notranslate nohighlight">
+\[\frac{d}{dt}\left(\frac{\partial L}{\partial \dot{x}}\right) - \frac{\partial L}{\partial x} = 0.\]</div>
+<p>Taking the derivatives, we have</p>
+<div class="math notranslate nohighlight">
+\[\frac{\partial L}{\partial \dot{x}} = \frac{3}{2}m\dot{x},\]</div>
+<p>and</p>
+<div class="math notranslate nohighlight">
+\[\frac{d}{dt}\left(\frac{\partial L}{\partial \dot{x}}\right) = \frac{3}{2}m\ddot{x}.\]</div>
+<p>The derivative with respect to <span class="math notranslate nohighlight">\(x\)</span> is</p>
+<div class="math notranslate nohighlight">
+\[\frac{\partial L}{\partial x} = mg.\]</div>
+<p>The equation of motion is then</p>
+<div class="math notranslate nohighlight">
+\[\frac{3}{2}m\ddot{x} = mg,\]</div>
+<p>which gives</p>
+<div class="math notranslate nohighlight">
+\[\ddot{x} = \frac{2}{3}g.\]</div>
+<p>The cylinder accelerates at a rate of <span class="math notranslate nohighlight">\(2g/3\)</span> because some of the gravitational energy is used to rotate the cylinder through a torque.</p>
+</div>
+</section>
+<section id="exercise-3-15pt-constrained-to-a-helix">
+<h2>Exercise 3 (15pt) Constrained to a helix<a class="headerlink" href="#exercise-3-15pt-constrained-to-a-helix" title="Link to this heading">#</a></h2>
+<p>A bead is constrained to move on a helix with <span class="math notranslate nohighlight">\(\rho = a\)</span> and <span class="math notranslate nohighlight">\(z = b\phi\)</span>, where <span class="math notranslate nohighlight">\(a\)</span> and <span class="math notranslate nohighlight">\(b\)</span> are constants. The helix is oriented upright, so the <span class="math notranslate nohighlight">\(z\)</span> axis is vertical. The bead is subject to a gravitational force <span class="math notranslate nohighlight">\(-mg\hat{z}\)</span>.</p>
+<ol class="arabic simple">
+<li><p>(5 pt) Write down the Lagrangian for this system.</p></li>
+</ol>
+<div class="tip admonition">
+<p class="admonition-title">Solution</p>
+<p>Here the choice of coordinates is really important. We will pick cylindrical coordinates <span class="math notranslate nohighlight">\((\rho, \phi, z)\)</span>, where <span class="math notranslate nohighlight">\(\rho = a\)</span> and <span class="math notranslate nohighlight">\(z = b\phi\)</span>. The general kinetic energy in cylindrical coordinates is given by:</p>
+<div class="math notranslate nohighlight">
+\[T(\dot{\rho}, \rho, \dot{\phi}, \phi, \dot{z}, z) = \frac{1}{2}m(\dot{\rho}^2 + \rho^2\dot{\phi}^2 + \dot{z}^2).\]</div>
+<p>In this case, we have the following constraints:</p>
+<div class="math notranslate nohighlight">
+\[\rho = a,\]</div>
+<div class="math notranslate nohighlight">
+\[z = b\phi.\]</div>
+<p>These have implications for the speeds in the kinetic energy, namely,</p>
+<div class="math notranslate nohighlight">
+\[\dot{\rho} = 0,\]</div>
+<div class="math notranslate nohighlight">
+\[\dot{z} = b\dot{\phi}.\]</div>
+<p>This reduces the kinetic energy to</p>
+<div class="math notranslate nohighlight">
+\[T(\dot{\phi}, \phi) = \frac{1}{2}ma^2\dot{\phi}^2 + \frac{1}{2}mb^2\dot{\phi}^2 = \frac{1}{2}m(a^2 + b^2)\dot{\phi}^2.\]</div>
+<p>The potential energy is <span class="math notranslate nohighlight">\(U = -mgz = -mgb\phi\)</span>. The Lagrangian is then, in terms of <span class="math notranslate nohighlight">\(\phi\)</span> and <span class="math notranslate nohighlight">\(\dot{\phi}\)</span>,</p>
+<div class="math notranslate nohighlight">
+\[L(\phi, \dot{\phi}) = \frac{1}{2}m(a^2 + b^2)\dot{\phi}^2 + mgb\phi.\]</div>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>(5 pt) Find the equations of motion for this system. Explain what the motion of the bead looks like.</p></li>
+</ol>
+<div class="tip admonition">
+<p class="admonition-title">Solution</p>
+<p>We can compute the equation of motion using the Euler-Lagrange equation. The Euler-Lagrange equation is</p>
+<div class="math notranslate nohighlight">
+\[\frac{d}{dt}\left(\frac{\partial L}{\partial \dot{\phi}}\right) - \frac{\partial L}{\partial \phi} = 0.\]</div>
+<p>Taking the derivatives, we have</p>
+<div class="math notranslate nohighlight">
+\[\frac{\partial L}{\partial \dot{\phi}} = m(a^2 + b^2)\dot{\phi},\]</div>
+<p>and</p>
+<div class="math notranslate nohighlight">
+\[\frac{d}{dt}\left(\frac{\partial L}{\partial \dot{\phi}}\right) = m(a^2 + b^2)\ddot{\phi}.\]</div>
+<p>The derivative with respect to <span class="math notranslate nohighlight">\(\phi\)</span> is</p>
+<div class="math notranslate nohighlight">
+\[\frac{\partial L}{\partial \phi} = mgb.\]</div>
+<p>The equation of motion is then</p>
+<div class="math notranslate nohighlight">
+\[m(a^2 + b^2)\ddot{\phi} = mgb,\]</div>
+<p>or</p>
+<div class="math notranslate nohighlight">
+\[\ddot{\phi} = g\frac{b}{a^2 + b^2}.\]</div>
+<p>Using the constraint <span class="math notranslate nohighlight">\(z = b\phi\)</span>, we can see that this also corresponds to a constant acceleration in the <span class="math notranslate nohighlight">\(z\)</span> direction, <span class="math notranslate nohighlight">\(\ddot{z} = b\ddot{\phi}\)</span>.</p>
+<p>So that,</p>
+<div class="math notranslate nohighlight">
+\[\ddot{z} = g\frac{b^2}{a^2 + b^2}.\]</div>
+<p>Thus the bead accelerates in the <span class="math notranslate nohighlight">\(z\)</span> direction at a constant rate.</p>
+</div>
+<ol class="arabic simple" start="3">
+<li><p>(5 pt) What happens when <span class="math notranslate nohighlight">\(a \rightarrow 0\)</span>? Explain what the motion of the bead looks like in this limit.</p></li>
+</ol>
+<div class="tip admonition">
+<p class="admonition-title">Solution</p>
+<p>When <span class="math notranslate nohighlight">\(a \rightarrow 0\)</span>, the bead is constrained to move along a straight line. We should except that the bead will fall straight down under the influence of gravity. This is because the constraint is removed and the bead is free to move in the <span class="math notranslate nohighlight">\(z\)</span> direction. The acceleration in the <span class="math notranslate nohighlight">\(z\)</span> direction is then <span class="math notranslate nohighlight">\(g\)</span>.</p>
+<p>Let’s check that with the equation of motion. When <span class="math notranslate nohighlight">\(a \rightarrow 0\)</span>, we have</p>
+<div class="math notranslate nohighlight">
+\[\ddot{z} = \lim_{a \rightarrow 0} g\frac{b^2}{a^2 + b^2} = g\frac{b^2}{b^2} = g.\]</div>
+</div>
+</section>
+<section id="exercise-4-25pt-lagrangians-with-rotating-systems">
+<h2>Exercise 4 (25pt) Lagrangians with rotating systems<a class="headerlink" href="#exercise-4-25pt-lagrangians-with-rotating-systems" title="Link to this heading">#</a></h2>
+<p>As we develop more complicated systems, we will encounter rotating systems. In this problem, we will consider a simple example of a rotating system. A bead is constrained to move on a straight frictionless rod. The rod can pivot about it’s center (like it’s spinning on a table). The rod rotates with a constant angular velocity <span class="math notranslate nohighlight">\(\omega\)</span> its center.</p>
+<ol class="arabic simple">
+<li><p>(5pt) Write down the Lagrangian for the threaded bead using <span class="math notranslate nohighlight">\(r\)</span> as the generalized coordinate. Note: how is <span class="math notranslate nohighlight">\(\phi\)</span> related to <span class="math notranslate nohighlight">\(\omega\)</span>?</p></li>
+</ol>
+<div class="tip admonition">
+<p class="admonition-title">Solution</p>
+<p>For this system, we choose the generalized coordinates to be plane polar coordinates <span class="math notranslate nohighlight">\((r, \phi)\)</span>. The kinetic energy is given by</p>
+<div class="math notranslate nohighlight">
+\[T = \frac{1}{2}m\left(\dot{r}^2 + r^2\dot{\phi}^2\right).\]</div>
+<p>There’s no potential energy in this system, but the bead is constrained to rotate with the rod so that after a time <span class="math notranslate nohighlight">\(t\)</span>, the rotation angle is <span class="math notranslate nohighlight">\(\phi = \omega t\)</span>. The Lagrangian is then,</p>
+<div class="math notranslate nohighlight">
+\[L(r, \dot{r}, \phi, \dot{\phi}) = \frac{1}{2}m\left(\dot{r}^2 + r^2\dot{\phi}^2\right),\]</div>
+<p>where <span class="math notranslate nohighlight">\(\dot{\phi} = \omega\)</span> is a constant. Thus the Lagrangian reduces to:</p>
+<div class="math notranslate nohighlight">
+\[L(r, \dot{r}) = \frac{1}{2}m\dot{r}^2 + \frac{1}{2}mr^2\omega^2.\]</div>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>(5pt) Find the equations of motion for this system, and solve for <span class="math notranslate nohighlight">\(r(t)\)</span>.</p></li>
+</ol>
+<div class="tip admonition">
+<p class="admonition-title">Solution</p>
+<p>The Euler-Lagrange equation is</p>
+<div class="math notranslate nohighlight">
+\[\frac{d}{dt}\left(\frac{\partial L}{\partial \dot{r}}\right) - \frac{\partial L}{\partial r} = 0.\]</div>
+<p>Taking the derivatives, we have</p>
+<div class="math notranslate nohighlight">
+\[\frac{\partial L}{\partial \dot{r}} = m\dot{r},\]</div>
+<p>and</p>
+<div class="math notranslate nohighlight">
+\[\frac{d}{dt}\left(\frac{\partial L}{\partial \dot{r}}\right) = m\ddot{r}.\]</div>
+<p>The derivative with respect to <span class="math notranslate nohighlight">\(r\)</span> is</p>
+<div class="math notranslate nohighlight">
+\[\frac{\partial L}{\partial r} = mr\omega^2.\]</div>
+<p>The equation of motion is then</p>
+<div class="math notranslate nohighlight">
+\[m\ddot{r} = mr\omega^2,\]</div>
+<p>which gives</p>
+<div class="math notranslate nohighlight">
+\[\ddot{r} = r\omega^2.\]</div>
+<p>We can solve this for <span class="math notranslate nohighlight">\(r(t)\)</span> by noticing that this has a solution form of <span class="math notranslate nohighlight">\(r(t) = A e^{\omega t} + Be^{-\omega t}\)</span>, where <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(B\)</span> are constants. Plugging this into the equation of motion, we have:</p>
+<div class="math notranslate nohighlight">
+\[\ddot{r} = \omega^2 A e^{\omega t} + (-\omega)^2 B e^{-\omega t} = \omega^2 r(t).\]</div>
+<p>So the general solution is <span class="math notranslate nohighlight">\(r(t) = A e^{\omega t} + Be^{-\omega t}\)</span>.</p>
+</div>
+<ol class="arabic simple" start="3">
+<li><p>(5pt) What happens if the bead starts at rest at <span class="math notranslate nohighlight">\(r = r_0\)</span>? What is the motion of the bead?</p></li>
+</ol>
+<div class="tip admonition">
+<p class="admonition-title">Solution</p>
+<p>The general solution here is:</p>
+<div class="math notranslate nohighlight">
+\[r(t) = A e^{\omega t} + Be^{-\omega t}.\]</div>
+<p>This gives a velocity equation:</p>
+<div class="math notranslate nohighlight">
+\[\dot{r}(t) = A\omega e^{\omega t} - B\omega e^{-\omega t}.\]</div>
+<p>If at <span class="math notranslate nohighlight">\(r(0)=r_0\)</span>, the bead starts at rest, then <span class="math notranslate nohighlight">\(\dot{r}(0) = 0\)</span>. We have the following equations:</p>
+<div class="math notranslate nohighlight">
+\[r(0) = A + B = r_0,\]</div>
+<div class="math notranslate nohighlight">
+\[\dot{r}(0) = A\omega - B\omega = 0.\]</div>
+<p>So that,</p>
+<div class="math notranslate nohighlight">
+\[A = B = \frac{r_0}{2}.\]</div>
+<p>The motion of the bead is then:</p>
+<div class="math notranslate nohighlight">
+\[r(t) = \frac{r_0}{2} e^{\omega t} + \frac{r_0}{2} e^{-\omega t} = r_0 \cosh(\omega t).\]</div>
+</div>
+<ol class="arabic simple" start="4">
+<li><p>(5pt) If it released from rest at <span class="math notranslate nohighlight">\(r = r_0\)</span>, what is the motion of the bead? Explain in terms of the centrifugal force (<span class="math notranslate nohighlight">\(m\omega^2r\)</span>).</p></li>
+</ol>
+<div class="tip admonition">
+<p class="admonition-title">Solution</p>
+<p>The motion of the bead:</p>
+<div class="math notranslate nohighlight">
+\[r(t) = \frac{r_0}{2} e^{\omega t} + \frac{r_0}{2} e^{-\omega t} = r_0 \cosh(\omega t).\]</div>
+<p>Note here that over the long term <span class="math notranslate nohighlight">\(t\rightarrow \infty\)</span>, the solution grows without bound:</p>
+<div class="math notranslate nohighlight">
+\[\lim_{t\rightarrow \infty} r(t) = \frac{r_0}{2} e^{\omega t} \rightarrow \infty.\]</div>
+<p>This is a direct result of the centrifugal force the bead experiences in it’s frame that accelerates it outward. In that frame, the bead experiences the just that force as we saw in our equation of motion:</p>
+<div class="math notranslate nohighlight">
+\[m\ddot{r} = m\omega^2 r.\]</div>
+</div>
+<ol class="arabic simple" start="5">
+<li><p>(5pt) What have you noticed about solving this problem, which is different from the other problems we’ve done so far?</p></li>
+</ol>
+<div class="tip admonition">
+<p class="admonition-title">Solution</p>
+<p>Answers can vary.</p>
+</div>
+</section>
+<section id="exercise-5-35-pt-driven-pendulum">
+<h2>Exercise 5 (35 pt) Driven Pendulum<a class="headerlink" href="#exercise-5-35-pt-driven-pendulum" title="Link to this heading">#</a></h2>
+<p><img alt="Pendulum" src="solutions/images/assignments/9.5-pendulum.png" /></p>
+<p>The pendulum above is driven by a motor that rotates the wheel shown. The set up is the wheel of radius <span class="math notranslate nohighlight">\(R\)</span> rotates at a constant angular velocity <span class="math notranslate nohighlight">\(\omega\)</span>. The pendulum is free to swing in the vertical plane. The pendulum has length <span class="math notranslate nohighlight">\(l\)</span> and mass <span class="math notranslate nohighlight">\(m\)</span>. The pendulum is attached the edge of the wheel at point <span class="math notranslate nohighlight">\(P\)</span>. The wheel rotates about it’s own center <span class="math notranslate nohighlight">\(O\)</span>.</p>
+<ol class="arabic simple">
+<li><p>(5 pt) Write down the Lagrangian for this system.</p></li>
+</ol>
+<div class="tip admonition">
+<p class="admonition-title">Solution</p>
+<p>This system might look very complicated, but we only need to determine the position of location P and the bob in terms of the generalized coordinate <span class="math notranslate nohighlight">\(\phi\)</span>.</p>
+<p>From the figure, we can write down the position of point P as:</p>
+<div class="math notranslate nohighlight">
+\[x_P = R\cos(\omega t),\]</div>
+<div class="math notranslate nohighlight">
+\[y_P = R\sin(\omega t).\]</div>
+<p>The position of the bob relative to point P is given by:</p>
+<div class="math notranslate nohighlight">
+\[x_{rel,P} = l\sin(\phi),\]</div>
+<div class="math notranslate nohighlight">
+\[y_{rel,P} = -l\cos(\phi).\]</div>
+<p>Thus, the position of the bob is:</p>
+<div class="math notranslate nohighlight">
+\[x = R\cos(\omega t) + l\sin(\phi),\]</div>
+<div class="math notranslate nohighlight">
+\[y = R\sin(\omega t) - l\cos(\phi).\]</div>
+<p>And thus its velocity components are given by:</p>
+<div class="math notranslate nohighlight">
+\[\dot{x} = -R\omega\sin(\omega t) + l\dot{\phi}\cos(\phi),\]</div>
+<div class="math notranslate nohighlight">
+\[\dot{y} = R\omega\cos(\omega t) + l\dot{\phi}\sin(\phi).\]</div>
+<p>We neglect the kinetic energy of the wheel and the potential energy of the wheel as the wheel is rotating at a constant angular velocity and the potential energy of the wheel is constant. The kinetic energy of the pendulum is given by:</p>
+<div class="math notranslate nohighlight">
+\[T = \frac{1}{2}m(\dot{x}^2 + \dot{y}^2) = \frac{1}{2}m\left(\left(-R\omega\sin(\omega t) + l\dot{\phi}\cos(\phi)\right)^2 + \left(R\omega\cos(\omega t) + l\dot{\phi}\sin(\phi)\right)^2\right).\]</div>
+<p>The potential energy of the pendulum is given by:</p>
+<div class="math notranslate nohighlight">
+\[U = mgy = mg\left(R\sin(\omega t) - l\cos(\phi)\right).\]</div>
+<p>The Lagrangian is then:</p>
+<div class="math notranslate nohighlight">
+\[L(\phi, \dot{\phi}, t) = \frac{1}{2}m\left(\left(-R\omega\sin(\omega t) + l\dot{\phi}\cos(\phi)\right)^2 + \left(R\omega\cos(\omega t) + l\dot{\phi}\sin(\phi)\right)^2\right) - mg\left(R\sin(\omega t) - l\cos(\phi)\right),\]</div>
+<p>which cleans up to:</p>
+<div class="math notranslate nohighlight">
+\[L(\phi, \dot{\phi}, t) = \frac{1}{2}m\left(R^2\omega^2 + l^2\dot{\phi}^2 + 2Rl\omega\dot{\phi}\sin(\phi-\omega t)\right) - mg\left(R\sin(\omega t) - l\cos(\phi)\right).\]</div>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>(5 pt) Find the equations of motion for <span class="math notranslate nohighlight">\(\phi\)</span> - be careful with <span class="math notranslate nohighlight">\(T\)</span>, check when <span class="math notranslate nohighlight">\(\omega =0\)</span></p></li>
+</ol>
+<div class="tip admonition">
+<p class="admonition-title">Solution</p>
+<p>The Euler-Lagrange equation is:</p>
+<div class="math notranslate nohighlight">
+\[\frac{d}{dt}\left(\frac{\partial L}{\partial \dot{\phi}}\right) - \frac{\partial L}{\partial \phi} = 0.\]</div>
+<p>We can take the derivatives:</p>
+<div class="math notranslate nohighlight">
+\[\frac{\partial L}{\partial \dot{\phi}} = ml^2\dot{\phi} + mlR\omega\sin(\phi-\omega t),\]</div>
+<div class="math notranslate nohighlight">
+\[\frac{d}{dt}\left(\frac{\partial L}{\partial \dot{\phi}}\right) = ml^2\ddot{\phi} + mlR\omega\dot{\phi}\cos(\phi-\omega t) - mlR\omega^2\sin(\phi-\omega t),\]</div>
+<div class="math notranslate nohighlight">
+\[\frac{\partial L}{\partial \phi} = mlR\omega\dot{\phi}\cos(\phi-\omega t) - mgl\sin(\phi).\]</div>
+<p>The equation of motion is then:</p>
+<div class="math notranslate nohighlight">
+\[ml^2\ddot{\phi} + mlR\omega\dot{\phi}\cos(\phi-\omega t) - mlR\omega^2\sin(\phi-\omega t) - mlR\omega\dot{\phi}\cos(\phi-\omega t) + mgl\sin(\phi) = 0,\]</div>
+<p>which simplifies to:</p>
+<div class="math notranslate nohighlight">
+\[ml^2\ddot{\phi} - mlR\omega^2\sin(\phi-\omega t) + mgl\sin(\phi) = 0,\]</div>
+<p>or</p>
+<div class="math notranslate nohighlight">
+\[\ddot{\phi} = \frac{R}{l}\omega^2\sin(\phi-\omega t) - \frac{g}{l}\sin(\phi).\]</div>
+</div>
+<ol class="arabic simple" start="3">
+<li><p>(5 pt) Take the limit that the wheel rotates very slowly, and the radius of the wheel is quite small. Find the equations of motion for <span class="math notranslate nohighlight">\(\phi\)</span> in this limit. Describe the motion of the pendulum.</p></li>
+</ol>
+<div class="tip admonition">
+<p class="admonition-title">Solution</p>
+<p>In the limit that the wheel rotates very slowly, we have <span class="math notranslate nohighlight">\(\omega \rightarrow 0\)</span>. The equation of motion is then:</p>
+<div class="math notranslate nohighlight">
+\[\ddot{\phi} = -\frac{g}{l}\sin(\phi).\]</div>
+<p>This is the equation of motion for a physical pendulum. The pendulum will oscillate back and forth about the vertical position. If the oscillations are small then,</p>
+<div class="math notranslate nohighlight">
+\[\ddot{\phi} = -\frac{g}{l}\phi,\]</div>
+<p>which is the equation of motion for a simple harmonic oscillator. The pendulum will oscillate back and forth with a period of <span class="math notranslate nohighlight">\(T = 2\pi\sqrt{\frac{l}{g}}\)</span>.</p>
+</div>
+<ol class="arabic simple" start="4">
+<li><p>(20 pt) Write (or reuse) a numerical code to solve the equations of motion for <span class="math notranslate nohighlight">\(\phi\)</span> for the general case. Plot the motion for at least 3 interesting cases that you find. Explain the motion of the pendulum in each case.</p></li>
+</ol>
+</section>
+<section id="extra-credit-integrating-classwork-with-research">
+<h2>Extra Credit - Integrating Classwork With Research<a class="headerlink" href="#extra-credit-integrating-classwork-with-research" title="Link to this heading">#</a></h2>
+<p>This opportunity will allow you to earn up to 5 extra credit points on a Homework per week. These points can push you above 100% or help make up for missed exercises.
+In order to earn all points you must:</p>
+<ol class="arabic simple">
+<li><p>Attend an MSU research talk (recommended research oriented Clubs is  provided below)</p></li>
+<li><p>Summarize the talk using at least 150 words</p></li>
+<li><p>Turn in the summary along with your Homework.</p></li>
+</ol>
+<p>Approved talks:
+Talks given by researchers through the following clubs:</p>
+<ul class="simple">
+<li><p>Research and Idea Sharing Enterprise (RAISE)​: Meets Wednesday Nights Society for Physics Students (SPS)​: Meets Monday Nights</p></li>
+<li><p>Astronomy Club​: Meets Monday Nights</p></li>
+<li><p>Facility For Rare Isotope Beam (FRIB) Seminars: ​Occur multiple times a week</p></li>
+</ul>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "jbook"
+        },
+        kernelOptions: {
+            name: "jbook",
+            path: "./solutions/panda-ninja-wrench"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'jbook'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-1-10pt-modifying-lagrangians-for-friction">Exercise 1 (10pt) Modifying Lagrangians for friction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-2-15pt-modeling-a-yo-yo">Exercise 2 (15pt) Modeling a Yo-yo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-3-15pt-constrained-to-a-helix">Exercise 3 (15pt) Constrained to a helix</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-4-25pt-lagrangians-with-rotating-systems">Exercise 4 (25pt) Lagrangians with rotating systems</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-5-35-pt-driven-pendulum">Exercise 5 (35 pt) Driven Pendulum</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#extra-credit-integrating-classwork-with-research">Extra Credit - Integrating Classwork With Research</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Danny Caballero, Morten Hjorth-Jensen, Rachel Henderson
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

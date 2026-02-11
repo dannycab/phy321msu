@@ -355,9 +355,9 @@ Slides for PHY 321 appear in reverse chronological order, with the most recent s
 
 :::
 
----
+--- -->
 
-## Day 13 - Conservative Forces - 24 Sep 2025
+## Day 13 - Conservative Forces - 11 Feb 2026
 
 [![Day 13](../slides/day-13-conservative-forces.png)](../slides/day-13-conservative-forces.pdf)
 
@@ -368,7 +368,7 @@ Slides for PHY 321 appear in reverse chronological order, with the most recent s
 
 :::
 
---- -->
+---
 
 ## Day 12 - Modeling Drag - 09 Feb 2026
 

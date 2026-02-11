@@ -3,14 +3,14 @@ marp: true
 theme: graph_paper
 paginate: true
 
-title: Day 11 - Help Session
-description: Slides for PHY 321 Spring 2025, Day 11: Help Session
+title: Day 11 - Workshop Day
+description: Slides for PHY 321 Spring 2026, Day 11: Workshop Day
 author: Prof. Danny Caballero <caball14@msu.edu>
 keywords: classical mechanics, models, modeling, differential equations, motion
-url: https://dannycaballero.info/phy321msu/slides/day-11-help-session.html
+url: https://dannycaballero.info/phy321msu/slides/day-11-homework-session.html
 ---
 
-# Day 11 - Help Session
+# Day 11 - Workshop Day
 
 ![bg right width:600px](../images/notes/week3/quack.png)
 

@@ -16,30 +16,33 @@
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
     document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-
-  
-  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
-    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
   
+  <!-- So that users can add custom icons -->
+  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
-  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
     <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
     <script src="../_static/doctools.js?v=9a2dae69"></script>
@@ -52,7 +55,7 @@
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script src="../_static/design-tabs.js?v=36754332"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
@@ -64,6 +67,7 @@
     <link rel="search" title="Search" href="../search.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
   </head>
   
   
@@ -79,19 +83,8 @@
     <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
   
-  <input type="checkbox"
-          class="sidebar-toggle"
-          id="pst-primary-sidebar-checkbox"/>
-  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
-  
-  <input type="checkbox"
-          class="sidebar-toggle"
-          id="pst-secondary-sidebar-checkbox"/>
-  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
-  
-  <div class="search-button__wrapper">
-    <div class="search-button__overlay"></div>
-    <div class="search-button__search-container">
+  <dialog id="pst-search-dialog">
+    
 <form class="bd-search d-flex align-items-center"
       action="../search.html"
       method="get">
@@ -99,7 +92,6 @@
   <input type="search"
          class="form-control"
          name="q"
-         id="search-input"
          placeholder="Search this book..."
          aria-label="Search this book..."
          autocomplete="off"
@@ -107,8 +99,8 @@
          autocapitalize="off"
          spellcheck="false"/>
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form></div>
-  </div>
+</form>
+  </dialog>
 
   <div class="pst-async-banner-revealer d-none">
   <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
@@ -126,7 +118,8 @@
       
         
       
-      <div class="bd-sidebar-primary bd-sidebar">
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -156,21 +149,17 @@
     
     
     <img src="../_static/spartan-helmet.png" class="logo__image only-light" alt="Classical Mechanics - Home"/>
-    <script>document.write(`<img src="../_static/spartan-helmet.png" class="logo__image only-dark" alt="Classical Mechanics - Home"/>`);</script>
+    <img src="../_static/spartan-helmet.png" class="logo__image only-dark pst-js-only" alt="Classical Mechanics - Home"/>
   
   
 </a></div>
         <div class="sidebar-primary-item">
 
- <script>
- document.write(`
-   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
-    <span class="search-button__default-text">Search</span>
-    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
-   </button>
- `);
- </script></div>
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
@@ -230,6 +219,8 @@
 
 <li class="toctree-l2"><a class="reference internal" href="../assignments/midterm1.html">Midterm 1 (Due 27 Feb)</a></li>
 
+
+
 </ul>
 </details></li>
 </ul>
@@ -261,9 +252,14 @@
   
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
   </div>
-  
-  <div id="rtd-footer-container"></div>
 
 
       </div>
@@ -360,24 +356,16 @@
 
 
 
-<script>
-document.write(`
-  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
-    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
-    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
-  </button>
-`);
-</script>
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
 
 
-<script>
-document.write(`
-  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
-  </button>
-`);
-</script>
+</button>
 <button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
 </button>
@@ -401,38 +389,41 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Day 13 - Conservative Forces</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#announcements">Announcements</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#seminars-this-week">Seminars this week</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#wednesday-september-24-2025">WEDNESDAY, September 24, 2025</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Day 13 - Conservative Forces</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#announcements">Announcements</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reminder-of-our-midterm-procedures">Reminder of our Midterm Procedures</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#seminars-this-week">Seminars this week</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#wednesday-february-11-2026">WEDNESDAY, February 11, 2026</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Seminars this week</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#thursday-september-25-2025-promotion-talk">THURSDAY, September 25, 2025 (Promotion Talk!)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Seminars this week</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">WEDNESDAY, February 11, 2026</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Seminars this week</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#friday-september-26-2025">FRIDAY, September 26, 2025</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Seminars this week</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#friday-february-13-2026">FRIDAY, February 13, 2026</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Seminars this week</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">FRIDAY, September 26, 2025</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#this-week-s-goals">This Week’s Goals</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#this-week-s-goals">This Week’s Goals</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#reminders">Reminders</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#conservation-of-energy">Conservation of Energy</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#the-potential-energy-function">The Potential Energy Function</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#simple-harmonic-oscillator-f-s-kx">Simple Harmonic Oscillator (<span class="math notranslate nohighlight">\(F_{s} = -kx\)</span>)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#reminders">Reminders</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conservation-of-energy">Conservation of Energy</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-potential-energy-function-sho-f-s-kx">The Potential Energy Function (SHO, <span class="math notranslate nohighlight">\(F_{s} = -kx\)</span>)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-13-1">Clicker Question 13-1</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-13-2">Clicker Question 13-2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-13-3">Clicker Question 13-3</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-13-4">Clicker Question 13-4</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-13-5">Clicker Question 13-5</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-13-6">Clicker Question 13-6</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hw-4-exercise-2-sliding-puck">HW 4 Exercise 2, Sliding puck</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">HW 4 Exercise 2, Sliding puck</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">HW 4 Exercise 2, Sliding puck</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hw-4-exercise-3-example-of-potential">HW 4 Exercise 3, Example of potential</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">HW 4 Exercise 3, Example of potential</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">HW 4 Exercise 3, Example of potential</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-13-1">Clicker Question 13-1</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-13-2">Clicker Question 13-2</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-13-3">Clicker Question 13-3</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-13-4">Clicker Question 13-4</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-13-5">Clicker Question 13-5</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Clicker Question 13-5</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-13-6">Clicker Question 13-6</a></li>
 </ul>
 
             </nav>
@@ -445,7 +436,128 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="day-13-conservative-forces">
+  <style>
+  :root {
+    --color-spartan-green: #18453B;
+    --color-msu-gold: #C1B000;
+    --color-light-gray: #f5f5f5;
+    --color-dark-text: #1a1a1a;
+    --color-accent-green: #2d5f4f;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    color: var(--color-dark-text);
+  }
+  
+  h1, h2, h3 {
+    color: var(--color-spartan-green);
+    font-weight: 500;
+  }
+  
+  h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0rem;
+  }
+  
+  h2 {
+    font-size: 1.55rem;
+    margin-bottom: 1.0rem;
+    border-bottom: 4px solid var(--color-spartan-green);
+    padding-bottom: 0.5rem;
+  }
+  
+  h3 {
+    font-size: 1.15rem;
+    margin-top: 1rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  section {
+    padding: 2rem;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .equation {
+    background-color: var(--color-light-gray);
+    padding: 1.5rem;
+    border-left: 4px solid var(--color-msu-gold);
+    margin: 1.5rem 0;
+    font-size: 1.3rem;
+    text-align: center;
+    color: var(--color-dark-text);
+  }
+
+  p {
+    font-size: 1.15rem;
+    line-height: 1.4;
+    margin-bottom: 0.5rem;
+  }
+  
+  ul, ol {
+    font-size: 1.15rem;
+    line-height: 1.4;
+    margin-left: 0.5rem;
+  }
+
+  ul ul, ol ol, ul ol, ol ul {
+    margin-left: 0.1rem;
+  }
+  
+  li {
+    margin-bottom: 0rem;
+    line-height: 1.4;
+  }
+  
+  strong {
+    color: var(--color-spartan-green);
+    font-weight: 600;
+  }
+  
+  em {
+    color: var(--color-accent-green);
+  }
+
+  .highlight {
+    background-color: var(--color-light-gray);
+    padding: 1.5rem;
+    border-left: 4px solid var(--color-spartan-green);
+    margin: 1.5rem 0;
+  }
+
+  .activity {
+    background-color: #fff8e1;
+    border: 2px solid var(--color-msu-gold);
+    padding: 1.25rem;
+    border-radius: 6px;
+    margin: 1rem 0;
+  }
+
+  code {
+    background-color: var(--color-light-gray);
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-size: 1.0rem;
+  }
+
+  .footnote {
+    font-size: 0.8rem;
+    color: #999;
+    margin-top: 1.5rem;
+    border-top: 1px solid #ddd;
+    padding-top: 0.75rem;
+  }
+</style>
+<!--
+_class: title
+_backgroundColor: #ffffff
+_color: #18453B
+-->
+<section id="day-13-conservative-forces">
 <h1>Day 13 - Conservative Forces<a class="headerlink" href="#day-13-conservative-forces" title="Link to this heading">#</a></h1>
 <p><img alt="Conservative Forces bg right 100%" src="../_images/conservative-forces.png" /></p>
 <div class="math notranslate nohighlight">
@@ -454,87 +566,85 @@ document.write(`
 \[U = - \int \vec{F} \cdot d\vec{r}\]</div>
 <div class="math notranslate nohighlight">
 \[\nabla \times \vec{F} = 0\]</div>
-</section>
 <hr class="docutils" />
 <section id="announcements">
-<h1>Announcements<a class="headerlink" href="#announcements" title="Link to this heading">#</a></h1>
+<h2>Announcements<a class="headerlink" href="#announcements" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p>HW 4 is due Friday</p>
+<li><p><strong>Homework 4 is posted</strong> (due Friday; late after Sunday)</p></li>
+<li><p><strong>First midterm is posted</strong> (assigned Monday, 16 Feb)</p></li>
+<li><p><strong>There will be no class/office hours on Friday</strong></p>
 <ul>
-<li><p><strong>Friday’s Class:</strong> We will work HW 4 Exercise 4 together + Q&amp;A</p></li>
-<li><p>Friday Office Hours (14:00-16:00; 1248 BPS)</p></li>
+<li><p>Observance plans are posted on Spartans Together: <a class="reference external" href="https://spartanstogether.msu.edu/plans-feb-13-2026">https://spartanstogether.msu.edu/plans-feb-13-2026</a></p></li>
 </ul>
 </li>
-<li><p>Midterm 1 is available now</p>
+<li><p><strong>Need help this week?</strong> Make an appointment with Danny: <a class="reference external" href="https://cal.com/dannycaballero/phy-321">https://cal.com/dannycaballero/phy-321</a></p></li>
+<li><p>We will work Exercise 2 and 3 from Homework 4 in class today</p></li>
+<li><p><strong>Homework 2 is re-opened for labeling (due this Friday)</strong></p>
 <ul>
-<li><p>We will talk about it Monday (come with questions)</p></li>
-<li><p>There will be no office hours on Oct 3rd (DC traveling)</p></li>
+<li><p>This is the only reprieve for Homework 2. DC will not re-open it again.</p></li>
 </ul>
 </li>
 </ul>
+</section>
+<hr class="docutils" />
+<section id="reminder-of-our-midterm-procedures">
+<h2>Reminder of our Midterm Procedures<a class="headerlink" href="#reminder-of-our-midterm-procedures" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>The take-home midterms will be open for almost two weeks; you can often start some exercises early as they cover older material.</p></li>
+<li><p>They are meant to be challenging, but we will provide you with the resources and support you need to complete them.</p></li>
+<li><p>There is no homework due during the period in which the midterm is assigned.</p></li>
+<li><p>In contrast to homework assignments, DC will not work any exercises directly</p></li>
+</ul>
+<p>You may work closely together with me, Mihir, and your classmates, but you and your partner must write up your own solutions.</p>
 </section>
 <hr class="docutils" />
 <section id="seminars-this-week">
-<h1>Seminars this week<a class="headerlink" href="#seminars-this-week" title="Link to this heading">#</a></h1>
-<section id="wednesday-september-24-2025">
-<h2>WEDNESDAY, September 24, 2025<a class="headerlink" href="#wednesday-september-24-2025" title="Link to this heading">#</a></h2>
-<p>Astronomy Seminar, 1:30 pm, 1400 BPS, In Person and Zoom, Host~
-Speaker: Kosuke Namekata, NAOJ
-Title:
-Zoom Link: <a class="reference external" href="https://msu.zoom.us/j/887295421?pwd=N1NFb0tVU29JL2FFSkk0cStpanR3UT09">https://msu.zoom.us/j/887295421?pwd=N1NFb0tVU29JL2FFSkk0cStpanR3UT09</a>
-Meeting ID: 887-295-421
-Passcode: 002454</p>
+<h2>Seminars this week<a class="headerlink" href="#seminars-this-week" title="Link to this heading">#</a></h2>
+<section id="wednesday-february-11-2026">
+<h3>WEDNESDAY, February 11, 2026<a class="headerlink" href="#wednesday-february-11-2026" title="Link to this heading">#</a></h3>
+<p>Astronomy Seminar, 1:30 p.m., BPS 1400 &amp; Zoom
+Speaker: Evan Kirby, Notre Dame
+Title: TBA
+Zoom Link: <a class="reference external" href="https://msu.zoom.us/j/93334479606?pwd=OtIXPWhRPBfzYu53sl3trSJlaBYI7C.1">https://msu.zoom.us/j/93334479606?pwd=OtIXPWhRPBfzYu53sl3trSJlaBYI7C.1</a>
+Passcode:  825824</p>
 </section>
 </section>
 <hr class="docutils" />
 <section id="id1">
-<h1>Seminars this week<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
-<section id="thursday-september-25-2025-promotion-talk">
-<h2>THURSDAY, September 25, 2025 (Promotion Talk!)<a class="headerlink" href="#thursday-september-25-2025-promotion-talk" title="Link to this heading">#</a></h2>
-<p>Colloquium, 3:30 pm, 1415 BPS, in person and zoom.  Host ~<br />
-Refreshments and social half-hour in BPS 1400 starting at 3 pm
-Speaker: Wolfgang Kerzendorf, MSU - (PTRC)
-Title: Calibrating Stellar Explosions as Probes of the Evolving Universe
-Background:
-For more information and to schedule time with the speaker, see the colloquium calendar at <a class="reference external" href="https://pa.msu.edu/news-events-seminars/colloquium-schedule.aspx">https://pa.msu.edu/news-events-seminars/colloquium-schedule.aspx</a>
-Zoom Link: <a class="reference external" href="https://msu.zoom.us/j/94951062663">https://msu.zoom.us/j/94951062663</a>
-Password: 2002  Or complete link:  <a class="reference external" href="https://msu.zoom.us/j/94951062663?pwd=c48uM25P9UsRVuR74rkOioOWgpoxgC.1">https://msu.zoom.us/j/94951062663?pwd=c48uM25P9UsRVuR74rkOioOWgpoxgC.1</a></p>
-</section>
-</section>
-<hr class="docutils" />
+<h2>Seminars this week<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
 <section id="id2">
-<h1>Seminars this week<a class="headerlink" href="#id2" title="Link to this heading">#</a></h1>
-<section id="friday-september-26-2025">
-<h2>FRIDAY, September 26, 2025<a class="headerlink" href="#friday-september-26-2025" title="Link to this heading">#</a></h2>
-<p>QuIC Seminar, 12:30pm, -1:30pm, 1300 BPS, In Person<br />
-Speaker: Alexei Bazavov, MSU
-Title: Efficient State Preparation for the Schwinger Model
-Full Scheule is at: <a class="reference external" href="https://sites.google.com/msu.edu/quic-seminar/">https://sites.google.com/msu.edu/quic-seminar/</a>
-For more information, reach out to Ryan LaRose</p>
+<h3>WEDNESDAY, February 11, 2026<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
+<p>FRIB Nuclear Science Seminar, 3:30 p.m., FRIB 1300 &amp; Zoom
+Speaker: Kyle Godbey, FRIB
+Title: What’s Driving the New Era of Discovery in Nuclear Science?
+Zoom Link: <a class="reference external" href="https://msu.zoom.us/j/99975564296?pwd=e3puzoZ4Yu7m6CiCf7SWiaKjvxgCwu.1">https://msu.zoom.us/j/99975564296?pwd=e3puzoZ4Yu7m6CiCf7SWiaKjvxgCwu.1</a>
+Passcode: 569117</p>
 </section>
 </section>
 <hr class="docutils" />
 <section id="id3">
-<h1>Seminars this week<a class="headerlink" href="#id3" title="Link to this heading">#</a></h1>
-<section id="id4">
-<h2>FRIDAY, September 26, 2025<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
-<p>IReNA Online Seminar, 2:00 pm, In Person and Zoom, FRIB 2025 Nuclear Conference Room, Light refreshments will be served at 1:50pm.
-Hosted by: Steffen Turkat (TU Dresden, Germany)
-Speaker:  Dominik Koll, HZDR, Germany
-Title: The search for freshly synthesized radionuclides from stellar explosions on Earth
+<h2>Seminars this week<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
+<section id="friday-february-13-2026">
+<h3>FRIDAY, February 13, 2026<a class="headerlink" href="#friday-february-13-2026" title="Link to this heading">#</a></h3>
+<p>IReNA Online Seminar, 2:00 pm, Zoom
+Light refreshments at 1:50pm in 2025 Nuclear Conference Room - FRIB
+Hosted by: Artemis Tsantiri (University of Regina, Canada)
+Speaker: Thanassis Psaltis, Saint Mary’s University - Canada
+Title: Nuclear physics constraints on the γ-ray signatures of core-collapse supernovae
 Zoom Link: <a class="reference external" href="https://msu.zoom.us/j/827950260">https://msu.zoom.us/j/827950260</a>
-Password: JINA</p>
+Password: CENAM</p>
 </section>
 </section>
 <hr class="docutils" />
 <section id="this-week-s-goals">
-<h1>This Week’s Goals<a class="headerlink" href="#this-week-s-goals" title="Link to this heading">#</a></h1>
+<h2>This Week’s Goals<a class="headerlink" href="#this-week-s-goals" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>Remind ourselves of the concept of energy and energy conservation</p></li>
 <li><p>Apply the conservation of energy to a variety of systems</p></li>
 <li><p>Develop the mathematical tools to analyze energy conservation in more complex systems</p></li>
 <li><p>Connect our new understanding of energy conservation to our previous work on forces and motion</p></li>
 </ul>
+</section>
 </section>
 <hr class="docutils" />
 <section id="reminders">
@@ -545,10 +655,9 @@ Password: JINA</p>
 <li><p>A point particle is a model that allows us to ignore the internal structure of an object.</p></li>
 <li><p>The Work-Energy Theorem is just a statement of the conservation of energy for a point particle.</p></li>
 </ul>
-</section>
 <hr class="docutils" />
 <section id="conservation-of-energy">
-<h1>Conservation of Energy<a class="headerlink" href="#conservation-of-energy" title="Link to this heading">#</a></h1>
+<h2>Conservation of Energy<a class="headerlink" href="#conservation-of-energy" title="Link to this heading">#</a></h2>
 <p><strong>General Principle</strong>: Energy is conserved in every process.</p>
 <div class="math notranslate nohighlight">
 \[\Delta E_{sys} = W + Q\]</div>
@@ -560,10 +669,8 @@ Password: JINA</p>
 \[\Delta K =  W_{\text{ext}}\]</div>
 </section>
 <hr class="docutils" />
-<section id="the-potential-energy-function">
-<h1>The Potential Energy Function<a class="headerlink" href="#the-potential-energy-function" title="Link to this heading">#</a></h1>
-<section id="simple-harmonic-oscillator-f-s-kx">
-<h2>Simple Harmonic Oscillator (<span class="math notranslate nohighlight">\(F_{s} = -kx\)</span>)<a class="headerlink" href="#simple-harmonic-oscillator-f-s-kx" title="Link to this heading">#</a></h2>
+<section id="the-potential-energy-function-sho-f-s-kx">
+<h2>The Potential Energy Function (SHO, <span class="math notranslate nohighlight">\(F_{s} = -kx\)</span>)<a class="headerlink" href="#the-potential-energy-function-sho-f-s-kx" title="Link to this heading">#</a></h2>
 <div class="math notranslate nohighlight">
 \[\Delta K = W_{s}\]</div>
 <div class="math notranslate nohighlight">
@@ -577,10 +684,9 @@ Password: JINA</p>
 <div class="math notranslate nohighlight">
 \[U_s = \dfrac{1}{2} k x^2\]</div>
 </section>
-</section>
 <hr class="docutils" />
 <section id="clicker-question-13-1">
-<h1>Clicker Question 13-1<a class="headerlink" href="#clicker-question-13-1" title="Link to this heading">#</a></h1>
+<h2>Clicker Question 13-1<a class="headerlink" href="#clicker-question-13-1" title="Link to this heading">#</a></h2>
 <p>The gravitation force near the Earth’s surface is given by <span class="math notranslate nohighlight">\(\vec{F} = -mg\hat{z}\)</span>. What is the potential energy function for this force? Choose <span class="math notranslate nohighlight">\(+\hat{z}\)</span> to be up.</p>
 <ol class="arabic simple">
 <li><p><span class="math notranslate nohighlight">\(U = -mgz\)</span></p></li>
@@ -592,41 +698,32 @@ Password: JINA</p>
 </section>
 <hr class="docutils" />
 <section id="clicker-question-13-2">
-<h1>Clicker Question 13-2<a class="headerlink" href="#clicker-question-13-2" title="Link to this heading">#</a></h1>
-<p>A model for a lattice chain acting on a electron is given by <span class="math notranslate nohighlight">\(F(x) = - F_0 \sin\left(\dfrac{2\pi x}{b}\right)\)</span>. What is the potential energy function for this force?</p>
+<h2>Clicker Question 13-2<a class="headerlink" href="#clicker-question-13-2" title="Link to this heading">#</a></h2>
+<p>A model for a lattice chain acting on a electron is given by <span class="math notranslate nohighlight">\(F(x) = - F_0 \sin\left(\frac{2\pi x}{b}\right)\)</span>. What is the potential energy function for this force?</p>
 <ol class="arabic simple">
-<li><p><span class="math notranslate nohighlight">\(U = -F_0 \cos\left(\dfrac{2\pi x}{b}\right)\)</span></p></li>
-<li><p><span class="math notranslate nohighlight">\(U = F_0 \cos\left(\dfrac{2\pi x}{b}\right)\)</span></p></li>
-<li><p><span class="math notranslate nohighlight">\(U = -\dfrac{F_0 b}{2\pi} \cos\left(\dfrac{2\pi x}{b}\right)\)</span></p></li>
-<li><p><span class="math notranslate nohighlight">\(U = \dfrac{F_0 b}{2\pi} \cos\left(\dfrac{2\pi x}{b}\right)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(U = -F_0 \cos\left(\frac{2\pi x}{b}\right)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(U = F_0 \cos\left(\frac{2\pi x}{b}\right)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(U = -\frac{F_0 b}{2\pi} \cos\left(\frac{2\pi x}{b}\right)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(U = \frac{F_0 b}{2\pi} \cos\left(\frac{2\pi x}{b}\right)\)</span></p></li>
 <li><p>None of the above</p></li>
 </ol>
 </section>
 <hr class="docutils" />
 <section id="clicker-question-13-3">
-<h1>Clicker Question 13-3<a class="headerlink" href="#clicker-question-13-3" title="Link to this heading">#</a></h1>
-<p>I say “Stokes’ Theorem” and you say…</p>
-<p><img alt="Gravedigger bg left " src="../_images/gravedigger.png" /></p>
-<ol class="arabic simple">
-<li><p>HELL YEAH BROTHER 🤘</p></li>
-<li><p>I’m not sure what that is 🤷</p></li>
-<li><p>DEAR GOD WHY?!?! 😭</p></li>
-</ol>
-</section>
-<hr class="docutils" />
-<section id="clicker-question-13-4">
-<h1>Clicker Question 13-4<a class="headerlink" href="#clicker-question-13-4" title="Link to this heading">#</a></h1>
-<p>The curl of a vector field is given by <span class="math notranslate nohighlight">\(\nabla \times \vec{F}\)</span>. If the curl of a vector field is zero, what can we say about the vector field?</p>
+<h2>Clicker Question 13-3<a class="headerlink" href="#clicker-question-13-3" title="Link to this heading">#</a></h2>
+<p>The curl of a vector field is given by <span class="math notranslate nohighlight">\(\nabla \times \vec{F}\)</span>.</p>
+<p>If the curl of a vector field is zero, what can we say about the vector field?</p>
 <ol class="arabic simple">
 <li><p>It is a conservative force</p></li>
 <li><p>It is a non-conservative force</p></li>
 <li><p>It is a constant force</p></li>
 <li><p>It is a force that does no work</p></li>
+<li><p>Some combination of the above</p></li>
 </ol>
 </section>
 <hr class="docutils" />
-<section id="clicker-question-13-5">
-<h1>Clicker Question 13-5<a class="headerlink" href="#clicker-question-13-5" title="Link to this heading">#</a></h1>
+<section id="clicker-question-13-4">
+<h2>Clicker Question 13-4<a class="headerlink" href="#clicker-question-13-4" title="Link to this heading">#</a></h2>
 <p>Which of the following fields have no divergence?</p>
 <div style="display: flex; align-items: center; gap: 20px; max-width: 800px; margin: 0 auto; white-space: nowrap; height: 400px;">
   A. <img src="../images/notes/week5/cq_left_field.png" alt="A" width="400">
@@ -640,8 +737,8 @@ Password: JINA</p>
 </ol>
 </section>
 <hr class="docutils" />
-<section id="id5">
-<h1>Clicker Question 13-5<a class="headerlink" href="#id5" title="Link to this heading">#</a></h1>
+<section id="clicker-question-13-5">
+<h2>Clicker Question 13-5<a class="headerlink" href="#clicker-question-13-5" title="Link to this heading">#</a></h2>
 <p>Which of the following fields have no curl?</p>
 <div style="display: flex; align-items: center; gap: 20px; max-width: 800px; margin: 0 auto; white-space: nowrap; height: 400px;">
   A. <img src="../images/notes/week5/cq_left_field.png" alt="A" width="400">
@@ -656,7 +753,7 @@ Password: JINA</p>
 </section>
 <hr class="docutils" />
 <section id="clicker-question-13-6">
-<h1>Clicker Question 13-6<a class="headerlink" href="#clicker-question-13-6" title="Link to this heading">#</a></h1>
+<h2>Clicker Question 13-6<a class="headerlink" href="#clicker-question-13-6" title="Link to this heading">#</a></h2>
 <p>Consider a vector field with zero curl: <span class="math notranslate nohighlight">\(\nabla \times \vec{F} = 0\)</span>. Which of the following statements is true?</p>
 <ol class="arabic simple">
 <li><p>The field is conservative</p></li>
@@ -665,6 +762,71 @@ Password: JINA</p>
 <li><p><span class="math notranslate nohighlight">\(\vec{F}\)</span> is the gradient of some scalar function, e.g., <span class="math notranslate nohighlight">\(\vec{F} = - \nabla U\)</span></p></li>
 <li><p>Some combination of the above</p></li>
 </ol>
+</section>
+<hr class="docutils" />
+<section id="hw-4-exercise-2-sliding-puck">
+<h2>HW 4 Exercise 2, Sliding puck<a class="headerlink" href="#hw-4-exercise-2-sliding-puck" title="Link to this heading">#</a></h2>
+<p>A small puck rests on a fixed sphere of radius <span class="math notranslate nohighlight">\(R\)</span>. The puck is given a tiny nudge and it slides down the sphere. Using conservation of energy, we can determine the point at which the puck leaves the sphere.</p>
+<ul class="simple">
+<li><p>2a Setup the problem with a sketch. Explain the setup and include any assumptions that you need to make in order to solve the problem analytically. Identify the height as a function of the polar angle, <span class="math notranslate nohighlight">\(h(\theta)\)</span>. What is the maximum possible angle <span class="math notranslate nohighlight">\(\theta\)</span> that the puck could reach before falling off? Why?</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="id4">
+<h2>HW 4 Exercise 2, Sliding puck<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
+<p>A small puck rests on a fixed sphere of radius <span class="math notranslate nohighlight">\(R\)</span>. The puck is given a tiny nudge and it slides down the sphere. Using conservation of energy, we can determine the point at which the puck leaves the sphere.</p>
+<ul class="simple">
+<li><p>2b Use conservation of energy to find the speed of the puck as a function of it’s height. Your answer should be in terms of the polar angle, <span class="math notranslate nohighlight">\(\theta\)</span>.</p></li>
+<li><p>2c Use Newton’s Second Law to find the normal force acting on the puck as a function of it’s height. Your answer should be in terms of the polar angle, <span class="math notranslate nohighlight">\(\theta\)</span>. What is the condition for the puck to leave the sphere?</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="id5">
+<h2>HW 4 Exercise 2, Sliding puck<a class="headerlink" href="#id5" title="Link to this heading">#</a></h2>
+<p>A small puck rests on a fixed sphere of radius <span class="math notranslate nohighlight">\(R\)</span>. The puck is given a tiny nudge and it slides down the sphere. Using conservation of energy, we can determine the point at which the puck leaves the sphere.</p>
+<ul class="simple">
+<li><p>2d At what angle and height does the puck leave the sphere?</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="hw-4-exercise-3-example-of-potential">
+<h2>HW 4 Exercise 3, Example of potential<a class="headerlink" href="#hw-4-exercise-3-example-of-potential" title="Link to this heading">#</a></h2>
+<p>Consider a particle of mass <span class="math notranslate nohighlight">\(m\)</span> moving according to the potential:</p>
+<div class="math notranslate nohighlight">
+\[
+V(x,y,z)=A\exp\left\{-\frac{x^2+z^2}{2a^2}\right\}.
+\]</div>
+<p>We can think of this potential as the energy landscape of a particle in three dimensions. That is, you can imagine a particle moving around this potential like a ball rolling around a landscape. That analogy is not perfect, but it is a good way to help us think about stability and equilibrium.</p>
+<ul class="simple">
+<li><p>3a Plot this potential or sketch a plot of it. You can use perspective plots, contour plots or any other plot you find useful.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="id6">
+<h2>HW 4 Exercise 3, Example of potential<a class="headerlink" href="#id6" title="Link to this heading">#</a></h2>
+<p>Consider a particle of mass <span class="math notranslate nohighlight">\(m\)</span> moving according to the potential:</p>
+<div class="math notranslate nohighlight">
+\[
+V(x,y,z)=A\exp\left\{-\frac{x^2+z^2}{2a^2}\right\}.
+\]</div>
+<ul class="simple">
+<li><p>3b What are some feature you notice with this potential? What happens when you change <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(a\)</span>?</p></li>
+<li><p>3c Imagine a particle moving in this potential, what are some expected trajectories?</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="id7">
+<h2>HW 4 Exercise 3, Example of potential<a class="headerlink" href="#id7" title="Link to this heading">#</a></h2>
+<p>Consider a particle of mass <span class="math notranslate nohighlight">\(m\)</span> moving according to the potential:</p>
+<div class="math notranslate nohighlight">
+\[
+V(x,y,z)=A\exp\left\{-\frac{x^2+z^2}{2a^2}\right\}.
+\]</div>
+<ul class="simple">
+<li><p>3d Do there appear to be any equilibrium points? If so, are they stable or unstable?</p></li>
+<li><p>3e Is the resulting force conservative? Why?</p></li>
+</ul>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -704,7 +866,8 @@ Password: JINA</p>
             
             
               
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
 
   <div class="sidebar-secondary-item">
@@ -713,38 +876,41 @@ Password: JINA</p>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Day 13 - Conservative Forces</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#announcements">Announcements</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#seminars-this-week">Seminars this week</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#wednesday-september-24-2025">WEDNESDAY, September 24, 2025</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Day 13 - Conservative Forces</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#announcements">Announcements</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reminder-of-our-midterm-procedures">Reminder of our Midterm Procedures</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#seminars-this-week">Seminars this week</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#wednesday-february-11-2026">WEDNESDAY, February 11, 2026</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Seminars this week</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#thursday-september-25-2025-promotion-talk">THURSDAY, September 25, 2025 (Promotion Talk!)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Seminars this week</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">WEDNESDAY, February 11, 2026</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Seminars this week</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#friday-september-26-2025">FRIDAY, September 26, 2025</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Seminars this week</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#friday-february-13-2026">FRIDAY, February 13, 2026</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Seminars this week</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">FRIDAY, September 26, 2025</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#this-week-s-goals">This Week’s Goals</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#this-week-s-goals">This Week’s Goals</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#reminders">Reminders</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#conservation-of-energy">Conservation of Energy</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#the-potential-energy-function">The Potential Energy Function</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#simple-harmonic-oscillator-f-s-kx">Simple Harmonic Oscillator (<span class="math notranslate nohighlight">\(F_{s} = -kx\)</span>)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#reminders">Reminders</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conservation-of-energy">Conservation of Energy</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-potential-energy-function-sho-f-s-kx">The Potential Energy Function (SHO, <span class="math notranslate nohighlight">\(F_{s} = -kx\)</span>)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-13-1">Clicker Question 13-1</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-13-2">Clicker Question 13-2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-13-3">Clicker Question 13-3</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-13-4">Clicker Question 13-4</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-13-5">Clicker Question 13-5</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-13-6">Clicker Question 13-6</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hw-4-exercise-2-sliding-puck">HW 4 Exercise 2, Sliding puck</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">HW 4 Exercise 2, Sliding puck</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">HW 4 Exercise 2, Sliding puck</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hw-4-exercise-3-example-of-potential">HW 4 Exercise 3, Example of potential</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">HW 4 Exercise 3, Example of potential</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">HW 4 Exercise 3, Example of potential</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-13-1">Clicker Question 13-1</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-13-2">Clicker Question 13-2</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-13-3">Clicker Question 13-3</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-13-4">Clicker Question 13-4</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-13-5">Clicker Question 13-5</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Clicker Question 13-5</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-13-6">Clicker Question 13-6</a></li>
 </ul>
 
   </nav></div>
@@ -794,8 +960,8 @@ This work is licensed under a <a rel="license" href="https://creativecommons.org
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
 
   <footer class="bd-footer">
   </footer>
