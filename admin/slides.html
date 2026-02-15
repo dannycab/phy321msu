@@ -16,33 +16,30 @@
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
     document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
-  <!--
-    this give us a css class that will be invisible only if js is disabled
-  -->
-  <noscript>
-    <style>
-      .pst-js-only { display: none !important; }
-
-    </style>
-  </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
-    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
   
-  <!-- So that users can add custom icons -->
-  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
     <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
     <script src="../_static/doctools.js?v=9a2dae69"></script>
@@ -55,7 +52,7 @@
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../_static/design-tabs.js?v=36754332"></script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
@@ -67,7 +64,6 @@
     <link rel="prev" title="Reminders" href="reminders.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-  <meta name="docsearch:version" content="" />
   </head>
   
   
@@ -83,8 +79,19 @@
     <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
   
-  <dialog id="pst-search-dialog">
-    
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
 <form class="bd-search d-flex align-items-center"
       action="../search.html"
       method="get">
@@ -92,6 +99,7 @@
   <input type="search"
          class="form-control"
          name="q"
+         id="search-input"
          placeholder="Search this book..."
          aria-label="Search this book..."
          autocomplete="off"
@@ -99,8 +107,8 @@
          autocapitalize="off"
          spellcheck="false"/>
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form>
-  </dialog>
+</form></div>
+  </div>
 
   <div class="pst-async-banner-revealer d-none">
   <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
@@ -116,8 +124,7 @@
       
       
       
-      <dialog id="pst-primary-sidebar-modal"></dialog>
-      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+      <div class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -147,17 +154,21 @@
     
     
     <img src="../_static/spartan-helmet.png" class="logo__image only-light" alt="Classical Mechanics - Home"/>
-    <img src="../_static/spartan-helmet.png" class="logo__image only-dark pst-js-only" alt="Classical Mechanics - Home"/>
+    <script>document.write(`<img src="../_static/spartan-helmet.png" class="logo__image only-dark" alt="Classical Mechanics - Home"/>`);</script>
   
   
 </a></div>
         <div class="sidebar-primary-item">
 
-<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
- <i class="fa-solid fa-magnifying-glass"></i>
- <span class="search-button__default-text">Search</span>
- <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
-</button></div>
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
@@ -250,14 +261,9 @@
   
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
-      <div class="sidebar-primary-item">
-<div id="ethical-ad-placement"
-      class="flat"
-      data-ea-publisher="readthedocs"
-      data-ea-type="readthedocs-sidebar"
-      data-ea-manual="true">
-</div></div>
   </div>
+  
+  <div id="rtd-footer-container"></div>
 
 
       </div>
@@ -354,16 +360,24 @@
 
 
 
-<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
-  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
-  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
-  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
-</button>
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
 
 
-<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
-</button>
+  </button>
+`);
+</script>
 <button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
 </button>
@@ -387,6 +401,7 @@
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#day-14-potential-energy-and-stability-16-feb-2026">Day 14 - Potential Energy and Stability - 16 Feb 2026</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#day-13-conservative-forces-11-feb-2026">Day 13 - Conservative Forces - 11 Feb 2026</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#day-12-modeling-drag-09-feb-2026">Day 12 - Modeling Drag - 09 Feb 2026</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#day-11-help-session-06-feb-2026">Day 11 - Help Session - 06 Feb 2026</a></li>
@@ -740,38 +755,21 @@
 
 :::
 
----
-
-## Day 15 - Potential Energy and Stability - 29 Sep 2025
-
-[![Day 15](../slides/day-15-potential-energy-and-stability.png)](../slides/day-15-potential-energy-and-stability.pdf)
-
-:::info
-
-### 📂 Download Slides
-[HTML](../slides/day-15-potential-energy-and-stability.md) | [PDF](../slides/day-15-potential-energy-and-stability.pdf)
-
-:::
-
----
-
-## Day 14 - Help Session - 26 Sep 2025
-
-[![Day 14](../slides/day-14-homework-session.png)](../slides/day-14-homework-session.pdf)
-
-:::info
-
-### 📂 Download Slides
-[HTML](../slides/day-14-homework-session.md) | [PDF](../slides/day-14-homework-session.pdf)
-
-:::
-
 --- -->
+<section id="day-14-potential-energy-and-stability-16-feb-2026">
+<h2>Day 14 - Potential Energy and Stability - 16 Feb 2026<a class="headerlink" href="#day-14-potential-energy-and-stability-16-feb-2026" title="Link to this heading">#</a></h2>
+<p><a class="reference download internal" download="" href="../_downloads/ba551afef0f36c7f83fd508e07656e2c/day-14-potential-energy-and-stability.pdf"><span class="xref download myst"><img alt="Day 14" src="../_images/day-14-potential-energy-and-stability.png" /></span></a></p>
+<div class="info docutils">
+<h3 class="rubric" id="download-slides">📂 Download Slides</h3>
+<p><a class="reference internal" href="../slides/day-14-potential-energy-and-stability.html"><span class="std std-doc">HTML</span></a> | <a class="reference download internal" download="" href="../_downloads/ba551afef0f36c7f83fd508e07656e2c/day-14-potential-energy-and-stability.pdf"><span class="xref download myst">PDF</span></a></p>
+</div>
+</section>
+<hr class="docutils" />
 <section id="day-13-conservative-forces-11-feb-2026">
 <h2>Day 13 - Conservative Forces - 11 Feb 2026<a class="headerlink" href="#day-13-conservative-forces-11-feb-2026" title="Link to this heading">#</a></h2>
 <p><a class="reference download internal" download="" href="../_downloads/2f3ca841f1290524dae02d0f3c2535d5/day-13-conservative-forces.pdf"><span class="xref download myst"><img alt="Day 13" src="../_images/day-13-conservative-forces.png" /></span></a></p>
 <div class="info docutils">
-<h3 class="rubric" id="download-slides">📂 Download Slides</h3>
+<h3 class="rubric" id="id1">📂 Download Slides</h3>
 <p><a class="reference internal" href="../slides/day-13-conservative-forces.html"><span class="std std-doc">HTML</span></a> | <a class="reference download internal" download="" href="../_downloads/2f3ca841f1290524dae02d0f3c2535d5/day-13-conservative-forces.pdf"><span class="xref download myst">PDF</span></a></p>
 </div>
 </section>
@@ -780,7 +778,7 @@
 <h2>Day 12 - Modeling Drag - 09 Feb 2026<a class="headerlink" href="#day-12-modeling-drag-09-feb-2026" title="Link to this heading">#</a></h2>
 <p><a class="reference download internal" download="" href="../_downloads/91a5c6d863a0c0dc508feff38dfcb881/day-12-conservation-of-energy.pdf"><span class="xref download myst"><img alt="Day 12" src="../_images/day-12-conservation-of-energy.png" /></span></a></p>
 <div class="info docutils">
-<h3 class="rubric" id="id1">📂 Download Slides</h3>
+<h3 class="rubric" id="id2">📂 Download Slides</h3>
 <p><a class="reference internal" href="../slides/day-12-conservation-of-energy.html"><span class="std std-doc">HTML</span></a> | <a class="reference download internal" download="" href="../_downloads/91a5c6d863a0c0dc508feff38dfcb881/day-12-conservation-of-energy.pdf"><span class="xref download myst">PDF</span></a></p>
 </div>
 </section>
@@ -789,7 +787,7 @@
 <h2>Day 11 - Help Session - 06 Feb 2026<a class="headerlink" href="#day-11-help-session-06-feb-2026" title="Link to this heading">#</a></h2>
 <p><a class="reference download internal" download="" href="../_downloads/526cb61276bb69dc6f2ae03f945fcb7d/day-11-homework-session.pdf"><span class="xref download myst"><img alt="Day 11" src="../_images/day-11-homework-session.png" /></span></a></p>
 <div class="info docutils">
-<h3 class="rubric" id="id2">📂 Download Slides</h3>
+<h3 class="rubric" id="id3">📂 Download Slides</h3>
 <p><a class="reference internal" href="../slides/day-11-homework-session.html"><span class="std std-doc">HTML</span></a> | <a class="reference download internal" download="" href="../_downloads/526cb61276bb69dc6f2ae03f945fcb7d/day-11-homework-session.pdf"><span class="xref download myst">PDF</span></a></p>
 </div>
 </section>
@@ -798,7 +796,7 @@
 <h2>Day 10 - Modeling Drag - 04 Feb 2026<a class="headerlink" href="#day-10-modeling-drag-04-feb-2026" title="Link to this heading">#</a></h2>
 <p><a class="reference download internal" download="" href="../_downloads/bfd0aa15a8f10977239ff592a43d5af9/day-10-integrating-eoms-numerically.pdf"><span class="xref download myst"><img alt="Day 10" src="../_images/day-10-integrating-eoms-numerically.png" /></span></a></p>
 <div class="info docutils">
-<h3 class="rubric" id="id3">📂 Download Slides</h3>
+<h3 class="rubric" id="id4">📂 Download Slides</h3>
 <p><a class="reference internal" href="../slides/day-10-integrating-eoms-numerically.html"><span class="std std-doc">HTML</span></a> | <a class="reference download internal" download="" href="../_downloads/bfd0aa15a8f10977239ff592a43d5af9/day-10-integrating-eoms-numerically.pdf"><span class="xref download myst">PDF</span></a></p>
 <h3 class="rubric" id="programming-resources">💻 Programming Resources</h3>
 <ul class="simple">
@@ -812,7 +810,7 @@
 <h2>Day 09 - Modeling Drag - 02 Feb 2026<a class="headerlink" href="#day-09-modeling-drag-02-feb-2026" title="Link to this heading">#</a></h2>
 <p><a class="reference download internal" download="" href="../_downloads/c967d7524399b5e2871d08ccf1d31f39/day-09-modeling-drag.pdf"><span class="xref download myst"><img alt="Day 09" src="../_images/day-09-modeling-drag.png" /></span></a></p>
 <div class="info docutils">
-<h3 class="rubric" id="id4">📂 Download Slides</h3>
+<h3 class="rubric" id="id5">📂 Download Slides</h3>
 <p><a class="reference internal" href="../slides/day-09-modeling-drag.html"><span class="std std-doc">HTML</span></a> | <a class="reference download internal" download="" href="../_downloads/c967d7524399b5e2871d08ccf1d31f39/day-09-modeling-drag.pdf"><span class="xref download myst">PDF</span></a></p>
 </div>
 </section>
@@ -821,7 +819,7 @@
 <h2>Day 08 - Help Session - 30 Jan 2026<a class="headerlink" href="#day-08-help-session-30-jan-2026" title="Link to this heading">#</a></h2>
 <p><a class="reference download internal" download="" href="../_downloads/6ce296e66c58505987dcf2c499bb91ca/day-08-help-session.pdf"><span class="xref download myst"><img alt="Day 08" src="../_images/day-08-help-session.png" /></span></a></p>
 <div class="info docutils">
-<h3 class="rubric" id="id5">📂 Download Slides</h3>
+<h3 class="rubric" id="id6">📂 Download Slides</h3>
 <p><a class="reference internal" href="../slides/day-08-help-session.html"><span class="std std-doc">HTML</span></a> | <a class="reference download internal" download="" href="../_downloads/6ce296e66c58505987dcf2c499bb91ca/day-08-help-session.pdf"><span class="xref download myst">PDF</span></a></p>
 </div>
 </section>
@@ -830,7 +828,7 @@
 <h2>Day 07 - Drag Forces - 28 Jan 2026<a class="headerlink" href="#day-07-drag-forces-28-jan-2026" title="Link to this heading">#</a></h2>
 <p><a class="reference download internal" download="" href="../_downloads/0bb041192aeed3eb6219f150b5d11401/day-07-drag-forces.pdf"><span class="xref download myst"><img alt="Day 07" src="../_images/day-07-drag-forces.png" /></span></a></p>
 <div class="info docutils">
-<h3 class="rubric" id="id6">📂 Download Slides</h3>
+<h3 class="rubric" id="id7">📂 Download Slides</h3>
 <p><a class="reference internal" href="../slides/day-07-drag-forces.html"><span class="std std-doc">HTML</span></a> | <a class="reference download internal" download="" href="../_downloads/0bb041192aeed3eb6219f150b5d11401/day-07-drag-forces.pdf"><span class="xref download myst">PDF</span></a></p>
 </div>
 </section>
@@ -839,7 +837,7 @@
 <h2>Day 06 - Making Classical Models - 26 Jan 2026<a class="headerlink" href="#day-06-making-classical-models-26-jan-2026" title="Link to this heading">#</a></h2>
 <p><a class="reference download internal" download="" href="../_downloads/e069549d3dac0a6073e31da53102789b/day-06-making-classical-models.pdf"><span class="xref download myst"><img alt="Day 06" src="../_images/day-06-making-classical-models.png" /></span></a></p>
 <div class="info docutils">
-<h3 class="rubric" id="id7">📂 Download Slides</h3>
+<h3 class="rubric" id="id8">📂 Download Slides</h3>
 <p><a class="reference internal" href="../slides/day-06-making-classical-models.html"><span class="std std-doc">HTML</span></a> | <a class="reference download internal" download="" href="../_downloads/e069549d3dac0a6073e31da53102789b/day-06-making-classical-models.pdf"><span class="xref download myst">PDF</span></a></p>
 </div>
 </section>
@@ -848,7 +846,7 @@
 <h2>Day 05 - Workshop Day - 23 Jan 2026<a class="headerlink" href="#day-05-workshop-day-23-jan-2026" title="Link to this heading">#</a></h2>
 <p><a class="reference download internal" download="" href="../_downloads/630582404f1874d438216ec272578b58/day-05-help-session.pdf"><span class="xref download myst"><img alt="Day 05" src="../_images/day-05-help-session.png" /></span></a></p>
 <div class="info docutils">
-<h3 class="rubric" id="id8">📂 Download Slides</h3>
+<h3 class="rubric" id="id9">📂 Download Slides</h3>
 <p><a class="reference internal" href="../slides/day-05-help-session.html"><span class="std std-doc">HTML</span></a> | <a class="reference download internal" download="" href="../_downloads/630582404f1874d438216ec272578b58/day-05-help-session.pdf"><span class="xref download myst">PDF</span></a></p>
 </div>
 </section>
@@ -857,7 +855,7 @@
 <h2>Day 04 - Mathematical Prelims - 21 Jan 2026<a class="headerlink" href="#day-04-mathematical-prelims-21-jan-2026" title="Link to this heading">#</a></h2>
 <p><a class="reference download internal" download="" href="../_downloads/5fe27061ea20da1094cfef6f12e1bea6/day-04-mathematical-prelims.pdf"><span class="xref download myst"><img alt="Day 04" src="../_images/day-04-mathematical-prelims.png" /></span></a></p>
 <div class="info docutils">
-<h3 class="rubric" id="id9">📂 Download Slides</h3>
+<h3 class="rubric" id="id10">📂 Download Slides</h3>
 <p><a class="reference internal" href="../slides/day-04-mathematical-prelims.html"><span class="std std-doc">HTML</span></a> | <a class="reference download internal" download="" href="../_downloads/5fe27061ea20da1094cfef6f12e1bea6/day-04-mathematical-prelims.pdf"><span class="xref download myst">PDF</span></a></p>
 </div>
 </section>
@@ -866,7 +864,7 @@
 <h2>Day 03 - Computing Setup - 16 Jan 2026<a class="headerlink" href="#day-03-computing-setup-16-jan-2026" title="Link to this heading">#</a></h2>
 <p><a class="reference download internal" download="" href="../_downloads/5f2c5058aa52d92d25facd013483a265/day-03-computing-setup.pdf"><span class="xref download myst"><img alt="Day 03" src="../_images/day-03-computing-setup.png" /></span></a></p>
 <div class="info docutils">
-<h3 class="rubric" id="id10">📂 Download Slides</h3>
+<h3 class="rubric" id="id11">📂 Download Slides</h3>
 <p><a class="reference internal" href="../slides/day-03-computing-setup.html"><span class="std std-doc">HTML</span></a> | <a class="reference download internal" download="" href="../_downloads/5f2c5058aa52d92d25facd013483a265/day-03-computing-setup.pdf"><span class="xref download myst">PDF</span></a></p>
 </div>
 </section>
@@ -875,7 +873,7 @@
 <h2>Day 02 - Newton’s Laws - 14 Jan 2026<a class="headerlink" href="#day-02-newton-s-laws-14-jan-2026" title="Link to this heading">#</a></h2>
 <p><a class="reference download internal" download="" href="../_downloads/2ea552added26ee8087e0ba2a6ed05b4/day-02-newtons-laws.pdf"><span class="xref download myst"><img alt="Day 02" src="../_images/day-02-newtons-laws.png" /></span></a></p>
 <div class="info docutils">
-<h3 class="rubric" id="id11">📂 Download Slides</h3>
+<h3 class="rubric" id="id12">📂 Download Slides</h3>
 <p><a class="reference internal" href="../slides/day-02-newtons-laws.html"><span class="std std-doc">HTML</span></a> | <a class="reference download internal" download="" href="../_downloads/2ea552added26ee8087e0ba2a6ed05b4/day-02-newtons-laws.pdf"><span class="xref download myst">PDF</span></a></p>
 </div>
 </section>
@@ -883,7 +881,7 @@
 <h2>Day 01 - Introduction - 12 Jan 2026<a class="headerlink" href="#day-01-introduction-12-jan-2026" title="Link to this heading">#</a></h2>
 <p><a class="reference download internal" download="" href="../_downloads/81d7539331cde5705e4f8080fe40591d/day-01-introduction.pdf"><span class="xref download myst"><img alt="Day 01" src="../_images/day-01-introduction.png" /></span></a></p>
 <div class="info docutils">
-<h3 class="rubric" id="id12">📂 Download Slides</h3>
+<h3 class="rubric" id="id13">📂 Download Slides</h3>
 <p><a class="reference internal" href="../slides/day-01-introduction.html"><span class="std std-doc">HTML</span></a> | <a class="reference download internal" download="" href="../_downloads/81d7539331cde5705e4f8080fe40591d/day-01-introduction.pdf"><span class="xref download myst">PDF</span></a></p>
 </div>
 </section>
@@ -944,8 +942,7 @@
             
             
               
-                <dialog id="pst-secondary-sidebar-modal"></dialog>
-                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
 
   <div class="sidebar-secondary-item">
@@ -954,6 +951,7 @@
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#day-14-potential-energy-and-stability-16-feb-2026">Day 14 - Potential Energy and Stability - 16 Feb 2026</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#day-13-conservative-forces-11-feb-2026">Day 13 - Conservative Forces - 11 Feb 2026</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#day-12-modeling-drag-09-feb-2026">Day 12 - Modeling Drag - 09 Feb 2026</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#day-11-help-session-06-feb-2026">Day 11 - Help Session - 06 Feb 2026</a></li>
@@ -1015,8 +1013,8 @@ This work is licensed under a <a rel="license" href="https://creativecommons.org
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
-<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
 
   <footer class="bd-footer">
   </footer>

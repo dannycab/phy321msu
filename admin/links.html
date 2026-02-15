@@ -16,33 +16,30 @@
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
     document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
-  <!--
-    this give us a css class that will be invisible only if js is disabled
-  -->
-  <noscript>
-    <style>
-      .pst-js-only { display: none !important; }
-
-    </style>
-  </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
-    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
   
-  <!-- So that users can add custom icons -->
-  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
     <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
     <script src="../_static/doctools.js?v=9a2dae69"></script>
@@ -55,7 +52,7 @@
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../_static/design-tabs.js?v=36754332"></script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
@@ -65,7 +62,6 @@
     <link rel="search" title="Search" href="../search.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-  <meta name="docsearch:version" content="" />
   </head>
   
   
@@ -81,8 +77,19 @@
     <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
   
-  <dialog id="pst-search-dialog">
-    
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
 <form class="bd-search d-flex align-items-center"
       action="../search.html"
       method="get">
@@ -90,6 +97,7 @@
   <input type="search"
          class="form-control"
          name="q"
+         id="search-input"
          placeholder="Search this book..."
          aria-label="Search this book..."
          autocomplete="off"
@@ -97,8 +105,8 @@
          autocapitalize="off"
          spellcheck="false"/>
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form>
-  </dialog>
+</form></div>
+  </div>
 
   <div class="pst-async-banner-revealer d-none">
   <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
@@ -116,8 +124,7 @@
       
         
       
-      <dialog id="pst-primary-sidebar-modal"></dialog>
-      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+      <div class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -147,17 +154,21 @@
     
     
     <img src="../_static/spartan-helmet.png" class="logo__image only-light" alt="Classical Mechanics - Home"/>
-    <img src="../_static/spartan-helmet.png" class="logo__image only-dark pst-js-only" alt="Classical Mechanics - Home"/>
+    <script>document.write(`<img src="../_static/spartan-helmet.png" class="logo__image only-dark" alt="Classical Mechanics - Home"/>`);</script>
   
   
 </a></div>
         <div class="sidebar-primary-item">
 
-<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
- <i class="fa-solid fa-magnifying-glass"></i>
- <span class="search-button__default-text">Search</span>
- <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
-</button></div>
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
@@ -250,14 +261,9 @@
   
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
-      <div class="sidebar-primary-item">
-<div id="ethical-ad-placement"
-      class="flat"
-      data-ea-publisher="readthedocs"
-      data-ea-type="readthedocs-sidebar"
-      data-ea-manual="true">
-</div></div>
   </div>
+  
+  <div id="rtd-footer-container"></div>
 
 
       </div>
@@ -354,16 +360,24 @@
 
 
 
-<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
-  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
-  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
-  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
-</button>
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
 
 
-<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
-</button>
+  </button>
+`);
+</script>
 <button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
 </button>
@@ -499,8 +513,8 @@
 </section>
 <section id="slides">
 <h3>Slides<a class="headerlink" href="#slides" title="Link to this heading">#</a></h3>
-<p>21 Apr 2025 (<a class="reference download internal" download="" href="../_downloads/2e9c12edd1da84c04975d80b53e4d876/day-38-project-session.pdf"><span class="xref download myst">Slides</span></a>)
-<img alt="Day 38" src="../_images/day-38-project-session.png" /></p>
+<p>21 Apr 2025 (<a class="reference internal" href="#../slides/day-38-project-session.pdf"><span class="xref myst">Slides</span></a>)
+<img alt="Day 38" src="slides/day-38-project-session.png" /></p>
 </section>
 </section>
 <section id="class-week-13-april-14-18-2025-cw16">
@@ -525,11 +539,11 @@
 <section id="id2">
 <h3>Slides<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
 <p>14 Apr 2025 (<a class="reference internal" href="#../slides/day-35-lagrangian-exmaples.pdf"><span class="xref myst">Slides</span></a>)
-<img alt="Day 35" src="../_images/day-35-lagrangian-examples.png" /></p>
-<p>16 Apr 2025 (<a class="reference download internal" download="" href="../_downloads/e02224eaf0881c17b9fb1ea541f14cae/day-36-lagrangian-examples.pdf"><span class="xref download myst">Slides</span></a>)
-<img alt="Day 36" src="../_images/day-36-lagrangian-examples.png" /></p>
-<p>18 Apr 2025 (<a class="reference download internal" download="" href="../_downloads/68220091bc0b008ea825883fa3381a6c/day-37-homework-session.pdf"><span class="xref download myst">Slides</span></a>)
-<img alt="Day 37" src="../_images/day-37-homework-session.png" /></p>
+<img alt="Day 35" src="slides/day-35-lagrangian-examples.png" /></p>
+<p>16 Apr 2025 (<a class="reference internal" href="#../slides/day-36-lagrangian-examples.pdf"><span class="xref myst">Slides</span></a>)
+<img alt="Day 36" src="slides/day-36-lagrangian-examples.png" /></p>
+<p>18 Apr 2025 (<a class="reference internal" href="#../slides/day-37-homework-session.pdf"><span class="xref myst">Slides</span></a>)
+<img alt="Day 37" src="slides/day-37-homework-session.png" /></p>
 </section>
 </section>
 <section id="class-week-12-april-7-11-2025-cw15">
@@ -635,10 +649,10 @@
 </section>
 <section id="id14">
 <h3>Slides<a class="headerlink" href="#id14" title="Link to this heading">#</a></h3>
-<p>17 Mar 2025 (<a class="reference download internal" download="" href="../_downloads/ddb2253d325e633c39084d31e7f7f2e8/day-24-driven-oscillations.pdf"><span class="xref download myst">Slides</span></a>)</p>
-<p><img alt="Day 24" src="../_images/day-24-driven-oscillations.png" /></p>
-<p>19 Mar 2025 (<a class="reference download internal" download="" href="../_downloads/fe40fdbf170299b0fae527ceb1a2a867/day-25-resonance.pdf"><span class="xref download myst">Slides</span></a>)</p>
-<p><img alt="Day 25" src="../_images/day-25-resonance.png" /></p>
+<p>17 Mar 2025 (<a class="reference internal" href="#../slides/day-24-driven-oscillations.pdf"><span class="xref myst">Slides</span></a>)</p>
+<p><img alt="Day 24" src="slides/day-24-driven-oscillations.png" /></p>
+<p>19 Mar 2025 (<a class="reference internal" href="#../slides/day-25-resonance.pdf"><span class="xref myst">Slides</span></a>)</p>
+<p><img alt="Day 25" src="slides/day-25-resonance.png" /></p>
 <p>21 Mar 2025 (<a class="reference internal" href="#../slides/day-26-homework-session.pdf"><span class="xref myst">Slides</span></a>)</p>
 <p><img alt="Day 26" src="slides/day-26-homework-session.png" /></p>
 </section>
@@ -664,12 +678,12 @@
 </section>
 <section id="id17">
 <h3>Slides<a class="headerlink" href="#id17" title="Link to this heading">#</a></h3>
-<p>10 Mar 2025 (<a class="reference download internal" download="" href="../_downloads/654d1d0d6859e4eb5beb9208e97984e9/day-21-oscillations.pdf"><span class="xref download myst">Slides</span></a>)</p>
-<p><img alt="Day 21" src="../_images/day-21-oscillations.png" /></p>
-<p>12 Mar 2025 (<a class="reference download internal" download="" href="../_downloads/44023e920f4590d38963b7e735a4009a/day-22-damped-oscillations.pdf"><span class="xref download myst">Slides</span></a>)</p>
-<p><img alt="Day 22" src="../_images/day-22-damped-oscillations.png" /></p>
-<p>14 Mar 2025 (<a class="reference download internal" download="" href="../_downloads/2057d8a42a5274e6cd49da79924944d5/day-23-homework-session.pdf"><span class="xref download myst">Slides</span></a>)</p>
-<p><img alt="Day 23" src="../_images/day-23-homework-session.png" /></p>
+<p>10 Mar 2025 (<a class="reference internal" href="#../slides/day-21-oscillations.pdf"><span class="xref myst">Slides</span></a>)</p>
+<p><img alt="Day 21" src="slides/day-21-oscillations.png" /></p>
+<p>12 Mar 2025 (<a class="reference internal" href="#../slides/day-22-damped-oscillations.pdf"><span class="xref myst">Slides</span></a>)</p>
+<p><img alt="Day 22" src="slides/day-22-damped-oscillations.png" /></p>
+<p>14 Mar 2025 (<a class="reference internal" href="#../slides/day-23-homework-session.pdf"><span class="xref myst">Slides</span></a>)</p>
+<p><img alt="Day 23" src="slides/day-23-homework-session.png" /></p>
 </section>
 </section>
 <section id="no-class-week-march-4-8-2025-cw10">
@@ -700,12 +714,12 @@
 </section>
 <section id="id20">
 <h2>Slides<a class="headerlink" href="#id20" title="Link to this heading">#</a></h2>
-<p>24 Feb 2025 (<a class="reference download internal" download="" href="../_downloads/91f83f61810e0a6c13ec6dfc158fcf5c/day-18-introduction-to-nonlinear-dynamics.pdf"><span class="xref download myst">Slides</span></a>)</p>
-<p><img alt="Day 18" src="../_images/day-18-introduction-to-nonlinear-dynamics.png" /></p>
-<p>26 Feb 2025 (<a class="reference download internal" download="" href="../_downloads/ebe40c5e1017bb00c553dcf6785b7e59/day-19-phase-diagrams.pdf"><span class="xref download myst">Slides</span></a>)</p>
-<p><img alt="Day 19" src="../_images/day-19-phase-diagrams.png" /></p>
-<p>28 Feb 2025 (<a class="reference download internal" download="" href="../_downloads/f38207779dac6a3cd3c1bac14089d248/day-20-homework-session.pdf"><span class="xref download myst">Slides</span></a>)</p>
-<p><img alt="Day 20" src="../_images/day-20-homework-session.png" /></p>
+<p>24 Feb 2025 (<a class="reference internal" href="#../slides/day-18-introduction-to-nonlinear-dynamics.pdf"><span class="xref myst">Slides</span></a>)</p>
+<p><img alt="Day 18" src="slides/day-18-introduction-to-nonlinear-dynamics.png" /></p>
+<p>26 Feb 2025 (<a class="reference internal" href="#../slides/day-19-phase-diagrams.pdf"><span class="xref myst">Slides</span></a>)</p>
+<p><img alt="Day 19" src="slides/day-19-phase-diagrams.png" /></p>
+<p>28 Feb 2025 (<a class="reference internal" href="#../slides/day-20-homework-session.pdf"><span class="xref myst">Slides</span></a>)</p>
+<p><img alt="Day 20" src="slides/day-20-homework-session.png" /></p>
 </section>
 <section id="class-week-6-february-17-21-2025-cw8">
 <h2>Class Week 6, February 17-21, 2025 (CW8)<a class="headerlink" href="#class-week-6-february-17-21-2025-cw8" title="Link to this heading">#</a></h2>
@@ -729,12 +743,12 @@
 </section>
 <section id="id23">
 <h3>Slides<a class="headerlink" href="#id23" title="Link to this heading">#</a></h3>
-<p>17 Feb 2025 (<a class="reference download internal" download="" href="../_downloads/cb5b2b23b96d45d681043c603b7a4a84/day-15-potential-energy-and-stability.pdf"><span class="xref download myst">Slides</span></a>)</p>
-<p><img alt="Day 15" src="../_images/day-15-potential-energy-and-stability.png" /></p>
-<p>19 Feb 2025 (<a class="reference download internal" download="" href="../_downloads/b657aa77758cfb64c6a9947e28745bca/day-16-conservation-of-momentum.pdf"><span class="xref download myst">Slides</span></a>)</p>
-<p><img alt="Day 16" src="../_images/day-16-conservation-of-momentum.png" /></p>
-<p>21 Feb 2025 (<a class="reference download internal" download="" href="../_downloads/05571e8ddfa23414430a7747a5500454/day-17-homework-session.pdf"><span class="xref download myst">Slides</span></a>)</p>
-<p><img alt="Day 17" src="../_images/day-17-homework-session.png" /></p>
+<p>17 Feb 2025 (<a class="reference internal" href="#../slides/day-15-potential-energy-and-stability.pdf"><span class="xref myst">Slides</span></a>)</p>
+<p><img alt="Day 15" src="slides/day-15-potential-energy-and-stability.png" /></p>
+<p>19 Feb 2025 (<a class="reference internal" href="#../slides/day-16-conservation-of-momentum.pdf"><span class="xref myst">Slides</span></a>)</p>
+<p><img alt="Day 16" src="slides/day-16-conservation-of-momentum.png" /></p>
+<p>21 Feb 2025 (<a class="reference internal" href="#../slides/day-17-homework-session.pdf"><span class="xref myst">Slides</span></a>)</p>
+<p><img alt="Day 17" src="slides/day-17-homework-session.png" /></p>
 </section>
 </section>
 <section id="class-week-5-february-10-14-2025-cw7">
@@ -762,8 +776,8 @@
 <p><img alt="Day 12" src="../_images/day-12-conservation-of-energy.png" /></p>
 <p>12 Feb 2025 (<a class="reference download internal" download="" href="../_downloads/2f3ca841f1290524dae02d0f3c2535d5/day-13-conservative-forces.pdf"><span class="xref download myst">Slides</span></a>)</p>
 <p><img alt="Day 13" src="../_images/day-13-conservative-forces.png" /></p>
-<p>14 Feb 2025 (<a class="reference download internal" download="" href="../_downloads/a35f256e0697195120fc87fee460abfd/day-14-homework-session.pdf"><span class="xref download myst">Slides</span></a>)</p>
-<p><img alt="Day 14" src="../_images/day-14-homework-session.png" /></p>
+<p>14 Feb 2025 (<a class="reference internal" href="#../slides/day-14-homework-session.pdf"><span class="xref myst">Slides</span></a>)</p>
+<p><img alt="Day 14" src="slides/day-14-homework-session.png" /></p>
 </section>
 </section>
 <section id="class-week-4-february-3-7-2025-cw6">
@@ -1369,8 +1383,7 @@ Topics: Modeling with Newton's Second Law, Motion in 1D
             
             
               
-                <dialog id="pst-secondary-sidebar-modal"></dialog>
-                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
 
   <div class="sidebar-secondary-item">
@@ -1512,8 +1525,8 @@ This work is licensed under a <a rel="license" href="https://creativecommons.org
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
-<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
 
   <footer class="bd-footer">
   </footer>

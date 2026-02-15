@@ -329,33 +329,20 @@ Slides for PHY 321 appear in reverse chronological order, with the most recent s
 
 :::
 
----
-
-## Day 15 - Potential Energy and Stability - 29 Sep 2025
-
-[![Day 15](../slides/day-15-potential-energy-and-stability.png)](../slides/day-15-potential-energy-and-stability.pdf)
-
-:::info
-
-### 📂 Download Slides
-[HTML](../slides/day-15-potential-energy-and-stability.md) | [PDF](../slides/day-15-potential-energy-and-stability.pdf)
-
-:::
-
----
-
-## Day 14 - Help Session - 26 Sep 2025
-
-[![Day 14](../slides/day-14-homework-session.png)](../slides/day-14-homework-session.pdf)
-
-:::info
-
-### 📂 Download Slides
-[HTML](../slides/day-14-homework-session.md) | [PDF](../slides/day-14-homework-session.pdf)
-
-:::
-
 --- -->
+
+## Day 14 - Potential Energy and Stability - 16 Feb 2026
+
+[![Day 14](../slides/day-14-potential-energy-and-stability.png)](../slides/day-14-potential-energy-and-stability.pdf)
+
+:::info
+
+### 📂 Download Slides
+[HTML](../slides/day-14-potential-energy-and-stability.md) | [PDF](../slides/day-14-potential-energy-and-stability.pdf)
+
+:::
+
+---
 
 ## Day 13 - Conservative Forces - 11 Feb 2026
 

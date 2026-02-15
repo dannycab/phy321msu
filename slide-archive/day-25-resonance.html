@@ -1,0 +1,781 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Day 25 - Resonance + Homework Session &#8212; Classical Mechanics</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"tex2jax": {"inlineMath": [["$", "$"]]}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'slide-archive/day-25-resonance';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/spartan-helmet.png" class="logo__image only-light" alt="Classical Mechanics - Home"/>
+    <script>document.write(`<img src="../_static/spartan-helmet.png" class="logo__image only-dark" alt="Classical Mechanics - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    PHY 321: Classical Mechanics 1, Michigan State University, Spring 2026
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Course Information</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../admin/getting-started.html">Getting Started</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../admin/course-commitments.html">Course Commitments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../admin/teachers.html">Teachers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../admin/textbooks.html">Textbooks and Course Materials</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../admin/grading.html">Grading and Important Dates</a></li>
+
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Course Materials</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../lecture-notes/weekly-materials.html">Weekly Course Materials</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../lecture-notes/01_notes.html">01 - Overture: What is Classical Physics?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lecture-notes/02_notes.html">02 - Computing is a Necessary Tool for Science</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lecture-notes/03_notes.html">03 - What is Mathematical Modeling?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lecture-notes/04_notes.html">04 - Why does fluid drag complicate things?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lecture-notes/05_notes.html">05 - Conservation Laws Govern and Constrain our Physics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lecture-notes/06_notes.html">06 - Nature Often Seeks Stability</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lecture-notes/07_notes.html">07 - Introducing Nonlinear Dynamics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lecture-notes/08_notes.html">08 - Oscillations, Cycles, and Nature’s Recurrences</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lecture-notes/09_notes.html">09 - Driving Oscillators and Resonance Phenomenon</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lecture-notes/10_notes.html">10 - Investigating Systems that Exhibit Chaotic Dynamics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lecture-notes/11_notes.html">11 - Reformulating Classical Mechanics using the Calculus of Variations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lecture-notes/12_notes.html">12 - The Core Principle of Classical Mechanics? The Principle of Least Action</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lecture-notes/13_notes.html">13 - Applying the Lagrangian Formulation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lecture-notes/14_notes.html">14 - Classical Mechanics Thus Far</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../assignments/assignment-overview.html">Assignments Overview</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../assignments/hw1.html">Homework 1 (Due 23 Jan)</a></li>
+
+
+
+<li class="toctree-l2"><a class="reference internal" href="../assignments/hw2.html">Homework 2 (Due 30 Jan)</a></li>
+
+
+
+<li class="toctree-l2"><a class="reference internal" href="../assignments/hw3.html">Homework 3 (Due 06 Feb)</a></li>
+
+
+
+<li class="toctree-l2"><a class="reference internal" href="../assignments/hw4.html">Homework 4 (Due 13 Feb)</a></li>
+
+
+
+<li class="toctree-l2"><a class="reference internal" href="../assignments/midterm1.html">Midterm 1 (Due 27 Feb)</a></li>
+
+
+
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Logistics &amp; Resources</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../admin/schedule-cal.html">Course Calendar</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../admin/reminders.html">Reminders</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../admin/slides.html">Slides</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../admin/gradescope-submissions.html">Submitting Assignments on Gradescope</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../admin/iclicker-setup.html">i-Clicker Setup Instructions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../admin/finding-research.html">Finding Research Opportunities</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../admin/exercise0.html">Exercise 0</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Programming Resources</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../resources/vscode-setup-numerics-activity.html">Getting Started with VS Code for Scientific Computing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/vscode-setup-numerics-activity-completed.html">Getting Started with VS Code for Scientific Computing (Completed)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/euler_integration.html">Euler Integration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/integrators.html">Numerical Integrators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/phase_diagrams.html">Plotting Phase Diagrams</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/chaotic_dynamics.html">Modeling Chaotic Systems - Activity</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/slide-archive/day-25-resonance.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Day 25 - Resonance + Homework Session</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Day 25 - Resonance + Homework Session</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#reminders">Reminders</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Reminders</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Reminders</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#solving-the-particular-part">Solving the particular part</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#amplitude-of-the-particular-solution">Amplitude of the particular solution</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-24-5">Clicker Question 24-5</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#finding-the-phase">Finding the phase</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#the-particular-solution">The Particular Solution</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#the-full-solution">The Full Solution</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">The Full Solution</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#resonance">Resonance</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#achieving-resonance">Achieving resonance</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Achieving resonance</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#hw6-exercise-2-morse-potential-as-an-sho">HW6 Exercise 2 Morse Potential as an SHO</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">HW6 Exercise 2 Morse Potential as an SHO</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#hw6-exercise-4-toy-potential">HW6 Exercise 4, Toy Potential</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">HW6 Exercise 4, Toy Potential</a></li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="day-25-resonance-homework-session">
+<h1>Day 25 - Resonance + Homework Session<a class="headerlink" href="#day-25-resonance-homework-session" title="Link to this heading">#</a></h1>
+<p><img alt="width:800px" src="../_images/tuning-fork.png" /></p>
+</section>
+<hr class="docutils" />
+<section id="reminders">
+<h1>Reminders<a class="headerlink" href="#reminders" title="Link to this heading">#</a></h1>
+<p>We started to solve the forced harmonic oscillator equation:</p>
+<div class="math notranslate nohighlight">
+\[\ddot{x} + 2 \beta \dot{x} + \omega_0^2 x = f(t)\]</div>
+<p>We examined the case of a sinusoidal driving force:</p>
+<div class="math notranslate nohighlight">
+\[\ddot{x} + 2 \beta \dot{x} + \omega_0^2 x = f_0 \cos(\omega t)\]</div>
+<p>There’s a complimentary case where the driving force is a sine wave:</p>
+<div class="math notranslate nohighlight">
+\[\ddot{y} + 2 \beta \dot{y} + \omega_0^2 y = f_0 \sin(\omega t)\]</div>
+</section>
+<hr class="docutils" />
+<section id="id1">
+<h1>Reminders<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
+<p>We combined the two equations into a complex equation using these identities:</p>
+<div class="math notranslate nohighlight">
+\[z(t) = x(t) + i y(t)\]</div>
+<div class="math notranslate nohighlight">
+\[e^{i \omega t} = \cos(\omega t) + i \sin(\omega t)\]</div>
+<p>The resulting equation is:</p>
+<div class="math notranslate nohighlight">
+\[\ddot{z} + 2 \beta \dot{z} + \omega_0^2 z = f_0 e^{i \omega t}\]</div>
+<p>Notice that there’s a homogeneous part (<span class="math notranslate nohighlight">\(z_h\)</span>) and a particular part (<span class="math notranslate nohighlight">\(z_p\)</span>).</p>
+<div class="math notranslate nohighlight">
+\[\ddot{z}_h + 2 \beta \dot{z}_h + \omega_0^2 z_h = 0\]</div>
+</section>
+<hr class="docutils" />
+<section id="id2">
+<h1>Reminders<a class="headerlink" href="#id2" title="Link to this heading">#</a></h1>
+<p>The homogeneous part is the solution we’ve found before with the general solution:</p>
+<div class="math notranslate nohighlight">
+\[z_h(t) = C_1 e^{rt} + C_2 e^{r^* t}\]</div>
+<p>where <span class="math notranslate nohighlight">\(r = -\beta \pm i \sqrt{\omega_0^2 - \beta^2}\)</span>. In the case of a weakly damped oscillator (<span class="math notranslate nohighlight">\(\beta^2 &lt; \omega_0^2\)</span>), we have:</p>
+<div class="math notranslate nohighlight">
+\[z_h(t) = e^{-\beta t} \left( C_1 e^{-i \sqrt{\omega_0^2 - \beta^2} t} + C_2 e^{+i \sqrt{\omega_0^2 - \beta^2} t} \right)\]</div>
+<p>These solutions die out as <span class="math notranslate nohighlight">\(t \to \infty\)</span>. They are called <strong>transient solutions</strong>.</p>
+</section>
+<hr class="docutils" />
+<section id="solving-the-particular-part">
+<h1>Solving the particular part<a class="headerlink" href="#solving-the-particular-part" title="Link to this heading">#</a></h1>
+<p>The particular part is the solution to the driven harmonic oscillator equation:</p>
+<div class="math notranslate nohighlight">
+\[\ddot{z}_p + 2 \beta \dot{z}_p + \omega_0^2 z_p = f_0 e^{i \omega t}\]</div>
+<p>Assume a sinusoidal solution (frequency, <span class="math notranslate nohighlight">\(\omega\)</span>) of the form:
+$<span class="math notranslate nohighlight">\(z_p(t) = C e^{i \omega t}\)</span>$</p>
+<p>where <span class="math notranslate nohighlight">\(C\)</span> is a complex number. Then, we have:</p>
+<div class="math notranslate nohighlight">
+\[-\omega^2 C e^{i \omega t} + 2 i \beta \omega C e^{i \omega t} + \omega_0^2 C e^{i \omega t} = f_0 e^{i \omega t}\]</div>
+<div class="math notranslate nohighlight">
+\[\left(-\omega^2 + 2 i \beta \omega + \omega_0^2\right) C = f_0\]</div>
+</section>
+<hr class="docutils" />
+<section id="amplitude-of-the-particular-solution">
+<h1>Amplitude of the particular solution<a class="headerlink" href="#amplitude-of-the-particular-solution" title="Link to this heading">#</a></h1>
+<div class="math notranslate nohighlight">
+\[C =\dfrac{f_0}{\left(\omega_0^2-\omega^2 + 2 i \beta \omega\right)}\]</div>
+<p>We want to convert this to polar form:</p>
+<div class="math notranslate nohighlight">
+\[C = A e^{-i \delta}\]</div>
+<p>where <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(\delta\)</span> are real numbers. We use the complex form to compute the magnitude of the amplitude:</p>
+<div class="math notranslate nohighlight">
+\[A^2 = C \bar{C} = \dfrac{f_0^2}{\left(\omega_0^2-\omega^2 + 2 i \beta \omega \right)\left(\omega_0^2-\omega^2 - 2 i \beta \omega \right)}\]</div>
+<div class="math notranslate nohighlight">
+\[A^2 = \dfrac{f_0^2}{(\omega_0^2 - \omega^2)^2 + 4 \beta^2 \omega^2}\]</div>
+</section>
+<hr class="docutils" />
+<section id="clicker-question-24-5">
+<h1>Clicker Question 24-5<a class="headerlink" href="#clicker-question-24-5" title="Link to this heading">#</a></h1>
+<p>We found that the square amplitude of the driven harmonic oscillator is:</p>
+<div class="math notranslate nohighlight">
+\[A^2 = \dfrac{f_0^2}{(\omega_0^2 - \omega^2)^2 + 4 \beta^2 \omega^2}\]</div>
+<p>When is the amplitude of the driven oscillator maximized?</p>
+<ol class="arabic simple">
+<li><p>When the driving frequency (<span class="math notranslate nohighlight">\(\omega\)</span>) is far from the natural frequency (<span class="math notranslate nohighlight">\(\omega_0\)</span>)</p></li>
+<li><p>When the driving frequency (<span class="math notranslate nohighlight">\(\omega\)</span>) is close to the natural frequency (<span class="math notranslate nohighlight">\(\omega_0\)</span>)</p></li>
+<li><p>When the damping (<span class="math notranslate nohighlight">\(2\beta\)</span>) is weak</p></li>
+<li><p>When the damping (<span class="math notranslate nohighlight">\(2\beta\)</span>) is strong</p></li>
+<li><p>Some combination of the above</p></li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="finding-the-phase">
+<h1>Finding the phase<a class="headerlink" href="#finding-the-phase" title="Link to this heading">#</a></h1>
+<p>With,</p>
+<div class="math notranslate nohighlight">
+\[C =\dfrac{f_0}{\left(\omega_0^2-\omega^2 + 2 i \beta \omega \right)} = Ae^{-i\delta}\]</div>
+<p>then we can compare the complex forms:</p>
+<div class="math notranslate nohighlight">
+\[f_0 e^{i \delta} = A \left(\omega_0^2-\omega^2 + 2 i \beta \omega \right).\]</div>
+<p>Both <span class="math notranslate nohighlight">\(f_0\)</span> and <span class="math notranslate nohighlight">\(A\)</span> are real numbers, so the phase <span class="math notranslate nohighlight">\(\delta\)</span> is the same phase as the complex number:</p>
+<div class="math notranslate nohighlight">
+\[\delta = \tan^{-1}\left(\dfrac{2 \beta \omega}{\omega_0^2 - \omega^2}\right)\]</div>
+</section>
+<hr class="docutils" />
+<section id="the-particular-solution">
+<h1>The Particular Solution<a class="headerlink" href="#the-particular-solution" title="Link to this heading">#</a></h1>
+<p>Let’s return to the particular solution:</p>
+<div class="math notranslate nohighlight">
+\[z_p(t) = C e^{i \omega t} = A e^{-i \delta} e^{i \omega t} = A e^{i(\omega t - \delta)}\]</div>
+<div class="math notranslate nohighlight">
+\[z_p(t) = A \cos(\omega t - \delta) + i A \sin(\omega t - \delta)\]</div>
+<p>So we get solutions to both driven oscillators:</p>
+<div class="math notranslate nohighlight">
+\[x_p(t) = Re(z_p(t)) = A \cos(\omega t - \delta)\]</div>
+<div class="math notranslate nohighlight">
+\[y_p(t) = Im(z_p(t)) = A \sin(\omega t - \delta)\]</div>
+<p>These are the <strong>steady-state solutions</strong>.</p>
+<p>They persist as <span class="math notranslate nohighlight">\(t \to \infty\)</span> and oscillate at the driving frequency <span class="math notranslate nohighlight">\(\omega\)</span>.</p>
+</section>
+<hr class="docutils" />
+<section id="the-full-solution">
+<h1>The Full Solution<a class="headerlink" href="#the-full-solution" title="Link to this heading">#</a></h1>
+<div class="math notranslate nohighlight">
+\[x(t) = x_h(t) + x_p(t)\]</div>
+<p>Here, <span class="math notranslate nohighlight">\(x_h(t)\)</span> is the transient solution and <span class="math notranslate nohighlight">\(x_p(t)\)</span> is the steady-state solution.</p>
+<p>For weakly damped oscillators, the transient solution can be written in the form:</p>
+<div class="math notranslate nohighlight">
+\[x_h(t) = A_{tr}e^{-\beta t} \cos(\sqrt{\omega_0^2 - \beta^2} t + \delta_{tr})\]</div>
+<p>where <span class="math notranslate nohighlight">\(A_{tr}\)</span> and <span class="math notranslate nohighlight">\(\delta_{tr}\)</span> are real numbers and are the amplitude and phase of the transient solution. Both are determined by the initial conditions.</p>
+<div class="math notranslate nohighlight">
+\[x_p(t) = A \cos(\omega t - \delta)\]</div>
+<p>where <span class="math notranslate nohighlight">\(A\)</span> and <span class="math notranslate nohighlight">\(\delta\)</span> are real numbers and are the amplitude and phase of the steady-state solution.</p>
+</section>
+<hr class="docutils" />
+<section id="id3">
+<h1>The Full Solution<a class="headerlink" href="#id3" title="Link to this heading">#</a></h1>
+<p>The transient plus the steady-state solution is the full solution:</p>
+<div class="math notranslate nohighlight">
+\[x(t) = A_{tr}e^{-\beta t} \cos(\sqrt{\omega_0^2 - \beta^2} t + \delta_{tr}) + A \cos(\omega t - \delta)\]</div>
+<p>As <span class="math notranslate nohighlight">\(t \to \infty\)</span>, the transient solution dies out and the steady-state solution persists.</p>
+<div class="math notranslate nohighlight">
+\[x(t \to \infty) = A \cos(\omega t - \delta)\]</div>
+<p>where</p>
+<div class="math notranslate nohighlight">
+\[A = \dfrac{f_0}{\sqrt{(\omega_0^2 - \omega^2)^2 + 4 \beta^2 \omega^2}}\]</div>
+<div class="math notranslate nohighlight">
+\[\delta = \tan^{-1}\left(\dfrac{2 \beta \omega}{\omega_0^2 - \omega^2}\right)\]</div>
+</section>
+<hr class="docutils" />
+<section id="resonance">
+<h1>Resonance<a class="headerlink" href="#resonance" title="Link to this heading">#</a></h1>
+<p>The amplitude of the steady-state solution is:</p>
+<div class="math notranslate nohighlight">
+\[A^2 = \dfrac{f_0^2}{(\omega_0^2 - \omega^2)^2 + 4 \beta^2 \omega^2}\]</div>
+<p>We change <span class="math notranslate nohighlight">\(\omega_0\)</span> and observe how the amplitude changes.</p>
+<p><img alt="bg right width:600px" src="../_images/resonance.png" /></p>
+</section>
+<hr class="docutils" />
+<section id="achieving-resonance">
+<h1>Achieving resonance<a class="headerlink" href="#achieving-resonance" title="Link to this heading">#</a></h1>
+<p>The denominator of the equation controls the amplitude:</p>
+<div class="math notranslate nohighlight">
+\[(\omega_0^2 - \omega^2)^2 + 4 \beta^2 \omega^2\]</div>
+<p><strong>Case 1:</strong> Tune <span class="math notranslate nohighlight">\(\omega_0\)</span> to be close to <span class="math notranslate nohighlight">\(\omega\)</span>. <em>Car Radio tuning</em></p>
+<p>With <span class="math notranslate nohighlight">\(\omega_0 = \omega\)</span>, the amplitude is:</p>
+<div class="math notranslate nohighlight">
+\[A^2 = \dfrac{f_0^2}{4 \beta^2 \omega^2}\]</div>
+</section>
+<hr class="docutils" />
+<section id="id4">
+<h1>Achieving resonance<a class="headerlink" href="#id4" title="Link to this heading">#</a></h1>
+<p>The denominator of the equation controls the amplitude:</p>
+<div class="math notranslate nohighlight">
+\[(\omega_0^2 - \omega^2)^2 + 4 \beta^2 \omega^2\]</div>
+<p><strong>Case 2:</strong> Tune <span class="math notranslate nohighlight">\(\omega\)</span> to be close to <span class="math notranslate nohighlight">\(\omega_0\)</span>. <em>Pushing a swing</em></p>
+<p>Find the <span class="math notranslate nohighlight">\(\omega\)</span> that maximizes the amplitude by taking the derivative with respect to <span class="math notranslate nohighlight">\(\omega\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\dfrac{d}{d\omega} \left((\omega_0^2 - \omega^2)^2 + 4 \beta^2 \omega^2\right) = 0\]</div>
+<div class="math notranslate nohighlight">
+\[2(\omega_0^2 - \omega^2)(-2\omega) + 8 \beta^2 \omega = 0\]</div>
+<div class="math notranslate nohighlight">
+\[4\omega(\omega^2 - \omega_0^2 + 2 \beta^2) = 0\]</div>
+<div class="math notranslate nohighlight">
+\[\omega = 0 \qquad \omega = \sqrt{\omega_0^2 - 2 \beta^2}\]</div>
+</section>
+<hr class="docutils" />
+<section id="hw6-exercise-2-morse-potential-as-an-sho">
+<h1>HW6 Exercise 2 Morse Potential as an SHO<a class="headerlink" href="#hw6-exercise-2-morse-potential-as-an-sho" title="Link to this heading">#</a></h1>
+<p>If the potential has a local minimum, we can often find SHO approximation for that potential near the local minimum.</p>
+<p>The <a class="reference external" href="https://en.wikipedia.org/wiki/Morse_potential">Morse potential</a> is a convenient model for the potential energy of a diatomic molecule. The potential is a radial one and thus one-dimensional. It is given by,</p>
+<div class="math notranslate nohighlight">
+\[U(r) = A\left[ \left(e^{(R-r)/S}-1\right)^2-1\right]\]</div>
+<p>where the distance between the centers of the two atoms is <span class="math notranslate nohighlight">\(r\)</span>, and the constants <span class="math notranslate nohighlight">\(A\)</span>, <span class="math notranslate nohighlight">\(R\)</span>, and <span class="math notranslate nohighlight">\(S\)</span> are all positive. Here <span class="math notranslate nohighlight">\(S&lt;&lt;R\)</span>.</p>
+<ul class="simple">
+<li><p>2a (2pt) Sketch (or plot) the potential as a function of <span class="math notranslate nohighlight">\(r\)</span>.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="id5">
+<h1>HW6 Exercise 2 Morse Potential as an SHO<a class="headerlink" href="#id5" title="Link to this heading">#</a></h1>
+<div class="math notranslate nohighlight">
+\[U(r) = A\left[ \left(e^{(R-r)/S}-1\right)^2-1\right]\]</div>
+<ul class="simple">
+<li><p>2b (3pt) Find the equilibrium position of the potential, i.e. the position where the potential is at a minimum. We will call this <span class="math notranslate nohighlight">\(r_e\)</span>.</p></li>
+<li><p>2c (3pt) Rewrite the potential in terms of the displacement from equilibrium, <span class="math notranslate nohighlight">\(r = r_e + x\)</span>. Expand the potential to second order in <span class="math notranslate nohighlight">\(x\)</span>.</p></li>
+<li><p>2d (2pt) Find the effective spring constant, <span class="math notranslate nohighlight">\(k\)</span>, for the potential near the minimum. What is the frequency of small oscillations about the minimum?</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="hw6-exercise-4-toy-potential">
+<h1>HW6 Exercise 4, Toy Potential<a class="headerlink" href="#hw6-exercise-4-toy-potential" title="Link to this heading">#</a></h1>
+<p>Consider a toy potential of the form,</p>
+<div class="math notranslate nohighlight">
+\[U(r) = U_0\left(\dfrac{r}{R}+\lambda^2\frac{R}{r}\right)\]</div>
+<p>where <span class="math notranslate nohighlight">\(U_0\)</span>, <span class="math notranslate nohighlight">\(R\)</span>, and <span class="math notranslate nohighlight">\(\lambda\)</span> are all positive constants and the domain of the potential is <span class="math notranslate nohighlight">\(0&lt;r&lt;\infty\)</span>.</p>
+<ul class="simple">
+<li><p>4a (2pt) Sketch (or plot) the potential as a function of <span class="math notranslate nohighlight">\(r\)</span>.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="id6">
+<h1>HW6 Exercise 4, Toy Potential<a class="headerlink" href="#id6" title="Link to this heading">#</a></h1>
+<div class="math notranslate nohighlight">
+\[U(r) = U_0\left(\dfrac{r}{R}+\lambda^2\frac{R}{r}\right)\]</div>
+<ul class="simple">
+<li><p>4b (3pt) Find the equilibrium position of the potential, i.e. the position where the potential is at a minimum. We will call this <span class="math notranslate nohighlight">\(r_e\)</span>.</p></li>
+<li><p>4c (5pt) Rewrite the potential in terms of the displacement from equilibrium, <span class="math notranslate nohighlight">\(r = r_e + x\)</span>. Expand the potential to second order in <span class="math notranslate nohighlight">\(x\)</span>. What is the effective spring constant, <span class="math notranslate nohighlight">\(k\)</span>, for the potential near the minimum? What is the frequency of small oscillations about the minimum?</p></li>
+</ul>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./slide-archive"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Day 25 - Resonance + Homework Session</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#reminders">Reminders</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Reminders</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Reminders</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#solving-the-particular-part">Solving the particular part</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#amplitude-of-the-particular-solution">Amplitude of the particular solution</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-24-5">Clicker Question 24-5</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#finding-the-phase">Finding the phase</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#the-particular-solution">The Particular Solution</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#the-full-solution">The Full Solution</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">The Full Solution</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#resonance">Resonance</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#achieving-resonance">Achieving resonance</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Achieving resonance</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#hw6-exercise-2-morse-potential-as-an-sho">HW6 Exercise 2 Morse Potential as an SHO</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">HW6 Exercise 2 Morse Potential as an SHO</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#hw6-exercise-4-toy-potential">HW6 Exercise 4, Toy Potential</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">HW6 Exercise 4, Toy Potential</a></li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Danny Caballero, Morten Hjorth-Jensen, Rachel Henderson, Alia Valentine
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+  <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" />
+</a>
+<br />
+This work is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

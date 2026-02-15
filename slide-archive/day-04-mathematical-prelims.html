@@ -1,0 +1,933 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Day 04 - Mathematical Preliminaries &#8212; Classical Mechanics</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"tex2jax": {"inlineMath": [["$", "$"]]}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'slide-archive/day-04-mathematical-prelims';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/spartan-helmet.png" class="logo__image only-light" alt="Classical Mechanics - Home"/>
+    <script>document.write(`<img src="../_static/spartan-helmet.png" class="logo__image only-dark" alt="Classical Mechanics - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    PHY 321: Classical Mechanics 1, Michigan State University, Spring 2026
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Course Information</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../admin/getting-started.html">Getting Started</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../admin/course-commitments.html">Course Commitments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../admin/teachers.html">Teachers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../admin/textbooks.html">Textbooks and Course Materials</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../admin/grading.html">Grading and Important Dates</a></li>
+
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Course Materials</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../lecture-notes/weekly-materials.html">Weekly Course Materials</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../lecture-notes/01_notes.html">01 - Overture: What is Classical Physics?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lecture-notes/02_notes.html">02 - Computing is a Necessary Tool for Science</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lecture-notes/03_notes.html">03 - What is Mathematical Modeling?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lecture-notes/04_notes.html">04 - Why does fluid drag complicate things?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lecture-notes/05_notes.html">05 - Conservation Laws Govern and Constrain our Physics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lecture-notes/06_notes.html">06 - Nature Often Seeks Stability</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lecture-notes/07_notes.html">07 - Introducing Nonlinear Dynamics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lecture-notes/08_notes.html">08 - Oscillations, Cycles, and Nature’s Recurrences</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lecture-notes/09_notes.html">09 - Driving Oscillators and Resonance Phenomenon</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lecture-notes/10_notes.html">10 - Investigating Systems that Exhibit Chaotic Dynamics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lecture-notes/11_notes.html">11 - Reformulating Classical Mechanics using the Calculus of Variations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lecture-notes/12_notes.html">12 - The Core Principle of Classical Mechanics? The Principle of Least Action</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lecture-notes/13_notes.html">13 - Applying the Lagrangian Formulation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lecture-notes/14_notes.html">14 - Classical Mechanics Thus Far</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../assignments/assignment-overview.html">Assignments Overview</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../assignments/hw1.html">Homework 1 (Due 23 Jan)</a></li>
+
+
+
+<li class="toctree-l2"><a class="reference internal" href="../assignments/hw2.html">Homework 2 (Due 30 Jan)</a></li>
+
+
+
+<li class="toctree-l2"><a class="reference internal" href="../assignments/hw3.html">Homework 3 (Due 06 Feb)</a></li>
+
+
+
+<li class="toctree-l2"><a class="reference internal" href="../assignments/hw4.html">Homework 4 (Due 13 Feb)</a></li>
+
+
+
+<li class="toctree-l2"><a class="reference internal" href="../assignments/midterm1.html">Midterm 1 (Due 27 Feb)</a></li>
+
+
+
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Logistics &amp; Resources</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../admin/schedule-cal.html">Course Calendar</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../admin/reminders.html">Reminders</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../admin/slides.html">Slides</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../admin/gradescope-submissions.html">Submitting Assignments on Gradescope</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../admin/iclicker-setup.html">i-Clicker Setup Instructions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../admin/finding-research.html">Finding Research Opportunities</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../admin/exercise0.html">Exercise 0</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Programming Resources</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../resources/vscode-setup-numerics-activity.html">Getting Started with VS Code for Scientific Computing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/vscode-setup-numerics-activity-completed.html">Getting Started with VS Code for Scientific Computing (Completed)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/euler_integration.html">Euler Integration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/integrators.html">Numerical Integrators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/phase_diagrams.html">Plotting Phase Diagrams</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/chaotic_dynamics.html">Modeling Chaotic Systems - Activity</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/slide-archive/day-04-mathematical-prelims.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Day 04 - Mathematical Preliminaries</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Day 04 - Mathematical Preliminaries</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#raisemyhand">RaiseMyHand</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#announcements">Announcements</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#seminars-this-week">Seminars this week</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#wednesday-january-21-2026">WEDNESDAY, January 21, 2026</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Seminars this week</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#thursday-january-22-2026">THURSDAY, January 22, 2026</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Seminars this week</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#friday-january-23-2026">FRIDAY, January 23, 2026</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#goals-for-this-week">Goals for this week</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#be-able-to-answer-the-following-questions">Be able to answer the following questions.</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#reminders-from-day-03">Reminders from Day 03</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#content-check-in-week-2">Content Check-in Week 2</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-4-1">Clicker Question 4-1</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#projectile-motion">Projectile Motion</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-4-2">Clicker Question 4-2</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-4-3">Clicker Question 4-3</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-4-4">Clicker Question 4-4</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-4-5">Clicker Question 4-5</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-4-6">Clicker Question 4-6</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#group-discussion-4-1">Group Discussion 4-1</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#group-discussion-4-2">Group Discussion 4-2</a></li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <style>
+  :root {
+    --color-spartan-green: #18453B;
+    --color-msu-gold: #C1B000;
+    --color-light-gray: #f5f5f5;
+    --color-dark-text: #1a1a1a;
+    --color-accent-green: #2d5f4f;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    color: var(--color-dark-text);
+  }
+  
+  h1, h2, h3 {
+    color: var(--color-spartan-green);
+    font-weight: 500;
+  }
+  
+  h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0rem;
+  }
+  
+  h2 {
+    font-size: 1.55rem;
+    margin-bottom: 1.0rem;
+    border-bottom: 4px solid var(--color-spartan-green);
+    padding-bottom: 0.5rem;
+  }
+  
+  h3 {
+    font-size: 1.15rem;
+    margin-top: 1rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  section {
+    padding: 2rem;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .equation {
+    background-color: var(--color-light-gray);
+    padding: 1.5rem;
+    border-left: 4px solid var(--color-msu-gold);
+    margin: 1.5rem 0;
+    font-size: 1.3rem;
+    text-align: center;
+    color: var(--color-dark-text);
+  }
+
+  p {
+    font-size: 1.15rem;
+    line-height: 1.4;
+    margin-bottom: 0.5rem;
+  }
+  
+  ul, ol {
+    font-size: 1.15rem;
+    line-height: 1.4;
+    margin-left: 0.5rem;
+  }
+
+  ul ul, ol ol, ul ol, ol ul {
+    margin-left: 0.1rem;
+  }
+  
+  li {
+    margin-bottom: 0rem;
+    line-height: 1.4;
+  }
+  
+  strong {
+    color: var(--color-spartan-green);
+    font-weight: 600;
+  }
+  
+  em {
+    color: var(--color-accent-green);
+  }
+
+  .highlight {
+    background-color: var(--color-light-gray);
+    padding: 1.5rem;
+    border-left: 4px solid var(--color-spartan-green);
+    margin: 1.5rem 0;
+  }
+
+  .activity {
+    background-color: #fff8e1;
+    border: 2px solid var(--color-msu-gold);
+    padding: 1.25rem;
+    border-radius: 6px;
+    margin: 1rem 0;
+  }
+
+  code {
+    background-color: var(--color-light-gray);
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-size: 1.0rem;
+  }
+
+  .footnote {
+    font-size: 0.8rem;
+    color: #999;
+    margin-top: 1.5rem;
+    border-top: 1px solid #ddd;
+    padding-top: 0.75rem;
+  }
+</style>
+<!--
+_class: title
+_backgroundColor: #ffffff
+_color: #18453B
+-->
+<section id="day-04-mathematical-preliminaries">
+<h1>Day 04 - Mathematical Preliminaries<a class="headerlink" href="#day-04-mathematical-preliminaries" title="Link to this heading">#</a></h1>
+<p><strong>Questions?</strong> <em>Make sure to upvote questions</em></p>
+<img src="../images/qrcodes/day04-s2026.png" width=300px>
+<p><img alt="bg right:40% width:500px height:auto" src="../_images/vector1.jpeg" /></p>
+<div class="footnote">PHY 321 Classical Mechanics I - Spring 2026</div>
+</section>
+<hr class="docutils" />
+<section id="raisemyhand">
+<h1>RaiseMyHand<a class="headerlink" href="#raisemyhand" title="Link to this heading">#</a></h1>
+<p><img alt="bg left:25% width:250px height:auto" src="../_images/open-source.png" /></p>
+<ul class="simple">
+<li><p>Tool should be available for each class period.</p></li>
+<li><p>Answers to your questions are also written up after class</p>
+<ul>
+<li><p>Day 02 - <a class="reference external" href="https://raisemyhand.msucerl.org/student?code=s97Hf7-WS9K7b7ooovdjKxXwih1b_Nnj">https://raisemyhand.msucerl.org/student?code=s97Hf7-WS9K7b7ooovdjKxXwih1b_Nnj</a></p></li>
+</ul>
+</li>
+<li><p>Links to each day posted in MS Teams</p></li>
+</ul>
+<p><em>Would appreciate your feedback and/or ideas for use cases</em></p>
+</section>
+<hr class="docutils" />
+<section id="announcements">
+<h1>Announcements<a class="headerlink" href="#announcements" title="Link to this heading">#</a></h1>
+<ul class="simple">
+<li><p>Homework 1 is due this Friday</p></li>
+<li><p>Homework 2 is posted now</p></li>
+<li><p>Help sessions start this week</p>
+<ul>
+<li><p>DC - Fridays at 10:00-12:00 and 16:00-17:00 (1248 BPS)</p></li>
+</ul>
+</li>
+<li><p>Mihir (ULA) will host additional help hours soon</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="seminars-this-week">
+<h1>Seminars this week<a class="headerlink" href="#seminars-this-week" title="Link to this heading">#</a></h1>
+<section id="wednesday-january-21-2026">
+<h2>WEDNESDAY, January 21, 2026<a class="headerlink" href="#wednesday-january-21-2026" title="Link to this heading">#</a></h2>
+<p>Astronomy Seminar, 1:30 p.m., BPS 1400 &amp; Zoom
+Speaker: Yuan Li, UMass - Amherst
+Title: TBA
+Zoom Link: <a class="reference external" href="https://msu.zoom.us/j/93334479606?pwd=OtIXPWhRPBfzYu53sl3trSJlaBYI7C.1">https://msu.zoom.us/j/93334479606?pwd=OtIXPWhRPBfzYu53sl3trSJlaBYI7C.1</a>
+Passcode:  825824</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="id1">
+<h1>Seminars this week<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
+<section id="thursday-january-22-2026">
+<h2>THURSDAY, January 22, 2026<a class="headerlink" href="#thursday-january-22-2026" title="Link to this heading">#</a></h2>
+<p>Colloquium, Seminar, 3:30 p.m., BPS 1415 &amp; Zoom
+Refreshments at 3:00 BPS in BPS 1400
+Speaker:  Richard Lenski, MSU
+Title: Dynamics and Repeatability of Evolution in a Long-Term Experiment with Bacteria
+Zoom Link: <a class="reference external" href="https://msu.zoom.us/j/94951062663">https://msu.zoom.us/j/94951062663</a>
+Password: 2002</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="id2">
+<h1>Seminars this week<a class="headerlink" href="#id2" title="Link to this heading">#</a></h1>
+<section id="friday-january-23-2026">
+<h2>FRIDAY, January 23, 2026<a class="headerlink" href="#friday-january-23-2026" title="Link to this heading">#</a></h2>
+<p>QuIC, Seminar, 12:40 p.m., BPS 1300 &amp; Zoom
+Speaker: Ben DalFavero, MSU
+Title: Fault tolerant quantum computing I</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="goals-for-this-week">
+<h1>Goals for this week<a class="headerlink" href="#goals-for-this-week" title="Link to this heading">#</a></h1>
+<section id="be-able-to-answer-the-following-questions">
+<h2>Be able to answer the following questions.<a class="headerlink" href="#be-able-to-answer-the-following-questions" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>What are the essential physics models for single particles?</p></li>
+<li><p>How do we setup problems in classical mechanics?</p></li>
+<li><p>What mathematics do we need to get started?</p></li>
+<li><p>How do we solve the equations of motion?</p></li>
+</ul>
+</section>
+</section>
+<hr class="docutils" />
+<section id="reminders-from-day-03">
+<h1>Reminders from Day 03<a class="headerlink" href="#reminders-from-day-03" title="Link to this heading">#</a></h1>
+<ul class="simple">
+<li><p>In a Newtonian world, we start from a vector description of motion</p></li>
+<li><p>Differential equations are mathematical models that describe the motion of particles</p></li>
+<li><p>We can use different methods to solve these differential equations</p></li>
+</ul>
+<p><strong>i-Clicker: <a class="reference external" href="https://join.iclicker.com/PRJO">https://join.iclicker.com/PRJO</a></strong></p>
+</section>
+<hr class="docutils" />
+<section id="content-check-in-week-2">
+<h1>Content Check-in Week 2<a class="headerlink" href="#content-check-in-week-2" title="Link to this heading">#</a></h1>
+<p><strong>I appreciate y’all taking the time to complete it!</strong></p>
+<ul class="simple">
+<li><p>Lots of reading, Danny! WTF?!?!</p>
+<ul>
+<li><p>Remember 90 minutes a week. Take your time and break it up.</p></li>
+</ul>
+</li>
+<li><p>The reading is so dense and covers many topics.</p>
+<ul>
+<li><p>Each of you knows well how you learn; Lean on your strengths</p></li>
+</ul>
+</li>
+<li><p>Talk to each other!</p>
+<ul>
+<li><p>MS Teams is there for this discussion also.</p></li>
+</ul>
+</li>
+<li><p>More examples, please.</p>
+<ul>
+<li><p>We will do more in class and on workshop days</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="clicker-question-4-1">
+<h1>Clicker Question 4-1<a class="headerlink" href="#clicker-question-4-1" title="Link to this heading">#</a></h1>
+<p><strong>I feel confident in my abilities to use VS Code for my homework</strong></p>
+<ol class="arabic simple">
+<li><p>Strongly Agree</p></li>
+<li><p>Agree</p></li>
+<li><p>We’ll see</p></li>
+<li><p>Disagree</p></li>
+<li><p>Strongly disagree</p></li>
+</ol>
+<p><img alt="bg right:25% width:250px height:auto" src="../_images/day04-s2026.png" /></p>
+</section>
+<hr class="docutils" />
+<section id="projectile-motion">
+<h1>Projectile Motion<a class="headerlink" href="#projectile-motion" title="Link to this heading">#</a></h1>
+<div class="math notranslate nohighlight">
+\[\mathbf{a} = \langle a_x, a_y \rangle\]</div>
+<div class="math notranslate nohighlight">
+\[x_f = x_i + v_{x,i}t + \dfrac{1}{2}a_x t^2\]</div>
+<div class="math notranslate nohighlight">
+\[y_f = y_i + v_{y,i}t + \dfrac{1}{2}a_y t^2\]</div>
+<p><img alt="bg left:60%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/ParabolicWaterTrajectory.jpg/960px-ParabolicWaterTrajectory.jpg" /></p>
+</section>
+<hr class="docutils" />
+<section id="clicker-question-4-2">
+<h1>Clicker Question 4-2<a class="headerlink" href="#clicker-question-4-2" title="Link to this heading">#</a></h1>
+<p>For this fountain, what is the best guess for the acceleration (<span class="math notranslate nohighlight">\(\mathbf{a} = ??\)</span>) experienced by a fluid particle? <br> <em>Assume <span class="math notranslate nohighlight">\(y\)</span> is positive upward; <span class="math notranslate nohighlight">\(x\)</span> is positive to the right.</em></p>
+<ol class="arabic simple">
+<li><p><span class="math notranslate nohighlight">\(a_x \neq 0, a_y = g\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(a_x = 0, a_y = g\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(a_x \neq 0, a_y = -g\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(a_x = 0, a_y = -g\)</span></p></li>
+<li><p>Something else</p></li>
+</ol>
+<p><img alt="bg left:40%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/ParabolicWaterTrajectory.jpg/960px-ParabolicWaterTrajectory.jpg" /></p>
+</section>
+<hr class="docutils" />
+<section id="clicker-question-4-3">
+<h1>Clicker Question 4-3<a class="headerlink" href="#clicker-question-4-3" title="Link to this heading">#</a></h1>
+<p><strong>I feel comfortable with a discrete formulation of Newton’s Laws.</strong></p>
+<ol class="arabic simple">
+<li><p>Yes, I got this.</p></li>
+<li><p>I recall some ideas, but let’s check in.</p></li>
+<li><p>I’m not sure.</p></li>
+<li><p>I really don’t know what <em>discrete formulation</em> means here</p></li>
+<li><p>???</p></li>
+</ol>
+<p><img alt="bg right:25% width:250px height:auto" src="../_images/day04-s2026.png" /></p>
+</section>
+<hr class="docutils" />
+<section id="clicker-question-4-4">
+<h1>Clicker Question 4-4<a class="headerlink" href="#clicker-question-4-4" title="Link to this heading">#</a></h1>
+<p>The average velocity for a macroscopic time step <span class="math notranslate nohighlight">\(\Delta t = t_f - t_i\)</span> is given by:</p>
+<div class="math notranslate nohighlight">
+\[\mathbf{v}_{avg} = \dfrac{\Delta \mathbf{r}}{dt}\]</div>
+<p>where <span class="math notranslate nohighlight">\(\Delta \mathbf{r} = \mathbf{r}_f - \mathbf{r}_i\)</span>. At what time do we estimate the average velocity occurs?</p>
+<ol class="arabic simple">
+<li><p><span class="math notranslate nohighlight">\(t_i\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(t_f\)</span></p></li>
+<li><p>Sometime between <span class="math notranslate nohighlight">\(t_f\)</span> and <span class="math notranslate nohighlight">\(t_i\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\dfrac{t_f-t_i}{2}\)</span></p></li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="clicker-question-4-5">
+<h1>Clicker Question 4-5<a class="headerlink" href="#clicker-question-4-5" title="Link to this heading">#</a></h1>
+<p><strong>I feel comfortable with vectors, vector decomposition, and trigonometry in Cartesian coordinates.</strong></p>
+<ol class="arabic simple">
+<li><p>Yes, I got this.</p></li>
+<li><p>I recall some ideas, but let’s check in.</p></li>
+<li><p>I’m not sure.</p></li>
+<li><p>I don’t feel too confident with vectors.</p></li>
+</ol>
+<p><img alt="bg right:25% width:250px height:auto" src="../_images/day04-s2026.png" /></p>
+</section>
+<hr class="docutils" />
+<section id="clicker-question-4-6">
+<h1>Clicker Question 4-6<a class="headerlink" href="#clicker-question-4-6" title="Link to this heading">#</a></h1>
+<p>Consider the generic position vector <span class="math notranslate nohighlight">\(\vec{R}\)</span> for a particle in 2D space. Which of the following describes the direction of the vector in plane polar coordinates (<span class="math notranslate nohighlight">\(r\)</span>, <span class="math notranslate nohighlight">\(\phi\)</span>)?</p>
+<ol class="arabic simple">
+<li><p><span class="math notranslate nohighlight">\(\hat{R}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\hat{r}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\hat{\phi}\)</span></p></li>
+<li><p>Some combination of <span class="math notranslate nohighlight">\(\hat{r}\)</span> and <span class="math notranslate nohighlight">\(\hat{\phi}\)</span></p></li>
+<li><p>I’m not sure.</p></li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="group-discussion-4-1">
+<h1>Group Discussion 4-1<a class="headerlink" href="#group-discussion-4-1" title="Link to this heading">#</a></h1>
+<p>We found the following expression for the equation of motion of a falling ball subject to air resistance:</p>
+<div class="math notranslate nohighlight">
+\[m \ddot{y} = +mg - b \dot{y} - c \dot{y}^2\]</div>
+<p>What are the units of the constants <span class="math notranslate nohighlight">\(b\)</span> and <span class="math notranslate nohighlight">\(c\)</span>?</p>
+<p><img alt="bg right:35% width:350px height:auto" src="../_images/day04-s2026.png" /></p>
+</section>
+<hr class="docutils" />
+<section id="group-discussion-4-2">
+<h1>Group Discussion 4-2<a class="headerlink" href="#group-discussion-4-2" title="Link to this heading">#</a></h1>
+<p>Consider the generic position vector <span class="math notranslate nohighlight">\(\vec{R}\)</span> for a particle in 2D space. Find the velocity vector <span class="math notranslate nohighlight">\(\vec{V}\)</span> for the particle in Cartesian coordinates (<span class="math notranslate nohighlight">\(x\)</span>, <span class="math notranslate nohighlight">\(y\)</span>).</p>
+<p><img alt="bg right:35% width:350px height:auto" src="../_images/day04-s2026.png" /></p>
+<p><strong>What happens in plane polar coordinates?</strong></p>
+<div class="math notranslate nohighlight">
+\[\vec{R} = r \hat{r} + \phi \hat{\phi}\]</div>
+<p>Note:</p>
+<div class="math notranslate nohighlight">
+\[\hat{r} = \cos(\phi) \hat{x} + \sin(\phi) \hat{y}\]</div>
+<div class="math notranslate nohighlight">
+\[\hat{\phi} = -\sin(\phi) \hat{x} + \cos(\phi) \hat{y}\]</div>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./slide-archive"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Day 04 - Mathematical Preliminaries</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#raisemyhand">RaiseMyHand</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#announcements">Announcements</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#seminars-this-week">Seminars this week</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#wednesday-january-21-2026">WEDNESDAY, January 21, 2026</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Seminars this week</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#thursday-january-22-2026">THURSDAY, January 22, 2026</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Seminars this week</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#friday-january-23-2026">FRIDAY, January 23, 2026</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#goals-for-this-week">Goals for this week</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#be-able-to-answer-the-following-questions">Be able to answer the following questions.</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#reminders-from-day-03">Reminders from Day 03</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#content-check-in-week-2">Content Check-in Week 2</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-4-1">Clicker Question 4-1</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#projectile-motion">Projectile Motion</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-4-2">Clicker Question 4-2</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-4-3">Clicker Question 4-3</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-4-4">Clicker Question 4-4</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-4-5">Clicker Question 4-5</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-4-6">Clicker Question 4-6</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#group-discussion-4-1">Group Discussion 4-1</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#group-discussion-4-2">Group Discussion 4-2</a></li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Danny Caballero, Morten Hjorth-Jensen, Rachel Henderson, Alia Valentine
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+  <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" />
+</a>
+<br />
+This work is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

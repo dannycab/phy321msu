@@ -1,0 +1,1027 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Day 09 - Modeling Drag &#8212; Classical Mechanics</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"tex2jax": {"inlineMath": [["$", "$"]]}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'slide-archive/day-09-modeling-drag';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/spartan-helmet.png" class="logo__image only-light" alt="Classical Mechanics - Home"/>
+    <script>document.write(`<img src="../_static/spartan-helmet.png" class="logo__image only-dark" alt="Classical Mechanics - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    PHY 321: Classical Mechanics 1, Michigan State University, Spring 2026
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Course Information</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../admin/getting-started.html">Getting Started</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../admin/course-commitments.html">Course Commitments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../admin/teachers.html">Teachers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../admin/textbooks.html">Textbooks and Course Materials</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../admin/grading.html">Grading and Important Dates</a></li>
+
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Course Materials</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../lecture-notes/weekly-materials.html">Weekly Course Materials</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../lecture-notes/01_notes.html">01 - Overture: What is Classical Physics?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lecture-notes/02_notes.html">02 - Computing is a Necessary Tool for Science</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lecture-notes/03_notes.html">03 - What is Mathematical Modeling?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lecture-notes/04_notes.html">04 - Why does fluid drag complicate things?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lecture-notes/05_notes.html">05 - Conservation Laws Govern and Constrain our Physics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lecture-notes/06_notes.html">06 - Nature Often Seeks Stability</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lecture-notes/07_notes.html">07 - Introducing Nonlinear Dynamics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lecture-notes/08_notes.html">08 - Oscillations, Cycles, and Nature’s Recurrences</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lecture-notes/09_notes.html">09 - Driving Oscillators and Resonance Phenomenon</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lecture-notes/10_notes.html">10 - Investigating Systems that Exhibit Chaotic Dynamics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lecture-notes/11_notes.html">11 - Reformulating Classical Mechanics using the Calculus of Variations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lecture-notes/12_notes.html">12 - The Core Principle of Classical Mechanics? The Principle of Least Action</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lecture-notes/13_notes.html">13 - Applying the Lagrangian Formulation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lecture-notes/14_notes.html">14 - Classical Mechanics Thus Far</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../assignments/assignment-overview.html">Assignments Overview</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../assignments/hw1.html">Homework 1 (Due 23 Jan)</a></li>
+
+
+
+<li class="toctree-l2"><a class="reference internal" href="../assignments/hw2.html">Homework 2 (Due 30 Jan)</a></li>
+
+
+
+<li class="toctree-l2"><a class="reference internal" href="../assignments/hw3.html">Homework 3 (Due 06 Feb)</a></li>
+
+
+
+<li class="toctree-l2"><a class="reference internal" href="../assignments/hw4.html">Homework 4 (Due 13 Feb)</a></li>
+
+
+
+<li class="toctree-l2"><a class="reference internal" href="../assignments/midterm1.html">Midterm 1 (Due 27 Feb)</a></li>
+
+
+
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Logistics &amp; Resources</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../admin/schedule-cal.html">Course Calendar</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../admin/reminders.html">Reminders</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../admin/slides.html">Slides</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../admin/gradescope-submissions.html">Submitting Assignments on Gradescope</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../admin/iclicker-setup.html">i-Clicker Setup Instructions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../admin/finding-research.html">Finding Research Opportunities</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../admin/exercise0.html">Exercise 0</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Programming Resources</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../resources/vscode-setup-numerics-activity.html">Getting Started with VS Code for Scientific Computing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/vscode-setup-numerics-activity-completed.html">Getting Started with VS Code for Scientific Computing (Completed)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/euler_integration.html">Euler Integration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/integrators.html">Numerical Integrators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/phase_diagrams.html">Plotting Phase Diagrams</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/chaotic_dynamics.html">Modeling Chaotic Systems - Activity</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/slide-archive/day-09-modeling-drag.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Day 09 - Modeling Drag</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#announcements">Announcements</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hw1-feedback">HW1 Feedback</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-9-0">Clicker Question 9-0</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#weekly-seminars">Weekly Seminars</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tuesday-february-3-2026">TUESDAY, February 3, 2026</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Weekly Seminars</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#wednesday-february-4-2026">WEDNESDAY, February 4, 2026</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Weekly Seminars</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#thursday-february-5-2026">THURSDAY, February 5, 2026</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Weekly Seminars</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#friday-february-6-2026">FRIDAY, February 6, 2026</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#goals-for-this-week">Goals for this week</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reminders">Reminders</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#force-models">Force Models</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Reminders</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reynolds-number">Reynolds Number</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Reminders</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#equations-of-motion">Equations of Motion</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Reminders</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#trajectories">Trajectories</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#our-current-investigatory-process">Our Current Investigatory Process</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-model-to-trajectory-pipeline">The Model-to-Trajectory Pipeline</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-9-1">Clicker Question 9-1</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Clicker Question 9-1</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-9-2">Clicker Question 9-2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-9-3">Clicker Question 9-3</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-9-4">Clicker Question 9-4</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-9-5">Clicker Question 9-5</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-9-6">Clicker Question 9-6</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-9-7">Clicker Question 9-7</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <style>
+  :root {
+    --color-spartan-green: #18453B;
+    --color-msu-gold: #C1B000;
+    --color-light-gray: #f5f5f5;
+    --color-dark-text: #1a1a1a;
+    --color-accent-green: #2d5f4f;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    color: var(--color-dark-text);
+  }
+  
+  h1, h2, h3 {
+    color: var(--color-spartan-green);
+    font-weight: 500;
+  }
+  
+  h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0rem;
+  }
+  
+  h2 {
+    font-size: 1.55rem;
+    margin-bottom: 1.0rem;
+    border-bottom: 4px solid var(--color-spartan-green);
+    padding-bottom: 0.5rem;
+  }
+  
+  h3 {
+    font-size: 1.15rem;
+    margin-top: 1rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  section {
+    padding: 2rem;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .equation {
+    background-color: var(--color-light-gray);
+    padding: 1.5rem;
+    border-left: 4px solid var(--color-msu-gold);
+    margin: 1.5rem 0;
+    font-size: 1.3rem;
+    text-align: center;
+    color: var(--color-dark-text);
+  }
+
+  p {
+    font-size: 1.15rem;
+    line-height: 1.4;
+    margin-bottom: 0.5rem;
+  }
+  
+  ul, ol {
+    font-size: 1.15rem;
+    line-height: 1.4;
+    margin-left: 0.5rem;
+  }
+
+  ul ul, ol ol, ul ol, ol ul {
+    margin-left: 0.1rem;
+  }
+  
+  li {
+    margin-bottom: 0rem;
+    line-height: 1.4;
+  }
+  
+  strong {
+    color: var(--color-spartan-green);
+    font-weight: 600;
+  }
+  
+  em {
+    color: var(--color-accent-green);
+  }
+
+  .highlight {
+    background-color: var(--color-light-gray);
+    padding: 1.5rem;
+    border-left: 4px solid var(--color-spartan-green);
+    margin: 1.5rem 0;
+  }
+
+  .activity {
+    background-color: #fff8e1;
+    border: 2px solid var(--color-msu-gold);
+    padding: 1.25rem;
+    border-radius: 6px;
+    margin: 1rem 0;
+  }
+
+  code {
+    background-color: var(--color-light-gray);
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-size: 1.0rem;
+  }
+
+  .footnote {
+    font-size: 0.8rem;
+    color: #999;
+    margin-top: 1.5rem;
+    border-top: 1px solid #ddd;
+    padding-top: 0.75rem;
+  }
+</style>
+<!--
+_class: title
+_backgroundColor: #ffffff
+_color: #18453B
+-->
+<section id="day-09-modeling-drag">
+<h1>Day 09 - Modeling Drag<a class="headerlink" href="#day-09-modeling-drag" title="Link to this heading">#</a></h1>
+<p><img alt="bg right width:600px" src="../_images/paramecium-swimming.png" /></p>
+<p>Somersault of Paramecium in extremely confined environments -&gt;</p>
+<p>source: <a class="reference external" href="https://www.nature.com/articles/srep13148">https://www.nature.com/articles/srep13148</a></p>
+<div class="footnote">PHY 321 Classical Mechanics I - Spring 2026</div>
+<hr class="docutils" />
+<section id="announcements">
+<h2>Announcements<a class="headerlink" href="#announcements" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Homework 3 is posted (due Friday; late after Sunday)</p></li>
+<li><p>Homework 4 is posted (due next Friday; late after Sunday)</p></li>
+<li><p><strong>First midterm is coming up</strong> (assigned 16 Feb)</p>
+<ul>
+<li><p>One exercise will ask you to get started on your final project planning.</p></li>
+<li><p><em>Who are you gonna work with? What are you interested in studying?</em> Start thinking about this!</p></li>
+</ul>
+</li>
+<li><p>Limiting using <a class="reference external" href="https://raisemyhand.msucerl.org">RaiseMyHand</a> to Workshop Days on (Fridays) only.</p>
+<ul>
+<li><p><em>Will start posting the link to collect your questions for those days.</em></p></li>
+</ul>
+</li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="hw1-feedback">
+<h2>HW1 Feedback<a class="headerlink" href="#hw1-feedback" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Overall, folks did well; some issues with uploading/submitting</p>
+<ul>
+<li><p>Submit a regrade request if you think something was graded incorrectly</p></li>
+</ul>
+</li>
+<li><p>Kang has <strong>ALOT</strong> of grading to do</p></li>
+<li><p>Grading of your HW will be completed by the Monday a week following the Sunday due date</p></li>
+<li><p>We will not grade homework that has not been submitted properly</p>
+<ul>
+<li><p>Delays will be handled on a case-by-case basis</p></li>
+</ul>
+</li>
+</ul>
+<p><strong>Please assign problem sections to your assignment.</strong> <em>It takes five more minutes.</em>
+<strong>Please submit your assignment as a single PDF file.</strong> <em>It makes sure your grade is correct.</em></p>
+</section>
+<hr class="docutils" />
+<section id="clicker-question-9-0">
+<h2>Clicker Question 9-0<a class="headerlink" href="#clicker-question-9-0" title="Link to this heading">#</a></h2>
+<p>I need help making sure my homework submissions are done correctly.</p>
+<ol class="arabic simple">
+<li><p>I think I am doing it correctly.</p></li>
+<li><p>I am not sure if I am doing it correctly.</p></li>
+<li><p>I know I am not doing it correctly. Please help.</p></li>
+</ol>
+<p><em>If you select 2 or 3, make a mental note to please see me soon and so we can go through it together or debug your process.</em></p>
+</section>
+<hr class="docutils" />
+<section id="weekly-seminars">
+<h2>Weekly Seminars<a class="headerlink" href="#weekly-seminars" title="Link to this heading">#</a></h2>
+<section id="tuesday-february-3-2026">
+<h3>TUESDAY, February 3, 2026<a class="headerlink" href="#tuesday-february-3-2026" title="Link to this heading">#</a></h3>
+<p>Nuclear Theory Seminar, 11:00 a.m., FRIB 1200 Lab &amp; Zoom
+Speaker: Ryan LaRose, MSU
+Title: Error mitigation for partially-error corrected quantum computers
+Zoom Link: 964 7281 4717
+Passcode:  48824</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="id1">
+<h2>Weekly Seminars<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
+<section id="wednesday-february-4-2026">
+<h3>WEDNESDAY, February 4, 2026<a class="headerlink" href="#wednesday-february-4-2026" title="Link to this heading">#</a></h3>
+<p>Astronomy Seminar, 1:30 p.m., BPS 1400 &amp; Zoom
+Speaker: Marvin Morgan, UCSB
+Title: TBA
+Zoom Link: <a class="reference external" href="https://msu.zoom.us/j/93334479606?pwd=OtIXPWhRPBfzYu53sl3trSJlaBYI7C.1">https://msu.zoom.us/j/93334479606?pwd=OtIXPWhRPBfzYu53sl3trSJlaBYI7C.1</a>
+Passcode:  825824</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="id2">
+<h2>Weekly Seminars<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<section id="thursday-february-5-2026">
+<h3>THURSDAY, February 5, 2026<a class="headerlink" href="#thursday-february-5-2026" title="Link to this heading">#</a></h3>
+<p>Colloquium, Seminar, 3:30 p.m., BPS 1415 &amp; Zoom
+Refreshments at 3:00 BPS in BPS 1400
+Speaker: Glennys Farrar, New York University
+Title: Origin of ultrahigh-energy cosmic rays in Binary Neutron Star Collisions and the crucial roles of Nuclear Physics
+Zoom Link: <a class="reference external" href="https://msu.zoom.us/j/94951062663">https://msu.zoom.us/j/94951062663</a>
+Password: 2002</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="id3">
+<h2>Weekly Seminars<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
+<section id="friday-february-6-2026">
+<h3>FRIDAY, February 6, 2026<a class="headerlink" href="#friday-february-6-2026" title="Link to this heading">#</a></h3>
+<p>QuIC, Seminar, 12:40 p.m., BPS 1300 &amp; Zoom
+Speaker: Gregory Quiroz, APL
+Title: Classical Non-Markovian Noise in Symmetry-Preserving Quantum Dynamics
+*For the full schedule, please see: <a class="reference external" href="https://sites.google.com/msu.edu/quic-seminar/">https://sites.google.com/msu.edu/quic-seminar/</a> or for more information, please reach out to Ryan LaRosa directly</p>
+<p><strong>Reminder:</strong>
+<em>Email Danny (<a class="reference external" href="mailto:caball14&#37;&#52;&#48;msu&#46;edu">caball14<span>&#64;</span>msu<span>&#46;</span>edu</a>) your extra credit seminar write-ups</em></p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="goals-for-this-week">
+<h2>Goals for this week<a class="headerlink" href="#goals-for-this-week" title="Link to this heading">#</a></h2>
+<p><img alt="bg right width:600px" src="../_images/paramecium-swimming.png" /></p>
+<ul class="simple">
+<li><p>Establish a model for drag forces</p></li>
+<li><p>Develop an understanding of the process for modeling forces</p></li>
+<li><p>Produce equations of motion that can be investigated</p></li>
+<li><p>Start probing the behavior of these systems with math and computing</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="reminders">
+<h2>Reminders<a class="headerlink" href="#reminders" title="Link to this heading">#</a></h2>
+<section id="force-models">
+<h3>Force Models<a class="headerlink" href="#force-models" title="Link to this heading">#</a></h3>
+<p>We have been modeling the drag force using a functional dependence on velocity.</p>
+<div class="math notranslate nohighlight">
+\[\vec{F}_{\text{drag}} = -f(v)\hat{v}\]</div>
+<p>where <span class="math notranslate nohighlight">\(f(v)\)</span> is a function of velocity.</p>
+<p>We established (in 1D) there are two common forms of drag force:</p>
+<div class="math notranslate nohighlight">
+\[f(v) = bv \quad \text{Linear Drag}\]</div>
+<div class="math notranslate nohighlight">
+\[f(v) = cv^2 \quad \text{Quadratic Drag}\]</div>
+</section>
+</section>
+<hr class="docutils" />
+<section id="id4">
+<h2>Reminders<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
+<section id="reynolds-number">
+<h3>Reynolds Number<a class="headerlink" href="#reynolds-number" title="Link to this heading">#</a></h3>
+<p>The choice of which drag model to use depends on the Reynolds number of the system:</p>
+<div class="math notranslate nohighlight">
+\[\text{Re} = \dfrac{\rho v L}{\eta}\]</div>
+<p>where <span class="math notranslate nohighlight">\(\rho\)</span> is the density of the fluid, <span class="math notranslate nohighlight">\(v\)</span> is the velocity of the object relative to the fluid, <span class="math notranslate nohighlight">\(L\)</span> is a characteristic linear dimension (e.g., diameter of a sphere), and <span class="math notranslate nohighlight">\(\eta\)</span> is the dynamic viscosity of the fluid.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="id5">
+<h2>Reminders<a class="headerlink" href="#id5" title="Link to this heading">#</a></h2>
+<section id="equations-of-motion">
+<h3>Equations of Motion<a class="headerlink" href="#equations-of-motion" title="Link to this heading">#</a></h3>
+<p>The next step is to use Newton’s 2nd Law to write the equations of motion for the system. We found those equation of motion to be:</p>
+<div class="math notranslate nohighlight">
+\[m\dot{v} = -f(v)\]</div>
+<p>where <span class="math notranslate nohighlight">\(f(v)\)</span> is the drag force. So for each form of drag we have:</p>
+<div class="math notranslate nohighlight">
+\[\dot{v} = g-\frac{b}{m}v \quad \text{Linear Drag}\]</div>
+<div class="math notranslate nohighlight">
+\[\dot{v} = g-\frac{c}{m}v^2 \quad \text{Quadratic Drag}\]</div>
+</section>
+</section>
+<hr class="docutils" />
+<section id="id6">
+<h2>Reminders<a class="headerlink" href="#id6" title="Link to this heading">#</a></h2>
+<section id="trajectories">
+<h3>Trajectories<a class="headerlink" href="#trajectories" title="Link to this heading">#</a></h3>
+<p>We can integrate these equations of motion to find the velocity as a function of time. We found:</p>
+<div class="math notranslate nohighlight">
+\[v(t) = v_{\text{t,lin}}\left(1-e^{-\frac{bt}{m}}\right) \quad \text{Linear Drag}\]</div>
+<div class="math notranslate nohighlight">
+\[v(t) = v_{\text{t,quad}}\tanh\left(\frac{gt}{v_{\text{t,quad}}}\right) \quad \text{Quadratic Drag}\]</div>
+<p>where <span class="math notranslate nohighlight">\(v_{\text{t,lin}} = \frac{mg}{b}\)</span> for linear drag and <span class="math notranslate nohighlight">\(v_{\text{t,quad}} = \sqrt{\frac{mg}{c}}\)</span> for quadratic drag.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="our-current-investigatory-process">
+<h2>Our Current Investigatory Process<a class="headerlink" href="#our-current-investigatory-process" title="Link to this heading">#</a></h2>
+<section id="the-model-to-trajectory-pipeline">
+<h3>The Model-to-Trajectory Pipeline<a class="headerlink" href="#the-model-to-trajectory-pipeline" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Model the forces acting on the system</p></li>
+<li><p>Write the equations of motion using Newton’s 2nd Law</p></li>
+<li><p>Solve the equations of motion to find trajectories</p></li>
+</ol>
+<p>This is incomplete. We will need to learn how stability, critical points, and phase space can help us understand the behavior of these systems.</p>
+<p>We have also only done step 3 analytically. We will need to learn how to use computing to investigate these systems.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="clicker-question-9-1">
+<h2>Clicker Question 9-1<a class="headerlink" href="#clicker-question-9-1" title="Link to this heading">#</a></h2>
+<p>The Reynolds number can be thought of as a comparison between two forces acting on an object moving through a fluid: (1) inertial forces and (2) viscous forces. The ratio gives a sense of which force dominates the behavior of the object.</p>
+<div class="math notranslate nohighlight">
+\[\text{Re} = \dfrac{\rho v L}{\eta}\]</div>
+</section>
+<hr class="docutils" />
+<section id="id7">
+<h2>Clicker Question 9-1<a class="headerlink" href="#id7" title="Link to this heading">#</a></h2>
+<p>With this in mind, consider again the Reynolds number formula:</p>
+<div class="math notranslate nohighlight">
+\[\text{Re} = \dfrac{\rho v L}{\eta},\]</div>
+<p>Consider three scenarios:</p>
+<ol class="arabic simple">
+<li><p>A person swimming through water at moderate speed.</p></li>
+<li><p>A small bacterium swimming through water at low speed.</p></li>
+<li><p>A large airplane flying through the air at high speed.</p></li>
+</ol>
+<p><strong>Order these scenarios from lowest to highest Reynolds number.</strong></p>
+<p><strong>1.</strong> 1, 3, 2; <strong>2.</strong> 2, 3, 1; <strong>3.</strong> 1, 2, 3, <strong>4.</strong> 3, 1, 2; <strong>5.</strong> Something else</p>
+<hr class="docutils" />
+<p><img alt="bg right:50% w:600px height:auto" src="../_images/cq6-3.png" /></p>
+</section>
+<section id="clicker-question-9-2">
+<h2>Clicker Question 9-2<a class="headerlink" href="#clicker-question-9-2" title="Link to this heading">#</a></h2>
+<p>For the system of <strong>Linear Drag in 1D</strong>, we found a solution for the velocity as a function of time, with <span class="math notranslate nohighlight">\(v = 0\)</span> at <span class="math notranslate nohighlight">\(t = 0\)</span>.
+$<span class="math notranslate nohighlight">\(v(t) = v_{term}\left(1-e^{-\frac{bt}{m}}\right)\)</span>$</p>
+<p>where <span class="math notranslate nohighlight">\(v_{term} = \sqrt{\frac{mg}{b}}\)</span>.</p>
+<p><strong>Which sketch could be correct for the velocity of the ball?</strong></p>
+</section>
+<hr class="docutils" />
+<section id="clicker-question-9-3">
+<h2>Clicker Question 9-3<a class="headerlink" href="#clicker-question-9-3" title="Link to this heading">#</a></h2>
+<p>For the system of <strong>Quadratic Drag in 1D</strong>, we found a solution for the velocity as a function of time, with <span class="math notranslate nohighlight">\(v = 0\)</span> at <span class="math notranslate nohighlight">\(t = 0\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[v(t) = v_{term}\tanh(gt/v_{term})\]</div>
+<p>where <span class="math notranslate nohighlight">\(v_{term} = \sqrt{mg/c}\)</span>. What happens when <span class="math notranslate nohighlight">\(t \rightarrow \infty\)</span>?</p>
+<ol class="arabic simple">
+<li><p>The object stops moving.</p></li>
+<li><p>The object travels at a constant velocity.</p></li>
+<li><p>The object travels at an increasing velocity.</p></li>
+<li><p>The object travels at a decreasing velocity.</p></li>
+<li><p>I’m not sure.</p></li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="clicker-question-9-4">
+<h2>Clicker Question 9-4<a class="headerlink" href="#clicker-question-9-4" title="Link to this heading">#</a></h2>
+<p>For quadratic drag in 2D, we found the following pair of differential equations:</p>
+<div class="math notranslate nohighlight">
+\[\dot{v}_x = -\tilde{D}v_x\sqrt{v_x^2+v_y^2}\]</div>
+<div class="math notranslate nohighlight">
+\[\dot{v}_y = -\tilde{D}v_y\sqrt{v_x^2+v_y^2}-g\]</div>
+<p><strong>True or False:</strong> This pair of differential equations can be decoupled.</p>
+<ol class="arabic simple">
+<li><p>True</p></li>
+<li><p>False</p></li>
+<li><p>???</p></li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="clicker-question-9-5">
+<h2>Clicker Question 9-5<a class="headerlink" href="#clicker-question-9-5" title="Link to this heading">#</a></h2>
+<p>For linear drag in 2D, we found the following pair of differential equations:</p>
+<div class="math notranslate nohighlight">
+\[\dot{v}_x = -\gamma v_x\]</div>
+<div class="math notranslate nohighlight">
+\[\dot{v}_y = -\gamma v_y-g\]</div>
+<p><strong>True or False:</strong> This pair of differential equations is decoupled.</p>
+<ol class="arabic simple">
+<li><p>True</p></li>
+<li><p>False</p></li>
+<li><p>???</p></li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="clicker-question-9-6">
+<h2>Clicker Question 9-6<a class="headerlink" href="#clicker-question-9-6" title="Link to this heading">#</a></h2>
+<p>For the gravitational interaction, I want to compute the force acting on body B, located at <span class="math notranslate nohighlight">\(\vec{r}_B\)</span>, by body A, located at <span class="math notranslate nohighlight">\(\vec{r}_A\)</span>.</p>
+<p>The gravitational force is given by:</p>
+<div class="math notranslate nohighlight">
+\[\vec{F} = -G\dfrac{m_1 m_2}{r^2}\hat{r}\]</div>
+<p>What is the appropriate form of <span class="math notranslate nohighlight">\(\vec{r}\)</span>?</p>
+<ol class="arabic simple">
+<li><p><span class="math notranslate nohighlight">\(\vec{r} = \vec{r}_A - \vec{r}_B\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\vec{r} = \vec{r}_B - \vec{r}_A\)</span></p></li>
+<li><p>Either is ok</p></li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="clicker-question-9-7">
+<h2>Clicker Question 9-7<a class="headerlink" href="#clicker-question-9-7" title="Link to this heading">#</a></h2>
+<p>We found that the equation of motion for the spring-mass system was:</p>
+<div class="math notranslate nohighlight">
+\[\ddot{x} = -\dfrac{k}{m}x = -\omega^2 x\]</div>
+<p>Your friends have proposed the following <strong>general solutions</strong>:</p>
+<div class="math notranslate nohighlight">
+\[1.\;x(t) = A\cos(\omega t) \qquad 2.\;x(t) = B\sin(\omega t) \qquad 3.\;x(t) = A\cos(\omega t) + B\sin(\omega t) \]</div>
+<div class="math notranslate nohighlight">
+\[ 4.\;x(t) = A\cos(\omega t + \phi) \qquad 5.\;x(t) = B\sin(\omega t + \phi) \qquad 6.\;x(t) = A\cos(\omega t + \phi) + B\sin(\omega t + \phi) \]</div>
+<p>How many of them are correct?
+(1) Only one (2) Two (3) Three
+(4) Four (5) All of them</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./slide-archive"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#announcements">Announcements</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hw1-feedback">HW1 Feedback</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-9-0">Clicker Question 9-0</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#weekly-seminars">Weekly Seminars</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tuesday-february-3-2026">TUESDAY, February 3, 2026</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Weekly Seminars</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#wednesday-february-4-2026">WEDNESDAY, February 4, 2026</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Weekly Seminars</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#thursday-february-5-2026">THURSDAY, February 5, 2026</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Weekly Seminars</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#friday-february-6-2026">FRIDAY, February 6, 2026</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#goals-for-this-week">Goals for this week</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reminders">Reminders</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#force-models">Force Models</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Reminders</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reynolds-number">Reynolds Number</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Reminders</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#equations-of-motion">Equations of Motion</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Reminders</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#trajectories">Trajectories</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#our-current-investigatory-process">Our Current Investigatory Process</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-model-to-trajectory-pipeline">The Model-to-Trajectory Pipeline</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-9-1">Clicker Question 9-1</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Clicker Question 9-1</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-9-2">Clicker Question 9-2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-9-3">Clicker Question 9-3</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-9-4">Clicker Question 9-4</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-9-5">Clicker Question 9-5</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-9-6">Clicker Question 9-6</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-9-7">Clicker Question 9-7</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Danny Caballero, Morten Hjorth-Jensen, Rachel Henderson, Alia Valentine
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+  <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" />
+</a>
+<br />
+This work is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
