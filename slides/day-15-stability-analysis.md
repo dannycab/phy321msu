@@ -162,7 +162,7 @@ Particle has quantized energy levels and corresponding wavefunctions that are si
 
 ## Announcements
 
-* Midterm 1 is available (Due 25 Feb; late 27 Feb)
+* Midterm 1 is available (Due 27 Feb; late 1 Mar)
   * You may work in larger groups, but solutions are submitted like homework (max 3 group members) **on Gradescope**
   * Exercise 0 is for project planning; and can be submitted individually or as a _different_ group **on D2l**
 * **Friday's Class:** Work period for Midterm 1; you can ask us questions and check in on your progress.
