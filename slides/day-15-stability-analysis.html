@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Day 04 - Mathematical Preliminaries &#8212; Classical Mechanics</title>
+    <title>Day 15 - Potential Energy and Stability &#8212; Classical Mechanics</title>
   
   
   
@@ -59,7 +59,7 @@
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"tex2jax": {"inlineMath": [["$", "$"]]}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'slides/day-04-mathematical-prelims';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'slides/day-15-stability-analysis';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -309,7 +309,7 @@
       
       
       
-      <li><a href="../_sources/slides/day-04-mathematical-prelims.md" target="_blank"
+      <li><a href="../_sources/slides/day-15-stability-analysis.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -393,7 +393,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Day 04 - Mathematical Preliminaries</h1>
+    <h1>Day 15 - Potential Energy and Stability</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -403,38 +403,33 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Day 04 - Mathematical Preliminaries</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#raisemyhand">RaiseMyHand</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#announcements">Announcements</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#seminars-this-week">Seminars this week</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#wednesday-january-21-2026">WEDNESDAY, January 21, 2026</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#infinite-potential-well">Infinite Potential Well</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#classical-motion-in-an-infinite-potential-well">Classical Motion in an Infinite Potential Well</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#quantum-motion-in-an-infinite-potential-well">Quantum Motion in an Infinite Potential Well</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Seminars this week</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#thursday-january-22-2026">THURSDAY, January 22, 2026</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#announcements">Announcements</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#midterm-1-exercise-0">Midterm 1 - Exercise 0</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#midterm-1-exercise-1">Midterm 1 - Exercise 1</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modeling-spin-dependent-forces">Modeling Spin Dependent Forces</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Seminars this week</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#friday-january-23-2026">FRIDAY, January 23, 2026</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#midterm-1-exercise-2">Midterm 1 - Exercise 2</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#particle-in-a-one-dimensional-potential">Particle in a one-dimensional potential</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#goals-for-this-week">Goals for this week</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#be-able-to-answer-the-following-questions">Be able to answer the following questions.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#midterm-1-exercise-3">Midterm 1 - Exercise 3</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#model-your-own-system">Model your own system</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#reminders-from-day-03">Reminders from Day 03</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#content-check-in-week-2">Content Check-in Week 2</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-4-1">Clicker Question 4-1</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#projectile-motion">Projectile Motion</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-4-2">Clicker Question 4-2</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-4-3">Clicker Question 4-3</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-4-4">Clicker Question 4-4</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-4-5">Clicker Question 4-5</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-4-6">Clicker Question 4-6</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#group-discussion-4-1">Group Discussion 4-1</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#group-discussion-4-2">Group Discussion 4-2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reminders-finding-equilibrium-points">Reminders: Finding Equilibrium Points</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-15-1">Clicker Question 15-1</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-15-2-similar-to-midterm-1-exercise-2">Clicker Question 15-2 (similar to Midterm 1 Exercise 2)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-15-3">Clicker Question 15-3</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-15-4">Clicker Question 15-4</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-15-5">Clicker Question 15-5</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-15-6">Clicker Question 15-6</a></li>
 </ul>
-
             </nav>
         </div>
     </div>
@@ -566,237 +561,201 @@ _class: title
 _backgroundColor: #ffffff
 _color: #18453B
 -->
-<section id="day-04-mathematical-preliminaries">
-<h1>Day 04 - Mathematical Preliminaries<a class="headerlink" href="#day-04-mathematical-preliminaries" title="Link to this heading">#</a></h1>
-<p><strong>Questions?</strong> <em>Make sure to upvote questions</em></p>
-<img src="../images/qrcodes/day04-s2026.png" width=300px>
-<p><img alt="bg right:40% width:500px height:auto" src="../_images/vector1.jpeg" /></p>
-<div class="footnote">PHY 321 Classical Mechanics I - Spring 2026</div>
-</section>
+<section id="day-15-potential-energy-and-stability">
+<h1>Day 15 - Potential Energy and Stability<a class="headerlink" href="#day-15-potential-energy-and-stability" title="Link to this heading">#</a></h1>
+<p><img alt="bg right width:600px" src="../_images/InfiniteSquareWellAnimation.gif" /></p>
+<p>Infinite Potential Well <span class="math notranslate nohighlight">\(\longrightarrow\)</span></p>
 <hr class="docutils" />
-<section id="raisemyhand">
-<h1>RaiseMyHand<a class="headerlink" href="#raisemyhand" title="Link to this heading">#</a></h1>
-<p><img alt="bg left:25% width:250px height:auto" src="../_images/open-source.png" /></p>
-<ul class="simple">
-<li><p>Tool should be available for each class period.</p></li>
-<li><p>Answers to your questions are also written up after class</p>
-<ul>
-<li><p>Day 02 - <a class="reference external" href="https://raisemyhand.msucerl.org/student?code=s97Hf7-WS9K7b7ooovdjKxXwih1b_Nnj">https://raisemyhand.msucerl.org/student?code=s97Hf7-WS9K7b7ooovdjKxXwih1b_Nnj</a></p></li>
-</ul>
-</li>
-<li><p>Links to each day posted in MS Teams</p></li>
-</ul>
-<p><em>Would appreciate your feedback and/or ideas for use cases</em></p>
+<section id="infinite-potential-well">
+<h2>Infinite Potential Well<a class="headerlink" href="#infinite-potential-well" title="Link to this heading">#</a></h2>
+<div class="math notranslate nohighlight">
+\[\begin{split}V(x) = \begin{cases} 
+      0 &amp; 0 &lt; x &lt; L \\
+      \infty &amp; \text{otherwise}
+   \end{cases}\end{split}\]</div>
+<section id="classical-motion-in-an-infinite-potential-well">
+<h3>Classical Motion in an Infinite Potential Well<a class="headerlink" href="#classical-motion-in-an-infinite-potential-well" title="Link to this heading">#</a></h3>
+<p>Particle bounces back and forth between the walls of the well with constant speed.</p>
+</section>
+<section id="quantum-motion-in-an-infinite-potential-well">
+<h3>Quantum Motion in an Infinite Potential Well<a class="headerlink" href="#quantum-motion-in-an-infinite-potential-well" title="Link to this heading">#</a></h3>
+<p>Particle has quantized energy levels and corresponding wavefunctions that are sinusoidal within the well and zero outside the well.</p>
+</section>
 </section>
 <hr class="docutils" />
 <section id="announcements">
-<h1>Announcements<a class="headerlink" href="#announcements" title="Link to this heading">#</a></h1>
+<h2>Announcements<a class="headerlink" href="#announcements" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p>Homework 1 is due this Friday</p></li>
-<li><p>Homework 2 is posted now</p></li>
-<li><p>Help sessions start this week</p>
+<li><p>Midterm 1 is available (Due 25 Feb; late 27 Feb)</p>
 <ul>
-<li><p>DC - Fridays at 10:00-12:00 and 16:00-17:00 (1248 BPS)</p></li>
+<li><p>You may work in larger groups, but solutions are submitted like homework (max 3 group members) <strong>on Gradescope</strong></p></li>
+<li><p>Exercise 0 is for project planning; and can be submitted individually or as a <em>different</em> group <strong>on D2l</strong></p></li>
 </ul>
 </li>
-<li><p>Mihir (ULA) will host additional help hours soon</p></li>
+<li><p><strong>Friday’s Class:</strong> Work period for Midterm 1; you can ask us questions and check in on your progress.</p></li>
 </ul>
 </section>
 <hr class="docutils" />
-<section id="seminars-this-week">
-<h1>Seminars this week<a class="headerlink" href="#seminars-this-week" title="Link to this heading">#</a></h1>
-<section id="wednesday-january-21-2026">
-<h2>WEDNESDAY, January 21, 2026<a class="headerlink" href="#wednesday-january-21-2026" title="Link to this heading">#</a></h2>
-<p>Astronomy Seminar, 1:30 p.m., BPS 1400 &amp; Zoom
-Speaker: Yuan Li, UMass - Amherst
-Title: TBA
-Zoom Link: <a class="reference external" href="https://msu.zoom.us/j/93334479606?pwd=OtIXPWhRPBfzYu53sl3trSJlaBYI7C.1">https://msu.zoom.us/j/93334479606?pwd=OtIXPWhRPBfzYu53sl3trSJlaBYI7C.1</a>
-Passcode:  825824</p>
-</section>
-</section>
-<hr class="docutils" />
-<section id="id1">
-<h1>Seminars this week<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
-<section id="thursday-january-22-2026">
-<h2>THURSDAY, January 22, 2026<a class="headerlink" href="#thursday-january-22-2026" title="Link to this heading">#</a></h2>
-<p>Colloquium, Seminar, 3:30 p.m., BPS 1415 &amp; Zoom
-Refreshments at 3:00 BPS in BPS 1400
-Speaker:  Richard Lenski, MSU
-Title: Dynamics and Repeatability of Evolution in a Long-Term Experiment with Bacteria
-Zoom Link: <a class="reference external" href="https://msu.zoom.us/j/94951062663">https://msu.zoom.us/j/94951062663</a>
-Password: 2002</p>
-</section>
-</section>
-<hr class="docutils" />
-<section id="id2">
-<h1>Seminars this week<a class="headerlink" href="#id2" title="Link to this heading">#</a></h1>
-<section id="friday-january-23-2026">
-<h2>FRIDAY, January 23, 2026<a class="headerlink" href="#friday-january-23-2026" title="Link to this heading">#</a></h2>
-<p>QuIC, Seminar, 12:40 p.m., BPS 1300 &amp; Zoom
-Speaker: Ben DalFavero, MSU
-Title: Fault tolerant quantum computing I</p>
-</section>
-</section>
-<hr class="docutils" />
-<section id="goals-for-this-week">
-<h1>Goals for this week<a class="headerlink" href="#goals-for-this-week" title="Link to this heading">#</a></h1>
-<section id="be-able-to-answer-the-following-questions">
-<h2>Be able to answer the following questions.<a class="headerlink" href="#be-able-to-answer-the-following-questions" title="Link to this heading">#</a></h2>
+<section id="midterm-1-exercise-0">
+<h2>Midterm 1 - Exercise 0<a class="headerlink" href="#midterm-1-exercise-0" title="Link to this heading">#</a></h2>
+<p><strong>Can be completed individually or as a group (different from your homework/midterm group)</strong></p>
 <ul class="simple">
-<li><p>What are the essential physics models for single particles?</p></li>
-<li><p>How do we setup problems in classical mechanics?</p></li>
-<li><p>What mathematics do we need to get started?</p></li>
-<li><p>How do we solve the equations of motion?</p></li>
+<li><p>Read about Computational Essays</p>
+<ul>
+<li><p>Respond to two questions (~200 words each) about your readings.</p></li>
 </ul>
-</section>
+</li>
+<li><p>Think about the topic and research question you want to explore for your project</p>
+<ul>
+<li><p>All together, write about ~500 words describing your project idea.</p></li>
+</ul>
+</li>
+</ul>
+<p><strong>Submitting on D2L because DC will give you feedback on your project idea.</strong></p>
 </section>
 <hr class="docutils" />
-<section id="reminders-from-day-03">
-<h1>Reminders from Day 03<a class="headerlink" href="#reminders-from-day-03" title="Link to this heading">#</a></h1>
+<section id="midterm-1-exercise-1">
+<h2>Midterm 1 - Exercise 1<a class="headerlink" href="#midterm-1-exercise-1" title="Link to this heading">#</a></h2>
+<section id="modeling-spin-dependent-forces">
+<h3>Modeling Spin Dependent Forces<a class="headerlink" href="#modeling-spin-dependent-forces" title="Link to this heading">#</a></h3>
+<div class="math notranslate nohighlight">
+\[\mathbf{F}_{magnus} = S \mathbf{\omega} \times \mathbf{v}\]</div>
 <ul class="simple">
-<li><p>In a Newtonian world, we start from a vector description of motion</p></li>
-<li><p>Differential equations are mathematical models that describe the motion of particles</p></li>
-<li><p>We can use different methods to solve these differential equations</p></li>
+<li><p>The next complication beyond air drag</p></li>
+<li><p>You may use prior codes or solutions from homework, but you must modify them to include the Magnus force.</p></li>
+<li><p>The model should be of your own choosing (i.e., your choice of sports ball)</p></li>
 </ul>
-<p><strong>i-Clicker: <a class="reference external" href="https://join.iclicker.com/PRJO">https://join.iclicker.com/PRJO</a></strong></p>
+<p><strong>Submit on Gradescope (including PDF of Jupyter notebook).</strong></p>
+<p><strong>What you are learning:</strong> How to model a new situation that is just a little more complicated than what we’ve done before.</p>
+</section>
 </section>
 <hr class="docutils" />
-<section id="content-check-in-week-2">
-<h1>Content Check-in Week 2<a class="headerlink" href="#content-check-in-week-2" title="Link to this heading">#</a></h1>
-<p><strong>I appreciate y’all taking the time to complete it!</strong></p>
+<section id="midterm-1-exercise-2">
+<h2>Midterm 1 - Exercise 2<a class="headerlink" href="#midterm-1-exercise-2" title="Link to this heading">#</a></h2>
+<section id="particle-in-a-one-dimensional-potential">
+<h3>Particle in a one-dimensional potential<a class="headerlink" href="#particle-in-a-one-dimensional-potential" title="Link to this heading">#</a></h3>
+<div class="math notranslate nohighlight">
+\[V(x) = \frac{V_0}{d^4}(x^4 - 2x^2d^2+d^4)\]</div>
 <ul class="simple">
-<li><p>Lots of reading, Danny! WTF?!?!</p>
-<ul>
-<li><p>Remember 90 minutes a week. Take your time and break it up.</p></li>
+<li><p>Complete a full analysis of the potential using all tools we have learned so far</p></li>
+<li><p>Demonstrate your understanding of the potential by modeling motion of a particle</p></li>
 </ul>
-</li>
-<li><p>The reading is so dense and covers many topics.</p>
-<ul>
-<li><p>Each of you knows well how you learn; Lean on your strengths</p></li>
+<p><strong>Submit on Gradescope (including PDF of Jupyter notebook).</strong></p>
+<p><strong>What you are learning:</strong> How to analyze a new potential energy function based on the theoretical tools and computational tools we have learned so far.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="midterm-1-exercise-3">
+<h2>Midterm 1 - Exercise 3<a class="headerlink" href="#midterm-1-exercise-3" title="Link to this heading">#</a></h2>
+<section id="model-your-own-system">
+<h3>Model your own system<a class="headerlink" href="#model-your-own-system" title="Link to this heading">#</a></h3>
+<div class="math notranslate nohighlight">
+\[V(x) = ?\]</div>
+<ul class="simple">
+<li><p>Choose a 1D potential energy function that you find interesting</p></li>
+<li><p>Analyze the potential energy function using all tools we have learned so far</p></li>
+<li><p>Model the motion of a particle in this potential energy function</p></li>
 </ul>
-</li>
-<li><p>Talk to each other!</p>
-<ul>
-<li><p>MS Teams is there for this discussion also.</p></li>
-</ul>
-</li>
-<li><p>More examples, please.</p>
-<ul>
-<li><p>We will do more in class and on workshop days</p></li>
-</ul>
-</li>
-</ul>
+<p><strong>Submit on Gradescope (including PDF of Jupyter notebook).</strong></p>
+<p><strong>What you are learning:</strong> Taking agency over your learning by applying what you have been scaffolded to learn to a system of your own choosing.</p>
+</section>
 </section>
 <hr class="docutils" />
-<section id="clicker-question-4-1">
-<h1>Clicker Question 4-1<a class="headerlink" href="#clicker-question-4-1" title="Link to this heading">#</a></h1>
-<p><strong>I feel confident in my abilities to use VS Code for my homework</strong></p>
-<ol class="arabic simple">
-<li><p>Strongly Agree</p></li>
-<li><p>Agree</p></li>
-<li><p>We’ll see</p></li>
-<li><p>Disagree</p></li>
-<li><p>Strongly disagree</p></li>
-</ol>
-<p><img alt="bg right:25% width:250px height:auto" src="../_images/day04-s2026.png" /></p>
-</section>
-<hr class="docutils" />
-<section id="projectile-motion">
-<h1>Projectile Motion<a class="headerlink" href="#projectile-motion" title="Link to this heading">#</a></h1>
+<section id="reminders-finding-equilibrium-points">
+<h2>Reminders: Finding Equilibrium Points<a class="headerlink" href="#reminders-finding-equilibrium-points" title="Link to this heading">#</a></h2>
+<p>Given a potential energy function <span class="math notranslate nohighlight">\(U(x)\)</span>, we can find the equilibrium points by setting the derivative of the potential energy function to zero:</p>
 <div class="math notranslate nohighlight">
-\[\mathbf{a} = \langle a_x, a_y \rangle\]</div>
+\[\frac{dU(x^*)}{dx} = 0.\]</div>
+<p>The stability of the equilibrium points can be determined by examining the second derivative of the potential energy function:</p>
 <div class="math notranslate nohighlight">
-\[x_f = x_i + v_{x,i}t + \dfrac{1}{2}a_x t^2\]</div>
-<div class="math notranslate nohighlight">
-\[y_f = y_i + v_{y,i}t + \dfrac{1}{2}a_y t^2\]</div>
-<p><img alt="bg left:60%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/ParabolicWaterTrajectory.jpg/960px-ParabolicWaterTrajectory.jpg" /></p>
+\[\frac{d^2U(x^*)}{dx^2}&gt;0? \qquad \frac{d^2U(x^*)}{dx^2}&lt;0?\]</div>
+<p>If the second derivative is positive, the equilibrium point is stable. If the second derivative is negative, the equilibrium point is unstable.</p>
 </section>
 <hr class="docutils" />
-<section id="clicker-question-4-2">
-<h1>Clicker Question 4-2<a class="headerlink" href="#clicker-question-4-2" title="Link to this heading">#</a></h1>
-<p>For this fountain, what is the best guess for the acceleration (<span class="math notranslate nohighlight">\(\mathbf{a} = ??\)</span>) experienced by a fluid particle? <br> <em>Assume <span class="math notranslate nohighlight">\(y\)</span> is positive upward; <span class="math notranslate nohighlight">\(x\)</span> is positive to the right.</em></p>
+<section id="clicker-question-15-1">
+<h2>Clicker Question 15-1<a class="headerlink" href="#clicker-question-15-1" title="Link to this heading">#</a></h2>
+<p>Here’s the graph of the potential energy function <span class="math notranslate nohighlight">\(U(x)\)</span> for a pendulum.</p>
+<p><img alt="bg right:40% w:450px h:auto " src="../_images/pendulum-potential-energy.png" /></p>
+<p>What can you say about the equilibrium points? There is/are:</p>
 <ol class="arabic simple">
-<li><p><span class="math notranslate nohighlight">\(a_x \neq 0, a_y = g\)</span></p></li>
-<li><p><span class="math notranslate nohighlight">\(a_x = 0, a_y = g\)</span></p></li>
-<li><p><span class="math notranslate nohighlight">\(a_x \neq 0, a_y = -g\)</span></p></li>
-<li><p><span class="math notranslate nohighlight">\(a_x = 0, a_y = -g\)</span></p></li>
-<li><p>Something else</p></li>
-</ol>
-<p><img alt="bg left:40%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/ParabolicWaterTrajectory.jpg/960px-ParabolicWaterTrajectory.jpg" /></p>
-</section>
-<hr class="docutils" />
-<section id="clicker-question-4-3">
-<h1>Clicker Question 4-3<a class="headerlink" href="#clicker-question-4-3" title="Link to this heading">#</a></h1>
-<p><strong>I feel comfortable with a discrete formulation of Newton’s Laws.</strong></p>
-<ol class="arabic simple">
-<li><p>Yes, I got this.</p></li>
-<li><p>I recall some ideas, but let’s check in.</p></li>
-<li><p>I’m not sure.</p></li>
-<li><p>I really don’t know what <em>discrete formulation</em> means here</p></li>
-<li><p>???</p></li>
-</ol>
-<p><img alt="bg right:25% width:250px height:auto" src="../_images/day04-s2026.png" /></p>
-</section>
-<hr class="docutils" />
-<section id="clicker-question-4-4">
-<h1>Clicker Question 4-4<a class="headerlink" href="#clicker-question-4-4" title="Link to this heading">#</a></h1>
-<p>The average velocity for a macroscopic time step <span class="math notranslate nohighlight">\(\Delta t = t_f - t_i\)</span> is given by:</p>
-<div class="math notranslate nohighlight">
-\[\mathbf{v}_{avg} = \dfrac{\Delta \mathbf{r}}{dt}\]</div>
-<p>where <span class="math notranslate nohighlight">\(\Delta \mathbf{r} = \mathbf{r}_f - \mathbf{r}_i\)</span>. At what time do we estimate the average velocity occurs?</p>
-<ol class="arabic simple">
-<li><p><span class="math notranslate nohighlight">\(t_i\)</span></p></li>
-<li><p><span class="math notranslate nohighlight">\(t_f\)</span></p></li>
-<li><p>Sometime between <span class="math notranslate nohighlight">\(t_f\)</span> and <span class="math notranslate nohighlight">\(t_i\)</span></p></li>
-<li><p><span class="math notranslate nohighlight">\(\dfrac{t_f-t_i}{2}\)</span></p></li>
+<li><p>One stable point</p></li>
+<li><p>Two stable points</p></li>
+<li><p>One stable and one unstable point</p></li>
+<li><p>Two unstable and one stable point</p></li>
 </ol>
 </section>
 <hr class="docutils" />
-<section id="clicker-question-4-5">
-<h1>Clicker Question 4-5<a class="headerlink" href="#clicker-question-4-5" title="Link to this heading">#</a></h1>
-<p><strong>I feel comfortable with vectors, vector decomposition, and trigonometry in Cartesian coordinates.</strong></p>
+<section id="clicker-question-15-2-similar-to-midterm-1-exercise-2">
+<h2>Clicker Question 15-2 (similar to Midterm 1 Exercise 2)<a class="headerlink" href="#clicker-question-15-2-similar-to-midterm-1-exercise-2" title="Link to this heading">#</a></h2>
+<p>A double-well potential energy function <span class="math notranslate nohighlight">\(U(x)\)</span> is given by</p>
+<div class="math notranslate nohighlight">
+\[U(x) = -\frac{1}{2}kx^2 + \frac{1}{4}kx^4.\]</div>
+<p><em>We assume we have scaled the potential energy so that all the units are consistent.</em></p>
+<p>How many equilibrium points does this system have?</p>
 <ol class="arabic simple">
-<li><p>Yes, I got this.</p></li>
-<li><p>I recall some ideas, but let’s check in.</p></li>
-<li><p>I’m not sure.</p></li>
-<li><p>I don’t feel too confident with vectors.</p></li>
-</ol>
-<p><img alt="bg right:25% width:250px height:auto" src="../_images/day04-s2026.png" /></p>
-</section>
-<hr class="docutils" />
-<section id="clicker-question-4-6">
-<h1>Clicker Question 4-6<a class="headerlink" href="#clicker-question-4-6" title="Link to this heading">#</a></h1>
-<p>Consider the generic position vector <span class="math notranslate nohighlight">\(\vec{R}\)</span> for a particle in 2D space. Which of the following describes the direction of the vector in plane polar coordinates (<span class="math notranslate nohighlight">\(r\)</span>, <span class="math notranslate nohighlight">\(\phi\)</span>)?</p>
-<ol class="arabic simple">
-<li><p><span class="math notranslate nohighlight">\(\hat{R}\)</span></p></li>
-<li><p><span class="math notranslate nohighlight">\(\hat{r}\)</span></p></li>
-<li><p><span class="math notranslate nohighlight">\(\hat{\phi}\)</span></p></li>
-<li><p>Some combination of <span class="math notranslate nohighlight">\(\hat{r}\)</span> and <span class="math notranslate nohighlight">\(\hat{\phi}\)</span></p></li>
-<li><p>I’m not sure.</p></li>
+<li><p>1</p></li>
+<li><p>2</p></li>
+<li><p>3</p></li>
+<li><p>4</p></li>
 </ol>
 </section>
 <hr class="docutils" />
-<section id="group-discussion-4-1">
-<h1>Group Discussion 4-1<a class="headerlink" href="#group-discussion-4-1" title="Link to this heading">#</a></h1>
-<p>We found the following expression for the equation of motion of a falling ball subject to air resistance:</p>
+<section id="clicker-question-15-3">
+<h2>Clicker Question 15-3<a class="headerlink" href="#clicker-question-15-3" title="Link to this heading">#</a></h2>
+<p>A double-well potential energy function <span class="math notranslate nohighlight">\(U(x)\)</span> is given by</p>
 <div class="math notranslate nohighlight">
-\[m \ddot{y} = +mg - b \dot{y} - c \dot{y}^2\]</div>
-<p>What are the units of the constants <span class="math notranslate nohighlight">\(b\)</span> and <span class="math notranslate nohighlight">\(c\)</span>?</p>
-<p><img alt="bg right:35% width:350px height:auto" src="../_images/day04-s2026.png" /></p>
+\[U(x) = -\frac{1}{2}kx^2 + \frac{1}{4}kx^4.\]</div>
+<ol class="arabic simple">
+<li><p>Find the equilibrium points (<span class="math notranslate nohighlight">\(x^*\)</span>) of the pendulum by setting:</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[\frac{dU(x^*)}{dx} = 0.\]</div>
+<ol class="arabic simple" start="2">
+<li><p>Characterize the stability of the equilibrium points (<span class="math notranslate nohighlight">\(x^*\)</span>):</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[\frac{d^2U(x^*)}{dx^2}&gt;0? \qquad \frac{d^2U(x^*)}{dx^2}&lt;0?\]</div>
+<p><strong>Click when done.</strong></p>
 </section>
 <hr class="docutils" />
-<section id="group-discussion-4-2">
-<h1>Group Discussion 4-2<a class="headerlink" href="#group-discussion-4-2" title="Link to this heading">#</a></h1>
-<p>Consider the generic position vector <span class="math notranslate nohighlight">\(\vec{R}\)</span> for a particle in 2D space. Find the velocity vector <span class="math notranslate nohighlight">\(\vec{V}\)</span> for the particle in Cartesian coordinates (<span class="math notranslate nohighlight">\(x\)</span>, <span class="math notranslate nohighlight">\(y\)</span>).</p>
-<p><img alt="bg right:35% width:350px height:auto" src="../_images/day04-s2026.png" /></p>
-<p><strong>What happens in plane polar coordinates?</strong></p>
+<section id="clicker-question-15-4">
+<h2>Clicker Question 15-4<a class="headerlink" href="#clicker-question-15-4" title="Link to this heading">#</a></h2>
+<p>Here’s a graph of the potential energy function <span class="math notranslate nohighlight">\(U(x)\)</span> for a double-well potential.</p>
+<p><img alt="bg right:52% width:600px height:auto" src="../_images/cq14-5.png" /></p>
+<p>Describe the motion of a particle with the total energy, <span class="math notranslate nohighlight">\(E=\)</span></p>
+<ol class="arabic simple">
+<li><p><span class="math notranslate nohighlight">\(0.4\,\mathrm{J}\)</span>, <span class="math notranslate nohighlight">\(&lt;\)</span> barrier height</p></li>
+<li><p><span class="math notranslate nohighlight">\(1.2\,\mathrm{J}\)</span>, <span class="math notranslate nohighlight">\(&gt;\)</span> barrier height</p></li>
+<li><p><span class="math notranslate nohighlight">\(1.0\,\mathrm{J}\)</span>, <span class="math notranslate nohighlight">\(=\)</span> barrier height</p></li>
+</ol>
+<p><strong>Click when done.</strong></p>
+</section>
+<hr class="docutils" />
+<section id="clicker-question-15-5">
+<h2>Clicker Question 15-5<a class="headerlink" href="#clicker-question-15-5" title="Link to this heading">#</a></h2>
+<p>Here’s the graph of the potential energy function <span class="math notranslate nohighlight">\(V(x)\)</span> that is a model of quark confinement in quantum chromodynamics.</p>
+<p><img alt="bg right:45% width:500px" src="../_images/quark-potential.png" /></p>
+<p>What can you say about the equilibrium points? There is/are:</p>
+<ol class="arabic simple">
+<li><p>One stable point</p></li>
+<li><p>One stable and one unstable point</p></li>
+<li><p>Can’t tell</p></li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="clicker-question-15-6">
+<h2>Clicker Question 15-6<a class="headerlink" href="#clicker-question-15-6" title="Link to this heading">#</a></h2>
+<p>Here’s the equation for this potential energy function (constants: <span class="math notranslate nohighlight">\(\gamma\)</span>, <span class="math notranslate nohighlight">\(\delta\)</span>, and <span class="math notranslate nohighlight">\(\kappa\)</span>):</p>
 <div class="math notranslate nohighlight">
-\[\vec{R} = r \hat{r} + \phi \hat{\phi}\]</div>
-<p>Note:</p>
-<div class="math notranslate nohighlight">
-\[\hat{r} = \cos(\phi) \hat{x} + \sin(\phi) \hat{y}\]</div>
-<div class="math notranslate nohighlight">
-\[\hat{\phi} = -\sin(\phi) \hat{x} + \cos(\phi) \hat{y}\]</div>
+\[V(v) = -\frac{\gamma}{x}  + \frac{\delta}{x^2} + \kappa x,\]</div>
+<p><img alt="bg right:45% width:500px" src="../_images/quark-potential.png" /></p>
+<p>What can you say about the motion of a particle with energy <span class="math notranslate nohighlight">\(E\)</span>?</p>
+<ol class="arabic simple">
+<li><p><span class="math notranslate nohighlight">\(E &lt; 0\)</span> <span class="math notranslate nohighlight">\(\;\)</span> 2. <span class="math notranslate nohighlight">\(E = 0\)</span> <span class="math notranslate nohighlight">\(\;\)</span> 3. <span class="math notranslate nohighlight">\(E &gt; 15\)</span></p></li>
+</ol>
+<p><strong>Careful with #3!</strong>
+Send <span class="math notranslate nohighlight">\(x\)</span> to <span class="math notranslate nohighlight">\(\infty\)</span>: <span class="math notranslate nohighlight">\(\lim_{x\to\infty} V(x) = ?\)</span></p>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -845,38 +804,33 @@ Title: Fault tolerant quantum computing I</p>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Day 04 - Mathematical Preliminaries</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#raisemyhand">RaiseMyHand</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#announcements">Announcements</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#seminars-this-week">Seminars this week</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#wednesday-january-21-2026">WEDNESDAY, January 21, 2026</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#infinite-potential-well">Infinite Potential Well</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#classical-motion-in-an-infinite-potential-well">Classical Motion in an Infinite Potential Well</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#quantum-motion-in-an-infinite-potential-well">Quantum Motion in an Infinite Potential Well</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Seminars this week</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#thursday-january-22-2026">THURSDAY, January 22, 2026</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#announcements">Announcements</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#midterm-1-exercise-0">Midterm 1 - Exercise 0</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#midterm-1-exercise-1">Midterm 1 - Exercise 1</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modeling-spin-dependent-forces">Modeling Spin Dependent Forces</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Seminars this week</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#friday-january-23-2026">FRIDAY, January 23, 2026</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#midterm-1-exercise-2">Midterm 1 - Exercise 2</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#particle-in-a-one-dimensional-potential">Particle in a one-dimensional potential</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#goals-for-this-week">Goals for this week</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#be-able-to-answer-the-following-questions">Be able to answer the following questions.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#midterm-1-exercise-3">Midterm 1 - Exercise 3</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#model-your-own-system">Model your own system</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#reminders-from-day-03">Reminders from Day 03</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#content-check-in-week-2">Content Check-in Week 2</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-4-1">Clicker Question 4-1</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#projectile-motion">Projectile Motion</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-4-2">Clicker Question 4-2</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-4-3">Clicker Question 4-3</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-4-4">Clicker Question 4-4</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-4-5">Clicker Question 4-5</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-4-6">Clicker Question 4-6</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#group-discussion-4-1">Group Discussion 4-1</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#group-discussion-4-2">Group Discussion 4-2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reminders-finding-equilibrium-points">Reminders: Finding Equilibrium Points</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-15-1">Clicker Question 15-1</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-15-2-similar-to-midterm-1-exercise-2">Clicker Question 15-2 (similar to Midterm 1 Exercise 2)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-15-3">Clicker Question 15-3</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-15-4">Clicker Question 15-4</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-15-5">Clicker Question 15-5</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-15-6">Clicker Question 15-6</a></li>
 </ul>
-
   </nav></div>
 
 </div></div>
