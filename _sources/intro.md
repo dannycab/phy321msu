@@ -5,21 +5,15 @@
 [![GitHub Issues](https://img.shields.io/github/issues/dannycab/phy321msu?logo=github)](https://github.com/dannycab/phy321msu/issues)
 
 
-:::{admonition} Week 4 Reminders
+## Week 5
+
+:::{admonition} Week 5 Reminders
 :class: alert
 * Read these course notes or the [associated book chapters](./admin/schedule-cal.md)
     * [05 - Conservation Laws Govern and Constrain our Physics](./lecture-notes/05_notes.ipynb)
+    * [06 - Nature Often Seeks Stability](./lecture-notes/06_notes.ipynb)
 * [Homework 4](./assignments/hw4.ipynb) is due Friday; late on Sunday.
-* **There is NO Class on Friday, Feb 13th** (MSU will observe the Feb 13th, 2023 tragedy: [Observance Plans](https://spartanstogether.msu.edu/plans-feb-13-2026))
-:::{admonition} Office Hours and Zoom Info
-:class: note
-* Office hours this week (Mihir-MN; Danny-DC):
-    * Thursday 3-5pm (MN, 1248 BPS)
-    * (**cancelled**) Friday 10-12pm (DC, 1248 BPS)
-    * (**cancelled**) Friday 3-5pm (MN, Zoom only <https://msu.zoom.us/j/99550311023> `phy321msu`)
-    * **Make an appointment with Danny this week**: <https://cal.com/dannycaballero/phy-321>
-* If you are ill, you can join class on zoom: <https://msu.zoom.us/j/99550311023> (password: `phy321msu`)
-:::
+* [Midterm 1](./assignments/midterm1.ipynb) is posted and due Friday, Feb 27th; late on Sunday, Mar 1st.
 :::
 
 ## Learning outcomes
