@@ -303,20 +303,20 @@ Slides for PHY 321 appear in reverse chronological order, with the most recent s
 
 :::
 
----
+--- --->
 
-## Day 17 - Help Session - 03 Oct 2025
+## Day 16 - Workshop Session - 20 Feb 2026
 
-[![Day 17](../slides/day-17-homework-session.png)](../slides/day-17-homework-session.pdf)
+[![Day 16](../slides/day-16-workshop-session.png)](../slides/day-16-workshop-session.pdf)
 
 :::info
 
 ### 📂 Download Slides
-[HTML](../slides/day-17-homework-session.md) | [PDF](../slides/day-17-homework-session.pdf)
+[HTML](../slides/day-16-workshop-session.md) | [PDF](../slides/day-16-workshop-session.pdf)
 
 :::
 
---- --->
+--- 
 
 ## Day 15 - Stability Analysis - 18 Feb 2026
 
