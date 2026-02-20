@@ -2,6 +2,28 @@
 
 Here, we collect the reminders for each week in reverse order in case you missed anything.
 
+## Week 6
+:::{admonition} Week 6 Reminders
+:class: alert
+* Read these course notes or the [associated book chapters](./admin/schedule-cal.md)
+    * [06 - Nature Often Seeks Stability](./lecture-notes/06_notes.ipynb)
+    * [07 - Introduction to Nonlinear Dynamics](./lecture-notes/07_notes.ipynb)
+* [Midterm 1](./assignments/midterm1.ipynb) is due Friday, Feb 27th; late on Sunday, Mar 1st.
+* [Homework 6](./assignments/hw6.ipynb) has been posted (due Mar 13th)
+:::
+
+
+## Week 5
+
+:::{admonition} Week 5 Reminders
+:class: alert
+* Read these course notes or the [associated book chapters](./admin/schedule-cal.md)
+    * [05 - Conservation Laws Govern and Constrain our Physics](./lecture-notes/05_notes.ipynb)
+    * [06 - Nature Often Seeks Stability](./lecture-notes/06_notes.ipynb)
+* [Homework 4](./assignments/hw4.ipynb) is due Friday; late on Sunday.
+* [Midterm 1](./assignments/midterm1.ipynb) is posted and due Friday, Feb 27th; late on Sunday, Mar 1st.
+:::
+
 ## Week 4
 
 :::{admonition} Week 4 Reminders
