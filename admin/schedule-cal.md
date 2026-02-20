@@ -62,7 +62,7 @@ _All assignments are turned in using Gradescope as a single PDF._
 |:--------:|:---------:|:-------------------------------------:|:----------------------------------|:-------------------------------------------------------------------|
 | CW8      | 16 Feb    | Examples and Stability Analysis       | 📓 [06 - Nature Often Seeks Stability](../lecture-notes/06_notes.ipynb)<br>📚 JRT 4.1-4.4, 4.6; MLB 6.6-6.8<br>📊 [Slides](../slides/day-14-potential-energy-and-stability.pdf) | 📝 [Midterm Project 1 Assigned](../assignments/midterm1.ipynb) (Due 27 Feb) |
 |          | 18 Feb     | Conservation of Momentum and Angular Momentum | 📓 [05 - Conservation Laws Govern and Constrain our Physics](../lecture-notes/05_notes.ipynb#conservation-of-momentum-and-angular-momentum)<br>📚 JRT 3.1, 3.3-3.4<br>📊 [Slides](../slides/day-15-stability-analysis.pdf) | |
-|          | 20 Feb     | Workshop day                          |                                  |                                                                   |
+|          | 20 Feb     | Workshop day                          |  📊 [Slides](../slides/day-16-workshop-session.pdf)                                |                                                                   |
 
 ---
 
