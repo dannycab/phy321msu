@@ -290,20 +290,20 @@ Slides for PHY 321 appear in reverse chronological order, with the most recent s
 
 :::
 
----
+--- -->
 
-## Day 18 - Introduction to Nonlinear Dynamics - 06 Oct 2025
+## Day 17 - Nonlinear Dynamics - 23 Feb 2026
 
-[![Day 18](../slides/day-18-introduction-to-nonlinear-dynamics.png)](../slides/day-18-introduction-to-nonlinear-dynamics.pdf)
+[![Day 17](../slides/day-17-introduction-to-nonlinear-dynamics.png)](../slides/day-17-introduction-to-nonlinear-dynamics.pdf)
 
 :::info
 
 ### 📂 Download Slides
-[HTML](../slides/day-18-introduction-to-nonlinear-dynamics.md) | [PDF](../slides/day-18-introduction-to-nonlinear-dynamics.pdf)
+[HTML](../slides/day-17-introduction-to-nonlinear-dynamics.md) | [PDF](../slides/day-17-introduction-to-nonlinear-dynamics.pdf)
 
 :::
 
---- --->
+--- 
 
 ## Day 16 - Workshop Session - 20 Feb 2026
 
