@@ -277,20 +277,20 @@ Slides for PHY 321 appear in reverse chronological order, with the most recent s
 
 :::
 
----
+--- -->
 
-## Day 19 - Phase Diagrams - 08 Oct 2025
+## Day 18 - Phase Diagrams - 08 Oct 2025
 
-[![Day 19](../slides/day-19-phase-diagrams.png)](../slides/day-19-phase-diagrams.pdf)
+[![Day 18](../slides/day-18-phase-diagrams.png)](../slides/day-18-phase-diagrams.pdf)
 
 :::info
 
 ### 📂 Download Slides
-[HTML](../slides/day-19-phase-diagrams.md) | [PDF](../slides/day-19-phase-diagrams.pdf)
+[HTML](../slides/day-18-phase-diagrams.md) | [PDF](../slides/day-18-phase-diagrams.pdf)
 
 :::
 
---- -->
+---
 
 ## Day 17 - Nonlinear Dynamics - 23 Feb 2026
 
