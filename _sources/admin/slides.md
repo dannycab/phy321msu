@@ -238,9 +238,9 @@ Slides for PHY 321 appear in reverse chronological order, with the most recent s
 
 :::
 
----
+--- -->
 
-## Day 22 - Damped Oscillations - 15 Oct 2025
+## Day 22 - Damped Oscillations - 13 Mar 2026
 
 [![Day 22](../slides/day-22-damped-oscillations.png)](../slides/day-22-damped-oscillations.pdf)
 
@@ -253,7 +253,7 @@ Slides for PHY 321 appear in reverse chronological order, with the most recent s
 
 ---
 
-## Day 21 - Oscillations - 13 Oct 2025
+## Day 21 - Oscillations - 11 Mar 2026
 
 [![Day 21](../slides/day-21-oscillations.png)](../slides/day-21-oscillations.pdf)
 
@@ -264,7 +264,12 @@ Slides for PHY 321 appear in reverse chronological order, with the most recent s
 
 :::
 
---- --->
+--- 
+
+## Day 20 - Class Cancelled - 09 Mar 2026
+
+
+---
 
 ## Day 19 - Help Session - 27 Feb 2026
 

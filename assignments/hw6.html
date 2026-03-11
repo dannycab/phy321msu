@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Homework 6 (Due 24 Oct) &#8212; Classical Mechanics</title>
+    <title>Homework 6 (Due 20 Mar) &#8212; Classical Mechanics</title>
   
   
   
@@ -16,30 +16,33 @@
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
     document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-
-  
-  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
-    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
   
+  <!-- So that users can add custom icons -->
+  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
-  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
     <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
     <script src="../_static/doctools.js?v=9a2dae69"></script>
@@ -52,7 +55,7 @@
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script src="../_static/design-tabs.js?v=36754332"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
@@ -64,6 +67,7 @@
     <link rel="search" title="Search" href="../search.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
   </head>
   
   
@@ -79,19 +83,8 @@
     <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
   
-  <input type="checkbox"
-          class="sidebar-toggle"
-          id="pst-primary-sidebar-checkbox"/>
-  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
-  
-  <input type="checkbox"
-          class="sidebar-toggle"
-          id="pst-secondary-sidebar-checkbox"/>
-  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
-  
-  <div class="search-button__wrapper">
-    <div class="search-button__overlay"></div>
-    <div class="search-button__search-container">
+  <dialog id="pst-search-dialog">
+    
 <form class="bd-search d-flex align-items-center"
       action="../search.html"
       method="get">
@@ -99,7 +92,6 @@
   <input type="search"
          class="form-control"
          name="q"
-         id="search-input"
          placeholder="Search this book..."
          aria-label="Search this book..."
          autocomplete="off"
@@ -107,8 +99,8 @@
          autocapitalize="off"
          spellcheck="false"/>
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form></div>
-  </div>
+</form>
+  </dialog>
 
   <div class="pst-async-banner-revealer d-none">
   <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
@@ -126,7 +118,8 @@
       
         
       
-      <div class="bd-sidebar-primary bd-sidebar">
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -156,21 +149,17 @@
     
     
     <img src="../_static/spartan-helmet.png" class="logo__image only-light" alt="Classical Mechanics - Home"/>
-    <script>document.write(`<img src="../_static/spartan-helmet.png" class="logo__image only-dark" alt="Classical Mechanics - Home"/>`);</script>
+    <img src="../_static/spartan-helmet.png" class="logo__image only-dark pst-js-only" alt="Classical Mechanics - Home"/>
   
   
 </a></div>
         <div class="sidebar-primary-item">
 
- <script>
- document.write(`
-   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
-    <span class="search-button__default-text">Search</span>
-    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
-   </button>
- `);
- </script></div>
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
@@ -267,9 +256,14 @@
   
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
   </div>
-  
-  <div id="rtd-footer-container"></div>
 
 
       </div>
@@ -366,24 +360,16 @@
 
 
 
-<script>
-document.write(`
-  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
-    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
-    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
-  </button>
-`);
-</script>
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
 
 
-<script>
-document.write(`
-  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
-  </button>
-`);
-</script>
+</button>
 <button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
 </button>
@@ -397,7 +383,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Homework 6 (Due 24 Oct)</h1>
+    <h1>Homework 6 (Due 20 Mar)</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -407,26 +393,25 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction-to-homework-6">Introduction to Homework 6</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#practicalities-about-homeworks-and-projects">Practicalities about  homeworks and projects</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Homework 6 (Due 20 Mar)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#individual-exercise-submit-on-d2l-only">Individual Exercise (Submit on D2L only)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hw6-algorithmic-science-who-builds-it-who-benefits-and-who-disappears">HW6: Algorithmic Science: Who Builds It, Who Benefits, and Who Disappears?</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-1-10pt-planning-your-final-project">Exercise 1 (10pt), Planning your Final Project</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#schedule-for-final-project">Schedule for Final Project</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#your-proposal">Your Proposal</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#your-writing">Your writing</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-2-10pt-morse-potential-as-an-sho">Exercise 2 (10pt) Morse Potential as an SHO</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-3-10pt-time-averaging-and-the-sho">Exercise 3 (10pt), Time Averaging and the SHO</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-4-10pt-toy-potential">Exercise 4 (10pt), Toy Potential</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-5-10pt-defining-periodicity">Exercise 5 (10pt), Defining Periodicity</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-6-50-pt-find-your-own-1d-oscillator">Exercise 6 (50 pt), Find your own 1D Oscillator</a><ul class="nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#pencil-and-paper-exercises-submit-on-gradescope-only">Pencil and Paper Exercises (Submit on Gradescope only)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-1-10pt-morse-potential-as-an-sho">Exercise 1 (10pt) Morse Potential as an SHO</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-2-10pt-time-averaging-and-the-sho">Exercise 2 (10pt), Time Averaging and the SHO</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-3-10pt-toy-potential">Exercise 3 (10pt), Toy Potential</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-4-10pt-defining-periodicity">Exercise 4 (10pt), Defining Periodicity</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-5-50-pt-find-your-own-1d-oscillator">Exercise 5 (50 pt), Find your own 1D Oscillator</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#examples-of-1d-potentials">Examples of 1D potentials</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#extra-credit-integrating-classwork-with-research">Extra Credit - Integrating Classwork With Research</a></li>
 </ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#extra-credit-integrating-research">Extra Credit — Integrating Research</a></li>
+</ul>
+
             </nav>
         </div>
     </div>
@@ -439,18 +424,28 @@ document.write(`
                   
   <!-- HTML file automatically generated from DocOnce source (https://github.com/doconce/doconce/)
 doconce format html hw5.do.txt --no_mako -->
-<!-- dom:TITLE: PHY321: Classical Mechanics 1 --><section id="homework-6-due-24-oct">
-<h1>Homework 6 (Due 24 Oct)<a class="headerlink" href="#homework-6-due-24-oct" title="Link to this heading">#</a></h1>
-<p><strong>Due at midnight</strong><br/>
-Total points: <strong>100</strong></p>
-<p><strong>Practicalities about  homeworks and projects</strong></p>
+<!-- dom:TITLE: PHY321: Classical Mechanics 1 --><section id="homework-6-due-20-mar">
+<h1>Homework 6 (Due 20 Mar)<a class="headerlink" href="#homework-6-due-20-mar" title="Link to this heading">#</a></h1>
+<div class="alert admonition">
+<p class="admonition-title">Grading Breakdown</p>
+<ul class="simple">
+<li><p>Individual Exercise (10 points) - Ex 0</p></li>
+<li><p>Pencil and Paper Exercises (60 points) - Ex 1-5</p></li>
+<li><p>Numerical Exercise (30 points) - Ex 6</p></li>
+</ul>
+</div>
+<div class="tip admonition">
+<p class="admonition-title">Practicalities about homeworks</p>
 <ol class="arabic simple">
-<li><p>You can work in pairs or by yourself. If you work as a pair you can hand in one answer only if you wish. <strong>Remember to write your name(s)</strong>! You may collaborate with others (optimal group size 3-4).</p></li>
+<li><p>Individual exercises. You must work alone on these exercises and hand in your own answers. This should be submitted on D2L only (Homework 6 Exercise 0). Individual exercises are marked with “Individual Exercise” in the title and are counted separately from the rest of the homework.</p></li>
+<li><p>For pencil and paper, or numerical exercises, you may work in groups of up to 3. If you work as a pair/group you may hand in one answer only if you wish. <strong>Remember to write your name(s)</strong>! These exercises are marked with “Pencil and Paper Exercises” or “Numerical Exercise” in the title, and are counted together for the homework grade.</p></li>
+<li><p>Beyond the group you work on homework with, you may collaborate with others to discuss concepts and approaches, but you must write up your own answers (alone or as a group of 3).</p></li>
 <li><p>Homeworks are available approximately ten days before the deadline. You should anticipate this work.</p></li>
-<li><p>How do I(we)  hand in?  You can hand in the paper and pencil exercises as a <strong>single scanned PDF document</strong>. For this homework this applies to exercises 1-5. Your jupyter notebook file should be converted to a <strong>PDF</strong> file, attached to the same PDF file as for the pencil and paper exercises. All files should be uploaded to Gradescope.</p></li>
-<li><p>For any exercise marked <strong>Complete Individually</strong>, you must do so as these are reflective exercises for you.</p></li>
+<li><p>How do I(we) hand in?  You can hand in the paper and pencil exercises as a <strong>single scanned PDF document</strong>. For this homework this applies to exercises 1-5. Your jupyter notebook file should be converted to a <strong>PDF</strong> file, attached to the same PDF file as for the pencil and paper exercises. All files should be uploaded to Gradescope.</p></li>
+<li><p><strong>Make sure your work is legible</strong>. If we cannot read it, we cannot grade it.</p></li>
 </ol>
 <p><strong><a class="reference internal" href="#../resources/gradescope-submissions.md"><span class="xref myst">Instructions for submitting to Gradescope</span></a>.</strong></p>
+</div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
@@ -463,76 +458,38 @@ Total points: <strong>100</strong></p>
 </div>
 </div>
 </div>
-<section id="introduction-to-homework-6">
-<h2>Introduction to Homework 6<a class="headerlink" href="#introduction-to-homework-6" title="Link to this heading">#</a></h2>
-<p>This week’s exercises focus on oscillators and how to approximate the solution to the equations of motion using the SHO. The relevant reading background is:</p>
-<ol class="arabic simple">
-<li><p>chapter 5 of Taylor</p></li>
-<li><p>chapter 6.6-6.8 of Boas</p></li>
-<li><p>chapters 2.0-2.3 and 5.0-5.2 of Strogatz</p></li>
-</ol>
-<p>In both textbooks there are many nice worked out examples.</p>
-<section id="practicalities-about-homeworks-and-projects">
-<h3>Practicalities about  homeworks and projects<a class="headerlink" href="#practicalities-about-homeworks-and-projects" title="Link to this heading">#</a></h3>
-<ol class="arabic simple">
-<li><p>You can work in groups (optimal groups are often 2-3 people) or by yourself. If you work as a group you can hand in one answer only if you wish. <strong>Remember to write your name(s)</strong>!</p></li>
-<li><p>Homeworks are available ten days  before the deadline.</p></li>
-<li><p>How do I(we)  hand in?  You can hand in the paper and pencil exercises as a <strong>single scanned PDF document</strong>. For this homework this applies to exercises 1-5. Your jupyter notebook file should be converted to a <strong>PDF</strong> file, attached to the same PDF file as for the pencil and paper exercises. All files should be uploaded to Gradescope.</p></li>
-</ol>
-<p><strong><a class="reference internal" href="#../resources/gradescope-submissions.md"><span class="xref myst">Instructions for submitting to Gradescope</span></a>.</strong></p>
 </section>
-</section>
-<section id="exercise-1-10pt-planning-your-final-project">
-<h2>Exercise 1 (10pt), Planning your Final Project<a class="headerlink" href="#exercise-1-10pt-planning-your-final-project" title="Link to this heading">#</a></h2>
-<p><strong>Submit Exercise 1 with Project Partners on D2L also</strong></p>
-<p>The point of this exercise is to get you thinking about what you want to do for a final project and how you will accomplish it. Research and project planning are important skills to develop and it takes time to do so. We are trying to scaffold that development and give you the opportunity to practice these skills. So, you will be responsible for developing a plan for your final project, and the timeline under which you will accomplish it. Our job is to provide feedback and guidance on your plan, and to offer support in the development and construction of your final project.</p>
-<p><strong>Remember there is no right or wrong way to do this, it is about developing a plan that works for you.</strong></p>
-<p>Your final project is your chance to bring all the tools we have developed to bear on a question that interests you. You have reviewed the information on computational essays before, but here it is again in case it’s useful for this exercise:</p>
+<section id="individual-exercise-submit-on-d2l-only">
+<h1>Individual Exercise (Submit on D2L only)<a class="headerlink" href="#individual-exercise-submit-on-d2l-only" title="Link to this heading">#</a></h1>
+<section id="hw6-algorithmic-science-who-builds-it-who-benefits-and-who-disappears">
+<h2>HW6: Algorithmic Science: Who Builds It, Who Benefits, and Who Disappears?<a class="headerlink" href="#hw6-algorithmic-science-who-builds-it-who-benefits-and-who-disappears" title="Link to this heading">#</a></h2>
+<p>Artificial intelligence has rapidly become a central tool in scientific research. From predicting protein structures to detecting gravitational waves to analyzing climate data, AI is reshaping how science is done. But like all scientific work, AI-powered science happens within institutions, economies, and labor systems — and those systems are rarely made visible. When we say a machine “learned” something, we should ask: who taught it, and at what cost?</p>
+<div class="info admonition">
+<p class="admonition-title">The Nobel Prize Goes to… a Corporation?</p>
+<p><img alt="AlphaFold protein structure visualization" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Protein_structure_prediction.png/960px-Protein_structure_prediction.png" />
+<em>Image credit: Wikimedia Commons, Public Domain</em></p>
+<p>In 2024, the Nobel Prize in Chemistry was awarded to Demis Hassabis and John Jumper of Google DeepMind, along with David Baker of the University of Washington, for their work on protein structure prediction using AI. The centerpiece was <a class="reference external" href="https://en.wikipedia.org/wiki/AlphaFold">AlphaFold</a>, a system developed inside one of the world’s largest corporations that was trained on publicly funded biological databases built up over decades by thousands of researchers. The prize raised sharp questions: Can a corporate AI system win the Nobel Prize? Who really did this work? And what does it mean when scientific credit flows to a company’s executives rather than the broader community of researchers whose data and labor made the tool possible?</p>
+</div>
+<p>For this exercise, read the following two sources:</p>
 <ol class="arabic simple">
-<li><p>Wolfram’s <a class="reference external" href="https://writings.stephenwolfram.com/2017/11/what-is-a-computational-essay">What is a Computational Essay?</a></p></li>
-<li><p>Tor and my short paper: <a class="reference external" href="https://arxiv.org/abs/1909.12697">Computational Essays: An Avenue for Scientific Creativity in Physics</a></p></li>
-<li><p>Wolfram’s <a class="reference external" href="https://www.wolframcloud.com/obj/Expositions/Published/ComputationalEssayGuidelines">Steps to Writing a Computational Essay</a></p></li>
-<li><p><a class="reference external" href="https://uio-ccse.github.io/computational-essay-showroom">University of Oslo’s Computational Essay Showroom</a></p></li>
+<li><p><strong>On AlphaFold and the Nobel:</strong> Chris Palmer, <a class="reference external" href="https://www.engineering.org.cn/engi/EN/10.1016/j.eng.2024.12.003">“AlphaFold Wins Nobel Prize, Gains Functionality, Drops Open Access”</a>, <em>Engineering</em>, 2024. <em>(Focus on the sections about open science controversy and the scientific credit debate.)</em></p></li>
+<li><p><strong>On the hidden labor of AI:</strong> Brookings Institution, <a class="reference external" href="https://www.brookings.edu/articles/reimagining-the-future-of-data-and-ai-labor-in-the-global-south/">“Reimagining the future of data and AI labor in the Global South”</a>, 2025.</p></li>
 </ol>
-<p><strong>Your final project will consist of a presentation of your project to the class, attendance at each project presentation day and a review of your classmates’ project presentations, and your computational essay.</strong></p>
-<p><em>Final details and rubric for this presentation will be available before 24 November.</em></p>
-<p>For your final project, you may work alone, in pairs, or in groups of up to three people. The expectation for your work will be higher if you have more people in your group; your explorations will need to be more comprehensive and detailed, and your essay will be expected to be longer and more polished if you have more people in your group. You can also develop more interesting ways of presenting your work that demonstrate the creativity and depth of your explorations if you have more people in your group. If you have any questions, just ask.</p>
-<p>For this exercise, we want you to get started on planning your final project by sending us a brief proposal with a timeline. To help you, we have provided a schedule where you can see the checkpoints for your project, and when we will have a comprehensive work week. You should take advantage of the work week to make significant progress on your project; especially if there are technical aspects you are unsure about.</p>
-<section id="schedule-for-final-project">
-<h3>Schedule for Final Project<a class="headerlink" href="#schedule-for-final-project" title="Link to this heading">#</a></h3>
+<div class="info admonition">
+<p class="admonition-title">Why are we reading this?</p>
+<p>AI tools are increasingly part of scientific workflows, including in physics. Understanding who builds these tools — and under what conditions — is part of understanding the political economy of modern science. Just as earlier exercises asked you to look at the hidden labor behind observatories and instruments, this exercise asks you to look at the hidden labor behind the algorithms. The workers who label data, moderate content, and annotate training sets are as structurally essential to AI as the astronomers who polished telescope mirrors were to 19th century astronomy. They are rarely credited.</p>
+</div>
 <ul class="simple">
-<li><p>31 October - HW 7 will have a request for your 1st project update.</p></li>
-<li><p>14 November - Midterm Project 2 will have a request for your 2nd project update.</p></li>
-<li><p>21 November - HW 8 will have a request for your 3rd project update.</p></li>
-<li><p>24 and 26 November - Project work week in-class.</p></li>
-<li><p>01, 03, and 05 December - Final Project Presentations (Attendance required)</p></li>
-<li><p>08 December - Computational Essay due.</p></li>
+<li><p><strong>0a:</strong> In ~150 words, summarize the AlphaFold Nobel Prize controversy. The prize was awarded to corporate executives at Google DeepMind for a tool trained on publicly funded scientific databases. What does this episode reveal about how scientific credit is assigned when algorithms, corporations, and cumulative community labor all play a role? What would a more complete accounting of that credit look like?</p></li>
+<li><p><strong>0b:</strong> In ~150 words, AI systems — including those used in scientific research — are trained on data labeled by workers, often in the Global South, earning as little as $1–2 per hour under precarious conditions. This labor is structurally invisible: workers rarely know what systems they are building, and the companies using their work rarely disclose the supply chain. How does recognizing this labor chain change your understanding of what “automated” science actually is? How does it connect to the broader patterns of hidden labor we have discussed throughout this course?</p></li>
+<li><p><strong>0c:</strong> In ~150 words, as a future scientist or engineer, you will very likely use AI tools in your work. What practices would you adopt to be transparent about how those tools work, who built them, and whose labor made them possible? What structural changes — in how AI tools are credited, licensed, or governed — might better reflect the collective labor that produces them? You might draw on the principles of Open Science from <a class="reference internal" href="#"><span class="xref myst">Homework X, Exercise 0</span></a> as a starting point.</p></li>
 </ul>
 </section>
-<section id="your-proposal">
-<h3>Your Proposal<a class="headerlink" href="#your-proposal" title="Link to this heading">#</a></h3>
-<p>Your proposal should be a one to two page, single spaced, document that outlines the following:</p>
-<ol class="arabic simple">
-<li><p>The question you are interested in exploring. The motivation and interest to you and your group mates should be made clear. That is, motivate the question, why is it interesting?</p></li>
-<li><p>References that provide background for this work. This should include the sites, resources, and references you have consulted to get started.</p></li>
-<li><p>The approach you think you need to take to answer this question. Include the concepts and tools you plan to use to explore the question. That is, what have we developed in class that you will use to explore the question?</p></li>
-<li><p>The timeline for your project. This should include the checkpoints in the schedule above, and any additional milestones you think are important. Consider making a <a class="reference external" href="https://en.wikipedia.org/wiki/Gantt_chart">Gantt chart</a> to help you plan your project. This is a useful tool for planning and tracking your progress. It’s almost expected for proposals in science and engineering. Here, We suggest you take advantage of the work week to make significant progress on or to polish your project.</p></li>
-</ol>
 </section>
-<section id="your-writing">
-<h3>Your writing<a class="headerlink" href="#your-writing" title="Link to this heading">#</a></h3>
-<p>You should consider this a formal proposal. It should be well written, clear, and concise. You should also consider the audience for this proposal. You should write this proposal for someone who is not in this class, but does know physics. Think about writing this to another student, a graduate student, or a professor. Someone that has a good understanding of physics, but not necessarily the details of your physics. You need to explain the motivation, the physics background, the approach, and the timeline in a way that is compelling and clear.</p>
-<p>Your proposal need not be long, but it should be complete. Here are some additional resources for you to develop a good proposal:</p>
-<ul class="simple">
-<li><p><a class="reference external" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5037942/">NIH, How to write a research proposal?</a></p></li>
-<li><p><a class="reference external" href="https://www.sheffield.ac.uk/study-skills/research/methods/proposal">University of Sheffield, How to write a research proposal</a></p></li>
-</ul>
-<p><em>Reference pages do not count towards the length, so if you have a lot of references, that’s fine. But the main text should be one to two pages. This is how it works with most proposals in science and engineering.</em></p>
-<p><strong>Submit Exercise 1 with Project Partners on D2L also</strong></p>
-</section>
-</section>
-<section id="exercise-2-10pt-morse-potential-as-an-sho">
-<h2>Exercise 2 (10pt) Morse Potential as an SHO<a class="headerlink" href="#exercise-2-10pt-morse-potential-as-an-sho" title="Link to this heading">#</a></h2>
+<section id="pencil-and-paper-exercises-submit-on-gradescope-only">
+<h1>Pencil and Paper Exercises (Submit on Gradescope only)<a class="headerlink" href="#pencil-and-paper-exercises-submit-on-gradescope-only" title="Link to this heading">#</a></h1>
+<section id="exercise-1-10pt-morse-potential-as-an-sho">
+<h2>Exercise 1 (10pt) Morse Potential as an SHO<a class="headerlink" href="#exercise-1-10pt-morse-potential-as-an-sho" title="Link to this heading">#</a></h2>
 <p>If the potential has a local minimum, we can often find SHO approximation for that potential near the local minimum.</p>
 <p>The <a class="reference external" href="https://en.wikipedia.org/wiki/Morse_potential">Morse potential</a> is a convenient model for the potential energy of a diatomic molecule. The potential is a radial one and thus one-dimensional. It is given by,</p>
 <div class="math notranslate nohighlight">
@@ -545,8 +502,8 @@ Total points: <strong>100</strong></p>
 <li><p>2d (2pt) Find the effective spring constant, <span class="math notranslate nohighlight">\(k\)</span>, for the potential near the minimum. What is the frequency of small oscillations about the minimum?</p></li>
 </ul>
 </section>
-<section id="exercise-3-10pt-time-averaging-and-the-sho">
-<h2>Exercise 3 (10pt), Time Averaging and the SHO<a class="headerlink" href="#exercise-3-10pt-time-averaging-and-the-sho" title="Link to this heading">#</a></h2>
+<section id="exercise-2-10pt-time-averaging-and-the-sho">
+<h2>Exercise 2 (10pt), Time Averaging and the SHO<a class="headerlink" href="#exercise-2-10pt-time-averaging-and-the-sho" title="Link to this heading">#</a></h2>
 <p>Time Averaging is a common tool to use with periodic systems. It also us to discuss what happens to different properties of the system over one period.</p>
 <p>An SHO has a period <span class="math notranslate nohighlight">\(\tau\)</span>. We can find the time average of a variable <span class="math notranslate nohighlight">\(f(t)\)</span> over one period, <span class="math notranslate nohighlight">\(\langle f \rangle\)</span>, by averaging over the period,</p>
 <div class="math notranslate nohighlight">
@@ -559,8 +516,8 @@ Total points: <strong>100</strong></p>
 <div class="math notranslate nohighlight">
 \[\langle \sin^2(\omega t-\delta)\rangle = \langle \cos^2(\omega t-\delta)\rangle = \frac{1}{2}\]</div>
 </section>
-<section id="exercise-4-10pt-toy-potential">
-<h2>Exercise 4 (10pt), Toy Potential<a class="headerlink" href="#exercise-4-10pt-toy-potential" title="Link to this heading">#</a></h2>
+<section id="exercise-3-10pt-toy-potential">
+<h2>Exercise 3 (10pt), Toy Potential<a class="headerlink" href="#exercise-3-10pt-toy-potential" title="Link to this heading">#</a></h2>
 <p>Consider a toy potential of the form,</p>
 <div class="math notranslate nohighlight">
 \[U(r) = U_0\left(\dfrac{r}{R}+\lambda^2\frac{R}{r}\right)\]</div>
@@ -571,8 +528,8 @@ Total points: <strong>100</strong></p>
 <li><p>4c (5pt) Rewrite the potential in terms of the displacement from equilibrium, <span class="math notranslate nohighlight">\(r = r_e + x\)</span>. Expand the potential to second order in <span class="math notranslate nohighlight">\(x\)</span>. What is the effective spring constant, <span class="math notranslate nohighlight">\(k\)</span>, for the potential near the minimum? What is the frequency of small oscillations about the minimum?</p></li>
 </ul>
 </section>
-<section id="exercise-5-10pt-defining-periodicity">
-<h2>Exercise 5 (10pt), Defining Periodicity<a class="headerlink" href="#exercise-5-10pt-defining-periodicity" title="Link to this heading">#</a></h2>
+<section id="exercise-4-10pt-defining-periodicity">
+<h2>Exercise 4 (10pt), Defining Periodicity<a class="headerlink" href="#exercise-4-10pt-defining-periodicity" title="Link to this heading">#</a></h2>
 <p>A common issue with oscillators is determining their periodicity. For the SHO, we can show that the period is <span class="math notranslate nohighlight">\(2\pi/\omega_0\)</span> where <span class="math notranslate nohighlight">\(\omega_0\)</span> is the natural frequency of the SHO. How might we define a periodicity more generally? Let’s start with the damped harmonic oscillator. Consider a weakly damped oscillator (<span class="math notranslate nohighlight">\(\beta &lt; \omega_0\)</span>). The motion of the oscillator is given by,</p>
 <div class="math notranslate nohighlight">
 \[x(t) = A e^{-\beta t}\cos(\omega_1 t - \delta)\]</div>
@@ -584,8 +541,8 @@ Total points: <strong>100</strong></p>
 <li><p>5c (3pt) If the damping <span class="math notranslate nohighlight">\(\beta\)</span> is half the natural frequency (<span class="math notranslate nohighlight">\(\omega_0\)</span>), how does the amplitude of the motion decay in one period?</p></li>
 </ul>
 </section>
-<section id="exercise-6-50-pt-find-your-own-1d-oscillator">
-<h2>Exercise 6 (50 pt), Find your own 1D Oscillator<a class="headerlink" href="#exercise-6-50-pt-find-your-own-1d-oscillator" title="Link to this heading">#</a></h2>
+<section id="exercise-5-50-pt-find-your-own-1d-oscillator">
+<h2>Exercise 5 (50 pt), Find your own 1D Oscillator<a class="headerlink" href="#exercise-5-50-pt-find-your-own-1d-oscillator" title="Link to this heading">#</a></h2>
 <p>We have built all the tools to study 1D unforced oscillators. Now you get to pick your own potential and study it. You can pick any 1D potential you like, but it should have a local minimum. Make sure it is not a driven oscillator (i.e., no explicit time dependence in the equations of motion). To earn full credit for this exercise, you must:</p>
 <ul class="simple">
 <li><p>6a (5pt) Present the potential and describe its origin, why it is interesting, where it comes from, etc. Educate us about it.</p></li>
@@ -627,23 +584,31 @@ Total points: <strong>100</strong></p>
 </ol>
 </section>
 </section>
-<section id="extra-credit-integrating-classwork-with-research">
-<h2>Extra Credit - Integrating Classwork With Research<a class="headerlink" href="#extra-credit-integrating-classwork-with-research" title="Link to this heading">#</a></h2>
-<p>This opportunity will allow you to earn up to 5 extra credit points on a Homework per week. These points can push you above 100% or help make up for missed exercises.
-In order to earn all points you must:</p>
-<ol class="arabic simple">
-<li><p>Attend an MSU research talk (recommended research oriented Clubs is  provided below)</p></li>
-<li><p>Summarize the talk using at least 150 words</p></li>
-<li><p>Turn in the summary along with your Homework.</p></li>
-</ol>
-<p>Approved talks:
-Talks given by researchers through the following clubs:</p>
-<ul class="simple">
-<li><p>Research and Idea Sharing Enterprise (RAISE)​: Meets Wednesday Nights Society for Physics Students (SPS)​: Meets Monday Nights</p></li>
-<li><p>Astronomy Club​: Meets Monday Nights</p></li>
-<li><p>Facility For Rare Isotope Beam (FRIB) Seminars: ​Occur multiple times a week</p></li>
-</ul>
 </section>
+<section id="extra-credit-integrating-research">
+<h1>Extra Credit — Integrating Research<a class="headerlink" href="#extra-credit-integrating-research" title="Link to this heading">#</a></h1>
+<div class="alert admonition">
+<p class="admonition-title">Earning and Submitting Your Summary</p>
+<p>Earn up to 5 extra credit points per homework by engaging with MSU research activities. These points can boost your grade above 100% or help offset missed exercises.</p>
+<p><strong>Send via email to Danny <a class="reference external" href="mailto:caball14&#37;&#52;&#48;msu&#46;edu">caball14<span>&#64;</span>msu<span>&#46;</span>edu</a></strong></p>
+</div>
+<p>Earn up to 5 extra credit points per homework by engaging with MSU research activities. These points can boost your grade above 100% or help offset missed exercises.</p>
+<p>To receive full credit:</p>
+<ol class="arabic simple">
+<li><p><strong>Attend</strong> an MSU research talk (see approved clubs and seminars below).</p></li>
+<li><p><strong>Write</strong> a summary of the talk (at least 150 words).</p></li>
+<li><p><strong>Submit</strong> your summary with your homework (email to <a class="reference external" href="mailto:caball14&#37;&#52;&#48;msu&#46;edu">caball14<span>&#64;</span>msu<span>&#46;</span>edu</a>).</p></li>
+</ol>
+<p><strong>Approved talks include:</strong></p>
+<ul class="simple">
+<li><p>Society for Physics Students (SPS): Meets Monday nights (alternates with Astronomy Club)</p></li>
+<li><p>Astronomy Club: Meets Monday nights (alternates with SPS)</p></li>
+<li><p>Any <a class="reference external" href="https://pa.msu.edu/news-events-seminars/index.aspx">physics and astronomy seminar</a> of interest</p></li>
+<li><p>Any MSU research seminar/workshop relevant to physics (get approval if unsure)</p></li>
+<li><p>Any other physics-related event approved in advance</p></li>
+</ul>
+<p>If you have questions, please contact Danny.</p>
+<p><strong>Note:</strong> You can earn 5% extra credit on each homework by attending a seminar, workshop, or other physics-related event and submitting a short reflection (about 150 words) on your experience.</p>
 </section>
 
     <script type="text/x-thebe-config">
@@ -683,7 +648,8 @@ Talks given by researchers through the following clubs:</p>
             
             
               
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
 
   <div class="sidebar-secondary-item">
@@ -692,26 +658,25 @@ Talks given by researchers through the following clubs:</p>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction-to-homework-6">Introduction to Homework 6</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#practicalities-about-homeworks-and-projects">Practicalities about  homeworks and projects</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Homework 6 (Due 20 Mar)</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#individual-exercise-submit-on-d2l-only">Individual Exercise (Submit on D2L only)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hw6-algorithmic-science-who-builds-it-who-benefits-and-who-disappears">HW6: Algorithmic Science: Who Builds It, Who Benefits, and Who Disappears?</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-1-10pt-planning-your-final-project">Exercise 1 (10pt), Planning your Final Project</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#schedule-for-final-project">Schedule for Final Project</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#your-proposal">Your Proposal</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#your-writing">Your writing</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-2-10pt-morse-potential-as-an-sho">Exercise 2 (10pt) Morse Potential as an SHO</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-3-10pt-time-averaging-and-the-sho">Exercise 3 (10pt), Time Averaging and the SHO</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-4-10pt-toy-potential">Exercise 4 (10pt), Toy Potential</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-5-10pt-defining-periodicity">Exercise 5 (10pt), Defining Periodicity</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-6-50-pt-find-your-own-1d-oscillator">Exercise 6 (50 pt), Find your own 1D Oscillator</a><ul class="nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#pencil-and-paper-exercises-submit-on-gradescope-only">Pencil and Paper Exercises (Submit on Gradescope only)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-1-10pt-morse-potential-as-an-sho">Exercise 1 (10pt) Morse Potential as an SHO</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-2-10pt-time-averaging-and-the-sho">Exercise 2 (10pt), Time Averaging and the SHO</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-3-10pt-toy-potential">Exercise 3 (10pt), Toy Potential</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-4-10pt-defining-periodicity">Exercise 4 (10pt), Defining Periodicity</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-5-50-pt-find-your-own-1d-oscillator">Exercise 5 (50 pt), Find your own 1D Oscillator</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#examples-of-1d-potentials">Examples of 1D potentials</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#extra-credit-integrating-classwork-with-research">Extra Credit - Integrating Classwork With Research</a></li>
 </ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#extra-credit-integrating-research">Extra Credit — Integrating Research</a></li>
+</ul>
+
   </nav></div>
 
 </div></div>
@@ -759,8 +724,8 @@ This work is licensed under a <a rel="license" href="https://creativecommons.org
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
 
   <footer class="bd-footer">
   </footer>

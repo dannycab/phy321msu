@@ -4,11 +4,134 @@ theme: graph_paper
 paginate: true
 
 title: Day 21 - Oscillations
-description: Slides for PHY 321 Fall 2025, Day 21: Oscillations
+description: Slides for PHY 321 Spring 2026, Day 21: Oscillations
 author: Prof. Danny Caballero <caball20@msu.edu>
 keywords: classical mechanics, models, modeling, differential equations, oscillations
 url: https://dannycaballero.info/phy321msu/slides/day-21-oscillations.html
 ---
+
+<style>
+  :root {
+    --color-spartan-green: #18453B;
+    --color-msu-gold: #C1B000;
+    --color-light-gray: #f5f5f5;
+    --color-dark-text: #1a1a1a;
+    --color-accent-green: #2d5f4f;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    color: var(--color-dark-text);
+  }
+  
+  h1, h2, h3 {
+    color: var(--color-spartan-green);
+    font-weight: 500;
+  }
+  
+  h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0rem;
+  }
+  
+  h2 {
+    font-size: 1.55rem;
+    margin-bottom: 1.0rem;
+    border-bottom: 4px solid var(--color-spartan-green);
+    padding-bottom: 0.5rem;
+  }
+  
+  h3 {
+    font-size: 1.15rem;
+    margin-top: 1rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  section {
+    padding: 2rem;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .equation {
+    background-color: var(--color-light-gray);
+    padding: 1.5rem;
+    border-left: 4px solid var(--color-msu-gold);
+    margin: 1.5rem 0;
+    font-size: 1.3rem;
+    text-align: center;
+    color: var(--color-dark-text);
+  }
+
+  p {
+    font-size: 1.15rem;
+    line-height: 1.4;
+    margin-bottom: 0.5rem;
+  }
+  
+  ul, ol {
+    font-size: 1.15rem;
+    line-height: 1.4;
+    margin-left: 0.5rem;
+  }
+
+  ul ul, ol ol, ul ol, ol ul {
+    margin-left: 0.1rem;
+  }
+  
+  li {
+    margin-bottom: 0rem;
+    line-height: 1.4;
+  }
+  
+  strong {
+    color: var(--color-spartan-green);
+    font-weight: 600;
+  }
+  
+  em {
+    color: var(--color-accent-green);
+  }
+
+  .highlight {
+    background-color: var(--color-light-gray);
+    padding: 1.5rem;
+    border-left: 4px solid var(--color-spartan-green);
+    margin: 1.5rem 0;
+  }
+
+  .activity {
+    background-color: #fff8e1;
+    border: 2px solid var(--color-msu-gold);
+    padding: 1.25rem;
+    border-radius: 6px;
+    margin: 1rem 0;
+  }
+
+  code {
+    background-color: var(--color-light-gray);
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-size: 1.0rem;
+  }
+
+  .footnote {
+    font-size: 0.8rem;
+    color: #999;
+    margin-top: 1.5rem;
+    border-top: 1px solid #ddd;
+    padding-top: 0.75rem;
+  }
+</style>
+
+<!--
+_class: title
+_backgroundColor: #ffffff
+_color: #18453B
+-->
 
 # Day 21 - Oscillations
 
@@ -20,98 +143,22 @@ An example of [spatiotemporal patterns](https://en.wikipedia.org/wiki/Spatiotemp
 
 ---
 
-# Announcements
+## Announcements
 
 * Midterm 1 is being graded
-    * With apologies: *What grades are you unable to see right now?*
 * Midterm 1 solutions are posted
-* Homework 5 is due on Friday
+* Homework 5 is due on Friday (late on Sunday)
+  * Anyone may request an extension for HW5 up to one week, no questions asked. Just email me.
+* Homework 6 is due the following Friday (late on Sunday)
+  * Again, anyone may request an extension for HW6 up to one week, no questions asked. Just email me.
+* Class next Monday, maybe? 
 
 ---
 
-# Seminars this week
+## Clicker Question 21-1
 
-MONDAY, October 13, 2025             
-
-Condensed Matter Seminar 4:10 pm, 1400 BPS, In Person and Zoom, Host ~ Johannes Pollanen
-
-Speaker: Alex Ruichao Ma, Purdue University
-Title: Controlling and probing quantum correlations in superconducting circuits
-
-Zoom Link: https://msu.zoom.us/j/93613644939
-Meeting ID: 936 1364 4939
-Password: CMP
- 
----
-
-# Seminars this week
-
-## TUESDAY, October 14, 2025
- 
-Theory Seminar, 11:00am., FRIB 1200 lab in person and online via Zoom
-
-Speaker: Nadezda Smirnova, CNRS
-Title: Isospin Symmetry Breaking and Nuclear Beta Decay
-
-Zoom Link: 964 7281 4717
-Meeting ID: 48824
-
----
-
-# Seminars this week
-
-## TUESDAY, October 14, 2025
-
-Astronomical Horizons, 7;30pm, Abrams Planetarium (no charge to enter) In Person Only.
-Speaker:  Michael Velbel, Professor Emeritus, Earth and Environmental Science
-Title: “Leopard spots and poppy seeds and samples: The Search for Evidence of Ancient Life on Mars Continues”.
-
----
-
-# Seminars this week 
- 
-##  WEDNESDAY, October 15, 2025    
- 
-Astronomy Seminar, 1:30 pm, 1400 BPS, In Person and Zoom, Host ~ Adina Feinstein
-
-Speaker: Brett Morris, Space Telescope Science Institute
-
-Colloquium Speaker will lead a Software workshop today in this time slot.  
- 
----
-
-# Seminars this week
- 
- 
-## THURSDAY, October 16, 2025
- 
-Colloquium, 3:30 pm, 1415 BPS, in person and zoom.  Host ~  Adina Feinstein
-
-Refreshments and social half-hour in BPS 1400 starting at 3 pm
-
-Speaker: Brett Morris, Space Telescope Science Institute
-Title: The Stars Behind The Planets 
-
-Zoom Link: https://msu.zoom.us/j/94951062663
-Password: 2002  Or complete link:  https://msu.zoom.us/j/94951062663?pwd=c48uM25P9UsRVuR74rkOioOWgpoxgC.1
- 
----
-
-# Seminars this Week
-
-## FRIDAY, October 17, 2025 
- 
-QuIC Seminar, 12:30pm, -1:30pm, 1300 BPS, In Person  
-
-Speaker: Chris Baldwin,  MSU
-Title: TBA
-
----
-
-# Clicker Question 21-1
-
-*My 14 year old asked me to ask you this question.**
-She has her second physics test tomorrow. 🙏🏽🙏🏽🙏🏽
+**My 15 year old asked me to ask you this question.**
+She has a physics test next week. 🙏🏽🙏🏽🙏🏽
 
 Just a vibe check. How are the vibes?
 
@@ -123,27 +170,27 @@ Just a vibe check. How are the vibes?
 
 ---
 
-# Reminders
+## Reminders
 
 We were solving nonlinear first order differential equations of the homogenous type
 
 $$\frac{dx}{dt} + f(x) = 0$$
 
-where $f(x)$ is a nonlinear function of $x$. We found critical points where $dx/dt = 0$.
+where $f(x)$ is a nonlinear function of $x$. We found critical points ($dx/dt = 0$).
 
 We demonstrated the utility of phase diagrams to visualize the behavior of solutions to nonlinear differential equations.
 
 ---
 
-# Reminders
+## Reminders
 
-## Example $\dot{x} = \sin{x}$
+$\dot{x} = \sin{x}$
 
 ![width:900px](../images/notes/week7/1st-order-ode-ex-1.png)
 
 ---
 
-# Reminders 
+## Reminders 
 
 We showed that we can learn something about systems we know little about at first using this approach (i.e., Firefly synchronization).
 
@@ -154,14 +201,15 @@ $\mu = 0 \longrightarrow$ Synchronization always (no phase difference)
 ![width:600px](../images/notes/week8/cq19-1a.png)
 
 ---
-# Reminders 
+
+## Reminders 
 
 $\mu = 0.6 \longrightarrow$ Entrainment is possible (constant phase difference)
 
 ![width:600px](../images/notes/week8/cq19-1b.png)
 
 ---
-# Reminders 
+## Reminders 
 
 $\mu=1.2 \longrightarrow$ No entrainment ($\Omega > \omega$). Stimulus is too fast.
 
@@ -169,7 +217,7 @@ $\mu=1.2 \longrightarrow$ No entrainment ($\Omega > \omega$). Stimulus is too fa
 
 ---
 
-# Reminders
+## Reminders
 
 We then moved on to 2D phase spaces, where we had a system of two first order equations:
 
@@ -185,7 +233,7 @@ And we graphed it's phase space diagram.
 
 ---
 
-# Reminders
+## Reminders
 
 Phase space diagram for a simple harmonic oscillator. The ellipses are curves of constant energy, $E$.
 
@@ -196,7 +244,7 @@ $$\dfrac{v^2}{2E/m} + \dfrac{x^2}{2E/k} = 1$$
 
 ---
 
-# Large Angle Pendulum
+## Large Angle Pendulum
 
 In the case of a large angle pendulum, we have a nonlinear differential equation:
 
@@ -211,13 +259,13 @@ We can then plot the phase space diagram for this system.
 
 ---
 
-# Phase Diagram for a Large Angle Pendulum
+## Phase Diagram for a Large Angle Pendulum
 
 ![width:700px](../images/notes/week9/large_angle_pendulum.png)
 
 ---
 
-# Clicker Question 21-2
+## Clicker Question 21-2
 
 Consider the phase diagram for a large angle pendulum. What do the upper and lower flows represent?
 
@@ -230,10 +278,9 @@ Consider the phase diagram for a large angle pendulum. What do the upper and low
 ![bg right width:600px](../images/notes/week9/large_angle_pendulum.png)
 
 ---
+## Oscillations
 
-# Oscillations
-
-## Table Discussion: Why do we see oscillations so frequently in nature?
+### Table Discussion: Why do we see oscillations so frequently in nature?
 
 * Can you think of at least two different reasons from different perspectives?
 * What are some non-simple harmonic oscillators you can think of?
@@ -242,7 +289,7 @@ Consider the phase diagram for a large angle pendulum. What do the upper and low
 
 ---
 
-# Clicker Question 21-3
+## Clicker Question 21-3
 
 Consider the following notation:
 
@@ -259,7 +306,7 @@ Is this an idea you've seen before? How do you feel about it?
 
 --- 
 
-# Visualizing the Complex Solution
+## Visualizing the Complex Solution
 
 We constructed a solution of the form:
 
@@ -269,7 +316,7 @@ We can plot it in the complex plane and see the real and imaginary parts, and ho
 
 ---
 
-# Visualizing the Complex Solution
+## Visualizing the Complex Solution
 
 We can plot the solution on the complex plane. For this, $\delta = \pi/4$, and the amplitude is $A=1$.
 
@@ -279,7 +326,7 @@ The solution rotates counterclockwise in the complex plane, following the rainbo
 
 ---
 
-# Projecting the Real Solution
+## Projecting the Real Solution
 
 The real part is just the projection of the complex solution onto the real axis. Just how far along the real axis is the solution at any given time. 
 
@@ -290,7 +337,7 @@ That looks like a time trace, but not quite, it's the real projection. The color
 
 ---
 
-# The Time Trace of the Solution
+## The Time Trace of the Solution
 
 We just flip the axes to produce the time trace that you are used to seeing. The color scheme is the same as before.
 

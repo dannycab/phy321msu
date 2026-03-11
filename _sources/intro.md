@@ -5,7 +5,7 @@
 [![GitHub Issues](https://img.shields.io/github/issues/dannycab/phy321msu?logo=github)](https://github.com/dannycab/phy321msu/issues)
 
 
-## Week 5
+<!-- ## Week 5
 
 :::{admonition} Week 5 Reminders
 :class: alert
@@ -14,7 +14,7 @@
     * [06 - Nature Often Seeks Stability](./lecture-notes/06_notes.ipynb)
 * [Homework 4](./assignments/hw4.ipynb) is due Friday; late on Sunday.
 * [Midterm 1](./assignments/midterm1.ipynb) is posted and due Friday, Feb 27th; late on Sunday, Mar 1st.
-:::
+::: -->
 
 ## Learning outcomes
 

@@ -16,30 +16,33 @@
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
     document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-
-  
-  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
-    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
   
+  <!-- So that users can add custom icons -->
+  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
-  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
     <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
     <script src="../_static/doctools.js?v=9a2dae69"></script>
@@ -52,7 +55,7 @@
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script src="../_static/design-tabs.js?v=36754332"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
@@ -64,6 +67,7 @@
     <link rel="search" title="Search" href="../search.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
   </head>
   
   
@@ -79,19 +83,8 @@
     <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
   
-  <input type="checkbox"
-          class="sidebar-toggle"
-          id="pst-primary-sidebar-checkbox"/>
-  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
-  
-  <input type="checkbox"
-          class="sidebar-toggle"
-          id="pst-secondary-sidebar-checkbox"/>
-  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
-  
-  <div class="search-button__wrapper">
-    <div class="search-button__overlay"></div>
-    <div class="search-button__search-container">
+  <dialog id="pst-search-dialog">
+    
 <form class="bd-search d-flex align-items-center"
       action="../search.html"
       method="get">
@@ -99,7 +92,6 @@
   <input type="search"
          class="form-control"
          name="q"
-         id="search-input"
          placeholder="Search this book..."
          aria-label="Search this book..."
          autocomplete="off"
@@ -107,8 +99,8 @@
          autocapitalize="off"
          spellcheck="false"/>
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form></div>
-  </div>
+</form>
+  </dialog>
 
   <div class="pst-async-banner-revealer d-none">
   <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
@@ -126,7 +118,8 @@
       
         
       
-      <div class="bd-sidebar-primary bd-sidebar">
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -156,21 +149,17 @@
     
     
     <img src="../_static/spartan-helmet.png" class="logo__image only-light" alt="Classical Mechanics - Home"/>
-    <script>document.write(`<img src="../_static/spartan-helmet.png" class="logo__image only-dark" alt="Classical Mechanics - Home"/>`);</script>
+    <img src="../_static/spartan-helmet.png" class="logo__image only-dark pst-js-only" alt="Classical Mechanics - Home"/>
   
   
 </a></div>
         <div class="sidebar-primary-item">
 
- <script>
- document.write(`
-   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
-    <span class="search-button__default-text">Search</span>
-    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
-   </button>
- `);
- </script></div>
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
@@ -232,6 +221,10 @@
 
 
 
+<li class="toctree-l2"><a class="reference internal" href="../assignments/hw5.html">Homework 5 (Due 13 Mar)</a></li>
+
+
+
 </ul>
 </details></li>
 </ul>
@@ -263,9 +256,14 @@
   
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
   </div>
-  
-  <div id="rtd-footer-container"></div>
 
 
       </div>
@@ -362,24 +360,16 @@
 
 
 
-<script>
-document.write(`
-  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
-    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
-    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
-  </button>
-`);
-</script>
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
 
 
-<script>
-document.write(`
-  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
-  </button>
-`);
-</script>
+</button>
 <button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
 </button>
@@ -403,54 +393,28 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Day 21 - Oscillations</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#announcements">Announcements</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#seminars-this-week">Seminars this week</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Seminars this week</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tuesday-october-14-2025">TUESDAY, October 14, 2025</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#announcements">Announcements</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-21-1">Clicker Question 21-1</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reminders">Reminders</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Reminders</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Reminders</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Reminders</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Reminders</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Reminders</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Reminders</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#large-angle-pendulum">Large Angle Pendulum</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#phase-diagram-for-a-large-angle-pendulum">Phase Diagram for a Large Angle Pendulum</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-21-2">Clicker Question 21-2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#oscillations">Oscillations</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#table-discussion-why-do-we-see-oscillations-so-frequently-in-nature">Table Discussion: Why do we see oscillations so frequently in nature?</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Seminars this week</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">TUESDAY, October 14, 2025</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-21-3">Clicker Question 21-3</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualizing-the-complex-solution">Visualizing the Complex Solution</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Visualizing the Complex Solution</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#projecting-the-real-solution">Projecting the Real Solution</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-time-trace-of-the-solution">The Time Trace of the Solution</a></li>
 </ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Seminars this week</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#wednesday-october-15-2025">WEDNESDAY, October 15, 2025</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Seminars this week</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#thursday-october-16-2025">THURSDAY, October 16, 2025</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Seminars this Week</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#friday-october-17-2025">FRIDAY, October 17, 2025</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-21-1">Clicker Question 21-1</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#reminders">Reminders</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Reminders</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-dot-x-sin-x">Example <span class="math notranslate nohighlight">\(\dot{x} = \sin{x}\)</span></a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Reminders</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Reminders</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Reminders</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">Reminders</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">Reminders</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#large-angle-pendulum">Large Angle Pendulum</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#phase-diagram-for-a-large-angle-pendulum">Phase Diagram for a Large Angle Pendulum</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-21-2">Clicker Question 21-2</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#oscillations">Oscillations</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#table-discussion-why-do-we-see-oscillations-so-frequently-in-nature">Table Discussion: Why do we see oscillations so frequently in nature?</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-21-3">Clicker Question 21-3</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#visualizing-the-complex-solution">Visualizing the Complex Solution</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">Visualizing the Complex Solution</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#projecting-the-real-solution">Projecting the Real Solution</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#the-time-trace-of-the-solution">The Time Trace of the Solution</a></li>
-</ul>
-
             </nav>
         </div>
     </div>
@@ -461,96 +425,156 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="day-21-oscillations">
+  <style>
+  :root {
+    --color-spartan-green: #18453B;
+    --color-msu-gold: #C1B000;
+    --color-light-gray: #f5f5f5;
+    --color-dark-text: #1a1a1a;
+    --color-accent-green: #2d5f4f;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    color: var(--color-dark-text);
+  }
+  
+  h1, h2, h3 {
+    color: var(--color-spartan-green);
+    font-weight: 500;
+  }
+  
+  h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0rem;
+  }
+  
+  h2 {
+    font-size: 1.55rem;
+    margin-bottom: 1.0rem;
+    border-bottom: 4px solid var(--color-spartan-green);
+    padding-bottom: 0.5rem;
+  }
+  
+  h3 {
+    font-size: 1.15rem;
+    margin-top: 1rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  section {
+    padding: 2rem;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .equation {
+    background-color: var(--color-light-gray);
+    padding: 1.5rem;
+    border-left: 4px solid var(--color-msu-gold);
+    margin: 1.5rem 0;
+    font-size: 1.3rem;
+    text-align: center;
+    color: var(--color-dark-text);
+  }
+
+  p {
+    font-size: 1.15rem;
+    line-height: 1.4;
+    margin-bottom: 0.5rem;
+  }
+  
+  ul, ol {
+    font-size: 1.15rem;
+    line-height: 1.4;
+    margin-left: 0.5rem;
+  }
+
+  ul ul, ol ol, ul ol, ol ul {
+    margin-left: 0.1rem;
+  }
+  
+  li {
+    margin-bottom: 0rem;
+    line-height: 1.4;
+  }
+  
+  strong {
+    color: var(--color-spartan-green);
+    font-weight: 600;
+  }
+  
+  em {
+    color: var(--color-accent-green);
+  }
+
+  .highlight {
+    background-color: var(--color-light-gray);
+    padding: 1.5rem;
+    border-left: 4px solid var(--color-spartan-green);
+    margin: 1.5rem 0;
+  }
+
+  .activity {
+    background-color: #fff8e1;
+    border: 2px solid var(--color-msu-gold);
+    padding: 1.25rem;
+    border-radius: 6px;
+    margin: 1rem 0;
+  }
+
+  code {
+    background-color: var(--color-light-gray);
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-size: 1.0rem;
+  }
+
+  .footnote {
+    font-size: 0.8rem;
+    color: #999;
+    margin-top: 1.5rem;
+    border-top: 1px solid #ddd;
+    padding-top: 0.75rem;
+  }
+</style>
+<!--
+_class: title
+_backgroundColor: #ffffff
+_color: #18453B
+-->
+<section id="day-21-oscillations">
 <h1>Day 21 - Oscillations<a class="headerlink" href="#day-21-oscillations" title="Link to this heading">#</a></h1>
 <p>Belousov–Zhabotinsky reaction <span class="math notranslate nohighlight">\(\rightarrow\)</span></p>
 <p>An example of <a class="reference external" href="https://en.wikipedia.org/wiki/Spatiotemporal_pattern">spatiotemporal patterns</a></p>
 <p><img alt="bg right width:600px" src="https://upload.wikimedia.org/wikipedia/commons/d/d9/The_Belousov-Zhabotinsky_Reaction.gif" /></p>
-</section>
 <hr class="docutils" />
 <section id="announcements">
-<h1>Announcements<a class="headerlink" href="#announcements" title="Link to this heading">#</a></h1>
+<h2>Announcements<a class="headerlink" href="#announcements" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p>Midterm 1 is being graded</p>
+<li><p>Midterm 1 is being graded</p></li>
+<li><p>Midterm 1 solutions are posted</p></li>
+<li><p>Homework 5 is due on Friday (late on Sunday)</p>
 <ul>
-<li><p>With apologies: <em>What grades are you unable to see right now?</em></p></li>
+<li><p>Anyone may request an extension for HW5 up to one week, no questions asked. Just email me.</p></li>
 </ul>
 </li>
-<li><p>Midterm 1 solutions are posted</p></li>
-<li><p>Homework 5 is due on Friday</p></li>
+<li><p>Homework 6 is due the following Friday (late on Sunday)</p>
+<ul>
+<li><p>Again, anyone may request an extension for HW6 up to one week, no questions asked. Just email me.</p></li>
 </ul>
-</section>
-<hr class="docutils" />
-<section id="seminars-this-week">
-<h1>Seminars this week<a class="headerlink" href="#seminars-this-week" title="Link to this heading">#</a></h1>
-<p>MONDAY, October 13, 2025</p>
-<p>Condensed Matter Seminar 4:10 pm, 1400 BPS, In Person and Zoom, Host ~ Johannes Pollanen</p>
-<p>Speaker: Alex Ruichao Ma, Purdue University
-Title: Controlling and probing quantum correlations in superconducting circuits</p>
-<p>Zoom Link: <a class="reference external" href="https://msu.zoom.us/j/93613644939">https://msu.zoom.us/j/93613644939</a>
-Meeting ID: 936 1364 4939
-Password: CMP</p>
-</section>
-<hr class="docutils" />
-<section id="id1">
-<h1>Seminars this week<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
-<section id="tuesday-october-14-2025">
-<h2>TUESDAY, October 14, 2025<a class="headerlink" href="#tuesday-october-14-2025" title="Link to this heading">#</a></h2>
-<p>Theory Seminar, 11:00am., FRIB 1200 lab in person and online via Zoom</p>
-<p>Speaker: Nadezda Smirnova, CNRS
-Title: Isospin Symmetry Breaking and Nuclear Beta Decay</p>
-<p>Zoom Link: 964 7281 4717
-Meeting ID: 48824</p>
-</section>
-</section>
-<hr class="docutils" />
-<section id="id2">
-<h1>Seminars this week<a class="headerlink" href="#id2" title="Link to this heading">#</a></h1>
-<section id="id3">
-<h2>TUESDAY, October 14, 2025<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
-<p>Astronomical Horizons, 7;30pm, Abrams Planetarium (no charge to enter) In Person Only.
-Speaker:  Michael Velbel, Professor Emeritus, Earth and Environmental Science
-Title: “Leopard spots and poppy seeds and samples: The Search for Evidence of Ancient Life on Mars Continues”.</p>
-</section>
-</section>
-<hr class="docutils" />
-<section id="id4">
-<h1>Seminars this week<a class="headerlink" href="#id4" title="Link to this heading">#</a></h1>
-<section id="wednesday-october-15-2025">
-<h2>WEDNESDAY, October 15, 2025<a class="headerlink" href="#wednesday-october-15-2025" title="Link to this heading">#</a></h2>
-<p>Astronomy Seminar, 1:30 pm, 1400 BPS, In Person and Zoom, Host ~ Adina Feinstein</p>
-<p>Speaker: Brett Morris, Space Telescope Science Institute</p>
-<p>Colloquium Speaker will lead a Software workshop today in this time slot.</p>
-</section>
-</section>
-<hr class="docutils" />
-<section id="id5">
-<h1>Seminars this week<a class="headerlink" href="#id5" title="Link to this heading">#</a></h1>
-<section id="thursday-october-16-2025">
-<h2>THURSDAY, October 16, 2025<a class="headerlink" href="#thursday-october-16-2025" title="Link to this heading">#</a></h2>
-<p>Colloquium, 3:30 pm, 1415 BPS, in person and zoom.  Host ~  Adina Feinstein</p>
-<p>Refreshments and social half-hour in BPS 1400 starting at 3 pm</p>
-<p>Speaker: Brett Morris, Space Telescope Science Institute
-Title: The Stars Behind The Planets</p>
-<p>Zoom Link: <a class="reference external" href="https://msu.zoom.us/j/94951062663">https://msu.zoom.us/j/94951062663</a>
-Password: 2002  Or complete link:  <a class="reference external" href="https://msu.zoom.us/j/94951062663?pwd=c48uM25P9UsRVuR74rkOioOWgpoxgC.1">https://msu.zoom.us/j/94951062663?pwd=c48uM25P9UsRVuR74rkOioOWgpoxgC.1</a></p>
-</section>
-</section>
-<hr class="docutils" />
-<section id="id6">
-<h1>Seminars this Week<a class="headerlink" href="#id6" title="Link to this heading">#</a></h1>
-<section id="friday-october-17-2025">
-<h2>FRIDAY, October 17, 2025<a class="headerlink" href="#friday-october-17-2025" title="Link to this heading">#</a></h2>
-<p>QuIC Seminar, 12:30pm, -1:30pm, 1300 BPS, In Person</p>
-<p>Speaker: Chris Baldwin,  MSU
-Title: TBA</p>
-</section>
+</li>
+<li><p>Class next Monday, maybe?</p></li>
+</ul>
 </section>
 <hr class="docutils" />
 <section id="clicker-question-21-1">
-<h1>Clicker Question 21-1<a class="headerlink" href="#clicker-question-21-1" title="Link to this heading">#</a></h1>
-<p><em>My 14 year old asked me to ask you this question.</em>*
-She has her second physics test tomorrow. 🙏🏽🙏🏽🙏🏽</p>
+<h2>Clicker Question 21-1<a class="headerlink" href="#clicker-question-21-1" title="Link to this heading">#</a></h2>
+<p><strong>My 15 year old asked me to ask you this question.</strong>
+She has a physics test next week. 🙏🏽🙏🏽🙏🏽</p>
 <p>Just a vibe check. How are the vibes?</p>
 <ol class="arabic simple">
 <li><p>The vibes are immaculate.</p></li>
@@ -562,24 +586,22 @@ She has her second physics test tomorrow. 🙏🏽🙏🏽🙏🏽</p>
 </section>
 <hr class="docutils" />
 <section id="reminders">
-<h1>Reminders<a class="headerlink" href="#reminders" title="Link to this heading">#</a></h1>
+<h2>Reminders<a class="headerlink" href="#reminders" title="Link to this heading">#</a></h2>
 <p>We were solving nonlinear first order differential equations of the homogenous type</p>
 <div class="math notranslate nohighlight">
 \[\frac{dx}{dt} + f(x) = 0\]</div>
-<p>where <span class="math notranslate nohighlight">\(f(x)\)</span> is a nonlinear function of <span class="math notranslate nohighlight">\(x\)</span>. We found critical points where <span class="math notranslate nohighlight">\(dx/dt = 0\)</span>.</p>
+<p>where <span class="math notranslate nohighlight">\(f(x)\)</span> is a nonlinear function of <span class="math notranslate nohighlight">\(x\)</span>. We found critical points (<span class="math notranslate nohighlight">\(dx/dt = 0\)</span>).</p>
 <p>We demonstrated the utility of phase diagrams to visualize the behavior of solutions to nonlinear differential equations.</p>
 </section>
 <hr class="docutils" />
-<section id="id7">
-<h1>Reminders<a class="headerlink" href="#id7" title="Link to this heading">#</a></h1>
-<section id="example-dot-x-sin-x">
-<h2>Example <span class="math notranslate nohighlight">\(\dot{x} = \sin{x}\)</span><a class="headerlink" href="#example-dot-x-sin-x" title="Link to this heading">#</a></h2>
+<section id="id1">
+<h2>Reminders<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
+<p><span class="math notranslate nohighlight">\(\dot{x} = \sin{x}\)</span></p>
 <p><img alt="width:900px" src="../_images/1st-order-ode-ex-1.png" /></p>
 </section>
-</section>
 <hr class="docutils" />
-<section id="id8">
-<h1>Reminders<a class="headerlink" href="#id8" title="Link to this heading">#</a></h1>
+<section id="id2">
+<h2>Reminders<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
 <p>We showed that we can learn something about systems we know little about at first using this approach (i.e., Firefly synchronization).</p>
 <div class="math notranslate nohighlight">
 \[\dfrac{d\phi}{d\tau} = \mu - \sin(\phi)\]</div>
@@ -587,20 +609,20 @@ She has her second physics test tomorrow. 🙏🏽🙏🏽🙏🏽</p>
 <p><img alt="width:600px" src="../_images/cq19-1a.png" /></p>
 </section>
 <hr class="docutils" />
-<section id="id9">
-<h1>Reminders<a class="headerlink" href="#id9" title="Link to this heading">#</a></h1>
+<section id="id3">
+<h2>Reminders<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
 <p><span class="math notranslate nohighlight">\(\mu = 0.6 \longrightarrow\)</span> Entrainment is possible (constant phase difference)</p>
 <p><img alt="width:600px" src="../_images/cq19-1b.png" /></p>
 </section>
 <hr class="docutils" />
-<section id="id10">
-<h1>Reminders<a class="headerlink" href="#id10" title="Link to this heading">#</a></h1>
+<section id="id4">
+<h2>Reminders<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
 <p><span class="math notranslate nohighlight">\(\mu=1.2 \longrightarrow\)</span> No entrainment (<span class="math notranslate nohighlight">\(\Omega &gt; \omega\)</span>). Stimulus is too fast.</p>
 <p><img alt="width:600px" src="../_images/cq19-1c.png" /></p>
 </section>
 <hr class="docutils" />
-<section id="id11">
-<h1>Reminders<a class="headerlink" href="#id11" title="Link to this heading">#</a></h1>
+<section id="id5">
+<h2>Reminders<a class="headerlink" href="#id5" title="Link to this heading">#</a></h2>
 <p>We then moved on to 2D phase spaces, where we had a system of two first order equations:</p>
 <div class="math notranslate nohighlight">
 \[\dot{x} = v\]</div>
@@ -614,8 +636,8 @@ She has her second physics test tomorrow. 🙏🏽🙏🏽🙏🏽</p>
 <p>And we graphed it’s phase space diagram.</p>
 </section>
 <hr class="docutils" />
-<section id="id12">
-<h1>Reminders<a class="headerlink" href="#id12" title="Link to this heading">#</a></h1>
+<section id="id6">
+<h2>Reminders<a class="headerlink" href="#id6" title="Link to this heading">#</a></h2>
 <p>Phase space diagram for a simple harmonic oscillator. The ellipses are curves of constant energy, <span class="math notranslate nohighlight">\(E\)</span>.</p>
 <div class="math notranslate nohighlight">
 \[\dfrac{1}{2}mv^2 + \dfrac{1}{2}kx^2 = E\]</div>
@@ -625,7 +647,7 @@ She has her second physics test tomorrow. 🙏🏽🙏🏽🙏🏽</p>
 </section>
 <hr class="docutils" />
 <section id="large-angle-pendulum">
-<h1>Large Angle Pendulum<a class="headerlink" href="#large-angle-pendulum" title="Link to this heading">#</a></h1>
+<h2>Large Angle Pendulum<a class="headerlink" href="#large-angle-pendulum" title="Link to this heading">#</a></h2>
 <p>In the case of a large angle pendulum, we have a nonlinear differential equation:</p>
 <div class="math notranslate nohighlight">
 \[\ddot{\theta} = -\frac{g}{L}\sin{\theta}\]</div>
@@ -638,12 +660,12 @@ She has her second physics test tomorrow. 🙏🏽🙏🏽🙏🏽</p>
 </section>
 <hr class="docutils" />
 <section id="phase-diagram-for-a-large-angle-pendulum">
-<h1>Phase Diagram for a Large Angle Pendulum<a class="headerlink" href="#phase-diagram-for-a-large-angle-pendulum" title="Link to this heading">#</a></h1>
+<h2>Phase Diagram for a Large Angle Pendulum<a class="headerlink" href="#phase-diagram-for-a-large-angle-pendulum" title="Link to this heading">#</a></h2>
 <p><img alt="width:700px" src="../_images/large_angle_pendulum.png" /></p>
 </section>
 <hr class="docutils" />
 <section id="clicker-question-21-2">
-<h1>Clicker Question 21-2<a class="headerlink" href="#clicker-question-21-2" title="Link to this heading">#</a></h1>
+<h2>Clicker Question 21-2<a class="headerlink" href="#clicker-question-21-2" title="Link to this heading">#</a></h2>
 <p>Consider the phase diagram for a large angle pendulum. What do the upper and lower flows represent?</p>
 <ol class="arabic simple">
 <li><p>Unrealistic solutions.</p></li>
@@ -656,9 +678,9 @@ She has her second physics test tomorrow. 🙏🏽🙏🏽🙏🏽</p>
 </section>
 <hr class="docutils" />
 <section id="oscillations">
-<h1>Oscillations<a class="headerlink" href="#oscillations" title="Link to this heading">#</a></h1>
+<h2>Oscillations<a class="headerlink" href="#oscillations" title="Link to this heading">#</a></h2>
 <section id="table-discussion-why-do-we-see-oscillations-so-frequently-in-nature">
-<h2>Table Discussion: Why do we see oscillations so frequently in nature?<a class="headerlink" href="#table-discussion-why-do-we-see-oscillations-so-frequently-in-nature" title="Link to this heading">#</a></h2>
+<h3>Table Discussion: Why do we see oscillations so frequently in nature?<a class="headerlink" href="#table-discussion-why-do-we-see-oscillations-so-frequently-in-nature" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Can you think of at least two different reasons from different perspectives?</p></li>
 <li><p>What are some non-simple harmonic oscillators you can think of?</p></li>
@@ -668,7 +690,7 @@ She has her second physics test tomorrow. 🙏🏽🙏🏽🙏🏽</p>
 </section>
 <hr class="docutils" />
 <section id="clicker-question-21-3">
-<h1>Clicker Question 21-3<a class="headerlink" href="#clicker-question-21-3" title="Link to this heading">#</a></h1>
+<h2>Clicker Question 21-3<a class="headerlink" href="#clicker-question-21-3" title="Link to this heading">#</a></h2>
 <p>Consider the following notation:</p>
 <div class="math notranslate nohighlight">
 \[z = x + iy\]</div>
@@ -686,31 +708,32 @@ She has her second physics test tomorrow. 🙏🏽🙏🏽🙏🏽</p>
 </section>
 <hr class="docutils" />
 <section id="visualizing-the-complex-solution">
-<h1>Visualizing the Complex Solution<a class="headerlink" href="#visualizing-the-complex-solution" title="Link to this heading">#</a></h1>
+<h2>Visualizing the Complex Solution<a class="headerlink" href="#visualizing-the-complex-solution" title="Link to this heading">#</a></h2>
 <p>We constructed a solution of the form:</p>
 <div class="math notranslate nohighlight">
 \[Ae^{i\omega t-\delta}\]</div>
 <p>We can plot it in the complex plane and see the real and imaginary parts, and how they change in time.</p>
 </section>
 <hr class="docutils" />
-<section id="id13">
-<h1>Visualizing the Complex Solution<a class="headerlink" href="#id13" title="Link to this heading">#</a></h1>
+<section id="id7">
+<h2>Visualizing the Complex Solution<a class="headerlink" href="#id7" title="Link to this heading">#</a></h2>
 <p>We can plot the solution on the complex plane. For this, <span class="math notranslate nohighlight">\(\delta = \pi/4\)</span>, and the amplitude is <span class="math notranslate nohighlight">\(A=1\)</span>.</p>
 <p>The solution rotates counterclockwise in the complex plane, following the rainbow from violet to red.</p>
 <p><img alt="bg right width:500px" src="../_images/complex_plane.png" /></p>
 </section>
 <hr class="docutils" />
 <section id="projecting-the-real-solution">
-<h1>Projecting the Real Solution<a class="headerlink" href="#projecting-the-real-solution" title="Link to this heading">#</a></h1>
+<h2>Projecting the Real Solution<a class="headerlink" href="#projecting-the-real-solution" title="Link to this heading">#</a></h2>
 <p>The real part is just the projection of the complex solution onto the real axis. Just how far along the real axis is the solution at any given time.</p>
 <p>That looks like a time trace, but not quite, it’s the real projection. The colors scheme is the same as before.</p>
 <p><img alt="bg right width:500px" src="../_images/real_part.png" /></p>
 </section>
 <hr class="docutils" />
 <section id="the-time-trace-of-the-solution">
-<h1>The Time Trace of the Solution<a class="headerlink" href="#the-time-trace-of-the-solution" title="Link to this heading">#</a></h1>
+<h2>The Time Trace of the Solution<a class="headerlink" href="#the-time-trace-of-the-solution" title="Link to this heading">#</a></h2>
 <p>We just flip the axes to produce the time trace that you are used to seeing. The color scheme is the same as before.</p>
 <p><img alt="bg right width:500px" src="../_images/time_trace.png" /></p>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -750,7 +773,8 @@ She has her second physics test tomorrow. 🙏🏽🙏🏽🙏🏽</p>
             
             
               
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
 
   <div class="sidebar-secondary-item">
@@ -759,54 +783,28 @@ She has her second physics test tomorrow. 🙏🏽🙏🏽🙏🏽</p>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Day 21 - Oscillations</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#announcements">Announcements</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#seminars-this-week">Seminars this week</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Seminars this week</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tuesday-october-14-2025">TUESDAY, October 14, 2025</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#announcements">Announcements</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-21-1">Clicker Question 21-1</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reminders">Reminders</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Reminders</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Reminders</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Reminders</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Reminders</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Reminders</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Reminders</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#large-angle-pendulum">Large Angle Pendulum</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#phase-diagram-for-a-large-angle-pendulum">Phase Diagram for a Large Angle Pendulum</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-21-2">Clicker Question 21-2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#oscillations">Oscillations</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#table-discussion-why-do-we-see-oscillations-so-frequently-in-nature">Table Discussion: Why do we see oscillations so frequently in nature?</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Seminars this week</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">TUESDAY, October 14, 2025</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-21-3">Clicker Question 21-3</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualizing-the-complex-solution">Visualizing the Complex Solution</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Visualizing the Complex Solution</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#projecting-the-real-solution">Projecting the Real Solution</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-time-trace-of-the-solution">The Time Trace of the Solution</a></li>
 </ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Seminars this week</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#wednesday-october-15-2025">WEDNESDAY, October 15, 2025</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Seminars this week</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#thursday-october-16-2025">THURSDAY, October 16, 2025</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Seminars this Week</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#friday-october-17-2025">FRIDAY, October 17, 2025</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-21-1">Clicker Question 21-1</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#reminders">Reminders</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Reminders</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-dot-x-sin-x">Example <span class="math notranslate nohighlight">\(\dot{x} = \sin{x}\)</span></a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Reminders</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Reminders</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Reminders</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">Reminders</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">Reminders</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#large-angle-pendulum">Large Angle Pendulum</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#phase-diagram-for-a-large-angle-pendulum">Phase Diagram for a Large Angle Pendulum</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-21-2">Clicker Question 21-2</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#oscillations">Oscillations</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#table-discussion-why-do-we-see-oscillations-so-frequently-in-nature">Table Discussion: Why do we see oscillations so frequently in nature?</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-21-3">Clicker Question 21-3</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#visualizing-the-complex-solution">Visualizing the Complex Solution</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">Visualizing the Complex Solution</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#projecting-the-real-solution">Projecting the Real Solution</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#the-time-trace-of-the-solution">The Time Trace of the Solution</a></li>
-</ul>
-
   </nav></div>
 
 </div></div>
@@ -854,8 +852,8 @@ This work is licensed under a <a rel="license" href="https://creativecommons.org
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
 
   <footer class="bd-footer">
   </footer>
