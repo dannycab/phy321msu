@@ -4,7 +4,7 @@ theme: graph_paper
 paginate: true
 
 title: Day 04 - Mathematical Preliminaries
-description: Slides for PHY 321 Spring 2025, Day 04: Mathematical Preliminaries
+description: Slides for PHY 321 Spring 2026, Day 04: Mathematical Preliminaries
 author: Prof. Danny Caballero <caball14@msu.edu>
 keywords: classical mechanics, models, modeling, differential equations, motion
 url: https://dannycaballero.info/phy321msu/slides/day-04-mathematical-prelims.html
