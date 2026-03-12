@@ -38,7 +38,7 @@ parts:
         - file: assignments/hw4.ipynb
         - file: assignments/midterm1.ipynb
         - file: assignments/hw5.ipynb
-        # - file: assignments/hw6.ipynb
+        - file: assignments/hw6.ipynb
         # - file: assignments/hw7.ipynb
         # - file: assignments/midterm2.ipynb
         # - file: assignments/hw8.ipynb
