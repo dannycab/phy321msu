@@ -16,33 +16,30 @@
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
     document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
-  <!--
-    this give us a css class that will be invisible only if js is disabled
-  -->
-  <noscript>
-    <style>
-      .pst-js-only { display: none !important; }
-
-    </style>
-  </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
-    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
   
-  <!-- So that users can add custom icons -->
-  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
     <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
     <script src="../_static/doctools.js?v=9a2dae69"></script>
@@ -55,7 +52,7 @@
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../_static/design-tabs.js?v=36754332"></script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
@@ -65,9 +62,10 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'assignments/hw6';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Course Calendar" href="../admin/schedule-cal.html" />
+    <link rel="prev" title="Homework 5 (Due 13 Mar)" href="hw5.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-  <meta name="docsearch:version" content="" />
   </head>
   
   
@@ -83,8 +81,19 @@
     <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
   
-  <dialog id="pst-search-dialog">
-    
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
 <form class="bd-search d-flex align-items-center"
       action="../search.html"
       method="get">
@@ -92,6 +101,7 @@
   <input type="search"
          class="form-control"
          name="q"
+         id="search-input"
          placeholder="Search this book..."
          aria-label="Search this book..."
          autocomplete="off"
@@ -99,8 +109,8 @@
          autocapitalize="off"
          spellcheck="false"/>
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form>
-  </dialog>
+</form></div>
+  </div>
 
   <div class="pst-async-banner-revealer d-none">
   <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
@@ -116,10 +126,7 @@
       
       
       
-        
-      
-      <dialog id="pst-primary-sidebar-modal"></dialog>
-      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+      <div class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -149,17 +156,21 @@
     
     
     <img src="../_static/spartan-helmet.png" class="logo__image only-light" alt="Classical Mechanics - Home"/>
-    <img src="../_static/spartan-helmet.png" class="logo__image only-dark pst-js-only" alt="Classical Mechanics - Home"/>
+    <script>document.write(`<img src="../_static/spartan-helmet.png" class="logo__image only-dark" alt="Classical Mechanics - Home"/>`);</script>
   
   
 </a></div>
         <div class="sidebar-primary-item">
 
-<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
- <i class="fa-solid fa-magnifying-glass"></i>
- <span class="search-button__default-text">Search</span>
- <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
-</button></div>
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
@@ -182,7 +193,7 @@
 </details></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Course Materials</span></p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="../lecture-notes/weekly-materials.html">Weekly Course Materials</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../lecture-notes/01_notes.html">01 - Overture: What is Classical Physics?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../lecture-notes/02_notes.html">02 - Computing is a Necessary Tool for Science</a></li>
@@ -200,7 +211,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../lecture-notes/14_notes.html">14 - Classical Mechanics Thus Far</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="assignment-overview.html">Assignments Overview</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="assignment-overview.html">Assignments Overview</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="hw1.html">Homework 1 (Due 23 Jan)</a></li>
 
 
@@ -222,6 +233,10 @@
 
 
 <li class="toctree-l2"><a class="reference internal" href="hw5.html">Homework 5 (Due 13 Mar)</a></li>
+
+
+
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Homework 6 (Due 20 Mar)</a></li>
 
 
 
@@ -256,14 +271,9 @@
   
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
-      <div class="sidebar-primary-item">
-<div id="ethical-ad-placement"
-      class="flat"
-      data-ea-publisher="readthedocs"
-      data-ea-type="readthedocs-sidebar"
-      data-ea-manual="true">
-</div></div>
   </div>
+  
+  <div id="rtd-footer-container"></div>
 
 
       </div>
@@ -360,16 +370,24 @@
 
 
 
-<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
-  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
-  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
-  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
-</button>
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
 
 
-<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
-</button>
+  </button>
+`);
+</script>
 <button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
 </button>
@@ -395,7 +413,7 @@
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Homework 6 (Due 20 Mar)</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#individual-exercise-submit-on-d2l-only">Individual Exercise (Submit on D2L only)</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hw6-algorithmic-science-who-builds-it-who-benefits-and-who-disappears">HW6: Algorithmic Science: Who Builds It, Who Benefits, and Who Disappears?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-0-algorithmic-science-who-builds-it-who-benefits-and-who-disappears">Exercise 0: Algorithmic Science: Who Builds It, Who Benefits, and Who Disappears?</a></li>
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#pencil-and-paper-exercises-submit-on-gradescope-only">Pencil and Paper Exercises (Submit on Gradescope only)</a><ul class="visible nav section-nav flex-column">
@@ -430,8 +448,8 @@ doconce format html hw5.do.txt --no_mako -->
 <p class="admonition-title">Grading Breakdown</p>
 <ul class="simple">
 <li><p>Individual Exercise (10 points) - Ex 0</p></li>
-<li><p>Pencil and Paper Exercises (60 points) - Ex 1-5</p></li>
-<li><p>Numerical Exercise (30 points) - Ex 6</p></li>
+<li><p>Pencil and Paper Exercises (40 points) - Ex 1-4</p></li>
+<li><p>Numerical Exercise (50 points) - Ex 5</p></li>
 </ul>
 </div>
 <div class="tip admonition">
@@ -461,14 +479,15 @@ doconce format html hw5.do.txt --no_mako -->
 </section>
 <section id="individual-exercise-submit-on-d2l-only">
 <h1>Individual Exercise (Submit on D2L only)<a class="headerlink" href="#individual-exercise-submit-on-d2l-only" title="Link to this heading">#</a></h1>
-<section id="hw6-algorithmic-science-who-builds-it-who-benefits-and-who-disappears">
-<h2>HW6: Algorithmic Science: Who Builds It, Who Benefits, and Who Disappears?<a class="headerlink" href="#hw6-algorithmic-science-who-builds-it-who-benefits-and-who-disappears" title="Link to this heading">#</a></h2>
-<p>Artificial intelligence has rapidly become a central tool in scientific research. From predicting protein structures to detecting gravitational waves to analyzing climate data, AI is reshaping how science is done. But like all scientific work, AI-powered science happens within institutions, economies, and labor systems — and those systems are rarely made visible. When we say a machine “learned” something, we should ask: who taught it, and at what cost?</p>
+<section id="exercise-0-algorithmic-science-who-builds-it-who-benefits-and-who-disappears">
+<h2>Exercise 0: Algorithmic Science: Who Builds It, Who Benefits, and Who Disappears?<a class="headerlink" href="#exercise-0-algorithmic-science-who-builds-it-who-benefits-and-who-disappears" title="Link to this heading">#</a></h2>
+<p>Artificial intelligence has rapidly become a central tool in scientific research. From predicting protein structures to detecting gravitational waves to analyzing climate data, AI is reshaping how science is done. AI can be an incredible enabler of scientific progress.</p>
+<p>But like all scientific work, AI-powered science happens within institutions, economies, and labor systems and those systems are rarely made visible. When we say a machine “learned” something, we should ask: who taught it, and at what cost?</p>
 <div class="info admonition">
 <p class="admonition-title">The Nobel Prize Goes to… a Corporation?</p>
-<p><img alt="AlphaFold protein structure visualization" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Protein_structure_prediction.png/960px-Protein_structure_prediction.png" />
+<p><img alt="AlphaFold protein structure process" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Architectural_details_of_AlphaFold_2.png/1280px-Architectural_details_of_AlphaFold_2.png" />
 <em>Image credit: Wikimedia Commons, Public Domain</em></p>
-<p>In 2024, the Nobel Prize in Chemistry was awarded to Demis Hassabis and John Jumper of Google DeepMind, along with David Baker of the University of Washington, for their work on protein structure prediction using AI. The centerpiece was <a class="reference external" href="https://en.wikipedia.org/wiki/AlphaFold">AlphaFold</a>, a system developed inside one of the world’s largest corporations that was trained on publicly funded biological databases built up over decades by thousands of researchers. The prize raised sharp questions: Can a corporate AI system win the Nobel Prize? Who really did this work? And what does it mean when scientific credit flows to a company’s executives rather than the broader community of researchers whose data and labor made the tool possible?</p>
+<p>In 2024, the <a class="reference external" href="https://www.nobelprize.org/prizes/chemistry/2024/summary/">Nobel Prize in Chemistry</a> was awarded to Demis Hassabis and John Jumper of Google DeepMind, along with David Baker of the University of Washington, for their work on protein structure prediction using AI. The centerpiece was <a class="reference external" href="https://en.wikipedia.org/wiki/AlphaFold">AlphaFold</a>, a system developed inside one of the world’s largest corporations that was trained on publicly funded biological databases built up over decades by thousands of researchers. The prize raised sharp questions: Can a corporate AI system win the Nobel Prize? Who really did this work? And what does it mean when scientific credit flows to a company’s executives rather than the broader community of researchers whose data and labor made the tool possible?</p>
 </div>
 <p>For this exercise, read the following two sources:</p>
 <ol class="arabic simple">
@@ -477,13 +496,24 @@ doconce format html hw5.do.txt --no_mako -->
 </ol>
 <div class="info admonition">
 <p class="admonition-title">Why are we reading this?</p>
-<p>AI tools are increasingly part of scientific workflows, including in physics. Understanding who builds these tools — and under what conditions — is part of understanding the political economy of modern science. Just as earlier exercises asked you to look at the hidden labor behind observatories and instruments, this exercise asks you to look at the hidden labor behind the algorithms. The workers who label data, moderate content, and annotate training sets are as structurally essential to AI as the astronomers who polished telescope mirrors were to 19th century astronomy. They are rarely credited.</p>
+<p>AI tools are increasingly part of scientific workflows, including in physics. Understanding who builds these tools, and under what conditions, is part of understanding the political economy of modern science. Just as earlier exercises asked you to look at the hidden labor behind observatories and instruments, this exercise asks you to look at the hidden labor behind the algorithms. The workers who label data, moderate content, and annotate training sets are as structurally essential to AI as the ceramics makers and glass blowers of the 17th and 18th century, the technicians who polished telescope mirrors were to 19th century astronomy, and the human computers of the 20th century. They are rarely credited.</p>
 </div>
 <ul class="simple">
-<li><p><strong>0a:</strong> In ~150 words, summarize the AlphaFold Nobel Prize controversy. The prize was awarded to corporate executives at Google DeepMind for a tool trained on publicly funded scientific databases. What does this episode reveal about how scientific credit is assigned when algorithms, corporations, and cumulative community labor all play a role? What would a more complete accounting of that credit look like?</p></li>
-<li><p><strong>0b:</strong> In ~150 words, AI systems — including those used in scientific research — are trained on data labeled by workers, often in the Global South, earning as little as $1–2 per hour under precarious conditions. This labor is structurally invisible: workers rarely know what systems they are building, and the companies using their work rarely disclose the supply chain. How does recognizing this labor chain change your understanding of what “automated” science actually is? How does it connect to the broader patterns of hidden labor we have discussed throughout this course?</p></li>
-<li><p><strong>0c:</strong> In ~150 words, as a future scientist or engineer, you will very likely use AI tools in your work. What practices would you adopt to be transparent about how those tools work, who built them, and whose labor made them possible? What structural changes — in how AI tools are credited, licensed, or governed — might better reflect the collective labor that produces them? You might draw on the principles of Open Science from <a class="reference internal" href="#"><span class="xref myst">Homework X, Exercise 0</span></a> as a starting point.</p></li>
+<li><p>0a (3pt) In ~150 words, summarize the AlphaFold Nobel Prize controversy. The prize was awarded to corporate executives at Google DeepMind for a tool trained on publicly funded scientific databases. What does this episode reveal about how scientific credit is assigned when algorithms, corporations, and cumulative community labor all play a role? What would a more complete accounting of that credit look like?</p></li>
+<li><p>0b (4pt) In ~150 words, AI systems — including those used in scientific research — are trained on data labeled by workers, often in the Global South, earning as little as $1–2 per hour under precarious conditions. This labor is structurally invisible: workers rarely know what systems they are building, and the companies using their work rarely disclose the supply chain. How does recognizing this labor chain change your understanding of what “automated” science actually is? How does it connect to the broader patterns of hidden labor we have discussed throughout this course?</p></li>
+<li><p>0c (3pt) In ~150 words, as a future scientist or engineer, you will very likely use AI tools in your work. What practices would you adopt to be transparent about how those tools work, who built them, and whose labor made them possible? What structural changes — in how AI tools are credited, licensed, or governed — might better reflect the collective labor that produces them? You might draw on the principles of Open Science from <a class="reference internal" href="hw4.html#exercise-0-10pt-open-science-reproducibility-and-accessibility"><span class="std std-ref">Homework 4, Exercise 0</span></a> as a starting point.</p></li>
 </ul>
+<div class="tip admonition">
+<p class="admonition-title">More on the invisible labor of AI</p>
+<p>If you found this topic interesting, you might also check out the following sources:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.cbsnews.com/news/ai-work-kenya-exploitation-60-minutes/">https://www.cbsnews.com/news/ai-work-kenya-exploitation-60-minutes/</a></p></li>
+<li><p><a class="reference external" href="https://www.techwontsave.us/data-vampires">https://www.techwontsave.us/data-vampires</a></p></li>
+<li><p><a class="reference external" href="https://netzpolitik.org/2024/data-workers-inquiry-the-hidden-workers-behind-ai-tell-their-stories/">https://netzpolitik.org/2024/data-workers-inquiry-the-hidden-workers-behind-ai-tell-their-stories/</a></p></li>
+<li><p><a class="reference external" href="https://www.bbc.com/news/av/world-africa-66514287">https://www.bbc.com/news/av/world-africa-66514287</a></p></li>
+</ul>
+<p><em>Note that these sources may contain graphic descriptions of labor conditions and mental health issues. Reader/listener discretion is advised.</em></p>
+</div>
 </section>
 </section>
 <section id="pencil-and-paper-exercises-submit-on-gradescope-only">
@@ -496,10 +526,10 @@ doconce format html hw5.do.txt --no_mako -->
 \[U(r) = A\left[ \left(e^{(R-r)/S}-1\right)^2-1\right]\]</div>
 <p>where the distance between the centers of the two atoms is <span class="math notranslate nohighlight">\(r\)</span>, and the constants <span class="math notranslate nohighlight">\(A\)</span>, <span class="math notranslate nohighlight">\(R\)</span>, and <span class="math notranslate nohighlight">\(S\)</span> are all positive. Here <span class="math notranslate nohighlight">\(S&lt;&lt;R\)</span>.</p>
 <ul class="simple">
-<li><p>2a (2pt) Sketch (or plot) the potential as a function of <span class="math notranslate nohighlight">\(r\)</span>.</p></li>
-<li><p>2b (3pt) Find the equilibrium position of the potential, i.e. the position where the potential is at a minimum. We will call this <span class="math notranslate nohighlight">\(r_e\)</span>.</p></li>
-<li><p>2c (3pt) Rewrite the potential in terms of the displacement from equilibrium, <span class="math notranslate nohighlight">\(r = r_e + x\)</span>. Expand the potential to second order in <span class="math notranslate nohighlight">\(x\)</span>.</p></li>
-<li><p>2d (2pt) Find the effective spring constant, <span class="math notranslate nohighlight">\(k\)</span>, for the potential near the minimum. What is the frequency of small oscillations about the minimum?</p></li>
+<li><p>1a (2pt) Sketch (or plot) the potential as a function of <span class="math notranslate nohighlight">\(r\)</span>.</p></li>
+<li><p>1b (3pt) Find the equilibrium position of the potential, i.e. the position where the potential is at a minimum. We will call this <span class="math notranslate nohighlight">\(r_e\)</span>.</p></li>
+<li><p>1c (3pt) Rewrite the potential in terms of the displacement from equilibrium, <span class="math notranslate nohighlight">\(r = r_e + x\)</span>. Expand the potential to second order in <span class="math notranslate nohighlight">\(x\)</span>.</p></li>
+<li><p>1d (2pt) Find the effective spring constant, <span class="math notranslate nohighlight">\(k\)</span>, for the potential near the minimum. What is the frequency of small oscillations about the minimum?</p></li>
 </ul>
 </section>
 <section id="exercise-2-10pt-time-averaging-and-the-sho">
@@ -509,9 +539,9 @@ doconce format html hw5.do.txt --no_mako -->
 <div class="math notranslate nohighlight">
 \[\langle f \rangle = \frac{1}{\tau}\int_0^\tau f(t)dt\]</div>
 <ul class="simple">
-<li><p>3a (2pt) Show that the time average of the position of the SHO is zero.</p></li>
-<li><p>3b (2pt) Show that the time average of the velocity of the SHO is zero.</p></li>
-<li><p>3c (6pt) Show that the time average of the kinetic energy of the SHO is equal to the time average of the potential energy (and importantly, non-zero).  If the total energy is <span class="math notranslate nohighlight">\(E\)</span>, these time averages are equal to <span class="math notranslate nohighlight">\(E/2\)</span>. You might need to show that the very useful trigonometric identity,</p></li>
+<li><p>2a (2pt) Show that the time average of the position of the SHO is zero.</p></li>
+<li><p>2b (2pt) Show that the time average of the velocity of the SHO is zero.</p></li>
+<li><p>2c (6pt) Show that the time average of the kinetic energy of the SHO is equal to the time average of the potential energy (and importantly, non-zero).  If the total energy is <span class="math notranslate nohighlight">\(E\)</span>, these time averages are equal to <span class="math notranslate nohighlight">\(E/2\)</span>. You might need to show that the very useful trigonometric identity,</p></li>
 </ul>
 <div class="math notranslate nohighlight">
 \[\langle \sin^2(\omega t-\delta)\rangle = \langle \cos^2(\omega t-\delta)\rangle = \frac{1}{2}\]</div>
@@ -523,9 +553,9 @@ doconce format html hw5.do.txt --no_mako -->
 \[U(r) = U_0\left(\dfrac{r}{R}+\lambda^2\frac{R}{r}\right)\]</div>
 <p>where <span class="math notranslate nohighlight">\(U_0\)</span>, <span class="math notranslate nohighlight">\(R\)</span>, and <span class="math notranslate nohighlight">\(\lambda\)</span> are all positive constants and the domain of the potential is <span class="math notranslate nohighlight">\(0&lt;r&lt;\infty\)</span>.</p>
 <ul class="simple">
-<li><p>4a (2pt) Sketch (or plot) the potential as a function of <span class="math notranslate nohighlight">\(r\)</span>.</p></li>
-<li><p>4b (3pt) Find the equilibrium position of the potential, i.e. the position where the potential is at a minimum. We will call this <span class="math notranslate nohighlight">\(r_e\)</span>.</p></li>
-<li><p>4c (5pt) Rewrite the potential in terms of the displacement from equilibrium, <span class="math notranslate nohighlight">\(r = r_e + x\)</span>. Expand the potential to second order in <span class="math notranslate nohighlight">\(x\)</span>. What is the effective spring constant, <span class="math notranslate nohighlight">\(k\)</span>, for the potential near the minimum? What is the frequency of small oscillations about the minimum?</p></li>
+<li><p>3a (2pt) Sketch (or plot) the potential as a function of <span class="math notranslate nohighlight">\(r\)</span>.</p></li>
+<li><p>3b (3pt) Find the equilibrium position of the potential, i.e. the position where the potential is at a minimum. We will call this <span class="math notranslate nohighlight">\(r_e\)</span>.</p></li>
+<li><p>3c (5pt) Rewrite the potential in terms of the displacement from equilibrium, <span class="math notranslate nohighlight">\(r = r_e + x\)</span>. Expand the potential to second order in <span class="math notranslate nohighlight">\(x\)</span>. What is the effective spring constant, <span class="math notranslate nohighlight">\(k\)</span>, for the potential near the minimum? What is the frequency of small oscillations about the minimum?</p></li>
 </ul>
 </section>
 <section id="exercise-4-10pt-defining-periodicity">
@@ -536,21 +566,21 @@ doconce format html hw5.do.txt --no_mako -->
 <p>where <span class="math notranslate nohighlight">\(A\)</span> is the amplitude, <span class="math notranslate nohighlight">\(\beta\)</span> is the damping constant, <span class="math notranslate nohighlight">\(\omega_1 = \sqrt{\omega_0^2 - \beta^2}\)</span>  and <span class="math notranslate nohighlight">\(\delta\)</span> is the phase.</p>
 <p>The motion decays with time, but we can still define a periodicity, <span class="math notranslate nohighlight">\(\tau_1\)</span>, which is the time between peaks in the motion.</p>
 <ul class="simple">
-<li><p>5a (4pt) Sketch (or plot) the motion of the oscillator as a function of time. Show that you can find <span class="math notranslate nohighlight">\(\tau_1 = 2\pi/\omega_1\)</span> from looking at successive maxima.</p></li>
-<li><p>5b (3pt) Show that an equivalent definition of <span class="math notranslate nohighlight">\(\tau_1\)</span> is twice the time between zero crossings of the motion.</p></li>
-<li><p>5c (3pt) If the damping <span class="math notranslate nohighlight">\(\beta\)</span> is half the natural frequency (<span class="math notranslate nohighlight">\(\omega_0\)</span>), how does the amplitude of the motion decay in one period?</p></li>
+<li><p>4a (4pt) Sketch (or plot) the motion of the oscillator as a function of time. Show that you can find <span class="math notranslate nohighlight">\(\tau_1 = 2\pi/\omega_1\)</span> from looking at successive maxima.</p></li>
+<li><p>4b (3pt) Show that an equivalent definition of <span class="math notranslate nohighlight">\(\tau_1\)</span> is twice the time between zero crossings of the motion.</p></li>
+<li><p>4c (3pt) If the damping <span class="math notranslate nohighlight">\(\beta\)</span> is half the natural frequency (<span class="math notranslate nohighlight">\(\omega_0\)</span>), how does the amplitude of the motion decay in one period?</p></li>
 </ul>
 </section>
 <section id="exercise-5-50-pt-find-your-own-1d-oscillator">
 <h2>Exercise 5 (50 pt), Find your own 1D Oscillator<a class="headerlink" href="#exercise-5-50-pt-find-your-own-1d-oscillator" title="Link to this heading">#</a></h2>
 <p>We have built all the tools to study 1D unforced oscillators. Now you get to pick your own potential and study it. You can pick any 1D potential you like, but it should have a local minimum. Make sure it is not a driven oscillator (i.e., no explicit time dependence in the equations of motion). To earn full credit for this exercise, you must:</p>
 <ul class="simple">
-<li><p>6a (5pt) Present the potential and describe its origin, why it is interesting, where it comes from, etc. Educate us about it.</p></li>
-<li><p>6b (5pt) Sketch (or plot) the potential as a function of it’s argument (and chosen variables) and find the equilibrium position of the potential, i.e. the position where the potential is at a minimum.</p></li>
-<li><p>6c (10pt) Rewrite the potential in terms of the displacement from equilibrium. Expand the potential to second order to find the effective spring constant, <span class="math notranslate nohighlight">\(k\)</span>, for the potential near the minimum. What is the frequency of small oscillations about the minimum?</p></li>
-<li><p>6d (10pt) Construct the equations of motion for the potential and solve them numerically. Choose initial conditions and parameters that give oscillatory motion. Note it doesn’t have to be SHO (In fact, it probably won’t be). Plot the position as a function of time. Make sure we can see the oscillations.</p></li>
-<li><p>6e (10pt) Plot the phase diagram of the trajectory (you don’t have to produce a phase diagram, but just plot the trajectory in phase space). What does the phase diagram tell you about the motion?</p></li>
-<li><p>6f (10pt) Find the period of your motion. Here you might have to make some definitions of what periodicity means for your potential.</p></li>
+<li><p>5a (5pt) Present the potential and describe its origin, why it is interesting, where it comes from, etc. Educate us about it.</p></li>
+<li><p>5b (5pt) Sketch (or plot) the potential as a function of it’s argument (and chosen variables) and find the equilibrium position of the potential, i.e. the position where the potential is at a minimum.</p></li>
+<li><p>5c (10pt) Rewrite the potential in terms of the displacement from equilibrium. Expand the potential to second order to find the effective spring constant, <span class="math notranslate nohighlight">\(k\)</span>, for the potential near the minimum. What is the frequency of small oscillations about the minimum?</p></li>
+<li><p>5d (10pt) Construct the equations of motion for the potential and solve them numerically. Choose initial conditions and parameters that give oscillatory motion. Note it doesn’t have to be SHO (In fact, it probably won’t be). Plot the position as a function of time. Make sure we can see the oscillations.</p></li>
+<li><p>5e (10pt) Plot the phase diagram of the trajectory (you don’t have to produce a phase diagram, but just plot the trajectory in phase space). What does the phase diagram tell you about the motion?</p></li>
+<li><p>5f (10pt) Find the period of your motion. Here you might have to make some definitions of what periodicity means for your potential.</p></li>
 </ul>
 <p><strong>Note: this might seem similar to your midterm, but notice we expect you to do some research on the potential in 6a, and we are going into more depth with questions 6e and 6f. This is also a scaffold for your final project in terms of practicing aspects that should appear.</strong></p>
 <section id="examples-of-1d-potentials">
@@ -641,6 +671,24 @@ doconce format html hw5.do.txt --no_mako -->
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="hw5.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Homework 5 (Due 13 Mar)</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../admin/schedule-cal.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Course Calendar</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               
@@ -648,8 +696,7 @@ doconce format html hw5.do.txt --no_mako -->
             
             
               
-                <dialog id="pst-secondary-sidebar-modal"></dialog>
-                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
 
   <div class="sidebar-secondary-item">
@@ -660,7 +707,7 @@ doconce format html hw5.do.txt --no_mako -->
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Homework 6 (Due 20 Mar)</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#individual-exercise-submit-on-d2l-only">Individual Exercise (Submit on D2L only)</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hw6-algorithmic-science-who-builds-it-who-benefits-and-who-disappears">HW6: Algorithmic Science: Who Builds It, Who Benefits, and Who Disappears?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-0-algorithmic-science-who-builds-it-who-benefits-and-who-disappears">Exercise 0: Algorithmic Science: Who Builds It, Who Benefits, and Who Disappears?</a></li>
 </ul>
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#pencil-and-paper-exercises-submit-on-gradescope-only">Pencil and Paper Exercises (Submit on Gradescope only)</a><ul class="visible nav section-nav flex-column">
@@ -724,8 +771,8 @@ This work is licensed under a <a rel="license" href="https://creativecommons.org
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
-<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
 
   <footer class="bd-footer">
   </footer>

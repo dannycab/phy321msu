@@ -133,3 +133,49 @@ One of the key components in these circuits is the [Josephson junction](https://
 * 1a (4pt) In 150 words, summarize what you've learned about superconductivity and its applications. Of course, you can bring in other knowledge and ideas you have from learning about it elsewhere, or more research you did into it.
 * 1b (3pt) Review the list of [Nobel Prize controversies in Physics](https://en.wikipedia.org/wiki/Nobel_Prize_controversies#Physics). Find one that is particularly interesting to you and follow the references. In 150 words, what did you learn about the controversy? What does it tell you about how we award or reward scientific discovery? What might we do better?
 * 1c (3pt) Let's return briefly to the story of scientific labor, ala [Clifford D. Conner](https://www.hachettebookgroup.com/titles/clifford-d-conner/a-peoples-history-of-science/9780786737864/?lens=bold-type-books), where much of the work of science is conducted by technicians, students, and other research staff. Indeed, science has become increasingly collaborative since the Nobel Prize was founded. And yet, awards for science are still often delivered to the "principal investigator" - the person who leads the group. In 150 words, explain your view of these awards, consider the affirmative case for awarding these prizes to PIs and consider the labor that produces the science that warrants the award. Do you have ideas for celebrating both accomplishments? *Here you might remind yourself of your thinking and writing for [Homework 1, Exercise 0](../assignments/hw1.ipynb#exercise-0-10-pt-physics-as-work-whose-labor-builds-foundations) & [Homework 2, Exercise 0](../assignments/hw2.ipynb#exercise-0-10-pt-how-do-we-talk-about-scientific-efforts).*
+
+
+## HW6: Algorithmic Science: Who Builds It, Who Benefits, and Who Disappears?
+
+Artificial intelligence has rapidly become a central tool in scientific research. From predicting protein structures to detecting gravitational waves to analyzing climate data, AI is reshaping how science is done. AI can be an incredible enabler of scientific progress. 
+
+But like all scientific work, AI-powered science happens within institutions, economies, and labor systems and those systems are rarely made visible. When we say a machine "learned" something, we should ask: who taught it, and at what cost?
+
+```{admonition} The Nobel Prize Goes to... a Corporation?
+:class: info
+
+![AlphaFold protein structure process](https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Architectural_details_of_AlphaFold_2.png/1280px-Architectural_details_of_AlphaFold_2.png)
+*Image credit: Wikimedia Commons, Public Domain*
+
+In 2024, the [Nobel Prize in Chemistry](https://www.nobelprize.org/prizes/chemistry/2024/summary/) was awarded to Demis Hassabis and John Jumper of Google DeepMind, along with David Baker of the University of Washington, for their work on protein structure prediction using AI. The centerpiece was [AlphaFold](https://en.wikipedia.org/wiki/AlphaFold), a system developed inside one of the world's largest corporations that was trained on publicly funded biological databases built up over decades by thousands of researchers. The prize raised sharp questions: Can a corporate AI system win the Nobel Prize? Who really did this work? And what does it mean when scientific credit flows to a company's executives rather than the broader community of researchers whose data and labor made the tool possible?
+```
+
+For this exercise, read the following two sources:
+
+1. **On AlphaFold and the Nobel:** Chris Palmer, ["AlphaFold Wins Nobel Prize, Gains Functionality, Drops Open Access"](https://www.engineering.org.cn/engi/EN/10.1016/j.eng.2024.12.003), *Engineering*, 2024. *(Focus on the sections about open science controversy and the scientific credit debate.)*
+
+2. **On the hidden labor of AI:** Brookings Institution, ["Reimagining the future of data and AI labor in the Global South"](https://www.brookings.edu/articles/reimagining-the-future-of-data-and-ai-labor-in-the-global-south/), 2025.
+
+:::{admonition} Why are we reading this?
+:class: info
+AI tools are increasingly part of scientific workflows, including in physics. Understanding who builds these tools, and under what conditions, is part of understanding the political economy of modern science. Just as earlier exercises asked you to look at the hidden labor behind observatories and instruments, this exercise asks you to look at the hidden labor behind the algorithms. The workers who label data, moderate content, and annotate training sets are as structurally essential to AI as the ceramics makers and glass blowers of the 17th and 18th century, the technicians who polished telescope mirrors were to 19th century astronomy, and the human computers of the 20th century. They are rarely credited.
+:::
+
+* 0a (3pt) In ~150 words, summarize the AlphaFold Nobel Prize controversy. The prize was awarded to corporate executives at Google DeepMind for a tool trained on publicly funded scientific databases. What does this episode reveal about how scientific credit is assigned when algorithms, corporations, and cumulative community labor all play a role? What would a more complete accounting of that credit look like?
+
+* 0b (4pt) In ~150 words, AI systems — including those used in scientific research — are trained on data labeled by workers, often in the Global South, earning as little as $1–2 per hour under precarious conditions. This labor is structurally invisible: workers rarely know what systems they are building, and the companies using their work rarely disclose the supply chain. How does recognizing this labor chain change your understanding of what "automated" science actually is? How does it connect to the broader patterns of hidden labor we have discussed throughout this course?
+
+* 0c (3pt) In ~150 words, as a future scientist or engineer, you will very likely use AI tools in your work. What practices would you adopt to be transparent about how those tools work, who built them, and whose labor made them possible? What structural changes — in how AI tools are credited, licensed, or governed — might better reflect the collective labor that produces them? You might draw on the principles of Open Science from [Homework 4, Exercise 0](./hw4.ipynb#exercise-0-10pt-open-science-reproducibility-and-accessibility) as a starting point.
+
+```{admonition} More on the invisible labor of AI
+:class: tip
+If you found this topic interesting, you might also check out the following sources:
+
+* https://www.cbsnews.com/news/ai-work-kenya-exploitation-60-minutes/
+* https://www.techwontsave.us/data-vampires
+* https://netzpolitik.org/2024/data-workers-inquiry-the-hidden-workers-behind-ai-tell-their-stories/
+* https://www.bbc.com/news/av/world-africa-66514287
+
+*Note that these sources may contain graphic descriptions of labor conditions and mental health issues. Reader/listener discretion is advised.*
+
+```
