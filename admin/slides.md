@@ -212,33 +212,20 @@ Slides for PHY 321 appear in reverse chronological order, with the most recent s
 
 :::
 
----
-
-## Day 24 - Driven Oscillations - 22 Oct 2025
-
-[![Day 24](../slides/day-24-driven-oscillations.png)](../slides/day-24-driven-oscillations.pdf)
-
-:::info
-
-### 📂 Download Slides
-[HTML](../slides/day-24-driven-oscillations.md) | [PDF](../slides/day-24-driven-oscillations.pdf)
-
-:::
-
----
-
-## Day 23 - Help Session - 17 Oct 2025
-
-[![Day 23](../slides/day-23-homework-session.png)](../slides/day-23-homework-session.pdf)
-
-:::info
-
-### 📂 Download Slides
-[HTML](../slides/day-23-homework-session.md) | [PDF](../slides/day-23-homework-session.pdf)
-
-:::
-
 --- -->
+
+## Day 23 - Driven Oscillations - 16 Mar 2026
+
+[![Day 23](../slides/day-23-driven-oscillations.png)](../slides/day-23-driven-oscillations.pdf)
+
+:::info
+
+### 📂 Download Slides
+[HTML](../slides/day-23-driven-oscillations.md) | [PDF](../slides/day-23-driven-oscillations.pdf)
+
+:::
+
+---
 
 ## Day 22 - Damped Oscillations - 13 Mar 2026
 
