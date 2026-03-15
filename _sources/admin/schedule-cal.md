@@ -93,9 +93,9 @@ _All assignments are turned in using Gradescope as a single PDF._
 
 | **Week** | **Day**   | **Topic**                     | **Readings to Prepare** | **Important Events** |
 |:--------:|:---------:|:-----------------------------:|:-----------------------|:--------------------|
-| CW11     | 9 Mar    | Oscillations; Damping         | 📓 [08 - Oscillations, Cycles, and Nature's Recurrences](../lecture-notes/08_notes.ipynb)<br>📚 JRT 5.1-5.2, 5.4; MLB 7.1-7.2; 8.5 | 📝 Homework 6 Assigned (Due 20 Mar)                |
-|          | 11 Mar    | Oscillations; Damping         |                        |                    |
-|          | 13 Mar     | Workshop day                  |                        | 📥 **Homework 5 Due**<br>**(Late after Sunday 11:59pm)**     |
+| CW11     | 9 Mar    | Class Cancelled         | 📓 [08 - Oscillations, Cycles, and Nature's Recurrences](../lecture-notes/08_notes.ipynb)<br>📚 JRT 5.1-5.2, 5.4; MLB 7.1-7.2; 8.5 | 📝 [Homework 6 Assigned](../assignments/hw6.ipynb) (Due 20 Mar)                |
+|          | 11 Mar    | Oscillations; Damping         |  📊 [Slides](../slides/day-21-oscillations.pdf)                      |                    |
+|          | 13 Mar     | Oscillations; Damping                 |  📊 [Slides](../slides/day-22-damped-oscillations.pdf)                       | 📥 **Homework 5 Due**<br>**(Late after Sunday 11:59pm)**     |
 
 ---
 
@@ -103,9 +103,9 @@ _All assignments are turned in using Gradescope as a single PDF._
 
 | **Week** | **Day**   | **Topic**                     | **Readings to Prepare** | **Important Events** |
 |:--------:|:---------:|:-----------------------------:|:-----------------------|:--------------------|
-| CW12     | 16 Mar     | Driven Oscillations; Resonance| 📓 [09 - Driving Oscillators and Resonance Phenomenon](../lecture-notes/09_notes.ipynb)<br>📚 JRT 5.5-5.6; MLB 8.6   |  📝 Homework 7 Assigned (Due 27 Mar)                 |
+| CW12     | 16 Mar     | Driven Oscillations; Resonance| 📓 [09 - Driving Oscillators and Resonance Phenomenon](../lecture-notes/09_notes.ipynb)<br>📚 JRT 5.5-5.6; MLB 8.6<br>📊 [Slides](../slides/day-23-driven-oscillations.pdf)   |  📝 Homework 7 Assigned (Due 27 Mar)                 |
 |          | 18 Mar   | Driven Oscillations; Resonance|   |                    |
-|          | 20 Mar     | Workshop day |                        | 📥 **Homework 6 Due**<br>**(Late after Sunday 11:59pm)**  |
+|          | 20 Mar     | Workshop day |                      | 📥 **Homework 6 Due**<br>**(Late after Sunday 11:59pm)**  |
 
 ---
 
