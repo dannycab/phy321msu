@@ -179,3 +179,52 @@ If you found this topic interesting, you might also check out the following sour
 *Note that these sources may contain graphic descriptions of labor conditions and mental health issues. Reader/listener discretion is advised.*
 
 ```
+
+## HW7: Whose Land, Whose Sky? Sovereignty, Place, and the Politics of Big Science
+
+The exercises in this course have asked you to examine physics from multiple angles: whose labor built it, whose stories are told, who profits, and whose data is extracted. In this extended exercise, we ask one more foundational question: where does science happen and who decides?
+
+Modern "Big Science" like particle accelerators, gravitational wave detectors, radio telescope arrays requires specific physical places. These places are not neutral. They sit on land with histories, legal claims, and communities who have lived with and on them for generations. The question of who controls these places, and on what terms, is inseparable from the science itself.
+
+The controversy over the Thirty Meter Telescope (TMT) on Maunakea in Hawaiʻi is one of the most significant live examples of this tension in contemporary science. In 2019, the state of Hawaiʻi attempted to begin construction of the TMT on the summit of Maunakea — a dormant volcano, the highest peak in the Pacific, and a site sacred to Native Hawaiian communities who hold it central to their cosmology. A sustained occupation of the access road blocked construction for months. The movement attracted supporters from around the world, including physicists, astronomers, and Indigenous scholars, and forced open deep questions about the relationship between scientific institutions and the peoples whose lands they occupy.
+
+![Maunakea summit viewed from Mauna Loa Observatory](https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Mauna_Kea_Summit_2021-06-16_33_%28cropped%29.jpg/960px-Mauna_Kea_Summit_2021-06-16_33_%28cropped%29.jpg)
+*Maunakea summit, site of multiple existing observatories and the proposed TMT. [Source: Wikimedia Commons, Public Domain](https://en.wikipedia.org/wiki/Mauna_Kea_Observatories)*
+
+> The spelling *Maunakea* (one word) reflects the Hawaiian language and is preferred by many Native Hawaiians. *Mauna Kea* (two words) is the anglicized form. In this exercise, we use both, as different sources use different spellings. This is itself a small example of how language carries political and cultural weight.
+ 
+:::{admonition} Why are we reading this? 
+:class: important
+
+The [Maunakea controversy](https://www.space.com/thirty-meter-telescope-hawaii-volcano-maunakea-opposition.html) is often framed in mainstream media as a conflict between science and religion. That framing is itself worth interrogating. Native Hawaiians have their own systems of knowledge about the sky and the land, systems built over centuries and tied to navigation, agriculture, and cultural identity. The question is not whether astronomical science is valid. The question is whether one knowledge system has the right to displace another, on what grounds, and who gets to decide.
+
+And while we ask “whose land?” we must also ask “whose sky?” 
+
+The night sky itself is increasingly being claimed by private capital. Elon Musk’s [SpaceX Starlink constellation](https://en.wikipedia.org/wiki/Starlink) has launched thousands of satellites into low Earth orbit and is now the world’s largest satellite network, with nearly 10,000 satellites in orbit and ongoing plans to deploy even more. Recent reporting notes that SpaceX aims to add at least 1,200 upgraded satellites in the near term and to [launch millions in the future](https://www.bbc.com/news/articles/cyv5l24mrjmo) to keep scaling to achieve truly global coverage, while generating billions of dollars in annual revenue. These satellites leave [bright streaks across astronomical images, disrupting ground-based astronomy worldwide](https://arxiv.org/html/2510.17540v1) and prompting concerns about contamination of astronomical data. The [International Astronomical Union has raised alarms](https://aas.org/posts/news/2020/02/iau-issues-update-satellite-constellations-potential-impacts-astronomy) about how satellite mega-constellations like Starlink and others will interfere with both ground-based and space-based observations and has established a dedicated Centre for the Protection of the Dark and Quiet Sky from Satellite Constellation Interference.
+
+Indigenous communities, astronomers, and dark-sky advocates have pointed out that no single corporation sought or received permission from humanity to fundamentally alter the appearance of the night sky — a commons that has belonged to all peoples and cultures for millennia. The question of who controls the sky above us is as urgent as the question of who controls the land beneath the telescopes.
+
+You are not expected to resolve this controversy. You are expected to understand its contours, engage with its complexity, and begin to think about how you would navigate these tensions as a scientist. 
+:::
+
+For this exercise, read/skim the following sources:
+
+1. **Background on the controversy**: [Thirty Meter Telescope](https://en.wikipedia.org/wiki/Thirty_Meter_Telescope) on Wikipedia — focus particularly on the sections covering Indigenous opposition, the [2019 protests](https://en.wikipedia.org/wiki/Thirty_Meter_Telescope_protests), the legal proceedings, and the current status of the project. This will give you a grounding in the basic facts before you engage the more analytical sources.
+2. **A pro‑science perspective**: “[Thirty Meter Telescope will be a most powerful eye on the sky](https://www.universityofcalifornia.edu/news/thirty-meter-telescope-will-be-most-powerful-eye-sky)” (University of California news article, 2021). This piece explains in accessible language what the TMT is, why Maunakea is scientifically important, and what kinds of discoveries (from exoplanets to the early universe) astronomers hope to make with it. Read the article with an eye to how it frames the benefits of the telescope, who is imagined as the main beneficiary of those benefits, and how (or whether) it addresses social or ethical concerns about building on Maunakea.
+3. **A pro‑Indigenous perspective**: “[An Astronomical Controversy: The Thirty Meter Telescope and the Need for Indigenous Voices in Science](https://casp.wisc.edu/2020/03/04/an-astronomical-controversy-the-thirty-meter-telescope-and-the-need-for-indigenous-voices-in-science/)” (UW–Madison CASP blog, 2020) or a similar public‑facing piece by Kānaka Maoli scholars and activists. This reading introduces how many Native Hawaiians understand Maunakea through concepts like kuleana (responsibility), ʻāina (land), and sovereignty, and it frames the TMT conflict as a question of governance rather than mere “feelings versus science.” As you read, pay attention to how the author defines legitimate authority over the mountain, what counts as harm, and what a just scientific practice would need to look like from this perspective.
+ 
+Short on time? At minimum, read the Wikipedia article thoroughly and at least one of the other two sources. Full engagement with all three will strengthen your responses.
+
+--- 
+
+Now answer the following questions:
+
+- 0a In ~150 words, summarize the Maunakea/TMT controversy. What is the Thirty Meter Telescope and what new kinds of astronomical observations would it enable? Who opposes the project, and on what grounds? Briefly describe the major events of the 2019 blockade/occupation of the access road. What legal or political decisions have been made about the project since then, and what is its current status? Aim for clear, neutral description — establish the factual record before you evaluate it.
+
+- 0b In ~150 words, describe the specific claims made by Native Hawaiian communities regarding Maunakea. Be precise: what is the cultural and spiritual significance of this mountain for Kānaka Maoli? What concepts (such as kuleana or ʻāina) shape how they understand their relationship to the land? What legal and governance claims do they make about who has authority over Maunakea? Avoid treating these as “beliefs” opposed to science; focus on what forms of knowledge and authority are being asserted.
+
+- 0c In ~150 words, compare how the pro‑science TMT reading and the pro‑Indigenous reading frame the controversy. According to the pro‑science piece, what are the main scientific benefits of the TMT, and who is imagined as benefiting? According to the pro‑Indigenous piece, what harms, risks, or injustices are foregrounded, and for whom? What does each text say — or fail to say — about sovereignty, land, and governance? Explain how reading them together complicates a simple “science versus tradition” framing.
+
+- 0d In ~150 words, connect the Maunakea controversy to at least two earlier exercises in this course. You might consider: How does the question of where science happens relate to questions about whose labor and which communities make it possible? How does the concentration of funding and power in Big Science resemble issues you have discussed previously? How do the debates over access, ownership, and benefit from TMT’s data relate to any Open Science principles you have studied? Name specific earlier topics, texts, or cases and describe the connections clearly.
+
+- 0e In ~150 words, imagine you have been invited to join the TMT project’s science team. You believe the telescope could produce genuinely important scientific results, but you also take seriously the Indigenous sovereignty and governance issues raised in the readings. What would you do, and why? What questions would you want answered before deciding whether to join? What concrete practices — in how you do research, engage with communities, and communicate about the project — would reflect the values you have developed in this course? There is no single correct answer; focus on your reasoning.

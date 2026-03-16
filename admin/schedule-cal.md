@@ -103,7 +103,7 @@ _All assignments are turned in using Gradescope as a single PDF._
 
 | **Week** | **Day**   | **Topic**                     | **Readings to Prepare** | **Important Events** |
 |:--------:|:---------:|:-----------------------------:|:-----------------------|:--------------------|
-| CW12     | 16 Mar     | Driven Oscillations; Resonance| 📓 [09 - Driving Oscillators and Resonance Phenomenon](../lecture-notes/09_notes.ipynb)<br>📚 JRT 5.5-5.6; MLB 8.6<br>📊 [Slides](../slides/day-23-driven-oscillations.pdf)   |  📝 Homework 7 Assigned (Due 27 Mar)                 |
+| CW12     | 16 Mar     | Driven Oscillations; Resonance| 📓 [09 - Driving Oscillators and Resonance Phenomenon](../lecture-notes/09_notes.ipynb)<br>📚 JRT 5.5-5.6; MLB 8.6<br>📊 [Slides](../slides/day-23-driven-oscillations.pdf)   |  📝 [Homework 7 Assigned](../assignments/hw7.ipynb) (Due 27 Mar)                 |
 |          | 18 Mar   | Driven Oscillations; Resonance|   |                    |
 |          | 20 Mar     | Workshop day |                      | 📥 **Homework 6 Due**<br>**(Late after Sunday 11:59pm)**  |
 
