@@ -4,7 +4,14 @@
       "WebFetch(domain:jupyterbook.org)",
       "Bash(gh label create:*)",
       "Bash(ls:*)",
-      "Bash(done)"
+      "Bash(done)",
+      "Bash(mkdir:*)",
+      "WebSearch",
+      "WebFetch(domain:pdg.lbl.gov)",
+      "WebFetch(domain:hyperphysics.phy-astr.gsu.edu)",
+      "WebFetch(domain:en.wikipedia.org)",
+      "WebFetch(domain:www.researchgate.net)",
+      "WebFetch(domain:phys.libretexts.org)"
     ]
   }
 }
