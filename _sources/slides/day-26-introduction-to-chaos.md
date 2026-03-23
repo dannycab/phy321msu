@@ -4,17 +4,138 @@ theme: graph_paper
 paginate: true
 
 title: Day 26 - Introduction to Chaos
-description: Slides for PHY 321 Fall 2025, Day 26: Introduction to Chaos
+description: Slides for PHY 321 Spring 2026, Day 26: Introduction to Chaos
 author: Prof. Danny Caballero <caball14@msu.edu>
-keywords: classical mechanics, differential equations, motion, oscillations, rduffing, lorenz, strange attractors
-url: https://dannycaballero.info/phy321msu/slides/day-27-introduction-to-chaos.html
+keywords: classical mechanics, differential equations, motion, oscillations, duffing, lorenz, strange attractors
+url: https://dannycaballero.info/phy321msu/slides/day-26-introduction-to-chaos.html
 ---
+
+<style>
+  :root {
+    --color-spartan-green: #18453B;
+    --color-msu-gold: #C1B000;
+    --color-light-gray: #f5f5f5;
+    --color-dark-text: #1a1a1a;
+    --color-accent-green: #2d5f4f;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    color: var(--color-dark-text);
+  }
+  
+  h1, h2, h3 {
+    color: var(--color-spartan-green);
+    font-weight: 500;
+  }
+  
+  h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0rem;
+  }
+  
+  h2 {
+    font-size: 1.55rem;
+    margin-bottom: 1.0rem;
+    border-bottom: 4px solid var(--color-spartan-green);
+    padding-bottom: 0.5rem;
+  }
+  
+  h3 {
+    font-size: 1.15rem;
+    margin-top: 1rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  section {
+    padding: 2rem;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .equation {
+    background-color: var(--color-light-gray);
+    padding: 1.5rem;
+    border-left: 4px solid var(--color-msu-gold);
+    margin: 1.5rem 0;
+    font-size: 1.3rem;
+    text-align: center;
+    color: var(--color-dark-text);
+  }
+
+  p {
+    font-size: 1.15rem;
+    line-height: 1.4;
+    margin-bottom: 0.5rem;
+  }
+  
+  ul, ol {
+    font-size: 1.15rem;
+    line-height: 1.4;
+    margin-left: 0.5rem;
+  }
+
+  ul ul, ol ol, ul ol, ol ul {
+    margin-left: 0.1rem;
+  }
+  
+  li {
+    margin-bottom: 0rem;
+    line-height: 1.4;
+  }
+  
+  strong {
+    color: var(--color-spartan-green);
+    font-weight: 600;
+  }
+  
+  em {
+    color: var(--color-accent-green);
+  }
+
+  .highlight {
+    background-color: var(--color-light-gray);
+    padding: 1.5rem;
+    border-left: 4px solid var(--color-spartan-green);
+    margin: 1.5rem 0;
+  }
+
+  .activity {
+    background-color: #fff8e1;
+    border: 2px solid var(--color-msu-gold);
+    padding: 1.25rem;
+    border-radius: 6px;
+    margin: 1rem 0;
+  }
+
+  code {
+    background-color: var(--color-light-gray);
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-size: 1.0rem;
+  }
+
+  .footnote {
+    font-size: 0.8rem;
+    color: #999;
+    margin-top: 1.5rem;
+    border-top: 1px solid #ddd;
+    padding-top: 0.75rem;
+  }
+</style>
+
+<!--
+_class: title
+_backgroundColor: #ffffff
+_color: #18453B
+-->
 
 # Day 26 - Introduction to Chaos
 
-![bg right width:600px](../images/notes/week10/sprott.png)
-
-## Sprott Attractor
+![bg right width:500px](../images/notes/week10/sprott.png)
 
 $$\dot{x} = y + axy +xz$$
 $$\dot{y} = 1-bx^2+yz$$
@@ -26,100 +147,19 @@ $$a = 2.07 \quad b = 1.79$$
 
 ---
 
-# Announcements
+## Announcements
 
 * Midterm 1 is graded
     * Feedback delivered for project
+    * Still some outstanding grading issues
 * Homework 7 is due Friday
     * No homework next week
-* Midterm 2 will be assigned next Monday (due 14 November)
+* Midterm 2 will be assigned next Monday
     * Second project check-in 
 
 ---
 
-# Seminars This Week
-
-## MONDAY, October 27, 2025             
-
- 
-Condensed Matter Seminar 4:10 pm,1400 BPS, In Person and Zoom, Host ~ Tyler Cocker
-Speaker: Elad Harel, MSU                                                                       
-Title: Optical Pulse Trains-From Tracking Viruses to Directing Material Synthesis
-Zoom Link: https://msu.zoom.us/j/93613644939
-Meeting ID: 936 1364 4939
-Password: CMP
- 
----
-
-# Seminars This Week
-
-## TUESDAY, October 28, 2025
- 
- 
-Theory Seminar, 11:00am., FRIB 1200 lab, In person and online via Zoom
-Speaker: Antonio Bjelcic, LLNL
-Title: Small and Large Amplitude Collective Dynamics within Nuclear Density Functional Theory
-Zoom Link: 964 7281 4717
-Meeting ID: 48824
-
----
-
-# Seminars This Week
-
-## TUESDAY, October 28, 2025 
- 
-High Energy Physics Seminar, 1:30 pm, 1400 BPS, Host~   Joey Huston 
-Speaker: Tanishq Sharma, MSU
-Title: "Towards next-gen parton distribution and fragmentation functions"
-Zoom:
-Passcode:
- (Joining the Zoom meeting requires a password. Please contact one of the organizers, if you haven't received it.)             
-Organized by: Joey Huston, Sophie Berkman and Brenda Wenzlick
- 
----
-
-# Seminars This Week
-
-## WEDNESDAY, October 29, 2025    
- 
-                                     
-Astronomy Seminar, 1:30 pm, 1400 BPS, In Person and Zoom, Host~ 
-Speaker: Michael Radic, University of Chicago 
-Title: 
-Zoom Link: https://msu.zoom.us/j/93334479606?pwd=OtIXPWhRPBfzYu53sl3trSJlaBYI7C.1
-Meeting ID: 933 3447 9606
-Passcode: 825824
- 
----
-
-# Seminars This Week
-
-## WEDNESDAY, October 29, 2025  
-
-**PER (Physics Education Research Seminar)**, 3:00 pm., BPS 1400 in person and zoom
-Speaker: Eric Burkholder, Assistant Professor at Auburn University
-Title:  Could we make physics more accessible by teaching real physics? 
-Zoom Link: https://msu.zoom.us/j/96470703707
-Meeting ID: 964 7070 3707
-Passcode: PERSeminar
- 
----
-
-# Seminars This Week
-
-## WEDNESDAY, October 29, 2025  
- 
-FRIB Nuclear Science Seminar, 3:30pm., FRIB 1300 Auditorium and online via Zoom 
-Speaker: Professor Dien Nguyen of the University of Tennessee, Knoxville 
-Title: The Pairing Mechanism of Short Range Correlations and the impact of Nuclear Structure
-Please click the link below to join the webinar:
-Join Zoom Meeting: https://msu.zoom.us/j/93944167137?pwd=jzvwvbL8YqDnJNpzDPat8IHcrFdtC5.1
-Meeting ID: 939 4416 7137
-Passcode: 239049
- 
----
-
-# What is Chaos?
+## What is Chaos?
 
 ![bg right width:600px](../images/notes/week10/hellmo.gif)
 
@@ -134,7 +174,7 @@ Passcode: 239049
 
 ---
 
-# Hallmarks of a Classically Chaotic System
+## Hallmarks of a Classically Chaotic System
 
 1. **Deterministic**: The system is governed by deterministic laws (e.g., Newton's laws of motion, a set of differential equations)
 2. **Sensitive to Initial Conditions**: A bundle of trajectories that start close together will diverge exponentially over time
@@ -142,7 +182,7 @@ Passcode: 239049
 
 ---
 
-# Hallmarks of a Classically Chaotic System
+## Hallmarks of a Classically Chaotic System
 
 4. **Strange Attractors**: The system may have a strange attractor, which is a fractal structure in phase space that the system tends to evolve towards over time
 5. **Parameter Sensitivity**: The system may be sensitive to small changes in parameters, which can trigger qualitative changes in the system's behavior
@@ -150,7 +190,7 @@ Passcode: 239049
 
 ---
 
-# Example 1: Duffing Equation
+## Example 1: Duffing Equation
 
 $$\ddot{x} + \beta \dot{x} + \alpha x + \gamma x^3 = F_0 \cos(\omega t)$$
 
@@ -162,7 +202,7 @@ $$\ddot{x} + \beta \dot{x} + \alpha x + \gamma x^3 = F_0 \cos(\omega t)$$
 
 ---
 
-# Example 2: Lorenz System
+## Example 2: Lorenz System
 
 $$\dot{x} = \sigma (y - x)$$
 $$\dot{y} = x (\rho - z) - y$$
@@ -175,7 +215,7 @@ $$\dot{z} = x y - \beta z$$
 
 ---
 
-# Using `solve_ivp` 
+## Using `solve_ivp` 
 
 We will start with the damped driven pendulum as an example. This will illustrate how to use `solve_ivp` to solve a system of coupled first-order differential equations.
 
@@ -188,7 +228,7 @@ $$\dot{\omega} = -\beta \omega - \sin(\theta) + A \cos(\omega_D t)$$
 
 ---
 
-# Using `solve_ivp`
+## Using `solve_ivp`
 
 To use `solve_ivp`, we write a function for the derivatives:
 
@@ -202,7 +242,7 @@ def damped_driven_pendulum(t, y, beta, A, omegaD=1):
 
 ---
 
-# Using `solve_ivp`
+## Using `solve_ivp`
 Now we can use `solve_ivp` to solve the system of equations:
 
 ```python
@@ -226,7 +266,7 @@ solution = solve_ivp(damped_driven_pendulum, t_span, y0, args=(beta, A, omegaD),
 
 ---
 
-# Damped Driven Pendulum
+## Damped Driven Pendulum
 
 **Long Term Behavior is Periodic**
 

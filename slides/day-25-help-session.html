@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Day 26 - Introduction to Chaos &#8212; Classical Mechanics</title>
+    <title>Day 25 - Help Session &#8212; Classical Mechanics</title>
   
   
   
@@ -59,7 +59,7 @@
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"tex2jax": {"inlineMath": [["$", "$"]]}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'slides/day-26-introduction-to-chaos';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'slides/day-25-help-session';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -321,7 +321,7 @@
       
       
       
-      <li><a href="../_sources/slides/day-26-introduction-to-chaos.md" target="_blank"
+      <li><a href="../_sources/slides/day-25-help-session.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -405,7 +405,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Day 26 - Introduction to Chaos</h1>
+    <h1>Day 25 - Help Session</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -415,17 +415,15 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#announcements">Announcements</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-chaos">What is Chaos?</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hallmarks-of-a-classically-chaotic-system">Hallmarks of a Classically Chaotic System</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Hallmarks of a Classically Chaotic System</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1-duffing-equation">Example 1: Duffing Equation</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2-lorenz-system">Example 2: Lorenz System</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#using-solve-ivp">Using <code class="docutils literal notranslate"><span class="pre">solve_ivp</span></code></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Using <code class="docutils literal notranslate"><span class="pre">solve_ivp</span></code></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Using <code class="docutils literal notranslate"><span class="pre">solve_ivp</span></code></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#damped-driven-pendulum">Damped Driven Pendulum</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Day 25 - Help Session</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hw6-exercise-1-morse-potential-as-an-sho">HW6 Exercise 1: Morse Potential as an SHO</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">HW6 Exercise 1: Morse Potential as an SHO</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hw6-exercise-3-toy-potential">HW6 Exercise 3: Toy Potential</a></li>
 </ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">HW6 Exercise 3: Toy Potential</a></li>
+</ul>
+
             </nav>
         </div>
     </div>
@@ -557,147 +555,53 @@ _class: title
 _backgroundColor: #ffffff
 _color: #18453B
 -->
-<section id="day-26-introduction-to-chaos">
-<h1>Day 26 - Introduction to Chaos<a class="headerlink" href="#day-26-introduction-to-chaos" title="Link to this heading">#</a></h1>
-<p><img alt="bg right width:500px" src="../_images/sprott.png" /></p>
-<div class="math notranslate nohighlight">
-\[\dot{x} = y + axy +xz\]</div>
-<div class="math notranslate nohighlight">
-\[\dot{y} = 1-bx^2+yz\]</div>
-<div class="math notranslate nohighlight">
-\[\dot{z} = x - x^3 - y^2\]</div>
-<div class="math notranslate nohighlight">
-\[a = 2.07 \quad b = 1.79\]</div>
-<p><a class="reference external" href="https://www.dynamicmath.xyz/strange-attractors/">https://www.dynamicmath.xyz/strange-attractors/</a></p>
+<section id="day-25-help-session">
+<h1>Day 25 - Help Session<a class="headerlink" href="#day-25-help-session" title="Link to this heading">#</a></h1>
+<p><img alt="width:800px" src="../_images/tuning-fork.png" /></p>
 <hr class="docutils" />
-<section id="announcements">
-<h2>Announcements<a class="headerlink" href="#announcements" title="Link to this heading">#</a></h2>
+<section id="hw6-exercise-1-morse-potential-as-an-sho">
+<h2>HW6 Exercise 1: Morse Potential as an SHO<a class="headerlink" href="#hw6-exercise-1-morse-potential-as-an-sho" title="Link to this heading">#</a></h2>
+<p>If the potential has a local minimum, we can often find SHO approximation for that potential near the local minimum.</p>
+<p>The <a class="reference external" href="https://en.wikipedia.org/wiki/Morse_potential">Morse potential</a> is a convenient model for the potential energy of a diatomic molecule. The potential is a radial one and thus one-dimensional. It is given by,</p>
+<div class="math notranslate nohighlight">
+\[U(r) = A\left[ \left(e^{(R-r)/S}-1\right)^2-1\right]\]</div>
+<p>where the distance between the centers of the two atoms is <span class="math notranslate nohighlight">\(r\)</span>, and the constants <span class="math notranslate nohighlight">\(A\)</span>, <span class="math notranslate nohighlight">\(R\)</span>, and <span class="math notranslate nohighlight">\(S\)</span> are all positive. Here <span class="math notranslate nohighlight">\(S&lt;&lt;R\)</span>.</p>
 <ul class="simple">
-<li><p>Midterm 1 is graded</p>
-<ul>
-<li><p>Feedback delivered for project</p></li>
-<li><p>Still some outstanding grading issues</p></li>
+<li><p>1a. Sketch (or plot) the potential as a function of <span class="math notranslate nohighlight">\(r\)</span>.</p></li>
 </ul>
-</li>
-<li><p>Homework 7 is due Friday</p>
-<ul>
-<li><p>No homework next week</p></li>
-</ul>
-</li>
-<li><p>Midterm 2 will be assigned next Monday</p>
-<ul>
-<li><p>Second project check-in</p></li>
-</ul>
-</li>
-</ul>
-</section>
-<hr class="docutils" />
-<section id="what-is-chaos">
-<h2>What is Chaos?<a class="headerlink" href="#what-is-chaos" title="Link to this heading">#</a></h2>
-<p><img alt="bg right width:600px" src="../_images/hellmo.gif" /></p>
-<p><strong>At your table, discuss what it means for a system to be chaotic.</strong></p>
-<ul class="simple">
-<li><p>What are some examples of chaotic systems?</p></li>
-<li><p>What are some characteristics of chaotic systems?</p></li>
-<li><p>How do chaotic systems differ from non-chaotic systems?</p></li>
-</ul>
-<p><strong>Try to come up with two answers to each question to share.</strong></p>
-</section>
-<hr class="docutils" />
-<section id="hallmarks-of-a-classically-chaotic-system">
-<h2>Hallmarks of a Classically Chaotic System<a class="headerlink" href="#hallmarks-of-a-classically-chaotic-system" title="Link to this heading">#</a></h2>
-<ol class="arabic simple">
-<li><p><strong>Deterministic</strong>: The system is governed by deterministic laws (e.g., Newton’s laws of motion, a set of differential equations)</p></li>
-<li><p><strong>Sensitive to Initial Conditions</strong>: A bundle of trajectories that start close together will diverge exponentially over time</p></li>
-<li><p><strong>Non-periodic Behavior</strong>: The system exhibist s complex, non-repeating behavior over time, this might look like “random” behavior, but it is not truly random because it is deterministic</p></li>
-</ol>
 </section>
 <hr class="docutils" />
 <section id="id1">
-<h2>Hallmarks of a Classically Chaotic System<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
-<ol class="arabic simple" start="4">
-<li><p><strong>Strange Attractors</strong>: The system may have a strange attractor, which is a fractal structure in phase space that the system tends to evolve towards over time</p></li>
-<li><p><strong>Parameter Sensitivity</strong>: The system may be sensitive to small changes in parameters, which can trigger qualitative changes in the system’s behavior</p></li>
-<li><p>(Sometimes) <strong>Periodic Behavior</strong>: The system may exhibit periodic behavior for certain parameter values, and this might be a signal that the system bifurcates into chaotic behavior for other parameter values</p></li>
-</ol>
+<h2>HW6 Exercise 1: Morse Potential as an SHO<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
+<div class="math notranslate nohighlight">
+\[U(r) = A\left[ \left(e^{(R-r)/S}-1\right)^2-1\right]\]</div>
+<ul class="simple">
+<li><p>1b. Find the equilibrium position of the potential, i.e. the position where the potential is at a minimum. We will call this <span class="math notranslate nohighlight">\(r_e\)</span>.</p></li>
+<li><p>1c. Rewrite the potential in terms of the displacement from equilibrium, <span class="math notranslate nohighlight">\(r = r_e + x\)</span>. Expand the potential to second order in <span class="math notranslate nohighlight">\(x\)</span>.</p></li>
+<li><p>1d. Find the effective spring constant, <span class="math notranslate nohighlight">\(k\)</span>, for the potential near the minimum. What is the frequency of small oscillations about the minimum?</p></li>
+</ul>
 </section>
 <hr class="docutils" />
-<section id="example-1-duffing-equation">
-<h2>Example 1: Duffing Equation<a class="headerlink" href="#example-1-duffing-equation" title="Link to this heading">#</a></h2>
+<section id="hw6-exercise-3-toy-potential">
+<h2>HW6 Exercise 3: Toy Potential<a class="headerlink" href="#hw6-exercise-3-toy-potential" title="Link to this heading">#</a></h2>
+<p>Consider a toy potential of the form,</p>
 <div class="math notranslate nohighlight">
-\[\ddot{x} + \beta \dot{x} + \alpha x + \gamma x^3 = F_0 \cos(\omega t)\]</div>
-<p><img alt="width:1200px" src="../_images/duffing.png" /></p>
-<p><strong>Exhibits Periodic and Chaotic Behavior</strong></p>
-<p><strong>Illustrates period doubling bifurcations as route to chaos</strong></p>
+\[U(r) = U_0\left(\dfrac{r}{R}+\lambda^2\frac{R}{r}\right)\]</div>
+<p>where <span class="math notranslate nohighlight">\(U_0\)</span>, <span class="math notranslate nohighlight">\(R\)</span>, and <span class="math notranslate nohighlight">\(\lambda\)</span> are all positive constants and the domain of the potential is <span class="math notranslate nohighlight">\(0&lt;r&lt;\infty\)</span>.</p>
+<ul class="simple">
+<li><p>3a. Sketch (or plot) the potential as a function of <span class="math notranslate nohighlight">\(r\)</span>.</p></li>
+</ul>
 </section>
-<hr class="docutils" />
-<section id="example-2-lorenz-system">
-<h2>Example 2: Lorenz System<a class="headerlink" href="#example-2-lorenz-system" title="Link to this heading">#</a></h2>
-<div class="math notranslate nohighlight">
-\[\dot{x} = \sigma (y - x)\]</div>
-<div class="math notranslate nohighlight">
-\[\dot{y} = x (\rho - z) - y\]</div>
-<div class="math notranslate nohighlight">
-\[\dot{z} = x y - \beta z\]</div>
-<p><img alt="bg right width:600px" src="../_images/lorenz-trajectories.png" /></p>
-<p><strong>Exhibits sensitive dependence on initial conditions</strong>
-<strong>Demonstrates the concept of a strange attractor</strong></p>
-</section>
-<hr class="docutils" />
-<section id="using-solve-ivp">
-<h2>Using <code class="docutils literal notranslate"><span class="pre">solve_ivp</span></code><a class="headerlink" href="#using-solve-ivp" title="Link to this heading">#</a></h2>
-<p>We will start with the damped driven pendulum as an example. This will illustrate how to use <code class="docutils literal notranslate"><span class="pre">solve_ivp</span></code> to solve a system of coupled first-order differential equations.</p>
-<div class="math notranslate nohighlight">
-\[\ddot{\theta} + \beta \dot{\theta} + \sin(\theta) = A \cos(\omega_D t)\]</div>
-<p>We can rewrite this as two first-order equations:</p>
-<div class="math notranslate nohighlight">
-\[\dot{\theta} = \omega\]</div>
-<div class="math notranslate nohighlight">
-\[\dot{\omega} = -\beta \omega - \sin(\theta) + A \cos(\omega_D t)\]</div>
 </section>
 <hr class="docutils" />
 <section id="id2">
-<h2>Using <code class="docutils literal notranslate"><span class="pre">solve_ivp</span></code><a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
-<p>To use <code class="docutils literal notranslate"><span class="pre">solve_ivp</span></code>, we write a function for the derivatives:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">damped_driven_pendulum</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">beta</span><span class="p">,</span> <span class="n">A</span><span class="p">,</span> <span class="n">omegaD</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
-    <span class="n">theta</span><span class="p">,</span> <span class="n">omega</span> <span class="o">=</span> <span class="n">y</span>
-    <span class="n">dtheta_dt</span> <span class="o">=</span> <span class="n">omega</span>
-    <span class="n">domega_dt</span> <span class="o">=</span> <span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">theta</span><span class="p">)</span> <span class="o">-</span> <span class="n">beta</span> <span class="o">*</span> <span class="n">omega</span> <span class="o">+</span> <span class="n">A</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">omegaD</span><span class="o">*</span><span class="n">t</span><span class="p">)</span>
-    <span class="k">return</span> <span class="p">[</span><span class="n">dtheta_dt</span><span class="p">,</span> <span class="n">domega_dt</span><span class="p">]</span>
-</pre></div>
-</div>
-</section>
-<hr class="docutils" />
-<section id="id3">
-<h2>Using <code class="docutils literal notranslate"><span class="pre">solve_ivp</span></code><a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
-<p>Now we can use <code class="docutils literal notranslate"><span class="pre">solve_ivp</span></code> to solve the system of equations:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Parameters that define the system</span>
-<span class="n">beta</span> <span class="o">=</span> <span class="mf">0.5</span>
-<span class="n">A</span> <span class="o">=</span> <span class="mf">1.0</span>
-<span class="n">omegaD</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span>
-
-<span class="c1"># Time span for the simulation</span>
-<span class="n">t_span</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
-
-<span class="c1"># Initial conditions: [theta, omega]</span>
-<span class="n">y0</span> <span class="o">=</span> <span class="p">[</span><span class="mi">6</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
-
-<span class="c1"># Time points where we want the solution</span>
-<span class="n">t_eval</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="n">t_span</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">t_span</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="mi">10000</span><span class="p">)</span>
-
-<span class="c1"># Solve the system of equations</span>
-<span class="n">solution</span> <span class="o">=</span> <span class="n">solve_ivp</span><span class="p">(</span><span class="n">damped_driven_pendulum</span><span class="p">,</span> <span class="n">t_span</span><span class="p">,</span> <span class="n">y0</span><span class="p">,</span> <span class="n">args</span><span class="o">=</span><span class="p">(</span><span class="n">beta</span><span class="p">,</span> <span class="n">A</span><span class="p">,</span> <span class="n">omegaD</span><span class="p">),</span> <span class="n">t_eval</span><span class="o">=</span><span class="n">t_eval</span><span class="p">)</span>
-</pre></div>
-</div>
-</section>
-<hr class="docutils" />
-<section id="damped-driven-pendulum">
-<h2>Damped Driven Pendulum<a class="headerlink" href="#damped-driven-pendulum" title="Link to this heading">#</a></h2>
-<p><strong>Long Term Behavior is Periodic</strong></p>
-<p><img alt="damped" src="../_images/damped-long-term.png" /></p>
-<p><strong>“Period-1” Dynamics</strong> is a term to indicate there’s a single frequency governing the motion</p>
-<p>Phase space plots can provide a better window into the system’s behavior</p>
-</section>
+<h1>HW6 Exercise 3: Toy Potential<a class="headerlink" href="#id2" title="Link to this heading">#</a></h1>
+<div class="math notranslate nohighlight">
+\[U(r) = U_0\left(\dfrac{r}{R}+\lambda^2\frac{R}{r}\right)\]</div>
+<ul class="simple">
+<li><p>3b. Find the equilibrium position of the potential, i.e. the position where the potential is at a minimum. We will call this <span class="math notranslate nohighlight">\(r_e\)</span>.</p></li>
+<li><p>3c. Rewrite the potential in terms of the displacement from equilibrium, <span class="math notranslate nohighlight">\(r = r_e + x\)</span>. Expand the potential to second order in <span class="math notranslate nohighlight">\(x\)</span>. What is the effective spring constant, <span class="math notranslate nohighlight">\(k\)</span>, for the potential near the minimum? What is the frequency of small oscillations about the minimum?</p></li>
+</ul>
 </section>
 
     <script type="text/x-thebe-config">
@@ -746,17 +650,15 @@ _color: #18453B
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#announcements">Announcements</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-chaos">What is Chaos?</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hallmarks-of-a-classically-chaotic-system">Hallmarks of a Classically Chaotic System</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Hallmarks of a Classically Chaotic System</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1-duffing-equation">Example 1: Duffing Equation</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2-lorenz-system">Example 2: Lorenz System</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#using-solve-ivp">Using <code class="docutils literal notranslate"><span class="pre">solve_ivp</span></code></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Using <code class="docutils literal notranslate"><span class="pre">solve_ivp</span></code></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Using <code class="docutils literal notranslate"><span class="pre">solve_ivp</span></code></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#damped-driven-pendulum">Damped Driven Pendulum</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Day 25 - Help Session</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hw6-exercise-1-morse-potential-as-an-sho">HW6 Exercise 1: Morse Potential as an SHO</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">HW6 Exercise 1: Morse Potential as an SHO</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hw6-exercise-3-toy-potential">HW6 Exercise 3: Toy Potential</a></li>
 </ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">HW6 Exercise 3: Toy Potential</a></li>
+</ul>
+
   </nav></div>
 
 </div></div>
