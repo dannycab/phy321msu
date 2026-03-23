@@ -186,9 +186,9 @@ Slides for PHY 321 appear in reverse chronological order, with the most recent s
 
 :::
 
----
+--- -->
 
-## Day 26 - Introduction to Chaos - 27 Oct 2025
+## Day 26 - Introduction to Chaos - 23 March 2026
 
 [![Day 26](../slides/day-26-introduction-to-chaos.png)](../slides/day-26-introduction-to-chaos.pdf)
 
@@ -199,7 +199,7 @@ Slides for PHY 321 appear in reverse chronological order, with the most recent s
 
 :::
 
---- -->
+--- 
 
 ## Day 24 - Resonance - 18 Mar 2026
 

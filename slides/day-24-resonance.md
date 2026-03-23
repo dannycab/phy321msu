@@ -357,9 +357,7 @@ Find the $\omega$ that maximizes the amplitude by taking the derivative with res
 
 $$\dfrac{d}{d\omega} \left((\omega_0^2 - \omega^2)^2 + 4 \beta^2 \omega^2\right) = 0$$
 
-$$2(\omega_0^2 - \omega^2)(-2\omega) + 8 \beta^2 \omega = 0$$
-
-$$4\omega(\omega^2 - \omega_0^2 + 2 \beta^2) = 0$$
+$$2(\omega_0^2 - \omega^2)(-2\omega) + 8 \beta^2 \omega = 0 \qquad 4\omega(\omega^2 - \omega_0^2 + 2 \beta^2) = 0$$
 
 $$\omega = 0 \qquad \omega = \sqrt{\omega_0^2 - 2 \beta^2}$$
 
