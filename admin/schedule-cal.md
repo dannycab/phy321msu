@@ -104,8 +104,8 @@ _All assignments are turned in using Gradescope as a single PDF._
 | **Week** | **Day**   | **Topic**                     | **Readings to Prepare** | **Important Events** |
 |:--------:|:---------:|:-----------------------------:|:-----------------------|:--------------------|
 | CW12     | 16 Mar     | Driven Oscillations; Resonance| 📓 [09 - Driving Oscillators and Resonance Phenomenon](../lecture-notes/09_notes.ipynb)<br>📚 JRT 5.5-5.6; MLB 8.6<br>📊 [Slides](../slides/day-23-driven-oscillations.pdf)   |  📝 [Homework 7 Assigned](../assignments/hw7.ipynb) (Due 27 Mar)                 |
-|          | 18 Mar   | Driven Oscillations; Resonance|   |                    |
-|          | 20 Mar     | Workshop day |                      | 📥 **Homework 6 Due**<br>**(Late after Sunday 11:59pm)**  |
+|          | 18 Mar   | Driven Oscillations; Resonance| 📊 [Slides](../slides/day-24-resonance.pdf)  |                    |
+|          | 20 Mar     | Workshop day | 📊 [Slides](../slides/day-25-help-session.pdf)                     | 📥 **Homework 6 Due**<br>**(Late after Sunday 11:59pm)**  |
 
 ---
 
@@ -113,9 +113,9 @@ _All assignments are turned in using Gradescope as a single PDF._
 
 | **Week** | **Day**   | **Topic**          | **Readings to Prepare**  | **Important Events**                                                |
 |:--------:|:---------:|:------------------:|:------------------------|:-------------------------------------------------------------------|
-| CW13     | 23 Mar     | Introduction to Chaos | 📓 [10 - Investigating Systems that Exhibit Chaotic Dynamics](../lecture-notes/10_notes.ipynb)        |      |
-|          | 25 Mar   | Hallmarks of Classical Chaos Series |                    |                                                                   |
-|          | 27 Mar   | Workshop day        |                        | 📥 **Homework 7 Due**<br>**(Late after Sunday 11:59pm)** |
+| CW13     | 23 Mar     | Introduction to Chaos | 📓 [10 - Investigating Systems that Exhibit Chaotic Dynamics](../lecture-notes/10_notes.ipynb)<br>📊 [Slides](../slides/day-26-introduction-to-chaos.pdf)        |      |
+|          | 25 Mar   | Hallmarks of Classical Chaos Series | 📊 [Slides](../slides/day-27-hallmarks-of-chaos.pdf)                  |                                                                   |
+|          | 27 Mar   | Workshop day        |  📊 [Slides](../slides/day-28-workshop-session.pdf)                      | 📥 **Homework 7 Due**<br>**(Late after Sunday 11:59pm)** |
 
 ---
 
@@ -123,8 +123,8 @@ _All assignments are turned in using Gradescope as a single PDF._
 
 | **Week** | **Day**   | **Topic**                                           | **Readings to Prepare**      | **Important Events**                                                |
 |:--------:|:---------:|:---------------------------------------------------:|:----------------------------|:-------------------------------------------------------------------|
-| CW14     | 30 Mar    | Calculus of Variations; Euler-Lagrange Equation     | 📓 [11 - Reformulating Classical Mechanics using the Calculus of Variations](../lecture-notes/11_notes.ipynb)<br>📚 JRT 6.1-6.3; MLB 9.1-9.4    | 📝 Midterm Project 2 Assigned (Due 10 Apr)  |
-|          | 1 Apr    | Euler-Lagrange Equation Examples                    |                             |                                                                   |
+| CW14     | 30 Mar    | Calculus of Variations; Euler-Lagrange Equation     | 📓 [11 - Reformulating Classical Mechanics using the Calculus of Variations](../lecture-notes/11_notes.ipynb)<br>📚 JRT 6.1-6.3; MLB 9.1-9.4<br>📊 [Slides](../slides/day-29-calculus-of-variations.pdf)    | 📝 [Midterm Project 2 Assigned](../assignments/midterm2.ipynb) (Due 10 Apr)  |
+|          | 1 Apr    | Euler-Lagrange Equation Examples                    |  📊 [Slides](../slides/day-30-euler-lagrange-equation.pdf)                           |                                                                   |
 |          | 3 Apr   | Workshop day                                        |                             |                                                                   |
 
 ---
