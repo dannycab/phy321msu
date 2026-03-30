@@ -10,6 +10,129 @@ keywords: classical mechanics, differential equations, Euler-Lagrange Equation, 
 url: https://dannycaballero.info/phy321msu/slides/day-30-calculus-of-variations.html
 ---
 
+<style>
+  :root {
+    --color-spartan-green: #18453B;
+    --color-msu-gold: #C1B000;
+    --color-light-gray: #f5f5f5;
+    --color-dark-text: #1a1a1a;
+    --color-accent-green: #2d5f4f;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    color: var(--color-dark-text);
+  }
+  
+  h1, h2, h3 {
+    color: var(--color-spartan-green);
+    font-weight: 500;
+  }
+  
+  h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0rem;
+  }
+  
+  h2 {
+    font-size: 1.55rem;
+    margin-bottom: 1.0rem;
+    border-bottom: 4px solid var(--color-spartan-green);
+    padding-bottom: 0.5rem;
+  }
+  
+  h3 {
+    font-size: 1.15rem;
+    margin-top: 1rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  section {
+    padding: 2rem;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .equation {
+    background-color: var(--color-light-gray);
+    padding: 1.5rem;
+    border-left: 4px solid var(--color-msu-gold);
+    margin: 1.5rem 0;
+    font-size: 1.3rem;
+    text-align: center;
+    color: var(--color-dark-text);
+  }
+
+  p {
+    font-size: 1.15rem;
+    line-height: 1.4;
+    margin-bottom: 0.5rem;
+  }
+  
+  ul, ol {
+    font-size: 1.15rem;
+    line-height: 1.4;
+    margin-left: 0.5rem;
+  }
+
+  ul ul, ol ol, ul ol, ol ul {
+    margin-left: 0.1rem;
+  }
+  
+  li {
+    margin-bottom: 0rem;
+    line-height: 1.4;
+  }
+  
+  strong {
+    color: var(--color-spartan-green);
+    font-weight: 600;
+  }
+  
+  em {
+    color: var(--color-accent-green);
+  }
+
+  .highlight {
+    background-color: var(--color-light-gray);
+    padding: 1.5rem;
+    border-left: 4px solid var(--color-spartan-green);
+    margin: 1.5rem 0;
+  }
+
+  .activity {
+    background-color: #fff8e1;
+    border: 2px solid var(--color-msu-gold);
+    padding: 1.25rem;
+    border-radius: 6px;
+    margin: 1rem 0;
+  }
+
+  code {
+    background-color: var(--color-light-gray);
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-size: 1.0rem;
+  }
+
+  .footnote {
+    font-size: 0.8rem;
+    color: #999;
+    margin-top: 1.5rem;
+    border-top: 1px solid #ddd;
+    padding-top: 0.75rem;
+  }
+</style>
+
+<!--
+_class: title
+_backgroundColor: #ffffff
+_color: #18453B
+-->
+
 # Day 30 - Euler-Lagrange Equation
 
 ![width:1000px](./images/day-01/Slide1.png)
@@ -17,81 +140,8 @@ url: https://dannycaballero.info/phy321msu/slides/day-30-calculus-of-variations.
 
 ---
 
-# Seminars this Week 
- 
-## WEDNESDAY, November 5, 2025
- 
-                                    
-Astronomy Seminar, 1:30 pm, 1400 BPS, In Person and Zoom, Host~ 
-Speaker: Nick Konidaris, Carnegie Observatories
-Title: The Sephira Project: Astronomical Imaging with Third-Order Intensity Correlations
 
----
-
-# Seminars this Week 
- 
-## WEDNESDAY, November 5, 2025
- 
-FRIB Nuclear Science Seminar, 3:30pm., FRIB 1300 Auditorium and online via Zoom 
-Speaker: Assistant Professor Xing Wu of The Facility for Rare Isotope Beams (FRIB)                                                      
-Title: Towards Quantum Control and Sensing of 227ThO Molecules and Other Radioactive Molecules for Nuclear Schiff Moment Search
-Please click the link below to join the webinar:
-Join Zoom Meeting: https://msu.zoom.us/j/91861947571?pwd=IlUS6RkYdHibaosm4aznsYsctbaMrU.1
-Meeting ID: 939 4416 7137
-Passcode: 026775
- 
----
-
-# Seminars this Week 
- 
- 
- 
-## THURSDAY, November 6, 2025
- 
-Colloquium, 3:30 pm, 1415 BPS, in person and zoom.  Host ~ Jay Strader/Laura Chomiuk
-Refreshments and social half-hour in BPS 1400 starting at 3 pm
-Speaker: Nick Konidaris, Carnegie Observations
-Title: SDSS Local Volume Mapper instrument and Early Science Results
- 
----
-
-# Seminars this Week 
- 
-## FRIDAY, November 7, 2025     
-                                                 
-                          
-IReNA Online Seminar, 9:00am, In Person and Zoom, FRIB 2025 Nuclear Conference Room, Light refreshments will be served at 1:50pm. 
-Hosted by: Sota Kimura (University of Tsukuba)
-Speaker Tomoshi Takeda, Hiroshima University, Japan
-Title: A New Approach to X-ray Astronomy: Development and Observational Results of the CubeSat Observatory NinjaSat
-
----
-
-# Seminars this Week 
- 
-## FRIDAY, November 7, 2025  
- 
-Special HEP Seminar
-High Energy Physics Seminar, 1:00 pm, 1400 BPS, Host~ Joey Huston 
-Speaker: Eric Bachmann, Technische Universität Dresden
-Title: Evidence for longitudinal polarization in same-sign WW scattering with the ATLAS detector            
-Organized by: Joey Huston, Sophie Berkman and Brenda Wenzlick
-
----
-
-# Seminars this Week 
- 
-## FRIDAY, November 7, 2025 
- 
-QuIC Seminar, 12:30pm, -1:30pm, 1300 BPS, Virtual only today  
-Speaker: Philip Crowley, MSU
-Title:  Quantum dynamics for quantum sensing
-Full Scheule is at: https://sites.google.com/msu.edu/quic-seminar/
-For more information, reach out to Ryan LaRose
-
----
-
-# Reminders
+## Reminders
 
 We proposed a solution to the line problem that involved an error term $\eta(x)$, which is a small perturbation to the true path $y(x)$. This leads to a perturbed function:
 
@@ -105,7 +155,7 @@ $$\int_{s_1}^{s_2} f(Y,Y',x) \, dx > \int_{s_1}^{s_2} f(y,y',x) \, dx$$
 
 ---
 
-# Reminders
+## Reminders
 
 By taking the derivative of the functional with respect to $\alpha$, we can find the condition for which the functional is stationary (i.e., a minimum or maximum).
 
@@ -118,7 +168,7 @@ $$\int_{s_1}^{s_2} \eta(x) \left[\dfrac{\partial f}{\partial y} - \dfrac{d}{dx}\
 ---
 
 
-# Clicker Question 30-1
+## Clicker Question 30-1
 
 We completed this derivation with the following mathematical statement:
 
@@ -134,7 +184,7 @@ where $\eta(x)$ is an arbitrary function. What does this imply about the term in
 
 ---
 
-# Clicker Question 30-2
+## Clicker Question 30-2
 
 Returning to the line problem,
 
@@ -150,7 +200,7 @@ $$\dfrac{d}{dx}\left[?\right] = 0$$
 
 ---
 
-# Clicker Question 30-3
+## Clicker Question 30-3
 
 With,
 
@@ -165,7 +215,7 @@ where $c$ is a constant, the solution expresses a straight line.
 
 ---
 
-# Clicker Question 30-4
+## Clicker Question 30-4
 
 We derived the time that it takes to run from a point on the shore to a point in the water, $T$:
 
@@ -180,7 +230,7 @@ To find the minimal time, what derivative should we take?
 
 ---
 
-# Clicker Question 30-5
+## Clicker Question 30-5
 
 For the brachistochrone problem, the ball moves purely under the influence of gravity. Consider that the ball has moved a vertical distance $\Delta y$ from rest. What is the speed of the ball at this point?
 

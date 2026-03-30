@@ -132,9 +132,9 @@ Slides for PHY 321 appear in reverse chronological order, with the most recent s
 
 :::
 
----
+--- -->
 
-## Day 30 - Euler-Lagrange Equations - 5 Nov 2025
+## Day 30 - Euler-Lagrange Equations - 1 Apr 2026
 
 [![Day 30](../slides/day-30-euler-lagrange-equation.png)](../slides/day-30-euler-lagrange-equation.pdf)
 
@@ -148,7 +148,7 @@ Slides for PHY 321 appear in reverse chronological order, with the most recent s
 ---
 
 
-## Day 29 - Calculus of Variations - 3 Nov 2025
+## Day 29 - Calculus of Variations - 30 Mar 2026
 
 [![Day 29](../slides/day-29-calculus-of-variations.png)](../slides/day-29-calculus-of-variations.pdf)
 
@@ -162,20 +162,20 @@ Slides for PHY 321 appear in reverse chronological order, with the most recent s
 ---
 
 
-## Day 28 - Homework Session - 31 Oct 2025
+## Day 28 - Workshop Session - 27 Mar 2026
 
-[![Day 28](../slides/day-28-homework-session.png)](../slides/day-28-homework-session.pdf)
+[![Day 28](../slides/day-28-workshop-session.png)](../slides/day-28-workshop-session.pdf)
 
 :::info
 
 ### 📂 Download Slides
-[HTML](../slides/day-28-homework-session.md) | [PDF](../slides/day-28-homework-session.pdf)
+[HTML](../slides/day-28-workshop-session.md) | [PDF](../slides/day-28-workshop-session.pdf)
 
 :::
 
 ---
 
-## Day 27 - Hallmarks of Chaos - 29 Oct 2025
+## Day 27 - Hallmarks of Chaos - 25 Mar 2026
 
 [![Day 27](../slides/day-27-hallmarks-of-chaos.png)](../slides/day-27-hallmarks-of-chaos.pdf)
 
@@ -186,7 +186,7 @@ Slides for PHY 321 appear in reverse chronological order, with the most recent s
 
 :::
 
---- -->
+--- 
 
 ## Day 26 - Introduction to Chaos - 23 March 2026
 

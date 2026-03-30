@@ -4,11 +4,134 @@ theme: graph_paper
 paginate: true
 
 title: Day 29 - Calculus of Variations
-description: Slides for PHY 321 Fall 2025, Day 29: Calculus of Variations
+description: Slides for PHY 321 Spring 2026, Day 29: Calculus of Variations
 author: Prof. Danny Caballero <caball14@msu.edu>
 keywords: classical mechanics, differential equations, calculus of variations, action principle, Lagrangian mechanics
 url: https://dannycaballero.info/phy321msu/slides/day-29-calculus-of-variations.html
 ---
+
+<style>
+  :root {
+    --color-spartan-green: #18453B;
+    --color-msu-gold: #C1B000;
+    --color-light-gray: #f5f5f5;
+    --color-dark-text: #1a1a1a;
+    --color-accent-green: #2d5f4f;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    color: var(--color-dark-text);
+  }
+  
+  h1, h2, h3 {
+    color: var(--color-spartan-green);
+    font-weight: 500;
+  }
+  
+  h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0rem;
+  }
+  
+  h2 {
+    font-size: 1.55rem;
+    margin-bottom: 1.0rem;
+    border-bottom: 4px solid var(--color-spartan-green);
+    padding-bottom: 0.5rem;
+  }
+  
+  h3 {
+    font-size: 1.15rem;
+    margin-top: 1rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  section {
+    padding: 2rem;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .equation {
+    background-color: var(--color-light-gray);
+    padding: 1.5rem;
+    border-left: 4px solid var(--color-msu-gold);
+    margin: 1.5rem 0;
+    font-size: 1.3rem;
+    text-align: center;
+    color: var(--color-dark-text);
+  }
+
+  p {
+    font-size: 1.15rem;
+    line-height: 1.4;
+    margin-bottom: 0.5rem;
+  }
+  
+  ul, ol {
+    font-size: 1.15rem;
+    line-height: 1.4;
+    margin-left: 0.5rem;
+  }
+
+  ul ul, ol ol, ul ol, ol ul {
+    margin-left: 0.1rem;
+  }
+  
+  li {
+    margin-bottom: 0rem;
+    line-height: 1.4;
+  }
+  
+  strong {
+    color: var(--color-spartan-green);
+    font-weight: 600;
+  }
+  
+  em {
+    color: var(--color-accent-green);
+  }
+
+  .highlight {
+    background-color: var(--color-light-gray);
+    padding: 1.5rem;
+    border-left: 4px solid var(--color-spartan-green);
+    margin: 1.5rem 0;
+  }
+
+  .activity {
+    background-color: #fff8e1;
+    border: 2px solid var(--color-msu-gold);
+    padding: 1.25rem;
+    border-radius: 6px;
+    margin: 1rem 0;
+  }
+
+  code {
+    background-color: var(--color-light-gray);
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-size: 1.0rem;
+  }
+
+  .footnote {
+    font-size: 0.8rem;
+    color: #999;
+    margin-top: 1.5rem;
+    border-top: 1px solid #ddd;
+    padding-top: 0.75rem;
+  }
+</style>
+
+<!--
+_class: title
+_backgroundColor: #ffffff
+_color: #18453B
+-->
 
 # Day 29 - Calculus of Variations
 
@@ -18,112 +141,12 @@ url: https://dannycaballero.info/phy321msu/slides/day-29-calculus-of-variations.
 
 # Announcements
 
-* Midterm 2 is posted (Due 14 November 2025 at 11:59 pm)
+* Midterm 2 is posted (Due 10 April 2026 at 11:59 pm)
 * **Office Hours this week:** Midterm 2 Help
 
 ---
 
-# Seminars this Week
-
-## MONDAY, November 3, 2025
-
-Condensed Matter Seminar 4:10 pm,1400 BPS, In Person and Zoom, Host ~ Philip Crowley
-Speaker:   Chaitanya Murthy, University of Rochester                                                                  
-Title:  A modified interferometer to measure anyonic braiding statistics
-Zoom Link: https://msu.zoom.us/j/93613644939
-Meeting ID: 936 1364 4939
-Password: CMP
- 
- 
----
-
-# Seminars this Week
- 
- 
-## TUESDAY, November 4, 2025
- 
-High Energy Physics Seminar, 1:30 pm, 1400 BPS, Host~ Joshua Isaacson  
-Speaker: Mareen Hoppe, Technische Universität Dresden
-Title: Simulating polarization effects in Monte-Carlo event generators           
-Organized by: Joey Huston, Sophie Berkman and Brenda Wenzlick
- 
----
-
-# Seminars this Week 
- 
-## WEDNESDAY, November 5, 2025
- 
-                                    
-Astronomy Seminar, 1:30 pm, 1400 BPS, In Person and Zoom, Host~ 
-Speaker: Nick Konidaris, Carnegie Observatories
-Title: The Sephira Project: Astronomical Imaging with Third-Order Intensity Correlations
-
----
-
-# Seminars this Week 
- 
-## WEDNESDAY, November 5, 2025
- 
-FRIB Nuclear Science Seminar, 3:30pm., FRIB 1300 Auditorium and online via Zoom 
-Speaker: Assistant Professor Xing Wu of The Facility for Rare Isotope Beams (FRIB)                                                      
-Title: Towards Quantum Control and Sensing of 227ThO Molecules and Other Radioactive Molecules for Nuclear Schiff Moment Search
-Please click the link below to join the webinar:
-Join Zoom Meeting: https://msu.zoom.us/j/91861947571?pwd=IlUS6RkYdHibaosm4aznsYsctbaMrU.1
-Meeting ID: 939 4416 7137
-Passcode: 026775
- 
----
-
-# Seminars this Week 
- 
- 
- 
-## THURSDAY, November 6, 2025
- 
-Colloquium, 3:30 pm, 1415 BPS, in person and zoom.  Host ~ Jay Strader/Laura Chomiuk
-Refreshments and social half-hour in BPS 1400 starting at 3 pm
-Speaker: Nick Konidaris, Carnegie Observations
-Title: SDSS Local Volume Mapper instrument and Early Science Results
- 
----
-
-# Seminars this Week 
- 
-## FRIDAY, November 7, 2025     
-                                                 
-                          
-IReNA Online Seminar, 9:00am, In Person and Zoom, FRIB 2025 Nuclear Conference Room, Light refreshments will be served at 1:50pm. 
-Hosted by: Sota Kimura (University of Tsukuba)
-Speaker Tomoshi Takeda, Hiroshima University, Japan
-Title: A New Approach to X-ray Astronomy: Development and Observational Results of the CubeSat Observatory NinjaSat
-
----
-
-# Seminars this Week 
- 
-## FRIDAY, November 7, 2025  
- 
-Special HEP Seminar
-High Energy Physics Seminar, 1:00 pm, 1400 BPS, Host~ Joey Huston 
-Speaker: Eric Bachmann, Technische Universität Dresden
-Title: Evidence for longitudinal polarization in same-sign WW scattering with the ATLAS detector            
-Organized by: Joey Huston, Sophie Berkman and Brenda Wenzlick
-
----
-
-# Seminars this Week 
- 
-## FRIDAY, November 7, 2025 
- 
-QuIC Seminar, 12:30pm, -1:30pm, 1300 BPS, Virtual only today  
-Speaker: Philip Crowley, MSU
-Title:  Quantum dynamics for quantum sensing
-Full Scheule is at: https://sites.google.com/msu.edu/quic-seminar/
-For more information, reach out to Ryan LaRose
-
----
-
-# Calculus of Variations
+## Calculus of Variations
 
 Variational calculus is a mathematical method to find functions that optimize a certain quantity. We will use variational calculus to derive the **Euler-Lagrange equations** for a set of **generalized coordinates** (i.e., $q,\dot{q}$). This is fundamental to Lagrangian mechanics.
 
@@ -137,7 +160,7 @@ $$ \dfrac{d}{dt} \left( \dfrac{\partial L}{\partial \dot{q}} \right) - \dfrac{\p
 
 ---
 
-# Clicker Question 30-1
+## Clicker Question 29-1
 
 The generic segment, $ds$, of a curve in 2D Cartesian coordinates is given by 
 
@@ -153,7 +176,7 @@ The integral of $ds$ from $s_1$ to $s_2$ gives the length of the curve, $l$. Wha
 
 ---
 
-# Clicker Question 30-2
+## Clicker Question 29-2
 
 I can explain why:
 
@@ -168,7 +191,7 @@ where $Y(x) = y(x) + \alpha \eta(x)$, the true path plus an error term.
 
 ---
 
-# Clicker Question 30-3
+## Clicker Question 29-3
 
 For the function $Y(x) = y(x) + \alpha \eta(x)$, where $y(x)$ is the true path, $\eta(x)$ is a small error term, and $\alpha$ is a small parameter, what is the derivative of $Y(x)$ with respect to $\alpha$?
 
@@ -182,7 +205,7 @@ $$\frac{dY}{d\alpha} = ?$$
 
 ---
 
-# Clicker Question 30-4
+## Clicker Question 29-4
 
 For the function $Y'(x) = y'(x) + \alpha \eta'(x)$, what is the derivative of $Y'(x)$ with respect to $\alpha$?
 
@@ -196,7 +219,7 @@ $$\frac{dY'}{d\alpha} = ?$$
 
 ---
 
-# Clicker Question 30-5
+## Clicker Question 29-5
 
 The "surface term" that we computed for $\int_{s_1}^{s_2} \eta'(x) \frac{df}{dy'} dx$ is:
 
@@ -212,7 +235,7 @@ I can explain why this surface term is equal to zero:
 
 ---
 
-# Clicker Question 30-6
+## Clicker Question 29-6
 
 We completed this derivation with the following mathematical statement:
 

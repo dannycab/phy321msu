@@ -232,6 +232,22 @@
 
 
 
+<li class="toctree-l2"><a class="reference internal" href="../assignments/hw5.html">Homework 5 (Due 13 Mar)</a></li>
+
+
+
+<li class="toctree-l2"><a class="reference internal" href="../assignments/hw6.html">Homework 6 (Due 20 Mar)</a></li>
+
+
+
+<li class="toctree-l2"><a class="reference internal" href="../assignments/hw7.html">Homework 7 (Due 27 Mar)</a></li>
+
+
+
+<li class="toctree-l2"><a class="reference internal" href="../assignments/midterm2.html">Midterm 2 (Due 10 Apr)</a></li>
+
+
+
 </ul>
 </details></li>
 </ul>
@@ -255,6 +271,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../resources/integrators.html">Numerical Integrators</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../resources/phase_diagrams.html">Plotting Phase Diagrams</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../resources/chaotic_dynamics.html">Modeling Chaotic Systems - Activity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/chaotic_dynamics-completed.html">Modeling Chaotic Systems - Completed</a></li>
 </ul>
 
     </div>
@@ -403,40 +420,14 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Day 30 - Euler-Lagrange Equation</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#seminars-this-week">Seminars this Week</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#wednesday-november-5-2025">WEDNESDAY, November 5, 2025</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reminders">Reminders</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Reminders</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-30-1">Clicker Question 30-1</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-30-2">Clicker Question 30-2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-30-3">Clicker Question 30-3</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-30-4">Clicker Question 30-4</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-30-5">Clicker Question 30-5</a></li>
 </ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Seminars this Week</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">WEDNESDAY, November 5, 2025</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Seminars this Week</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#thursday-november-6-2025">THURSDAY, November 6, 2025</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Seminars this Week</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#friday-november-7-2025">FRIDAY, November 7, 2025</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Seminars this Week</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">FRIDAY, November 7, 2025</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Seminars this Week</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">FRIDAY, November 7, 2025</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#reminders">Reminders</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Reminders</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-30-1">Clicker Question 30-1</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-30-2">Clicker Question 30-2</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-30-3">Clicker Question 30-3</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-30-4">Clicker Question 30-4</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-30-5">Clicker Question 30-5</a></li>
-</ul>
-
             </nav>
         </div>
     </div>
@@ -447,83 +438,133 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="day-30-euler-lagrange-equation">
+  <style>
+  :root {
+    --color-spartan-green: #18453B;
+    --color-msu-gold: #C1B000;
+    --color-light-gray: #f5f5f5;
+    --color-dark-text: #1a1a1a;
+    --color-accent-green: #2d5f4f;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    color: var(--color-dark-text);
+  }
+  
+  h1, h2, h3 {
+    color: var(--color-spartan-green);
+    font-weight: 500;
+  }
+  
+  h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0rem;
+  }
+  
+  h2 {
+    font-size: 1.55rem;
+    margin-bottom: 1.0rem;
+    border-bottom: 4px solid var(--color-spartan-green);
+    padding-bottom: 0.5rem;
+  }
+  
+  h3 {
+    font-size: 1.15rem;
+    margin-top: 1rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  section {
+    padding: 2rem;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .equation {
+    background-color: var(--color-light-gray);
+    padding: 1.5rem;
+    border-left: 4px solid var(--color-msu-gold);
+    margin: 1.5rem 0;
+    font-size: 1.3rem;
+    text-align: center;
+    color: var(--color-dark-text);
+  }
+
+  p {
+    font-size: 1.15rem;
+    line-height: 1.4;
+    margin-bottom: 0.5rem;
+  }
+  
+  ul, ol {
+    font-size: 1.15rem;
+    line-height: 1.4;
+    margin-left: 0.5rem;
+  }
+
+  ul ul, ol ol, ul ol, ol ul {
+    margin-left: 0.1rem;
+  }
+  
+  li {
+    margin-bottom: 0rem;
+    line-height: 1.4;
+  }
+  
+  strong {
+    color: var(--color-spartan-green);
+    font-weight: 600;
+  }
+  
+  em {
+    color: var(--color-accent-green);
+  }
+
+  .highlight {
+    background-color: var(--color-light-gray);
+    padding: 1.5rem;
+    border-left: 4px solid var(--color-spartan-green);
+    margin: 1.5rem 0;
+  }
+
+  .activity {
+    background-color: #fff8e1;
+    border: 2px solid var(--color-msu-gold);
+    padding: 1.25rem;
+    border-radius: 6px;
+    margin: 1rem 0;
+  }
+
+  code {
+    background-color: var(--color-light-gray);
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-size: 1.0rem;
+  }
+
+  .footnote {
+    font-size: 0.8rem;
+    color: #999;
+    margin-top: 1.5rem;
+    border-top: 1px solid #ddd;
+    padding-top: 0.75rem;
+  }
+</style>
+<!--
+_class: title
+_backgroundColor: #ffffff
+_color: #18453B
+-->
+<section id="day-30-euler-lagrange-equation">
 <h1>Day 30 - Euler-Lagrange Equation<a class="headerlink" href="#day-30-euler-lagrange-equation" title="Link to this heading">#</a></h1>
-<p><img alt="width:1000px" src="../_images/Slide1.png" /></p>
-</section>
-<hr class="docutils" />
-<section id="seminars-this-week">
-<h1>Seminars this Week<a class="headerlink" href="#seminars-this-week" title="Link to this heading">#</a></h1>
-<section id="wednesday-november-5-2025">
-<h2>WEDNESDAY, November 5, 2025<a class="headerlink" href="#wednesday-november-5-2025" title="Link to this heading">#</a></h2>
-<p>Astronomy Seminar, 1:30 pm, 1400 BPS, In Person and Zoom, Host~
-Speaker: Nick Konidaris, Carnegie Observatories
-Title: The Sephira Project: Astronomical Imaging with Third-Order Intensity Correlations</p>
-</section>
-</section>
-<hr class="docutils" />
-<section id="id1">
-<h1>Seminars this Week<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
-<section id="id2">
-<h2>WEDNESDAY, November 5, 2025<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
-<p>FRIB Nuclear Science Seminar, 3:30pm., FRIB 1300 Auditorium and online via Zoom
-Speaker: Assistant Professor Xing Wu of The Facility for Rare Isotope Beams (FRIB)<br />
-Title: Towards Quantum Control and Sensing of 227ThO Molecules and Other Radioactive Molecules for Nuclear Schiff Moment Search
-Please click the link below to join the webinar:
-Join Zoom Meeting: <a class="reference external" href="https://msu.zoom.us/j/91861947571?pwd=IlUS6RkYdHibaosm4aznsYsctbaMrU.1">https://msu.zoom.us/j/91861947571?pwd=IlUS6RkYdHibaosm4aznsYsctbaMrU.1</a>
-Meeting ID: 939 4416 7137
-Passcode: 026775</p>
-</section>
-</section>
-<hr class="docutils" />
-<section id="id3">
-<h1>Seminars this Week<a class="headerlink" href="#id3" title="Link to this heading">#</a></h1>
-<section id="thursday-november-6-2025">
-<h2>THURSDAY, November 6, 2025<a class="headerlink" href="#thursday-november-6-2025" title="Link to this heading">#</a></h2>
-<p>Colloquium, 3:30 pm, 1415 BPS, in person and zoom.  Host ~ Jay Strader/Laura Chomiuk
-Refreshments and social half-hour in BPS 1400 starting at 3 pm
-Speaker: Nick Konidaris, Carnegie Observations
-Title: SDSS Local Volume Mapper instrument and Early Science Results</p>
-</section>
-</section>
-<hr class="docutils" />
-<section id="id4">
-<h1>Seminars this Week<a class="headerlink" href="#id4" title="Link to this heading">#</a></h1>
-<section id="friday-november-7-2025">
-<h2>FRIDAY, November 7, 2025<a class="headerlink" href="#friday-november-7-2025" title="Link to this heading">#</a></h2>
-<p>IReNA Online Seminar, 9:00am, In Person and Zoom, FRIB 2025 Nuclear Conference Room, Light refreshments will be served at 1:50pm.
-Hosted by: Sota Kimura (University of Tsukuba)
-Speaker Tomoshi Takeda, Hiroshima University, Japan
-Title: A New Approach to X-ray Astronomy: Development and Observational Results of the CubeSat Observatory NinjaSat</p>
-</section>
-</section>
-<hr class="docutils" />
-<section id="id5">
-<h1>Seminars this Week<a class="headerlink" href="#id5" title="Link to this heading">#</a></h1>
-<section id="id6">
-<h2>FRIDAY, November 7, 2025<a class="headerlink" href="#id6" title="Link to this heading">#</a></h2>
-<p>Special HEP Seminar
-High Energy Physics Seminar, 1:00 pm, 1400 BPS, Host~ Joey Huston
-Speaker: Eric Bachmann, Technische Universität Dresden
-Title: Evidence for longitudinal polarization in same-sign WW scattering with the ATLAS detector<br />
-Organized by: Joey Huston, Sophie Berkman and Brenda Wenzlick</p>
-</section>
-</section>
-<hr class="docutils" />
-<section id="id7">
-<h1>Seminars this Week<a class="headerlink" href="#id7" title="Link to this heading">#</a></h1>
-<section id="id8">
-<h2>FRIDAY, November 7, 2025<a class="headerlink" href="#id8" title="Link to this heading">#</a></h2>
-<p>QuIC Seminar, 12:30pm, -1:30pm, 1300 BPS, Virtual only today<br />
-Speaker: Philip Crowley, MSU
-Title:  Quantum dynamics for quantum sensing
-Full Scheule is at: <a class="reference external" href="https://sites.google.com/msu.edu/quic-seminar/">https://sites.google.com/msu.edu/quic-seminar/</a>
-For more information, reach out to Ryan LaRose</p>
-</section>
-</section>
+<p><img alt="width:1000px" src="../_images/Slide110.png" /></p>
 <hr class="docutils" />
 <section id="reminders">
-<h1>Reminders<a class="headerlink" href="#reminders" title="Link to this heading">#</a></h1>
+<h2>Reminders<a class="headerlink" href="#reminders" title="Link to this heading">#</a></h2>
 <p>We proposed a solution to the line problem that involved an error term <span class="math notranslate nohighlight">\(\eta(x)\)</span>, which is a small perturbation to the true path <span class="math notranslate nohighlight">\(y(x)\)</span>. This leads to a perturbed function:</p>
 <div class="math notranslate nohighlight">
 \[Y(x) = y(x) + \alpha \eta(x)\]</div>
@@ -533,8 +574,8 @@ For more information, reach out to Ryan LaRose</p>
 \[\int_{s_1}^{s_2} f(Y,Y',x) \, dx &gt; \int_{s_1}^{s_2} f(y,y',x) \, dx\]</div>
 </section>
 <hr class="docutils" />
-<section id="id9">
-<h1>Reminders<a class="headerlink" href="#id9" title="Link to this heading">#</a></h1>
+<section id="id1">
+<h2>Reminders<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
 <p>By taking the derivative of the functional with respect to <span class="math notranslate nohighlight">\(\alpha\)</span>, we can find the condition for which the functional is stationary (i.e., a minimum or maximum).</p>
 <div class="math notranslate nohighlight">
 \[\frac{d}{d\alpha} \int_{s_1}^{s_2} f(Y,Y',x) \, dx \bigg|_{\alpha=0} = 0\]</div>
@@ -544,7 +585,7 @@ For more information, reach out to Ryan LaRose</p>
 </section>
 <hr class="docutils" />
 <section id="clicker-question-30-1">
-<h1>Clicker Question 30-1<a class="headerlink" href="#clicker-question-30-1" title="Link to this heading">#</a></h1>
+<h2>Clicker Question 30-1<a class="headerlink" href="#clicker-question-30-1" title="Link to this heading">#</a></h2>
 <p>We completed this derivation with the following mathematical statement:</p>
 <div class="math notranslate nohighlight">
 \[\int_{s_1}^{s_2} \eta(x) \left[\dfrac{\partial f}{\partial y} - \dfrac{d}{dx}\left(\dfrac{\partial f}{\partial y'}\right)\right] \, dx = 0\]</div>
@@ -559,7 +600,7 @@ For more information, reach out to Ryan LaRose</p>
 </section>
 <hr class="docutils" />
 <section id="clicker-question-30-2">
-<h1>Clicker Question 30-2<a class="headerlink" href="#clicker-question-30-2" title="Link to this heading">#</a></h1>
+<h2>Clicker Question 30-2<a class="headerlink" href="#clicker-question-30-2" title="Link to this heading">#</a></h2>
 <p>Returning to the line problem,</p>
 <div class="math notranslate nohighlight">
 \[l = \int_{x_1}^{x_2} \sqrt{1 + \left(\frac{dy}{dx}\right)^2} \, dx\]</div>
@@ -571,7 +612,7 @@ For more information, reach out to Ryan LaRose</p>
 </section>
 <hr class="docutils" />
 <section id="clicker-question-30-3">
-<h1>Clicker Question 30-3<a class="headerlink" href="#clicker-question-30-3" title="Link to this heading">#</a></h1>
+<h2>Clicker Question 30-3<a class="headerlink" href="#clicker-question-30-3" title="Link to this heading">#</a></h2>
 <p>With,</p>
 <div class="math notranslate nohighlight">
 \[y' = \pm\sqrt{\dfrac{c^2}{1 + c^2}}\]</div>
@@ -585,7 +626,7 @@ For more information, reach out to Ryan LaRose</p>
 </section>
 <hr class="docutils" />
 <section id="clicker-question-30-4">
-<h1>Clicker Question 30-4<a class="headerlink" href="#clicker-question-30-4" title="Link to this heading">#</a></h1>
+<h2>Clicker Question 30-4<a class="headerlink" href="#clicker-question-30-4" title="Link to this heading">#</a></h2>
 <p>We derived the time that it takes to run from a point on the shore to a point in the water, <span class="math notranslate nohighlight">\(T\)</span>:</p>
 <div class="math notranslate nohighlight">
 \[T = \dfrac{1}{v_1} \left(x_1^2 + (y-y_1)^2\right)^{1/2}+\dfrac{1}{v_2} \left(x_2^2 + (y_2-y)^2\right)^{1/2}\]</div>
@@ -599,7 +640,7 @@ For more information, reach out to Ryan LaRose</p>
 </section>
 <hr class="docutils" />
 <section id="clicker-question-30-5">
-<h1>Clicker Question 30-5<a class="headerlink" href="#clicker-question-30-5" title="Link to this heading">#</a></h1>
+<h2>Clicker Question 30-5<a class="headerlink" href="#clicker-question-30-5" title="Link to this heading">#</a></h2>
 <p>For the brachistochrone problem, the ball moves purely under the influence of gravity. Consider that the ball has moved a vertical distance <span class="math notranslate nohighlight">\(\Delta y\)</span> from rest. What is the speed of the ball at this point?</p>
 <ol class="arabic simple">
 <li><p><span class="math notranslate nohighlight">\(v = gt\)</span></p></li>
@@ -608,6 +649,7 @@ For more information, reach out to Ryan LaRose</p>
 <li><p>I’m not sure, but <span class="math notranslate nohighlight">\(&lt;\sqrt{2g\Delta y}\)</span></p></li>
 <li><p>Something else?</p></li>
 </ol>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -656,40 +698,14 @@ For more information, reach out to Ryan LaRose</p>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Day 30 - Euler-Lagrange Equation</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#seminars-this-week">Seminars this Week</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#wednesday-november-5-2025">WEDNESDAY, November 5, 2025</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reminders">Reminders</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Reminders</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-30-1">Clicker Question 30-1</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-30-2">Clicker Question 30-2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-30-3">Clicker Question 30-3</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-30-4">Clicker Question 30-4</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-30-5">Clicker Question 30-5</a></li>
 </ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Seminars this Week</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">WEDNESDAY, November 5, 2025</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Seminars this Week</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#thursday-november-6-2025">THURSDAY, November 6, 2025</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Seminars this Week</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#friday-november-7-2025">FRIDAY, November 7, 2025</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">Seminars this Week</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">FRIDAY, November 7, 2025</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Seminars this Week</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">FRIDAY, November 7, 2025</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#reminders">Reminders</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Reminders</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-30-1">Clicker Question 30-1</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-30-2">Clicker Question 30-2</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-30-3">Clicker Question 30-3</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-30-4">Clicker Question 30-4</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-30-5">Clicker Question 30-5</a></li>
-</ul>
-
   </nav></div>
 
 </div></div>

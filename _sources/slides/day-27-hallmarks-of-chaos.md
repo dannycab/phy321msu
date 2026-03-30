@@ -4,11 +4,134 @@ theme: graph_paper
 paginate: true
 
 title: Day 27 - Hallmarks of Chaos
-description: Slides for PHY 321 Fall 2025, Day 28: Hallmarks of Chaos
+description: Slides for PHY 321 Spring 2026, Day 27: Hallmarks of Chaos
 author: Prof. Danny Caballero <caball14@msu.edu>
 keywords: classical mechanics, differential equations, motion, oscillations, rduffing, lorenz, strange attractors
-url: https://dannycaballero.info/phy321msu/slides/day-28-hallmarks-of-chaos.html
+url: https://dannycaballero.info/phy321msu/slides/day-27-hallmarks-of-chaos.html
 ---
+
+<style>
+  :root {
+    --color-spartan-green: #18453B;
+    --color-msu-gold: #C1B000;
+    --color-light-gray: #f5f5f5;
+    --color-dark-text: #1a1a1a;
+    --color-accent-green: #2d5f4f;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    color: var(--color-dark-text);
+  }
+  
+  h1, h2, h3 {
+    color: var(--color-spartan-green);
+    font-weight: 500;
+  }
+  
+  h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0rem;
+  }
+  
+  h2 {
+    font-size: 1.55rem;
+    margin-bottom: 1.0rem;
+    border-bottom: 4px solid var(--color-spartan-green);
+    padding-bottom: 0.5rem;
+  }
+  
+  h3 {
+    font-size: 1.15rem;
+    margin-top: 1rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  section {
+    padding: 2rem;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .equation {
+    background-color: var(--color-light-gray);
+    padding: 1.5rem;
+    border-left: 4px solid var(--color-msu-gold);
+    margin: 1.5rem 0;
+    font-size: 1.3rem;
+    text-align: center;
+    color: var(--color-dark-text);
+  }
+
+  p {
+    font-size: 1.15rem;
+    line-height: 1.4;
+    margin-bottom: 0.5rem;
+  }
+  
+  ul, ol {
+    font-size: 1.15rem;
+    line-height: 1.4;
+    margin-left: 0.5rem;
+  }
+
+  ul ul, ol ol, ul ol, ol ul {
+    margin-left: 0.1rem;
+  }
+  
+  li {
+    margin-bottom: 0rem;
+    line-height: 1.4;
+  }
+  
+  strong {
+    color: var(--color-spartan-green);
+    font-weight: 600;
+  }
+  
+  em {
+    color: var(--color-accent-green);
+  }
+
+  .highlight {
+    background-color: var(--color-light-gray);
+    padding: 1.5rem;
+    border-left: 4px solid var(--color-spartan-green);
+    margin: 1.5rem 0;
+  }
+
+  .activity {
+    background-color: #fff8e1;
+    border: 2px solid var(--color-msu-gold);
+    padding: 1.25rem;
+    border-radius: 6px;
+    margin: 1rem 0;
+  }
+
+  code {
+    background-color: var(--color-light-gray);
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-size: 1.0rem;
+  }
+
+  .footnote {
+    font-size: 0.8rem;
+    color: #999;
+    margin-top: 1.5rem;
+    border-top: 1px solid #ddd;
+    padding-top: 0.75rem;
+  }
+</style>
+
+<!--
+_class: title
+_backgroundColor: #ffffff
+_color: #18453B
+-->
 
 # Day 27 - Hallmarks of Chaos
 
@@ -20,77 +143,7 @@ url: https://dannycaballero.info/phy321msu/slides/day-28-hallmarks-of-chaos.html
 
 ---
 
-# Announcements
-
-* Midterm 1 is graded
-* Homework 7 is due Friday
-    * No homework next week
-* Midterm 2 will be assigned next Monday (due 14 November)
-    * Second project check-in
-* **Friday's Class:** We will work HW 7 Exercises 2 & 3 together
-
----
-
-# Seminars This Week
-
-## WEDNESDAY, October 29, 2025    
- 
-                                     
-Astronomy Seminar, 1:30 pm, 1400 BPS, In Person and Zoom, Host~ 
-Speaker: Michael Radic, University of Chicago 
-Title: 
-Zoom Link: https://msu.zoom.us/j/93334479606?pwd=OtIXPWhRPBfzYu53sl3trSJlaBYI7C.1
-Meeting ID: 933 3447 9606
-Passcode: 825824
- 
----
-
-# Seminars This Week
-
-## WEDNESDAY, October 29, 2025  
-
-**PER (Physics Education Research Seminar)**, 3:00 pm., BPS 1400 in person and zoom
-Speaker: **Eric Burkholder**, *Assistant Professor at Auburn University*
-Title:  **Could we make physics more accessible by teaching real physics?** 
-Zoom Link: https://msu.zoom.us/j/96470703707
-Meeting ID: 964 7070 3707
-Passcode: PERSeminar
- 
----
-
-# Seminars This Week
-
-## WEDNESDAY, October 29, 2025  
- 
-FRIB Nuclear Science Seminar, 3:30pm., FRIB 1300 Auditorium and online via Zoom 
-Speaker: Professor Dien Nguyen of the University of Tennessee, Knoxville 
-Title: The Pairing Mechanism of Short Range Correlations and the impact of Nuclear Structure
-Please click the link below to join the webinar:
-Join Zoom Meeting: https://msu.zoom.us/j/93944167137?pwd=jzvwvbL8YqDnJNpzDPat8IHcrFdtC5.1
-Meeting ID: 939 4416 7137
-Passcode: 239049
- 
----
-
-# New Course Alert: CMSE 491 – Quantum Information Science and Engineering
-
-## Get started in the emerging field of quantum engineering! 
-
-• 🧠 What’s it about? Quantum systems, quantum hardware, and real-world applications in computing, networking, and sensing.
-• 🕛 When: M/W/F 12:40–1:30 PM
-• 📍 Where: Farrall Agricultural Engineering Hall 119
-• 👩‍🏫 Instructor: Dr. Sarah Frechette (ERC C107, rober964@msu.edu)
-
-## 📘 Who’s it for? 
-
-Physics, engineering, and computing majors—or anyone curious about quantum tech. 
-
----
-
-![bg 90%](../images/notes/week10/cmse491.png)
-
----
-# Hallmarks of a Classically Chaotic System
+## Hallmarks of a Classically Chaotic System
 
 1. **Deterministic**
 2. **Sensitive to Initial Conditions** 
@@ -98,9 +151,10 @@ Physics, engineering, and computing majors—or anyone curious about quantum tec
 4. **Strange Attractors**
 5. **Parameter Sensitivity**
 6. (Sometimes) **Periodic Behavior**
+
 ---
 
-# Limit Cycle
+## Limit Cycle
 
 A **limit cycle** is a closed trajectory in phase space that is an attractor for a dynamical system.
 
@@ -128,7 +182,7 @@ Largest $\lambda_i > 0$? Chaotic system.
 
 ---
 
-# Strange Attractors
+## Strange Attractors
 
 A **strange attractor** is a set of points in phase space that a chaotic system approaches.
 
@@ -146,7 +200,7 @@ $\alpha=5$, $\beta=-10$, $\gamma=-0.38$.
 
 ---
 
-# Example 1: Duffing Equation
+## Example 1: Duffing Equation
 
 $$\ddot{x} + \beta \dot{x} + \alpha x + \gamma x^3 = F_0 \cos(\omega t)$$
 
@@ -158,7 +212,7 @@ $$\ddot{x} + \beta \dot{x} + \alpha x + \gamma x^3 = F_0 \cos(\omega t)$$
 
 ---
 
-# Example 2: Lorenz System
+## Example 2: Lorenz System
 
 $$\dot{x} = \sigma (y - x)$$
 $$\dot{y} = x (\rho - z) - y$$

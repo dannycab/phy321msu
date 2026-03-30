@@ -232,6 +232,22 @@
 
 
 
+<li class="toctree-l2"><a class="reference internal" href="../assignments/hw5.html">Homework 5 (Due 13 Mar)</a></li>
+
+
+
+<li class="toctree-l2"><a class="reference internal" href="../assignments/hw6.html">Homework 6 (Due 20 Mar)</a></li>
+
+
+
+<li class="toctree-l2"><a class="reference internal" href="../assignments/hw7.html">Homework 7 (Due 27 Mar)</a></li>
+
+
+
+<li class="toctree-l2"><a class="reference internal" href="../assignments/midterm2.html">Midterm 2 (Due 10 Apr)</a></li>
+
+
+
 </ul>
 </details></li>
 </ul>
@@ -255,6 +271,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../resources/integrators.html">Numerical Integrators</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../resources/phase_diagrams.html">Plotting Phase Diagrams</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../resources/chaotic_dynamics.html">Modeling Chaotic Systems - Activity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/chaotic_dynamics-completed.html">Modeling Chaotic Systems - Completed</a></li>
 </ul>
 
     </div>
@@ -403,38 +420,14 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Day 27 - Hallmarks of Chaos</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conceptualizing-the-lyapunov-exponent">Conceptualizing the Lyapunov Exponent</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#announcements">Announcements</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#seminars-this-week">Seminars This Week</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#wednesday-october-29-2025">WEDNESDAY, October 29, 2025</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Seminars This Week</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">WEDNESDAY, October 29, 2025</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Seminars This Week</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">WEDNESDAY, October 29, 2025</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#new-course-alert-cmse-491-quantum-information-science-and-engineering">New Course Alert: CMSE 491 – Quantum Information Science and Engineering</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#get-started-in-the-emerging-field-of-quantum-engineering">Get started in the emerging field of quantum engineering!</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#whos-it-for">📘 Who’s it for?</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#hallmarks-of-a-classically-chaotic-system">Hallmarks of a Classically Chaotic System</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#limit-cycle">Limit Cycle</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hallmarks-of-a-classically-chaotic-system">Hallmarks of a Classically Chaotic System</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#limit-cycle">Limit Cycle</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-lyapunov-exponent">The Lyapunov Exponent</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#strange-attractors">Strange Attractors</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1-duffing-equation">Example 1: Duffing Equation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2-lorenz-system">Example 2: Lorenz System</a></li>
 </ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#strange-attractors">Strange Attractors</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1-duffing-equation">Example 1: Duffing Equation</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2-lorenz-system">Example 2: Lorenz System</a></li>
-</ul>
-
             </nav>
         </div>
     </div>
@@ -445,92 +438,137 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="day-27-hallmarks-of-chaos">
+  <style>
+  :root {
+    --color-spartan-green: #18453B;
+    --color-msu-gold: #C1B000;
+    --color-light-gray: #f5f5f5;
+    --color-dark-text: #1a1a1a;
+    --color-accent-green: #2d5f4f;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    color: var(--color-dark-text);
+  }
+  
+  h1, h2, h3 {
+    color: var(--color-spartan-green);
+    font-weight: 500;
+  }
+  
+  h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0rem;
+  }
+  
+  h2 {
+    font-size: 1.55rem;
+    margin-bottom: 1.0rem;
+    border-bottom: 4px solid var(--color-spartan-green);
+    padding-bottom: 0.5rem;
+  }
+  
+  h3 {
+    font-size: 1.15rem;
+    margin-top: 1rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  section {
+    padding: 2rem;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .equation {
+    background-color: var(--color-light-gray);
+    padding: 1.5rem;
+    border-left: 4px solid var(--color-msu-gold);
+    margin: 1.5rem 0;
+    font-size: 1.3rem;
+    text-align: center;
+    color: var(--color-dark-text);
+  }
+
+  p {
+    font-size: 1.15rem;
+    line-height: 1.4;
+    margin-bottom: 0.5rem;
+  }
+  
+  ul, ol {
+    font-size: 1.15rem;
+    line-height: 1.4;
+    margin-left: 0.5rem;
+  }
+
+  ul ul, ol ol, ul ol, ol ul {
+    margin-left: 0.1rem;
+  }
+  
+  li {
+    margin-bottom: 0rem;
+    line-height: 1.4;
+  }
+  
+  strong {
+    color: var(--color-spartan-green);
+    font-weight: 600;
+  }
+  
+  em {
+    color: var(--color-accent-green);
+  }
+
+  .highlight {
+    background-color: var(--color-light-gray);
+    padding: 1.5rem;
+    border-left: 4px solid var(--color-spartan-green);
+    margin: 1.5rem 0;
+  }
+
+  .activity {
+    background-color: #fff8e1;
+    border: 2px solid var(--color-msu-gold);
+    padding: 1.25rem;
+    border-radius: 6px;
+    margin: 1rem 0;
+  }
+
+  code {
+    background-color: var(--color-light-gray);
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-size: 1.0rem;
+  }
+
+  .footnote {
+    font-size: 0.8rem;
+    color: #999;
+    margin-top: 1.5rem;
+    border-top: 1px solid #ddd;
+    padding-top: 0.75rem;
+  }
+</style>
+<!--
+_class: title
+_backgroundColor: #ffffff
+_color: #18453B
+-->
+<section id="day-27-hallmarks-of-chaos">
 <h1>Day 27 - Hallmarks of Chaos<a class="headerlink" href="#day-27-hallmarks-of-chaos" title="Link to this heading">#</a></h1>
 <p><img alt="bg right width:600px" src="../_images/lyapunov.png" /></p>
 <section id="conceptualizing-the-lyapunov-exponent">
 <h2>Conceptualizing the Lyapunov Exponent<a class="headerlink" href="#conceptualizing-the-lyapunov-exponent" title="Link to this heading">#</a></h2>
 <p><em>Trajectories diverge exponentially in time</em></p>
 </section>
-</section>
-<hr class="docutils" />
-<section id="announcements">
-<h1>Announcements<a class="headerlink" href="#announcements" title="Link to this heading">#</a></h1>
-<ul class="simple">
-<li><p>Midterm 1 is graded</p></li>
-<li><p>Homework 7 is due Friday</p>
-<ul>
-<li><p>No homework next week</p></li>
-</ul>
-</li>
-<li><p>Midterm 2 will be assigned next Monday (due 14 November)</p>
-<ul>
-<li><p>Second project check-in</p></li>
-</ul>
-</li>
-<li><p><strong>Friday’s Class:</strong> We will work HW 7 Exercises 2 &amp; 3 together</p></li>
-</ul>
-</section>
-<hr class="docutils" />
-<section id="seminars-this-week">
-<h1>Seminars This Week<a class="headerlink" href="#seminars-this-week" title="Link to this heading">#</a></h1>
-<section id="wednesday-october-29-2025">
-<h2>WEDNESDAY, October 29, 2025<a class="headerlink" href="#wednesday-october-29-2025" title="Link to this heading">#</a></h2>
-<p>Astronomy Seminar, 1:30 pm, 1400 BPS, In Person and Zoom, Host~
-Speaker: Michael Radic, University of Chicago
-Title:
-Zoom Link: <a class="reference external" href="https://msu.zoom.us/j/93334479606?pwd=OtIXPWhRPBfzYu53sl3trSJlaBYI7C.1">https://msu.zoom.us/j/93334479606?pwd=OtIXPWhRPBfzYu53sl3trSJlaBYI7C.1</a>
-Meeting ID: 933 3447 9606
-Passcode: 825824</p>
-</section>
-</section>
-<hr class="docutils" />
-<section id="id1">
-<h1>Seminars This Week<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
-<section id="id2">
-<h2>WEDNESDAY, October 29, 2025<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
-<p><strong>PER (Physics Education Research Seminar)</strong>, 3:00 pm., BPS 1400 in person and zoom
-Speaker: <strong>Eric Burkholder</strong>, <em>Assistant Professor at Auburn University</em>
-Title:  <strong>Could we make physics more accessible by teaching real physics?</strong>
-Zoom Link: <a class="reference external" href="https://msu.zoom.us/j/96470703707">https://msu.zoom.us/j/96470703707</a>
-Meeting ID: 964 7070 3707
-Passcode: PERSeminar</p>
-</section>
-</section>
-<hr class="docutils" />
-<section id="id3">
-<h1>Seminars This Week<a class="headerlink" href="#id3" title="Link to this heading">#</a></h1>
-<section id="id4">
-<h2>WEDNESDAY, October 29, 2025<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
-<p>FRIB Nuclear Science Seminar, 3:30pm., FRIB 1300 Auditorium and online via Zoom
-Speaker: Professor Dien Nguyen of the University of Tennessee, Knoxville
-Title: The Pairing Mechanism of Short Range Correlations and the impact of Nuclear Structure
-Please click the link below to join the webinar:
-Join Zoom Meeting: <a class="reference external" href="https://msu.zoom.us/j/93944167137?pwd=jzvwvbL8YqDnJNpzDPat8IHcrFdtC5.1">https://msu.zoom.us/j/93944167137?pwd=jzvwvbL8YqDnJNpzDPat8IHcrFdtC5.1</a>
-Meeting ID: 939 4416 7137
-Passcode: 239049</p>
-</section>
-</section>
-<hr class="docutils" />
-<section id="new-course-alert-cmse-491-quantum-information-science-and-engineering">
-<h1>New Course Alert: CMSE 491 – Quantum Information Science and Engineering<a class="headerlink" href="#new-course-alert-cmse-491-quantum-information-science-and-engineering" title="Link to this heading">#</a></h1>
-<section id="get-started-in-the-emerging-field-of-quantum-engineering">
-<h2>Get started in the emerging field of quantum engineering!<a class="headerlink" href="#get-started-in-the-emerging-field-of-quantum-engineering" title="Link to this heading">#</a></h2>
-<p>• 🧠 What’s it about? Quantum systems, quantum hardware, and real-world applications in computing, networking, and sensing.
-• 🕛 When: M/W/F 12:40–1:30 PM
-• 📍 Where: Farrall Agricultural Engineering Hall 119
-• 👩‍🏫 Instructor: Dr. Sarah Frechette (ERC C107, <a class="reference external" href="mailto:rober964&#37;&#52;&#48;msu&#46;edu">rober964<span>&#64;</span>msu<span>&#46;</span>edu</a>)</p>
-</section>
-<section id="whos-it-for">
-<h2>📘 Who’s it for?<a class="headerlink" href="#whos-it-for" title="Link to this heading">#</a></h2>
-<p>Physics, engineering, and computing majors—or anyone curious about quantum tech.</p>
-<hr class="docutils" />
-<p><img alt="bg 90%" src="../_images/cmse491.png" /></p>
-</section>
-</section>
 <hr class="docutils" />
 <section id="hallmarks-of-a-classically-chaotic-system">
-<h1>Hallmarks of a Classically Chaotic System<a class="headerlink" href="#hallmarks-of-a-classically-chaotic-system" title="Link to this heading">#</a></h1>
+<h2>Hallmarks of a Classically Chaotic System<a class="headerlink" href="#hallmarks-of-a-classically-chaotic-system" title="Link to this heading">#</a></h2>
 <ol class="arabic simple">
 <li><p><strong>Deterministic</strong></p></li>
 <li><p><strong>Sensitive to Initial Conditions</strong></p></li>
@@ -542,13 +580,14 @@ Passcode: 239049</p>
 </section>
 <hr class="docutils" />
 <section id="limit-cycle">
-<h1>Limit Cycle<a class="headerlink" href="#limit-cycle" title="Link to this heading">#</a></h1>
+<h2>Limit Cycle<a class="headerlink" href="#limit-cycle" title="Link to this heading">#</a></h2>
 <p>A <strong>limit cycle</strong> is a closed trajectory in phase space that is an attractor for a dynamical system.</p>
 <p><img alt="bg right" src="../_images/van-der-pol-limit-cycle.gif" /></p>
 <p>The <strong>Van der Pol Oscillator</strong> exhibits a limit cycle.</p>
 <div class="math notranslate nohighlight">
 \[\ddot{x} - \mu (1 - x^2) \dot{x} + x = 0\]</div>
 <p>Random initial conditions converge to a limit cycle. Modeled with <span class="math notranslate nohighlight">\(\mu=2\)</span>.</p>
+</section>
 <hr class="docutils" />
 <section id="the-lyapunov-exponent">
 <h2>The Lyapunov Exponent<a class="headerlink" href="#the-lyapunov-exponent" title="Link to this heading">#</a></h2>
@@ -558,10 +597,9 @@ Passcode: 239049</p>
 <p>Each phase coordinate can change at a different rate: <span class="math notranslate nohighlight">\(\vec{\lambda} = \langle \lambda_1, \lambda_2, \dots, \lambda_n \rangle\)</span>.</p>
 <p>Largest <span class="math notranslate nohighlight">\(\lambda_i &gt; 0\)</span>? Chaotic system.</p>
 </section>
-</section>
 <hr class="docutils" />
 <section id="strange-attractors">
-<h1>Strange Attractors<a class="headerlink" href="#strange-attractors" title="Link to this heading">#</a></h1>
+<h2>Strange Attractors<a class="headerlink" href="#strange-attractors" title="Link to this heading">#</a></h2>
 <p>A <strong>strange attractor</strong> is a set of points in phase space that a chaotic system approaches.</p>
 <p><strong>Chen Attractor</strong></p>
 <p><img alt="Chen Attractor bg left " src="../_images/chen.png" /></p>
@@ -576,7 +614,7 @@ Passcode: 239049</p>
 </section>
 <hr class="docutils" />
 <section id="example-1-duffing-equation">
-<h1>Example 1: Duffing Equation<a class="headerlink" href="#example-1-duffing-equation" title="Link to this heading">#</a></h1>
+<h2>Example 1: Duffing Equation<a class="headerlink" href="#example-1-duffing-equation" title="Link to this heading">#</a></h2>
 <div class="math notranslate nohighlight">
 \[\ddot{x} + \beta \dot{x} + \alpha x + \gamma x^3 = F_0 \cos(\omega t)\]</div>
 <p><img alt="width:1200px" src="../_images/duffing.png" /></p>
@@ -585,7 +623,7 @@ Passcode: 239049</p>
 </section>
 <hr class="docutils" />
 <section id="example-2-lorenz-system">
-<h1>Example 2: Lorenz System<a class="headerlink" href="#example-2-lorenz-system" title="Link to this heading">#</a></h1>
+<h2>Example 2: Lorenz System<a class="headerlink" href="#example-2-lorenz-system" title="Link to this heading">#</a></h2>
 <div class="math notranslate nohighlight">
 \[\dot{x} = \sigma (y - x)\]</div>
 <div class="math notranslate nohighlight">
@@ -595,6 +633,7 @@ Passcode: 239049</p>
 <p><img alt="bg right width:600px" src="../_images/lorenz-trajectories.png" /></p>
 <p><strong>Exhibits sensitive dependence on initial conditions</strong>
 <strong>Demonstrates the concept of a strange attractor</strong></p>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -643,38 +682,14 @@ Passcode: 239049</p>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Day 27 - Hallmarks of Chaos</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conceptualizing-the-lyapunov-exponent">Conceptualizing the Lyapunov Exponent</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#announcements">Announcements</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#seminars-this-week">Seminars This Week</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#wednesday-october-29-2025">WEDNESDAY, October 29, 2025</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Seminars This Week</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">WEDNESDAY, October 29, 2025</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Seminars This Week</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">WEDNESDAY, October 29, 2025</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#new-course-alert-cmse-491-quantum-information-science-and-engineering">New Course Alert: CMSE 491 – Quantum Information Science and Engineering</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#get-started-in-the-emerging-field-of-quantum-engineering">Get started in the emerging field of quantum engineering!</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#whos-it-for">📘 Who’s it for?</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#hallmarks-of-a-classically-chaotic-system">Hallmarks of a Classically Chaotic System</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#limit-cycle">Limit Cycle</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hallmarks-of-a-classically-chaotic-system">Hallmarks of a Classically Chaotic System</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#limit-cycle">Limit Cycle</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-lyapunov-exponent">The Lyapunov Exponent</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#strange-attractors">Strange Attractors</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1-duffing-equation">Example 1: Duffing Equation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2-lorenz-system">Example 2: Lorenz System</a></li>
 </ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#strange-attractors">Strange Attractors</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1-duffing-equation">Example 1: Duffing Equation</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2-lorenz-system">Example 2: Lorenz System</a></li>
-</ul>
-
   </nav></div>
 
 </div></div>
