@@ -223,10 +223,8 @@ $$T = \dfrac{1}{v_1} \left(x_1^2 + (y-y_1)^2\right)^{1/2}+\dfrac{1}{v_2} \left(x
 
 To find the minimal time, what derivative should we take?
 
-1. $\dfrac{dT}{dx}$
-2. $\dfrac{dT}{dy}$
-3. $\dfrac{dT}{dt}$
-4. Something else?
+$1. \dfrac{dT}{dx} \qquad 2. \dfrac{dT}{dy} \qquad 3. \dfrac{dT}{dt}$
+$4. \textrm{ Something else?}$
 
 ---
 
