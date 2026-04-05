@@ -133,7 +133,7 @@ _All assignments are turned in using Gradescope as a single PDF._
 
 | **Week** | **Day**   | **Topic**                                 | **Readings to Prepare**       | **Important Events**                                                     |
 |:--------:|:---------:|:-----------------------------------------:|:-----------------------------|:------------------------------------------------------------------------|
-| CW15     | 6 Apr    | Introduction to Lagrangian Dynamics       | 📓 [12 - The Core Principle of Classical Mechanics? The Principle of Least Action](../lecture-notes/12_notes.ipynb)<br>📚 JRT 7.1-7.2, 7.5; MLB 9.5    | 📝 Homework 8 Assigned (Due 17 Apr) |
+| CW15     | 6 Apr    | Introduction to Lagrangian Dynamics       | 📓 [12 - The Core Principle of Classical Mechanics? The Principle of Least Action](../lecture-notes/12_notes.ipynb)<br>📚 JRT 7.1-7.2, 7.5; MLB 9.5    | 📝 [Homework 8 Assigned](../assignments/hw8.ipynb) (Due 17 Apr) |
 |          | 8 Apr    | Lagrangian Dynamics Examples Session      |                             |                                                                        |
 |          | 10 Apr    | Workshop Day                              |                             | 📥 **Midterm Project 2 Due**<br>**(Late after Sunday 11:59pm)**    |
 
