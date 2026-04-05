@@ -165,4 +165,4 @@ _All assignments are turned in using Gradescope as a single PDF._
 |:--------:|:---------:|:---------------------------------:|:-----------------------|:----------------------------------------------------------------------------|
 | CW18     | 27 Apr    | **FINALS WEEK**                   |                        | 🎉 **Final Project Video Presentation Due at 11:59pm** <br> *Send link to video<br>([MSU Mediaspace](https://mediaspace.msu.edu/) or YouTube unlisted)*                                                       |
 |          | 29 Apr    | **FINALS WEEK**                   |                        |                                                                             |
-|          | 1 May     | **FINALS WEEK**                   |                        |  🎉 **Final Project and Peer Reviews Due at 11:59pm** <br> *Turn in project single zip file on D2L*<br>*Peer reviews will use a form*                    |
+|          | 1 May     | **FINALS WEEK**                   |                        |  🎉 **Final Project Due at 11:59pm** <br> *Turn in project single zip file on D2L*                    |
