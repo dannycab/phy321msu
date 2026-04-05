@@ -225,7 +225,7 @@ How clearly and naturally you communicate your ideas in the video. This doesn't 
 |------|-----------|
 | 27 Feb | Midterm Project 1: First project update |
 | 10 Apr | Midterm Project 2: Second project update |
-| 13–17 Apr | **Schedule your appointment with Danny** — <https://cal.com/dannycaballero/phy-321-final-project-check-in-april-13-17> |
-| 20–24 Apr | Final project prep week (No Class -Danny out of town; meetings via Zoom) - **Schedule your appointment with Danny** — <https://cal.com/dannycaballero/phy-321-final-project-check-in-april-20-24> |
+| 13–17 Apr | **Schedule your appointment with Danny (in ET; 10am-4pm ET)**<br><https://cal.com/dannycaballero/phy-321-final-project-check-in-april-13-17> |
+| 20–24 Apr | *Final project prep week (No Class -Danny out of town; meetings via Zoom)*<br> **Schedule your appointment with Danny (in CET; 10am-9pm CET, 4am-3pm ET)**<br><https://cal.com/dannycaballero/phy-321-final-project-check-in-april-20-24> |
 | **27 Apr** | **Video Presentation Due at 11:59pm** — send link to video using D2L form |
 | **1 May** | **Computational Essay Due at 11:59pm** — submit zip file on D2L (can be submitted at the same time as presentation) |
