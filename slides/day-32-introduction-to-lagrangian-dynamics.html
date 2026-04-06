@@ -232,6 +232,27 @@
 
 
 
+<li class="toctree-l2"><a class="reference internal" href="../assignments/hw5.html">Homework 5 (Due 13 Mar)</a></li>
+
+
+
+<li class="toctree-l2"><a class="reference internal" href="../assignments/hw6.html">Homework 6 (Due 20 Mar)</a></li>
+
+
+
+<li class="toctree-l2"><a class="reference internal" href="../assignments/hw7.html">Homework 7 (Due 27 Mar)</a></li>
+
+
+
+<li class="toctree-l2"><a class="reference internal" href="../assignments/midterm2.html">Midterm 2 (Due 10 Apr)</a></li>
+
+
+
+<li class="toctree-l2"><a class="reference internal" href="../assignments/hw8.html">Homework 8 (Due 17 Apr)</a></li>
+
+
+
+<li class="toctree-l2"><a class="reference internal" href="../assignments/final_project.html">Final Project (Due May 1st; Video Due April 27th)</a></li>
 </ul>
 </details></li>
 </ul>
@@ -255,6 +276,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../resources/integrators.html">Numerical Integrators</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../resources/phase_diagrams.html">Plotting Phase Diagrams</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../resources/chaotic_dynamics.html">Modeling Chaotic Systems - Activity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/chaotic_dynamics-completed.html">Modeling Chaotic Systems - Completed</a></li>
 </ul>
 
     </div>
@@ -403,30 +425,22 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Day 32 - Introduction to Lagrangian Dynamics</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#announcements">Announcements</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#on-monday">On Monday</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#announcements">Announcements</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#newton-s-laws">Newton’s Laws</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#newton-s-laws-continued">Newton’s Laws (continued)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#newton-s-laws-expectations">Newton’s Laws Expectations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#newton-s-laws-in-plane-polar-coordinates">Newton’s Laws in Plane Polar Coordinates</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-32-1">Clicker Question 32-1</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-32-2">Clicker Question 32-2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-32-3">Clicker Question 32-3</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary-of-results">Summary of Results</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#euler-lagrange-equation">Euler-Lagrange Equation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-action-integral">The Action Integral</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-lagrangian">The Lagrangian</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-32-4">Clicker Question 32-4</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-32-5">Clicker Question 32-5</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-32-6">Clicker Question 32-6</a></li>
 </ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Announcements</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#next-week">Next Week</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#newton-s-laws">Newton’s Laws</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#newton-s-laws-expectations">Newton’s Laws Expectations</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#newton-s-laws-in-plane-polar-coordinates">Newton’s Laws in Plane Polar Coordinates</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-32-1">Clicker Question 32-1</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-32-2">Clicker Question 32-2</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-32-3">Clicker Question 32-3</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#summary-of-results">Summary of Results</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#euler-lagrange-equation">Euler-Lagrange Equation</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#the-action-integral">The Action Integral</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#the-lagrangian">The Lagrangian</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-32-4">Clicker Question 32-4</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-32-5">Clicker Question 32-5</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-32-6">Clicker Question 32-6</a></li>
-</ul>
-
             </nav>
         </div>
     </div>
@@ -437,70 +451,183 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="day-32-introduction-to-lagrangian-dynamics">
+  <style>
+  :root {
+    --color-spartan-green: #18453B;
+    --color-msu-gold: #C1B000;
+    --color-light-gray: #f5f5f5;
+    --color-dark-text: #1a1a1a;
+    --color-accent-green: #2d5f4f;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    color: var(--color-dark-text);
+  }
+  
+  h1, h2, h3 {
+    color: var(--color-spartan-green);
+    font-weight: 500;
+  }
+  
+  h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0rem;
+  }
+  
+  h2 {
+    font-size: 1.55rem;
+    margin-bottom: 1.0rem;
+    border-bottom: 4px solid var(--color-spartan-green);
+    padding-bottom: 0.5rem;
+  }
+  
+  h3 {
+    font-size: 1.15rem;
+    margin-top: 1rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  section {
+    padding: 2rem;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .equation {
+    background-color: var(--color-light-gray);
+    padding: 1.5rem;
+    border-left: 4px solid var(--color-msu-gold);
+    margin: 1.5rem 0;
+    font-size: 1.3rem;
+    text-align: center;
+    color: var(--color-dark-text);
+  }
+
+  p {
+    font-size: 1.15rem;
+    line-height: 1.4;
+    margin-bottom: 0.5rem;
+  }
+  
+  ul, ol {
+    font-size: 1.15rem;
+    line-height: 1.4;
+    margin-left: 0.5rem;
+  }
+
+  ul ul, ol ol, ul ol, ol ul {
+    margin-left: 0.1rem;
+  }
+  
+  li {
+    margin-bottom: 0rem;
+    line-height: 1.4;
+  }
+  
+  strong {
+    color: var(--color-spartan-green);
+    font-weight: 600;
+  }
+  
+  em {
+    color: var(--color-accent-green);
+  }
+
+  .highlight {
+    background-color: var(--color-light-gray);
+    padding: 1.5rem;
+    border-left: 4px solid var(--color-spartan-green);
+    margin: 1.5rem 0;
+  }
+
+  .activity {
+    background-color: #fff8e1;
+    border: 2px solid var(--color-msu-gold);
+    padding: 1.25rem;
+    border-radius: 6px;
+    margin: 1rem 0;
+  }
+
+  code {
+    background-color: var(--color-light-gray);
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-size: 1.0rem;
+  }
+
+  .footnote {
+    font-size: 0.8rem;
+    color: #999;
+    margin-top: 1.5rem;
+    border-top: 1px solid #ddd;
+    padding-top: 0.75rem;
+  }
+</style>
+<!--
+_class: title
+_backgroundColor: #ffffff
+_color: #18453B
+-->
+<section id="day-32-introduction-to-lagrangian-dynamics">
 <h1>Day 32 - Introduction to Lagrangian Dynamics<a class="headerlink" href="#day-32-introduction-to-lagrangian-dynamics" title="Link to this heading">#</a></h1>
 <p><img alt="bg right width:600px" src="../_images/newton-scared.jpg" /></p>
-</section>
 <hr class="docutils" />
 <section id="announcements">
-<h1>Announcements<a class="headerlink" href="#announcements" title="Link to this heading">#</a></h1>
-<section id="on-monday">
-<h2>On Monday<a class="headerlink" href="#on-monday" title="Link to this heading">#</a></h2>
+<h2>Announcements<a class="headerlink" href="#announcements" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p>Homework 8 will be posted (Last HW; Due Nov 21)</p></li>
-<li><p>Rubric for final project posted</p>
+<li><p>Homework 8 has been posted (Last HW; Due 17 Apr, “Late” 24 Apr)</p>
 <ul>
-<li><p>Week 12 - Intro to Lagrangian Dynamics</p></li>
-<li><p>Week 13 - Examples of Lagrangian Dynamics</p></li>
-<li><p>Week 14 - Project Prep (Thanksgiving week)</p></li>
-<li><p>Week 15 - Presentations (Last week of class)</p></li>
-<li><p>Week 16 - Computational Essay Due (Monday of Finals week)</p></li>
+<li><p>Last Exercise 0: Reflect Learning Outcomes</p></li>
+</ul>
+</li>
+<li><p>Final Project is posted</p>
+<ul>
+<li><p>Video Presentations due 27 Apr</p></li>
+<li><p>Computational Essay due 1 May</p></li>
+<li><p>Rubric for both are posted</p></li>
+</ul>
+</li>
+<li><p>No class (20 Apr - 24 Apr) - DC out of country</p>
+<ul>
+<li><p>Make appointment for project help (clicker extra credit)</p></li>
 </ul>
 </li>
 </ul>
-</section>
-</section>
-<hr class="docutils" />
-<section id="id1">
-<h1>Announcements<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
-<section id="next-week">
-<h2>Next Week<a class="headerlink" href="#next-week" title="Link to this heading">#</a></h2>
-<ul class="simple">
-<li><p>Monday and Wednesday: Introduction to Lagrangian Dynamics</p></li>
-<li><p>Friday (11/14): DC will be in classroom at 11:30a</p>
-<ul>
-<li><p>Hosting speaker &#64; 12:30p</p></li>
-<li><p>Classroom open from 11:30a-12:50p</p></li>
-<li><p>Second Midterm Help Session</p></li>
-</ul>
-</li>
-</ul>
-</section>
 </section>
 <hr class="docutils" />
 <section id="newton-s-laws">
-<h1>Newton’s Laws<a class="headerlink" href="#newton-s-laws" title="Link to this heading">#</a></h1>
+<h2>Newton’s Laws<a class="headerlink" href="#newton-s-laws" title="Link to this heading">#</a></h2>
 <p>We use Newton’s laws of motion to describe the dynamics of a system:</p>
 <ol class="arabic simple">
 <li><p><strong>First Law</strong>: An object at rest remains at rest, and an object in motion continues in motion with the same speed and in the same direction unless acted upon by a net external force.</p></li>
 <li><p><strong>Second Law</strong>: The acceleration of an object is directly proportional to the net force acting on it and inversely proportional to its mass. Mathematically, this is expressed as:
 $<span class="math notranslate nohighlight">\( \vec{F} = m \vec{a} \)</span>$</p></li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="newton-s-laws-continued">
+<h2>Newton’s Laws (continued)<a class="headerlink" href="#newton-s-laws-continued" title="Link to this heading">#</a></h2>
+<ol class="arabic simple" start="3">
 <li><p><strong>Third Law</strong>: For every action, there is an equal and opposite reaction. This means that if object A exerts a force on object B, then object B exerts a force of equal magnitude and opposite direction on object A.</p></li>
 </ol>
 </section>
 <hr class="docutils" />
 <section id="newton-s-laws-expectations">
-<h1>Newton’s Laws Expectations<a class="headerlink" href="#newton-s-laws-expectations" title="Link to this heading">#</a></h1>
+<h2>Newton’s Laws Expectations<a class="headerlink" href="#newton-s-laws-expectations" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>We can describe every interaction on a body using forces</p></li>
 <li><p>We can sum up all the forces vectorially in particular coordinate systems (Cartesian, polar, etc.)</p></li>
 <li><p>We can derive equations of motion for a system by applying Newton’s second law</p></li>
 </ul>
-<p>Sometimes, these expectations can be limiting, especially when dealing with complex systems or when forces are not easily identifiable.</p>
+<p><em>Sometimes, these expectations can be limiting, especially when dealing with complex systems or when forces are not easily identifiable.</em></p>
 </section>
 <hr class="docutils" />
 <section id="newton-s-laws-in-plane-polar-coordinates">
-<h1>Newton’s Laws in Plane Polar Coordinates<a class="headerlink" href="#newton-s-laws-in-plane-polar-coordinates" title="Link to this heading">#</a></h1>
+<h2>Newton’s Laws in Plane Polar Coordinates<a class="headerlink" href="#newton-s-laws-in-plane-polar-coordinates" title="Link to this heading">#</a></h2>
 <p>In plane polar coordinates (<span class="math notranslate nohighlight">\(r,\phi\)</span>), we can express Newton’s second law as follows:</p>
 <div class="math notranslate nohighlight">
 \[
@@ -518,33 +645,33 @@ $<span class="math notranslate nohighlight">\( \vec{F} = m \vec{a} \)</span>$</p
 </section>
 <hr class="docutils" />
 <section id="clicker-question-32-1">
-<h1>Clicker Question 32-1<a class="headerlink" href="#clicker-question-32-1" title="Link to this heading">#</a></h1>
-<p><img alt="bg right width:600px" src="../_images/coordinate-system.png" /></p>
+<h2>Clicker Question 32-1<a class="headerlink" href="#clicker-question-32-1" title="Link to this heading">#</a></h2>
+<p><img alt="bg right:40% width:500px" src="../_images/coordinate-system.png" /></p>
 <p>The appropriate definition of the <span class="math notranslate nohighlight">\(\hat{r}\)</span> vector using Cartesian coordinates (<span class="math notranslate nohighlight">\(x,y\)</span>) is:</p>
 <ol class="arabic simple">
-<li><p><span class="math notranslate nohighlight">\(\hat{r} = \left( \cos(\phi), \sin(\phi) \right)\)</span></p></li>
-<li><p><span class="math notranslate nohighlight">\(\hat{r} = \left( \sin(\phi), \cos(\phi) \right)\)</span></p></li>
-<li><p><span class="math notranslate nohighlight">\(\hat{r} = \left(-\sin(\phi), \cos(\phi) \right)\)</span></p></li>
-<li><p><span class="math notranslate nohighlight">\(\hat{r} = \left( \cos(\phi), -\sin(\phi) \right)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\hat{r} = \langle  \cos(\phi), \sin(\phi) \rangle\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\hat{r} = \langle  \sin(\phi), \cos(\phi) \rangle\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\hat{r} = \langle -\sin(\phi), \cos(\phi) \rangle\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\hat{r} = \langle  \cos(\phi), -\sin(\phi) \rangle\)</span></p></li>
 <li><p>None of the above.</p></li>
 </ol>
 </section>
 <hr class="docutils" />
 <section id="clicker-question-32-2">
-<h1>Clicker Question 32-2<a class="headerlink" href="#clicker-question-32-2" title="Link to this heading">#</a></h1>
-<p><img alt="bg right width:600px" src="../_images/coordinate-system.png" /></p>
+<h2>Clicker Question 32-2<a class="headerlink" href="#clicker-question-32-2" title="Link to this heading">#</a></h2>
+<p><img alt="bg right:40% width:500px" src="../_images/coordinate-system.png" /></p>
 <p>The appropriate definition of the <span class="math notranslate nohighlight">\(\hat{\phi}\)</span> vector using Cartesian coordinates (<span class="math notranslate nohighlight">\(x,y\)</span>) is:</p>
 <ol class="arabic simple">
-<li><p><span class="math notranslate nohighlight">\(\hat{\phi} = \left( \cos(\phi), \sin(\phi) \right)\)</span></p></li>
-<li><p><span class="math notranslate nohighlight">\(\hat{\phi} = \left( \sin(\phi), \cos(\phi) \right)\)</span></p></li>
-<li><p><span class="math notranslate nohighlight">\(\hat{\phi} = \left(-\sin(\phi), \cos(\phi) \right)\)</span></p></li>
-<li><p><span class="math notranslate nohighlight">\(\hat{\phi} = \left( \cos(\phi), -\sin(\phi) \right)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\hat{\phi} = \langle  \cos(\phi), \sin(\phi) \rangle\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\hat{\phi} = \langle  \sin(\phi), \cos(\phi) \rangle\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\hat{\phi} = \langle -\sin(\phi), \cos(\phi) \rangle\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\hat{\phi} = \langle  \cos(\phi), -\sin(\phi) \rangle\)</span></p></li>
 <li><p>None of the above.</p></li>
 </ol>
 </section>
 <hr class="docutils" />
 <section id="clicker-question-32-3">
-<h1>Clicker Question 32-3<a class="headerlink" href="#clicker-question-32-3" title="Link to this heading">#</a></h1>
+<h2>Clicker Question 32-3<a class="headerlink" href="#clicker-question-32-3" title="Link to this heading">#</a></h2>
 <p>We need to take the derivative of <span class="math notranslate nohighlight">\(\hat{r}\)</span> with respect to time. Why should we do this in Cartesian coordinates?</p>
 <ol class="arabic simple">
 <li><p>The Cartesian coordinates are easier to work with for derivatives.</p></li>
@@ -556,7 +683,7 @@ $<span class="math notranslate nohighlight">\( \vec{F} = m \vec{a} \)</span>$</p
 </section>
 <hr class="docutils" />
 <section id="summary-of-results">
-<h1>Summary of Results<a class="headerlink" href="#summary-of-results" title="Link to this heading">#</a></h1>
+<h2>Summary of Results<a class="headerlink" href="#summary-of-results" title="Link to this heading">#</a></h2>
 <p>With <span class="math notranslate nohighlight">\(\vec{r} = r \hat{r}\)</span>,</p>
 <div class="math notranslate nohighlight">
 \[\vec{v} = \dot{\vec{r}} = \dot{r} \hat{r} + r \dot{\phi} \hat{\phi}\]</div>
@@ -573,7 +700,7 @@ $<span class="math notranslate nohighlight">\( \vec{F} = m \vec{a} \)</span>$</p
 </section>
 <hr class="docutils" />
 <section id="euler-lagrange-equation">
-<h1>Euler-Lagrange Equation<a class="headerlink" href="#euler-lagrange-equation" title="Link to this heading">#</a></h1>
+<h2>Euler-Lagrange Equation<a class="headerlink" href="#euler-lagrange-equation" title="Link to this heading">#</a></h2>
 <p>We found that certain kinds of optimization problems involving functionals could be solved using the <strong>Euler-Lagrange equation</strong>. This equation provides a powerful method to derive the equations of motion for a system based on an action principle.</p>
 <p>The Euler-Lagrange equation is given by:</p>
 <div class="math notranslate nohighlight">
@@ -584,7 +711,7 @@ $<span class="math notranslate nohighlight">\( \vec{F} = m \vec{a} \)</span>$</p
 </section>
 <hr class="docutils" />
 <section id="the-action-integral">
-<h1>The Action Integral<a class="headerlink" href="#the-action-integral" title="Link to this heading">#</a></h1>
+<h2>The Action Integral<a class="headerlink" href="#the-action-integral" title="Link to this heading">#</a></h2>
 <p>The action integral is central to Lagrangian dynamics. The action <span class="math notranslate nohighlight">\(S\)</span> is defined as the integral of a <strong>functional</strong> <span class="math notranslate nohighlight">\(L(q,\dot{q},t)\)</span> over time:</p>
 <div class="math notranslate nohighlight">
 \[
@@ -596,12 +723,12 @@ S = \int_{t_1}^{t_2} \mathcal{L}(q, \dot{q}, t) \, dt
 <li><p><span class="math notranslate nohighlight">\(\dot{q}\)</span> represents the <strong>generalized velocities</strong> (time derivatives of <span class="math notranslate nohighlight">\(q\)</span>),</p></li>
 <li><p><span class="math notranslate nohighlight">\(t\)</span> represents time.</p></li>
 </ul>
-<p><strong>Hamilton’s Principle:</strong> The path the system takes <strong>minimizes (or extremizes) the action <span class="math notranslate nohighlight">\(S\)</span></strong>.</p>
+<p><strong>Hamilton’s Principle:</strong> The path the system takes <strong>extremizes the action <span class="math notranslate nohighlight">\(S\)</span></strong>.</p>
 </section>
 <hr class="docutils" />
 <section id="the-lagrangian">
-<h1>The Lagrangian<a class="headerlink" href="#the-lagrangian" title="Link to this heading">#</a></h1>
-<p>The Lagrangian <span class="math notranslate nohighlight">\(\mathcal{L}\)</span> is a function that summarizes the dynamics of the system. It is typically defined as:</p>
+<h2>The Lagrangian<a class="headerlink" href="#the-lagrangian" title="Link to this heading">#</a></h2>
+<p>The Lagrangian <span class="math notranslate nohighlight">\(\mathcal{L}\)</span> is a function that summarizes the dynamics of the system:</p>
 <div class="math notranslate nohighlight">
 \[
 \mathcal{L}(q, \dot{q}, t) = T - V
@@ -611,7 +738,7 @@ S = \int_{t_1}^{t_2} \mathcal{L}(q, \dot{q}, t) \, dt
 <li><p><span class="math notranslate nohighlight">\(T\)</span> is the <strong>kinetic energy</strong> of the system (depends on <strong>gen. vel.</strong>, <span class="math notranslate nohighlight">\(\dot{q}\)</span>),</p></li>
 <li><p><span class="math notranslate nohighlight">\(V\)</span> is the <strong>potential energy</strong> of the system (depends on <strong>gen. pos.</strong>, <span class="math notranslate nohighlight">\(q\)</span>).</p></li>
 </ul>
-<p>The equation of motion is recovered by applying the Euler-Lagrange equation to the Lagrangian (minimizing the action integral).</p>
+<p>The equation of motion is recovered by applying the Euler-Lagrange equation to the Lagrangian (<em>minimizing the action integral</em>).</p>
 <div class="math notranslate nohighlight">
 \[
 \frac{d}{dt}\left(\frac{\partial \mathcal{L}}{\partial \dot{q}}\right) - \frac{\partial \mathcal{L}}{\partial q} = 0
@@ -619,7 +746,7 @@ S = \int_{t_1}^{t_2} \mathcal{L}(q, \dot{q}, t) \, dt
 </section>
 <hr class="docutils" />
 <section id="clicker-question-32-4">
-<h1>Clicker Question 32-4<a class="headerlink" href="#clicker-question-32-4" title="Link to this heading">#</a></h1>
+<h2>Clicker Question 32-4<a class="headerlink" href="#clicker-question-32-4" title="Link to this heading">#</a></h2>
 <p>For a 1D SHO, the kinetic and potential energy are given by:</p>
 <div class="math notranslate nohighlight">
 \[
@@ -636,7 +763,7 @@ T = \frac{1}{2} m \dot{x}^2 \quad \text{and} \quad V = \frac{1}{2} k x^2
 </section>
 <hr class="docutils" />
 <section id="clicker-question-32-5">
-<h1>Clicker Question 32-5<a class="headerlink" href="#clicker-question-32-5" title="Link to this heading">#</a></h1>
+<h2>Clicker Question 32-5<a class="headerlink" href="#clicker-question-32-5" title="Link to this heading">#</a></h2>
 <p>For the plane pendulum, with <span class="math notranslate nohighlight">\(\mathcal{L}(x, \dot{x}, y, \dot{y}, t) = \frac{1}{2} m \left( \dot{x}^2 + \dot{y}^2 \right) - mgy\)</span></p>
 <p>We found:</p>
 <div class="math notranslate nohighlight">
@@ -651,7 +778,7 @@ T = \frac{1}{2} m \dot{x}^2 \quad \text{and} \quad V = \frac{1}{2} k x^2
 </section>
 <hr class="docutils" />
 <section id="clicker-question-32-6">
-<h1>Clicker Question 32-6<a class="headerlink" href="#clicker-question-32-6" title="Link to this heading">#</a></h1>
+<h2>Clicker Question 32-6<a class="headerlink" href="#clicker-question-32-6" title="Link to this heading">#</a></h2>
 <p>For the plane pendulum, we changed the Lagrangian from Cartesian coordinates to plane polar coordinates. In Cartesian, we found the Lagrangian depended on <span class="math notranslate nohighlight">\(y,\dot{x},\dot{y}\)</span>. In polar, it only depended on <span class="math notranslate nohighlight">\(\phi\)</span> and <span class="math notranslate nohighlight">\(\dot{\phi}\)</span>.</p>
 <div class="math notranslate nohighlight">
 \[\mathcal{L}(x,y,\dot{y}) \longrightarrow \mathcal{L}(\phi, \dot{\phi})\]</div>
@@ -661,6 +788,7 @@ T = \frac{1}{2} m \dot{x}^2 \quad \text{and} \quad V = \frac{1}{2} k x^2
 <li><p>described by two spatial dimensions (<span class="math notranslate nohighlight">\(x,y\)</span>), so it’s 2D.</p></li>
 <li><p>described by one spatial dimension (<span class="math notranslate nohighlight">\(\phi\)</span>), so it’s 1D.</p></li>
 </ol>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -709,30 +837,22 @@ T = \frac{1}{2} m \dot{x}^2 \quad \text{and} \quad V = \frac{1}{2} k x^2
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Day 32 - Introduction to Lagrangian Dynamics</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#announcements">Announcements</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#on-monday">On Monday</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#announcements">Announcements</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#newton-s-laws">Newton’s Laws</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#newton-s-laws-continued">Newton’s Laws (continued)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#newton-s-laws-expectations">Newton’s Laws Expectations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#newton-s-laws-in-plane-polar-coordinates">Newton’s Laws in Plane Polar Coordinates</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-32-1">Clicker Question 32-1</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-32-2">Clicker Question 32-2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-32-3">Clicker Question 32-3</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary-of-results">Summary of Results</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#euler-lagrange-equation">Euler-Lagrange Equation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-action-integral">The Action Integral</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-lagrangian">The Lagrangian</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-32-4">Clicker Question 32-4</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-32-5">Clicker Question 32-5</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-32-6">Clicker Question 32-6</a></li>
 </ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Announcements</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#next-week">Next Week</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#newton-s-laws">Newton’s Laws</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#newton-s-laws-expectations">Newton’s Laws Expectations</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#newton-s-laws-in-plane-polar-coordinates">Newton’s Laws in Plane Polar Coordinates</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-32-1">Clicker Question 32-1</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-32-2">Clicker Question 32-2</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-32-3">Clicker Question 32-3</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#summary-of-results">Summary of Results</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#euler-lagrange-equation">Euler-Lagrange Equation</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#the-action-integral">The Action Integral</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#the-lagrangian">The Lagrangian</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-32-4">Clicker Question 32-4</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-32-5">Clicker Question 32-5</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#clicker-question-32-6">Clicker Question 32-6</a></li>
-</ul>
-
   </nav></div>
 
 </div></div>

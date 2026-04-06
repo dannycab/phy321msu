@@ -4,12 +4,135 @@ theme: graph_paper
 paginate: true
 
 title: Day 33 - Lagrangian Examples
-description: Slides for PHY 321 Spring 2025, Day 33: Lagrangian Examples
+description: Slides for PHY 321 Spring 2026, Day 33: Lagrangian Examples
 author: Prof. Danny Caballero <caball14@msu.edu>
 keywords: classical mechanics, differential equations, Lagrangian, examples
 url: https://dannycaballero.info/phy321msu/slides/day-33-lagrangian-examples.html
 
 ---
+
+<style>
+  :root {
+    --color-spartan-green: #18453B;
+    --color-msu-gold: #C1B000;
+    --color-light-gray: #f5f5f5;
+    --color-dark-text: #1a1a1a;
+    --color-accent-green: #2d5f4f;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    color: var(--color-dark-text);
+  }
+  
+  h1, h2, h3 {
+    color: var(--color-spartan-green);
+    font-weight: 500;
+  }
+  
+  h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0rem;
+  }
+  
+  h2 {
+    font-size: 1.55rem;
+    margin-bottom: 1.0rem;
+    border-bottom: 4px solid var(--color-spartan-green);
+    padding-bottom: 0.5rem;
+  }
+  
+  h3 {
+    font-size: 1.15rem;
+    margin-top: 1rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  section {
+    padding: 2rem;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .equation {
+    background-color: var(--color-light-gray);
+    padding: 1.5rem;
+    border-left: 4px solid var(--color-msu-gold);
+    margin: 1.5rem 0;
+    font-size: 1.3rem;
+    text-align: center;
+    color: var(--color-dark-text);
+  }
+
+  p {
+    font-size: 1.15rem;
+    line-height: 1.4;
+    margin-bottom: 0.5rem;
+  }
+  
+  ul, ol {
+    font-size: 1.15rem;
+    line-height: 1.4;
+    margin-left: 0.5rem;
+  }
+
+  ul ul, ol ol, ul ol, ol ul {
+    margin-left: 0.1rem;
+  }
+  
+  li {
+    margin-bottom: 0rem;
+    line-height: 1.4;
+  }
+  
+  strong {
+    color: var(--color-spartan-green);
+    font-weight: 600;
+  }
+  
+  em {
+    color: var(--color-accent-green);
+  }
+
+  .highlight {
+    background-color: var(--color-light-gray);
+    padding: 1.5rem;
+    border-left: 4px solid var(--color-spartan-green);
+    margin: 1.5rem 0;
+  }
+
+  .activity {
+    background-color: #fff8e1;
+    border: 2px solid var(--color-msu-gold);
+    padding: 1.25rem;
+    border-radius: 6px;
+    margin: 1rem 0;
+  }
+
+  code {
+    background-color: var(--color-light-gray);
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-size: 1.0rem;
+  }
+
+  .footnote {
+    font-size: 0.8rem;
+    color: #999;
+    margin-top: 1.5rem;
+    border-top: 1px solid #ddd;
+    padding-top: 0.75rem;
+  }
+</style>
+
+<!--
+_class: title
+_backgroundColor: #ffffff
+_color: #18453B
+-->
 
 # Day 33 - Lagrangian Examples
 
@@ -17,52 +140,22 @@ url: https://dannycaballero.info/phy321msu/slides/day-33-lagrangian-examples.htm
 
 ---
 
-# Announcements
+## Announcements
 
-## Assignments
-* Homework 8 is posted (Last HW; Due Nov 21)
-* Rubric for final project is posted
-
----
-
-# Announcements
-
-## Rest of Semester Schedule
-* Week 12 - Intro to Lagrangian Dynamics
-* Week 13 - Examples of Lagrangian Dynamics
-* Week 14 - Project Prep (Thanksgiving week)
-* Week 15 - Presentations (Last week of class)
-* Week 16 - Computational Essay Due (Monday of Finals week)
-
-### NO IN-CLASS FINAL EXAM
+* Homework 8 has been posted (Last HW; Due 17 Apr, "Late" 24 Apr)
+    * Last Exercise 0: Reflect Learning Outcomes
+* Final Project is posted
+    * Video Presentations due 27 Apr
+    * Computational Essay due 1 May
+    * Rubric for both are posted
+* No class (20 Apr - 24 Apr) - DC out of country
+    * Make appointment for project help (clicker extra credit)
 
 ---
 
-# Announcements
+## Reminder: The Lagrangian
 
-* **Friday (11/14) Class**: DC will be in classroom at 11:30a 
-    * Hosting speaker @ 12:30p
-    * Classroom open from 11:30a-12:50p
-    * Second Midterm Help Session
-* **Friday (11/14) Office Hours**: 2:00-3:00p (shortened due to committee meeting)
-
----
-
-# Quick question
-
-A former PHY 321 student would like to survey you about generative AI as he is helping to develop guidelines for MSU. Would you be willing to fill out a quick survey next week?
-
-1. Sure
-2. No thanks
-3. Maybe
-
-FWIW, it's not going to take more than 5-10 minutes.
-
----
-
-# Reminder: The Lagrangian
-
-The Lagrangian $\mathcal{L}$ is a function that summarizes the dynamics of the system. It is typically defined as:
+The Lagrangian $\mathcal{L}$ is a function that summarizes the dynamics of the system:
 
 $$
 \mathcal{L}(q, \dot{q}, t) = T - V
@@ -72,7 +165,7 @@ where:
 - $T$ is the **kinetic energy** of the system (depends on **gen. vel.**, $\dot{q}$),
 - $V$ is the **potential energy** of the system (depends on **gen. pos.**, $q$).
 
-The equation of motion is recovered by applying the Euler-Lagrange equation to the Lagrangian (minimizing the action integral).
+The equation of motion is recovered by applying the Euler-Lagrange equation to the Lagrangian (*minimizing the action integral*).
 
 $$
 \frac{d}{dt}\left(\frac{\partial \mathcal{L}}{\partial \dot{q}}\right) - \frac{\partial \mathcal{L}}{\partial q} = 0
@@ -80,7 +173,7 @@ $$
 
 ---
 
-# Clicker Question 33-1
+## Clicker Question 33-1
 
 For a 1D SHO, the kinetic and potential energy are given by:
 
@@ -98,7 +191,7 @@ What are the derivatives of the Lagrangian $\mathcal{L} = T - V$ with respect to
 
 ---
 
-# Clicker Question 33-2
+## Clicker Question 33-2
 
 For the plane pendulum, with $\mathcal{L}(x, \dot{x}, y, \dot{y}, t) = \frac{1}{2} m \left( \dot{x}^2 + \dot{y}^2 \right) - mgy$
 
@@ -115,7 +208,7 @@ Does that seem right?
 
 ---
 
-# Clicker Question 33-3
+## Clicker Question 33-3
 
 For the plane pendulum, we changed the Lagrangian from Cartesian coordinates to plane polar coordinates. In Cartesian, we found the Lagrangian depended on $y,\dot{x},\dot{y}$. In polar, it only depended on $\phi$ and $\dot{\phi}$.
 
@@ -129,13 +222,11 @@ What does that tell you about the dimensions of the system? The system is:
 
 ---
 
-# We chose our generalized coordinates poorly
+## We chose our generalized coordinates poorly
 
 We used the Lagrangian formalism to derive the equations of motion for a plane pendulum. We chose the $x$ and $y$ coordinates.
 
-$$T(\dot{x}, \dot{y}) = \dfrac{1}{2} m (\dot{x}^2 + \dot{y}^2) \quad V(y) = mgy$$
-
-$$\mathcal{L} = T - V = \dfrac{1}{2} m (\dot{x}^2 + \dot{y}^2) - mgy$$
+$$T(\dot{x}, \dot{y}) = \dfrac{1}{2} m (\dot{x}^2 + \dot{y}^2), \quad V(y) = mgy \longrightarrow \mathcal{L} = T - V = \dfrac{1}{2} m (\dot{x}^2 + \dot{y}^2) - mgy$$
 
 This gave us the following derivatives for the Lagrangian:
 
@@ -144,7 +235,7 @@ $$\frac{\partial \mathcal{L}}{\partial y} = -mg \quad \frac{d}{dt} \left( \frac{
 
 ---
 
-# We made a mistake by not including the constraint
+## We made a mistake by not including the constraint
 
 We made a mistake by not including the constraint $x^2 + y^2 = L^2$ in our Lagrangian.
 
@@ -154,6 +245,10 @@ $$x = r \cos(\phi) \quad y = r \sin(\phi)$$
 $$T(\dot{x}, \dot{y}) = \dfrac{1}{2} m (\dot{x}^2 + \dot{y}^2) = \dfrac{1}{2} m \left( r^2 \dot{\phi}^2 + 2r\dot{r}\dot{\phi} + \dot{r}^2 \right) = T(r, \dot{r}, \phi, \dot{\phi})$$
 $$V(y) = mgy = mg r \sin(\phi) = V(r, \phi)$$
 
+---
+
+## We made a mistake by not including the constraint
+
 Now we include the constraint $r = L$, so that $\dot{r} = 0$.
 
 $$T(\phi, \dot{\phi}) = \dfrac{1}{2} m L^2 \dot{\phi}^2 \quad V(\phi) = mgL \cos(\phi)$$
@@ -162,7 +257,7 @@ $$\mathcal{L} = \dfrac{1}{2} m L^2 \dot{\phi}^2 - mgL \cos(\phi)$$
 
 ---
 
-# Clicker Question 33-4
+## Clicker Question 33-4
 
 For the plane pendulum, we changed the Lagrangian from Cartesian coordinates to plane polar coordinates. In Cartesian, we found the Lagrangian depended on $y,\dot{x},\dot{y}$. In polar, it only depended on $\phi$ and $\dot{\phi}$.
 
@@ -176,7 +271,7 @@ What does that tell you about the dimensions of the system? The system is:
 
 ---
 
-# Clicker Question 33-5
+## Clicker Question 33-5
 
 With $\mathcal{L} = \dfrac{1}{2} m L^2 \dot{\phi}^2 - mgL \cos(\phi)$, we can find the equations of motion. 
 
@@ -184,31 +279,27 @@ $$\dfrac{\partial \mathcal{L}}{\partial \phi} - \dfrac{d}{dt} \left( \dfrac{\par
 
 Which of the following equations of motion is correct?
 
-1. $\ddot{\phi} = -\frac{g}{L} \sin(\phi)$
-2. $\ddot{\phi} = -\frac{g}{L} \cos(\phi)$
-3. $\ddot{\phi} = -\sqrt{\frac{g}{L} \sin(\phi)}$
-4. $\ddot{\phi} = -\sqrt{\frac{g}{L} \cos(\phi)}$
-5. None of these
+$1.\quad \ddot{\phi} = -\frac{g}{L} \sin(\phi) \qquad 2. \quad \ddot{\phi} = -\frac{g}{L} \cos(\phi)$
+$3.\quad \ddot{\phi} = -\sqrt{\frac{g}{L} \sin(\phi)} \qquad 4.\quad \ddot{\phi} = -\sqrt{\frac{g}{L} \cos(\phi)}$
+$5.\quad \textrm{None of these}$
 
 ---
 
-# Clicker Question 33-6
+## Clicker Question 33-6
 
 For the Atwood's machine, $M$ is connected to $m$ by a string of length $l$. Each mass has a length of string extended as measured from the center of the pulley ($R$) of $y_1$ and $y_2$, respectively. The string wraps around half the pulley. 
 
 Which of the following represents the equation of constraint for the system?
 
-1. $y_1 + y_2 = l - R \phi$
-2. $y_1 - y_2 = l + R \phi$
-3. $y_1 + y_2 = l - \pi R$
-4. $y_1 - y_2 = l + \pi R$
-5. None of these
+$1. \quad y_1 + y_2 = l - R \phi \qquad 2. \quad y_1 - y_2 = l + R \phi$
+$3. \quad y_1 + y_2 = l - \pi R \qquad 4. \quad y_1 - y_2 = l + \pi R$
+$5. \quad \textrm{None of these}$
 
 **Take the time derivative of the constraint equation.** What do you notice?
 
 ---
 
-# Clicker Question 33-7
+## Clicker Question 33-7
 
 With a Lagrangian of the form $\mathcal{L} = \frac{1}{2}(M+m)\dot{y}^2_1 - (M-m)gy_1$, we can find the **generalized forces** and **generalized momenta**.
 
@@ -216,30 +307,27 @@ $$F_{y_1} = \frac{\partial \mathcal{L}}{\partial y_1} = -\frac{\partial V}{\part
 
 What are $F_{y_1}$ and $p_{y_1}$ for the Atwood's machine?
 
-1. $F_{y_1} = -mg$ and $p_{y_1} = m\dot{y}_1$
-2. $F_{y_1} = -Mgy_1$ and $p_{y_1} = M\dot{y}_1$
-3. $F_{y_1} = -(M-m)g$ and $p_{y_1} = (M+m)\dot{y}_1$
-4. $F_{y_1} = -(M+m)g$ and $p_{y_1} = (M-m)\dot{y}_1$
-5. None of these
+$1. \quad F_{y_1} = -mg \textrm{ and } p_{y_1} = m\dot{y}_1 \qquad 2. \quad F_{y_1} = -Mgy_1 \textrm{ and } p_{y_1} = M\dot{y}_1$
+$3. \quad F_{y_1} = -(M-m)g \textrm{ and } p_{y_1} = (M+m)\dot{y}_1$
+$4. \quad F_{y_1} = -(M+m)g \textrm{ and } p_{y_1} = (M-m)\dot{y}_1$
+$5. \quad \textrm{None of these}$
 
 ---
 
-# Clicker Question 33-8
+## Clicker Question 33-8
 
 Now, we allow the pulley (mass, $M_p$) to rotate. The Lagrangian is given by:
 $$\mathcal{L} = \frac{1}{2}(M+m)\dot{y}_1^2 + \frac{1}{2}I\dot{\phi}^2 - (M-m)gy_1$$
 
 Where $I$ is the moment of inertia of the pulley. What is the moment of inertia of the pulley?
 
-1. $I = \frac{1}{2}M_pR^2$
-2. $I = \frac{1}{3}M_pR^2$
-3. $I = M_pR^2$
-4. $I = \frac{1}{4}M_pR^2$
-5. None of these
+$1. \quad I = \frac{1}{2}M_pR^2 \qquad 2. \quad I = \frac{1}{3}M_pR^2$
+$3. \quad I = M_pR^2 \qquad 4. \quad I = \frac{1}{4}M_pR^2$
+$5. \quad \textrm{None of these}$
 
 ---
 
-# Clicker Question 33-9
+## Clicker Question 33-9
 
 The rope moves without slipping on the pulley. A rotation of $R d\phi$ corresponds to a displacement of $dy_1$ for the first mass, $M$. What is the **new** equation of constraint for the system?
 
