@@ -138,6 +138,16 @@ _color: #18453B
 
 ![bg right width:500px](../images/notes/week13/lion-lagrange.jpg)
 
+
+---
+
+## Interview Study - GenAI
+
+- **Basma AlMahmood** is a PER PhD student at MSU. 
+- She is doing research on how students use generative AI in their (astro)physics classes.
+- She is piloting an interview protocol to understand how students are using generative AI in their (astro)physics classes.
+![bg right:45% width:500px](../images/qrcodes/basma-interview.png)
+
 ---
 
 ## Announcements
