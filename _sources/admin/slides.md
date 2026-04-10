@@ -80,20 +80,20 @@ Slides for PHY 321 appear in reverse chronological order, with the most recent s
 
 :::
 
----
+--- --->
 
 ## Day 34 - Help Session  - 14 Nov 2025
 
-[![Day 34](../slides/day-34-homework-session.png)](../slides/day-34-homework-session.pdf)
+[![Day 34](../slides/day-34-help-session.png)](../slides/day-34-help-session.pdf)
 
 :::info
 
 ### 📂 Download Slides
-[HTML](../slides/day-34-homework-session.md) | [PDF](../slides/day-34-homework-session.pdf)
+[HTML](../slides/day-34-help-session.md) | [PDF](../slides/day-34-help-session.pdf)
 
 :::
 
---- --->
+--- 
 
 ## Day 33 - Lagrangian Examples  - 9 Apr 2026
 
