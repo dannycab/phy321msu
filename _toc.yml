@@ -65,3 +65,4 @@ parts:
       - file: resources/phase_diagrams
       - file: resources/chaotic_dynamics
       - file: resources/chaotic_dynamics-completed
+      - file: resources/poincare-sections
