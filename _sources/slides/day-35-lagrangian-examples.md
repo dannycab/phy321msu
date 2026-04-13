@@ -11,85 +11,281 @@ url: https://dannycaballero.info/phy321msu/slides/day-35-lagrangian-examples.htm
 
 ---
 
+<style>
+  :root {
+    --color-spartan-green: #18453B;
+    --color-msu-gold: #C1B000;
+    --color-light-gray: #f5f5f5;
+    --color-dark-text: #1a1a1a;
+    --color-accent-green: #2d5f4f;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    color: var(--color-dark-text);
+  }
+  
+  h1, h2, h3 {
+    color: var(--color-spartan-green);
+    font-weight: 500;
+  }
+  
+  h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0rem;
+  }
+  
+  h2 {
+    font-size: 1.55rem;
+    margin-bottom: 1.0rem;
+    border-bottom: 4px solid var(--color-spartan-green);
+    padding-bottom: 0.5rem;
+  }
+  
+  h3 {
+    font-size: 1.15rem;
+    margin-top: 1rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  section {
+    padding: 2rem;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .equation {
+    background-color: var(--color-light-gray);
+    padding: 1.5rem;
+    border-left: 4px solid var(--color-msu-gold);
+    margin: 1.5rem 0;
+    font-size: 1.3rem;
+    text-align: center;
+    color: var(--color-dark-text);
+  }
+
+  p {
+    font-size: 1.15rem;
+    line-height: 1.4;
+    margin-bottom: 0.5rem;
+  }
+  
+  ul, ol {
+    font-size: 1.15rem;
+    line-height: 1.4;
+    margin-left: 0.5rem;
+  }
+
+  ul ul, ol ol, ul ol, ol ul {
+    margin-left: 0.1rem;
+  }
+  
+  li {
+    margin-bottom: 0rem;
+    line-height: 1.4;
+  }
+  
+  strong {
+    color: var(--color-spartan-green);
+    font-weight: 600;
+  }
+  
+  em {
+    color: var(--color-accent-green);
+  }
+
+  .highlight {
+    background-color: var(--color-light-gray);
+    padding: 1.5rem;
+    border-left: 4px solid var(--color-spartan-green);
+    margin: 1.5rem 0;
+  }
+
+  .activity {
+    background-color: #fff8e1;
+    border: 2px solid var(--color-msu-gold);
+    padding: 1.25rem;
+    border-radius: 6px;
+    margin: 1rem 0;
+  }
+
+  code {
+    background-color: var(--color-light-gray);
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-size: 1.0rem;
+  }
+
+  .footnote {
+    font-size: 0.8rem;
+    color: #999;
+    margin-top: 1.5rem;
+    border-top: 1px solid #ddd;
+    padding-top: 0.75rem;
+  }
+</style>
+
+<!--
+_class: title
+_backgroundColor: #ffffff
+_color: #18453B
+-->
+
 # Day 35 - Lagrangian Examples II
 
 ![bg right width:500px](../images/notes/week13/lagrange-pooh.jpeg)
 
 ---
 
-# Announcements
+## Announcements
 
-* Last "Class" Week
-* Homework 8 due Friday, Nov 21st (late after Nov 26th)
-* Next Week: Project Work and Discussion
-* Last Week: Presentations
-* Final Project Due Dec 8th (no later than 11:59 pm)
-* **No Final Exam**
-
----
-
-# Complete Google Form
-
-## By November 21st
-
-Reporting your group members for the final project and a short summary of your project idea for sharing with the class.
-
-<https://forms.gle/iPKR9EDAaHW3GirN7>
-
-![bg left width:350px](../images/notes/week13/group_form_qr.png)
+* Homework 8 is "Late" 24 Apr
+    * Last Exercise 0: Reflect Learning Outcomes
+* Final Project is posted
+    * Video Presentations due 27 Apr
+    * Computational Essay due 1 May
+    * Rubric for both are posted
+* No class (20 Apr - 24 Apr) - DC out of country
+    * Make appointment for project help (clicker extra credit)
 
 ---
 
-## Reminders
+## Announcements
 
-We used the Lagrangian formalism to derive the equations of motion for a plane pendulum. We chose the $x$ and $y$ coordinates.
+### Rest of Semester Schedule
+* CW16 - Examples of Lagrangian Dynamics (HW8)
+* CW17 - Project Prep (DC out of country)
+* CW18 - Final Project Due
+    * Video Presentations due 27 Apr
+    * Computational Essay due 1 May
 
-$$T(\dot{x}, \dot{y}) = \dfrac{1}{2} m (\dot{x}^2 + \dot{y}^2) \quad V(y) = mgy$$
-
-$$\mathcal{L} = T - V = \dfrac{1}{2} m (\dot{x}^2 + \dot{y}^2) - mgy$$
-
-This gave us the following derivatives for the Lagrangian:
-
-$$\frac{\partial \mathcal{L}}{\partial x} = 0 \quad \frac{d}{dt} \left( \frac{\partial \mathcal{L}}{\partial \dot{x}} \right) = \frac{d}{dt} \left( m\dot{x} \right) = 0$$
-$$\frac{\partial \mathcal{L}}{\partial y} = -mg \quad \frac{d}{dt} \left( \frac{\partial \mathcal{L}}{\partial \dot{y}} \right) = -m\ddot{y}$$
+### NO IN-CLASS FINAL EXAM
 
 ---
 
-# We made a mistake by not including the constraint
 
-We made a mistake by not including the constraint $x^2 + y^2 = L^2$ in our Lagrangian.
+## Clicker Question 35-1a
 
-We can change variables to $r$ and $\phi$.
-$$x = r \cos(\phi) \quad y = r \sin(\phi)$$
+For a hypothetical system, we have the Lagrangian that depends on two generalized coordinates, $\mathcal{L}(\rho,\phi, \dot{\rho},\dot{\phi})$. 
 
-$$T(\dot{x}, \dot{y}) = \dfrac{1}{2} m (\dot{x}^2 + \dot{y}^2) = \dfrac{1}{2} m \left( r^2 \dot{\phi}^2 + 2r\dot{r}\dot{\phi} + \dot{r}^2 \right) = T(r, \dot{r}, \phi, \dot{\phi})$$
-$$V(y) = mgy = mg r \sin(\phi) = V(r, \phi)$$
+> Here $\rho$ has units of length and $\phi$ has units of angle.
 
-Now we include the constraint $r = L$, so that $\dot{r} = 0$.
+Which of the following derivatives give the **generalized force** associated with $\rho$?
 
-$$T(\phi, \dot{\phi}) = \dfrac{1}{2} m L^2 \dot{\phi}^2 \quad V(\phi) = mgL \cos(\phi)$$
-
-$$\mathcal{L} = \dfrac{1}{2} m L^2 \dot{\phi}^2 - mgL \cos(\phi)$$
-
----
-
-# Clicker Question 35-1
-
-With $\mathcal{L} = \dfrac{1}{2} m L^2 \dot{\phi}^2 - mgL \cos(\phi)$, we can find the equations of motion. 
-
-$$\dfrac{\partial \mathcal{L}}{\partial \phi} - \dfrac{d}{dt} \left( \dfrac{\partial \mathcal{L}}{\partial \dot{\phi}} \right) = 0$$
-
-Which of the following equations of motion is correct?
-
-1. $\ddot{\phi} = -\frac{g}{L} \sin(\phi)$
-2. $\ddot{\phi} = -\frac{g}{L} \cos(\phi)$
-3. $\ddot{\phi} = -\sqrt{\frac{g}{L} \sin(\phi)}$
-4. $\ddot{\phi} = -\sqrt{\frac{g}{L} \cos(\phi)}$
+$1. \dfrac{\partial \mathcal{L}}{\partial \rho} \qquad 2. \dfrac{\partial \mathcal{L}}{\partial \dot{\rho}}$
+$3. \dfrac{d}{dt} \left( \dfrac{\partial \mathcal{L}}{\partial \rho} \right) \qquad 4. \dfrac{d}{dt} \left( \dfrac{\partial \mathcal{L}}{\partial \dot{\rho}} \right)$
 5. None of these
 
 ---
 
-# Clicker Question 35-2
+## Clicker Question 35-1b
+
+For a hypothetical system, we have the Lagrangian that depends on two generalized coordinates, $\mathcal{L}(\rho,\phi, \dot{\rho},\dot{\phi})$. 
+
+> Here $\rho$ has units of length and $\phi$ has units of angle.
+
+What are the units of the **generalized force** associated with $\rho$?
+
+1. Newtons (N)
+2. Joules (J)
+3. Newton-meters (N m)
+4. Meters (m)
+5. None of these
+
+---
+
+## Clicker Question 35-1c
+
+For a hypothetical system, we have the Lagrangian that depends on two generalized coordinates, $\mathcal{L}(\rho,\phi, \dot{\rho},\dot{\phi})$. 
+
+> Here $\rho$ has units of length and $\phi$ has units of angle.
+
+Which of the following derivatives give the **generalized momentum** associated with $\rho$?
+
+$1. \dfrac{\partial \mathcal{L}}{\partial \rho} \qquad 2. \dfrac{\partial \mathcal{L}}{\partial \dot{\rho}}$
+$3. \dfrac{d}{dt} \left( \dfrac{\partial \mathcal{L}}{\partial \rho} \right) \qquad 4. \dfrac{d}{dt} \left( \dfrac{\partial \mathcal{L}}{\partial \dot{\rho}} \right)$
+5. None of these
+
+---
+
+## Clicker Question 35-1d
+
+For a hypothetical system, we have the Lagrangian that depends on two generalized coordinates, $\mathcal{L}(\rho,\phi, \dot{\rho},\dot{\phi})$.
+
+> Here $\rho$ has units of length and $\phi$ has units of angle.
+
+What are the units of the **generalized momentum** associated with $\rho$?
+
+1. kg m/s
+2. kg m$^2$/s
+3. kg m$^2$/s$^2$
+4. kg/s
+5. None of these
+
+---
+
+## Clicker Question 35-1e
+
+For a hypothetical system, we have the Lagrangian that depends on two generalized coordinates, $\mathcal{L}(\rho,\phi, \dot{\rho},\dot{\phi})$.
+
+Which of the following derivatives give the **generalized force** associated with $\phi$?
+
+$1. \dfrac{\partial \mathcal{L}}{\partial \phi} \qquad 2. \dfrac{\partial \mathcal{L}}{\partial \dot{\phi}}$
+$3. \dfrac{d}{dt} \left( \dfrac{\partial \mathcal{L}}{\partial \phi} \right) \qquad 4. \dfrac{d}{dt} \left( \dfrac{\partial \mathcal{L}}{\partial \dot{\phi}} \right)$
+5. None of these
+
+---
+
+## Clicker Question 35-1f
+
+For a hypothetical system, we have the Lagrangian that depends on two generalized coordinates, $\mathcal{L}(\rho,\phi, \dot{\rho},\dot{\phi})$. 
+
+> Here $\rho$ has units of length and $\phi$ has units of angle.
+
+What are the units of the **generalized force** associated with $\phi$?
+
+1. Newtons (N)
+2. Joules (J)
+3. Newton-meters (N m)
+4. Radians (rad)
+5. None of these
+
+---
+
+## Clicker Question 35-1g
+
+For a hypothetical system, we have the Lagrangian that depends on two generalized coordinates, $\mathcal{L}(\rho,\phi, \dot{\rho},\dot{\phi})$.
+
+> Here $\rho$ has units of length and $\phi$ has units of angle.
+
+Which of the following derivatives give the **generalized momentum** associated with $\phi$?
+
+$1. \dfrac{\partial \mathcal{L}}{\partial \phi} \qquad 2. \dfrac{\partial \mathcal{L}}{\partial \dot{\phi}}$
+$3. \dfrac{d}{dt} \left( \dfrac{\partial \mathcal{L}}{\partial \phi} \right) \qquad 4. \dfrac{d}{dt} \left( \dfrac{\partial \mathcal{L}}{\partial \dot{\phi}} \right)$
+5. None of these
+
+---
+
+## Clicker Question 35-1h
+
+For a hypothetical system, we have the Lagrangian that depends on two generalized coordinates, $\mathcal{L}(\rho,\phi, \dot{\rho},\dot{\phi})$.
+
+> Here $\rho$ has units of length and $\phi$ has units of angle.
+
+What are the units of the **generalized momentum** associated with $\phi$?
+
+1. kg m/s
+2. kg m$^2$/s
+3. kg m$^2$/s$^2$
+4. kg/s
+5. None of these
+
+---
+
+## Clicker Question 35-2
 
 For the Atwood's machine, $M$ is connected to $m$ by a string of length $l$. Each mass has a length of string extended as measured from the center of the pulley ($R$) of $y_1$ and $y_2$, respectively. The string wraps around half the pulley. 
 
@@ -105,7 +301,7 @@ Which of the following represents the equation of constraint for the system?
 
 ---
 
-# Clicker Question 35-3
+## Clicker Question 35-3
 
 With a Lagrangian of the form $\mathcal{L} = \frac{1}{2}(M+m)\dot{y}^2_1 - (M-m)gy_1$, we can find the **generalized forces** and **generalized momenta**.
 
@@ -121,7 +317,7 @@ What are $F_{y_1}$ and $p_{y_1}$ for the Atwood's machine?
 
 ---
 
-# Clicker Question 35-4
+## Clicker Question 35-4
 
 Now, we allow the pulley (mass, $M_p$) to rotate. The Lagrangian is given by:
 $$\mathcal{L} = \frac{1}{2}(M+m)\dot{y}_1^2 + \frac{1}{2}I\dot{\phi}^2 - (M-m)gy_1$$
@@ -136,7 +332,7 @@ Where $I$ is the moment of inertia of the pulley. What is the moment of inertia 
 
 ---
 
-# Clicker Question 35-5
+## Clicker Question 35-5
 
 The rope moves without slipping on the pulley. A rotation of $R d\phi$ corresponds to a displacement of $dy_1$ for the first mass, $M$. What is the **new** equation of constraint for the system?
 
